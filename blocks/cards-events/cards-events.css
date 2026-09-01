@@ -1,0 +1,27 @@
+.cards-events > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  gap: 24px;
+}
+
+.cards-events > ul > li {
+  border: 1px solid #dadada;
+  background-color: var(--background-color);
+}
+
+.cards-events .cards-events-card-body {
+  margin: 16px;
+}
+
+.cards-events .cards-events-card-image {
+  line-height: 0;
+}
+
+.cards-events > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}

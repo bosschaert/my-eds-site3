@@ -1,0 +1,105 @@
+/* stylelint-disable no-descending-specificity */
+
+.document-cards-container {
+  height: 687px;
+  overflow: hidden;
+  background: var(--light-color);
+  text-align: center;
+}
+
+.document-cards {
+  height: 687px;
+  padding: 186px 0 50px;
+}
+
+.document-cards .document-wrap {
+  width: min(var(--content-width), calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.document-cards .document-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.document-cards .document-card {
+  width: 212px;
+  display: flex;
+  flex-direction: column;
+}
+
+.document-cards .document-card:nth-child(odd) {
+  flex-direction: column-reverse;
+}
+
+.document-cards .document-media,
+.document-cards .document-media picture,
+.document-cards .document-media p {
+  display: block;
+  width: 212px;
+  height: 300px;
+  margin: 0;
+  line-height: 0;
+}
+
+.document-cards .document-media img {
+  width: 212px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 18%);
+}
+
+.document-cards .document-title {
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.document-cards .document-title :is(h3, h4) {
+  margin: 0;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22.5px;
+}
+
+.document-cards .document-title a:hover {
+  text-decoration: underline;
+}
+
+.document-cards .all-downloads {
+  margin-top: 32px;
+}
+
+.document-cards .all-downloads a {
+  color: var(--brand-blue);
+}
+
+@media (width <= 800px) {
+  .document-cards-container,
+  .document-cards {
+    height: 1839px;
+  }
+
+  .document-cards {
+    padding: 198px 0 64px;
+  }
+
+  .document-cards .document-wrap {
+    width: calc(100% - 30px);
+  }
+
+  .document-cards .document-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .document-cards .document-card {
+    width: 212px;
+  }
+}

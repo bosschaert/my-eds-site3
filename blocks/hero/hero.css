@@ -1,37 +1,91 @@
 .hero-container .hero-wrapper {
-  max-width: unset;
+  max-width: none;
   padding: 0;
 }
 
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  height: 630px;
+  overflow: hidden;
+  background: var(--brand-cyan);
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
-
-.hero picture {
+.hero .hero-stage,
+.hero .hero-media {
   position: absolute;
-  z-index: -1;
   inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
 }
 
-.hero img {
-  object-fit: cover;
+.hero .hero-media {
+  min-height: 630px;
+}
+
+.hero .hero-media picture,
+.hero .hero-media p {
+  display: block;
   width: 100%;
   height: 100%;
+  margin: 0;
+  line-height: 0;
 }
 
-@media (width >= 900px) {
-  .hero {
-    padding: 40px 32px;
+.hero .hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero .hero-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 592px;
+  min-height: 257px;
+  max-width: calc(100% - 40px);
+  padding: 48px;
+  background: #fff;
+  color: var(--text-color);
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.hero .hero-title :is(h1, h2) {
+  margin: 0;
+  color: var(--text-color);
+  font: inherit;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.hero .hero-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  margin: 14px auto 42px;
+  border-top: 5px solid var(--brand-yellow);
+}
+
+.hero .hero-actions a.button {
+  width: 180px;
+}
+
+@media (width <= 800px) {
+  .hero,
+  .hero .hero-media {
+    height: 630px;
+    min-height: 630px;
+  }
+
+  .hero .hero-card {
+    width: calc(100% - 18px);
+    min-height: 324px;
+    max-width: none;
+    padding: 48px 32px;
+  }
+
+  .hero .hero-title :is(h1, h2) {
+    font-size: 28px;
   }
 }

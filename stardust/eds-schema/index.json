@@ -1,0 +1,313 @@
+{
+ "source": "http://127.0.0.1:8792/index.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Transformation of Quay Street and Harbour Begins"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Learn More",
+     "href": "https://balbriggan.ie/faq/"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "intro",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Our Balbriggan"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Balbriggan is set to be transformed; its rejuvenation plan sets out an ambitious new vison shaped by the towns people. The total investment in physical, infrastructural improvements between 2020-2030 is currently projected at €54 – €57 million"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "The Our Balbriggan Rejuvenation programme is led by Fingal County Council’s Economic, Community & Cultural Development. A Leadership Group chaired by Dr. David Begg is responsible for stewardship and progress on all aspects of the Rejuvenation Plan."
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 3,
+   "repeats": []
+  },
+  {
+   "section": "news-carousel",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "What's New"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Previous"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Next"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "See All",
+     "href": "https://balbriggan.ie/news/"
+    }
+   ],
+   "imgCount": 4,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "A.news-card",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 1,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "explore-grid",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Explore What We Do"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Town Transformation",
+     "href": "https://balbriggan.ie/town-transformation/"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Education, Skills & Training",
+     "href": "https://balbriggan.ie/education-skills-training/"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Community Development",
+     "href": "https://balbriggan.ie/community-development/"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Economic Development",
+     "href": "https://balbriggan.ie/economic-development/"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Sustainability, Climate Action and Biodiversity",
+     "href": "https://balbriggan.ie/sustainability-climate-action-and-biodiversity/"
+    }
+   ],
+   "imgCount": 5,
+   "editableTexts": 6,
+   "repeats": [
+    {
+     "unitSelector": "DIV.explore-card",
+     "count": 5,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 1,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "balbriggan-map",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "HARRY REYNOLDSPEDESTRIAN AND CYCLE SCHEME",
+     "href": "https://balbriggan.ie/town-transformation/#project12"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "FINGALCOASTAL WAY",
+     "href": "https://balbriggan.ie/town-transformation/#project11"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "BREMORECASTLE",
+     "href": "https://balbriggan.ie/town-transformation/#project10"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "RAILWAY STREET,STATION & PLAZA",
+     "href": "https://balbriggan.ie/town-transformation/#project9"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "PROMENADE &COASTAL IMPROVEMENTS",
+     "href": "https://balbriggan.ie/town-transformation/#project8"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "BREMOREREGIONAL PARK",
+     "href": "https://balbriggan.ie/town-transformation/#project7"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "MILLPOND PARK –GREEN CORRIDOR",
+     "href": "https://balbriggan.ie/town-transformation/#project6"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "2 – 4DUBLIN STREET",
+     "href": "https://balbriggan.ie/town-transformation/#project5"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "REDEVELOP THE HEART OFMAIN STREET – GREEN CORRIDOR",
+     "href": "https://balbriggan.ie/town-transformation/#project4"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "HARBOURIMPROVEMENTS",
+     "href": "https://balbriggan.ie/town-transformation/#project3"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "TRANSFORM QUAY STREET,HARBOUR & ITS ENVIRONS",
+     "href": "https://balbriggan.ie/town-transformation/#project2"
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "RNLI BOATHOUSEAND RAILWAY VIADUCT",
+     "href": "https://balbriggan.ie/town-transformation/#project1"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 0,
+   "repeats": []
+  },
+  {
+   "section": "document-cards",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Documents for Download"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Ár dTuras",
+     "href": "https://balbriggan.ie/wp-content/uploads/2020/08/Ar_dTuras.pdf"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Our Journey",
+     "href": "https://balbriggan.ie/wp-content/uploads/2020/06/Our-Journey-Newsletter.pdf"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Céard eile atá ag tarlú?",
+     "href": "https://balbriggan.ie/wp-content/uploads/2021/11/Web-A3-Balbriggan-Irish.pdf"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "What Next?",
+     "href": "https://balbriggan.ie/wp-content/uploads/2021/11/Web-A3-Balbriggan-English.pdf"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "See All",
+     "href": "https://balbriggan.ie/downloads/"
+    }
+   ],
+   "imgCount": 4,
+   "editableTexts": 5,
+   "repeats": [
+    {
+     "unitSelector": "FIGURE.doc-card",
+     "count": 4,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 1,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "newsletter",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Newsletter"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "To hear all the latest on the Balbriggan Rejuvenation Plan, sign up for our email newsletter."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "I consent to the collection and storage of my data and to be contacted occasionally by email"
+    },
+    {
+     "role": "eyebrow",
+     "order": 3,
+     "text": "Subscribe"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "No backend connected."
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 3,
+   "repeats": []
+  }
+ ]
+}

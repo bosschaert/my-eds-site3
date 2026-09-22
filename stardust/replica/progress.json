@@ -1,0 +1,132 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-22T09:24:00Z",
+    "readArtifacts": [
+      "stardust/state.json",
+      "stardust/current/pages/index.json",
+      "stardust/replica/capture/live-inline.css",
+      "stardust/replica/gates/index-1440/",
+      "stardust/replica/gates/index-360/",
+      "stardust/replica/motion/index.json",
+      "stardust/replica/motion/index-build.json"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.22.1"
+  },
+  "site": "https://www.example.com/",
+  "breakpoints": [
+    1440,
+    360
+  ],
+  "register": "stardust/replica/inconsistency-register.md (empty — pure replica)",
+  "pageTypes": {
+    "static": {
+      "archetype": "index",
+      "liveUrl": "https://www.example.com/",
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "css": [
+        "stardust/prototypes/css/canon.css",
+        "stardust/prototypes/css/index.css"
+      ],
+      "contentRoot": "body > :first-child",
+      "recreate": {
+        "status": "authored",
+        "at": "2026-09-22T09:15:00Z",
+        "measure": "measure.mjs live vs prototype @1440,360 — body, wrapper, h1, p, a: Δx/Δy/Δw/Δh 0 on every box, props equal",
+        "fonts": "system-ui only, nothing served, no substitution",
+        "chrome": "none — the live page has no header, footer, nav or strips; chrome crop gate not applicable",
+        "cssPortation": "none — the whole 130-byte live stylesheet was lifted as tokens + rules"
+      },
+      "iterations": {
+        "360": 1,
+        "1440": 1
+      },
+      "gates": {
+        "360": {
+          "label": "iter1",
+          "full": true,
+          "at": "2026-09-22T09:24:00Z",
+          "pixelDiffPct": 0,
+          "differingPixels": 0,
+          "totalPixels": 324000,
+          "heightDeltaPx": 0,
+          "hotBands": [],
+          "contentDiff": "none — content + roles match (0 structural 🔴)",
+          "visualDiff": "0 advisory flags",
+          "chromeParity": "header/footer absent on BOTH sides (REGION absence, not a delta); content root probed as the sole region with --no-defaults --region \"page=body > :first-child\": ✓ parity, 3/3 texts paired, 0 icons, exit 0",
+          "cropCompare": "n/a — 0 differing pixels, no hot band",
+          "verdict": "PASS",
+          "evidence": [
+            "stardust/replica/gates/index-360/live.png",
+            "stardust/replica/gates/index-360/build.png",
+            "stardust/replica/gates/index-360/diff-iter1.png",
+            "stardust/replica/gates/index-360/content-diff-iter1.txt",
+            "stardust/replica/gates/index-360/visual-diff-iter1.txt",
+            "stardust/replica/gates/index-360/chrome-parity-iter1.txt",
+            "stardust/replica/gates/index-360/chrome-parity-iter1-region.txt"
+          ]
+        },
+        "1440": {
+          "label": "iter1",
+          "full": true,
+          "at": "2026-09-22T09:24:00Z",
+          "pixelDiffPct": 0,
+          "differingPixels": 0,
+          "totalPixels": 1296000,
+          "heightDeltaPx": 0,
+          "hotBands": [],
+          "contentDiff": "none — content + roles match (0 structural 🔴)",
+          "visualDiff": "0 advisory flags",
+          "chromeParity": "header/footer absent on BOTH sides (REGION absence, not a delta); content root probed as the sole region with --no-defaults --region \"page=body > :first-child\": ✓ parity, 3/3 texts paired, 0 icons, exit 0",
+          "cropCompare": "n/a — 0 differing pixels, no hot band",
+          "verdict": "PASS",
+          "evidence": [
+            "stardust/replica/gates/index-1440/live.png",
+            "stardust/replica/gates/index-1440/build.png",
+            "stardust/replica/gates/index-1440/diff-iter1.png",
+            "stardust/replica/gates/index-1440/content-diff-iter1.txt",
+            "stardust/replica/gates/index-1440/visual-diff-iter1.txt",
+            "stardust/replica/gates/index-1440/chrome-parity-iter1.txt",
+            "stardust/replica/gates/index-1440/chrome-parity-iter1-region.txt"
+          ]
+        }
+      },
+      "residuals": [],
+      "motion": {
+        "observed": 0,
+        "implemented": 0,
+        "dead": [
+          "hover a — no measured hover diff on live (not required)"
+        ],
+        "liveEvidence": "stardust/replica/motion/index.json",
+        "buildEvidence": "stardust/replica/motion/index-build.json",
+        "compare": "motion-compare PASS: 1 behavior — 0 parity, 0 missing, 0 extra, 0 out of tolerance, 1 dead on live; 0 animations / 0 transitions / 0 class mutations on either side",
+        "pixelAfterMotion": "no prototype change after observation — iter1 0.00% stands as the confirmation round"
+      },
+      "siblings": [],
+      "fluidCheck": {
+        "at": "2026-09-22T09:24:00Z",
+        "widths": [
+          1920,
+          1280
+        ],
+        "selectors": [
+          "body > :first-child",
+          "h1",
+          "p",
+          "a"
+        ],
+        "result": "all boxes Δx0 Δy0 Δw0 Δh0, props equal at both widths — sizing model (60vw column, 15vh margins) is fluid on both sides",
+        "evidence": "stardust/replica/gates/index-1440/fluid-check-1920-1280.txt"
+      },
+      "gate": {
+        "status": "passed",
+        "at": "2026-09-22T09:24:00Z",
+        "approvedBy": "hands-off",
+        "confirmationRound": "iter1 --full at both breakpoints (no fix iteration was needed, so the first full round is also the confirmation round)"
+      }
+    }
+  },
+  "siblings": {}
+}

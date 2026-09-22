@@ -1,0 +1,25 @@
+/* Canon — shared layer for every www.example.com archetype.
+   Every value is lifted from the live site's own stylesheet
+   (stardust/replica/capture/live-inline.css, 130 bytes inline in <head>).
+   Sizing MODEL encoded, never resolved px: the column is 60vw wide with
+   15vh block margins on the live page (body{width:60vw;margin:15vh auto}). */
+:root {
+  --color-field: #eee;          /* body{background:#eee} */
+  --color-link: #348;           /* a:link,a:visited{color:#348} */
+  --font-body: system-ui, sans-serif;   /* body{font-family:system-ui,sans-serif}; nothing served */
+  --column-width: 60vw;         /* body{width:60vw} */
+  --column-margin-block: 15vh;  /* body{margin:15vh auto} */
+  --content-opacity: 0.8;       /* div{opacity:0.8} — wraps all page content */
+}
+
+body {
+  background: var(--color-field);
+  width: var(--column-width);
+  margin: var(--column-margin-block) auto;
+  font-family: var(--font-body);
+}
+
+a:link,
+a:visited {
+  color: var(--color-link);
+}

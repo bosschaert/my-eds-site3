@@ -1,0 +1,95 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-09-22T09:32:46Z",
+    "stardustVersion": "0.22.1"
+  },
+  "site": {
+    "originUrl": "https://www.example.com",
+    "deployUrl": null,
+    "extractedAt": "2026-09-22T09:09:30Z",
+    "pageCap": 100,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "direction": {
+    "resolvedAt": "2026-09-22T09:13:00Z",
+    "phrase": "preserve (replica --hands-off: same design, same content, new platform)",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "verbatim"
+  },
+  "handsOff": true,
+  "pages": [
+    {
+      "slug": "index",
+      "url": "https://www.example.com/",
+      "title": "Example Domain",
+      "type": "static",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-22T09:09:30Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-22T09:13:23Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-22T09:20:14Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-22T09:20:14Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-22T09:32:46Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": "stardust/migrated/index.html"
+    }
+  ],
+  "migrate": {
+    "at": "2026-09-22T09:22:24Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/",
+        "outputPath": "index.html",
+        "slug": "index",
+        "outputPathDefault": null
+      }
+    ],
+    "totalAssetsBundled": 2,
+    "bundledAssets": [
+      "css/canon.css",
+      "css/index.css"
+    ],
+    "pages": [
+      {
+        "slug": "index",
+        "file": "stardust/migrated/index.html",
+        "assetsBundled": 2
+      }
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "lastRun": {
+      "at": "2026-09-22T09:22:24Z",
+      "rendered": [
+        "index"
+      ],
+      "unchanged": [],
+      "refused": [],
+      "passthrough": []
+    }
+  }
+}

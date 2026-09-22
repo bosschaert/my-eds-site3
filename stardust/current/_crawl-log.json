@@ -1,0 +1,40 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 1,
+    "concurrency": 4
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": null,
+  "crawl": {
+    "failures": []
+  },
+  "dynamicSurface": {
+    "pages": 1,
+    "pagesWithSameSiteData": 0,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 0,
+    "truncatedPages": 0,
+    "endpoints": [],
+    "thirdPartyScriptHosts": [],
+    "frameworkHints": [],
+    "globalState": [],
+    "formTargets": []
+  },
+  "visionCheck": [
+    {
+      "slug": "index",
+      "verdict": "ok",
+      "notes": "thumbnail shows the rendered page (grey #eee field, 'Example Domain' h1, one paragraph, blue 'Learn more' link); spaShellSuspect is a false positive from genuinely minimal content (125 chars, 0 media, 1 heading). Not a consent wall or bot block."
+    }
+  ],
+  "prep": {
+    "pageTypes": {
+      "static": 1
+    },
+    "moduleCandidates": [],
+    "note": "single-page site: no cross-page structural repeats, so no module candidates; no system header/footer/nav present"
+  }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- stardust:provenance
+  writtenBy:        stardust:extract
+  writtenAt:        2026-09-22T09:11:00Z
+  readArtifacts:
+    - stardust/current/_brand-extraction.json
+    - stardust/current/_crawl-log.json
+    - stardust/current/pages/index.json
+    - stardust/current/_computed-styles.json
+  synthesizedInputs: []
+  stardustVersion:  0.22.1
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand review — Example Domain (current state)</title>
+<style>
+:root{--bg:#eeeeee;--ink:#000000;--accent:#334488;--primary:#334488;--surface:#f7f7f7;--rule:rgba(0,0,0,.15)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,sans-serif;font-size:16px;line-height:1.5}
+nav.sticky{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--rule);padding:8px 24px;display:flex;gap:16px;flex-wrap:wrap;z-index:2}
+nav.sticky a{color:var(--accent);text-decoration:none;font-size:14px}
+main{max-width:960px;margin:0 auto;padding:24px}
+section{padding:24px 0;border-bottom:1px solid var(--rule);break-inside:avoid}
+h1{font-size:1.5em;margin:.67em 0}
+h2{font-size:1.25em;margin:0 0 12px}
+p.hero-line{color:var(--accent);font-size:1.25em;margin:4px 0}
+.cite{font-family:ui-monospace,monospace;font-size:12px;opacity:.7}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.stat{background:var(--surface);padding:12px;border:1px solid var(--rule)}
+.stat b{display:block;font-size:1.25em}
+.swatches{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.swatch{border:1px solid var(--rule);background:var(--surface)}
+.swatch .chip{height:56px}
+.swatch dl{margin:0;padding:8px;font-size:13px}
+.swatch dt{font-weight:700;display:inline}
+.swatch dd{display:inline;margin:0 8px 0 4px}
+.spec{opacity:.8}
+.shot{max-width:480px;border:1px solid var(--rule);display:block}
+.badge{display:inline-block;padding:2px 8px;border:1px solid var(--accent);color:var(--accent);border-radius:2px;font-size:12px;margin-left:8px}
+table{border-collapse:collapse;font-size:14px}
+td,th{border:1px solid var(--rule);padding:4px 8px;text-align:left}
+footer{padding:24px;font-size:13px;opacity:.8}
+@media print{nav.sticky{position:static}}
+</style>
+</head>
+<body>
+<nav class="sticky">
+<a href="#coverage">Coverage</a><a href="#pages">Pages</a><a href="#palette">Palette</a><a href="#type">Typography</a><a href="#voice">Voice</a><a href="#tensions">Tensions</a><a href="#components">Components</a><a href="#logo">Logo</a><a href="#spacing">Spacing</a>
+</nav>
+<main>
+<header>
+<h1>Example Domain</h1>
+<p class="hero-line">Example Domain</p>
+<p class="cite">https://www.example.com/ · no meta description, no og:description on the live page</p>
+</header>
+
+<section id="coverage">
+<h2>Coverage</h2>
+<div class="stats">
+<div class="stat"><b>1 / 1</b>pages extracted (headless, sitemap-less single-page origin)</div>
+<div class="stat"><b>medium · 2500 ms</b>wait strategy, 0 fallbacks, 0 failures</div>
+<div class="stat"><b>3 colours · 1 family</b>brand surface: 130 bytes of inline CSS, no fonts, no media</div>
+</div>
+<p class="cite">_crawl-log.json § discovery, crawl, visionCheck (verdict ok)</p>
+</section>
+
+<section id="pages">
+<h2>Pages</h2>
+<img class="shot" src="assets/screenshots/index-thumb.png" alt="Screenshot thumbnail of https://www.example.com/">
+<p>Example Domain <span class="cite">/ (index)</span></p>
+</section>
+
+<section id="palette">
+<h2>Colour palette</h2>
+<div class="swatches">
+<div class="swatch"><div class="chip" style="background:#eeeeee"></div><dl><dt>#eeeeee</dt><dd>background</dd><br><dt>used as</dt><dd>background ×2</dd><br><dt>source</dt><dd>body</dd></dl></div>
+<div class="swatch"><div class="chip" style="background:#000000"></div><dl><dt>#000000</dt><dd>text-primary</dd><br><dt>used as</dt><dd>text ×6 (80% opacity)</dd><br><dt>source</dt><dd>body &gt; div &gt; h1, p</dd></dl></div>
+<div class="swatch"><div class="chip" style="background:#334488"></div><dl><dt>#334488</dt><dd>accent</dd><br><dt>used as</dt><dd>text ×4 (link)</dd><br><dt>source</dt><dd>body &gt; div &gt; p:nth-of-type(2) &gt; a</dd></dl></div>
+</div>
+<p class="cite">_brand-extraction.json § palette · _computed-styles.json § aggregate.colors</p>
+</section>
+
+<section id="type">
+<h2>Typography <span class="badge">No modular scale</span></h2>
+<p class="spec" style="font-size:24px;font-weight:700;margin:.67em 0">Example Domain <span class="cite">h1 · 24px · 700 · line-height normal</span></p>
+<p class="spec">This domain is for use in documentation examples without needing permission. Avoid use in operations. <span class="cite">p · 16px · 400</span></p>
+<p class="cite">_brand-extraction.json § type — family system-ui, sans-serif for headings and body; no served font files</p>
+</section>
+
+<section id="voice">
+<h2>Voice <span class="badge">plain · terse</span></h2>
+<div class="stats">
+<div class="stat"><b>Example Domain</b>hero headline</div>
+<div class="stat"><b>—</b>tagline (none on page)</div>
+<div class="stat"><b>This domain is for use in documentation examples…</b>first paragraph</div>
+</div>
+<table style="margin-top:12px"><tr><th>CTA label</th><th>count</th></tr><tr><td>Learn more</td><td>1</td></tr></table>
+<div class="stats" style="margin-top:12px">
+<div class="stat"><b>0%</b>headings uppercase</div>
+<div class="stat"><b>1</b>distinct headings</div>
+<div class="stat"><b>1</b>distinct CTA labels</div>
+</div>
+<p class="cite">_brand-extraction.json § voice, voiceTable</p>
+</section>
+
+<section id="tensions">
+<h2>Tensions</h2>
+<table>
+<tr><th>ID</th><th>Card</th></tr>
+<tr><td>T-scale</td><td>Type scale is ad-hoc (16px → 24px, no consistent ratio). Direct will need to decide whether the target adopts a modular scale. <em>Replica mode: not applicable, the scale is preserved.</em></td></tr>
+<tr><td>T-logo-variants</td><td>No logo variant captured (source: none, locator chain exhausted). <em>Replica mode: the page ships no logo; none is introduced.</em></td></tr>
+<tr><td>T-color-imbalance</td><td>Colour #334488 (accent) appears as text only, never as background. <em>Replica mode: preserved as captured.</em></td></tr>
+<tr><td>T-no-tokens</td><td>No CSS custom properties defined. The current site has no design-token layer; the migration target will introduce tokens, which is a structural change worth calling out.</td></tr>
+</table>
+<p class="cite">Detectors run: all 14; skipped for lack of data: T-radius-vocab, T-cta-vocab, T-link-content-free (label is "Learn more", not in the content-free set), T-tokens-unused, T-img-alt-*, T-embed-dominance, T-nav-conflict, T-temporal-mark.</p>
+</section>
+
+<section id="components">
+<h2>Components</h2>
+<p>One component type detected: the text link (1 instance, underlined, #334488, :link = :visited, no hover). No buttons, cards, inputs, navigation, header, footer or cross-promo blocks. No motifs (no radius, shadow or gradient).</p>
+<p class="cite">_brand-extraction.json § componentStyle, systemComponents (empty), motifs</p>
+</section>
+
+<section id="logo">
+<h2>Logo &amp; favicons</h2>
+<dl>
+<dt>Source</dt><dd>none (chain exhausted: no inline SVG, no img, no apple-touch-icon, no og:image)</dd>
+<dt>File</dt><dd>none</dd>
+<dt>Variants captured</dt><dd>0</dd>
+<dt>Variants not captured</dt><dd>all; favicon declared as <code>href="data:,"</code> (deliberately empty), /favicon.ico unreachable</dd>
+</dl>
+<p class="cite">_brand-extraction.json § logo, favicon · _crawl-log.json § favicon</p>
+</section>
+
+<section id="spacing">
+<h2>Spacing &amp; shape</h2>
+<table>
+<tr><th>value</th><th>used as</th><th>source</th></tr>
+<tr><td>60vw</td><td>body width (content column)</td><td>body{width:60vw}</td></tr>
+<tr><td>15vh</td><td>body top/bottom margin</td><td>body{margin:15vh auto}</td></tr>
+<tr><td>0.67em</td><td>h1 block margin</td><td>UA default</td></tr>
+<tr><td>1em</td><td>p block margin</td><td>UA default</td></tr>
+</table>
+<p>Radii: none captured. Base unit: none authored.</p>
+<p class="cite">_brand-extraction.json § spacing, motifs</p>
+</section>
+</main>
+<footer>
+<p>Provenance: this review read _brand-extraction.json, _crawl-log.json, _computed-styles.json and pages/index.json, all written by stardust:extract on 2026-09-22 from a live Playwright render of https://www.example.com/.</p>
+<p>What's next: replica preserve-direction (mechanical promotion of this current state; the direct skill is not run in replica mode).</p>
+<p>Badge legend: outlined pill = detector or audit verdict.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,373 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-09-22T09:08:20.636Z",
+    "script": "style-census.mjs",
+    "readArtifacts": [
+      "https://www.example.com/"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "synthesizedInputs": [],
+    "failed": []
+  },
+  "pages": {
+    "https://www.example.com/": {
+      "360": {
+        "title": "Example Domain",
+        "viewport": {
+          "width": 360,
+          "height": 900
+        },
+        "elements": {
+          "total": 7,
+          "visible": 7
+        },
+        "occluders": [],
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Example Domain",
+            "selector": "body > div > h1",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "24px",
+            "fontWeight": "700",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "text": [
+          {
+            "tag": "p",
+            "text": "This domain is for use in documentation…",
+            "selector": "body > div > p:nth-of-type(1)",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "buttons": [],
+        "links": [
+          {
+            "text": "Learn more",
+            "selector": "body > div > p:nth-of-type(2) > a",
+            "count": 1,
+            "color": "rgb(51, 68, 136)",
+            "textDecoration": "underline",
+            "fontWeight": "400",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(51, 68, 136)",
+              "borderColor": "rgb(51, 68, 136)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "surfaces": [],
+        "radii": [],
+        "shadows": [],
+        "gradients": [],
+        "bgColors": [
+          {
+            "value": "rgb(238, 238, 238)",
+            "count": 1,
+            "area": 36521,
+            "sources": [
+              "body"
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 2,
+            "sources": [
+              "body > div > h1",
+              "body > div > p:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(51, 68, 136)",
+            "count": 1,
+            "sources": [
+              "body > div > p:nth-of-type(2) > a"
+            ]
+          }
+        ],
+        "borderColors": [],
+        "customProps": {},
+        "fonts": [],
+        "logoCandidates": [],
+        "iconFont": null,
+        "consent": {
+          "dismissed": null
+        },
+        "finalUrl": "https://www.example.com/"
+      },
+      "1440": {
+        "title": "Example Domain",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "elements": {
+          "total": 7,
+          "visible": 7
+        },
+        "occluders": [],
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Example Domain",
+            "selector": "body > div > h1",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "24px",
+            "fontWeight": "700",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "text": [
+          {
+            "tag": "p",
+            "text": "This domain is for use in documentation…",
+            "selector": "body > div > p:nth-of-type(1)",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "normal",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "buttons": [],
+        "links": [
+          {
+            "text": "Learn more",
+            "selector": "body > div > p:nth-of-type(2) > a",
+            "count": 1,
+            "color": "rgb(51, 68, 136)",
+            "textDecoration": "underline",
+            "fontWeight": "400",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(51, 68, 136)",
+              "borderColor": "rgb(51, 68, 136)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "surfaces": [],
+        "radii": [],
+        "shadows": [],
+        "gradients": [],
+        "bgColors": [
+          {
+            "value": "rgb(238, 238, 238)",
+            "count": 1,
+            "area": 91652,
+            "sources": [
+              "body"
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 2,
+            "sources": [
+              "body > div > h1",
+              "body > div > p:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(51, 68, 136)",
+            "count": 1,
+            "sources": [
+              "body > div > p:nth-of-type(2) > a"
+            ]
+          }
+        ],
+        "borderColors": [],
+        "customProps": {},
+        "fonts": [],
+        "logoCandidates": [],
+        "iconFont": null,
+        "consent": {
+          "dismissed": null
+        },
+        "finalUrl": "https://www.example.com/"
+      }
+    }
+  },
+  "aggregate": {
+    "counts": {
+      "pages": 1,
+      "widths": [
+        360,
+        1440
+      ],
+      "measurements": 2
+    },
+    "colors": [
+      {
+        "hex": "#000000",
+        "values": [
+          "rgb(0, 0, 0)"
+        ],
+        "weight": 6,
+        "by": {
+          "text": 4,
+          "heading": 2
+        },
+        "roles": [
+          "text",
+          "heading"
+        ],
+        "sources": [
+          {
+            "url": "https://www.example.com/",
+            "selector": "body > div > h1",
+            "prop": "text"
+          },
+          {
+            "url": "https://www.example.com/",
+            "selector": "body > div > h1",
+            "prop": "heading"
+          }
+        ]
+      },
+      {
+        "hex": "#334488",
+        "values": [
+          "rgb(51, 68, 136)"
+        ],
+        "weight": 4,
+        "by": {
+          "link": 2,
+          "text": 2
+        },
+        "roles": [
+          "accent"
+        ],
+        "sources": [
+          {
+            "url": "https://www.example.com/",
+            "selector": "body > div > p:nth-of-type(2) > a",
+            "prop": "link"
+          },
+          {
+            "url": "https://www.example.com/",
+            "selector": "body > div > p:nth-of-type(2) > a",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#eeeeee",
+        "values": [
+          "rgb(238, 238, 238)"
+        ],
+        "weight": 2,
+        "bgArea": 128173,
+        "by": {
+          "background": 2
+        },
+        "roles": [
+          "background"
+        ],
+        "sources": [
+          {
+            "url": "https://www.example.com/",
+            "selector": "body",
+            "prop": "background"
+          }
+        ]
+      }
+    ],
+    "type": {
+      "families": [
+        {
+          "family": "system-ui",
+          "count": 4,
+          "headings": 2,
+          "text": 2,
+          "buttons": 0
+        }
+      ],
+      "headingFamily": "system-ui",
+      "bodyFamily": "system-ui",
+      "sizes": [
+        {
+          "px": 24,
+          "count": 2,
+          "headings": 2,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 16,
+          "count": 2,
+          "headings": 0,
+          "text": 2,
+          "buttons": 0
+        }
+      ],
+      "weights": [
+        {
+          "weight": "400",
+          "count": 2,
+          "headings": 0,
+          "text": 2,
+          "buttons": 0
+        },
+        {
+          "weight": "700",
+          "count": 2,
+          "headings": 2,
+          "text": 0,
+          "buttons": 0
+        }
+      ],
+      "levels": {
+        "h1": {
+          "fontSize": 24,
+          "fontWeight": "700",
+          "count": 2,
+          "score": 59.4
+        }
+      }
+    },
+    "motifs": {
+      "radius": {
+        "mode": null,
+        "areaMode": null,
+        "pill": null,
+        "values": []
+      },
+      "shadows": [],
+      "gradients": []
+    },
+    "hover": [],
+    "logo": {
+      "source": "none",
+      "url": null,
+      "selector": null
+    },
+    "iconFont": null
+  }
+}

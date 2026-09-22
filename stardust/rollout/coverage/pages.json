@@ -1,0 +1,33 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-22T09:28:38.759Z",
+    "readArtifacts": [
+      "stardust/migrated",
+      "stardust/state.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-22T09:32:45.574Z",
+  "pages": [
+    {
+      "slug": "index",
+      "path": "/",
+      "title": "Example Domain",
+      "templateId": "index",
+      "source": {
+        "migratedHtml": "stardust/migrated/index.html",
+        "metaJson": "stardust/migrated/_meta.json",
+        "sourceHash": "sha256:e1b548e030450f89d9e275348cb55a4c7e37a24b7aea163830ab062dc2778822"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--stardust-replica-20ec2d57--of1-labs.aem.page/",
+        "deployedAt": "2026-09-22T09:32:01.980Z",
+        "verifiedAt": "2026-09-22T09:32:45.574Z",
+        "error": null
+      }
+    }
+  ]
+}

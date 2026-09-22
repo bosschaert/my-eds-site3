@@ -1,0 +1,57 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-09-22T09:11:00Z",
+    "readArtifacts": [
+      "https://www.example.com/",
+      "stardust/current/_brand-extraction.json",
+      "stardust/current/_computed-styles.json",
+      "stardust/replica/capture/live-inline.css"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.22.1"
+  },
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-22T09:11:00Z",
+  "title": "Design System: Example Domain",
+  "extensions": {
+    "colorMeta": {
+      "field": { "role": "neutral", "displayName": "Field Grey", "canonical": "#eeeeee", "tonalRamp": [] },
+      "ink": { "role": "text", "displayName": "Ink (UA default, 80% opacity)", "canonical": "#000000", "tonalRamp": [] },
+      "link": { "role": "accent", "displayName": "Link Blue", "canonical": "#334488", "tonalRamp": [] }
+    },
+    "typographyMeta": {
+      "heading": { "displayName": "Heading", "purpose": "The single h1." },
+      "body": { "displayName": "Body", "purpose": "Paragraphs and the link." }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [],
+    "opacity": [{ "name": "content-wrapper", "value": "0.8", "purpose": "div{opacity:0.8} wraps all page content." }],
+    "componentStyle": { "buttons": [], "links": [{ "color": "#334488", "textDecoration": "underline", "hover": null }] },
+    "motifs": [],
+    "voice": ["Example Domain", "This domain is for use in documentation examples without needing permission. Avoid use in operations.", "Learn more"],
+    "modules": []
+  },
+  "components": [
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "link",
+      "description": "The page's only interactive element: an underlined external link in the body colour ramp.",
+      "html": "<p><a href=\"https://iana.org/domains/example\">Learn more</a></p>",
+      "css": "a:link, a:visited { color: #348; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The reserved-domain notice",
+    "overview": "One page, one column, no chrome. A light grey field carries a bold system-font heading, one paragraph and one underlined blue link, wrapped in a container at 80% opacity. The design does nothing beyond making the text legible.",
+    "keyCharacteristics": ["body element is the content column (60vw, 15vh auto margins)", "system-ui only, no served fonts", "one authored colour: the link", "80% opacity wrapper softens all text"],
+    "rules": [
+      { "name": "Body as column", "body": "The body element carries width and margins; there is no inner container.", "section": "layout" },
+      { "name": "One authored colour", "body": "Only the link colour is authored; text is the UA default softened by opacity.", "section": "colors" }
+    ],
+    "dos": ["Do keep system fonts and the viewport-relative column."],
+    "donts": ["Don't add a logo, favicon, imagery, hover state, motion or chrome."]
+  }
+}

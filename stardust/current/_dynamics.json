@@ -1,0 +1,57 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-09-22T09:29:10.582Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://www.example.com/"
+  ]
+ },
+ "pages": {
+  "/": {
+   "url": "https://www.example.com/",
+   "status": 200,
+   "host": "www.example.com",
+   "title": "Example Domain",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {},
+   "framework": null,
+   "globals": [],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 0,
+   "inlineFetch": false,
+   "mainText": 127,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.example.com": 1
+   },
+   "thirdPartyHosts": [],
+   "scripts": [],
+   "firstPartyApi": [],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 127,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": []
+}

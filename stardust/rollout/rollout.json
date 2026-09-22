@@ -1,0 +1,35 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-22T09:28:38.759Z",
+    "stardustVersion": "0.0.0"
+  },
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://www.example.com/",
+    "da": {
+      "org": "",
+      "site": "",
+      "ref": "main"
+    },
+    "liveHost": null
+  },
+  "lastRun": {
+    "at": "2026-09-22T09:32:45.574Z",
+    "pages": {
+      "total": 1,
+      "verified": 1,
+      "deployed": 0,
+      "pending": 0,
+      "contentPending": 0,
+      "stale": 0,
+      "failed": 0
+    },
+    "blocks": {
+      "total": 0,
+      "converted": 0,
+      "pending": 0
+    },
+    "verifyFailures": 0
+  }
+}

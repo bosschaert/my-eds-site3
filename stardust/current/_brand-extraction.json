@@ -1,0 +1,92 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-09-22T09:11:00Z",
+    "readArtifacts": [
+      "https://www.example.com/",
+      "stardust/current/pages/index.json",
+      "stardust/current/pages/index.html",
+      "stardust/current/_computed-styles.json",
+      "stardust/replica/capture/live-inline.css"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.22.1",
+    "notes": [
+      "Single-page site: cross-page aggregation collapses to the home page; no home-only vs cross-page divergence possible.",
+      "The site's whole stylesheet is 130 bytes inline in <head>; every value below is lifted from it or from the computed-style census at 1440 and 360.",
+      "div{opacity:0.8} wraps all content, so rendered text is #000 at 80% over #eee (visually ~#303030) and the link #334488 at 80% (visually ~#5a6a9f)."
+    ]
+  },
+  "site": { "name": "Example Domain", "tagline": null, "originUrl": "https://www.example.com" },
+  "origins": [
+    { "url": "https://www.example.com", "role": "primary", "pages": ["stardust/current/pages/index.json"], "contributed": ["palette", "type", "spacing", "voice"] }
+  ],
+  "logo": {
+    "source": "none",
+    "sourceSelector": null,
+    "localPath": null,
+    "format": null,
+    "intrinsicWidth": null,
+    "intrinsicHeight": null,
+    "synthesized": false,
+    "synthesizedBasis": null,
+    "notes": "Locator chain exhausted: no inline SVG, no <img>, no apple-touch-icon, no og:image, favicon declared as href=\"data:\" (empty). No placeholder synthesized: replica mode reproduces the page as captured, which carries no logo."
+  },
+  "favicon": { "localPath": null, "declared": "data:", "notes": "link[rel=icon] href=\"data:,\" — an intentionally empty icon; /favicon.ico not reachable." },
+  "palette": [
+    { "value": "#eeeeee", "role": "background", "usedAs": ["background"], "occurrences": 2, "sources": [{ "url": "https://www.example.com/", "selector": "body", "prop": "background-color" }], "css": "body{background:#eee}" },
+    { "value": "#000000", "role": "text-primary", "usedAs": ["text"], "occurrences": 6, "sources": [{ "url": "https://www.example.com/", "selector": "body > div > h1", "prop": "color" }, { "url": "https://www.example.com/", "selector": "body > div > p", "prop": "color" }], "notes": "UA default; rendered at 80% opacity via div{opacity:0.8}" },
+    { "value": "#334488", "role": "accent", "usedAs": ["text"], "occurrences": 4, "sources": [{ "url": "https://www.example.com/", "selector": "body > div > p:nth-of-type(2) > a", "prop": "color" }], "css": "a:link,a:visited{color:#348}", "notes": "link colour, :link and :visited identical; no :hover rule; rendered at 80% opacity" }
+  ],
+  "type": {
+    "headingFamily": "system-ui, sans-serif",
+    "bodyFamily": "system-ui, sans-serif",
+    "files": [],
+    "licensing": "system fonts only — nothing served, nothing to rehost",
+    "sizes": [
+      { "px": 24, "rem": 1.5, "usedBy": ["h1"], "weight": 700, "lineHeight": "normal", "source": "h1{font-size:1.5em}" },
+      { "px": 16, "rem": 1, "usedBy": ["p", "a"], "weight": 400, "lineHeight": "normal", "source": "UA default" }
+    ],
+    "levels": { "h1": { "fontSize": 24, "fontWeight": "700" } },
+    "scaleAudit": { "kind": "ad-hoc", "sizes": [16, 24], "ratio": 1.5, "notes": "two sizes only; a single ratio is not a scale" }
+  },
+  "spacing": {
+    "baseUnit": null,
+    "observed": [
+      { "value": "15vh", "usedAs": "body margin-block (top and bottom)", "source": "body{margin:15vh auto}" },
+      { "value": "60vw", "usedAs": "body width (content column)", "source": "body{width:60vw}" },
+      { "value": "0.67em", "usedAs": "h1 margin-block (UA default at 1.5em: 16.08px)", "source": "UA default" },
+      { "value": "1em", "usedAs": "p margin-block (16px)", "source": "UA default" }
+    ],
+    "notes": "No authored spacing scale; viewport-relative body box plus UA default block margins."
+  },
+  "motifs": {
+    "borderRadius": { "mode": null, "occurrences": [] },
+    "shadows": [],
+    "gradients": [],
+    "patterns": [],
+    "opacity": [{ "value": 0.8, "selector": "div", "source": "div{opacity:0.8}" }]
+  },
+  "componentStyle": { "buttons": [], "links": [{ "color": "#334488", "textDecoration": "underline", "hover": "none authored" }], "cards": [], "inputs": [] },
+  "systemComponents": [],
+  "iconFont": null,
+  "voice": {
+    "heroHeadline": "Example Domain",
+    "heroLede": "This domain is for use in documentation examples without needing permission. Avoid use in operations.",
+    "firstParagraph": "This domain is for use in documentation examples without needing permission. Avoid use in operations.",
+    "ctaLabels": ["Learn more"],
+    "linkSamples": [{ "text": "Learn more", "href": "https://iana.org/domains/example" }],
+    "heroImage": null,
+    "heroMedium": null,
+    "tone": "plain, terse, utilitarian"
+  },
+  "voiceTable": {
+    "ctaFrequency": [{ "label": "Learn more", "count": 1, "pages": ["index"] }],
+    "headingFrequency": [{ "text": "Example Domain", "count": 1, "pages": ["index"] }],
+    "headingsUppercasePercent": 0,
+    "distinctHeadings": 1,
+    "distinctCtaLabels": 1
+  },
+  "crossPromo": { "detected": false },
+  "register": "brand"
+}

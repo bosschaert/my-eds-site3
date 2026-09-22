@@ -1,0 +1,64 @@
+{
+  "slug": "index",
+  "type": "static",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [],
+  "slotsFilled": [
+    "h1",
+    "p",
+    "p"
+  ],
+  "canonShas": {
+    "header": null,
+    "footer": null,
+    "css": "73bd0f669531"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Example Domain",
+    "description": null,
+    "canonical": null,
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Example Domain",
+    "url": "https://www.example.com/"
+  },
+  "migratedAt": "2026-09-22T09:22:24Z",
+  "designMdSha": "d2e0ba301b1d",
+  "designJsonSha": "e884540098c8",
+  "sourceCurrentSha": "99b8b5cbc5a8",
+  "sourceProposedSha": "d86360893b0c",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "delivery-lint",
+    "media-reconcile"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "content/index.html strings byte-equal to stardust/current/pages/index.json (h1, 2 p, 1 CTA+href); content-diff live vs prototype: none (0 structural) at 1440 and 360 — stardust/replica/gates/index-{1440,360}/content-diff-iter1.txt",
+    "pixel-gate-1440": "0.00% (0 px, threshold 10%), height delta 0px, round pub1 @1440 (index-1440-pub1.log)",
+    "pixel-gate-360": "0.00% (0 px, threshold 10%), height delta 0px, round pub1 @360 (index-360-pub1.log)",
+    "content-count": "content-diff: none — content + roles match (index-1440-pub1.log)",
+    "delivery-lint": "delivered doc content/index.html: delivery-lint 0 P0 · 0 P1 · 1 P2 (no metadata block; live page has no description) — the migrated/index.html P1s are the prototype-form file, not the DA doc",
+    "media-reconcile": "no images on the page (media-reconcile content/index.html: 0 decisions, exit 0); published page: qa-gate zero broken images"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 2,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "index.html",
+  "outputPathDefault": null,
+  "sidecar": "_meta.json",
+  "driverVersion": "1"
+}

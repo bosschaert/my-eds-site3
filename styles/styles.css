@@ -1,0 +1,89 @@
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+
+/*
+ * Replica canon for www.example.com — every value below is lifted from the
+ * live site's own inline stylesheet (stardust/replica/capture/live-inline.css).
+ * The sizing MODEL is encoded, never the resolved px: a 60vw column with 15vh
+ * block margins. Headings and paragraphs keep UA default margins, as on live.
+ * Source of truth: stardust/prototypes/css/canon.css + css/index.css (gated 0.00 %).
+ */
+:root {
+  --color-field: #eee; /* body { background: #eee } */
+  --color-link: #348; /* a:link, a:visited { color: #348 } */
+  --font-body: system-ui, sans-serif; /* body { font-family: system-ui, sans-serif } */
+  --column-width: 60vw; /* body { width: 60vw } */
+  --column-margin-block: 15vh; /* body { margin: 15vh auto } */
+  --content-opacity: 0.8; /* div { opacity: 0.8 } wraps all page content */
+}
+
+body {
+  display: none;
+  width: var(--column-width);
+  margin: var(--column-margin-block) auto;
+  background-color: var(--color-field);
+  font-family: var(--font-body);
+}
+
+body.appear {
+  display: block;
+}
+
+/* the source site has no header or footer: the boilerplate slots take no space */
+header,
+footer {
+  display: none;
+}
+
+h1 {
+  font-size: 1.5em; /* h1 { font-size: 1.5em } */
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+/* links — the source styles :link and :visited only; hover/underline stay UA defaults */
+a:link,
+a:visited {
+  color: var(--color-link);
+}
+
+main img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+/* sections: no boilerplate gutters or max-width — the body IS the column on live */
+main > .section {
+  margin: 0;
+}
+
+/* the live page wraps all content in one div { opacity: 0.8 } */
+main > .section > div {
+  opacity: var(--content-opacity);
+}

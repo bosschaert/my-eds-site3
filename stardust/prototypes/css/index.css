@@ -1,0 +1,10 @@
+/* Archetype: index (static) — the reserved-domain notice.
+   Lifted: h1{font-size:1.5em} and the 80% opacity wrapper. Paragraph and
+   heading margins are UA defaults on live and stay UA defaults here. */
+.notice {
+  opacity: var(--content-opacity);
+}
+
+.notice h1 {
+  font-size: 1.5em;
+}

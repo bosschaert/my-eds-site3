@@ -1,0 +1,81 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/optimize",
+    "writtenAt": "2026-09-23T20:49:12.958Z",
+    "stardustVersion": "0.0.0"
+  },
+  "current": {
+    "runId": "run-2",
+    "at": "2026-09-23T20:49:12.958Z",
+    "overall": 90,
+    "dimensions": {
+      "brand-tensions": null,
+      "design-ux": null,
+      "accessibility": null,
+      "seo": null,
+      "content-conversion": null,
+      "ai-search": 80,
+      "cross-page": 100
+    },
+    "severity": {
+      "P1": 0,
+      "P2": 2,
+      "P3": 0
+    },
+    "fixed": {
+      "P1": 0,
+      "P2": 0,
+      "P3": 0
+    }
+  },
+  "history": [
+    {
+      "runId": "run-1",
+      "at": "2026-09-23T20:47:49.159Z",
+      "overall": 83,
+      "dimensions": {
+        "brand-tensions": null,
+        "design-ux": null,
+        "accessibility": null,
+        "seo": null,
+        "content-conversion": null,
+        "ai-search": 80,
+        "cross-page": 86
+      },
+      "severity": {
+        "P1": 0,
+        "P2": 3,
+        "P3": 1
+      },
+      "fixed": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      }
+    },
+    {
+      "runId": "run-2",
+      "at": "2026-09-23T20:49:12.958Z",
+      "overall": 90,
+      "dimensions": {
+        "brand-tensions": null,
+        "design-ux": null,
+        "accessibility": null,
+        "seo": null,
+        "content-conversion": null,
+        "ai-search": 80,
+        "cross-page": 100
+      },
+      "severity": {
+        "P1": 0,
+        "P2": 2,
+        "P3": 0
+      },
+      "fixed": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      }
+    }
+  ]
+}

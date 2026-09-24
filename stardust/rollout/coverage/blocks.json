@@ -1,0 +1,33 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-09-23T19:45:52.217Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage/pages.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-23T20:34:47.182Z",
+  "blocks": [
+    {
+      "id": "columns",
+      "label": "columns",
+      "kind": "module",
+      "signature": "module:columns",
+      "source": null,
+      "usedByTemplates": [
+        "community-development"
+      ],
+      "usedByPages": [
+        "community-development"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "columns",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    }
+  ]
+}

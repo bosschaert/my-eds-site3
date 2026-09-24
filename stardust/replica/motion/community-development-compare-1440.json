@@ -1,0 +1,152 @@
+{
+  "live": "stardust/replica/motion/community-development.json",
+  "build": "stardust/replica/motion/community-development-build.json",
+  "toleranceMs": 150,
+  "tolerancePx": 8,
+  "advisory": true,
+  "findings": 3,
+  "counts": {
+    "behaviors": 19,
+    "parity": 12,
+    "missing": 3,
+    "extra": 0,
+    "tolerance": 0,
+    "dead": 4,
+    "advisory": 0
+  },
+  "verdicts": [
+    {
+      "cls": "header",
+      "name": "scroll-morph",
+      "state": "dead",
+      "note": "header static across the scroll traversal on both sides",
+      "line": "motion header scroll-morph: dead on live — not required (header static across the scroll traversal on both sides)"
+    },
+    {
+      "cls": "widget",
+      "name": ".dropdown-toggle",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .dropdown-toggle: dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "hover",
+      "name": ".nav-link",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .nav-link: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "hover",
+      "name": ".btn",
+      "state": "parity",
+      "note": "self.background, self.color; 300ms",
+      "line": "motion hover .btn: parity (self.background, self.color; 300ms)"
+    },
+    {
+      "cls": "hover",
+      "name": ".dropdown-item",
+      "state": "parity",
+      "note": "self.background, self.color; n/a",
+      "line": "motion hover .dropdown-item: parity (self.background, self.color; n/a)"
+    },
+    {
+      "cls": "hover",
+      "name": "footer a",
+      "state": "unobserved",
+      "note": "live probe not found",
+      "line": "motion hover footer a: unobserved on live — not required (live probe not found)"
+    },
+    {
+      "cls": "transition",
+      "name": "background-color",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 300ms",
+      "line": "motion transition background-color: parity (2 event(s) on live, 2 on build, 300ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "border-bottom-color",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 300ms",
+      "line": "motion transition border-bottom-color: parity (2 event(s) on live, 2 on build, 300ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "border-left-color",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 300ms",
+      "line": "motion transition border-left-color: parity (2 event(s) on live, 2 on build, 300ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "border-right-color",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 300ms",
+      "line": "motion transition border-right-color: parity (2 event(s) on live, 2 on build, 300ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "border-top-color",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 300ms",
+      "line": "motion transition border-top-color: parity (2 event(s) on live, 2 on build, 300ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "color",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 300ms",
+      "line": "motion transition color: parity (2 event(s) on live, 2 on build, 300ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "height",
+      "state": "parity",
+      "note": "14 event(s) on live, 14 on build, 300ms",
+      "line": "motion transition height: parity (14 event(s) on live, 14 on build, 300ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "outline-color",
+      "state": "missing",
+      "note": "1 event(s) on live, 300ms",
+      "line": "motion transition outline-color: MISSING on build (1 event(s) on live, 300ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "outline-offset",
+      "state": "missing",
+      "note": "1 event(s) on live, 300ms",
+      "line": "motion transition outline-offset: MISSING on build (1 event(s) on live, 300ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "outline-width",
+      "state": "missing",
+      "note": "1 event(s) on live, 300ms",
+      "line": "motion transition outline-width: MISSING on build (1 event(s) on live, 300ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "width",
+      "state": "parity",
+      "note": "14 event(s) on live, 14 on build, 300ms",
+      "line": "motion transition width: parity (14 event(s) on live, 14 on build, 300ms)"
+    },
+    {
+      "cls": "class",
+      "name": "scrolled",
+      "state": "parity",
+      "note": "added 7× on live, 7× on build",
+      "line": "motion class scrolled: parity (added 7× on live, 7× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "show",
+      "state": "parity",
+      "note": "added 2× on live, 2× on build",
+      "line": "motion class show: parity (added 2× on live, 2× on build)"
+    }
+  ]
+}

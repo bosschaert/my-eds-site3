@@ -1,0 +1,5 @@
+/* motion.css — shared motion layer. Only behaviours motion-observe recorded as FIRING on the live page (stardust/replica/motion/*.json):
+   1. sticky header morph (.scrolled past 100px; logo width/height 0.3s) — rules live in canon.css (.sticky-nav.scrolled …);
+   2. Bootstrap 4 collapse state machine for the mobile menu (.collapsing height 0.35s ease, observed at 360);
+   3. Bootstrap 4 dropdown (.show toggled on li + ul.dropdown-menu, observed at 1440 and 360) — display rules in canon.css. */
+.collapsing { position: relative; height: 0; overflow: hidden; transition: height .35s ease; }

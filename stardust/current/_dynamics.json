@@ -1,0 +1,225 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-09-23T19:12:28.058Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://balbriggan.ie/community-development/"
+  ]
+ },
+ "pages": {
+  "/community-development/": {
+   "url": "https://balbriggan.ie/community-development/",
+   "status": 200,
+   "host": "balbriggan.ie",
+   "title": "Community Development - Our Balbriggan",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Plans & Projects",
+     "href": "https://balbriggan.ie/community-development/#",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "a",
+      "heading": "",
+      "textLen": 16,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "Discover",
+     "href": "https://balbriggan.ie/community-development/#",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "a",
+      "heading": "",
+      "textLen": 8,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "Leadership & Governance",
+     "href": "https://balbriggan.ie/community-development/#",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "a",
+      "heading": "",
+      "textLen": 23,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "Loves Learning Festival",
+     "href": "https://balbriggan.ie/community-development/#",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "a",
+      "heading": "",
+      "textLen": 23,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en-GB",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "push"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 8,
+   "inlineFetch": false,
+   "mainText": 2159,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "balbriggan.ie": 38,
+    "fonts.googleapis.com": 3,
+    "www.googletagmanager.com": 1,
+    "www.google-analytics.com": 1,
+    "connect.facebook.net": 3
+   },
+   "thirdPartyHosts": [
+    "fonts.googleapis.com",
+    "www.googletagmanager.com",
+    "www.google-analytics.com",
+    "connect.facebook.net"
+   ],
+   "scripts": [
+    "https://www.googletagmanager.com/gtag/js?id=G-Z1D3MZ66RP",
+    "https://balbriggan.ie/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+    "https://balbriggan.ie/wp-content/plugins/wd-instagram-feed/booster/assets/js/circle-progress.js?ver=1.2.2",
+    "https://balbriggan.ie/wp-content/plugins/wd-instagram-feed/booster/assets/js/global.js?ver=1.0.0",
+    "https://balbriggan.ie/wp-content/plugins/easy-facebook-likebox/frontend/assets/js/imagesloaded.pkgd.min.js?ver=6.6.9",
+    "https://balbriggan.ie/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.8",
+    "https://balbriggan.ie/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.8",
+    "https://balbriggan.ie/wp-content/plugins/easy-facebook-likebox//instagram/frontend/assets/js/esf-insta-public.js?ver=1",
+    "https://balbriggan.ie/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+    "https://balbriggan.ie/wp-content/plugins/embedpress/assets/js/front.js?ver=4.1.2",
+    "https://balbriggan.ie/wp-content/themes/balbriggan2024/js/theme.min.js?ver=0.8.8.1715679248",
+    "https://balbriggan.ie/wp-content/themes/balbriggan2024/js/scripts.js?ver=1715679248",
+    "https://balbriggan.ie/wp-content/themes/balbriggan2024/library/slick/slick.min.js?ver=1.0.0",
+    "https://balbriggan.ie/wp-content/themes/balbriggan2024/library/fancybox/jquery.fancybox.min.js?ver=1.0.0",
+    "https://connect.facebook.net/en_US/fbevents.js",
+    "https://connect.facebook.net/signals/config/860987271653326?v=2.9.406&r=stable&domain=balbriggan.ie&hme=8a9e6a9b82926b8f07fd0a2edd8b8f1ef075648059d1bb52ec651feab764c219&ex_m=117%2C236%2C168%2C27%2C81%",
+    "https://connect.facebook.net/signals/config/358285138312853?v=2.9.406&r=stable&domain=balbriggan.ie&hme=8a9e6a9b82926b8f07fd0a2edd8b8f1ef075648059d1bb52ec651feab764c219&ex_m=117%2C236%2C168%2C27%2C81%"
+   ],
+   "firstPartyApi": [],
+   "thirdPartyXhr": [
+    "POST www.google-analytics.com/g/collect"
+   ],
+   "postBodies": [
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-Z1D3MZ66RP&gtm=45je69m0v9172713029za200zd9172713029xf1&_p=1790190748929&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=EA&cid=1202397412.1790190749&frm=0&ir=1&ng",
+     "body": ""
+    }
+   ],
+   "textAtLoad": 2159,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "a-cms-app-settings-object-datalayer",
+   "class": "A",
+   "feature": "CMS / app settings object dataLayer",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/community-development/"
+   ]
+  },
+  {
+   "id": "m-modal-trigger-aria-haspopup-chrome-only-a-content",
+   "class": "M",
+   "feature": "modal trigger aria-haspopup (chrome only) → a:content",
+   "hint": "chrome-interaction",
+   "evidence": [
+    "https://balbriggan.ie/community-development/#"
+   ],
+   "pages": [
+    "/community-development/"
+   ]
+  },
+  {
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "feature": "tag manager: Google Tag Manager",
+   "role": "tag manager: Google Tag Manager",
+   "hint": "tags",
+   "evidence": [
+    "www.googletagmanager.com"
+   ],
+   "pages": [
+    "/community-development/"
+   ]
+  },
+  {
+   "id": "t-analytics-google-analytics-ads",
+   "class": "T",
+   "feature": "analytics: Google Analytics / Ads",
+   "role": "analytics: Google Analytics / Ads",
+   "hint": "tags",
+   "evidence": [
+    "www.google-analytics.com"
+   ],
+   "pages": [
+    "/community-development/"
+   ]
+  },
+  {
+   "id": "t-marketing-ad-retargeting-pixel",
+   "class": "T",
+   "feature": "marketing: ad / retargeting pixel",
+   "role": "marketing: ad / retargeting pixel",
+   "hint": "tags",
+   "evidence": [
+    "connect.facebook.net"
+   ],
+   "pages": [
+    "/community-development/"
+   ]
+  }
+ ]
+}

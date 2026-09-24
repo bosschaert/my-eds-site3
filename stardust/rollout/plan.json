@@ -1,0 +1,31 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-09-23T19:45:52.272Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-23T19:45:52.272Z",
+  "fragments": [],
+  "deliveryOrder": [
+    "community-development"
+  ],
+  "steps": [
+    {
+      "slug": "community-development",
+      "path": "/community-development",
+      "templateId": "community-development",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "columns",
+          "edsBlockName": "columns"
+        }
+      ],
+      "reuse": []
+    }
+  ]
+}

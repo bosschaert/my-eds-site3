@@ -1,0 +1,107 @@
+/*
+ * columns — pillar-page membership row, values lifted from the gated prototype
+ * (stardust/prototypes/css/community-development.css: WordPress block-library
+ * .wp-block-columns / .wp-block-column / .wp-block-image + theme .pillar-* rules).
+ * The block wrapper takes the section width from the foundation; the 782 px
+ * breakpoint below is the WordPress columns stacking point.
+ */
+
+/* row = .wp-block-columns (stacked below 782 px) */
+.columns > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: normal;
+  gap: 2em;
+  box-sizing: border-box;
+}
+
+/* column = .wp-block-column */
+.columns > div > div,
+.columns .columns-chair > div {
+  flex-basis: 100%;
+  flex-grow: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* inner row = .wp-block-columns.are-vertically-aligned-center.pillar-chair */
+.columns .columns-chair {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 1.75em;
+}
+
+.columns .columns-chair-image {
+  align-self: center;
+}
+
+.columns .columns-chair-text {
+  align-self: flex-start;
+}
+
+/* figure.wp-block-image.size-full */
+.columns .columns-chair-image > :is(picture, img, p) {
+  display: block;
+  margin: 0 0 1em;
+}
+
+.columns .columns-chair-image img {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-bottom: 5px solid var(--brand-blue);
+}
+
+/* .pillar-membership h4 */
+.columns .columns-membership :is(h4) {
+  font-family: var(--font-medium);
+}
+
+/* .pillar-chair h4::after — the yellow rule under "Chair" */
+.columns .columns-chair-text :is(h4)::after {
+  content: " ";
+  display: block;
+  width: auto;
+  margin: 0.5em auto;
+  border-top: 2px solid var(--brand-yellow-alt);
+}
+
+/* wrap parity at 360 (prototype R-01): "Sgt. Keith White" line */
+@media (width <= 767px) {
+  .columns .columns-members li:nth-child(11) {
+    padding-right: 2px;
+  }
+}
+
+@media (width >= 782px) {
+  .columns > div,
+  .columns .columns-chair {
+    flex-wrap: nowrap;
+  }
+
+  .columns > div > div,
+  .columns .columns-chair > div {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  /* inline flex-basis styles of the prototype columns */
+  .columns .columns-membership-lead {
+    flex-basis: 40%;
+    flex-grow: 0;
+  }
+
+  .columns .columns-chair > .columns-chair-image {
+    flex-basis: 40%;
+    flex-grow: 0;
+  }
+
+  .columns .columns-chair > .columns-chair-text {
+    flex-basis: 60%;
+    flex-grow: 0;
+  }
+}

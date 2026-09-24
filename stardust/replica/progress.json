@@ -1,0 +1,212 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-23T19:31:55Z"
+  },
+  "pageTypes": {
+    "pillar-page": {
+      "archetype": "community-development",
+      "prototype": "stardust/prototypes/community-development-proposed.html",
+      "css": [
+        "stardust/prototypes/css/canon.css",
+        "stardust/prototypes/css/community-development.css"
+      ],
+      "liveUrl": "https://balbriggan.ie/community-development/",
+      "mainSelector": "main",
+      "breakpoints": [
+        1440,
+        360
+      ],
+      "iterations": {
+        "360": 3,
+        "1440": 3
+      },
+      "gates": {
+        "360": {
+          "iter1": {
+            "pixel": 6.91,
+            "heightDelta": 25,
+            "contentDiff": "none",
+            "visualFlags": 0,
+            "chromeParity": "1 footer delta (same slip)",
+            "overflow": "ok",
+            "hotBands": [
+              "2500-3000 15.9%",
+              "3500-3753 18.3%"
+            ],
+            "status": "pending-confirmation"
+          },
+          "iter2": {
+            "pixel": 4.32,
+            "heightDelta": 1,
+            "contentDiff": "none",
+            "visualFlags": 0,
+            "chromeParity": "within tolerance (default roots); real regions nav.navbar/#wrapper-footer-full: header quiet; footer \"Privacy\" inline box h 15→19 (face metric)",
+            "chromeCrop": {
+              "header": 1.08,
+              "footer": 1.21,
+              "bar": 2
+            },
+            "overflow": "ok",
+            "verdict": "PASS"
+          },
+          "iter3": {
+            "pixel": 4.32,
+            "heightDelta": 1,
+            "contentDiff": "none",
+            "visualFlags": 0,
+            "chromeParity": "within tolerance (default roots); real regions nav.navbar/#wrapper-footer-full: header quiet; footer \"Privacy\" inline box h 15→19 (face metric)",
+            "chromeCrop": {
+              "header": 1.08,
+              "footer": 1.21,
+              "bar": 2
+            },
+            "overflow": "ok",
+            "verdict": "PASS",
+            "note": "confirmation after motion layer — pixel unchanged"
+          }
+        },
+        "1440": {
+          "iter1": {
+            "pixel": 2.48,
+            "heightDelta": 1,
+            "contentDiff": "none",
+            "visualFlags": 0,
+            "chromeParity": "1 footer delta (markup nesting slip, fixed after the round)",
+            "overflow": "ok",
+            "status": "pending-confirmation"
+          },
+          "iter2": {
+            "pixel": 2.48,
+            "heightDelta": 1,
+            "contentDiff": "none",
+            "visualFlags": 0,
+            "chromeParity": "within tolerance (default roots); real regions nav.navbar/#wrapper-footer-full: 10 nav-label x/w deltas of 2–8px (glyph widths under Montserrat, R-01), footer \"Privacy\" inline box h 15→19",
+            "chromeCrop": {
+              "header": 2.55,
+              "footer": 1.04,
+              "bar": 2
+            },
+            "overflow": "ok",
+            "verdict": "PASS"
+          },
+          "iter3": {
+            "pixel": 2.48,
+            "heightDelta": 1,
+            "contentDiff": "none",
+            "visualFlags": 0,
+            "chromeParity": "within tolerance (default roots); real regions nav.navbar/#wrapper-footer-full: 10 nav-label x/w deltas of 2–8px (glyph widths under Montserrat, R-01), footer \"Privacy\" inline box h 15→19",
+            "chromeCrop": {
+              "header": 2.55,
+              "footer": 1.04,
+              "bar": 2
+            },
+            "overflow": "ok",
+            "verdict": "PASS",
+            "note": "confirmation after motion layer + button hover border fix — pixel unchanged"
+          }
+        }
+      },
+      "residuals": [
+        {
+          "id": "R-01",
+          "kind": "font-substitution",
+          "detail": "Licensed Gotham kit substituted by Montserrat 300/500/600 (register R-01). Glyph shapes differ everywhere; widths within ~2%.",
+          "measured": "360: list item 'Sgt. Keith White An Garda Siochana' wraps to 2 lines on live, 1 line on the build → height delta 25px and offset contamination below y≈2084."
+        },
+        {
+          "id": "R-01b",
+          "kind": "font-substitution",
+          "cause": "glyph-width fork",
+          "detail": "1440 header crop 2.55% vs 2% bar: nav labels differ in advance width under Montserrat (Plans & Projects −5px, Loves Learning Festival −4px, Downloads +3px, Fingal County Council +3px …), so every label is outlined in the crop diff and positions drift 2–8px; social icons carry a 1px offset tint. Diff is glyph-shaped only (chrome-header-diff.png), no block misplaced. Iteration cap (3) reached at both widths.",
+          "measured": "chrome-parity --region header=nav.navbar: 10 PAIR deltas at 1440, 0 at 360; crop-compare header 1440 2.55% (thick 33.6%), 360 1.08%",
+          "status": "justified residual — resolves with a licensed Gotham drop-in (brand family stays first in every stack)"
+        },
+        {
+          "id": "R-01c",
+          "kind": "font-substitution",
+          "cause": "face metric",
+          "detail": "footer link \"Privacy\" inline box 15px on live (Gotham content area) vs 19px on build (Montserrat); text baseline and footer geometry unchanged (Δy −2, Δx +2).",
+          "measured": "chrome-parity footer PAIR \"Privacy\" Δh +4px at 1440 and 360; footer crops 1.04% / 1.21% (pass)",
+          "status": "justified residual (same root cause as R-01)"
+        }
+      ],
+      "emulations": [
+        {
+          "what": "strong { line-height: 25px }",
+          "why": "on live, any line containing a GothamBold run measures 25px (face metric mismatch between Gotham Light and Gotham Bold); Montserrat faces share metrics, so the 1px is emulated. Evidence: live-measure.txt (li 25px, chair p 73px, intro p 97px)."
+        },
+        {
+          "what": "Montserrat-500 alias carries a 700 face",
+          "why": "the live kit has a single GothamMedium face, so weight-700 requests (View Objectives button) render synthetic-bold ≈4.5% wider; a 700 instance of the variable font matches that width (225 → 226px)."
+        },
+        {
+          "what": "scroll-state JS (5 lines)",
+          "why": "live header adds .scrolled past 100px scroll (theme scripts.js) and shrinks the logo; replicated for stitched-capture symmetry (recreation-procedure § Fixed and sticky chrome)."
+        },
+        {
+          "what": ".pillar-membership .wp-block-list li:nth-child(11) { padding-right: 2px } (≤767px)",
+          "why": "wrap parity under R-01: build text-run of that item measured exactly 290px in a 290px column (one line); live Gotham-Light overflows and wraps to two lines (li 49px vs 25px, the whole 360 height delta). Evidence: measure.mjs li:nth-child(11) Δh -24, range-width probe 290/290."
+        }
+      ],
+      "motion": {
+        "observed": [
+          "header .scrolled morph past 100px (logo width/height 300ms) — both widths",
+          ".btn-secondary hover: bg yellow→blue, color→white, border→#545b62, 300ms",
+          ".btn-nav .nav-link hover: bg→#fff, 300ms",
+          ".dropdown-item hover: color #16181b, bg #f8f9fa",
+          ".dropdown-toggle click: .show on li + ul.dropdown-menu (1440 and 360)",
+          ".navbar-toggler click at 360: collapse→collapsing (height .35s ease)→collapse.show"
+        ],
+        "implemented": [
+          "js/motion.js: header morph (same element, same threshold), Bootstrap-4 collapse state machine, Bootstrap-4 dropdown toggle/outside-close",
+          "css/motion.css: .collapsing",
+          "canon.css: .btn-secondary:hover border-color #545b62 added (probe evidence)"
+        ],
+        "dead": [
+          ".nav-link hover (top menu): no measured diff — no rule",
+          "footer a hover: not found on live probe — no rule",
+          "outline-width/color/offset transition events on .dropdown-toggle click (1 each on live): computed outline reads none before/after on both sides — focus-ring transition artifact, not implemented"
+        ],
+        "evidence": [
+          "stardust/replica/motion/community-development.json",
+          "stardust/replica/motion/community-development-360.json",
+          "stardust/replica/motion/community-development-hover2.json",
+          "stardust/replica/motion/community-development-build.json",
+          "stardust/replica/motion/community-development-360-build.json",
+          "stardust/replica/motion/community-development-compare-1440.json",
+          "stardust/replica/motion/community-development-compare-360.json"
+        ],
+        "compare": {
+          "360": "5 parity, 3 missing (same outline artifacts), 0 extra",
+          "1440": "8 parity, 3 missing (outline focus artifacts, dead), 0 extra"
+        },
+        "pixelAfterMotion": {
+          "360": 4.32,
+          "1440": 2.48
+        }
+      },
+      "status": "gated — PASS at 1440 and 360 (iter2 + iter3 confirmation); approved hands-off",
+      "gateSummary": {
+        "360": {
+          "pixel": 4.32,
+          "heightDelta": 1,
+          "contentDiff": "none",
+          "chromeHeaderCrop": 1.08,
+          "chromeFooterCrop": 1.21,
+          "overflow": "ok"
+        },
+        "1440": {
+          "pixel": 2.48,
+          "heightDelta": 1,
+          "contentDiff": "none",
+          "chromeHeaderCrop": 2.55,
+          "chromeFooterCrop": 1.04,
+          "overflow": "ok"
+        }
+      },
+      "gatedAt": "2026-09-23T19:42:50.787Z"
+    }
+  },
+  "siblings": {}
+}

@@ -1,0 +1,36 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-23T19:45:52.097Z",
+    "stardustVersion": "0.0.0"
+  },
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://balbriggan.ie/community-development/",
+    "da": {
+      "org": "of1-labs",
+      "site": "stardust-replica-fe635832",
+      "ref": "main"
+    },
+    "liveHost": "balbriggan.ie",
+    "site": "stardust-replica-fe635832"
+  },
+  "lastRun": {
+    "at": "2026-09-23T20:45:53.888Z",
+    "pages": {
+      "total": 2,
+      "verified": 2,
+      "deployed": 0,
+      "pending": 0,
+      "contentPending": 0,
+      "stale": 0,
+      "failed": 0
+    },
+    "blocks": {
+      "total": 1,
+      "converted": 1,
+      "pending": 0
+    },
+    "verifyFailures": 0
+  }
+}

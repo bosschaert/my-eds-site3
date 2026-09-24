@@ -1,0 +1,338 @@
+/*
+ * Foundation — balbriggan.ie replica on the AEM boilerplate.
+ * Every token and value is lifted from stardust/prototypes/css/canon.css (Bootstrap 4 reboot +
+ * theme rules measured on the live page) and css/community-development.css. The boilerplate's
+ * structural layer (body gate, header reservation, section scaffold) is preserved.
+ * Fonts: the licensed Gotham kit is substituted by Montserrat (register R-01); the brand family
+ * names stay first in every stack so a licensed drop-in wins without a code change.
+ */
+
+:root {
+  /* colors */
+  --brand-blue: #2494d2;
+  --brand-yellow: #f5ee2f;
+  --brand-yellow-alt: #f9ed32;
+  --text: #3c3c3b;
+  --footer-bg: #444;
+  --link-hover: #185f88;
+  --rule: #eee;
+
+  /* fonts — brand face first, Montserrat substitute second (R-01) */
+  --font-body: Gotham-Light, 'Montserrat-300', sans-serif;
+  --font-medium: GothamMedium, 'Montserrat-500', sans-serif;
+  --font-bold: GothamBold, 'Montserrat-600', sans-serif;
+  --font-strong: GothamBold, 'Montserrat-600', GothamBook, 'Open Sans', sans-serif;
+  --font-icon: FontAwesome;
+
+  /* chrome reservation: measured navbar height (90px below the xl breakpoint, 98px above) */
+  --nav-height: 90px;
+}
+
+@media (width >= 1200px) {
+  :root {
+    --nav-height: 98px;
+  }
+}
+
+/* Bootstrap 4 reboot subset (canon.css) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+body {
+  display: none;
+  position: relative;
+  margin: 0;
+  background-color: #fff;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+body.appear {
+  display: block;
+}
+
+/* chrome: the header is the live sticky navbar; reserve its measured height until it loads */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  height: var(--nav-height);
+  background-color: var(--brand-blue);
+}
+
+header:has(.header[data-block-status="loaded"]) {
+  height: auto;
+}
+
+header .header,
+footer .footer {
+  visibility: hidden;
+}
+
+header .header[data-block-status="loaded"],
+footer .footer[data-block-status="loaded"] {
+  visibility: visible;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-style: none;
+  vertical-align: middle;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+button {
+  margin: 0;
+  border-radius: 0;
+  line-height: inherit;
+  text-transform: none;
+  overflow: visible;
+}
+
+/* live: lines holding a GothamBold run measure 25px (face metric mismatch) — emulated */
+strong {
+  font-family: var(--font-strong);
+  font-weight: 400;
+  line-height: 25px;
+}
+
+/* links */
+a:any-link {
+  background-color: transparent;
+  color: var(--brand-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* buttons — the one theme button (.btn.btn-secondary); every emphasis variant paints the same */
+p.button-wrapper {
+  margin: 0;
+}
+
+a.button:any-link,
+button.button {
+  display: inline-block;
+  margin: 0;
+  border: 2px solid var(--brand-yellow);
+  border-radius: 2rem;
+  padding: 0.15rem 2rem;
+  background-color: var(--brand-yellow);
+  color: var(--brand-blue);
+  font-family: var(--font-medium);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  user-select: none;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+a.button:hover,
+a.button:focus-visible,
+button.button:hover,
+button.button:focus-visible {
+  border-color: #545b62;
+  background-color: var(--brand-blue);
+  color: #fff;
+  text-decoration: none;
+}
+
+a.button[aria-disabled="true"],
+button.button:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Experience Workspace edit mode: repaint CTAs from their authored marks (EW3) */
+.prosemirror-editor p > :is(strong, em) > a:any-link,
+.prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
+  display: inline-block;
+  border: 2px solid var(--brand-yellow);
+  border-radius: 2rem;
+  padding: 0.15rem 2rem;
+  background-color: var(--brand-yellow);
+  color: var(--brand-blue);
+  font-family: var(--font-medium);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.prosemirror-editor p > a:any-link > :is(strong, em) {
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+a .prosemirror-editor a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* page wrapper (#page-wrapper.wrapper) + Bootstrap .container model */
+main {
+  padding: 30px 0;
+}
+
+main > .section {
+  margin: 0;
+}
+
+main > .section > div {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+main .section:empty {
+  display: none;
+}
+
+@media (width >= 576px) {
+  main > .section > div {
+    max-width: 540px;
+  }
+}
+
+@media (width >= 768px) {
+  main > .section > div {
+    max-width: 720px;
+  }
+}
+
+@media (width >= 992px) {
+  main > .section > div {
+    max-width: 960px;
+  }
+}
+
+@media (width >= 1200px) {
+  main > .section > div {
+    max-width: 1140px;
+  }
+}
+
+main img {
+  width: auto;
+}
+
+/* page title (h1.entry-title) */
+main h1 {
+  font-family: var(--font-bold);
+  text-align: center;
+}
+
+main h1::after {
+  content: " ";
+  display: block;
+  width: 10%;
+  margin: 0.5em auto 0.75em;
+  border-top: 5px solid yellow;
+}
+
+/*
+ * section style: pillar-intro — the WordPress 10% / 80% / 10% columns row with a 2em gap,
+ * centred text, 3rem padding + margin and a hairline rule below.
+ */
+main .section.pillar-intro > div {
+  margin-bottom: 3rem;
+  padding-top: 2em;
+  padding-bottom: calc(2em + 3rem);
+  border-bottom: 1px solid var(--rule);
+  text-align: center;
+}
+
+@media (width >= 782px) {
+  main .section.pillar-intro > div {
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+
+  main .section.pillar-intro .default-content-wrapper p {
+    width: calc(80% - 3.2em);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* section style: pillar-membership — the .wp-block-columns row margin */
+main .section.pillar-membership .columns-wrapper {
+  margin-bottom: 1.75em;
+}

@@ -1,0 +1,23 @@
+/* community-development.css — pillar-page archetype (WordPress block-library columns + theme pillar rules). */
+.wp-block-columns { display: flex; margin-bottom: 1.75em; box-sizing: border-box; flex-wrap: wrap !important; align-items: normal !important; gap: 2em; }
+.wp-block-columns.are-vertically-aligned-center { align-items: center !important; }
+.wp-block-column { flex-grow: 1; min-width: 0; overflow-wrap: break-word; word-break: break-word; }
+.wp-block-column.is-vertically-aligned-center { align-self: center; }
+.wp-block-column.is-vertically-aligned-top { align-self: flex-start; }
+@media (min-width: 782px) {
+  .wp-block-columns:not(.is-not-stacked-on-mobile) { flex-wrap: nowrap !important; }
+  .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column { flex-basis: 0; flex-grow: 1; }
+  .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column[style*="flex-basis"] { flex-grow: 0; }
+}
+@media (max-width: 781px) {
+  .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column { flex-basis: 100% !important; }
+}
+.wp-block-image { margin: 0 0 1em; }
+.wp-block-image img { height: auto; max-width: 100%; vertical-align: bottom; box-sizing: border-box; }
+.wp-block-image.size-full img { width: 100%; }
+.pillar-intro { padding-bottom: 3rem; margin-bottom: 3rem; border-bottom: 1px solid #eee; text-align: center; }
+.pillar-membership h4 { font-family: var(--font-medium); }
+.pillar-membership .pillar-chair h4::after { content: " "; width: auto; border-top: 2px solid var(--brand-yellow-alt); display: block; margin: 0.5em auto .5em auto; }
+.pillar-membership .pillar-chair img { border-bottom: 5px solid var(--brand-blue); }
+/* Wrap parity under the substitute face (R-01): the live Gotham-Light line "Sgt. Keith White An Garda Siochana" overflows its 290px column at 360 by a hair and wraps to two lines; Montserrat-300 fits it in exactly 290px. 2px of trailing padding reproduces the captured wrap. */
+@media (max-width: 767px) { .pillar-membership .wp-block-list li:nth-child(11) { padding-right: 2px; } }

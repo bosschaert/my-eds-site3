@@ -1,0 +1,26 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:deploy runtime-detection probe (rollout unit C0 foundation)",
+    "writtenAt": "2026-09-23T20:00:00Z",
+    "readArtifacts": ["scripts/scripts.js", "scripts/aem.js", "blocks/header/header.js", "styles/styles.css"]
+  },
+  "runtime": "vanilla-eds",
+  "blockWrapperClass": "block",
+  "blockWrapperPattern": "div.<name>-wrapper > div.<name>.block[data-block-name]; section gains .<name>-container",
+  "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "buttonizationNotes": "decorateButtons() matches p a[href] alone in its paragraph and requires an authored <strong> (primary), <em> (secondary) or both (accent); bare links stay links; links holding an <img> are skipped",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "wrapTextNodes": true,
+  "sectionMetadataFold": "pipeline (scripts/aem.js has no client-side section-metadata handling)",
+  "fontLoading": "styles/fonts.css via loadFonts(): eager at >= 900px or with the fonts-loaded session flag, always in loadLazy",
+  "chrome": {
+    "header": "blocks/header fetches /nav (nav metadata override) via fragment.js; block classes .header / .footer",
+    "footer": "blocks/footer fetches /footer (footer metadata override)",
+    "navBreakpoint": "1200px (live navbar-expand-xl; the stock block used 900px)",
+    "stockHeaderDrift": "stock header.js referenced .button-container while decorateButtons emits p.button-wrapper — replaced by the template-slotted block"
+  },
+  "delayedImports": ["scripts/consent-check.js"],
+  "extraBlocks": ["widget (buildWidgetAutoBlocks on a[href*='/widgets/'])", "fragment auto-block on a[href*='/fragments/']"]
+}

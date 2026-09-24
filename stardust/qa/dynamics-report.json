@@ -1,0 +1,82 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics check",
+  "writtenAt": "2026-09-23T20:44:35.514Z",
+  "origin": "https://main--stardust-replica-fe635832--of1-labs.aem.live",
+  "parity": "stardust/dynamics/parity.json"
+ },
+ "results": [
+  {
+   "feature": "Header primary-menu dropdowns (4 x aria-haspopup) + mobile hamburger collapse",
+   "id": "m-modal-trigger-aria-haspopup-chrome-only-a-content",
+   "class": "M",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "4 × .header a[aria-haspopup=\"true\"] (min 4)",
+   "thirdParty": "",
+   "ms": 3049,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Header primary-menu dropdowns (4 x aria-haspopup) + mobile hamburger collapse",
+   "id": "m-modal-trigger-aria-haspopup-chrome-only-a-content",
+   "class": "M",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × .header .navbar-toggler (min 1)",
+   "thirdParty": "",
+   "ms": 1969,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Header primary-menu dropdowns (4 x aria-haspopup) + mobile hamburger collapse",
+   "id": "m-modal-trigger-aria-haspopup-chrome-only-a-content",
+   "class": "M",
+   "status": "done",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 2 page(s)",
+   "thirdParty": "",
+   "ms": 4020,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Google Tag Manager container",
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "status": "interim",
+   "type": "consent-gate",
+   "pass": true,
+   "detail": "no request to 2 gated host pattern(s) before consent",
+   "thirdParty": "",
+   "ms": 5895,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Google Analytics (GA4 collect)",
+   "id": "t-analytics-google-analytics-ads",
+   "class": "T",
+   "status": "interim",
+   "type": "consent-gate",
+   "pass": true,
+   "detail": "no request to 3 gated host pattern(s) before consent",
+   "thirdParty": "",
+   "ms": 5864,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Facebook pixel / SDK",
+   "id": "t-marketing-ad-retargeting-pixel",
+   "class": "T",
+   "status": "interim",
+   "type": "consent-gate",
+   "pass": true,
+   "detail": "no request to 3 gated host pattern(s) before consent",
+   "thirdParty": "",
+   "ms": 5880,
+   "environmentLimit": null
+  }
+ ]
+}

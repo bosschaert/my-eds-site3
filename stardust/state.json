@@ -1,0 +1,104 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-09-23T19:44:52Z",
+    "stardustVersion": "0.25.0+01bf32355813"
+  },
+  "site": {
+    "originUrl": "https://balbriggan.ie",
+    "deployUrl": "https://main--stardust-replica-fe635832--of1-labs.aem.page/",
+    "extractedAt": "2026-09-23T19:05:34Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "direction": null,
+  "handsOff": true,
+  "flow": "replica",
+  "flowChosenAt": "2026-09-23T19:05:34Z",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "community-development",
+      "url": "https://balbriggan.ie/community-development/",
+      "title": "Community Development - Our Balbriggan",
+      "type": "pillar-page",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T19:05:34Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-23T19:42:50Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-23T19:42:50Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T19:44:52Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/community-development.json",
+      "prototypePath": "stardust/prototypes/community-development-proposed.html",
+      "migratedPath": "stardust/migrated/community-development/index.html"
+    }
+  ],
+  "migrate": {
+    "at": "2026-09-23T19:44:14Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/community-development/",
+        "outputPath": "community-development/index.html",
+        "slug": "community-development",
+        "outputPathDefault": null
+      }
+    ],
+    "totalAssetsBundled": 17,
+    "bundledAssets": [
+      "balbriggan-logo.svg",
+      "css/canon.css",
+      "css/community-development.css",
+      "css/motion.css",
+      "fcc-logo.svg",
+      "fonts/fontawesome-webfont.woff2",
+      "fonts/montserrat-300-latin-ext.woff2",
+      "fonts/montserrat-300-latin.woff2",
+      "fonts/montserrat-500-latin-ext.woff2",
+      "fonts/montserrat-500-latin.woff2",
+      "fonts/montserrat-600-latin-ext.woff2",
+      "fonts/montserrat-600-latin.woff2",
+      "js/motion.js",
+      "newsletter-199x300.jpg",
+      "newsletter-380x572.jpg",
+      "newsletter-570x858.jpg",
+      "newsletter.jpg"
+    ],
+    "pages": [
+      {
+        "slug": "community-development",
+        "file": "stardust/migrated/community-development/index.html",
+        "assetsBundled": 17
+      }
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "lastRun": {
+      "at": "2026-09-23T19:44:14Z",
+      "rendered": [
+        "community-development"
+      ],
+      "unchanged": [],
+      "refused": [],
+      "passthrough": []
+    }
+  }
+}

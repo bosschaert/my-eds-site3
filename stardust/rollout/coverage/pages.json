@@ -1,0 +1,53 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-23T19:45:52.097Z",
+    "readArtifacts": [
+      "stardust/migrated"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-23T20:45:53.888Z",
+  "pages": [
+    {
+      "slug": "community-development",
+      "path": "/community-development",
+      "title": "Community Development - Our Balbriggan",
+      "templateId": "community-development",
+      "source": {
+        "migratedHtml": "stardust/migrated/community-development/index.html",
+        "metaJson": "stardust/migrated/community-development/_meta.json",
+        "sourceHash": "sha256:2eee94740c3ce056445fbfd5a603c53e0cf7cc4a68f604525854de7f31e2fec7"
+      },
+      "blocks": [
+        "columns"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--stardust-replica-fe635832--of1-labs.aem.page/community-development",
+        "deployedAt": null,
+        "verifiedAt": "2026-09-23T20:45:53.888Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "index",
+      "path": "/",
+      "title": "Community Development - Our Balbriggan",
+      "templateId": "community-development",
+      "source": {
+        "migratedHtml": "rollout:index",
+        "metaJson": null,
+        "sourceHash": "sha256:d0437f062e31c65228a9a32d28bfc43d9596cc8ed06e1eb2004046ffdd5081da"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--stardust-replica-fe635832--of1-labs.aem.page/",
+        "deployedAt": null,
+        "verifiedAt": "2026-09-23T20:45:53.888Z",
+        "error": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,636 @@
+<!DOCTYPE html><html lang="en-GB"><head>
+	<!-- Google tag (gtag.js) -->
+<script src="https://connect.facebook.net/signals/config/358285138312853?v=2.9.406&amp;r=stable&amp;domain=balbriggan.ie&amp;hme=8a9e6a9b82926b8f07fd0a2edd8b8f1ef075648059d1bb52ec651feab764c219&amp;ex_m=117%2C236%2C168%2C27%2C81%2C82%2C160%2C77%2C76%2C11%2C178%2C101%2C20%2C152%2C140%2C46%2C84%2C89%2C148%2C173%2C180%2C8%2C4%2C5%2C7%2C6%2C3%2C102%2C114%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C161%2C86%2C125%2C22%2C24%2C51%2C47%2C49%2C48%2C94%2C103%2C107%2C123%2C159%2C162%2C53%2C124%2C29%2C26%2C132%2C78%2C43%2C164%2C163%2C165%2C156%2C154%2C30%2C42%2C66%2C122%2C175%2C79%2C21%2C127%2C92%2C75%2C23%2C96%2C97%2C129%2C95%2C150%2C149%2C153%2C108%2C174%2C177%2C41%2C56%2C126%2C54%2C182%2C109%2C181%2C203%2C250%2C83%2C264%2C263%2C262%2C14%2C25%2C28%2C40%2C62%2C116%2C68%2C10%2C72%2C110%2C111%2C112%2C118%2C143%2C38%2C36%2C145%2C146%2C147%2C142%2C141%2C169%2C85%2C172%2C170%2C171%2C57%2C67%2C136%2C19%2C176%2C52%2C313%2C314%2C315%2C312%2C328%2C353%2C243%2C232%2C69%2C233%2C231%2C356%2C347%2C59%2C244%2C120%2C144%2C91%2C134%2C61%2C133%2C139%2C138%2C65%2C73%2C71%2C166%2C87%2C88%2C128%2C44%2C39%2C60%2C63%2C113%2C179%2C1%2C137%2C16%2C135%2C12%2C2%2C64%2C104%2C15%2C74%2C70%2C131%2C100%2C99%2C184%2C185%2C105%2C106%2C9%2C115%2C183%2C58%2C157%2C98%2C90%2C80%2C130%2C119%2C50%2C158%2C0%2C93%2C151%2C155%2C167%2C45%2C121%2C13%2C186%2C260%2C258%2C253%2C255%2C256%2C257%2C254%2C242%2C259%2C261%2C252%2C210%2C211%2C343%2C346%2C345%2C342%2C344%2C224%2C218%2C222%2C223%2C221%2C216%2C381%2C294%2C298%2C301%2C302%2C303%2C299%2C304%2C297%2C292%2C306%2C307%2C296%2C305%2C309%2C300%2C295%2C308%2C310%2C293%2C235%2C291%2C227%2C219%2C220%2C246%2C217%2C215%2C268%2C237%2C208%2C209%2C205%2C206%2C207%2C204%2C202%2C213%2C214%2C212%2C316%2C374%2C336%2C337%2C339%2C340%2C338%2C335%2C334%2C225%2C271%2C278%2C279%2C272%2C274%2C277%2C275%2C276%2C273%2C270%2C289%2C283%2C286%2C282%2C290%2C287%2C281%2C285%2C288%2C284%2C280%2C330%2C350" async=""></script><script src="https://connect.facebook.net/signals/config/860987271653326?v=2.9.406&amp;r=stable&amp;domain=balbriggan.ie&amp;hme=8a9e6a9b82926b8f07fd0a2edd8b8f1ef075648059d1bb52ec651feab764c219&amp;ex_m=117%2C236%2C168%2C27%2C81%2C82%2C160%2C77%2C76%2C11%2C178%2C101%2C20%2C152%2C140%2C46%2C84%2C89%2C148%2C173%2C180%2C8%2C4%2C5%2C7%2C6%2C3%2C102%2C114%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C161%2C86%2C125%2C22%2C24%2C51%2C47%2C49%2C48%2C94%2C103%2C107%2C123%2C159%2C162%2C53%2C124%2C29%2C26%2C132%2C78%2C43%2C164%2C163%2C165%2C156%2C154%2C30%2C42%2C66%2C122%2C175%2C79%2C21%2C127%2C92%2C75%2C23%2C96%2C97%2C129%2C95%2C150%2C149%2C153%2C108%2C174%2C177%2C41%2C56%2C126%2C54%2C182%2C109%2C181%2C203%2C250%2C83%2C264%2C263%2C262%2C14%2C25%2C28%2C40%2C62%2C116%2C68%2C10%2C72%2C110%2C111%2C112%2C118%2C143%2C38%2C36%2C145%2C146%2C147%2C142%2C141%2C169%2C85%2C172%2C170%2C171%2C57%2C67%2C136%2C19%2C176%2C52%2C313%2C314%2C315%2C312%2C328%2C353%2C243%2C232%2C69%2C233%2C231%2C356%2C347%2C59%2C244%2C120%2C144%2C91%2C134%2C61%2C133%2C139%2C138%2C65%2C73%2C71%2C166%2C87%2C88%2C128%2C44%2C39%2C60%2C63%2C113%2C179%2C1%2C137%2C16%2C135%2C12%2C2%2C64%2C104%2C15%2C74%2C70%2C131%2C100%2C99%2C184%2C185%2C105%2C106%2C9%2C115%2C183%2C58%2C157%2C98%2C90%2C80%2C130%2C119%2C50%2C158%2C0%2C93%2C151%2C155%2C167%2C45%2C121%2C13%2C186" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Z1D3MZ66RP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z1D3MZ66RP');
+</script>
+	<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '860987271653326');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=860987271653326&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Our Balbriggan - Imagine the possibilities – Get Involved">
+	<meta name="google-site-verification" content="JOasGFXsHR99eoiH789Tb16zfsYscUNfxO9vDW-U2oM">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://balbriggan.ie/xmlrpc.php">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&amp;family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v23.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Community Development - Our Balbriggan</title>
+	<link rel="canonical" href="https://balbriggan.ie/community-development/">
+	<meta property="og:locale" content="en_GB">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Community Development - Our Balbriggan">
+	<meta property="og:description" content="The Community Development Pillar – &nbsp; The purpose of the Pillar is to continue making Balbriggan an ambitious, confident, safe and inclusive community where all people can realise their full potential. To plan, assist and collaborate in the development of services and improve interagency cooperation to achieve this.&nbsp;&nbsp;The Group meets on a quarterly basis.&nbsp; View">
+	<meta property="og:url" content="https://balbriggan.ie/community-development/">
+	<meta property="og:site_name" content="Our Balbriggan">
+	<meta property="article:modified_time" content="2026-06-19T15:14:14+00:00">
+	<meta property="og:image" content="https://balbriggan.ie/wp-content/uploads/2025/03/newsletter.jpg">
+	<meta property="og:image:width" content="598">
+	<meta property="og:image:height" content="900">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta name="twitter:card" content="summary_large_image">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://balbriggan.ie/community-development/","url":"https://balbriggan.ie/community-development/","name":"Community Development - Our Balbriggan","isPartOf":{"@id":"https://balbriggan.ie/#website"},"primaryImageOfPage":{"@id":"https://balbriggan.ie/community-development/#primaryimage"},"image":{"@id":"https://balbriggan.ie/community-development/#primaryimage"},"thumbnailUrl":"https://balbriggan.ie/wp-content/uploads/2025/03/newsletter.jpg","datePublished":"2021-10-26T16:04:30+00:00","dateModified":"2026-06-19T15:14:14+00:00","breadcrumb":{"@id":"https://balbriggan.ie/community-development/#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://balbriggan.ie/community-development/"]}]},{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://balbriggan.ie/community-development/#primaryimage","url":"https://balbriggan.ie/wp-content/uploads/2025/03/newsletter.jpg","contentUrl":"https://balbriggan.ie/wp-content/uploads/2025/03/newsletter.jpg","width":598,"height":900},{"@type":"BreadcrumbList","@id":"https://balbriggan.ie/community-development/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://balbriggan.ie/"},{"@type":"ListItem","position":2,"name":"Community Development"}]},{"@type":"WebSite","@id":"https://balbriggan.ie/#website","url":"https://balbriggan.ie/","name":"Our Balbriggan","description":"Imagine the possibilities - Get Involved","publisher":{"@id":"https://balbriggan.ie/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://balbriggan.ie/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-GB"},{"@type":"Organization","@id":"https://balbriggan.ie/#organization","name":"Our Balbriggan","url":"https://balbriggan.ie/","logo":{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://balbriggan.ie/#/schema/logo/image/","url":"https://balbriggan.ie/wp-content/uploads/2018/11/balbriggan-logo.svg","contentUrl":"https://balbriggan.ie/wp-content/uploads/2018/11/balbriggan-logo.svg","caption":"Our Balbriggan"},"image":{"@id":"https://balbriggan.ie/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="alternate" type="application/rss+xml" title="Our Balbriggan » Feed" href="https://balbriggan.ie/feed/">
+<link rel="alternate" type="application/rss+xml" title="Our Balbriggan » Comments Feed" href="https://balbriggan.ie/comments/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/balbriggan.ie\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.9"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel="stylesheet" id="twb-open-sans-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C500%2C600%2C700%2C800&amp;display=swap&amp;ver=6.6.9" type="text/css" media="all">
+<link rel="stylesheet" id="twb-global-css" href="https://balbriggan.ie/wp-content/plugins/wd-instagram-feed/booster/assets/css/global.css?ver=1.0.0" type="text/css" media="all">
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://balbriggan.ie/wp-includes/css/dist/block-library/style.min.css?ver=6.6.9" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="embedpress-style-css" href="https://balbriggan.ie/wp-content/plugins/embedpress/assets/css/embedpress.css?ver=6.6.9" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="https://balbriggan.ie/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.8" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+</style>
+<link rel="stylesheet" id="understrap-styles-css" href="https://balbriggan.ie/wp-content/themes/balbriggan2024/css/theme.min.css?ver=0.8.8.1715679243" type="text/css" media="all">
+<link rel="stylesheet" id="custom-style-css" href="https://balbriggan.ie/wp-content/themes/balbriggan2024/css/style.css?ver=1772195547" type="text/css" media="all">
+<link rel="stylesheet" id="learning-style-css" href="https://balbriggan.ie/wp-content/themes/balbriggan2024/css/learning-style.css?ver=1715679242" type="text/css" media="all">
+<link rel="stylesheet" id="quaystreet-css" href="https://balbriggan.ie/wp-content/themes/balbriggan2024/css/quaystreet.css?ver=1715679242" type="text/css" media="all">
+<link rel="stylesheet" id="servicedirectory-css" href="https://balbriggan.ie/wp-content/themes/balbriggan2024/css/servicedirectory.css?ver=1715788136" type="text/css" media="all">
+<link rel="stylesheet" id="slick-style-css" href="https://balbriggan.ie/wp-content/themes/balbriggan2024/library/slick/slick.css?ver=6.6.9" type="text/css" media="all">
+<link rel="stylesheet" id="slick-theme-css" href="https://balbriggan.ie/wp-content/themes/balbriggan2024/library/slick/slick-theme.css?ver=6.6.9" type="text/css" media="all">
+<link rel="stylesheet" id="fancybox-style-css" href="https://balbriggan.ie/wp-content/themes/balbriggan2024/library/fancybox/jquery.fancybox.min.css?ver=6.6.9" type="text/css" media="all">
+<link rel="stylesheet" id="esf-custom-fonts-css" href="https://balbriggan.ie/wp-content/plugins/easy-facebook-likebox/frontend/assets/css/esf-custom-fonts.css?ver=6.6.9" type="text/css" media="all">
+<link rel="stylesheet" id="esf-insta-frontend-css" href="https://balbriggan.ie/wp-content/plugins/easy-facebook-likebox//instagram/frontend/assets/css/esf-insta-frontend.css?ver=6.6.9" type="text/css" media="all">
+<link rel="stylesheet" id="esf-insta-customizer-style-css" href="https://balbriggan.ie/wp-admin/admin-ajax.php?action=esf-insta-customizer-style&amp;ver=6.6.9" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="https://balbriggan.ie/wp-includes/css/dashicons.min.css?ver=6.6.9" type="text/css" media="all">
+<script type="text/javascript" src="https://balbriggan.ie/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://balbriggan.ie/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://balbriggan.ie/wp-content/plugins/wd-instagram-feed/booster/assets/js/circle-progress.js?ver=1.2.2" id="twb-circle-js"></script>
+<script type="text/javascript" id="twb-global-js-extra">
+/* <![CDATA[ */
+var twb = {"nonce":"0612565b4b","ajax_url":"https:\/\/balbriggan.ie\/wp-admin\/admin-ajax.php","plugin_url":"https:\/\/balbriggan.ie\/wp-content\/plugins\/wd-instagram-feed\/booster","href":"https:\/\/balbriggan.ie\/wp-admin\/admin.php?page=twb_instagram-feed"};
+var twb = {"nonce":"0612565b4b","ajax_url":"https:\/\/balbriggan.ie\/wp-admin\/admin-ajax.php","plugin_url":"https:\/\/balbriggan.ie\/wp-content\/plugins\/wd-instagram-feed\/booster","href":"https:\/\/balbriggan.ie\/wp-admin\/admin.php?page=twb_instagram-feed"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://balbriggan.ie/wp-content/plugins/wd-instagram-feed/booster/assets/js/global.js?ver=1.0.0" id="twb-global-js"></script>
+<script type="text/javascript" src="https://balbriggan.ie/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.8" id="tp-tools-js"></script>
+<script type="text/javascript" src="https://balbriggan.ie/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.8" id="revmin-js"></script>
+<script type="text/javascript" src="https://balbriggan.ie/wp-content/plugins/easy-facebook-likebox/frontend/assets/js/imagesloaded.pkgd.min.js?ver=6.6.9" id="imagesloaded.pkgd.min-js"></script>
+<script type="text/javascript" id="esf-insta-public-js-extra">
+/* <![CDATA[ */
+var esf_insta = {"ajax_url":"https:\/\/balbriggan.ie\/wp-admin\/admin-ajax.php","version":"free","nonce":"52b66e2389"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://balbriggan.ie/wp-content/plugins/easy-facebook-likebox//instagram/frontend/assets/js/esf-insta-public.js?ver=1" id="esf-insta-public-js"></script>
+<link rel="https://api.w.org/" href="https://balbriggan.ie/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://balbriggan.ie/wp-json/wp/v2/pages/1288"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://balbriggan.ie/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.6.9">
+<link rel="shortlink" href="https://balbriggan.ie/?p=1288">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://balbriggan.ie/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbalbriggan.ie%2Fcommunity-development%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://balbriggan.ie/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbalbriggan.ie%2Fcommunity-development%2F&amp;format=xml">
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '358285138312853');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=358285138312853&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<meta name="facebook-domain-verification" content="v0v04aj66vnre0qvlj8j8imiwr5zv6"><meta name="generator" content="Powered by Slider Revolution 5.4.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<link rel="icon" href="https://balbriggan.ie/wp-content/uploads/2022/02/cropped-favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="https://balbriggan.ie/wp-content/uploads/2022/02/cropped-favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://balbriggan.ie/wp-content/uploads/2022/02/cropped-favicon-180x180.png">
+<meta name="msapplication-TileImage" content="https://balbriggan.ie/wp-content/uploads/2022/02/cropped-favicon-270x270.png">
+<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+		<style type="text/css" id="wp-custom-css">
+			.page-template-downloads .row-doc-downloads .col-auto.col-doc {
+    width: 25%;
+}
+.page-template-downloads .row-doc-downloads .col-auto .doc-container figure a {
+    display: flex;
+    height: auto;
+    width: 13rem;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.page-template-downloads .row-doc-downloads .col-auto .doc-container figure a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}		</style>
+		</head>
+
+<body class="page-template page-template-page-templates page-template-fullwidthpage page-template-page-templatesfullwidthpage-php page page-id-1288 wp-custom-logo group-blog" data-spy="scroll" data-target="#servicesMenuContainer" data-offset="60">
+
+	<div class="site" id="page">
+
+		<!-- ******************* The Navbar Area ******************* -->
+		<div id="wrapper-navbar" class="sticky-top sticky-nav" itemscope="" itemtype="http://schema.org/WebSite">
+
+			<a class="skip-link sr-only sr-only-focusable" href="#content">Skip to content</a>
+
+
+			<nav class="navbar navbar-expand-xl navbar-dark">
+
+									<div class="container-fluid">
+					
+					<!-- Your site title as branding in the menu -->
+					<a href="https://balbriggan.ie/" class="navbar-brand custom-logo-link" rel="home"><img width="1" height="1" src="https://balbriggan.ie/wp-content/uploads/2018/11/balbriggan-logo.svg" class="img-fluid" alt="Our Balbriggan logo" decoding="async"></a>					<!-- end custom logo -->
+
+					<div class="navs">
+						<div class="topnav">
+							<div class="collapse navbar-collapse"><ul id="top-menu" class="navbar-nav ml-auto align-items-center"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1151 nav-item"><a title="News" href="https://balbriggan.ie/news/" class="nav-link">News</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1574 nav-item"><a title="Downloads" href="https://balbriggan.ie/downloads/" class="nav-link">Downloads</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2490" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2490 nav-item"><a title="Newsletters" href="https://balbriggan.ie/newsletters/" class="nav-link">Newsletters</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1152 nav-item"><a title="Fingal County Council" href="http://www.fingalcoco.ie/" class="nav-link">Fingal County Council</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1150 nav-item"><a title="Contact" href="https://balbriggan.ie/contact/" class="nav-link">Contact</a></li>
+</ul></div>	
+							
+							<ul class="list-inline list-social">
+								<li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/Our-Balbriggan-Get-Involved-186850462253496/" rel="noopener"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/OurBalbriggan" rel="noopener"><i class="fa fa-twitter"></i></a></li>
+								<li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/showcase/18913857/" rel="noopener"><i class="fa fa-linkedin"></i></a></li>
+								<li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com/ourbalbriggan/" rel="noopener"><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+
+						<div class="primarynav">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<!-- The WordPress Menu goes here -->
+							<div id="navbarNavDropdown" class="collapse navbar-collapse"><ul id="main-menu" class="navbar-nav ml-auto align-items-center"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1117" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-1117 nav-item"><a title="Plans &amp; Projects" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-1117">Plans &amp; Projects</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-1117" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1118 nav-item"><a title="Town Transformation" href="https://balbriggan.ie/town-transformation/" class="dropdown-item">Town Transformation</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1132 nav-item"><a title="Smart Balbriggan" href="https://balbriggan.ie/smart-balbriggan/" class="dropdown-item">Smart Balbriggan</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1326 nav-item"><a title="URBACT &amp; IPlace" href="https://balbriggan.ie/urbact-iplace/" class="dropdown-item">URBACT &amp; IPlace</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1325 nav-item"><a title="Time4EU" href="https://balbriggan.ie/time4eu/" class="dropdown-item">Time4EU</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-1135 nav-item"><a title="Discover" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-1135">Discover</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-1135" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1136" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1136 nav-item"><a title="News" href="https://balbriggan.ie/news/" class="dropdown-item">News</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1237" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children dropdown active menu-item-1237 nav-item"><a title="Leadership &amp; Governance" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-1237">Leadership &amp; Governance</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-1237" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2492" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2492 nav-item"><a title="Balbriggan Leadership Group" href="https://balbriggan.ie/leadership-governance/" class="dropdown-item">Balbriggan Leadership Group</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1133 nav-item"><a title="Project Team" href="https://balbriggan.ie/the-team/" class="dropdown-item">Project Team</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2493" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1288 current_page_item active menu-item-2493 nav-item"><a title="Community Development" href="https://balbriggan.ie/community-development/" class="dropdown-item">Community Development</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2494 nav-item"><a title="Education Skills &amp; Training" href="https://balbriggan.ie/education-skills-training/" class="dropdown-item">Education Skills &amp; Training</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2495 nav-item"><a title="Sustainability, Climate Action and Biodiversity" href="https://balbriggan.ie/sustainability-climate-action-and-biodiversity/" class="dropdown-item">Sustainability, Climate Action and Biodiversity</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2496 nav-item"><a title="Economic Development Pillar" href="https://balbriggan.ie/economic-development/" class="dropdown-item">Economic Development Pillar</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1589 nav-item"><a title="Loves Learning Festival" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-1589">Loves Learning Festival</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-1589" role="menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1825" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1825 nav-item"><a title="Loves Learning Festival 2023" href="https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/" class="dropdown-item">Loves Learning Festival 2023</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1812" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1812 nav-item"><a title="Loves Learning Event Programme" href="https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/#learning-timetable" class="dropdown-item">Loves Learning Event Programme</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1813" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1813 nav-item"><a title="Loves Learning Festival 2022" href="https://balbriggan.ie/loves-learning-festival/" class="dropdown-item">Loves Learning Festival 2022</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-2236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2236 nav-item"><a title="Community Platform" href="https://balbriggan.ie/community-platform/" class="nav-link">Community Platform</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1149" class="btn-nav menu-item menu-item-type-post_type menu-item-object-page menu-item-1149 nav-item"><a title="Get Involved" href="https://balbriggan.ie/contact/" class="nav-link">Get Involved</a></li>
+</ul></div>						</div>
+
+					</div>
+				
+										</div><!-- .container -->
+				
+			</nav><!-- .site-navigation -->
+
+
+
+		</div><!-- #wrapper-navbar end -->
+<div class="wrapper" id="full-width-page-wrapper">
+
+	<div class="container" id="content">
+
+		<div class="row">
+
+			<div class="col-md-12 content-area" id="primary">
+
+				<main class="site-main" id="main" role="main">
+
+					
+						
+<article class="post-1288 page type-page status-publish hentry" id="post-1288">
+
+	<header class="entry-header">
+
+		<h1 class="entry-title">Community Development</h1>
+	</header><!-- .entry-header -->
+
+	
+	<div class="entry-content">
+
+		
+<div class="wp-block-columns pillar-intro is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:10%"></div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:80%">
+<p><strong>The Community Development Pillar</strong> – &nbsp; The purpose of the Pillar is to continue making Balbriggan an ambitious, confident, safe and inclusive community where all people can realise their full potential. To plan, assist and collaborate in the development of services and improve interagency cooperation to achieve this.&nbsp;&nbsp;The Group meets on a quarterly basis.&nbsp;</p>
+
+
+
+<a class="btn btn-secondary" href="https://balbriggan.ie/wp-content/uploads/2026/05/Community-Development-Action-Plan.xlsx" target="_blank" rel="noopener">View Objectives</a>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:10%"></div>
+</div>
+
+
+
+<div class="wp-block-columns pillar-membership is-layout-flex wp-container-core-columns-is-layout-3 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:40%">
+<div class="wp-block-columns are-vertically-aligned-center pillar-chair is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:40%">
+<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="598" height="900" src="https://balbriggan.ie/wp-content/uploads/2025/03/newsletter.jpg" alt="" class="wp-image-2426" srcset="https://balbriggan.ie/wp-content/uploads/2025/03/newsletter.jpg 598w, https://balbriggan.ie/wp-content/uploads/2025/03/newsletter-199x300.jpg 199w, https://balbriggan.ie/wp-content/uploads/2025/03/newsletter-570x858.jpg 570w, https://balbriggan.ie/wp-content/uploads/2025/03/newsletter-380x572.jpg 380w" sizes="(max-width: 598px) 100vw, 598px"></figure>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:60%">
+<h4 class="wp-block-heading">Chair</h4>
+
+
+
+<p><strong>Cormac Healy, SEO</strong>, Community<br>Department, FCC</p>
+
+
+
+<p>Fingal County Council&nbsp;</p>
+</div>
+</div>
+
+
+
+<p></p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<h4 class="wp-block-heading">Members</h4>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Claire Barkey</strong>&nbsp;DDLETB, Youth Development Officer</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Linda Ennis</strong>&nbsp;Principal Community Officer, FCC</li>
+
+
+
+<li><strong>Rafe Costigan</strong>&nbsp;Senior Community Officer, FCC</li>
+
+
+
+<li><strong>Janette Scott</strong>&nbsp;Community Officer, FCC</li>
+
+
+
+<li><strong>Valerie McAllorum Byrne</strong>&nbsp;Integration Support Co-Ordinator, FCC</li>
+
+
+
+<li><strong>Chloe Farrell</strong>&nbsp;Senior Sports Officer, FCC</li>
+
+
+
+<li><strong>Niamh McCormack&nbsp;</strong>Administrative Officer</li>
+
+
+
+<li><strong>Sophia Pinto</strong>&nbsp;Librarian, FCC</li>
+
+
+
+<li><strong>Niall McGuirk</strong>&nbsp;Community Office, FCC</li>
+
+
+
+<li><strong>Seamus Quigley</strong>&nbsp;Dept. Social Protection</li>
+
+
+
+<li><strong>Sgt. Darren Farrelly</strong>&nbsp;An Garda Siochana</li>
+
+
+
+<li><strong>Sgt. Keith White</strong>&nbsp;An Garda Siochana</li>
+
+
+
+<li><strong>Ruth Maxwell</strong>, HSE</li>
+
+
+
+<li><strong>Lorna Dunne</strong>&nbsp;HSE</li>
+
+
+
+<li><strong>John McFadden</strong>&nbsp;Empower</li>
+
+
+
+<li><strong>Karin Davy</strong>&nbsp;Daughters of Charity</li>
+
+
+
+<li><strong>Amanda Cullen</strong>&nbsp;Foroige</li>
+
+
+
+<li><strong>Karl Spain</strong>&nbsp;Mental Health Ireland, THRIVE</li>
+
+
+
+<li><strong>Siobhan Maher</strong>&nbsp;North Dublin Regional Drugs Task Force</li>
+
+
+
+<li><strong>Frances Killeen</strong>&nbsp;Balbriggan Youth Reach</li>
+
+
+
+<li><strong>Eamonn Donlyn</strong>&nbsp;Smart Balbriggan</li>
+
+
+
+<li><strong>Sonya Logan</strong>&nbsp;Sonas Domestic Abuse</li>
+
+
+
+<li><strong>Cormac McDonagh</strong>&nbsp;Creative Places Balbriggan</li>
+
+
+
+<li><strong>Aisling Cleary</strong>&nbsp;Crosscare</li>
+
+
+
+<li><strong>Beata Fingleton</strong>&nbsp;Prosper Fingal</li>
+
+
+
+<li><strong>Nora Roban</strong>&nbsp;Remember Us</li>
+
+
+
+<li><strong>Sharon Rogers</strong>&nbsp;Aster Family Support</li>
+
+
+
+<li><strong>Ruth Bannon</strong>&nbsp;Fingal Volunteer Centre</li>
+
+
+
+<li><strong>Aurore Gregoire</strong>&nbsp;Fingal Volunteer Centre</li>
+
+
+
+<li><strong>Aisling O’Connell</strong>&nbsp;Foroige</li>
+
+
+
+<li><strong>Cillian Purser</strong>&nbsp;Foroige</li>
+
+
+
+<li><strong>Ron Whelan</strong>&nbsp;Balbriggan Outcomers</li>
+
+
+
+<li><strong>Hannah Maloney</strong>&nbsp;Aoibhneas</li>
+
+
+
+<li><strong>Sarah Duku</strong>&nbsp;Cairde</li>
+
+
+
+<li><strong>Miriam Slattery,</strong>&nbsp;Children’s Disability Network Team (CRC)</li>
+
+
+
+<li><strong>Adrienne Doyle</strong>&nbsp;Fingal County Childcare Committee</li>
+
+
+
+<li><strong>Una Caffrey</strong>&nbsp;Fingal CYPSC</li>
+
+
+
+<li><strong>Nora Flanagan&nbsp;Tusla</strong></li>
+
+
+
+<li><strong>Angela Manoli</strong>&nbsp;Fingal Leadership Partnership</li>
+
+
+
+<li><strong>Clodagh Carroll</strong>&nbsp;Barnardos</li>
+
+
+
+<li><strong>Alice Davis</strong>&nbsp;Balbriggan Community Council</li>
+
+
+
+<li><strong>Aoife Leahy</strong>&nbsp;Balbriggan Integration Forum</li>
+
+
+
+<li><strong>Ayodele Yusuf</strong>&nbsp;Balbriggan Integration Forum</li>
+
+
+
+<li><strong>Sarah Louise</strong>&nbsp;O’Brien&nbsp;Jigsaw</li>
+
+
+
+<li><strong>Emmet Sheridan</strong>&nbsp;Schools Representative</li>
+
+
+
+<li><strong>Margaret McDonagh</strong>&nbsp;Traveller Representative</li>
+
+
+
+<li>VACANT Older Person’s Representative</li>
+
+
+
+<li>VACANT Balbriggan Chamber of Commerce</li>
+</ul>
+</div>
+</div>
+
+
+
+<ul class="wp-block-list">
+<li></li>
+</ul>
+
+		
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+
+		
+	</footer><!-- .entry-footer -->
+
+</article><!-- #post-## -->
+
+						
+					
+				</main><!-- #main -->
+
+			</div><!-- #primary -->
+
+		</div><!-- .row end -->
+
+	</div><!-- Container end -->
+
+</div><!-- Wrapper end -->
+
+
+
+
+	<!-- ******************* The Footer Full-width Widget Area ******************* -->
+
+	<div class="wrapper" id="wrapper-footer-full">
+
+		<div class="container" id="footer-full-content" tabindex="-1">
+
+			<div class="row">
+
+				<div id="media_image-2" class="footer-widget widget_media_image widget-count-2 col-md-6"><a href="http://www.fingalcoco.ie/"><img width="1" height="1" src="https://balbriggan.ie/wp-content/uploads/2018/11/fcc-logo.svg" class="image wp-image-76  attachment-medium size-medium" alt="Fingal County Council" style="max-width: 100%; height: auto;" decoding="async" loading="lazy"></a></div><!-- .footer-widget --><div id="custom_html-2" class="widget_text footer-widget widget_custom_html widget-count-2 col-md-6"><div class="textwidget custom-html-widget"><ul class="list-inline list-social">
+	<li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="https://www.facebook.com/Our-Balbriggan-Get-Involved-186850462253496/" rel="noopener"><i class="fa fa-facebook"></i></a></li>
+<li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/OurBalbriggan" rel="noopener"><i class="fa fa-twitter"></i></a></li>
+<li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/showcase/18913857/" rel="noopener"><i class="fa fa-linkedin"></i></a></li>
+	<li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com/ourbalbriggan/" rel="noopener"><i class="fa fa-instagram"></i></a></li>
+</ul>
+<a href="https://www.fingal.ie/privacy-policy">Privacy</a></div></div><!-- .footer-widget -->
+			</div>
+
+		</div>
+
+	</div><!-- #wrapper-footer-full -->
+
+
+<div class="wrapper" id="wrapper-footer">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<footer class="site-footer" id="colophon">
+
+					<div class="site-info">
+
+						
+					</div><!-- .site-info -->
+
+				</footer><!-- #colophon -->
+
+			</div><!--col end -->
+
+		</div><!-- row end -->
+
+	</div><!-- container end -->
+
+</div><!-- wrapper end -->
+
+</div><!-- #page we need this extra closing tag here -->
+
+<style id="core-block-supports-inline-css" type="text/css">
+.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-2{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-3{flex-wrap:nowrap;}
+</style>
+<script type="text/javascript" id="embedpress-front-js-extra">
+/* <![CDATA[ */
+var eplocalize = {"ajaxurl":"https:\/\/balbriggan.ie\/wp-admin\/admin-ajax.php","is_pro_plugin_active":"","nonce":"f14b2947cb"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://balbriggan.ie/wp-content/plugins/embedpress/assets/js/front.js?ver=4.1.2" id="embedpress-front-js"></script>
+<script type="text/javascript" src="https://balbriggan.ie/wp-content/themes/balbriggan2024/js/theme.min.js?ver=0.8.8.1715679248" id="understrap-scripts-js"></script>
+<script type="text/javascript" src="https://balbriggan.ie/wp-content/themes/balbriggan2024/js/scripts.js?ver=1715679248" id="custom-scripts-js"></script>
+<script type="text/javascript" src="https://balbriggan.ie/wp-content/themes/balbriggan2024/library/slick/slick.min.js?ver=1.0.0" id="slick-script-js"></script>
+<script type="text/javascript" src="https://balbriggan.ie/wp-content/themes/balbriggan2024/library/fancybox/jquery.fancybox.min.js?ver=1.0.0" id="fancybox-script-js"></script>
+
+
+
+
+
+</body></html>

@@ -1,0 +1,31 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-23T19:45:52.097Z",
+    "readArtifacts": [
+      "stardust/migrated"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-23T20:45:53.888Z",
+  "templates": [
+    {
+      "id": "community-development",
+      "representativeSlug": "community-development",
+      "pages": [
+        "community-development",
+        "index"
+      ],
+      "pageCount": 2,
+      "blocks": [
+        "columns"
+      ],
+      "delivery": {
+        "verified": 2,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    }
+  ]
+}

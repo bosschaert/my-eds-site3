@@ -1,0 +1,363 @@
+/*
+ * Header block — the live sticky Bootstrap-4 navbar (canon.css chrome rules, scoped to .header).
+ * The sticky positioning and the height reservation live on the host <header> (styles.css).
+ */
+.header .navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: var(--brand-blue);
+  color: var(--text);
+}
+
+.header .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* brand: the authored logo link paragraph */
+.header .navbar-brand {
+  margin-right: 1rem;
+  color: #fff;
+}
+
+.header .navbar-brand p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.header .navbar-brand a {
+  display: inline-block;
+  padding: 0.3125rem 0;
+  color: #fff;
+}
+
+.header .navbar-brand picture {
+  display: inline;
+}
+
+.header .navbar-brand img {
+  width: 11rem;
+  height: 4.5rem;
+  transition: all 300ms;
+}
+
+/* the two menu rows */
+.header .navs {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .topnav {
+  display: inline-flex;
+  justify-content: flex-end;
+  margin: 0 0.95rem 0.25rem 0;
+}
+
+.header .navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.header .collapse:not(.show) {
+  display: none;
+}
+
+.header .collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+.header .top-menu ul,
+.header .main-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 0 auto;
+  padding-left: 0;
+  list-style: none;
+}
+
+.header .top-menu li,
+.header .main-menu li {
+  margin: 0 0.4rem;
+  font-size: 0.9rem;
+}
+
+.header .top-menu a,
+.header .main-menu a {
+  display: block;
+  padding: 0.5rem 0;
+  transition: all 300ms;
+}
+
+.header .top-menu a:hover,
+.header .main-menu a:hover {
+  text-decoration: none;
+}
+
+.header .top-menu a {
+  color: #fff;
+  font-family: var(--font-medium);
+  opacity: 1;
+}
+
+.header .main-menu a {
+  color: var(--brand-yellow);
+  font-weight: 400;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+/* dropdowns: a nested list; state is the trigger's aria-expanded */
+.header .main-menu li:has(ul) {
+  position: relative;
+}
+
+.header .main-menu li:has(ul) a:not(li li a)::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.255em;
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  vertical-align: 0.255em;
+}
+
+.header .main-menu ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  margin: 0.125rem 0 0;
+  padding: 0.5rem 0;
+  border: 1px solid rgb(0 0 0 / 15%);
+  border-radius: 0.25rem;
+  background-color: #fff;
+  background-clip: padding-box;
+  color: #212529;
+  font-size: 1rem;
+  text-align: left;
+  list-style: none;
+}
+
+.header .main-menu li:has(a[aria-expanded="true"]) ul {
+  display: block;
+}
+
+.header .main-menu ul ul a {
+  display: block;
+  clear: both;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  border: 0;
+  background-color: transparent;
+  color: #212529;
+  font-weight: 400;
+  text-align: inherit;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+.header .main-menu ul ul a:hover {
+  background-color: #f8f9fa;
+  color: #16181b;
+  text-decoration: none;
+}
+
+/* the yellow nav button: the emphasised item (authored <strong> or buttonized); live weight 400 */
+.header .main-menu strong {
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.header .main-menu li:has(strong) a,
+.header .main-menu li:has(a.button) a {
+  display: block;
+  border: 2px solid var(--brand-yellow);
+  border-radius: 2rem;
+  padding: 0.15rem 1rem;
+  background-color: var(--brand-yellow);
+  color: var(--brand-blue);
+  font-family: var(--font-medium);
+  font-size: inherit;
+  font-weight: 400;
+  line-height: inherit;
+  text-transform: uppercase;
+  transition: all 300ms;
+}
+
+.header .main-menu li:has(strong) a:hover,
+.header .main-menu li:has(a.button) a:hover {
+  border-color: #fff;
+  background-color: #fff;
+  color: var(--brand-blue);
+}
+
+/* hamburger (the only button; icon only) */
+.header .navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: rgb(255 255 255 / 50%);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.header .navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background: no-repeat center center;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+
+/* social list: icon-only anchors, FontAwesome 4.7 glyph via the .fa class (canon.css) */
+.header .list-social {
+  margin: 0 0 0 1rem;
+}
+
+.header .list-social ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.header .list-social li {
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+.header .list-social li:not(:last-child) {
+  margin-right: 0.75rem;
+}
+
+.header .list-social a {
+  color: #fff;
+}
+
+.header .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 var(--font-icon);
+  font-size: inherit;
+  text-rendering: auto;
+}
+
+.header .fa-facebook::before {
+  content: "\f09a";
+}
+
+.header .fa-twitter::before {
+  content: "\f099";
+}
+
+.header .fa-linkedin::before {
+  content: "\f0e1";
+}
+
+.header .fa-instagram::before {
+  content: "\f16d";
+}
+
+.header .fa-youtube::before {
+  content: "\f167";
+}
+
+/* sticky morph past 100px (live theme scripts.js) */
+.header.scrolled .navbar-brand img {
+  width: 9rem;
+  height: 3.5rem;
+}
+
+.header.scrolled .navbar {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+@media (width >= 1200px) {
+  .header .navbar {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+
+  .header .top-menu ul,
+  .header .main-menu ul {
+    flex-direction: row;
+  }
+
+  .header .top-menu a,
+  .header .main-menu a {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .header .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .header .navbar-toggler {
+    display: none;
+  }
+}
+
+@media (width >= 1200px) and (width < 1470px) {
+  .header .top-menu li,
+  .header .main-menu li {
+    margin: 0 0.1rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (width < 1200px) {
+  .header .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .header .navbar-brand img {
+    width: auto;
+    height: 3rem;
+  }
+
+  .header .top-menu ul,
+  .header .main-menu ul {
+    padding: 1rem 0;
+  }
+
+  .header .main-menu ul ul {
+    position: static;
+    float: none;
+    padding: 0.5rem 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header .navbar-brand img,
+  .header .collapsing,
+  .header .top-menu a,
+  .header .main-menu a {
+    transition: none;
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica handoff",
+    "writtenAt": "2026-09-23T19:44:14.601Z"
+  },
+  "units": {
+    "plan": {
+      "status": "done",
+      "kind": "plan",
+      "templates": [
+        "pillar-page"
+      ],
+      "pages": 1,
+      "startedAt": "2026-09-23T19:44:14.601Z",
+      "endedAt": "2026-09-23T19:44:14.601Z",
+      "verdict": "1 template (pillar-page), 1 archetype, 0 siblings; render unit: pillar-page"
+    },
+    "pillar-page": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "pillar-page"
+      ],
+      "pages": 1,
+      "startedAt": "2026-09-23T19:44:14.601Z",
+      "endedAt": "2026-09-23T19:44:51.975Z",
+      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 → stardust/migrated/ (A community-development → community-development/index.html; 17 assets, 22 links, 21 out-of-scope internal links for E2)"
+    },
+    "report": {
+      "status": "done",
+      "kind": "report",
+      "templates": [
+        "pillar-page"
+      ],
+      "pages": 1,
+      "startedAt": "2026-09-23T19:44:51.975Z",
+      "endedAt": "2026-09-23T19:44:51.975Z",
+      "verdict": "1 page migrated (archetype tier); gates: content-fidelity, variance-probe, pixel-gate-1440, pixel-gate-360, content-count, delivery-lint; media-reconcile n/a until content file exists"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "state": "Ready",
+  "steps": [
+    "Done",
+    "Done",
+    "Done",
+    "Done",
+    "Done"
+  ],
+  "partial": {},
+  "templates": [
+    {
+      "name": "Community Development page",
+      "pages": 1,
+      "desktop": "Looks right",
+      "mobile": "Looks right",
+      "status": "Done"
+    }
+  ],
+  "pages": [
+    {
+      "title": "Community Development",
+      "path": "/",
+      "ready": true
+    }
+  ],
+  "now": "The Community Development page is live on the preview site and matches the original on desktop and mobile: layout, membership section, fonts and colours all line up. The site root opens the page, the menus and footer work, links resolve, and the site-wide checks (fidelity, links, dynamic features, search-engine settings) have all passed.",
+  "next": "Next, your team reviews the preview site and confirms the remaining choices: the structured data for search engines, which analytics and marketing tags run on the new site, and the licensed brand font."
+}

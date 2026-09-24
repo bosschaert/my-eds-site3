@@ -1,0 +1,262 @@
+run-bg: measure-live launched 2026-09-23T19:07:55.098Z (timeout 900s): node stardust/scripts/replica/measure.mjs https://balbriggan.ie/community-development/ --width 1440,360 --selectors body,#wrapper-navbar,nav.navbar,.navbar-brand img,.topnav,#top-menu,#top-menu .nav-link,.topnav .list-social,.topnav .social-icon,.primarynav,#main-menu,#main-menu .nav-link,.btn-nav .nav-link,.navbar-toggler,#content,#primary,main,h1.entry-title,.entry-content,.pillar-intro,.pillar-intro .wp-block-column,.pillar-intro p,.pillar-intro strong,.btn-secondary,.pillar-membership,.pillar-membership > .wp-block-column,.pillar-chair,.pillar-chair .wp-block-column,.pillar-chair img,h4.wp-block-heading,.pillar-chair p,.wp-block-list,.wp-block-list li,.wp-block-list li strong,#wrapper-footer-full,#footer-full-content,.footer-widget,#media_image-2 img,#wrapper-footer-full .list-social,#wrapper-footer-full .social-icon,#wrapper-footer-full .textwidget > a,#colophon
+measure  https://balbriggan.ie/community-development/
+  widths 1440, 360 · 42 selector(s) · 24 props · first match
+
+@ 1440px
+  root  scrollWidth  1440  viewport 1440  scrollHeight   1970
+  body
+       x     0  y      0  w  1440  h  1970  vis  "Skip to content News Downloads Newslett…"
+      display: block; position: relative; boxSizing: border-box; width: 1440px; height: 1969.95px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgb(255, 255, 255); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-navbar
+       x     0  y      0  w  1440  h    98  vis  "Skip to content News Downloads Newslett…"
+      display: block; position: sticky; boxSizing: border-box; width: 1440px; height: 98px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  nav.navbar
+       x     0  y      0  w  1440  h    98  vis  "News Downloads Newsletters Fingal Count…"
+      display: flex; position: relative; boxSizing: border-box; width: 1440px; height: 98px; maxWidth: none; margin: 0px; padding: 8px 16px; gap: normal; backgroundColor: rgb(36, 148, 210); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .navbar-brand img
+       x    31  y     13  w   176  h    72  vis  ""  img 300×101 …/balbriggan-logo.svg
+      display: inline; position: static; boxSizing: border-box; width: 176px; height: 72px; maxWidth: 100%; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: Gotham-Light, sans-serif; fontSize: 20px; fontWeight: 400; lineHeight: 30px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .topnav
+       x   453  y     13  w   941  h    34  vis  "News Downloads Newsletters Fingal Count…"
+      display: flex; position: static; boxSizing: border-box; width: 941.125px; height: 34px; maxWidth: none; margin: 0px 15.2px 4px 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #top-menu
+       x   820  y     13  w   443  h    34  vis  "News Downloads Newsletters Fingal Count…"
+      display: flex; position: static; boxSizing: border-box; width: 442.938px; height: 34px; maxWidth: none; margin: 0px 0px 0px 367.188px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #top-menu .nav-link [1 of 5]
+       x   821  y     13  w    48  h    34  vis  "News"
+      display: block; position: static; boxSizing: border-box; width: 48px; height: 34px; maxWidth: none; margin: 0px; padding: 8px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: GothamMedium; fontSize: 12px; fontWeight: 400; lineHeight: 18px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .topnav .list-social
+       x  1279  y     13  w   115  h    34  vis  ""
+      display: block; position: static; boxSizing: border-box; width: 115px; height: 34px; maxWidth: none; margin: 0px 0px 0px 16px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .topnav .social-icon [1 of 4]
+       x  1279  y     18  w    11  h    19  vis  ""
+      display: inline; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: Gotham-Light, sans-serif; fontSize: 20px; fontWeight: 400; lineHeight: 30px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .primarynav
+       x   453  y     51  w   956  h    34  vis  "PLANS & PROJECTS DISCOVER LEADERSHIP & …"
+      display: block; position: static; boxSizing: border-box; width: 956.312px; height: 34px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #main-menu
+       x   453  y     51  w   956  h    34  vis  "PLANS & PROJECTS DISCOVER LEADERSHIP & …"
+      display: flex; position: static; boxSizing: border-box; width: 956.312px; height: 34px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #main-menu .nav-link [1 of 6]
+       x   454  y     51  w   149  h    34  vis  "PLANS & PROJECTS"
+      display: block; position: static; boxSizing: border-box; width: 149.047px; height: 34px; maxWidth: none; margin: 0px; padding: 8px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(245, 238, 47); fontFamily: Gotham-Light, sans-serif; fontSize: 12px; fontWeight: 400; lineHeight: 18px; letterSpacing: normal; textTransform: uppercase; textAlign: left; borderRadius: 0px; border: 0px none rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  .btn-nav .nav-link
+       x  1279  y     55  w   128  h    27  vis  "GET INVOLVED"
+      display: block; position: static; boxSizing: border-box; width: 128px; height: 26.7812px; maxWidth: none; margin: 0px; padding: 2.4px 16px; gap: normal; backgroundColor: rgb(245, 238, 47); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: GothamMedium; fontSize: 12px; fontWeight: 400; lineHeight: 18px; letterSpacing: normal; textTransform: uppercase; textAlign: left; borderRadius: 32px; border: 2px solid rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  .navbar-toggler
+       x     0  y      0  w     0  h     0  hid  ""
+      display: none; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 4px 12px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgba(255, 255, 255, 0.5); fontFamily: Gotham-Light, sans-serif; fontSize: 20px; fontWeight: 400; lineHeight: 20px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 4px; border: 1px solid rgba(255, 255, 255, 0.1); boxShadow: none; opacity: 1; objectFit: fill
+  #content
+       x   150  y    128  w  1140  h  1681  vis  "Community Development The Community Dev…"
+      display: block; position: static; boxSizing: border-box; width: 1140px; height: 1680.58px; maxWidth: 1140px; margin: 0px 150px; padding: 0px 15px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #primary
+       x   150  y    128  w  1140  h  1681  vis  "Community Development The Community Dev…"
+      display: block; position: relative; boxSizing: border-box; width: 1140px; height: 1680.58px; maxWidth: 100%; margin: 0px; padding: 0px 15px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  main
+       x   165  y    128  w  1110  h  1665  vis  "Community Development The Community Dev…"
+      display: block; position: static; boxSizing: border-box; width: 1110px; height: 1664.58px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  h1.entry-title
+       x   165  y    128  w  1110  h    73  vis  "Community Development"
+      display: block; position: static; boxSizing: border-box; width: 1110px; height: 73px; maxWidth: none; margin: 0px 0px 8px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: GothamBold; fontSize: 40px; fontWeight: 500; lineHeight: 48px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .entry-content
+       x   165  y    231  w  1110  h  1562  vis  "The Community Development Pillar – The …"
+      display: block; position: static; boxSizing: border-box; width: 1110px; height: 1561.58px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-intro
+       x   165  y    231  w  1110  h   195  vis  "The Community Development Pillar – The …"
+      display: flex; position: static; boxSizing: border-box; width: 1110px; height: 194.781px; maxWidth: none; margin: 0px 0px 48px; padding: 0px 0px 48px; gap: 32px; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: ; boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-intro .wp-block-column [1 of 3]
+       x   165  y    231  w   105  h   146  vis  ""
+      display: block; position: static; boxSizing: border-box; width: 104.594px; height: 145.781px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-intro p
+       x   302  y    231  w   837  h    97  vis  "The Community Development Pillar – The …"
+      display: block; position: static; boxSizing: border-box; width: 836.812px; height: 97px; maxWidth: none; margin: 0px 0px 16px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-intro strong
+       x   318  y    235  w   294  h    16  vis  "The Community Development Pillar"
+      display: inline; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: GothamBold, GothamBook, "Open Sans", sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .btn-secondary
+       x   608  y    344  w   225  h    33  vis  "VIEW OBJECTIVES"
+      display: inline-block; position: static; boxSizing: border-box; width: 225px; height: 32.7812px; maxWidth: none; margin: 0px; padding: 2.4px 32px; gap: normal; backgroundColor: rgb(245, 238, 47); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: GothamMedium; fontSize: 16px; fontWeight: 700; lineHeight: 24px; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 32px; border: 2px solid rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-membership
+       x   165  y    474  w  1110  h  1267  vis  "Chair Cormac Healy, SEO, Community Depa…"
+      display: flex; position: static; boxSizing: border-box; width: 1110px; height: 1266.8px; maxWidth: none; margin: 0px 0px 28px; padding: 0px; gap: 32px; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-membership > .wp-block-column [1 of 2]
+       x   165  y    474  w   444  h  1267  vis  "Chair Cormac Healy, SEO, Community Depa…"
+      display: block; position: static; boxSizing: border-box; width: 444px; height: 1266.8px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-chair
+       x   165  y    474  w   444  h   269  vis  "Chair Cormac Healy, SEO, Community Depa…"
+      display: flex; position: static; boxSizing: border-box; width: 444px; height: 269.016px; maxWidth: none; margin: 0px 0px 28px; padding: 0px; gap: 32px; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-chair .wp-block-column [1 of 2]
+       x   165  y    474  w   165  h   269  vis  ""
+      display: block; position: static; boxSizing: border-box; width: 164.797px; height: 269.016px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-chair img
+       x   165  y    474  w   165  h   253  vis  ""  img 598×900 …/newsletter.jpg
+      display: inline; position: static; boxSizing: border-box; width: 164.797px; height: 253.016px; maxWidth: 100%; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: ; boxShadow: none; opacity: 1; objectFit: fill
+  h4.wp-block-heading [1 of 2]
+       x   362  y    474  w   247  h    43  vis  "Chair"
+      display: block; position: static; boxSizing: border-box; width: 247.203px; height: 42.7969px; maxWidth: none; margin: 0px 0px 8px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: GothamMedium; fontSize: 24px; fontWeight: 500; lineHeight: 28.8px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-chair p [1 of 2]
+       x   362  y    529  w   247  h    73  vis  "Cormac Healy, SEO, Community Department…"
+      display: block; position: static; boxSizing: border-box; width: 247.203px; height: 73px; maxWidth: none; margin: 0px 0px 16px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .wp-block-list [1 of 3]
+       x   641  y    511  w   634  h    25  vis  "Claire Barkey DDLETB, Youth Development…"
+      display: block; position: static; boxSizing: border-box; width: 634px; height: 25px; maxWidth: none; margin: 0px 0px 16px; padding: 0px 0px 0px 40px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .wp-block-list li [1 of 49]
+       x   681  y    511  w   594  h    25  vis  "Claire Barkey DDLETB, Youth Development…"
+      display: list-item; position: static; boxSizing: border-box; width: 594px; height: 25px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .wp-block-list li strong [1 of 46]
+       x   681  y    515  w   110  h    16  vis  "Claire Barkey"
+      display: inline; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: GothamBold, GothamBook, "Open Sans", sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-footer-full
+       x     0  y   1839  w  1440  h   130  vis  "Privacy"
+      display: block; position: static; boxSizing: border-box; width: 1440px; height: 130.375px; maxWidth: none; margin: 0px; padding: 30px 0px; gap: normal; backgroundColor: rgb(68, 68, 68); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #footer-full-content
+       x   150  y   1869  w  1140  h    70  vis  "Privacy"
+      display: block; position: static; boxSizing: border-box; width: 1140px; height: 70.375px; maxWidth: 1140px; margin: 0px 150px; padding: 0px 15px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .footer-widget [1 of 2]
+       x   150  y   1869  w   570  h    70  vis  ""
+      display: block; position: relative; boxSizing: border-box; width: 570px; height: 70.375px; maxWidth: 50%; margin: 0px; padding: 0px 15px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #media_image-2 img
+       x   165  y   1869  w   192  h    70  vis  ""  img 300×110 …/fcc-logo.svg
+      display: inline; position: static; boxSizing: border-box; width: 192px; height: 70.375px; maxWidth: 100%; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(36, 148, 210); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-footer-full .list-social
+       x   735  y   1869  w   540  h    30  vis  ""
+      display: block; position: static; boxSizing: border-box; width: 540px; height: 30px; maxWidth: none; margin: 0px 0px 16px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: right; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-footer-full .social-icon [1 of 4]
+       x  1172  y   1874  w    11  h    19  vis  ""
+      display: inline; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: Gotham-Light, sans-serif; fontSize: 20px; fontWeight: 400; lineHeight: 30px; letterSpacing: normal; textTransform: none; textAlign: right; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-footer-full .textwidget > a
+       x  1218  y   1919  w    57  h    15  vis  "Privacy"
+      display: inline; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: right; borderRadius: 0px; border: 0px none rgb(36, 148, 210); boxShadow: none; opacity: 1; objectFit: fill
+  #colophon
+       x   165  y   1969  w  1110  h     0  vis  ""
+      display: block; position: static; boxSizing: border-box; width: 1110px; height: 0px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+
+@ 360px
+  root  scrollWidth   360  viewport 360  scrollHeight   3778
+  body
+       x     0  y      0  w   360  h  3778  vis  "Skip to content Community Development T…"
+      display: block; position: relative; boxSizing: border-box; width: 360px; height: 3778.39px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgb(255, 255, 255); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-navbar
+       x     0  y      0  w   360  h    90  vis  "Skip to content"
+      display: block; position: sticky; boxSizing: border-box; width: 360px; height: 90px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  nav.navbar
+       x     0  y      0  w   360  h    90  vis  ""
+      display: flex; position: relative; boxSizing: border-box; width: 360px; height: 90px; maxWidth: none; margin: 0px; padding: 8px 16px; gap: normal; backgroundColor: rgb(36, 148, 210); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .navbar-brand img
+       x    16  y     21  w   142  h    48  vis  ""  img 300×101 …/balbriggan-logo.svg
+      display: inline; position: static; boxSizing: border-box; width: 142.172px; height: 48px; maxWidth: 100%; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: Gotham-Light, sans-serif; fontSize: 20px; fontWeight: 400; lineHeight: 30px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .topnav
+       x   198  y      8  w   131  h    30  vis  ""
+      display: flex; position: static; boxSizing: border-box; width: 131px; height: 30px; maxWidth: none; margin: 0px 15.2px 4px 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #top-menu
+       x     0  y      0  w     0  h     0  hid  "News Downloads Newsletters Fingal Count…"
+      display: flex; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px 0px 0px auto; padding: 16px 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #top-menu .nav-link [1 of 5]
+       x     0  y      0  w     0  h     0  hid  "News"
+      display: block; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 8px 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: GothamMedium; fontSize: 14.4px; fontWeight: 400; lineHeight: 21.6px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .topnav .list-social
+       x   214  y      8  w   115  h    30  vis  ""
+      display: block; position: static; boxSizing: border-box; width: 115px; height: 30px; maxWidth: none; margin: 0px 0px 0px 16px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .topnav .social-icon [1 of 4]
+       x   214  y     13  w    11  h    19  vis  ""
+      display: inline; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: Gotham-Light, sans-serif; fontSize: 20px; fontWeight: 400; lineHeight: 30px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .primarynav
+       x   198  y     42  w   146  h    40  vis  ""
+      display: block; position: static; boxSizing: border-box; width: 146.188px; height: 40px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #main-menu
+       x     0  y      0  w     0  h     0  hid  "Plans & Projects Town Transformation Sm…"
+      display: flex; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px 0px 0px auto; padding: 16px 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #main-menu .nav-link [1 of 6]
+       x     0  y      0  w     0  h     0  hid  "Plans & Projects"
+      display: block; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 8px 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(245, 238, 47); fontFamily: Gotham-Light, sans-serif; fontSize: 14.4px; fontWeight: 400; lineHeight: 21.6px; letterSpacing: normal; textTransform: uppercase; textAlign: left; borderRadius: 0px; border: 0px none rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  .btn-nav .nav-link
+       x     0  y      0  w     0  h     0  hid  "Get Involved"
+      display: block; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 2.4px 16px; gap: normal; backgroundColor: rgb(245, 238, 47); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: GothamMedium; fontSize: 14.4px; fontWeight: 400; lineHeight: 21.6px; letterSpacing: normal; textTransform: uppercase; textAlign: left; borderRadius: 32px; border: 2px solid rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  .navbar-toggler
+       x   198  y     42  w    56  h    40  vis  ""
+      display: inline-block; position: static; boxSizing: border-box; width: 56px; height: 40px; maxWidth: none; margin: 0px; padding: 4px 12px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgba(255, 255, 255, 0.5); fontFamily: Gotham-Light, sans-serif; fontSize: 20px; fontWeight: 400; lineHeight: 20px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 4px; border: 1px solid rgba(255, 255, 255, 0.1); boxShadow: none; opacity: 1; objectFit: fill
+  #content
+       x     0  y    120  w   360  h  3427  vis  "Community Development The Community Dev…"
+      display: block; position: static; boxSizing: border-box; width: 360px; height: 3427.02px; maxWidth: none; margin: 0px; padding: 0px 15px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #primary
+       x     0  y    120  w   360  h  3427  vis  "Community Development The Community Dev…"
+      display: block; position: relative; boxSizing: border-box; width: 360px; height: 3427.02px; maxWidth: none; margin: 0px; padding: 0px 15px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  main
+       x    15  y    120  w   330  h  3411  vis  "Community Development The Community Dev…"
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 3411.02px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  h1.entry-title
+       x    15  y    120  w   330  h   121  vis  "Community Development"
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 121px; maxWidth: none; margin: 0px 0px 8px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: GothamBold; fontSize: 40px; fontWeight: 500; lineHeight: 48px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .entry-content
+       x    15  y    271  w   330  h  3260  vis  "The Community Development Pillar – The …"
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 3260.02px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-intro
+       x    15  y    271  w   330  h   403  vis  "The Community Development Pillar – The …"
+      display: flex; position: static; boxSizing: border-box; width: 330px; height: 402.781px; maxWidth: none; margin: 0px 0px 48px; padding: 0px 0px 48px; gap: 32px; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: ; boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-intro .wp-block-column [1 of 3]
+       x    15  y    271  w   330  h     0  vis  ""
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 0px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-intro p
+       x    15  y    303  w   330  h   241  vis  "The Community Development Pillar – The …"
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 241px; maxWidth: none; margin: 0px 0px 16px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-intro strong
+       x    22  y    307  w   294  h    16  vis  "The Community Development Pillar"
+      display: inline; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: GothamBold, GothamBook, "Open Sans", sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .btn-secondary
+       x    68  y    560  w   225  h    33  vis  "VIEW OBJECTIVES"
+      display: inline-block; position: static; boxSizing: border-box; width: 225px; height: 32.7812px; maxWidth: none; margin: 0px; padding: 2.4px 32px; gap: normal; backgroundColor: rgb(245, 238, 47); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: GothamMedium; fontSize: 16px; fontWeight: 700; lineHeight: 24px; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 32px; border: 2px solid rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-membership
+       x    15  y    722  w   330  h  2757  vis  "Chair Cormac Healy, SEO, Community Depa…"
+      display: flex; position: static; boxSizing: border-box; width: 330px; height: 2757.23px; maxWidth: none; margin: 0px 0px 28px; padding: 0px; gap: 32px; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-membership > .wp-block-column [1 of 2]
+       x    15  y    722  w   330  h   737  vis  "Chair Cormac Healy, SEO, Community Depa…"
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 737.438px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-chair
+       x    15  y    722  w   330  h   709  vis  "Chair Cormac Healy, SEO, Community Depa…"
+      display: flex; position: static; boxSizing: border-box; width: 330px; height: 709.438px; maxWidth: none; margin: 0px 0px 28px; padding: 0px; gap: 32px; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-chair .wp-block-column [1 of 2]
+       x    15  y    722  w   330  h   518  vis  ""
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 517.641px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-chair img
+       x    15  y    722  w   330  h   502  vis  ""  img 360×541 …/newsletter.jpg
+      display: inline; position: static; boxSizing: border-box; width: 330px; height: 501.641px; maxWidth: 100%; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: ; boxShadow: none; opacity: 1; objectFit: fill
+  h4.wp-block-heading [1 of 2]
+       x    15  y   1271  w   330  h    43  vis  "Chair"
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 42.7969px; maxWidth: none; margin: 0px 0px 8px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: GothamMedium; fontSize: 24px; fontWeight: 500; lineHeight: 28.8px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .pillar-chair p [1 of 2]
+       x    15  y   1326  w   330  h    49  vis  "Cormac Healy, SEO, Community Department…"
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 49px; maxWidth: none; margin: 0px 0px 16px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .wp-block-list [1 of 3]
+       x    15  y   1528  w   330  h    49  vis  "Claire Barkey DDLETB, Youth Development…"
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 49px; maxWidth: none; margin: 0px 0px 16px; padding: 0px 0px 0px 40px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .wp-block-list li [1 of 49]
+       x    55  y   1528  w   290  h    49  vis  "Claire Barkey DDLETB, Youth Development…"
+      display: list-item; position: static; boxSizing: border-box; width: 290px; height: 49px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .wp-block-list li strong [1 of 46]
+       x    55  y   1532  w   110  h    16  vis  "Claire Barkey"
+      display: inline; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: GothamBold, GothamBook, "Open Sans", sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-footer-full
+       x     0  y   3577  w   360  h   200  vis  "Privacy"
+      display: block; position: static; boxSizing: border-box; width: 360px; height: 200.375px; maxWidth: none; margin: 0px; padding: 30px 0px; gap: normal; backgroundColor: rgb(68, 68, 68); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #footer-full-content
+       x     0  y   3607  w   360  h   140  vis  "Privacy"
+      display: block; position: static; boxSizing: border-box; width: 360px; height: 140.375px; maxWidth: none; margin: 0px; padding: 0px 15px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .footer-widget [1 of 2]
+       x     0  y   3607  w   360  h    70  vis  ""
+      display: block; position: relative; boxSizing: border-box; width: 360px; height: 70.375px; maxWidth: none; margin: 0px; padding: 0px 15px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #media_image-2 img
+       x    15  y   3607  w   192  h    70  vis  ""  img 300×110 …/fcc-logo.svg
+      display: inline; position: static; boxSizing: border-box; width: 192px; height: 70.375px; maxWidth: 100%; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(36, 148, 210); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-footer-full .list-social
+       x    15  y   3677  w   330  h    30  vis  ""
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 30px; maxWidth: none; margin: 0px 0px 16px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: right; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-footer-full .social-icon [1 of 4]
+       x   242  y   3682  w    11  h    19  vis  ""
+      display: inline; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: Gotham-Light, sans-serif; fontSize: 20px; fontWeight: 400; lineHeight: 30px; letterSpacing: normal; textTransform: none; textAlign: right; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-footer-full .textwidget > a
+       x   288  y   3727  w    57  h    15  vis  "Privacy"
+      display: inline; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: right; borderRadius: 0px; border: 0px none rgb(36, 148, 210); boxShadow: none; opacity: 1; objectFit: fill
+  #colophon
+       x    15  y   3777  w   330  h     0  vis  ""
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 0px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+run-bg: measure-live ended exit=0

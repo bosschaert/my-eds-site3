@@ -1,0 +1,90 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica handoff (C-deliver)",
+    "writtenAt": "2026-09-23T19:47:40.328Z"
+  },
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "community-development"
+      ],
+      "pages": 1,
+      "blocks": 2,
+      "startedAt": "2026-09-23T19:47:40.328Z",
+      "endedAt": "2026-09-23T20:16:34.392Z",
+      "verdict": "foundation: docs 4/4 live, blocks header+footer, styles+fonts, / 200, plain-html checks pass, requests 0 (+ foundation-fix: nav button weight 400, icon-only social anchors)",
+      "gates": {
+        "360": {
+          "chromeHeaderCrop": 1.08,
+          "chromeFooterCrop": 1.21,
+          "chromeParity": "Privacy inline box 15→19 (R-01), icon signatures by file name only"
+        },
+        "1440": {
+          "chromeHeaderCrop": 2.55,
+          "chromeFooterCrop": 1.04,
+          "chromeParity": "10 nav-label glyph-width deltas (R-01), icon signatures by file name only, sticky wrapper vs nav element style line"
+        },
+        "crop": "header/footer bands identical to the gated prototype numbers",
+        "chrome": "0 role/text deltas after fix; page pixel deferred to cluster unit (stock columns block: 22.81%/Δ-503 @1440, 11.41%/Δ156 @360)"
+      }
+    },
+    "pillar-page": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "community-development"
+      ],
+      "pages": 1,
+      "blocks": 1,
+      "startedAt": "2026-09-23T20:16:34.392Z",
+      "endedAt": "2026-09-23T20:39:16.784Z",
+      "verdict": "pillar-page: pages 2/2 live, blocks 1, gate 1440 2.47% / 360 4.40%, requests 1",
+      "gates": {
+        "360": {
+          "pixel": 4.4,
+          "heightDelta": 1,
+          "contentStructural": 0,
+          "overflow": "ok",
+          "headerCrop": 1.08,
+          "footerCrop": 1.21,
+          "chromeParity": "real regions: 0 MISSING/EXTRA; Privacy Δh +4 (R-01), logo hash, header position relative→sticky (request filed)"
+        },
+        "1440": {
+          "pixel": 2.47,
+          "heightDelta": 1,
+          "contentStructural": 0,
+          "overflow": "ok",
+          "headerCrop": 2.55,
+          "footerCrop": 1.04,
+          "chromeParity": "real regions: 0 MISSING/EXTRA; 11 nav-label glyph deltas (R-01), logo signature svg→media hash, header position relative→sticky (frozen, request filed)"
+        },
+        "rounds": {
+          "360": 1,
+          "1440": 1
+        },
+        "residuals": [
+          "header crop 2.55% over the 2% crop bar (frozen foundation, pre-recorded)",
+          "360 bands y1500–3500 at 5.0–6.6% = members-list glyph residual under Montserrat-300 vs Gotham-Light, no line shift (prototype gated 4.32%)",
+          "gate.sh built-in chrome-parity measures live header/footer elements that are the h1 band and an empty element → spurious 20/9; real-region rerun recorded as chrome-parity-pub3-real.txt"
+        ],
+        "motion": "none in the columns block; sticky morph, collapse and dropdown live in the frozen chrome"
+      }
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "startedAt": "2026-09-23T20:40:13.876Z",
+      "endedAt": "2026-09-23T20:41:35.170Z",
+      "verdict": "final: foundation unchanged (19 files), 1 request resolved without change, media-reconcile 1 hosted, plain-html checks 2/2, gate of record pub3 1440 2.47% / 360 4.40%",
+      "gates": {
+        "freeze": "unchanged",
+        "requestsApplied": 0,
+        "requestsResolved": 1,
+        "mediaReconcile": "1 hosted",
+        "plainHtml": "2/2"
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "slug": "community-development",
+  "type": "pillar-page",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "columns"
+  ],
+  "slotsFilled": [
+    "post-1288"
+  ],
+  "canonShas": {
+    "header": "58a6ee77bf28",
+    "footer": "21f256594174",
+    "css": "f25fe9b92c67"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Community Development - Our Balbriggan",
+    "description": null,
+    "canonical": "https://main--stardust-replica-fe635832--of1-labs.aem.page/community-development/",
+    "lang": "en-GB"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Community Development - Our Balbriggan",
+    "url": "https://main--stardust-replica-fe635832--of1-labs.aem.page/community-development/"
+  },
+  "migratedAt": "2026-09-23T19:44:14Z",
+  "designMdSha": "fbd87e3dbe52",
+  "designJsonSha": "6582a110a55c",
+  "sourceCurrentSha": "05fd7e23121b",
+  "sourceProposedSha": "35e6c5435e10",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "variance-probe",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "delivery-lint"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "content spliced verbatim from stardust/current/pages/community-development.json (3 headings, 49 list items, 13 CTAs, 3 images); content-diff none at 1440 and 360 in gate rounds iter2/iter3 (main + header + footer roots)",
+    "variance-probe": "archetype — no siblings in scope (single-page run)",
+    "pixel-gate-1440": "2.48% (70225 px, threshold 10%), height delta 1px, round iter3 @1440 (cd-1440-iter3.log) [prototype regime]",
+    "pixel-gate-360": "4.32% (58776 px, threshold 10%), height delta 1px, round iter3 @360 (cd-360-iter3.log) [prototype regime]",
+    "content-count": "content-diff: none — content + roles match (cd-360-iter3.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/community-development.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "0 P0 · 0 P1 · 1 P2 (delivery-lint --path /community-development)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 17,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "https://balbriggan.ie/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/news/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/downloads/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/newsletters/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/contact/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/town-transformation/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/smart-balbriggan/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/urbact-iplace/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/time4eu/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/news/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/leadership-governance/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/the-team/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/education-skills-training/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/sustainability-climate-action-and-biodiversity/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/economic-development/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/#learning-timetable",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/loves-learning-festival/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/community-platform/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/contact/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/wp-content/uploads/2026/05/Community-Development-Action-Plan.xlsx",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "community-development/index.html",
+  "outputPathDefault": null,
+  "sidecar": "community-development/_meta.json",
+  "driverVersion": "1"
+}

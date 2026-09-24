@@ -1,0 +1,84 @@
+{
+  "generatedAt": "2026-09-23T20:50:24.194Z",
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://balbriggan.ie/community-development/",
+    "liveHost": "balbriggan.ie"
+  },
+  "stageCount": {
+    "identified": 2,
+    "prototyped": 2,
+    "deployed": 2,
+    "optimised": 0
+  },
+  "stageExclusive": {
+    "identified": 0,
+    "prototyped": 0,
+    "deployed": 2,
+    "optimised": 0
+  },
+  "pages": [
+    {
+      "slug": "index",
+      "path": "/",
+      "stage": "deployed",
+      "templateId": "community-development",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "community-development",
+      "path": "/community-development",
+      "stage": "deployed",
+      "templateId": "community-development",
+      "isTemplate": true,
+      "openFindings": 1
+    }
+  ],
+  "templates": [
+    {
+      "id": "community-development",
+      "archetype": "community-development",
+      "pageCount": 2,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 2,
+        "optimised": 0
+      }
+    }
+  ],
+  "blocks": {
+    "total": 1,
+    "converted": 1
+  },
+  "quality": {
+    "overall": 90,
+    "dimensions": {
+      "brand-tensions": null,
+      "design-ux": null,
+      "accessibility": null,
+      "seo": null,
+      "content-conversion": null,
+      "ai-search": 80,
+      "cross-page": 100
+    },
+    "severity": {
+      "P1": 0,
+      "P2": 2,
+      "P3": 0
+    },
+    "history": [
+      83,
+      90
+    ]
+  },
+  "findings": {
+    "byFixability": {
+      "platform-migration": 2
+    },
+    "byAutofix": {
+      "pending": 2
+    }
+  }
+}

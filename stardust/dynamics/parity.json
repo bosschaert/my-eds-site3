@@ -1,0 +1,49 @@
+{
+  "_provenance": { "writtenBy": "stardust:dynamics (rollout D2-dynamic)", "writtenAt": "2026-09-23T20:44:00Z" },
+  "method": "single page replica: 5 rows from stardust/dynamic-features.md; chrome interactions rebuilt natively in blocks/header (Bootstrap-4 collapse + dropdown semantics), tag-manager/analytics/pixel rows at the interim tier (not loaded) pending the owner's tag decision; replayed read-only against the published origin",
+  "features": [
+    {
+      "id": "a-cms-app-settings-object-datalayer", "feature": "WordPress/GTM dataLayer settings object", "class": "A", "pages": 1,
+      "disposition": "decided-out", "reproducibility": "self", "status": "decided-out",
+      "verifiedBy": "the object only feeds the tag manager (row 3); no page content reads it; re-created automatically if the GTM snippet is added per the owner decision",
+      "checks": []
+    },
+    {
+      "id": "m-modal-trigger-aria-haspopup-chrome-only-a-content", "feature": "Header primary-menu dropdowns (4 x aria-haspopup) + mobile hamburger collapse", "class": "M", "pages": 1,
+      "disposition": "rebuild-native", "reproducibility": "self", "status": "done",
+      "verifiedBy": "deployed interaction drive: 4 dropdown triggers, dropdown opens on click (display block, 179x122) and closes on outside click, one open at a time; hamburger runs collapse -> collapsing -> show (menu 250 px, header 398 px at 360) and back; .scrolled past 100 px shrinks the logo to 144x56; 0 page errors",
+      "checks": [
+        { "type": "dom-count", "path": "/community-development", "selector": ".header a[aria-haspopup=\"true\"]", "min": 4 },
+        { "type": "dom-count", "path": "/community-development", "selector": ".header .navbar-toggler", "min": 1 },
+        { "type": "no-page-errors", "paths": ["/community-development", "/"] }
+      ]
+    },
+    {
+      "id": "t-tag-manager-google-tag-manager", "feature": "Google Tag Manager container", "class": "T", "pages": 1,
+      "disposition": "embed-passthrough", "reproducibility": "needs-business-decision", "status": "interim",
+      "verifiedBy": "interim tier: no tag-manager request leaves the page",
+      "owner": "Decide which tags run on the new host and under which container/property ids; then the GTM snippet is added to head.html behind the same consent gate as the source",
+      "checks": [
+        { "type": "consent-gate", "path": "/community-development", "forbiddenHosts": ["www.googletagmanager.com", "googletagmanager.com"] }
+      ]
+    },
+    {
+      "id": "t-analytics-google-analytics-ads", "feature": "Google Analytics (GA4 collect)", "class": "T", "pages": 1,
+      "disposition": "embed-passthrough", "reproducibility": "needs-business-decision", "status": "interim",
+      "verifiedBy": "interim tier: no analytics collect request leaves the page",
+      "owner": "Same decision as the tag-manager row (GA4 loads through GTM)",
+      "checks": [
+        { "type": "consent-gate", "path": "/community-development", "forbiddenHosts": ["www.google-analytics.com", "google-analytics.com", "analytics.google.com"] }
+      ]
+    },
+    {
+      "id": "t-marketing-ad-retargeting-pixel", "feature": "Facebook pixel / SDK", "class": "T", "pages": 1,
+      "disposition": "embed-passthrough", "reproducibility": "needs-business-decision", "status": "interim",
+      "verifiedBy": "interim tier: no Facebook request leaves the page",
+      "owner": "Same decision as the tag-manager row; the pixel id lives in the source page",
+      "checks": [
+        { "type": "consent-gate", "path": "/community-development", "forbiddenHosts": ["connect.facebook.net", "www.facebook.com", "facebook.com"] }
+      ]
+    }
+  ]
+}

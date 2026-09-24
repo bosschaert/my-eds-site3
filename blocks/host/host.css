@@ -1,0 +1,50 @@
+/* host — values from stardust/prototypes/index-proposed.css `#host`, `.host-*` */
+
+main .host-container {
+  border-top: 1px solid var(--line);
+  padding: clamp(4rem, 8vh, 6rem) 0;
+}
+
+.host .host-head p {
+  margin: 0.9rem 0 1rem;
+  font-family: var(--font-serif);
+  font-size: 1.18rem;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  color: var(--ink-soft);
+}
+
+.host .host-figure {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.2rem;
+  align-items: flex-start;
+}
+
+.host .host-note p {
+  margin: 0 0 1rem;
+  max-width: 44rem;
+  line-height: 1.75;
+}
+
+.host .host-img {
+  flex: 0 0 auto;
+  width: min(340px, 100%);
+}
+
+.host .host-img picture {
+  display: block;
+}
+
+.host .host-img img {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(44 37 25 / 25%);
+  box-shadow: 0 2px 14px rgb(44 37 25 / 12%);
+}
+
+@media (width <= 640px) {
+  .host h2 {
+    font-size: 1.75rem;
+  }
+}

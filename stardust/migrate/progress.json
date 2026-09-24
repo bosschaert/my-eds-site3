@@ -1,0 +1,5 @@
+{ "units": {
+  "plan": { "status": "done", "kind": "plan", "templates": ["home"], "pages": 1, "startedAt": "2026-09-23T19:11:40Z", "endedAt": "2026-09-23T19:14:10Z", "verdict": "plan: 1 template (home), 1 page (index, archetype tier), 0 siblings" },
+  "home": { "status": "done", "kind": "render", "templates": ["home"], "pages": 1, "startedAt": "2026-09-23T19:11:40Z", "endedAt": "2026-09-23T19:14:10Z", "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 → stardust/migrated/ (index: 45 assets, 27 out-of-scope internal links repointed at delivery)" },
+  "report": { "status": "done", "kind": "report", "templates": ["home"], "pages": 1, "startedAt": "2026-09-23T19:14:10Z", "endedAt": "2026-09-23T19:14:10Z", "verdict": "index archetype 1440=0.02%/Δ0 360=0.05%/Δ0 cd=none lint=0P0·0P1·1P2 gates=4; state index → migrated" }
+} }

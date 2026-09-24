@@ -1,0 +1,83 @@
+{
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "home"
+      ],
+      "pages": 2,
+      "blocks": 2,
+      "gates": {
+        "shell": "nav.plain.html 200 (14 links), footer.plain.html 200 (6 links), styles.css/header.js/footer.js/fonts/favicon 200 on preview origin; pixel + crop + chrome parity deferred to the home unit (no page yet)"
+      },
+      "startedAt": "2026-09-23T19:18:11Z",
+      "endedAt": "2026-09-23T19:37:13.067Z",
+      "verdict": "foundation: nav+footer live yes, code synced yes, lint 0, files 33"
+    },
+    "home": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "home"
+      ],
+      "pages": 1,
+      "blocks": 6,
+      "gates": {
+        "360": {
+          "pixel": "1.02%",
+          "heightDelta": 0,
+          "overflow": 0,
+          "contentRed": 0,
+          "chromeDeltas": 2,
+          "headerCrop": "0.00%",
+          "footerCrop": "1.09%"
+        },
+        "1440": {
+          "pixel": "0.02%",
+          "heightDelta": 0,
+          "overflow": 0,
+          "contentRed": 0,
+          "chromeDeltas": 2,
+          "headerCrop": "0.00%",
+          "footerCrop": "0.00%"
+        },
+        "aiReadability": 100,
+        "rounds": "pub1, pub2 (--full)"
+      },
+      "startedAt": "2026-09-23T19:40:03.245Z",
+      "endedAt": "2026-09-23T20:05:55.123Z",
+      "verdict": "home: pages 1/1 live, blocks 6, gate 1440 0.02% / 360 1.02%, requests 2"
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "home"
+      ],
+      "pages": 1,
+      "blocks": 0,
+      "gates": {
+        "360": {
+          "pixel": "1.02%",
+          "heightDelta": 0,
+          "overflow": 0,
+          "contentRed": 0,
+          "chromeDeltas": 1
+        },
+        "1440": {
+          "pixel": "0.02%",
+          "heightDelta": 0,
+          "overflow": 0,
+          "contentRed": 0,
+          "chromeDeltas": 1
+        },
+        "round": "pub3 (--full) after footer request applied; remaining chrome delta = header title tag <span> vs <p>, declined under EW1, crop 0.00%",
+        "freeze": "refreshed, 35 files unchanged"
+      },
+      "startedAt": "2026-09-23T20:06:29.461Z",
+      "endedAt": "2026-09-23T20:11:46.478Z",
+      "verdict": "final: freeze ok, 1 of 2 foundation requests applied (footer root parch), 1 declined (EW1); pub3 1440 0.02% / 360 1.02%, Δh 0, chrome 1 accepted delta; coverage index deployed"
+    }
+  }
+}

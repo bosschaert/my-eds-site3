@@ -1,0 +1,13 @@
+{
+  "runtime": "vanilla-eds",
+  "blockWrapperClass": "block",
+  "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "csp": "script-src nonce + strict-dynamic; require-trusted-types-for script (scripts.js installs a pass-through default policy)",
+  "fontsLoad": "styles/fonts.css via loadFonts() (eager at >=900px, lazy otherwise); never in head.html",
+  "chrome": "header/footer blocks fetch /nav and /footer fragments (getMetadata override)",
+  "probedAt": "2026-09-23T19:20:00Z",
+  "probedFrom": ["scripts/scripts.js", "scripts/aem.js", "head.html", "blocks/header/header.js", "blocks/footer/footer.js"]
+}

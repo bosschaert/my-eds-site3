@@ -1,0 +1,133 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-09-23T19:15:41.591Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage/pages.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-23T20:02:58.952Z",
+  "blocks": [
+    {
+      "id": "conversation",
+      "label": "conversation",
+      "kind": "module",
+      "signature": "module:conversation",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "conversation",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "departure",
+      "label": "departure",
+      "kind": "module",
+      "signature": "module:departure",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "departure",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hero",
+      "label": "hero",
+      "kind": "module",
+      "signature": "module:hero",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "hero",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "host",
+      "label": "host",
+      "kind": "module",
+      "signature": "module:host",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "host",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "rooms",
+      "label": "rooms",
+      "kind": "module",
+      "signature": "module:rooms",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "rooms",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "story-nursery",
+      "label": "story-nursery",
+      "kind": "module",
+      "signature": "module:story-nursery",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "story-nursery",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    }
+  ]
+}

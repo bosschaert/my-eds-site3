@@ -1,0 +1,103 @@
+/* story nursery — values from stardust/prototypes/index-proposed.css `.story-nursery-home*` */
+
+main .story-nursery-container {
+  padding: 3rem 0;
+  background: var(--paper);
+}
+
+/* full-bleed: the block owns the column (`min(1100px, 92vw)`) */
+main .story-nursery-container > div {
+  max-width: none;
+  padding: 0;
+}
+
+.story-nursery .story-nursery-home-wrap {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+
+.story-nursery .story-nursery-eyebrow p {
+  margin: 0 0 0.55rem;
+  text-align: center;
+  font: 600 0.68rem / 1.4 Inter, Arial, sans-serif;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #a47c3d;
+}
+
+.story-nursery .story-nursery-title h2 {
+  margin: 0 0 1.15rem;
+  text-align: center;
+  font: 400 clamp(2rem, 4vw, 3rem) / 1.1 var(--font-serif);
+  color: var(--leaf);
+}
+
+.story-nursery .story-nursery-home-image {
+  margin: 0 auto;
+  width: min(920px, 86vw);
+  line-height: 0;
+}
+
+.story-nursery .story-nursery-home-image picture {
+  display: block;
+}
+
+.story-nursery .story-nursery-home-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+}
+
+.story-nursery .story-nursery-home-copy {
+  max-width: 44rem;
+  margin: 1rem auto 0;
+  text-align: center;
+}
+
+.story-nursery .story-nursery-home-copy p:where(:not(.story-nursery-cta p)) {
+  margin: 0 auto 1rem;
+  font: 1.03rem / 1.72 var(--font-serif);
+  color: var(--ink-soft);
+}
+
+.story-nursery .story-nursery-cta a {
+  display: inline-block;
+  color: var(--leaf);
+  font: 600 0.72rem / 1.4 Inter, Arial, sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(78 93 68 / 40%);
+  padding-bottom: 0.28rem;
+}
+
+.story-nursery .story-nursery-cta a:hover {
+  border-bottom-color: var(--leaf);
+}
+
+@media (width <= 700px) {
+  main .story-nursery-container {
+    padding: 2.7rem 0 2.8rem;
+  }
+
+  .story-nursery .story-nursery-home-wrap {
+    width: 100%;
+  }
+
+  .story-nursery .story-nursery-eyebrow,
+  .story-nursery .story-nursery-title,
+  .story-nursery .story-nursery-home-copy {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .story-nursery .story-nursery-home-image {
+    width: 90vw;
+  }
+
+  .story-nursery .story-nursery-home-copy p:where(:not(.story-nursery-cta p)) {
+    font-size: 1rem;
+  }
+}

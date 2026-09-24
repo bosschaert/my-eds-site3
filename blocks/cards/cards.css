@@ -1,0 +1,226 @@
+/* cards — home JOURNAL list (source `.home .p-front-journal` + `.p-journal__*`, values from
+   stardust/prototypes/css/index.css + canon.css). The block is the section container:
+   title · VIEW ALL link · card list, flex-wrapped in the source order. */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 3em;
+  width: 77.3333vw;
+  margin: min(6.25rem, 26.6667vw) auto 0;
+}
+
+.cards .journal-item > a,
+.cards .journal-item > div {
+  display: block;
+}
+
+.cards .journal-ttl {
+  font-size: clamp(1.875rem, 1.402rem + 2.0182vw, 3.125rem);
+  letter-spacing: 0.12em;
+  line-height: 0.7;
+}
+
+.cards .journal-ttl :is(h1, h2, h3) {
+  margin: 0;
+}
+
+.cards .journal-link {
+  order: 3;
+  width: min(7.1875rem, 30.6667vw);
+  margin: 1em auto 0;
+  font-size: clamp(0.6875rem, 0.5692rem + 0.5045vw, 1rem);
+}
+
+.cards .journal-link p {
+  margin: 0;
+}
+
+/* the VIEW ALL underline-arrow link (source `.c-underline-arrow`) */
+.cards .journal-link a:any-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0 0.5em;
+  transition: letter-spacing 0.3s ease-out;
+}
+
+.cards .journal-link a:any-link::after {
+  content: "";
+  width: 1.3em;
+  height: 1em;
+  background-image: url("/icons/arrow-small.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+.cards .journal-link a:any-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--c-black);
+  transform-origin: left;
+}
+
+.cards .journal-list {
+  order: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: min(4.0625rem, 17.3333vw);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards .journal-item-img {
+  width: 100%;
+  aspect-ratio: 308 / 244;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.cards .journal-item-img picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.cards .journal-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease-out;
+}
+
+.cards .journal-item-desc {
+  margin-top: 1.1em;
+}
+
+.cards .journal-item-taxonomy {
+  display: flex;
+  align-items: center;
+  gap: 0.9em;
+  width: 100%;
+}
+
+.cards .journal-item-cat {
+  display: flex;
+  gap: 0.6em;
+}
+
+.cards .journal-item-cat p {
+  margin: 0;
+  padding: 0.15em 1.1em;
+  background-color: var(--c-gray);
+  color: var(--c-white);
+  font-size: clamp(0.75rem, 0.7027rem + 0.2018vw, 0.875rem);
+  letter-spacing: 0.08em;
+}
+
+.cards .journal-item-tag {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cards .journal-item-tag p {
+  display: inline-block;
+  margin: 0 0.8em 0.3em 0;
+  font-size: clamp(0.6875rem, 0.6638rem + 0.1009vw, 0.75rem);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.cards .journal-item-title :is(h2, h3, h4) {
+  display: -webkit-box;
+  width: 100%;
+  margin: 0.7em 0 0.6em;
+  overflow: hidden;
+  font-size: clamp(0.875rem, 0.8277rem + 0.2018vw, 1rem);
+  line-height: 1.44;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.cards .journal-item-date p {
+  margin: 0;
+  color: var(--c-dgray);
+  font-size: clamp(0.6875rem, 0.6638rem + 0.1009vw, 0.75rem);
+}
+
+@media (hover: hover) {
+  .cards .journal-item:hover a {
+    opacity: 0.7;
+  }
+
+  .cards .journal-item:hover a img {
+    transform: scale(1.1);
+  }
+}
+
+@media (width >= 768px) {
+  .cards {
+    gap: 4em 3em;
+    width: min(62.5rem, 73.2064vw);
+  }
+
+  .cards .journal-link {
+    width: 10.375rem;
+  }
+
+  .cards .journal-list {
+    row-gap: min(5rem, 5.8565vw);
+  }
+
+  .cards .journal-item {
+    width: 46.875%;
+  }
+}
+
+@media (width >= 960px) {
+  .cards {
+    margin-top: min(12.5rem, 14.6413vw);
+  }
+
+  .cards .journal-link {
+    order: 2;
+    margin: 0;
+  }
+
+  .cards .journal-list {
+    order: 3;
+  }
+
+  .cards .journal-item-cat p {
+    padding: 0.1em 1.1em;
+  }
+
+  .cards .journal-item-tag p {
+    margin-right: 0.6em;
+  }
+}
+
+@media (width >= 1025px) {
+  .cards {
+    width: 73.2064%;
+  }
+
+  .cards .journal-list {
+    justify-content: flex-start;
+    column-gap: 3.8%;
+  }
+
+  .cards .journal-item {
+    width: 30.8%;
+  }
+}

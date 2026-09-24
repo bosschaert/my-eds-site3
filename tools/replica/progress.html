@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Migration status — sorra.jp</title>
+<style>
+  :root { --ink:#1f2a24; --muted:#5f6b64; --line:#dfe5e1; --bg:#f6f8f6; --card:#fff; --ok:#2f7d4f; --now:#b7791f; --up:#8a949d; --bar:#2f7d4f; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif; color:var(--ink); background:var(--bg); }
+  main { max-width:860px; margin:0 auto; padding:32px 20px 64px; }
+  header { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:24px; margin-bottom:24px; }
+  h1 { font-size:24px; margin:0 0 6px; }
+  h2 { font-size:18px; margin:32px 0 12px; }
+  .meta { color:var(--muted); font-size:14px; }
+  .meta a { color:var(--ink); }
+  .state { display:inline-block; margin-top:12px; padding:4px 12px; border-radius:999px; font-size:14px; font-weight:600; background:#fbf1dc; color:var(--now); }
+  ol.journey { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(5,1fr); gap:8px; }
+  ol.journey li { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px; font-size:14px; }
+  ol.journey li span { display:block; font-size:12px; font-weight:600; margin-top:6px; }
+  .done { color:var(--ok); } .now { color:var(--now); } .up { color:var(--up); }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden; font-size:15px; }
+  th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); }
+  th { background:#eef2ef; font-weight:600; font-size:13px; text-transform:uppercase; letter-spacing:.03em; color:var(--muted); }
+  tr:last-child td { border-bottom:0; }
+  .bar { height:14px; background:#e3e9e5; border-radius:999px; overflow:hidden; margin:8px 0; }
+  .bar div { height:100%; width:100%; background:var(--bar); }
+  details { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 16px; }
+  summary { cursor:pointer; font-weight:600; }
+  ul.pages { margin:8px 0 0; padding-left:20px; }
+  p { margin:8px 0; }
+  @media (max-width:640px) { ol.journey { grid-template-columns:1fr 1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Migrating sorra.jp</h1>
+    <div class="meta">Source site: <a href="https://sorra.jp/">https://sorra.jp/</a></div>
+    <div class="meta">Preview site: <a href="https://main--stardust-replica-d32c145a--of1-labs.aem.page/">https://main--stardust-replica-d32c145a--of1-labs.aem.page/</a></div>
+    <div class="meta">Last updated: 2026-09-24 12:33 UTC</div>
+    <div class="state" style="background:#e3f2e8;color:#2f7d4f">Ready</div>
+  </header>
+
+  <h2>Your migration journey</h2>
+  <ol class="journey">
+    <li>Analyzing your site<span class="done">Done</span></li>
+    <li>Capturing brand and design<span class="done">Done</span></li>
+    <li>Rebuilding page templates<span class="done">Done</span></li>
+    <li>Checking fidelity<span class="done">Done</span></li>
+    <li>Migrating your pages<span class="done">Done</span></li>
+  </ol>
+
+  <h2>Page templates</h2>
+  <table>
+    <thead><tr><th>Template</th><th>Pages</th><th>Desktop</th><th>Mobile</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>Home page</td><td>1</td><td>Looks right</td><td>Looks right</td><td class="done">Done</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Pages migrated: 1 of 1</h2>
+  <details open>
+    <summary>Ready pages on the preview site</summary>
+    <ul class="pages">
+      <li><a href="https://main--stardust-replica-d32c145a--of1-labs.aem.page/">Home — SORRA | 雑木・自然風の庭</a></li>
+    </ul>
+  </details>
+
+  <h2>Progress</h2>
+  <div class="bar"><div></div></div>
+  <p><strong>100% complete.</strong> Your migration is finished.</p>
+
+  <h2>What's happening now</h2>
+  <p>Your home page has been rebuilt on the new platform and is live on the preview site. It has been checked against the original on desktop and mobile and matches closely, and the handover summary is complete. The preview site is ready for your review.</p>
+
+  <h2>What's next</h2>
+  <p>Review the preview site and let us know when you would like it published to your live domain.</p>
+</main>
+</body>
+</html>

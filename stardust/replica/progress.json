@@ -1,0 +1,39 @@
+{
+  "_provenance": { "writtenBy": "stardust:replica", "stardustVersion": "0.25.0", "writtenAt": "2026-09-24T10:32:00Z" },
+  "pageTypes": {
+    "home": {
+      "archetype": "index",
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "liveUrl": "https://sorra.jp/",
+      "status": "gated",
+      "approvedBy": "hands-off",
+      "breakpoints": {
+        "1440": { "iterations": 3, "status": "pass", "pixel": "0.11%", "heightDelta": 0, "contentDiff": "none (0 structural)", "chromeParity": "quiet; header 0.00%, footer 0.00% (crop-compare)", "visualDiff": "12 advisory STRETCHED IMAGE flags — object-fit:cover in 100% boxes, same as live; justified", "afterMotion": "0.11%", "evidence": "stardust/replica/gates/index-1440/ (iter1 21.27% → iter2 21.14% → iter3 0.11%; motion1 9.16% mount-zoom phase → motion2 0.11%)" },
+        "360":  { "iterations": 3, "status": "pass", "pixel": "0.92%", "heightDelta": 0, "contentDiff": "none (0 structural)", "chromeParity": "quiet; header 0.00%, footer 0.00% (crop-compare)", "visualDiff": "12 advisory STRETCHED IMAGE flags — justified as above", "afterMotion": "0.93%", "evidence": "stardust/replica/gates/index-360/ (iter1 31.28%/-73px → iter2 18.47%/0px → iter3 0.92%; motion2 0.93%)" }
+      },
+      "fixesFromInstruments": [
+        "iter1→2: mobile front-nav had a JOURNAL item the live page lacks (content-diff 🟠 EXTRA + 360 height -73px measure.mjs Δh +74 on .p-front-nav); footer address lost the source's spaces after <br class=u-ds-sp> (chrome-parity Δw -8px)",
+        "iter2→3: hero image scale — live capture pinned to slide 1 by timed capture (autoplay 7 s, freeze lands 18–25 s after the initial wait); zoomOut paused mid-animation on live → static frame fitted to scale(1.037) (register R-02)"
+      ],
+      "captureState": {
+        "liveCapture": "stitch-shot --settle --wait 48000 (1440) / 47000 (360): hero on slide 01 in the 63–70 s rewind window; the instrument's carousel reset knows only the slick-dots convention (Splide dots ignored) and its dismiss late window (6 s) exceeds the 7 s interval minus overhead, so click-based pinning landed on slide 02 deterministically",
+        "heroFrame": "active image scale(1.037) — fit series 1.00…1.05 (min 1.10% @1.038 for 1440, 1.48% @1.036 for 360)",
+        "progressRing": "stroke-dashoffset at 0% (t=0 of the ring timer, JS startTimer→update(0))",
+        "images": "20 files harvested to stardust/current/assets/media (webp desktop+mobile hero sources, 3 journal jpgs); jpg fallbacks skipped (Chrome renders the webp source)"
+      },
+      "portations": [],
+      "fonts": "Google Fonts (Kulim Park 400/600, Noto Sans JP 400/500) — same public source as live; self-hosting decided at deploy",
+      "residuals": [
+        "hero band 0.1–0.9% from the fitted zoom frame; 12 STRETCHED IMAGE advisories (object-fit cover, identical on live)"
+      ],
+      "motion": {
+        "observed": ["hero autoplay fade (is-active/is-prev/is-next/is-visible, opacity 4000ms, zoomOut 9s)", "dot click → go(i)", "counter + ring + title/link swap on moved", "body fadeIn", "works submenu li fadeIn (hover, desktop)", "borderAnime on .c-underline-arrow:hover::before", "journal card hover opacity .7 + img scale 1.1 600ms", "a/button hover opacity .4 400ms", "drawer toShow/toHide (aria-hidden), hamburger line morph 400ms", "WORKS accordion is-visible (drawer, mobile nav, footer)"],
+        "implemented": ["all of the above in stardust/prototypes/js/index.js + canon/index CSS; hover/entrance behaviours are pure CSS lifted from main.css"],
+        "dead": ["header scroll-morph (none on live)", ".c-underline-arrow hover measured no diff on either side (pseudo-element animation; parity by class lines)", "works submenu hover: no sampled diff either side (height 0→auto on :hover; parity by CSS)"],
+        "compare": "1440: 12 parity / 0 missing / 0 extra / 2 advisory (is-paused, is-zooming = R-01/R-02 hooks) / 1 timing delta (transform 1000ms restart transition — removed after the run). 360: 9 parity / 5 'missing' (autoplay tick suppressed while the sampler scrolled the hero out of view — R-01) / 3 advisory (--open, is-drawer-open drawer state classes, is-paused)",
+        "evidence": ["stardust/replica/motion/index.json", "stardust/replica/motion/index-build.json", "stardust/replica/motion/index-360.json", "stardust/replica/motion/index-360-build.json"]
+      },
+      "register": ["R-01 hero autoplay pauses off-view", "R-02 slide-1 mount zoom not replayed; fitted static frame"]
+    }
+  }
+}

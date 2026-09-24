@@ -1,0 +1,73 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-09-24T10:34:50.410Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage/pages.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-24T11:59:03.615Z",
+  "blocks": [
+    {
+      "id": "cards",
+      "label": "cards",
+      "kind": "module",
+      "signature": "module:cards",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "cards",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "carousel",
+      "label": "carousel",
+      "kind": "module",
+      "signature": "module:carousel",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "carousel",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "front-nav",
+      "label": "front-nav",
+      "kind": "module",
+      "signature": "module:front-nav",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "front-nav",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    }
+  ]
+}

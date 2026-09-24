@@ -1,0 +1,284 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-09-24T09:52:37.583Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://sorra.jp/"
+  ],
+  "reachSource": "stardust/current/pages"
+ },
+ "pages": {
+  "/": {
+   "url": "https://sorra.jp/",
+   "status": 200,
+   "host": "sorra.jp",
+   "title": "SORRA | 雑木・自然風の庭",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lf6Oh8qAAAAAGr8etDekAvtJiALINa2uUl5ryzV&co=aHR0cHM6Ly9zb3JyYS5qcDo0NDM.&hl=en&v=zqB-6Xpbd3lCIvi7Tr2D0pob&size=invisible&anchor-ms=20000&execute-ms=",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lf6Oh8qAAAAAGr8etDekAvtJiALINa2uUl5ryzV&co=aHR0cHM6Ly9zb3JyYS5qcDo0NDM.&hl=en&v=zqB-6Xpbd3lCIvi7Tr2D0pob&size=invisible&anchor-ms=20000&execute-ms=30000&cb=bminh98tesx",
+     "title": "reCAPTCHA",
+     "w": 256,
+     "h": 60
+    },
+    {
+     "src": null,
+     "title": null,
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "ja",
+    "hreflang": [],
+    "switcher": [
+     "https://sorra.jp/qa",
+     "https://sorra.jp/qa",
+     "https://sorra.jp/qa",
+     "https://sorra.jp/qa"
+    ]
+   },
+   "cms": {
+    "wp": [
+     "hooks",
+     "i18n"
+    ],
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "push"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag",
+    "grecaptcha"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "p-journal__list",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": true
+    }
+   ],
+   "inlineScripts": 7,
+   "inlineFetch": false,
+   "mainText": 255,
+   "domAddedAfterLoad": 14,
+   "hosts": {
+    "sorra.jp": 31,
+    "cdn.jsdelivr.net": 1,
+    "fonts.googleapis.com": 1,
+    "code.jquery.com": 1,
+    "www.google.com": 5,
+    "fonts.gstatic.com": 33,
+    "www.googletagmanager.com": 2,
+    "analytics.google.com": 1,
+    "stats.g.doubleclick.net": 1,
+    "www.gstatic.com": 5
+   },
+   "thirdPartyHosts": [
+    "cdn.jsdelivr.net",
+    "fonts.googleapis.com",
+    "code.jquery.com",
+    "www.google.com",
+    "fonts.gstatic.com",
+    "www.googletagmanager.com",
+    "analytics.google.com",
+    "stats.g.doubleclick.net",
+    "www.gstatic.com"
+   ],
+   "scripts": [
+    "https://code.jquery.com/jquery-3.7.1.min.js",
+    "https://www.google.com/recaptcha/api.js?render=6Lf6Oh8qAAAAAGr8etDekAvtJiALINa2uUl5ryzV",
+    "https://www.googletagmanager.com/gtag/js?id=GT-WFFLQB7N",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-TT59JCD4",
+    "https://sorra.jp/wp/wp-includes/js/dist/hooks.min.js",
+    "https://sorra.jp/wp/wp-includes/js/dist/i18n.min.js",
+    "https://sorra.jp/wp/wp-content/plugins/contact-form-7/includes/swv/js/index.js",
+    "https://sorra.jp/wp/wp-content/themes/sorra-main/assets/js/vendors.bundle.js",
+    "https://sorra.jp/wp/wp-includes/js/dist/vendor/wp-polyfill.min.js",
+    "https://sorra.jp/wp/wp-content/plugins/contact-form-7/modules/recaptcha/index.js",
+    "https://sorra.jp/wp/wp-content/plugins/contact-form-7/includes/js/index.js",
+    "https://sorra.jp/wp/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-contact-form-7-21cf1c445673c649970d.js",
+    "https://sorra.jp/wp/wp-content/themes/sorra-main/assets/js/main.bundle.js",
+    "https://www.gstatic.com/recaptcha/releases/zqB-6Xpbd3lCIvi7Tr2D0pob/recaptcha__en.js",
+    "https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=zqB-6Xpbd3lCIvi7Tr2D0pob"
+   ],
+   "firstPartyApi": [],
+   "thirdPartyXhr": [
+    "POST analytics.google.com/g/collect",
+    "POST www.google.com/recaptcha/api2/reload",
+    "POST www.google.com/recaptcha/api2/clr"
+   ],
+   "postBodies": [
+    {
+     "url": "https://analytics.google.com/g/collect?v=2&tid=G-3Q7LVR6MH7&gtm=45Pe69m1v9205015047za200zd9205015047xf1&_p=1790243559062&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dZTNiMT&_eu=AAAAAGAC&cid=638429206.179",
+     "body": ""
+    },
+    {
+     "url": "https://www.google.com/recaptcha/api2/reload?k=6Lf6Oh8qAAAAAGr8etDekAvtJiALINa2uUl5ryzV",
+     "body": "\n\u0018zqB-6Xpbd3lCIvi7Tr2D0pob\u0012�\u000e03AFcWeA5eNWp9M4EHUXyXlJU9wFbwWrDH2vt-y9T14gOxuXIXweLDSndSPG0DksTSxsJov5jh36En17-A00xqo5lw17HXkpKSRNroLobamfzcgyDCD0iYMUHJG4W1ES5eTz7I817Kgonbsr8_YkcUN4V2I6R1sbUCMd7ljWdt33DdXr9sSwMnH87J4dy3UN0IgCGVXHGTaWaaZBRaAzlGrDbrMya5almHWzJoNBkaWpkvSU4eVYTDzJ0nUHi_VKMWDzi_Fjcx6Qg12Ef4t0Aec1c675nzBcocIhA-og7UcVQa5ZsAsvo9WG17jF8oGB2fgIMGiFgN8vsG2x7ufpmfk5rshhLTtz5lVC4PH9ztI3w3Wgb9z"
+    },
+    {
+     "url": "https://www.google.com/recaptcha/api2/clr?k=6Lf6Oh8qAAAAAGr8etDekAvtJiALINa2uUl5ryzV",
+     "body": "\n(6Lf6Oh8qAAAAAGr8etDekAvtJiALINa2uUl5ryzV\u0012�\u000e03AFcWeA5eNWp9M4EHUXyXlJU9wFbwWrDH2vt-y9T14gOxuXIXweLDSndSPG0DksTSxsJov5jh36En17-A00xqo5lw17HXkpKSRNroLobamfzcgyDCD0iYMUHJG4W1ES5eTz7I817Kgonbsr8_YkcUN4V2I6R1sbUCMd7ljWdt33DdXr9sSwMnH87J4dy3UN0IgCGVXHGTaWaaZBRaAzlGrDbrMya5almHWzJoNBkaWpkvSU4eVYTDzJ0nUHi_VKMWDzi_Fjcx6Qg12Ef4t0Aec1c675nzBcocIhA-og7UcVQa5ZsAsvo9WG17jF8oGB2fgIMGiFgN8vsG2x7ufpmfk5rshhLTtz5lV"
+    }
+   ],
+   "textAtLoad": 262,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "a-cms-app-settings-object-wp",
+   "class": "A",
+   "feature": "CMS / app settings object wp",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-cms-app-settings-object-datalayer",
+   "class": "A",
+   "feature": "CMS / app settings object dataLayer",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "f-form-protection-captcha-antibot",
+   "class": "F",
+   "feature": "form protection: captcha / antibot",
+   "role": "form protection: captcha / antibot",
+   "hint": "forms",
+   "evidence": [
+    "www.google.com",
+    "www.gstatic.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "i18n-locale-variants-qa-qa-qa-qa",
+   "class": "I18N",
+   "feature": "locale variants qa,qa,qa,qa",
+   "hint": "locale",
+   "evidence": [
+    "https://sorra.jp/qa"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-p-journal-list-3-cards",
+   "class": "L",
+   "feature": "listing candidate p-journal__list (3 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "feature": "tag manager: Google Tag Manager",
+   "role": "tag manager: Google Tag Manager",
+   "hint": "tags",
+   "evidence": [
+    "www.googletagmanager.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-analytics-google-analytics-ads",
+   "class": "T",
+   "feature": "analytics: Google Analytics / Ads",
+   "role": "analytics: Google Analytics / Ads",
+   "hint": "tags",
+   "evidence": [
+    "analytics.google.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-marketing-ad-retargeting-pixel",
+   "class": "T",
+   "feature": "marketing: ad / retargeting pixel",
+   "role": "marketing: ad / retargeting pixel",
+   "hint": "tags",
+   "evidence": [
+    "stats.g.doubleclick.net"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "v-iframe-without-src-runtime-injected-embed",
+   "class": "V",
+   "feature": "iframe without src (runtime-injected embed)",
+   "hint": "embed-runtime",
+   "evidence": [
+    "0×0"
+   ],
+   "pages": [
+    "/"
+   ]
+  }
+ ],
+ "reach": {
+  "pagesWithEvidence": 1,
+  "of": 1,
+  "endpoints": {
+   "POST analytics.google.com/g/collect": 1,
+   "POST www.google.com/recaptcha/api2/reload": 1,
+   "POST www.google.com/recaptcha/api2/clr": 1
+  },
+  "searchFormPages": 0,
+  "formPages": 0,
+  "triggerPages": {}
+ }
+}

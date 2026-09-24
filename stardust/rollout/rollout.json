@@ -1,0 +1,35 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-24T10:34:50.278Z",
+    "stardustVersion": "0.0.0"
+  },
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://sorra.jp/",
+    "da": {
+      "org": "of1-labs",
+      "site": "stardust-replica-d32c145a",
+      "ref": "main"
+    },
+    "liveHost": "main--stardust-replica-d32c145a--of1-labs.aem.page"
+  },
+  "lastRun": {
+    "at": "2026-09-24T12:27:56.220Z",
+    "pages": {
+      "total": 1,
+      "verified": 1,
+      "deployed": 0,
+      "pending": 0,
+      "contentPending": 0,
+      "stale": 0,
+      "failed": 0
+    },
+    "blocks": {
+      "total": 3,
+      "converted": 3,
+      "pending": 0
+    },
+    "verifyFailures": 0
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-24T10:41:00Z",
+    "stardustVersion": "0.25.0"
+  },
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "home"
+      ],
+      "pages": 0,
+      "blocks": 2,
+      "gates": {
+        "360": {
+          "header": "1.02%",
+          "footer": "1.08%"
+        },
+        "1440": {
+          "header": "0.00%",
+          "footer": "0.49%"
+        },
+        "crop": "steady-state crops PASS (bar 2%)",
+        "chrome": "26/28 deltas explained: live font-stale cache, empty preview main (footer dy), accepted paragraph split"
+      },
+      "startedAt": "2026-09-24T10:41:00Z",
+      "endedAt": "2026-09-24T11:19:28.689Z",
+      "verdict": "foundation: header/footer + /nav /footer + provisional /index live on preview (preview-only), gate 1440 header 0.00% / footer 0.49%, 360 header 1.02% / footer 1.08%, fonts gstatic, 16 files frozen",
+      "commit": "7deffcb"
+    },
+    "home": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "home"
+      ],
+      "pages": 1,
+      "blocks": 3,
+      "gates": {
+        "360": {
+          "pixel": "1.74%",
+          "heightDelta": 0,
+          "contentDiffStructural": 0,
+          "rounds": "pub3→pub4 (mobile art-directed image + page-info)"
+        },
+        "1440": {
+          "pixel": "0.98%",
+          "heightDelta": 0,
+          "contentDiffStructural": 0,
+          "rounds": "pub3 valid (pub1/pub2 instrument-invalidated), pub4 confirm"
+        },
+        "crop": "hero/journal crops from band breakdown",
+        "chrome": "24/18 deltas = C0 set (live fallback-font cache, span→p, p→a, accepted paragraph splits), no Δy"
+      },
+      "startedAt": "2026-09-24T11:20:04.373Z",
+      "endedAt": "2026-09-24T11:59:03.385Z",
+      "verdict": "home: /index live on preview, blocks carousel/front-nav/cards, roundtrip editable 33/33 dead 0 dup 0, gate 1440 0.98% Δh0 cd:0 / 360 1.74% Δh0 cd:0, requests 1 (.section.intro → styles.css at C-final)",
+      "commit": "88ca203",
+      "roundtrip": "editable 33/33 dead 0 dup 0",
+      "notes": [
+        "stitch-shot.mjs instrument fix (Splide/ARIA pagination reset, finish click animations) — documented exception, flagged for upstreaming",
+        "prototype defect fixed in block: Splide fade stacking (inactive slides off-canvas)"
+      ]
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "home"
+      ],
+      "pages": 1,
+      "blocks": 0,
+      "gates": {
+        "360": {
+          "pixel": "1.74%",
+          "heightDelta": 0,
+          "contentDiffStructural": 0,
+          "round": "pub5"
+        },
+        "1440": {
+          "pixel": "0.98%",
+          "heightDelta": 0,
+          "contentDiffStructural": 0,
+          "round": "pub5"
+        },
+        "chrome": "24/18 deltas = explained C0 set (live fallback-font cache, span→p, p→a, accepted paragraph splits)"
+      },
+      "startedAt": "2026-09-24T11:59:00Z",
+      "endedAt": "2026-09-24T12:06:39.375Z",
+      "verdict": "final: foundation request applied (.section.intro → styles.css, override removed), re-frozen 16 files, Code Sync forced, confirmation gate pub5 1440 0.98% Δh0 / 360 1.74% Δh0 unchanged",
+      "commit": "dd8abaf",
+      "notes": [
+        "stitch-shot warns kulim-park-fallback (local Arial) not loadable in the capture container — the real Kulim Park face loads; instrument-side note"
+      ]
+    }
+  }
+}

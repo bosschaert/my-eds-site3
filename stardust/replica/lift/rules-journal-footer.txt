@@ -1,0 +1,82 @@
+stardust/current/assets/css/main.css: 150 of 690 rules match /^\.(p-journal|l-footer|c-underline-arrow|u-ds|u-sr|l-main|body-inner)|^\.l-footer/i, showing 40
+@4015 .body-inner
+      width: 100%; min-height: 100svh; display: flex; flex-direction: column;
+@8825 .l-footer
+      width: 100%; display: flex; flex-direction: column; margin-top: min(15.625rem,33.3333333333vw); gap: min(5.875rem,12.5333333333vw);
+@8957 .l-footer__contact
+      width: 86.6666666667vw; border-top: 1px solid var(--cBlack); border-bottom: 1px solid var(--cBlack);
+@9071 .l-footer__contact-inner
+      width: 89.2307692308%; margin: 0 auto; padding: min(4.0625rem,17.3333333333vw)0;
+@9171 .l-footer .l-global-menu ul,.l-footer__contact-inner,.l-footer__contact-txt,.l-main--sub .p-sub__ttl-container h1,.l-main--sub .p-sub__ttl-container h2
+      display: flex; flex-direction: column;
+@9358 .l-footer__contact-txt--ttl
+      font-size: clamp(1.875rem,1.0472376387rem + 3.5317860747vw,4.0625rem); margin-bottom: .3em; letter-spacing: .15em;
+@9495 .l-footer__contact-txt--desc
+      font-size: clamp(.75rem,.6553985873rem + .4036326942vw,1rem); line-height: 1.5;
+@9600 .l-footer__contact-cta
+      margin: min(2.375rem,10.1333333333vw) auto 0; width: min(18.625rem,100%); display: flex; flex-direction: column; align-items: center;
+@9747 .l-footer__contact-cta-tel--num
+      font-size: clamp(1.0625rem,.9915489405rem + .3027245207vw,1.25rem); display: flex; flex-wrap: wrap; align-items: flex-end; letter-spacing: .16em;
+@9915 .l-footer__contact-cta-tel--num a
+      font-size: clamp(1.6875rem,1.4746468214rem + .9081735621vw,2.25rem); margin-left: .2em; margin-right: -.2em; letter-spacing: .16em;
+@10073 .l-footer__contact-cta-tel--closed
+      font-size: clamp(.625rem,.5303985873rem + .4036326942vw,.875rem); margin-top: .5em;
+@10188 .l-footer__contact-cta-link
+      display: flex; align-items: center; justify-content: space-between; gap: 1em; padding: .8em 2em; margin-top: 2em; border: 1px solid var(--cBlack); border-radius: 50vh; font-size: clamp(.90625rem,.8234737639rem + .3531786075vw,1.125rem); width: 100%;
+@10446 .l-footer__contact-cta-link::after
+      content: ""; width: 1.5em; height: 1.5em; background-position: center; background-size: contain; background-image: url(../img/arrow-small.svg);
+@10613 .l-footer__contact,.l-footer__inner
+      margin: 0 auto;
+@10663 .l-footer__inner
+      width: 77.3333333333%; display: flex; flex-wrap: wrap; justify-content: space-between; position: relative; margin-bottom: min(2.5rem,5.3333333333vw);
+@10818 .l-footer__logo
+      width: min(15.6875rem,33.4666666667vw); margin-bottom: 1.8em;
+@10892 .l-footer__info
+      font-size: clamp(.75rem,.6553985873rem + .4036326942vw,1rem); line-height: 1.42; margin-bottom: 2em; display: flex; flex-direction: column; gap: .5em;
+@11047 .l-footer .l-global-menu ul
+      gap: 2em;
+@11083 .l-footer .l-global-menu ul li
+      font-size: clamp(.8125rem,.7888496468rem + .1009081736vw,.875rem);
+@11179 .l-footer .l-global-menu .works-menu__container
+      display: flex; flex-direction: column; align-items: flex-start;
+@11285 .l-footer .l-global-menu .works-menu__categories.js-worksCat
+      align-items: flex-start; gap: 1.2em;
+@11379 .l-footer .l-global-menu .works-menu__categories.js-worksCat li
+      font-family: "Kulim Park","Noto Sans JP",sans-serif; font-weight: 400; font-size: clamp(.6875rem,.6638496468rem + .1009081736vw,.75rem);
+@11574 .l-footer .l-global-menu .works-menu__categories.js-worksCat.is-visible
+      margin-top: 1.2em;
+@11663 .l-footer__right
+      display: contents;
+@11697 .l-footer__sns--pc
+      display: none; margin-top: auto;
+@11745 .l-footer__copyright
+      width: 100%; margin-top: 6em; text-align: center; transform: scale(.8); font-size: .625rem; display: inline-block; transform-origin: center;
+@12521 .l-footer .l-global-menu ul li,.l-header__right .l-global-menu>ul>li
+      font-family: "Kulim Park",sans-serif; font-weight: 600;
+@13495 .l-main:not(.l-main-front,.l-main-recruit)
+      padding-top: min(8.1875rem,34.9333333333vw);
+@13581 .l-main:not(.l-main-front,.l-main-recruit)>div:not(.p-sub__fv,.p-works-post,.p-journal),.p-works-post>div:not(.p-works-post__main-img,.p-works-post__bottom)
+      width: 86.6666666667vw; margin: 0 auto;
+@13774 .l-main-privacy
+      margin: 0 auto; width: 86.6666666667vw;
+@13826 .c-underline-arrow
+      width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0 0 .5em; transition: letter-spacing .3s ease-out; position: relative;
+@13992 .c-underline-arrow::after
+      content: ""; width: 1.3em; height: 1em; background-position: center; background-size: contain; background-image: url(../img/arrow-small.svg);
+@14296 .c-underline-arrow::before
+      transform-origin: left; bottom: 0; left: 0;
+@16581 .u-srOnly
+      position: absolute!important; width: 1px!important; height: 1px!important; padding: 0!important; margin: -1px!important; overflow: hidden!important; clip: rect(0 0 0 0)!important; -webkit-clip-path: inset(50%)!important; clip-path: inset(50%)!important; border: 0!important;
+@17261 .u-ds-lg,.u-ds-pc,.u-ds-sub,.u-ds-top
+      display: none;
+@23118 .l-main--sub .p-sub__fv
+      display: flex; flex-direction: column; margin: 0 auto min(9.375rem,40vw);
+@23210 .l-main--sub .p-sub__fv-text
+      margin-left: min(3.125rem,6.6666666667vw);
+@23280 .l-main--sub .p-sub__fv-img
+      width: 78.4%; margin: min(5.4375rem,11.6vw)0 0 auto;
+@23357 .l-main--sub .p-sub__ttl-container
+      align-items: flex-end;
+@23413 .l-main--sub .p-sub__ttl
+      font-size: clamp(1.9375rem,1.2516397578rem + 2.9263370333vw,3.75rem); letter-spacing: .2em;
+… 110 more — narrow the selector regex, add --media/--decl, or raise --max

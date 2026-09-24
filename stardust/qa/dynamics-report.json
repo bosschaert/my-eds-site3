@@ -1,0 +1,154 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics check",
+  "writtenAt": "2026-09-24T12:29:07.922Z",
+  "origin": "https://main--stardust-replica-d32c145a--of1-labs.aem.page",
+  "parity": "stardust/dynamics/parity.json"
+ },
+ "results": [
+  {
+   "feature": "Hero fade slideshow (9 slides, autoplay 7 s, dot pagination, ring counter, per-slide title + link)",
+   "id": "c-hero-slideshow",
+   "class": "C",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "9 × .carousel .splide-slide (min 9)",
+   "thirdParty": "fonts.gstatic.com:200×31",
+   "ms": 2255,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Hero fade slideshow (9 slides, autoplay 7 s, dot pagination, ring counter, per-slide title + link)",
+   "id": "c-hero-slideshow",
+   "class": "C",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "9 × .carousel .splide-pagination-page[aria-label] (min 9)",
+   "thirdParty": "fonts.gstatic.com:200×31",
+   "ms": 1990,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Hero fade slideshow (9 slides, autoplay 7 s, dot pagination, ring counter, per-slide title + link)",
+   "id": "c-hero-slideshow",
+   "class": "C",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × .carousel .splide-slide.is-active (min 1)",
+   "thirdParty": "fonts.gstatic.com:200×31",
+   "ms": 1954,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Hero fade slideshow (9 slides, autoplay 7 s, dot pagination, ring counter, per-slide title + link)",
+   "id": "c-hero-slideshow",
+   "class": "C",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × .carousel .progress-ring-circle (min 1)",
+   "thirdParty": "fonts.gstatic.com:200×31",
+   "ms": 1972,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Hero fade slideshow (9 slides, autoplay 7 s, dot pagination, ring counter, per-slide title + link)",
+   "id": "c-hero-slideshow",
+   "class": "C",
+   "status": "done",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 1 page(s)",
+   "thirdParty": "",
+   "ms": 1944,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Hamburger → full-screen drawer nav (aria-hidden toggle, line morph, WORKS accordion, Escape closes)",
+   "id": "c-mobile-drawer",
+   "class": "C",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × header #nav-drawer[aria-hidden] (min 1)",
+   "thirdParty": "fonts.gstatic.com:200×31",
+   "ms": 1986,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Hamburger → full-screen drawer nav (aria-hidden toggle, line morph, WORKS accordion, Escape closes)",
+   "id": "c-mobile-drawer",
+   "class": "C",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × header .c-hamburger button[aria-controls=\"nav-drawer\"][aria-expanded] (min 1)",
+   "thirdParty": "fonts.gstatic.com:200×31",
+   "ms": 1925,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Hamburger → full-screen drawer nav (aria-hidden toggle, line morph, WORKS accordion, Escape closes)",
+   "id": "c-mobile-drawer",
+   "class": "C",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × header .drawer-menu > ul > li[aria-expanded] (min 1)",
+   "thirdParty": "fonts.gstatic.com:200×31",
+   "ms": 2005,
+   "environmentLimit": null
+  },
+  {
+   "feature": "WORKS hover submenu (desktop header); WORKS accordion in the mobile front-nav",
+   "id": "c-works-submenu",
+   "class": "C",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "3 × header .nav-sections > ul > li > ul > li (min 3)",
+   "thirdParty": "fonts.gstatic.com:200×31",
+   "ms": 1995,
+   "environmentLimit": null
+  },
+  {
+   "feature": "WORKS hover submenu (desktop header); WORKS accordion in the mobile front-nav",
+   "id": "c-works-submenu",
+   "class": "C",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × .front-nav li[aria-expanded] (min 1)",
+   "thirdParty": "fonts.gstatic.com:200×31",
+   "ms": 1983,
+   "environmentLimit": null
+  },
+  {
+   "feature": "JOURNAL latest-3 listing",
+   "id": "l-listing-candidate-p-journal-list-3-cards",
+   "class": "L",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "3 × .cards .journal-item (min 3)",
+   "thirdParty": "fonts.gstatic.com:200×31",
+   "ms": 1984,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Google Tag Manager container GTM-TT59JCD4 (+ gtag GT-WFFLQB7N); fires GA/Ads hits, DoubleClick pixel, dataLayer (rows 6, 7, 10)",
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "status": "scaffolded-awaiting-owner",
+   "type": "consent-gate",
+   "pass": true,
+   "detail": "no request to 3 gated host pattern(s) before consent",
+   "thirdParty": "fonts.gstatic.com:200×31",
+   "ms": 6023,
+   "environmentLimit": null
+  }
+ ]
+}

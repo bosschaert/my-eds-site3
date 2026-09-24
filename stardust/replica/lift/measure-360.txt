@@ -1,0 +1,43 @@
+== https://sorra.jp/ @360
+header.l-header                              x0 y0 w360 h48               fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park   
+.l-header__inner                             x21 y0 w318 h48              fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park m 0px 21.125px  
+.l-header__logo                              x21 y13 w91 h21              fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park   
+.l-header__logo img                          x21 y13 w91 h21              fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park   
+.l-global-menu                           hid x0 y0 w0 h0                  fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park   
+.l-header .l-global-menu li.menu-item    hid x0 y0 w0 h0                  fs 16px fw 600 lh 18.4px ls 1.6px Kulim Park   
+.c-sns-link                              hid x0 y0 w0 h0                  fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park   
+.button-contact                              x181 y13 w96 h22             fs 13px fw 400 lh 14.95px ls 1.6px Kulim Park  p 2.6px 10.4px 
+.c-hamburger                                 x285 y11 w63 h26             fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park m 0px -9.6px 0px 0px  
+main                                         x0 y0 w360 h3025             fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park   
+.p-front-fv                                  x0 y48 w360 h852             fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park m 48px 0px 0px  
+.p-front-fv__slider                          x0 y48 w360 h852             fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park   
+.splide__slide.is-active img                 x0 y48 w360 h852             fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park   
+.splide__page-info                           x26 y763 w307 h56            fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park   
+.slide-title-ja                              x92 y766 w242 h20            fs 17px fw 400 lh 19.55px ls 1.6px Kulim Park   
+.slide-title__link                           x92 y796 w142 h19            fs 11.5px fw 400 lh 13.225px ls 1.6px Kulim Park  p 0px 0px 5.75px 
+.splide__pagination                          x90 y822 w180 h47            fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park   
+.p-front-intro                               x24 y996 w312 h228           fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park m 96px 24px 0px  
+.p-front-intro__txt                          x24 y996 w312 h228           fs 15px fw 400 lh 32.55px ls 2.7px Kulim Park   
+.p-front-nav                                 x24 y1320 w312 h368          fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park m 96px 24px 0px  
+.p-front-journal                             x41 y1784 w278 h1241         fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park m 96px 40.8125px 0px 40.7969px  
+.p-front-journal__ttl                        x41 y1784 w146 h21           fs 30px fw 400 lh 21px ls 3.6px Kulim Park   
+.p-front-journal__link a                     x125 y3007 w110 h18          fs 11px fw 400 lh 12.65px ls 1.6px Kulim Park  p 0px 0px 5.5px 
+.p-journal__list                             x41 y1853 w278 h1095         fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park   
+.p-journal__item                             x41 y1853 w278 h310          fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park   
+.p-journal__item-img                         x41 y1853 w278 h221          fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park   
+.p-journal__item-desc-cat-item               x41 y2093 w58 h17            fs 12px fw 400 lh 13.8px ls 0.96px Kulim Park  p 1.8px 13.2px 
+.p-journal__item-desc-tag-item               x113 y2096 w36 h13           fs 11px fw 400 lh 12.65px ls 1.6px Kulim Park m 0px 8.8px 3.3px 0px  
+.p-journal__item-desc-title                  x41 y2122 w278 h20           fs 14px fw 400 lh 20.16px ls 1.6px Kulim Park m 9.8px 0px 8.4px  
+.p-journal__item-desc-date                   x41 y2150 w278 h13           fs 11px fw 400 lh 12.65px ls 1.6px Kulim Park   
+footer.l-footer                              x0 y3145 w360 h817           fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park m 120px 0px 0px  
+.l-footer__contact                           x24 y3145 w312 h384          fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park m 0px 24px  
+.l-footer__contact-txt--ttl                  x41 y3209 w278 h35           fs 30px fw 400 lh 34.5px ls 4.5px Kulim Park m 0px 0px 9px  
+.l-footer__contact-txt--desc                 x41 y3252 w278 h54           fs 12px fw 400 lh 18px ls 1.6px Kulim Park   
+.l-footer__contact-cta-tel--num              x44 y3343 w273 h31           fs 17px fw 400 lh 19.55px ls 2.72px Kulim Park   
+.l-footer__contact-cta-tel--closed           x44 y3379 w273 h12           fs 10px fw 400 lh 11.5px ls 1.6px Kulim Park m 5px 0px 0px  
+.l-footer__contact-cta-link                  x41 y3419 w278 h47           fs 14.5px fw 400 lh 16.675px ls 1.6px Kulim Park m 29px 0px 0px p 11.6px 29px 
+.l-footer__inner                             x41 y3575 w278 h368          fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park m 0px 40.7969px 19.2px  
+.l-footer__logo img                          x41 y3575 w120 h28           fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park   
+.l-footer__info                              x41 y3632 w136 h91           fs 12px fw 400 lh 17.04px ls 1.6px Kulim Park m 0px 0px 24px  
+.l-footer .l-global-menu                     x213 y3575 w106 h297         fs 16px fw 400 lh 18.4px ls 1.6px Kulim Park   
+.l-footer__copyright                         x69 y3932 w223 h9            fs 10px fw 400 lh 11.5px ls 1.6px Kulim Park m 60px 0px 0px  

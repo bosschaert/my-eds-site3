@@ -1,0 +1,131 @@
+stardust/current/assets/css/main.css: 65 of 690 rules match /p-front|front-fv|splide|circular-progress|progress-content|slide-title|front-page|\.home/i
+@15426 .c-hamburger.--white .inner_line,.home .p-front-fv__slider .splide__slide-titles .slide-title__link::before
+      background-color: var(--cWhite);
+@17312 #front-page .u-ds-top,.l-main--sub .u-ds-sub
+      display: block;
+@17612 .home section:not(.p-front-fv,.p-front-journal)
+      width: 86.6666666667vw; margin-top: min(6.25rem,26.6666666667vw);
+@17722 .home .p-front-fv
+      margin-top: var(--header-height-sp);
+@17775 .home .p-front-fv__content
+      width: 100%;
+@17813 .home .p-front-fv__slider .splide
+      position: relative; visibility: visible;
+@17884 .home .p-front-fv__slider .splide__track
+      width: 100%; height: calc(100svh - var(--header-height-sp));
+@17982 .home .p-front-fv__slider .splide__list
+      position: relative; width: 100%; height: 100%;
+@18063 .home .p-front-fv__slider .splide__list::after
+      content: ""; z-index: var(--z-contents); position: absolute; left: 0; top: 0; width: 100%; height: 100%; mix-blend-mode: multiply; pointer-events: none; background: linear-gradient(180deg,#fff 75%,#868686 90%,#737373 100%);
+@18314 .home .p-front-fv__slider .splide__slide
+      width: 100%; transition: opacity .4s ease,background-color .4s ease;
+@18420 .home .p-front-fv__slider .splide__slide.is-active img
+      animation: zoomOut 9s ease;
+@18501 .home .p-front-fv__slider .splide__slide picture
+      width: 100%; height: 100%;
+@18573 .home .p-front-fv__slider .splide__slide img
+      width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; transition: transform 1s cubic-bezier(.5,1,.89,1);
+@18727 .home .p-front-fv__slider .splide__page-info
+      display: flex; align-items: center; position: absolute; left: min(3.4375rem,7.3333333333vw); bottom: min(5.3125rem,22.6666666667vw); color: var(--cWhite); width: calc(100% - min(6.875rem,14.6666666667vw));
+@18964 .home .p-front-fv__slider .splide__slide-titles
+      max-width: 100%; overflow: hidden; display: flex; flex-direction: column; gap: .7em;
+@19087 .home .p-front-fv__slider .splide__slide-titles .slide-title-ja
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; font-size: clamp(1.0625rem,.7786957619rem + 1.2108980827vw,1.8125rem);
+@19292 .home .p-front-fv__slider .splide__slide-titles .slide-title__link
+      font-size: clamp(.71875rem,.6123234107rem + .454086781vw,1rem); width: -moz-fit-content; width: fit-content; gap: 1em;
+@19470 .home .p-front-fv__slider .splide__slide-titles .slide-title__link::after
+      background-image: url(../img/arrow-small_white.svg);
+@19595 .home .p-front-fv__slider .splide__page-num
+      margin-right: min(.625rem,2.6666666667vw);
+@19680 .home .p-front-fv__slider .splide__page-num .circular-progress
+      --circle-radius: 25; --viewbox-size: 88; --stroke-width: 1; display: flex; align-items: center; justify-content: center; position: relative; width: min(3.75rem,15.4666666667vw); aspect-ratio: 1/1;
+@19922 .home .p-front-fv__slider .splide__page-num .progress-ring
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform: rotate(-90deg); overflow: visible;
+@20077 .home .p-front-fv__slider .splide__page-num .progress-ring__circle-bg
+      fill: transparent; stroke: rgba(255,255,255,.3); stroke-width: var(--stroke-width);
+@20225 .home .p-front-fv__slider .splide__page-num .progress-ring__circle
+      fill: transparent; stroke: var(--cWhite); stroke-width: var(--stroke-width);
+@20363 .home .p-front-fv__slider .splide__page-num .progress-content
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%; font-size: clamp(.78125rem,.7221241171rem + .2522704339vw,.9375rem); display: flex; align-items: center; justify-content: center; letter-spacing: .05em;
+@20622 .home .p-front-fv__slider .splide__page-num .progress-content .current
+      margin-bottom: 1.2em; margin-right: -1.2em;
+@20733 .home .p-front-fv__slider .splide__page-num .progress-content .total
+      margin-top: 1.2em; margin-left: -1.2em;
+@20838 .home .p-front-fv__slider .splide__page-num .progress-content .separator
+      width: 2.4em; display: flex; align-items: center; justify-content: center;
+@20978 .home .p-front-fv__slider .splide__page-num .progress-content .separator::after
+      content: ""; transform: rotate(-45deg); display: inline-block; width: 100%; height: 1px; background-color: var(--cWhite);
+@21168 .home .p-front-fv__slider .splide__pagination
+      position: absolute; left: 50%; transform: translateX(-50%); gap: min(1rem,4.2666666667vw); bottom: min(2rem,8.5333333333vw); pointer-events: all;
+@21348 .home .p-front-fv__slider .splide__pagination__page
+      pointer-events: auto; width: min(.4375rem,1.8666666667vw); aspect-ratio: 1/1; border: 1px solid var(--cWhite); box-sizing: border-box; border-radius: 50vh;
+@21544 .home .p-front-fv__slider .splide__pagination__page.is-active
+      background-color: var(--cWhite);
+@21637 .home .p-front-intro__txt
+      font-size: clamp(.9375rem,.8428985873rem + .4036326942vw,1.1875rem); line-height: 2.17; font-feature-settings: "palt"; letter-spacing: .18em;
+@21797 .home .p-front-nav .l-global-menu>ul>li.menu-item
+      border-top: 1px solid var(--cBlack);
+@21882 .home .p-front-nav .l-global-menu>ul>li.menu-item:last-child
+      border-bottom: 1px solid var(--cBlack);
+@21981 .home .p-front-nav .l-global-menu>ul>li.menu-item>.works-menu__title,.home .p-front-nav .l-global-menu>ul>li.menu-item>a
+      display: inline-block; font-size: clamp(1.4375rem,1.2955978809rem + .6054490414vw,1.8125rem); display: flex; justify-content: space-between; padding: 1em 0; letter-spacing: .12em; font-family: "Kulim Park",sans-serif; font-weight: 600;
+@22322 .home .p-front-nav .l-global-menu>ul>li.menu-item .works-menu__categories
+      align-items: flex-start; font-size: clamp(1.0625rem,.9678985873rem + .4036326942vw,1.3125rem); gap: 1.5em;
+@22497 .home .p-front-nav .l-global-menu>ul>li.menu-item .works-menu__categories.is-visible
+      margin-top: .3em; margin-bottom: 1.3em;
+@22618 .home .p-front-journal
+      width: 77.3333333333vw; margin-top: min(6.25rem,26.6666666667vw); display: flex; flex-wrap: wrap; align-items: flex-end; gap: 3em;
+@22760 .home .p-front-journal__ttl
+      font-size: clamp(1.875rem,1.4019929364rem + 2.0181634712vw,3.125rem); letter-spacing: .12em; line-height: .7;
+@22892 .home .p-front-journal__link
+      width: min(7.1875rem,30.6666666667vw); order: 3; margin: 1em auto 0; font-size: clamp(.6875rem,.5692482341rem + .5045408678vw,1rem);
+@23046 .home .p-front-journal .p-journal__list
+      width: 100%; margin-top: 0; order: 2;
+@38421 .p-recruit__slide .splide
+      padding: 0; pointer-events: none; width: 100%;
+@38488 .p-recruit__slide .splide__slide
+      width: min(23.75rem,50.6666666667vw)!important;
+@54811 .home .p-front-fv__slider .splide   @media print,screen and (min-width:768px)
+      display: flex; flex-wrap: wrap; justify-content: space-between;
+@54903 .home .p-front-journal   @media print,screen and (min-width:768px)
+      gap: 4em 3em; width: min(62.5rem,73.2064421669vw);
+@54973 .home .p-front-journal__link   @media print,screen and (min-width:768px)
+      width: 10.375rem;
+@55822 .home .p-front-journal,.p-journal__list,.p-journal__ttl-tag-list   @media print,screen and (min-width:768px) and (min-width:1025px)
+      width: 73.2064421669%;
+@56083 .home .p-front-journal   @media print,screen and (min-width:768px) and (min-width:960px)
+      margin-top: min(12.5rem,14.6412884334vw);
+@56146 .home .p-front-journal__link   @media print,screen and (min-width:768px) and (min-width:960px)
+      margin: 0; order: 2;
+@59009 .home section:not(.p-front-fv,.p-front-journal)   @media print,screen and (min-width:960px)
+      width: min(62.5rem,73.2064421669vw); margin-top: min(12.5rem,14.6412884334vw);
+@59132 .home .p-front-fv   @media print,screen and (min-width:960px)
+      margin-top: var(--header-height-pc);
+@59185 .home .p-front-fv__slider .splide__track   @media print,screen and (min-width:960px)
+      height: calc(100vh - var(--header-height-pc));
+@59271 .home .p-front-fv__slider .splide__page-info   @media print,screen and (min-width:960px)
+      left: min(2.8125rem,3.2942898975vw); bottom: min(5rem,5.8565153734vw); width: calc(100% - min(5.625rem,6.588579795vw));
+@59430 .home .p-front-fv__slider .splide__slide-titles   @media print,screen and (min-width:960px)
+      gap: .9em;
+@59487 .home .p-front-fv__slider .splide__slide-titles .slide-title__link   @media print,screen and (min-width:960px)
+      letter-spacing: .18em;
+@59575 .home .p-front-fv__slider .splide__page-num   @media print,screen and (min-width:960px)
+      margin-right: min(1.5625rem,1.8301610542vw);
+@59662 .home .p-front-fv__slider .splide__page-num .circular-progress   @media print,screen and (min-width:960px)
+      width: min(5.625rem,6.588579795vw);
+@59759 .home .p-front-fv__slider .splide__page-num .progress-content   @media print,screen and (min-width:960px)
+      font-size: clamp(.625rem,.3884964682rem + 1.0090817356vw,1.25rem);
+@59886 .home .p-front-fv__slider .splide__pagination   @media print,screen and (min-width:960px)
+      gap: min(.875rem,1.0248901903vw); bottom: min(2.3125rem,2.7086383602vw);
+@60001 .home .p-front-fv__slider .splide__pagination__page   @media print,screen and (min-width:960px)
+      width: min(.5625rem,.6588579795vw);
+@60087 .home .p-front-intro__txt   @media print,screen and (min-width:960px)
+      line-height: 2.21;
+@60130 .home .p-front-nav   @media print,screen and (min-width:960px)
+      display: none;
+@60162 .home .p-front-journal .p-journal__list   @media print,screen and (min-width:960px)
+      order: 3;
+@65596 .p-recruit__slide .splide__slide   @media print,screen and (min-width:960px)
+      width: min(23.75rem,27.8184480234vw)!important;
+@68712 .home section:not(.p-front-fv,.p-front-journal)   @media print,screen and (min-width:960px) and (min-width:1025px)
+      width: 73.2064421669%;

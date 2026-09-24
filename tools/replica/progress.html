@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Migration status</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #1a1a1a; background: #f6f6f4; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 24px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 32px 0 12px; }
+  .meta { color: #555; margin: 0 0 16px; }
+  .meta a { color: inherit; }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 999px; background: #e8efff; color: #1d4ed8; font-size: 13px; font-weight: 600; }
+  .badge.ready { background: #e3f6e8; color: #15803d; }
+  .badge.attn { background: #fff1e0; color: #b45309; }
+  .bar { height: 10px; border-radius: 999px; background: #e3e3df; overflow: hidden; }
+  .bar span { display: block; height: 100%; background: #15803d; }
+  .estimate { color: #555; margin-top: 8px; }
+  ol.steps { list-style: none; padding: 0; margin: 0; }
+  ol.steps li { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid #e3e3df; }
+  ol.steps .dot { width: 10px; height: 10px; border-radius: 50%; background: #c9c9c4; flex: none; }
+  ol.steps .current .dot { background: #1d4ed8; }
+  ol.steps .done .dot { background: #15803d; }
+  ol.steps .state { margin-left: auto; color: #555; font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #e3e3df; border-radius: 10px; overflow: hidden; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e3e3df; font-size: 15px; }
+  th { background: #f0f0ec; font-weight: 600; }
+  tr:last-child td { border-bottom: 0; }
+  details { background: #fff; border: 1px solid #e3e3df; border-radius: 10px; padding: 12px 16px; }
+  summary { cursor: pointer; font-weight: 600; }
+  details ul { margin: 8px 0 0; padding-left: 20px; }
+  p.now, p.next { background: #fff; border: 1px solid #e3e3df; border-radius: 10px; padding: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Migration status</h1>
+  <p class="meta">Source site: <a href="https://www.example.com/">https://www.example.com/</a><br>Preview site: <a href="https://main--stardust-replica-0c7311e9--of1-labs.aem.page/">https://main--stardust-replica-0c7311e9--of1-labs.aem.page/</a><br>Last updated: 2026-09-23 19:29 UTC</p>
+  <p><span class="badge ready">Ready</span></p>
+
+  <h2>Journey</h2>
+  <ol class="steps">
+    <li class="done"><span class="dot"></span>Analyzing your site<span class="state">Done</span></li>
+    <li class="done"><span class="dot"></span>Capturing brand and design<span class="state">Done</span></li>
+    <li class="done"><span class="dot"></span>Rebuilding page templates<span class="state">Done</span></li>
+    <li class="done"><span class="dot"></span>Checking fidelity<span class="state">Done</span></li>
+    <li class="done"><span class="dot"></span>Migrating your pages<span class="state">Done</span></li>
+  </ol>
+
+  <h2>Page templates</h2>
+  <table>
+    <thead><tr><th>Template</th><th>Pages</th><th>Desktop</th><th>Mobile</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>Home page</td><td>1</td><td>Looks right</td><td>Looks right</td><td>Done</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Pages migrated</h2>
+  <details open>
+    <summary>1 of 1 pages ready</summary>
+    <ul>
+      <li><a href="https://main--stardust-replica-0c7311e9--of1-labs.aem.page/">Home page</a></li>
+    </ul>
+  </details>
+
+  <h2>Progress</h2>
+  <div class="bar"><span style="width: 100%"></span></div>
+  <p class="estimate">100% complete · Migration complete</p>
+
+  <h2>What's happening now</h2>
+  <p class="now">Your site is fully migrated to the new platform. The home page is live on the preview site and matches your current page pixel for pixel on desktop and mobile. Every link has been checked, and the quality review found nothing to fix.</p>
+
+  <h2>What's next</h2>
+  <p class="next">Review the preview site at your convenience; the migrated site is ready for handover.</p>
+</main>
+</body>
+</html>

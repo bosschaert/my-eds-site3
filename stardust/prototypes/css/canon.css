@@ -1,0 +1,20 @@
+/* Shared canon — values lifted verbatim from the source's inline stylesheet
+   (DESIGN.json.extensions.sourceCss). Rendered by every archetype prototype. */
+:root {
+  --color-page-bg: #eeeeee;   /* source rule: body → background: #eee */
+  --color-text: #000000;      /* user-agent default, rendered under the 0.8 wrapper opacity */
+  --color-link: #334488;      /* source rule: a:link, a:visited → color: #348 */
+  --font-body: system-ui, sans-serif;
+  --content-width: 60vw;      /* source rule: body → width: 60vw */
+  --page-margin-y: 15vh;      /* source rule: body → margin: 15vh auto */
+  --content-opacity: 0.8;     /* source rule: div → opacity: 0.8 */
+  --h1-size: 1.5em;           /* source rule: h1 → font-size: 1.5em */
+}
+body {
+  background: var(--color-page-bg);
+  width: var(--content-width);
+  margin: var(--page-margin-y) auto;
+  font-family: var(--font-body);
+  color: var(--color-text);
+}
+a:link, a:visited { color: var(--color-link); }

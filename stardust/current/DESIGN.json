@@ -1,0 +1,26 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-09-23T18:39:20Z",
+    "readArtifacts": ["https://www.example.com/", "stardust/current/_computed-styles.json", "stardust/current/_brand-extraction.json"],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.25.0"
+  },
+  "name": "Example Domain",
+  "colors": { "page-bg": "#eeeeee", "text": "#000000", "link": "#334488" },
+  "typography": {
+    "heading": { "fontFamily": "system-ui, sans-serif", "fontSize": "1.5em", "fontWeight": 700, "lineHeight": "normal" },
+    "body": { "fontFamily": "system-ui, sans-serif", "fontSize": "16px", "fontWeight": 400, "lineHeight": "normal" }
+  },
+  "rounded": { "none": "0" },
+  "spacing": { "page-top": "15vh", "content-width": "60vw" },
+  "components": { "link": { "textColor": "{colors.link}", "typography": "{typography.body}" } },
+  "extensions": {
+    "componentStyle": { "buttons": [], "links": { "color": "#334488", "underline": "user-agent default" } },
+    "motifs": { "borderRadius": [], "shadows": [], "gradients": [], "opacityWrapper": 0.8 },
+    "voice": { "heroHeadline": "Example Domain", "ctaLabels": ["Learn more"], "register": "static" },
+    "sourceCss": "body{background:#eee;width:60vw;margin:15vh auto;font-family:system-ui,sans-serif}h1{font-size:1.5em}div{opacity:0.8}a:link,a:visited{color:#348}",
+    "modules": [],
+    "metadata": { "siteName": "Example Domain", "defaultOgImage": null, "themeColor": null, "defaultLocale": "en" }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-23T18:46:08Z",
+    "stardustVersion": "0.25.0"
+  },
+  "archetypes": [
+    {
+      "pageType": "static",
+      "archetype": "index",
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "liveUrl": "https://www.example.com/",
+      "mainSelector": "body > div",
+      "breakpoints": {
+        "360": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "0",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflowPx": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "chrome-parity",
+              "flag": "REGION header/footer: no element matches on live or build",
+              "why": "same as 1440; confirmed by gates/index-360/chrome-parity-content-iter1.txt (✓ 3/3 texts paired)"
+            }
+          ],
+          "residuals": [],
+          "captureState": [],
+          "evidence": "stardust/replica/gates/index-360/ (iter1 --full, iter2 pixel confirmation)"
+        },
+        "1440": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "0",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "overflowPx": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "chrome-parity",
+              "flag": "REGION header/footer: no element matches on live or build",
+              "why": "the source page has no header or footer; absence on both sides is parity. Confirmed by chrome-parity --no-defaults --region content='body > div' (✓ 3/3 texts paired): gates/index-1440/chrome-parity-content-iter1.txt"
+            }
+          ],
+          "residuals": [],
+          "captureState": [],
+          "evidence": "stardust/replica/gates/index-1440/ (iter1 --full, iter2 pixel confirmation)"
+        }
+      },
+      "motion": {
+        "observed": 0,
+        "implemented": 0,
+        "dead": [
+          "hover a — no measured hover diff on live"
+        ],
+        "files": [
+          "stardust/replica/motion/index.json",
+          "stardust/replica/motion/index-build.json",
+          "stardust/replica/motion/index-compare.json"
+        ]
+      },
+      "approvedBy": "hands-off",
+      "gatedAt": "2026-09-23T18:46:08Z"
+    }
+  ],
+  "siblings": {},
+  "migrate": {
+    "at": "2026-09-23T18:53:32.212Z",
+    "pages": 1,
+    "archetypes": 1,
+    "siblings": 0,
+    "thin": 0,
+    "gates": {
+      "content-fidelity": 1,
+      "pixel-gate-1440": 1,
+      "pixel-gate-360": 1,
+      "content-count": 1,
+      "delivery-lint": 1
+    },
+    "missing": {}
+  }
+}

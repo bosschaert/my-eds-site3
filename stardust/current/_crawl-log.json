@@ -1,0 +1,39 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 1,
+    "concurrency": 4
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": null,
+  "crawl": {
+    "failures": []
+  },
+  "captureGaps": {
+    "roots": [],
+    "detail": "uncaptured first-level targets: none (no locale root captured)"
+  },
+  "dynamicSurface": {
+    "pages": 1,
+    "pagesWithSameSiteData": 0,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 0,
+    "truncatedPages": 0,
+    "endpoints": [],
+    "thirdPartyScriptHosts": [],
+    "frameworkHints": [],
+    "globalState": [],
+    "formTargets": []
+  },
+  "visionCheck": [
+    {
+      "slug": "index",
+      "verdict": "ok",
+      "notes": "thumbnail shows the h1, the paragraph and the link on the #eee ground exactly as recorded; spaShellSuspect is a false positive on a genuinely one-paragraph page (no media on the source either)."
+    }
+  ],
+  "siblingCandidates": [],
+  "userChoice": "--pages https://www.example.com/ (plan scope: 1 of 1 discovered)"
+}

@@ -1,0 +1,50 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-09-23T18:38:39Z",
+    "readArtifacts": [
+      "https://www.example.com/",
+      "stardust/current/pages/index.json",
+      "stardust/current/pages/index.html",
+      "stardust/current/_computed-styles.json"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.25.0"
+  },
+  "site": { "name": "Example Domain", "tagline": null, "originUrl": "https://www.example.com" },
+  "origins": [ { "url": "https://www.example.com", "role": "primary", "pages": 1 } ],
+  "logo": { "source": "none", "path": null, "sourceSelector": null, "note": "No logo, favicon (link rel=icon href=data:,) or og:image on the page." },
+  "favicon": null,
+  "palette": [
+    { "value": "#eeeeee", "role": "background", "usedAs": ["background"], "occurrences": 2, "sources": [{ "url": "https://www.example.com/", "selector": "body", "prop": "background-color" }] },
+    { "value": "#000000", "role": "text-primary", "usedAs": ["text"], "occurrences": 6, "note": "Rendered through div{opacity:0.8}, so the visible text reads as #1e1e1e-ish over #eee.", "sources": [{ "url": "https://www.example.com/", "selector": "h1, p", "prop": "color" }] },
+    { "value": "#334488", "role": "link", "usedAs": ["text"], "occurrences": 4, "sources": [{ "url": "https://www.example.com/", "selector": "a:link, a:visited", "prop": "color" }] }
+  ],
+  "type": {
+    "headingFamily": "system-ui, sans-serif",
+    "bodyFamily": "system-ui, sans-serif",
+    "files": [],
+    "sizes": [
+      { "px": 24, "role": "h1", "weight": 700, "lineHeight": "normal", "sources": [{ "url": "https://www.example.com/", "selector": "h1", "prop": "font-size" }] },
+      { "px": 16, "role": "body", "weight": 400, "lineHeight": "normal", "sources": [{ "url": "https://www.example.com/", "selector": "p", "prop": "font-size" }] }
+    ],
+    "scaleAudit": { "kind": "ad-hoc", "note": "Two sizes only (16 → 24, ratio 1.5); too few steps to name a scale." }
+  },
+  "spacing": { "baseUnit": null, "observed": ["15vh page top/bottom margin", "60vw content width, centered", "default UA h1/p margins (0.67em / 1em)"] },
+  "motifs": { "borderRadius": { "mode": null, "occurrences": [] }, "shadows": [], "gradients": [], "patterns": [] },
+  "componentStyle": { "buttons": [], "links": { "color": "#334488", "underline": true } },
+  "systemComponents": [],
+  "iconFont": null,
+  "voice": {
+    "heroHeadline": "Example Domain",
+    "heroLede": "This domain is for use in documentation examples without needing permission. Avoid use in operations.",
+    "firstParagraph": "This domain is for use in documentation examples without needing permission. Avoid use in operations.",
+    "ctaLabels": ["Learn more"],
+    "heroImage": null,
+    "heroMedium": null
+  },
+  "voiceTable": { "ctaFrequency": [{ "label": "Learn more", "count": 1 }], "headingFrequency": [], "headingsUppercasePercent": 0, "distinctHeadings": 1, "distinctCtaLabels": 1 },
+  "crossPromo": { "detected": false },
+  "register": "static",
+  "registerNote": "Neither marketing nor tool indicators: a one-paragraph informational placeholder page. Recorded as static; treated as brand for the descriptive files with this note."
+}

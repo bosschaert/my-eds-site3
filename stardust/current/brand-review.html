@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- stardust:provenance
+  writtenBy:        stardust:extract
+  writtenAt:        2026-09-23T18:39:50Z
+  readArtifacts:
+    - stardust/current/_brand-extraction.json
+    - stardust/current/_computed-styles.json
+    - stardust/current/pages/index.json
+    - stardust/current/_crawl-log.json
+  synthesizedInputs: []
+  stardustVersion:  0.25.0
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand review — Example Domain (current state)</title>
+<style>
+  :root { --bg: #eeeeee; --text: #000000; --accent: #334488; --primary: #334488; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, sans-serif; font-size: 16px; line-height: 1.5; }
+  nav { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #ccc; padding: 8px 24px; font-size: 14px; }
+  nav a { color: var(--accent); margin-right: 16px; }
+  main { max-width: 900px; margin: 0 auto; padding: 32px 24px 64px; }
+  section { background: #fff; border: 1px solid #ddd; padding: 24px; margin: 24px 0; page-break-inside: avoid; }
+  h1 { font-size: 1.5em; margin: 0 0 8px; }
+  h2 { font-size: 1.25em; margin: 0 0 16px; }
+  .hero-line { color: var(--accent); font-size: 1.25em; margin: 0 0 8px; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .stat { background: var(--bg); padding: 12px; }
+  .stat b { display: block; font-size: 1.25em; }
+  .swatches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .swatch { border: 1px solid #ccc; }
+  .swatch div { height: 64px; }
+  .swatch p { margin: 0; padding: 8px; font-size: 14px; }
+  code { font-family: ui-monospace, monospace; font-size: 0.9em; }
+  .badge { display: inline-block; padding: 2px 8px; font-size: 12px; background: var(--bg); border: 1px solid #ccc; }
+  .tension { border-left: 4px solid var(--accent); padding: 8px 12px; margin: 8px 0; background: var(--bg); }
+  img.shot { max-width: 100%; border: 1px solid #ccc; }
+  footer { font-size: 14px; color: #444; }
+</style>
+</head>
+<body>
+<nav><a href="#coverage">Coverage</a><a href="#pages">Pages</a><a href="#palette">Palette</a><a href="#type">Typography</a><a href="#voice">Voice</a><a href="#tensions">Tensions</a><a href="#spacing">Spacing</a></nav>
+<main>
+  <section id="masthead">
+    <h1>Example Domain</h1>
+    <p class="hero-line">Example Domain</p>
+    <p>Origin: <a href="https://www.example.com/">https://www.example.com/</a> · no tagline or meta description on the page.</p>
+  </section>
+
+  <section id="coverage">
+    <h2>Coverage</h2>
+    <div class="stats">
+      <div class="stat"><b>1 / 1</b>pages extracted (plan scope: 1)</div>
+      <div class="stat"><b>medium · 2500 ms</b>wait strategy</div>
+      <div class="stat"><b>3 colours · 1 family</b>brand surface</div>
+    </div>
+    <p>No crawl failures. Missing on the site itself: logo, favicon, imagery, metadata, header, footer, buttons, motifs. Those sections are omitted below.</p>
+  </section>
+
+  <section id="pages">
+    <h2>Pages</h2>
+    <p><code>/</code> — Example Domain</p>
+    <img class="shot" src="assets/screenshots/index.png" alt="Screenshot of https://www.example.com/ at 1440 px">
+  </section>
+
+  <section id="palette">
+    <h2>Color palette</h2>
+    <div class="swatches">
+      <div class="swatch"><div style="background:#eeeeee"></div><p><code>#eeeeee</code> · background · 2 · body</p></div>
+      <div class="swatch"><div style="background:#000000"></div><p><code>#000000</code> · text-primary · 6 · h1, p (rendered at 80% opacity)</p></div>
+      <div class="swatch"><div style="background:#334488"></div><p><code>#334488</code> · link · 4 · a:link, a:visited</p></div>
+    </div>
+    <p>Source: <code>_brand-extraction.json § palette</code>, <code>_computed-styles.json § aggregate.colors</code>.</p>
+  </section>
+
+  <section id="type">
+    <h2>Typography <span class="badge">No modular scale</span></h2>
+    <p style="font-size:24px;font-weight:700;margin:0 0 8px">Example Domain — h1, 24 px / 700 / system-ui</p>
+    <p style="font-size:16px;font-weight:400;margin:0">This domain is for use in documentation examples without needing permission. Avoid use in operations. — body, 16 px / 400 / system-ui</p>
+    <p>No font files are loaded; the rendered face is the platform system font. Source: <code>_brand-extraction.json § type</code>.</p>
+  </section>
+
+  <section id="voice">
+    <h2>Voice <span class="badge">tone guess: neutral, utilitarian</span></h2>
+    <div class="stats">
+      <div class="stat"><b>Hero</b>Example Domain</div>
+      <div class="stat"><b>Tagline</b>none on page</div>
+      <div class="stat"><b>First paragraph</b>This domain is for use in documentation examples without needing permission. Avoid use in operations.</div>
+    </div>
+    <p>CTA frequency: <span class="badge">Learn more ×1</span></p>
+    <div class="stats">
+      <div class="stat"><b>0%</b>headings uppercase</div>
+      <div class="stat"><b>1</b>distinct headings</div>
+      <div class="stat"><b>1</b>distinct CTA labels</div>
+    </div>
+  </section>
+
+  <section id="tensions">
+    <h2>Tensions</h2>
+    <div class="tension"><b>T-scale</b> — Type scale is ad-hoc (16 → 24, no consistent ratio). Direct will need to decide whether the target adopts a modular scale. <em>Replica flow: kept as is.</em></div>
+    <div class="tension"><b>T-logo-variants</b> — No logo variant captured (source: none; the page declares <code>rel=icon href="data:,"</code>). A redesign would need a mark; replica ships none, as the source does.</div>
+    <div class="tension"><b>T-color-imbalance</b> — Colour #334488 (link) appears as text only, never as background. Direct would decide drop / expand / keep as accent. <em>Replica flow: kept as is.</em></div>
+    <div class="tension"><b>T-no-tokens</b> — No CSS custom properties defined. The current site has no design-token layer; the migration target introduces tokens, a structural change worth noting.</div>
+  </section>
+
+  <section id="spacing">
+    <h2>Spacing &amp; shape</h2>
+    <p>Base unit: none declared. Observed: content column <code>width: 60vw</code>, page margin <code>15vh auto</code>, user-agent heading and paragraph margins. Radii: none. Shadows: none.</p>
+  </section>
+
+  <footer>
+    <p>Provenance: this review read <code>_brand-extraction.json</code>, <code>_computed-styles.json</code>, <code>pages/index.json</code> and <code>_crawl-log.json</code>. Sections without source data (logo, motifs, components, system components, cross-promo, embeds) are omitted.</p>
+    <p>What's next: this project runs the replica flow — the design is kept, so the direction step promotes this record verbatim.</p>
+    <p>Badge legend: <span class="badge">grey</span> observed fact or heuristic tag.</p>
+  </footer>
+</main>
+</body>
+</html>

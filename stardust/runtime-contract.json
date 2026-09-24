@@ -1,0 +1,14 @@
+{
+  "runtime": "vanilla-eds",
+  "blockWrapperClass": "block",
+  "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "evidence": {
+    "decorateButtons": "scripts/scripts.js — requires a.closest('strong') or a.closest('em'); a bare <a> alone in a <p> is left untouched; emits p.button-wrapper > a.button.{primary|secondary|accent}",
+    "decorateBlock": "scripts/aem.js — adds .block + data-block-name, wraps in div.<name>-wrapper, section gains .<name>-container",
+    "decorateSections": "scripts/aem.js — wraps default content in div.default-content-wrapper; an empty section div stays in the DOM (no removal), hence main .section:empty { display: none } in styles.css",
+    "loadFragment": "blocks/fragment/fragment.js — main.innerHTML = plain.html text (scripts inert); returns null on non-200"
+  }
+}

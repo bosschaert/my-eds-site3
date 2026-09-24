@@ -1,0 +1,111 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-23T18:56:05Z",
+    "stardustVersion": "0.25.0"
+  },
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "blocks": 0,
+      "gates": {
+        "360": {
+          "archetype": "0.00%",
+          "heightDelta": 0,
+          "overflow": "ok",
+          "contentDiff": "1 finding, 0 structural (pipeline-added <a title>, invisible)",
+          "visualDiff": "0 flags (root body > div, main)",
+          "label": "pub1",
+          "regime": "published-origin"
+        },
+        "1440": {
+          "archetype": "0.00%",
+          "heightDelta": 0,
+          "overflow": "ok",
+          "contentDiff": "1 finding, 0 structural (pipeline-added <a title>, invisible)",
+          "visualDiff": "0 flags (root body > div, main)",
+          "label": "pub1",
+          "regime": "published-origin"
+        },
+        "crop": "n/a: no header/footer on either side (live absent, build zero-height)",
+        "chrome": "content region 3/3 texts paired at 1440 and 360; header/footer regions absent on live (justified)"
+      },
+      "startedAt": "2026-09-23T18:56:05Z",
+      "endedAt": "2026-09-23T19:13:32Z",
+      "verdict": "foundation: pages 1/1 live, blocks 0, plain.html ok, guard 30/30 pass, ai-readability 100; published gate 1440 0.00% / 360 0.00%, hΔ 0",
+      "files": [
+        "styles/styles.css",
+        "styles/fonts.css",
+        "blocks/header/header.js",
+        "blocks/header/header.css",
+        "blocks/footer/footer.js",
+        "blocks/footer/footer.css",
+        "content/index.html",
+        "stardust/runtime-contract.json",
+        "stardust/eds-conversion-log.md",
+        "stardust/eds-schema/index.json",
+        "stardust/deploy/ledger-index.json"
+      ]
+    },
+    "index": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "blocks": 0,
+      "gates": {
+        "360": {
+          "archetype": "0.00%",
+          "heightDelta": 0,
+          "overflow": "ok",
+          "contentDiff": "1 finding, 0 structural (pipeline-added <a title>, invisible)",
+          "visualDiff": "0 flags (root body > div, main)",
+          "label": "pub1",
+          "regime": "published-origin",
+          "inheritedFrom": "foundation pub1 (same page, same origin, re-verified)"
+        },
+        "1440": {
+          "archetype": "0.00%",
+          "heightDelta": 0,
+          "overflow": "ok",
+          "contentDiff": "1 finding, 0 structural (pipeline-added <a title>, invisible)",
+          "visualDiff": "0 flags (root body > div, main)",
+          "label": "pub1",
+          "regime": "published-origin",
+          "inheritedFrom": "foundation pub1 (same page, same origin, re-verified)"
+        },
+        "crop": "n/a: no header/footer on either side (live absent, build zero-height)",
+        "chrome": "content region 3/3 texts paired at 1440 and 360; header/footer regions absent on live (justified)",
+        "recheck": "page 200 + plain.html 3 nodes verbatim; overflow 1440/360 = viewport; delivery-lint 0P0·0P1·0P2; localize-links CHECK PASS; gate-evidence 1440=0.00%/Δ0 360=0.00%/Δ0 cd=1(0🔴); foundation-freeze unchanged 16 files"
+      },
+      "startedAt": "2026-09-23T19:15:49Z",
+      "endedAt": "2026-09-23T19:16:28Z",
+      "verdict": "index: pages 1/1 live, blocks 0, gate 1440 0.00% / 360 0.00%, requests 0 (page delivered by the foundation unit; chain re-verified, coverage → deployed)"
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "blocks": 0,
+      "gates": {
+        "check": "foundation-freeze check: unchanged, 16 files",
+        "requests": "0 queued (foundation-requests.md never created); nothing applied",
+        "coverage": "index → deployed (1/1)",
+        "preview": "200"
+      },
+      "startedAt": "2026-09-23T19:17:10Z",
+      "endedAt": "2026-09-23T19:17:10Z",
+      "verdict": "final: pages 1/1 live, blocks 0, requests 0 applied, foundation unchanged; C-deliver complete"
+    }
+  }
+}

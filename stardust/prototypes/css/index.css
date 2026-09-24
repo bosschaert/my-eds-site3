@@ -1,0 +1,4 @@
+/* Archetype: static (index). The source has no header, footer or sections:
+   one content wrapper at 0.8 opacity holding an h1 and two paragraphs. */
+.content { opacity: var(--content-opacity); }
+.content h1 { font-size: var(--h1-size); }

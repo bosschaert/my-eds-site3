@@ -1,0 +1,69 @@
+{
+  "slug": "index",
+  "type": "static",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [],
+  "slotsFilled": [
+    "h1",
+    "p",
+    "p"
+  ],
+  "canonShas": {
+    "header": "534598da2521",
+    "footer": "736a7ff44f02",
+    "css": "2b2d18daff93"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "modules-census",
+      "modules": [],
+      "reason": "page is default content only: one h1, one paragraph, one CTA paragraph; no composite section → no block; rollout Phase B has nothing to dedup"
+    }
+  ],
+  "metadata": {
+    "title": "Example Domain",
+    "description": null,
+    "canonical": "https://main--stardust-replica-0c7311e9--of1-labs.aem.page/",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Example Domain",
+    "url": "https://main--stardust-replica-0c7311e9--of1-labs.aem.page/"
+  },
+  "migratedAt": "2026-09-23T18:53:12Z",
+  "designMdSha": "c40bbd79c65f",
+  "designJsonSha": "721c748b3510",
+  "sourceCurrentSha": "dc69cda4119d",
+  "sourceProposedSha": "b91454ab7073",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "delivery-lint"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "verbatim from current/pages/index.json: h1 'Example Domain', 1 body paragraph, CTA 'Learn more' → https://iana.org/domains/example; 0 deviations; content-diff capture vs migrated 3/3 nodes paired, 0 structural",
+    "pixel-gate-1440": "0.00% (0 px, threshold 10%), height delta 0px, round pub1 @1440 (index-1440-pub1.log) [published regime]",
+    "pixel-gate-360": "0.00% (0 px, threshold 10%), height delta 0px, round pub1 @360 (index-360-pub1.log) [published regime]",
+    "content-count": "content-diff: 1 (0 structural 🔴) (index-1440-pub1.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/index.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "0 P0 · 0 P1 · 1 P2 (delivery-lint --path /)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 2,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "index.html",
+  "outputPathDefault": null,
+  "sidecar": "_meta.json",
+  "driverVersion": "1"
+}

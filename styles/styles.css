@@ -1,0 +1,141 @@
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+
+/*
+ * Replica of https://www.example.com/ — design values lifted verbatim from the
+ * source stylesheet (stardust/prototypes/css/canon.css). The source has one box
+ * model: body { width: 60vw; margin: 15vh auto } wrapping div { opacity: 0.8 }.
+ * Mapped onto the EDS structure: body stays full width (margin 0), `main` is the
+ * source `body` box and `main > .section` is the source `div`.
+ */
+
+:root {
+  /* colors */
+  --background-color: #eee;
+  --text-color: #000;
+  --link-color: #348;
+
+  /* fonts */
+  --body-font-family: system-ui, sans-serif;
+
+  /* layout */
+  --content-width: 60vw;
+  --page-margin-y: 15vh;
+  --content-opacity: 0.8;
+}
+
+body {
+  display: none;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  line-height: normal;
+}
+
+body.appear {
+  display: block;
+}
+
+header .header,
+footer .footer {
+  visibility: hidden;
+}
+
+header .header[data-block-status="loaded"],
+footer .footer[data-block-status="loaded"] {
+  visibility: visible;
+}
+
+/* the source `body` box */
+main {
+  width: var(--content-width);
+  margin: var(--page-margin-y) auto;
+}
+
+h1 {
+  margin: 0.67em 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: normal;
+}
+
+p {
+  margin: 1em 0;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+/* links: source has a:link/a:visited colour only, UA underline, no hover rule */
+a:link,
+a:visited {
+  color: var(--link-color);
+}
+
+/* buttons: the source has none — a formatted link renders as a plain inline link */
+p.button-wrapper {
+  margin: 1em 0;
+}
+
+a.button:any-link {
+  display: inline;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: none;
+  color: var(--link-color);
+  font: inherit;
+  text-decoration: underline;
+  white-space: normal;
+}
+
+main img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+/* sections: the source `div { opacity: 0.8 }` */
+main > .section {
+  margin: 0;
+  padding: 0;
+  opacity: var(--content-opacity);
+}
+
+main > .section > div {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* the metadata block leaves an empty section behind */
+main .section:empty {
+  display: none;
+}

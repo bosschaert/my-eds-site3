@@ -1,0 +1,42 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-23T18:50:41Z",
+    "stardustVersion": "0.25.0"
+  },
+  "units": {
+    "plan": {
+      "status": "done",
+      "kind": "plan",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "startedAt": "2026-09-23T18:50:41Z",
+      "endedAt": "2026-09-23T18:50:41Z",
+      "verdict": "1 template cluster: index (static, archetype tier, prototype stardust/prototypes/index-proposed.html); 0 siblings; 0 media assets to rehost → units: render:index, report"
+    },
+    "index": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "startedAt": "2026-09-23T18:51:15Z",
+      "endedAt": "2026-09-23T18:53:51Z",
+      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0; gates content-fidelity, pixel-gate-1440 0.00%/Δ0, pixel-gate-360 0.00%/Δ0, content-count none, delivery-lint 0P0·0P1·1P2; media-reconcile n/a until delivered"
+    },
+    "report": {
+      "status": "done",
+      "kind": "report",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "startedAt": "2026-09-23T18:54:09Z",
+      "endedAt": "2026-09-23T18:54:09Z",
+      "verdict": "1 page migrated (index, archetype tier), 0 siblings, 0 thin, 0 refused; state index → migrated"
+    }
+  }
+}

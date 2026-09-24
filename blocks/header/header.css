@@ -1,0 +1,8 @@
+/*
+ * The source has no header. The header block loads /nav, which does not exist,
+ * so the block stays empty and must render at zero height: no height, padding,
+ * border or background on `header` or `.header`.
+ */
+header .header:empty {
+  display: none;
+}

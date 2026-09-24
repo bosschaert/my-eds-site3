@@ -1,0 +1,94 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-09-23T18:54:08Z",
+    "stardustVersion": "0.25.0"
+  },
+  "site": {
+    "originUrl": "https://www.example.com",
+    "deployUrl": "https://main--stardust-replica-0c7311e9--of1-labs.aem.page",
+    "extractedAt": "2026-09-23T18:39:58Z",
+    "pageCap": 100,
+    "totalDiscovered": 1,
+    "crawled": 1,
+    "captureGaps": []
+  },
+  "direction": null,
+  "handsOff": true,
+  "flow": "replica",
+  "flowChosenAt": "2026-09-23T18:39:58Z",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "index",
+      "url": "https://www.example.com/",
+      "title": "Example Domain",
+      "type": "static",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T18:36:44.522Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T18:41:54Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-23T18:46:08Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-23T18:46:08Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T18:54:08Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": "stardust/migrated/index.html"
+    }
+  ],
+  "migrate": {
+    "at": "2026-09-23T18:53:12Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/",
+        "outputPath": "index.html",
+        "slug": "index",
+        "outputPathDefault": null
+      }
+    ],
+    "totalAssetsBundled": 2,
+    "bundledAssets": [
+      "css/canon.css",
+      "css/index.css"
+    ],
+    "pages": [
+      {
+        "slug": "index",
+        "file": "stardust/migrated/index.html",
+        "assetsBundled": 2
+      }
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "lastRun": {
+      "at": "2026-09-23T18:53:12Z",
+      "rendered": [
+        "index"
+      ],
+      "unchanged": [],
+      "refused": [],
+      "passthrough": []
+    }
+  }
+}

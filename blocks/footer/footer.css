@@ -1,0 +1,8 @@
+/*
+ * The source has no footer. The footer block loads /footer, which does not exist,
+ * so the block stays empty and must render at zero height: no height, padding,
+ * border or background on `footer` or `.footer`.
+ */
+footer .footer:empty {
+  display: none;
+}

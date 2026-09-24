@@ -1,0 +1,69 @@
+{
+  "slug": "index",
+  "type": "landing",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "site-header",
+    "site-footer",
+    "team-tabs",
+    "media-table",
+    "content-block"
+  ],
+  "slotsFilled": [
+    "h1",
+    "p",
+    "media-grid",
+    "h2",
+    "media-grid",
+    "content-block",
+    "team-tabs"
+  ],
+  "canonShas": {
+    "header": null,
+    "footer": "7bbd4ffd45d0",
+    "css": "b295c9e55639"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Good Morning!",
+    "description": null,
+    "canonical": "https://main--stardust-replica-1a972ee3--of1-labs.aem.page/",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Good Morning!",
+    "url": "https://main--stardust-replica-1a972ee3--of1-labs.aem.page/"
+  },
+  "migratedAt": "2026-09-23T13:43:39Z",
+  "designMdSha": "21609f3a8134",
+  "designJsonSha": "37088ea3a668",
+  "sourceCurrentSha": "13cea310ef4c",
+  "sourceProposedSha": "c13b87fa0608",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.00% (0 px, threshold 10%), height delta 0px, round main1 @1440 (index-1440-main1.log) [prototype regime]",
+    "pixel-gate-360": "0.00% (0 px, threshold 10%), height delta 0px, round main1 @360 (index-360-main1.log) [prototype regime]",
+    "content-count": "content-diff: none — content + roles match (index-1440-conf1.log)",
+    "delivery-lint": "FAIL: 0 P0 · 1 P1 · 1 P2 (delivery-lint --path /)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 3,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "index.html",
+  "outputPathDefault": null,
+  "sidecar": "_meta.json",
+  "driverVersion": "1"
+}

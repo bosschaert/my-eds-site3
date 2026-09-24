@@ -1,0 +1,291 @@
+{
+  "url": "https://static-website.david-bosschaert.workers.dev/page1",
+  "width": 1440,
+  "headerTimeline": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".tab-buttons button:nth-child(2)",
+      "frames": [
+        {
+          "t": 12401.199999999255,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 12606.799999998882,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 12811.099999999627,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 13014.699999999255,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".tab-buttons button:nth-child(3)",
+      "frames": [
+        {
+          "t": 14027.900000000373,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 14231.599999999627,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 14436.099999999627,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 14639.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".tab-buttons button:nth-child(1)",
+      "frames": [
+        {
+          "t": 15653.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 15857.400000000373,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 16062,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 16267.099999999627,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".site-header a",
+      "changed": [
+        "self.color",
+        "self.background"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(106, 27, 154)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background 0.2s, color 0.2s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(74, 20, 140)",
+          "background": "rgb(243, 229, 245)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background 0.2s, color 0.2s"
+        },
+        "subs": []
+      }
+    }
+  ],
+  "events": {
+    "animations": [
+      {
+        "name": "fadeIn",
+        "el": "html > body > div.tabs-section > div.tab-content.active",
+        "txt": "Brian Kim\n\t\t\t\tBackend engineer, automation enthusi",
+        "y": 0
+      },
+      {
+        "name": "fadeIn",
+        "el": "html > body > div.tabs-section > div.tab-content.active",
+        "txt": "Elijah Brown\n\t\t\t\tDevOps wizard, mountain hiker, an",
+        "y": 0
+      },
+      {
+        "name": "fadeIn",
+        "el": "html > body > div.tabs-section > div.tab-content.active",
+        "txt": "Alex Johnson\n\t\t\t\tProject Lead with a knack for cre",
+        "y": 0
+      }
+    ],
+    "transitions": [
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section > div.tab-buttons > button",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section > div.tab-buttons > button.active",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section > div.tab-buttons > button.active",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section > div.tab-buttons > button",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section > div.tab-buttons > button.active",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section > div.tab-buttons > button",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > nav.site-header > a",
+        "y": 0,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "html > body > nav.site-header > a",
+        "y": 0,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > nav.site-header > a",
+        "y": 0,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "html > body > nav.site-header > a",
+        "y": 0,
+        "dur": "0.2s, 0.2s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section > div.tab-buttons > button.active",
+        "y": 0
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section > div.tab-content.active",
+        "y": 0
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section > div.tab-buttons > button.active",
+        "y": 0
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section > div.tab-content.active",
+        "y": 0
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section > div.tab-buttons > button.active",
+        "y": 0
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section > div.tab-content.active",
+        "y": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+/*
+ * styles.css — foundation for the static-website.david-bosschaert.workers.dev replica.
+ * Global layers are lifted verbatim from the source's styles.css (via stardust/prototypes/canon.css);
+ * the EDS structural rules below are kept transparent so the page flows exactly like the source.
+ */
+
+:root {
+  --color-primary: #6a1b9a;
+  --color-primary-deep: #4a148c;
+  --color-primary-tint: #f3e5f5;
+  --color-text: #333;
+  --color-text-lead: #5e35b1;
+  --color-text-block: #444;
+  --color-secondary: #00897b;
+  --color-accent-cyan: #26c6da;
+  --color-accent-pink: #ec407a;
+  --color-tab-active: #2196f3;
+  --color-tab-text: #666;
+  --color-footer-text: #777;
+  --color-rule: #ddd;
+  --color-rule-footer: #e0e0e0;
+  --color-surface: #fff;
+  --color-tabs-surface: #f8f8f8;
+  --gradient-page: linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 50%, #fff8e1 100%);
+  --gradient-block: linear-gradient(135deg, #fff 0%, #fce4ec 100%);
+  --shadow-card: 0 4px 20px rgb(106 27 154 / 12%);
+  --shadow-team-card: 0 2px 8px rgb(0 0 0 / 7%);
+  --shadow-block: 0 4px 20px rgb(233 30 99 / 10%);
+  --shadow-cell-hover: 0 8px 30px rgb(0 150 136 / 20%);
+  --font-body: Poppins, 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --radius-sm: 8px;
+  --radius-card: 10px;
+  --radius-md: 12px;
+  --container: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: none;
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--gradient-page);
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+}
+
+body.appear {
+  display: block;
+}
+
+/* chrome: hidden until the header/footer blocks have loaded; the hosts add no box */
+header .header,
+footer .footer {
+  visibility: hidden;
+}
+
+header .header[data-block-status='loaded'],
+footer .footer[data-block-status='loaded'] {
+  visibility: visible;
+}
+
+/* Typography (global element rules, as on the source) */
+h1 {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+  text-shadow: 2px 2px 4px rgb(106 27 154 / 15%);
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--color-accent-cyan);
+  display: inline-block;
+}
+
+p {
+  font-size: 1.15rem;
+  color: var(--color-text-lead);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-weight: 500;
+}
+
+@media (width <= 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* EDS sections: the source has no section wrapper, so the scaffold adds no box */
+main > .section {
+  margin: 0;
+  padding: 0;
+}
+
+main > .section > div {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+main .section:empty {
+  display: none;
+}

@@ -1,0 +1,79 @@
+/*
+ * media-grid — the source's `table` / `table td` / `table img, table iframe` rules, lifted
+ * from stardust/prototypes/index.css. The block div is the table; the pipeline's row and
+ * cell divs are its row and cells. Auto table layout on purpose: the source splits the
+ * columns by each medium's intrinsic width (an iframe at width:100% contributes the 300px
+ * default, an image its natural width — measured live at 1440: 288px / 768px cells in the
+ * embed row, 528px / 528px in the two-image row).
+ */
+.media-grid {
+  display: table;
+  width: 100%;
+  max-width: var(--container);
+  margin: 1.5rem auto;
+  border-collapse: separate;
+  border-spacing: 1.5rem;
+}
+
+.media-grid .media-grid-row {
+  display: table-row;
+}
+
+.media-grid .media-grid-cell {
+  display: table-cell;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  vertical-align: top;
+  border: 2px solid transparent;
+}
+
+.media-grid .media-grid-cell:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-cell-hover);
+  border-color: var(--color-accent-cyan);
+}
+
+.media-grid picture {
+  display: contents;
+}
+
+.media-grid img,
+.media-grid iframe {
+  display: block;
+  border-radius: var(--radius-sm);
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border: 0;
+}
+
+/* the authored embed URL stays in the document for the workspace, but draws nothing */
+.media-grid .media-grid-embed-source {
+  display: none;
+}
+
+/* a paragraph the pipeline leaves around a medium adds no box */
+.media-grid .media-grid-cell p {
+  margin: 0;
+  max-width: none;
+}
+
+@media (width <= 768px) {
+  .media-grid {
+    border-spacing: 0;
+  }
+
+  .media-grid .media-grid-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .media-grid .media-grid-cell {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}

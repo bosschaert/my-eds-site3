@@ -1,0 +1,45 @@
+{
+  "state": "In progress",
+  "steps": [
+    "Done",
+    "Done",
+    "Done",
+    "Done",
+    "In progress"
+  ],
+  "templates": [
+    {
+      "key": "page1",
+      "name": "Team page",
+      "pages": 1,
+      "desktop": "Looks right",
+      "mobile": "Looks right",
+      "status": "Done"
+    },
+    {
+      "key": "index",
+      "name": "Home page",
+      "pages": 1,
+      "desktop": "Looks right",
+      "mobile": "Looks right",
+      "status": "Done"
+    }
+  ],
+  "pages": [
+    {
+      "slug": "index",
+      "title": "Home",
+      "previewUrl": "https://main--stardust-replica-1a972ee3--of1-labs.aem.page/",
+      "ready": false
+    },
+    {
+      "slug": "page1",
+      "title": "Page 1",
+      "previewUrl": "https://main--stardust-replica-1a972ee3--of1-labs.aem.page/page1",
+      "ready": false
+    }
+  ],
+  "now": "Both page templates match your live site pixel for pixel on desktop and mobile, and have been approved. The new platform's shared styles, header and footer are in place and have been checked against your live site at both screen sizes. The home page and the team page are being moved across next, each verified against your live site before it counts as done.",
+  "next": "Next we move the home page and the team page onto the new platform and verify each one on the preview site.",
+  "attention": false
+}

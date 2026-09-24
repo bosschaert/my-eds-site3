@@ -1,0 +1,62 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-23T13:43:56.851Z",
+    "readArtifacts": [
+      "stardust/migrated",
+      "stardust/state.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-23T14:35:14.088Z",
+  "pages": [
+    {
+      "slug": "index",
+      "path": "/",
+      "title": "Good Morning!",
+      "templateId": "index",
+      "source": {
+        "migratedHtml": "stardust/migrated/index.html",
+        "metaJson": "stardust/migrated/_meta.json",
+        "sourceHash": "sha256:3f82ba3ca26ef3c5549fbd9a76e64e3455fb04ffef477809ea5d04d28bd79c93"
+      },
+      "blocks": [
+        "site-header",
+        "site-footer",
+        "team-tabs",
+        "media-table",
+        "content-block"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--stardust-replica-1a972ee3--of1-labs.aem.page/",
+        "deployedAt": "2026-09-23T14:17:17.675Z",
+        "verifiedAt": "2026-09-23T14:35:14.088Z",
+        "error": null
+      }
+    },
+    {
+      "slug": "page1",
+      "path": "/page1",
+      "title": "Good Morning!",
+      "templateId": "page1",
+      "source": {
+        "migratedHtml": "stardust/migrated/page1/index.html",
+        "metaJson": "stardust/migrated/page1/_meta.json",
+        "sourceHash": "sha256:e9eb71187b8bb76687a43d7288d42337205adb97fb6e0288366d029d51046052"
+      },
+      "blocks": [
+        "site-header",
+        "site-footer",
+        "team-tabs"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--stardust-replica-1a972ee3--of1-labs.aem.page/page1",
+        "deployedAt": "2026-09-23T14:17:17.719Z",
+        "verifiedAt": "2026-09-23T14:35:14.088Z",
+        "error": null
+      }
+    }
+  ]
+}

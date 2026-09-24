@@ -1,0 +1,115 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-23T13:45:56.502Z",
+    "stardustVersion": "0.25.0"
+  },
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "static",
+        "landing"
+      ],
+      "pages": 1,
+      "blocks": 2,
+      "gates": {
+        "360": {
+          "cropHeader": "0.00%",
+          "cropFooter": "0.00%",
+          "boxes": "site-header Δ0, site-footer Δ0 (Δy -822 expected)",
+          "chrome": "header parity 2/2; footer as at 1440"
+        },
+        "1440": {
+          "cropHeader": "0.00%",
+          "cropFooter": "0.00%",
+          "boxes": "site-header Δ0, site-footer Δ0 (Δy -432 = shell lacks team-tabs band, expected)",
+          "chrome": "header parity 2/2; footer text pairing n/a (live bare text vs authored <p>), pixels 0.00%"
+        },
+        "crop": "header/footer 0.00% both widths",
+        "chrome": "header quiet; footer text-count delta explained (bare text node on source)"
+      },
+      "startedAt": "2026-09-23T13:45:56.502Z",
+      "endedAt": "2026-09-23T13:58:26.022Z",
+      "verdict": "foundation: docs 3/3 live, code pushed 5af30f6, header/footer boxes Δ 0px at 1440/360, lint clean, pageerror 0",
+      "files": [
+        "styles/styles.css",
+        "styles/fonts.css",
+        "styles/lazy-styles.css",
+        "scripts/scripts.js",
+        "blocks/header/header.js",
+        "blocks/header/header.css",
+        "blocks/footer/footer.js",
+        "blocks/footer/footer.css",
+        "content/nav.html",
+        "content/footer.html",
+        "content/page1.html",
+        "stardust/runtime-contract.json"
+      ],
+      "notes": [
+        "ESLint runs with --parser espree: @babel/core is absent from node_modules and installs are forbidden; npm run lint:js errors at parser load until it is installed",
+        "header host reserves no height (source nav is in flow) → late chrome load shifts main by 72px; accepted for pixel parity"
+      ]
+    },
+    "site-blocks": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "landing",
+        "static"
+      ],
+      "pages": 2,
+      "blocks": 3,
+      "gates": {
+        "360": {
+          "archetypePixel": "index 0.14% Δ0 (pub1)",
+          "siblingPixel": "page1 0.17% Δ0 (pub1)",
+          "red": 0,
+          "flags": "index 3 justified; page1 none",
+          "cropHeader": "0.00%",
+          "cropFooter": "0.00%",
+          "chrome": "same two explained deltas as 1440"
+        },
+        "1440": {
+          "archetypePixel": "index 0.01% Δ0 (pub2; pub1 27.95%/Δ-135 fixed: media-grid table-layout auto)",
+          "siblingPixel": "page1 0.03% Δ0 (pub1)",
+          "red": 0,
+          "flags": "index 3 justified (source stretches 800×600 photos to 16:9); page1 none",
+          "cropHeader": "0.00%",
+          "cropFooter": "0.00%",
+          "chrome": "header: live has no <header> landmark (nav.site-header in body) — scoping, pixels 0.00%; footer: region box + <p>-vs-bare-text pairing, recorded at foundation"
+        },
+        "crop": "header/footer 0.00% both widths, both pages",
+        "chrome": "header n/a on live (no landmark), footer text pairing explained; pixel crops 0.00%"
+      },
+      "startedAt": "2026-09-23T14:02:28.750Z",
+      "endedAt": "2026-09-23T14:28:17.010Z",
+      "verdict": "site-blocks: pages 2/2 live, blocks 3, gate 1440 0.03% / 360 0.17%, requests 0",
+      "notes": [
+        "qa-gate index units FAIL is a schema-ordering artifact (single schema section paired with block 0); team-tabs verified 3 panels / 6 cards on the published page",
+        "pipeline rehosted the 9 hot-linked images into the media bus as <picture>; blocks decode picture|img alike",
+        "commits d423ba3, 965d270, 322cd09",
+        "SECURITY NOTE: the deploy batch was launched as `run-bg.mjs start -- env DA_TOKEN=\"$(cat file)\" …`; run-bg records the expanded args, so the token literal landed in stardust/.work/replica/bg/deploy-site-blocks.json and in checkpoint commit 013c9a6 (pushed). Redacted within minutes, the commit amended and force-pushed (bd50ce9), all history re-scanned clean. Recommend rotating the IMS token. Rule for later units: never pass a credential on a run-bg command line — export it in a wrapper shell or run deploy-batch in the foreground with `--token-env`."
+      ]
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "landing",
+        "static"
+      ],
+      "pages": 2,
+      "blocks": 0,
+      "gates": {
+        "check": "foundation unchanged (16 files)",
+        "requests": "0 queued — nothing applied, no re-gate needed",
+        "coverage": "pages 2/2 deployed, blocks 5/5 converted (header/footer recorded at C-final)"
+      },
+      "startedAt": "2026-09-23T14:29:45.344Z",
+      "endedAt": "2026-09-23T14:30:11.493Z",
+      "verdict": "final: freeze check clean, 0 foundation requests applied, coverage pages 2/2 deployed blocks 5/5, published gates stand (index 0.01%/0.14%, page1 0.03%/0.17%)"
+    }
+  }
+}

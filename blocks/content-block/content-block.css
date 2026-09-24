@@ -1,0 +1,27 @@
+/*
+ * content-block — the source's `div:not(...)` prose-panel rule, lifted from
+ * stardust/prototypes/index.css. The block div is the panel.
+ */
+.content-block {
+  background: var(--gradient-block);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-block);
+  max-width: var(--container);
+  margin: 2rem auto;
+  font-size: 1.05rem;
+  color: var(--color-text-block);
+  line-height: 1.8;
+  border-left: 4px solid var(--color-accent-pink);
+}
+
+/* the source text is a bare text node: the authored paragraph computes like one */
+.content-block p {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-align: inherit;
+  max-width: none;
+  margin: 0;
+}

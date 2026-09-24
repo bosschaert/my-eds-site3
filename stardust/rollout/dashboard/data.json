@@ -1,0 +1,90 @@
+{
+  "generatedAt": "2026-09-23T14:39:19.256Z",
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://static-website.david-bosschaert.workers.dev/",
+    "liveHost": "static-website.david-bosschaert.workers.dev"
+  },
+  "stageCount": {
+    "identified": 2,
+    "prototyped": 2,
+    "deployed": 2,
+    "optimised": 2
+  },
+  "stageExclusive": {
+    "identified": 0,
+    "prototyped": 0,
+    "deployed": 0,
+    "optimised": 2
+  },
+  "pages": [
+    {
+      "slug": "index",
+      "path": "/",
+      "stage": "optimised",
+      "templateId": "index",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "page1",
+      "path": "/page1",
+      "stage": "optimised",
+      "templateId": "page1",
+      "isTemplate": true,
+      "openFindings": 0
+    }
+  ],
+  "templates": [
+    {
+      "id": "index",
+      "archetype": "index",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "page1",
+      "archetype": "page1",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    }
+  ],
+  "blocks": {
+    "total": 5,
+    "converted": 5
+  },
+  "quality": {
+    "overall": 100,
+    "dimensions": {
+      "brand-tensions": null,
+      "design-ux": null,
+      "accessibility": null,
+      "seo": null,
+      "content-conversion": null,
+      "ai-search": 100,
+      "cross-page": 100
+    },
+    "severity": {
+      "P1": 0,
+      "P2": 0,
+      "P3": 0
+    },
+    "history": [
+      85
+    ]
+  },
+  "findings": {
+    "byFixability": {},
+    "byAutofix": {}
+  }
+}

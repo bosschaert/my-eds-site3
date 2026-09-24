@@ -1,0 +1,107 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 2,
+    "concurrency": 2
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": null,
+  "crawl": {
+    "failures": []
+  },
+  "dynamicSurface": {
+    "pages": 2,
+    "pagesWithSameSiteData": 0,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 0,
+    "truncatedPages": 0,
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "googleads.g.doubleclick.net",
+        "path": "/pagead/id",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/html",
+        "sameSite": false,
+        "example": "https://googleads.g.doubleclick.net/pagead/id",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.gstatic.com",
+        "path": "/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "sameSite": false,
+        "example": "https://www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "jnn-pa.googleapis.com",
+        "path": "/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json+protobuf",
+        "sameSite": false,
+        "example": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.youtube.com",
+        "path": "/youtubei/v1/log_event",
+        "query": [
+          "alt"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://www.youtube.com/youtubei/v1/log_event",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.youtube.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "static.doubleclick.net",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "www.google.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "frameworkHints": [],
+    "globalState": [],
+    "formTargets": []
+  }
+}

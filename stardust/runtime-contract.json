@@ -1,0 +1,20 @@
+{
+  "runtime": "vanilla-eds",
+  "boilerplate": "adobe/aem-boilerplate 1.3.0",
+  "blockWrapperClass": "block",
+  "blockWrapper": "div.<name>-wrapper around the block; section gains .<name>-container",
+  "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "buttonizationRule": "decorateButtons() buttonizes `p a[href]` only when the link is wrapped in authored <strong> (primary), <em> (secondary) or both (accent) and the paragraph holds nothing but the link; bare links stay links",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "defaultContentWrapper": "default-content-wrapper",
+  "sectionClass": "section",
+  "chrome": {
+    "header": "loadHeader(body > header) → blocks/header, fetches /nav via loadFragment (nav metadata override)",
+    "footer": "loadFooter(body > footer) → blocks/footer, fetches /footer via loadFragment (footer metadata override)"
+  },
+  "fonts": "none — source loads no web font; fonts.css has no @font-face and scripts.js loads no fonts",
+  "recordedAt": "2026-09-23",
+  "recordedBy": "stardust replica C0 foundation"
+}

@@ -1,0 +1,102 @@
+/* SORRA replica — home (front page) layer. Values lifted from main.css `.home …` rules. */
+@keyframes zoomOut{0%{transform:scale(1.06)}to{transform:scale(1)}}
+.home section:not(.p-front-fv,.p-front-journal){width:86.6666666667vw;margin-top:min(6.25rem,26.6666666667vw)}
+.home .p-front-fv{margin-top:var(--header-height-sp)}
+.home .p-front-fv__content{width:100%}
+.splide{position:relative}
+.splide__track{overflow:hidden;position:relative;z-index:0}
+.home .p-front-fv__slider .splide__track{width:100%;height:calc(100svh - var(--header-height-sp))}
+.home .p-front-fv__slider .splide__list{position:relative;width:100%;height:100%;display:flex;margin:0;padding:0;backface-visibility:hidden}
+.home .p-front-fv__slider .splide__list::after{content:"";z-index:var(--z-contents);position:absolute;left:0;top:0;width:100%;height:100%;mix-blend-mode:multiply;pointer-events:none;background:linear-gradient(180deg,#fff 75%,#868686 90%,#737373 100%)}
+.home .p-front-fv__slider .splide__slide{width:100%;height:100%;flex-shrink:0;position:relative;margin:0;opacity:0;z-index:0;transition:opacity .4s ease,background-color .4s ease}
+.home .p-front-fv__slider .splide__slide.is-active{opacity:1;z-index:1}
+/* capture-state fit: the live zoomOut (9s, restarted every 7s slide change) is paused mid-animation by the gate's
+   freeze — the live hero never rests at scale(1). The static frame is fitted to the cached live captures
+   (1.038 @1440, 1.036 @360 → 1.037); hero JS runs the real zoomOut (1.06→1) on every slide change. */
+.home .p-front-fv__slider .splide__slide.is-active img{transform:scale(1.037)}
+.home .p-front-fv__slider .splide__slide.is-active img.is-zooming{animation:zoomOut 9s ease}
+.home .p-front-fv__slider .splide__slide picture{display:block;width:100%;height:100%}
+.home .p-front-fv__slider .splide__slide img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.5,1,.89,1)}
+.home .p-front-fv__slider .splide__page-info{display:flex;align-items:center;position:absolute;left:min(3.4375rem,7.3333333333vw);bottom:min(5.3125rem,22.6666666667vw);color:var(--cWhite);width:calc(100% - min(6.875rem,14.6666666667vw));z-index:2}
+.home .p-front-fv__slider .splide__slide-titles{max-width:100%;overflow:hidden;display:flex;flex-direction:column;gap:.7em}
+.home .p-front-fv__slider .splide__slide-titles .slide-title-ja{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;font-size:clamp(1.0625rem,.7786957619rem + 1.2108980827vw,1.8125rem)}
+.home .p-front-fv__slider .splide__slide-titles .slide-title__link{font-size:clamp(.71875rem,.6123234107rem + .454086781vw,1rem);width:fit-content;gap:1em}
+.home .p-front-fv__slider .splide__slide-titles .slide-title__link::after{background-image:url(../assets/img/arrow-small_white.svg)}
+.home .p-front-fv__slider .splide__slide-titles .slide-title__link::before{background-color:var(--cWhite)}
+.home .p-front-fv__slider .splide__page-num{margin-right:min(.625rem,2.6666666667vw)}
+.home .p-front-fv__slider .splide__page-num .circular-progress{--stroke-width:1;display:flex;align-items:center;justify-content:center;position:relative;width:min(3.75rem,15.4666666667vw);aspect-ratio:1/1}
+.home .p-front-fv__slider .splide__page-num .progress-ring{position:absolute;top:0;left:0;width:100%;height:100%;transform:rotate(-90deg);overflow:visible}
+.home .p-front-fv__slider .splide__page-num .progress-ring__circle-bg{fill:transparent;stroke:rgba(255,255,255,.3);stroke-width:var(--stroke-width)}
+.home .p-front-fv__slider .splide__page-num .progress-ring__circle{fill:transparent;stroke:var(--cWhite);stroke-width:var(--stroke-width)}
+.home .p-front-fv__slider .splide__page-num .progress-content{position:absolute;top:0;left:0;width:100%;height:100%;font-size:clamp(.78125rem,.7221241171rem + .2522704339vw,.9375rem);display:flex;align-items:center;justify-content:center;letter-spacing:.05em}
+.home .p-front-fv__slider .splide__page-num .progress-content .current{margin-bottom:1.2em;margin-right:-1.2em}
+.home .p-front-fv__slider .splide__page-num .progress-content .total{margin-top:1.2em;margin-left:-1.2em}
+.home .p-front-fv__slider .splide__page-num .progress-content .separator{width:2.4em;display:flex;align-items:center;justify-content:center}
+.home .p-front-fv__slider .splide__page-num .progress-content .separator::after{content:"";transform:rotate(-45deg);display:inline-block;width:100%;height:1px;background-color:var(--cWhite)}
+.splide__pagination{align-items:center;display:flex;flex-wrap:wrap;justify-content:center;margin:0;pointer-events:none}
+.splide__pagination li{display:inline-block;line-height:1;list-style-type:none;margin:0;pointer-events:auto}
+.home .p-front-fv__slider .splide__pagination{position:absolute;left:50%;transform:translateX(-50%);gap:min(1rem,4.2666666667vw);bottom:min(2rem,8.5333333333vw);pointer-events:all;z-index:2}
+.home .p-front-fv__slider .splide__pagination__page{pointer-events:auto;width:min(.4375rem,1.8666666667vw);aspect-ratio:1/1;border:1px solid var(--cWhite);box-sizing:border-box;border-radius:50vh;display:block}
+.home .p-front-fv__slider .splide__pagination__page.is-active{background-color:var(--cWhite)}
+.home .p-front-intro__txt{font-size:clamp(.9375rem,.8428985873rem + .4036326942vw,1.1875rem);line-height:2.17;font-feature-settings:"palt";letter-spacing:.18em}
+.home .p-front-nav .l-global-menu>ul>li.menu-item{border-top:1px solid var(--cBlack)}
+.home .p-front-nav .l-global-menu>ul>li.menu-item:last-child{border-bottom:1px solid var(--cBlack)}
+.home .p-front-nav .l-global-menu>ul>li.menu-item>.works-menu__title,.home .p-front-nav .l-global-menu>ul>li.menu-item>a{font-size:clamp(1.4375rem,1.2955978809rem + .6054490414vw,1.8125rem);display:flex;justify-content:space-between;padding:1em 0;letter-spacing:.12em;font-family:"Kulim Park",sans-serif;font-weight:600}
+.home .p-front-nav .l-global-menu>ul>li.menu-item .works-menu__categories{align-items:flex-start;font-size:clamp(1.0625rem,.9678985873rem + .4036326942vw,1.3125rem);gap:1.5em}
+.home .p-front-nav .l-global-menu>ul>li.menu-item .works-menu__categories.is-visible{margin-top:.3em;margin-bottom:1.3em}
+.home .p-front-journal{width:77.3333333333vw;margin-top:min(6.25rem,26.6666666667vw);display:flex;flex-wrap:wrap;align-items:flex-end;gap:3em}
+.home .p-front-journal__ttl{font-size:clamp(1.875rem,1.4019929364rem + 2.0181634712vw,3.125rem);letter-spacing:.12em;line-height:.7}
+.home .p-front-journal__link{width:min(7.1875rem,30.6666666667vw);order:3;margin:1em auto 0;font-size:clamp(.6875rem,.5692482341rem + .5045408678vw,1rem)}
+.p-journal__list{display:flex;flex-wrap:wrap;justify-content:space-between;margin:min(2.75rem,11.7333333333vw) auto 0;row-gap:min(4.0625rem,17.3333333333vw);width:77.3333333333vw}
+.home .p-front-journal .p-journal__list{width:100%;margin-top:0;order:2}
+.p-journal__item>a{display:block}
+.p-journal__item>a img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease-out}
+.p-journal__item>a .p-journal__item-img{width:100%;aspect-ratio:308/244;overflow:hidden}
+.p-journal__item>a .p-journal__item-desc{margin-top:1.1em}
+.p-journal__item>a .p-journal__item-desc-taxonomy{display:flex;align-items:center;width:100%;gap:.9em}
+.p-journal-category__list{display:flex;column-gap:.5em}
+.p-journal__item>a .p-journal__item-desc-cat{display:flex;gap:.6em}
+.p-journal-category__item{padding:.15em 1.1em;background-color:var(--cGray);color:var(--cWhite);letter-spacing:.08em;font-size:clamp(.75rem,.7026992936rem + .2018163471vw,.875rem)}
+.p-journal-tag__list{width:max-content;flex-wrap:wrap}
+.p-journal__item>a .p-journal__item-desc-tag{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%}
+.p-journal-tag__item{text-align:center;display:inline-block;white-space:nowrap;font-size:clamp(.6875rem,.6638496468rem + .1009081736vw,.75rem)}
+.p-journal__item>a .p-journal__item-desc-tag-item{margin-right:.8em;margin-bottom:.3em}
+.p-journal__item>a .p-journal__item-desc-title{width:100%;line-height:1.44;font-size:clamp(.875rem,.8276992936rem + .2018163471vw,1rem);margin:.7em 0 .6em;overflow:hidden;display:-webkit-box;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.p-journal__item>a .p-journal__item-desc-date{font-size:clamp(.6875rem,.6638496468rem + .1009081736vw,.75rem);color:var(--cDGray)}
+@media (hover:hover){.p-journal__item:hover a{opacity:.7}.p-journal__item:hover a img{transform:scale(1.1)}}
+@media print,screen and (min-width:768px){
+.home .p-front-fv__slider .splide{display:flex;flex-wrap:wrap;justify-content:space-between}
+.home .p-front-journal{gap:4em 3em;width:min(62.5rem,73.2064421669vw)}
+.home .p-front-journal__link{width:10.375rem}
+.p-journal__list{margin:min(3.75rem,4.39238653vw) auto 0;row-gap:min(5rem,5.8565153734vw)}
+.p-journal__item{width:46.875%}
+}
+@media print,screen and (min-width:960px){
+.home section:not(.p-front-fv,.p-front-journal){width:min(62.5rem,73.2064421669vw);margin-top:min(12.5rem,14.6412884334vw)}
+.home .p-front-fv{margin-top:var(--header-height-pc)}
+.home .p-front-fv__slider .splide__track{height:calc(100vh - var(--header-height-pc))}
+.home .p-front-fv__slider .splide__page-info{left:min(2.8125rem,3.2942898975vw);bottom:min(5rem,5.8565153734vw);width:calc(100% - min(5.625rem,6.588579795vw))}
+.home .p-front-fv__slider .splide__slide-titles{gap:.9em}
+.home .p-front-fv__slider .splide__slide-titles .slide-title__link{letter-spacing:.18em}
+.home .p-front-fv__slider .splide__page-num{margin-right:min(1.5625rem,1.8301610542vw)}
+.home .p-front-fv__slider .splide__page-num .circular-progress{width:min(5.625rem,6.588579795vw)}
+.home .p-front-fv__slider .splide__page-num .progress-content{font-size:clamp(.625rem,.3884964682rem + 1.0090817356vw,1.25rem)}
+.home .p-front-fv__slider .splide__pagination{gap:min(.875rem,1.0248901903vw);bottom:min(2.3125rem,2.7086383602vw)}
+.home .p-front-fv__slider .splide__pagination__page{width:min(.5625rem,.6588579795vw)}
+.home .p-front-intro__txt{line-height:2.21}
+.home .p-front-nav{display:none}
+.home .p-front-journal{margin-top:min(12.5rem,14.6412884334vw)}
+.home .p-front-journal__link{margin:0;order:2}
+.home .p-front-journal .p-journal__list{order:3}
+.p-journal-category__item{padding:.1em 1.1em}
+.p-journal__item>a .p-journal__item-desc-tag-item{margin-right:.6em}
+}
+@media print,screen and (min-width:1025px){
+.home section:not(.p-front-fv,.p-front-journal){width:73.2064421669%}
+.home .p-front-journal,.p-journal__list{width:73.2064421669%}
+.home .p-front-journal .p-journal__list{width:100%}
+.p-journal__list{column-gap:3.8%;justify-content:flex-start}
+.p-journal__item{width:30.8%}
+}
+
+.home .p-front-fv__slider .splide.is-paused .splide__slide img{animation-play-state:paused}

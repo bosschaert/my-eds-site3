@@ -1,0 +1,159 @@
+{
+ "source": "http://localhost:8791/index-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "p-front-fv",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "01"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "09"
+    },
+    {
+     "role": "heading",
+     "order": 2,
+     "text": "木漏れ日に包まれる家族の空間"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "VIEW THIS WORK",
+     "href": "https://sorra.jp/works/1085/"
+    }
+   ],
+   "imgCount": 9,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "LI.splide__slide",
+     "count": 9,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 2,
+      "textRuns": 0
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "p-front-intro",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "わたしたちSORRA（そら）は、 東京と埼玉に跨る狭山丘陵を 拠点とする造園会社です。 雑木の庭をはじめ、 地域の風土や環境に合った 季節の移ろいを楽しめる、 庭づくり、空間づくりをしています。"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "p-front-nav",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "WORKS"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "造園",
+     "href": "https://sorra.jp/works-category/landscaping/"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "建築",
+     "href": "https://sorra.jp/works-category/architecture/"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "インドアグリーン",
+     "href": "https://sorra.jp/works-category/indoor-green/"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "SERVICE/FLOW",
+     "href": "https://sorra.jp/service_flow"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Q&A",
+     "href": "https://sorra.jp/qa"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "ABOUT",
+     "href": "https://sorra.jp/about"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "RECRUIT",
+     "href": "https://sorra.jp/recruit"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "LI.menu-item",
+     "count": 5,
+     "unit": {
+      "headings": 0,
+      "ctas": 3,
+      "imgs": 0,
+      "textRuns": 4
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "p-front-journal",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "JOURNAL"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "VIEW ALL",
+     "href": "https://sorra.jp/journal"
+    }
+   ],
+   "imgCount": 3,
+   "editableTexts": 2,
+   "repeats": [
+    {
+     "unitSelector": "LI.p-journal__item",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 1,
+      "textRuns": 4
+     },
+     "uniform": true
+    }
+   ]
+  }
+ ]
+}

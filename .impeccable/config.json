@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "layout-transition",
+        "value": "*",
+        "files": [
+          "blocks/header/header.css"
+        ],
+        "createdAt": "2026-09-24T11:22:14.305Z",
+        "reason": "replica fidelity: WORKS submenu/accordion transitions lifted from sorra.jp main.css, motion observed live (stardust/replica/motion/index.json); foundation frozen"
+      },
+      {
+        "rule": "layout-transition",
+        "value": "*",
+        "files": [
+          "blocks/footer/footer.css"
+        ],
+        "createdAt": "2026-09-24T11:22:14.314Z",
+        "reason": "replica fidelity: WORKS accordion transition lifted from sorra.jp main.css, motion observed live; foundation frozen"
+      }
+    ]
+  }
+}

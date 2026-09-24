@@ -1,0 +1,130 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "mode": "bounded-single"
+  },
+  "breakpoints": {
+    "sp": "<768",
+    "tablet": ">=768",
+    "pc": ">=960",
+    "wide": ">=1025"
+  },
+  "palette": {
+    "black": "#000",
+    "white": "#fff",
+    "gray": "#94999f",
+    "dgray": "#83888e",
+    "green": "#eff5f1",
+    "green2": "#e5ebe7"
+  },
+  "root": {
+    "headerHeightSp": "min(3.125rem, 13.3333vw)",
+    "headerHeightPc": "min(6.6875rem, 7.83309vw)"
+  },
+  "body": {
+    "fontFamily": "\"Kulim Park\",\"Noto Sans JP\",sans-serif",
+    "fontSize": "1rem",
+    "fontWeight": 400,
+    "letterSpacing": ".1em",
+    "color": "#000",
+    "lineHeight": "1.15 (html)",
+    "animation": "fadeIn 1s ease-in-out .2s both",
+    "textRendering": "browser default; -webkit-font-smoothing antialiased only on .ua-macos"
+  },
+  "fonts": {
+    "provider": "Google Fonts",
+    "css": "https://fonts.googleapis.com/css2?family=Kulim+Park:wght@400;600&family=Noto+Sans+JP:wght@400;500&display=swap",
+    "heading": "Kulim Park 600 (nav) / 400 (display)",
+    "body": "Kulim Park 400 → Noto Sans JP 400 for CJK"
+  },
+  "container": {
+    "sp": "86.6667vw",
+    "pc": "min(62.5rem, 73.2064vw)",
+    "wide": "73.2064%",
+    "journalSp": "77.3333vw",
+    "footerContactPc": "87.8477%",
+    "footerInnerSp": "77.3333%",
+    "footerInnerPc": "87.8477%"
+  },
+  "sectionGap": {
+    "sp": "min(6.25rem, 26.6667vw)",
+    "pc": "min(12.5rem, 14.6413vw)"
+  },
+  "header": {
+    "position": "fixed; top 0; bg #fff",
+    "innerWidthSp": "calc(100% - min(2.75rem, 11.7333vw))",
+    "innerWidthPc": "calc(100% - min(6rem, 7.0278vw))",
+    "logoSp": "min(7.375rem, 25.3333vw)",
+    "logoPc": "min(10.5rem, 12.2987vw)",
+    "menuFont": "clamp(.75rem, .7027rem + .2018vw, .875rem) Kulim Park 600",
+    "menuGap": "2.3em",
+    "rightGapPc": "1.6em",
+    "contactBtn": "border 1px #000; radius 50vh; padding .3em 1.1em (pc) / .2em .8em (sp); margin-left .8em (pc); font clamp(.8125rem, .7415rem + .3027vw, 1rem)",
+    "snsIconPc": ".8em square, label hidden at pc",
+    "hamburger": "sp only; button min(2.75rem,12.9333vw) × min(.4375rem,2vw) + .6em padding; two 1px lines"
+  },
+  "hero": {
+    "marginTop": "header height",
+    "trackHeightSp": "calc(100svh - header-sp)",
+    "trackHeightPc": "calc(100vh - header-pc)",
+    "img": "object-fit cover; active slide zoomOut 9s",
+    "scrim": "::after linear-gradient(180deg,#fff 75%,#868686 90%,#737373 100%) mix-blend-mode multiply",
+    "pageInfo": "absolute left min(2.8125rem,3.2943vw) bottom min(5rem,5.8565vw) width calc(100% - min(5.625rem,6.5886vw)) (pc); sp left min(3.4375rem,7.3333vw) bottom min(5.3125rem,22.6667vw) width calc(100% - min(6.875rem,14.6667vw)); color #fff",
+    "ring": "min(5.625rem,6.5886vw) pc / min(3.75rem,15.4667vw) sp; r=25 viewBox 88 stroke 1; bg stroke rgba(255,255,255,.3)",
+    "pageNum": "clamp(.625rem,.3885rem+1.0091vw,1.25rem) pc; ls .05em; current mb 1.2em mr -1.2em; total mt 1.2em ml -1.2em; separator 2.4em line rotate(-45deg)",
+    "titleJa": "clamp(1.0625rem,.7787rem+1.2109vw,1.8125rem); nowrap ellipsis",
+    "titleLink": "clamp(.71875rem,.6123rem+.4541vw,1rem); ls .18em pc; gap 1em; white arrow",
+    "titlesGap": ".9em pc / .7em sp",
+    "pagination": "absolute centred bottom min(2.3125rem,2.7086vw) pc / min(2rem,8.5333vw) sp; gap min(.875rem,1.0249vw) pc / min(1rem,4.2667vw) sp; dots min(.5625rem,.6589vw) pc / min(.4375rem,1.8667vw) sp, 1px white border, active filled"
+  },
+  "intro": {
+    "font": "clamp(.9375rem, .8429rem + .4036vw, 1.1875rem)",
+    "lineHeight": "2.21 pc / 2.17 sp",
+    "letterSpacing": ".18em",
+    "fontFeature": "palt"
+  },
+  "frontNav": {
+    "visibility": "sp only (display:none ≥960)",
+    "item": "border-top 1px #000, last border-bottom; font clamp(1.4375rem,1.2956rem+.6054vw,1.8125rem) Kulim Park 600; padding 1em 0; ls .12em; flex space-between"
+  },
+  "journal": {
+    "sectionWidthPc": "min(62.5rem,73.2064vw) → 73.2064% ≥1025",
+    "sectionWidthSp": "77.3333vw",
+    "layout": "flex wrap align-end gap 4em 3em (pc) / 3em (sp); ttl order1, link order2 (pc) / order3 sp, list order3 (pc) / order2 sp",
+    "ttl": "clamp(1.875rem,1.402rem+2.0182vw,3.125rem); ls .12em; lh .7",
+    "link": "width 10.375rem pc / min(7.1875rem,30.6667vw) sp; font clamp(.6875rem,.5692rem+.5045vw,1rem); c-underline-arrow",
+    "list": "flex wrap; column-gap 3.8% justify flex-start ≥1025; row-gap min(5rem,5.8565vw) pc / min(4.0625rem,17.3333vw) sp",
+    "item": "30.8% ≥1025 / 46.875% ≥768 / 100% sp",
+    "img": "aspect 308/244 overflow hidden; object-fit cover",
+    "desc": "mt 1.1em; taxonomy flex gap .9em",
+    "cat": "bg #94999f; color #fff; padding .1em 1.1em pc / .15em 1.1em sp; ls .08em; font clamp(.75rem,.7027rem+.2018vw,.875rem)",
+    "tag": "font clamp(.6875rem,.6638rem+.1009vw,.75rem); mr .6em pc/.8em sp; mb .3em",
+    "title": "font clamp(.875rem,.8277rem+.2018vw,1rem); lh 1.44; margin .7em 0 .6em; 2-line clamp",
+    "date": "font clamp(.6875rem,.6638rem+.1009vw,.75rem); color #83888e"
+  },
+  "underlineArrow": {
+    "layout": "flex space-between align-center; padding 0 0 .5em; ::after 1.3em×1em arrow-small.svg contain; ::before underline (border anim on hover)"
+  },
+  "footer": {
+    "marginTop": "min(15.625rem,18.3016vw) pc (with contact) / min(15.625rem,33.3333vw) sp",
+    "gap": "min(5.625rem,6.5886vw) pc / min(5.875rem,12.5333vw) sp",
+    "contact": "width 87.8477% pc / 86.6667vw sp; border-top+bottom 1px #000",
+    "contactInner": "width 87% pc / 89.2308% sp; padding min(5.375rem,6.2958vw) 0 pc / min(4.0625rem,17.3333vw) 0 sp; row space-between pc / column sp",
+    "contactTtl": "clamp(1.875rem,1.0472rem+3.5318vw,4.0625rem); mb .3em; ls .15em",
+    "contactDesc": "clamp(.75rem,.6554rem+.4036vw,1rem); lh 1.75 pc / 1.5 sp",
+    "cta": "column align-center; width fit-content ≥520 / min(18.625rem,100%) sp; margin min(2.375rem,10.1333vw) auto 0 sp / 0 pc",
+    "telNum": "clamp(1.0625rem,.9915rem+.3027vw,1.25rem); ls .15em pc; a: clamp(1.6875rem,1.4746rem+.9082vw,2.25rem) ml .2em mr -.15em",
+    "closed": "clamp(.625rem,.5304rem+.4036vw,.875rem); mt .5em",
+    "ctaLink": "flex space-between gap 1em; padding .8em 2em; mt 1.8em pc / 2em sp; border 1px #000; radius 50vh; font clamp(.90625rem,.8235rem+.3532vw,1.125rem); min-width 100%; ::after 1.5em arrow-small.svg",
+    "inner": "width 87.8477% pc / 77.3333% sp; flex wrap space-between; align-end pc; mb min(3.75rem,4.3924vw) pc / min(2.5rem,5.3333vw) sp",
+    "logo": "min(17.3125rem,20.2782vw) pc / min(15.6875rem,33.4667vw) sp; mb 3em pc / 1.8em sp",
+    "info": "clamp(.75rem,.6554rem+.4036vw,1rem); lh 1.75 pc / 1.42 sp; gap .5em sp",
+    "menu": "sp only (hidden ≥960); column gap 2em; Kulim Park 600 clamp(.8125rem,.7888rem+.1009vw,.875rem)",
+    "snsPc": "right column; label shown",
+    "copyright": "font .625rem; mt 3em pc / 6em sp; scale(.8) centred sp"
+  },
+  "measured": {
+    "360": "stardust/replica/lift/measure-360.txt",
+    "1440": "stardust/replica/lift/measure-1440.txt"
+  }
+}

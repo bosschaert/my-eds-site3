@@ -1,0 +1,160 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 1,
+    "concurrency": 1
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": {
+    "url": "https://sorra.jp/wp/wp-content/themes/sorra-main/assets/favicon-32x32.png",
+    "file": "assets/favicon.png"
+  },
+  "crawl": {
+    "failures": []
+  },
+  "dynamicSurface": {
+    "pages": 1,
+    "pagesWithSameSiteData": 0,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 1,
+    "truncatedPages": 0,
+    "endpoints": [
+      {
+        "method": "POST",
+        "host": "analytics.google.com",
+        "path": "/g/collect",
+        "query": [
+          "_ee",
+          "_eu",
+          "_fv",
+          "_gaz",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "cid",
+          "dl",
+          "dma",
+          "dt",
+          "en",
+          "frm",
+          "gaf",
+          "gcd",
+          "gdid",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://analytics.google.com/g/collect",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/reload",
+        "query": [
+          "k"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://www.google.com/recaptcha/api2/reload",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/recaptcha/api2/clr",
+        "query": [
+          "k"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/binary",
+        "sameSite": false,
+        "example": "https://www.google.com/recaptcha/api2/clr",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.google.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "www.gstatic.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "code.jquery.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "frameworkHints": [
+      {
+        "hint": "wordpress",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "globalState": [
+      {
+        "name": "dataLayer",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "formTargets": []
+  }
+}

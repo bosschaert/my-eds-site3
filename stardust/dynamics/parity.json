@@ -1,0 +1,57 @@
+{
+  "_provenance": { "writtenBy": "stardust:dynamics", "writtenAt": "2026-09-24T12:14:00Z", "stardustVersion": "0.25.0" },
+  "method": "features from stardust/dynamic-features.md (detector + curated triage, 11 rows); rebuild-native rows implemented as block JS/CSS in blocks/header, blocks/carousel, blocks/front-nav from motion-observe evidence only; flows replayed on the preview origin with stardust/.work/dynamics/probes/interaction-flows.mjs (2026-09-24) and dynamics-check.mjs",
+  "features": [
+    {
+      "id": "c-hero-slideshow", "feature": "Hero fade slideshow (9 slides, autoplay 7 s, dot pagination, ring counter, per-slide title + link)", "class": "C", "pages": 1,
+      "disposition": "rebuild-native", "reproducibility": "self", "status": "done",
+      "verifiedBy": "preview @1440: 9 slides, 9 dots, active 0 at load → active 1 / aria-selected dot 1 after 6.5 s; dot 1 click → active 0; 1 slide-title.is-active throughout; progress ring present; motion-compare 12 parity / 0 missing / 0 extra @1440; page errors 0",
+      "checks": [
+        { "type": "dom-count", "path": "/", "selector": ".carousel .splide-slide", "min": 9 },
+        { "type": "dom-count", "path": "/", "selector": ".carousel .splide-pagination-page[aria-label]", "min": 9 },
+        { "type": "dom-count", "path": "/", "selector": ".carousel .splide-slide.is-active", "min": 1 },
+        { "type": "dom-count", "path": "/", "selector": ".carousel .progress-ring-circle", "min": 1 },
+        { "type": "no-page-errors", "paths": ["/"] }
+      ]
+    },
+    {
+      "id": "c-mobile-drawer", "feature": "Hamburger → full-screen drawer nav (aria-hidden toggle, line morph, WORKS accordion, Escape closes)", "class": "C", "pages": 1,
+      "disposition": "rebuild-native", "reproducibility": "self", "status": "done",
+      "verifiedBy": "preview @360: load aria-hidden=true / button aria-expanded=false / html.is-drawer-open=false; click → aria-hidden=false / aria-expanded=true / is-drawer-open=true, drawer 360px wide; WORKS title click → li aria-expanded=true (submenu revealed by CSS on the attribute); Escape → all three back to closed state",
+      "checks": [
+        { "type": "dom-count", "path": "/", "selector": "header #nav-drawer[aria-hidden]", "min": 1 },
+        { "type": "dom-count", "path": "/", "selector": "header .c-hamburger button[aria-controls=\"nav-drawer\"][aria-expanded]", "min": 1 },
+        { "type": "dom-count", "path": "/", "selector": "header .drawer-menu > ul > li[aria-expanded]", "min": 1 }
+      ]
+    },
+    {
+      "id": "c-works-submenu", "feature": "WORKS hover submenu (desktop header); WORKS accordion in the mobile front-nav", "class": "C", "pages": 1,
+      "disposition": "rebuild-native", "reproducibility": "self", "status": "done",
+      "verifiedBy": "preview @1440: WORKS submenu height 0 before hover → 127px with 3 items after hover; preview @360: front-nav WORKS li aria-expanded false → true and ul.is-visible=true after title click",
+      "checks": [
+        { "type": "dom-count", "path": "/", "selector": "header .nav-sections > ul > li > ul > li", "min": 3 },
+        { "type": "dom-count", "path": "/", "selector": ".front-nav li[aria-expanded]", "min": 1 }
+      ]
+    },
+    {
+      "id": "l-listing-candidate-p-journal-list-3-cards", "feature": "JOURNAL latest-3 listing", "class": "L", "pages": 1,
+      "disposition": "static-snapshot", "reproducibility": "self", "status": "done",
+      "verifiedBy": "preview @1440: 3 .journal-item cards, captured content verbatim; unfreeze to index-backed when /journal/* migrates (Listings contract in dynamic-features.md)",
+      "snapshot": "2026-09-24",
+      "checks": [ { "type": "dom-count", "path": "/", "selector": ".cards .journal-item", "min": 3 } ]
+    },
+    {
+      "id": "t-tag-manager-google-tag-manager", "feature": "Google Tag Manager container GTM-TT59JCD4 (+ gtag GT-WFFLQB7N); fires GA/Ads hits, DoubleClick pixel, dataLayer (rows 6, 7, 10)", "class": "T", "pages": 1,
+      "disposition": "embed-passthrough", "reproducibility": "owner", "status": "scaffolded-awaiting-owner",
+      "owner": "confirm that container GTM-TT59JCD4 may load on the new origin; then add the snippet to scripts/delayed.js. No consent manager exists on the source, so adding one would be a new feature, not a replica item.",
+      "verifiedBy": "preview: no request to www.googletagmanager.com, analytics.google.com or stats.g.doubleclick.net (tags not enabled pending owner decision)",
+      "checks": [ { "type": "consent-gate", "path": "/", "forbiddenHosts": ["www.googletagmanager.com", "analytics.google.com", "stats.g.doubleclick.net"] } ]
+    },
+    { "id": "t-analytics-google-analytics-ads", "feature": "Google Analytics / Ads hits", "class": "T", "pages": 1, "disposition": "embed-passthrough", "reproducibility": "owner", "status": "scaffolded-awaiting-owner", "owner": "covered by t-tag-manager-google-tag-manager (fired by GTM)", "checks": [] },
+    { "id": "t-marketing-ad-retargeting-pixel", "feature": "DoubleClick retargeting pixel", "class": "T", "pages": 1, "disposition": "embed-passthrough", "reproducibility": "owner", "status": "scaffolded-awaiting-owner", "owner": "covered by t-tag-manager-google-tag-manager (fired by GTM)", "checks": [] },
+    { "id": "a-cms-app-settings-object-datalayer", "feature": "dataLayer global", "class": "A", "pages": 1, "disposition": "embed-passthrough", "reproducibility": "owner", "status": "scaffolded-awaiting-owner", "owner": "covered by t-tag-manager-google-tag-manager (created by the GTM snippet)", "checks": [] },
+    { "id": "f-form-protection-captcha-antibot", "feature": "reCAPTCHA v3 badge (Contact Form 7)", "class": "F", "pages": 1, "disposition": "decided-out", "reproducibility": "n/a", "status": "decided-out", "verifiedBy": "no form on the home page; the contact page is outside this run — the home page ships without the reCAPTCHA script", "checks": [] },
+    { "id": "a-cms-app-settings-object-wp", "feature": "WordPress wp settings object", "class": "A", "pages": 1, "disposition": "decided-out", "reproducibility": "n/a", "status": "decided-out", "verifiedBy": "platform runtime with no consumer on the migrated page", "checks": [] },
+    { "id": "v-iframe-without-src-runtime-injected-embed", "feature": "0×0 runtime iframe (GTM / reCAPTCHA helper)", "class": "V", "pages": 1, "disposition": "decided-out", "reproducibility": "n/a", "status": "decided-out", "verifiedBy": "helper frame of GTM/reCAPTCHA; appears only if GTM is enabled", "checks": [] }
+  ]
+}

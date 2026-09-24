@@ -1,0 +1,298 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-09-23T13:27:03.020Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://static-website.david-bosschaert.workers.dev/",
+   "https://static-website.david-bosschaert.workers.dev/page1"
+  ],
+  "reachSource": "stardust/current/pages"
+ },
+ "pages": {
+  "/": {
+   "url": "https://static-website.david-bosschaert.workers.dev/",
+   "status": 200,
+   "host": "static-website.david-bosschaert.workers.dev",
+   "title": "Good Morning!",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://www.youtube.com/embed/b4Rr_7y068U",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "https://www.youtube.com/embed/b4Rr_7y068U",
+     "title": "YouTube video",
+     "w": 288,
+     "h": 162
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {},
+   "framework": null,
+   "globals": [],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 0,
+   "inlineFetch": false,
+   "mainText": 816,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "static-website.david-bosschaert.workers.dev": 3,
+    "randomuser.me": 6,
+    "picsum.photos": 3,
+    "fastly.picsum.photos": 3,
+    "www.youtube.com": 9,
+    "fonts.gstatic.com": 1,
+    "static.doubleclick.net": 1,
+    "googleads.g.doubleclick.net": 2,
+    "www.google.com": 1,
+    "i.ytimg.com": 1,
+    "yt3.ggpht.com": 1,
+    "www.gstatic.com": 1,
+    "jnn-pa.googleapis.com": 1
+   },
+   "thirdPartyHosts": [
+    "randomuser.me",
+    "picsum.photos",
+    "fastly.picsum.photos",
+    "www.youtube.com",
+    "fonts.gstatic.com",
+    "static.doubleclick.net",
+    "googleads.g.doubleclick.net",
+    "www.google.com",
+    "i.ytimg.com",
+    "yt3.ggpht.com",
+    "www.gstatic.com",
+    "jnn-pa.googleapis.com"
+   ],
+   "scripts": [
+    "https://static-website.david-bosschaert.workers.dev/script.js",
+    "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.kfhT1FN8EGE.es5.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywHJLpeQKx7ZvdZ_dQ3S8IbpW8NLfQ/m=root,base",
+    "https://www.youtube.com/s/player/dac2d7b2/player_embed.vflset/en_US/base.js",
+    "https://static.doubleclick.net/instream/ad_status.js",
+    "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.kfhT1FN8EGE.es5.O/ck=ytembeds.base.tH_9r11EjWM.L.W.O/am=AAAAQA/d=1/exm=base,root/excm=base,root/ed=1/br=1/rs=AGKMywFcXXnbFXQP0-zQnC2NqKP",
+    "https://www.google.com/js/th/zE1wsox6mlI6vW7qaXUn9CXAmrkG-Mkw0oAR1wP9fow.js",
+    "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.kfhT1FN8EGE.es5.O/ck=ytembeds.base.tH_9r11EjWM.L.W.O/am=AAAAQA/d=1/exm=base,r78Drb,root/excm=base,root/ed=1/br=1/rs=AGKMywFcXXnbFXQP0-zQ"
+   ],
+   "firstPartyApi": [],
+   "thirdPartyXhr": [
+    "GET googleads.g.doubleclick.net/pagead/id",
+    "GET www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
+    "POST jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+    "POST www.youtube.com/youtubei/v1/log_event"
+   ],
+   "postBodies": [
+    {
+     "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+     "body": "[\"O43z0dpjhgX20SCx4KAo\",\"$ylU5VTFRAAZeSj0yfkreuSbePTtaOB-nAEABEArZ1FixSjbg4dNj-O3u2wUCaZvDcV6IwkvEOTlZCuuFleVy2gvrM5_P6xsRgU23XmyqSHYpFGYcGtY5g92CngAAAGrOAAAAC_QBB-IAVxrzeOsLqsn0dZAkKvxeA89PcmX0CjQgiqnJuyoPdB05Gz0sj2kDnVr9m0LXFFMDx4gG24XA_RK0gbYkkwUSqQheMkjpXJbNEBJfs8KXBeJArJFkKpDgJwUE-MyRFZwoKumG--sn7aYwZjhd2wK7pPLfTWMAOPPaGfHWUCTtIhQ63UG9XrSnpax0pivtLYXJssy-vpw9Cga9jA9c6HM95Y8pPI3HzCM9Njy8KEIsx6"
+    },
+    {
+     "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
+     "body": "{\"context\":{\"client\":{\"hl\":\"en\",\"gl\":\"FR\",\"clientName\":56,\"clientVersion\":\"2.20260922.01.00\",\"configInfo\":{\"appInstallData\":\"CKenz9UGEIHNzhwQzNnSHBDw3tEcEMn2gBMQpKnRHBC9tq4FEKvI0RwQiJDRHBDn69EcEPu00hwQrtbPHBD2q7AFENGIuCIQ8bTQHBDgt9EcEOSVsAUQzN-uBRCEyNIcEL6E0RwQvKTQHBC_wNIcEMW10hwQibDOHBDevM4cEMGP0BwQn8-AExD4xIATEIeszhwQ2vfOHBCT8tEcEK6JuCIQyvuAExD299EcEL6KsAUQ263SHBCZjbEFELa1gBMQ4cPSHBCe0LAFEL2ZsAU"
+    }
+   ],
+   "textAtLoad": 816,
+   "mainEmptyAtLoad": false
+  },
+  "/page1": {
+   "url": "https://static-website.david-bosschaert.workers.dev/page1",
+   "status": 200,
+   "host": "static-website.david-bosschaert.workers.dev",
+   "title": "Good Morning!",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {},
+   "framework": null,
+   "globals": [],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 0,
+   "inlineFetch": false,
+   "mainText": 350,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "static-website.david-bosschaert.workers.dev": 3,
+    "randomuser.me": 6
+   },
+   "thirdPartyHosts": [
+    "randomuser.me"
+   ],
+   "scripts": [
+    "https://static-website.david-bosschaert.workers.dev/script.js"
+   ],
+   "firstPartyApi": [],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 350,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "a-unknown-third-party-host-www-gstatic-com",
+   "class": "A",
+   "feature": "unknown third-party host www.gstatic.com",
+   "hint": "inspect",
+   "evidence": [
+    "www.gstatic.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-jnn-pa-googleapis-com",
+   "class": "A",
+   "feature": "unknown third-party host jnn-pa.googleapis.com",
+   "hint": "inspect",
+   "evidence": [
+    "jnn-pa.googleapis.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-randomuser-me",
+   "class": "T",
+   "feature": "unknown third-party host randomuser.me",
+   "hint": "inspect",
+   "evidence": [
+    "randomuser.me"
+   ],
+   "pages": [
+    "/",
+    "/page1"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-picsum-photos",
+   "class": "T",
+   "feature": "unknown third-party host picsum.photos",
+   "hint": "inspect",
+   "evidence": [
+    "picsum.photos"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-fastly-picsum-photos",
+   "class": "T",
+   "feature": "unknown third-party host fastly.picsum.photos",
+   "hint": "inspect",
+   "evidence": [
+    "fastly.picsum.photos"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-marketing-ad-retargeting-pixel",
+   "class": "T",
+   "feature": "marketing: ad / retargeting pixel",
+   "role": "marketing: ad / retargeting pixel",
+   "hint": "tags",
+   "evidence": [
+    "static.doubleclick.net",
+    "googleads.g.doubleclick.net"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-www-google-com",
+   "class": "T",
+   "feature": "unknown third-party host www.google.com",
+   "hint": "inspect",
+   "evidence": [
+    "www.google.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-yt3-ggpht-com",
+   "class": "T",
+   "feature": "unknown third-party host yt3.ggpht.com",
+   "hint": "inspect",
+   "evidence": [
+    "yt3.ggpht.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "v-video-youtube",
+   "class": "V",
+   "feature": "video: YouTube",
+   "role": "video: YouTube",
+   "hint": "media",
+   "evidence": [
+    "www.youtube.com",
+    "i.ytimg.com",
+    "https://www.youtube.com/embed/b4Rr_7y068U"
+   ],
+   "pages": [
+    "/"
+   ]
+  }
+ ],
+ "reach": {
+  "pagesWithEvidence": 2,
+  "of": 2,
+  "endpoints": {
+   "GET googleads.g.doubleclick.net/pagead/id": 1,
+   "GET www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg": 1,
+   "POST jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT": 1,
+   "POST www.youtube.com/youtubei/v1/log_event": 1
+  },
+  "searchFormPages": 0,
+  "formPages": 0,
+  "triggerPages": {}
+ }
+}

@@ -1,0 +1,170 @@
+/* canon.css — shared layers lifted verbatim from https://static-website.david-bosschaert.workers.dev/styles.css
+   (values, media queries and cascade kept; class names re-authored). Replica: no value here is a design decision. */
+:root {
+  --color-primary: #6a1b9a;
+  --color-primary-deep: #4a148c;
+  --color-primary-tint: #f3e5f5;
+  --color-text: #333;
+  --color-text-lead: #5e35b1;
+  --color-text-block: #444;
+  --color-secondary: #00897b;
+  --color-accent-cyan: #26c6da;
+  --color-accent-pink: #ec407a;
+  --color-tab-active: #2196F3;
+  --color-tab-text: #666;
+  --color-footer-text: #777;
+  --color-rule: #ddd;
+  --color-rule-footer: #e0e0e0;
+  --color-surface: #fff;
+  --color-tabs-surface: #f8f8f8;
+  --gradient-page: linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 50%, #fff8e1 100%);
+  --gradient-block: linear-gradient(135deg, #ffffff 0%, #fce4ec 100%);
+  --shadow-card: 0 4px 20px rgba(106, 27, 154, 0.12);
+  --shadow-team-card: 0 2px 8px rgba(0,0,0,0.07);
+  --shadow-block: 0 4px 20px rgba(233, 30, 99, 0.1);
+  --shadow-cell-hover: 0 8px 30px rgba(0, 150, 136, 0.2);
+  --font-body: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --radius-sm: 8px;
+  --radius-card: 10px;
+  --radius-md: 12px;
+  --container: 1200px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--gradient-page);
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Site header */
+.site-header {
+  display: flex;
+  gap: 1.5rem;
+  max-width: var(--container);
+  margin: 0 auto 2rem;
+  padding: 1rem 1.5rem;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+.site-header a {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s, color 0.2s;
+}
+.site-header a:hover { background: var(--color-primary-tint); color: var(--color-primary-deep); }
+
+/* Site footer */
+.site-footer {
+  max-width: var(--container);
+  margin: 2rem auto 0;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--color-footer-text);
+  border-top: 2px solid var(--color-rule-footer);
+}
+
+/* Typography (global element rules, as on the source) */
+h1 {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+  text-shadow: 2px 2px 4px rgba(106, 27, 154, 0.15);
+}
+h2 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--color-accent-cyan);
+  display: inline-block;
+}
+p {
+  font-size: 1.15rem;
+  color: var(--color-text-lead);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  body { padding: 1rem; }
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+}
+
+/* Team tabs (shared module) */
+.team-tabs {
+  margin: 2em 0;
+  padding: 1em;
+  border-radius: var(--radius-md);
+  background: var(--color-tabs-surface);
+}
+.team-tabs__nav {
+  display: flex;
+  border-bottom: 2px solid var(--color-rule);
+  margin-bottom: 1em;
+}
+.team-tabs__tab {
+  background: none;
+  border: none;
+  padding: 1em 2em;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--color-tab-text);
+  transition: color 0.2s;
+  outline: none;
+}
+.team-tabs__tab.active {
+  color: var(--color-tab-active);
+  border-bottom: 3px solid var(--color-tab-active);
+  background: var(--color-surface);
+}
+.team-tabs__panel { display: none; animation: fadeIn 0.4s; }
+.team-tabs__panel.active { display: flex; justify-content: space-between; gap: 2em; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.team-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-team-card);
+  width: 48%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+.team-card h4 { margin: 0.2em 0; }
+@media (max-width: 900px) {
+  .team-tabs__panel.active { flex-direction: column; gap: 1.2em; }
+  .team-card { width: 100%; }
+}

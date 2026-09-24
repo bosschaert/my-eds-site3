@@ -1,0 +1,36 @@
+{
+  "_provenance": { "writtenBy": "stardust:dynamics", "writtenAt": "2026-09-23T14:32:00Z", "phase": "rollout D2-dynamic" },
+  "method": "static recreation first; embed URL authored as text in the media-grid cell and decoded to the source's iframe by blocks/media-grid; team tabs rebuilt natively in blocks/team-tabs (div[role=tab] hosts the authored labels, class swap 'active' on panels); images kept as captured URLs in the document and rehosted by the delivery pipeline as <picture>",
+  "features": [
+    {
+      "id": "v-video-youtube", "feature": "YouTube embed b4Rr_7y068U in the first media table", "class": "V", "pages": 1,
+      "disposition": "embed-passthrough", "reproducibility": "self", "status": "done",
+      "verifiedBy": "1 iframe src youtube.com/embed/b4Rr_7y068U on / (560x315 as on source); player requests to youtube.com observed on load",
+      "checks": [
+        { "type": "dom-count", "path": "/", "selector": "iframe[src*='youtube.com/embed/b4Rr_7y068U']", "min": 1 },
+        { "type": "video-plays", "path": "/", "trigger": "iframe[src*='youtube.com/embed/b4Rr_7y068U']", "iframeSelector": "iframe[src*='youtube.com/embed/b4Rr_7y068U']", "playbackHost": "youtube.com" }
+      ]
+    },
+    {
+      "id": "c-team-tabs", "feature": "Team tabs: 3 tabs toggle 3 panels via class swap", "class": "C", "pages": 2,
+      "disposition": "client-only", "reproducibility": "self", "status": "done",
+      "verifiedBy": "3 role=tab + 3 role=tabpanel on / and /page1; click tab 2 → panel 2 .active, panel 1 not (probe stardust/.work/rollout/probes/team-tabs-flow.mjs at 1440 and 360)",
+      "checks": [
+        { "type": "dom-count", "path": "/", "selector": ".team-tabs [role='tab']", "min": 3 },
+        { "type": "dom-count", "path": "/", "selector": ".team-tabs [role='tabpanel']", "min": 3 },
+        { "type": "dom-count", "path": "/page1", "selector": ".team-tabs [role='tab']", "min": 3 },
+        { "type": "dom-count", "path": "/page1", "selector": ".team-tabs [role='tabpanel'] .team-card", "min": 6 },
+        { "type": "no-page-errors", "paths": ["/", "/page1"] }
+      ]
+    },
+    {
+      "id": "t-image-hosts", "feature": "Hot-linked images: randomuser.me portraits (6), picsum.photos photos (3)", "class": "T", "pages": 2,
+      "disposition": "embed-passthrough", "reproducibility": "self", "status": "done",
+      "verifiedBy": "9 images on /, 6 on /page1 render (pipeline rehosted the captured URLs as <picture>; every visible image clientWidth > 0 per the C1 computed-style guard)",
+      "checks": [
+        { "type": "dom-count", "path": "/", "selector": "main img", "min": 9 },
+        { "type": "dom-count", "path": "/page1", "selector": "main img", "min": 6 }
+      ]
+    }
+  ]
+}

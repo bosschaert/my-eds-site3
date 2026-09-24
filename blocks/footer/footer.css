@@ -1,0 +1,20 @@
+/* footer — the source's footer.site-footer, lifted from canon.css; the host adds no box */
+footer .site-footer {
+  max-width: var(--container);
+  margin: 2rem auto 0;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--color-footer-text);
+  border-top: 2px solid var(--color-rule-footer);
+}
+
+/* the authored text is a <p>; the source's is a bare text node — neutralise the global p rule */
+footer .site-footer p {
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+  max-width: none;
+  margin: 0;
+  text-align: inherit;
+}

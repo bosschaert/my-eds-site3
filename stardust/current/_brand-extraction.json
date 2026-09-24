@@ -1,0 +1,49 @@
+{
+  "_provenance": { "writtenBy": "stardust:extract", "writtenAt": "2026-09-23T13:24:02Z", "readArtifacts": ["stardust/current/_computed-styles.json", "stardust/current/pages/index.json", "stardust/current/pages/page1.json", "https://static-website.david-bosschaert.workers.dev/styles.css"], "synthesizedInputs": [], "stardustVersion": "0.25.0",
+    "notes": ["Declared families Poppins / Playfair Display are NOT loaded on / or /page1 (no @font-face, no Google Fonts link); the rendered face is the stack fallback ('Segoe UI', system-ui, sans-serif / Georgia, serif). Replicate the declared stack verbatim, load nothing.", "Logo chain: none (text-only nav). Favicon: none served."] },
+  "origins": [{ "url": "https://static-website.david-bosschaert.workers.dev", "pages": ["/", "/page1"], "role": "primary" }],
+  "logo": { "source": "none", "path": null },
+  "favicon": null,
+  "register": "brand",
+  "palette": [
+    { "role": "surface", "hex": "#ffffff", "source": { "url": "https://static-website.david-bosschaert.workers.dev/", "selector": ".site-header, table td, .team-card", "prop": "background-color" } },
+    { "role": "primary", "hex": "#6a1b9a", "source": { "url": "https://static-website.david-bosschaert.workers.dev/", "selector": "h1, .site-header a", "prop": "color" } },
+    { "role": "primary-deep", "hex": "#4a148c", "source": { "url": "https://static-website.david-bosschaert.workers.dev/styles.css", "selector": ".site-header a:hover", "prop": "color" } },
+    { "role": "text", "hex": "#333333", "source": { "url": "https://static-website.david-bosschaert.workers.dev/", "selector": "body", "prop": "color" } },
+    { "role": "text-lead", "hex": "#5e35b1", "source": { "url": "https://static-website.david-bosschaert.workers.dev/", "selector": "p", "prop": "color" } },
+    { "role": "text-block", "hex": "#444444", "source": { "url": "https://static-website.david-bosschaert.workers.dev/", "selector": "div (content block)", "prop": "color" } },
+    { "role": "secondary", "hex": "#00897b", "source": { "url": "https://static-website.david-bosschaert.workers.dev/", "selector": "h2", "prop": "color" } },
+    { "role": "accent-cyan", "hex": "#26c6da", "source": { "url": "https://static-website.david-bosschaert.workers.dev/", "selector": "h2", "prop": "border-bottom-color" } },
+    { "role": "accent-pink", "hex": "#ec407a", "source": { "url": "https://static-website.david-bosschaert.workers.dev/", "selector": "div (content block)", "prop": "border-left-color" } },
+    { "role": "tab-active", "hex": "#2196f3", "source": { "url": "https://static-website.david-bosschaert.workers.dev/page1", "selector": ".tab-buttons button.active", "prop": "color" } },
+    { "role": "tab-text", "hex": "#666666", "source": { "url": "https://static-website.david-bosschaert.workers.dev/page1", "selector": ".tab-buttons button", "prop": "color" } },
+    { "role": "footer-text", "hex": "#777777", "source": { "url": "https://static-website.david-bosschaert.workers.dev/page1", "selector": ".site-footer", "prop": "color" } },
+    { "role": "rule", "hex": "#dddddd", "source": { "url": "https://static-website.david-bosschaert.workers.dev/page1", "selector": ".tab-buttons", "prop": "border-bottom-color" } },
+    { "role": "rule-footer", "hex": "#e0e0e0", "source": { "url": "https://static-website.david-bosschaert.workers.dev/styles.css", "selector": ".site-footer", "prop": "border-top-color" } },
+    { "role": "tabs-surface", "hex": "#f8f8f8", "source": { "url": "https://static-website.david-bosschaert.workers.dev/styles.css", "selector": ".tabs-section", "prop": "background" } }
+  ],
+  "gradients": [
+    { "name": "page", "value": "linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 50%, #fff8e1 100%)", "source": { "url": "https://static-website.david-bosschaert.workers.dev/", "selector": "body", "prop": "background-image" } },
+    { "name": "content-block", "value": "linear-gradient(135deg, #ffffff 0%, #fce4ec 100%)", "source": { "url": "https://static-website.david-bosschaert.workers.dev/", "selector": "div (content block)", "prop": "background-image" } }
+  ],
+  "type": {
+    "headingFamily": "'Playfair Display', Georgia, serif", "bodyFamily": "'Poppins', 'Segoe UI', system-ui, sans-serif", "buttonFamily": "system default (Arial as rendered)",
+    "sizes": { "h1": "48px/700", "h2": "32px/600", "h4": "16px/700 (UA default)", "p": "18.4px/500", "block": "16.8px", "tab": "17.6px/700", "nav": "16.8px/600", "footer": "15.2px" },
+    "lineHeight": 1.6, "blockLineHeight": 1.8,
+    "scaleAudit": { "kind": "ad-hoc", "basis": "48 / 32 / 18.4 / 16.8 / 16 — rem multiples, no constant ratio" },
+    "source": { "url": "stardust/current/_computed-styles.json", "path": "aggregate.type" }
+  },
+  "motifs": {
+    "radius": { "mode": "12px", "small": "8px", "card": "10px", "pill": "50%", "source": { "path": "aggregate.motifs.radius" } },
+    "shadows": ["0 4px 20px rgba(106,27,154,0.12)", "0 2px 8px rgba(0,0,0,0.07)", "0 4px 20px rgba(233,30,99,0.1)"],
+    "patterns": ["rounded white card on pastel gradient page", "tabbed team-card section", "two-up media table (video / image)", "pink-rule content block"]
+  },
+  "hover": [{ "kind": "link", "selector": ".site-header a:hover", "from": "transparent/#6a1b9a", "to": "#f3e5f5/#4a148c" }, { "kind": "card", "selector": "table td:hover", "to": "translateY(-4px), border #26c6da, shadow 0 8px 30px rgba(0,150,136,0.2)" }],
+  "voice": { "headline": "Super page", "lead": "Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida", "ctas": ["Home", "Page 1", "Team Alpha", "Team Beta", "Team Gamma"], "heroImage": null, "heroMedium": null },
+  "systemComponents": [
+    { "id": "site-header", "instances": ["index", "page1"], "fingerprint": "nav.site-header > a×2 (Home, Page 1)" },
+    { "id": "site-footer", "instances": ["index", "page1"], "fingerprint": "footer.site-footer '© 2026 Super Page. All rights reserved.'" },
+    { "id": "team-tabs", "instances": ["index", "page1"], "fingerprint": ".tabs-section: 3 tab buttons (Team Alpha/Beta/Gamma), 3 panels × 2 team cards" }
+  ],
+  "iconFont": null
+}

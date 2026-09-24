@@ -1,0 +1,52 @@
+{
+  "_provenance": { "writtenBy": "stardust:extract", "writtenAt": "2026-09-23T13:24:59Z", "readArtifacts": ["stardust/current/_computed-styles.json", "stardust/current/_brand-extraction.json"], "synthesizedInputs": [], "stardustVersion": "0.25.0" },
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-23T13:24:59Z",
+  "title": "Design System: Super Page",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Deep Purple", "canonical": "#6a1b9a" },
+      "secondary": { "role": "secondary", "displayName": "Teal", "canonical": "#00897b" },
+      "accent-pink": { "role": "accent", "displayName": "Pink", "canonical": "#ec407a" },
+      "tab-active": { "role": "accent", "displayName": "Material Blue", "canonical": "#2196f3" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Page h1 only. Declared Playfair Display, not loaded — renders in the Georgia/serif fallback." },
+      "body": { "displayName": "Body", "purpose": "Declared Poppins, not loaded — renders in the 'Segoe UI'/system-ui/sans-serif fallback." }
+    },
+    "shadows": [
+      { "name": "card", "value": "0 4px 20px rgba(106, 27, 154, 0.12)", "purpose": "Header, media cells." },
+      { "name": "team-card", "value": "0 2px 8px rgba(0,0,0,0.07)", "purpose": "Team cards." },
+      { "name": "content-block", "value": "0 4px 20px rgba(233, 30, 99, 0.1)", "purpose": "Pink content block." },
+      { "name": "cell-hover", "value": "0 8px 30px rgba(0, 150, 136, 0.2)", "purpose": "Media cell hover." },
+      { "name": "h1-text", "value": "2px 2px 4px rgba(106, 27, 154, 0.15)", "purpose": "h1 text-shadow." }
+    ],
+    "gradients": [
+      { "name": "page", "value": "linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 50%, #fff8e1 100%)" },
+      { "name": "content-block", "value": "linear-gradient(135deg, #ffffff 0%, #fce4ec 100%)" }
+    ],
+    "motion": [
+      { "name": "nav-hover", "value": "background 0.2s, color 0.2s" },
+      { "name": "cell-hover", "value": "transform 0.3s ease, box-shadow 0.3s ease" },
+      { "name": "tab-color", "value": "color 0.2s" },
+      { "name": "tab-fade", "value": "fadeIn 0.4s (opacity 0→1)" }
+    ],
+    "breakpoints": [ { "name": "tabs-stack", "value": "900px" }, { "name": "mobile", "value": "768px" } ],
+    "componentStyle": ["rounded white cards", "pastel gradient page"],
+    "motifs": ["12px radius", "purple card shadow", "round portraits"],
+    "voice": ["Super page", "Tralalala ladida…", "Team Alpha / Team Beta / Team Gamma"],
+    "modules": [
+      { "id": "site-header", "status": "candidate", "slots": [{ "name": "links", "type": "link[]", "required": true }], "instances": [{ "slug": "index", "selector": "nav.site-header" }, { "slug": "page1", "selector": "nav.site-header" }] },
+      { "id": "site-footer", "status": "candidate", "slots": [{ "name": "text", "type": "text", "required": true }], "instances": [{ "slug": "index", "selector": "footer.site-footer" }, { "slug": "page1", "selector": "footer.site-footer" }] },
+      { "id": "team-tabs", "status": "candidate", "slots": [{ "name": "tab-label", "type": "text", "required": true }, { "name": "member-image", "type": "image", "required": true }, { "name": "member-name", "type": "text", "required": true }, { "name": "member-text", "type": "text", "required": false }], "instances": [{ "slug": "index", "selector": ".tabs-section" }, { "slug": "page1", "selector": ".tabs-section" }] },
+      { "id": "media-table", "status": "candidate", "slots": [{ "name": "cell", "type": "image|video", "required": true }], "instances": [{ "slug": "index", "selector": "table:nth-of-type(1)" }, { "slug": "index", "selector": "table:nth-of-type(2)" }] },
+      { "id": "content-block", "status": "candidate", "slots": [{ "name": "text", "type": "text", "required": true }], "instances": [{ "slug": "index", "selector": "body > div:not([class])" }] }
+    ]
+  },
+  "components": [
+    { "name": "Nav link", "kind": "nav", "refersTo": "nav-link", "description": "Header link; tinted on hover.", "html": "<a href=\"/\">Home</a>", "css": ".site-header a { font-weight: 600; font-size: 1.05rem; color: #6a1b9a; text-decoration: none; padding: 0.4rem 1rem; border-radius: 8px; transition: background 0.2s, color 0.2s; } .site-header a:hover { background: #f3e5f5; color: #4a148c; }" },
+    { "name": "Tab button", "kind": "button", "refersTo": "tab-button", "description": "Team tab; active gets blue text, 3px blue underline, white background.", "html": "<button class=\"active\">Team Alpha</button>", "css": ".tab-buttons button { background: none; border: none; padding: 1em 2em; font-size: 1.1em; font-weight: bold; color: #666; transition: color 0.2s; } .tab-buttons button.active { color: #2196F3; border-bottom: 3px solid #2196F3; background: #fff; }" },
+    { "name": "Team card", "kind": "card", "refersTo": "team-card", "description": "Round 120px portrait, name, one-line bio.", "html": "<div class=\"team-card\"><img alt=\"Team member 1\"><h4>Alex Johnson</h4><p>…</p></div>", "css": ".team-card { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); width: 48%; padding: 1em; display: flex; flex-direction: column; align-items: center; } .team-card img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 1em; }" }
+  ],
+  "narrative": { "northStar": "Keep it exactly as it is", "overview": "Descriptive record of the captured site; the replica target is this state.", "keyCharacteristics": ["pastel gradient page", "white rounded cards", "purple/teal/pink accents", "tabbed team directory"], "rules": [], "dos": ["Keep every captured value."], "donts": ["Don't load fonts or add assets the source lacks."] }
+}

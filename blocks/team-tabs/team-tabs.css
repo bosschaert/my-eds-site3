@@ -1,0 +1,115 @@
+/*
+ * team-tabs — the source's `.tabs-section` / `.tab-buttons` / `.tab-content` / `.team-card`
+ * rules, lifted from stardust/prototypes/canon.css. The block div is the `.tabs-section` box;
+ * the wrapper and section add none (styles.css).
+ */
+.team-tabs {
+  margin: 2em 0;
+  padding: 1em;
+  border-radius: var(--radius-md);
+  background: var(--color-tabs-surface);
+}
+
+.team-tabs .team-tabs-nav {
+  display: flex;
+  border-bottom: 2px solid var(--color-rule);
+  margin-bottom: 1em;
+}
+
+/* the source tab is a <button>: its text computes the UA control font (measured on the
+   source at 1440: Arial 17.6px/normal 700), then the source's own size/weight/colour on top */
+.team-tabs .team-tabs-tab {
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: normal;
+  text-align: center;
+  background: none;
+  border: none;
+  padding: 1em 2em;
+  cursor: pointer;
+  color: var(--color-tab-text);
+  transition: color 0.2s;
+  outline: none;
+  user-select: none;
+}
+
+.team-tabs .team-tabs-tab:focus-visible {
+  outline: 2px solid var(--color-tab-active);
+  outline-offset: -2px;
+}
+
+.team-tabs .team-tabs-tab.active {
+  color: var(--color-tab-active);
+  border-bottom: 3px solid var(--color-tab-active);
+  background: var(--color-surface);
+}
+
+/* the authored label paragraph computes like the source button's bare text node */
+.team-tabs .team-tabs-tab p {
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  max-width: none;
+  margin: 0;
+}
+
+.team-tabs .team-tabs-panel {
+  display: none;
+  animation: team-tabs-fade-in 0.4s;
+}
+
+.team-tabs .team-tabs-panel.active {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+@keyframes team-tabs-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.team-tabs .team-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-team-card);
+  width: 48%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.team-tabs .team-card picture {
+  display: contents;
+}
+
+.team-tabs .team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+.team-tabs .team-card :is(h2, h3, h4, h5, h6) {
+  margin: 0.2em 0;
+}
+
+@media (width <= 900px) {
+  .team-tabs .team-tabs-panel.active {
+    flex-direction: column;
+    gap: 1.2em;
+  }
+
+  .team-tabs .team-card {
+    width: 100%;
+  }
+}

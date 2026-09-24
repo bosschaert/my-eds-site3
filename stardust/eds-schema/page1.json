@@ -1,0 +1,135 @@
+{
+ "source": "http://localhost:8791/page1-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "team-tabs",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Team Alpha"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Team Beta"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Team Gamma"
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "Alex Johnson"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Project Lead with a knack for creative solutions and a love of adventure sports."
+    },
+    {
+     "role": "heading",
+     "order": 5,
+     "text": "Maria Lopez"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "UI Designer who brings vibrant energy and stunning visuals to every project."
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "Brian Kim"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Backend engineer, automation enthusiast, and gourmet coffee taster."
+    },
+    {
+     "role": "heading",
+     "order": 9,
+     "text": "Sophia Patel"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "QA Analyst who catches every bug and knits amazing scarves in her free time."
+    },
+    {
+     "role": "heading",
+     "order": 11,
+     "text": "Elijah Brown"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "DevOps wizard, mountain hiker, and avid reader of mystery novels."
+    },
+    {
+     "role": "heading",
+     "order": 13,
+     "text": "Linda Zhang"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "Frontend guru who mixes pixel perfection with playful animations and memes."
+    }
+   ],
+   "imgCount": 6,
+   "editableTexts": 12,
+   "repeats": [
+    {
+     "unitSelector": "DIV.team-tabs__panel",
+     "count": 3,
+     "unit": {
+      "headings": 2,
+      "ctas": 0,
+      "imgs": 2,
+      "textRuns": 4
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.team-card",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 1,
+      "textRuns": 2
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.team-card",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 1,
+      "textRuns": 2
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.team-card",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 1,
+      "textRuns": 2
+     },
+     "uniform": true
+    }
+   ]
+  }
+ ]
+}

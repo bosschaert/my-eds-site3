@@ -1,0 +1,194 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-23T13:39:56Z",
+    "stardustVersion": "0.25.0"
+  },
+  "breakpoints": {
+    "desktop": 1440,
+    "mobile": 360
+  },
+  "contentRoot": "body — the source has no <main>/<header>/<footer> landmark other than nav.site-header and footer.site-footer; all content is a direct child of body on both sides, so the root is symmetric",
+  "sharedLayers": [
+    "stardust/prototypes/canon.css",
+    "stardust/prototypes/tabs.js",
+    "stardust/prototypes/_team-tabs.html"
+  ],
+  "pageTypes": [
+    {
+      "pageType": "static",
+      "archetype": "page1",
+      "prototype": "stardust/prototypes/page1-proposed.html",
+      "perArchetypeCss": "stardust/prototypes/page1.css",
+      "breakpoints": {
+        "360": {
+          "iterations": 1,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "chrome-parity (gate.sh --full)",
+              "flag": "REGION: no element matches header",
+              "why": "same as 1440; region-mapped run exits 0 — bg/page1-chrome-360.log"
+            }
+          ],
+          "residuals": [],
+          "captureState": [],
+          "evidence": "stardust/replica/gates/page1-360/ (iter1, conf1, conf2)"
+        },
+        "1440": {
+          "iterations": 1,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "none",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "chrome-parity (gate.sh --full)",
+              "flag": "REGION: no element matches header on either side",
+              "why": "the site has no <header>; region-mapped run nav.site-header|nav.site-header + footer.site-footer exits 0 — gates/page1-1440/chrome-live-region.json, bg/page1-chrome-1440.log"
+            }
+          ],
+          "residuals": [],
+          "captureState": [],
+          "evidence": "stardust/replica/gates/page1-1440/ (iter1, conf1, conf2)"
+        }
+      },
+      "motion": {
+        "observed": [
+          "hover .site-header a (background, color, 200ms)",
+          "entrance fadeIn 0.4s on tab panels",
+          "class active toggled 6x by tab clicks"
+        ],
+        "implemented": [
+          "nav link hover (canon.css)",
+          "fadeIn keyframes on .team-tabs__panel",
+          "tabs.js class swap using the live class name active"
+        ],
+        "dead": [],
+        "compare": "stardust/replica/motion/page1-compare.json — 5 parity, 0 missing, 0 extra"
+      },
+      "regime": "prototype",
+      "approvedBy": "hands-off",
+      "approvedAt": "2026-09-23T13:39:56Z",
+      "gatePassed": true
+    },
+    {
+      "pageType": "landing",
+      "archetype": "index",
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "perArchetypeCss": "stardust/prototypes/index.css",
+      "breakpoints": {
+        "360": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "3 justified",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE x3",
+              "why": "mirrors live aspect-ratio 16/9"
+            },
+            {
+              "probe": "chrome-parity (gate.sh --full)",
+              "flag": "REGION: no element matches header",
+              "why": "region-mapped run exits 0 — bg/index-chrome-360.log"
+            }
+          ],
+          "residuals": [],
+          "captureState": [],
+          "evidence": "stardust/replica/gates/index-360/ (iter1, iter2, conf1)"
+        },
+        "1440": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "3 justified",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "chromeHeaderPct": 0,
+            "chromeFooterPct": 0,
+            "pass": true
+          },
+          "iterationLog": [
+            "iter1 28.03% / +135px live: media grid authored as equal flex columns; live is an auto-layout table splitting columns by intrinsic media width (iframe 300 vs img 800 → 324/804px cells). Fixed by authoring the table layout MODEL (display:table, border-spacing 1.5rem) with the same mobile stacking rules",
+            "iter2 0.00% / 0px"
+          ],
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE x3 (800x600 → 16/9)",
+              "why": "mirrors live: source sets aspect-ratio 16/9 on table images"
+            },
+            {
+              "probe": "chrome-parity (gate.sh --full)",
+              "flag": "REGION: no element matches header",
+              "why": "region-mapped run exits 0 — bg/index-chrome-1440.log"
+            }
+          ],
+          "residuals": [],
+          "captureState": [
+            {
+              "what": "YouTube iframe + hot-linked picsum/randomuser images replicated as captured (dynamic-features.md rows 1, 3)",
+              "where": "media grid, team tabs"
+            }
+          ],
+          "evidence": "stardust/replica/gates/index-1440/ (iter1, iter2, conf1)"
+        }
+      },
+      "motion": {
+        "observed": [
+          "hover .site-header a (200ms)",
+          "hover table td (box-shadow, transform, 300ms)",
+          "entrance fadeIn 0.4s",
+          "class active toggled 6x"
+        ],
+        "implemented": [
+          "nav link hover",
+          ".media-grid__cell hover (index.css)",
+          "fadeIn on panels",
+          "tabs.js class swap"
+        ],
+        "dead": [],
+        "compare": "stardust/replica/motion/index-compare.json — 8 parity, 0 missing, 0 extra"
+      },
+      "regime": "prototype",
+      "approvedBy": "hands-off",
+      "approvedAt": "2026-09-23T13:39:56Z",
+      "gatePassed": true
+    }
+  ],
+  "siblings": {},
+  "migrate": {
+    "at": "2026-09-23T13:43:40.135Z",
+    "pages": 2,
+    "archetypes": 2,
+    "siblings": 0,
+    "thin": 0,
+    "gates": {
+      "pixel-gate-1440": 2,
+      "pixel-gate-360": 2,
+      "content-count": 2
+    },
+    "missing": {}
+  }
+}

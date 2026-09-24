@@ -1,0 +1,73 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-09-23T13:44:12.790Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-23T13:44:12.790Z",
+  "fragments": [],
+  "deliveryOrder": [
+    "index",
+    "page1"
+  ],
+  "steps": [
+    {
+      "slug": "index",
+      "path": "/",
+      "templateId": "index",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "site-header",
+          "edsBlockName": "site-header"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer"
+        },
+        {
+          "id": "team-tabs",
+          "edsBlockName": "team-tabs"
+        },
+        {
+          "id": "media-table",
+          "edsBlockName": "media-table"
+        },
+        {
+          "id": "content-block",
+          "edsBlockName": "content-block"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "page1",
+      "path": "/page1",
+      "templateId": "page1",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "site-header",
+          "edsBlockName": "site-header",
+          "convertedBy": "index"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "index"
+        },
+        {
+          "id": "team-tabs",
+          "edsBlockName": "team-tabs",
+          "convertedBy": "index"
+        }
+      ]
+    }
+  ]
+}

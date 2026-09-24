@@ -1,0 +1,134 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-09-23T13:43:40Z",
+    "stardustVersion": "0.25.0"
+  },
+  "site": {
+    "originUrl": "https://static-website.david-bosschaert.workers.dev/page1",
+    "deployUrl": "https://main--stardust-replica-1a972ee3--of1-labs.aem.page/",
+    "extractedAt": "2026-09-23T13:25:26Z",
+    "pageCap": 0,
+    "totalDiscovered": 2,
+    "crawled": 2
+  },
+  "direction": null,
+  "handsOff": true,
+  "flow": "replica",
+  "flowChosenAt": "2026-09-23T13:25:26Z",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "page1",
+      "url": "https://static-website.david-bosschaert.workers.dev/page1",
+      "title": "Good Morning!",
+      "type": "static",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T13:25:26Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-23T13:37:10Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-23T13:39:56Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T13:43:40Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/page1.json",
+      "prototypePath": "stardust/prototypes/page1-proposed.html",
+      "migratedPath": "stardust/migrated"
+    },
+    {
+      "slug": "index",
+      "url": "https://static-website.david-bosschaert.workers.dev/",
+      "title": "Good Morning!",
+      "type": "landing",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T13:25:26Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-23T13:37:10Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-23T13:39:56Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T13:43:40Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": "stardust/migrated"
+    }
+  ],
+  "migrate": {
+    "at": "2026-09-23T13:43:39Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/page1",
+        "outputPath": "page1/index.html",
+        "slug": "page1",
+        "outputPathDefault": "trailing-slash"
+      },
+      {
+        "sourceUrl": "/",
+        "outputPath": "index.html",
+        "slug": "index",
+        "outputPathDefault": null
+      }
+    ],
+    "totalAssetsBundled": 4,
+    "bundledAssets": [
+      "canon.css",
+      "index.css",
+      "page1.css",
+      "tabs.js"
+    ],
+    "pages": [
+      {
+        "slug": "page1",
+        "file": "stardust/migrated/page1/index.html",
+        "assetsBundled": 3
+      },
+      {
+        "slug": "index",
+        "file": "stardust/migrated/index.html",
+        "assetsBundled": 3
+      }
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "lastRun": {
+      "at": "2026-09-23T13:43:39Z",
+      "rendered": [
+        "page1",
+        "index"
+      ],
+      "unchanged": [],
+      "refused": [],
+      "passthrough": []
+    }
+  }
+}

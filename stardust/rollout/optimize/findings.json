@@ -1,0 +1,115 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/findings",
+    "writtenAt": "2026-09-23T14:36:56.508Z",
+    "stardustVersion": "0.0.0"
+  },
+  "runs": [
+    {
+      "id": "run-1",
+      "at": "2026-09-23T14:36:33.028Z",
+      "scopePages": [
+        "index",
+        "page1"
+      ],
+      "layersRun": [
+        "accessibility",
+        "seo",
+        "ai-search",
+        "cross-page"
+      ],
+      "trigger": "deliver",
+      "source": "https://main--stardust-replica-1a972ee3--of1-labs.aem.page"
+    }
+  ],
+  "findings": [
+    {
+      "id": "f-0a6f1bc979",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "platform-migration",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "page1"
+        ]
+      },
+      "evidence": "no JSON-LD structured data",
+      "recommendedMove": "Emit page-type JSON-LD in the head (metadata-and-jsonld).",
+      "autofix": {
+        "available": true,
+        "target": "aem-eds",
+        "strategy": "eds-jsonld",
+        "kind": "manual",
+        "status": "pending",
+        "appliedBy": null,
+        "at": null,
+        "detail": null
+      },
+      "status": "accepted",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-54be5a397f",
+      "source": "rollout:baseline",
+      "layer": "ai-search",
+      "check": "jsonld",
+      "severity": "P2",
+      "fixability": "platform-migration",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "index"
+        ]
+      },
+      "evidence": "no JSON-LD structured data",
+      "recommendedMove": "Emit page-type JSON-LD in the head (metadata-and-jsonld).",
+      "autofix": {
+        "available": true,
+        "target": "aem-eds",
+        "strategy": "eds-jsonld",
+        "kind": "manual",
+        "status": "pending",
+        "appliedBy": null,
+        "at": null,
+        "detail": null
+      },
+      "status": "accepted",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    },
+    {
+      "id": "f-a476ef7598",
+      "source": "rollout:baseline",
+      "layer": "cross-page",
+      "check": "duplicate-title",
+      "severity": "P2",
+      "fixability": "design-pass",
+      "scope": {
+        "level": "page",
+        "ids": [
+          "index",
+          "page1"
+        ]
+      },
+      "evidence": "2 pages share <title> \"Good Morning!\"",
+      "recommendedMove": "Give each page a unique title upstream (migrate metadata).",
+      "autofix": {
+        "available": true,
+        "target": "aem-eds",
+        "strategy": "eds-disambiguate-title",
+        "kind": "content-draft",
+        "status": "pending",
+        "appliedBy": null,
+        "at": null,
+        "detail": null
+      },
+      "status": "accepted",
+      "firstSeenRun": "run-1",
+      "resolvedBy": null
+    }
+  ]
+}

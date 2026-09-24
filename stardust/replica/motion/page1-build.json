@@ -1,0 +1,279 @@
+{
+  "url": "http://localhost:8791/page1-proposed.html",
+  "width": 1440,
+  "headerTimeline": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".team-tabs__tab:nth-child(2)",
+      "frames": [
+        {
+          "t": 6121.200000001118,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 6325.300000000745,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 6528.700000001118,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 6735.10000000149,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".team-tabs__tab:nth-child(3)",
+      "frames": [
+        {
+          "t": 7749.10000000149,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 7952.200000001118,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 8155.700000001118,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 8359.800000000745,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".team-tabs__tab:nth-child(1)",
+      "frames": [
+        {
+          "t": 9370.60000000149,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 9573.800000000745,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 9778.800000000745,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        },
+        {
+          "t": 9982.400000000373,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".site-header a",
+      "changed": [
+        "self.color",
+        "self.background"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(106, 27, 154)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background 0.2s, color 0.2s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(74, 20, 140)",
+          "background": "rgb(243, 229, 245)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background 0.2s, color 0.2s"
+        },
+        "subs": []
+      }
+    }
+  ],
+  "events": {
+    "animations": [
+      {
+        "name": "fadeIn",
+        "el": "html > body.page.page--static > section.team-tabs > div.team-tabs__panel.active",
+        "txt": "Brian Kim\n      Backend engineer, automation enthu",
+        "y": 0
+      },
+      {
+        "name": "fadeIn",
+        "el": "html > body.page.page--static > section.team-tabs > div.team-tabs__panel.active",
+        "txt": "Elijah Brown\n      DevOps wizard, mountain hiker, ",
+        "y": 0
+      },
+      {
+        "name": "fadeIn",
+        "el": "html > body.page.page--static > section.team-tabs > div.team-tabs__panel.active",
+        "txt": "Alex Johnson\n      Project Lead with a knack for c",
+        "y": 0
+      }
+    ],
+    "transitions": [
+      {
+        "prop": "color",
+        "el": "html > body.page.page--static > section.team-tabs > div.team-tabs__nav > button.team-tabs__tab",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body.page.page--static > section.team-tabs > div.team-tabs__nav > button.team-tabs__tab.active",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body.page.page--static > section.team-tabs > div.team-tabs__nav > button.team-tabs__tab",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body.page.page--static > section.team-tabs > div.team-tabs__nav > button.team-tabs__tab.active",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body.page.page--static > section.team-tabs > div.team-tabs__nav > button.team-tabs__tab.active",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body.page.page--static > section.team-tabs > div.team-tabs__nav > button.team-tabs__tab",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body.page.page--static > nav.site-header > a",
+        "y": 0,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "html > body.page.page--static > nav.site-header > a",
+        "y": 0,
+        "dur": "0.2s, 0.2s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body.page.page--static > section.team-tabs > div.team-tabs__nav > button.team-tabs__tab.active",
+        "y": 0
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body.page.page--static > section.team-tabs > div.team-tabs__panel.active",
+        "y": 0
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body.page.page--static > section.team-tabs > div.team-tabs__nav > button.team-tabs__tab.active",
+        "y": 0
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body.page.page--static > section.team-tabs > div.team-tabs__panel.active",
+        "y": 0
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body.page.page--static > section.team-tabs > div.team-tabs__nav > button.team-tabs__tab.active",
+        "y": 0
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body.page.page--static > section.team-tabs > div.team-tabs__panel.active",
+        "y": 0
+      }
+    ]
+  }
+}

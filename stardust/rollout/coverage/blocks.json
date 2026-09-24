@@ -1,0 +1,119 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-09-23T13:44:12.726Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage/pages.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-23T14:30:11.400Z",
+  "blocks": [
+    {
+      "id": "content-block",
+      "label": "content-block",
+      "kind": "module",
+      "signature": "module:content-block",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "content-block",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "media-table",
+      "label": "media-table",
+      "kind": "module",
+      "signature": "module:media-table",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "media-grid",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "site-footer",
+      "label": "site-footer",
+      "kind": "module",
+      "signature": "module:site-footer",
+      "source": null,
+      "usedByTemplates": [
+        "index",
+        "page1"
+      ],
+      "usedByPages": [
+        "index",
+        "page1"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "footer",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "site-header",
+      "label": "site-header",
+      "kind": "module",
+      "signature": "module:site-header",
+      "source": null,
+      "usedByTemplates": [
+        "index",
+        "page1"
+      ],
+      "usedByPages": [
+        "index",
+        "page1"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "header",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "team-tabs",
+      "label": "team-tabs",
+      "kind": "module",
+      "signature": "module:team-tabs",
+      "source": null,
+      "usedByTemplates": [
+        "index",
+        "page1"
+      ],
+      "usedByPages": [
+        "index",
+        "page1"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "team-tabs",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    }
+  ]
+}

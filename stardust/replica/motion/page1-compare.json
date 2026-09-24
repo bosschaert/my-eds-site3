@@ -1,0 +1,75 @@
+{
+  "live": "stardust/replica/motion/page1.json",
+  "build": "stardust/replica/motion/page1-build.json",
+  "toleranceMs": 150,
+  "tolerancePx": 8,
+  "advisory": true,
+  "findings": 0,
+  "counts": {
+    "behaviors": 8,
+    "parity": 5,
+    "missing": 0,
+    "extra": 0,
+    "tolerance": 0,
+    "dead": 3,
+    "advisory": 0
+  },
+  "verdicts": [
+    {
+      "cls": "widget",
+      "name": ".tab-buttons button:nth-child(2) → .team-tabs__tab:nth-child(2)",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .tab-buttons button:nth-child(2) → .team-tabs__tab:nth-child(2): dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "widget",
+      "name": ".tab-buttons button:nth-child(3) → .team-tabs__tab:nth-child(3)",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .tab-buttons button:nth-child(3) → .team-tabs__tab:nth-child(3): dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "widget",
+      "name": ".tab-buttons button:nth-child(1) → .team-tabs__tab:nth-child(1)",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .tab-buttons button:nth-child(1) → .team-tabs__tab:nth-child(1): dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "hover",
+      "name": ".site-header a",
+      "state": "parity",
+      "note": "self.background, self.color; 200ms",
+      "line": "motion hover .site-header a: parity (self.background, self.color; 200ms)"
+    },
+    {
+      "cls": "entrance",
+      "name": "fadeIn",
+      "state": "parity",
+      "note": "fired on 3 element(s)",
+      "line": "motion entrance fadeIn: parity (fired on 3 element(s))"
+    },
+    {
+      "cls": "transition",
+      "name": "background-color",
+      "state": "parity",
+      "note": "2 event(s) on live, 1 on build, 200ms",
+      "line": "motion transition background-color: parity (2 event(s) on live, 1 on build, 200ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "color",
+      "state": "parity",
+      "note": "8 event(s) on live, 7 on build, 200ms",
+      "line": "motion transition color: parity (8 event(s) on live, 7 on build, 200ms)"
+    },
+    {
+      "cls": "class",
+      "name": "active",
+      "state": "parity",
+      "note": "added 6× on live, 6× on build",
+      "line": "motion class active: parity (added 6× on live, 6× on build)"
+    }
+  ]
+}

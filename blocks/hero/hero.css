@@ -1,0 +1,59 @@
+/* hero (courtyard) — values from stardust/prototypes/index-proposed.css `.hero` */
+
+/* full-bleed: the block owns the column */
+main .hero-container > div {
+  max-width: none;
+  padding: 0;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  line-height: 0;
+  position: relative;
+  background: var(--parch);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgb(244 239 227 / 5%), rgb(44 37 25 / 10%));
+}
+
+.hero picture {
+  display: block;
+}
+
+.hero img {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.hero .hero-mobile {
+  display: none;
+}
+
+@media (width <= 640px) {
+  .hero {
+    min-height: 0;
+  }
+
+  .hero img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .hero .hero-mobile {
+    display: block;
+  }
+
+  .hero:has(.hero-mobile) .hero-desktop {
+    display: none;
+  }
+}

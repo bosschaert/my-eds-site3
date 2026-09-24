@@ -1,0 +1,155 @@
+/* rooms (door cards) — values from stardust/prototypes/index-proposed.css `.rooms`, `.reading-door*` */
+
+main .rooms-container {
+  padding: clamp(4rem, 8vh, 6rem) 0;
+}
+
+/* eyebrow role (prototype .eyebrow) */
+.rooms .rooms-eyebrow p {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--leaf);
+  margin-bottom: 0.6rem;
+}
+
+.rooms .rooms-first-visit p {
+  max-width: 42rem;
+  margin: 0.55rem 0 1.5rem;
+  color: var(--ink-soft);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.rooms .mobile-room-hint {
+  display: none;
+}
+
+.rooms .mobile-room-hint p {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-bottom: 1rem;
+}
+
+.rooms .reading-door-rail {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.8rem;
+}
+
+.rooms .reading-door {
+  display: block;
+  min-width: 0;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--line);
+  background: rgb(255 255 255 / 22%);
+  padding: 1rem;
+  transition: transform 0.22s ease, border-color 0.22s ease;
+}
+
+.rooms .reading-door:hover {
+  transform: translateY(-3px);
+  border-color: var(--taupe);
+}
+
+.rooms .courtyard-door-media {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: var(--frame-room-card-ratio);
+  border: 1px solid var(--line);
+  background: #e9e2d4;
+}
+
+.rooms .courtyard-door-media picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.rooms .courtyard-door-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* live `.poster-insert` on the 4th door — anchored to the authored alt, not to position */
+.rooms .courtyard-door-media:has(img[alt="Come, Sit – Just Ask"]) img {
+  object-fit: contain;
+  background: #efe4cf;
+}
+
+/* prototype <small> */
+.rooms .door-index p {
+  display: block;
+  margin-top: 0.9rem;
+  font-size: 0.64rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--taupe);
+}
+
+.rooms .reading-door h3 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  line-height: 1.15;
+  margin: 0.45rem 0 0.5rem;
+  font-weight: 500;
+}
+
+.rooms .reading-door p:where(:not(.door-index p, .door-cta p)) {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  min-height: 4.2em;
+}
+
+/* prototype <span> */
+.rooms .door-cta p {
+  display: inline-block;
+  margin-top: 0.85rem;
+  color: var(--leaf);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.rooms .rooms-continuing p {
+  margin: 1.5rem 0 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+@media (width <= 920px) {
+  .rooms .mobile-room-hint {
+    display: block;
+  }
+
+  .rooms .reading-door-rail {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-bottom: 0.75rem;
+  }
+}
+
+@media (width <= 600px) {
+  .rooms .reading-door-rail {
+    grid-template-columns: 1fr;
+  }
+
+  .rooms .reading-door p:where(:not(.door-index p, .door-cta p)) {
+    min-height: 0;
+  }
+}

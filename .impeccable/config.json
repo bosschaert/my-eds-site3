@@ -1,0 +1,59 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/index-proposed.html"
+        ],
+        "createdAt": "2026-09-23T18:52:04.036Z",
+        "reason": "stardust:replica preserve mode: the prototype replicates the source site's own palette verbatim (stardust/direction.md, empty inconsistency register); contrast changes would be fidelity defects"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "files": [
+          "stardust/prototypes/replica-canon.css"
+        ],
+        "createdAt": "2026-09-23T19:08:29.679Z",
+        "reason": "stardust:replica preserve mode: value lifted verbatim from the source site's own CSS (stardust/direction.md, empty inconsistency register); changing it would be a fidelity defect"
+      },
+      {
+        "rule": "layout-transition",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/replica-canon.css"
+        ],
+        "createdAt": "2026-09-23T19:08:29.688Z",
+        "reason": "stardust:replica preserve mode: value lifted verbatim from the source site's own CSS (stardust/direction.md, empty inconsistency register); changing it would be a fidelity defect — .nm-reading-progress>span width transition is house-foundation.css's own rule"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/index-proposed.html"
+        ],
+        "createdAt": "2026-09-23T19:08:29.698Z",
+        "reason": "stardust:replica preserve mode: value lifted verbatim from the source site's own CSS (stardust/direction.md, empty inconsistency register); changing it would be a fidelity defect"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-09-23T19:37:37.632Z",
+        "reason": "replica migration: Inter is the source site's own body face (stardust/current/assets/css, replica-canon.css); the design is preserved, not chosen"
+      },
+      {
+        "rule": "layout-transition",
+        "value": "*",
+        "files": [
+          "blocks/header/header.css"
+        ],
+        "createdAt": "2026-09-23T19:37:37.641Z",
+        "reason": "replica migration: the source's reading-progress bar animates width (.08s linear) — lifted verbatim, motion parity gated"
+      }
+    ]
+  }
+}

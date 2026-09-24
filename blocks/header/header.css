@@ -1,0 +1,259 @@
+/* header block — prototype chrome (replica-canon.css) with authored slots.
+   The header host (sticky, --nav-height, paper) is painted in styles/styles.css. */
+
+/* ---- body-level chrome (created by header.js, lives outside <header>) ---- */
+
+/* reading progress (2px gold bar, width = scroll progress) */
+.nm-reading-progress {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 9999;
+  height: 2px;
+  pointer-events: none;
+  background: transparent;
+}
+
+.nm-reading-progress > span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: var(--gold);
+  transition: width 0.08s linear;
+}
+
+/* drawer + overlay */
+.nmh-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgb(0 0 0 / 28%);
+  z-index: 9998;
+}
+
+.nmh-overlay.open {
+  display: block;
+}
+
+.nmh-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(340px, 70vw);
+  height: 100vh;
+  overflow-y: auto;
+  padding: 72px 28px 40px;
+  background: var(--paper);
+  z-index: 9999;
+  box-shadow: -8px 0 30px rgb(0 0 0 / 12%);
+  transform: translateX(100%);
+  transition: transform 0.28s ease;
+}
+
+.nmh-menu.open {
+  transform: translateX(0);
+}
+
+/* authored <ul>: live may wrap each link as <li><p><a> — both shapes normalise */
+.nmh-menu ul,
+.nmh-menu p {
+  margin: 0;
+  padding: 0;
+}
+
+.nmh-menu ul,
+.nmh-menu li {
+  list-style: none;
+}
+
+.nmh-menu a {
+  display: block;
+  margin: 0 0 18px;
+  text-decoration: none;
+  font-family: var(--font-serif);
+  color: var(--ink);
+  font-size: 19px;
+}
+
+.nmh-menu-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: 0;
+  font-size: 28px;
+  color: var(--ink);
+  cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* legacy fixed bar: the source's empty header renders as a 1px line with a shadow */
+.nm-legacy-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: #4e5d44;
+  border-bottom: 1px solid #3c4934;
+  box-shadow: 0 1px 8px rgb(40 50 34 / 25%);
+}
+
+/* back to top (shows once scrolled past 500px) */
+.nm-top {
+  position: fixed;
+  right: clamp(0.8rem, 2vw, 1.4rem);
+  bottom: clamp(0.8rem, 2vw, 1.4rem);
+  z-index: 70;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgb(44 37 25 / 18%);
+  border-radius: 50%;
+  background: rgb(244 239 227 / 93%);
+  color: var(--leaf);
+  box-shadow: 0 5px 18px rgb(44 37 25 / 12%);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: 0.2s ease;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+}
+
+.nm-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.nm-top:hover {
+  background: var(--parch);
+}
+
+.nm-top svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentcolor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (width <= 420px) {
+  .nm-top {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* ---- sticky house header ---- */
+header .nmh-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 18px 28px;
+  background: var(--paper);
+  color: var(--ink);
+  border-bottom: 1px solid rgb(44 37 25 / 10%);
+  box-shadow: 0 1px 8px rgb(40 50 34 / 25%);
+}
+
+/* home slot: the authored <p><a>Home</a></p> is moved in; the anchor takes the
+   prototype's .nmh-home paint (a blockified grid item, hence display: flex) */
+header .nmh-home {
+  justify-self: start;
+}
+
+header .nmh-home p {
+  margin: 0;
+}
+
+header .nmh-home a {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  text-decoration: none;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  padding-right: 8px;
+}
+
+/* title slot: the authored <p>Nirav Manubhai</p> takes .nmh-title-property */
+header .nmh-title {
+  justify-self: center;
+  text-align: center;
+  font-family: var(--font-serif);
+  color: var(--ink);
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.25;
+  gap: 0.1em;
+  min-width: 0;
+  overflow: hidden;
+}
+
+header .nmh-title p {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 14px;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+header .nmh-menu-btn {
+  justify-self: end;
+  background: none;
+  border: 0;
+  color: var(--ink);
+  font-size: 26px;
+  cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+@media (width >= 640px) {
+  header .nmh-title {
+    flex-direction: row;
+    gap: 0.35em;
+    align-items: baseline;
+  }
+}
+
+@media (width <= 720px) {
+  header .nmh-header {
+    padding: 16px;
+  }
+
+  header .nmh-title {
+    font-size: 14px;
+  }
+}
+
+/* after the header slot rules: stylelint specificity ordering */
+.nmh-menu a:hover {
+  color: var(--leaf);
+}

@@ -1,0 +1,40 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-23T19:14:29.728Z",
+    "readArtifacts": [
+      "stardust/migrated",
+      "stardust/state.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-23T20:22:30.934Z",
+  "pages": [
+    {
+      "slug": "index",
+      "path": "/",
+      "title": "Nirav Manubhai — Writer, Observer &amp; A Home on the Web",
+      "templateId": "index",
+      "source": {
+        "migratedHtml": "stardust/migrated/index.html",
+        "metaJson": "stardust/migrated/_meta.json",
+        "sourceHash": "sha256:e6759887bcebad1f6029070d02ba51eec89ed708228fad3ea57439567e19d597"
+      },
+      "blocks": [
+        "hero",
+        "host",
+        "story-nursery",
+        "rooms",
+        "conversation",
+        "departure"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--stardust-replica-38f927f4--of1-labs.aem.page/",
+        "deployedAt": "2026-09-23T20:11:19.729Z",
+        "verifiedAt": "2026-09-23T20:22:30.934Z",
+        "error": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+stardust/current/assets/css/main.css: 57 of 690 rules match /^\.(l-header|c-hamburger|l-drawer|button-contact|c-sns-link|l-global-menu|works-menu|menu-item)/i
+@6291 .l-drawer
+      background-color: var(--cWhite); position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: var(--z-drawer); width: 100%; height: 100dvh; overflow-y: auto; transition: visibility .6s;
+@6468 .l-drawer[aria-hidden=true]
+      pointer-events: none; animation: toHide .6s cubic-bezier(.5,1,.89,1) forwards; visibility: hidden; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+@6651 .l-drawer[aria-hidden=true] .l-drawer__inner
+      animation: toHide .3s cubic-bezier(.5,1,.89,1) forwards;
+@6751 .l-drawer[aria-hidden=false]
+      pointer-events: all; animation: toShow .3s cubic-bezier(.11,0,.5,0) forwards; visibility: visible;
+@6873 .l-drawer[aria-hidden=false] .l-drawer__inner
+      animation: toShow .6s cubic-bezier(.11,0,.5,0) forwards;
+@6974 .l-drawer__inner
+      opacity: 0; display: flex; flex-direction: column; width: 100%; margin: min(20vh,29.3333333333vw)0; min-height: min(54.9048316252vw,750px); position: relative; z-index: var(--z-drawer-inner); align-items: center; overflow-x: hidden;
+@7204 .l-drawer__inner-nav
+      height: 100%; width: 100%; align-items: center; justify-content: center; gap: 2.5em; font-size: clamp(1.0625rem,.9915489405rem + .3027245207vw,1.25rem);
+@7366 .l-drawer__inner-nav .l-global-menu>ul
+      letter-spacing: .15em; font-family: "Kulim Park",sans-serif; font-weight: 600; display: flex; flex-direction: column; align-items: center; gap: 2.6em;
+@7542 .l-drawer__inner-nav,.l-drawer__inner-nav .l-global-menu>ul>li
+      display: flex; flex-direction: column;
+@7640 .works-menu__title.js-catToggleButton
+      pointer-events: auto; cursor: pointer; display: flex; align-items: center; justify-content: center;
+@7768 .works-menu__title.js-catToggleButton::after
+      content: "＞"; width: 1em; display: inline-block; font-size: 1em; margin-left: .2em; font-family: "Noto Sans JP",sans-serif; font-weight: 400; transform: rotate(90deg) scaleX(.55); transition: transform .3s ease; transform-origin: center;
+@8031 .works-menu__title.js-catToggleButton:has(+.is-visible)::after
+      transform: rotate(-90deg) scaleX(.55);
+@8131 .works-menu__categories.js-worksCat
+      font-size: clamp(.6875rem,.6165489405rem + .3027245207vw,.875rem); font-family: "Kulim Park","Noto Sans JP",sans-serif; font-weight: 400; display: flex; flex-direction: column; align-items: center; gap: 1.5em; margin: 0; height: 0; transition: height .3s ease,margin .3s ease;
+@8424 .l-header__right .l-global-menu>ul .works-menu__categories>li,.works-menu__categories.js-worksCat>li
+      opacity: 0; visibility: hidden;
+@8553 .works-menu__categories.js-worksCat.is-visible
+      height: auto!important; margin-top: 1.5em;
+@8639 .l-header__right .l-global-menu>ul .works-menu__container:hover .works-menu__categories>li,.works-menu__categories.js-worksCat.is-visible>li
+      visibility: visible; animation: fadeIn .3s both;
+@11940 .l-header
+      display: inline-block; position: fixed; top: 0; z-index: var(--z-header); width: 100%; background-color: var(--cWhite);
+@12058 .l-header__inner
+      display: flex; align-items: center; justify-content: space-between; position: relative; z-index: var(--z-header-inner); height: var(--header-height-sp); width: calc(100% - min(2.75rem,11.7333333333vw)); margin: 0 auto; transition: color .4s ease;
+@12304 .l-header__inner a
+      pointer-events: auto;
+@12343 .l-header__right
+      display: flex; align-items: center; gap: .5em;
+@12401 .l-header__right .l-global-menu
+      display: none;
+@12446 .l-header__right .l-global-menu>ul
+      display: flex; align-items: center; gap: 2em;
+@12642 .l-header__right .l-global-menu>ul .works-menu__container
+      position: relative; cursor: pointer; pointer-events: auto;
+@12753 .l-header__right .l-global-menu>ul .works-menu__container:hover .works-menu__categories
+      height: auto!important; padding: 1.7em 1em 1.5em;
+@12887 .l-header__right .l-global-menu>ul .works-menu__categories
+      height: 0; padding: 0 1em; background-color: var(--cWhite); position: absolute; left: 0; display: flex; flex-direction: column; gap: 1.2em; white-space: nowrap; transition: height .3s ease,padding .3s ease; font-family: "Kulim Park","Noto Sans JP",sans-serif; font-weight: 400;
+@13200 .l-header__right .button-contact
+      padding: .2em .8em; margin-left: 0; border-radius: 50vh; border: 1px solid var(--cBlack); font-size: clamp(.8125rem,.7415489405rem + .3027245207vw,1rem);
+@13377 .l-header__logo
+      width: min(7.375rem,25.3333333333vw); position: relative;
+@13447 .l-header__logo img
+      transition: opacity .5s ease;
+@14361 .c-sns-link a
+      display: flex; align-items: center; font-size: clamp(.8125rem,.6469475277rem + .7063572149vw,1.25rem);
+@14472 .c-sns-link a p
+      margin: 0 .5em;
+@14502 .c-sns-link a img
+      width: .8em; height: .8em;
+@14543 .l-header__inner .c-sns-link__container
+      display: none;
+@14821 .c-hamburger
+      pointer-events: auto; margin-right: -.6em;
+@14873 .c-hamburger button
+      display: flex; align-items: center; justify-content: right; width: min(2.75rem,12.9333333333vw); height: min(.4375rem,2vw); padding: .6em; cursor: pointer; transition: 1s; box-sizing: content-box;
+@15072 .c-hamburger button .c-hamburger__inner
+      width: 100%; height: 100%; position: relative;
+@15153 .c-hamburger button .inner_line
+      display: block; position: absolute; width: 100%; height: 1px; right: 0; background-color: var(--cBlack); mix-blend-mode: multiply; transition: opacity .4s,top .4s,bottom .4s,transform .4s,background-color .4s;
+@15379 .c-hamburger button .inner_line#line2
+      bottom: 0;
+@15426 .c-hamburger.--white .inner_line,.home .p-front-fv__slider .splide__slide-titles .slide-title__link::before
+      background-color: var(--cWhite);
+@15565 .c-hamburger [aria-expanded=true] .inner_line
+      background-color: var(--cBlack);
+@15642 .c-hamburger [aria-expanded=true] .inner_line#line1
+      top: 50%; transform: translate(0,-50%) rotate(-10deg);
+@15745 .c-hamburger [aria-expanded=true] .inner_line#line2
+      bottom: 50%; transform: translate(0,50%) rotate(10deg);
+@15849 .c-hamburger [aria-expanded=false] .inner_line#line1
+      top: 0; transform: translate(0,0) rotate(0);
+@15943 .c-hamburger [aria-expanded=false] .inner_line#line2
+      bottom: 0; transform: translate(0,0) rotate(0);
+@52807 .c-hamburger button,.c-underline-arrow:hover   @media (hover:hover)
+      opacity: 1!important;
+@53060 .c-hamburger button .inner_line,.p-qa__item-button:hover   @media (hover:hover)
+      opacity: 1!important;
+@53137 .c-hamburger [aria-expanded=false]:hover .inner_line#line1   @media (hover:hover)
+      animation: hover-line-anime .6s .1s ease-out both;
+@53245 .c-hamburger [aria-expanded=false]:hover .inner_line#line2   @media (hover:hover)
+      animation: hover-line-anime .6s ease-out both;
+@57928 .l-header__inner   @media print,screen and (min-width:960px)
+      height: var(--header-height-pc); width: calc(100% - min(6rem,7.027818448vw));
+@58019 .l-header__right   @media print,screen and (min-width:960px)
+      gap: 1.6em;
+@58046 .l-header__right .l-global-menu   @media print,screen and (min-width:960px)
+      display: block; font-size: clamp(.75rem,.7026992936rem + .2018163471vw,.875rem);
+@58155 .l-header__right .l-global-menu>ul   @media print,screen and (min-width:960px)
+      gap: 2.3em;
+@58200 .l-header__right .button-contact   @media print,screen and (min-width:960px)
+      padding: .3em 1.1em; margin-left: .8em;
+@58269 .l-header__logo   @media print,screen and (min-width:960px)
+      width: min(10.5rem,12.298682284vw);
+@58611 .l-header__inner .c-sns-link__container   @media print,screen and (min-width:960px)
+      display: block;
+@58665 .l-header__inner .c-sns-link__container a img:nth-of-type(2),.l-header__inner .c-sns-link__container a p   @media print,screen and (min-width:960px)
+      display: none;
+@58783 .c-hamburger   @media print,screen and (min-width:960px)
+      display: none;
+@58809 .c-hamburger button   @media print,screen and (min-width:960px)
+      width: min(5.5rem,6.4421669107vw); height: min(.875rem,1.0248901903vw);

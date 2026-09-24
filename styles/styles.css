@@ -1,0 +1,389 @@
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+
+/* SORRA replica foundation — tokens lifted from stardust/prototypes/css/canon.css
+   (sorra.jp main.css). Structural boilerplate layer (body gate, chrome reservation,
+   section scaffold) preserved. */
+
+:root {
+  /* palette */
+  --c-black: #000;
+  --c-white: #fff;
+  --c-gray: #94999f;
+  --c-dgray: #83888e;
+  --c-green: #eff5f1;
+  --c-green2: #e5ebe7;
+  --background-color: var(--c-white);
+  --light-color: var(--c-green);
+  --dark-color: var(--c-dgray);
+  --text-color: var(--c-black);
+  --link-color: var(--c-black);
+  --link-hover-color: var(--c-black);
+
+  /* fonts — brand faces load late from fonts.css; the -fallback face is metric-matched */
+  --font-en: "Kulim Park", kulim-park-fallback, sans-serif;
+  --font-jp: "Noto Sans JP", sans-serif;
+  --body-font-family: "Kulim Park", kulim-park-fallback, "Noto Sans JP", sans-serif;
+  --heading-font-family: var(--body-font-family);
+
+  /* type ramp */
+  --body-font-size: 1rem;
+  --body-line-height: 1.15;
+  --body-letter-spacing: 0.1em;
+
+  /* layout */
+  --content-width-sp: 86.6667vw;
+  --content-width-pc: 87.8477%;
+  --header-height-sp: min(3.125rem, 13.3333vw);
+  --header-height-pc: min(6.6875rem, 7.8331vw);
+  --hh: var(--header-height-sp);
+  --nav-height: var(--header-height-sp);
+
+  /* z-index scale */
+  --z-contents: 1;
+  --z-drawer: 4;
+  --z-drawer-inner: 5;
+  --z-header: 6;
+  --z-header-inner: 7;
+}
+
+/* metric-matched local fallback for Kulim Park (computed from KulimPark-Regular.ttf,
+   Arial reference: upm 1000, xAvgCharWidth 536, ascent 931, descent 204) */
+@font-face {
+  font-family: kulim-park-fallback;
+  src: local("Arial");
+  size-adjust: 121.43%;
+  ascent-override: 76.67%;
+  descent-override: 16.8%;
+  line-gap-override: 0%;
+}
+
+@media (width >= 960px) {
+  :root {
+    --hh: var(--header-height-pc);
+    --nav-height: var(--header-height-pc);
+  }
+
+  footer {
+    margin-top: min(15.625rem, 18.3016vw);
+  }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+
+  100% { opacity: 1; }
+}
+
+/* reset (destyle.css subset in effect on the source page) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+  background-repeat: no-repeat;
+}
+
+html {
+  line-height: var(--body-line-height);
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  display: none;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  font-weight: 400;
+  letter-spacing: var(--body-letter-spacing);
+  line-height: var(--body-line-height);
+  position: relative;
+  width: 100%;
+  animation: fade-in 1s ease-in-out 0.2s both;
+}
+
+body.appear {
+  display: block;
+}
+
+/* the source header is fixed: the host is fixed too (seam symmetry) and main is offset by its
+   reserved height, so the late chrome load shifts nothing (#81) */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-header);
+  width: 100%;
+  height: var(--nav-height);
+  background-color: var(--c-white);
+}
+
+main {
+  padding-top: var(--nav-height);
+}
+
+header .header,
+footer .footer {
+  visibility: hidden;
+}
+
+header .header[data-block-status="loaded"],
+footer .footer[data-block-status="loaded"] {
+  visibility: visible;
+}
+
+/* the footer's own box (lifted from .l-footer, #31): gap between the last section and the chrome */
+footer {
+  margin-top: min(15.625rem, 33.3333vw);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-size: inherit;
+  font-weight: inherit;
+  scroll-margin: calc(var(--nav-height) + 1em);
+}
+
+p,
+dl,
+ol,
+ul,
+figure,
+pre,
+blockquote {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+code,
+pre {
+  font-size: var(--body-font-size);
+}
+
+pre {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--light-color);
+  overflow-x: auto;
+  white-space: pre;
+}
+
+main > div {
+  margin: 0;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+button {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  text-align: inherit;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+a:any-link {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+img,
+source {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* buttons — the site's pill link (button-contact / お問い合わせフォーム) */
+p.button-wrapper {
+  margin: 0;
+}
+
+a.button:any-link,
+button.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0.3em 1.1em;
+  border: 1px solid var(--c-black);
+  border-radius: 50vh;
+  background-color: transparent;
+  color: var(--c-black);
+  font: inherit;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.button.secondary,
+button.button.secondary {
+  border-color: var(--c-gray);
+  color: var(--c-dgray);
+}
+
+a.button.accent,
+button.button.accent {
+  background-color: var(--c-black);
+  color: var(--c-white);
+}
+
+button.button:disabled,
+button.button:disabled:hover {
+  border-color: var(--c-gray);
+  color: var(--c-gray);
+  cursor: unset;
+}
+
+.icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+/* sections — spacing is owned by each block / section style */
+main > .section {
+  margin: 0;
+}
+
+main > .section > div {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+main .section:empty {
+  display: none;
+}
+
+/* section metadata */
+main .section.light,
+main .section.highlight {
+  background-color: var(--light-color);
+}
+
+/* hover behaviour (source page) */
+@media (hover: hover) {
+  a,
+  button {
+    transition: opacity 0.4s ease;
+  }
+}
+
+@media print and (hover: hover), screen and (hover: hover) and (width >= 768px) {
+  a:hover,
+  button:hover {
+    opacity: 0.4;
+  }
+}
+
+/* Experience Workspace edit mode (EW3/EW6): repaint CTAs from their authored marks,
+   card-as-link inner anchors read like the card text. Zero effect on published pages. */
+a .prosemirror-editor a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.prosemirror-editor p > a:any-link > :is(strong, em) {
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+.prosemirror-editor p :is(strong > a, em > a, a:has(> strong:only-child), a:has(> em:only-child)):any-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3em 1.1em;
+  border: 1px solid var(--c-black);
+  border-radius: 50vh;
+  color: var(--c-black);
+  text-decoration: none;
+}
+
+.prosemirror-editor p :is(em > a, a:has(> em:only-child)):any-link {
+  border-color: var(--c-gray);
+  color: var(--c-dgray);
+}
+
+/* section style "intro" (home intro paragraph) — lifted from source index.css L3/L41/L75/L86/L95;
+   applied at C-final from stardust/rollout/foundation-requests.md */
+main .section.intro {
+  width: 86.6667vw;
+  margin: min(6.25rem, 26.6667vw) auto 0;
+}
+
+main .section.intro p {
+  margin: 0;
+  font-size: clamp(0.9375rem, 0.8429rem + 0.4036vw, 1.1875rem);
+  font-feature-settings: "palt";
+  letter-spacing: 0.18em;
+  line-height: 2.17;
+}
+
+@media (width >= 768px) {
+  main .section.intro br {
+    display: none;
+  }
+}
+
+@media (width >= 960px) {
+  main .section.intro {
+    width: min(62.5rem, 73.2064vw);
+    margin-top: min(12.5rem, 14.6413vw);
+  }
+
+  main .section.intro p {
+    line-height: 2.21;
+  }
+}
+
+@media (width >= 1025px) {
+  main .section.intro {
+    width: 73.2064%;
+  }
+}

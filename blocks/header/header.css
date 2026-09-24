@@ -1,0 +1,375 @@
+/* header block — SORRA chrome, lifted from stardust/prototypes/css/canon.css
+   (.l-header, .l-global-menu, .works-menu, .c-sns-link, .button-contact, .c-hamburger, .l-drawer).
+   Class names are the source's, kebab-cased. Authored nodes are styled through descendant
+   selectors only. */
+
+@keyframes to-show {
+  0% { opacity: 0; }
+
+  100% { opacity: 1; }
+}
+
+@keyframes hover-line-anime {
+  0%,
+  100% { width: 100%; }
+
+  30% { width: 30%; }
+}
+
+header .nav-wrapper {
+  position: relative;
+}
+
+header .l-header {
+  display: block;
+  position: relative;
+  z-index: var(--z-header);
+  width: 100%;
+  background-color: var(--c-white);
+}
+
+header .l-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: var(--z-header-inner);
+  height: var(--header-height-sp);
+  width: calc(100% - min(2.75rem, 11.7333vw));
+  margin: 0 auto;
+}
+
+header .l-header-logo {
+  width: min(7.375rem, 25.3333vw);
+  position: relative;
+}
+
+header .l-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+/* Instagram link (header row, drawer) */
+header .c-sns-link a {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: clamp(0.8125rem, 0.6469rem + 0.7064vw, 1.25rem);
+}
+
+header .c-sns-link a picture {
+  display: block;
+  line-height: 0;
+}
+
+header .c-sns-link a img {
+  width: 0.8em;
+  height: 0.8em;
+}
+
+header .l-header-inner .c-sns-link-container {
+  display: none;
+}
+
+/* CONTACT pill */
+header .l-header-right .button-contact a {
+  display: inline-block;
+  padding: 0.2em 0.8em;
+  margin-left: 0;
+  border-radius: 50vh;
+  border: 1px solid var(--c-black);
+  font-size: clamp(0.8125rem, 0.7415rem + 0.3027vw, 1rem);
+}
+
+/* menus — base: desktop row (.nav-sections), drawer (.drawer-menu) */
+header .nav-sections {
+  display: none;
+}
+
+header .nav-sections > ul {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+header .drawer-menu > ul {
+  letter-spacing: 0.15em;
+  font-family: var(--font-en);
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.6em;
+}
+
+header .nav-sections > ul > li {
+  font-family: var(--font-en);
+  font-weight: 600;
+}
+
+header .drawer-menu > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+
+header .nav-sections > ul > li:has(> ul) {
+  position: relative;
+  cursor: pointer;
+}
+
+header .nav-sections > ul > li > ul {
+  height: 0;
+  padding: 0 1em;
+  background-color: var(--c-white);
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: height 0.3s ease, padding 0.3s ease;
+  font-family: var(--body-font-family);
+  font-weight: 400;
+}
+
+header .drawer-menu > ul > li > ul {
+  font-size: clamp(0.6875rem, 0.6165rem + 0.3027vw, 0.875rem);
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease, margin 0.3s ease;
+}
+
+header .nav-sections > ul > li > ul > li,
+header .drawer-menu > ul > li > ul > li {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* WORKS accordion title (drawer) */
+header .drawer-menu > ul > li:has(> ul) > :is(p, span) {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .drawer-menu > ul > li:has(> ul) > :is(p, span)::after {
+  content: "＞";
+  width: 1em;
+  display: inline-block;
+  font-size: 1em;
+  margin-left: 0.2em;
+  font-family: var(--font-jp);
+  font-weight: 400;
+  transform: rotate(90deg) scaleX(0.55);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+/* TOP is a drawer / footer item only */
+header .nav-sections > ul > li:has(> a[href="/"]) {
+  display: none;
+}
+
+/* menus — states: desktop hover dropdown, drawer accordion */
+header .nav-sections > ul > li:hover > ul {
+  height: auto;
+  padding: 1.7em 1em 1.5em;
+}
+
+header .drawer-menu > ul > li[aria-expanded="true"] > ul {
+  height: auto;
+  margin-top: 1.5em;
+}
+
+header .nav-sections > ul > li:hover > ul > li,
+header .drawer-menu > ul > li[aria-expanded="true"] > ul > li {
+  visibility: visible;
+  opacity: 1;
+  animation: fade-in 0.3s both;
+}
+
+header .drawer-menu > ul > li[aria-expanded="true"] > :is(p, span)::after {
+  transform: rotate(-90deg) scaleX(0.55);
+}
+
+/* hamburger — two-line morph */
+header .c-hamburger {
+  margin-right: -0.6em;
+}
+
+header .c-hamburger button {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: min(2.75rem, 12.9333vw);
+  height: min(0.4375rem, 2vw);
+  padding: 0.6em;
+  cursor: pointer;
+  transition: 1s;
+  box-sizing: content-box;
+}
+
+header .c-hamburger-inner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+header .c-hamburger .inner-line {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  right: 0;
+  background-color: var(--c-black);
+  mix-blend-mode: multiply;
+  transition: opacity 0.4s, top 0.4s, bottom 0.4s, transform 0.4s, background-color 0.4s;
+}
+
+header .c-hamburger button[aria-expanded="false"] .line1 {
+  top: 0;
+}
+
+header .c-hamburger button[aria-expanded="false"] .line2 {
+  bottom: 0;
+}
+
+header .c-hamburger button[aria-expanded="true"] .line1 {
+  top: 50%;
+  transform: translate(0, -50%) rotate(-10deg);
+}
+
+header .c-hamburger button[aria-expanded="true"] .line2 {
+  bottom: 50%;
+  transform: translate(0, 50%) rotate(10deg);
+}
+
+/* drawer */
+header .l-drawer {
+  background-color: var(--c-white);
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-drawer);
+  width: 100%;
+  height: 100dvh;
+  overflow-y: auto;
+  transition: visibility 0.6s;
+}
+
+header .l-drawer[aria-hidden="true"] {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+header .l-drawer[aria-hidden="false"] {
+  pointer-events: all;
+  visibility: visible;
+  animation: to-show 0.3s cubic-bezier(0.11, 0, 0.5, 0) forwards;
+}
+
+header .l-drawer-inner {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: min(20vh, 29.3333vw) 0;
+  min-height: min(54.9048vw, 750px);
+  position: relative;
+  z-index: var(--z-drawer-inner);
+  align-items: center;
+  overflow-x: hidden;
+}
+
+header .l-drawer[aria-hidden="false"] .l-drawer-inner {
+  animation: to-show 0.6s cubic-bezier(0.11, 0, 0.5, 0) forwards;
+}
+
+header .l-drawer-inner-nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5em;
+  font-size: clamp(1.0625rem, 0.9915rem + 0.3027vw, 1.25rem);
+}
+
+@media (hover: hover) {
+  header .c-hamburger button:hover,
+  header .c-hamburger button:hover .inner-line {
+    opacity: 1;
+  }
+
+  header .c-hamburger button[aria-expanded="false"]:hover .line1 {
+    animation: hover-line-anime 0.6s 0.1s ease-out both;
+  }
+
+  header .c-hamburger button[aria-expanded="false"]:hover .line2 {
+    animation: hover-line-anime 0.6s ease-out both;
+  }
+}
+
+@media (width >= 960px) {
+  header .l-header-inner {
+    height: var(--header-height-pc);
+    width: calc(100% - min(6rem, 7.0278vw));
+  }
+
+  header .l-header-right {
+    gap: 1.6em;
+  }
+
+  header .nav-sections {
+    display: block;
+    font-size: clamp(0.75rem, 0.7027rem + 0.2018vw, 0.875rem);
+  }
+
+  header .nav-sections > ul {
+    gap: 2.3em;
+  }
+
+  header .l-header-right .button-contact a {
+    padding: 0.3em 1.1em;
+    margin-left: 0.8em;
+  }
+
+  header .l-header-logo {
+    width: min(10.5rem, 12.2987vw);
+  }
+
+  /* header row: icon only (text + external arrow hidden, as the source) */
+  header .l-header-inner .c-sns-link-container {
+    display: block;
+  }
+
+  header .l-header-inner .c-sns-link a {
+    font-size: 0;
+    letter-spacing: 0;
+  }
+
+  header .l-header-inner .c-sns-link a > :is(picture, img):nth-of-type(2) {
+    display: none;
+  }
+
+  header .l-header-inner .c-sns-link a img {
+    width: clamp(0.65rem, 0.5176rem + 0.5651vw, 1rem);
+    height: clamp(0.65rem, 0.5176rem + 0.5651vw, 1rem);
+  }
+
+  header .c-hamburger {
+    display: none;
+  }
+}

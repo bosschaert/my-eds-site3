@@ -1,0 +1,92 @@
+/* front-nav — home mobile menu list (source `.home .p-front-nav .l-global-menu`, values from
+   stardust/prototypes/css/index.css + canon.css). Hidden from 960px like the source.
+   Rule order follows ascending specificity (stylelint no-descending-specificity). */
+
+.front-nav {
+  width: 86.6667vw;
+  margin: min(6.25rem, 26.6667vw) auto 0;
+}
+
+/* the WORKS categories sub-list (closed at rest) */
+.front-nav ul ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5em;
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: var(--body-font-family);
+  font-size: clamp(1.0625rem, 0.9679rem + 0.4036vw, 1.3125rem);
+  font-weight: 400;
+  transition: height 0.3s ease, margin 0.3s ease;
+}
+
+.front-nav ul ul > li {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* top-level items */
+.front-nav ul > li:not(li li) {
+  border-top: 1px solid var(--c-black);
+}
+
+.front-nav ul > li:not(li li) > :is(a, span, p) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 1em 0;
+  font-family: var(--font-en);
+  font-size: clamp(1.4375rem, 1.2956rem + 0.6054vw, 1.8125rem);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+/* accordion open state */
+.front-nav li[aria-expanded="true"] > ul,
+.front-nav ul ul.is-visible {
+  height: auto;
+  margin-top: 0.3em;
+  margin-bottom: 1.3em;
+}
+
+.front-nav li[aria-expanded="true"] > ul > li,
+.front-nav ul ul.is-visible > li {
+  opacity: 1;
+  visibility: visible;
+  animation: fade-in 0.3s both;
+}
+
+.front-nav ul > li:not(li li):last-child {
+  border-bottom: 1px solid var(--c-black);
+}
+
+/* accordion title (WORKS): chevron from the source `.works-menu__title::after` */
+.front-nav li[aria-expanded] > :is(span, p) {
+  cursor: pointer;
+}
+
+.front-nav li[aria-expanded] > :is(span, p)::after {
+  content: "＞";
+  display: inline-block;
+  width: 1em;
+  margin-left: 0.2em;
+  font-family: var(--font-jp);
+  font-size: 1em;
+  font-weight: 400;
+  transform: rotate(90deg) scaleX(0.55);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.front-nav li[aria-expanded="true"] > :is(span, p)::after {
+  transform: rotate(-90deg) scaleX(0.55);
+}
+
+@media (width >= 960px) {
+  .front-nav {
+    display: none;
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-09-24T11:59:03Z",
+    "stardustVersion": "0.25.0"
+  },
+  "site": {
+    "originUrl": "https://sorra.jp/",
+    "deployUrl": "https://main--stardust-replica-d32c145a--of1-labs.aem.page/",
+    "extractedAt": "2026-09-24T09:46:56.476Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "direction": {
+    "resolvedAt": "2026-09-24T09:53:52.517Z",
+    "phrase": "replica (keep the design) — bounded-single",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "verbatim",
+    "mode": "preserve",
+    "provenance": "bounded-single"
+  },
+  "handsOff": true,
+  "flow": "replica",
+  "flowChosenAt": "2026-09-24T09:46:35Z",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "index",
+      "url": "https://sorra.jp/",
+      "title": "SORRA | 雑木・自然風の庭",
+      "type": "home",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-24T09:48:16.098Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-24T09:53:52Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-24T10:29:35Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-24T10:29:35Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-24T11:59:03Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": "stardust/migrated/index.html"
+    }
+  ],
+  "migrate": {
+    "at": "2026-09-24T10:32:46Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/",
+        "outputPath": "index.html",
+        "slug": "index",
+        "outputPathDefault": null
+      }
+    ],
+    "totalAssetsBundled": 29,
+    "bundledAssets": [
+      "css/canon.css",
+      "css/index.css",
+      "favicon.png",
+      "img/arrow-external.svg",
+      "img/arrow-small.svg",
+      "img/arrow-small_white.svg",
+      "img/icon-Instagram.svg",
+      "img/logo.svg",
+      "js/index.js",
+      "media/2024-10-A-garden-where-you-can-camp-on-the-lawn_026-1.webp",
+      "media/2024-10-img-03.webp",
+      "media/2024-10-img-05.webp",
+      "media/2024-10-img-06.jpg",
+      "media/2025-11-IMG_8528-1.webp",
+      "media/2025-11-IMG_8532.webp",
+      "media/2025-11-img-13.webp",
+      "media/2025-11-img-15.webp",
+      "media/2025-11-img-17.webp",
+      "media/2025-11-img-19.webp",
+      "media/2025-11-img-21.webp",
+      "media/2025-11-img-23.webp",
+      "media/2025-11-img-25.webp",
+      "media/2025-11-img-27.webp",
+      "media/2025-11-img-29.webp",
+      "media/2025-11-img-31.webp",
+      "media/2025-11-img-33.webp",
+      "media/2025-11-img-35.webp",
+      "media/2025-12--2025-12-26-052822.jpg",
+      "media/2026-05-IMG_3593.jpg"
+    ],
+    "pages": [
+      {
+        "slug": "index",
+        "file": "stardust/migrated/index.html",
+        "assetsBundled": 29
+      }
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "lastRun": {
+      "at": "2026-09-24T10:32:46Z",
+      "rendered": [
+        "index"
+      ],
+      "unchanged": [],
+      "refused": [],
+      "passthrough": []
+    }
+  }
+}

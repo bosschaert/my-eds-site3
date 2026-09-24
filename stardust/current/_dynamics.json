@@ -1,0 +1,191 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-09-23T18:33:12.553Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://www.niravmanubhai.com/"
+  ],
+  "reachSource": "stardust/current/pages"
+ },
+ "pages": {
+  "/": {
+   "url": "https://www.niravmanubhai.com/",
+   "status": 200,
+   "host": "www.niravmanubhai.com",
+   "title": "Nirav Manubhai — Writer, Observer & A Home on the Web",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [
+     "en",
+     "x-default"
+    ],
+    "switcher": [
+     "https://www.linkedin.com/in/niravmanubhai/"
+    ]
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "push"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 3,
+   "inlineFetch": false,
+   "mainText": 3595,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.niravmanubhai.com": 27,
+    "fonts.googleapis.com": 1,
+    "static.cloudflareinsights.com": 1,
+    "fonts.gstatic.com": 5,
+    "www.googletagmanager.com": 1,
+    "www.google-analytics.com": 2
+   },
+   "thirdPartyHosts": [
+    "fonts.googleapis.com",
+    "static.cloudflareinsights.com",
+    "fonts.gstatic.com",
+    "www.googletagmanager.com",
+    "www.google-analytics.com"
+   ],
+   "scripts": [
+    "https://www.niravmanubhai.com/assets/nmh-navigation-foundation.js",
+    "https://www.niravmanubhai.com/assets/site-enhancements-v132.js",
+    "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495",
+    "https://www.niravmanubhai.com/assets/house-analytics.js",
+    "https://www.niravmanubhai.com/assets/analytics-enhancements-v143.js",
+    "https://www.googletagmanager.com/gtag/js?id=G-00QDEH6N5W"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "POST",
+     "host": "www.niravmanubhai.com",
+     "path": "/cdn-cgi/rum",
+     "query": [],
+     "status": 204,
+     "contentType": "text/plain",
+     "example": "https://www.niravmanubhai.com/cdn-cgi/rum"
+    }
+   ],
+   "thirdPartyXhr": [
+    "POST www.google-analytics.com/g/collect"
+   ],
+   "postBodies": [
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-00QDEH6N5W&gtm=45je69m0v9259378125za200zd9259378125xf1&_p=1790188392872&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1816344864.1790188393&frm=0&ngs=1&pscdl=no",
+     "body": ""
+    },
+    {
+     "url": "https://www.niravmanubhai.com/cdn-cgi/rum?",
+     "body": "{\"startTime\":1790188392617,\"pageloadId\":\"50bfa6b0-279e-4616-a397-94dff6c86206\",\"eventType\":1,\"nt\":\"navigate\",\"location\":\"https://www.niravmanubhai.com/\",\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.9.1\",\"timings\":2},\"bi\":{\"be\":\"Blink\",\"bev\":\"153\",\"bv\":\"153\"},\"memory\":{\"totalJSHeapSize\":10000000,\"usedJSHeapSize\":10000000,\"jsHeapSizeLimit\":3760000000},\"firstPaint\":348,\"firstContentfulPaint\":348,\"timingsV"
+    },
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-00QDEH6N5W&gtm=45je69m0v9259378125za200zd9259378125xf1&_p=1790188392872&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=1816344864.1790188393&frm=0&ng",
+     "body": ""
+    }
+   ],
+   "textAtLoad": 3595,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "a-cms-app-settings-object-datalayer",
+   "class": "A",
+   "feature": "CMS / app settings object dataLayer",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "i18n-locale-variants-en-x-default",
+   "class": "I18N",
+   "feature": "locale variants en,x-default",
+   "hint": "locale",
+   "evidence": [
+    "https://www.linkedin.com/in/niravmanubhai/"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-static-cloudflareinsights-com",
+   "class": "T",
+   "feature": "unknown third-party host static.cloudflareinsights.com",
+   "hint": "inspect",
+   "evidence": [
+    "static.cloudflareinsights.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "feature": "tag manager: Google Tag Manager",
+   "role": "tag manager: Google Tag Manager",
+   "hint": "tags",
+   "evidence": [
+    "www.googletagmanager.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-analytics-google-analytics-ads",
+   "class": "T",
+   "feature": "analytics: Google Analytics / Ads",
+   "role": "analytics: Google Analytics / Ads",
+   "hint": "tags",
+   "evidence": [
+    "www.google-analytics.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  }
+ ],
+ "reach": {
+  "pagesWithEvidence": 1,
+  "of": 1,
+  "endpoints": {
+   "POST www.google-analytics.com/g/collect": 1,
+   "POST www.niravmanubhai.com/cdn-cgi/rum": 1
+  },
+  "searchFormPages": 0,
+  "formPages": 0,
+  "triggerPages": {}
+ }
+}

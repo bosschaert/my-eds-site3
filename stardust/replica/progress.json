@@ -1,0 +1,170 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-23T19:12:00Z",
+    "stardustVersion": "0.25.0+01bf32355813"
+  },
+  "archetypes": [
+    {
+      "pageType": "home",
+      "archetype": "index",
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "css": [
+        "stardust/prototypes/fonts.css",
+        "stardust/prototypes/replica-canon.css",
+        "stardust/prototypes/index-proposed.css"
+      ],
+      "liveUrl": "https://www.niravmanubhai.com/",
+      "contentRoot": "#main",
+      "gatedAt": "2026-09-23T19:05:00Z",
+      "approvedBy": "hands-off",
+      "breakpoints": {
+        "360": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "10 justified",
+            "pixelPct": 0.05,
+            "heightDelta": 0,
+            "overflowPx": 0,
+            "chromeDeltas": 0,
+            "pass": true
+          },
+          "rounds": [
+            {
+              "label": "iter1",
+              "pixelPct": 3.45,
+              "heightDelta": 37,
+              "chromeDeltas": 7,
+              "structuralRed": 0,
+              "cause": "same font fork (conversation h2 3 vs 4 lines)"
+            },
+            {
+              "label": "iter2",
+              "pixelPct": 3.47,
+              "heightDelta": 40
+            },
+            {
+              "label": "iter3",
+              "pixelPct": 0.05,
+              "heightDelta": 0,
+              "chromeDeltas": 0,
+              "structuralRed": 0,
+              "full": true
+            }
+          ],
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×10",
+              "why": "object-fit cover/contain lifted verbatim; identical on live"
+            }
+          ],
+          "chromeCrop": {
+            "header": {
+              "band": "y0+78",
+              "matchPct": 100
+            },
+            "footer": {
+              "band": "y8264+170",
+              "matchPct": 100
+            }
+          },
+          "residuals": [],
+          "captureState": []
+        },
+        "1440": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "11 justified",
+            "pixelPct": 0.02,
+            "heightDelta": 0,
+            "overflowPx": 0,
+            "chromeDeltas": 0,
+            "pass": true
+          },
+          "rounds": [
+            {
+              "label": "iter1",
+              "pixelPct": 1.61,
+              "heightDelta": 33,
+              "chromeDeltas": 7,
+              "structuralRed": 0,
+              "cause": "font-face declaration model + Windows-hinted font build → 1–5% text-width fork; .blessing margin 1.4rem vs inline 1.2rem"
+            },
+            {
+              "label": "iter2",
+              "pixelPct": 1.61,
+              "heightDelta": 36,
+              "cause": "per-weight faces fixed the model but files were still the Windows build"
+            },
+            {
+              "label": "iter3",
+              "pixelPct": 0.02,
+              "heightDelta": 0,
+              "chromeDeltas": 0,
+              "structuralRed": 0,
+              "full": true
+            }
+          ],
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE ×11 (hero cover, 8 door-card covers, conversation, farewell)",
+              "why": "object-fit: cover / contain lifted verbatim from house-frames-v124.css and inline styles; identical crops on live"
+            }
+          ],
+          "chromeCrop": {
+            "header": {
+              "band": "y0+82",
+              "matchPct": 100
+            },
+            "footer": {
+              "band": "y6159+83",
+              "matchPct": 100
+            }
+          },
+          "residuals": [],
+          "captureState": []
+        }
+      },
+      "fluidCheck": {
+        "width": 1920,
+        "result": "12/12 selectors Δ0 (conversation media height 269.55 vs 269.72)",
+        "evidence": "stardust/replica/lift/measure-against-1920.json"
+      },
+      "motion": {
+        "observed": "stardust/replica/motion/index.json",
+        "build": "stardust/replica/motion/index-build.json",
+        "summary": "7 parity, 0 missing, 0 extra, 0 advisory",
+        "implemented": [
+          "drawer open/close (class open on .nmh-menu + .nmh-overlay; button, close, overlay, Escape)",
+          "reading-progress bar width on scroll (80ms)",
+          "back-to-top .nm-top.show at scrollY>500 (200ms opacity/transform/visibility)",
+          "footer link hover colour (180ms)"
+        ],
+        "dead": [
+          "header scroll-morph (live header static across scroll)",
+          "hover .reading-door / .btn / .story-nursery-home-cta: no measured hover diff on live within 8px/150ms — the lifted source hover rules are kept as CSS, no JS"
+        ]
+      },
+      "portations": [],
+      "jsAdditions": [
+        {
+          "what": "scroll-state chrome: progress bar width + .nm-top.show toggle",
+          "why": "instrument-induced state (recreation-procedure § Fixed and sticky chrome); thresholds lifted from site-enhancements-v132.js"
+        },
+        {
+          "what": "drawer toggle",
+          "why": "dynamic-features.md rebuild-native; mirrors nmh-navigation-foundation.js"
+        }
+      ],
+      "fonts": {
+        "policy": "Google Fonts (OFL) self-hosted — the build Google serves to desktop Chrome (Mac UA), 19 files under stardust/current/assets/fonts/gf/, declared with Google's own per-weight @font-face model (stardust/prototypes/fonts.css)",
+        "finding": "declaring weight RANGES, or using the Windows-hinted build the crawl intercepted, forks glyph advances 1–5% against live (footer 100→105px, conversation h2 3→4 lines)"
+      }
+    }
+  ],
+  "siblings": {}
+}

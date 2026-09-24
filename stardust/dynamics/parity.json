@@ -1,0 +1,138 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:dynamics",
+    "writtenAt": "2026-09-23T20:16:35.987Z",
+    "stardustVersion": "0.25.0+01bf32355813"
+  },
+  "method": "7 triaged rows from stardust/dynamic-features.md (extract --dynamics detector + 2 manual motion rows); chrome interaction verified by motion-observe on the published origin against the live observation + a direct hover probe; tags gated by consent-gate on the preview host",
+  "features": [
+    {
+      "id": "a-cms-app-settings-object-datalayer",
+      "feature": "dataLayer global (gtag bootstrap)",
+      "class": "A",
+      "pages": 1,
+      "disposition": "static-snapshot",
+      "reproducibility": "self",
+      "status": "decided-out",
+      "verifiedBy": "nothing on the page reads the object; it only carries GA4 config, which is not loaded on the preview host (see consent-gate)",
+      "checks": []
+    },
+    {
+      "id": "i18n-locale-variants-en-x-default",
+      "feature": "hreflang en / x-default alternates",
+      "class": "I18N",
+      "pages": 1,
+      "disposition": "decided-out",
+      "reproducibility": "needs-business-decision → hands-off: interim",
+      "status": "decided-out",
+      "owner": "none needed: single page, single language; the replica emits no hreflang alternates",
+      "checks": []
+    },
+    {
+      "id": "t-unknown-third-party-host-static-cloudflareinsights-com",
+      "feature": "Cloudflare Web Analytics beacon",
+      "class": "T",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision → hands-off: interim",
+      "status": "interim",
+      "owner": "decide whether the beacon is re-enabled on the launch host (it is bound to the Cloudflare zone of the source domain)",
+      "checks": [
+        {
+          "type": "consent-gate",
+          "path": "/",
+          "forbiddenHosts": [
+            "static.cloudflareinsights.com"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t-tag-manager-google-tag-manager",
+      "feature": "gtag.js loader (G-00QDEH6N5W)",
+      "class": "T",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision → hands-off: interim",
+      "status": "interim",
+      "owner": "confirm the GA4 property id for launch; the tag is not loaded on the preview host so preview traffic never reaches the production property",
+      "checks": [
+        {
+          "type": "consent-gate",
+          "path": "/",
+          "forbiddenHosts": [
+            "www.googletagmanager.com",
+            "www.google-analytics.com"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t-analytics-google-analytics-ads",
+      "feature": "GA4 collect + house-analytics event helpers",
+      "class": "T",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision → hands-off: interim",
+      "status": "interim",
+      "owner": "same decision as the gtag loader; the helper scripts only push events to gtag",
+      "checks": [
+        {
+          "type": "consent-gate",
+          "path": "/",
+          "forbiddenHosts": [
+            "www.google-analytics.com"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nav-drawer",
+      "feature": "Hamburger menu drawer (.nmh-menu-btn → .nmh-menu.open + .nmh-overlay, close button, Escape)",
+      "class": "M",
+      "pages": 1,
+      "disposition": "rebuild-native",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "motion-observe on the published origin vs live: class open added 2x on both, class show added 2x on both, transitions opacity/transform/visibility 200ms parity; direct probe: drawer opens on .nmh-menu-btn and closes on .nmh-menu-close (overlayOpen false, menuOpen false after close); footer link hover colour rgb(107,95,71) → rgb(44,37,25) on both sides; residual: live has a 180ms colour transition on footer links, build changes instantly",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "nav#nmh-drawer.nmh-menu",
+          "min": 1
+        },
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "button.nmh-menu-btn[aria-expanded]",
+          "min": 1
+        },
+        {
+          "type": "no-page-errors",
+          "paths": [
+            "/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page-in",
+      "feature": "body entrance fade (nm-page-in .42s, disabled under reduced motion)",
+      "class": "M",
+      "pages": 1,
+      "disposition": "rebuild-native",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "styles.css: body.appear { animation: nm-page-in 0.42s ease both } + prefers-reduced-motion override; motion-observe published: 0 animations sampled post-settle on both sides (the fade completes before the first frame)",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "body.appear",
+          "min": 1
+        }
+      ]
+    }
+  ]
+}

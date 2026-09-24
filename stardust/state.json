@@ -1,0 +1,143 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-09-23T19:14:10Z",
+    "stardustVersion": "0.25.0+01bf32355813"
+  },
+  "site": {
+    "originUrl": "https://www.niravmanubhai.com/",
+    "deployUrl": "https://main--stardust-replica-38f927f4--of1-labs.aem.page/",
+    "extractedAt": "2026-09-23T18:30:04.161Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "direction": {
+    "resolvedAt": "2026-09-23T18:41:50.450Z",
+    "phrase": "replica --hands-off (same design, one page)",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "verbatim",
+    "mode": "preserve",
+    "provenance": "bounded-single"
+  },
+  "handsOff": true,
+  "flow": "replica",
+  "flowChosenAt": "2026-09-23T18:30:44.412Z",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "index",
+      "url": "https://www.niravmanubhai.com/",
+      "title": "Nirav Manubhai — Writer, Observer & A Home on the Web",
+      "type": "home",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-23T18:30:04.161Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-23T18:41:50Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-23T19:06:39Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-23T19:06:39Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-23T19:14:10Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": "stardust/migrated/index.html"
+    }
+  ],
+  "migrate": {
+    "at": "2026-09-23T19:11:40Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/",
+        "outputPath": "index.html",
+        "slug": "index",
+        "outputPathDefault": null
+      }
+    ],
+    "totalAssetsBundled": 45,
+    "bundledAssets": [
+      "favicon.png",
+      "fonts.css",
+      "fonts/gf/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2",
+      "fonts/gf/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+      "fonts/gf/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7W0Q5n-wU.woff2",
+      "fonts/gf/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7W0Q5n-wU.woff2",
+      "fonts/gf/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2",
+      "fonts/gf/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2",
+      "fonts/gf/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7W0Q5n-wU.woff2",
+      "fonts/gf/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgEM86xRbPQ.woff2",
+      "fonts/gf/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgEM86xRbPQ.woff2",
+      "fonts/gf/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgEM86xRbPQ.woff2",
+      "fonts/gf/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2",
+      "fonts/gf/playfairdisplay-nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk7yRZrPA.woff2",
+      "fonts/gf/playfairdisplay-nuFkD-vYSZviVYUb_rj3ij__anPXDTnohkk7yRZrPJ-M.woff2",
+      "fonts/gf/playfairdisplay-nuFkD-vYSZviVYUb_rj3ij__anPXDTnojEk7yRZrPJ-M.woff2",
+      "fonts/gf/playfairdisplay-nuFkD-vYSZviVYUb_rj3ij__anPXDTnojUk7yRZrPJ-M.woff2",
+      "fonts/gf/rasa-xn7vYHIn1mWmfqVUlyqTR90.woff2",
+      "fonts/gf/rasa-xn7vYHIn1mWmfqpUlyqTR93kfQ.woff2",
+      "fonts/gf/rasa-xn7vYHIn1mWmfqtUlyqTR93kfQ.woff2",
+      "fonts/gf/rasa-xn7vYHIn1mWmfr5UlyqTR93kfQ.woff2",
+      "index-proposed.css",
+      "media/axiom-home-hero-v69.webp",
+      "media/conversation-v72.webp",
+      "media/courtyard-kabir-v72.webp",
+      "media/courtyard-mobile.webp",
+      "media/courtyard-stills-v72.webp",
+      "media/courtyard.jpg",
+      "media/csja-poster.webp",
+      "media/host-mirror.jpg",
+      "media/house-specials-home-threshold-v124.webp",
+      "media/my-books-home-v140.webp",
+      "media/my-study-hero-v1.webp",
+      "media/nirav-farewell.webp",
+      "media/quiet-signal-home-threshold-v124.webp",
+      "media/responsive/courtyard-480w.webp",
+      "media/responsive/courtyard-640w.webp",
+      "media/responsive/courtyard-960w.webp",
+      "media/responsive/host-mirror-480w.webp",
+      "media/responsive/host-mirror-640w.webp",
+      "media/responsive/host-mirror-960w.webp",
+      "media/responsive/quiet-signal-home-threshold-v124-480w.webp",
+      "media/responsive/quiet-signal-home-threshold-v124-640w.webp",
+      "media/story-nursery-hero-v1.webp",
+      "replica-canon.css"
+    ],
+    "pages": [
+      {
+        "slug": "index",
+        "file": "stardust/migrated/index.html",
+        "assetsBundled": 45
+      }
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "lastRun": {
+      "at": "2026-09-23T19:11:40Z",
+      "rendered": [
+        "index"
+      ],
+      "unchanged": [],
+      "refused": [],
+      "passthrough": []
+    }
+  }
+}

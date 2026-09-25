@@ -1,0 +1,1425 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/measure.mjs",
+    "writtenAt": "2026-09-24T10:04:45.205Z",
+    "urls": [
+      "https://sorra.jp/",
+      "http://localhost:8791/index-proposed.html"
+    ],
+    "widths": [
+      360
+    ],
+    "selectors": [
+      ".p-front-fv",
+      ".splide__page-info",
+      ".p-front-intro",
+      ".p-front-nav",
+      ".p-front-nav .menu-item",
+      ".p-front-journal",
+      ".p-front-journal__ttl",
+      ".p-journal__list",
+      ".p-journal__item",
+      ".p-journal__item-desc-title",
+      ".p-front-journal__link",
+      "footer.l-footer",
+      ".l-footer__info",
+      ".l-footer__inner"
+    ],
+    "props": [
+      "display",
+      "position",
+      "width",
+      "height",
+      "maxWidth",
+      "margin",
+      "padding",
+      "gap",
+      "backgroundColor",
+      "backgroundImage",
+      "color",
+      "fontFamily",
+      "fontSize",
+      "fontWeight",
+      "lineHeight",
+      "letterSpacing",
+      "textTransform",
+      "textAlign",
+      "borderRadius",
+      "border",
+      "boxShadow",
+      "opacity",
+      "objectFit"
+    ],
+    "allMatches": false,
+    "failed": [],
+    "warnings": []
+  },
+  "widths": [
+    360
+  ],
+  "selectors": [
+    ".p-front-fv",
+    ".splide__page-info",
+    ".p-front-intro",
+    ".p-front-nav",
+    ".p-front-nav .menu-item",
+    ".p-front-journal",
+    ".p-front-journal__ttl",
+    ".p-journal__list",
+    ".p-journal__item",
+    ".p-journal__item-desc-title",
+    ".p-front-journal__link",
+    "footer.l-footer",
+    ".l-footer__info",
+    ".l-footer__inner"
+  ],
+  "pages": {
+    "https://sorra.jp/": {
+      "360": {
+        ".p-front-fv": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 48,
+              "w": 360,
+              "h": 852
+            },
+            "visible": true,
+            "text": "01 09 木漏れ日に包まれる家族の空間 VIEW THIS WORK",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "width": "360px",
+              "height": "852px",
+              "maxWidth": "none",
+              "margin": "48px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".splide__page-info": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 26,
+              "y": 763,
+              "w": 307,
+              "h": 56
+            },
+            "visible": true,
+            "text": "01 09 木漏れ日に包まれる家族の空間 VIEW THIS WORK",
+            "props": {
+              "display": "flex",
+              "position": "absolute",
+              "width": "307.188px",
+              "height": "55.6719px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(255, 255, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-front-intro": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 24,
+              "y": 996,
+              "w": 312,
+              "h": 228
+            },
+            "visible": true,
+            "text": "わたしたちSORRA（そら）は、 東京と埼玉に跨る狭山丘陵を 拠点とする造園会…",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "width": "312px",
+              "height": "227.828px",
+              "maxWidth": "none",
+              "margin": "96px 24px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-front-nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 24,
+              "y": 1320,
+              "w": 312,
+              "h": 368
+            },
+            "visible": true,
+            "text": "WORKS SERVICE/FLOW Q&A ABOUT RECRUIT",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "width": "312px",
+              "height": "368.188px",
+              "maxWidth": "none",
+              "margin": "96px 24px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-front-nav .menu-item": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 24,
+              "y": 1320,
+              "w": 312,
+              "h": 73
+            },
+            "visible": true,
+            "text": "WORKS",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "width": "312px",
+              "height": "73.4375px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-front-journal": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 41,
+              "y": 1784,
+              "w": 278,
+              "h": 1241
+            },
+            "visible": true,
+            "text": "JOURNAL VIEW ALL BLOG #造園 芦名の庭が完成しました 2…",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "width": "278.391px",
+              "height": "1241.38px",
+              "maxWidth": "none",
+              "margin": "96px 40.8125px 0px 40.7969px",
+              "padding": "0px",
+              "gap": "48px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-front-journal__ttl": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 41,
+              "y": 1784,
+              "w": 146,
+              "h": 21
+            },
+            "visible": true,
+            "text": "JOURNAL",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "146.203px",
+              "height": "21px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "30px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "3.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-journal__list": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 41,
+              "y": 1853,
+              "w": 278,
+              "h": 1095
+            },
+            "visible": true,
+            "text": "BLOG #造園 芦名の庭が完成しました 2026.05.22 BLOG #造…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "278.391px",
+              "height": "1095.23px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "62.4px normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-journal__item": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 41,
+              "y": 1853,
+              "w": 278,
+              "h": 310
+            },
+            "visible": true,
+            "text": "BLOG #造園 芦名の庭が完成しました 2026.05.22",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "width": "278.391px",
+              "height": "310.047px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-journal__item-desc-title": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 41,
+              "y": 2122,
+              "w": 278,
+              "h": 20
+            },
+            "visible": true,
+            "text": "芦名の庭が完成しました",
+            "props": {
+              "display": "flow-root",
+              "position": "static",
+              "width": "278.391px",
+              "height": "20.1562px",
+              "maxWidth": "none",
+              "margin": "9.8px 0px 8.4px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "20.16px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-front-journal__link": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 125,
+              "y": 3007,
+              "w": 110,
+              "h": 18
+            },
+            "visible": true,
+            "text": "VIEW ALL",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "110.391px",
+              "height": "18.1406px",
+              "maxWidth": "none",
+              "margin": "11px 84px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "11px",
+              "fontWeight": "400",
+              "lineHeight": "12.65px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer.l-footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 3145,
+              "w": 360,
+              "h": 817
+            },
+            "visible": true,
+            "text": "CONTACT 東京・埼玉を中心に全国のご依頼を お受けいたします。 ぜひ、お…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "360px",
+              "height": "816.594px",
+              "maxWidth": "none",
+              "margin": "120px 0px 0px",
+              "padding": "0px",
+              "gap": "45.12px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".l-footer__info": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 41,
+              "y": 3632,
+              "w": 136,
+              "h": 91
+            },
+            "visible": true,
+            "text": "株式会社SORRA 〒189-0025 東京都東村山市廻田町 TEL:042-…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "136px",
+              "height": "91.1562px",
+              "maxWidth": "none",
+              "margin": "0px 0px 24px",
+              "padding": "0px",
+              "gap": "6px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "17.04px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".l-footer__inner": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 41,
+              "y": 3575,
+              "w": 278,
+              "h": 368
+            },
+            "visible": true,
+            "text": "株式会社SORRA 〒189-0025 東京都東村山市廻田町 TEL:042-…",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "width": "278.391px",
+              "height": "368.062px",
+              "maxWidth": "none",
+              "margin": "0px 40.7969px 19.2px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      }
+    },
+    "http://localhost:8791/index-proposed.html": {
+      "360": {
+        ".p-front-fv": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 48,
+              "w": 360,
+              "h": 852
+            },
+            "visible": true,
+            "text": "01 09 木漏れ日に包まれる家族の空間 VIEW THIS WORK",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "width": "360px",
+              "height": "852px",
+              "maxWidth": "none",
+              "margin": "48px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".splide__page-info": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 26,
+              "y": 763,
+              "w": 307,
+              "h": 56
+            },
+            "visible": true,
+            "text": "01 09 木漏れ日に包まれる家族の空間 VIEW THIS WORK",
+            "props": {
+              "display": "flex",
+              "position": "absolute",
+              "width": "307.188px",
+              "height": "55.6719px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(255, 255, 255)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-front-intro": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 24,
+              "y": 996,
+              "w": 312,
+              "h": 228
+            },
+            "visible": true,
+            "text": "わたしたちSORRA（そら）は、 東京と埼玉に跨る狭山丘陵を 拠点とする造園会…",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "width": "312px",
+              "height": "227.828px",
+              "maxWidth": "none",
+              "margin": "96px 24px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-front-nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 24,
+              "y": 1320,
+              "w": 312,
+              "h": 442
+            },
+            "visible": true,
+            "text": "WORKS SERVICE/FLOW Q&A ABOUT RECRUIT JO…",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "width": "312px",
+              "height": "441.625px",
+              "maxWidth": "none",
+              "margin": "96px 24px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-front-nav .menu-item": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 24,
+              "y": 1320,
+              "w": 312,
+              "h": 73
+            },
+            "visible": true,
+            "text": "WORKS",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "width": "312px",
+              "height": "73.4375px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-front-journal": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 41,
+              "y": 1857,
+              "w": 278,
+              "h": 1241
+            },
+            "visible": true,
+            "text": "JOURNAL VIEW ALL BLOG #造園 芦名の庭が完成しました 2…",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "width": "278.391px",
+              "height": "1241.38px",
+              "maxWidth": "none",
+              "margin": "96px 40.8125px 0px 40.7969px",
+              "padding": "0px",
+              "gap": "48px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-front-journal__ttl": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 41,
+              "y": 1857,
+              "w": 146,
+              "h": 21
+            },
+            "visible": true,
+            "text": "JOURNAL",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "146.203px",
+              "height": "21px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "30px",
+              "fontWeight": "400",
+              "lineHeight": "21px",
+              "letterSpacing": "3.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-journal__list": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 41,
+              "y": 1926,
+              "w": 278,
+              "h": 1095
+            },
+            "visible": true,
+            "text": "BLOG #造園 芦名の庭が完成しました 2026.05.22 BLOG #造…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "278.391px",
+              "height": "1095.23px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "62.4px normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-journal__item": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 41,
+              "y": 1926,
+              "w": 278,
+              "h": 310
+            },
+            "visible": true,
+            "text": "BLOG #造園 芦名の庭が完成しました 2026.05.22",
+            "props": {
+              "display": "list-item",
+              "position": "static",
+              "width": "278.391px",
+              "height": "310.047px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-journal__item-desc-title": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 41,
+              "y": 2195,
+              "w": 278,
+              "h": 20
+            },
+            "visible": true,
+            "text": "芦名の庭が完成しました",
+            "props": {
+              "display": "flow-root",
+              "position": "static",
+              "width": "278.391px",
+              "height": "20.1562px",
+              "maxWidth": "none",
+              "margin": "9.8px 0px 8.4px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "20.16px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".p-front-journal__link": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 125,
+              "y": 3081,
+              "w": 110,
+              "h": 18
+            },
+            "visible": true,
+            "text": "VIEW ALL",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "width": "110.391px",
+              "height": "18.1406px",
+              "maxWidth": "none",
+              "margin": "11px 84px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "11px",
+              "fontWeight": "400",
+              "lineHeight": "12.65px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer.l-footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 3219,
+              "w": 360,
+              "h": 817
+            },
+            "visible": true,
+            "text": "CONTACT 東京・埼玉を中心に全国のご依頼を お受けいたします。 ぜひ、お…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "360px",
+              "height": "816.594px",
+              "maxWidth": "none",
+              "margin": "120px 0px 0px",
+              "padding": "0px",
+              "gap": "45.12px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".l-footer__info": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 41,
+              "y": 3705,
+              "w": 136,
+              "h": 91
+            },
+            "visible": true,
+            "text": "株式会社SORRA 〒189-0025 東京都東村山市廻田町 TEL:042-…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "width": "136px",
+              "height": "91.1562px",
+              "maxWidth": "none",
+              "margin": "0px 0px 24px",
+              "padding": "0px",
+              "gap": "6px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "12px",
+              "fontWeight": "400",
+              "lineHeight": "17.04px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".l-footer__inner": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 41,
+              "y": 3648,
+              "w": 278,
+              "h": 368
+            },
+            "visible": true,
+            "text": "株式会社SORRA 〒189-0025 東京都東村山市廻田町 TEL:042-…",
+            "props": {
+              "display": "flex",
+              "position": "relative",
+              "width": "278.391px",
+              "height": "368.062px",
+              "maxWidth": "none",
+              "margin": "0px 40.7969px 19.2px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Kulim Park\", \"Noto Sans JP\", sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "18.4px",
+              "letterSpacing": "1.6px",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px solid rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "deltas": {
+    "360": {
+      ".p-front-fv": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".splide__page-info": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".p-front-intro": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".p-front-nav": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 74
+            },
+            "props": {
+              "height": [
+                "368.188px",
+                "441.625px"
+              ]
+            }
+          }
+        ]
+      },
+      ".p-front-nav .menu-item": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".p-front-journal": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 73,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".p-front-journal__ttl": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 73,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".p-journal__list": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 73,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".p-journal__item": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 73,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".p-journal__item-desc-title": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 73,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".p-front-journal__link": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 74,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "footer.l-footer": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 74,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".l-footer__info": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 73,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".l-footer__inner": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 73,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      }
+    }
+  }
+}

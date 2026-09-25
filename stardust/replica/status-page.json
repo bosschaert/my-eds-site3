@@ -1,0 +1,35 @@
+{
+  "state": "In progress",
+  "steps": [
+    "Done",
+    "Done",
+    "Done",
+    "Done",
+    "In progress"
+  ],
+  "stepFractions": [
+    1,
+    1,
+    1,
+    1,
+    0.85
+  ],
+  "templates": [
+    {
+      "name": "Home page",
+      "pages": 1,
+      "desktop": "Looks right",
+      "mobile": "Looks right",
+      "status": "Done"
+    }
+  ],
+  "pages": [
+    {
+      "title": "Home page",
+      "path": "/",
+      "ready": true
+    }
+  ],
+  "now": "Your home page is now on the preview site: the photo slideshow, the introduction, the menu band, the journal cards and the header and footer all render on the new platform. Checked against your current site, it matches to within one percent on desktop and under two percent on mobile.",
+  "next": "Next we finish the site-level pieces (sitemap, robots, final checks) and produce the closing report."
+}

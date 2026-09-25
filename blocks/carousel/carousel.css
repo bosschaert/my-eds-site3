@@ -1,0 +1,363 @@
+/* carousel — home hero fade slideshow (source `.p-front-fv` / `.splide`), values lifted
+   from stardust/prototypes/css/index.css. Class names are the source's, kebab-cased. */
+
+.carousel {
+  width: 100%;
+}
+
+.carousel .splide {
+  position: relative;
+}
+
+.carousel .splide-track {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: calc(100svh - var(--header-height-sp));
+  overflow: hidden;
+}
+
+.carousel .splide-list {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  backface-visibility: hidden;
+}
+
+.carousel .splide-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: var(--z-contents);
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  background: linear-gradient(180deg, #fff 75%, #868686 90%, #737373 100%);
+}
+
+.carousel .splide-slide {
+  position: relative;
+  z-index: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease, background-color 0.4s ease;
+}
+
+.carousel .splide-slide.is-active {
+  z-index: 1;
+  opacity: 1;
+}
+
+/* Splide fade stacking (source core CSS): inactive slides sit under the active one, not
+   off-canvas to the right — the prototype's flex row clipped slides 2–9 (probe
+   stardust/.work/replica/probes/proto-slide2.png); pixel-identical on slide 1. */
+.carousel .splide-slide:not(.is-active) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.carousel .slide-media,
+.carousel .splide-slide picture,
+.carousel .splide-slide p {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 0;
+}
+
+/* source art direction: the mobile image up to 767px, the desktop image from 768px */
+.carousel .slide-media-pc {
+  display: none;
+}
+
+.carousel .splide-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+/* capture-state fit (prototype): the live zoomOut never rests at scale(1) */
+.carousel .splide-slide.is-active img {
+  transform: scale(1.037);
+}
+
+.carousel .splide-slide.is-active img.is-zooming {
+  animation: zoom-out 9s ease;
+}
+
+.carousel .splide.is-paused .splide-slide img {
+  animation-play-state: paused;
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1.06);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* page info: counter ring + active slide title (the source's `.splide__page-info { display:
+   flex }` outscores its `.u-ds-lg` utility, so it shows at every width — live 360 confirms) */
+.carousel .splide-page-info {
+  display: flex;
+  position: absolute;
+  left: min(3.4375rem, 7.3333vw);
+  bottom: min(5.3125rem, 22.6667vw);
+  z-index: 2;
+  align-items: center;
+  width: calc(100% - min(6.875rem, 14.6667vw));
+  color: var(--c-white);
+}
+
+.carousel .splide-page-num {
+  margin-right: min(0.625rem, 2.6667vw);
+}
+
+.carousel .circular-progress {
+  --stroke-width: 1;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(3.75rem, 15.4667vw);
+  aspect-ratio: 1 / 1;
+}
+
+.carousel .progress-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform: rotate(-90deg);
+}
+
+.carousel .progress-ring-circle-bg {
+  fill: transparent;
+  stroke: rgb(255 255 255 / 30%);
+  stroke-width: var(--stroke-width);
+}
+
+.carousel .progress-ring-circle {
+  fill: transparent;
+  stroke: var(--c-white);
+  stroke-width: var(--stroke-width);
+}
+
+.carousel .progress-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: clamp(0.7813rem, 0.7221rem + 0.2523vw, 0.9375rem);
+  letter-spacing: 0.05em;
+}
+
+.carousel .progress-content .current {
+  margin-right: -1.2em;
+  margin-bottom: 1.2em;
+}
+
+.carousel .progress-content .total {
+  margin-top: 1.2em;
+  margin-left: -1.2em;
+}
+
+.carousel .progress-content .separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4em;
+}
+
+.carousel .progress-content .separator::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--c-white);
+  transform: rotate(-45deg);
+}
+
+.carousel .splide-slide-titles {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel .slide-title {
+  display: none;
+}
+
+.carousel .slide-title.is-active {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+/* the authored heading + CTA paragraph, styled through the slot (EW2) */
+.carousel .slide-title :is(h1, h2, h3, h4) {
+  display: block;
+  overflow: hidden;
+  font-size: clamp(1.0625rem, 0.7787rem + 1.2109vw, 1.8125rem);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.carousel .slide-title p {
+  margin: 0;
+  font-size: clamp(0.7188rem, 0.6123rem + 0.4541vw, 1rem);
+}
+
+.carousel .slide-title a:any-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  width: fit-content;
+  padding: 0 0 0.5em;
+  transition: letter-spacing 0.3s ease-out;
+}
+
+.carousel .slide-title a:any-link::after {
+  content: "";
+  width: 1.3em;
+  height: 1em;
+  background-image: url("./arrow-small-white.svg");
+  background-position: center;
+  background-size: contain;
+}
+
+.carousel .slide-title a:any-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--c-white);
+  transform-origin: left;
+}
+
+/* pagination dots */
+.carousel .splide-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: min(2rem, 8.5333vw);
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: min(1rem, 4.2667vw);
+  margin: 0;
+  pointer-events: all;
+  transform: translateX(-50%);
+}
+
+.carousel .splide-pagination li {
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+  list-style-type: none;
+  pointer-events: auto;
+}
+
+.carousel .splide-pagination-page {
+  display: block;
+  box-sizing: border-box;
+  width: min(0.4375rem, 1.8667vw);
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--c-white);
+  border-radius: 50vh;
+  background: transparent;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.carousel .splide-pagination-page.is-active {
+  background-color: var(--c-white);
+}
+
+/* ── intro section (default content, section style `intro`) — scoped override shipped
+   here because styles.css is frozen for this unit; see stardust/rollout/foundation-requests.md.
+   Source: `.home section:not(.p-front-fv,.p-front-journal)` + `.p-front-intro__txt`.
+   Mobile-only breaks convention: an always-on <br> became a paragraph boundary, the
+   `u-ds-sp` breaks stay <br> and are hidden from 768px. ── */
+@media (width >= 768px) {
+  .carousel .splide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .carousel .slide-media-pc {
+    display: block;
+  }
+
+  .carousel .slide-media-sp {
+    display: none;
+  }
+}
+
+@media (width >= 960px) {
+  .carousel .splide-track {
+    height: calc(100vh - var(--header-height-pc));
+  }
+
+  .carousel .splide-page-info {
+    left: min(2.8125rem, 3.2943vw);
+    bottom: min(5rem, 5.8565vw);
+    width: calc(100% - min(5.625rem, 6.5886vw));
+  }
+
+  .carousel .slide-title.is-active {
+    gap: 0.9em;
+  }
+
+  .carousel .slide-title a:any-link {
+    letter-spacing: 0.18em;
+  }
+
+  .carousel .splide-page-num {
+    margin-right: min(1.5625rem, 1.8302vw);
+  }
+
+  .carousel .circular-progress {
+    width: min(5.625rem, 6.5886vw);
+  }
+
+  .carousel .progress-content {
+    font-size: clamp(0.625rem, 0.3885rem + 1.0091vw, 1.25rem);
+  }
+
+  .carousel .splide-pagination {
+    bottom: min(2.3125rem, 2.7086vw);
+    gap: min(0.875rem, 1.0249vw);
+  }
+
+  .carousel .splide-pagination-page {
+    width: min(0.5625rem, 0.6589vw);
+  }
+}
+

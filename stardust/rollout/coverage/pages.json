@@ -1,0 +1,37 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-24T10:34:50.278Z",
+    "readArtifacts": [
+      "stardust/migrated",
+      "stardust/state.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-24T12:27:56.220Z",
+  "pages": [
+    {
+      "slug": "index",
+      "path": "/",
+      "title": "SORRA | 雑木・自然風の庭",
+      "templateId": "index",
+      "source": {
+        "migratedHtml": "stardust/migrated/index.html",
+        "metaJson": "stardust/migrated/_meta.json",
+        "sourceHash": "sha256:5d6ce32025dbcb7003291e025d4846fc674333c0206b810403166224d300c283"
+      },
+      "blocks": [
+        "carousel",
+        "front-nav",
+        "cards"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--stardust-replica-d32c145a--of1-labs.aem.page/",
+        "deployedAt": "2026-09-24T11:59:03.487Z",
+        "verifiedAt": "2026-09-24T12:27:56.220Z",
+        "error": null
+      }
+    }
+  ]
+}

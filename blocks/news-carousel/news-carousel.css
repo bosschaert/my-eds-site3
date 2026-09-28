@@ -1,0 +1,240 @@
+/* news-carousel — index-proposed.css § What's New (slick 1.8 theme + slick.css, theme style.css).
+   The section is `fluid` (the source's .container-fluid intro); the block rebuilds the
+   Bootstrap .container the carousel and the See All pill sit in. */
+
+/* stylelint-disable no-descending-specificity -- slick's cascade is order-dependent */
+
+main .section.fluid > .news-carousel-wrapper {
+  padding: 0;
+}
+
+/* the source overflows the 360 viewport by 10px (slick-next at right: -25px); the build clips
+   it so the hard overflow assert holds — recorded residual (overflow-360) */
+.news-carousel {
+  overflow-x: clip;
+}
+
+.news-carousel .container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-gutter);
+}
+
+.news-carousel .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.news-carousel .justify-content-center {
+  justify-content: center;
+}
+
+.news-carousel .col,
+.news-carousel .col-md-12 {
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.news-carousel .col {
+  flex: 1 0 0%;
+  max-width: 100%;
+}
+
+@media (width >= 768px) {
+  .news-carousel .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.news-carousel .news-cards {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.news-carousel .slick-list {
+  position: relative;
+  display: block;
+  margin: 0 -15px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.news-carousel .slick-track {
+  position: relative;
+  display: flex;
+}
+
+.news-carousel .slick-slide {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  min-height: 1px;
+}
+
+.news-carousel .slick-slide > div {
+  padding: 0 15px;
+}
+
+.news-carousel .news-card {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background-color: var(--brand-blue);
+}
+
+.news-carousel .news-card:hover {
+  background-color: var(--hero-yellow);
+  color: var(--brand-blue);
+  text-decoration: none;
+}
+
+.news-carousel .news-card:hover .news-title {
+  color: var(--brand-blue);
+}
+
+.news-carousel .news-img {
+  width: 100%;
+  height: 9rem;
+}
+
+.news-carousel .news-img picture {
+  display: block;
+  height: 100%;
+}
+
+.news-carousel .news-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-carousel .news-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 9rem;
+  color: #fff;
+  font-family: var(--font-medium);
+  text-align: center;
+}
+
+.news-carousel .news-title p {
+  margin: 0;
+}
+
+.news-carousel .slick-prev,
+.news-carousel .slick-next {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  border: none;
+  outline: none;
+  background: transparent;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.news-carousel .slick-prev::before,
+.news-carousel .slick-next::before {
+  opacity: 0.75;
+  color: #fff;
+  font-family: slick, sans-serif;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.news-carousel .slick-prev {
+  left: -25px;
+}
+
+.news-carousel .slick-prev::before {
+  content: '←';
+}
+
+.news-carousel .slick-next {
+  right: -25px;
+}
+
+.news-carousel .slick-next::before {
+  content: '→';
+}
+
+.news-carousel .slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.news-carousel .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.news-carousel .slick-dots li button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.news-carousel .slick-dots li button::before {
+  content: '•';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0.25;
+  color: #000;
+  font-family: slick, sans-serif;
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.news-carousel .slick-dots li.slick-active button::before {
+  opacity: 0.75;
+  color: #000;
+}
+
+/* See All — canon `.align-self-center .btn { margin: 2rem auto 0; display: table }`; the
+   pill rides its paragraph (EW3) */
+.news-carousel .see-all p {
+  margin: 0;
+}
+
+.news-carousel .see-all a {
+  display: table;
+  margin: 2rem auto 0;
+}

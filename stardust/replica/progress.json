@@ -1,0 +1,173 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "phase": "source-fidelity-gate",
+    "writtenAt": "2026-09-28T10:11:39.747Z",
+    "breakpoints": [
+      1440,
+      360
+    ]
+  },
+  "pageTypes": {
+    "home": {
+      "archetype": "index",
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "sources": "stardust/prototypes/index-proposed.template.html + build-index.mjs (inlines the captured map SVG); canon.css, index-proposed.css, fonts.css",
+      "liveUrl": "https://balbriggan.ie/",
+      "contentRoot": "#page",
+      "chromeRegions": {
+        "header": "#wrapper-navbar",
+        "footer": "#wrapper-footer-full"
+      },
+      "iterations": {
+        "360": 3,
+        "1440": 3,
+        "confirmation": [
+          "conf1 (regression: flex-basis on cloned track)",
+          "conf2",
+          "conf3 (final, after title-attribute alignment)"
+        ]
+      },
+      "gates": {
+        "360": {
+          "pixel": "3.80%",
+          "heightDelta": 2,
+          "overflow": "361 vs 360 (+1, within tolerance)",
+          "contentStructural": 0,
+          "visualFlags": "9 advisory STRETCHED IMAGE — object-fit: cover as on the source (justified)",
+          "chromeParity": "1 footer text-metric delta (substituted font, see residuals)",
+          "hotBands": "none (max 9.6% at y 4000–4500)",
+          "verdict": "PASS (pixel, height, overflow, content); chrome delta justified",
+          "round": "iter3 --full",
+          "confirmation": {
+            "label": "conf3",
+            "command": "gate.sh --full (live cached) after the motion layer + title fix; conf1 exposed a flex-basis regression on the cloned track (4.30% / 29.75%), conf2 and conf3 back at the gated numbers",
+            "pixelPct": 3.79,
+            "heightDelta": 2,
+            "contentStructural": 0,
+            "contentFindings": 11,
+            "contentNote": "11 🟡 (was 24): iframe title of the Gravity Forms helper frame, body glyph \"Δ\" from a hidden element, verbatim-title attribute alignments — none structural",
+            "visualFlags": "16 STRETCHED IMAGE advisories = object-fit: cover as on the source (9 originals + 7 slick clones)",
+            "chromeDeltas": 1,
+            "chromeNote": "identical to iter3: footer \"Privacy\" Δh +4px (15→19) — substitute glyph metrics",
+            "overflow": "+1px (integer rounding) within the 4px tolerance → ok",
+            "pass": true
+          }
+        },
+        "1440": {
+          "pixel": "2.29%",
+          "heightDelta": 2,
+          "overflow": "1441 vs 1440 (+1, within tolerance)",
+          "contentStructural": 0,
+          "visualFlags": "9 advisory STRETCHED IMAGE — object-fit: cover as on the source (justified)",
+          "chromeParity": "10 header + 1 footer text-metric deltas (substituted font, see residuals)",
+          "hotBands": "none (max 5.3% at y 3500–4000)",
+          "verdict": "PASS (pixel, height, overflow, content); chrome deltas justified",
+          "round": "iter3 --full",
+          "confirmation": {
+            "label": "conf3",
+            "command": "gate.sh --full (live cached) after the motion layer + title fix; conf1 exposed a flex-basis regression on the cloned track (4.30% / 29.75%), conf2 and conf3 back at the gated numbers",
+            "pixelPct": 2.32,
+            "heightDelta": 2,
+            "contentStructural": 0,
+            "contentFindings": 11,
+            "contentNote": "11 🟡 (was 24): iframe title of the Gravity Forms helper frame, body glyph \"Δ\" from a hidden element, verbatim-title attribute alignments — none structural",
+            "visualFlags": "16 STRETCHED IMAGE advisories = object-fit: cover as on the source (9 originals + 7 slick clones)",
+            "chromeDeltas": 11,
+            "chromeNote": "identical delta set to iter3: 10 header text Δx ≤ 8px / Δw ≤ 4px and footer \"Privacy\" Δh +4px — glyph metrics of the Montserrat substitute (fonts residual)",
+            "overflow": "+1px (integer rounding) within the 4px tolerance → ok",
+            "pass": true
+          }
+        }
+      },
+      "residuals": [
+        {
+          "id": "fonts",
+          "class": "permanent, justified (fonts policy)",
+          "detail": "The source self-hosts Gotham (GothamBold / GothamMedium / Gotham-Light via themes/balbriggan2024/fonts/font.css) — a licensed commercial kit, never rehosted. Stacks keep the Gotham names first; Montserrat 400/500/700 (OFL) substitutes, chosen by measured glyph widths (ratios 0.99 / 0.98 / 1.01). Effects: nav labels ±2–8px x, ±2–4px width; inline anchor height 15→19px (footer Privacy); carousel titles wrap into fewer lines in the 90px-wide mobile cards (news-title 216→168px at 360); 2px total height delta at both widths. A licensed Gotham drop-in (owner action) removes all of these without a code change."
+        },
+        {
+          "id": "overflow-360",
+          "class": "intentional deviation for the hard assert",
+          "detail": "The source overflows the 360 viewport by 10px (slick-next at right:-25px). The build clips it (.section-whatsnew overflow-x: clip) so the build stays within the 4px tolerance; the clipped strip held only a white arrow glyph over the light band."
+        },
+        {
+          "id": "hero-video",
+          "class": "capture-state (dynamic)",
+          "detail": "Hero is an autoplaying muted Vimeo mp4 under a #009bd9 multiply overlay on both sides (embed passthrough per dynamic-features.md); frame timing differs per capture, band 0–1000 measured 0.5–1.6%."
+        },
+        {
+          "id": "map-labels",
+          "class": "capture-state",
+          "detail": "The inline map SVG references 12 relative PNGs (02_Our Balbriggan_MapN.png) that 404 on the source; replicated as captured (they 404 on the build too)."
+        },
+        {
+          "id": "chrome-text-metrics",
+          "class": "permanent, justified (fonts policy)",
+          "detail": "chrome-parity exits 2 on 11 text-metric deltas at 1440 (header Δx ≤ 8px, Δw ≤ 4px; footer \"Privacy\" Δh +4px) and 1 at 360 — glyph metrics of the Montserrat substitute for the licensed Gotham kit; identical set from iter3 through conf3. Supplying the licensed kit removes it.",
+          "flaggedFor": "user"
+        },
+        {
+          "id": "map-pin-hover",
+          "class": "unresolved by instrument",
+          "detail": ".map-pin:hover scale(1.1) + label translate lifted from style.css; the hover probe measures no transform change on live or build — same result both sides.",
+          "flaggedFor": "qa"
+        }
+      ],
+      "instrumentNotes": [
+        "stitch-shot.mjs (project copy): stall guard exempts the at-document-end case — the page height shrinks 13px at 360 when the sticky nav morphs past 100px, which the shipped guard misread as a scroll-jacked stall (both live captures exit 1). Commented in the script; flagged for upstreaming.",
+        "gate.sh (project copy): GATE_CHROME_ARGS passthrough so --full can probe #wrapper-navbar / #wrapper-footer-full (the site has no <header>/<footer> chrome elements; the default probe reported a REGION delta on both sides). Commented; flagged for upstreaming."
+      ],
+      "motion": {
+        "status": "parity",
+        "observedAt": "2026-09-28T10:11:39.747Z",
+        "evidence": {
+          "live": [
+            "stardust/replica/motion/index.json",
+            "stardust/replica/motion/index-1440b.json",
+            "stardust/replica/motion/index-360.json"
+          ],
+          "build": [
+            "stardust/replica/motion/index-build.json",
+            "stardust/replica/motion/index-1440b-build.json",
+            "stardust/replica/motion/index-360-build.json"
+          ],
+          "compare": [
+            "16 parity / 0 missing / 0 extra / 1 advisory (1440)",
+            "18 parity / 0 missing / 0 extra (360)",
+            "13 parity / 0 missing / 0 extra / 1 advisory (1440 supplementary)"
+          ]
+        },
+        "observed": [
+          "sticky-nav .scrolled morph past scrollY 100 (theme scripts.js), logo width/height 0.3s",
+          "slick .news-cards: arrows + dots → .slick-track transform 500ms ease, slick-current/slick-active rotation incl. clones, li.slick-active on dots (slidesToShow 3, infinite, 11 slides = 3 prepended + 4 appended clones, 380px slides at 1440)",
+          "Bootstrap 4 collapse on .navbar-toggler at 360: .collapsing (height .35s ease) → .collapse.show",
+          "Bootstrap 4 dropdown click: li.show + ul.dropdown-menu.show, aria-expanded, toggle focused (outline transition on the nav-link)",
+          "hover .btn.btn-secondary: bg #2494d2, color #fff, border-color #545b62 (Bootstrap hover rule not overridden), 300ms",
+          "hover .news-card: bg #f9ec31, title #2494d2",
+          "hover .grid-item-content: bg rgba(0,155,217,.7) + a:hover color #2600e6",
+          "hover .doc-container h4 a: color #2494d2",
+          "hover .nav-item.btn-nav a: bg #fff, 300ms",
+          "hover footer links: a:hover color #2600e6"
+        ],
+        "implemented": {
+          "file": "stardust/prototypes/motion.js",
+          "css": "canon.css — Bootstrap open states lifted from theme.min.css (.collapsing, .dropdown-menu, .dropdown-item, .show, navbar placement), a:hover colour, .btn-secondary:hover border-color",
+          "template": "data-toggle/data-target on the toggler, data-toggle=\"dropdown\" aria-haspopup aria-expanded on the four toggles (as on the source)"
+        },
+        "dead": [
+          "style.css L112 `.navbar-dark #main-menu.navbar-dark .navbar-nav li:not(.btn) .nav-link:hover {color:#fff}` — selector never matches; probe measured no hover change on the main-menu links → NOT implemented",
+          "scroll-entrance animations: none fired at either breakpoint (0 animations observed)"
+        ],
+        "advisory": [
+          "dot clicks read \"extra on build\" because the live frame sampler could not locate the slick track at 1440 (null frames); the live class lines show slick-current/slick-active moving after each dot click → parity confirmed on the class lines",
+          ".map-pin hover: no transform change measured on either side under the same probe; the rule is lifted verbatim from style.css L313/L431 and kept (parity by symmetry, unresolved by instrument)"
+        ]
+      },
+      "status": "approved",
+      "approvedBy": "hands-off",
+      "approvedAt": "2026-09-28T10:11:39.747Z"
+    }
+  },
+  "siblings": {}
+}

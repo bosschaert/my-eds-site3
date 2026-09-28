@@ -1,0 +1,14 @@
+/* Fonts — replica of https://balbriggan.ie/ (bounded-single).
+   The source declares self-hosted Gotham faces (GothamBold, GothamMedium, Gotham-Light) —
+   a licensed commercial kit, never rehosted here (replica fonts policy). Each stack keeps
+   the brand family name FIRST so a licensed drop-in wins without a code change; the
+   substitute is Montserrat (OFL), chosen by measured glyph widths against the source files:
+   Gotham-Light→Montserrat 400 (width ratio 0.99), GothamMedium→500 (0.98), GothamBold→700 (1.01).
+   Each substitute is registered as a single normal-weight family, mirroring the source's
+   single-weight @font-face blocks, so `font-weight:700` synthesizes bold on both sides. */
+@font-face { font-family: 'Gotham-Light Substitute'; src: url('../current/assets/fonts/montserrat-latin-400-normal.woff2') format('woff2'); font-weight: normal; font-style: normal; font-display: block; }
+@font-face { font-family: 'GothamMedium Substitute'; src: url('../current/assets/fonts/montserrat-latin-500-normal.woff2') format('woff2'); font-weight: normal; font-style: normal; font-display: block; }
+@font-face { font-family: 'GothamBold Substitute'; src: url('../current/assets/fonts/montserrat-latin-700-normal.woff2') format('woff2'); font-weight: normal; font-style: normal; font-display: block; }
+/* Icon fonts the page uses (both open-licensed, harvested from the source theme) */
+@font-face { font-family: 'FontAwesome'; src: url('../current/assets/fonts/fontawesome-webfont.woff2') format('woff2'); font-weight: normal; font-style: normal; font-display: block; }
+@font-face { font-family: 'slick'; src: url('../current/assets/fonts/slick.woff') format('woff'); font-weight: normal; font-style: normal; font-display: block; }

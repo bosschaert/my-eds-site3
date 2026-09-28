@@ -1,0 +1,65 @@
+/* stylelint-disable max-line-length */
+
+/* Fonts — replica of https://balbriggan.ie/ (mirrors stardust/prototypes/fonts.css).
+   The source declares self-hosted Gotham faces (GothamBold, GothamMedium, Gotham-Light) —
+   a licensed commercial kit, never rehosted here (replica fonts policy). Each stack in
+   styles.css keeps the brand family name FIRST so a licensed drop-in wins without a code
+   change; the substitute is Montserrat (OFL), chosen by measured glyph widths against the
+   source files: Gotham-Light→Montserrat 400 (width ratio 0.99), GothamMedium→500 (0.98),
+   GothamBold→700 (1.01). Each substitute is registered as a single normal-weight family,
+   mirroring the source's single-weight @font-face blocks, so `font-weight: 700` synthesizes
+   bold on both sides. Loaded by loadFonts() — never from head.html; the metric-matched
+   `gotham-*-fallback` faces in styles.css cover first paint.
+   Metric overrides: the live inline boxes measure Gotham's content area (15px at 1rem); Montserrat's is 19px
+   (hhea 968+251). ascent/descent are overridden to 0.82725/0.11025em — same sum as Gotham (0.9375em), same
+   difference as Montserrat (0.717em) — so every inline box matches the source while no baseline moves (baseline =
+   line-height/2 + (ascent-descent)/2), which keeps the gated prototype geometry. */
+@font-face {
+  font-family: 'Gotham-Light Substitute';
+  src: url('../fonts/montserrat-latin-400-normal.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  ascent-override: 82.725%;
+  descent-override: 11.025%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'GothamMedium Substitute';
+  src: url('../fonts/montserrat-latin-500-normal.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  ascent-override: 82.725%;
+  descent-override: 11.025%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'GothamBold Substitute';
+  src: url('../fonts/montserrat-latin-700-normal.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  ascent-override: 82.725%;
+  descent-override: 11.025%;
+  line-gap-override: 0%;
+}
+
+/* Icon fonts the page uses (both open-licensed, harvested from the source theme) */
+@font-face {
+  font-family: FontAwesome;
+  src: url('../fonts/fontawesome-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: slick;
+  src: url('../fonts/slick.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

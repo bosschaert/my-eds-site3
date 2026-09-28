@@ -1,0 +1,83 @@
+/* stardust foundation v1 */
+
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+
+/*
+ * Replica foundation: the source stylesheet lifted verbatim
+ * (stardust/prototypes/replica-canon.css). Everything not set here is the
+ * browser user-agent default, exactly as on the source page.
+ */
+
+:root {
+  --canvas: #eee;
+  --link: #348;
+  --font-body: system-ui, sans-serif;
+  --content-opacity: 0.8;
+  --column-width: 60vw;
+  --column-offset: 15vh;
+}
+
+body {
+  display: none;
+  width: var(--column-width);
+  margin: var(--column-offset) auto;
+  background: var(--canvas);
+  font-family: var(--font-body);
+}
+
+body.appear {
+  display: block;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* no chrome: the source has neither header nor footer (/nav and /footer 404) */
+header,
+footer {
+  display: none;
+}
+
+/* content wrapper role: the source's class-less `body > div` paints at 80 % */
+main {
+  opacity: var(--content-opacity);
+}
+
+/* sections: no boilerplate margins, paddings or max-width */
+main > .section,
+main > .section > div {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+main .section:empty {
+  display: none;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+/* links */
+a:link,
+a:visited {
+  color: var(--link);
+}
+
+main img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}

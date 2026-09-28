@@ -1,0 +1,35 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-28T07:35:13.930Z",
+    "stardustVersion": "0.0.0"
+  },
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://www.example.com/",
+    "da": {
+      "org": "aemcoder",
+      "site": "c228fa32",
+      "ref": "main"
+    },
+    "liveHost": "main--c228fa32--aemcoder.aem.page"
+  },
+  "lastRun": {
+    "at": "2026-09-28T08:02:05.766Z",
+    "pages": {
+      "total": 1,
+      "verified": 1,
+      "deployed": 0,
+      "pending": 0,
+      "contentPending": 0,
+      "stale": 0,
+      "failed": 0
+    },
+    "blocks": {
+      "total": 0,
+      "converted": 0,
+      "pending": 0
+    },
+    "verifyFailures": 0
+  }
+}

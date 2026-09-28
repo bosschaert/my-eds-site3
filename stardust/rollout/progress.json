@@ -1,0 +1,107 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica/handoff",
+    "writtenAt": "2026-09-28T07:59:48Z",
+    "stardustVersion": "0.25.1"
+  },
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "blocks": 0,
+      "gates": {
+        "360": {
+          "archetype": "index",
+          "pixel": "0.00%",
+          "heightDelta": 0,
+          "overflowX": 0,
+          "contentDiff": "0 structural red",
+          "visual": "0 flags",
+          "rounds": [
+            "pub1 --full",
+            "pub2 (main-agent confirmation)"
+          ]
+        },
+        "1440": {
+          "archetype": "index",
+          "pixel": "0.00%",
+          "heightDelta": 0,
+          "overflowX": 0,
+          "contentDiff": "0 structural red",
+          "visual": "0 flags",
+          "rounds": [
+            "pub1 --full",
+            "pub2 (main-agent confirmation)"
+          ]
+        },
+        "crop": "n/a (no header/footer on the source; delivered header/footer hidden)",
+        "chrome": "content-region parity 3/3 at 1440+360; default header/footer regions report live-has-no-element (chrome-less site)",
+        "aiReadability": "code 100 / strict 100"
+      },
+      "startedAt": "2026-09-28T07:43:06Z",
+      "endedAt": "2026-09-28T07:58:08Z",
+      "verdict": "foundation: pages 1/1 live (preview), blocks 0, gate 1440 0.00% Δh 0 / 360 0.00% Δh 0, overflow 0/0, content-diff 0 structural reds, visual 0 flags, chrome content-parity 3/3, ai-readability 100, iterations 1/3 / 1/3, requests 0",
+      "note": "chrome-less site: the shell document IS the index page, so the foundation unit PUTs it and the published gate runs on it",
+      "files": [
+        "styles/styles.css",
+        "styles/fonts.css",
+        "content/index.html",
+        "stardust/runtime-contract.json",
+        "stardust/eds-conversion-log.md"
+      ]
+    },
+    "landing": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "blocks": 0,
+      "gates": {
+        "360": {
+          "archetype": "index",
+          "pixel": "0.00%",
+          "heightDelta": 0,
+          "overflowX": 0,
+          "label": "pub1/pub2 (recorded in the foundation unit)"
+        },
+        "1440": {
+          "archetype": "index",
+          "pixel": "0.00%",
+          "heightDelta": 0,
+          "overflowX": 0,
+          "label": "pub1/pub2 (recorded in the foundation unit)"
+        },
+        "crop": "n/a",
+        "chrome": "content-region parity 3/3",
+        "reverify": ".plain.html 200, 1 h1, 0 about:error, 0 /img/, verbatim strings present; root 200"
+      },
+      "startedAt": "2026-09-28T07:58:37Z",
+      "endedAt": "2026-09-28T07:59:08Z",
+      "verdict": "landing: pages 1/1 live (preview), blocks 0, gate 1440 0.00% / 360 0.00%, requests 0 (re-verified; delivered in foundation)",
+      "note": "page delivered in the foundation unit (chrome-less shell = index); this unit re-verifies the live page and records coverage, state and gate evidence"
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "blocks": 0,
+      "gates": {
+        "check": "foundation unchanged (16 files)",
+        "requests": 0,
+        "coverage": "1 deployed / 0 verified / 0 remaining"
+      },
+      "startedAt": "2026-09-28T07:59:48Z",
+      "endedAt": "2026-09-28T07:59:48Z",
+      "verdict": "final: freeze check clean, 0 foundation requests applied, coverage 1/1 deployed"
+    }
+  }
+}

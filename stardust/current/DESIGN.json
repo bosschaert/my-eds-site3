@@ -1,0 +1,50 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-09-28T07:23:11Z",
+    "readArtifacts": ["stardust/current/pages/index.html", "stardust/current/_computed-styles.json"],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.25.1"
+  },
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-28T07:23:11Z",
+  "title": "Design System: Example Domain",
+  "extensions": {
+    "colorMeta": {
+      "canvas": { "role": "neutral", "displayName": "Canvas Grey", "canonical": "#eeeeee" },
+      "text": { "role": "text", "displayName": "Text (at 80% opacity)", "canonical": "#000000" },
+      "link": { "role": "accent", "displayName": "Link Blue", "canonical": "#334488" }
+    },
+    "typographyMeta": {
+      "heading": { "displayName": "Heading", "purpose": "The single h1." },
+      "body": { "displayName": "Body", "purpose": "Paragraph and link text." }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [],
+    "componentStyle": ["user-agent defaults", "inline text link"],
+    "motifs": ["fluid 60vw single column", "15vh top offset", "80% opacity content block"],
+    "voice": ["plain", "institutional", "one-sentence notice"],
+    "modules": []
+  },
+  "components": [
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "link",
+      "description": "The page's only interactive element: an inline link to the IANA reserved-domains page.",
+      "html": "<p><a href=\"https://iana.org/domains/example\">Learn more</a></p>",
+      "css": "a:link, a:visited { color: #334488; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Registry Notice",
+    "overview": "A deliberately unstyled single-notice page: a grey canvas, the system font, one heading, one sentence pair and one link. The design is the absence of design, and the replica must keep it that way.",
+    "keyCharacteristics": ["user-agent defaults", "fluid width, no breakpoints", "softened text via container opacity"],
+    "rules": [
+      { "name": "Five rules only", "body": "body background/width/margin/font, h1 size, div opacity, link colour. Nothing else is authored.", "section": "layout" }
+    ],
+    "dos": ["Do keep user-agent defaults where the source names no value."],
+    "donts": ["Don't add chrome, imagery, hover styling or a favicon."]
+  }
+}

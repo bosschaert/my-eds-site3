@@ -1,0 +1,59 @@
+{
+  "slug": "index",
+  "type": "landing",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [],
+  "slotsFilled": [
+    "h1",
+    "p",
+    "p"
+  ],
+  "canonShas": {
+    "header": null,
+    "footer": null,
+    "css": "a69e9d5fa275"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Example Domain",
+    "description": null,
+    "canonical": "https://main--c228fa32--aemcoder.aem.page/",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Example Domain",
+    "url": "https://main--c228fa32--aemcoder.aem.page/"
+  },
+  "migratedAt": "2026-09-28T07:33:43Z",
+  "designMdSha": "1d9e469624f4",
+  "designJsonSha": "5cfdeaca753c",
+  "sourceCurrentSha": "928dc9c2737d",
+  "sourceProposedSha": "a2bc6f26329d",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count"
+  ],
+  "gateEvidence": {
+    "pixel-gate-1440": "0.00% (0 px, threshold 10%), height delta 0px, round pub2 @1440 (index-1440-pub2.log) [published regime]",
+    "pixel-gate-360": "0.00% (0 px, threshold 10%), height delta 0px, round pub2 @360 (index-360-pub2.log) [published regime]",
+    "content-count": "content-diff: 5 (0 structural 🔴) (index-1440-pub1.log)",
+    "delivery-lint": "FAIL: 0 P0 · 2 P1 · 1 P2 (delivery-lint --path /)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 2,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "index.html",
+  "outputPathDefault": null,
+  "sidecar": "_meta.json",
+  "driverVersion": "1"
+}

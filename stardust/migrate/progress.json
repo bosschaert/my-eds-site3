@@ -1,0 +1,41 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica handoff (migrate units)",
+    "writtenAt": "2026-09-28T09:42:16Z"
+  },
+  "units": {
+    "plan": {
+      "status": "done",
+      "kind": "plan",
+      "templates": [
+        "home"
+      ],
+      "pages": 1,
+      "startedAt": "2026-09-28T09:42:01Z",
+      "endedAt": "2026-09-28T09:42:16Z",
+      "verdict": "plan: 1 template (home), archetype index, 0 siblings → 1 render unit (home: index), no assets unit, 1 report unit; output path / → index.html, 0 collisions"
+    },
+    "home": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "home"
+      ],
+      "pages": 1,
+      "startedAt": "2026-09-28T09:42:33Z",
+      "endedAt": "2026-09-28T09:43:26Z",
+      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 → stardust/migrated/ (index → /, 21 assets, 7 sections; gates 5: content-fidelity, pixel-gate-1440 0.00%/Δ0, pixel-gate-360 0.07%/Δ0, content-count none, delivery-lint 0P0·0P1·1P2)"
+    },
+    "report": {
+      "status": "done",
+      "kind": "report",
+      "templates": [
+        "home"
+      ],
+      "pages": 1,
+      "startedAt": "2026-09-28T09:43:48Z",
+      "endedAt": "2026-09-28T09:43:48Z",
+      "verdict": "report: 1 page migrated (index, archetype tier, 5/7 gates; media-reconcile pending delivery), 0 refused, 0 thin"
+    }
+  }
+}

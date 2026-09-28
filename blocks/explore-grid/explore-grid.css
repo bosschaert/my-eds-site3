@@ -1,0 +1,106 @@
+/* explore-grid — index-proposed.css § Explore grid (theme style.css .grid, measured 1440/360).
+   The section is `fluid` (the source's .container-fluid intro); the block rebuilds the
+   Bootstrap .container the grid sits in. */
+
+main .section.fluid > .explore-grid-wrapper {
+  padding: 0;
+}
+
+.explore-grid .container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-gutter);
+}
+
+.explore-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.explore-grid .justify-content-center {
+  justify-content: center;
+}
+
+.explore-grid .col,
+.explore-grid .col-md-12 {
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.explore-grid .col {
+  flex: 1 0 0%;
+  max-width: 100%;
+}
+
+@media (width >= 768px) {
+  .explore-grid .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.explore-grid .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 15vw;
+  gap: 20px;
+}
+
+.explore-grid .grid-item {
+  position: relative;
+  display: block;
+  grid-row-end: span 1;
+  grid-column-end: span 1;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.explore-grid .grid-item:nth-child(1) {
+  grid-row-end: span 2;
+  grid-column-end: span 2;
+}
+
+.explore-grid .grid-item picture {
+  display: block;
+  height: 100%;
+}
+
+.explore-grid .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.explore-grid .grid-item-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background: rgb(60 60 60 / 70%);
+}
+
+.explore-grid .grid-item-content:hover {
+  border: 3px solid var(--hero-yellow);
+  background-color: rgb(0 155 217 / 70%);
+  text-decoration: none;
+}
+
+/* Gotham's `normal` line-height measures 1.0 at this size; the substitute's is taller (1.22).
+   Pinned so the label boxes match the source (index-proposed.css). */
+.explore-grid .grid-item-content p {
+  margin-bottom: 0;
+  color: #fff;
+  font-family: var(--font-medium);
+  font-size: 1.5rem;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}

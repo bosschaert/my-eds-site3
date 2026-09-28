@@ -1,0 +1,304 @@
+measure: https://balbriggan.ie/ @360: horizontal overflow +10px (scrollWidth 370 > viewport 360)
+measure  A = https://balbriggan.ie/
+         B = http://localhost:8791/prototypes/index-proposed.html
+  widths 1440, 360 · 36 selector(s) · 6 props · first match
+
+@ 1440px
+  root
+    A  scrollWidth  1440  viewport 1440  scrollHeight   4719
+    B  scrollWidth  1440  viewport 1440  scrollHeight   4771
+    Δ  scrollWidth 0  scrollHeight +52
+  #wrapper-navbar
+    A  x     0  y      0  w  1440  h    98  vis  "Skip to content News Downloads Newslett…"
+    B  x     0  y      0  w  1440  h    98  vis  "Skip to content News Downloads Newslett…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .navbar-brand img
+    A  x    31  y     13  w   176  h    72  vis  ""  img 300×101 …/balbriggan-logo.svg
+    B  x    31  y     13  w   176  h    72  vis  ""  img 300×101 …/balbriggan-logo.svg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .navs
+    A  x   453  y     13  w   956  h    72  vis  "News Downloads Newsletters Fingal Count…"
+    B  x   451  y     13  w   958  h    72  vis  "News Downloads Newsletters Fingal Count…"
+    Δ  Δx -2 Δy 0 Δw +2 Δh 0  width: 956.312px → 958.312px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #top-menu
+    A  x   820  y     13  w   443  h    34  vis  "News Downloads Newsletters Fingal Count…"
+    B  x   812  y     13  w   454  h    34  vis  "News Downloads Newsletters Fingal Count…"
+    Δ  Δx -8 Δy 0 Δw +11 Δh 0  width: 442.938px → 453.938px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #main-menu
+    A  x   453  y     51  w   956  h    34  vis  "PLANS & PROJECTS DISCOVER LEADERSHIP & …"
+    B  x   451  y     51  w   958  h    34  vis  "PLANS & PROJECTS DISCOVER LEADERSHIP & …"
+    Δ  Δx -2 Δy 0 Δw +2 Δh 0  width: 956.312px → 958.312px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .btn-nav .nav-link
+    A  x  1279  y     55  w   128  h    27  vis  "GET INVOLVED"
+    B  x  1278  y     55  w   129  h    27  vis  "GET INVOLVED"
+    Δ  Δx -1 Δy 0 Δw +1 Δh 0  width: 128px → 129px; fontFamily: GothamMedium → GothamMedium, "GothamMedium Substitute", sans-serif
+  .section-hero
+    A  x     0  y     98  w  1440  h   630  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    B  x     0  y     98  w  1440  h   630  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .herotransform
+    A  x   424  y    285  w   592  h   257  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    B  x   424  y    285  w   592  h   257  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .overlay-body h2
+    A  x   472  y    333  w   496  h   128  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    B  x   472  y    333  w   496  h   128  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  .section-main
+    A  x     0  y    728  w  1440  h   439  vis  "OUR BALBRIGGAN Balbriggan is set to be …"
+    B  x     0  y    728  w  1440  h   439  vis  "OUR BALBRIGGAN Balbriggan is set to be …"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .section-intro h2
+    A  x   316  y    792  w   808  h    59  vis  "OUR BALBRIGGAN"
+    B  x   316  y    792  w   808  h    59  vis  "OUR BALBRIGGAN"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: GothamBold → GothamBold, "GothamBold Substitute", sans-serif
+  .section-intro p
+    A  x   316  y    899  w   808  h    72  vis  "Balbriggan is set to be transformed; it…"
+    B  x   316  y    899  w   808  h    72  vis  "Balbriggan is set to be transformed; it…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .section-whatsnew
+    A  x     0  y   1167  w  1440  h   626  vis  "WHAT'S NEW Previous Prestigious musical…"
+    B  x     0  y   1167  w  1440  h   625  vis  "WHAT'S NEW Previous €15 million Harbour…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh -1  height: 626.172px → 625.172px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .news-cards
+    A  x   165  y   1339  w  1110  h   296  vis  "Previous Prestigious musical theatre de…"
+    B  x   165  y   1339  w  1110  h   295  vis  "Previous €15 million Harbour Square wil…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh -1  height: 296px → 295px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .news-card
+    A  x  -975  y   1339  w   350  h   288  vis  "Prestigious musical theatre degree and …"
+    B  x   165  y   1339  w   350  h   288  vis  "€15 million Harbour Square will be ‘hea…"
+    Δ  Δx +1140 Δy 0 Δw 0 Δh 0  width: 350px → 349.984px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .news-title
+    A  x  -975  y   1483  w   350  h   144  vis  "Prestigious musical theatre degree and …"
+    B  x   165  y   1483  w   350  h   144  vis  "€15 million Harbour Square will be ‘hea…"
+    Δ  Δx +1140 Δy 0 Δw 0 Δh 0  width: 350px → 349.984px; fontFamily: GothamMedium → GothamMedium, "GothamMedium Substitute", sans-serif
+  .slick-dots
+    A  x   165  y   1634  w  1110  h    26  vis  "1 2 3 4"
+    B  x   165  y   1632  w  1110  h    27  vis  "1 2 3 4"
+    Δ  Δx 0 Δy -2 Δw 0 Δh +1  height: 26px → 27px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .section-whatsnew .btn-secondary
+    A  x   651  y   1697  w   138  h    33  vis  "SEE ALL"
+    B  x   652  y   1696  w   136  h    33  vis  "SEE ALL"
+    Δ  Δx +1 Δy -1 Δw -2 Δh 0  width: 138px → 136px; fontFamily: GothamMedium → GothamMedium, "GothamMedium Substitute", sans-serif
+  .section-exploregrid
+    A  x     0  y   1794  w  1440  h   687  vis  "EXPLORE WHAT WE DO TOWN TRANSFORMATION …"
+    B  x     0  y   1793  w  1440  h   687  vis  "EXPLORE WHAT WE DO TOWN TRANSFORMATION …"
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .grid
+    A  x   165  y   1965  w  1110  h   452  vis  "TOWN TRANSFORMATION EDUCATION, SKILLS &…"
+    B  x   165  y   1964  w  1110  h   452  vis  "TOWN TRANSFORMATION EDUCATION, SKILLS &…"
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .grid-item-content p
+    A  x   274  y   2179  w   327  h    24  vis  "TOWN TRANSFORMATION"
+    B  x   278  y   2178  w   320  h    24  vis  "TOWN TRANSFORMATION"
+    Δ  Δx +4 Δy -1 Δw -7 Δh 0  width: 327px → 320px; fontFamily: GothamMedium → GothamMedium, "GothamMedium Substitute", sans-serif; lineHeight: normal → 24px
+  .section-map
+    A  x     0  y   2481  w  1440  h  1060  vis  "SS PETER &PAUL’S CHURCH HARRY REYNOLDSP…"
+    B  x     0  y   2480  w  1440  h  1060  vis  "SS PETER &PAUL’S CHURCH HARRY REYNOLDSP…"
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .document-downloads
+    A  x     0  y   3541  w  1440  h   687  vis  "DOCUMENTS FOR DOWNLOAD Ár dTuras Our Jo…"
+    B  x     0  y   3540  w  1440  h   687  vis  "DOCUMENTS FOR DOWNLOAD Ár dTuras Our Jo…"
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .row-doc-downloads
+    A  x   150  y   3728  w  1140  h   371  vis  "Ár dTuras Our Journey Céard eile atá …"
+    B  x   150  y   3727  w  1140  h   371  vis  "Ár dTuras Our Journey Céard eile atá ag…"
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .col-doc
+    A  x   233  y   3728  w   242  h   371  vis  "Ár dTuras"
+    B  x   234  y   3727  w   242  h   371  vis  "Ár dTuras"
+    Δ  Δx +1 Δy -1 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .document-downloads .btn-secondary
+    A  x   651  y   4131  w   138  h    33  vis  "SEE ALL"
+    B  x   652  y   4130  w   136  h    33  vis  "SEE ALL"
+    Δ  Δx +1 Δy -1 Δw -2 Δh 0  width: 138px → 136px; fontFamily: GothamMedium → GothamMedium, "GothamMedium Substitute", sans-serif
+  .section-newsletter
+    A  x     0  y   4228  w  1440  h   360  vis  "NEWSLETTER To hear all the latest on th…"
+    B  x     0  y   4227  w  1440  h   414  vis  "NEWSLETTER To hear all the latest on th…"
+    Δ  Δx 0 Δy -1 Δw 0 Δh +54  height: 359.688px → 413.688px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #gform_fields_1
+    A  x   260  y   4362  w   920  h   107  vis  "I consent to the collection and storage…"
+    B  x   260  y   4361  w   920  h   161  vis  "I consent to the collection and storage…"
+    Δ  Δx 0 Δy -1 Δw 0 Δh +54  height: 107.297px → 161.297px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #field_1_1
+    A  x   260  y   4378  w   306  h    46  vis  ""
+    B  x   260  y   4377  w   306  h    38  vis  ""
+    Δ  Δx 0 Δy -1 Δw 0 Δh -8  height: 46px → 38px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #input_1_1
+    A  x   260  y   4386  w   290  h    38  vis  ""
+    B  x   260  y   4377  w   290  h    38  vis  ""
+    Δ  Δx 0 Δy -9 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #field_1_4
+    A  x   260  y   4448  w   920  h    21  vis  "I consent to the collection and storage…"
+    B  x   260  y   4501  w   920  h    21  vis  "I consent to the collection and storage…"
+    Δ  Δx 0 Δy +53 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #label_1_4_1
+    A  x   411  y   4448  w   637  h    21  vis  "I consent to the collection and storage…"
+    B  x   396  y   4502  w   649  h    21  vis  "I consent to the collection and storage…"
+    Δ  Δx -15 Δy +54 Δw +12 Δh 0  width: 637px → 649px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .gform_footer
+    A  x   260  y   4486  w   920  h    70  vis  ""
+    B  x   260  y   4539  w   920  h    70  vis  ""
+    Δ  Δx 0 Δy +53 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #gform_submit_button_1
+    A  x   638  y   4502  w   147  h    44  vis  ""
+    B  x   638  y   4555  w   148  h    44  vis  ""
+    Δ  Δx 0 Δy +53 Δw +1 Δh 0  width: 147px → 148px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #wrapper-footer-full
+    A  x     0  y   4588  w  1440  h   130  vis  "Privacy"
+    B  x     0  y   4641  w  1440  h   130  vis  "Privacy"
+    Δ  Δx 0 Δy +53 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #custom_html-2 .list-social
+    A  x   735  y   4618  w   540  h    30  vis  ""
+    B  x   735  y   4671  w   540  h    30  vis  ""
+    Δ  Δx 0 Δy +53 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+
+@ 360px
+  root
+    A  scrollWidth   370  viewport 360  scrollHeight   5410  ◄◄ OVERFLOW +10px
+    B  scrollWidth   360  viewport 360  scrollHeight   5490
+    Δ  scrollWidth -10  scrollHeight +80
+  #wrapper-navbar
+    A  x     0  y      0  w   360  h    90  vis  "Skip to content"
+    B  x     0  y      0  w   360  h   172  vis  "Skip to content"
+    Δ  Δx 0 Δy 0 Δw 0 Δh +82  height: 90px → 172px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .navbar-brand img
+    A  x    16  y     21  w   142  h    48  vis  ""  img 300×101 …/balbriggan-logo.svg
+    B  x    16  y     13  w   176  h    72  vis  ""  img 300×101 …/balbriggan-logo.svg
+    Δ  Δx 0 Δy -8 Δw +34 Δh +24  width: 142.172px → 176px; height: 48px → 72px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .navs
+    A  x   198  y      8  w   146  h    74  vis  ""
+    B  x    16  y     90  w   143  h    74  vis  ""
+    Δ  Δx -182 Δy +82 Δw -3 Δh 0  width: 146.188px → 143.188px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #top-menu
+    A  x     0  y      0  w     0  h     0  hid  "News Downloads Newsletters Fingal Count…"
+    B  x     0  y      0  w     0  h     0  hid  "News Downloads Newsletters Fingal Count…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #main-menu
+    A  x     0  y      0  w     0  h     0  hid  "Plans & Projects Town Transformation Sm…"
+    B  x     0  y      0  w     0  h     0  hid  "Plans & Projects Town Transformation Sm…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .btn-nav .nav-link
+    A  x     0  y      0  w     0  h     0  hid  "Get Involved"
+    B  x     0  y      0  w     0  h     0  hid  "Get Involved"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  fontFamily: GothamMedium → GothamMedium, "GothamMedium Substitute", sans-serif
+  .section-hero
+    A  x     0  y     90  w   360  h   630  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    B  x     0  y    172  w   360  h   630  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    Δ  Δx 0 Δy +82 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .herotransform
+    A  x     9  y    243  w   342  h   324  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    B  x     9  y    325  w   342  h   324  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    Δ  Δx 0 Δy +82 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .overlay-body h2
+    A  x    41  y    291  w   278  h   195  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    B  x    41  y    373  w   278  h   195  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    Δ  Δx 0 Δy +82 Δw 0 Δh 0  props equal
+  .section-main
+    A  x     0  y    720  w   360  h   695  vis  "OUR BALBRIGGAN Balbriggan is set to be …"
+    B  x     0  y    802  w   360  h   695  vis  "OUR BALBRIGGAN Balbriggan is set to be …"
+    Δ  Δx 0 Δy +82 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .section-intro h2
+    A  x    15  y    816  w   330  h    59  vis  "OUR BALBRIGGAN"
+    B  x    15  y    898  w   330  h    59  vis  "OUR BALBRIGGAN"
+    Δ  Δx 0 Δy +82 Δw 0 Δh 0  fontFamily: GothamBold → GothamBold, "GothamBold Substitute", sans-serif
+  .section-intro p
+    A  x    15  y    923  w   330  h   168  vis  "Balbriggan is set to be transformed; it…"
+    B  x    15  y   1005  w   330  h   168  vis  "Balbriggan is set to be transformed; it…"
+    Δ  Δx 0 Δy +82 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .section-whatsnew
+    A  x     0  y   1415  w   360  h   698  vis  "WHAT'S NEW Previous Prestigious musical…"
+    B  x     0  y   1497  w   360  h   697  vis  "WHAT'S NEW Previous €15 million Harbour…"
+    Δ  Δx 0 Δy +82 Δw 0 Δh -1  height: 698.172px → 697.172px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .news-cards
+    A  x    15  y   1587  w   330  h   368  vis  "Previous Prestigious musical theatre de…"
+    B  x    15  y   1669  w   330  h   367  vis  "Previous €15 million Harbour Square wil…"
+    Δ  Δx 0 Δy +82 Δw 0 Δh -1  height: 368px → 367px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .news-card
+    A  x  -345  y   1587  w    90  h   360  vis  "Prestigious musical theatre degree and …"
+    B  x    15  y   1669  w    90  h   312  vis  "€15 million Harbour Square will be ‘hea…"
+    Δ  Δx +360 Δy +82 Δw 0 Δh -48  width: 90px → 89.9844px; height: 360px → 312px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .news-title
+    A  x  -345  y   1731  w    90  h   216  vis  "Prestigious musical theatre degree and …"
+    B  x    15  y   1813  w    90  h   168  vis  "€15 million Harbour Square will be ‘hea…"
+    Δ  Δx +360 Δy +82 Δw 0 Δh -48  width: 90px → 89.9844px; height: 216px → 168px; fontFamily: GothamMedium → GothamMedium, "GothamMedium Substitute", sans-serif
+  .slick-dots
+    A  x    15  y   1954  w   330  h    26  vis  "1 2 3 4"
+    B  x    15  y   2034  w   330  h    27  vis  "1 2 3 4"
+    Δ  Δx 0 Δy +80 Δw 0 Δh +1  height: 26px → 27px; fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .section-whatsnew .btn-secondary
+    A  x   111  y   2017  w   138  h    33  vis  "SEE ALL"
+    B  x   112  y   2098  w   136  h    33  vis  "SEE ALL"
+    Δ  Δx +1 Δy +81 Δw -2 Δh 0  width: 138px → 136px; fontFamily: GothamMedium → GothamMedium, "GothamMedium Substitute", sans-serif
+  .section-exploregrid
+    A  x     0  y   2114  w   360  h   402  vis  "EXPLORE WHAT WE DO TOWN TRANSFORMATION …"
+    B  x     0  y   2195  w   360  h   402  vis  "EXPLORE WHAT WE DO TOWN TRANSFORMATION …"
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .grid
+    A  x    15  y   2323  w   330  h   128  vis  "TOWN TRANSFORMATION EDUCATION, SKILLS &…"
+    B  x    15  y   2404  w   330  h   128  vis  "TOWN TRANSFORMATION EDUCATION, SKILLS &…"
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .grid-item-content p
+    A  x   -27  y   2363  w   240  h    48  vis  "TOWN TRANSFORMATION"
+    B  x   -25  y   2444  w   235  h    48  vis  "TOWN TRANSFORMATION"
+    Δ  Δx +2 Δy +81 Δw -5 Δh 0  width: 240px → 235px; fontFamily: GothamMedium → GothamMedium, "GothamMedium Substitute", sans-serif; lineHeight: normal → 24px
+  .section-map
+    A  x     0  y   2515  w   360  h   265  vis  "SS PETER &PAUL’S CHURCH HARRY REYNOLDSP…"
+    B  x     0  y   2596  w   360  h   265  vis  "SS PETER &PAUL’S CHURCH HARRY REYNOLDSP…"
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .document-downloads
+    A  x     0  y   2780  w   360  h  1839  vis  "DOCUMENTS FOR DOWNLOAD Ár dTuras Our Jo…"
+    B  x     0  y   2861  w   360  h  1839  vis  "DOCUMENTS FOR DOWNLOAD Ár dTuras Our Jo…"
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .row-doc-downloads
+    A  x     0  y   3006  w   360  h  1484  vis  "Ár dTuras Our Journey Céard eile atá …"
+    B  x     0  y   3087  w   360  h  1484  vis  "Ár dTuras Our Journey Céard eile atá ag…"
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .col-doc
+    A  x    59  y   3006  w   242  h   371  vis  "Ár dTuras"
+    B  x    59  y   3087  w   242  h   371  vis  "Ár dTuras"
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .document-downloads .btn-secondary
+    A  x   111  y   4522  w   138  h    33  vis  "SEE ALL"
+    B  x   112  y   4603  w   136  h    33  vis  "SEE ALL"
+    Δ  Δx +1 Δy +81 Δw -2 Δh 0  width: 138px → 136px; fontFamily: GothamMedium → GothamMedium, "GothamMedium Substitute", sans-serif
+  .section-newsletter
+    A  x     0  y   4619  w   360  h   589  vis  "NEWSLETTER To hear all the latest on th…"
+    B  x     0  y   4700  w   360  h   589  vis  "NEWSLETTER To hear all the latest on th…"
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #gform_fields_1
+    A  x    15  y   4817  w   330  h   249  vis  "I consent to the collection and storage…"
+    B  x    15  y   4898  w   330  h   249  vis  "I consent to the collection and storage…"
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #field_1_1
+    A  x    15  y   4817  w   330  h    46  vis  ""
+    B  x    15  y   4898  w   330  h    46  vis  ""
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #input_1_1
+    A  x    15  y   4817  w   330  h    46  vis  ""
+    B  x    15  y   4898  w   330  h    46  vis  ""
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #field_1_4
+    A  x    15  y   5003  w   330  h    63  vis  "I consent to the collection and storage…"
+    B  x    15  y   5084  w   330  h    63  vis  "I consent to the collection and storage…"
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #label_1_4_1
+    A  x    49  y   5003  w   281  h    63  vis  "I consent to the collection and storage…"
+    B  x    49  y   5084  w   281  h    63  vis  "I consent to the collection and storage…"
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  .gform_footer
+    A  x    15  y   5082  w   330  h    94  vis  ""
+    B  x    15  y   5163  w   330  h    94  vis  ""
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #gform_submit_button_1
+    A  x    15  y   5098  w   330  h    52  vis  ""
+    B  x    15  y   5179  w   330  h    52  vis  ""
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #wrapper-footer-full
+    A  x     0  y   5208  w   360  h   200  vis  "Privacy"
+    B  x     0  y   5289  w   360  h   200  vis  "Privacy"
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif
+  #custom_html-2 .list-social
+    A  x    15  y   5309  w   330  h    30  vis  ""
+    B  x    15  y   5390  w   330  h    30  vis  ""
+    Δ  Δx 0 Δy +81 Δw 0 Δh 0  fontFamily: Gotham-Light, sans-serif → Gotham-Light, "Gotham-Light Substitute", sans-serif

@@ -1,0 +1,34 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-28T09:18:13Z",
+    "mode": "bounded-single",
+    "synthesizedFrom": ["stardust/current/pages/index.json", "stardust/replica/tokens.json"]
+  },
+  "site": { "name": "Our Balbriggan", "origin": "https://balbriggan.ie/", "scope": "home page only" },
+  "colors": {
+    "brand": "#2494d2", "accent": "#f5ee2f", "heroAccent": "#f9ec31", "heroOverlay": "#009bd9", "rule": "yellow",
+    "text": "#3c3c3b", "heading": "#3c3c3c", "cardHeading": "#000", "cardText": "#333",
+    "surfaceLight": "#f0f0f0", "cardSurface": "#e5eff9", "footer": "#444", "white": "#fff"
+  },
+  "typography": {
+    "stacks": { "body": "'Gotham-Light', sans-serif", "heroHeading": "'Gotham Bold', Helvetica, Arial, Lucida, sans-serif", "buttons": "'GothamMedium'", "topMenu": "'GothamMedium'" },
+    "fontFaces": "none declared for the Gotham names (fallback rendering, replicated as-is); Google Fonts Libre Baskerville 400 / Open Sans 400,700 are linked but unused by measured elements",
+    "ramp": { "body": "1rem/1.5 400", "h1": "2.5rem/1.2 500", "h2": "2rem/1.2 500 uppercase", "h3": "1.75rem/1.2 500", "h4": "1.5rem/1.2 500", "heroH2": "1.5rem 700 ls 1px", "nav": "0.9rem", "cardText": "0.9rem" }
+  },
+  "layout": {
+    "boxSizing": "border-box",
+    "container": { "1200+": 1140, "992": 960, "768": 720, "576": 540, "gutter": 30 },
+    "sectionPadding": "4rem 0",
+    "hero": { "height": "70vh", "minHeight": "15rem", "overlay": "#009bd9 multiply" },
+    "navbar": { "background": "#2494d2", "sticky": true, "expand": 1200, "logo": "11rem × 4.5rem" },
+    "footer": { "background": "#444", "logo": "12rem" }
+  },
+  "buttons": {
+    "primary": { "background": "#2494d2", "color": "#fff", "radius": "2rem", "padding": ".15rem 2rem", "uppercase": true, "weight": 700 },
+    "secondary": { "background": "#f5ee2f", "color": "#2494d2", "border": "2px solid #f5ee2f", "radius": "2rem", "padding": ".15rem 2rem", "uppercase": true, "weight": 700 },
+    "formSubmit": { "background": "#f5ee2f", "color": "#2494d2", "border": "2px solid #f5ee2f", "radius": ".25rem", "padding": ".5rem 1.5rem", "uppercase": true, "weight": 700 }
+  },
+  "motion": { "transitions": "all 300ms (nav links, buttons)", "carousel": "slick, 3 visible, autoplay on .slick-header (hero) — observed in the gate phase" },
+  "extensions": { "modules": ["sticky navbar with dropdowns", "video hero", "intro band", "news cards carousel", "explore grid", "map illustration", "document downloads", "instagram feed", "newsletter form", "footer widgets"] }
+}

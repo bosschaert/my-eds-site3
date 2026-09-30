@@ -1,0 +1,42 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "phase": "handoff/migrate",
+    "writtenAt": "2026-09-28T10:15:32.143Z"
+  },
+  "units": {
+    "plan": {
+      "status": "done",
+      "kind": "plan",
+      "templates": [
+        "home"
+      ],
+      "pages": 1,
+      "startedAt": "2026-09-28T10:15:32.143Z",
+      "endedAt": "2026-09-28T10:15:32.143Z",
+      "verdict": "1 page: index (home) → Path A archetype render from stardust/prototypes/index-proposed.html; 0 siblings, 0 thin; register empty; dynamics rows 1–7 dispositioned"
+    },
+    "home": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "home"
+      ],
+      "pages": 1,
+      "startedAt": "2026-09-28T10:15:54.511Z",
+      "endedAt": "2026-09-28T10:16:45.768Z",
+      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 — index → / (home; 60 assets, 53 links, 52 out-of-scope → repoint decision); gates content-fidelity, pixel-gate-1440 2.32%/Δ2, pixel-gate-360 3.79%/Δ2, content-count 0🔴; delivery-lint deferred to the delivered document"
+    },
+    "report": {
+      "status": "done",
+      "kind": "report",
+      "templates": [
+        "home"
+      ],
+      "pages": 1,
+      "startedAt": "2026-09-28T10:17:09.271Z",
+      "endedAt": "2026-09-28T10:17:09.271Z",
+      "verdict": "1 migrated (index → /), 0 unchanged, 0 failed, 0 stale; Path A 1; 0 missing assets; 52 out-of-scope links → repoint decision"
+    }
+  }
+}

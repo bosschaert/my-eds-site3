@@ -1,0 +1,153 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "phase": "handoff/C-deliver",
+    "writtenAt": "2026-09-28T10:20:51.253Z"
+  },
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "index"
+      ],
+      "pages": 3,
+      "startedAt": "2026-09-28T10:20:51.253Z",
+      "endedAt": "2026-09-28T11:01:12.234Z",
+      "blocks": 2,
+      "gates": {
+        "360": {
+          "chrome": "header parity; footer shell Δy only",
+          "cropHeader": "1.08%",
+          "cropFooter": "0.60%"
+        },
+        "1440": {
+          "chrome": "header 10 deltas = Montserrat Δw ≤4px + right-aligned Δx accumulation (residual); footer shell Δy only",
+          "cropHeader": "2.61% (glyph-only, residual: font substitution)",
+          "cropFooter": "0.23%"
+        },
+        "crop": "header 2.61%/1.08%, footer 0.23%/0.60%",
+        "chrome": "text-metric residual only (documented)"
+      },
+      "verdict": "foundation: nav+footer+index(shell) live 3/3, header/footer blocks authored, fonts self-hosted 5, lint ok, code pushed 824e2cf; fixes: pill 12px spec, root backgrounds, ascent/descent overrides, aria-label social names (register #1)",
+      "residuals": [
+        {
+          "where": "header 1440 crop band",
+          "value": "2.61% vs 2% bar",
+          "cause": "Gotham→Montserrat glyph widths (licensed kit not rehosted); diff glyph-only, no box/edge/y delta",
+          "owner": "site owner: licensed Gotham drop-in restores parity"
+        }
+      ]
+    },
+    "home": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "blocks": 6,
+      "startedAt": "2026-09-28T11:03:13.692Z",
+      "endedAt": "2026-09-28T11:58:53.879Z",
+      "gates": {
+        "360": {
+          "pixel": "3.82% (Δh 2px, overflow +1px)",
+          "structural": 0,
+          "contentDiff": "75 advisory, 0 🔴",
+          "chrome": "parity ✓",
+          "cropHeader": "1.08%",
+          "cropFooter": "1.99%",
+          "round": "pub3 --full"
+        },
+        "1440": {
+          "pixel": "2.46% (Δh 2px, overflow +1px)",
+          "structural": 0,
+          "contentDiff": "75 advisory, 0 🔴",
+          "chrome": "10 PAIR deltas Δx ≤ 8 / Δw ≤ 4 — Montserrat text-metric residual (as C0)",
+          "cropHeader": "2.61% (glyph-only, recorded residual)",
+          "cropFooter": "0.76%",
+          "round": "pub3 --full"
+        },
+        "crop": "header 2.61%/1.08%, footer 0.76%/1.99% (stardust/rollout/gates/home/)",
+        "chrome": "text-metric residual only (documented)"
+      },
+      "verdict": "home: pages 1/1 live, blocks 6, gate 1440 2.46% / 360 3.82% (Δh 2/2 px, structural 0/0, overflow +1/+1), requests 1",
+      "residuals": [
+        {
+          "where": "header 1440 crop band",
+          "value": "2.61% vs 2% bar",
+          "cause": "Gotham→Montserrat glyph widths (licensed kit not rehosted)",
+          "owner": "site owner: licensed Gotham drop-in restores parity"
+        },
+        {
+          "where": "hero band 0–1000",
+          "value": "≤ 1.6%",
+          "cause": "static-vs-live video frame",
+          "owner": "accepted"
+        },
+        {
+          "where": "360 band 4000–4500",
+          "value": "9.8%",
+          "cause": "stacked document titles, substitute font metrics (same as approved prototype gate)",
+          "owner": "accepted"
+        },
+        {
+          "where": "360 horizontal overflow",
+          "value": "+1px vs source +10px",
+          "cause": "source overflow clipped (overflow-x: clip)",
+          "owner": "accepted"
+        }
+      ],
+      "evidence": {
+        "gates": "stardust/replica/gates/index-{1440,360}/*-pub{1,2,3}*",
+        "jobs": [
+          "index-1440-pub1",
+          "index-1440-pub2",
+          "index-1440-pub3",
+          "index-360-pub1",
+          "index-360-pub2",
+          "index-360-pub3",
+          "media-home",
+          "deploy-home"
+        ],
+        "probe": "stardust/.work/rollout/probes/home-probe.mjs",
+        "commits": [
+          "f69378c",
+          "1773fcd",
+          "15a21ba",
+          "ddd0102"
+        ]
+      },
+      "requests": 1,
+      "openDecisions": [
+        "newsletter form posts interim to https://balbriggan.ie/#gf_1 (dynamic-features #1)"
+      ]
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "startedAt": "2026-09-28T11:59:34.212Z",
+      "endedAt": "2026-09-28T12:06:21.771Z",
+      "requestsApplied": [
+        "home | intro-columns section style → styles/styles.css (6611bb3)"
+      ],
+      "gates": {
+        "360": {
+          "pixel": "3.82% (Δh 2px, overflow +1px)",
+          "round": "pub5 (pixel, GATE_BUILD_SETTLE=1)"
+        },
+        "1440": {
+          "pixel": "2.46% (Δh 2px, overflow +1px)",
+          "round": "pub5 (pixel, after the request)"
+        },
+        "note": "pub4 at 360 showed the 49px short-capture artefact without the settle pass; pub5 with it reproduced pub3 exactly"
+      },
+      "freeze": "re-frozen after the request (19 files, same path set)",
+      "coverage": {
+        "pages": "1/1 deployed",
+        "blocks": "6/6 converted"
+      },
+      "verdict": "final: freeze ok, 1 request applied, re-gate 1440 2.46% / 360 3.82% (Δh 2/2), coverage 1/1 pages, 6/6 blocks"
+    }
+  }
+}

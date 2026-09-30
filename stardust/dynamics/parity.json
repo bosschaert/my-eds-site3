@@ -1,0 +1,156 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:dynamics",
+    "writtenAt": "2026-09-28T12:17:31.308Z",
+    "phase": "rollout D2-dynamic"
+  },
+  "method": "one page (home) rebuilt natively from the captured DOM; features fed from stardust/dynamic-features.md (7 rows, B2 re-verified); replayed read-only against the live origin with dynamics-check.mjs",
+  "features": [
+    {
+      "id": "f-form-gform-1-origin-5-fields",
+      "feature": "Newsletter sign-up form (Gravity Forms gform_1)",
+      "class": "F",
+      "pages": 1,
+      "disposition": "rebuild-native",
+      "reproducibility": "needs-backend",
+      "status": "interim",
+      "verifiedBy": "form.gform-newsletter rendered with the captured field names (input_1, input_2, input_3, input_4.1, honeypot) + GF hidden fields, aria-required=\"true\" on the three text/email inputs (3 — the source marks the consent checkbox only with the asterisk label, same count), submit value from the authored label; action = the source handler https://balbriggan.ie/#gf_1 (interim). A filled submission is deliberately NOT fired: the interim endpoint is the customer's production list.",
+      "owner": "production endpoint for the newsletter form on the new host (keep posting to the source handler, or a new form backend)",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "form.gform-newsletter [name=\"input_1\"], form.gform-newsletter [name=\"input_2\"], form.gform-newsletter [name=\"input_3\"], form.gform-newsletter [name=\"input_4.1\"], form.gform-newsletter input[type=\"submit\"]",
+          "min": 5
+        },
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "form.gform-newsletter [aria-required=\"true\"]",
+          "min": 3
+        }
+      ]
+    },
+    {
+      "id": "m-modal-trigger-aria-haspopup-chrome-only-a-content",
+      "feature": "Primary navigation dropdowns (4 aria-haspopup menu items)",
+      "class": "M",
+      "pages": 1,
+      "disposition": "rebuild-native",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "foundation chrome probe 43/43 at 1440 + 360 (click opens .show + aria-expanded, one open closes the others, Escape and outside click close, 0.35s collapse at 360); motion-compare 0 missing / 0 extra",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "header a.dropdown-toggle[aria-haspopup=\"true\"]",
+          "min": 4
+        },
+        {
+          "type": "no-page-errors",
+          "paths": [
+            "/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-hero-video-vimeo-external-mp4",
+      "feature": "Hero background video (autoplay loop muted, Vimeo-hosted mp4)",
+      "class": "V",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "same Vimeo-hosted mp4 URL and attributes (autoplay muted loop playsinline, preload metadata) as the source, fallback paragraph kept inside <video>; playback itself is an environment limit (below) shared with the source",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "video.vimeo-hero[autoplay][muted][loop][playsinline] source[type=\"video/mp4\"][src*=\"player.vimeo.com/external/625598732\"]",
+          "min": 1
+        }
+      ],
+      "environmentLimit": "player.vimeo.com answers this network with 403 text/html (Cloudflare); Chromium blocks it as net::ERR_BLOCKED_BY_ORB on the SOURCE site and on the build alike (video-playback-probe, 2026-09-28) — the mp4 cannot be replayed from here; verify playback from a regular browser/region"
+    },
+    {
+      "id": "t-tag-manager-google-tag-manager",
+      "feature": "Google Tag Manager container",
+      "class": "T",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision",
+      "status": "interim",
+      "verifiedBy": "no tag container ships on the new host until the owner decides; no request to Google tag hosts observed",
+      "owner": "which tags run on the new host and behind which consent",
+      "checks": [
+        {
+          "type": "consent-gate",
+          "path": "/",
+          "forbiddenHosts": [
+            "googletagmanager.com",
+            "google-analytics.com",
+            "googleadservices.com",
+            "doubleclick.net"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t-analytics-google-analytics-ads",
+      "feature": "Google Analytics / Ads beacon",
+      "class": "T",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision",
+      "status": "interim",
+      "verifiedBy": "not loaded on the new host (same batch as the tag container)",
+      "owner": "same batch as the tag container",
+      "checks": [
+        {
+          "type": "consent-gate",
+          "path": "/",
+          "forbiddenHosts": [
+            "google-analytics.com",
+            "analytics.google.com",
+            "googleadservices.com"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t-marketing-ad-retargeting-pixel",
+      "feature": "Facebook pixel",
+      "class": "T",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision",
+      "status": "interim",
+      "verifiedBy": "not loaded on the new host (same batch as the tag container)",
+      "owner": "same batch as the tag container",
+      "checks": [
+        {
+          "type": "consent-gate",
+          "path": "/",
+          "forbiddenHosts": [
+            "connect.facebook.net",
+            "facebook.com"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-cms-app-settings-object-datalayer",
+      "feature": "dataLayer global (GTM data layer)",
+      "class": "A",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision",
+      "status": "interim",
+      "verifiedBy": "folded into the tag container row — ships with the GTM snippet when the owner enables it",
+      "owner": "same batch as the tag container",
+      "checks": []
+    }
+  ]
+}

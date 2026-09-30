@@ -1,0 +1,144 @@
+/* map — index-proposed.css § Map (theme style.css .map-pin rules, measured 1440/360).
+   The section is `fluid`: the SVG spans the viewport like the source's section.section-map. */
+
+main .section.fluid > .map-wrapper {
+  padding: 0;
+}
+
+.map .map-wrap svg {
+  width: 100%;
+}
+
+/* the authored list is the editable legend: visually hidden once the SVG carries its labels */
+.map.map-loaded .map-legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.map .map-pin {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.map .map-pin:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+.map .pin-1 {
+  transform-origin: 71% 35%;
+}
+
+.map .pin-2 {
+  transform-origin: 41% 44%;
+}
+
+.map .pin-3 {
+  transform-origin: 78% 43%;
+}
+
+.map .pin-4 {
+  transform-origin: 47% 40%;
+}
+
+.map .pin-5 {
+  transform-origin: 70% 50%;
+}
+
+.map .pin-6 {
+  transform-origin: 76% 62%;
+}
+
+.map .pin-7 {
+  transform-origin: 28% 17%;
+}
+
+.map .pin-8 {
+  transform-origin: 66% 21%;
+}
+
+.map .pin-9 {
+  transform-origin: 55% 16%;
+}
+
+.map .pin-10 {
+  transform-origin: 37% 28%;
+}
+
+.map .pin-11 {
+  transform-origin: 63% 10%;
+}
+
+.map .pin-12 {
+  transform-origin: 44% 70%;
+}
+
+.map .map-pin g {
+  transition: 0.5s;
+}
+
+.map .map-pin g text {
+  fill: #009bd5;
+  font-family: var(--font-bold);
+  font-size: 10.5561px;
+  letter-spacing: -0.009em;
+}
+
+.map .map-pin [id='label-1'] {
+  transform: translate(-13rem, 0);
+}
+
+.map .map-pin [id='label-2'] {
+  transform: translate(14rem, 0);
+}
+
+.map .map-pin [id='label-3'] {
+  transform: translate(-9rem, 0);
+}
+
+.map .map-pin [id='label-4'] {
+  transform: translate(16rem, 0);
+}
+
+.map .map-pin [id='label-5'] {
+  transform: translate(-10rem, 0);
+}
+
+.map .map-pin [id='label-6'] {
+  transform: translate(-10rem, 0);
+}
+
+.map .map-pin [id='label-7'] {
+  transform: translate(10rem, 0);
+}
+
+.map .map-pin [id='label-8'] {
+  transform: translate(-13rem, 0);
+}
+
+.map .map-pin [id='label-9'] {
+  transform: translate(10rem, 0);
+}
+
+.map .map-pin [id='label-10'] {
+  transform: translate(8rem, 0);
+}
+
+.map .map-pin [id='label-11'] {
+  transform: translate(-9rem, 0);
+}
+
+.map .map-pin [id='label-12'] {
+  transform: translate(15rem, 0);
+}
+
+.map .map-pin:hover [id^='label-'] {
+  transform: translate(0, 0);
+}

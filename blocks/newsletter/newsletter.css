@@ -1,0 +1,223 @@
+/* newsletter — index-proposed.css § Newsletter (theme style.css + Gravity Forms legacy CSS,
+   measured 1440/360). The section is `fluid`: the blue band runs edge-to-edge like the
+   source's section.section-newsletter; the block rebuilds its Bootstrap .container. */
+
+/* stylelint-disable no-descending-specificity -- the Gravity Forms cascade is order-dependent */
+
+main .section.fluid > .newsletter-wrapper {
+  padding: 0;
+}
+
+.newsletter {
+  padding: 3rem 0 2rem;
+  background-color: var(--brand-blue);
+  color: #fff;
+}
+
+.newsletter .container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-gutter);
+}
+
+.newsletter .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.newsletter .justify-content-center {
+  justify-content: center;
+}
+
+.newsletter .col-md-8,
+.newsletter .col-md-10 {
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+}
+
+@media (width >= 768px) {
+  .newsletter .col-md-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+
+  .newsletter .col-md-10 {
+    flex: 0 0 83.3333%;
+    max-width: 83.3333%;
+  }
+}
+
+.newsletter .row-newsletter-txt :is(h1, h2, h3, p) {
+  text-align: center;
+}
+
+.newsletter .row-newsletter-txt :is(h1, h2, h3) {
+  color: #fff;
+}
+
+/* ---- Gravity Forms legacy markup (thirds layout) ---- */
+.newsletter .gform-wrapper {
+  max-width: 100%;
+  margin: 0;
+}
+
+.newsletter .gform-wrapper form {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.newsletter ul.gform-fields {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.newsletter ul.gform-fields li.gfield {
+  margin-top: 16px;
+  padding-top: 0;
+}
+
+.newsletter .top-label .gfield-label {
+  display: none;
+}
+
+.newsletter .top-label div.ginput-container {
+  margin-top: 8px;
+}
+
+.newsletter .gform-wrapper input:not([type='radio'], [type='checkbox'], [type='submit'], [type='button'], [type='image'], [type='file']) {
+  padding: 5px 4px;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: normal;
+}
+
+.newsletter ul.gfield-checkbox {
+  margin: 6px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.newsletter ul.gfield-checkbox li {
+  margin: 0 0 8px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.newsletter ul.gfield-checkbox li input[type='checkbox'] {
+  width: auto;
+  margin-top: 6px;
+  margin-left: 1px;
+  vertical-align: middle;
+}
+
+.newsletter ul.gfield-checkbox li label {
+  display: inline-block;
+  max-width: 85%;
+  margin: 0;
+  font-size: 0.875em;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* the authored consent sentence rides its paragraph inside the choice label (EW1) */
+.newsletter ul.gfield-checkbox li label p {
+  display: inline;
+  margin: 0;
+}
+
+.newsletter .gform-meta {
+  display: none;
+}
+
+.newsletter .gform-footer {
+  clear: both;
+  width: 100%;
+  margin: 1rem 0 0;
+  padding: 16px 0 10px;
+  text-align: center;
+}
+
+.newsletter .gform-footer input.button {
+  display: inline-block;
+  margin: 0 16px 0 0;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.newsletter .gform-footer .gform-button {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid var(--brand-yellow);
+  border-radius: 0.25rem;
+  background-color: var(--brand-yellow);
+  color: var(--brand-blue);
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 300ms;
+}
+
+.newsletter .gform-footer .gform-button:hover {
+  background: transparent;
+  color: var(--brand-yellow);
+  cursor: pointer;
+}
+
+@media (width <= 641px) {
+  .newsletter .gform-wrapper input:not([type='radio'], [type='checkbox'], [type='image'], [type='file']) {
+    width: 100%;
+    min-height: 2rem;
+    line-height: 2;
+  }
+
+  .newsletter .gform-footer input.button {
+    width: 100%;
+    margin: 0 0 16px;
+  }
+
+  .newsletter ul.gfield-checkbox li label {
+    width: 85%;
+  }
+}
+
+@media (width >= 641px) {
+  .newsletter ul.gform-fields li.gfield {
+    padding-right: 16px;
+  }
+
+  .newsletter .top-label li.gfield.gf-left-third,
+  .newsletter .top-label li.gfield.gf-middle-third,
+  .newsletter .top-label li.gfield.gf-right-third {
+    display: inline-block;
+    float: none;
+    margin-bottom: 8px;
+    vertical-align: top;
+  }
+
+  .newsletter .top-label li.gfield.gf-left-third,
+  .newsletter .top-label li.gfield.gf-middle-third {
+    width: 33.3%;
+  }
+
+  .newsletter .top-label li.gfield.gf-right-third {
+    width: 33.4%;
+  }
+
+  .newsletter .top-label li.gfield.gf-left-third input.medium,
+  .newsletter .top-label li.gfield.gf-middle-third input.medium,
+  .newsletter .top-label li.gfield.gf-right-third input.medium {
+    width: 100%;
+  }
+
+  .newsletter .top-label li.gfield.gf-right-third::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

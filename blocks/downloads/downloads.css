@@ -1,0 +1,77 @@
+/* downloads — index-proposed.css § Documents for download (theme style.css, Bootstrap 4 grid).
+   The section is a plain band: the block wrapper IS the source's .container (1140 max, 15px
+   gutters); the block rebuilds the rows. The source's intro row adds 1rem under the heading. */
+
+/* stylelint-disable no-descending-specificity -- Bootstrap's cascade is order-dependent */
+
+.downloads {
+  padding-top: 1rem;
+}
+
+.downloads .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.downloads .justify-content-center {
+  justify-content: center;
+}
+
+.downloads .col-auto {
+  position: relative;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+  padding: 0 15px;
+}
+
+.downloads .col {
+  position: relative;
+  flex: 1 0 0%;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+.downloads .doc-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 0;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.downloads .col-auto:nth-child(even) .doc-container {
+  flex-direction: column-reverse;
+}
+
+.downloads .doc-container h4 {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.downloads .doc-container h4 a {
+  color: #000;
+}
+
+.downloads .doc-container h4 a:hover {
+  color: var(--brand-blue);
+  text-decoration: none;
+}
+
+.downloads .doc-container figure {
+  margin: 0 0 1rem;
+}
+
+/* See All — canon `.align-self-center .btn { margin: 2rem auto 0; display: table }`; the
+   pill rides its paragraph (EW3) */
+.downloads .see-all p {
+  margin: 0;
+}
+
+.downloads .see-all a {
+  display: table;
+  margin: 2rem auto 0;
+}

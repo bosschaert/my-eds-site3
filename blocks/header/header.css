@@ -1,0 +1,339 @@
+/* header — the balbriggan.ie navbar (canon.css § Navbar; Bootstrap 4 theme.min.css,
+   theme style.css, learning-style.css). The host <header> is sticky (styles.css); the
+   block morphs via .sticky-nav.scrolled past 100px (motion.js § 1). */
+
+/* stylelint-disable no-descending-specificity -- Bootstrap's cascade is order-dependent */
+
+.header .sticky-nav {
+  position: relative;
+}
+
+/* measured: the source's skip link sits at the sticky wrapper's top-right corner */
+.header .skip-link {
+  top: 0;
+  right: 0;
+}
+
+.header .navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: var(--brand-blue);
+}
+
+/* the source's .container-fluid inside the navbar */
+.header .navbar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header .navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.header .navbar-brand .icon {
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+
+.header .navbar-brand img {
+  width: 11rem;
+  height: 4.5rem;
+  max-width: none;
+  transition: all 300ms;
+}
+
+.header .navs {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .topnav {
+  display: inline-flex;
+  justify-content: flex-end;
+  margin: 0 0.95rem 0.25rem 0;
+}
+
+.header .navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header .navbar-nav li {
+  font-size: 0.9rem;
+  margin: 0 0.4rem;
+}
+
+.header .nav-link {
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.header .top-menu .nav-link {
+  color: #fff;
+  opacity: 1;
+  font-family: var(--font-medium);
+  transition: all 300ms;
+}
+
+.header .main-menu .nav-link {
+  color: var(--brand-yellow);
+  opacity: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all 300ms;
+}
+
+/* the "Get Involved" pill (source .btn-nav .nav-link; the authored <em> link arrives as
+   a.button.secondary — the global a.button paint is overridden back to the source's values:
+   the li's font-size (.9rem; .75rem at 1200–1469), line-height 1.5, and weight 400, because on
+   the source `#main-menu li:not(.btn) .nav-link` (1,4,1) out-ranks the .btn-nav 700 rule) */
+.header .main-menu .btn-nav p {
+  margin: 0;
+}
+
+.header .main-menu .btn-nav .nav-link {
+  display: block;
+  padding: 0.15rem 1rem;
+  border: 2px solid var(--brand-yellow);
+  border-radius: 2rem;
+  background-color: var(--brand-yellow);
+  color: var(--brand-blue);
+  font-family: var(--font-medium);
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  transition: all 300ms;
+}
+
+.header .main-menu .btn-nav .nav-link:hover,
+.header .main-menu .btn-nav .nav-link:focus-visible {
+  border-color: #fff;
+  background-color: #fff;
+  color: var(--brand-blue);
+}
+
+/* social row */
+.header .topnav .list-social {
+  margin: 0 0 0 1rem;
+}
+
+.header .topnav .list-social li {
+  font-size: 1.25rem;
+}
+
+.header .topnav .list-inline-item:not(:last-child) {
+  margin-right: 0.75rem;
+}
+
+/* toggler (Bootstrap 4 navbar-dark) */
+.header .navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: rgb(255 255 255 / 50%);
+  background-color: transparent;
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.header .navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: '';
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, .8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Bootstrap 4 collapse (motion.js § 2) */
+.header .collapse:not(.show) {
+  display: none;
+}
+
+.header .collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+/* Bootstrap 4 dropdown (motion.js § 3) */
+.header .dropdown {
+  position: relative;
+}
+
+.header .dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: '';
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.header .dropdown-menu {
+  position: static;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: none;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgb(0 0 0 / 15%);
+  border-radius: 0.25rem;
+}
+
+.header .dropdown-menu.show {
+  display: block;
+}
+
+.header .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  text-transform: none;
+}
+
+.header .dropdown-item:focus,
+.header .dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+/* sticky morph (theme scripts.js: scrollTop > 100 → .scrolled; 300ms logo transition) */
+.header .sticky-nav.scrolled .navbar-brand img {
+  width: 9rem;
+  height: 3.5rem;
+}
+
+.header .sticky-nav.scrolled .navbar {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+/* lifted from the theme's learning-style.css (loaded on the home page) */
+@media (width <= 1199.98px) {
+  .header .navbar-inner {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .header .navbar-nav {
+    padding: 1rem 0;
+  }
+
+  .header .navbar-nav li {
+    margin: 0.25rem 0;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media (width <= 575px) {
+  .header .navbar-brand img,
+  .header .sticky-nav.scrolled .navbar-brand img {
+    height: 3rem;
+    width: auto;
+  }
+}
+
+/* navbar-expand-xl */
+@media (width >= 1200px) {
+  .header .navbar {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+
+  .header .navbar-inner {
+    flex-wrap: nowrap;
+  }
+
+  .header .navbar-nav {
+    flex-direction: row;
+  }
+
+  .header .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .header .main-menu .btn-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .header .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .header .navbar-toggler {
+    display: none;
+  }
+
+  .header .dropdown-menu {
+    position: absolute;
+    float: left;
+  }
+}
+
+@media (1200px <= width <= 1469px) {
+  .header .navbar-nav li {
+    font-size: 0.75rem;
+    margin: 0 0.1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header .navbar-brand img,
+  .header .collapsing,
+  .header .nav-link {
+    transition: none;
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-09-28T10:18:11.136Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-28T10:18:11.136Z",
+  "fragments": [],
+  "deliveryOrder": [
+    "index"
+  ],
+  "steps": [
+    {
+      "slug": "index",
+      "path": "/",
+      "templateId": "index",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "hero",
+          "edsBlockName": "hero"
+        },
+        {
+          "id": "news-carousel",
+          "edsBlockName": "news-carousel"
+        },
+        {
+          "id": "explore-grid",
+          "edsBlockName": "explore-grid"
+        },
+        {
+          "id": "map",
+          "edsBlockName": "map"
+        },
+        {
+          "id": "downloads",
+          "edsBlockName": "downloads"
+        },
+        {
+          "id": "newsletter",
+          "edsBlockName": "newsletter"
+        }
+      ],
+      "reuse": []
+    }
+  ]
+}

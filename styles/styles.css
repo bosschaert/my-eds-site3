@@ -1,0 +1,511 @@
+/*
+ * Foundation — replica of https://balbriggan.ie/ on AEM Edge Delivery.
+ * Every value is lifted from stardust/prototypes/canon.css (the gated site canon: theme
+ * style.css, Bootstrap 4 theme.min.css, quaystreet.css, learning-style.css, measured
+ * computed styles at 1440/360). No creative decisions. The boilerplate's STRUCTURAL layer
+ * (body gate, chrome reservation, section scaffold) is kept; its demo layer is replaced.
+ *
+ * Fonts: the source's Gotham kit is licensed and never rehosted. The stacks name the brand
+ * family first (a licensed drop-in wins without a code change), the self-hosted Montserrat
+ * (OFL) substitute second (styles/fonts.css, loaded by loadFonts()), and a metric-matched
+ * local fallback third (declared below, available at first paint) so the swap shifts nothing.
+ */
+
+:root {
+  /* colours (canon.css :root) */
+  --brand-blue: #2494d2;
+  --brand-yellow: #f5ee2f;
+  --hero-yellow: #f9ec31;
+  --rule-yellow: yellow;
+  --text: #3c3c3b;
+  --heading: #3c3c3c;
+  --light-gray: #f0f0f0;
+  --footer-bg: #444;
+  --background-color: #fff;
+  --link-color: var(--brand-blue);
+  --link-hover-color: #2600e6;
+
+  /* fonts (canon.css :root, with the metric-matched fallback added per stack) */
+  --font-light: gotham-light, 'Gotham-Light Substitute', gotham-light-fallback, sans-serif;
+  --font-medium: gothammedium, 'GothamMedium Substitute', gotham-medium-fallback, sans-serif;
+  --font-bold: gothambold, 'GothamBold Substitute', gotham-bold-fallback, sans-serif;
+  --body-font-family: var(--font-light);
+  --heading-font-family: var(--font-bold);
+
+  /* Bootstrap 4 container (canon.css § grid) */
+  --container-max: 1140px;
+  --container-gutter: 15px;
+
+  /* chrome reservation: the prototype's #wrapper-navbar measures 98px at 1440 (brand 82px
+     + navbar padding) and 90px at 360 (social row 34px + toggler 40px + padding) */
+  --nav-height: 98px;
+
+  /* boilerplate-compat aliases — the stock demo blocks (cards, columns, hero, widget)
+     reference these; they resolve to canon values so the token gate stays empty */
+  --light-color: var(--light-gray);
+  --body-font-size-s: 1rem;
+  --body-font-size-xs: 0.875rem;
+  --heading-font-size-s: 1.5rem;
+}
+
+@media (width <= 575px) {
+  :root {
+    --nav-height: 90px;
+  }
+}
+
+@media (width >= 576px) {
+  :root {
+    --container-max: 540px;
+  }
+}
+
+@media (width >= 768px) {
+  :root {
+    --container-max: 720px;
+  }
+}
+
+@media (width >= 992px) {
+  :root {
+    --container-max: 960px;
+  }
+}
+
+@media (width >= 1200px) {
+  :root {
+    --container-max: 1140px;
+  }
+}
+
+/* metric-matched local fallbacks for the Montserrat substitutes (fontTools: xAvgCharWidth
+   564/571/588 per 1000 upm against Arial 904/2048; ascent/descent = the substitutes' overridden
+   0.82725/0.11025em divided by each size-adjust, see fonts.css) */
+@font-face {
+  font-family: gotham-light-fallback;
+  src: local('Arial');
+  size-adjust: 127.77%;
+  ascent-override: 64.75%;
+  descent-override: 8.63%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: gotham-medium-fallback;
+  src: local('Arial');
+  size-adjust: 129.36%;
+  ascent-override: 63.95%;
+  descent-override: 8.52%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: gotham-bold-fallback;
+  src: local('Arial');
+  size-adjust: 133.21%;
+  ascent-override: 62.10%;
+  descent-override: 8.28%;
+  line-gap-override: 0%;
+}
+
+/* ---- Base (Bootstrap 4 reboot subset + theme body/type — canon.css § Base) ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+body {
+  display: none;
+  position: relative;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text);
+  font-family: var(--body-font-family);
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: left;
+}
+
+body.appear {
+  display: block;
+}
+
+/* chrome reservation + sticky host: the source's #wrapper-navbar is `position: sticky;
+   top: 0; z-index: 1020` — on EDS the host <header> is the sticky element so the block can
+   stick for the whole document (a sticky child would be bounded by the 98px host). The
+   reservation is released once the block has loaded so the .scrolled morph can shrink it.
+   The host stays transparent like the live wrapper; the blue is on nav.navbar (header.css). */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  height: var(--nav-height);
+}
+
+header:has(.header[data-block-status='loaded']) {
+  height: auto;
+}
+
+header .header,
+footer .footer {
+  visibility: hidden;
+}
+
+header .header[data-block-status='loaded'],
+footer .footer[data-block-status='loaded'] {
+  visibility: visible;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: var(--font-bold);
+  font-size: 2rem;
+  color: var(--heading);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: var(--font-medium);
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  text-transform: none;
+}
+
+/* EDS's media pipeline emits width/height attributes: height auto keeps the aspect ratio */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip-path: none;
+  white-space: normal;
+}
+
+/* links (canon: theme.min.css @2502 — measured on .grid-item-content and footer links) */
+a:any-link {
+  color: var(--link-color);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* ---- Buttons (canon.css § Buttons) ----
+   EDS convention: <em><a> → a.button.secondary, <strong><a> → a.button.primary.
+   The base a.button IS the source's .btn.btn-secondary (the site's dominant yellow pill);
+   .primary maps to the source's .btn-primary. */
+a.button:any-link,
+button.button {
+  display: inline-block;
+  padding: 0.15rem 2rem;
+  border: 2px solid var(--brand-yellow);
+  border-radius: 2rem;
+  background-color: var(--brand-yellow);
+  color: var(--brand-blue);
+  font-family: var(--font-medium);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  user-select: none;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+/* border-color from Bootstrap .btn-secondary:hover (theme.min.css), not overridden by
+   style.css L150 — the measured border-*-color transitions */
+a.button:any-link:hover,
+a.button:any-link:focus-visible,
+button.button:hover,
+button.button:focus-visible {
+  border-color: #545b62;
+  background-color: var(--brand-blue);
+  color: #fff;
+  text-decoration: none;
+}
+
+a.button.primary,
+button.button.primary {
+  border-color: var(--brand-blue);
+  background-color: var(--brand-blue);
+  color: #fff;
+}
+
+/* Bootstrap 4 .btn-primary:hover (theme.min.css) — the theme leaves it untouched */
+a.button.primary:hover,
+a.button.primary:focus-visible,
+button.button.primary:hover,
+button.button.primary:focus-visible {
+  border-color: #0062cc;
+  background-color: #0069d9;
+  color: #fff;
+}
+
+a.button[aria-disabled='true'],
+button.button:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* icons (the two SVG logos ride this: blocks size them) */
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---- Sections: the Bootstrap container model (canon.css § grid, § Sections) ----
+   A section is a band; its wrapper divs are the `.container` (max-width per breakpoint,
+   15px gutters). Bands own their vertical rhythm through the style classes below. */
+main > .section {
+  margin: 0;
+  padding: 0;
+}
+
+main > .section > div {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-gutter);
+}
+
+/* the ONE full-bleed escape (the source's .container-fluid): section style `fluid` */
+main > .section.fluid > div {
+  max-width: none;
+}
+
+/* the metadata block leaves its section empty */
+main .section:empty {
+  display: none;
+}
+
+/* section styles (section-metadata `style`), lifted from canon.css § Sections */
+main .section.band {
+  padding: 4rem 0;
+}
+
+main .section.bg-lightgray {
+  background-color: var(--light-gray);
+}
+
+.section-intro h2,
+main .section.section-intro h2 {
+  text-align: center;
+}
+
+.section-intro h2::after,
+main .section.section-intro h2::after {
+  content: ' ';
+  display: block;
+  width: 10%;
+  margin: 0.5em auto 1.5em;
+  border-top: 5px solid var(--rule-yellow);
+}
+
+/* intro section (section style `band section-intro intro-columns`): the source's WordPress
+   columns 20/60/20 with a 2em gap and a 1.75em bottom margin (index-proposed.css § Intro) —
+   the text column is 60% of the fluid row minus its share of the two gaps (0.6 × 64px);
+   below 782px the columns stack and the two gaps become vertical. Applied at C-final from
+   stardust/rollout/foundation-requests.md (home). */
+main .section.intro-columns > .default-content-wrapper {
+  display: flow-root;
+  max-width: none;
+  margin: 0 auto 1.75em;
+  padding: 2em 15px;
+}
+
+@media (width >= 782px) {
+  main .section.intro-columns > .default-content-wrapper {
+    width: calc(60% - 56.4px);
+    padding: 0;
+  }
+}
+
+/* FontAwesome social glyphs (canon.css § Icon font) — shared by the header and footer */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome, sans-serif;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fa-facebook::before {
+  content: '\f09a';
+}
+
+.fa-twitter::before {
+  content: '\f099';
+}
+
+.fa-linkedin::before {
+  content: '\f0e1';
+}
+
+.fa-instagram::before {
+  content: '\f16d';
+}
+
+.list-social {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-social li {
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+.list-social li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.list-social li a {
+  color: #fff;
+}
+
+/* ---- Experience Workspace edit mode (scoped on .prosemirror-editor, which exists only in
+   the da.live inline editor) — kept LAST, in ascending specificity ---- */
+
+/* card-as-link inner anchor while editing (EW6) */
+a .prosemirror-editor a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* repaint CTAs from their authored marks (EW3): <em>/<strong> wrapping the link */
+.prosemirror-editor p > :is(strong, em) > a:any-link {
+  display: inline-block;
+  padding: 0.15rem 2rem;
+  border: 2px solid var(--brand-yellow);
+  border-radius: 2rem;
+  background-color: var(--brand-yellow);
+  color: var(--brand-blue);
+  font-family: var(--font-medium);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.prosemirror-editor p > strong > a:any-link {
+  border-color: var(--brand-blue);
+  background-color: var(--brand-blue);
+  color: #fff;
+}
+
+/* the same, for the link wrapping the mark */
+.prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
+  display: inline-block;
+  padding: 0.15rem 2rem;
+  border: 2px solid var(--brand-yellow);
+  border-radius: 2rem;
+  background-color: var(--brand-yellow);
+  color: var(--brand-blue);
+  font-family: var(--font-medium);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.prosemirror-editor p > a:any-link:has(> strong:only-child) {
+  border-color: var(--brand-blue);
+  background-color: var(--brand-blue);
+  color: #fff;
+}
+
+.prosemirror-editor p > a:any-link > :is(strong, em) {
+  font-weight: inherit;
+  font-style: inherit;
+}

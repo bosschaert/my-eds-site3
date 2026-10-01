@@ -1,0 +1,139 @@
+{
+  "key": {
+    "url": "https://balbriggan.ie/",
+    "width": 360,
+    "regions": [
+      "header=#wrapper-navbar",
+      "footer=#wrapper-footer-full"
+    ]
+  },
+  "probedAt": "2026-09-28T10:47:38.411Z",
+  "data": {
+    "header": {
+      "found": true,
+      "sel": "#wrapper-navbar",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 360,
+        "h": 90
+      },
+      "position": "sticky",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "atoms": [
+        {
+          "key": "skip to content",
+          "text": "Skip to content",
+          "tag": "a",
+          "rect": {
+            "x": 360,
+            "y": -1,
+            "w": 1,
+            "h": 1
+          },
+          "box": {
+            "x": 360,
+            "y": -1,
+            "w": 1,
+            "h": 1
+          },
+          "boxTag": "a",
+          "style": {
+            "fontFamily": "gotham-light",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "lineHeight": "24px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(36, 148, 210)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "borderRadius": "0px",
+            "textDecorationLine": "none"
+          },
+          "boxStyle": null
+        }
+      ],
+      "icons": [
+        {
+          "tag": "img",
+          "rect": {
+            "x": 16,
+            "y": 21,
+            "w": 142,
+            "h": 48
+          },
+          "sig": "balbriggan-logo.svg",
+          "near": ""
+        }
+      ]
+    },
+    "footer": {
+      "found": true,
+      "sel": "#wrapper-footer-full",
+      "rect": {
+        "x": 0,
+        "y": 5208,
+        "w": 360,
+        "h": 200
+      },
+      "position": "static",
+      "backgroundColor": "rgb(68, 68, 68)",
+      "atoms": [
+        {
+          "key": "privacy",
+          "text": "Privacy",
+          "tag": "a",
+          "rect": {
+            "x": 288,
+            "y": 5359,
+            "w": 57,
+            "h": 15
+          },
+          "box": {
+            "x": 288,
+            "y": 5359,
+            "w": 57,
+            "h": 15
+          },
+          "boxTag": "a",
+          "style": {
+            "fontFamily": "gotham-light",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "lineHeight": "24px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(36, 148, 210)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "borderRadius": "0px",
+            "textDecorationLine": "none"
+          },
+          "boxStyle": null
+        }
+      ],
+      "icons": [
+        {
+          "tag": "img",
+          "rect": {
+            "x": 15,
+            "y": 5238,
+            "w": 192,
+            "h": 70
+          },
+          "sig": "fcc-logo.svg",
+          "near": ""
+        }
+      ]
+    }
+  }
+}

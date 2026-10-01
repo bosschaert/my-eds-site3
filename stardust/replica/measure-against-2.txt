@@ -1,0 +1,192 @@
+measure: https://balbriggan.ie/ @360: horizontal overflow +10px (scrollWidth 370 > viewport 360)
+measure  A = https://balbriggan.ie/
+         B = http://localhost:8791/prototypes/index-proposed.html
+  widths 1440, 360 · 22 selector(s) · 5 props · first match
+
+@ 1440px
+  root
+    A  scrollWidth  1440  viewport 1440  scrollHeight   4719
+    B  scrollWidth  1440  viewport 1440  scrollHeight   4717
+    Δ  scrollWidth 0  scrollHeight -2
+  #wrapper-navbar
+    A  x     0  y      0  w  1440  h    98  vis  "Skip to content News Downloads Newslett…"
+    B  x     0  y      0  w  1440  h    98  vis  "Skip to content News Downloads Newslett…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  .navbar-brand
+    A  x    31  y      8  w   176  h    82  vis  ""
+    B  x    31  y      8  w   176  h    82  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  .navbar-brand img
+    A  x    31  y     13  w   176  h    72  vis  ""  img 300×101 …/balbriggan-logo.svg
+    B  x    31  y     13  w   176  h    72  vis  ""  img 300×101 …/balbriggan-logo.svg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  .navs
+    A  x   453  y     13  w   956  h    72  vis  "News Downloads Newsletters Fingal Count…"
+    B  x   451  y     13  w   958  h    72  vis  "News Downloads Newsletters Fingal Count…"
+    Δ  Δx -2 Δy 0 Δw +2 Δh 0  width: 956.312px → 958.312px
+  .topnav
+    A  x   453  y     13  w   941  h    34  vis  "News Downloads Newsletters Fingal Count…"
+    B  x   451  y     13  w   943  h    34  vis  "News Downloads Newsletters Fingal Count…"
+    Δ  Δx -2 Δy 0 Δw +2 Δh 0  width: 941.125px → 943.125px
+  .primarynav
+    A  x   453  y     51  w   956  h    34  vis  "PLANS & PROJECTS DISCOVER LEADERSHIP & …"
+    B  x   451  y     51  w   958  h    34  vis  "PLANS & PROJECTS DISCOVER LEADERSHIP & …"
+    Δ  Δx -2 Δy 0 Δw +2 Δh 0  width: 956.312px → 958.312px
+  .navbar-toggler
+    A  x     0  y      0  w     0  h     0  hid  ""
+    B  x     0  y      0  w     0  h     0  hid  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  .section-hero
+    A  x     0  y     98  w  1440  h   630  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    B  x     0  y     98  w  1440  h   630  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  .herotransform
+    A  x   424  y    285  w   592  h   257  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    B  x   424  y    285  w   592  h   257  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  .section-newsletter
+    A  x     0  y   4228  w  1440  h   360  vis  "NEWSLETTER To hear all the latest on th…"
+    B  x     0  y   4227  w  1440  h   360  vis  "NEWSLETTER To hear all the latest on th…"
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  #gform_fields_1
+    A  x   260  y   4362  w   920  h   107  vis  "I consent to the collection and storage…"
+    B  x   260  y   4361  w   920  h   107  vis  "I consent to the collection and storage…"
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  #field_1_1
+    A  x   260  y   4378  w   306  h    46  vis  ""
+    B  x   260  y   4377  w   306  h    46  vis  ""
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  #field_1_2
+    A  x   566  y   4378  w   306  h    46  vis  ""
+    B  x   566  y   4377  w   306  h    46  vis  ""
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  #field_1_3
+    A  x   873  y   4378  w   307  h    46  vis  ""
+    B  x   873  y   4377  w   307  h    46  vis  ""
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  #input_1_1
+    A  x   260  y   4386  w   290  h    38  vis  ""
+    B  x   260  y   4385  w   290  h    38  vis  ""
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  #field_1_4
+    A  x   260  y   4448  w   920  h    21  vis  "I consent to the collection and storage…"
+    B  x   260  y   4447  w   920  h    21  vis  "I consent to the collection and storage…"
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  .gchoice
+    A  x   260  y   4448  w   920  h    21  vis  "I consent to the collection and storage…"
+    B  x   260  y   4447  w   904  h    21  vis  "I consent to the collection and storage…"
+    Δ  Δx 0 Δy -1 Δw -16 Δh 0  width: 919.984px → 903.984px
+  #choice_1_4_1
+    A  x   393  y   4455  w    13  h    13  vis  ""
+    B  x   379  y   4455  w    13  h    13  vis  ""
+    Δ  Δx -14 Δy 0 Δw 0 Δh 0  props equal
+  #label_1_4_1
+    A  x   411  y   4448  w   637  h    21  vis  "I consent to the collection and storage…"
+    B  x   396  y   4448  w   649  h    21  vis  "I consent to the collection and storage…"
+    Δ  Δx -15 Δy 0 Δw +12 Δh 0  width: 637px → 649px
+  .gform_footer
+    A  x   260  y   4486  w   920  h    70  vis  ""
+    B  x   260  y   4485  w   920  h    70  vis  ""
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  #gform_submit_button_1
+    A  x   638  y   4502  w   147  h    44  vis  ""
+    B  x   638  y   4501  w   148  h    44  vis  ""
+    Δ  Δx 0 Δy -1 Δw +1 Δh 0  width: 147px → 148px
+  #wrapper-footer-full
+    A  x     0  y   4588  w  1440  h   130  vis  "Privacy"
+    B  x     0  y   4587  w  1440  h   130  vis  "Privacy"
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+
+@ 360px
+  root
+    A  scrollWidth   370  viewport 360  scrollHeight   5410  ◄◄ OVERFLOW +10px
+    B  scrollWidth   360  viewport 360  scrollHeight   5408
+    Δ  scrollWidth -10  scrollHeight -2
+  #wrapper-navbar
+    A  x     0  y      0  w   360  h    90  vis  "Skip to content"
+    B  x     0  y      0  w   360  h    90  vis  "Skip to content"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  .navbar-brand
+    A  x    16  y     16  w   142  h    58  vis  ""
+    B  x    16  y     16  w   142  h    58  vis  ""
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  .navbar-brand img
+    A  x    16  y     21  w   142  h    48  vis  ""  img 300×101 …/balbriggan-logo.svg
+    B  x    16  y     21  w   142  h    48  vis  ""  img 300×101 …/balbriggan-logo.svg
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  .navs
+    A  x   198  y      8  w   146  h    74  vis  ""
+    B  x   201  y      8  w   143  h    74  vis  ""
+    Δ  Δx +3 Δy 0 Δw -3 Δh 0  width: 146.188px → 143.188px
+  .topnav
+    A  x   198  y      8  w   131  h    30  vis  ""
+    B  x   201  y      8  w   128  h    30  vis  ""
+    Δ  Δx +3 Δy 0 Δw -3 Δh 0  width: 131px → 128px
+  .primarynav
+    A  x   198  y     42  w   146  h    40  vis  ""
+    B  x   201  y     42  w   143  h    40  vis  ""
+    Δ  Δx +3 Δy 0 Δw -3 Δh 0  width: 146.188px → 143.188px
+  .navbar-toggler
+    A  x   198  y     42  w    56  h    40  vis  ""
+    B  x   201  y     42  w    56  h    40  vis  ""
+    Δ  Δx +3 Δy 0 Δw 0 Δh 0  props equal
+  .section-hero
+    A  x     0  y     90  w   360  h   630  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    B  x     0  y     90  w   360  h   630  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  .herotransform
+    A  x     9  y    243  w   342  h   324  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    B  x     9  y    243  w   342  h   324  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+    Δ  Δx 0 Δy 0 Δw 0 Δh 0  props equal
+  .section-newsletter
+    A  x     0  y   4619  w   360  h   589  vis  "NEWSLETTER To hear all the latest on th…"
+    B  x     0  y   4618  w   360  h   589  vis  "NEWSLETTER To hear all the latest on th…"
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  #gform_fields_1
+    A  x    15  y   4817  w   330  h   249  vis  "I consent to the collection and storage…"
+    B  x    15  y   4816  w   330  h   249  vis  "I consent to the collection and storage…"
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  #field_1_1
+    A  x    15  y   4817  w   330  h    46  vis  ""
+    B  x    15  y   4816  w   330  h    46  vis  ""
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  #field_1_2
+    A  x    15  y   4879  w   330  h    46  vis  ""
+    B  x    15  y   4878  w   330  h    46  vis  ""
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  #field_1_3
+    A  x    15  y   4941  w   330  h    46  vis  ""
+    B  x    15  y   4940  w   330  h    46  vis  ""
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  #input_1_1
+    A  x    15  y   4817  w   330  h    46  vis  ""
+    B  x    15  y   4816  w   330  h    46  vis  ""
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  #field_1_4
+    A  x    15  y   5003  w   330  h    63  vis  "I consent to the collection and storage…"
+    B  x    15  y   5002  w   330  h    63  vis  "I consent to the collection and storage…"
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  .gchoice
+    A  x    15  y   5003  w   330  h    63  vis  "I consent to the collection and storage…"
+    B  x    15  y   5002  w   330  h    63  vis  "I consent to the collection and storage…"
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  margin: 0px 0px 16px → 0px 0px 8px
+  #choice_1_4_1
+    A  x    31  y   5031  w    13  h    13  vis  ""
+    B  x    32  y   5030  w    13  h    13  vis  ""
+    Δ  Δx +1 Δy -1 Δw 0 Δh 0  props equal
+  #label_1_4_1
+    A  x    49  y   5003  w   281  h    63  vis  "I consent to the collection and storage…"
+    B  x    49  y   5002  w   281  h    63  vis  "I consent to the collection and storage…"
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  .gform_footer
+    A  x    15  y   5082  w   330  h    94  vis  ""
+    B  x    15  y   5081  w   330  h    94  vis  ""
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  #gform_submit_button_1
+    A  x    15  y   5098  w   330  h    52  vis  ""
+    B  x    15  y   5097  w   330  h    52  vis  ""
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal
+  #wrapper-footer-full
+    A  x     0  y   5208  w   360  h   200  vis  "Privacy"
+    B  x     0  y   5207  w   360  h   200  vis  "Privacy"
+    Δ  Δx 0 Δy -1 Δw 0 Δh 0  props equal

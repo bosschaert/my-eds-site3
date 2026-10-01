@@ -1,0 +1,75 @@
+/* footer — the balbriggan.ie footer bands (canon.css § Footer + Bootstrap 4 grid) */
+
+footer {
+  background-color: var(--footer-bg);
+}
+
+.footer .wrapper {
+  padding: 30px 0;
+  background-color: var(--footer-bg);
+}
+
+.footer .footer-bottom {
+  padding: 0;
+}
+
+.footer .container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-gutter);
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.footer .col-md-6,
+.footer .col-md-12 {
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.footer .widget-media-image p {
+  margin: 0;
+}
+
+.footer .widget-media-image .icon {
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+
+.footer .widget-media-image img {
+  width: 12rem;
+  height: auto;
+  max-width: 100%;
+}
+
+.footer .widget-custom-html {
+  margin-left: auto;
+  text-align: right;
+}
+
+.footer .widget-custom-html p {
+  margin: 0;
+}
+
+.footer .list-social {
+  margin: 0 0 1rem;
+}
+
+@media (width >= 768px) {
+  .footer .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .footer .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

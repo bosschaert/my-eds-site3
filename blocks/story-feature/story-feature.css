@@ -1,0 +1,118 @@
+/* story-feature — The Story Nursery band (source .story-nursery-home; index.css L21–L40) */
+
+.story-feature {
+  padding: 3rem 0;
+  background: var(--paper);
+}
+
+.story-feature .story-feature-wrap {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+
+.story-feature .story-feature-eyebrow p {
+  margin: 0 0 0.55rem;
+  text-align: center;
+  font: 600 0.68rem / 1.4 var(--body-font-family);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #a47c3d;
+}
+
+.story-feature .story-feature-heading h2 {
+  margin: 0 0 1.15rem;
+  text-align: center;
+  font: 400 clamp(2rem, 4vw, 3rem) / 1.1 var(--heading-font-family);
+  color: var(--leaf);
+}
+
+.story-feature .story-feature-image {
+  margin: 0 auto;
+  width: min(920px, 86vw);
+  line-height: 0;
+}
+
+.story-feature .story-feature-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+}
+
+.story-feature .story-feature-copy {
+  max-width: 44rem;
+  margin: 1rem auto 0;
+  text-align: center;
+}
+
+.story-feature .story-feature-copy p {
+  margin: 0 auto 1rem;
+  font: 1.03rem / 1.72 var(--heading-font-family);
+  color: var(--ink-soft);
+}
+
+/* the text link sits in its own paragraph; the source had the bare <a> in the copy div */
+.story-feature .story-feature-cta p {
+  margin: 0;
+  font: var(--body-font-size) / var(--body-line-height) var(--body-font-family);
+  color: var(--ink);
+}
+
+.story-feature .story-feature-cta a {
+  display: inline-block;
+  color: var(--leaf);
+  font: 600 0.72rem / 1.4 var(--body-font-family);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(78 93 68 / 40%);
+  padding-bottom: 0.28rem;
+}
+
+.story-feature .story-feature-cta a:hover {
+  border-bottom-color: var(--leaf);
+}
+
+.story-feature-container[id] {
+  scroll-margin-top: calc(var(--nav-h) + 10px);
+}
+
+@media (width <= 720px) {
+  .story-feature .story-feature-cta p {
+    line-height: 1.68;
+  }
+}
+
+@media (width <= 700px) {
+  .story-feature {
+    padding: 2.7rem 0 2.8rem;
+  }
+
+  .story-feature .story-feature-wrap {
+    width: 100%;
+  }
+
+  .story-feature .story-feature-eyebrow,
+  .story-feature .story-feature-heading,
+  .story-feature .story-feature-copy {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .story-feature .story-feature-image {
+    width: 90vw;
+  }
+
+  .story-feature .story-feature-image img {
+    aspect-ratio: 2 / 1;
+  }
+
+  .story-feature .story-feature-copy p {
+    font-size: 1rem;
+  }
+
+  .story-feature .story-feature-cta p {
+    font-size: var(--body-font-size);
+  }
+}

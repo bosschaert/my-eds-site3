@@ -1,0 +1,4623 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/measure.mjs",
+    "writtenAt": "2026-09-28T09:25:33.128Z",
+    "urls": [
+      "https://www.niravmanubhai.com/",
+      "http://localhost:8791/index-proposed.html"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "selectors": [
+      "header.nmh-header",
+      "main",
+      "section.hero",
+      "#host",
+      "#story-nursery",
+      "#rooms",
+      ".r24-doors",
+      ".reading-door",
+      ".r24-books",
+      ".r24-also",
+      "#story-bouquet-home",
+      "#conversation",
+      ".doors",
+      ".r24-follow",
+      "section.departure",
+      "footer.nmh-footer",
+      "#host h2",
+      "#rooms h2",
+      ".reading-door h3",
+      ".doors .btn",
+      ".r24-btn-solid",
+      ".blessing",
+      ".guj-blessing"
+    ],
+    "props": [
+      "display",
+      "position",
+      "boxSizing",
+      "width",
+      "height",
+      "maxWidth",
+      "margin",
+      "padding",
+      "gap",
+      "backgroundColor",
+      "backgroundImage",
+      "color",
+      "fontFamily",
+      "fontSize",
+      "fontWeight",
+      "lineHeight",
+      "letterSpacing",
+      "textTransform",
+      "textAlign",
+      "borderRadius",
+      "border",
+      "boxShadow",
+      "opacity",
+      "objectFit"
+    ],
+    "allMatches": false,
+    "failed": [],
+    "warnings": []
+  },
+  "widths": [
+    1440,
+    360
+  ],
+  "selectors": [
+    "header.nmh-header",
+    "main",
+    "section.hero",
+    "#host",
+    "#story-nursery",
+    "#rooms",
+    ".r24-doors",
+    ".reading-door",
+    ".r24-books",
+    ".r24-also",
+    "#story-bouquet-home",
+    "#conversation",
+    ".doors",
+    ".r24-follow",
+    "section.departure",
+    "footer.nmh-footer",
+    "#host h2",
+    "#rooms h2",
+    ".reading-door h3",
+    ".doors .btn",
+    ".r24-btn-solid",
+    ".blessing",
+    ".guj-blessing"
+  ],
+  "root": {
+    "https://www.niravmanubhai.com/": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 345,
+        "scrollHeight": 7792,
+        "overflowX": 0
+      },
+      "1440": {
+        "viewport": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1425,
+        "scrollHeight": 7409,
+        "overflowX": 0
+      }
+    },
+    "http://localhost:8791/index-proposed.html": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 345,
+        "scrollHeight": 7792,
+        "overflowX": 0
+      },
+      "1440": {
+        "viewport": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1425,
+        "scrollHeight": 7409,
+        "overflowX": 0
+      }
+    }
+  },
+  "pages": {
+    "https://www.niravmanubhai.com/": {
+      "360": {
+        "header.nmh-header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 345,
+              "h": 77
+            },
+            "visible": true,
+            "text": "Home Nirav Manubhai ☰",
+            "props": {
+              "display": "grid",
+              "position": "sticky",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "77px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "16px",
+              "gap": "normal",
+              "backgroundColor": "rgb(244, 239, 227)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "rgba(40, 50, 34, 0.25) 0px 1px 8px 0px",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 77,
+              "w": 345,
+              "h": 7544
+            },
+            "visible": true,
+            "text": "Nirav Manubhai — a home on the web Welc…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "7544.33px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "section.hero": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 77,
+              "w": 345,
+              "h": 194
+            },
+            "visible": true,
+            "text": "Nirav Manubhai — a home on the web",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "194.156px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "0px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#host": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 271,
+              "w": 345,
+              "h": 1262
+            },
+            "visible": true,
+            "text": "Welcome to my home. Rooms for stories, …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "1262.08px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#story-nursery": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 1533,
+              "w": 345,
+              "h": 472
+            },
+            "visible": true,
+            "text": "WHAT IS GROWING HERE The Story Nursery …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "471.703px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "43.2px 0px 44.8px",
+              "gap": "normal",
+              "backgroundColor": "rgb(244, 239, 227)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#rooms": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2005,
+              "w": 345,
+              "h": 2045
+            },
+            "visible": true,
+            "text": "THE ROOMS Come in. Look around. Stay as…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "2044.53px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-doors": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 2397,
+              "w": 295,
+              "h": 554
+            },
+            "visible": true,
+            "text": "01 Kabir Vaidya A lawyer who listens fo…",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "554.453px",
+              "maxWidth": "none",
+              "margin": "28.8px 0px 0px",
+              "padding": "0px",
+              "gap": "12px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".reading-door": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 25,
+              "y": 2397,
+              "w": 141,
+              "h": 263
+            },
+            "visible": true,
+            "text": "01 Kabir Vaidya A lawyer who listens fo…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "141.312px",
+              "height": "263.172px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(255, 255, 255, 0.22)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgb(202, 191, 163)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-books": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 2978,
+              "w": 295,
+              "h": 499
+            },
+            "visible": true,
+            "text": "05 My Books Books written across differ…",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "499.016px",
+              "maxWidth": "none",
+              "margin": "25.6px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(251, 248, 241)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgba(44, 37, 25, 0.14)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-also": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 3515,
+              "w": 295,
+              "h": 463
+            },
+            "visible": true,
+            "text": "ALSO IN THE HOUSE The Quiet Signal → Fi…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "462.547px",
+              "maxWidth": "none",
+              "margin": "38.4px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#story-bouquet-home": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 4049,
+              "w": 345,
+              "h": 685
+            },
+            "visible": true,
+            "text": "THE STORY BOUQUET Some stories are mean…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "685.469px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#conversation": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 4735,
+              "w": 345,
+              "h": 1997
+            },
+            "visible": true,
+            "text": "CONVERSATION If something sparked a tho…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "1997.08px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".doors": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 5956,
+              "w": 295,
+              "h": 386
+            },
+            "visible": true,
+            "text": "EMAIL ME WHATSAPP · WRITE TO ME SUBSTAC…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "385.547px",
+              "maxWidth": "none",
+              "margin": "25.6px 0px 0px",
+              "padding": "0px",
+              "gap": "12.8px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-follow": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 6367,
+              "w": 295,
+              "h": 293
+            },
+            "visible": true,
+            "text": "FOLLOW THE HOUSE One WhatsApp channel. …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "293.047px",
+              "maxWidth": "none",
+              "margin": "25.6px 0px 0px",
+              "padding": "22.4px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(251, 248, 241)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgba(44, 37, 25, 0.14)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "section.departure": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 6732,
+              "w": 345,
+              "h": 889
+            },
+            "visible": true,
+            "text": "Before you go BEFORE YOU GO I hope some…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "889.312px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "64px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer.nmh-footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 7621,
+              "w": 345,
+              "h": 170
+            },
+            "visible": true,
+            "text": "RETURN HOME CONTACT THE STORY BOUQUET P…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "170.484px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "30px 20px",
+              "gap": "22px",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "23.52px",
+              "letterSpacing": "2.24px",
+              "textTransform": "uppercase",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#host h2": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 348,
+              "w": 295,
+              "h": 32
+            },
+            "visible": true,
+            "text": "Welcome to my home.",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "32.4688px",
+              "maxWidth": "none",
+              "margin": "4px 0px 16px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "28px",
+              "fontWeight": "400",
+              "lineHeight": "32.48px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#rooms h2": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 2105,
+              "w": 295,
+              "h": 122
+            },
+            "visible": true,
+            "text": "Come in. Look around. Stay as long as y…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "122.484px",
+              "maxWidth": "none",
+              "margin": "4px 0px 16px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "35.2px",
+              "fontWeight": "400",
+              "lineHeight": "40.832px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".reading-door h3": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 37,
+              "y": 2518,
+              "w": 117,
+              "h": 21
+            },
+            "visible": true,
+            "text": "Kabir Vaidya",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "116.938px",
+              "height": "20.9844px",
+              "maxWidth": "none",
+              "margin": "5.6px 11.2px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "16.8px",
+              "fontWeight": "500",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".doors .btn": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 25,
+              "y": 5956,
+              "w": 295,
+              "h": 44
+            },
+            "visible": true,
+            "text": "EMAIL ME",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "44px",
+              "maxWidth": "none",
+              "margin": "0px 0px 9.6px",
+              "padding": "11.52px 16px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(78, 93, 68)",
+              "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+              "fontSize": "11.84px",
+              "fontWeight": "600",
+              "lineHeight": "14.208px",
+              "letterSpacing": "0.8288px",
+              "textTransform": "uppercase",
+              "textAlign": "center",
+              "borderRadius": "3px",
+              "border": "1px solid rgb(78, 93, 68)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-btn-solid": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 25,
+              "y": 4619,
+              "w": 295,
+              "h": 44
+            },
+            "visible": true,
+            "text": "GIFT A STORY BOUQUET →",
+            "props": {
+              "display": "inline-flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "44px",
+              "maxWidth": "none",
+              "margin": "18.4px 0px 0px",
+              "padding": "11.52px 16px",
+              "gap": "normal",
+              "backgroundColor": "rgb(78, 93, 68)",
+              "backgroundImage": "none",
+              "color": "rgb(251, 248, 241)",
+              "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+              "fontSize": "11.84px",
+              "fontWeight": "600",
+              "lineHeight": "14.208px",
+              "letterSpacing": "0.8288px",
+              "textTransform": "uppercase",
+              "textAlign": "start",
+              "borderRadius": "3px",
+              "border": "1px solid rgb(78, 93, 68)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".blessing": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 6984,
+              "w": 295,
+              "h": 46
+            },
+            "visible": true,
+            "text": "Come, Again.",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "46.0625px",
+              "maxWidth": "none",
+              "margin": "19.2px 0px 9.6px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "25.6px",
+              "fontWeight": "400",
+              "lineHeight": "46.08px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".guj-blessing": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 7040,
+              "w": 295,
+              "h": 63
+            },
+            "visible": true,
+            "text": "આવજો.",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "63.3594px",
+              "maxWidth": "none",
+              "margin": "6.4px 0px 9.6px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(67, 83, 59)",
+              "fontFamily": "Rasa, \"Playfair Display\", serif",
+              "fontSize": "35.2px",
+              "fontWeight": "600",
+              "lineHeight": "63.36px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(67, 83, 59)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      },
+      "1440": {
+        "header.nmh-header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1425,
+              "h": 81
+            },
+            "visible": true,
+            "text": "Home Nirav Manubhai ☰",
+            "props": {
+              "display": "grid",
+              "position": "sticky",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "81px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "18px 28px",
+              "gap": "normal",
+              "backgroundColor": "rgb(244, 239, 227)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "rgba(40, 50, 34, 0.25) 0px 1px 8px 0px",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 81,
+              "w": 1425,
+              "h": 7245
+            },
+            "visible": true,
+            "text": "Nirav Manubhai — a home on the web Welc…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "7244.67px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "section.hero": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 81,
+              "w": 1425,
+              "h": 900
+            },
+            "visible": true,
+            "text": "Nirav Manubhai — a home on the web",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "900px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "0px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#host": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 981,
+              "w": 1425,
+              "h": 1024
+            },
+            "visible": true,
+            "text": "Welcome to my home. Rooms for stories, …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "1024.47px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#story-nursery": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2005,
+              "w": 1425,
+              "h": 769
+            },
+            "visible": true,
+            "text": "WHAT IS GROWING HERE The Story Nursery …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "769.469px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "48px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(244, 239, 227)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#rooms": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2775,
+              "w": 1425,
+              "h": 2044
+            },
+            "visible": true,
+            "text": "THE ROOMS Come in. Look around. Stay as…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "2043.62px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-doors": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 221,
+              "y": 3129,
+              "w": 982,
+              "h": 1038
+            },
+            "visible": true,
+            "text": "01 Kabir Vaidya A world of stories wher…",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "982.406px",
+              "height": "1037.62px",
+              "maxWidth": "none",
+              "margin": "28.8px 0px 0px",
+              "padding": "0px",
+              "gap": "25.6px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".reading-door": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 221,
+              "y": 3129,
+              "w": 478,
+              "h": 506
+            },
+            "visible": true,
+            "text": "01 Kabir Vaidya A world of stories wher…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "478.406px",
+              "height": "506.016px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "16px",
+              "gap": "normal",
+              "backgroundColor": "rgba(255, 255, 255, 0.22)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgb(202, 191, 163)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-books": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 221,
+              "y": 4192,
+              "w": 982,
+              "h": 370
+            },
+            "visible": true,
+            "text": "05 My Books Books written across differ…",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "982.406px",
+              "height": "369.641px",
+              "maxWidth": "none",
+              "margin": "25.6px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(251, 248, 241)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgba(44, 37, 25, 0.14)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-also": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 221,
+              "y": 4600,
+              "w": 982,
+              "h": 147
+            },
+            "visible": true,
+            "text": "ALSO IN THE HOUSE The Quiet Signal → Fi…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "982.406px",
+              "height": "146.672px",
+              "maxWidth": "none",
+              "margin": "38.4px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#story-bouquet-home": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 4819,
+              "w": 1425,
+              "h": 468
+            },
+            "visible": true,
+            "text": "THE STORY BOUQUET Some stories are mean…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "468.359px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#conversation": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 5287,
+              "w": 1425,
+              "h": 1486
+            },
+            "visible": true,
+            "text": "CONVERSATION If something sparked a tho…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "1486.33px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".doors": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 722,
+              "y": 6232,
+              "w": 482,
+              "h": 214
+            },
+            "visible": true,
+            "text": "EMAIL ME WHATSAPP · WRITE TO ME SUBSTAC…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "482.156px",
+              "height": "214.391px",
+              "maxWidth": "none",
+              "margin": "25.6px 0px 0px",
+              "padding": "0px",
+              "gap": "12.8px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-follow": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 722,
+              "y": 6472,
+              "w": 482,
+              "h": 229
+            },
+            "visible": true,
+            "text": "FOLLOW THE HOUSE One WhatsApp channel. …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "482.156px",
+              "height": "229.234px",
+              "maxWidth": "none",
+              "margin": "25.6px 0px 0px",
+              "padding": "22.4px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(251, 248, 241)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgba(44, 37, 25, 0.14)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "section.departure": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 6773,
+              "w": 1425,
+              "h": 552
+            },
+            "visible": true,
+            "text": "Before you go BEFORE YOU GO I hope some…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "552.422px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "64px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer.nmh-footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 7326,
+              "w": 1425,
+              "h": 83
+            },
+            "visible": true,
+            "text": "RETURN HOME CONTACT THE STORY BOUQUET P…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "83.0938px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "30px 20px",
+              "gap": "22px",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "23.8px",
+              "letterSpacing": "2.24px",
+              "textTransform": "uppercase",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#host h2": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 221,
+              "y": 1058,
+              "w": 982,
+              "h": 67
+            },
+            "visible": true,
+            "text": "Welcome to my home.",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "982.406px",
+              "height": "66.7969px",
+              "maxWidth": "none",
+              "margin": "4px 0px 16px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "57.6px",
+              "fontWeight": "400",
+              "lineHeight": "66.816px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#rooms h2": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 221,
+              "y": 2875,
+              "w": 982,
+              "h": 134
+            },
+            "visible": true,
+            "text": "Come in. Look around. Stay as long as y…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "982.406px",
+              "height": "133.594px",
+              "maxWidth": "none",
+              "margin": "4px 0px 16px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "57.6px",
+              "fontWeight": "400",
+              "lineHeight": "66.816px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".reading-door h3": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 238,
+              "y": 3462,
+              "w": 444,
+              "h": 25
+            },
+            "visible": true,
+            "text": "Kabir Vaidya",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "444.406px",
+              "height": "24.8281px",
+              "maxWidth": "none",
+              "margin": "7.2px 0px 8px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "21.6px",
+              "fontWeight": "500",
+              "lineHeight": "24.84px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".doors .btn": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 722,
+              "y": 6232,
+              "w": 99,
+              "h": 44
+            },
+            "visible": true,
+            "text": "EMAIL ME",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "98.6406px",
+              "height": "44px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "11.52px 16px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(78, 93, 68)",
+              "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+              "fontSize": "11.84px",
+              "fontWeight": "600",
+              "lineHeight": "14.208px",
+              "letterSpacing": "0.8288px",
+              "textTransform": "uppercase",
+              "textAlign": "start",
+              "borderRadius": "3px",
+              "border": "1px solid rgb(78, 93, 68)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-btn-solid": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 671,
+              "y": 5171,
+              "w": 218,
+              "h": 44
+            },
+            "visible": true,
+            "text": "GIFT A STORY BOUQUET →",
+            "props": {
+              "display": "inline-flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "218.062px",
+              "height": "44px",
+              "maxWidth": "none",
+              "margin": "18.4px 0px 0px",
+              "padding": "11.52px 16px",
+              "gap": "normal",
+              "backgroundColor": "rgb(78, 93, 68)",
+              "backgroundImage": "none",
+              "color": "rgb(251, 248, 241)",
+              "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+              "fontSize": "11.84px",
+              "fontWeight": "600",
+              "lineHeight": "14.208px",
+              "letterSpacing": "0.8288px",
+              "textTransform": "uppercase",
+              "textAlign": "start",
+              "borderRadius": "3px",
+              "border": "1px solid rgb(78, 93, 68)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".blessing": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 221,
+              "y": 6995,
+              "w": 674,
+              "h": 46
+            },
+            "visible": true,
+            "text": "Come, Again.",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "674.406px",
+              "height": "46.0625px",
+              "maxWidth": "none",
+              "margin": "19.2px 0px 9.6px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "25.6px",
+              "fontWeight": "400",
+              "lineHeight": "46.08px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".guj-blessing": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 221,
+              "y": 7051,
+              "w": 674,
+              "h": 63
+            },
+            "visible": true,
+            "text": "આવજો.",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "674.406px",
+              "height": "63.3594px",
+              "maxWidth": "none",
+              "margin": "6.4px 0px 9.6px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(67, 83, 59)",
+              "fontFamily": "Rasa, \"Playfair Display\", serif",
+              "fontSize": "35.2px",
+              "fontWeight": "600",
+              "lineHeight": "63.36px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(67, 83, 59)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      }
+    },
+    "http://localhost:8791/index-proposed.html": {
+      "360": {
+        "header.nmh-header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 345,
+              "h": 77
+            },
+            "visible": true,
+            "text": "Home Nirav Manubhai ☰",
+            "props": {
+              "display": "grid",
+              "position": "sticky",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "77px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "16px",
+              "gap": "normal",
+              "backgroundColor": "rgb(244, 239, 227)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "rgba(40, 50, 34, 0.25) 0px 1px 8px 0px",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 77,
+              "w": 345,
+              "h": 7544
+            },
+            "visible": true,
+            "text": "Nirav Manubhai — a home on the web Welc…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "7544.33px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "section.hero": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 77,
+              "w": 345,
+              "h": 194
+            },
+            "visible": true,
+            "text": "Nirav Manubhai — a home on the web",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "194.156px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "0px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#host": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 271,
+              "w": 345,
+              "h": 1262
+            },
+            "visible": true,
+            "text": "Welcome to my home. Rooms for stories, …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "1262.08px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#story-nursery": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 1533,
+              "w": 345,
+              "h": 472
+            },
+            "visible": true,
+            "text": "WHAT IS GROWING HERE The Story Nursery …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "471.703px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "43.2px 0px 44.8px",
+              "gap": "normal",
+              "backgroundColor": "rgb(244, 239, 227)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#rooms": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2005,
+              "w": 345,
+              "h": 2045
+            },
+            "visible": true,
+            "text": "THE ROOMS Come in. Look around. Stay as…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "2044.53px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-doors": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 2397,
+              "w": 295,
+              "h": 554
+            },
+            "visible": true,
+            "text": "01 Kabir Vaidya A lawyer who listens fo…",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "554.453px",
+              "maxWidth": "none",
+              "margin": "28.8px 0px 0px",
+              "padding": "0px",
+              "gap": "12px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".reading-door": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 25,
+              "y": 2397,
+              "w": 141,
+              "h": 263
+            },
+            "visible": true,
+            "text": "01 Kabir Vaidya A lawyer who listens fo…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "141.312px",
+              "height": "263.172px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(255, 255, 255, 0.22)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgb(202, 191, 163)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-books": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 2978,
+              "w": 295,
+              "h": 499
+            },
+            "visible": true,
+            "text": "05 My Books Books written across differ…",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "499.016px",
+              "maxWidth": "none",
+              "margin": "25.6px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(251, 248, 241)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgba(44, 37, 25, 0.14)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-also": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 3515,
+              "w": 295,
+              "h": 463
+            },
+            "visible": true,
+            "text": "ALSO IN THE HOUSE The Quiet Signal → Fi…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "462.547px",
+              "maxWidth": "none",
+              "margin": "38.4px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#story-bouquet-home": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 4049,
+              "w": 345,
+              "h": 685
+            },
+            "visible": true,
+            "text": "THE STORY BOUQUET Some stories are mean…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "685.469px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#conversation": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 4735,
+              "w": 345,
+              "h": 1997
+            },
+            "visible": true,
+            "text": "CONVERSATION If something sparked a tho…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "1997.08px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".doors": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 5956,
+              "w": 295,
+              "h": 386
+            },
+            "visible": true,
+            "text": "EMAIL ME WHATSAPP · WRITE TO ME SUBSTAC…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "385.547px",
+              "maxWidth": "none",
+              "margin": "25.6px 0px 0px",
+              "padding": "0px",
+              "gap": "12.8px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-follow": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 6367,
+              "w": 295,
+              "h": 293
+            },
+            "visible": true,
+            "text": "FOLLOW THE HOUSE One WhatsApp channel. …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "293.047px",
+              "maxWidth": "none",
+              "margin": "25.6px 0px 0px",
+              "padding": "22.4px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(251, 248, 241)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgba(44, 37, 25, 0.14)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "section.departure": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 6732,
+              "w": 345,
+              "h": 889
+            },
+            "visible": true,
+            "text": "Before you go BEFORE YOU GO I hope some…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "889.312px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "64px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.56px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer.nmh-footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 7621,
+              "w": 345,
+              "h": 170
+            },
+            "visible": true,
+            "text": "RETURN HOME CONTACT THE STORY BOUQUET P…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "345px",
+              "height": "170.484px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "30px 20px",
+              "gap": "22px",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "23.52px",
+              "letterSpacing": "2.24px",
+              "textTransform": "uppercase",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#host h2": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 348,
+              "w": 295,
+              "h": 32
+            },
+            "visible": true,
+            "text": "Welcome to my home.",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "32.4688px",
+              "maxWidth": "none",
+              "margin": "4px 0px 16px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "28px",
+              "fontWeight": "400",
+              "lineHeight": "32.48px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#rooms h2": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 2105,
+              "w": 295,
+              "h": 122
+            },
+            "visible": true,
+            "text": "Come in. Look around. Stay as long as y…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "122.484px",
+              "maxWidth": "none",
+              "margin": "4px 0px 16px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "35.2px",
+              "fontWeight": "400",
+              "lineHeight": "40.832px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".reading-door h3": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 37,
+              "y": 2518,
+              "w": 117,
+              "h": 21
+            },
+            "visible": true,
+            "text": "Kabir Vaidya",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "116.938px",
+              "height": "20.9844px",
+              "maxWidth": "none",
+              "margin": "5.6px 11.2px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "16.8px",
+              "fontWeight": "500",
+              "lineHeight": "21px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".doors .btn": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 25,
+              "y": 5956,
+              "w": 295,
+              "h": 44
+            },
+            "visible": true,
+            "text": "EMAIL ME",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "44px",
+              "maxWidth": "none",
+              "margin": "0px 0px 9.6px",
+              "padding": "11.52px 16px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(78, 93, 68)",
+              "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+              "fontSize": "11.84px",
+              "fontWeight": "600",
+              "lineHeight": "14.208px",
+              "letterSpacing": "0.8288px",
+              "textTransform": "uppercase",
+              "textAlign": "center",
+              "borderRadius": "3px",
+              "border": "1px solid rgb(78, 93, 68)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-btn-solid": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 25,
+              "y": 4619,
+              "w": 295,
+              "h": 44
+            },
+            "visible": true,
+            "text": "GIFT A STORY BOUQUET →",
+            "props": {
+              "display": "inline-flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "44px",
+              "maxWidth": "none",
+              "margin": "18.4px 0px 0px",
+              "padding": "11.52px 16px",
+              "gap": "normal",
+              "backgroundColor": "rgb(78, 93, 68)",
+              "backgroundImage": "none",
+              "color": "rgb(251, 248, 241)",
+              "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+              "fontSize": "11.84px",
+              "fontWeight": "600",
+              "lineHeight": "14.208px",
+              "letterSpacing": "0.8288px",
+              "textTransform": "uppercase",
+              "textAlign": "start",
+              "borderRadius": "3px",
+              "border": "1px solid rgb(78, 93, 68)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".blessing": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 6984,
+              "w": 295,
+              "h": 46
+            },
+            "visible": true,
+            "text": "Come, Again.",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "46.0625px",
+              "maxWidth": "none",
+              "margin": "19.2px 0px 9.6px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "25.6px",
+              "fontWeight": "400",
+              "lineHeight": "46.08px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".guj-blessing": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 7040,
+              "w": 295,
+              "h": 63
+            },
+            "visible": true,
+            "text": "આવજો.",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "294.625px",
+              "height": "63.3594px",
+              "maxWidth": "none",
+              "margin": "6.4px 0px 9.6px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(67, 83, 59)",
+              "fontFamily": "Rasa, \"Playfair Display\", serif",
+              "fontSize": "35.2px",
+              "fontWeight": "600",
+              "lineHeight": "63.36px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "0px none rgb(67, 83, 59)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      },
+      "1440": {
+        "header.nmh-header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1425,
+              "h": 81
+            },
+            "visible": true,
+            "text": "Home Nirav Manubhai ☰",
+            "props": {
+              "display": "grid",
+              "position": "sticky",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "81px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "18px 28px",
+              "gap": "normal",
+              "backgroundColor": "rgb(244, 239, 227)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "rgba(40, 50, 34, 0.25) 0px 1px 8px 0px",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "main": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 81,
+              "w": 1425,
+              "h": 7245
+            },
+            "visible": true,
+            "text": "Nirav Manubhai — a home on the web Welc…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "7244.67px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "section.hero": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 81,
+              "w": 1425,
+              "h": 900
+            },
+            "visible": true,
+            "text": "Nirav Manubhai — a home on the web",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "900px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "0px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#host": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 981,
+              "w": 1425,
+              "h": 1024
+            },
+            "visible": true,
+            "text": "Welcome to my home. Rooms for stories, …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "1024.47px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#story-nursery": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2005,
+              "w": 1425,
+              "h": 769
+            },
+            "visible": true,
+            "text": "WHAT IS GROWING HERE The Story Nursery …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "769.469px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "48px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(244, 239, 227)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#rooms": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2775,
+              "w": 1425,
+              "h": 2044
+            },
+            "visible": true,
+            "text": "THE ROOMS Come in. Look around. Stay as…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "2043.62px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-doors": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 221,
+              "y": 3129,
+              "w": 982,
+              "h": 1038
+            },
+            "visible": true,
+            "text": "01 Kabir Vaidya A world of stories wher…",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "982.406px",
+              "height": "1037.62px",
+              "maxWidth": "none",
+              "margin": "28.8px 0px 0px",
+              "padding": "0px",
+              "gap": "25.6px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".reading-door": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 221,
+              "y": 3129,
+              "w": 478,
+              "h": 506
+            },
+            "visible": true,
+            "text": "01 Kabir Vaidya A world of stories wher…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "478.406px",
+              "height": "506.016px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "16px",
+              "gap": "normal",
+              "backgroundColor": "rgba(255, 255, 255, 0.22)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgb(202, 191, 163)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-books": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 221,
+              "y": 4192,
+              "w": 982,
+              "h": 370
+            },
+            "visible": true,
+            "text": "05 My Books Books written across differ…",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "982.406px",
+              "height": "369.641px",
+              "maxWidth": "none",
+              "margin": "25.6px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(251, 248, 241)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgba(44, 37, 25, 0.14)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-also": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 221,
+              "y": 4600,
+              "w": 982,
+              "h": 147
+            },
+            "visible": true,
+            "text": "ALSO IN THE HOUSE The Quiet Signal → Fi…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "982.406px",
+              "height": "146.672px",
+              "maxWidth": "none",
+              "margin": "38.4px 0px 0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#story-bouquet-home": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 4819,
+              "w": 1425,
+              "h": 468
+            },
+            "visible": true,
+            "text": "THE STORY BOUQUET Some stories are mean…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "468.359px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#conversation": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 5287,
+              "w": 1425,
+              "h": 1486
+            },
+            "visible": true,
+            "text": "CONVERSATION If something sparked a tho…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "1486.33px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "72px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".doors": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 722,
+              "y": 6232,
+              "w": 482,
+              "h": 214
+            },
+            "visible": true,
+            "text": "EMAIL ME WHATSAPP · WRITE TO ME SUBSTAC…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "482.156px",
+              "height": "214.391px",
+              "maxWidth": "none",
+              "margin": "25.6px 0px 0px",
+              "padding": "0px",
+              "gap": "12.8px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-follow": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 722,
+              "y": 6472,
+              "w": 482,
+              "h": 229
+            },
+            "visible": true,
+            "text": "FOLLOW THE HOUSE One WhatsApp channel. …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "482.156px",
+              "height": "229.234px",
+              "maxWidth": "none",
+              "margin": "25.6px 0px 0px",
+              "padding": "22.4px 24px",
+              "gap": "normal",
+              "backgroundColor": "rgb(251, 248, 241)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgba(44, 37, 25, 0.14)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "section.departure": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 6773,
+              "w": 1425,
+              "h": 552
+            },
+            "visible": true,
+            "text": "Before you go BEFORE YOU GO I hope some…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "552.422px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "64px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer.nmh-footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 7326,
+              "w": 1425,
+              "h": 83
+            },
+            "visible": true,
+            "text": "RETURN HOME CONTACT THE STORY BOUQUET P…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1425px",
+              "height": "83.0938px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "30px 20px",
+              "gap": "22px",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "23.8px",
+              "letterSpacing": "2.24px",
+              "textTransform": "uppercase",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#host h2": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 221,
+              "y": 1058,
+              "w": 982,
+              "h": 67
+            },
+            "visible": true,
+            "text": "Welcome to my home.",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "982.406px",
+              "height": "66.7969px",
+              "maxWidth": "none",
+              "margin": "4px 0px 16px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "57.6px",
+              "fontWeight": "400",
+              "lineHeight": "66.816px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#rooms h2": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 221,
+              "y": 2875,
+              "w": 982,
+              "h": 134
+            },
+            "visible": true,
+            "text": "Come in. Look around. Stay as long as y…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "982.406px",
+              "height": "133.594px",
+              "maxWidth": "none",
+              "margin": "4px 0px 16px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "57.6px",
+              "fontWeight": "400",
+              "lineHeight": "66.816px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".reading-door h3": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 238,
+              "y": 3462,
+              "w": 444,
+              "h": 25
+            },
+            "visible": true,
+            "text": "Kabir Vaidya",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "444.406px",
+              "height": "24.8281px",
+              "maxWidth": "none",
+              "margin": "7.2px 0px 8px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "21.6px",
+              "fontWeight": "500",
+              "lineHeight": "24.84px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".doors .btn": [
+          {
+            "index": 0,
+            "of": 6,
+            "rect": {
+              "x": 722,
+              "y": 6232,
+              "w": 99,
+              "h": 44
+            },
+            "visible": true,
+            "text": "EMAIL ME",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "98.6406px",
+              "height": "44px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "11.52px 16px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(78, 93, 68)",
+              "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+              "fontSize": "11.84px",
+              "fontWeight": "600",
+              "lineHeight": "14.208px",
+              "letterSpacing": "0.8288px",
+              "textTransform": "uppercase",
+              "textAlign": "start",
+              "borderRadius": "3px",
+              "border": "1px solid rgb(78, 93, 68)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".r24-btn-solid": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 671,
+              "y": 5171,
+              "w": 218,
+              "h": 44
+            },
+            "visible": true,
+            "text": "GIFT A STORY BOUQUET →",
+            "props": {
+              "display": "inline-flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "218.062px",
+              "height": "44px",
+              "maxWidth": "none",
+              "margin": "18.4px 0px 0px",
+              "padding": "11.52px 16px",
+              "gap": "normal",
+              "backgroundColor": "rgb(78, 93, 68)",
+              "backgroundImage": "none",
+              "color": "rgb(251, 248, 241)",
+              "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+              "fontSize": "11.84px",
+              "fontWeight": "600",
+              "lineHeight": "14.208px",
+              "letterSpacing": "0.8288px",
+              "textTransform": "uppercase",
+              "textAlign": "start",
+              "borderRadius": "3px",
+              "border": "1px solid rgb(78, 93, 68)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".blessing": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 221,
+              "y": 6995,
+              "w": 674,
+              "h": 46
+            },
+            "visible": true,
+            "text": "Come, Again.",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "674.406px",
+              "height": "46.0625px",
+              "maxWidth": "none",
+              "margin": "19.2px 0px 9.6px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "\"Playfair Display\", Georgia, serif",
+              "fontSize": "25.6px",
+              "fontWeight": "400",
+              "lineHeight": "46.08px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".guj-blessing": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 221,
+              "y": 7051,
+              "w": 674,
+              "h": 63
+            },
+            "visible": true,
+            "text": "આવજો.",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "674.406px",
+              "height": "63.3594px",
+              "maxWidth": "none",
+              "margin": "6.4px 0px 9.6px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(67, 83, 59)",
+              "fontFamily": "Rasa, \"Playfair Display\", serif",
+              "fontSize": "35.2px",
+              "fontWeight": "600",
+              "lineHeight": "63.36px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(67, 83, 59)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "deltas": {
+    "360": {
+      "header.nmh-header": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "section.hero": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#host": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#story-nursery": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#rooms": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".r24-doors": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".reading-door": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".r24-books": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".r24-also": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#story-bouquet-home": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#conversation": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".doors": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".r24-follow": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "section.departure": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "footer.nmh-footer": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#host h2": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#rooms h2": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".reading-door h3": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".doors .btn": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".r24-btn-solid": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".blessing": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".guj-blessing": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      }
+    },
+    "1440": {
+      "header.nmh-header": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "main": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "section.hero": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#host": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#story-nursery": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#rooms": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".r24-doors": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".reading-door": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".r24-books": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".r24-also": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#story-bouquet-home": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#conversation": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".doors": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".r24-follow": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "section.departure": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "footer.nmh-footer": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#host h2": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#rooms h2": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".reading-door h3": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".doors .btn": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".r24-btn-solid": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".blessing": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".guj-blessing": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      }
+    }
+  },
+  "rootDeltas": {
+    "360": {
+      "scrollWidth": 0,
+      "scrollHeight": 0
+    },
+    "1440": {
+      "scrollWidth": 0,
+      "scrollHeight": 0
+    }
+  }
+}

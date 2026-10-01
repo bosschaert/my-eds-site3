@@ -1,0 +1,86 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-28T09:39:05.838Z"
+  },
+  "breakpoints": [
+    1440,
+    360
+  ],
+  "pageTypes": {
+    "home": {
+      "archetype": "index",
+      "liveUrl": "https://www.niravmanubhai.com/",
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "css": [
+        "stardust/prototypes/canon.css",
+        "stardust/prototypes/index.css"
+      ],
+      "status": "gated",
+      "selfMeasure": {
+        "selectors": 23,
+        "deltaBoxes": 0,
+        "rootDelta": {
+          "360": 0,
+          "1440": 0
+        }
+      },
+      "iterations": {
+        "360": 1,
+        "1440": 3
+      },
+      "gates": {
+        "360": {
+          "pass": true,
+          "round": "iter2 (pixel) + iter1 (--full)",
+          "pixelDiff": "0.07%",
+          "heightDelta": 0,
+          "hotBands": "none",
+          "overflow": "scrollWidth 345 = viewport",
+          "contentDiff": "none — content + roles match",
+          "visualDiff": "6 advisory STRETCHED IMAGE flags — same as 1440",
+          "chromeParity": "✓ within tolerance; pixel crops header 100.00%, footer 99.99%"
+        },
+        "1440": {
+          "pass": true,
+          "round": "iter4 (pixel) + iter3 (--full)",
+          "pixelDiff": "0.00%",
+          "heightDelta": 0,
+          "hotBands": "none",
+          "overflow": "scrollWidth 1425 = viewport",
+          "contentDiff": "none — content + roles match",
+          "visualDiff": "7 advisory STRETCHED IMAGE flags — object-fit: cover boxes lifted from the source; props equal on both sides",
+          "chromeParity": "header ✓; footer Δy +41 uniform on unscrolled live loads (lazy books-image placeholder height); pixel crops header 100.00%, footer 100.00%"
+        }
+      },
+      "residuals": [
+        "Live page is bistable by 41px: .r24-books-media img (loading=lazy, attrs 1536×1024, rendition 1448×1086, height auto) renders 327px before load and 368px after. Prototype carries the loaded rendition size (1448×1086) so it is deterministic at the scrolled/loaded state the stitched live capture shows. chrome-parity (unscrolled live load) therefore reports a uniform +41px footer Δy; pixel crops of the footer are 100% at both widths.",
+        "Iter1 fixes (all instrument-driven): host portrait painted (live stitched capture paints the lazy image), books image intrinsic size, scroll-state morph of the fixed chrome (.nm-top.show above 500px, .nm-reading-progress fill) implemented with the live numbers."
+      ],
+      "motion": {
+        "observed": "stardust/replica/motion/index.json",
+        "build": "stardust/replica/motion/index-build.json",
+        "implemented": [
+          "drawer: .nmh-menu-btn toggles .open on nav.nmh-menu + .nmh-overlay; close button, overlay click, Escape close",
+          "back-to-top .nm-top.show above scrollY 500 (transition .2s ease lifted)",
+          "reading progress bar width = scrolled share",
+          ".reading-door hover transform (CSS, parity 220ms)"
+        ],
+        "dead": [
+          "header scroll-morph (static on live)",
+          ".btn hover (no measured diff)",
+          ".nmh-home hover",
+          ".story-nursery-home-cta hover"
+        ],
+        "compare": "4 parity, 0 extra, 3 MISSING transition lines (opacity/transform/visibility on .nm-top, 200ms) — class line `show` has parity (2× both sides) and the rule is lifted verbatim (transition .2s ease); the sampler missed the 200ms transitionend on the faster build, recorded as sampler artefact"
+      },
+      "asCaptured": [
+        ".host-img renders as an empty framed box (live capture state)",
+        "nav.nav present, display:none",
+        "drawer nav.nmh-menu off-canvas"
+      ],
+      "approvedBy": "hands-off"
+    }
+  },
+  "siblings": {}
+}

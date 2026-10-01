@@ -1,0 +1,225 @@
+{
+  "slug": "index",
+  "type": "home",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "hero",
+    "host-note",
+    "story-feature",
+    "rooms-doors",
+    "bouquet-feature",
+    "conversation-doors",
+    "departure"
+  ],
+  "slotsFilled": [
+    "hero",
+    "room-section",
+    "story-nursery-home",
+    "rooms",
+    "room-section",
+    "room-section",
+    "departure"
+  ],
+  "canonShas": {
+    "header": "432c79b70e55",
+    "footer": "dcca9553a4fe",
+    "css": "12f5ba9f61ee"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Nirav Manubhai — Writer, Observer &amp; A Home on the Web",
+    "description": "The Story House of Nirav Manubhai — short stories, serialised fiction, field notes and books. A quiet literary place built one story at a time.",
+    "canonical": "https://main--fdc3c10d--aemcoder.aem.page/",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Nirav Manubhai — Writer, Observer &amp; A Home on the Web",
+    "description": "The Story House of Nirav Manubhai — short stories, serialised fiction, field notes and books. A quiet literary place built one story at a time.",
+    "url": "https://main--fdc3c10d--aemcoder.aem.page/"
+  },
+  "migratedAt": "2026-09-28T09:42:34Z",
+  "designMdSha": "e934071b6130",
+  "designJsonSha": "4f3122aabb27",
+  "sourceCurrentSha": "0f1e2c6b2981",
+  "sourceProposedSha": "ae5b617ef27f",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "delivery-lint"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "content-diff generic --main main: findings none at 1440 (iter3 --full) and 360 (iter1 --full), main + header + footer roots; strings verbatim from stardust/current/pages/index.json",
+    "pixel-gate-1440": "0.00% (272 px, threshold 10%), height delta 0px, round iter4 @1440 (index-1440-iter4.log) [prototype regime]",
+    "pixel-gate-360": "0.07% (2036 px, threshold 10%), height delta 0px, round iter2 @360 (index-360-iter2.log) [prototype regime]",
+    "content-count": "content-diff: none — content + roles match (index-1440-iter3.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/index.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "0 P0 · 0 P1 · 1 P2 (delivery-lint --path /)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 21,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/kabir-vaidya",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/come-sit-just-ask",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/stills",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/house-specials",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/my-books",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/quiet-signal",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/axiom-stories",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/my-study",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/story-nursery",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/story-bouquet",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/patrons",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/contact",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/stills",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/axiom-stories",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/kabir-vaidya",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/come-sit-just-ask",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/my-books",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/my-study",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/quiet-signal",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/story-nursery",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/kabir-vaidya",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/come-sit-just-ask",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/stills",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/house-specials",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/my-books",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/quiet-signal",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/axiom-stories",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/my-study",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/story-bouquet",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/story-nursery",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/now",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/contact",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/story-bouquet",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/privacy",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/license",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/sitemap",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/follow",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "index.html",
+  "outputPathDefault": null,
+  "sidecar": "_meta.json",
+  "driverVersion": "1"
+}

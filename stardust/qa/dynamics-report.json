@@ -1,0 +1,106 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics check",
+  "writtenAt": "2026-09-28T12:18:00.493Z",
+  "origin": "https://main--22880d22--aemcoder.aem.live",
+  "parity": "stardust/dynamics/parity.json"
+ },
+ "results": [
+  {
+   "feature": "Newsletter sign-up form (Gravity Forms gform_1)",
+   "id": "f-form-gform-1-origin-5-fields",
+   "class": "F",
+   "status": "interim",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "5 × form.gform-newsletter [name=\"input_1\"], form.gform-newsletter [name=\"input_2\"], form.gform-newsletter [name=\"input_3\"], form.gform-newsletter [name=\"input_4.1\"], form.gform-newsletter input[type=\"submit\"] (min 5)",
+   "thirdParty": "",
+   "ms": 2126,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Newsletter sign-up form (Gravity Forms gform_1)",
+   "id": "f-form-gform-1-origin-5-fields",
+   "class": "F",
+   "status": "interim",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "3 × form.gform-newsletter [aria-required=\"true\"] (min 3)",
+   "thirdParty": "",
+   "ms": 2027,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Primary navigation dropdowns (4 aria-haspopup menu items)",
+   "id": "m-modal-trigger-aria-haspopup-chrome-only-a-content",
+   "class": "M",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "4 × header a.dropdown-toggle[aria-haspopup=\"true\"] (min 4)",
+   "thirdParty": "",
+   "ms": 2050,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Primary navigation dropdowns (4 aria-haspopup menu items)",
+   "id": "m-modal-trigger-aria-haspopup-chrome-only-a-content",
+   "class": "M",
+   "status": "done",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 1 page(s)",
+   "thirdParty": "",
+   "ms": 2029,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Hero background video (autoplay loop muted, Vimeo-hosted mp4)",
+   "id": "v-hero-video-vimeo-external-mp4",
+   "class": "V",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × video.vimeo-hero[autoplay][muted][loop][playsinline] source[type=\"video/mp4\"][src*=\"player.vimeo.com/external/625598732\"] (min 1)",
+   "thirdParty": "",
+   "ms": 2044,
+   "environmentLimit": "player.vimeo.com answers this network with 403 text/html (Cloudflare); Chromium blocks it as net::ERR_BLOCKED_BY_ORB on the SOURCE site and on the build alike (video-playback-probe, 2026-09-28) — the mp4 cannot be replayed from here; verify playback from a regular browser/region"
+  },
+  {
+   "feature": "Google Tag Manager container",
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "status": "interim",
+   "type": "consent-gate",
+   "pass": true,
+   "detail": "no request to 4 gated host pattern(s) before consent",
+   "thirdParty": "",
+   "ms": 6049,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Google Analytics / Ads beacon",
+   "id": "t-analytics-google-analytics-ads",
+   "class": "T",
+   "status": "interim",
+   "type": "consent-gate",
+   "pass": true,
+   "detail": "no request to 3 gated host pattern(s) before consent",
+   "thirdParty": "",
+   "ms": 5997,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Facebook pixel",
+   "id": "t-marketing-ad-retargeting-pixel",
+   "class": "T",
+   "status": "interim",
+   "type": "consent-gate",
+   "pass": true,
+   "detail": "no request to 2 gated host pattern(s) before consent",
+   "thirdParty": "",
+   "ms": 6064,
+   "environmentLimit": null
+  }
+ ]
+}

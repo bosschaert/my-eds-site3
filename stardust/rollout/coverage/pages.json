@@ -1,0 +1,40 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-28T10:17:33.428Z",
+    "readArtifacts": [
+      "stardust/migrated",
+      "stardust/state.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-28T12:18:34.681Z",
+  "pages": [
+    {
+      "slug": "index",
+      "path": "/",
+      "title": "Our Balbriggan",
+      "templateId": "index",
+      "source": {
+        "migratedHtml": "stardust/migrated/index.html",
+        "metaJson": "stardust/migrated/_meta.json",
+        "sourceHash": "sha256:2719f21a4c8f43eb25d381fc95092773d5fca529ec3542a5786beeaf0582b253"
+      },
+      "blocks": [
+        "hero",
+        "news-carousel",
+        "explore-grid",
+        "map",
+        "downloads",
+        "newsletter"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--22880d22--aemcoder.aem.page/",
+        "deployedAt": "2026-09-28T11:54:56.158Z",
+        "verifiedAt": "2026-09-28T12:18:34.681Z",
+        "error": null
+      }
+    }
+  ]
+}

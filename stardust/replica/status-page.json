@@ -1,0 +1,39 @@
+{
+  "overall": "In progress",
+  "steps": [
+    {
+      "name": "Analyzing your site",
+      "state": "Done"
+    },
+    {
+      "name": "Capturing brand and design",
+      "state": "Done"
+    },
+    {
+      "name": "Rebuilding page templates",
+      "state": "Done"
+    },
+    {
+      "name": "Checking fidelity",
+      "state": "Done"
+    },
+    {
+      "name": "Migrating your pages",
+      "state": "In progress"
+    }
+  ],
+  "templates": [
+    {
+      "name": "Home page",
+      "pages": 1,
+      "desktop": "Looks right",
+      "mobile": "Looks right",
+      "status": "Done"
+    }
+  ],
+  "pagesTotal": 1,
+  "pagesReady": [],
+  "attention": false,
+  "now": "The new site's shared parts are in place: the header with its menus, the footer, the fonts and the colour and type system, all served from the new platform. We are lining the header and footer up against your live site to the pixel before the page body is moved across.",
+  "next": "Next we move the home page body onto the new platform, block by block, and compare the served page with your live site on desktop and mobile."
+}

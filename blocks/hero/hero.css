@@ -1,0 +1,114 @@
+/* hero — index-proposed.css § Hero (theme style.css + quaystreet.css, measured 1440/360).
+   The section is `fluid`: the block runs edge-to-edge like the source's section.section-hero. */
+
+main .section.fluid > .hero-wrapper {
+  padding: 0;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero .hero-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 70vh;
+  min-height: 15rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero .hero-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #009bd9;
+  background-size: cover;
+  mix-blend-mode: multiply;
+}
+
+.hero .overlay-body {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.hero .herotransform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 37rem;
+  padding: 3rem;
+  background: #fff;
+}
+
+/* the source's `.overlay-body h2` + `.herotransform h2` metrics on the authored heading
+   whatever its level — the page authors the single <h1> (delivery-lint P0) */
+.hero .herotransform :is(h1, h2, h3) {
+  margin: 0;
+  color: var(--heading);
+  font-family: 'Gotham Bold', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero .herotransform :is(h1, h2, h3)::after {
+  content: ' ';
+  display: block;
+  width: 10%;
+  margin: 0.5em auto 1.5em;
+  border-top: 5px solid var(--rule-yellow);
+}
+
+/* the CTA rides its paragraph (EW3): the paragraph is a transparent flex item */
+.hero .herotransform p {
+  display: flex;
+  margin: 0;
+}
+
+.hero .vimeo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero .vimeo-container video {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: auto;
+  object-fit: cover;
+}
+
+@media (width <= 991px) {
+  .hero .herotransform {
+    margin: 2rem;
+    padding: 3rem 2rem;
+  }
+}

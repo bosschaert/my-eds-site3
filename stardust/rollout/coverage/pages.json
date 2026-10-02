@@ -1,0 +1,33 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-28T07:35:13.930Z",
+    "readArtifacts": [
+      "stardust/migrated",
+      "stardust/state.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-28T08:02:05.766Z",
+  "pages": [
+    {
+      "slug": "index",
+      "path": "/",
+      "title": "Example Domain",
+      "templateId": "index",
+      "source": {
+        "migratedHtml": "stardust/migrated/index.html",
+        "metaJson": "stardust/migrated/_meta.json",
+        "sourceHash": "sha256:bb2d12e05fc18c7b290c6ac769bf5179ec90d5fe385f2698670c17f7a938c4b4"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--c228fa32--aemcoder.aem.page/",
+        "deployedAt": "2026-09-28T07:58:37.501Z",
+        "verifiedAt": "2026-09-28T08:02:05.766Z",
+        "error": null
+      }
+    }
+  ]
+}

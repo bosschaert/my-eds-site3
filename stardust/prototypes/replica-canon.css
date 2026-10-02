@@ -1,0 +1,19 @@
+/* Shared canon — lifted verbatim from the source's inline stylesheet (stardust/replica/tokens.json).
+   Everything not set here is the browser's user-agent default, exactly as on the source. */
+:root {
+  --canvas: #eee;
+  --link: #348;
+  --font-body: system-ui, sans-serif;
+  --content-opacity: 0.8;
+  --column-width: 60vw;
+  --column-offset: 15vh;
+}
+body {
+  background: var(--canvas);
+  width: var(--column-width);
+  margin: var(--column-offset) auto;
+  font-family: var(--font-body);
+}
+h1 { font-size: 1.5em; }
+a:link,
+a:visited { color: var(--link); }

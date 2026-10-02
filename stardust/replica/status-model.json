@@ -1,0 +1,46 @@
+{
+  "overall": "In progress",
+  "steps": [
+    {
+      "name": "Analyzing your site",
+      "fraction": 1
+    },
+    {
+      "name": "Capturing brand and design",
+      "fraction": 1
+    },
+    {
+      "name": "Rebuilding page templates",
+      "fraction": 1
+    },
+    {
+      "name": "Checking fidelity",
+      "fraction": 1
+    },
+    {
+      "name": "Migrating your pages",
+      "fraction": 0.1
+    }
+  ],
+  "templates": [
+    {
+      "name": "Home page",
+      "pages": 1,
+      "desktop": "Yes",
+      "mobile": "Yes",
+      "status": "Done"
+    }
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "title": "Home",
+      "ready": false,
+      "state": "In progress",
+      "previewUrl": "https://main--c228fa32--aemcoder.aem.page/"
+    }
+  ],
+  "attention": false,
+  "now": "The rebuilt home page has passed every fidelity check and is being prepared for the new platform. The site inventory is complete: one page, one template, and no complex components to convert.",
+  "next": "Next, the platform foundation styles are set up and the home page is published to the preview site, where it is checked once more against the original."
+}

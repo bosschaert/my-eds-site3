@@ -1,0 +1,481 @@
+{
+  "slug": "index",
+  "type": "landing",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "header",
+    "project-grid",
+    "footer"
+  ],
+  "slotsFilled": [
+    "div",
+    "div"
+  ],
+  "canonShas": {
+    "header": "0879a0cbd2aa",
+    "footer": "fe350f3b6a70",
+    "css": "fdee72c804c7"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "out-of-scope-links",
+      "count": 102,
+      "targets": "/about, /blog, /contact and the 96 project paths",
+      "handling": "kept root-relative in content; repointed to https://www.thebeastisback.com at D-site via the redirects sheet (scope extension → repoint)"
+    }
+  ],
+  "metadata": {
+    "title": "The Beast Is Back Inc",
+    "description": "The Beast Is Back Inc is the work of Los Angeles based illustrator, Christopher Lee.",
+    "canonical": "https://main--c151e704--aemcoder.aem.page/",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "The Beast Is Back Inc",
+    "description": "The Beast Is Back Inc is the work of Los Angeles based illustrator, Christopher Lee.",
+    "url": "https://main--c151e704--aemcoder.aem.page/"
+  },
+  "migratedAt": "2026-10-01T14:39:37Z",
+  "designMdSha": "ea42a046e53e",
+  "designJsonSha": "e0cc15f23133",
+  "sourceCurrentSha": "f1fe67e09d6e",
+  "sourceProposedSha": "f5b888e487f4",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "delivery-lint"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "generator carries the captured strings verbatim (tiles.json from current/pages/index.json); content-diff inside the recreate gate: 0 structural on main+chrome, 1 justified (hidden editor banner)",
+    "pixel-gate-1440": "1.83%, height delta 1px, clipped 0, content MISSING 0 / HIDDEN 0 (stardust/replica/gates/all-1440/summary.md) [published regime]",
+    "pixel-gate-360": "0.78%, height delta 1px, clipped 0, content MISSING 0 / HIDDEN 0 (stardust/replica/gates/all-360/summary.md) [published regime]",
+    "content-count": "OPEN: content-diff: 7 (1 structural 🔴) (index-360-pub3.log)",
+    "delivery-lint": "0 P0 · 0 P1 · 1 P2 (delivery-lint --path /)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 199,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/about",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/blog",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/contact",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/about",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/blog",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/contact",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-smartlinks-amazing-insects/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/dumpster-stump-vinyl-toy/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/rhino-beetle-soft-vinyl-figure-archive/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/target-favorite-day-halloween-packaging/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/the-game-of-life-target-edition/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/dragonball-z-fan-art/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-scooby-doo-pop-up-mysteries/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-smartlinks-bigbots/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-kids-meal-crayola-color-adventure/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/cayce-golf/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-super-identity/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/whats-in-dragons-backpack/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-4/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/joy-riders/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-biti-buddies/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/monopoly-target-edition-1/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ic-friends-tshirt-club/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/mola-mola/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/animal-crossing-new-horizons-sticker-pack/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-smart-links-dragons/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-thing-in-a-thing-in-a-thing/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/in-a-spooky-haunted-house/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-transformers/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/mini-screen-prints/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/target-circle/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-dinosaur-kingdom/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/super7-apparel/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/the-juice-zone/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-smart-links-wild-wild-animals/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/mondo-disney-afternoon/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-mix-its/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-98/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-59/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/cat-eyed-boy/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/evil-candy/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/kidrobot-designercon/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/invasion-of-the-astro-monster-screen-print/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/target-holiday-seasonal/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-16/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-art-creations/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-secret-identity/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-create-your-cartoon/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/tiki-topple-board-game/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/brave-truthful-and-unselfish/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-49/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/target-easter-seasonal/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-5/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/moss-kingdom-print-series/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-43/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/whale-handmade-figure/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-58/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-96/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-23/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/case-study-print/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/the-creeps/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/target-miami/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/the-chocolate-room/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/mugs-for-night-cake-press/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/world-warriors/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/target-halloween/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-2/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-24/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-50/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/destroy-all-monsters/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-3/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/everything-lost-is-revealed-print/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/james-and-the-giant-peach-screen-print/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wonderful-feeling-wonderful-day/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/lost/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/wendys-craft-your-holiday/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/quaker-oatmeal/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/home-print-series/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-17/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/trip-to-the-aquarium-print-series/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/cereal-on-parade/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/electronic-arts-mural-1/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/tiger-screen-print/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/star-wars-action-figure-compendium/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery-1/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/campbells-can-costumes/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/new-gallery/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/hamilton-facebook-sticker-pack/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/mario-madness/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/nickelodeon/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/rooster/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/bear-super-species-concepts/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/the-trilogy/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/bullseye-qee/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/disney-consumer-products-mural/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/the-kaiju-formula/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/life-time-kids-academy/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/red-magazine/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/target-x-st-jude/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/heartwork/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/gemulon-returns/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/portraits-of-the-american-food-stand/",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "index.html",
+  "outputPathDefault": null,
+  "sidecar": "_meta.json",
+  "driverVersion": "1"
+}

@@ -1,0 +1,55 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-10-01T16:21:35.080Z",
+    "readArtifacts": [
+      "stardust/migrated"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-10-01T16:21:35.080Z",
+  "pages": [
+    {
+      "slug": "index",
+      "path": "/",
+      "title": "The Beast Is Back Inc",
+      "templateId": "index",
+      "source": {
+        "migratedHtml": "stardust/migrated/index.html",
+        "metaJson": "stardust/migrated/_meta.json",
+        "sourceHash": "sha256:070b0ee628b4c75fcbe11e5324469649809ad67942fe04c3f909a5d78650da99"
+      },
+      "blocks": [
+        "header",
+        "project-grid",
+        "footer"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--c151e704--aemcoder.aem.live/",
+        "deployedAt": "2026-10-01T15:44:21.300Z",
+        "verifiedAt": "2026-10-01T16:15:56.318Z",
+        "error": null,
+        "gate": {
+          "pass": true,
+          "pct": 0.78,
+          "heightDelta": 1,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 96,
+            "variable": []
+          },
+          "reasons": [],
+          "override": null,
+          "table": "stardust/replica/gates/all-360/summary.json",
+          "at": "2026-10-01T15:50:23.620Z"
+        }
+      }
+    }
+  ]
+}

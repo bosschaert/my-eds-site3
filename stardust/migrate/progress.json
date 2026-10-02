@@ -1,0 +1,26 @@
+{
+  "units": {
+    "plan": {
+      "status": "done",
+      "kind": "plan",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "verdict": "plan: 1 page (index, landing archetype) → / (index.html); 0 collisions; no siblings, no thin pages",
+      "startedAt": "2026-10-01T14:36:20Z",
+      "endedAt": "2026-10-01T14:36:20Z"
+    },
+    "landing": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-01T14:38:57Z",
+      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 (index → index.html, Branch A, 199 assets, 2 sections; 102 out-of-scope links → redirects at D-site)",
+      "endedAt": "2026-10-01T14:40:05Z"
+    }
+  }
+}

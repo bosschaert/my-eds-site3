@@ -1,0 +1,130 @@
+{
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "index"
+      ],
+      "pages": 3,
+      "blocks": 3,
+      "startedAt": "2026-10-01T14:42:14Z",
+      "verdict": "foundation: pages 3/3 live (/, /nav, /footer), blocks 3, plain-html ok, images 97/98 (icon now eager), lint clean, publish yes; preview gate 1440 1.83% / 360 0.78%, Δh 1px, clipped 0, presence MISSING 0 HIDDEN 0; 3 fix rounds (grid offset, original tile dims, icon fill)",
+      "gates": {
+        "360": {
+          "archetype": "0.78%",
+          "dh": "1px",
+          "clip": 0,
+          "crop": {
+            "header": "0.09%",
+            "footer": "1.92%"
+          }
+        },
+        "1440": {
+          "archetype": "1.83%",
+          "dh": "1px",
+          "clip": 0,
+          "crop": {
+            "header": "0.16%",
+            "footer": "0.43%"
+          }
+        },
+        "crop": "header ≤0.16% / footer ≤1.92% both widths",
+        "chrome": "9/10 deltas, all accepted prototype residuals (nav line-height metrics, icon signature, region boxes)"
+      },
+      "endedAt": "2026-10-01T15:35:15Z"
+    },
+    "archetype": {
+      "status": "done",
+      "kind": "archetype",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "blocks": 3,
+      "startedAt": "2026-10-01T15:37:11Z",
+      "endedAt": "2026-10-01T15:44:21Z",
+      "verdict": "archetype index: pages 1/1 live (/ published), blocks 3, gate-all on preview host 1440 1.83% / 360 0.78%, Δh 1px, clipped 0, MISSING 0 / HIDDEN 0, 0 fix rounds (already live from the foundation unit), requests 0",
+      "gates": {
+        "360": {
+          "archetype": "0.78%",
+          "text": "1.95%",
+          "dh": "1px",
+          "clip": 0,
+          "content": "MISSING 0 / HIDDEN 0",
+          "verdict": "PASS",
+          "evidence": "stardust/replica/gates/all-360/runs/"
+        },
+        "1440": {
+          "archetype": "1.83%",
+          "text": "3.95%",
+          "dh": "1px",
+          "clip": 0,
+          "content": "MISSING 0 / HIDDEN 0",
+          "verdict": "PASS",
+          "evidence": "stardust/replica/gates/all-1440/runs/"
+        },
+        "crop": "as foundation unit (header ≤0.16% / footer ≤1.92%)",
+        "chrome": "as foundation unit (9/10 accepted residuals)",
+        "input": "gate-all --state stardust/.work/replica/gate-state.json (derived: index deployed, liveUrl published origin) --eds-host preview"
+      }
+    },
+    "gate-all": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "blocks": 3,
+      "startedAt": "2026-10-01T15:44:45Z",
+      "endedAt": "2026-10-01T15:50:23Z",
+      "verdict": "gate-all: roster 1/1 PASS on the published origin at both widths — 1440 1.83% (text 3.95%) / 360 0.78% (text 1.95%), Δh 1px, clipped 0, MISSING 0 / HIDDEN 0; coverage gate applied",
+      "gates": {
+        "360": {
+          "archetype": "0.78%",
+          "text": "1.95%",
+          "dh": "1px",
+          "clip": 0,
+          "content": "MISSING 0 / HIDDEN 0",
+          "verdict": "PASS",
+          "evidence": "stardust/replica/gates/all-360/summary.json"
+        },
+        "1440": {
+          "archetype": "1.83%",
+          "text": "3.95%",
+          "dh": "1px",
+          "clip": 0,
+          "content": "MISSING 0 / HIDDEN 0",
+          "verdict": "PASS",
+          "evidence": "stardust/replica/gates/all-1440/summary.json"
+        },
+        "origin": "https://www.thebeastisback.com/",
+        "eds": "https://main--c151e704--aemcoder.aem.live/"
+      }
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "blocks": 3,
+      "startedAt": "2026-10-01T15:50:53Z",
+      "endedAt": "2026-10-01T15:50:54Z",
+      "verdict": "final: foundation unchanged (14 files), 0 foundation requests queued, no re-gate needed; roster 1/1 PASS both widths; C-deliver closed",
+      "gates": {
+        "360": {
+          "archetype": "0.78%",
+          "verdict": "PASS"
+        },
+        "1440": {
+          "archetype": "1.83%",
+          "verdict": "PASS"
+        },
+        "requests": 0
+      }
+    }
+  }
+}

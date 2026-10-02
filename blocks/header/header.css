@@ -1,0 +1,194 @@
+/* header block — the live [id="header"] / [id="topNav"] / [id="mobileNav"] / [id="mobileMenuLink"] (canon.css) */
+header .header {
+  display: block;
+}
+
+.header [id="header"] {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 44px;
+}
+
+/* logo: live [id="logo"] 146.4 = 140 logo + strut descent */
+.header [id="logo"] {
+  order: 1;
+  width: 100%;
+  padding-bottom: 6.4px;
+  text-align: center;
+  line-height: 0;
+}
+
+.header [id="logo"] :is(h1, h2, h3) {
+  display: block;
+  height: 140px;
+  margin: 0 auto;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 0;
+}
+
+.header [id="logo"] a {
+  display: inline-block;
+  height: 100%;
+}
+
+.header [id="logo"] picture {
+  display: block;
+  height: 100%;
+}
+
+.header [id="logo"] img {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+}
+
+/* desktop nav: the single list sits under the logo */
+.header [id="mobileNav"] {
+  order: 2;
+  position: relative;
+  z-index: 890;
+  width: 100%;
+  margin-top: 22px;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.header [id="topNav"],
+.header [id="topNav"] ul,
+.header [id="topNav"] li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header [id="topNav"] ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header [id="topNav"] li {
+  margin-right: 38px;
+}
+
+.header [id="topNav"] li:last-child {
+  margin-right: 0;
+}
+
+.header [id="topNav"] a {
+  display: inline-block;
+  padding: 0;
+  line-height: 19px;
+  color: var(--color-text);
+}
+
+.header [id="topNav"] a[aria-current="page"],
+.header [id="topNav"] a:hover {
+  color: var(--color-nav-active);
+}
+
+.header [id="mobileMenuLink"] {
+  display: none;
+}
+
+.header .header-extra {
+  order: 3;
+}
+
+.header .page-divider {
+  border-bottom: 1px dotted var(--color-accent);
+}
+
+@media (width <= 750px) {
+  .header [id="header"] {
+    margin-bottom: 30px;
+  }
+
+  .header [id="mobileMenuLink"] {
+    order: 2;
+    display: block;
+    margin: 0 0 25px;
+    padding: 0 0 15px;
+    border-bottom: 1px dotted var(--color-accent);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .header [id="mobileMenuLink"] a {
+    display: block;
+    margin: 0;
+    font-size: 16px;
+    color: var(--color-text);
+    cursor: pointer;
+  }
+
+  .header [id="mobileNav"] {
+    order: 1;
+    height: 0;
+    overflow: hidden;
+    margin: 0 0 15px;
+    text-align: center;
+    line-height: 1.6em;
+  }
+
+  body.menu-open .header [id="mobileNav"] {
+    height: auto;
+  }
+
+  .header [id="mobileNav"] .wrapper {
+    padding: 0 0 1em;
+    border-bottom: 1px dotted var(--color-accent);
+  }
+
+  .header [id="topNav"],
+  .header [id="topNav"] ul,
+  .header [id="topNav"] li {
+    display: block;
+  }
+
+  .header [id="topNav"] li {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .header [id="topNav"] a {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2.5em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-mobile-nav);
+  }
+
+  .header [id="topNav"] a[aria-current="page"],
+  .header [id="topNav"] a:hover {
+    color: var(--color-text);
+  }
+
+  .header [id="logo"] {
+    order: 3;
+    padding-bottom: 0;
+  }
+
+  .header [id="logo"] :is(h1, h2, h3) {
+    height: 120px;
+  }
+
+  .header .header-extra {
+    order: 4;
+  }
+}

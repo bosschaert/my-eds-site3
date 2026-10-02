@@ -1,0 +1,163 @@
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+
+/* Canon — values lifted from thebeastisback.com (stardust/prototypes/css/canon.css). */
+:root {
+  /* colors */
+  --color-bg: #fff;
+  --color-text: #000;
+  --color-accent: #f26447;
+  --color-accent-button: #f26245;
+  --color-thumb: #dfddc6;
+  --color-nav-active: #c4a03f;
+  --color-mobile-nav: rgb(0 0 0 / 70%);
+  --color-newsletter-bg: #000;
+  --color-input-text: #222;
+  --color-input-border: rgb(0 0 0 / 12%);
+  --background-color: var(--color-bg);
+  --text-color: var(--color-text);
+  --link-color: var(--color-accent);
+  --link-hover-color: #444;
+
+  /* fonts */
+  --font-serif: 'PT Serif', georgia, serif;
+  --font-sans: 'Source Sans Pro', 'Source Sans 3', arial, sans-serif;
+  --body-font-family: var(--font-serif);
+  --heading-font-family: var(--font-sans);
+  --body-font-size: 14px;
+
+  /* canvas: 1200 content + 76 padding, content-box (cap 1352); 10px page margin */
+  --canvas-max-width: 1200px;
+  --canvas-pad-x: 76px;
+  --canvas-pad-top: 86px;
+  --canvas-pad-bottom: 86px;
+  --page-pad-y: 57px;
+
+  /* header reservation (logo 146.4 + nav 22 + 24 + margin 44 + divider 1; measured 237.4) */
+  --nav-height: 237px;
+}
+
+@media (width <= 750px) {
+  :root {
+    --canvas-pad-x: 20px;
+    --canvas-pad-top: 0;
+    --canvas-pad-bottom: 20px;
+    --nav-height: 231px;
+  }
+}
+
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  display: none;
+  margin: 0;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  line-height: 1.6em;
+}
+
+body.appear {
+  display: block;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+img {
+  border: 0;
+}
+
+/* the live #canvas, split across the three landmarks */
+header,
+main,
+footer {
+  box-sizing: content-box;
+  max-width: var(--canvas-max-width);
+  margin: 0 auto;
+  padding: 0 var(--canvas-pad-x);
+}
+
+header {
+  height: var(--nav-height);
+  padding-top: var(--canvas-pad-top);
+}
+
+header:has(.header[data-block-status="loaded"]) {
+  height: auto;
+}
+
+header .header,
+footer .footer {
+  visibility: hidden;
+}
+
+header .header[data-block-status="loaded"],
+footer .footer[data-block-status="loaded"] {
+  visibility: visible;
+}
+
+/* the live #page */
+main {
+  position: relative;
+  padding-top: var(--page-pad-y);
+  padding-bottom: var(--page-pad-y);
+}
+
+footer {
+  padding-bottom: var(--canvas-pad-bottom);
+}
+
+main img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+/* sections */
+main > .section {
+  margin: 0;
+}
+
+main > .section > div {
+  margin: 0;
+  padding: 0;
+}
+
+main .section:empty {
+  display: none;
+}
+
+/* the page's brand <h1> section: hidden until the header block adopts the heading */
+main > .section.brand {
+  display: none;
+}

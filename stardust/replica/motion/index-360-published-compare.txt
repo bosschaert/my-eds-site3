@@ -1,0 +1,6 @@
+motion header scroll-morph: dead on live — not required (header static across the scroll traversal on both sides)
+motion widget #mobileMenuLink a: dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))
+motion hover #projectThumbs .project: parity (img.color, self.color; 300ms)
+motion transition opacity: parity (1 event(s) on live, 1 on build, 140ms)
+motion class menu-open: parity (added 1× on live, 1× on build)
+motion summary: 3 parity, 0 missing, 0 extra, 0 advisory (0 out of tolerance, 2 dead or unobserved on live — not required; tolerance 150ms / 8px)

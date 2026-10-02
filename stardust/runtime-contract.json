@@ -1,0 +1,13 @@
+{
+  "runtime": "aem-boilerplate (scripts/aem.js vendored; scripts/scripts.js with decorateMain = decorateIcons > buildAutoBlocks > decorateSections > decorateBlocks > decorateButtons)",
+  "blockWrapperClass": "<name>-wrapper on the block's parent div; <name>-container on the section; block gets .block + data-block-name + data-block-status",
+  "buttonClasses": "a.button inside p.button-wrapper; variants .primary (strong), .secondary (em), .accent (strong+em)",
+  "buttonization": "requires authored <strong>/<em> around the single-link <p>; bare <p><a> links are NOT buttonized (a.title set from text); links containing <img> skipped",
+  "fragmentScriptPolicy": "blocks/fragment/fragment.js is the only cross-block import; loadFragment(path) fetches <path>.plain.html, runs decorateMain + loadSections; header/footer blocks load /nav and /footer through it (getMetadata('nav'|'footer') override)",
+  "emptySectionCollapse": true,
+  "fonts": "scripts/scripts.js loadFonts() loads styles/fonts.css in loadEager when innerWidth >= 900 (or sessionStorage fonts-loaded), always again in loadLazy; fonts.css declares PT Serif 400 + Source Sans Pro 200-900 (variable)",
+  "sections": "decorateSections wraps default content in .default-content-wrapper; sections start display:none until loadSection; section-metadata folded by the pipeline",
+  "icons": ":name: -> span.icon.icon-name -> <img src=/icons/name.svg alt='' width=16 height=16 loading=lazy>",
+  "probedAt": "2026-10-01",
+  "probedFrom": ["scripts/scripts.js", "scripts/aem.js"]
+}

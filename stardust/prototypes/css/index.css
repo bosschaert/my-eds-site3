@@ -1,0 +1,34 @@
+/* Landing archetype — the autocolumns project grid (lifted: site.css #projectThumbs rules,
+   placement model measured at 751/900/1024/1200/1440/360). */
+#projectThumbs { clear: both; margin-top: -1.2%; }
+#projectThumbs .wrapper { position: relative; }
+#projectThumbs .project {
+  position: absolute;
+  display: block;
+  box-sizing: content-box;
+  margin: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+#projectThumbs .project > div { position: relative; }
+#projectThumbs .project .project-image { background: var(--color-thumb); margin: 0; }
+#projectThumbs .project .project-image .intrinsic { position: relative; height: auto; padding-bottom: 0; line-height: 0; text-align: center; overflow: hidden; opacity: 1; transition: opacity .14s ease-out; }
+#projectThumbs .project .project-image .content-fill { position: static; }
+#projectThumbs .project .project-image img { display: block; width: 100%; height: auto; }
+#projectThumbs .project .project-item-count { display: none; }
+#projectThumbs .project .project-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6em;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  text-align: center;
+  color: rgba(0, 0, 0, 0);
+}
+#projectThumbs .project:hover .project-image .intrinsic { opacity: 0; }
+#projectThumbs .project:hover .project-title { color: #000; }

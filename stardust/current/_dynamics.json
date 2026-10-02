@@ -1,0 +1,384 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-10-01T14:41:12.100Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://www.thebeastisback.com/"
+  ],
+  "reachSource": "stardust/current/pages"
+ },
+ "pages": {
+  "/": {
+   "url": "https://www.thebeastisback.com/",
+   "status": 200,
+   "host": "www.thebeastisback.com",
+   "title": "The Beast Is Back Inc",
+   "forms": [
+    {
+     "name": "newsletter-form",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "email:email"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en-US",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {},
+   "framework": null,
+   "globals": [],
+   "clientRendered": [
+    {
+     "cls": "yui3-js-enabled js flexbox",
+     "attrs": [],
+     "text": "The Beast Is Back Inc document.documentElement.classList.add"
+    },
+    {
+     "cls": "project gallery-project",
+     "attrs": [
+      "data-url=/wendys-smartlinks-amazing-insects/"
+     ],
+     "text": "Wendy's – SmartLinks™ Amazing Insects Our Kids’ Meals are so"
+    },
+    {
+     "cls": "project gallery-project",
+     "attrs": [
+      "data-url=/dumpster-stump-vinyl-toy/"
+     ],
+     "text": "Dumpster Stump vinyl toy collaboration with 100% Soft 100% S"
+    },
+    {
+     "cls": "project gallery-project",
+     "attrs": [
+      "data-url=/rhino-beetle-soft-vinyl-figure-archive/"
+     ],
+     "text": "Rhino Beetle - Soft Vinyl Figure Archive This is an archive "
+    },
+    {
+     "cls": "project gallery-project",
+     "attrs": [
+      "data-url=/target-favorite-day-halloween-packaging/"
+     ],
+     "text": "Target - Favorite Day Halloween Packaging Illustrations for "
+    },
+    {
+     "cls": "project gallery-project",
+     "attrs": [
+      "data-url=/the-game-of-life-target-edition/"
+     ],
+     "text": "The Game of Life - Target Edition Target’s crossover with cl"
+    },
+    {
+     "cls": "project gallery-project",
+     "attrs": [
+      "data-url=/dragonball-z-fan-art/"
+     ],
+     "text": "DragonBall Z - Fan Art Some misc fan art from one of my favo"
+    },
+    {
+     "cls": "project gallery-project",
+     "attrs": [
+      "data-url=/wendys-scooby-doo-pop-up-mysteries/"
+     ],
+     "text": "Wendy's – Scooby Doo Pop-Up Mysteries Client: Wendy’sAgency:"
+    },
+    {
+     "cls": "project gallery-project",
+     "attrs": [
+      "data-url=/wendys-smartlinks-bigbots/"
+     ],
+     "text": "Wendy's – SmartLinks™ BigBots The annual building program re"
+    },
+    {
+     "cls": "project gallery-project",
+     "attrs": [
+      "data-url=/wendys-kids-meal-crayola-color-adventure/"
+     ],
+     "text": "Wendy's Kids' Meal – Crayola Color Adventure Get ready to go"
+    },
+    {
+     "cls": "project gallery-project",
+     "attrs": [
+      "data-url=/cayce-golf/"
+     ],
+     "text": "Cayce Golf Sugar skulls pattern for Cayce’s signature golf h"
+    },
+    {
+     "cls": "project gallery-project",
+     "attrs": [
+      "data-url=/wendys-super-identity/"
+     ],
+     "text": "Wendy's Kids' Meal – Super Identity Be a Superhero or a Supe"
+    }
+   ],
+   "listingCandidates": [],
+   "inlineScripts": 16,
+   "inlineFetch": false,
+   "mainText": 2771,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.thebeastisback.com": 3,
+    "assets.squarespace.com": 20,
+    "definitions.sqspcdn.com": 4,
+    "static1.squarespace.com": 2,
+    "images.squarespace-cdn.com": 97,
+    "file.squarespace-cdn.com": 3,
+    "use.typekit.net": 6,
+    "p.typekit.net": 1
+   },
+   "thirdPartyHosts": [
+    "assets.squarespace.com",
+    "definitions.sqspcdn.com",
+    "static1.squarespace.com",
+    "images.squarespace-cdn.com",
+    "file.squarespace-cdn.com",
+    "use.typekit.net",
+    "p.typekit.net"
+   ],
+   "scripts": [
+    "https://assets.squarespace.com/@sqs/polyfiller/1.7.7/modern.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-a50ffbc7a8f61d8e-min.en-US.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/visitor-site-error-reporter-857906e2f8b59eb7-min.en-US.js",
+    "https://static1.squarespace.com/static/ta/4fd1028ee4b02be53c65dfb3/1363/scripts/site-bundle.js",
+    "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.spacer/a2b8f231-17c4-4ee7-be8e-6d3bd9c3df47_1274/website.components.spacer.visitor.js",
+    "https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.newsletter/a1719dc0-3098-498e-8f29-b8f21eef855f_114/website.components.newsletter.visitor.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-2c5e18cab442f0cf-min.en-US.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-784b947826b4c445-min.en-US.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-a5cfdec1ae227f33-min.en-US.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/performance-b160284739117e48-min.en-US.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/common-vendors-907ce232a97e184a-min.en-US.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/common-b87fadb8677b396b-min.en-US.js",
+    "https://use.typekit.net/ik/TwWGYm5sh1nKA5JJEffxELOc55I_TYaqL-o5fY187rMfeTXIfFHN4UJLFRbh52jhWD9D5QMDZQIXZQsKw2mKZesywRJDFQ8Rjs7pMkG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8O",
+    "https://assets.squarespace.com/universal/scripts-compressed/async-commerce-cart-utils-a6bd4a423da709a4-min.en-US.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/68506-e115f39829e7157c-min.en-US.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/14788-86003f0b054010ad-min.en-US.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/50785-5da795d97049b11f-min.en-US.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/async-reserved-cart-bootstrap-cb36473b5ae5727e-min.en-US.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/48844-461404ecdf829904-min.en-US.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/54583-9325ef3cb2340712-min.en-US.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/79393-399d279bc5efe96d-min.en-US.js",
+    "https://assets.squarespace.com/universal/scripts-compressed/23227-07f8600f912abe00-min.en-US.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "POST",
+     "host": "www.thebeastisback.com",
+     "path": "/api/census/RecordHit",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.thebeastisback.com/api/census/RecordHit"
+    },
+    {
+     "method": "POST",
+     "host": "www.thebeastisback.com",
+     "path": "/api/census/form-render",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.thebeastisback.com/api/census/form-render"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [
+    {
+     "url": "https://www.thebeastisback.com/api/census/RecordHit",
+     "body": "event=1&data=%7B%22localStorageSupported%22%3Atrue%2C%22queryString%22%3A%22%22%2C%22referrer%22%3A%22%22%2C%22websiteId%22%3A%2253903e14e4b05bdda22359ca%22%2C%22templateId%22%3A%224fd11f32c4aad9b01c9e624c%22%2C%22website_locale%22%3A%22en-US%22%2C%22userAgent%22%3A%22Mozilla%2F5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome%2F153.0.8010."
+    },
+    {
+     "url": "https://www.thebeastisback.com/api/census/form-render",
+     "body": "{\"formId\":\"5b7c96d421c67c4b718d41b7\",\"visitorCookie\":\"e9e14b44-5c89-46ed-afd0-7fce19b49da3|1790865672740|1790865672740|1790865672740|1\",\"pagePermissionTypeValue\":1,\"pageTitle\":\"Work\",\"pageId\":\"5390496be4b07b9f41849f5e\",\"contentSource\":\"c\",\"pagePath\":\"/\"}"
+    }
+   ],
+   "textAtLoad": 2771,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "a-first-party-api-post-api-census-recordhit",
+   "class": "A",
+   "feature": "first-party API POST /api/census/RecordHit",
+   "api": {
+    "method": "POST",
+    "path": "/api/census/RecordHit"
+   },
+   "hint": "api",
+   "evidence": [
+    "POST /api/census/RecordHit → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "a-first-party-api-post-api-census-form-render",
+   "class": "A",
+   "feature": "first-party API POST /api/census/form-render",
+   "api": {
+    "method": "POST",
+    "path": "/api/census/form-render"
+   },
+   "hint": "api",
+   "evidence": [
+    "POST /api/census/form-render → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "cr-client-rendered-slot-yui3-js-enabled-js-flexbox",
+   "class": "CR",
+   "feature": "client-rendered slot yui3-js-enabled js flexbox",
+   "hint": "client-rendered",
+   "evidence": [
+    "The Beast Is Back Inc document.documentElement.classList.add"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-project-gallery-project",
+   "class": "CR",
+   "feature": "client-rendered slot project gallery-project",
+   "hint": "client-rendered",
+   "evidence": [
+    "data-url=/wendys-smartlinks-amazing-insects/",
+    "data-url=/dumpster-stump-vinyl-toy/",
+    "data-url=/rhino-beetle-soft-vinyl-figure-archive/",
+    "data-url=/target-favorite-day-halloween-packaging/",
+    "data-url=/the-game-of-life-target-edition/",
+    "data-url=/dragonball-z-fan-art/",
+    "data-url=/wendys-scooby-doo-pop-up-mysteries/",
+    "data-url=/wendys-smartlinks-bigbots/",
+    "data-url=/wendys-kids-meal-crayola-color-adventure/",
+    "data-url=/cayce-golf/",
+    "data-url=/wendys-super-identity/"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "f-form-newsletter-form-no-action-js-wired-1-fields",
+   "class": "F",
+   "feature": "form \"newsletter-form\" → no action (JS-wired) (1 fields)",
+   "signature": [
+    "email:email"
+   ],
+   "hint": "client-compute?",
+   "evidence": [
+    "email:email"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-assets-squarespace-com",
+   "class": "T",
+   "feature": "unknown third-party host assets.squarespace.com",
+   "hint": "inspect",
+   "evidence": [
+    "assets.squarespace.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-definitions-sqspcdn-com",
+   "class": "T",
+   "feature": "unknown third-party host definitions.sqspcdn.com",
+   "hint": "inspect",
+   "evidence": [
+    "definitions.sqspcdn.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-static1-squarespace-com",
+   "class": "T",
+   "feature": "unknown third-party host static1.squarespace.com",
+   "hint": "inspect",
+   "evidence": [
+    "static1.squarespace.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-images-squarespace-cdn-com",
+   "class": "T",
+   "feature": "unknown third-party host images.squarespace-cdn.com",
+   "hint": "inspect",
+   "evidence": [
+    "images.squarespace-cdn.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-file-squarespace-cdn-com",
+   "class": "T",
+   "feature": "unknown third-party host file.squarespace-cdn.com",
+   "hint": "inspect",
+   "evidence": [
+    "file.squarespace-cdn.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  }
+ ],
+ "reach": {
+  "pagesWithEvidence": 1,
+  "of": 1,
+  "endpoints": {
+   "POST www.thebeastisback.com/api/census/form-render": 1,
+   "POST www.thebeastisback.com/api/census/RecordHit": 1
+  },
+  "searchFormPages": 0,
+  "formPages": 1,
+  "triggerPages": {}
+ }
+}

@@ -1,0 +1,32 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-10-01T16:21:35.080Z",
+    "readArtifacts": [
+      "stardust/migrated"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-10-01T16:21:44.469Z",
+  "templates": [
+    {
+      "id": "index",
+      "representativeSlug": "index",
+      "pages": [
+        "index"
+      ],
+      "pageCount": 1,
+      "blocks": [
+        "footer",
+        "header",
+        "project-grid"
+      ],
+      "delivery": {
+        "verified": 1,
+        "deployed": 0,
+        "contentPending": 0,
+        "pending": 0
+      }
+    }
+  ]
+}

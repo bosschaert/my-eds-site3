@@ -1,0 +1,73 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-10-01T14:40:47.877Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage/pages.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-10-01T16:21:44.469Z",
+  "blocks": [
+    {
+      "id": "footer",
+      "label": "footer",
+      "kind": "chrome",
+      "signature": "chrome:footer",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "footer",
+        "blockPath": "fragments/footer.html",
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "header",
+      "label": "header",
+      "kind": "chrome",
+      "signature": "chrome:header",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "header",
+        "blockPath": "fragments/header.html",
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "project-grid",
+      "label": "project-grid",
+      "kind": "module",
+      "signature": "module:project-grid",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "project-grid",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    }
+  ]
+}

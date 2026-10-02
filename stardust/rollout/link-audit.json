@@ -1,0 +1,629 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:rollout E2-link-audit",
+  "writtenAt": "2026-10-01T16:05:50.795Z",
+  "base": "https://main--c151e704--aemcoder.aem.live"
+ },
+ "totals": {
+  "hrefs": 102,
+  "ok": 102,
+  "bad": 0,
+  "internal": 100,
+  "internalRedirected": 99,
+  "external": 2
+ },
+ "rows": [
+  {
+   "href": "/",
+   "status": 200,
+   "location": null,
+   "verdict": "ok"
+  },
+  {
+   "href": "/about",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/about/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/animal-crossing-new-horizons-sticker-pack",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/animal-crossing-new-horizons-sticker-pack/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/bear-super-species-concepts",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/bear-super-species-concepts/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/blog",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/blog/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/brave-truthful-and-unselfish",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/brave-truthful-and-unselfish/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/bullseye-qee",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/bullseye-qee/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/campbells-can-costumes",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/campbells-can-costumes/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/case-study-print",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/case-study-print/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/cat-eyed-boy",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/cat-eyed-boy/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/cayce-golf",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/cayce-golf/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/cereal-on-parade",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/cereal-on-parade/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/contact",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/contact/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/destroy-all-monsters",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/destroy-all-monsters/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/disney-consumer-products-mural",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/disney-consumer-products-mural/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/dragonball-z-fan-art",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/dragonball-z-fan-art/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/dumpster-stump-vinyl-toy",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/dumpster-stump-vinyl-toy/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/electronic-arts-mural-1",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/electronic-arts-mural-1/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/everything-lost-is-revealed-print",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/everything-lost-is-revealed-print/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/evil-candy",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/evil-candy/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/gemulon-returns",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/gemulon-returns/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/hamilton-facebook-sticker-pack",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/hamilton-facebook-sticker-pack/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/heartwork",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/heartwork/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/home-print-series",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/home-print-series/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/ic-friends-tshirt-club",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/ic-friends-tshirt-club/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/in-a-spooky-haunted-house",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/in-a-spooky-haunted-house/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/invasion-of-the-astro-monster-screen-print",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/invasion-of-the-astro-monster-screen-print/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/james-and-the-giant-peach-screen-print",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/james-and-the-giant-peach-screen-print/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/joy-riders",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/joy-riders/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/kidrobot-designercon",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/kidrobot-designercon/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/life-time-kids-academy",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/life-time-kids-academy/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/lost",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/lost/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/mario-madness",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/mario-madness/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/mini-screen-prints",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/mini-screen-prints/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/mola-mola",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/mola-mola/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/mondo-disney-afternoon",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/mondo-disney-afternoon/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/monopoly-target-edition-1",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/monopoly-target-edition-1/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/moss-kingdom-print-series",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/moss-kingdom-print-series/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/mugs-for-night-cake-press",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/mugs-for-night-cake-press/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-1",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-1/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-16",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-16/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-17",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-17/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-2",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-2/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-23",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-23/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-24",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-24/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-3",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-3/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-4",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-4/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-43",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-43/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-49",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-49/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-5",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-5/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-50",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-50/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-58",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-58/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-59",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-59/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-96",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-96/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/new-gallery-98",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/new-gallery-98/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/nickelodeon",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/nickelodeon/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/portraits-of-the-american-food-stand",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/portraits-of-the-american-food-stand/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/quaker-oatmeal",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/quaker-oatmeal/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/red-magazine",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/red-magazine/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/rhino-beetle-soft-vinyl-figure-archive",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/rhino-beetle-soft-vinyl-figure-archive/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/rooster",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/rooster/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/star-wars-action-figure-compendium",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/star-wars-action-figure-compendium/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/super7-apparel",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/super7-apparel/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/target-circle",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/target-circle/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/target-easter-seasonal",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/target-easter-seasonal/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/target-favorite-day-halloween-packaging",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/target-favorite-day-halloween-packaging/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/target-halloween",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/target-halloween/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/target-holiday-seasonal",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/target-holiday-seasonal/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/target-miami",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/target-miami/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/target-x-st-jude",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/target-x-st-jude/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/the-chocolate-room",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/the-chocolate-room/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/the-creeps",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/the-creeps/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/the-game-of-life-target-edition",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/the-game-of-life-target-edition/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/the-juice-zone",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/the-juice-zone/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/the-kaiju-formula",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/the-kaiju-formula/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/the-trilogy",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/the-trilogy/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/tiger-screen-print",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/tiger-screen-print/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/tiki-topple-board-game",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/tiki-topple-board-game/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/trip-to-the-aquarium-print-series",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/trip-to-the-aquarium-print-series/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-art-creations",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-art-creations/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-biti-buddies",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-biti-buddies/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-craft-your-holiday",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-craft-your-holiday/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-create-your-cartoon",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-create-your-cartoon/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-dinosaur-kingdom",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-dinosaur-kingdom/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-kids-meal-crayola-color-adventure",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-kids-meal-crayola-color-adventure/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-mix-its",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-mix-its/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-scooby-doo-pop-up-mysteries",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-scooby-doo-pop-up-mysteries/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-secret-identity",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-secret-identity/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-smart-links-dragons",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-smart-links-dragons/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-smart-links-wild-wild-animals",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-smart-links-wild-wild-animals/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-smartlinks-amazing-insects",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-smartlinks-amazing-insects/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-smartlinks-bigbots",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-smartlinks-bigbots/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-super-identity",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-super-identity/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-thing-in-a-thing-in-a-thing",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-thing-in-a-thing-in-a-thing/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wendys-transformers",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wendys-transformers/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/whale-handmade-figure",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/whale-handmade-figure/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/whats-in-dragons-backpack",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/whats-in-dragons-backpack/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/wonderful-feeling-wonderful-day",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/wonderful-feeling-wonderful-day/",
+   "verdict": "ok"
+  },
+  {
+   "href": "/world-warriors",
+   "status": 301,
+   "location": "https://www.thebeastisback.com/world-warriors/",
+   "verdict": "ok"
+  },
+  {
+   "href": "http://instagram.com/thebeastisback",
+   "status": 301,
+   "location": "https://instagram.com/thebeastisback",
+   "verdict": "ok"
+  },
+  {
+   "href": "http://store.thebeastisback.com/",
+   "status": 301,
+   "location": "https://store.thebeastisback.com/",
+   "verdict": "ok"
+  }
+ ]
+}

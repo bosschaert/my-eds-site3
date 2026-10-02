@@ -1,0 +1,29 @@
+{
+  "state": "progress",
+  "steps": [
+    "done",
+    "done",
+    "done",
+    "done",
+    "progress"
+  ],
+  "templates": [
+    {
+      "name": "Home page",
+      "pages": 1,
+      "desktop": "yes",
+      "mobile": "yes",
+      "status": "done"
+    }
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "title": "Home",
+      "ready": false
+    }
+  ],
+  "now": "Your home page is live on the preview site and matches the original on desktop and mobile. We are now running the final site-wide checks: links, search engine files and performance.",
+  "next": "Final verification, then the page is confirmed on the published address.",
+  "note": ""
+}

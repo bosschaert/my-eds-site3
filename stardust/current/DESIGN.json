@@ -1,0 +1,73 @@
+{
+  "extensions": {
+    "breakpoints": {
+      "containerMaxWidth": "1352px",
+      "probeWidth": 2560,
+      "shellMaxWidth": "1352px",
+      "caps": [
+        {
+          "kind": "shell",
+          "px": 1352,
+          "via": "max-width",
+          "selector": "#canvas",
+          "pages": [
+            "https://www.thebeastisback.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 1200,
+          "via": "fixed",
+          "selector": "#mobileNavWrapper",
+          "pages": [
+            "https://www.thebeastisback.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 291,
+          "via": "fixed",
+          "selector": "#projectThumbs > div.wrapper.sqs-gallery-design-autocolumns > a.project.positioned",
+          "pages": [
+            "https://www.thebeastisback.com/"
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "url": "https://www.thebeastisback.com/",
+          "section": 0,
+          "selector": "#mobileNav",
+          "px": 1200
+        },
+        {
+          "url": "https://www.thebeastisback.com/",
+          "section": 1,
+          "selector": "#header",
+          "px": null
+        },
+        {
+          "url": "https://www.thebeastisback.com/",
+          "section": 2,
+          "selector": "#page",
+          "px": 291
+        },
+        {
+          "url": "https://www.thebeastisback.com/",
+          "section": 3,
+          "selector": "#footer",
+          "px": null
+        }
+      ],
+      "capRegister": [],
+      "capProvenance": {
+        "writtenBy": "skills/replica/scripts/cap-probe.mjs",
+        "writtenAt": "2026-10-01T13:40:55.814Z",
+        "baseWidth": 1440,
+        "urls": [
+          "https://www.thebeastisback.com/"
+        ]
+      }
+    }
+  }
+}

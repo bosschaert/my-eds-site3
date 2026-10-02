@@ -1,0 +1,135 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 1,
+    "concurrency": 1
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": {
+    "url": "https://www.niravmanubhai.com/assets/favicon-ab9476.png",
+    "file": "assets/favicon.png"
+  },
+  "crawl": {
+    "failures": []
+  },
+  "captureGaps": {
+    "roots": [],
+    "detail": "uncaptured first-level targets: none (no locale root captured)"
+  },
+  "dynamicSurface": {
+    "pages": 1,
+    "pagesWithSameSiteData": 1,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 0,
+    "truncatedPages": 0,
+    "endpoints": [
+      {
+        "method": "POST",
+        "host": "www.niravmanubhai.com",
+        "path": "/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d76008a69eab/0.07119024798341955:1790582419:awPmwzGSKLRU49cJbaMh6B6f65HQC0A_hqJh88Jq23Q/{hash}",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/plain",
+        "sameSite": true,
+        "example": "https://www.niravmanubhai.com/cdn-cgi/challenge-platform/h/b/jsd/oneshot/d76008a69eab/0.07119024798341955:1790582419:awPmwzGSKLRU49cJbaMh6B6f65HQC0A_hqJh88Jq23Q/a421937abfeaefaa",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.niravmanubhai.com",
+        "path": "/cdn-cgi/rum",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/plain",
+        "sameSite": true,
+        "example": "https://www.niravmanubhai.com/cdn-cgi/rum",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_ee",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "cid",
+          "dl",
+          "dma",
+          "dt",
+          "en",
+          "frm",
+          "gcd",
+          "gtm",
+          "ngs",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://www.google-analytics.com/g/collect",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "static.cloudflareinsights.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "frameworkHints": [],
+    "globalState": [
+      {
+        "name": "dataLayer",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "formTargets": []
+  }
+}

@@ -1,0 +1,3405 @@
+
+/* ==== assets/series-common-c27edc.css ==== */
+/* Canonical series common stylesheet — v1.0.84 */
+
+:root{
+  --paper:#f4efe3;--parch:#ece3d1;--ink:#2c2519;--ink-soft:#6b5f47;
+  --leaf:#4e5d44;--leaf-dark:#3c4934;--line:rgba(44,37,25,.16);
+  --gold:#b2843e;--noir:#0f0d09;--cream:#f5eddc;
+  --max-reader:46rem;--max-room:68rem;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.72}
+img{max-width:100%;height:auto}
+a{color:inherit}
+.skip-link{position:absolute;left:-9999px;top:auto}.skip-link:focus{left:1rem;top:1rem;z-index:999;background:var(--paper);padding:.7rem 1rem;border:1px solid var(--ink)}
+.topbar{position:sticky;top:0;z-index:80;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.86rem 5vw;background:rgba(78,93,68,.98);border-bottom:1px solid var(--leaf-dark)}
+.topbar a{color:var(--paper);text-decoration:none;font-size:.78rem;letter-spacing:.065em}.topbar .mark{font-family:"Playfair Display",Georgia,serif;font-size:1rem}.topbar a:focus-visible,.btn:focus-visible,.corridor-row:focus-visible,.gift-link:focus-visible,button:focus-visible{outline:3px solid #e8d5a0;outline-offset:3px}
+.room-shell{max-width:var(--max-room);margin:0 auto;padding:4.7rem 1.4rem 5rem}.reader-shell{max-width:var(--max-reader);margin:0 auto;padding:5.2rem 1.35rem 5rem}
+.eyebrow{font-size:.7rem;font-weight:600;letter-spacing:.21em;text-transform:uppercase;color:var(--ink-soft)}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:500;line-height:1.16}
+.room-title{font-size:clamp(2.7rem,7vw,5rem);margin:.45rem 0 .75rem}.reader-title{font-size:clamp(2.45rem,7vw,4.25rem);margin:.55rem 0 .65rem}
+.subhead{font-family:"Playfair Display",Georgia,serif;font-size:clamp(1.05rem,2.2vw,1.3rem);font-style:italic;color:var(--ink-soft);line-height:1.65;max-width:48rem}
+.intro{max-width:48rem;font-size:1.04rem;color:#4a4134}.intro p{margin:1.15rem 0}
+.status-note{margin:2rem 0;padding:1.2rem 1.35rem;background:rgba(236,227,209,.72);border-left:3px solid var(--leaf);font-family:"Playfair Display",Georgia,serif;color:#4f4638}
+.actions{display:flex;flex-wrap:wrap;gap:.7rem;margin:2rem 0}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:.75rem 1rem;border:1px solid var(--leaf);border-radius:2px;text-decoration:none;font-size:.76rem;font-weight:600;letter-spacing:.075em;text-transform:uppercase;background:transparent;color:var(--leaf)}.btn:hover{background:rgba(78,93,68,.08)}.btn.primary{background:var(--leaf);color:var(--paper)}.btn.primary:hover{background:var(--leaf-dark)}.btn.whatsapp{background:#1f8f4e;border-color:#1f8f4e;color:white}.btn.whatsapp:hover{background:#187a42}
+.rule{border:0;border-top:1px solid var(--line);margin:3.4rem 0}
+.corridor-head{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1.1rem}.corridor-head h2{font-size:clamp(2rem,4vw,3rem);margin:0}.corridor-note{font-size:.85rem;color:var(--ink-soft);max-width:30rem}
+.corridor{border-top:1px solid var(--line)}
+.corridor-row{display:grid;grid-template-columns:3rem 74px minmax(0,1fr) auto;gap:1rem;align-items:center;padding:1.05rem 0;border-bottom:1px solid var(--line);text-decoration:none;transition:background .2s,padding .2s}.corridor-row:hover{background:rgba(236,227,209,.52);padding-left:.65rem;padding-right:.65rem}.corridor-row.is-future{color:#817667;cursor:default}.corridor-row.is-future:hover{background:transparent;padding-left:0;padding-right:0}
+.corridor-num{font-family:"Playfair Display",Georgia,serif;font-size:1.15rem;color:var(--ink-soft)}.corridor-thumb{width:74px;height:96px;object-fit:cover;border-radius:2px;box-shadow:0 2px 8px rgba(44,37,25,.12)}.corridor-copy h3{font-size:1.35rem;margin:0 0 .2rem}.corridor-copy p{margin:0;font-size:.86rem;color:var(--ink-soft);line-height:1.5}.corridor-state{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--leaf);white-space:nowrap}
+.hero-poster{display:grid;grid-template-columns:minmax(220px,360px) 1fr;gap:clamp(2rem,5vw,4.2rem);align-items:center;margin-bottom:3.8rem}.hero-poster img{width:100%;border-radius:3px;box-shadow:0 8px 28px rgba(44,37,25,.17)}
+.reader-meta{text-align:center;margin-bottom:2.2rem}.reader-meta .eyebrow{display:block}.reader-tagline{font-family:"Playfair Display",Georgia,serif;font-style:italic;color:var(--ink-soft);font-size:1.08rem;line-height:1.65;max-width:38rem;margin:.5rem auto 0}
+.reader-poster{display:block;width:min(100%,420px);margin:0 auto 3rem;border-radius:2px;box-shadow:0 7px 25px rgba(44,37,25,.15)}
+.story{font-family:"Playfair Display",Georgia,serif;font-size:1.13rem;line-height:1.92}.story p{margin:0 0 1.35rem}.story .chapter{font-family:Inter,system-ui,sans-serif;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--leaf);margin:3.1rem 0 1.15rem}.story .star{text-align:center;color:var(--leaf);letter-spacing:.2em;margin:1.4rem 0}.story strong{font-weight:600}.story em{font-style:italic}.story .closing-hook{font-style:italic;color:var(--ink-soft)}
+.progress-marks{display:flex;justify-content:center;gap:.36rem;margin:1rem 0 0}.progress-marks span{width:7px;height:7px;border-radius:50%;border:1px solid var(--leaf)}.progress-marks span.on{background:var(--leaf)}
+.gift-box{margin:4rem auto 1.6rem;padding:2rem 1.5rem;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.gift-box h2{font-size:1.65rem;margin:0 0 .6rem}.gift-box p{max-width:32rem;margin:.5rem auto 1.25rem;color:var(--ink-soft);font-size:.92rem}.gift-link{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:.78rem 1.15rem;background:#1f8f4e;color:#fff;text-decoration:none;border-radius:2px;font-size:.76rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}.gift-link:hover{background:#187a42}
+.reader-nav{display:grid;grid-template-columns:1fr auto 1fr;gap:.75rem;align-items:center;margin:2rem 0}.reader-nav a{text-decoration:none;color:var(--leaf);font-size:.79rem;line-height:1.45}.reader-nav .next{text-align:right}.reader-nav .home{text-align:center;text-transform:uppercase;letter-spacing:.08em;font-size:.69rem}.reader-nav .disabled{opacity:.35}
+.transcript{margin:3.5rem 0 1rem;border-top:1px solid var(--line);padding-top:1.6rem}.transcript summary{cursor:pointer;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:var(--leaf)}.transcript ol{padding-left:1.4rem}.transcript li{margin:1rem 0;color:#4c4336}
+.site-footer{text-align:center;padding:2.5rem 1rem 3rem;font-size:.7rem;color:var(--ink-soft);letter-spacing:.03em}
+.quiet-card{display:grid;grid-template-columns:minmax(220px,390px) 1fr;gap:2.2rem;align-items:center;margin:2.5rem 0;padding:1.4rem;background:rgba(236,227,209,.55);border:1px solid var(--line)}.quiet-card img{border-radius:2px}.quiet-card h2{font-size:2rem;margin:.4rem 0}.quiet-card p{color:#514839}
+.small-note{font-size:.8rem;color:var(--ink-soft)}
+@media(max-width:720px){.hero-poster,.quiet-card{grid-template-columns:1fr}.hero-poster img{max-width:330px;margin:auto}.corridor-row{grid-template-columns:2.4rem 58px minmax(0,1fr)}.corridor-thumb{width:58px;height:76px}.corridor-state{grid-column:3;margin-top:.15rem}.corridor-copy h3{font-size:1.15rem}.reader-nav{grid-template-columns:1fr 1fr}.reader-nav .home{grid-column:1/-1;grid-row:2}.room-shell{padding-top:3.4rem}.reader-shell{padding-top:4rem}}
+@media(max-width:430px){.corridor-row{grid-template-columns:2.2rem minmax(0,1fr)}.corridor-thumb{display:none}.corridor-state{grid-column:2}.actions{flex-direction:column;align-items:stretch}.btn{width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.corridor-row{transition:none}}
+
+/* CSJA live-series refinements */
+.channel-note{margin:.8rem 0 0;font-size:.88rem;line-height:1.6;color:var(--muted)}
+.story-nav{display:flex;flex-wrap:wrap;gap:.8rem 1.2rem;justify-content:center}
+
+
+/* CSJA reading and room refinement — production fix */
+.csja-room-hero{grid-template-columns:minmax(230px,330px) minmax(0,1fr);gap:clamp(2.4rem,5vw,4.5rem);align-items:center}
+.csja-room-hero>div{max-width:38rem}
+.csja-room-hero .room-title{font-size:clamp(3rem,5.6vw,4.75rem);line-height:1.06;max-width:12ch;margin:.35rem 0 1rem}
+.csja-room-hero .subhead{font-size:clamp(1.08rem,1.8vw,1.3rem);line-height:1.58;margin:0 0 1.2rem;max-width:36rem}
+.csja-room-hero .intro{font-size:1rem;line-height:1.72;max-width:36rem}
+.csja-room-hero .intro p{margin:.85rem 0}
+.csja-room-hero img{max-width:320px;justify-self:center}
+
+.csja-story-page{background:#f7f2e8}
+.csja-story-page .topbar{position:sticky}
+.csja-reader{max-width:50rem;padding-top:4.2rem}
+.csja-reader .reader-meta{text-align:center;margin-bottom:2.2rem}
+.csja-reader .reader-title{font-size:clamp(2.65rem,6vw,4.35rem);max-width:14ch;margin:.65rem auto .8rem;line-height:1.08}
+.csja-reader .reader-tagline{max-width:34rem;font-size:1.12rem}
+.story-reading-note{font-size:.78rem;letter-spacing:.055em;text-transform:uppercase;color:var(--ink-soft);margin:1.1rem 0 .7rem}
+.csja-reader .reader-poster{width:min(100%,390px);margin-bottom:3.6rem}
+.csja-reader .story{max-width:42rem;margin:0 auto;font-family:"Playfair Display",Georgia,serif;font-size:clamp(1.12rem,1.5vw,1.24rem);line-height:1.9;color:#322a1f}
+.csja-reader .story p{margin:0 0 1.45em}
+.csja-reader .story .opening-line{font-size:1.22em;line-height:1.65;margin-bottom:1.35em}
+.csja-reader .story .opening-line::first-letter{float:left;font-size:4.1rem;line-height:.78;padding:.14rem .5rem 0 0;color:var(--leaf);font-family:"Playfair Display",Georgia,serif}
+.csja-reader .story .star{margin:1.4rem auto;text-align:center;color:var(--gold);font-size:.72rem;letter-spacing:0}
+.csja-reader .gift-box{max-width:42rem;margin-top:4.5rem;background:rgba(236,227,209,.38);padding:2.4rem 1.5rem;border:1px solid var(--line)}
+.csja-reader .gift-box h2{font-size:2rem}
+.csja-reader .reader-nav{max-width:42rem;margin:2.2rem auto}
+@media(max-width:720px){
+ .csja-room-hero{grid-template-columns:1fr;gap:2rem}
+ .csja-room-hero>div{max-width:none}
+ .csja-room-hero .room-title{font-size:clamp(2.7rem,12vw,3.8rem);max-width:11ch}
+ .csja-room-hero img{order:2;max-width:300px}
+ .csja-room-hero>div{order:1}
+ .csja-reader{padding-top:3rem}
+ .csja-reader .reader-title{font-size:clamp(2.45rem,11vw,3.45rem)}
+ .csja-reader .reader-poster{width:min(88vw,350px);margin-bottom:2.8rem}
+ .csja-reader .story{font-size:1.1rem;line-height:1.82}
+ .csja-reader .story p{margin-bottom:1.32em}
+ .csja-reader .story .opening-line::first-letter{font-size:3.5rem}
+}
+@media(max-width:430px){
+ .csja-reader{padding-left:1.15rem;padding-right:1.15rem}
+ .csja-reader .story{font-size:1.06rem;line-height:1.78}
+ .csja-reader .reader-tagline{font-size:1.03rem}
+ .story-reading-note{font-size:.7rem;line-height:1.55}
+}
+
+/* ═══════════════════════════════════════════════════════
+   SHELF SYSTEM — v1.0.21
+   One master shelf design for all four series rooms.
+   Classes: .shelf-room, .shelf, .shelf-header, .shelf-label,
+            .shelf-status, .shelf-items, .spine, .spine.live,
+            .spine.next, .spine.wp (Witness Papers),
+            .next-shelf-card (end-of-episode footer)
+   ═══════════════════════════════════════════════════════ */
+
+/* Room wrapper */
+.shelf-room { max-width: var(--max-room); margin: 0 auto; padding: 2.8rem 1.4rem 3rem; }
+
+/* Individual shelf block */
+.shelf {
+  margin: 0 0 3.2rem;
+  padding: 0;
+}
+.shelf:last-child { margin-bottom: 0; }
+
+/* Shelf header: thin rule top, label + status inline */
+.shelf-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  border-top: 1px solid var(--line);
+  padding-top: .85rem;
+  margin-bottom: 1.25rem;
+}
+.shelf-label {
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.shelf-status {
+  font-size: .66rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  padding: .18rem .55rem;
+  border-radius: 2px;
+  border: 1px solid transparent;
+}
+.shelf-status.complete {
+  color: var(--ink-soft);
+  border-color: var(--line);
+}
+.shelf-status.live {
+  color: var(--leaf);
+  border-color: var(--leaf);
+}
+
+/* Spine grid — the items on the shelf */
+.shelf-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Individual spine/row */
+.spine {
+  display: grid;
+  grid-template-columns: 2.6rem 1fr auto;
+  gap: .6rem 1rem;
+  align-items: center;
+  padding: .9rem 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  color: var(--ink);
+  transition: background .18s, padding .18s;
+}
+a.spine:hover {
+  background: rgba(236,227,209,.52);
+  padding-left: .6rem;
+  padding-right: .6rem;
+}
+div.spine { cursor: default; }
+
+.spine-num {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  line-height: 1;
+}
+.spine-copy { min-width: 0; }
+.spine-copy h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 .18rem;
+  line-height: 1.2;
+}
+.spine-copy p {
+  margin: 0;
+  font-size: .82rem;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+.spine-action {
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--leaf);
+  white-space: nowrap;
+  text-align: right;
+}
+.spine.next .spine-action {
+  color: var(--ink-soft);
+  font-size: .64rem;
+  line-height: 1.5;
+  white-space: nowrap;
+  text-align: right;
+}
+.spine.next .spine-copy h3 { color: var(--ink-soft); }
+.spine.next .spine-copy p  { color: rgba(107,95,71,.6); }
+
+/* Witness Papers — indented, slightly differentiated */
+.spine.wp {
+  margin-left: 2.6rem;
+  grid-template-columns: 1.6rem 1fr auto;
+  background: rgba(236,227,209,.28);
+  border-left: 2px solid var(--gold);
+  padding-left: .85rem;
+}
+.spine.wp .spine-num {
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-family: Inter, system-ui, sans-serif;
+  font-weight: 600;
+}
+.spine.wp .spine-copy h3 {
+  font-size: 1.05rem;
+  color: #5a4e38;
+}
+.spine.wp.next .spine-copy h3 { color: var(--ink-soft); }
+a.spine.wp:hover {
+  background: rgba(178,132,62,.08);
+}
+
+/* ─── End-of-episode: Next on this shelf ─── */
+.next-shelf-card {
+  /* House-level rule: consistent card spacing across all properties.
+     Reduced from 3.2rem to 2rem for better mobile rhythm. */
+  margin: 2rem auto 0;
+  padding: 1.8rem 1.5rem 1.6rem;
+  max-width: 46rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.next-shelf-card .nsc-label {
+  font-size: .65rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  display: block;
+  margin-bottom: .6rem;
+}
+.next-shelf-card .nsc-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 500;
+  margin: 0 0 .2rem;
+  line-height: 1.2;
+}
+.next-shelf-card .nsc-sub {
+  font-size: .88rem;
+  color: var(--ink-soft);
+  margin: 0 0 1.1rem;
+}
+.next-shelf-card .nsc-date {
+  font-size: .8rem;
+  color: var(--ink-soft);
+  margin: .35rem 0 1.25rem;
+  font-style: italic;
+}
+.next-shelf-card .nsc-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+}
+/* When next is LIVE — read button primary */
+.next-shelf-card .btn.nsc-read {
+  background: var(--leaf);
+  color: var(--paper);
+  border-color: var(--leaf);
+}
+.next-shelf-card .btn.nsc-read:hover { background: var(--leaf-dark); }
+
+/* Position text in reader-meta */
+.reader-position {
+  display: block;
+  font-size: .72rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-top: .3rem;
+  margin-bottom: .15rem;
+}
+
+@media (max-width: 640px) {
+  .shelf-room { padding-top: 2.4rem; }
+  .spine { grid-template-columns: 2.2rem 1fr auto; }
+  .spine.wp { margin-left: 1.4rem; grid-template-columns: 1.2rem 1fr auto; }
+  .next-shelf-card .nsc-title { font-size: 1.3rem; }
+  .next-shelf-card .nsc-actions { flex-direction: column; }
+  .next-shelf-card .nsc-actions .btn { width: 100%; }
+}
+@media (max-width: 430px) {
+  .spine-copy h3 { font-size: 1.05rem; }
+  .spine-action { font-size: .6rem; }
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   READING ROOM DESIGN SYSTEM — v1.0.25
+   Fixed stage. The wall never changes. Only the painting changes.
+
+   Component 1: Hero Frame
+   Component 2: Room Introduction
+   Component 3: Living Shelf  (already defined above)
+   Component 4: Journey nav
+
+   Usage: every reading room page uses class="reading-room" on <main>
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Reading Room container ── */
+.reading-room {
+  max-width: var(--max-room);
+  margin: 0 auto;
+  padding: 0 1.4rem 5rem;
+}
+
+/* ── Component 1: Hero Frame ─────────────────────────────────────── */
+/* The frame is permanent. The picture inside it is replaceable.       */
+/* Never replace a file under the same name: /assets/ is cached a year. */
+/* ── Hero Frame — LOCKED SPECIFICATION v1.0.26 ───────────────────────
+   The frame never changes. Only the picture inside it changes.
+   Reading-room heroes (1920×1080; names carry a content fingerprint):
+     kabir-reading-room-hero · stills-reading-room-hero ·
+     come-sit-just-ask-reading-room-hero · quiet-signal-reading-room-hero
+   To update artwork: python HOUSE_IMAGES.py poster NEW.png assets/<name>
+   It names the file and updates every page. Zero hand edits.
+   ─────────────────────────────────────────────────────────────────── */
+.room-hero-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 0 0 0;          /* H1 above hero, intro below — no top margin here */
+  box-shadow: 0 8px 32px rgba(44,37,25,.2), 0 2px 8px rgba(44,37,25,.08);
+  background: #2c2519;   /* warm fallback while WebP loads */
+}
+.room-hero-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center; /* safe centre zone — override per property below */
+  display: block;
+}
+/* Property-specific focal points — change only object-position, never rebuild the page */
+.kabir-reading-room   .room-hero-frame img { object-position: center 45%; }
+.stills-reading-room  .room-hero-frame img { object-position: center center; }
+.csja-reading-room    .room-hero-frame img { object-position: center center; }
+.qs-reading-room      .room-hero-frame img { object-position: center center; }
+
+@media (max-width: 720px) {
+  .room-hero-frame { border-radius: 8px; }
+}
+@media (max-width: 430px) {
+  .room-hero-frame { border-radius: 4px; }
+}
+
+/* ── Component 2: Room Introduction ─────────────────────────────── */
+/* Short, immersive. 2–3 lines. Never promotional.                   */
+/* This copy describes what this PLACE is, not what the series is.   */
+.room-intro {
+  max-width: 46rem;
+  margin: 2rem auto 0;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+.room-intro p {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  font-style: italic;
+  color: var(--ink-soft);
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* ── Shelf section inside reading room ───────────────────────────── */
+.reading-room .shelf-room {
+  padding: 2.8rem 0 0;
+  max-width: 100%;
+}
+
+/* ── Component 4: Journey nav ───────────────────────────────────── */
+/* At end of reading room: Return to Property Home + Courtyard       */
+.room-journey {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.2rem 0 0;
+  border-top: 1px solid var(--line);
+  margin-top: 3rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.room-journey a {
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: color .18s;
+}
+.room-journey a:hover { color: var(--ink); }
+.room-journey .journey-home {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: .9rem;
+  font-weight: 500;
+  letter-spacing: .04em;
+  text-transform: none;
+  font-style: italic;
+  color: var(--ink-soft);
+  text-align: center;
+  flex: 1;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────── */
+@media (max-width: 720px) {
+  .room-hero-frame {
+    border-radius: 10px;
+    margin: 2rem 0 0;
+  }
+  .room-intro { text-align: left; }
+  .room-journey { flex-direction: column; align-items: flex-start; gap: .8rem; }
+  .room-journey .journey-home { text-align: left; }
+}
+@media (max-width: 430px) {
+  .room-hero-frame { border-radius: 6px; }
+  .room-intro p { font-size: 1rem; }
+}
+
+/* Kabir locked poster slot: all episode and Witness Paper artwork fits a permanent 4:5 frame. */
+.reader-poster.kabir-poster-frame{aspect-ratio:4/5;object-fit:contain;background:#080604}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   KABIR PROPERTY HOME + READING ROOM ENTRY — LOCKED v1.0.27.2
+   Property home visual slot: permanent shared 4:5 frame. Source master is
+   prepared to 820×1025 before deployment; CSS does not chase source artwork.
+   Reading Room hero: permanent 16:9 / 1920×1080 WebP.
+   Desktop Reading Room flow: image left → words right → shelf below.
+   Mobile flow: welcome words → image → shelf.
+   ═══════════════════════════════════════════════════════════════════ */
+
+.kabir-property-home .room-shell{
+  max-width:74rem;
+}
+.kabir-property-home .hero-poster{
+  grid-template-columns:minmax(380px,46%) minmax(0,1fr);
+  gap:clamp(2.6rem,5vw,5rem);
+  align-items:center;
+}
+.kabir-property-home .hero-poster>img{
+  width:100%;
+  max-width:520px;
+  aspect-ratio:4/5;
+  object-fit:contain;
+  justify-self:center;
+}
+.kabir-property-home .intro{
+  max-width:40rem;
+}
+.kabir-property-home .kabir-channel-invite{
+  font-family:"Playfair Display",Georgia,serif;
+  font-style:italic;
+  color:var(--ink-soft);
+}
+
+.kabir-reading-room .reading-room{
+  max-width:74rem;
+}
+.kabir-reading-room-entry{
+  display:grid;
+  grid-template-columns:minmax(0,1.42fr) minmax(300px,.8fr);
+  gap:clamp(2rem,4.5vw,4.5rem);
+  align-items:center;
+  padding:2.7rem 0 3rem;
+  border-bottom:1px solid var(--line);
+}
+.kabir-reading-room-entry .room-hero-frame{
+  margin:0;
+}
+.kabir-reading-room-copy{
+  min-width:0;
+}
+.kabir-reading-room-copy .eyebrow{
+  margin:0 0 .55rem;
+}
+.kabir-reading-room-copy h1{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:clamp(2.35rem,4.2vw,4.1rem);
+  font-weight:500;
+  line-height:1.08;
+  margin:.15rem 0 1.2rem;
+}
+.kabir-reading-room-copy .room-intro{
+  max-width:none;
+  margin:0;
+  padding:0;
+  border:0;
+  text-align:left;
+}
+.kabir-reading-room-copy .room-intro p{
+  font-size:clamp(1rem,1.45vw,1.16rem);
+  margin:0 0 1rem;
+}
+.kabir-reading-room .shelf-room{
+  padding-top:3.2rem;
+}
+
+@media(max-width:820px){
+  .kabir-property-home .hero-poster{
+    grid-template-columns:1fr;
+    gap:2.2rem;
+  }
+  .kabir-property-home .hero-poster>img{
+    max-width:430px;
+  }
+  .kabir-reading-room-entry{
+    grid-template-columns:1fr;
+    gap:1.7rem;
+    padding-top:2.2rem;
+  }
+  .kabir-reading-room-copy{
+    order:1;
+  }
+  .kabir-reading-room-entry .room-hero-frame{
+    order:2;
+  }
+}
+@media(max-width:520px){
+  .kabir-property-home .hero-poster>img{
+    max-width:100%;
+  }
+  .kabir-reading-room-copy h1{
+    font-size:clamp(2.25rem,12vw,3.15rem);
+  }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   KABIR MOBILE ENTRY + CTA GEOMETRY — LOCKED v1.0.27.4
+   Equal-size CTAs on mobile, stronger property-home image presence,
+   and calmer Android-first spacing.
+   ═══════════════════════════════════════════════════════════════════ */
+
+.kabir-property-home .kabir-home-actions{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.85rem;
+  align-items:stretch;
+}
+.kabir-property-home .kabir-home-actions .btn{
+  width:100%;
+  min-height:54px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:.95rem 1.15rem;
+  line-height:1.25;
+}
+.kabir-property-home .hero-poster>img{
+  display:block;
+  box-shadow:0 18px 48px rgba(42,30,17,.11);
+}
+.kabir-reading-room-entry .room-hero-frame img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+}
+
+@media(max-width:820px){
+  .kabir-property-home .room-shell{
+    padding-left:clamp(1rem,4.8vw,1.4rem);
+    padding-right:clamp(1rem,4.8vw,1.4rem);
+  }
+  .kabir-property-home .hero-poster{
+    gap:1.55rem;
+  }
+  .kabir-property-home .hero-poster>img{
+    width:min(100%,520px);
+    max-width:none;
+    justify-self:stretch;
+    margin:0 auto;
+  }
+  .kabir-property-home .intro{
+    max-width:none;
+  }
+  .kabir-property-home .kabir-home-actions{
+    grid-template-columns:1fr;
+    gap:.75rem;
+    width:100%;
+  }
+  .kabir-property-home .kabir-home-actions .btn{
+    min-height:56px;
+    border-radius:999px;
+    padding:1rem 1.25rem;
+    font-size:.9rem;
+    letter-spacing:.02em;
+  }
+
+  .kabir-reading-room .reading-room{
+    padding-left:clamp(1rem,4.8vw,1.4rem);
+    padding-right:clamp(1rem,4.8vw,1.4rem);
+  }
+  .kabir-reading-room-entry{
+    gap:1.35rem;
+  }
+  .kabir-reading-room-copy{
+    width:100%;
+  }
+  .kabir-reading-room-entry .room-hero-frame{
+    width:100%;
+  }
+  .kabir-reading-room .shelf-room{
+    padding-top:2.25rem;
+  }
+}
+
+@media(max-width:520px){
+  .kabir-property-home .hero-poster>img{
+    width:100%;
+    aspect-ratio:4/5;
+  }
+  .kabir-property-home .kabir-home-actions .btn{
+    width:100%;
+    min-height:58px;
+  }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   KABIR MOBILE LIVING SHELF — LOCKED v1.0.27.5
+   Android-first shelf layout. On phones the action/date moves below
+   the story copy instead of competing for a third narrow column.
+   ═══════════════════════════════════════════════════════════════════ */
+@media (max-width: 640px) {
+  .kabir-reading-room .shelf-room{
+    padding-left:0;
+    padding-right:0;
+  }
+  .kabir-reading-room .shelf{
+    margin-bottom:2.4rem;
+  }
+  .kabir-reading-room .spine,
+  .kabir-reading-room .spine.wp{
+    width:100%;
+    margin-left:0;
+    grid-template-columns:2.35rem minmax(0,1fr);
+    grid-template-areas:
+      "num copy"
+      ". action";
+    column-gap:.85rem;
+    row-gap:.55rem;
+    align-items:start;
+    padding:1.05rem 0;
+  }
+  .kabir-reading-room .spine-num{
+    grid-area:num;
+    padding-top:.14rem;
+    font-size:1rem;
+  }
+  .kabir-reading-room .spine-copy{
+    grid-area:copy;
+    min-width:0;
+    width:100%;
+  }
+  .kabir-reading-room .spine-copy h3{
+    font-size:1.18rem;
+    line-height:1.22;
+    margin:0 0 .28rem;
+    overflow-wrap:normal;
+    word-break:normal;
+  }
+  .kabir-reading-room .spine-copy p{
+    font-size:.87rem;
+    line-height:1.5;
+    overflow-wrap:break-word;
+    word-break:normal;
+  }
+  .kabir-reading-room .spine-action,
+  .kabir-reading-room .spine.next .spine-action{
+    grid-area:action;
+    justify-self:start;
+    text-align:left;
+    white-space:normal;
+    font-size:.67rem;
+    line-height:1.45;
+    letter-spacing:.08em;
+    max-width:100%;
+  }
+  .kabir-reading-room .spine.wp{
+    border-left:2px solid var(--gold);
+    padding-left:.65rem;
+    background:rgba(236,227,209,.24);
+  }
+  .kabir-reading-room .spine.wp .spine-num{
+    font-size:.7rem;
+    padding-top:.24rem;
+  }
+}
+@media (max-width: 430px) {
+  .kabir-reading-room .spine,
+  .kabir-reading-room .spine.wp{
+    grid-template-columns:2.15rem minmax(0,1fr);
+    column-gap:.7rem;
+  }
+  .kabir-reading-room .spine-copy h3{
+    font-size:1.12rem;
+  }
+  .kabir-reading-room .spine-copy p{
+    font-size:.84rem;
+  }
+}\n\n/* ═══════════════════════════════════════════════════════════════════
+   KABIR MOBILE SHELF FINAL OVERRIDE — LOCKED v1.0.27.7
+   MUST REMAIN AT END OF STYLESHEET.
+   Published and ghosted rows share identical mobile geometry.
+   The date/action occupies its own second row and can never steal
+   width from the title/subcopy column.
+   ═══════════════════════════════════════════════════════════════════ */
+@media (max-width: 640px) {
+  .kabir-reading-room .shelf-items > .spine,
+  .kabir-reading-room .shelf-items > .spine.wp,
+  .kabir-reading-room .shelf-items > a.spine,
+  .kabir-reading-room .shelf-items > div.spine,
+  .kabir-reading-room .shelf-items > div.spine.next {
+    display:grid;
+    width:100%;
+    margin-left:0;
+    grid-template-columns:2.35rem minmax(0,1fr);
+    grid-template-rows:auto auto;
+    grid-template-areas:
+      "num copy"
+      ". action";
+    column-gap:.85rem;
+    row-gap:.5rem;
+    align-items:start;
+    padding:1.05rem 0;
+  }
+  .kabir-reading-room .shelf-items > .spine .spine-num {
+    grid-area:num;
+    min-width:0;
+    padding-top:.12rem;
+  }
+  .kabir-reading-room .shelf-items > .spine .spine-copy {
+    grid-area:copy;
+    min-width:0;
+    width:100%;
+  }
+  .kabir-reading-room .shelf-items > .spine .spine-copy h3 {
+    margin:0 0 .28rem;
+    font-size:1.16rem;
+    line-height:1.23;
+    word-break:normal;
+    overflow-wrap:normal;
+  }
+  .kabir-reading-room .shelf-items > .spine .spine-copy p {
+    margin:0;
+    font-size:.87rem;
+    line-height:1.5;
+    word-break:normal;
+    overflow-wrap:break-word;
+  }
+  .kabir-reading-room .shelf-items > .spine .spine-action,
+  .kabir-reading-room .shelf-items > .spine.next .spine-action {
+    grid-area:action;
+    justify-self:start;
+    width:auto;
+    max-width:100%;
+    margin:0;
+    text-align:left;
+    white-space:normal;
+    font-size:.66rem;
+    line-height:1.45;
+    letter-spacing:.08em;
+  }
+  .kabir-reading-room .shelf-items > .spine.wp {
+    border-left:2px solid var(--gold);
+    padding-left:.65rem;
+  }
+}
+@media (max-width: 430px) {
+  .kabir-reading-room .shelf-items > .spine,
+  .kabir-reading-room .shelf-items > .spine.wp,
+  .kabir-reading-room .shelf-items > a.spine,
+  .kabir-reading-room .shelf-items > div.spine,
+  .kabir-reading-room .shelf-items > div.spine.next {
+    grid-template-columns:2.1rem minmax(0,1fr);
+    column-gap:.72rem;
+  }
+  .kabir-reading-room .shelf-items > .spine .spine-copy h3 { font-size:1.1rem; }
+  .kabir-reading-room .shelf-items > .spine .spine-copy p { font-size:.84rem; }
+}\n
+/* ── STILLS mobile shelf protection — 360px ──────────────────────
+   On very narrow viewports, let the action/date drop beneath
+   the title+description rather than competing horizontally.
+   Applies only to .stills-reading-room context.
+   ─────────────────────────────────────────────────────────────── */
+@media (max-width: 400px) {
+  .stills-reading-room .spine {
+    grid-template-columns: 2rem 1fr;
+    grid-template-rows: auto auto;
+  }
+  .stills-reading-room .spine-action {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: left;
+    font-size: .72rem;
+    padding-top: .25rem;
+    color: var(--leaf);
+  }
+  .stills-reading-room .spine.next .spine-action {
+    color: var(--ink-soft);
+  }
+}
+
+/* ── STILLS reader typography — explicit font-family ─────────────── */
+.reader-meta .reader-title{font-family:"Playfair Display",Georgia,serif;}
+.reader-meta .reader-tagline{font-family:Inter,system-ui,sans-serif;font-size:.92rem;letter-spacing:.04em;color:var(--ink-soft);}
+.reader-meta .eyebrow{font-family:Inter,system-ui,sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);}
+.transcript summary{font-family:Inter,system-ui,sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);cursor:pointer;list-style:none;padding:.5rem 0;}
+.transcript-list{font-family:Inter,system-ui,sans-serif;font-size:.86rem;line-height:1.7;color:var(--ink);padding-left:1.2rem;margin:.8rem 0;}
+.transcript-list li{margin-bottom:.5rem;}
+.transcript-list strong{color:var(--ink-soft);font-weight:600;}
+.gift-box{text-align:center;padding:1.8rem 0;border-top:1px solid var(--line);}
+.gift-box h2{font-family:"Playfair Display",Georgia,serif;font-size:1.3rem;font-weight:500;margin:0 0 .4rem;}
+.gift-box p{font-size:.85rem;color:var(--ink-soft);margin:0 0 1rem;}
+.gift-link{display:inline-block;padding:.55rem 1.4rem;background:#1f8f4e;color:#fff;border-radius:3px;text-decoration:none;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;}
+.gift-link:hover{background:#176e3b;}
+
+
+/* STILLS room quick-return navigation v137 */
+.room-quick-nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;max-width:520px;margin:.8rem auto 1.4rem;padding:.85rem 0;border-top:1px solid rgba(47,79,61,.16);border-bottom:1px solid rgba(47,79,61,.16);font-family:"Inter",sans-serif;font-size:.78rem;font-weight:500;letter-spacing:.02em}.room-quick-nav a{color:var(--leaf);text-decoration:none;display:inline-flex;align-items:center;min-height:40px;padding:.45rem .15rem}.room-quick-nav a:hover,.room-quick-nav a:focus-visible{text-decoration:underline;text-underline-offset:4px}.room-quick-nav .courtyard-link{text-align:right}@media(max-width:520px){.room-quick-nav{font-size:.76rem;margin:.7rem auto 1.1rem}.room-quick-nav a{min-height:44px}}
+
+/* ═══════════════════════════════════════════════════════════════════
+   KABIR PROPERTY HOME — DESKTOP ALIGNMENT LOCK v1.0.28.0
+   Top-align the shared 4:5 visual with the copy block on desktop.
+   Mobile/tablet stacking remains unchanged.
+   ═══════════════════════════════════════════════════════════════════ */
+@media (min-width: 821px) {
+  .kabir-property-home .hero-poster{
+    align-items:start;
+  }
+  .kabir-property-home .hero-poster>img{
+    margin-top:0;
+    align-self:start;
+  }
+  .kabir-property-home .hero-poster>div{
+    align-self:start;
+  }
+  .kabir-property-home .intro{
+    margin-top:0;
+  }
+  .kabir-property-home .intro>p:first-child{
+    margin-top:0;
+  }
+  .kabir-property-home .kabir-home-actions{
+    margin-top:1.35rem;
+  }
+}
+
+/* STILLS shelf — published rooms carry the opening frame as a visual threshold. */
+/* STILLS shelf artwork uses the shared House Reading Room thumbnail contract.
+   Property CSS does not own thumbnail dimensions. */
+
+/* House DNA: CSJA Reading Room fixed three-zone header */
+
+/* v1.0.152: no mobile overrides needed — base grid + short HTML text handles mobile correctly */
+
+/* ── R17: Read Time line ─────────────────────────────────────────── */
+/* One owner for base styling. Mobile override lives in house-responsive-12f1e5.css only. */
+.nmh-read-time {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 0.88rem;
+  color: #9a8a72;
+  text-align: center;
+  margin: 1.2rem auto 0;
+  display: block;
+}
+
+
+/* ==== google-fonts (skipped) ==== */
+
+/* ==== inline <style> #1 ==== */
+
+:root{
+  --paper:#f4efe3;--parch:#ece3d1;--line:#cabfa3;--ink:#2c2519;
+  --ink-soft:#6b5f47;--taupe:#8a7f66;--leaf:#4e5d44;--nav-h:72px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Inter",system-ui,sans-serif;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:400}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:74rem;margin:0 auto;padding:0 7vw}
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:#4e5d44;border-bottom:1px solid #3c4934;box-shadow:0 1px 8px rgba(40,50,34,.25)}
+.nav{max-width:88rem;height:var(--nav-h);margin:0 auto;padding:0 3vw;display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+.mark{font-family:"Playfair Display",Georgia,serif;font-size:1.45rem;font-weight:500;white-space:nowrap;color:#f4efe3}
+.nav-links{display:flex;gap:1.45rem;align-items:center}
+.nav-links a{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:2.55rem;line-height:1.25;font-family:"Inter",system-ui,sans-serif;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#f4efe3;opacity:.82;transition:opacity .25s ease;white-space:nowrap}
+.nav-links a small{font-size:.56rem;letter-spacing:.05em;text-transform:none;font-family:"Playfair Display",Georgia,serif;font-style:italic;opacity:.72}
+.nav-links a:hover{opacity:1}
+.burger{display:none;background:none;border:0;color:#f4efe3;font-size:1.45rem;cursor:pointer}
+
+
+
+.down{display:inline-block;margin-top:2.1rem;color:var(--leaf);font-size:1.4rem;opacity:.78}
+.hero{width:100%;min-height:100vh;overflow:hidden;line-height:0;position:relative;background:var(--parch)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(244,239,227,.05),rgba(44,37,25,.10));pointer-events:none}
+.hero img{width:100%;height:100vh;display:block;object-fit:cover;object-position:center bottom}
+@media (max-width:640px){.hero{min-height:0;margin-top:var(--nav-h)}.hero img{height:auto;object-fit:contain}#host h2{font-size:1.75rem}}
+.courtyard-fallback{height:100vh;background:linear-gradient(135deg,#d8c7a8,#efe6d6 46%,#b9a987)}
+.intro-strip{background:var(--parch);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.5rem 0}
+.intro-strip .wrap{display:flex;justify-content:space-between;gap:1.5rem;align-items:baseline}
+.intro-strip p{font-size:1.02rem;color:var(--ink);max-width:40rem}
+.intro-strip em{font-family:"Playfair Display",Georgia,serif;color:var(--taupe);font-size:1rem}
+.rooms,.room-section{padding:clamp(4rem,8vh,6rem) 0}
+.room-section{border-top:1px solid var(--line)}
+.room-section.alt{background:var(--parch)}
+.eyebrow{font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--taupe)}
+h2{font-size:clamp(2.2rem,5vw,3.6rem);margin:.25rem 0 1rem}
+.lede{font-size:1.12rem;max-width:48rem;color:var(--ink-soft)}
+.room-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.7rem}
+.room-card{min-height:13.5rem;background:rgba(255,255,255,.22);border:1px solid var(--line);padding:1.45rem 1.25rem;display:flex;flex-direction:column;justify-content:space-between;transition:transform .28s ease,border-color .28s ease,background .28s ease}
+.room-card:hover{transform:translateY(-3px);border-color:var(--taupe);background:rgba(255,255,255,.34)}
+.room-card small{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--taupe)}
+.room-card h3{font-size:1.55rem;line-height:1.08;margin:.9rem 0 .55rem}
+.room-card p{color:var(--ink-soft);font-size:.94rem;line-height:1.5}
+.room-card span{display:inline-block;margin-top:1rem;color:var(--leaf);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase}
+.split{display:grid;grid-template-columns:.86fr 1.14fr;gap:clamp(1.6rem,4vw,3rem);align-items:center}
+.visual{border:1px solid var(--line);background:var(--paper);min-height:320px;display:grid;place-items:center;overflow:hidden}
+.visual img{width:100%;height:100%;object-fit:cover;display:block}
+.visual.contain img{object-fit:contain;background:#111}
+.btn{display:inline-block;margin-top:1.15rem;border-bottom:1px solid var(--leaf);padding-bottom:.25rem;color:var(--leaf);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase}
+.study-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem 2rem;margin-top:1.8rem;max-width:60rem}
+.practice{border-top:1px solid var(--line);padding-top:1rem}
+.practice b{display:block;font-family:"Playfair Display",Georgia,serif;font-size:1.3rem;font-weight:400;margin-bottom:.3rem}
+.practice span{color:var(--ink-soft)}
+footer{background:var(--parch);border-top:1px solid var(--line);padding:2rem 7vw;text-align:center;color:var(--taupe);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase}
+@media(max-width:1040px){
+  .burger{display:grid;place-items:center}
+  .nav-links{position:absolute;top:var(--nav-h);left:0;right:0;background:#4e5d44;border-bottom:1px solid #3c4934;flex-direction:column;gap:0;padding:.35rem 0;display:none}
+  .nav-links.open{display:flex}
+  .nav-links a{width:100%;padding:.7rem 7vw;font-size:.76rem;align-items:flex-start}
+}
+@media(max-width:820px){
+  
+  .intro-strip .wrap{display:block}
+  .intro-strip em{display:block;margin-top:.4rem}
+  .room-grid,.study-grid{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr}
+  .visual{min-height:0;aspect-ratio:4/3}
+}
+
+section[id]{scroll-margin-top:4.5rem}
+
+
+
+
+
+
+
+
+
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+
+.host-figure{display:flex;flex-wrap:wrap;gap:2.2rem;align-items:flex-start}
+.host-note p{margin:0 0 1rem;max-width:44rem;line-height:1.75}
+.host-img{width:min(340px,100%);height:auto;border:1px solid rgba(44,37,25,.25);box-shadow:0 2px 14px rgba(44,37,25,.12)}
+.doors{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.doors a.btn{margin:0}
+.departure{padding:4rem 0}
+.departure p{line-height:1.8;margin-bottom:.6rem}
+.departure .blessing{font-family:"Playfair Display",Georgia,serif;font-size:1.6rem;margin-top:1.4rem}
+
+.guj-blessing{font-family:"Rasa","Playfair Display",serif;font-weight:600;font-size:2.2rem;color:#43533b;margin-top:.4rem}
+
+.phase{margin:2.6rem 0;max-width:44rem}
+.phase h3{font-family:Georgia,serif;font-size:1.05rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.5rem;color:var(--dk)}
+.phase-num{color:var(--leaf);font-size:1rem;letter-spacing:.08em;margin-right:.3rem}
+.org-line{font-size:.92rem;color:var(--ink);margin-bottom:.25rem;line-height:1.7;font-weight:500}
+.org-line b{font-weight:700;letter-spacing:.04em;color:var(--dk);font-size:.95rem}
+.domain-line{font-size:.88rem;color:var(--ink);font-style:normal;margin-bottom:1rem;line-height:1.7}
+.domain-line b{font-style:normal;font-weight:700;letter-spacing:.04em;color:var(--dk);font-size:.9rem}
+.phase p{margin-bottom:.95rem;line-height:1.8}
+.phase .distill{margin:1.2rem 0 0}
+.distill-line{font-family:Georgia,serif;font-size:1.05rem;line-height:1.8;border-left:3px solid var(--leaf);padding-left:1.1rem;max-width:40rem;color:var(--dk);font-style:italic}
+.rooms .eyebrow{font-size:1.05rem;letter-spacing:.32em;color:#4e5d44;font-weight:600}
+.card-thumb{width:100%;height:clamp(190px,16vw,240px);object-fit:cover;display:block;margin-bottom:1rem;border:1px solid var(--line)}
+@media(max-width:820px){.card-thumb{height:clamp(220px,54vw,390px)}}
+@media(max-width:480px){.card-thumb{height:clamp(200px,58vw,300px)}}
+.distill-label{font-size:.66rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--leaf);margin-bottom:.35rem}
+.shelf-label{font-size:.78rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-soft);margin-top:2.4rem}
+.shelf-section{margin-top:2.2rem}.shelf-row{display:flex;flex-wrap:nowrap;align-items:flex-end;gap:5px;margin-top:.9rem;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px;scrollbar-width:none}.shelf-row::-webkit-scrollbar{display:none}.book-card{position:relative;flex:0 0 auto;width:80px;cursor:default}.book-card img{display:block;width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:1px;box-shadow:2px 2px 8px rgba(44,37,25,.2),-1px 0 0 rgba(44,37,25,.06);transition:transform .2s ease,box-shadow .2s ease}.book-card::after{content:attr(data-title);position:absolute;bottom:0;left:-12px;right:-12px;background:rgba(28,22,14,.88);color:#f0e8d6;font-family:"Playfair Display",Georgia,serif;font-size:.6rem;line-height:1.3;padding:.4rem .35rem;text-align:center;opacity:0;transition:opacity .2s;pointer-events:none;z-index:10;border-radius:1px}.book-card:hover::after{opacity:1}.book-card:hover img{transform:translateY(-6px);box-shadow:3px 6px 16px rgba(44,37,25,.3)}.book-card.linked{cursor:pointer}.book-card.linked img{box-shadow:2px 2px 8px rgba(44,37,25,.2),-1px 0 0 rgba(44,37,25,.06),0 0 0 1.5px rgba(94,107,72,.45)}.book-card.linked:hover img{transform:translateY(-8px);box-shadow:3px 8px 20px rgba(44,37,25,.32),0 0 0 2px rgba(94,107,72,.65)}.book-link{display:block}.shelf-label{font-size:.68rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-soft);padding-bottom:.45rem;border-bottom:1px solid var(--line);display:block}.library-room-wrap{width:100%;margin:0 0 .4rem;line-height:0}.library-room-img{width:100%;height:auto;display:block;max-height:700px;object-fit:cover;object-position:center top}@media(max-width:500px){.book-card{width:62px}.shelf-row{gap:4px}}
+
+/* ── INTERACTIVE BOOKSHELF ────────────────────────── */
+.shelf-wrap{
+  width:100%;
+  margin:.4rem 0 0;
+}
+.shelf-map{
+  position:relative;
+  width:100%;
+  line-height:0;
+}
+.shelf-img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.shelf-hotspots{
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+}
+/* Each hotspot */
+.hotspot{
+  position:absolute;
+  display:block;
+  cursor:pointer;
+  border:none !important;
+  outline:none !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  --tip-opacity:0;
+}
+.hs-linked,.hs-plain{border:none !important;outline:none !important;box-shadow:none !important;background:transparent !important;}
+.hotspot::after{display:none !important;content:none !important;}
+.hotspot:hover::after{display:none !important;}
+/* Linked book — AP */
+.hs-linked{cursor:pointer;border:none !important;outline:none !important;background:transparent !important;box-shadow:none !important;}
+.hs-linked::before{display:none}.hs-linked:hover::before{display:none}
+/* Shelf note below image */
+.shelf-note{
+  font-size:.75rem;
+  color:var(--ink-soft);
+  padding:.5rem 7vw 0;
+  letter-spacing:.02em;
+}
+.shelf-note-ap{
+  color:var(--leaf);
+  font-style:italic;
+}
+/* Remove old shelf sections */
+.shelf-section,.shelf-row,.book-card{display:none}
+/* Mobile — tooltip below on small screens */
+@media(max-width:640px){
+  .hotspot::after{display:none !important;content:none !important;}
+  .shelf-note{padding:.4rem 4vw 0}
+}
+::-webkit-scrollbar{width:9px}
+::-webkit-scrollbar-track{background:var(--parch)}
+::-webkit-scrollbar-thumb{background:#b9ab8e;border-radius:4px}
+html{scrollbar-color:#b9ab8e var(--parch)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--leaf);outline-offset:2px}
+@media(max-width:640px){#conversation .doors{flex-direction:column;align-items:stretch}#conversation .doors .btn{text-align:center;margin:0 0 .6rem}}
+@media(max-width:820px){
+.split .visual,.split .visual.contain{aspect-ratio:auto !important;min-height:0 !important;border:none;background:none}
+.split .visual img{width:100%;height:auto !important;object-fit:contain !important;background:none !important}
+}
+.distill-head{font-size:1.9rem;margin:3.4rem 0 .8rem}
+.distill{margin:2.4rem 0;max-width:44rem;border-left:2px solid var(--parch);padding-left:1.3rem}
+.distill h4{font-family:"Playfair Display",Georgia,serif;font-size:1.3rem;font-weight:500;margin-bottom:.7rem}
+.distill p{margin-bottom:.9rem;line-height:1.8}
+html{scrollbar-gutter:stable}
+section[id],.room-card[id]{scroll-margin-top:calc(var(--nav-h) + 10px)}
+@media(max-width:640px){
+  .departure .wrap{grid-template-columns:1fr !important;text-align:center;}
+  .departure img{width:200px !important;margin:0 auto;}
+}
+
+
+
+/* Come, Sit — Just Ask homepage invitation */
+.csja-home-grid{grid-template-columns:minmax(280px,.78fr) minmax(0,1.22fr);gap:clamp(2.5rem,5vw,5.5rem);align-items:start}
+.csja-home-visual{justify-self:center;width:min(100%,430px);margin-top:2.15rem}
+.csja-home-visual img{width:100%;height:auto!important;object-fit:contain!important;background:none!important;box-shadow:0 4px 22px rgba(44,37,25,.10)}
+.csja-home-copy{max-width:39rem;padding-top:.15rem}
+.csja-home-copy h2{font-size:clamp(2.35rem,4.35vw,3.5rem);line-height:1.13;letter-spacing:-.018em;margin:.35rem 0 1.05rem;max-width:14ch}
+.csja-bridge{font-family:"Playfair Display",Georgia,serif;font-size:clamp(1.25rem,2vw,1.52rem);line-height:1.45;color:var(--ink);margin:0 0 1.45rem;max-width:28rem}
+.csja-body{max-width:35rem}
+.csja-body p{margin:0 0 1rem;line-height:1.78;color:var(--ink-soft)}
+.csja-body .csja-quiet{font-family:"Playfair Display",Georgia,serif;font-size:1.08rem;line-height:1.65;color:var(--ink);margin-top:1.2rem}
+.csja-home .doors{margin-top:1.45rem}
+@media(max-width:900px){
+  .csja-home-grid{grid-template-columns:minmax(220px,.72fr) minmax(0,1.28fr);gap:2.4rem}
+  .csja-home-visual{width:min(100%,360px);margin-top:1.75rem}
+  .csja-home-copy h2{font-size:clamp(2.1rem,4.8vw,3rem)}
+}
+@media(max-width:820px){
+  .csja-home-grid{grid-template-columns:1fr;gap:2rem}
+  .csja-home-visual{order:2;width:min(88vw,390px);margin:0 auto}
+  .csja-home-copy{order:1;max-width:40rem}
+  .csja-home-copy h2{max-width:18ch}
+}
+@media(max-width:560px){
+  .csja-home-copy h2{font-size:2.15rem;line-height:1.16;max-width:none}
+  .csja-bridge{font-size:1.2rem;margin-bottom:1.2rem}
+  .csja-body p{line-height:1.72}
+  .csja-home-visual{width:100%}
+}
+
+/* Homepage room artwork frame standardisation — v1.0.13 */
+#stills .visual.contain,
+#axiom .visual.contain,
+#kabir-preview .visual.contain,
+#csja .visual.contain,
+#conversation .visual.contain{
+  width:min(100%,430px);
+  aspect-ratio:4/5;
+  min-height:0;
+  margin:0;
+  justify-self:center;
+  background:#111;
+  border:1px solid var(--line);
+}
+#stills .visual.contain img,
+#axiom .visual.contain img,
+#kabir-preview .visual.contain img,
+#csja .visual.contain img,
+#conversation .visual.contain img{
+  width:100%;
+  height:100% !important;
+  object-fit:contain !important;
+  background:#111 !important;
+  box-shadow:none !important;
+}
+#csja .csja-home-grid{
+  grid-template-columns:.86fr 1.14fr;
+  gap:clamp(1.6rem,4vw,3rem);
+  align-items:center;
+}
+@media(max-width:820px){
+  #stills .visual.contain,
+    #axiom .visual.contain,
+  #kabir-preview .visual.contain,
+  #csja .visual.contain,
+  #conversation .visual.contain{
+    width:min(100%,420px);
+    aspect-ratio:4/5 !important;
+    margin:0 auto 1.35rem;
+    justify-self:center;
+    background:#111;
+    border:1px solid var(--line);
+  }
+  #stills .visual.contain img,
+    #axiom .visual.contain img,
+  #kabir-preview .visual.contain img,
+  #csja .visual.contain img,
+  #conversation .visual.contain img{
+    width:100%;
+    height:100% !important;
+    object-fit:contain !important;
+    background:#111 !important;
+  }
+  #csja .csja-home-grid{grid-template-columns:1fr;gap:1.6rem}
+  #csja .csja-home-visual{order:0}
+  #csja .csja-home-copy{order:0}
+}
+
+
+/* v73 — The Study reading rhythm: lighter, house-consistent typography. */
+#study .phase{max-width:48rem;margin:2.8rem 0;}
+#study .phase h3{font-family:"Playfair Display",Georgia,serif;font-size:1.22rem;font-weight:600;letter-spacing:0;text-transform:none;line-height:1.38;margin-bottom:.72rem;color:var(--ink);}
+#study .phase-num{font-family:Inter,Arial,sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.14em;color:var(--leaf);vertical-align:.12em;margin-right:.45rem;}
+#study .org-line,#study .domain-line{font-family:Inter,Arial,sans-serif;font-size:.96rem;font-weight:400;line-height:1.72;color:var(--ink-soft);}
+#study .org-line b,#study .domain-line b{font-family:Inter,Arial,sans-serif;font-size:.9rem;font-weight:600;letter-spacing:.01em;color:var(--ink);}
+#study .distill-label{font-family:Inter,Arial,sans-serif;font-size:.66rem;font-weight:600;letter-spacing:.22em;color:var(--leaf);}
+#study .distill-line{font-family:"Playfair Display",Georgia,serif;font-size:1.08rem;font-weight:400;line-height:1.8;font-style:italic;color:var(--ink);border-left:2px solid var(--leaf);padding-left:1.05rem;}
+#study .study-subhead{font-family:"Playfair Display",Georgia,serif;font-size:1.34rem;font-weight:600;line-height:1.35;color:var(--ink);margin:.2rem 0 .55rem;}
+@media(max-width:640px){#study .phase h3{font-size:1.12rem}#study .org-line,#study .domain-line{font-size:.93rem}#study .distill-line{font-size:1.02rem}}
+
+
+
+/* ==== assets/house-responsive-12f1e5.css ==== */
+/* NiravManubhai responsive and Quiet Signal refinement — v16 */
+:root{
+  --nm-gutter:clamp(1rem,3.2vw,2.25rem);
+  --nm-reading:44rem;
+}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:5rem}
+body{min-width:320px;overflow-x:hidden}
+img,svg,video{display:block;max-width:100%}
+button,a{-webkit-tap-highlight-color:transparent}
+.topbar{padding-left:max(5vw,env(safe-area-inset-left));padding-right:max(5vw,env(safe-area-inset-right));padding-top:max(.86rem,env(safe-area-inset-top))}
+.room-shell,.reader-shell,.reading-page{padding-left:max(var(--nm-gutter),env(safe-area-inset-left));padding-right:max(var(--nm-gutter),env(safe-area-inset-right))}
+.site-footer,footer{padding-bottom:max(3rem,env(safe-area-inset-bottom))}
+
+/* Capability-aware interaction: no device or OS sniffing required. */
+@media (hover:hover) and (pointer:fine){
+  a,.btn,button{transition:color .18s ease,background-color .18s ease,border-color .18s ease,transform .18s ease}
+}
+@media (hover:none),(pointer:coarse){
+  .btn,.gift-link,.btn-gift,.story-nav-link{min-height:48px}
+  .corridor-row{min-height:68px}
+}
+@media (orientation:landscape) and (max-height:560px){
+  .room-shell,.reader-shell,.reading-page{padding-top:2.5rem}
+}
+
+/* The Quiet Signal landing page */
+.quiet-signal-landing .room-shell{max-width:78rem}
+.quiet-signal-landing .hero-poster{
+  grid-template-columns:minmax(0,.72fr) minmax(19rem,1.28fr);
+  gap:clamp(2.4rem,5vw,5.5rem);
+  align-items:center;
+}
+.quiet-signal-landing .hero-poster>img{
+  width:100%;max-width:none;aspect-ratio:4/5;object-fit:contain;
+  border-radius:4px;
+}
+.quiet-signal-landing .hero-poster>div{align-self:center}
+.quiet-signal-landing .room-title{font-size:clamp(3rem,6.4vw,5.35rem)}
+.quiet-signal-landing .intro{font-size:clamp(1rem,1.3vw,1.08rem)}
+.quiet-signal-landing .actions{align-items:stretch}
+.quiet-signal-landing .actions .btn{line-height:1.35;text-align:center}
+.quiet-signal-landing .corridor-row.is-open{color:var(--ink)}
+.quiet-signal-landing .corridor-row.is-open .corridor-state{color:var(--leaf);font-weight:600}
+
+/* Dedicated field-note reading system */
+.quiet-field-note{background:var(--paper);color:var(--ink)}
+.quiet-field-note .reading-page{
+  width:min(100%,calc(var(--nm-reading) + 2 * var(--nm-gutter)));
+  margin:0 auto;padding-top:clamp(3.8rem,7vw,6.5rem);padding-bottom:5.5rem;
+}
+.quiet-field-note .story-header{text-align:center;margin:0 auto clamp(2.6rem,5vw,4.2rem);max-width:42rem}
+.quiet-field-note .series-line,.quiet-field-note .story-number{
+  margin:.2rem 0;font-family:Inter,system-ui,sans-serif;font-size:.7rem;
+  font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--leaf)
+}
+.quiet-field-note .story-number{color:var(--ink-soft);letter-spacing:.12em}
+.quiet-field-note .story-header h1{
+  margin:.75rem auto .8rem;font-family:"Playfair Display",Georgia,serif;font-weight:500;
+  font-size:clamp(2.55rem,6.6vw,4.65rem);line-height:1.08;letter-spacing:-.018em;
+}
+.quiet-field-note .reading-time{margin:.7rem 0 0;color:var(--ink-soft);font-size:.78rem;letter-spacing:.04em}
+.quiet-field-note .progress-line{display:flex;justify-content:center;gap:.42rem;margin-top:1.1rem;color:var(--leaf);font-size:.72rem}
+.quiet-field-note .story-body{
+  max-width:var(--nm-reading);margin:0 auto;font-family:"Playfair Display",Georgia,serif;
+  font-size:clamp(1.08rem,1.3vw,1.19rem);line-height:1.9;color:#332b20;
+  text-wrap:pretty;
+}
+.quiet-field-note .story-body p{margin:0 0 1.42em}
+.quiet-field-note .story-body .opening-line{
+  font-size:clamp(1.45rem,3vw,2rem);line-height:1.45;color:var(--ink);margin-bottom:1.15em
+}
+.quiet-field-note .story-body h2{
+  margin:3.25rem 0 1.1rem;font-family:Inter,system-ui,sans-serif;font-size:.72rem;
+  font-weight:600;letter-spacing:.19em;text-transform:uppercase;color:var(--leaf)
+}
+.quiet-field-note .story-rule{width:3.5rem;border:0;border-top:1px solid var(--gold);margin:1.5rem auto}
+.quiet-field-note .pull-quote{
+  margin:3rem max(-2.5rem,-5vw);padding:1.8rem clamp(1.35rem,4vw,2.5rem);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  font-size:clamp(1.5rem,3vw,2.05rem);line-height:1.48;text-align:center;color:var(--leaf-dark)
+}
+.quiet-field-note .practical-note{
+  margin:2.7rem 0;padding:1.45rem 1.55rem;background:rgba(236,227,209,.62);
+  border-left:3px solid var(--leaf);font-size:.98em
+}
+.quiet-field-note .practical-note p:last-child{margin-bottom:0}
+.quiet-field-note .closing-lines{margin-top:2.8rem;font-size:clamp(1.25rem,2.4vw,1.55rem);line-height:1.55}
+.quiet-field-note .closing-lines strong{font-weight:500;color:var(--leaf-dark)}
+.quiet-field-note .story-ending{max-width:var(--nm-reading);margin:2rem auto 0;text-align:center}
+.quiet-field-note .story-ending .ai-reveal{font-family:"Playfair Display",Georgia,serif;color:var(--ink-soft);line-height:1.7}
+.quiet-field-note .gift-block{margin:2rem 0;padding:2rem 1rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.quiet-field-note .gift-label{margin:0 0 .85rem;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.quiet-field-note .btn-gift{
+  display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:.78rem 1.15rem;
+  background:var(--leaf);color:var(--paper);text-decoration:none;border-radius:2px;
+  font-size:.75rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase
+}
+.quiet-field-note .story-nav{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:2rem}
+.quiet-field-note .story-nav-link{display:inline-flex;align-items:center;color:var(--leaf);text-decoration:none;font-size:.78rem;letter-spacing:.04em}
+.quiet-field-note footer{text-align:center;color:var(--ink-soft);font-size:.7rem;padding:0 1rem 3rem}
+.quiet-field-note footer a{text-decoration:none}
+
+@media (min-width:1440px){
+  .quiet-signal-landing .room-shell{max-width:82rem}
+  .quiet-signal-landing .hero-poster{grid-template-columns:minmax(0,.78fr) minmax(20rem,1.22fr)}
+}
+@media (max-width:900px){
+  .quiet-signal-landing .hero-poster{grid-template-columns:minmax(0,.75fr) minmax(18rem,1.25fr);gap:2.3rem}
+}
+@media (max-width:720px){
+  .quiet-signal-landing .hero-poster{grid-template-columns:1fr;gap:2rem;align-items:start}
+  .quiet-signal-landing .hero-poster>img{width:100%;max-width:560px;margin:0 auto}
+  .quiet-signal-landing .hero-poster>div{max-width:38rem;margin:0 auto}
+  .quiet-signal-landing .room-title{font-size:clamp(2.8rem,14vw,4.25rem)}
+  .quiet-signal-landing .corridor-head{align-items:flex-start;flex-direction:column}
+  .quiet-field-note .reading-page{padding-top:3.6rem}
+  .quiet-field-note .story-body{font-size:1.08rem;line-height:1.82}
+  .quiet-field-note .pull-quote{margin:2.7rem 0}
+}
+@media (max-width:430px){
+  .quiet-signal-landing .hero-poster>img{width:100%;max-width:380px;margin:0 auto}
+  .quiet-field-note .story-header h1{font-size:clamp(2.35rem,12.5vw,3.25rem)}
+  .quiet-field-note .story-body{font-size:1.04rem;line-height:1.8}
+  .quiet-field-note .story-body p{margin-bottom:1.35em}
+  .quiet-field-note .practical-note{margin-left:-.15rem;margin-right:-.15rem;padding:1.25rem 1.15rem}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* Field Note 01 hero image */
+.quiet-field-note .story-deck{
+  max-width:38rem;margin:.15rem auto .75rem;color:var(--ink-soft);
+  font-family:Inter,system-ui,sans-serif;font-size:clamp(.88rem,1.25vw,1rem);line-height:1.55;
+}
+.quiet-field-note .story-hero{
+  width:min(100%,64rem);margin:0 auto clamp(3.2rem,6vw,5rem);
+}
+.quiet-field-note .story-hero img{
+  display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;
+  border-radius:2px;box-shadow:0 18px 48px rgba(25,20,14,.14);
+}
+.quiet-field-note .next-note-tease{
+  margin:2.2rem auto 1.7rem;color:var(--ink-soft);font-family:"Playfair Display",Georgia,serif;
+  font-style:italic;line-height:1.7;
+}
+@media (max-width:720px){
+  .quiet-field-note .story-hero{margin-bottom:2.8rem}
+  .quiet-field-note .story-hero img{border-radius:0}
+}
+
+
+/* Quiet Signal final guest experience — v1.0.42 */
+.quiet-signal-landing .quiet-time-note{
+  margin-top:1.15rem!important;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:1.04rem;
+  font-style:italic;
+  color:var(--leaf-dark);
+}
+.qs-reading-room .reading-room-title{
+  margin:clamp(1.8rem,3vw,2.8rem) auto 1.5rem;
+  text-align:center;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:clamp(2.35rem,5vw,4.4rem);
+  line-height:1.08;
+  font-weight:500;
+  letter-spacing:-.015em;
+  color:var(--ink);
+}
+.qs-reading-room .room-hero-frame{margin-top:0}
+.qs-reading-room .qs-room-intro{
+  max-width:44rem;
+  padding-bottom:2.6rem;
+}
+.qs-reading-room .qs-room-intro .qs-room-kicker{
+  font-family:Inter,system-ui,sans-serif;
+  font-style:normal;
+  font-size:.69rem;
+  font-weight:600;
+  letter-spacing:.17em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+  margin:0 0 .75rem;
+}
+.qs-reading-room .qs-room-intro h2{
+  margin:0 0 1.25rem;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:clamp(1.65rem,3vw,2.35rem);
+  line-height:1.25;
+  font-weight:500;
+  color:var(--ink);
+}
+.qs-reading-room .qs-room-intro p:not(.qs-room-kicker){
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:clamp(1.02rem,1.8vw,1.14rem);
+  line-height:1.72;
+  font-style:normal;
+  color:var(--ink-soft);
+  margin:.28rem 0;
+}
+.qs-reading-room .qs-room-intro .qs-room-invite{
+  margin-top:1.05rem!important;
+  font-style:italic!important;
+  color:var(--leaf-dark)!important;
+}
+.qs-reading-room .shelf-header{justify-content:flex-start}
+.qs-reading-room .shelf-label{font-size:.7rem}
+
+/* Field Notes are intentionally text-first. */
+.quiet-field-note .story-header{
+  margin-bottom:clamp(2.4rem,5vw,3.7rem);
+}
+.quiet-field-note .story-body{
+  max-width:42rem;
+}
+.quiet-field-note .story-body p{
+  hanging-punctuation:first last;
+}
+.quiet-field-note .story-ending{
+  max-width:42rem;
+  margin-top:3.4rem;
+}
+.quiet-field-note .story-nav{
+  border-top:1px solid var(--line);
+  padding-top:1.35rem;
+  justify-content:space-between;
+  align-items:center;
+}
+.quiet-field-note .story-nav a{
+  font-family:Inter,system-ui,sans-serif;
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+  text-decoration:none;
+}
+
+/* Prevent forthcoming-note metadata from crushing the reading-room shelf on phones. */
+@media (max-width:640px){
+  .qs-reading-room .reading-room-title{margin-top:1.6rem;margin-bottom:1.2rem}
+  .qs-reading-room .room-hero-frame{aspect-ratio:16/10}
+  .qs-reading-room .room-intro{text-align:left;margin-top:1.65rem;padding-bottom:2rem}
+  .qs-reading-room .reading-room .shelf-room{padding-top:2.2rem}
+  .qs-reading-room .spine{
+    grid-template-columns:2.1rem minmax(0,1fr);
+    gap:.5rem .8rem;
+    align-items:start;
+    padding:1rem 0;
+  }
+  .qs-reading-room .spine-num{grid-column:1;grid-row:1 / span 2;padding-top:.15rem}
+  .qs-reading-room .spine-copy{grid-column:2;grid-row:1}
+  .qs-reading-room .spine-action{
+    grid-column:2;grid-row:2;
+    text-align:left;
+    white-space:normal;
+    line-height:1.45;
+    padding-top:.1rem;
+  }
+  .qs-reading-room .spine.next .spine-action{white-space:normal;text-align:left}
+  .qs-reading-room .room-journey{align-items:stretch}
+  .qs-reading-room .room-journey a,.qs-reading-room .room-journey .journey-home{width:100%}
+  .quiet-field-note .reading-page{padding-top:3.2rem;padding-left:1.2rem;padding-right:1.2rem}
+  .quiet-field-note .story-header{text-align:left;margin-bottom:2.2rem}
+  .quiet-field-note .story-header h1{margin-left:0;margin-right:0}
+  .quiet-field-note .story-deck{margin-left:0;margin-right:0}
+  .quiet-field-note .story-body{font-size:1.06rem;line-height:1.82}
+  .quiet-field-note .story-nav{gap:.9rem}
+}
+@media (max-width:380px){
+  .qs-reading-room .spine-copy h3{font-size:1rem}
+  .qs-reading-room .spine-action{font-size:.61rem;letter-spacing:.06em}
+  .quiet-field-note .reading-page{padding-left:1rem;padding-right:1rem}
+}
+
+/* ── R17: Read Time line — mobile override ───────────────────────── */
+@media(max-width:720px) {
+  .nmh-read-time {
+    font-size: 0.82rem;
+    margin-top: 0.9rem;
+  }
+}
+
+
+/* ==== assets/house-foundation-8d5635.css ==== */
+/* Nirav Manubhai — production experience layer v11 */
+:root{
+  --nm-space-1:.5rem;--nm-space-2:.75rem;--nm-space-3:1rem;--nm-space-4:1.5rem;
+  --nm-space-5:2rem;--nm-space-6:3rem;--nm-space-7:4.5rem;
+  --nm-radius:3px;--nm-shadow:0 10px 34px rgba(44,37,25,.13);
+  --nm-focus:#e6c77d;
+}
+html{scroll-padding-top:5rem;-webkit-text-size-adjust:100%}
+body{overflow-x:hidden;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+body.nm-ready{animation:nm-page-in .42s ease both}
+@keyframes nm-page-in{from{opacity:0}to{opacity:1}}
+::selection{background:rgba(178,132,62,.25);color:inherit}
+a,button,summary{-webkit-tap-highlight-color:transparent}
+a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--nm-focus)!important;outline-offset:3px!important}
+img{display:block}
+main p,article p,.story p{widows:3;orphans:3}
+
+/* Quiet reading progress */
+.nm-reading-progress{position:fixed;inset:0 0 auto;z-index:9999;height:2px;pointer-events:none;background:transparent}
+.nm-reading-progress>span{display:block;width:0;height:100%;background:var(--gold,#b2843e);transition:width .08s linear}
+
+/* Journey context */
+.nm-journey{display:inline-flex;align-items:center;gap:.55rem;min-height:32px;padding:.32rem .58rem;border:1px solid rgba(244,239,227,.34);border-radius:999px;color:var(--paper,#f4efe3);font-size:.66rem;line-height:1;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.nm-journey-dots{display:flex;gap:3px}.nm-journey-dots i{display:block;width:4px;height:4px;border:1px solid currentColor;border-radius:50%;opacity:.55}.nm-journey-dots i.done,.nm-journey-dots i.current{background:currentColor;opacity:1}.nm-journey-dots i.current{transform:scale(1.35)}
+
+/* Consistent controls */
+.btn,.gift-link{border-radius:var(--nm-radius)!important;transition:background-color .2s ease,color .2s ease,border-color .2s ease,transform .2s ease!important}
+.btn:hover,.gift-link:hover{transform:translateY(-1px)}
+.btn:active,.gift-link:active{transform:translateY(0)}
+
+/* Unified visual treatment */
+.reader-poster,.hero-poster img,.quiet-card img,.corridor-thumb{box-shadow:var(--nm-shadow)}
+.reader-shell,.room-shell{width:min(100%,calc(var(--max-room,68rem) + 2.8rem))}
+.story{max-width:44rem;margin-inline:auto}
+.story p{max-width:68ch}
+/* ── House Typography Standards — R14 ─────────────────────────────────────
+   Normalisation only. Not a redesign.
+   These rules standardise the reading experience across all rooms
+   without changing the personality of any property.
+   ─────────────────────────────────────────────────────────────────────── */
+
+/* Paragraph rhythm on story pages */
+.story p { margin-bottom: 1.35rem; }
+
+/* Eyebrow labels — consistent across all properties */
+.eyebrow {
+  font-size: 0.68rem !important;
+  font-family: Inter, system-ui, sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  color: var(--leaf) !important;
+  margin-bottom: 0.6rem !important;
+}
+
+/* Mobile body text floor — reading text only, not UI */
+@media (max-width: 480px) {
+  .story { font-size: 1rem !important; }
+  .story p { font-size: 1rem !important; }
+  .lede { font-size: 1rem !important; }
+  .intro-text { font-size: 1rem !important; }
+}
+
+/* Back to top — single icon language */
+.nm-top{position:fixed;right:clamp(.8rem,2vw,1.4rem);bottom:clamp(.8rem,2vw,1.4rem);z-index:70;width:44px;height:44px;display:grid;place-items:center;border:1px solid rgba(44,37,25,.18);border-radius:50%;background:rgba(244,239,227,.93);color:var(--leaf,#4e5d44);box-shadow:0 5px 18px rgba(44,37,25,.12);opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s ease;cursor:pointer;backdrop-filter:blur(8px)}
+.nm-top.show{opacity:1;visibility:visible;transform:none}.nm-top:hover{background:var(--parch,#ece3d1)}.nm-top svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* External links receive a restrained marker */
+a[target="_blank"]:not(.btn):not(.gift-link)::after{content:" ↗";font-size:.78em;opacity:.62}
+
+/* Better mobile rhythm */
+@media(max-width:720px){
+  body{line-height:1.68}
+  .topbar{padding:.72rem 4.5vw;gap:.6rem}.topbar .mark{font-size:.93rem}
+  .nm-journey{padding:.28rem .48rem;font-size:.59rem}.nm-journey-dots{display:none}
+  .reader-shell,.room-shell{padding-left:1.15rem!important;padding-right:1.15rem!important;padding-bottom:2.5rem!important}
+  .reader-title,.room-title{hyphens:auto;text-wrap:balance}
+  .subhead,.reader-tagline{text-wrap:pretty}
+  .story{font-size:1.08rem;line-height:1.84}
+  .rule{margin:2.7rem 0}
+}
+@media(max-width:420px){.nm-journey{max-width:42vw;overflow:hidden;text-overflow:ellipsis}.nm-top{width:42px;height:42px}}
+@media(prefers-reduced-motion:reduce){body.nm-ready{animation:none}.nm-reading-progress>span,.nm-top,.btn,.gift-link{transition:none!important}.btn:hover,.gift-link:hover{transform:none}}
+@media print{.topbar,.nm-reading-progress,.nm-top,.reader-nav,.gift-box{display:none!important}body{background:#fff;color:#000}.reader-shell,.room-shell{max-width:none;padding:0}.story{max-width:none}}
+
+/* ═══════════════════════════════════════════════════════════════════
+   UNIFIED GUEST NAVIGATION + READER RHYTHM — v1.0.34
+   One quiet interaction language across the four story properties.
+   Loaded after the series styles so these rules are authoritative.
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* Navigation typography: same Inter voice, weight and colour everywhere. */
+.topbar a,
+.reader-nav a,
+.reader-nav .disabled,
+.room-journey a,
+.next-shelf-card .nsc-actions .btn,
+.series-cta .btn,
+.gift-link,
+.btn {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.topbar a {
+  font-size: .78rem;
+  font-weight: 500;
+  letter-spacing: .055em;
+}
+/* Property name remains a quiet wordmark, not a competing navigation style. */
+.topbar .mark {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .025em;
+}
+
+/* One button geometry. Meaning may change colour (e.g. WhatsApp), shape does not. */
+.btn,
+.gift-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: .72rem 1rem;
+  border-radius: 2px;
+  font-size: .74rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.gift-link {
+  border: 1px solid #1f8f4e;
+  background: #1f8f4e;
+  color: #fff;
+}
+.gift-link:hover { background: #187a42; border-color: #187a42; }
+
+/* End-of-room rhythm: no large blank fields between useful guest choices. */
+.next-shelf-card {
+  margin: 2rem auto 0;
+  padding: 1.5rem 0;
+  max-width: 46rem;
+}
+.gift-box {
+  margin: 1.25rem auto 0;
+  padding: 1.5rem 0;
+  max-width: 46rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 0;
+}
+.gift-box h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin: 0 0 .4rem;
+}
+.gift-box p {
+  margin: 0 auto .9rem;
+  font-size: .85rem;
+}
+.series-cta {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.35rem 0;
+  text-align: center;
+  border-top: 1px solid var(--line);
+}
+.series-cta p {
+  margin: 0 0 .65rem;
+  color: var(--ink-soft);
+  font-size: .82rem;
+}
+
+/* Reader navigation: previous / Reading Room / next share one visual voice. */
+.reader-nav {
+  max-width: 46rem;
+  margin: 1.35rem auto 0;
+  padding: 1.35rem 0 0;
+  border-top: 1px solid var(--line);
+  grid-template-columns: minmax(0,1fr) auto minmax(0,1fr);
+  gap: 1rem;
+}
+.reader-nav a,
+.reader-nav .disabled {
+  color: var(--leaf);
+  font-size: .76rem;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: .025em;
+  text-transform: none;
+}
+.reader-nav .home {
+  text-align: center;
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .025em;
+  text-transform: none;
+}
+.reader-nav .next { text-align: right; }
+.reader-nav .disabled { color: var(--ink-soft); opacity: .48; }
+
+/* Reading-room journey nav follows the same text scale and tone. */
+.room-journey {
+  margin-top: 2rem;
+  padding-top: 1.35rem;
+}
+.room-journey a {
+  color: var(--leaf);
+  font-size: .76rem;
+  font-weight: 500;
+  letter-spacing: .025em;
+  text-transform: none;
+}
+.room-journey .journey-home {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: .9rem;
+  font-style: normal;
+}
+
+/* Mobile: make the archive return the first clear choice, then prev/next below it. */
+@media (max-width: 720px) {
+  .reader-nav {
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+    gap: .85rem 1rem;
+  }
+  .reader-nav .home {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    justify-self: center;
+  }
+  .reader-nav > :first-child {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: left;
+  }
+  .reader-nav .next {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+  }
+  .next-shelf-card,
+  .gift-box,
+  .series-cta,
+  .reader-nav { width: 100%; }
+}
+
+@media (max-width: 430px) {
+  .btn,
+  .gift-link,
+  .next-shelf-card .nsc-actions .btn,
+  .series-cta .btn { width: 100%; }
+  .next-shelf-card { margin-top: 1.5rem; }
+  .gift-box { margin-top: 1rem; }
+  .reader-nav { margin-top: 1rem; }
+  .reader-nav a,
+  .reader-nav .disabled,
+  .reader-nav .home { font-size: .74rem; }
+}
+
+/* Unified STILLS home: invitation flows into the Reading Room without a dead band. */
+.stills-unified .room-shell { padding-bottom: 2.75rem; }
+.stills-unified .hero-poster { margin-bottom: 0; }
+.stills-unified .reading-room { scroll-margin-top: 4.25rem; }
+@media (max-width: 720px) {
+  .stills-unified .room-shell { padding-bottom: 2.25rem; }
+}
+
+/* v43 · first-visit orientation: quiet, not an onboarding control */
+.rooms-first-visit{max-width:42rem;margin:.55rem 0 1.5rem;color:var(--ink-soft,#6b5f47);font-family:"Playfair Display",Georgia,serif;font-style:italic;font-size:.95rem;line-height:1.65}
+.rooms-first-visit a{color:inherit;text-decoration-color:rgba(107,95,71,.45);text-underline-offset:.18em}.rooms-first-visit a:hover{color:var(--ink,#2c2519)}
+
+
+/* ==== assets/house-visual-hospitality-15eb52.css ==== */
+
+:root{
+  --nm-preview-image-max: 540px;
+  --nm-property-image-max: 500px;
+  --nm-reading-hero-max: 1120px;
+}
+
+/* HOME / COURTYARD STORY PREVIEWS
+   Artwork has presence. Text and image begin on the same visual line. */
+#axiom .split,
+#kabir-preview .split,
+#csja .split,
+#conversation .split{
+  align-items:start !important;
+  grid-template-columns:minmax(320px,.95fr) minmax(0,1.05fr) !important;
+  gap:clamp(2rem,4.5vw,4rem) !important;
+}
+#axiom .visual,
+#kabir-preview .visual,
+#csja .visual,
+#conversation .visual{
+  min-height:0 !important;
+  height:auto !important;
+  border:0 !important;
+  background:transparent !important;
+  overflow:visible !important;
+  align-self:start !important;
+  justify-self:start !important;
+  width:min(100%,var(--nm-preview-image-max)) !important;
+}
+#axiom .visual img,
+#kabir-preview .visual img,
+#csja .visual img,
+#conversation .visual img{
+  width:100% !important;
+  height:auto !important;
+  max-height:640px !important;
+  object-fit:contain !important;
+  object-position:top center !important;
+  background:transparent !important;
+  display:block !important;
+  box-shadow:0 14px 34px rgba(44,37,25,.14) !important;
+}
+
+/* PROPERTY THRESHOLDS
+   Stable frame: replacement artwork drops into the same architectural position. */
+.hero-poster{
+  align-items:start !important;
+  gap:clamp(2rem,5vw,4.25rem) !important;
+}
+.hero-poster > img{
+  width:min(100%,var(--nm-property-image-max)) !important;
+  height:auto !important;
+  max-height:660px !important;
+  object-fit:contain !important;
+  object-position:top center !important;
+  justify-self:center !important;
+  align-self:start !important;
+  background:transparent !important;
+}
+
+/* CSJA was still inheriting old thumbnail rules. Override them completely. */
+.csja-room-hero{
+  grid-template-columns:minmax(360px,500px) minmax(0,1fr) !important;
+  align-items:start !important;
+}
+.csja-room-hero img{
+  max-width:500px !important;
+  width:100% !important;
+  height:auto !important;
+  order:initial !important;
+}
+
+/* READING ROOM HEROES
+   Permanent 16:9 architectural frame, source standard 1920x1080. */
+.room-hero-frame{
+  width:min(100%,var(--nm-reading-hero-max)) !important;
+  aspect-ratio:16/9 !important;
+  margin:1.5rem auto 2rem !important;
+  overflow:hidden !important;
+  background:transparent !important;
+}
+.room-hero-frame img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  display:block !important;
+}
+
+/* Mobile retains the image's importance without turning it into a thumbnail. */
+@media(max-width:820px){
+  #axiom .split,
+  #kabir-preview .split,
+  #csja .split,
+  #conversation .split{
+    grid-template-columns:1fr !important;
+    gap:1.6rem !important;
+  }
+  #axiom .visual,
+  #kabir-preview .visual,
+  #csja .visual,
+  #conversation .visual{
+    width:100% !important;
+    max-width:620px !important;
+    justify-self:center !important;
+  }
+  #axiom .visual img,
+  #kabir-preview .visual img,
+  #csja .visual img,
+  #conversation .visual img{
+    max-height:none !important;
+  }
+  .hero-poster{
+    grid-template-columns:1fr !important;
+  }
+  .hero-poster > img{
+    width:min(100%,520px) !important;
+    max-height:none !important;
+  }
+  .csja-room-hero{
+    grid-template-columns:1fr !important;
+  }
+  .csja-room-hero img{
+    max-width:520px !important;
+    order:initial !important;
+  }
+  .room-hero-frame{
+    width:100% !important;
+    margin:1.15rem auto 1.6rem !important;
+  }
+}
+
+
+/* ==== inline <style> #2 ==== */
+
+/* v1.0.68 — Courtyard is orientation; reading rooms are horizontal doors. */
+.reading-door-rail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem;margin-top:1.8rem}.mobile-room-hint{display:none;font-family:"Playfair Display",Georgia,serif;font-style:italic;color:var(--ink-soft);margin-bottom:1rem}
+.reading-door{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);background:rgba(255,255,255,.22);padding:1rem;transition:transform .22s ease,border-color .22s ease}
+.reading-door:hover{transform:translateY(-3px);border-color:var(--taupe)}
+.reading-door small{display:block;margin-top:.9rem;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--taupe)}
+.reading-door h3{font-family:"Playfair Display",Georgia,serif;font-size:1.35rem;line-height:1.15;margin:.45rem 0 .5rem;font-weight:500}
+.reading-door p{font-size:.9rem;line-height:1.55;color:var(--ink-soft);min-height:4.2em}
+.reading-door span{display:inline-block;margin-top:.85rem;color:var(--leaf);font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.rooms-continuing{margin:1.5rem 0 0;font-family:"Playfair Display",Georgia,serif;font-style:italic;color:var(--ink-soft)}
+@media(max-width:920px){.mobile-room-hint{display:block}.reading-door-rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:1rem;padding-bottom:.75rem}.reading-door{flex:0 0 82%;scroll-snap-align:start}}
+@media(max-width:600px){.reading-door p{min-height:0}}
+
+
+/* ==== assets/house-reading-f25182.css ==== */
+/* v1.0.75 — reading-end hierarchy and compact rhythm
+   Promise: the emotional ending stays close. Kabir S2: gift first, next release second, stay-with-series third; navigation contains only navigation. */
+
+/* Kabir shelf: latest season is structurally and visually first. */
+.kabir-reading-room #season-two-episodes{display:flex;flex-direction:column}
+.kabir-reading-room #season-two-shelf{order:1;margin-top:0}
+.kabir-reading-room #season-one-shelf{order:2;margin-top:2rem}
+.kabir-reading-room #season-two-shelf .shelf-status.live{font-weight:600;letter-spacing:.12em}
+
+/* Reading endings: remove the large pauses that interrupt the emotional moment. */
+.reader-shell .gift-box,.stills-reader .gift-box{margin-top:2rem!important;margin-bottom:0!important;padding-top:1.45rem!important;padding-bottom:1.45rem!important}
+.reader-shell .series-cta,.stills-reader .series-cta{margin-top:.9rem!important;margin-bottom:0!important}
+.reader-shell .next-shelf-card,.stills-reader .next-shelf-card,.csja-reader .next-shelf-card{margin-top:1.25rem!important;margin-bottom:0!important}
+.reader-shell .reader-nav,.stills-reader .reader-nav{margin-top:1.6rem!important}
+
+/* Kabir: gift and continuing relationship are two separate decisions. */
+.reader-actions{margin-top:2rem!important;margin-bottom:1.4rem!important;padding-top:1.5rem!important;padding-bottom:1.5rem!important}
+.reader-actions .actions.gift-first{margin:.9rem 0 .7rem!important}
+.reader-actions .continue-copy{margin:.8rem auto .55rem!important}
+.reader-actions .actions.follow-second{margin:.55rem 0 0!important}
+.post-story-follow{max-width:760px;margin:.6rem auto 0;text-align:center}
+.post-story-follow .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:.75rem 1rem;border:1px solid #1f8f4e;border-radius:2px;background:#1f8f4e;color:#fff;text-decoration:none;font:600 .76rem Inter,Arial,sans-serif;letter-spacing:.075em;text-transform:uppercase}
+
+/* CSJA: preserve its thoughtful travel note, but keep the actions close together. */
+.csja-reader .story-ending{padding-top:1.6rem!important}
+.csja-reader .story-ending .csja-story-travel-v66{margin-bottom:1rem!important}
+.csja-reader .story-ending .gift-block{margin:.7rem 0!important}
+.csja-reader .story-nav{margin-top:1.5rem!important}
+
+@media(max-width:620px){
+  .post-story-follow .btn{width:100%;box-sizing:border-box}
+  .reader-actions{padding-left:.9rem!important;padding-right:.9rem!important}
+}
+
+
+/* Kabir Season 2 — one continuous ending, no duplicate release information.
+   Story ends -> gift -> next release -> stay with Kabir -> simple navigation. */
+.kabir-s2-reader .story{margin-bottom:0!important}
+.kabir-s2-reader .gift-box{
+  max-width:46rem;
+  margin:.85rem auto 0!important;
+  padding:1.1rem 0 1.05rem!important;
+  border-top:1px solid var(--line)!important;
+  border-bottom:0!important;
+}
+.kabir-s2-reader .gift-box h2{margin:0 0 .32rem!important}
+.kabir-s2-reader .gift-box p{margin:.2rem auto .72rem!important;line-height:1.52!important}
+.kabir-s2-reader .next-shelf-card{
+  max-width:46rem;
+  margin:.65rem auto 0!important;
+  padding:.95rem 0 1rem!important;
+  border-top:1px solid var(--line)!important;
+  border-bottom:0!important;
+}
+.kabir-s2-reader .next-shelf-card .nsc-label{margin-bottom:.32rem!important}
+.kabir-s2-reader .next-shelf-card .nsc-title{margin-bottom:.12rem!important}
+.kabir-s2-reader .next-shelf-card .nsc-sub{margin-bottom:.38rem!important}
+.kabir-s2-reader .next-shelf-card .nsc-date{margin:.18rem 0 0!important}
+.kabir-s2-reader .next-shelf-card .nsc-actions{margin-top:.65rem!important}
+.kabir-s2-reader .post-story-follow{
+  max-width:46rem;
+  margin:.65rem auto 0!important;
+  padding:.9rem 0 0!important;
+  border-top:1px solid var(--line);
+}
+.kabir-s2-reader .reader-nav{
+  max-width:46rem;
+  margin:.8rem auto 0!important;
+  padding:.9rem 0 0!important;
+  grid-template-columns:minmax(0,1fr) auto!important;
+  border-top:1px solid var(--line)!important;
+}
+.kabir-s2-reader .reader-nav .home{justify-self:end;text-align:right!important}
+.kabir-s2-reader .reader-nav .next{display:none!important}
+.kabir-s2-reader .reader-nav > .disabled:only-child{display:none!important}
+
+@media(max-width:720px){
+  .kabir-s2-reader .gift-box{margin-top:.65rem!important;padding:.9rem .15rem!important}
+  .kabir-s2-reader .next-shelf-card{margin-top:.5rem!important;padding:.85rem .15rem!important}
+  .kabir-s2-reader .post-story-follow{margin-top:.5rem!important;padding:.8rem .15rem 0!important}
+  .kabir-s2-reader .reader-nav{
+    margin-top:.65rem!important;
+    padding:.8rem .15rem 0!important;
+    grid-template-columns:minmax(0,1fr) auto!important;
+    gap:.7rem!important;
+  }
+  .kabir-s2-reader .reader-nav .home{grid-column:auto!important;grid-row:auto!important;justify-self:end!important}
+  .kabir-s2-reader .reader-nav > :first-child{grid-column:auto!important;grid-row:auto!important}
+}
+
+
+/* v76 — Kabir latest-first invariant. The latest live shelf is physically first in HTML,
+   and these rules preserve that order across desktop and mobile. */
+.kabir-reading-room #season-two-episodes{display:flex!important;flex-direction:column!important;}
+.kabir-reading-room #season-two-shelf{order:-100!important;margin-top:0!important;}
+.kabir-reading-room #season-one-shelf{order:100!important;margin-top:2rem!important;}
+/* Kabir S2: tighter star separators in the ending passage */
+.kabir-s2-reader .star{margin:.9rem auto}
+
+
+/* ==== assets/house-specials-d3a21d.css ==== */
+/* House Specials v1.0.77 — follows house typography, spacing and button architecture. */
+.house-specials-page{background:var(--paper)}
+.house-specials-shell{max-width:var(--max-room);margin:0 auto;padding:3.4rem 1.4rem 3.6rem}
+.house-specials-head{text-align:center;max-width:48rem;margin:0 auto 1.55rem}
+.house-specials-head h1{font-size:clamp(2.7rem,7vw,4.8rem);margin:.45rem 0 .8rem}
+.house-special-hero{width:min(100%,var(--frame-reading-max,1120px));aspect-ratio:16/9;overflow:hidden;margin:0 auto 3rem;border:1px solid var(--line);border-radius:4px;background:#e9e2d4;box-shadow:0 8px 28px rgba(44,37,25,.12)}
+.house-special-hero img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center}
+.house-special-story{max-width:var(--max-reader);margin:0 auto;font-family:"Playfair Display",Georgia,serif;font-size:1.13rem;line-height:1.78}
+.house-special-story p{margin:0 0 1.08rem}
+.house-special-story .scene-break{text-align:center;color:var(--leaf);letter-spacing:.2em;margin:1.65rem 0}
+.house-special-story .spoken{font-style:italic;margin-left:1.1rem}
+.house-special-story .final-lines{text-align:center;margin:1.45rem 0 .15rem;font-size:1.18rem;line-height:1.45;font-weight:500}
+.house-special-end{max-width:var(--max-reader);margin:1.15rem auto 0}
+.house-special-end .gift-box{margin:1.15rem auto .8rem}
+.house-special-end .reader-nav{grid-template-columns:1fr;justify-items:center;margin:.75rem 0 0}
+.house-special-end .reader-nav .home{grid-column:auto;grid-row:auto}
+.house-special-arrival{margin-top:1.35rem}
+.house-special-arrival .house-special-button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.88rem 1.18rem;border:1px solid #9b7440;border-radius:2px;background:#f0e1c4;color:#3b3022;text-decoration:none;font-family:Inter,system-ui,sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.045em;line-height:1.35;box-shadow:0 3px 12px rgba(44,37,25,.09);transition:background-color .2s ease,transform .2s ease,border-color .2s ease}
+.house-special-arrival .house-special-button:hover{background:#e8d3ae;border-color:#7d5d31;transform:translateY(-1px)}
+.house-special-arrival .house-special-button:focus-visible{outline:3px solid #d9b46d;outline-offset:3px}
+@media(max-width:640px){
+ .house-specials-shell{padding:2.7rem 1.15rem 3.2rem}
+ .house-specials-head{text-align:left;margin-bottom:1.25rem}
+ .house-special-hero{aspect-ratio:4/3;margin-bottom:2.2rem}
+ .house-special-story{font-size:1.08rem;line-height:1.74}
+ .house-special-arrival .house-special-button{width:100%;text-align:center;padding:.9rem 1rem}
+}
+
+
+/* House Specials v1.0.108 — unified property threshold + reading room. */
+.house-specials-threshold{max-width:var(--max-room);margin:0 auto;padding:3.4rem 1.4rem 4rem}
+.house-specials-threshold-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.82fr);gap:clamp(2rem,5vw,5rem);align-items:center}
+.house-specials-threshold-frame{margin:0;aspect-ratio:3/2;overflow:hidden;border:1px solid var(--line);border-radius:4px;background:#e9e2d4;box-shadow:0 8px 28px rgba(44,37,25,.12)}
+.house-specials-threshold-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center}
+.house-specials-threshold-copy{max-width:36rem}.house-specials-threshold-copy h1{font-size:clamp(2.55rem,6vw,4.7rem);margin:.45rem 0 1rem}.house-specials-threshold-copy .lede{font-size:1.08rem;line-height:1.65}
+.house-specials-reading-room .room-hero-frame img{object-fit:cover;object-position:center center}
+@media(max-width:760px){.house-specials-threshold-grid{grid-template-columns:1fr}.house-specials-threshold{padding:2.7rem 1.15rem 3.4rem}.house-specials-threshold-copy{max-width:none}.house-specials-threshold-frame{aspect-ratio:4/3}}
+
+
+/* ==== assets/house-stability-868caf.css ==== */
+
+/* COURTYARD READING DOORS — canonical responsive architecture. */
+body.home .reading-door-rail, .reading-door-rail{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:1.25rem!important;
+  overflow:visible!important;
+  scroll-snap-type:none!important;
+}
+body.home .reading-door, .reading-door{
+  min-width:0!important;
+  width:auto!important;
+  flex:none!important;
+}
+@media(max-width:920px){
+  body.home .reading-door-rail, .reading-door-rail{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+@media(max-width:600px){
+  body.home .reading-door-rail, .reading-door-rail{
+    grid-template-columns:1fr!important;
+  }
+}
+
+/* CSJA threshold: same house geometry, no new visual language. */
+.csja-home-v80{background:#f4efe3;color:#2c2519;font-family:Inter,system-ui,sans-serif;}
+.csja-threshold-v80{max-width:72rem;margin:0 auto;padding:7.5rem 5vw 4rem;}
+.csja-threshold-grid-v80{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(19rem,.95fr);gap:clamp(2rem,5vw,5rem);align-items:center;}
+.csja-threshold-frame-v80{width:100%;aspect-ratio:4/5;overflow:hidden;background:#e9e2d4;border:1px solid rgba(44,37,25,.14);}
+.csja-threshold-frame-v80 img{width:100%;height:100%;object-fit:contain;display:block;background:#efe4cf;}
+.csja-threshold-copy-v80{max-width:31rem;}
+.csja-threshold-copy-v80 .eyebrow{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:#756d63;margin:0 0 .8rem;}
+.csja-threshold-copy-v80 h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(2.15rem,4.3vw,3.6rem);font-weight:500;line-height:1.08;margin:0 0 1rem;color:#2c2519;}
+.csja-threshold-copy-v80 .lede{font-family:"Playfair Display",Georgia,serif;font-size:1.15rem;line-height:1.5;color:#4e5d44;margin:0 0 .8rem;}
+.csja-threshold-copy-v80 p{font-size:.98rem;line-height:1.72;color:#5d554a;margin:0 0 1rem;}
+.csja-door-v80{margin-top:.4rem;display:inline-block;}
+@media(max-width:720px){
+  .csja-threshold-v80{padding:5.6rem 5vw 2.8rem;}
+  .csja-threshold-grid-v80{grid-template-columns:1fr;gap:1.5rem;}
+  .csja-threshold-frame-v80{width:min(100%,25rem);margin:0 auto;}
+  .csja-threshold-copy-v80{text-align:center;margin:0 auto;max-width:32rem;}
+  .csja-threshold-copy-v80 h1{font-size:2.15rem;}
+  .csja-threshold-copy-v80 .csja-door-v80{display:inline-flex;justify-content:center;align-items:center;}
+}
+
+
+
+/* CSJA home topbar: inherit the same visual rhythm as STILLS; no off-centre mobile exception. */
+.csja-home-v80 .csja-home-topbar{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:1rem!important;}
+.csja-home-v80 .csja-home-topbar>a{min-width:0!important;}
+.csja-home-v80 .csja-home-topbar .mark{text-align:center!important;}
+@media(max-width:520px){
+  .csja-home-v80 .csja-home-topbar{padding:.72rem 4.5vw!important;gap:.4rem!important;}
+  .csja-home-v80 .csja-home-topbar a{font-size:.62rem!important;letter-spacing:.015em!important;white-space:nowrap!important;}
+  .csja-home-v80 .csja-home-topbar .mark{font-size:.78rem!important;}
+}
+@media(max-width:400px){
+  .csja-home-v80 .csja-home-topbar{display:grid!important;grid-template-columns:1fr auto 1fr!important;gap:.25rem!important;padding:.6rem 3.5vw!important;}
+  .csja-home-v80 .csja-home-topbar a:first-child{text-align:left!important;white-space:normal!important;font-size:.58rem!important;line-height:1.2!important;}
+  .csja-home-v80 .csja-home-topbar .mark{text-align:center!important;font-size:.72rem!important;white-space:normal!important;}
+  .csja-home-v80 .csja-home-topbar a:last-child{text-align:right!important;white-space:normal!important;font-size:.58rem!important;line-height:1.2!important;}
+}
+
+
+
+
+/* ==== assets/house-frames-c26be9.css ==== */
+/* ═══════════════════════════════════════════════════════════════════════════
+   Nirav Manubhai House — Locked Frame System v1.0.141
+   ═══════════════════════════════════════════════════════════════════════════
+
+   ARCHITECTURE RULE: The frame owns geometry. Artwork is only the insert.
+   Never change frame dimensions per property. If artwork composes poorly,
+   recompose the artwork — never adjust the frame.
+
+   HOW TO USE:
+   1. Place image inside the correct frame class (see table below)
+   2. Frame handles: aspect ratio, max-width, overflow, background, border
+   3. Image only needs: src, alt, width, height, loading, decoding
+   4. No inline styles on images. No per-property overrides.
+
+   ═══════════════════════════════════════════════════════════════════════════
+   FRAME CATALOGUE — canonical source artwork dimensions
+   ═══════════════════════════════════════════════════════════════════════════
+
+   FRAME CLASS              WHERE USED                    RATIO   SOURCE ARTWORK
+   ─────────────────────────────────────────────────────────────────────────────
+   .courtyard-door-media    Homepage reading door cards   16:10   1536×960 px
+   .hero-poster > img       Property threshold (all)       4:5    820×1025 px
+   .room-hero-frame         Reading room opening hero     16:9    1920×1080 px
+   .story-hero              Individual story cover         3:2    1536×1024 px (QS)
+                                                           4:5    820×1025 px  (CSJA)
+   .book-cover-frame        Bookshelf book cover           5:7    320×448 px
+   .cover-frame             Book detail page cover         5:7    480×672 px
+
+   SOURCE ARTWORK RULE: Always prepare artwork at the source dimensions above.
+   The frame will scale it. Never supply artwork at a different ratio —
+   object-fit:cover will crop unpredictably.
+
+   TO REPLACE AN IMAGE: swap only the src. The frame holds everything else.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── CSS custom properties ────────────────────────────────────────────────── */
+:root{
+  /* Ratios */
+  --frame-room-card-ratio: 16/10;   /* homepage door cards */
+  --frame-reading-ratio:   16/9;    /* reading room hero */
+  --frame-poster-ratio:    4/5;     /* property threshold */
+  --frame-story-ratio:     3/2;     /* story cover (QS, Stills, Axiom) */
+  --frame-story-portrait:  4/5;     /* story cover portrait (CSJA, Kabir) */
+  --frame-book-ratio:      5/7;     /* book covers */
+
+  /* Max widths */
+  --frame-reading-max:          1120px;  /* reading room hero width */
+  --frame-property-max:         1120px;  /* property page max */
+  --frame-property-home-max:    360px;   /* threshold poster column */
+  --frame-property-home-mobile: 330px;   /* threshold poster mobile */
+  --frame-book-max:             320px;   /* book cover max */
+  --frame-story-max:            900px;   /* story hero max */
+}
+
+/* ── Universal media safety ───────────────────────────────────────────────── */
+img{max-width:100%;}
+.courtyard-door-media,
+.room-hero-frame,
+.axiom-threshold-frame,
+.book-cover-frame,
+.cover-frame,
+.frame-media{
+  overflow:hidden;
+  position:relative;
+}
+.courtyard-door-media>img,
+.room-hero-frame>img,
+.axiom-threshold-frame>img,
+.book-cover-frame>img,
+.cover-frame>img,
+.frame-media>img{
+  display:block;
+  width:100%;
+  height:100%;
+  max-width:none;
+  max-height:none;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   A — HOMEPAGE READING DOOR CARDS
+   Frame: .courtyard-door-media
+   Ratio: 16:10  |  Source artwork: 1536×960 px
+   ══════════════════════════════════════════════════════════════════════════ */
+.courtyard-door-media{
+  width:100%!important;
+  aspect-ratio:var(--frame-room-card-ratio)!important;
+  height:auto!important;
+  border:1px solid var(--line)!important;
+  background:#e9e2d4!important;
+}
+.courtyard-door-media>img{
+  object-fit:cover!important;
+  object-position:center center!important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   B — PROPERTY THRESHOLD HERO
+   Frame: .hero-poster > img  (inside .room-shell)
+   Ratio: 4:5  |  Source artwork: 820×1025 px
+   Layout: image left column (360px max), copy right column
+   All properties use IDENTICAL frame. Body class controls grid layout only.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* Grid layout — all poster-led threshold pages */
+.kabir-property-home .hero-poster,
+.stills-unified .hero-poster,
+.quiet-signal-landing .hero-poster,
+.house-specials-home .hero-poster,
+.my-study-property-home .hero-poster{
+  grid-template-columns:minmax(220px,var(--frame-property-home-max)) minmax(0,1fr)!important;
+  gap:clamp(2rem,5vw,4.25rem)!important;
+  align-items:start!important;
+}
+
+/* CSJA uses a different grid class — same geometry */
+.csja-home-v80 .csja-threshold-grid-v80{
+  grid-template-columns:minmax(220px,var(--frame-property-home-max)) minmax(0,1fr)!important;
+  gap:clamp(2rem,5vw,4.25rem)!important;
+  align-items:start!important;
+}
+.csja-home-v80 .csja-threshold-frame-v80{
+  width:min(100%,var(--frame-property-home-max))!important;
+  justify-self:center!important;
+}
+
+/* The poster image — universal rule for all .room-shell threshold pages */
+.room-shell .hero-poster>img,
+.quiet-signal-landing .hero-poster>img{
+  width:min(100%,var(--frame-property-home-max))!important;
+  aspect-ratio:var(--frame-poster-ratio)!important;
+  height:auto!important;
+  object-fit:cover!important;
+  object-position:center top!important;
+  background:#15130f!important;
+}
+
+/* Mobile: stack vertically, centre image */
+@media(max-width:720px){
+  .kabir-property-home .hero-poster,
+  .stills-unified .hero-poster,
+  .quiet-signal-landing .hero-poster,
+  .house-specials-home .hero-poster,
+  .my-study-property-home .hero-poster,
+  .csja-home-v80 .csja-threshold-grid-v80{
+    grid-template-columns:1fr!important;
+  }
+  .room-shell .hero-poster>img,
+  .quiet-signal-landing .hero-poster>img,
+  .csja-home-v80 .csja-threshold-frame-v80{
+    width:min(100%,var(--frame-property-home-mobile))!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   C — READING ROOM OPENING HERO
+   Frame: .room-hero-frame
+   Ratio: 16:9  |  Source artwork: 1920×1080 px
+   Used by: all reading rooms
+   MY STUDY ROOM uses same frame and same ratio.
+   ══════════════════════════════════════════════════════════════════════════ */
+.room-hero-frame{
+  width:min(100%,var(--frame-reading-max))!important;
+  aspect-ratio:var(--frame-reading-ratio)!important;
+  height:auto!important;
+  min-height:0!important;
+  margin:0 auto 2.5rem!important;
+  padding:0!important;
+  overflow:hidden!important;
+  border:1px solid rgba(44,37,25,.14)!important;
+  border-radius:6px!important;
+  background:#e9e2d4!important;
+  box-shadow:0 8px 28px rgba(44,37,25,.14)!important;
+}
+.room-hero-frame>img{
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:cover!important;
+  object-position:center top!important;
+  display:block!important;
+  margin:0!important;
+  opacity:1!important;
+  visibility:visible!important;
+}
+
+/* Reading room intro and shelf width */
+.reading-room .room-intro,
+.stills-reading-room-inline .room-intro{
+  width:min(100%,760px)!important;
+  margin:0 auto 3rem!important;
+  text-align:center!important;
+}
+.reading-room .shelf-room,
+.stills-reading-room-inline .shelf-room{
+  width:min(100%,1120px)!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+
+/* QS mobile reading room ratio override */
+@media(max-width:640px){
+  .qs-reading-room .room-hero-frame{
+    aspect-ratio:var(--frame-reading-ratio)!important;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   D — AXIOM PROPERTY HOME (uses axiom-threshold-frame — same 4:5 contract)
+   Frame: .axiom-threshold-frame
+   Ratio: 4:5  |  Source artwork: 820×1025 px
+   ══════════════════════════════════════════════════════════════════════════ */
+.axiom-home .axiom-threshold{
+  max-width:74rem!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.axiom-home .axiom-threshold-grid{
+  display:grid!important;
+  grid-template-columns:minmax(220px,var(--frame-property-home-max)) minmax(0,1fr)!important;
+  gap:clamp(2rem,5vw,4.25rem)!important;
+  align-items:start!important;
+}
+.axiom-home .axiom-threshold-frame{
+  width:min(100%,var(--frame-property-home-max))!important;
+  aspect-ratio:var(--frame-poster-ratio)!important;
+  height:auto!important;
+  margin:0!important;
+  justify-self:center!important;
+  overflow:hidden!important;
+  background:#15130f!important;
+  border:1px solid var(--line)!important;
+  box-shadow:0 8px 28px rgba(44,37,25,.14)!important;
+}
+.axiom-home .axiom-threshold-frame>img{
+  object-fit:contain!important;
+  object-position:center center!important;
+}
+.axiom-home .axiom-threshold-copy{
+  width:100%!important;
+  margin:0!important;
+  text-align:left!important;
+}
+@media(max-width:720px){
+  .axiom-home .axiom-threshold-grid{
+    grid-template-columns:1fr!important;
+    align-items:start!important;
+  }
+  .axiom-home .axiom-threshold-frame{
+    width:min(100%,var(--frame-property-home-mobile))!important;
+    margin:0 auto!important;
+  }
+  .axiom-home .axiom-threshold-copy{
+    text-align:left!important;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   E — BOOK COVERS
+   Frame: .book-cover-frame / .cover-frame
+   Ratio: 5:7  |  Source artwork: 320×448 px (list), 480×672 px (detail)
+   ══════════════════════════════════════════════════════════════════════════ */
+.all-books-page .books-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:2.8rem 2.2rem!important;
+  align-items:start!important;
+}
+.books-grid .book-card{
+  width:100%!important;
+  max-width:360px!important;
+  justify-self:center!important;
+  text-align:center!important;
+}
+.books-grid .book-cover,
+.book-cover-frame,
+.cover-frame{
+  width:min(100%,var(--frame-book-max))!important;
+  aspect-ratio:var(--frame-book-ratio)!important;
+  height:auto!important;
+  max-width:var(--frame-book-max)!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.books-grid .book-cover{
+  object-fit:contain!important;
+  display:block!important;
+  background:transparent!important;
+}
+.cover-frame img,
+.book-cover-frame img{
+  object-fit:contain!important;
+  object-position:center center!important;
+}
+.take-story-page .book{
+  grid-template-rows:auto 27px auto auto auto auto auto!important;
+  align-content:start!important;
+}
+.take-story-page .cover-button{
+  height:auto!important;
+  min-height:0!important;
+  display:flex!important;
+  justify-content:center!important;
+  align-items:flex-end!important;
+  overflow:hidden!important;
+}
+.take-story-page .cover-wrap{
+  width:min(100%,var(--frame-book-max))!important;
+  aspect-ratio:var(--frame-book-ratio)!important;
+  height:auto!important;
+  min-height:0!important;
+  margin:0 auto!important;
+  display:flex!important;
+  align-items:flex-end!important;
+  justify-content:center!important;
+  overflow:hidden!important;
+}
+.take-story-page .cover-wrap img{
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:center bottom!important;
+  display:block!important;
+  margin:0!important;
+}
+.take-story-page .shelf-plank{
+  position:relative!important;
+  z-index:2!important;
+  margin-top:0!important;
+}
+@media(max-width:800px){
+  .take-story-page .book{grid-template-rows:auto 27px auto auto auto auto auto!important;}
+  .take-story-page .cover-button,.take-story-page .cover-wrap{height:auto!important;}
+  .take-story-page .cover-wrap{width:min(78vw,300px)!important;}
+}
+@media(max-width:380px){
+  .take-story-page .book{grid-template-rows:auto 27px auto auto auto auto auto!important;}
+  .take-story-page .cover-button,.take-story-page .cover-wrap{height:auto!important;}
+  .take-story-page .cover-wrap{width:min(80vw,280px)!important;}
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   F — STORY HERO IMAGES (individual story pages)
+   Quiet Signal / Stills: .story-hero  ratio 3:2  |  1536×1024 px
+   CSJA:                  .story-hero  ratio 4:5  |  820×1025 px
+   Kabir episodes:        .reader-poster  ratio 4:5  |  820×1025 px
+   ══════════════════════════════════════════════════════════════════════════ */
+.quiet-field-note .story-hero{
+  width:min(100%,900px)!important;
+  aspect-ratio:3/2!important;
+  height:auto!important;
+  overflow:hidden!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.quiet-field-note .story-hero>img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  display:block!important;
+}
+.csja-story .story-hero,
+.csja-story-page .story-hero{
+  width:min(100%,720px)!important;
+  aspect-ratio:4/5!important;
+  height:auto!important;
+  overflow:hidden!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.csja-story .story-hero>img,
+.csja-story-page .story-hero>img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  display:block!important;
+}
+.reader-poster.kabir-poster-frame{
+  width:min(100%,720px)!important;
+  aspect-ratio:4/5!important;
+  height:auto!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:#080604!important;
+}
+.cover-poster{
+  width:min(100%,420px)!important;
+  aspect-ratio:2/3!important;
+  height:auto!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+}
+.viewer .slide img{
+  width:100%!important;
+  height:auto!important;
+  aspect-ratio:2/3!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   G — SHELF SPINE THUMBNAILS (reading rooms)
+   Standard: 48×72 px (4:3 portrait) on desktop, 40×60 px on mobile
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* Quiet Signal mobile shelf */
+@media(max-width:640px){
+  .qs-reading-room .spine,
+  .qs-reading-room .spine.next{
+    display:grid!important;
+    grid-template-columns:2.25rem minmax(0,1fr)!important;
+    grid-template-rows:auto auto!important;
+    column-gap:.85rem!important;
+    row-gap:.35rem!important;
+    align-items:start!important;
+    padding:1.15rem 0!important;
+  }
+  .qs-reading-room .spine-num{grid-column:1!important;grid-row:1 / span 2!important;min-width:0!important;}
+  .qs-reading-room .spine-copy{grid-column:2!important;grid-row:1!important;min-width:0!important;width:100%!important;}
+  .qs-reading-room .spine-copy h3{white-space:normal!important;word-break:normal!important;overflow-wrap:normal!important;font-size:1.08rem!important;line-height:1.24!important;}
+  .qs-reading-room .spine-action,
+  .qs-reading-room .spine.next .spine-action{
+    grid-column:2!important;
+    grid-row:2!important;
+    width:100%!important;
+    max-width:none!important;
+    text-align:left!important;
+    white-space:normal!important;
+    word-break:normal!important;
+    line-height:1.45!important;
+    padding:0!important;
+  }
+}
+
+/* Bookshelf responsive */
+@media(max-width:680px){
+  .all-books-page .books-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:2.2rem 1.6rem!important;}
+}
+@media(max-width:430px){
+  .all-books-page .books-grid{grid-template-columns:1fr!important;}
+}
+
+/* House Specials mobile */
+@media(max-width:720px){
+  .house-specials-hero img,
+  .room-hero img{
+    max-height:55vh;
+    object-fit:cover;
+  }
+}
+
+/* House Specials full hero */
+@media(min-width:721px){
+  .house-specials-full-hero{
+    width:100%!important;
+    aspect-ratio:16/9!important;
+    height:auto!important;
+    object-fit:cover!important;
+    object-position:center center!important;
+    display:block!important;
+  }
+}
+
+/* Kabir Reading Room shelf grid — desktop */
+@media(min-width:641px){
+  .kabir-reading-room .shelf-items > .shelf-spine-with-thumb{
+    display:grid!important;
+    grid-template-columns:52px 2.4rem minmax(0,1fr) auto!important;
+    grid-template-areas:none!important;
+    column-gap:1rem!important;
+    row-gap:0!important;
+    align-items:start!important;
+    width:100%!important;
+    margin-left:0!important;
+    padding:1rem 0!important;
+  }
+  .kabir-reading-room .shelf-items > .shelf-spine-with-thumb .shelf-thumb-frame{
+    grid-area:auto!important;grid-column:1!important;grid-row:1!important;justify-self:start!important;
+  }
+  .kabir-reading-room .shelf-items > .shelf-spine-with-thumb .spine-num{
+    grid-area:auto!important;grid-column:2!important;grid-row:1!important;align-self:start!important;padding-top:.12rem!important;
+  }
+  .kabir-reading-room .shelf-items > .shelf-spine-with-thumb .spine-copy{
+    grid-area:auto!important;grid-column:3!important;grid-row:1!important;min-width:0!important;width:auto!important;align-self:start!important;
+  }
+  .kabir-reading-room .shelf-items > .shelf-spine-with-thumb .spine-copy h3{margin:0 0 .22rem!important;}
+  .kabir-reading-room .shelf-items > .shelf-spine-with-thumb .spine-action{
+    grid-area:auto!important;grid-column:4!important;grid-row:1!important;justify-self:end!important;align-self:start!important;width:auto!important;margin:0!important;text-align:right!important;white-space:nowrap!important;
+  }
+}
+
+/* Universal shelf spine grid — all reading rooms */
+.reading-room .shelf-items > .shelf-spine-with-thumb,
+.stills-reading-room .shelf-items > .stills-spine{
+  display:grid!important;
+  grid-template-columns:52px 2.4rem minmax(0,1fr) auto!important;
+  grid-template-rows:auto!important;
+  grid-template-areas:none!important;
+  column-gap:.9rem!important;
+  row-gap:0!important;
+  align-items:start!important;
+  width:100%!important;
+}
+.reading-room .shelf-items > .shelf-spine-with-thumb .shelf-thumb-frame,
+.stills-reading-room .shelf-items > .stills-spine .stills-thumb-frame{
+  width:48px!important;inline-size:48px!important;min-width:48px!important;max-width:48px!important;max-height:72px!important;
+  justify-self:start!important;align-self:start!important;grid-column:1!important;grid-row:1!important;
+}
+.reading-room .shelf-items > .shelf-spine-with-thumb .spine-num,
+.stills-reading-room .shelf-items > .stills-spine .spine-num{
+  grid-column:2!important;grid-row:1!important;align-self:start!important;
+}
+.reading-room .shelf-items > .shelf-spine-with-thumb .spine-copy,
+.stills-reading-room .shelf-items > .stills-spine .spine-copy{
+  grid-column:3!important;grid-row:1!important;align-self:start!important;min-width:0!important;
+}
+.reading-room .shelf-items > .shelf-spine-with-thumb .spine-copy h3,
+.stills-reading-room .shelf-items > .stills-spine .spine-copy h3{margin-top:0!important;}
+.reading-room .shelf-items > .shelf-spine-with-thumb .spine-action,
+.stills-reading-room .shelf-items > .stills-spine .spine-action{
+  grid-column:4!important;grid-row:1!important;align-self:start!important;justify-self:end!important;white-space:nowrap!important;
+}
+
+/* Shelf spine mobile */
+@media(max-width:640px){
+  .reading-room .shelf-items > .shelf-spine-with-thumb,
+  .stills-reading-room .shelf-items > .stills-spine{
+    grid-template-columns:44px 1.85rem minmax(0,1fr)!important;
+    grid-template-rows:auto auto!important;
+    grid-template-areas:none!important;
+    column-gap:.7rem!important;row-gap:.4rem!important;align-items:start!important;
+  }
+  .reading-room .shelf-items > .shelf-spine-with-thumb .shelf-thumb-frame,
+  .stills-reading-room .shelf-items > .stills-spine .stills-thumb-frame{
+    width:40px!important;inline-size:40px!important;min-width:40px!important;max-width:40px!important;max-height:60px!important;
+    grid-column:1!important;grid-row:1 / span 2!important;
+  }
+  .reading-room .shelf-items > .shelf-spine-with-thumb .spine-num,
+  .stills-reading-room .shelf-items > .stills-spine .spine-num{grid-column:2!important;grid-row:1!important;padding-top:0!important;}
+  .reading-room .shelf-items > .shelf-spine-with-thumb .spine-copy,
+  .stills-reading-room .shelf-items > .stills-spine .spine-copy{grid-column:3!important;grid-row:1!important;}
+  .reading-room .shelf-items > .shelf-spine-with-thumb .spine-action,
+  .stills-reading-room .shelf-items > .stills-spine .spine-action{
+    grid-column:3!important;grid-row:2!important;justify-self:start!important;
+    text-align:left!important;white-space:normal!important;margin-top:.15rem!important;
+  }
+}
+
+/* Reflect text-only shelf thumbnails */
+.reading-room .reflect-thumb-text{
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  text-align:center!important;background:#eee8de!important;padding:4px!important;box-sizing:border-box!important;
+}
+.reading-room .reflect-thumb-text span{
+  font-size:8px!important;line-height:1.15!important;letter-spacing:.01em!important;white-space:nowrap!important;
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   H — ROOM CARDS (retained for legacy room-card usage)
+   ══════════════════════════════════════════════════════════════════════════ */
+.rooms .room-card .card-thumb{
+  width:100%!important;aspect-ratio:var(--frame-room-card-ratio)!important;height:auto!important;
+  object-fit:cover!important;display:block!important;margin-bottom:1rem!important;border:1px solid var(--line)!important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   I — POSTER INSERT (CSJA poster in courtyard door — contain not cover)
+   ══════════════════════════════════════════════════════════════════════════ */
+.courtyard-door-media.poster-insert>img{
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:#efe4cf!important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   J — HOUSE SECTION MEDIA (homepage Study/Conversation imagery)
+   Frame: .house-section-media  |  Ratio: 3:2  |  Source: 1536×1024 px
+   ══════════════════════════════════════════════════════════════════════════ */
+.house-section-media{
+  width:100%!important;
+  aspect-ratio:3/2!important;
+  height:auto!important;
+  min-height:0!important;
+  overflow:hidden!important;
+  border:1px solid var(--line)!important;
+  background:#e9e2d4!important;
+  border-radius:3px!important;
+  box-shadow:0 3px 16px rgba(44,37,25,.12)!important;
+}
+.house-section-media>img{
+  width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;
+  object-fit:cover!important;object-position:center center!important;display:block!important;
+}
+.study-room-media>img{object-position:center center!important;}
+.conversation-room-media>img{object-position:center center!important;}
+@media(max-width:640px){
+  .house-section-media{aspect-ratio:4/3!important;}
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   K — BOOKSHELF ROOM FRAME
+   Frame: .bookshelf-room-frame  |  Ratio: 4:3 desktop, 5:4 mobile
+   ══════════════════════════════════════════════════════════════════════════ */
+.bookshelf-room-frame{
+  width:min(100%,1448px)!important;
+  aspect-ratio:4/3!important;
+  height:auto!important;
+  margin:0 auto!important;
+  overflow:hidden!important;
+  position:relative!important;
+  background:#e9e2d4!important;
+  line-height:0!important;
+}
+.bookshelf-room-frame>.room-hero-frame a{display:block!important;width:100%!important;height:100%!important;line-height:0!important;}
+.bookshelf-room-frame img{
+  display:block!important;width:100%!important;height:100%!important;
+  max-width:none!important;max-height:none!important;
+  object-fit:cover!important;object-position:center center!important;
+}
+@media(max-width:640px){
+  .bookshelf-room-frame{aspect-ratio:5/4!important;}
+  .bookshelf-room-frame img{object-position:center center!important;}
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   L — ALL BOOKS PAGE: book-cover-frame override
+   ══════════════════════════════════════════════════════════════════════════ */
+.all-books-page .book-cover-frame{
+  display:block!important;
+  width:min(100%,var(--frame-book-max))!important;
+  max-width:var(--frame-book-max)!important;
+  aspect-ratio:var(--frame-book-ratio)!important;
+  height:auto!important;
+  margin:0 auto!important;
+  overflow:hidden!important;
+  background:transparent!important;
+  position:relative!important;
+}
+.all-books-page .book-cover-frame>.book-cover{
+  width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;
+  aspect-ratio:auto!important;object-fit:contain!important;object-position:center center!important;
+  margin:0!important;display:block!important;
+}
+
+/* Mobile reading room border-radius */
+@media(max-width:520px){
+  .all-books-page .books-grid{grid-template-columns:1fr!important;}
+  .reading-room .room-hero-frame,.stills-reading-room-inline .room-hero-frame{border-radius:4px!important;}
+}
+
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   M — STORY BOUQUET FRAMES (R22)
+   Added when The Story Bouquet was built as a House gift layer.
+   These are the only two new frame slots introduced in R22.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* HERO FRAME — full-width banner
+   Used by: patrons.html, story-bouquet.html
+   Source artwork: 1200×600 px (2:1 ratio)
+   Rule: object-fit:contain — never stretch, never crop
+   The image shows exactly as composed. Background fills any letterbox.
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+/* M0 — Hero frame (patrons, story-bouquet)
+   Already defined in page inline CSS as .hero
+   Ratio: 2:1 | Source artwork: 1200×600 px
+   object-fit: contain — the full image is always visible */
+
+/* M1a — Bouquet card thumbnail (same image on all cards, standardised)
+   Frame: .sb-card-thumb
+   Ratio: 3:2  |  Source: story-bouquet-hero-1d0782.webp (1536×1024)
+   Used: story-bouquet.html — top of each bouquet card, standardised across all bouquets */
+.sb-card-thumb{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:center center;display:block;border-radius:.5rem .5rem 0 0}
+
+/* M1 — Bouquet occasion card image (threshold page grid)
+   Frame: .sb-card-img
+   Ratio: 8:5  |  Source artwork: 800×500 px
+   Used: story-bouquet.html — three occasion card cover images */
+.sb-card-img{
+  width:100%!important;
+  aspect-ratio:8/5!important;
+  height:auto!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  display:block!important;
+}
+
+/* M2 — Bouquet story card image (landing pages)
+   Frame: .bl-story-img
+   Ratio: 4:5  |  Source artwork: same as reader-poster (820×1025 px)
+   Used: bouquet-observation.html, bouquet-curious.html, bouquet-miss.html */
+.bl-story-img{
+  width:100%!important;
+  aspect-ratio:4/5!important;
+  height:auto!important;
+  object-fit:cover!important;
+  object-position:center top!important;
+  display:block!important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   N — PERSONAL PAGE FRAMES (about.html, now.html)
+   These pages predate the frame system. Documented here for completeness.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* N1 — About / Now portrait image (inline with copy)
+   Frame: .about-portrait / .now-portrait
+   Ratio: 3:4  |  Source artwork: portrait photograph */
+.about-portrait,
+.now-portrait{
+  aspect-ratio:3/4!important;
+  object-fit:cover!important;
+  object-position:center top!important;
+}
+
+/* N2 — About / Now property image (inline with copy)
+   Frame: .about-property / .now-property
+   Ratio: 16:9  |  Source artwork: property/landscape photograph */
+.about-property,
+.now-property{
+  aspect-ratio:16/9!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   O — DOCUMENTED EXCEPTIONS
+   These classes exist on specific pages for layout reasons that predate
+   or fall outside the frame system. They are acknowledged and named here.
+   Do not replicate these patterns on new pages.
+   ══════════════════════════════════════════════════════════════════════════
+
+   HOMEPAGE (index.html) — predates frame system. Migrate on next redesign.
+     .visual          Courtyard section image
+     .contain         Contained image variant
+     .card-thumb      Library card thumbnail
+     .book-card       Book card container
+     .library-room-img Library room image
+     .csja-home-visual CSJA courtyard visual
+     .split           Split layout image
+
+   WALKING MAP (come-sit-just-ask-walking-map.html)
+     .map-frame       Interactive map container — unique, no equivalent frame
+
+   STILLS SLIDESHOW (stills-room-*.html)
+     .slide           Already documented as .viewer .slide img above (Section F)
+
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ══════════════════════════════════════════════════════════════════════════
+   EXCEPTION RULE
+   If a new page or feature genuinely cannot use an existing frame class,
+   the new class MUST be:
+   1. Added to this file with full documentation before it is used
+   2. Named following House conventions (property-descriptor or bl-descriptor)
+   3. Reviewed in the pre-flight HOUSE_PREFLIGHT.py before deployment
+   Any inline CSS for images on new pages that is NOT in this file is a
+   violation of the House architecture.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ══════════════════════════════════════════════════════════════════════════
+   CACHE-PROOF VERSION MARKER — v1.0.141
+   This versioned filename prevents older cached frames surviving a deploy.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+
+/* ==== /assets/home-books-dcdb01.css ==== */
+
+/* v1.0.129 — My Books follows the same House section-media contract as Study and Conversation. */
+.home-books-copy{align-self:center}
+.home-books-copy h2{margin:.25rem 0 .8rem}
+.home-books-copy .lede{margin:0}
+.home-books-nudge{margin:1rem 0 0;font-family:"Playfair Display",Georgia,serif;color:var(--ink-soft);font-size:1.05rem;line-height:1.55}
+.home-books-cta{display:inline-block;margin-top:1.15rem;border-bottom:1px solid var(--leaf);padding-bottom:.25rem;color:var(--leaf);font-size:.7rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;text-decoration:none}
+.home-books-cta:hover,.home-books-cta:focus-visible{opacity:.75}
+.home-books-media>img{object-position:center center!important}
+@media(max-width:820px){.home-books-copy{padding-top:.2rem}.home-books-nudge{font-size:1rem}.home-books-cta{font-size:.72rem}}
+/* Mobile House rule: split visuals become 4:3, never auto-height/collapsed. */
+@media(max-width:820px){
+  .split .home-books-media{width:100%!important;aspect-ratio:4/3!important;height:auto!important;min-height:0!important;overflow:hidden!important;border:1px solid var(--line)!important;background:#e9e2d4!important;border-radius:3px!important;box-shadow:0 3px 16px rgba(44,37,25,.12)!important}
+  .split .home-books-media>img{width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:cover!important;object-position:center center!important;display:block!important}
+}
+
+
+/* ==== /assets/house-a11y-898b71.css ==== */
+/* Nirav Manubhai House — Accessibility Foundation v1.0.139 */
+.skip-link{
+  position:fixed;left:1rem;top:.65rem;z-index:10000;
+  transform:translateY(-180%);opacity:0;
+  background:#f4efe3;color:#2c2519;border:2px solid #a67c45;
+  padding:.7rem 1rem;border-radius:3px;
+  font:600 .82rem/1.2 Inter,Arial,sans-serif;
+  letter-spacing:.04em;text-decoration:none;
+  box-shadow:0 8px 24px rgba(44,37,25,.18);
+  transition:transform .16s ease,opacity .16s ease;
+}
+.skip-link:focus,.skip-link:focus-visible{transform:translateY(0);opacity:1;outline:none}
+:where(a,button,input,select,textarea,[tabindex]:not([tabindex="-1"])):focus-visible{
+  outline:3px solid #a67c45!important;
+  outline-offset:4px!important;
+  border-radius:2px;
+}
+#main{scroll-margin-top:5.5rem}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto!important}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+@media (forced-colors: active){
+  .skip-link{border:2px solid ButtonText}
+  :where(a,button,input,select,textarea,[tabindex]:not([tabindex="-1"])):focus-visible{outline:2px solid Highlight!important}
+}
+
+/* Touch-target hospitality: preserve the quiet visual language while giving hands enough room. */
+.topbar>a,.housebar>a{min-height:44px;display:inline-flex;align-items:center}
+/* v1.0.152: v149 override removed — base topbar>a handles alignment correctly */
+@media(max-width:640px){.burger{min-width:44px!important;min-height:44px!important;display:grid!important;place-items:center!important;}}
+.curated-card a,.outcome a,.outcome button,.copyupi{min-height:24px;display:inline-flex;align-items:center}
+
+/* House DNA v145: desktop navigation must never expose mobile menu */
+@media(min-width:1041px){.burger{display:none!important}}
+.reflect-thumb-label{position:absolute;inset:0;display:grid;place-items:center;font-family:inherit;font-size:1.15rem;letter-spacing:.08em;}
+
+/* House DNA v152: mobile CSJA back link — short text in HTML, no CSS wrapping needed */
+
+
+/* ==== /assets/house-visual-continuity-a715bf.css ==== */
+/*
+  HOUSE VISUAL CONTINUITY — v1.0.140
+  House Image Edge Rule:
+  - embedded atmospheric / editorial photography may use a soft radius;
+  - designed objects (book covers, posters, logos, icons, full-bleed heroes) keep native geometry;
+  - no new decorative border/shadow is introduced by this layer;
+  - geometry and image position remain owned by the existing House frames.
+*/
+:root{
+  --house-image-radius:14px;
+  --house-room-radius:16px;
+}
+
+/* Selective first adoption: Courtyard room photography only. */
+.home-books-media,
+.split .home-books-media{
+  border-radius:var(--house-room-radius)!important;
+}
+.study-room-media,
+.conversation-room-media{
+  border-radius:var(--house-image-radius)!important;
+}
+
+/* Study margin traces: visual punctuation, never a content card. */
+.study-margin-visual{
+  float:right;
+  width:clamp(190px,27%,260px);
+  margin:.35rem 0 1.45rem 2rem;
+  border-radius:var(--house-image-radius);
+  overflow:hidden;
+  line-height:0;
+  background:transparent;
+}
+.study-margin-visual.is-left{
+  float:left;
+  margin-left:0;
+  margin-right:2rem;
+}
+.study-margin-visual picture,
+.study-margin-visual img{
+  display:block;
+  width:100%;
+}
+.study-margin-visual img{
+  height:auto;
+  border-radius:inherit;
+}
+.study-float-clear{
+  clear:both;
+  height:0;
+  margin:0;
+  padding:0;
+}
+
+/* Phones: preserve the R–L–R rhythm, but never squeeze the reading column. */
+@media(max-width:760px){
+  .study-margin-visual,
+  .study-margin-visual.is-left{
+    float:none;
+    width:80%;
+    max-width:315px;
+    aspect-ratio:3/2;
+    margin:1.05rem 0 1.45rem auto;
+  }
+  .study-margin-visual.is-left{
+    margin-left:0;
+    margin-right:auto;
+  }
+  .study-margin-visual picture,
+  .study-margin-visual img{
+    width:100%;
+    height:100%;
+  }
+  .study-margin-visual img{
+    object-fit:cover;
+    object-position:center center;
+  }
+}
+
+
+/* ==== /assets/nmh-navigation-foundation-85bc2a.css ==== */
+.nmh-header{position:relative;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:18px 28px;background:#f4efe3;color:#2c2519;z-index:20}
+.nmh-header .nmh-home{justify-self:start;font-family:Inter,Arial,sans-serif;font-size:14px;letter-spacing:.08em;color:#2c2519;text-decoration:none;min-height:44px;display:inline-flex;align-items:center;padding-right:8px}
+.nmh-header .nmh-title{justify-self:center;text-align:center;font-family:"Playfair Display",Georgia,serif;color:#2c2519}
+.nmh-header .nmh-menu-btn{justify-self:end;background:none;border:0;color:#2c2519;font-size:26px;cursor:pointer;min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center;padding:0}
+.nmh-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.28);z-index:9998}
+.nmh-overlay.open{display:block}
+.nmh-menu{position:fixed;top:0;right:0;width:min(340px,70vw);height:100vh;overflow-y:auto;padding:72px 28px 40px;background:#f4efe3;z-index:9999;box-shadow:-8px 0 30px rgba(0,0,0,.12);transform:translateX(100%);transition:transform .28s ease}
+.nmh-menu.open{transform:translateX(0)}
+.nmh-menu a{display:block;margin:0 0 18px;text-decoration:none;font-family:"Playfair Display",Georgia,serif;color:#2c2519;font-size:19px}
+.nmh-menu a:hover{color:#4e5d44}
+.nmh-menu-close{position:absolute;top:16px;right:20px;background:none;border:0;font-size:28px;color:#2c2519;cursor:pointer;min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center;padding:0}
+.nmh-footer{display:flex;gap:22px;justify-content:center;padding:30px 20px;font-family:Inter,Arial,sans-serif;color:#2c2519;font-size:14px}
+body{background-color:#f4efe3}
+/* Suppress old navigation bars only — preserve all content headers */
+header.housebar,
+header.topbar:not(.csja-home-topbar) { display: none !important; }
+.nav{display:none!important}
+.nav-links{display:none!important}
+@media(max-width:720px){.nmh-header{padding:16px}.nmh-title{font-size:14px}.nmh-footer{flex-wrap:wrap}}
+
+/* R6 finish corrections */
+.nmh-header { position: sticky; top: 0; border-bottom: 1px solid rgba(44,37,25,.10); }
+.nmh-footer a { color:#6b5f47; font-size:13px; letter-spacing:.065em; text-transform:uppercase; text-decoration:none; }
+.nmh-footer a:hover { color:#2c2519; }
+@media (max-width:720px){ .nmh-header + * { margin-top:0 !important; } .hero { margin-top:0 !important; } }
+
+
+@media (max-width:720px){
+  .house-specials-hero img,
+  .room-hero img{
+    max-height:55vh;
+    object-fit:cover;
+  }
+}
+
+/* R8.1 — Reading room bottom nav: mobile elegant layout */
+@media (max-width: 720px) {
+  .room-journey {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+  }
+  .room-journey .journey-home {
+    order: -1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: .4rem;
+    font-size: .85rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+  .room-journey a {
+    flex: 0 0 auto;
+  }
+}
+
+/* ── You Are Here — quiet room plaque ──────────────────────────────────────
+   Small fixed element, bottom-right. Whispers the room name.
+   Not a button. Not a widget. A small plaque on the door.
+   ─────────────────────────────────────────────────────────────────────── */
+.nmh-yah{
+  display:block;
+  position:fixed;
+  bottom:calc(env(safe-area-inset-bottom, 0px) + 1.4rem);
+  right:1.2rem;
+  z-index:8000;
+  font-family:Inter,Arial,sans-serif;
+  font-size:.64rem;
+  letter-spacing:.06em;
+  opacity:1;
+  transition:opacity .3s ease, transform .3s ease;
+}
+.nmh-yah.hidden{
+  opacity:0;
+  pointer-events:none;
+  transform:translateY(6px);
+}
+.nmh-yah-pill{
+  display:flex;
+  align-items:center;
+  gap:.35rem;
+  background:rgba(244,239,227,.94);
+  border:1px solid rgba(78,93,68,.18);
+  border-radius:3px;
+  padding:.3rem .6rem;
+  cursor:pointer;
+  color:#4e5d44;
+  text-decoration:none;
+  white-space:nowrap;
+  max-width:200px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.nmh-yah-pill:hover{
+  border-color:rgba(78,93,68,.38);
+  background:rgba(238,232,220,.97);
+}
+.nmh-yah-icon{
+  display:none;
+}
+.nmh-yah-text{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.nmh-yah-text::after{
+  content:' →';
+}
+@media(max-width:480px){
+  .nmh-yah{
+    bottom:calc(env(safe-area-inset-bottom, 0px) + 1rem);
+    right:.8rem;
+  }
+  .nmh-yah-pill{
+    max-width:160px;
+    font-size:.62rem;
+    padding:.28rem .55rem;
+    min-height:44px;
+    align-items:center;
+  }
+}
+.nmh-yah-icon{
+  font-size:.85rem;
+  flex-shrink:0;
+}
+.nmh-yah-text{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+@media(max-width:480px){
+  .nmh-yah{
+    bottom:calc(env(safe-area-inset-bottom, 0px) + 1rem);
+    right:.8rem;
+  }
+  .nmh-yah-pill{
+    max-width:180px;
+    font-size:.65rem;
+    padding:.6rem .9rem;
+    min-height:44px;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   NMH HOUSE NAVIGATION — R15 RESTORATION
+   Navigation Foundation additions only.
+   Old CSS preserved below. No purge until QA confirms 0 references.
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Centre Title: two-span system ─────────────────────────────────
+   nmh-title-property: always shown, full weight
+   nmh-title-context:  episode/issue/room number, quieter
+   has-divider:        adds · separator, applied in HTML only where needed
+   ─────────────────────────────────────────────────────────────────── */
+.nmh-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.25;
+  gap: 0.1em;
+  min-width: 0;
+  overflow: hidden;
+}
+.nmh-title-property {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 14px;
+  color: #2c2519;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.nmh-title-context {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  color: #2c2519;
+  opacity: 0.65;
+  white-space: nowrap;
+}
+.nmh-title-context.has-divider::before {
+  content: '· ';
+}
+@media (min-width: 640px) {
+  .nmh-title {
+    flex-direction: row;
+    gap: 0.35em;
+    align-items: baseline;
+  }
+  .nmh-title-context {
+    font-size: 11px;
+  }
+}
+
+/* ── Unified Back Navigation — nmh-back-nav ─────────────────────────
+   Replaces: .reader-nav, .story-nav, .room-journey, .back-link
+   Old classes kept in CSS until QA confirms 0 HTML references.
+   ─────────────────────────────────────────────────────────────────── */
+.nmh-back-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.5rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line, rgba(44,37,25,.16));
+  max-width: 760px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.nmh-back-nav a {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  color: var(--leaf, #4e5d44);
+  text-decoration: none;
+  border: 1px solid var(--leaf, #4e5d44);
+  padding: 0.65rem 1.4rem;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  transition: background 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+.nmh-back-nav a:hover {
+  background: var(--leaf, #4e5d44);
+  color: var(--paper, #f4efe3);
+}
+.nmh-back-nav a.nmh-next {
+  background: var(--leaf, #4e5d44);
+  color: var(--paper, #f4efe3);
+  border-color: var(--leaf, #4e5d44);
+}
+.nmh-back-nav a.nmh-next:hover {
+  background: var(--leaf-dark, #3c4934);
+  border-color: var(--leaf-dark, #3c4934);
+}
+@media (max-width: 640px) {
+  .nmh-back-nav {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+  .nmh-back-nav a {
+    width: 100%;
+    justify-content: center;
+    /* Full width on mobile — easier tap target */
+  }
+}
+
+/* ── House Note ─────────────────────────────────────────────────────
+   Quiet host suggestion. Not a feature. Hospitality.
+   Appears below nmh-back-nav, above footer.
+   ─────────────────────────────────────────────────────────────────── */
+.nmh-house-note {
+  max-width: 760px;
+  margin: 2.5rem auto 0;
+  padding-top: 1.8rem;
+  text-align: center;
+}
+.nmh-house-note-text {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink-soft, #6b5f47);
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.nmh-house-note-link {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--leaf, #4e5d44);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+.nmh-house-note-link:hover {
+  border-bottom-color: var(--leaf, #4e5d44);
+}
+
+/* ── Reading Room & Study Room title alignment ──────────────────────
+   House rule: all reading room and study room titles centred.
+   Applies to all properties equally.
+   Properties with existing rules already set text-align:center — no conflict.
+   Fixes alignment on: Kabir, Axiom, Stills, My Study reading rooms.
+   Match house-foundation-8d5635.css and property CSS if typography changes.
+   ─────────────────────────────────────────────────────────────────── */
+.reading-room-title,
+.study-room-title {
+  text-align: center;
+}
+
+/* ── R17: Drawer descriptor — hotfix ────────────────────────────── */
+.nmh-drawer-descriptor {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 0.92rem;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #4e5d44;
+  text-align: center;
+  width: 100%;
+  margin: 0.15rem 0 1.15rem;
+}
+@media (max-width: 720px) {
+  .nmh-drawer-descriptor {
+    font-size: 0.94rem;
+    margin: 0.1rem 0 0.65rem;
+  }
+}
+
+
+/* ==== inline <style> #3 ==== */
+
+.story-nursery-home{padding:3rem 0 3rem;background:var(--paper,#f5f0e6)}
+.story-nursery-home-wrap{width:min(1100px,92vw);margin:0 auto}
+.story-nursery-home-eyebrow{margin:0 0 .55rem;text-align:center;font:600 .68rem/1.4 Inter,Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#a47c3d}
+.story-nursery-home h2{margin:0 0 1.15rem;text-align:center;font:400 clamp(2rem,4vw,3rem)/1.1 'Playfair Display',Georgia,serif;color:var(--leaf,#4e5d44)}
+.story-nursery-home-image{margin:0 auto;width:min(920px,86vw);line-height:0}
+.story-nursery-home-image img{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover}
+.story-nursery-home-copy{max-width:44rem;margin:1rem auto 0;text-align:center}
+.story-nursery-home-copy p{margin:0 auto 1rem;font:1.03rem/1.72 'Playfair Display',Georgia,serif;color:var(--ink-soft,#6b5f47)}
+.story-nursery-home-cta{display:inline-block;color:var(--leaf,#4e5d44);font:600 .72rem/1.4 Inter,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid rgba(78,93,68,.4);padding-bottom:.28rem}
+.story-nursery-home-cta:hover{border-bottom-color:var(--leaf,#4e5d44)}
+@media(max-width:700px){.story-nursery-home{padding:2.7rem 0 2.8rem}.story-nursery-home-wrap{width:100%}.story-nursery-home-eyebrow,.story-nursery-home h2,.story-nursery-home-copy{padding-left:5vw;padding-right:5vw}.story-nursery-home-image{width:90vw}.story-nursery-home-image img{aspect-ratio:2/1}.story-nursery-home-copy p{font-size:1rem}}
+
+
+/* ==== inline <style> #4 ==== */
+
+.r24-doors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.6rem;margin-top:1.8rem}
+.r24-door .courtyard-door-media{aspect-ratio:4/3;overflow:hidden}
+.r24-door .courtyard-door-media img{width:100%;height:100%;object-fit:cover}
+.r24-door .r24-short{display:none}
+.r24-rhythm{margin-top:.6rem!important;font:600 .78rem/1.4 Inter,Arial,sans-serif!important;letter-spacing:.06em;color:var(--leaf,#4e5d44)!important}
+.r24-books{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:1.6rem;background:#fbf8f1;border:1px solid rgba(44,37,25,.14);text-decoration:none;color:inherit;overflow:hidden}
+.r24-books-media img{width:100%;height:100%;min-height:280px;object-fit:cover;display:block}
+.r24-books-copy{padding:2.2rem 2.4rem;display:flex;flex-direction:column;justify-content:center;gap:.6rem}
+.r24-books-copy small{font:600 .75rem/1 Inter,Arial,sans-serif;letter-spacing:.14em;color:#8a6a2f}
+.r24-books-copy h3{margin:0;font-family:"Playfair Display",Georgia,serif;font-weight:400;font-size:1.9rem;color:var(--ink,#2c2519)}
+.r24-books-copy p{margin:0;color:var(--ink-soft,#5e5340);line-height:1.6}
+.r24-free{font-family:"Playfair Display",Georgia,serif;font-style:italic;color:var(--leaf,#4e5d44)!important}
+.r24-also{margin-top:2.4rem}
+.r24-also-eyebrow{font:600 .75rem/1.4 Inter,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#8a6a2f;text-align:center;margin:0 0 1rem}
+.r24-also-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.r24-also-grid a{display:flex;flex-direction:column;gap:.35rem;padding:0 1.4rem;text-decoration:none;border-left:1px solid rgba(44,37,25,.14)}
+.r24-also-grid a:first-child{border-left:0}
+.r24-also-title{font-family:"Playfair Display",Georgia,serif;font-size:1.3rem;color:var(--leaf,#4e5d44)}
+.r24-also-line{color:var(--ink-soft,#5e5340);line-height:1.55;font-size:.98rem}
+.r24-btn-solid{background:var(--leaf,#4e5d44)!important;color:#fbf8f1!important;border-color:var(--leaf,#4e5d44)!important}
+.r24-follow{margin-top:1.6rem;padding:1.4rem 1.5rem;background:#fbf8f1;border:1px solid rgba(44,37,25,.14)}
+.r24-follow p{margin:0 0 .9rem;line-height:1.6;color:var(--ink-soft,#5e5340)}
+.r24-follow .r24-follow-eyebrow{font:600 .72rem/1.4 Inter,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#8a6a2f;margin-bottom:.5rem}
+.r24-doors-open{margin-top:.8rem;font-family:"Playfair Display",Georgia,serif;font-style:italic;color:var(--ink-soft,#5e5340);max-width:34rem;line-height:1.6}
+.r24-arriving{display:inline-flex;align-items:center;min-height:44px;font:600 .8rem/1.2 Inter,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--leaf,#4e5d44);text-decoration:none;border-bottom:1px solid currentColor}
+@media(max-width:720px){
+ .r24-doors{grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem}
+ .r24-door{padding:0!important}
+ .r24-door h3{font-size:1.05rem!important;line-height:1.25!important;margin:.35rem .7rem 0!important}
+ .r24-door small{margin:.6rem .7rem 0!important;display:block}
+ .r24-door .r24-long{display:none}
+ .r24-door .r24-short{display:block;margin:.3rem .7rem 0!important;font-size:.9rem!important;line-height:1.4!important}
+ .r24-door .r24-rhythm{margin:.35rem .7rem .8rem!important;font-size:.72rem!important}
+ .r24-books{grid-template-columns:1fr}
+ .r24-books-media img{min-height:190px;max-height:220px}
+ .r24-books-copy{padding:1.2rem 1.1rem}
+ .r24-also-grid{grid-template-columns:1fr}
+ .r24-also-grid a{padding:.9rem 0;border-left:0;border-top:1px solid rgba(44,37,25,.14)}
+ .departure .wrap{grid-template-columns:1fr!important;text-align:center}
+ .departure .wrap img{margin:0 auto}
+}
+

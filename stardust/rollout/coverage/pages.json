@@ -1,0 +1,41 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-28T09:44:04.751Z",
+    "readArtifacts": [
+      "stardust/migrated",
+      "stardust/state.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-28T11:41:15.430Z",
+  "pages": [
+    {
+      "slug": "index",
+      "path": "/",
+      "title": "Nirav Manubhai — Writer, Observer &amp; A Home on the Web",
+      "templateId": "index",
+      "source": {
+        "migratedHtml": "stardust/migrated/index.html",
+        "metaJson": "stardust/migrated/_meta.json",
+        "sourceHash": "sha256:6bdcf8a129b4b36f37aa196b7ca99803f1838b74e14f40a05b6e770da4477f82"
+      },
+      "blocks": [
+        "hero",
+        "host-note",
+        "story-feature",
+        "rooms-doors",
+        "bouquet-feature",
+        "conversation-doors",
+        "departure"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--fdc3c10d--aemcoder.aem.page/",
+        "deployedAt": "2026-09-28T11:20:34.958Z",
+        "verifiedAt": "2026-09-28T11:41:15.430Z",
+        "error": null
+      }
+    }
+  ]
+}

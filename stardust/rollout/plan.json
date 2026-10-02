@@ -1,0 +1,55 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-09-28T09:44:25.076Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-28T09:44:25.076Z",
+  "fragments": [],
+  "deliveryOrder": [
+    "index"
+  ],
+  "steps": [
+    {
+      "slug": "index",
+      "path": "/",
+      "templateId": "index",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "hero",
+          "edsBlockName": "hero"
+        },
+        {
+          "id": "host-note",
+          "edsBlockName": "host-note"
+        },
+        {
+          "id": "story-feature",
+          "edsBlockName": "story-feature"
+        },
+        {
+          "id": "rooms-doors",
+          "edsBlockName": "rooms-doors"
+        },
+        {
+          "id": "bouquet-feature",
+          "edsBlockName": "bouquet-feature"
+        },
+        {
+          "id": "conversation-doors",
+          "edsBlockName": "conversation-doors"
+        },
+        {
+          "id": "departure",
+          "edsBlockName": "departure"
+        }
+      ],
+      "reuse": []
+    }
+  ]
+}

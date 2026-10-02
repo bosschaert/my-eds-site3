@@ -1,0 +1,192 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics plan",
+  "writtenAt": "2026-10-01T14:41:56.611Z",
+  "input": "stardust/current/_dynamics.json",
+  "target": "https://main--c151e704--aemcoder.aem.live",
+  "migrated": "stardust/migrated"
+ },
+ "rows": [
+  {
+   "id": "a-first-party-api-post-api-census-recordhit",
+   "class": "A",
+   "feature": "first-party API POST /api/census/RecordHit",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 1
+   },
+   "evidence": [
+    "POST /api/census/RecordHit → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "a-first-party-api-post-api-census-form-render",
+   "class": "A",
+   "feature": "first-party API POST /api/census/form-render",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 1
+   },
+   "evidence": [
+    "POST /api/census/form-render → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "cr-client-rendered-slot-yui3-js-enabled-js-flexbox",
+   "class": "CR",
+   "feature": "client-rendered slot yui3-js-enabled js flexbox",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "The Beast Is Back Inc document.documentElement.classList.add"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-project-gallery-project",
+   "class": "CR",
+   "feature": "client-rendered slot project gallery-project",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "data-url=/wendys-smartlinks-amazing-insects/",
+    "data-url=/dumpster-stump-vinyl-toy/",
+    "data-url=/rhino-beetle-soft-vinyl-figure-archive/",
+    "data-url=/target-favorite-day-halloween-packaging/"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "f-form-newsletter-form-no-action-js-wired-1-fields",
+   "class": "F",
+   "feature": "form \"newsletter-form\" → no action (JS-wired) (1 fields)",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "email:email"
+   ],
+   "pattern": "client-compute",
+   "disposition": "client-only",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "client tools",
+   "decision": "none"
+  },
+  {
+   "id": "t-unknown-third-party-host-assets-squarespace-com",
+   "class": "T",
+   "feature": "unknown third-party host assets.squarespace.com",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "assets.squarespace.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-unknown-third-party-host-definitions-sqspcdn-com",
+   "class": "T",
+   "feature": "unknown third-party host definitions.sqspcdn.com",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "definitions.sqspcdn.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-unknown-third-party-host-static1-squarespace-com",
+   "class": "T",
+   "feature": "unknown third-party host static1.squarespace.com",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "static1.squarespace.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-unknown-third-party-host-images-squarespace-cdn-com",
+   "class": "T",
+   "feature": "unknown third-party host images.squarespace-cdn.com",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "images.squarespace-cdn.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-unknown-third-party-host-file-squarespace-cdn-com",
+   "class": "T",
+   "feature": "unknown third-party host file.squarespace-cdn.com",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "file.squarespace-cdn.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  }
+ ]
+}

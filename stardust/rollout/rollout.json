@@ -1,0 +1,35 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-10-01T16:21:35.080Z",
+    "stardustVersion": "0.0.0"
+  },
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://www.thebeastisback.com/",
+    "da": {
+      "org": "aemcoder",
+      "site": "c151e704",
+      "ref": "main"
+    },
+    "liveHost": "main--c151e704--aemcoder.aem.live"
+  },
+  "lastRun": {
+    "at": "2026-10-01T16:21:44.469Z",
+    "pages": {
+      "total": 1,
+      "verified": 1,
+      "deployed": 0,
+      "pending": 0,
+      "contentPending": 0,
+      "stale": 0,
+      "failed": 0
+    },
+    "blocks": {
+      "total": 3,
+      "converted": 3,
+      "pending": 0
+    },
+    "verifyFailures": 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics check",
+  "writtenAt": "2026-10-01T16:02:27.104Z",
+  "origin": "https://main--c151e704--aemcoder.aem.live",
+  "parity": "stardust/dynamics/parity.json"
+ },
+ "results": [
+  {
+   "feature": "Project grid: 96 server-rendered items positioned client-side (shortest-column masonry)",
+   "id": "cr-client-rendered-slot-project-gallery-project",
+   "class": "CR",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "96 × .project-grid a.project (min 96)",
+   "thirdParty": "",
+   "ms": 2670,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Project grid: 96 server-rendered items positioned client-side (shortest-column masonry)",
+   "id": "cr-client-rendered-slot-project-gallery-project",
+   "class": "CR",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "96 × .project-grid a.project.positioned (min 96)",
+   "thirdParty": "",
+   "ms": 2190,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Project grid: 96 server-rendered items positioned client-side (shortest-column masonry)",
+   "id": "cr-client-rendered-slot-project-gallery-project",
+   "class": "CR",
+   "status": "done",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 1 page(s)",
+   "thirdParty": "",
+   "ms": 2171,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Mobile \"Menu\" link toggles the mobile nav (≤750px)",
+   "id": "i-mobile-nav-toggle",
+   "class": "I",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × #mobileMenuLink a (min 1)",
+   "thirdParty": "",
+   "ms": 2153,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Mobile \"Menu\" link toggles the mobile nav (≤750px)",
+   "id": "i-mobile-nav-toggle",
+   "class": "I",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "5 × #mobileNav #topNav li a (min 5)",
+   "thirdParty": "",
+   "ms": 2056,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Squarespace platform hosts",
+   "id": "t-platform-hosts-squarespace",
+   "class": "T",
+   "status": "decided-out",
+   "type": "consent-gate",
+   "pass": true,
+   "detail": "no request to 5 gated host pattern(s) before consent",
+   "thirdParty": "",
+   "ms": 6122,
+   "environmentLimit": null
+  }
+ ]
+}

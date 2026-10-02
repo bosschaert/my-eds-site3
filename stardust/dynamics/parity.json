@@ -1,0 +1,132 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:dynamics",
+    "writtenAt": "2026-10-01T16:02:08.919Z",
+    "stardustVersion": "0.27.0"
+  },
+  "method": "single-page replica: 7 curated rows (stardust/dynamic-features.md); 2 self-reproducible features built in the replica blocks (project-grid masonry, header mobile menu), 1 owner decision (newsletter provider), 4 decided-out (platform telemetry, feature-detect classes, platform hosts); replayed against the published origin",
+  "features": [
+    {
+      "id": "cr-client-rendered-slot-project-gallery-project",
+      "feature": "Project grid: 96 server-rendered items positioned client-side (shortest-column masonry)",
+      "class": "CR",
+      "pages": 1,
+      "disposition": "static-snapshot + client-compute (layout)",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "96 a.project tiles rendered and positioned by blocks/project-grid; published-origin pixel gate 1440 1.83% / 360 0.78%, Δh 1px; hover parity img.color/self.color 300ms",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": ".project-grid a.project",
+          "min": 96
+        },
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": ".project-grid a.project.positioned",
+          "min": 96
+        },
+        {
+          "type": "no-page-errors",
+          "paths": [
+            "/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-mobile-nav-toggle",
+      "feature": "Mobile \"Menu\" link toggles the mobile nav (≤750px)",
+      "class": "I",
+      "pages": 1,
+      "disposition": "client-only",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "motion-compare live vs build at 360: class menu-open added 1× both sides, opacity transition 1 event both sides (140ms), 3 parity / 0 missing / 0 extra; replayed on the published origin (stardust/replica/motion/index-360-published.json)",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "#mobileMenuLink a",
+          "min": 1
+        },
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "#mobileNav #topNav li a",
+          "min": 5
+        }
+      ]
+    },
+    {
+      "id": "f-form-newsletter-form-no-action-js-wired-1-fields",
+      "feature": "Newsletter signup form (email + Sign Up)",
+      "class": "F",
+      "pages": 1,
+      "disposition": "static-snapshot (UI recreated verbatim; submit non-functional)",
+      "reproducibility": "needs-business-decision",
+      "status": "skipped-source-broken",
+      "verifiedBy": "source block is unconfigured (\"This newsletter signup form needs a storage option\"); delivered form renders the same controls, submit is a no-op until a provider is chosen",
+      "owner": "Choose a newsletter provider/endpoint for the new host; the footer block then posts the email to it.",
+      "checks": []
+    },
+    {
+      "id": "a-first-party-api-post-api-census-recordhit",
+      "feature": "Squarespace census beacon POST /api/census/RecordHit",
+      "class": "A",
+      "pages": 1,
+      "disposition": "decided-out",
+      "reproducibility": "n/a",
+      "status": "decided-out",
+      "verifiedBy": "platform-internal telemetry; Edge Delivery RUM replaces it",
+      "checks": []
+    },
+    {
+      "id": "a-first-party-api-post-api-census-form-render",
+      "feature": "Squarespace form-render telemetry POST /api/census/form-render",
+      "class": "A",
+      "pages": 1,
+      "disposition": "decided-out",
+      "reproducibility": "n/a",
+      "status": "decided-out",
+      "verifiedBy": "fires only for the Squarespace newsletter runtime",
+      "checks": []
+    },
+    {
+      "id": "cr-client-rendered-slot-yui3-js-enabled-js-flexbox",
+      "feature": "Root feature-detect classes",
+      "class": "CR",
+      "pages": 1,
+      "disposition": "decided-out (noise)",
+      "reproducibility": "n/a",
+      "status": "decided-out",
+      "verifiedBy": "framework classes, no content",
+      "checks": []
+    },
+    {
+      "id": "t-platform-hosts-squarespace",
+      "feature": "Squarespace platform hosts",
+      "class": "T",
+      "pages": 1,
+      "disposition": "decided-out (platform runtime); images rehosted",
+      "reproducibility": "n/a",
+      "status": "decided-out",
+      "verifiedBy": "images rehosted on the new origin, fonts self-hosted",
+      "checks": [
+        {
+          "type": "consent-gate",
+          "path": "/",
+          "forbiddenHosts": [
+            "static1.squarespace.com",
+            "assets.squarespace.com",
+            "definitions.sqspcdn.com",
+            "file.squarespace-cdn.com",
+            "images.squarespace-cdn.com"
+          ]
+        }
+      ]
+    }
+  ]
+}

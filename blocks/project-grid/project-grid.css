@@ -1,0 +1,83 @@
+/* project-grid block — the live #projectThumbs autocolumns grid (index.css) */
+main .project-grid-container > .project-grid-wrapper {
+  clear: both;
+  margin-top: -1.2%;
+}
+
+.project-grid {
+  position: relative;
+}
+
+.project-grid .project {
+  position: absolute;
+  display: block;
+  box-sizing: content-box;
+  margin: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project-grid .project > div {
+  position: relative;
+}
+
+.project-grid .project .project-image {
+  background: var(--color-thumb);
+  margin: 0;
+}
+
+.project-grid .project .project-image .intrinsic {
+  position: relative;
+  height: auto;
+  padding-bottom: 0;
+  line-height: 0;
+  text-align: center;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.14s ease-out;
+}
+
+.project-grid .project .project-image .content-fill {
+  position: static;
+}
+
+.project-grid .project .project-image picture {
+  display: block;
+}
+
+.project-grid .project .project-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-grid .project .project-item-count {
+  display: none;
+}
+
+.project-grid .project .project-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6em;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  text-align: center;
+  color: rgb(0 0 0 / 0%);
+}
+
+.project-grid .project .project-title p {
+  margin: 0;
+}
+
+.project-grid .project:hover .project-image .intrinsic {
+  opacity: 0;
+}
+
+.project-grid .project:hover .project-title {
+  color: #000;
+}

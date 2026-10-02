@@ -1,0 +1,161 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-01T14:26:24Z",
+    "stardustVersion": "0.27.0"
+  },
+  "pageTypes": [
+    {
+      "pageType": "landing",
+      "archetype": "index",
+      "liveUrl": "https://www.thebeastisback.com/",
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "contentRoot": "#projectThumbs",
+      "contentRootPolicy": "live #page carries the display:none payload of all 96 project pages (#projectPages: 96 headings, 48 CTAs, 875 imgs — the project URLs outside this run's scope); the rendered content root of the home page is the thumbnail grid, so --main is #projectThumbs on both sides. header/footer roots compared by default.",
+      "status": "approved",
+      "approvedBy": "hands-off",
+      "breakpoints": {
+        "360": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 1,
+            "visualFlags": "1 justified",
+            "pixelPct": 0.05,
+            "heightDelta": 1,
+            "clipped": 0,
+            "overflow": "ok",
+            "chromeParity": "✓ header and footer within tolerance",
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🔴 MISSING EYEBROW [footer] \"Newsletter Block\"",
+              "why": "same hidden editor banner as 1440",
+              "permanent": true
+            },
+            {
+              "probe": "visual",
+              "flag": "IMAGERY GAP source 972 images / build 97",
+              "why": "hidden #projectPages payload"
+            }
+          ],
+          "residuals": [
+            {
+              "band": "all grid bands",
+              "pct": 0.05,
+              "cause": "edge antialiasing of 500w→320 resampling",
+              "flaggedFor": "user"
+            }
+          ],
+          "captureState": []
+        },
+        "1440": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 1,
+            "visualFlags": "1 justified",
+            "pixelPct": 0.1,
+            "heightDelta": 1,
+            "clipped": 0,
+            "overflow": "ok",
+            "capProbe": "PASS at 2560 (0 of 6 rows failed)",
+            "chromeParity": "footer parity; header 5 deltas (font metrics)",
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "content",
+              "flag": "🔴 MISSING EYEBROW [footer] \"Newsletter Block\" (+🟡 body \"This newsletter signup form needs a storage option…\", \"Storage\", \"Thank you!\")",
+              "why": "display:none Squarespace editor status banner of the broken newsletter storage + hidden submission text; not rendered on live; omitted on purpose (dynamics plan: newsletter skipped-source-broken, owner decision on provider)",
+              "permanent": true
+            },
+            {
+              "probe": "content",
+              "flag": "🟡 MISSING BODY [header] inline script text",
+              "why": "live inline <script> text inventoried as body; no equivalent in a static prototype"
+            },
+            {
+              "probe": "visual",
+              "flag": "IMAGERY GAP source 972 images / build 97",
+              "why": "the 875 extra live images are the hidden #projectPages payload (see contentRootPolicy)"
+            },
+            {
+              "probe": "chrome-parity",
+              "flag": "header: nav words Δw −2…−5px, Δx +4/+6, lineHeight normal→19px",
+              "why": "self-hosted Source Sans 3 vs the live Typekit Source Sans Pro kit: same family, slightly narrower bold advances; 19px line-height pins the measured live glyph box (normal would render 21px)",
+              "permanent": true
+            }
+          ],
+          "residuals": [
+            {
+              "band": "all grid bands",
+              "pct": 0.1,
+              "cause": "glyph/edge antialiasing + 300w→291 live downsample vs native 291 renditions; footer Δy ≤1px rounding",
+              "flaggedFor": "user"
+            }
+          ],
+          "captureState": []
+        }
+      },
+      "prototypeTable": {
+        "360": "stardust/replica/gates/prototypes-360/summary.md (PASS 0.05% Δh 1)",
+        "1440": "stardust/replica/gates/prototypes-1440/summary.md (PASS 0.1% Δh 1)"
+      },
+      "liftedModel": {
+        "grid": "columns = max(1, floor(W/300)); gutter = W/100 (template tweak TGutter read from site-bundle.js: 12px at 1200, 3.2px at 320); tile height = floor(colW·h/w) from data-image-dimensions; shortest column first, leftmost on ties; verified against all 24 lifted tile boxes and the stitched captures (wrapper 8112 / 34563)",
+        "note": "the 12px mobile gutter in the early DOM lift (36250 doc height) is a pre-layout state; the steady state after the template bundle lays out is 35414 (stitched twice, with and without --settle)"
+      },
+      "motion": {
+        "observed": [
+          "hover .project: .intrinsic opacity→0 .14s ease-out + link color → #444",
+          "hover #topNav li a: color → #c4a03f",
+          "hover .newsletter-form-button: color #fff, background #f26245, .1s linear (+ icon span)",
+          "hover #socialLinks a: color → #444 (fill stays CSS-set)",
+          "click #mobileMenuLink a: body.menu-open added (mobile nav height 0 → auto)"
+        ],
+        "implemented": [
+          "tile hover fade + a:hover #444",
+          "nav hover gold",
+          "newsletter button fill .1s",
+          "social anchor color (transition background-color .17s)",
+          "menu-open toggle on body (js/index.js)"
+        ],
+        "dead": [
+          "header scroll-morph (header static on both sides)",
+          "mobileMenuLink widget sampler (no track/scroll change; the class mutation is the mechanism)"
+        ],
+        "evidence": [
+          "stardust/replica/motion/index.json",
+          "stardust/replica/motion/index-build.json",
+          "stardust/replica/motion/index-compare.txt (6 parity, 0 missing, 0 extra; svg.color line is a sampler key collision — direct probe: svg color #f26447→#444 on hover on the build)",
+          "stardust/replica/motion/index-360.json",
+          "stardust/replica/motion/index-360-build.json",
+          "stardust/replica/motion/index-360-compare.txt (3 parity, 0 missing)"
+        ],
+        "pixelAfterMotion": {
+          "360": 0.05,
+          "1440": 0.1
+        }
+      },
+      "knownDeviations": [
+        "ungated widths 751–1439: gutter W/100 and column model from the bundle; the earlier ~6px observation at 2–3 columns is superseded by the bundle rule"
+      ]
+    }
+  ],
+  "siblings": {},
+  "migrate": {
+    "at": "2026-10-01T15:50:23.783Z",
+    "pages": 1,
+    "archetypes": 1,
+    "siblings": 0,
+    "thin": 0,
+    "gates": {
+      "content-fidelity": 1,
+      "pixel-gate-1440": 1,
+      "pixel-gate-360": 1,
+      "delivery-lint": 1
+    },
+    "missing": {}
+  }
+}

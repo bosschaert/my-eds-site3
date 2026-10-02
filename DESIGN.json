@@ -1,0 +1,294 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-01T13:47:40.209Z",
+    "mode": "bounded-single",
+    "synthesizedFrom": [
+      "stardust/current/pages/index.json",
+      "stardust/replica/lift/tokens.json"
+    ]
+  },
+  "site": {
+    "name": "The Beast Is Back Inc",
+    "origin": "https://www.thebeastisback.com/",
+    "platform": "Squarespace (index/autocolumns template)"
+  },
+  "palette": {
+    "pageBg": "#ffffff",
+    "text": "#000000",
+    "accent": "#f26447",
+    "accentButton": "#f26245",
+    "thumbPlaceholder": "#dfddc6",
+    "navLink": "#000000",
+    "navActive": "#c4a03f",
+    "mobileNavLink": "rgba(0,0,0,.7)",
+    "newsletterBg": "#000000",
+    "newsletterText": "#ffffff",
+    "inputText": "#222222",
+    "inputBorder": "rgba(0,0,0,.12)"
+  },
+  "type": {
+    "body": {
+      "family": "PT Serif",
+      "size": "14px",
+      "lineHeight": "1.6em",
+      "weight": 400
+    },
+    "nav": {
+      "family": "Source Sans Pro",
+      "size": "15px",
+      "weight": 700,
+      "lineHeight": "1.6em",
+      "letterSpacing": "1px",
+      "transform": "uppercase"
+    },
+    "mobileMenuLink": {
+      "family": "Source Sans Pro",
+      "size": "16px",
+      "weight": 700,
+      "letterSpacing": "1px",
+      "transform": "uppercase",
+      "color": "#000",
+      "borderBottom": "1px dotted #f26447",
+      "padding": "0 0 15px",
+      "margin": "0 0 25px",
+      "text": "Menu"
+    },
+    "mobileNavLink": {
+      "family": "Source Sans Pro",
+      "size": "16px",
+      "weight": 700,
+      "lineHeight": "2.5em",
+      "letterSpacing": "1px",
+      "transform": "uppercase",
+      "color": "rgba(0,0,0,.7)",
+      "activeColor": "#000"
+    },
+    "projectTitle": {
+      "family": "Source Sans Pro",
+      "size": "18px",
+      "weight": 600,
+      "lineHeight": "1.6em",
+      "transform": "capitalize",
+      "note": "overlay title, color transparent until hover (#000)"
+    },
+    "newsletterTitle": {
+      "family": "Source Sans Pro",
+      "size": "30px",
+      "lineHeight": "1.2em",
+      "weight": 700,
+      "transform": "capitalize",
+      "color": "#f26447",
+      "marginBottom": "17px",
+      "mobile": {
+        "size": "27px",
+        "marginBottom": "14px"
+      }
+    },
+    "newsletterDescription": {
+      "family": "PT Serif",
+      "size": "15px",
+      "lineHeight": "24px",
+      "color": "#fff",
+      "margin": "17px 0",
+      "mobile": {
+        "lineHeight": "normal",
+        "margin": "0 0 14px"
+      }
+    },
+    "newsletterFootnote": {
+      "size": "12px",
+      "color": "#fff",
+      "opacity": 0.8,
+      "marginTop": "17px",
+      "mobile": {
+        "margin": "14px 0 0"
+      }
+    },
+    "copyright": {
+      "family": "PT Serif",
+      "size": "14px",
+      "lineHeight": "22.4px",
+      "align": "center"
+    }
+  },
+  "fonts": {
+    "PT Serif": "assets/fonts/PTSerif-400.woff2 (Google Fonts, OFL; live loads it via Squarespace's Typekit kit)",
+    "Source Sans Pro": "assets/fonts/SourceSans3-var.woff2 (Source Sans 3 variable 200-900, Google Fonts, OFL; same family as the Typekit Source Sans Pro)"
+  },
+  "container": {
+    "canvas": {
+      "maxWidth": "1200px",
+      "padding": "76px",
+      "margin": "10px auto",
+      "boxSizing": "content-box",
+      "mobile": {
+        "padding": "0 20px 20px",
+        "margin": "0 auto"
+      }
+    },
+    "header": {
+      "marginBottom": "44px",
+      "mobile": "30px"
+    },
+    "page": {
+      "padding": "57px 0"
+    },
+    "logo": {
+      "size1440": "140px",
+      "size360": "120px",
+      "model": "img height 140 (CSS), max-width 100%; mobile 120",
+      "topNavMarginTop": "22px"
+    }
+  },
+  "grid": {
+    "model": "autocolumns masonry (shortest column first), columns = max(1, floor(W/300)), gutter 12px (h and v), column width = (W - (n-1)*12)/n; wrapper margin-top -1.2%",
+    "measured": {
+      "360": {
+        "W": 320,
+        "cols": 1,
+        "colW": 320,
+        "gutter": 12,
+        "rendition": "500w"
+      },
+      "1440": {
+        "W": 1200,
+        "cols": 4,
+        "colW": 291,
+        "gutter": 12,
+        "rendition": "300w"
+      },
+      "1200vp": {
+        "W": 1048,
+        "cols": 3,
+        "colW": 345
+      },
+      "1024vp": {
+        "W": 872,
+        "cols": 2,
+        "colW": 433
+      },
+      "900vp": {
+        "W": 748,
+        "cols": 2,
+        "colW": 371
+      },
+      "751vp": {
+        "W": 599,
+        "cols": 1
+      }
+    },
+    "item": {
+      "imageBg": "#dfddc6",
+      "hover": "image opacity 0 (.14s ease-out), title color #000"
+    }
+  },
+  "footer": {
+    "blockPadding": "17px",
+    "spacer": {
+      "height1440": "61px total (hidden at mobile)"
+    },
+    "newsletter": {
+      "bg": "#000",
+      "padding": "34px 17px",
+      "boxSizing": "border-box",
+      "headerWidth": "85%",
+      "input": {
+        "w1440": "244px",
+        "h": "52px",
+        "padding": "15px",
+        "border": "1px solid rgba(0,0,0,.12)",
+        "bg": "#fff",
+        "font": "inherit 15px",
+        "color": "#222"
+      },
+      "button": {
+        "h": "52px",
+        "padding": "15px 37.5px",
+        "border": "1px solid #f26245",
+        "radius": "3px",
+        "color": "#f26245",
+        "bg": "transparent",
+        "font": "15px uppercase 400",
+        "label": "Sign Up"
+      }
+    },
+    "social": {
+      "marginTop": "17px",
+      "anchor": "26x26, margin 0 5px 10px",
+      "svg": "52x52 (scale 2) centered, fill #f26447",
+      "icon": "assets/instagram-icon.svg"
+    }
+  },
+  "extensions": {
+    "breakpoints": {
+      "containerMaxWidth": "1352px",
+      "probeWidth": 2560,
+      "shellMaxWidth": "1352px",
+      "caps": [
+        {
+          "kind": "shell",
+          "px": 1352,
+          "via": "max-width",
+          "selector": "#canvas",
+          "pages": [
+            "https://www.thebeastisback.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 1200,
+          "via": "fixed",
+          "selector": "#mobileNavWrapper",
+          "pages": [
+            "https://www.thebeastisback.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 291,
+          "via": "fixed",
+          "selector": "#projectThumbs > div.wrapper.sqs-gallery-design-autocolumns > a.project.positioned",
+          "pages": [
+            "https://www.thebeastisback.com/"
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "url": "https://www.thebeastisback.com/",
+          "section": 0,
+          "selector": "#mobileNav",
+          "px": 1200
+        },
+        {
+          "url": "https://www.thebeastisback.com/",
+          "section": 1,
+          "selector": "#header",
+          "px": null
+        },
+        {
+          "url": "https://www.thebeastisback.com/",
+          "section": 2,
+          "selector": "#page",
+          "px": 291
+        },
+        {
+          "url": "https://www.thebeastisback.com/",
+          "section": 3,
+          "selector": "#footer",
+          "px": null
+        }
+      ],
+      "capRegister": [],
+      "capProvenance": {
+        "writtenBy": "skills/replica/scripts/cap-probe.mjs",
+        "writtenAt": "2026-10-01T13:40:55.814Z",
+        "baseWidth": 1440,
+        "urls": [
+          "https://www.thebeastisback.com/"
+        ]
+      }
+    }
+  }
+}

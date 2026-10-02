@@ -1,0 +1,93 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica handoff (C-deliver units)",
+    "writtenAt": "2026-09-28T11:19:13Z"
+  },
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "index"
+      ],
+      "pages": 0,
+      "blocks": 2,
+      "startedAt": "2026-09-28T09:47:02Z",
+      "stage": "authored + deployed (nav, footer previewed) + published-origin shell gate + frozen",
+      "authoredAt": "2026-09-28T10:05:59Z",
+      "files": 17,
+      "verdict": "foundation: files 17, nav+footer previewed, shell crops 100%/100% at 1440 and 360, chrome-parity residuals: footer +41 (live bistability) + title tag; requests 1–5 applied at C-final, refrozen",
+      "endedAt": "2026-09-28T11:19:13Z",
+      "gates": {
+        "360": {
+          "headerCrop": "100.00%",
+          "footerCrop": "100.00%",
+          "chromeParity": "1 delta: title tag <span>→<p> (authored paragraph, EW1)",
+          "round": "pub4"
+        },
+        "1440": {
+          "headerCrop": "100.00%",
+          "footerCrop": "100.00%",
+          "chromeParity": "9 deltas: footer Δy +41 uniform (live lazy books image bistable 327→368 on an unscrolled load, parity in the stitched capture), title tag <span>→<p> (authored paragraph, EW1)",
+          "round": "pub3/pub4"
+        }
+      }
+    },
+    "home": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "blocks": 7,
+      "startedAt": "2026-09-28T10:34:22Z",
+      "authoredAt": "2026-09-28T10:34:22Z",
+      "stage": "deployed (12 media → media/home/, index previewed) + published-origin gates passed at 1440 and 360",
+      "verdict": "home: pages 1/1 live (preview), blocks 7, gate 1440 0.00% / 360 0.63% (Δh 0 both, content 0 red, overflow ok), requests 5",
+      "endedAt": "2026-09-28T11:19:13Z",
+      "gates": {
+        "360": {
+          "pixel": "0.63%",
+          "heightDelta": 0,
+          "hotBands": "none > 2.1% (rendition resampling)",
+          "overflow": "scrollWidth 345 = viewport",
+          "contentDiff": "0 structural (17 🟡)",
+          "visualDiff": "6 advisory STRETCHED IMAGE",
+          "round": "pub4 (--full)"
+        },
+        "1440": {
+          "pixel": "0.00%",
+          "heightDelta": 0,
+          "hotBands": "none",
+          "overflow": "scrollWidth 1425 = viewport",
+          "contentDiff": "0 structural (17 🟡: pipeline title attributes on links, drawer \"×\")",
+          "visualDiff": "7 advisory STRETCHED IMAGE (intentional cover crops, as the archetype)",
+          "round": "pub4 (--full)"
+        }
+      },
+      "motion": {
+        "compare": "6 parity, 0 extra, 1 MISSING (.reading-door hover) — confirmed on the published page by a direct hover: transform matrix(1,0,0,1,0,-3) + border-color change; sampler artefact",
+        "build": "stardust/replica/motion/index-pub.json"
+      },
+      "fixes": [
+        "rooms-doors: poster (letterboxed) door is authored (config word \"poster\", @ew-exempt), not inferred from image ratio — card 04 was letterboxed wrongly",
+        "bouquet-feature, conversation-doors: full-width <picture> so lazy images keep their placeholder box (frames collapsed to 0 before load at 360)",
+        "foundation requests 1–5 (fonts from the live Google Fonts URL incl. head link + eager load, drawer hosted after <header>, footer ground) — see stardust/rollout/foundation-requests.md"
+      ]
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "startedAt": "2026-09-28T11:19:13Z",
+      "endedAt": "2026-09-28T11:19:13Z",
+      "requestsApplied": 5,
+      "freezeCheck": "foundation unchanged (17 files)",
+      "verdict": "final: 5 queued foundation requests applied once, published gates re-run at 1440 (0.00%) and 360 (0.63%), coverage updated"
+    }
+  }
+}

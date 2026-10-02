@@ -1,0 +1,14 @@
+{
+  "runtime": "vanilla-eds",
+  "blockWrapperClass": "block",
+  "blockWrapper": "div.<name>-wrapper around the block; section gains .<name>-container; block gains .block + data-block-name (scripts/aem.js decorateBlock)",
+  "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "buttonizationDetail": "scripts/scripts.js decorateButtons: matches `p a[href]` alone in its <p>; requires an authored <strong> (primary), <em> (secondary) or both (accent); bare <a> alone in a <p> stays a plain link; URL-display links skipped",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "sectionShape": "main > div.section > div.default-content-wrapper | div.<name>-wrapper; data-section-status set by the runtime",
+  "headerLoad": "loadHeader() builds a header block with ONE empty row (buildBlock('header','')) and decorates it in loadLazy; nav/footer paths read from <meta name=nav|footer>, default /nav and /footer",
+  "fontsLoad": "loadFonts() loads styles/fonts.css after first paint (eager on >= 900px or fonts-loaded session flag, else in loadLazy)",
+  "verifiedAgainst": "scripts/aem.js + scripts/scripts.js of this clone, 2026-09-28"
+}

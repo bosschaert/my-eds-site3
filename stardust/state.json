@@ -1,0 +1,112 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-09-28T09:43:48Z",
+    "stardustVersion": "0.25.1"
+  },
+  "site": {
+    "originUrl": "https://www.niravmanubhai.com",
+    "deployUrl": "https://main--fdc3c10d--aemcoder.aem.page",
+    "extractedAt": "2026-09-28T09:05:02Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "direction": null,
+  "handsOff": true,
+  "flow": "replica",
+  "flowChosenAt": "2026-09-28T09:05:02Z",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "index",
+      "url": "https://www.niravmanubhai.com/",
+      "title": "Nirav Manubhai — Writer, Observer & A Home on the Web",
+      "type": "home",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-28T09:05:02Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-28T09:11:03Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-28T09:27:28Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-28T09:39:05Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-28T09:43:48Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": "stardust/migrated/index.html"
+    }
+  ],
+  "migrate": {
+    "at": "2026-09-28T09:42:34Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/",
+        "outputPath": "index.html",
+        "slug": "index",
+        "outputPathDefault": null
+      }
+    ],
+    "totalAssetsBundled": 21,
+    "bundledAssets": [
+      "canon.css",
+      "index.css",
+      "media/conversation-a10bc4.webp",
+      "media/courtyard-480w-5b1195.webp",
+      "media/courtyard-640w-4d95d4.webp",
+      "media/courtyard-960w-76bafd.webp",
+      "media/courtyard-cebb67.jpg",
+      "media/courtyard-kabir-f1662a.webp",
+      "media/courtyard-mobile-0bfae1.webp",
+      "media/courtyard-stills-63d426.webp",
+      "media/csja-poster-69e47e.webp",
+      "media/favicon-ab9476.png",
+      "media/host-mirror-480w-a69307.webp",
+      "media/host-mirror-640w-e3eee2.webp",
+      "media/host-mirror-960w-b96c01.webp",
+      "media/host-mirror-aeece3.jpg",
+      "media/house-specials-home-threshold-f31913.webp",
+      "media/my-books-home-20d3cd.webp",
+      "media/nirav-farewell-debf98.webp",
+      "media/story-bouquet-hero-1d0782.webp",
+      "media/story-nursery-hero-72bd66.webp"
+    ],
+    "pages": [
+      {
+        "slug": "index",
+        "file": "stardust/migrated/index.html",
+        "assetsBundled": 21
+      }
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "lastRun": {
+      "at": "2026-09-28T09:42:34Z",
+      "rendered": [
+        "index"
+      ],
+      "unchanged": [],
+      "refused": [],
+      "passthrough": []
+    }
+  }
+}

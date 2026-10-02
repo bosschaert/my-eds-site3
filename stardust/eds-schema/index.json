@@ -1,0 +1,330 @@
+{
+ "source": "http://localhost:8791/index-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Nirav Manubhai — a home on the web"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "room-section",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Welcome to my home."
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Rooms for stories, books and a life observed closely."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "I have spent decades moving through very different chapters of work — organisations, functions, roles, geographies. A lifelong student of human behaviour, I have honed and polished my gift of observation and intuition — studying the silences, the noise and the outbursts."
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Today I follow my passion — working with nature, and writing about what all those chapters have taught me."
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "My sincere and heartfelt wish is to give — to transmit — in the hope that it helps a fertile mind like yours to do better, to excel, and to bring out its very best."
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 5,
+   "repeats": []
+  },
+  {
+   "section": "story-nursery-home",
+   "items": [
+    {
+     "role": "eyebrow",
+     "order": 0,
+     "text": "What is growing here"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "The Story Nursery"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Not sure where to begin? See what is in season this week, find a way in that suits your mood, and see what is still growing."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Enter the Story Nursery →",
+     "href": "/story-nursery"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 3,
+   "repeats": []
+  },
+  {
+   "section": "rooms",
+   "items": [
+    {
+     "role": "eyebrow",
+     "order": 0,
+     "text": "The Rooms"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Come in. Look around. Stay as long as you like."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Stories, books, field notes and work observed closely — each kept in its own room. Come in wherever your curiosity pauses. Each room has its own pace. There is no order to follow. The house will still be here when you return."
+    },
+    {
+     "role": "eyebrow",
+     "order": 3,
+     "text": "Also in the House"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "The Quiet Signal →Field notes on attention, writing, technology and the questions beneath the noise.",
+     "href": "/quiet-signal"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Axiom Stories →Stories written around a single idea, for organisations and moments worth remembering.",
+     "href": "/axiom-stories"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "My Study →A quiet record of my work, observations, failures and learnings, gathered across decades.",
+     "href": "/my-study"
+    }
+   ],
+   "imgCount": 5,
+   "editableTexts": 23,
+   "repeats": [
+    {
+     "unitSelector": "A.reading-door",
+     "count": 4,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 1,
+      "textRuns": 5
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "A.",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 2
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "room-section",
+   "items": [
+    {
+     "role": "eyebrow",
+     "order": 0,
+     "text": "The Story Bouquet"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Some stories are meant to be sent."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Three stories chosen for one feeling, one occasion, someone you care about — wrapped, and sent on WhatsApp in moments."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Gift a Story Bouquet →",
+     "href": "/story-bouquet"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 4,
+   "repeats": []
+  },
+  {
+   "section": "room-section",
+   "items": [
+    {
+     "role": "eyebrow",
+     "order": 0,
+     "text": "Conversation"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "If something sparked a thought, the door is open."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "This is the sitting room. If something here stayed with you — write to me. A story you noticed, a question, an idea, or a piece of work that might benefit from another chair."
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Stories have always travelled by the most intimate means available — from the fireside to the written word, from letter to radio, from radio to the screen, and now to WhatsApp, where real conversations happen today. Some of the stories in this house are written to live there — to be read, shared and discussed the way stories have always travelled."
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "And if a story stays with you and you think of someone who might need it — gift it. Every story carries a quiet option to send it to someone you care about. That is how stories have always moved — from one person to another, with care."
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "I read everything. I answer personally, and without hurry."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Email me",
+     "href": "mailto:niravkaka@hotmail.com"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "WhatsApp · write to me",
+     "href": "https://wa.me/919979741878"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Substack · the longer letters",
+     "href": "https://substack.com/@niravmanubhai"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "LinkedIn · the working world",
+     "href": "https://www.linkedin.com/in/niravmanubhai/"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Instagram",
+     "href": "https://www.instagram.com/niravmanubhaishah/"
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "Facebook",
+     "href": "https://www.facebook.com/niravmanubhaishah"
+    },
+    {
+     "role": "eyebrow",
+     "order": 12,
+     "text": "Follow the House"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "One WhatsApp channel. A quiet note each week about what is new in the House — no noise, just the work arriving."
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Follow the House on WhatsApp →",
+     "href": "https://whatsapp.com/channel/0029VbEKbGrKgsNzqkCOXY3H"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 8,
+   "repeats": []
+  },
+  {
+   "section": "departure",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Before you go"
+    },
+    {
+     "role": "eyebrow",
+     "order": 1,
+     "text": "Before you go"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "I hope something here stayed with you."
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "The doors remain open. Every week, a new story arrives in one of these rooms."
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Come, Again."
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "આવજો."
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "See what is arriving this week →",
+     "href": "/story-nursery"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "If you are curious about what is happening in my world right now — what I am writing, building and tending —"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "there is this page for that.",
+     "href": "/now"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "Thank you for visiting."
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 9,
+   "repeats": []
+  }
+ ]
+}

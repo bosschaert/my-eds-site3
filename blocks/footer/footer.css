@@ -1,0 +1,44 @@
+/* footer — footer.nmh-footer lifted from stardust/prototypes/canon.css (live cascade) */
+.footer .nmh-footer {
+  padding: 30px 20px;
+  border-top: 1px solid var(--line);
+  background: var(--parch);
+  color: #2c2519;
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer .nmh-footer ul {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* the link itself is the flex item, as on the live page */
+.footer .nmh-footer li {
+  display: flex;
+}
+
+.footer .nmh-footer a {
+  color: #6b5f47;
+  font-size: 13px;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer .nmh-footer a:hover {
+  color: #2c2519;
+}
+
+@media (width <= 720px) {
+  .footer .nmh-footer ul {
+    flex-wrap: wrap;
+  }
+}

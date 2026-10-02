@@ -1,0 +1,130 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:dynamics",
+    "writtenAt": "2026-09-28T11:36:00Z",
+    "source": "stardust/dynamic-features.md (6 rows), stardust/dynamic-features-plan.md"
+  },
+  "method": "single static page: no listings, forms, search, modals or players on the source; tags shipped as the disabled, consent-gated interim tier in scripts/site-config.js; hreflang alternates emitted by scripts.js decorateAlternates(); replayed on the preview origin (publish decision: preview-only)",
+  "features": [
+    {
+      "id": "a-cms-app-settings-object-datalayer",
+      "feature": "dataLayer settings object (Google tag)",
+      "class": "A",
+      "pages": 1,
+      "disposition": "static-snapshot",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "source: window.dataLayer populated by gtag only (no ids, endpoints or vendors beyond the tag); build: no dataLayer script authored, consent default declined — nothing to snapshot",
+      "checks": [
+        {
+          "type": "no-page-errors",
+          "paths": [
+            "/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i18n-locale-variants-en-x-default",
+      "feature": "hreflang alternates en / x-default",
+      "class": "I18N",
+      "pages": 1,
+      "disposition": "rebuild-native",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "source: 2 <link rel=alternate> (en, x-default) → the same canonical URL; build: decorateAlternates() emits the same 2 on the page's canonical in the lazy phase — verified on the preview page with the local scripts/*.js intercepted in (2 alternates: en, x-default → https://main--fdc3c10d--aemcoder.aem.page/, 0 page errors); on-origin replay at E-full-site after the code push: 2 × link[rel=alternate][hreflang] PASS",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "link[rel=\"alternate\"][hreflang]",
+          "min": 2
+        }
+      ]
+    },
+    {
+      "id": "t-analytics-google-analytics-ads",
+      "feature": "Google Analytics 4 tag (G-00QDEH6N5W) via gtag.js",
+      "class": "T",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision",
+      "status": "interim",
+      "verifiedBy": "site config carries googleTagId G-00QDEH6N5W with enabled:false; consented.js loads gtag only when enabled AND consent granted; the delivered page makes no request to googletagmanager.com / google-analytics.com; enabled path verified with the local scripts intercepted in: enabled:true + ?consent=accept → 1 request to www.googletagmanager.com/gtag/js?id=G-00QDEH6N5W, dataLayer 4 entries; default (disabled) → 0 tag requests, no dataLayer",
+      "owner": "confirm whether the GA4 property G-00QDEH6N5W runs on the new host (yes/no, property id); then set analytics.enabled = true in scripts/site-config.js",
+      "checks": [
+        {
+          "type": "consent-gate",
+          "path": "/",
+          "forbiddenHosts": [
+            "www.googletagmanager.com",
+            "www.google-analytics.com",
+            "region1.google-analytics.com"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t-tag-manager-google-tag-manager",
+      "feature": "gtag loader (same tag as row 3)",
+      "class": "T",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision",
+      "status": "interim",
+      "verifiedBy": "merged into row 3: one property, one loader; covered by its consent-gate check",
+      "owner": "same decision as row 3",
+      "checks": []
+    },
+    {
+      "id": "t-unknown-third-party-host-static-cloudflareinsights-com",
+      "feature": "Cloudflare Web Analytics beacon",
+      "class": "T",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision",
+      "status": "interim",
+      "verifiedBy": "not carried: the beacon is bound to the source's Cloudflare zone and the new host has its own RUM; the delivered page makes no request to static.cloudflareinsights.com",
+      "owner": "ask only if Cloudflare Web Analytics must continue on the new host",
+      "checks": [
+        {
+          "type": "consent-gate",
+          "path": "/",
+          "forbiddenHosts": [
+            "static.cloudflareinsights.com",
+            "cloudflareinsights.com"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v-iframe-without-src-runtime-injected-embed",
+      "feature": "1×1 iframe injected at runtime",
+      "class": "V",
+      "pages": 1,
+      "disposition": "decided-out",
+      "reproducibility": "self",
+      "status": "decided-out",
+      "verifiedBy": "tag-loader artefact with no visible surface; the migrated page authors no hidden frame (register: decided-out)",
+      "checks": []
+    },
+    {
+      "id": "static-surface-no-dynamic-widgets",
+      "feature": "no forms, search, modals or players (source parity)",
+      "class": "A",
+      "pages": 1,
+      "disposition": "rebuild-native",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "source capture: 0 forms, 0 dialogs, 0 media iframes; build: the same — asserted as 0 matching elements is not expressible as dom-count min, so recorded here and covered by no-page-errors on the delivered page",
+      "checks": [
+        {
+          "type": "no-page-errors",
+          "paths": [
+            "/"
+          ]
+        }
+      ]
+    }
+  ]
+}

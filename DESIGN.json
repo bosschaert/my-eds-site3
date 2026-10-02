@@ -1,0 +1,274 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-28T09:10:07Z",
+    "mode": "bounded-single",
+    "synthesizedFrom": [
+      "stardust/current/pages/index.json",
+      "stardust/replica/lift/tokens.json"
+    ]
+  },
+  "site": {
+    "origin": "https://www.niravmanubhai.com",
+    "title": "Nirav Manubhai — Writer, Observer & A Home on the Web",
+    "description": "Enter Nirav Manubhai’s home on the web: literary rooms, chamber mysteries, still-image stories, essays and books shaped by observation, slowness and human attention."
+  },
+  "palette": {
+    "paper": "#f4efe3",
+    "parch": "#ece3d1",
+    "ink": "#2c2519",
+    "ink-soft": "#6b5f47",
+    "leaf": "#4e5d44",
+    "leaf-dark": "#3c4934",
+    "line": "#cabfa3",
+    "gold": "#b2843e",
+    "noir": "#0f0d09",
+    "cream": "#f5eddc",
+    "taupe": "#8a7f66",
+    "focus": "#e6c77d",
+    "button-solid-text": "#fbf8f1",
+    "eyebrow-gold": "rgb(164,124,61)",
+    "also-eyebrow": "rgb(138,106,47)",
+    "guj-blessing": "rgb(67,83,59)"
+  },
+  "fonts": {
+    "source": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=Rasa:wght@400;500;600&display=swap",
+    "display": "\"Playfair Display\", Georgia, serif",
+    "body": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "bodyAlt": "Inter, Arial, sans-serif",
+    "gujarati": "Rasa, \"Playfair Display\", serif",
+    "textRendering": {
+      "text-rendering": "optimizeLegibility",
+      "-webkit-font-smoothing": "antialiased",
+      "-webkit-text-size-adjust": "100%"
+    }
+  },
+  "typeRamp1440": {
+    "h2.section": {
+      "family": "display",
+      "size": "57.6px (3.6rem)",
+      "weight": 400,
+      "lineHeight": "66.816px (1.16)",
+      "color": "ink"
+    },
+    "h2.storyNursery": {
+      "family": "display",
+      "size": "48px",
+      "weight": 400,
+      "lineHeight": "52.8px (1.1)",
+      "color": "leaf"
+    },
+    "h3.books": {
+      "family": "display",
+      "size": "30.4px",
+      "weight": 400,
+      "lineHeight": "35.264px"
+    },
+    "h3.door": {
+      "family": "display",
+      "size": "21.6px",
+      "weight": 500,
+      "lineHeight": "24.84px"
+    },
+    "h3.also": {
+      "family": "display",
+      "size": "20.8px",
+      "weight": 400,
+      "lineHeight": "35.36px",
+      "color": "leaf"
+    },
+    "subtitle": {
+      "family": "display",
+      "size": "18.88px",
+      "weight": 400,
+      "lineHeight": "31.152px",
+      "letterSpacing": "0.1888px",
+      "color": "ink-soft"
+    },
+    "lede": {
+      "family": "body",
+      "size": "17.92px",
+      "lineHeight": "30.464px",
+      "color": "ink-soft"
+    },
+    "body": {
+      "family": "body",
+      "size": "17px",
+      "lineHeight": "29.75px (1.75)",
+      "color": "ink"
+    },
+    "cardBody": {
+      "family": "body",
+      "size": "14.4px",
+      "lineHeight": "22.32px",
+      "color": "ink-soft"
+    },
+    "alsoLine": {
+      "family": "body",
+      "size": "15.68px",
+      "lineHeight": "24.304px",
+      "color": "ink-soft"
+    },
+    "eyebrow": {
+      "family": "body",
+      "size": "10.88px (.68rem)",
+      "weight": 600,
+      "letterSpacing": "2.176px (.2em)",
+      "transform": "uppercase",
+      "color": "leaf"
+    },
+    "eyebrow.gold": {
+      "family": "bodyAlt",
+      "size": "10.88px",
+      "weight": 600,
+      "letterSpacing": "2.3936px (.22em)",
+      "transform": "uppercase",
+      "color": "eyebrow-gold"
+    },
+    "eyebrow.also": {
+      "family": "bodyAlt",
+      "size": "12px",
+      "weight": 600,
+      "letterSpacing": "2.4px",
+      "transform": "uppercase",
+      "color": "also-eyebrow"
+    },
+    "doorIndex": {
+      "family": "body",
+      "size": "10.24px",
+      "letterSpacing": "1.6384px",
+      "transform": "uppercase",
+      "color": "taupe"
+    },
+    "rhythm": {
+      "family": "bodyAlt",
+      "size": "12.48px",
+      "weight": 600,
+      "letterSpacing": "0.7488px",
+      "color": "leaf"
+    },
+    "blessing": {
+      "family": "display",
+      "size": "25.6px (1.6rem)",
+      "lineHeight": "46.08px"
+    },
+    "gujBlessing": {
+      "family": "gujarati",
+      "size": "35.2px (2.2rem)",
+      "weight": 600,
+      "lineHeight": "63.36px",
+      "color": "guj-blessing"
+    },
+    "footerLink": {
+      "family": "bodyAlt",
+      "size": "13px",
+      "letterSpacing": "0.845px (.065em)",
+      "transform": "uppercase",
+      "color": "ink-soft"
+    },
+    "headerTitle": {
+      "family": "display",
+      "size": "14px",
+      "lineHeight": "17.5px"
+    },
+    "headerHome": {
+      "family": "bodyAlt",
+      "size": "14px",
+      "letterSpacing": "1.12px (.08em)"
+    }
+  },
+  "container": {
+    "wrap": {
+      "maxWidth": "74rem",
+      "margin": "0 auto",
+      "padding": "0 7vw"
+    },
+    "split": {
+      "grid": ".86fr 1.14fr",
+      "gap": "clamp(1.6rem,4vw,3rem)",
+      "collapse": "820px"
+    },
+    "sectionPadding": "clamp(4rem,8vh,6rem) 0",
+    "departurePadding": "4rem 0",
+    "sectionRule": "1px solid var(--line) (border-top on .room-section)",
+    "altBackground": "parch",
+    "navHeight": "72px",
+    "boxSizing": "border-box (header measured)"
+  },
+  "buttons": {
+    "btn": {
+      "display": "inline-flex",
+      "minHeight": "44px",
+      "padding": ".72rem 1rem",
+      "border": "1px solid leaf",
+      "radius": "3px (--nm-radius, !important)",
+      "font": "600 .74rem/1.2 Inter",
+      "letterSpacing": ".07em",
+      "transform": "uppercase",
+      "color": "leaf",
+      "background": "transparent",
+      "hover": "background rgba(78,93,68,.08); translateY(-1px)",
+      "mobile430": "width 100%"
+    },
+    "btnSolid": {
+      "background": "leaf",
+      "color": "#fbf8f1",
+      "borderColor": "leaf"
+    },
+    "storyNurseryCta": {
+      "display": "inline-block",
+      "font": "600 .72rem/1.4 Inter",
+      "letterSpacing": ".1em",
+      "transform": "uppercase",
+      "borderBottom": "1px solid rgba(78,93,68,.4)",
+      "paddingBottom": ".28rem"
+    },
+    "arriving": {
+      "display": "inline-flex",
+      "minHeight": "44px",
+      "font": "600 .8rem/1.2 Inter",
+      "letterSpacing": ".1em",
+      "transform": "uppercase",
+      "borderBottom": "1px solid currentColor"
+    }
+  },
+  "radiiShadows": {
+    "nm-radius": "3px",
+    "nm-shadow": "0 10px 34px rgba(44,37,25,.13)",
+    "house-image-radius": "14px",
+    "house-room-radius": "16px"
+  },
+  "hero": {
+    "minHeight": "100vh",
+    "img": "width 100%; height 100vh; object-fit cover; object-position center bottom",
+    "scrim": "linear-gradient(to bottom, rgba(244,239,227,.05), rgba(44,37,25,.10))",
+    "mobile640": "min-height 0; margin-top var(--nav-h); img height auto, object-fit contain"
+  },
+  "breakpoints": [
+    "920",
+    "900",
+    "820",
+    "760",
+    "720",
+    "640",
+    "600",
+    "520",
+    "480",
+    "430",
+    "400",
+    "380"
+  ],
+  "structure": {
+    "header": "nmh-header: Home link · property title · menu button (drawer nav.nmh-menu, closed)",
+    "sections": [
+      "hero (full-viewport courtyard photograph, sr-only h1)",
+      "host: welcome heading, subtitle, three paragraphs beside a portrait",
+      "story-nursery-home: eyebrow, heading, wide image, copy + underlined CTA",
+      "rooms: eyebrow, heading, italic intro, 4 door cards (2×2), books door (image + copy), also-in-the-house 3-column links",
+      "story-bouquet-home: split image | eyebrow, heading, lede, solid button",
+      "conversation (alt background): split image | eyebrow, heading, 4 ledes, 6 outline buttons, follow box with solid button",
+      "departure: eyebrow, farewell copy, blessings, arriving link | portrait + thank-you"
+    ],
+    "footer": "nmh-footer: 7 uppercase links"
+  }
+}

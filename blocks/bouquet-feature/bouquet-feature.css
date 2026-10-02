@@ -1,0 +1,100 @@
+/* bouquet-feature — The Story Bouquet (source #story-bouquet-home; canon .room-section/.split/
+   .visual/.house-section-media/.eyebrow/.lede, index.css .bouquet-cta) */
+
+.bouquet-feature {
+  padding: var(--section-pad) 0;
+  border-top: 1px solid var(--line);
+}
+
+.bouquet-feature .wrap {
+  max-width: var(--wrap-max);
+  margin: 0 auto;
+  padding: 0 var(--wrap-pad);
+}
+
+.bouquet-feature .split {
+  display: grid;
+  grid-template-columns: 0.86fr 1.14fr;
+  gap: var(--split-gap);
+  align-items: center;
+}
+
+/* .visual + .house-section-media, cascade resolved (the source's !important layer wins) */
+.bouquet-feature .visual {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  height: auto;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #e9e2d4;
+  border-radius: 3px;
+  box-shadow: 0 3px 16px rgb(44 37 25 / 12%);
+}
+
+/* the pipeline wraps the authored image in <picture>: as a grid item it would size to its content, and a
+   lazy image has none before it loads — the live page's bare <img> keeps its width/height placeholder */
+.bouquet-feature .visual picture {
+  display: block;
+  width: 100%;
+}
+
+.bouquet-feature .visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.bouquet-feature .eyebrow p {
+  font-family: var(--body-font-family);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--leaf);
+  margin-bottom: 0.6rem;
+}
+
+.bouquet-feature .lede p {
+  font-size: 1.12rem;
+  max-width: 48rem;
+  color: var(--ink-soft);
+}
+
+/* the paragraph around the CTA (source p.bouquet-cta); the button keeps its 1.15rem top margin */
+.bouquet-feature .bouquet-cta {
+  margin-top: 1.4rem;
+}
+
+.bouquet-feature-container[id] {
+  scroll-margin-top: calc(var(--nav-h) + 10px);
+}
+
+@media (width <= 820px) {
+  .bouquet-feature .split {
+    grid-template-columns: 1fr;
+  }
+
+  .bouquet-feature .visual {
+    aspect-ratio: auto;
+    min-height: 0;
+  }
+
+  .bouquet-feature .visual img {
+    height: auto;
+    object-fit: contain;
+    background: none;
+  }
+}
+
+@media (width <= 480px) {
+  .bouquet-feature .lede p {
+    font-size: 1rem;
+  }
+}

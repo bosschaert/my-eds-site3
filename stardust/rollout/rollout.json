@@ -1,0 +1,36 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-09-28T09:44:04.751Z",
+    "stardustVersion": "0.0.0"
+  },
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://www.niravmanubhai.com/",
+    "da": {
+      "org": "aemcoder",
+      "site": "fdc3c10d",
+      "ref": "main"
+    },
+    "liveHost": "main--fdc3c10d--aemcoder.aem.live",
+    "previewHost": "main--fdc3c10d--aemcoder.aem.page"
+  },
+  "lastRun": {
+    "at": "2026-09-28T11:41:15.430Z",
+    "pages": {
+      "total": 1,
+      "verified": 1,
+      "deployed": 0,
+      "pending": 0,
+      "contentPending": 0,
+      "stale": 0,
+      "failed": 0
+    },
+    "blocks": {
+      "total": 7,
+      "converted": 7,
+      "pending": 0
+    },
+    "verifyFailures": 0
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-09-28T09:44:25.027Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage/pages.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-09-28T11:20:35.406Z",
+  "blocks": [
+    {
+      "id": "bouquet-feature",
+      "label": "bouquet-feature",
+      "kind": "module",
+      "signature": "module:bouquet-feature",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "bouquet-feature",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "conversation-doors",
+      "label": "conversation-doors",
+      "kind": "module",
+      "signature": "module:conversation-doors",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "conversation-doors",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "departure",
+      "label": "departure",
+      "kind": "module",
+      "signature": "module:departure",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "departure",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hero",
+      "label": "hero",
+      "kind": "module",
+      "signature": "module:hero",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "hero",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "host-note",
+      "label": "host-note",
+      "kind": "module",
+      "signature": "module:host-note",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "host-note",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "rooms-doors",
+      "label": "rooms-doors",
+      "kind": "module",
+      "signature": "module:rooms-doors",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "rooms-doors",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "story-feature",
+      "label": "story-feature",
+      "kind": "module",
+      "signature": "module:story-feature",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "story-feature",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    }
+  ]
+}

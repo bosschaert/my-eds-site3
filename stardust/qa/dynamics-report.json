@@ -1,0 +1,70 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics check",
+  "writtenAt": "2026-09-28T11:34:14.539Z",
+  "origin": "https://main--fdc3c10d--aemcoder.aem.page",
+  "parity": "stardust/dynamics/parity.json"
+ },
+ "results": [
+  {
+   "feature": "dataLayer settings object (Google tag)",
+   "id": "a-cms-app-settings-object-datalayer",
+   "class": "A",
+   "status": "done",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 1 page(s)",
+   "thirdParty": "",
+   "ms": 2099,
+   "environmentLimit": null
+  },
+  {
+   "feature": "hreflang alternates en / x-default",
+   "id": "i18n-locale-variants-en-x-default",
+   "class": "I18N",
+   "status": "done (awaiting code push)",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "2 × link[rel=\"alternate\"][hreflang] (min 2)",
+   "thirdParty": "fonts.googleapis.com:200×1 fonts.gstatic.com:200×5",
+   "ms": 1925,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Google Analytics 4 tag (G-00QDEH6N5W) via gtag.js",
+   "id": "t-analytics-google-analytics-ads",
+   "class": "T",
+   "status": "interim",
+   "type": "consent-gate",
+   "pass": true,
+   "detail": "no request to 3 gated host pattern(s) before consent",
+   "thirdParty": "fonts.googleapis.com:200×1 fonts.gstatic.com:200×5",
+   "ms": 5920,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Cloudflare Web Analytics beacon",
+   "id": "t-unknown-third-party-host-static-cloudflareinsights-com",
+   "class": "T",
+   "status": "interim",
+   "type": "consent-gate",
+   "pass": true,
+   "detail": "no request to 2 gated host pattern(s) before consent",
+   "thirdParty": "fonts.googleapis.com:200×1 fonts.gstatic.com:200×5",
+   "ms": 5926,
+   "environmentLimit": null
+  },
+  {
+   "feature": "no forms, search, modals or players (source parity)",
+   "id": "static-surface-no-dynamic-widgets",
+   "class": "A",
+   "status": "done",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 1 page(s)",
+   "thirdParty": "",
+   "ms": 1902,
+   "environmentLimit": null
+  }
+ ]
+}

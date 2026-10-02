@@ -1,0 +1,43 @@
+{
+  "overall": "Needs attention",
+  "steps": [
+    {
+      "name": "Analyzing your site",
+      "state": "Done",
+      "fraction": 1
+    },
+    {
+      "name": "Capturing brand and design",
+      "state": "Done",
+      "fraction": 1
+    },
+    {
+      "name": "Rebuilding page templates",
+      "state": "Done",
+      "fraction": 1
+    },
+    {
+      "name": "Checking fidelity",
+      "state": "Done",
+      "fraction": 1
+    },
+    {
+      "name": "Migrating your pages",
+      "state": "In progress",
+      "fraction": 0.6
+    }
+  ],
+  "templates": [
+    {
+      "name": "Home page",
+      "pages": 1,
+      "desktop": "Yes",
+      "mobile": "Yes",
+      "status": "Done"
+    }
+  ],
+  "pagesTotal": 1,
+  "pagesReady": [],
+  "now": "Your home page has been rebuilt on the new platform: its header, footer, fonts, images and all seven page sections are authored and checked for complete, editable content. Publishing it to the preview site is waiting on an access step that needs a person. Some pages need a closer look; we're on it.",
+  "next": "Once publishing access is in place, the page goes live on the preview site and is compared with your current site once more on desktop and mobile."
+}

@@ -1,0 +1,165 @@
+/* conversation-doors — the sitting room (source #conversation .room-section.alt; canon
+   .room-section/.alt/.split/.visual/.house-section-media/.eyebrow/.lede, index.css L114–L131
+   conversation + r24-follow). The source's #conversation !important layer is resolved here. */
+
+/* stylelint-disable no-descending-specificity -- source cascade order reproduced verbatim */
+
+.conversation-doors {
+  padding: var(--section-pad) 0;
+  border-top: 1px solid var(--line);
+  background: var(--parch);
+}
+
+.conversation-doors .wrap {
+  max-width: var(--wrap-max);
+  margin: 0 auto;
+  padding: 0 var(--wrap-pad);
+}
+
+.conversation-doors .split {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(2rem, 4.5vw, 4rem);
+  align-items: start;
+}
+
+.conversation-doors .visual {
+  display: grid;
+  place-items: center;
+  width: min(100%, var(--nm-preview-image-max));
+  aspect-ratio: 3 / 2;
+  height: auto;
+  min-height: 0;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+  border-radius: var(--house-image-radius);
+  box-shadow: 0 3px 16px rgb(44 37 25 / 12%);
+  place-self: start start;
+}
+
+/* the pipeline wraps the authored image in <picture>: as a grid item it would size to its content, and a
+   lazy image has none before it loads — the live page's bare <img> keeps its width/height placeholder */
+.conversation-doors .visual picture {
+  display: block;
+  width: 100%;
+}
+
+.conversation-doors .visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  max-height: 640px;
+  object-fit: contain;
+  object-position: top center;
+  background: transparent;
+  box-shadow: 0 14px 34px rgb(44 37 25 / 14%);
+}
+
+.conversation-doors .eyebrow p {
+  font-family: var(--body-font-family);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--leaf);
+  margin-bottom: 0.6rem;
+}
+
+.conversation-doors .lede p {
+  font-size: 1.12rem;
+  max-width: 48rem;
+  color: var(--ink-soft);
+}
+
+.conversation-doors .lede + .lede {
+  margin-top: 1rem;
+}
+
+/* the doors: one button per paragraph, paragraphs as the flex items (source: bare <a> items) */
+.conversation-doors .doors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.6rem;
+}
+
+.conversation-doors .doors p {
+  display: flex;
+  margin: 0;
+}
+
+.conversation-doors .doors a.button {
+  margin: 0;
+}
+
+.conversation-doors .r24-follow {
+  margin-top: 1.6rem;
+  padding: 1.4rem 1.5rem;
+  background: #fbf8f1;
+  border: 1px solid rgb(44 37 25 / 14%);
+}
+
+.conversation-doors .r24-follow p {
+  margin: 0 0 0.9rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.conversation-doors .r24-follow .r24-follow-eyebrow p {
+  font: 600 0.72rem / 1.4 var(--body-font-family);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8a6a2f;
+  margin-bottom: 0.5rem;
+}
+
+.conversation-doors .r24-follow .r24-follow-cta p {
+  display: flex;
+  margin: 0;
+}
+
+.conversation-doors-container[id] {
+  scroll-margin-top: 4rem;
+}
+
+@media (width <= 820px) {
+  .conversation-doors .split {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .conversation-doors .visual {
+    width: 100%;
+    max-width: 620px;
+    justify-self: center;
+    aspect-ratio: auto;
+  }
+
+  .conversation-doors .visual img {
+    max-height: none;
+  }
+}
+
+@media (width <= 640px) {
+  .conversation-doors .doors {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .conversation-doors .doors p {
+    flex-direction: column;
+  }
+
+  .conversation-doors .doors a.button {
+    text-align: center;
+    margin: 0 0 0.6rem;
+  }
+}
+
+@media (width <= 480px) {
+  .conversation-doors .lede p {
+    font-size: 1rem;
+  }
+}

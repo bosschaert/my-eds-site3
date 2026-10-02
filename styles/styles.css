@@ -1,0 +1,398 @@
+/*
+ * Foundation for www.niravmanubhai.com (stardust:replica, pixel-fidelity migration).
+ * Every value is lifted from stardust/prototypes/canon.css (itself lifted from the live cascade);
+ * the boilerplate's structural layer (body gate, chrome reservation, section scaffold) is kept.
+ * Fonts: Inter, Playfair Display, Rasa — Google Fonts, SIL OFL 1.1, self-hosted (styles/fonts.css).
+ */
+
+:root {
+  /* palette (canon.css tokens) */
+  --paper: #f4efe3;
+  --parch: #ece3d1;
+  --ink: #2c2519;
+  --ink-soft: #6b5f47;
+  --leaf: #4e5d44;
+  --leaf-dark: #3c4934;
+  --gold: #b2843e;
+  --noir: #0f0d09;
+  --cream: #f5eddc;
+  --line: #cabfa3;
+  --taupe: #8a7f66;
+  --button-solid-text: #fbf8f1;
+  --background-color: #f4efe3;
+
+  /* type */
+  --body-font-family: inter, inter-fallback, system-ui, sans-serif;
+  --heading-font-family: "Playfair Display", playfair-display-fallback, georgia, serif;
+  --gujarati-font-family: rasa, rasa-fallback, serif;
+  --body-font-size: 17px;
+  --body-line-height: 1.7;
+  --heading-line-height: 1.16;
+  --h2-font-size: clamp(2.2rem, 5vw, 3.6rem);
+
+  /* layout (canon.css) */
+  --max-reader: 46rem;
+  --max-room: 68rem;
+  --wrap-max: 74rem;
+  --wrap-pad: 7vw;
+  --section-pad: clamp(4rem, 8vh, 6rem);
+  --split-gap: clamp(1.6rem, 4vw, 3rem);
+  --nav-h: 72px;
+  --nm-gutter: clamp(1rem, 3.2vw, 2.25rem);
+  --nm-reading: 44rem;
+  --nm-space-1: 0.5rem;
+  --nm-space-2: 0.75rem;
+  --nm-space-3: 1rem;
+  --nm-space-4: 1.5rem;
+  --nm-space-5: 2rem;
+  --nm-space-6: 3rem;
+  --nm-space-7: 4.5rem;
+  --nm-radius: 3px;
+  --nm-shadow: 0 10px 34px rgb(44 37 25 / 13%);
+  --nm-focus: #e6c77d;
+  --nm-preview-image-max: 540px;
+  --nm-property-image-max: 500px;
+  --nm-reading-hero-max: 1120px;
+  --frame-room-card-ratio: 16/10;
+  --frame-reading-ratio: 16/9;
+  --frame-poster-ratio: 4/5;
+  --frame-story-ratio: 3/2;
+  --frame-story-portrait: 4/5;
+  --frame-book-ratio: 5/7;
+  --frame-reading-max: 1120px;
+  --frame-property-max: 1120px;
+  --frame-property-home-max: 360px;
+  --frame-property-home-mobile: 330px;
+  --frame-book-max: 320px;
+  --frame-story-max: 900px;
+  --house-image-radius: 14px;
+  --house-room-radius: 16px;
+
+  /* chrome reservation: rendered height of the sticky .nmh-header bar (44px row + 18px*2 + 1px rule) */
+  --nav-height: 81px;
+}
+
+@media (width <= 720px) {
+  :root {
+    /* .nmh-header padding drops to 16px */
+    --nav-height: 77px;
+  }
+}
+
+/* metric-matched local fallbacks, available at first paint (fonts.css lands later) */
+@font-face {
+  font-family: inter-fallback;
+  src: local("Arial");
+  size-adjust: 113.19%;
+  ascent-override: 85.59%;
+  descent-override: 21.31%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: playfair-display-fallback;
+  src: local("Times New Roman");
+  size-adjust: 118.34%;
+  ascent-override: 91.43%;
+  descent-override: 21.21%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: rasa-fallback;
+  src: local("Times New Roman");
+  size-adjust: 103.79%;
+  ascent-override: 70.14%;
+  descent-override: 26.21%;
+  line-gap-override: 21%;
+}
+
+/* reset (source cascade L11, L905: universal border-box + zero margin/padding) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #b9ab8e var(--parch);
+  scrollbar-gutter: stable;
+  text-size-adjust: 100%;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  display: none;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  min-width: 320px;
+  overflow-x: hidden;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.appear {
+  display: block;
+  animation: nm-page-in 0.42s ease both;
+}
+
+@keyframes nm-page-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (width <= 720px) {
+  body {
+    line-height: 1.68;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a,
+button,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  line-height: var(--heading-line-height);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  margin: 0.25rem 0 1rem;
+}
+
+main p {
+  widows: 3;
+  orphans: 3;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--nm-focus) !important;
+  outline-offset: 3px !important;
+}
+
+a[target="_blank"]:not(.button)::after {
+  content: " ↗";
+  font-size: 0.78em;
+  opacity: 0.62;
+}
+
+/* chrome hosts: the live bar is sticky and in flow, so the host reserves its height and sticks */
+body > header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--nav-height);
+  background: var(--paper);
+}
+
+/* the live <footer> element itself carries the parchment ground */
+footer {
+  background: var(--parch);
+}
+
+header .header,
+footer .footer {
+  visibility: hidden;
+}
+
+header .header[data-block-status="loaded"],
+footer .footer[data-block-status="loaded"] {
+  visibility: visible;
+}
+
+/* sections: blocks own their padding, rules and grounds (canon .rooms/.room-section/.wrap) */
+main > .section {
+  margin: 0;
+  padding: 0;
+}
+
+main > .section > div {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+main .section:empty {
+  display: none;
+}
+
+/* buttons — the source's .btn family: a.button = .btn (outline), .primary/.accent = .r24-btn-solid */
+a.button:any-link,
+button.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin: 1.15rem 0 0;
+  padding: 0.72rem 1rem;
+  border: 1px solid var(--leaf);
+  border-radius: var(--nm-radius);
+  background: transparent;
+  color: var(--leaf);
+  font-family: var(--body-font-family);
+  font-size: 0.74rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+a.button:any-link:hover,
+button.button:hover {
+  background: rgb(78 93 68 / 8%);
+  transform: translateY(-1px);
+}
+
+a.button:any-link:active,
+button.button:active {
+  transform: translateY(0);
+}
+
+a.button.secondary:any-link,
+button.button.secondary {
+  background: transparent;
+  color: var(--leaf);
+  border-color: var(--leaf);
+}
+
+a.button.primary:any-link,
+a.button.accent:any-link,
+button.button.primary,
+button.button.accent {
+  background: var(--leaf);
+  color: var(--button-solid-text);
+  border-color: var(--leaf);
+}
+
+a.button.primary:any-link:hover,
+a.button.accent:any-link:hover,
+button.button.primary:hover,
+button.button.accent:hover {
+  background: var(--leaf);
+}
+
+p.button-wrapper {
+  margin: 0;
+}
+
+@media (hover: none), (pointer: coarse) {
+  a.button:any-link,
+  button.button {
+    min-height: 48px;
+  }
+}
+
+@media (width <= 430px) {
+  a.button:any-link,
+  button.button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  body.appear {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  a.button:any-link,
+  button.button {
+    transition: none !important;
+  }
+
+  a.button:any-link:hover,
+  button.button:hover {
+    transform: none;
+  }
+}
+
+/* Experience Workspace edit mode (da.live canvas only): repaint CTAs from their authored marks.
+   Source order is the cascade contract here (base paint, then the primary paint). */
+
+/* stylelint-disable no-descending-specificity */
+.prosemirror-editor p > :is(strong, em) > a:any-link,
+.prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin: 1.15rem 0 0;
+  padding: 0.72rem 1rem;
+  border: 1px solid var(--leaf);
+  border-radius: var(--nm-radius);
+  background: transparent;
+  color: var(--leaf);
+  font-family: var(--body-font-family);
+  font-size: 0.74rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.prosemirror-editor p > a:any-link > :is(strong, em) {
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+.prosemirror-editor p > strong > a:any-link,
+.prosemirror-editor p > a:any-link:has(> strong:only-child) {
+  background: var(--leaf);
+  color: var(--button-solid-text);
+}
+
+/* card-as-link inner anchor while editing */
+a .prosemirror-editor a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* stylelint-enable no-descending-specificity */

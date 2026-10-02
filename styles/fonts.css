@@ -1,0 +1,8 @@
+/* Brand faces — the same Google Fonts stylesheet is linked from head.html (as on the live page, so the
+   faces are requested at t=0 and the first layout carries them); this import is the boilerplate hook.
+   Same public source as www.niravmanubhai.com (its own <link> URL, verbatim): Google Fonts serves
+   browser-specific builds of Inter and Playfair Display whose advance widths differ by ~1%, so a
+   self-hosted copy of one build re-wraps headings and ledes against the live page in the others.
+   Metric-matched *-fallback faces live in styles.css. */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=Rasa:wght@400;500;600&display=swap");

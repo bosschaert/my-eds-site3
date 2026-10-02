@@ -1,0 +1,307 @@
+/* rooms-doors — The Rooms (source section.rooms#rooms; canon .rooms/.wrap/.eyebrow,
+   index.css reading doors L42–L58, door frames L61–L66, r24 home block L69–L112).
+   The source cascade order is reproduced verbatim, !important layers resolved. */
+
+/* stylelint-disable no-descending-specificity -- source cascade order reproduced verbatim */
+
+.rooms-doors {
+  padding: var(--section-pad) 0;
+}
+
+.rooms-doors .wrap {
+  max-width: var(--wrap-max);
+  margin: 0 auto;
+  padding: 0 var(--wrap-pad);
+}
+
+/* head */
+.rooms-doors .eyebrow p {
+  font-family: var(--body-font-family);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--leaf);
+  margin-bottom: 0.6rem;
+}
+
+.rooms-doors .rooms-first-visit p {
+  max-width: 42rem;
+  margin: 0.55rem 0 1.5rem;
+  color: var(--ink-soft);
+  font-family: var(--heading-font-family);
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.rooms-doors .rooms-first-visit a {
+  color: inherit;
+  text-decoration-color: rgb(107 95 71 / 45%);
+  text-underline-offset: 0.18em;
+}
+
+.rooms-doors .rooms-first-visit a:hover {
+  color: var(--ink);
+}
+
+/* door cards */
+.rooms-doors .r24-doors {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem;
+  margin-top: 1.8rem;
+}
+
+.rooms-doors .r24-door {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--line);
+  background: rgb(255 255 255 / 22%);
+  padding: 1rem;
+  transition: transform 0.22s ease, border-color 0.22s ease;
+  min-width: 0;
+  width: auto;
+  flex: none;
+}
+
+.rooms-doors .r24-door:hover {
+  transform: translateY(-3px);
+  border-color: var(--taupe);
+}
+
+.rooms-doors .courtyard-door-media {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: var(--frame-room-card-ratio);
+  height: auto;
+  border: 1px solid var(--line);
+  background: #e9e2d4;
+}
+
+.rooms-doors .courtyard-door-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.rooms-doors .courtyard-door-media.poster-insert img {
+  object-fit: contain;
+  object-position: center center;
+  background: #efe4cf;
+}
+
+.rooms-doors .r24-door p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  min-height: 4.2em;
+}
+
+.rooms-doors .r24-door .r24-door-num p {
+  display: block;
+  margin-top: 0.9rem;
+  font-size: 0.64rem;
+  line-height: inherit;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  min-height: 0;
+}
+
+.rooms-doors .r24-door h3 {
+  font-family: var(--heading-font-family);
+  font-size: 1.35rem;
+  line-height: 1.15;
+  margin: 0.45rem 0 0.5rem;
+  font-weight: 500;
+}
+
+.rooms-doors .r24-door .r24-door-short {
+  display: none;
+}
+
+.rooms-doors .r24-door .r24-door-rhythm p {
+  margin-top: 0.6rem;
+  font: 600 0.78rem / 1.4 var(--body-font-family);
+  letter-spacing: 0.06em;
+  color: var(--leaf);
+}
+
+/* books card */
+.rooms-doors .r24-books {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.6rem;
+  background: #fbf8f1;
+  border: 1px solid rgb(44 37 25 / 14%);
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}
+
+.rooms-doors .r24-books-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.rooms-doors .r24-books-copy {
+  padding: 2.2rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.rooms-doors .r24-books-copy p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+.rooms-doors .r24-books-copy .r24-books-num p {
+  font: 600 0.75rem / 1 var(--body-font-family);
+  letter-spacing: 0.14em;
+  color: #8a6a2f;
+}
+
+.rooms-doors .r24-books-copy h3 {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  font-size: 1.9rem;
+  color: var(--ink);
+}
+
+.rooms-doors .r24-books-copy .r24-books-free p {
+  font-family: var(--heading-font-family);
+  font-style: italic;
+  color: var(--leaf);
+}
+
+/* also in the house */
+.rooms-doors .r24-also {
+  margin-top: 2.4rem;
+}
+
+.rooms-doors .r24-also-eyebrow p {
+  font: 600 0.75rem / 1.4 var(--body-font-family);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8a6a2f;
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+.rooms-doors .r24-also-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.rooms-doors .r24-also-grid a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0 1.4rem;
+  text-decoration: none;
+  border-left: 1px solid rgb(44 37 25 / 14%);
+}
+
+.rooms-doors .r24-also-grid a:first-child {
+  border-left: 0;
+}
+
+.rooms-doors .r24-also-title p {
+  font-family: var(--heading-font-family);
+  font-size: 1.3rem;
+  color: var(--leaf);
+}
+
+.rooms-doors .r24-also-line p {
+  color: var(--ink-soft);
+  line-height: 1.55;
+  font-size: 0.98rem;
+}
+
+.rooms-doors-container[id] {
+  scroll-margin-top: calc(var(--nav-h) + 10px);
+}
+
+@media (width <= 720px) {
+  .rooms-doors .r24-doors {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .rooms-doors .r24-door {
+    padding: 0;
+  }
+
+  .rooms-doors .r24-door h3 {
+    font-size: 1.05rem;
+    line-height: 1.25;
+    margin: 0.35rem 0.7rem 0;
+  }
+
+  .rooms-doors .r24-door .r24-door-num p {
+    margin: 0.6rem 0.7rem 0;
+    display: block;
+  }
+
+  .rooms-doors .r24-door .r24-door-long {
+    display: none;
+  }
+
+  .rooms-doors .r24-door .r24-door-short {
+    display: block;
+  }
+
+  .rooms-doors .r24-door .r24-door-short p {
+    margin: 0.3rem 0.7rem 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .rooms-doors .r24-door .r24-door-rhythm p {
+    margin: 0.35rem 0.7rem 0.8rem;
+    font-size: 0.72rem;
+  }
+
+  .rooms-doors .r24-books {
+    grid-template-columns: 1fr;
+  }
+
+  .rooms-doors .r24-books-media img {
+    min-height: 190px;
+    max-height: 220px;
+  }
+
+  .rooms-doors .r24-books-copy {
+    padding: 1.2rem 1.1rem;
+  }
+
+  .rooms-doors .r24-also-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rooms-doors .r24-also-grid a {
+    padding: 0.9rem 0;
+    border-left: 0;
+    border-top: 1px solid rgb(44 37 25 / 14%);
+  }
+}
+
+@media (width <= 600px) {
+  .rooms-doors .r24-door p {
+    min-height: 0;
+  }
+}

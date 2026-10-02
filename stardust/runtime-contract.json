@@ -1,0 +1,18 @@
+{
+  "runtime": "vanilla-eds",
+  "probedAt": "2026-09-28",
+  "probedFiles": ["scripts/aem.js", "scripts/scripts.js", "blocks/fragment/fragment.js"],
+  "blockWrapperClass": "block",
+  "blockWrapper": "decorateBlock adds .block + data-block-name and wraps the block in div.<name>-wrapper; the section gains .<name>-container",
+  "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "buttonizationDetail": "decorateButtons() matches `p a[href]` alone in its paragraph AND requires an authored <strong> (primary) or <em> (secondary) or both (accent); a bare <a> alone in a <p> stays a plain link; the emphasis tag is replaced by the classed anchor; a.title falls back to the link text",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "fragmentLoader": "blocks/fragment/fragment.js loadFragment(path) fetches `${path}.plain.html`, runs decorateMain + loadSections on it; header reads getMetadata('nav') || '/nav', footer getMetadata('footer') || '/footer'",
+  "emptySectionCollapse": true,
+  "icons": "decorateIcons turns span.icon.icon-<name> into <img data-icon-name src=/icons/<name>.svg alt='' loading=lazy width=16 height=16> (alt is empty; blocks set it)",
+  "wrapTextNodes": "decorateBlock wraps any block cell whose first child is not P/PRE/UL/OL/PICTURE/TABLE/BLOCKQUOTE/H1-6 (or a PICTURE followed by anything) in one <p>",
+  "phases": "loadEager: decorateMain + first section + fonts.css when innerWidth >= 900 or fonts-loaded flag; loadLazy: header, all sections, footer, lazy-styles.css, fonts.css; loadDelayed: consent-check.js",
+  "csp": "head.html ships script-src 'nonce-aem' 'strict-dynamic' + trusted types; inline on* handlers never fire",
+  "siteButtonMapping": "a.button (base) and .secondary = source .btn-secondary (yellow pill, blue text); .primary = source .btn-primary (blue pill, white text); authors write <em><a> for the site's dominant yellow CTA"
+}

@@ -1,0 +1,535 @@
+{
+  "key": {
+    "url": "https://balbriggan.ie/",
+    "width": 1440,
+    "regions": [
+      "header=#wrapper-navbar",
+      "footer=#wrapper-footer-full"
+    ]
+  },
+  "probedAt": "2026-09-28T10:47:38.242Z",
+  "data": {
+    "header": {
+      "found": true,
+      "sel": "#wrapper-navbar",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 98
+      },
+      "position": "sticky",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "atoms": [
+        {
+          "key": "skip to content",
+          "text": "Skip to content",
+          "tag": "a",
+          "rect": {
+            "x": 1440,
+            "y": -1,
+            "w": 1,
+            "h": 1
+          },
+          "box": {
+            "x": 1440,
+            "y": -1,
+            "w": 1,
+            "h": 1
+          },
+          "boxTag": "a",
+          "style": {
+            "fontFamily": "gotham-light",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "lineHeight": "24px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(36, 148, 210)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "borderRadius": "0px",
+            "textDecorationLine": "none"
+          },
+          "boxStyle": null
+        },
+        {
+          "key": "news",
+          "text": "News",
+          "tag": "a",
+          "rect": {
+            "x": 821,
+            "y": 13,
+            "w": 48,
+            "h": 34
+          },
+          "box": {
+            "x": 821,
+            "y": 13,
+            "w": 48,
+            "h": 34
+          },
+          "boxTag": "a",
+          "style": {
+            "fontFamily": "gothammedium",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "lineHeight": "18px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "paddingTop": "8px",
+            "paddingRight": "8px",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "borderRadius": "0px",
+            "textDecorationLine": "none"
+          },
+          "boxStyle": null
+        },
+        {
+          "key": "downloads",
+          "text": "Downloads",
+          "tag": "a",
+          "rect": {
+            "x": 873,
+            "y": 13,
+            "w": 82,
+            "h": 34
+          },
+          "box": {
+            "x": 873,
+            "y": 13,
+            "w": 82,
+            "h": 34
+          },
+          "boxTag": "a",
+          "style": {
+            "fontFamily": "gothammedium",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "lineHeight": "18px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "paddingTop": "8px",
+            "paddingRight": "8px",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "borderRadius": "0px",
+            "textDecorationLine": "none"
+          },
+          "boxStyle": null
+        },
+        {
+          "key": "newsletters",
+          "text": "Newsletters",
+          "tag": "a",
+          "rect": {
+            "x": 958,
+            "y": 13,
+            "w": 86,
+            "h": 34
+          },
+          "box": {
+            "x": 958,
+            "y": 13,
+            "w": 86,
+            "h": 34
+          },
+          "boxTag": "a",
+          "style": {
+            "fontFamily": "gothammedium",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "lineHeight": "18px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "paddingTop": "8px",
+            "paddingRight": "8px",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "borderRadius": "0px",
+            "textDecorationLine": "none"
+          },
+          "boxStyle": null
+        },
+        {
+          "key": "fingal county council",
+          "text": "Fingal County Council",
+          "tag": "a",
+          "rect": {
+            "x": 1047,
+            "y": 13,
+            "w": 147,
+            "h": 34
+          },
+          "box": {
+            "x": 1047,
+            "y": 13,
+            "w": 147,
+            "h": 34
+          },
+          "boxTag": "a",
+          "style": {
+            "fontFamily": "gothammedium",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "lineHeight": "18px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "paddingTop": "8px",
+            "paddingRight": "8px",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "borderRadius": "0px",
+            "textDecorationLine": "none"
+          },
+          "boxStyle": null
+        },
+        {
+          "key": "contact",
+          "text": "Contact",
+          "tag": "a",
+          "rect": {
+            "x": 1197,
+            "y": 13,
+            "w": 64,
+            "h": 34
+          },
+          "box": {
+            "x": 1197,
+            "y": 13,
+            "w": 64,
+            "h": 34
+          },
+          "boxTag": "a",
+          "style": {
+            "fontFamily": "gothammedium",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "lineHeight": "18px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(255, 255, 255)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "paddingTop": "8px",
+            "paddingRight": "8px",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "borderRadius": "0px",
+            "textDecorationLine": "none"
+          },
+          "boxStyle": null
+        },
+        {
+          "key": "plans & projects",
+          "text": "Plans & Projects",
+          "tag": "a",
+          "rect": {
+            "x": 454,
+            "y": 51,
+            "w": 149,
+            "h": 34
+          },
+          "box": {
+            "x": 454,
+            "y": 51,
+            "w": 149,
+            "h": 34
+          },
+          "boxTag": "a",
+          "style": {
+            "fontFamily": "gotham-light",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "lineHeight": "18px",
+            "letterSpacing": "normal",
+            "textTransform": "uppercase",
+            "color": "rgb(245, 238, 47)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "paddingTop": "8px",
+            "paddingRight": "8px",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "borderRadius": "0px",
+            "textDecorationLine": "none"
+          },
+          "boxStyle": null
+        },
+        {
+          "key": "discover",
+          "text": "Discover",
+          "tag": "a",
+          "rect": {
+            "x": 607,
+            "y": 51,
+            "w": 90,
+            "h": 34
+          },
+          "box": {
+            "x": 607,
+            "y": 51,
+            "w": 90,
+            "h": 34
+          },
+          "boxTag": "a",
+          "style": {
+            "fontFamily": "gotham-light",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "lineHeight": "18px",
+            "letterSpacing": "normal",
+            "textTransform": "uppercase",
+            "color": "rgb(245, 238, 47)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "paddingTop": "8px",
+            "paddingRight": "8px",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "borderRadius": "0px",
+            "textDecorationLine": "none"
+          },
+          "boxStyle": null
+        },
+        {
+          "key": "leadership & governance",
+          "text": "Leadership & Governance",
+          "tag": "a",
+          "rect": {
+            "x": 700,
+            "y": 51,
+            "w": 208,
+            "h": 34
+          },
+          "box": {
+            "x": 700,
+            "y": 51,
+            "w": 208,
+            "h": 34
+          },
+          "boxTag": "a",
+          "style": {
+            "fontFamily": "gotham-light",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "lineHeight": "18px",
+            "letterSpacing": "normal",
+            "textTransform": "uppercase",
+            "color": "rgb(245, 238, 47)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "paddingTop": "8px",
+            "paddingRight": "8px",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "borderRadius": "0px",
+            "textDecorationLine": "none"
+          },
+          "boxStyle": null
+        },
+        {
+          "key": "loves learning festival",
+          "text": "Loves Learning Festival",
+          "tag": "a",
+          "rect": {
+            "x": 911,
+            "y": 51,
+            "w": 197,
+            "h": 34
+          },
+          "box": {
+            "x": 911,
+            "y": 51,
+            "w": 197,
+            "h": 34
+          },
+          "boxTag": "a",
+          "style": {
+            "fontFamily": "gotham-light",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "lineHeight": "18px",
+            "letterSpacing": "normal",
+            "textTransform": "uppercase",
+            "color": "rgb(245, 238, 47)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "paddingTop": "8px",
+            "paddingRight": "8px",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "borderRadius": "0px",
+            "textDecorationLine": "none"
+          },
+          "boxStyle": null
+        },
+        {
+          "key": "community platform",
+          "text": "Community Platform",
+          "tag": "a",
+          "rect": {
+            "x": 1111,
+            "y": 51,
+            "w": 165,
+            "h": 34
+          },
+          "box": {
+            "x": 1111,
+            "y": 51,
+            "w": 165,
+            "h": 34
+          },
+          "boxTag": "a",
+          "style": {
+            "fontFamily": "gotham-light",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "lineHeight": "18px",
+            "letterSpacing": "normal",
+            "textTransform": "uppercase",
+            "color": "rgb(245, 238, 47)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "paddingTop": "8px",
+            "paddingRight": "8px",
+            "paddingBottom": "8px",
+            "paddingLeft": "8px",
+            "borderRadius": "0px",
+            "textDecorationLine": "none"
+          },
+          "boxStyle": null
+        },
+        {
+          "key": "get involved",
+          "text": "Get Involved",
+          "tag": "a",
+          "rect": {
+            "x": 1279,
+            "y": 55,
+            "w": 128,
+            "h": 27
+          },
+          "box": {
+            "x": 1279,
+            "y": 55,
+            "w": 128,
+            "h": 27
+          },
+          "boxTag": "a",
+          "style": {
+            "fontFamily": "gothammedium",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "lineHeight": "18px",
+            "letterSpacing": "normal",
+            "textTransform": "uppercase",
+            "color": "rgb(36, 148, 210)",
+            "backgroundColor": "rgb(245, 238, 47)",
+            "paddingTop": "2.4px",
+            "paddingRight": "16px",
+            "paddingBottom": "2.4px",
+            "paddingLeft": "16px",
+            "borderRadius": "32px",
+            "textDecorationLine": "none"
+          },
+          "boxStyle": null
+        }
+      ],
+      "icons": [
+        {
+          "tag": "img",
+          "rect": {
+            "x": 31,
+            "y": 13,
+            "w": 176,
+            "h": 72
+          },
+          "sig": "balbriggan-logo.svg",
+          "near": ""
+        }
+      ]
+    },
+    "footer": {
+      "found": true,
+      "sel": "#wrapper-footer-full",
+      "rect": {
+        "x": 0,
+        "y": 4588,
+        "w": 1440,
+        "h": 130
+      },
+      "position": "static",
+      "backgroundColor": "rgb(68, 68, 68)",
+      "atoms": [
+        {
+          "key": "privacy",
+          "text": "Privacy",
+          "tag": "a",
+          "rect": {
+            "x": 1218,
+            "y": 4668,
+            "w": 57,
+            "h": 15
+          },
+          "box": {
+            "x": 1218,
+            "y": 4668,
+            "w": 57,
+            "h": 15
+          },
+          "boxTag": "a",
+          "style": {
+            "fontFamily": "gotham-light",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "lineHeight": "24px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(36, 148, 210)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "paddingTop": "0px",
+            "paddingRight": "0px",
+            "paddingBottom": "0px",
+            "paddingLeft": "0px",
+            "borderRadius": "0px",
+            "textDecorationLine": "none"
+          },
+          "boxStyle": null
+        }
+      ],
+      "icons": [
+        {
+          "tag": "img",
+          "rect": {
+            "x": 165,
+            "y": 4618,
+            "w": 192,
+            "h": 70
+          },
+          "sig": "fcc-logo.svg",
+          "near": ""
+        }
+      ]
+    }
+  }
+}

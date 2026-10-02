@@ -1,0 +1,156 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-09-28T10:17:09Z",
+    "stardustVersion": "0.25.1"
+  },
+  "site": {
+    "originUrl": "https://balbriggan.ie/",
+    "deployUrl": "https://main--22880d22--aemcoder.aem.page/",
+    "extractedAt": "2026-09-28T09:08:42.275Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "direction": {
+    "resolvedAt": "2026-09-28T09:18:45.962Z",
+    "phrase": "replica --hands-off (same design, one page)",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "verbatim"
+  },
+  "handsOff": true,
+  "flow": "replica",
+  "flowChosenAt": "2026-09-28T09:09:21.411Z",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "index",
+      "url": "https://balbriggan.ie/",
+      "title": "Our Balbriggan",
+      "type": "home",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-09-28T09:08:42.275Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-09-28T09:18:46Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-09-28T10:11:39Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-09-28T10:11:39Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-09-28T10:17:09Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": "stardust/migrated/index.html"
+    }
+  ],
+  "migrate": {
+    "at": "2026-09-28T10:15:54Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/",
+        "outputPath": "index.html",
+        "slug": "index",
+        "outputPathDefault": null
+      }
+    ],
+    "totalAssetsBundled": 60,
+    "bundledAssets": [
+      "canon.css",
+      "favicon.png",
+      "fonts.css",
+      "fonts/fontawesome-webfont.woff2",
+      "fonts/montserrat-latin-400-normal.woff2",
+      "fonts/montserrat-latin-500-normal.woff2",
+      "fonts/montserrat-latin-700-normal.woff2",
+      "fonts/slick.woff",
+      "index-proposed.css",
+      "media/Ar_dTuras-cover-212x300.jpg",
+      "media/Ceard-eile-209x300.jpg",
+      "media/MichaelTDawsonTheLark001-1140x760.jpg",
+      "media/MichaelTDawsonTheLark001-1536x1024.jpg",
+      "media/MichaelTDawsonTheLark001-380x253.jpg",
+      "media/MichaelTDawsonTheLark001-768x512.jpg",
+      "media/MichaelTDawsonTheLark002-1140x760.jpg",
+      "media/MichaelTDawsonTheLark002-1536x1024.jpg",
+      "media/MichaelTDawsonTheLark002-380x253.jpg",
+      "media/MichaelTDawsonTheLark002-768x512.jpg",
+      "media/Our-Journey-Newsletter-coverjpg-212x300.jpg",
+      "media/SON7436-0002-1140x761.jpg",
+      "media/SON7436-0002-1536x1025.jpg",
+      "media/SON7436-0002-380x254.jpg",
+      "media/SON7436-0002-768x512.jpg",
+      "media/balbriggan-beach-1-1140x855.jpg",
+      "media/balbriggan-beach-1-1536x1152.jpg",
+      "media/balbriggan-beach-1-380x285.jpg",
+      "media/balbriggan-beach-1-768x576.jpg",
+      "media/balbriggan-logo.svg",
+      "media/balbriggan-pool-1140x641.png",
+      "media/balbriggan-pool-1536x864.png",
+      "media/balbriggan-pool-380x214.png",
+      "media/balbriggan-pool-768x432.png",
+      "media/fcc-logo.svg",
+      "media/pins/pin-1.jpg",
+      "media/pins/pin-10.jpg",
+      "media/pins/pin-11.jpg",
+      "media/pins/pin-12.jpg",
+      "media/pins/pin-2.jpg",
+      "media/pins/pin-3.jpg",
+      "media/pins/pin-4.jpg",
+      "media/pins/pin-5.jpg",
+      "media/pins/pin-6.jpg",
+      "media/pins/pin-7.jpg",
+      "media/pins/pin-8.jpg",
+      "media/pins/pin-9.jpg",
+      "media/project_community_health_wellbeing-380x254.jpg",
+      "media/project_community_health_wellbeing-768x513.jpg",
+      "media/project_community_health_wellbeing.jpg",
+      "media/project_employment_training_opportunities-380x254.jpg",
+      "media/project_employment_training_opportunities-768x513.jpg",
+      "media/project_employment_training_opportunities.jpg",
+      "media/project_making_our_economy_grow-380x254.jpg",
+      "media/project_making_our_economy_grow-768x513.jpg",
+      "media/project_making_our_economy_grow.jpg",
+      "media/project_town_transformation-380x254.jpg",
+      "media/project_town_transformation-768x513.jpg",
+      "media/project_town_transformation.jpg",
+      "media/whatnext-209x300.jpg",
+      "motion.js"
+    ],
+    "pages": [
+      {
+        "slug": "index",
+        "file": "stardust/migrated/index.html",
+        "assetsBundled": 60
+      }
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "lastRun": {
+      "at": "2026-09-28T10:15:54Z",
+      "rendered": [
+        "index"
+      ],
+      "unchanged": [],
+      "refused": [],
+      "passthrough": []
+    }
+  }
+}

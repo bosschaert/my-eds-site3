@@ -1,0 +1,334 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-09-28T09:12:05.754Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://balbriggan.ie/"
+  ],
+  "reachSource": "stardust/current/pages"
+ },
+ "pages": {
+  "/": {
+   "url": "https://balbriggan.ie/",
+   "status": 200,
+   "host": "balbriggan.ie",
+   "title": "Our Balbriggan",
+   "forms": [
+    {
+     "name": "gform_1",
+     "action": "https://balbriggan.ie/#gf_1",
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 5,
+     "signature": [
+      "text:input_1",
+      "text:input_2",
+      "email:input_3",
+      "checkbox:input_4.1",
+      "textarea:ak_hp_textarea"
+     ],
+     "hidden": [
+      "gform_ajax",
+      "is_submit_1",
+      "gform_submit",
+      "gform_unique_id",
+      "state_1",
+      "gform_target_page_number_1",
+      "gform_source_page_number_1",
+      "gform_field_values",
+      "ak_js"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": true
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "Plans & Projects",
+     "href": "https://balbriggan.ie/#",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "a",
+      "heading": "",
+      "textLen": 16,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "Discover",
+     "href": "https://balbriggan.ie/#",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "a",
+      "heading": "",
+      "textLen": 8,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "Leadership & Governance",
+     "href": "https://balbriggan.ie/#",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "a",
+      "heading": "",
+      "textLen": 23,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "Loves Learning Festival",
+     "href": "https://balbriggan.ie/#",
+     "marker": "aria-haspopup",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "a",
+      "heading": "",
+      "textLen": 23,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "about:blank",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "about:blank",
+     "title": "This iframe contains the logic required to handle Ajax powered Gravity Forms.",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 4
+   },
+   "locale": {
+    "lang": "en-GB",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {
+    "wp": [
+     "domReady",
+     "hooks",
+     "i18n",
+     "a11y"
+    ],
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "push"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 18,
+   "inlineFetch": false,
+   "mainText": 508,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "balbriggan.ie": 82,
+    "www.googletagmanager.com": 1,
+    "fonts.googleapis.com": 3,
+    "region1.google-analytics.com": 1,
+    "connect.facebook.net": 3
+   },
+   "thirdPartyHosts": [
+    "www.googletagmanager.com",
+    "fonts.googleapis.com",
+    "region1.google-analytics.com",
+    "connect.facebook.net"
+   ],
+   "scripts": [
+    "https://balbriggan.ie/wp-content/plugins/wd-instagram-feed/booster/assets/js/circle-progress.js?ver=1.2.2",
+    "https://balbriggan.ie/wp-content/plugins/wd-instagram-feed/booster/assets/js/global.js?ver=1.0.0",
+    "https://balbriggan.ie/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+    "https://balbriggan.ie/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+    "https://balbriggan.ie/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.8",
+    "https://balbriggan.ie/wp-content/plugins/easy-facebook-likebox//instagram/frontend/assets/js/esf-insta-public.js?ver=1",
+    "https://balbriggan.ie/wp-content/plugins/easy-facebook-likebox/frontend/assets/js/imagesloaded.pkgd.min.js?ver=6.6.9",
+    "https://balbriggan.ie/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.8",
+    "https://www.googletagmanager.com/gtag/js?id=G-Z1D3MZ66RP",
+    "https://balbriggan.ie/wp-content/plugins/embedpress/assets/js/front.js?ver=4.1.2",
+    "https://balbriggan.ie/wp-content/themes/balbriggan2024/js/theme.min.js?ver=0.8.8.1715679248",
+    "https://balbriggan.ie/wp-content/themes/balbriggan2024/js/scripts.js?ver=1715679248",
+    "https://balbriggan.ie/wp-content/themes/balbriggan2024/library/fancybox/jquery.fancybox.min.js?ver=1.0.0",
+    "https://balbriggan.ie/wp-content/themes/balbriggan2024/library/slick/slick.min.js?ver=1.0.0",
+    "https://balbriggan.ie/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381",
+    "https://balbriggan.ie/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18",
+    "https://balbriggan.ie/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6",
+    "https://balbriggan.ie/wp-includes/js/dist/a11y.min.js?ver=d90eebea464f6c09bfd5",
+    "https://balbriggan.ie/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.18",
+    "https://connect.facebook.net/en_US/fbevents.js",
+    "https://balbriggan.ie/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.8.18",
+    "https://balbriggan.ie/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.8.18",
+    "https://balbriggan.ie/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=50c7bea9c2320e16728e44ae9fde5f26",
+    "https://balbriggan.ie/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=54e7080aa7a02c83aa61fae430b9d869",
+    "https://balbriggan.ie/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=bab19fd84843dabc070e73326d787910",
+    "https://connect.facebook.net/signals/config/860987271653326?v=2.9.408&r=stable&domain=balbriggan.ie&hme=f9ad993bedcdbb3fffd47532e189463ba18afe816a0bd364070ce559e4a6ac26&ex_m=117%2C239%2C169%2C27%2C81%",
+    "https://connect.facebook.net/signals/config/358285138312853?v=2.9.408&r=stable&domain=balbriggan.ie&hme=f9ad993bedcdbb3fffd47532e189463ba18afe816a0bd364070ce559e4a6ac26&ex_m=117%2C239%2C169%2C27%2C81%"
+   ],
+   "firstPartyApi": [],
+   "thirdPartyXhr": [
+    "POST region1.google-analytics.com/g/collect"
+   ],
+   "postBodies": [
+    {
+     "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-Z1D3MZ66RP&gtm=45je69n1v9172713029za200zd9172713029xf1&_p=1790586726144&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=EA&cid=1522307881.1790586726&frm=0&ir=",
+     "body": ""
+    }
+   ],
+   "textAtLoad": 508,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "a-cms-app-settings-object-wp",
+   "class": "A",
+   "feature": "CMS / app settings object wp",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-cms-app-settings-object-datalayer",
+   "class": "A",
+   "feature": "CMS / app settings object dataLayer",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "f-form-gform-1-origin-5-fields",
+   "class": "F",
+   "feature": "form \"gform_1\" → origin / (5 fields)",
+   "signature": [
+    "text:input_1",
+    "text:input_2",
+    "email:input_3",
+    "checkbox:input_4.1",
+    "textarea:ak_hp_textarea"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "text:input_1,text:input_2,email:input_3,checkbox:input_4.1,textarea:ak_hp_textarea",
+    "gform_ajax,is_submit_1,gform_submit,gform_unique_id,state_1,gform_target_page_number_1,gform_source_page_number_1,gform_field_values,ak_js"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "m-modal-trigger-aria-haspopup-chrome-only-a-content",
+   "class": "M",
+   "feature": "modal trigger aria-haspopup (chrome only) → a:content",
+   "hint": "chrome-interaction",
+   "evidence": [
+    "https://balbriggan.ie/#"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 4,
+    "of": 1
+   }
+  },
+  {
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "feature": "tag manager: Google Tag Manager",
+   "role": "tag manager: Google Tag Manager",
+   "hint": "tags",
+   "evidence": [
+    "www.googletagmanager.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-analytics-google-analytics-ads",
+   "class": "T",
+   "feature": "analytics: Google Analytics / Ads",
+   "role": "analytics: Google Analytics / Ads",
+   "hint": "tags",
+   "evidence": [
+    "region1.google-analytics.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-marketing-ad-retargeting-pixel",
+   "class": "T",
+   "feature": "marketing: ad / retargeting pixel",
+   "role": "marketing: ad / retargeting pixel",
+   "hint": "tags",
+   "evidence": [
+    "connect.facebook.net"
+   ],
+   "pages": [
+    "/"
+   ]
+  }
+ ],
+ "reach": {
+  "pagesWithEvidence": 1,
+  "of": 1,
+  "endpoints": {
+   "POST region1.google-analytics.com/g/collect": 1
+  },
+  "searchFormPages": 0,
+  "formPages": 1,
+  "triggerPages": {
+   "aria-haspopup": 4
+  }
+ }
+}

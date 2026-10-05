@@ -162,6 +162,9 @@ export function decorateMain(main) {
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
+  if (/^\/(content\/)?(index(\.html)?)?$/.test(window.location.pathname)) {
+    document.body.classList.add('home');
+  }
   const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);

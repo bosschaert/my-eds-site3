@@ -35,6 +35,11 @@ body {
   font-family: var(--font-body);
 }
 
+/* home page: green canvas */
+body.home {
+  --canvas: #a5d6a7;
+}
+
 body.appear {
   display: block;
 }

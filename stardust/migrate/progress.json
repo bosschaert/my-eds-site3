@@ -1,0 +1,59 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-05T10:39:58Z",
+    "stardustVersion": "0.27.0"
+  },
+  "plan": {
+    "templates": {
+      "landing": {
+        "archetype": "index",
+        "siblings": [],
+        "clusters": [
+          "landing"
+        ]
+      }
+    },
+    "pages": 1,
+    "archetypes": 1,
+    "siblings": 0,
+    "thin": 0,
+    "canonCss": "stardust/prototypes/canon.css",
+    "note": "Single-page run: the landing archetype (index) is the only page; no sibling render, no rehosted media (the icon is an inline SVG shipped as /icons/notice.svg in the code tree)."
+  },
+  "units": {
+    "plan": {
+      "status": "done",
+      "kind": "plan",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-05T10:38:55Z",
+      "endedAt": "2026-10-05T10:38:55Z",
+      "verdict": "plan: 1 template (landing), 1 archetype (index), 0 siblings, 0 thin; render cluster landing = [index]"
+    },
+    "landing": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-05T10:39:14Z",
+      "endedAt": "2026-10-05T10:39:58Z",
+      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 (index → index.html, tier A, modules [notice], gates content-fidelity + content-count, 1 deviation added-heading)"
+    },
+    "report": {
+      "status": "done",
+      "kind": "report",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-05T10:41:11Z",
+      "endedAt": "2026-10-05T10:41:37Z",
+      "verdict": "1 migrated (index, tier A), 0 unchanged, 0 failed; 2 assets bundled, 0 missing, 0 broken links; state index → migrated; migrate block present"
+    }
+  }
+}

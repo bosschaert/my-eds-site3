@@ -1,0 +1,90 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-10-05T10:13:29Z",
+    "stardustVersion": "0.27.0",
+    "readArtifacts": [
+      "stardust/current/pages/index.json",
+      "stardust/current/pages/index.html",
+      "stardust/current/_computed-styles.json",
+      "stardust/current/assets/screenshots/index.png"
+    ],
+    "synthesizedInputs": [],
+    "notes": [
+      "Single-page site: every value below is measured on https://www.example.com/ at 1440 and 360 (style-census.mjs) and read from the page's own inline stylesheet (rendered DOM, <head><style> and <body><style>).",
+      "The page declares color-scheme: light dark with background light-dark(#eee,#222); the light scheme is the captured state and the migration target.",
+      "No raster images, no CSS background images, no web fonts: the only graphic is an inline SVG icon (saved as assets/logo.svg); the typeface is the OS system-ui stack."
+    ]
+  },
+  "origins": [
+    { "url": "https://www.example.com/", "role": "primary", "pages": 1 }
+  ],
+  "logo": {
+    "source": "inline-svg",
+    "sourceSelector": "body > svg",
+    "path": "stardust/current/assets/logo.svg",
+    "format": "svg",
+    "intrinsic": { "width": 44, "height": 44, "viewBox": "0 0 20 20" },
+    "fill": "currentColor",
+    "opacity": 0.55,
+    "variantsCaptured": ["default (currentColor, 55% opacity)"],
+    "variantsNotCaptured": ["inverted", "monochrome-on-dark"]
+  },
+  "favicon": { "captured": false, "reason": "link[rel=icon] href=\"data:,\" (explicitly empty) and /favicon.ico unreachable" },
+  "palette": [
+    { "value": "#eeeeee", "role": "background", "usedAs": ["background"], "occurrences": 1, "sources": [{ "url": "https://www.example.com/", "selector": "html", "prop": "background", "authored": "light-dark(#eee,#222)" }] },
+    { "value": "#000000", "role": "text-primary", "usedAs": ["text"], "occurrences": 6, "sources": [{ "url": "https://www.example.com/", "selector": "body > p", "prop": "color", "authored": "UA default (color-scheme light)" }] },
+    { "value": "#0000ee", "role": "link", "usedAs": ["text"], "occurrences": 1, "sources": [{ "url": "https://www.example.com/", "selector": "body > a", "prop": "color", "authored": "UA default :link" }] }
+  ],
+  "type": {
+    "headingFamily": null,
+    "bodyFamily": "system-ui, sans-serif",
+    "families": [{ "family": "system-ui, sans-serif", "count": 12, "headings": 0, "text": 12, "buttons": 0, "source": "body { font: 16px/1.6 system-ui, sans-serif }" }],
+    "sizes": [
+      { "px": 16, "em": "1em", "lineHeight": "25.6px (1.6)", "weight": 400, "count": 2, "selector": "body > p:first-of-type, body > a" },
+      { "px": 14, "em": ".875em", "lineHeight": "22.4px (1.6)", "weight": 400, "count": 10, "selector": "p + p", "authored": "p+p { font-size: .875em; opacity: .6 }" }
+    ],
+    "weights": [400],
+    "scaleAudit": { "kind": "modular", "ratio": 0.875, "sizes": [16, 14], "basis": "two sizes only; the second is authored as .875em of the first" },
+    "files": [],
+    "licensing": "none — OS system font stack, nothing to self-host"
+  },
+  "motifs": {
+    "borderRadius": { "dominant": "0px", "occurrences": {} },
+    "shadows": [],
+    "gradients": [],
+    "opacity": [
+      { "value": 0.55, "selector": "body > svg", "purpose": "icon toned down against the page" },
+      { "value": 0.6, "selector": "p + p", "purpose": "secondary-language paragraphs toned down" }
+    ],
+    "patterns": ["centered single column", "icon above copy", "translated paragraph stack"]
+  },
+  "layout": {
+    "container": { "maxWidth": "26em (416px at 16px)", "margin": "auto", "padding": "25vh 2em 2em", "textAlign": "center", "selector": "body" },
+    "iconOffset": "svg { display:block; margin:-2.75em auto 0 }"
+  },
+  "voice": {
+    "heroHeadline": null,
+    "heroLede": "This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.",
+    "firstParagraph": "This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.",
+    "ctaLabels": ["Learn more"],
+    "linkSamples": [{ "text": "Learn more", "href": "https://iana.org/help/example-domains", "external": true }],
+    "registerGuess": "brand",
+    "registerBasis": "a single informational landing page in a plain, declarative voice; ambiguous, recorded as brand with a note",
+    "languages": ["en", "ar", "zh", "fr", "ru", "es"],
+    "heroImage": null,
+    "heroMedium": null
+  },
+  "voiceTable": {
+    "ctaFrequency": [{ "label": "Learn more", "count": 1 }],
+    "headingFrequency": [],
+    "headingsUppercasePercent": 0,
+    "distinctHeadings": 0,
+    "distinctCtaLabels": 1
+  },
+  "systemComponents": [],
+  "crossPromo": { "detected": false },
+  "iconFont": null,
+  "cssCustomProperties": {},
+  "tensions": ["T-no-tokens", "T-logo-variants"]
+}

@@ -1,0 +1,4 @@
+/* the source has no footer: an empty block paints nothing */
+footer .footer:empty {
+  display: none;
+}

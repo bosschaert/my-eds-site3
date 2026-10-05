@@ -1,0 +1,4 @@
+/* the source has no header: an empty block paints nothing */
+header .header:empty {
+  display: none;
+}

@@ -1,0 +1,68 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-10-05T10:46:37.844Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://www.example.com/"
+  ],
+  "reachSource": "stardust/current/pages"
+ },
+ "pages": {
+  "/": {
+   "url": "https://www.example.com/",
+   "status": 200,
+   "host": "www.example.com",
+   "title": "Example Domain",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": []
+   },
+   "cms": {},
+   "framework": null,
+   "globals": [],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 0,
+   "inlineFetch": false,
+   "mainText": 911,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.example.com": 2
+   },
+   "thirdPartyHosts": [],
+   "scripts": [
+    "https://www.example.com/s.js"
+   ],
+   "firstPartyApi": [],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 911,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [],
+ "reach": {
+  "pagesWithEvidence": 1,
+  "of": 1,
+  "endpoints": {},
+  "searchFormPages": 0,
+  "formPages": 0,
+  "triggerPages": {}
+ }
+}

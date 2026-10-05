@@ -1,0 +1,62 @@
+/*
+ * Notice block — values lifted verbatim from the live page's inline stylesheet
+ * (https://www.example.com/): svg { display:block; margin:-2.75em auto 0; opacity:.55 }
+ * and p + p { font-size:.875em; opacity:.6 }. No color, no font, no link paint:
+ * the frozen foundation (main column, UA links) already carries those.
+ */
+
+.notice {
+  --notice-icon-size: 44px;
+  --notice-icon-pull: -2.75em;
+  --notice-icon-opacity: 0.55;
+  --notice-secondary-size: 0.875em;
+  --notice-secondary-opacity: 0.6;
+}
+
+/* the delivery contract's h1: visually hidden, out of flow, 0 px of page height */
+.notice .notice-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* the icon: its negative top margin must collapse up to main's padding as the live svg's does */
+.notice .notice-icon p {
+  margin: 0;
+}
+
+.notice .notice-icon .icon {
+  display: block;
+  width: var(--notice-icon-size);
+  height: var(--notice-icon-size);
+  margin: var(--notice-icon-pull) auto 0;
+  opacity: var(--notice-icon-opacity);
+}
+
+.notice .notice-icon .icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+ * the live <a> is an anonymous line box right after the last paragraph's own 1em bottom margin
+ * (14px at .875em) and has no margin of its own — so the wrapping p adds none either way
+ * (gate pub1: "Learn more" Δy +2px, page +2px with a 1em top margin)
+ */
+.notice .notice-cta p {
+  margin: 0;
+}
+
+/* every paragraph after the first is secondary */
+.notice .notice-body p + p {
+  font-size: var(--notice-secondary-size);
+  opacity: var(--notice-secondary-opacity);
+}
+

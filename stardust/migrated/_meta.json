@@ -1,0 +1,81 @@
+{
+  "slug": "index",
+  "type": "landing",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "notice"
+  ],
+  "slotsFilled": [
+    "notice-icon",
+    "p",
+    "p",
+    "p",
+    "p",
+    "p",
+    "p",
+    "a"
+  ],
+  "canonShas": {
+    "header": null,
+    "footer": null,
+    "css": "935e2894f8cc"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "source-wrapper",
+      "source": "stardust/prototypes/index-migrate.html",
+      "reason": "the live page and the gated prototype have no <main>; migrate strict 2 requires one. A box-less <main> wrapper around the icon, paragraphs and link is layout-neutral (block children, collapsing margins unchanged)."
+    }
+  ],
+  "metadata": {
+    "title": "Example Domain",
+    "description": null,
+    "canonical": "https://main--b3ee2d3b--aemcoder.aem.page/",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Example Domain",
+    "url": "https://main--b3ee2d3b--aemcoder.aem.page/"
+  },
+  "migratedAt": "2026-10-05T10:39:39Z",
+  "designMdSha": "383261ca0676",
+  "designJsonSha": "77711d3aa1fc",
+  "sourceCurrentSha": "fc0cc5d9a316",
+  "sourceProposedSha": "f9fb260b2ef9",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "content-count",
+    "pixel-gate-1440",
+    "pixel-gate-360"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "verbatim: 6 paragraphs + CTA label/href + inline SVG icon checked against current/pages/index.json by the recreate phase (content-diff 9/9 nodes, 0 structural); no headings on the source",
+    "content-count": "content-diff: 5 (0 structural 🔴) (index-360-pub2.log)",
+    "pixel-gate-1440": "0.08%, height delta 0px, clipped 0, content MISSING 0 / HIDDEN 0 (stardust/replica/gates/all-1440/summary.md) [published regime]",
+    "pixel-gate-360": "0.29%, height delta 0px, clipped 0, content MISSING 0 / HIDDEN 0 (stardust/replica/gates/all-360/summary.md) [published regime]",
+    "delivery-lint": "FAIL: 1 P0 · 2 P1 · 1 P2 (delivery-lint --path /)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "added-heading",
+      "source": "(no heading on the source page; <title>Example Domain</title>)",
+      "target": "visually hidden <h1>Example Domain</h1> in the delivered EDS document",
+      "reason": "the delivery contract (delivery-lint h1 P0, EDS title derivation) requires exactly one h1; the text is the source document title, hidden from rendering so pixels are unchanged"
+    }
+  ],
+  "assetsBundled": 2,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "index.html",
+  "outputPathDefault": null,
+  "sidecar": "_meta.json",
+  "driverVersion": "1"
+}

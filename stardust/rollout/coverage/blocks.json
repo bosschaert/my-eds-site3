@@ -1,0 +1,33 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-10-05T10:46:13.119Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage/pages.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-10-05T11:25:31.355Z",
+  "blocks": [
+    {
+      "id": "notice",
+      "label": "notice",
+      "kind": "module",
+      "signature": "module:notice",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "notice",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    }
+  ]
+}

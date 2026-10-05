@@ -1,0 +1,99 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-05T10:31:32Z",
+    "stardustVersion": "0.27.0"
+  },
+  "site": "https://www.example.com/",
+  "breakpoints": [
+    1440,
+    360
+  ],
+  "contentRoot": "body",
+  "contentRootNote": "The live page has no main/header/footer wrapper; body is its only content root. Validated live-vs-itself with content-diff --main body at 1440: 9/9 nodes, Findings: none — the self-poisoning the body ban guards against (analytics / consent text) is absent on this page.",
+  "pageTypes": {
+    "landing": {
+      "archetype": "index",
+      "liveUrl": "https://www.example.com/",
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "css": [
+        "stardust/prototypes/canon.css",
+        "stardust/prototypes/index.css"
+      ],
+      "iterations": {
+        "360": 1,
+        "1440": 1
+      },
+      "gates": {
+        "360": {
+          "label": "iter1",
+          "pixelPct": 0.05,
+          "heightDelta": 0,
+          "overflow": "ok (360 = viewport)",
+          "structuralRed": 0,
+          "contentFindings": 2,
+          "visualFlags": 0,
+          "clipped": 0,
+          "chromeParity": "n/a — no header/footer on either side; body region ✓ parity (7/7 texts, 1/1 icons) exit 0 → gates/index-360/chrome-parity-body-iter1.txt",
+          "result": "PASS",
+          "evidence": "stardust/replica/gates/index-360/"
+        },
+        "1440": {
+          "label": "iter1",
+          "pixelPct": 0.01,
+          "heightDelta": 0,
+          "overflow": "ok (1440 = viewport)",
+          "structuralRed": 0,
+          "contentFindings": 2,
+          "visualFlags": 0,
+          "clipped": 0,
+          "chromeParity": "n/a — no header/footer on either side; body region ✓ parity (7/7 texts, 1/1 icons) exit 0 → gates/index-1440/chrome-parity-body-iter1.txt",
+          "result": "PASS",
+          "evidence": "stardust/replica/gates/index-1440/"
+        }
+      },
+      "capProbe": {
+        "probeWidth": 2560,
+        "result": "PASS",
+        "rows": "0 of 9 failed (shell 480px on both; 8 modules full-bleed on both)",
+        "evidence": "stardust/replica/gates/index-2560/cap-iter1.json"
+      },
+      "prototypeTable": {
+        "360": "PASS (gates/prototypes-360)",
+        "1440": "PASS (gates/prototypes-1440)"
+      },
+      "residuals": [
+        "content-diff 🟡 ×2 at both widths: 'MISSING BODY svg{display:block…}' and 'ICON MOVED' — both are the live page's <body><style> text read as body copy under the body root; the prototype keeps that CSS in a stylesheet. Confirmed intended: no copy is missing (6/6 paragraphs + CTA verbatim), the icon sits in the same position (pixel 0.01%)."
+      ],
+      "motion": {
+        "observed": 0,
+        "implemented": 0,
+        "dead": [
+          "hover a — no measured hover diff on live"
+        ],
+        "evidence": [
+          "stardust/replica/motion/index.json",
+          "stardust/replica/motion/index-build.json"
+        ]
+      },
+      "status": "approved",
+      "approvedBy": "hands-off",
+      "approvedAt": "2026-10-05T10:31:32Z"
+    }
+  },
+  "siblings": {},
+  "migrate": {
+    "at": "2026-10-05T11:34:10.342Z",
+    "pages": 1,
+    "archetypes": 1,
+    "siblings": 0,
+    "thin": 0,
+    "gates": {
+      "content-fidelity": 1,
+      "content-count": 1,
+      "pixel-gate-1440": 1,
+      "pixel-gate-360": 1
+    },
+    "missing": {}
+  }
+}

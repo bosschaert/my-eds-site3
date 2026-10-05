@@ -1,0 +1,23 @@
+/* canon.css — shared layer, lifted from https://www.example.com/ inline stylesheet (replica, pure). */
+:root {
+  --color-page-bg: #eeeeee;
+  --color-page-bg-dark: #222222;
+  --font-body: system-ui, sans-serif;
+  --font-size-body: 16px;
+  --line-height-body: 1.6;
+  --column-max: 26em;
+  --space-inline: 2em;
+  --space-top: 25vh;
+  --space-bottom: 2em;
+}
+html {
+  color-scheme: light dark;
+  background: light-dark(var(--color-page-bg), var(--color-page-bg-dark));
+}
+body {
+  font: var(--font-size-body) / var(--line-height-body) var(--font-body);
+  max-width: var(--column-max);
+  margin: auto;
+  padding: var(--space-top) var(--space-inline) var(--space-bottom);
+  text-align: center;
+}

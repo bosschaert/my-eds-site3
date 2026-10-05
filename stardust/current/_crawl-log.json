@@ -1,0 +1,37 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 1,
+    "concurrency": 1
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": null,
+  "crawl": {
+    "failures": []
+  },
+  "captureGaps": {
+    "roots": [],
+    "detail": "uncaptured first-level targets: none (no locale root captured)"
+  },
+  "dynamicSurface": {
+    "pages": 1,
+    "pagesWithSameSiteData": 0,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 0,
+    "truncatedPages": 0,
+    "endpoints": [],
+    "thirdPartyScriptHosts": [],
+    "frameworkHints": [],
+    "globalState": [],
+    "formTargets": []
+  },
+  "visionCheck": [
+    {
+      "slug": "index",
+      "verdict": "ok",
+      "notes": "thumbnail shows centered icon, six paragraphs (en/ar/zh/fr/ru/es) and a Learn more link on a light grey page; record has 0 headings, 6 body paragraphs, 1 CTA, inline SVG only, no raster media or CSS backgrounds — matches"
+    }
+  ]
+}

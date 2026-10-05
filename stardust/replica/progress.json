@@ -1,0 +1,102 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-09-28T07:30:33Z",
+    "stardustVersion": "0.25.1"
+  },
+  "breakpoints": [
+    1440,
+    360
+  ],
+  "pageTypes": {
+    "landing": {
+      "archetype": "index",
+      "liveUrl": "https://www.example.com/",
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "css": [
+        "stardust/prototypes/replica-canon.css",
+        "stardust/prototypes/index.css"
+      ],
+      "contentRoot": "body > :first-child",
+      "iterations": {
+        "360": 1,
+        "1440": 1
+      },
+      "gates": {
+        "360": {
+          "round": "iter1",
+          "pixelDiffPct": 0,
+          "heightDeltaPx": 0,
+          "overflowPx": 0,
+          "contentStructuralRed": 0,
+          "visualFlags": 0,
+          "chromeParity": "n/a — no header/footer on either side; content region parity ✓ (3/3 texts)",
+          "result": "PASS",
+          "evidence": "stardust/replica/gates/index-360/"
+        },
+        "1440": {
+          "round": "iter1",
+          "pixelDiffPct": 0,
+          "heightDeltaPx": 0,
+          "overflowPx": 0,
+          "contentStructuralRed": 0,
+          "visualFlags": 0,
+          "chromeParity": "n/a — no header/footer on either side; content region parity ✓ (3/3 texts)",
+          "result": "PASS",
+          "evidence": "stardust/replica/gates/index-1440/"
+        }
+      },
+      "measure": "body > :first-child, h1, p, a: Δx Δy Δw Δh 0, props equal at 1440 and 360 (measure.mjs)",
+      "residuals": [],
+      "motion": {
+        "observed": 0,
+        "implemented": 0,
+        "dead": [
+          "a:hover (no measured hover diff on live)"
+        ],
+        "evidence": [
+          "stardust/replica/motion/index.json",
+          "stardust/replica/motion/index-build.json",
+          "stardust/replica/motion/index-compare.txt"
+        ]
+      },
+      "notes": [
+        "gate.sh --full exits 2 only because chrome-parity's default header/footer regions match no element on EITHER side; the region-scoped probe (--no-defaults --region content) exits 0 at both widths."
+      ],
+      "status": "approved",
+      "gatedAt": "2026-09-28T07:29:39Z",
+      "confirmation": {
+        "360": {
+          "round": "conf",
+          "pixelDiffPct": 0,
+          "heightDeltaPx": 0,
+          "overflowPx": 0,
+          "result": "PASS"
+        },
+        "1440": {
+          "round": "conf",
+          "pixelDiffPct": 0,
+          "heightDeltaPx": 0,
+          "overflowPx": 0,
+          "result": "PASS"
+        }
+      },
+      "approvedBy": "hands-off",
+      "approvedAt": "2026-09-28T07:30:33Z"
+    }
+  },
+  "siblings": {},
+  "migrate": {
+    "at": "2026-09-28T07:59:08.797Z",
+    "pages": 1,
+    "archetypes": 1,
+    "siblings": 0,
+    "thin": 0,
+    "gates": {
+      "pixel-gate-1440": 1,
+      "pixel-gate-360": 1,
+      "content-count": 1
+    },
+    "missing": {}
+  }
+}

@@ -1,0 +1,1122 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-10-05T15:09:13.363Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://garden-eight.com/"
+  ],
+  "reachSource": "stardust/current/pages"
+ },
+ "pages": {
+  "/": {
+   "url": "https://garden-eight.com/",
+   "status": 200,
+   "host": "garden-eight.com",
+   "title": "Garden Eight",
+   "forms": [],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [
+     "en",
+     "ja",
+     "x-default"
+    ],
+    "switcher": [
+     "https://garden-eight.com/ai/",
+     "https://garden-eight.com/ja/"
+    ]
+   },
+   "cms": {
+    "__NUXT__": [
+     "staticAssetsBase",
+     "layout",
+     "error",
+     "state",
+     "serverRendered",
+     "routePath",
+     "config",
+     "__i18n",
+     "data",
+     "fetch",
+     "mutations"
+    ]
+   },
+   "framework": "nuxt",
+   "globals": [],
+   "clientRendered": [
+    {
+     "cls": "js-h s-wrapper is-chat-loaded",
+     "attrs": [],
+     "text": "Garden Eight Garden Eight CLOSE MENU Home Cases About Archiv"
+    },
+    {
+     "cls": "Sw js-sp s-scroller",
+     "attrs": [],
+     "text": "We are a digital design studio based in Tokyo What can we ma"
+    },
+    {
+     "cls": "Ph St js-iv",
+     "attrs": [],
+     "text": "We are a digital design studio based in Tokyo What can we ma"
+    },
+    {
+     "cls": "description lead f-logo",
+     "attrs": [],
+     "text": "We are a digital design studio based in Tokyo"
+    },
+    {
+     "cls": "site-title js-iv js-h-mb",
+     "attrs": [],
+     "text": "What can we make next"
+    },
+    {
+     "cls": "page-title words serif",
+     "attrs": [],
+     "text": "What can we make next"
+    },
+    {
+     "cls": "Pb St js-iv",
+     "attrs": [],
+     "text": "We approach every projects with wonder fueled by a boundless"
+    },
+    {
+     "cls": "intro clip-y auto",
+     "attrs": [],
+     "text": "We approach every projects with wonder fueled by a boundless"
+    },
+    {
+     "cls": "St-wrap js-h-mb",
+     "attrs": [],
+     "text": "Takamitsu Motoyoshi Takamitsu Motoyoshi Phil Studio Phil Stu"
+    },
+    {
+     "cls": "mq pickup-h1 cases-h1",
+     "attrs": [],
+     "text": "Takamitsu Motoyoshi Takamitsu Motoyoshi"
+    },
+    {
+     "cls": "mq pickup-h1 cases-h1",
+     "attrs": [],
+     "text": "Phil Studio Phil Studio Phil Studio"
+    },
+    {
+     "cls": "mq pickup-h1 cases-h1",
+     "attrs": [],
+     "text": "Anai Wood Anai Wood Anai Wood"
+    }
+   ],
+   "listingCandidates": [
+    {
+     "cls": "pickup-ul",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    }
+   ],
+   "inlineScripts": 0,
+   "inlineFetch": false,
+   "mainText": 411,
+   "domAddedAfterLoad": 48,
+   "hosts": {
+    "garden-eight.com": 62,
+    "d1oo4riy5et4sg.cloudfront.net": 11,
+    "cdn.jsdelivr.net": 2
+   },
+   "thirdPartyHosts": [
+    "d1oo4riy5et4sg.cloudfront.net",
+    "cdn.jsdelivr.net"
+   ],
+   "scripts": [
+    "https://garden-eight.com/_app/676fdbc.js",
+    "https://garden-eight.com/_app/069eca0.js",
+    "https://garden-eight.com/_app/static/1790792107/payload.js",
+    "https://garden-eight.com/_app/static/1790792107/state.js",
+    "https://garden-eight.com/_app/static/1790792107/manifest.js",
+    "https://garden-eight.com/_app/5a65541.js",
+    "https://garden-eight.com/_app/f4fd600.js",
+    "https://garden-eight.com/_app/b038107.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/_api/chatApi/json/faq.json",
+     "query": [
+      "_"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://garden-eight.com/_api/chatApi/json/faq.json"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/_api/chatApi/json/setting.json",
+     "query": [
+      "_"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://garden-eight.com/_api/chatApi/json/setting.json"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/rabbit/k/rabbit.gltf",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://garden-eight.com/assets/models/blender/rabbit/k/rabbit.gltf"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/lizard/d/lizard.gltf",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://garden-eight.com/assets/models/blender/lizard/d/lizard.gltf"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/raccoon/g/raccoon.gltf",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://garden-eight.com/assets/models/blender/raccoon/g/raccoon.gltf"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/fox/e/fox.gltf",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://garden-eight.com/assets/models/blender/fox/e/fox.gltf"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/cat/h/cat.gltf",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://garden-eight.com/assets/models/blender/cat/h/cat.gltf"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/particle/nuts-set.glb",
+     "query": [],
+     "status": 200,
+     "contentType": "",
+     "example": "https://garden-eight.com/assets/models/blender/particle/nuts-set.glb"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/koala/d/koala.gltf",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://garden-eight.com/assets/models/blender/koala/d/koala.gltf"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/goat/f/goat.gltf",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://garden-eight.com/assets/models/blender/goat/f/goat.gltf"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/about/{n}/about-8.glb",
+     "query": [],
+     "status": 200,
+     "contentType": "",
+     "example": "https://garden-eight.com/assets/models/blender/about/1/about-8.glb"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/gekkeiju/gekkeiju2.glb",
+     "query": [],
+     "status": 200,
+     "contentType": "",
+     "example": "https://garden-eight.com/assets/models/blender/gekkeiju/gekkeiju2.glb"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/frame/frame.glb",
+     "query": [],
+     "status": 200,
+     "contentType": "",
+     "example": "https://garden-eight.com/assets/models/blender/frame/frame.glb"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/eye/eyesFlat.glb",
+     "query": [],
+     "status": 200,
+     "contentType": "",
+     "example": "https://garden-eight.com/assets/models/blender/eye/eyesFlat.glb"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/device/desktop.gltf",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://garden-eight.com/assets/models/blender/device/desktop.gltf"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/device/ipad.gltf",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://garden-eight.com/assets/models/blender/device/ipad.gltf"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/hachi/e/hachi.gltf",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://garden-eight.com/assets/models/blender/hachi/e/hachi.gltf"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/home/{n}/stage-plants2.glb",
+     "query": [],
+     "status": 200,
+     "contentType": "",
+     "example": "https://garden-eight.com/assets/models/blender/home/1/stage-plants2.glb"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/device/iphone.gltf",
+     "query": [
+      "2"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://garden-eight.com/assets/models/blender/device/iphone.gltf"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/about/{n}/field2.glb",
+     "query": [],
+     "status": 200,
+     "contentType": "",
+     "example": "https://garden-eight.com/assets/models/blender/about/2/field2.glb"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/about/{n}/about-plant2.glb",
+     "query": [],
+     "status": 200,
+     "contentType": "",
+     "example": "https://garden-eight.com/assets/models/blender/about/1/about-plant2.glb"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/rabbit/k/rabbit.jpg",
+     "query": [],
+     "status": 200,
+     "contentType": "image/jpeg",
+     "example": "https://garden-eight.com/assets/models/blender/rabbit/k/rabbit.jpg"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/lizard/d/rizard.jpg",
+     "query": [],
+     "status": 200,
+     "contentType": "image/jpeg",
+     "example": "https://garden-eight.com/assets/models/blender/lizard/d/rizard.jpg"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/raccoon/g/raccoon2.jpg",
+     "query": [],
+     "status": 200,
+     "contentType": "image/jpeg",
+     "example": "https://garden-eight.com/assets/models/blender/raccoon/g/raccoon2.jpg"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/lizard/d/lizard.bin",
+     "query": [],
+     "status": 200,
+     "contentType": "application/octet-stream",
+     "example": "https://garden-eight.com/assets/models/blender/lizard/d/lizard.bin"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/rabbit/k/rabbit.bin",
+     "query": [],
+     "status": 200,
+     "contentType": "application/octet-stream",
+     "example": "https://garden-eight.com/assets/models/blender/rabbit/k/rabbit.bin"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/raccoon/g/raccoon.bin",
+     "query": [],
+     "status": 200,
+     "contentType": "application/octet-stream",
+     "example": "https://garden-eight.com/assets/models/blender/raccoon/g/raccoon.bin"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/fox/e/fox.jpg",
+     "query": [],
+     "status": 200,
+     "contentType": "image/jpeg",
+     "example": "https://garden-eight.com/assets/models/blender/fox/e/fox.jpg"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/cat/h/cat.jpg",
+     "query": [],
+     "status": 200,
+     "contentType": "image/jpeg",
+     "example": "https://garden-eight.com/assets/models/blender/cat/h/cat.jpg"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/koala/d/koala.jpg",
+     "query": [],
+     "status": 200,
+     "contentType": "image/jpeg",
+     "example": "https://garden-eight.com/assets/models/blender/koala/d/koala.jpg"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/goat/f/goat.jpg",
+     "query": [],
+     "status": 200,
+     "contentType": "image/jpeg",
+     "example": "https://garden-eight.com/assets/models/blender/goat/f/goat.jpg"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/cat/h/cat.bin",
+     "query": [],
+     "status": 200,
+     "contentType": "application/octet-stream",
+     "example": "https://garden-eight.com/assets/models/blender/cat/h/cat.bin"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/koala/d/koala.bin",
+     "query": [],
+     "status": 200,
+     "contentType": "application/octet-stream",
+     "example": "https://garden-eight.com/assets/models/blender/koala/d/koala.bin"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/fox/e/fox.bin",
+     "query": [],
+     "status": 200,
+     "contentType": "application/octet-stream",
+     "example": "https://garden-eight.com/assets/models/blender/fox/e/fox.bin"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/goat/f/goat.bin",
+     "query": [],
+     "status": 200,
+     "contentType": "application/octet-stream",
+     "example": "https://garden-eight.com/assets/models/blender/goat/f/goat.bin"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/device/desktop.bin",
+     "query": [],
+     "status": 200,
+     "contentType": "application/octet-stream",
+     "example": "https://garden-eight.com/assets/models/blender/device/desktop.bin"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/device/desktop-tex.jpg",
+     "query": [],
+     "status": 200,
+     "contentType": "image/jpeg",
+     "example": "https://garden-eight.com/assets/models/blender/device/desktop-tex.jpg"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/device/ipad-tex.jpg",
+     "query": [],
+     "status": 200,
+     "contentType": "image/jpeg",
+     "example": "https://garden-eight.com/assets/models/blender/device/ipad-tex.jpg"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/hachi/e/hachi.jpg",
+     "query": [],
+     "status": 200,
+     "contentType": "image/jpeg",
+     "example": "https://garden-eight.com/assets/models/blender/hachi/e/hachi.jpg"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/device/ipad.bin",
+     "query": [],
+     "status": 200,
+     "contentType": "application/octet-stream",
+     "example": "https://garden-eight.com/assets/models/blender/device/ipad.bin"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/hachi/e/hachi.bin",
+     "query": [],
+     "status": 200,
+     "contentType": "application/octet-stream",
+     "example": "https://garden-eight.com/assets/models/blender/hachi/e/hachi.bin"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/device/iphone-tex.jpg",
+     "query": [],
+     "status": 200,
+     "contentType": "image/jpeg",
+     "example": "https://garden-eight.com/assets/models/blender/device/iphone-tex.jpg"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/device/iphone.bin",
+     "query": [],
+     "status": 200,
+     "contentType": "application/octet-stream",
+     "example": "https://garden-eight.com/assets/models/blender/device/iphone.bin"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/office/office-floor3.gltf",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://garden-eight.com/assets/models/blender/office/office-floor3.gltf"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/office/office-desk2.glb",
+     "query": [],
+     "status": 200,
+     "contentType": "",
+     "example": "https://garden-eight.com/assets/models/blender/office/office-desk2.glb"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/office/office-items2.glb",
+     "query": [
+      "13"
+     ],
+     "status": 200,
+     "contentType": "",
+     "example": "https://garden-eight.com/assets/models/blender/office/office-items2.glb"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/office/Wood_Herringbone_Tiles_002_basecolor.jpg",
+     "query": [],
+     "status": 200,
+     "contentType": "image/jpeg",
+     "example": "https://garden-eight.com/assets/models/blender/office/Wood_Herringbone_Tiles_002_basecolor.jpg"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/office/office-floor3.bin",
+     "query": [],
+     "status": 200,
+     "contentType": "application/octet-stream",
+     "example": "https://garden-eight.com/assets/models/blender/office/office-floor3.bin"
+    },
+    {
+     "method": "GET",
+     "host": "garden-eight.com",
+     "path": "/assets/models/blender/office/Wood_Herringbone_Tiles_002_normal.jpg",
+     "query": [],
+     "status": 200,
+     "contentType": "image/jpeg",
+     "example": "https://garden-eight.com/assets/models/blender/office/Wood_Herringbone_Tiles_002_normal.jpg"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET cdn.jsdelivr.net/npm/three@0.137.0/examples/js/libs/draco/draco_wasm_wrapper.js",
+    "GET cdn.jsdelivr.net/npm/three@0.137.0/examples/js/libs/draco/draco_decoder.wasm"
+   ],
+   "postBodies": [],
+   "textAtLoad": 411,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "a-first-party-api-get-api-chatapi-json-faq-json",
+   "class": "A",
+   "feature": "first-party API GET /_api/chatApi/json/faq.json",
+   "api": {
+    "method": "GET",
+    "path": "/_api/chatApi/json/faq.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_api/chatApi/json/faq.json?_ → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "a-first-party-api-get-api-chatapi-json-setting-json",
+   "class": "A",
+   "feature": "first-party API GET /_api/chatApi/json/setting.json",
+   "api": {
+    "method": "GET",
+    "path": "/_api/chatApi/json/setting.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /_api/chatApi/json/setting.json?_ → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "a-first-party-api-get-assets-models-blender-rabbit-k-rabbit-",
+   "class": "A",
+   "feature": "first-party API GET /assets/models/blender/rabbit/k/rabbit.gltf",
+   "api": {
+    "method": "GET",
+    "path": "/assets/models/blender/rabbit/k/rabbit.gltf"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /assets/models/blender/rabbit/k/rabbit.gltf → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "a-first-party-api-get-assets-models-blender-lizard-d-lizard-",
+   "class": "A",
+   "feature": "first-party API GET /assets/models/blender/lizard/d/lizard.gltf",
+   "api": {
+    "method": "GET",
+    "path": "/assets/models/blender/lizard/d/lizard.gltf"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /assets/models/blender/lizard/d/lizard.gltf → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "a-first-party-api-get-assets-models-blender-raccoon-g-raccoo",
+   "class": "A",
+   "feature": "first-party API GET /assets/models/blender/raccoon/g/raccoon.gltf",
+   "api": {
+    "method": "GET",
+    "path": "/assets/models/blender/raccoon/g/raccoon.gltf"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /assets/models/blender/raccoon/g/raccoon.gltf → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "a-first-party-api-get-assets-models-blender-fox-e-fox-gltf",
+   "class": "A",
+   "feature": "first-party API GET /assets/models/blender/fox/e/fox.gltf",
+   "api": {
+    "method": "GET",
+    "path": "/assets/models/blender/fox/e/fox.gltf"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /assets/models/blender/fox/e/fox.gltf → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "a-first-party-api-get-assets-models-blender-cat-h-cat-gltf",
+   "class": "A",
+   "feature": "first-party API GET /assets/models/blender/cat/h/cat.gltf",
+   "api": {
+    "method": "GET",
+    "path": "/assets/models/blender/cat/h/cat.gltf"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /assets/models/blender/cat/h/cat.gltf → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "a-first-party-api-get-assets-models-blender-koala-d-koala-gl",
+   "class": "A",
+   "feature": "first-party API GET /assets/models/blender/koala/d/koala.gltf",
+   "api": {
+    "method": "GET",
+    "path": "/assets/models/blender/koala/d/koala.gltf"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /assets/models/blender/koala/d/koala.gltf → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "a-first-party-api-get-assets-models-blender-goat-f-goat-gltf",
+   "class": "A",
+   "feature": "first-party API GET /assets/models/blender/goat/f/goat.gltf",
+   "api": {
+    "method": "GET",
+    "path": "/assets/models/blender/goat/f/goat.gltf"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /assets/models/blender/goat/f/goat.gltf → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "a-first-party-api-get-assets-models-blender-device-desktop-g",
+   "class": "A",
+   "feature": "first-party API GET /assets/models/blender/device/desktop.gltf",
+   "api": {
+    "method": "GET",
+    "path": "/assets/models/blender/device/desktop.gltf"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /assets/models/blender/device/desktop.gltf → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "a-first-party-api-get-assets-models-blender-device-ipad-gltf",
+   "class": "A",
+   "feature": "first-party API GET /assets/models/blender/device/ipad.gltf",
+   "api": {
+    "method": "GET",
+    "path": "/assets/models/blender/device/ipad.gltf"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /assets/models/blender/device/ipad.gltf → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "a-first-party-api-get-assets-models-blender-hachi-e-hachi-gl",
+   "class": "A",
+   "feature": "first-party API GET /assets/models/blender/hachi/e/hachi.gltf",
+   "api": {
+    "method": "GET",
+    "path": "/assets/models/blender/hachi/e/hachi.gltf"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /assets/models/blender/hachi/e/hachi.gltf → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "a-first-party-api-get-assets-models-blender-device-iphone-gl",
+   "class": "A",
+   "feature": "first-party API GET /assets/models/blender/device/iphone.gltf",
+   "api": {
+    "method": "GET",
+    "path": "/assets/models/blender/device/iphone.gltf"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /assets/models/blender/device/iphone.gltf?2 → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "a-first-party-api-get-assets-models-blender-office-office-fl",
+   "class": "A",
+   "feature": "first-party API GET /assets/models/blender/office/office-floor3.gltf",
+   "api": {
+    "method": "GET",
+    "path": "/assets/models/blender/office/office-floor3.gltf"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /assets/models/blender/office/office-floor3.gltf → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "a-cms-app-settings-object-nuxt",
+   "class": "A",
+   "feature": "CMS / app settings object __NUXT__",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-js-h-s-wrapper-is-chat-loaded",
+   "class": "CR",
+   "feature": "client-rendered slot js-h s-wrapper is-chat-loaded",
+   "hint": "client-rendered",
+   "evidence": [
+    "Garden Eight Garden Eight CLOSE MENU Home Cases About Archiv"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-sw-js-sp-s-scroller",
+   "class": "CR",
+   "feature": "client-rendered slot Sw js-sp s-scroller",
+   "hint": "client-rendered",
+   "evidence": [
+    "We are a digital design studio based in Tokyo What can we ma"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-ph-st-js-iv",
+   "class": "CR",
+   "feature": "client-rendered slot Ph St js-iv",
+   "hint": "client-rendered",
+   "evidence": [
+    "We are a digital design studio based in Tokyo What can we ma"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-description-lead-f-logo",
+   "class": "CR",
+   "feature": "client-rendered slot description lead f-logo",
+   "hint": "client-rendered",
+   "evidence": [
+    "We are a digital design studio based in Tokyo"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-site-title-js-iv-js-h-mb",
+   "class": "CR",
+   "feature": "client-rendered slot site-title js-iv js-h-mb",
+   "hint": "client-rendered",
+   "evidence": [
+    "What can we make next"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-page-title-words-serif",
+   "class": "CR",
+   "feature": "client-rendered slot page-title words serif",
+   "hint": "client-rendered",
+   "evidence": [
+    "What can we make next"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-pb-st-js-iv",
+   "class": "CR",
+   "feature": "client-rendered slot Pb St js-iv",
+   "hint": "client-rendered",
+   "evidence": [
+    "We approach every projects with wonder fueled by a boundless"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-intro-clip-y-auto",
+   "class": "CR",
+   "feature": "client-rendered slot intro clip-y auto",
+   "hint": "client-rendered",
+   "evidence": [
+    "We approach every projects with wonder fueled by a boundless"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-st-wrap-js-h-mb",
+   "class": "CR",
+   "feature": "client-rendered slot St-wrap js-h-mb",
+   "hint": "client-rendered",
+   "evidence": [
+    "Takamitsu Motoyoshi Takamitsu Motoyoshi Phil Studio Phil Stu"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-mq-pickup-h1-cases-h1",
+   "class": "CR",
+   "feature": "client-rendered slot mq pickup-h1 cases-h1",
+   "hint": "client-rendered",
+   "evidence": [
+    "Takamitsu Motoyoshi Takamitsu Motoyoshi",
+    "Phil Studio Phil Studio Phil Studio",
+    "Anai Wood Anai Wood Anai Wood"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-framework-nuxt",
+   "class": "CR",
+   "feature": "client framework nuxt",
+   "hint": "framework",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "i18n-locale-variants-en-ja-x-default",
+   "class": "I18N",
+   "feature": "locale variants en,ja,x-default",
+   "hint": "locale",
+   "evidence": [
+    "https://garden-eight.com/ai/",
+    "https://garden-eight.com/ja/"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-d1oo4riy5et4sg-cloudfront-net",
+   "class": "T",
+   "feature": "unknown third-party host d1oo4riy5et4sg.cloudfront.net",
+   "hint": "inspect",
+   "evidence": [
+    "d1oo4riy5et4sg.cloudfront.net"
+   ],
+   "pages": [
+    "/"
+   ]
+  }
+ ],
+ "reach": {
+  "pagesWithEvidence": 1,
+  "of": 1,
+  "endpoints": {
+   "GET garden-eight.com/_api/chatApi/json/faq.json": 1,
+   "GET garden-eight.com/_api/chatApi/json/setting.json": 1,
+   "GET garden-eight.com/assets/models/blender/lizard/d/lizard.gltf": 1,
+   "GET garden-eight.com/assets/models/blender/raccoon/g/raccoon.gltf": 1,
+   "GET cdn.jsdelivr.net/npm/three@0.137.0/examples/js/libs/draco/draco_wasm_wrapper.js": 1,
+   "GET cdn.jsdelivr.net/npm/three@0.137.0/examples/js/libs/draco/draco_decoder.wasm": 1,
+   "GET garden-eight.com/assets/models/blender/rabbit/k/rabbit.gltf": 1,
+   "GET garden-eight.com/assets/models/blender/cat/h/cat.gltf": 1,
+   "GET garden-eight.com/assets/models/blender/fox/e/fox.gltf": 1,
+   "GET garden-eight.com/assets/models/blender/goat/f/goat.gltf": 1,
+   "GET garden-eight.com/assets/models/blender/koala/d/koala.gltf": 1,
+   "GET garden-eight.com/assets/models/blender/hachi/e/hachi.gltf": 1,
+   "GET garden-eight.com/assets/models/blender/device/iphone.gltf": 1,
+   "GET garden-eight.com/assets/models/blender/device/desktop.gltf": 1,
+   "GET garden-eight.com/assets/models/blender/device/ipad.gltf": 1,
+   "GET garden-eight.com/assets/models/blender/particle/nuts-set.glb": 1,
+   "GET garden-eight.com/assets/models/blender/about/{n}/about-8.glb": 1,
+   "GET garden-eight.com/assets/models/blender/gekkeiju/gekkeiju2.glb": 1,
+   "GET garden-eight.com/assets/models/blender/eye/eyesFlat.glb": 1,
+   "GET garden-eight.com/assets/models/blender/about/{n}/about-plant2.glb": 1,
+   "GET garden-eight.com/assets/models/blender/frame/frame.glb": 1,
+   "GET garden-eight.com/assets/models/blender/home/{n}/stage-plants2.glb": 1,
+   "GET garden-eight.com/assets/models/blender/about/{n}/field2.glb": 1,
+   "GET garden-eight.com/assets/models/blender/lizard/d/rizard.jpg": 1,
+   "GET garden-eight.com/assets/models/blender/raccoon/g/raccoon2.jpg": 1,
+   "GET garden-eight.com/assets/models/blender/raccoon/g/raccoon.bin": 1,
+   "GET garden-eight.com/assets/models/blender/lizard/d/lizard.bin": 1,
+   "GET garden-eight.com/assets/models/blender/rabbit/k/rabbit.jpg": 1,
+   "GET garden-eight.com/assets/models/blender/cat/h/cat.jpg": 1,
+   "GET garden-eight.com/assets/models/blender/fox/e/fox.jpg": 1,
+   "GET garden-eight.com/assets/models/blender/goat/f/goat.jpg": 1,
+   "GET garden-eight.com/assets/models/blender/koala/d/koala.jpg": 1,
+   "GET garden-eight.com/assets/models/blender/hachi/e/hachi.jpg": 1,
+   "GET garden-eight.com/assets/models/blender/rabbit/k/rabbit.bin": 1,
+   "GET garden-eight.com/assets/models/blender/koala/d/koala.bin": 1,
+   "GET garden-eight.com/assets/models/blender/cat/h/cat.bin": 1,
+   "GET garden-eight.com/assets/models/blender/hachi/e/hachi.bin": 1,
+   "GET garden-eight.com/assets/models/blender/fox/e/fox.bin": 1,
+   "GET garden-eight.com/assets/models/blender/goat/f/goat.bin": 1,
+   "GET garden-eight.com/assets/models/blender/device/iphone-tex.jpg": 1,
+   "GET garden-eight.com/assets/models/blender/device/ipad-tex.jpg": 1,
+   "GET garden-eight.com/assets/models/blender/device/desktop-tex.jpg": 1,
+   "GET garden-eight.com/assets/models/blender/device/iphone.bin": 1,
+   "GET garden-eight.com/assets/models/blender/device/ipad.bin": 1,
+   "GET garden-eight.com/assets/models/blender/device/desktop.bin": 1,
+   "GET garden-eight.com/assets/models/blender/office/office-floor3.gltf": 1,
+   "GET garden-eight.com/assets/models/blender/office/office-desk2.glb": 1,
+   "GET garden-eight.com/assets/models/blender/office/office-items2.glb": 1,
+   "GET garden-eight.com/assets/models/blender/office/Wood_Herringbone_Tiles_002_basecolor.jpg": 1,
+   "GET garden-eight.com/assets/models/blender/office/office-floor3.bin": 1,
+   "GET garden-eight.com/assets/models/blender/office/Wood_Herringbone_Tiles_002_normal.jpg": 1
+  },
+  "searchFormPages": 0,
+  "formPages": 0,
+  "triggerPages": {}
+ }
+}

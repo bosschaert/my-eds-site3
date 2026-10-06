@@ -1,0 +1,113 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-10-05T16:06:34.681Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage/pages.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-10-05T18:11:01.773Z",
+  "blocks": [
+    {
+      "id": "about-teaser",
+      "label": "about-teaser",
+      "kind": "module",
+      "signature": "module:about-teaser",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "about-teaser",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "cases",
+      "label": "cases",
+      "kind": "module",
+      "signature": "module:cases",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "cases",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "footer",
+      "label": "footer",
+      "kind": "chrome",
+      "signature": "chrome:footer",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "footer",
+        "blockPath": "fragments/footer.html",
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "header",
+      "label": "header",
+      "kind": "chrome",
+      "signature": "chrome:header",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "header",
+        "blockPath": "fragments/header.html",
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hero",
+      "label": "hero",
+      "kind": "module",
+      "signature": "module:hero",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "hero",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    }
+  ]
+}

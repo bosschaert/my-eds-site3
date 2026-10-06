@@ -1,0 +1,28 @@
+@font-face {
+  font-family: gunsan;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/gunsan.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: lausanne;
+  font-weight: 200;
+  font-display: swap;
+  src: url('/fonts/lausanne/TWKLausanne-200.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: lausanne;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/lausanne/TWKLausanne-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: lausanne;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/lausanne/TWKLausanne-400.woff2') format('woff2');
+}

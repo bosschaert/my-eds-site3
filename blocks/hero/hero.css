@@ -1,0 +1,136 @@
+/* hero — Garden Eight home hero (.Ph); geometry lifted verbatim from the source CSS
+   (.description, .site-title, .site-title .h1 / .page-title / .p / .o / .w.t, [data-str=…]). */
+
+/* stylelint-disable number-max-precision -- values lifted verbatim from the source CSS */
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* the authored hard breaks stay in the DOM; the lines render as block spans */
+.hero br {
+  display: none;
+}
+
+/* lead (.description): pinned top-left of the section, clip-y line reveal */
+.hero .hero-lead {
+  position: absolute;
+  top: calc(4.16667vw + 1em);
+  left: var(--gutter);
+  display: inline-block;
+  height: 4em;
+  font-size: var(--fs-small);
+  font-weight: 200;
+  line-height: 1.6;
+}
+
+.hero .hero-lead .o {
+  display: block;
+  height: 1.6em;
+  overflow: hidden;
+}
+
+.hero .hero-lead .t {
+  display: block;
+  line-height: 1.6;
+}
+
+/* body (.body.Ph-body) */
+.hero .hero-body {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-right: var(--body-pad);
+  padding-left: var(--body-pad);
+}
+
+/* title (.site-title) */
+.hero .hero-title {
+  margin-bottom: -3.124999995vw;
+  padding-top: calc(var(--vh) * 25 - 1em);
+  padding-bottom: calc(var(--vh) * 25 - 1em);
+}
+
+.hero .hero-h1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 14.93vw;
+}
+
+.hero .hero-page-title {
+  display: inline-block;
+  width: 4.4em;
+  user-select: none;
+}
+
+.hero .hero-title .p {
+  display: block;
+  margin: 0;
+  padding-top: 0;
+}
+
+.hero .hero-title .o {
+  display: block;
+  height: auto;
+  line-height: 0.765;
+}
+
+.hero .hero-title .w.t {
+  display: inline-block;
+  height: auto;
+  line-height: 0.765;
+}
+
+.hero .hero-title [data-str="what"] {
+  padding-left: 0.4em;
+  text-align: left;
+}
+
+.hero .hero-title [data-str="canwe"] {
+  padding-left: 1.3em;
+  white-space: nowrap;
+}
+
+.hero .hero-title [data-str="make"] {
+  padding-left: 0;
+}
+
+.hero .hero-title [data-str="next"] {
+  padding-left: 1.3em;
+}
+
+@media (width <= 768px), (width <= 1180px) and (orientation: portrait) {
+  .hero .hero-lead {
+    top: calc(45px + 0.75em);
+    left: 30px;
+  }
+}
+
+@media (width <= 640px) {
+  .hero .hero-lead {
+    top: calc(30px + 2em);
+    left: 20px;
+    font-size: 15px;
+  }
+
+  .hero .hero-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    height: calc(var(--vh) * 100);
+    margin-bottom: -30px;
+    padding: 15px 0 0;
+  }
+
+  /* measured on a fresh 360 load: 18.6625vw (= 1.25 x 14.93vw); word offsets keep the em values */
+  .hero .hero-h1 {
+    font-size: 18.6625vw;
+  }
+}

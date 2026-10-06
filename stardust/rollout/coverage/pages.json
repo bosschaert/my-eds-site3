@@ -1,0 +1,61 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-10-05T16:06:13.760Z",
+    "readArtifacts": [
+      "stardust/migrated",
+      "stardust/state.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-10-05T18:09:56.028Z",
+  "pages": [
+    {
+      "slug": "index",
+      "path": "/",
+      "title": "Garden Eight",
+      "templateId": "index",
+      "source": {
+        "migratedHtml": "stardust/migrated/index.html",
+        "metaJson": "stardust/migrated/_meta.json",
+        "sourceHash": "sha256:886322dcd6b6cb58c6cc45eb85a11d86acaacf78233307d435ae683589c84b69"
+      },
+      "blocks": [
+        "header",
+        "hero",
+        "cases",
+        "about-teaser",
+        "footer"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--061e4e3f--aemcoder.aem.live/",
+        "deployedAt": "2026-10-05T17:35:02.584Z",
+        "verifiedAt": "2026-10-05T18:09:56.028Z",
+        "error": null,
+        "gate": {
+          "pass": true,
+          "pct": 2.16,
+          "heightDelta": -1984,
+          "clipped": 1,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 2,
+            "variable": [
+              "article.pickup-li:nth-of-type(3) a.pickup-a"
+            ]
+          },
+          "reasons": [
+            "Δh -1984px > 5% of 900"
+          ],
+          "table": "stardust/replica/gates/all-360/summary.json",
+          "at": "2026-10-05T18:07:12.186Z"
+        }
+      }
+    }
+  ]
+}

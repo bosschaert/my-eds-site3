@@ -1,0 +1,150 @@
+/* about-teaser — Garden Eight home closing band (.Pf); geometry lifted verbatim from the source
+   CSS (.body, .Pf-body, .ui-top / .ui-btn, .a-mask, .Pf-footer, .col-wrap / .col, .editor,
+   .ui-link-wrap / .ui-link / .ball). The band itself (main .section.footer-band) and the
+   .editor.js-iv-c fade live in styles.css; the footer bar (.Sm) is the footer block. */
+
+/* stylelint-disable number-max-precision -- values lifted verbatim from the source CSS */
+
+/* .body */
+.about-teaser .about-teaser-body,
+.about-teaser .about-teaser-footer-body {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-right: var(--body-pad);
+  padding-left: var(--body-pad);
+}
+
+/* stage (.Pf-body) */
+.about-teaser .about-teaser-stage {
+  position: relative;
+  height: calc(var(--vh) * 100 - 6.25vw);
+}
+
+/* TOP (.ui-top > a.ui-btn.f-s): the authored p plays the inline-flex button box */
+.about-teaser .about-teaser-top {
+  position: relative;
+  z-index: 3;
+  padding-top: 4.16667vw;
+  text-align: right;
+  line-height: 0;
+}
+
+.about-teaser .about-teaser-top p {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 2.0833vw;
+  overflow: hidden;
+  font-size: var(--fs-small);
+  line-height: 1;
+}
+
+/* about mask (.a-mask > a): the whole stage is the link, its text visually hidden */
+.about-teaser .about-teaser-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.about-teaser .about-teaser-mask p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.about-teaser .about-teaser-mask a {
+  display: block;
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+/* footer (.Pf-footer > .body > .col-wrap) */
+.about-teaser .about-teaser-footer {
+  position: relative;
+  z-index: 2;
+  margin-top: -2.08333333vw;
+}
+
+.about-teaser .about-teaser-cols {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-1 * var(--col-gap));
+  margin-left: calc(-1 * var(--col-gap));
+  padding-top: 2.0833vw;
+  padding-bottom: 4.86vw;
+}
+
+.about-teaser .about-teaser-col {
+  position: relative;
+  width: 50%;
+  padding-right: var(--col-gap);
+  padding-left: var(--col-gap);
+}
+
+.about-teaser .editor {
+  font-weight: 200;
+}
+
+/* ABOUT US (a.ui-link-wrap > .ui-link > .title + .ball) */
+.about-teaser .about-teaser-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 4.03vw;
+  overflow: hidden;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.about-teaser .about-teaser-link .ball {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin-left: 0.5em;
+  line-height: 0;
+}
+
+.about-teaser .about-teaser-link .ball::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: currentcolor;
+}
+
+@media (width <= 640px) {
+  .about-teaser .about-teaser-stage {
+    height: calc(var(--vh) * 100 - 22px);
+  }
+
+  .about-teaser .about-teaser-footer {
+    margin-top: -8px;
+  }
+
+  .about-teaser .about-teaser-cols {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
+  .about-teaser .about-teaser-col {
+    width: 100%;
+  }
+
+  .about-teaser .about-teaser-col:empty {
+    display: none;
+  }
+
+  .about-teaser .about-teaser-link {
+    margin-top: 29px;
+  }
+}

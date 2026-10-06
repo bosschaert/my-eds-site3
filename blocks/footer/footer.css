@@ -1,0 +1,242 @@
+/* footer — Garden Eight footer bar; geometry lifted verbatim from the source CSS
+   (.Sm, .Sm-b, .Sm-li._logo/_address/_sns/_mail, .logovr, .sns, .ui-btn-mail). */
+
+/* stylelint-disable number-max-precision -- values lifted verbatim from the source CSS */
+
+/* the bar (.Sm): in flow on desktop, pinned to the band's bottom at <= 640px */
+.footer .footer-bar {
+  position: relative;
+  width: 100%;
+  padding: 4.16667vw 0;
+}
+
+.footer .footer-bar-b {
+  position: relative;
+  width: 100%;
+  height: var(--chrome-h);
+  font-weight: 200;
+  font-size: var(--fs-small);
+}
+
+.footer .hr {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* the four slots (.Sm-li) */
+.footer .footer-logo,
+.footer .footer-address,
+.footer .footer-sns,
+.footer .footer-mail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.footer .footer-logo {
+  left: var(--gutter);
+}
+
+.footer .footer-address {
+  left: var(--body-pad);
+  gap: 2em;
+}
+
+.footer .footer-sns {
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
+
+.footer .footer-mail {
+  right: var(--gutter);
+  left: auto;
+}
+
+/* logo (.logovr) */
+.footer .footer-logo a {
+  display: block;
+}
+
+.footer .footer-logo .icon,
+.footer .footer-logo .icon img {
+  display: block;
+  width: auto;
+  height: 1.666666664vw;
+}
+
+/* address: the authored p plays the source's inline .o (no clip, no negative margin there),
+   the authored a the revealed line (.t) */
+.footer .footer-address p {
+  height: 1.25em;
+  line-height: 1.25em;
+}
+
+.footer .footer-address a {
+  display: block;
+  line-height: 1.25em;
+  transform: translate3d(0, 140%, 0);
+}
+
+/* sns (.sns) */
+.footer .footer-sns ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.footer .footer-sns a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.16666666vw;
+  height: 2.08333333vw;
+  padding-top: 0.25em;
+  text-align: center;
+}
+
+/* mail control (.ui-btn-mail) */
+.footer .ui-btn-mail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 4.16666666vw;
+  cursor: pointer;
+}
+
+.footer .ui-btn-mail a {
+  display: flex;
+  align-items: baseline;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer .ui-btn-mail .h {
+  padding-right: 0.25em;
+}
+
+.footer .ui-btn-mail .o {
+  display: block;
+  height: 1.3em;
+  margin: 0;
+  overflow: hidden;
+  line-height: 1.3;
+}
+
+.footer .ui-btn-mail .o > * {
+  display: block;
+  line-height: 1.3;
+  transform: translate3d(0, 100%, 0);
+}
+
+.footer .ui-btn-mail[data-shown="1"] .o > * {
+  transform: translate(0);
+  transition: transform 0.7s cubic-bezier(0.32, 0.94, 0.6, 1);
+}
+
+.footer .ui-btn-mail.copied .label .o > * {
+  transform: translate3d(0, -200%, 0);
+}
+
+/* source html.is-any (set at its mobile breakpoint, probe-measured at 360 with a desktop
+   pointer): no "Copy to clipboard" hint line, one-line copied slide */
+@media (width <= 768px), (width <= 1180px) and (orientation: portrait) {
+  .footer .ui-btn-mail .label .o > .state-copy {
+    display: none;
+  }
+
+  .footer .ui-btn-mail.copied .label .o > * {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@media (width <= 768px), (width <= 1180px) and (orientation: portrait) {
+  .footer .footer-logo .icon,
+  .footer .footer-logo .icon img {
+    height: 24px;
+  }
+
+  .footer .footer-bar-b {
+    height: 60px;
+  }
+
+  .footer .footer-address {
+    left: 180px;
+  }
+
+  .footer .footer-logo {
+    left: 30px;
+  }
+
+  .footer .footer-mail {
+    right: 30px;
+  }
+
+  .footer .ui-btn-mail {
+    height: 60px;
+  }
+}
+
+@media (width <= 640px) {
+  .footer .footer-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .footer .footer-bar-b {
+    height: 120px;
+  }
+
+  .footer .footer-logo,
+  .footer .footer-address,
+  .footer .footer-sns,
+  .footer .footer-mail {
+    top: 0;
+    height: 50%;
+  }
+
+  .footer .footer-logo {
+    left: 0;
+  }
+
+  .footer .footer-address {
+    right: 0;
+    left: auto;
+    gap: 1em;
+  }
+
+  /* the © line (.address) is hidden on mobile */
+  .footer .footer-address p:not(:has(a)) {
+    display: none;
+  }
+
+  .footer .footer-mail {
+    inset: auto auto 0 0;
+  }
+
+  .footer .footer-sns ul {
+    height: 100%;
+    margin-right: -0.5em;
+    margin-left: -0.5em;
+  }
+
+  .footer .footer-sns a {
+    width: auto;
+    height: 100%;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+}
+
+/* reveal (clip-y): the address lines slide in once the slot intersects */
+.footer .footer-address[data-shown="1"] a {
+  transform: translate(0);
+  transition: transform 1.4s cubic-bezier(0.32, 0.94, 0.6, 1);
+}

@@ -1,0 +1,103 @@
+/* canon.css — Garden Eight replica: lifted tokens, fonts, base, fixed chrome.
+   Every value traces to stardust/replica/tokens.json (source SSR CSS + computed styles). */
+@font-face{font-display:swap;font-family:gunsan;font-style:normal;font-weight:600;src:url(fonts/gunsan.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:lausanne;font-weight:200;src:url(fonts/lausanne/TWKLausanne-200.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:lausanne;font-weight:300;src:url(fonts/lausanne/TWKLausanne-300.woff2) format("woff2")}
+@font-face{font-display:swap;font-family:lausanne;font-weight:400;src:url(fonts/lausanne/TWKLausanne-400.woff2) format("woff2")}
+
+:root{
+  --vh:1vh;
+  --col-black:#1e1f1f;--col-black2:#1c1d1d;--col-black3:#141414;--col-gray:#3c3c3c;--col-white:#dbd6d0;--col-orange:#dc5648;
+  /* capture-state: the WebGL canvas paints the page surface; sampled from the 1440x900 capture */
+  --surface-top:#e4dfd8;--surface-mid:#e3ded7;--surface-bottom:#dcd7d0;
+  --gutter:3.124999995vw;      /* .ui-name padding, .Sm-li._logo left */
+  --gutter-nav:2.6249999958vw; /* .ui-navi-r padding */
+  --col-gap:2.08333333vw;      /* .col-wrap / .col */
+  --body-pad:12.49999998vw;    /* .body padding */
+  --chrome-h:6.24999999vw;     /* .ui-navi ul a height, .Sm-b height */
+  --fs-main:1.076vw;--fs-logo:1.041vw;--fs-small:.833vw;--fs-chrome:.972vw;
+}
+@media(min-width:1680px){:root{--fs-main:17.98px;--fs-logo:16.24px;--fs-small:13.92px}}
+@media(min-width:1920px){:root{--fs-main:.861vw;--fs-logo:.833vw;--fs-small:.666vw}}
+@media(max-width:1366px){:root{--fs-main:14.85px;--fs-logo:13.05px;--fs-small:11.7px}}
+@media(max-width:768px),(max-width:1180px) and (orientation:portrait){:root{--gutter:30px;--chrome-h:60px;--body-pad:90px}}
+@media(max-width:640px){:root{--fs-main:15px;--fs-logo:15px;--fs-small:12.5px;--fs-chrome:14px;--gutter:20px;--body-pad:20px}}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-text-size-adjust:100%;background-color:var(--col-black);line-height:1.42;font-family:lausanne,sans-serif;font-size:var(--fs-chrome);color:var(--col-black);text-rendering:auto;-webkit-font-smoothing:auto}
+body{margin:0;overscroll-behavior:none;color:var(--col-black)}
+main{display:block;position:relative;z-index:1;font-size:var(--fs-main)}
+a{color:inherit;text-decoration:none}
+p{margin:0}
+ul{list-style:none;margin:0;padding:0}
+h1{margin:0;font-size:inherit;font-weight:inherit}
+.f-logo{font-size:var(--fs-logo)}
+.f-s,small{font-size:var(--fs-small)}
+.w400{font-weight:400}
+.tx-r{text-align:right}
+.lh-r{line-height:0}
+.op{opacity:.9}
+.serif{font-family:gunsan;font-weight:600;letter-spacing:0;line-height:.51}
+.words .w{display:inline-block;margin-right:.125em}
+.words .w:last-child{margin-right:0}
+.clip-y .o{height:1.25em;margin-bottom:-.25em;overflow:hidden;line-height:1.25em}
+.clip-y .t{display:block;line-height:1.25em}
+.hr{height:1px;opacity:.2;width:100%;overflow:hidden}
+.hr div,.hr::before{content:"";display:block;height:100%;width:100%;background-color:var(--col-white)}
+.hide-m{display:block}.show-m{display:none}
+@media(max-width:640px){.hide-m{display:none}.show-m{display:block}}
+
+/* capture-state: fixed surface standing in for the WebGL canvas (#js-back, 100vw x 100vh) */
+.gl-surface{position:fixed;inset:0;width:100vw;height:100vh;height:calc(var(--vh)*100);z-index:0;pointer-events:none;
+  background:linear-gradient(180deg,var(--surface-top) 0%,var(--surface-mid) 45%,var(--surface-bottom) 100%)}
+
+/* header — all fixed, uppercase (.Hd) */
+.Hd{text-transform:uppercase;position:static}
+.ui-fixed{position:fixed}
+.ui-name{top:0;left:0;z-index:101;height:var(--chrome-h);padding:0 var(--gutter);display:flex;align-items:center}
+.ui-name .logo-txt{display:flex;align-items:center;gap:.33em;line-height:1;margin:0}
+.ui-name .logo-txt .o{height:1.25em;line-height:1.25em;margin-bottom:-.25em;overflow:visible}
+.ui-name .logo-txt .t{display:block;line-height:1.25em;transform:translateY(.6em)}
+.ui-name .logo-txt .o:last-child .t{transform:translateY(calc(.6em + 1.5px))}
+@media(max-width:640px){.ui-name .logo-txt .t{transform:translateY(.2em)}.ui-name .logo-txt .o:last-child .t{transform:translateY(.27em)}}
+.ui-menu{display:none;top:0;right:0;z-index:103;height:var(--chrome-h);padding:0 var(--gutter);align-items:flex-start;text-align:right}
+.ui-menu .y:first-child{opacity:0}
+.ui-menu .o{height:1.5em;line-height:1;overflow:visible;display:block;margin-top:1.5em}
+.ui-menu .title{display:block}
+.ui-menu .y{display:block;line-height:1.5;transform:translateY(-100%)}
+.ui-navi-r{position:fixed;top:0;right:0;height:var(--chrome-h);display:flex;align-items:center;padding:0 var(--gutter-nav);z-index:102}
+.ui-lang{display:flex;margin:0 -.25em}
+.ui-lang a{display:flex;align-items:center;justify-content:center;box-sizing:content-box;padding:.25em;width:2.08333333vw;line-height:1.25}
+.ui-lang a .o{height:1.25em;line-height:1.25em;margin-bottom:-.25em;overflow:hidden}
+.ui-lang a .t{display:block;line-height:1.25em}
+.loading-text{display:none;pointer-events:none}
+@media(max-width:640px){.ui-navi-r{top:auto;bottom:4px;left:0;right:auto;width:100%;height:60px;justify-content:flex-start;align-items:flex-start;padding:0 0 0 27px;opacity:0;pointer-events:none;z-index:100;color:var(--col-white)}.ui-lang{margin:0}.ui-lang a{height:30px;min-width:30px;width:68px;padding:0 1.5em;justify-content:flex-start;box-sizing:border-box;font-size:var(--fs-small)}}
+.ui-navi{top:0;right:var(--body-pad);left:auto;z-index:102;height:var(--chrome-h)}
+.ui-navi ul{display:flex;align-items:center;margin-left:-.75em;margin-right:-.75em;height:100%}
+.ui-navi ul a{display:flex;align-items:center;height:var(--chrome-h);min-height:2em;padding:0 .75em;line-height:1.25}
+.ui-navi ul a .in{height:auto;width:100%}
+.ui-navi ul a .o{height:1.25em;line-height:1.25em;overflow:hidden;margin-bottom:-.25em;position:relative}
+.ui-navi ul a .t{display:block;line-height:1.25em}
+.ui-navi ul a .b{display:none}
+@media(max-width:768px),(max-width:1180px) and (orientation:portrait){.ui-navi{right:120px}.ui-navi ul a{height:60px}}
+@media(max-width:640px){
+  .ui-menu{display:flex}
+  /* the nav overlay is closed on load: its background sits at translateY(-101%) and the lines are clipped out (translateY(-120%)) */
+  .ui-navi-wrap{position:fixed;top:0;right:0;width:100vw;height:100%;overflow:hidden;pointer-events:none;z-index:100;opacity:1}
+  .ui-navi-bg{position:absolute;top:0;left:0;width:100%;height:100%;background-color:var(--col-black);transform:translateY(-101%);z-index:1}
+  .ui-navi-wrap .ui-navi{position:relative;right:auto;left:auto;width:100%;height:auto}
+  /* closed overlay geometry measured on the live page at 360: first item at y 280, 40 px rows, language switch in the overlay footer */
+  .ui-navi-body{display:flex;align-items:center;height:100%;width:100%;padding:calc(40px + 1em) 20px 155px}
+  .ui-navi-body ul{display:block;margin:0;height:auto}
+  .ui-navi-body ul a{font-family:gunsan;font-weight:600;font-size:14.1835vw;letter-spacing:0;line-height:.51;height:40px;min-height:0;padding:0;color:var(--col-white);display:flex;align-items:center;width:100%}
+  .ui-navi-body ul li.show-m a{padding-left:.5em}
+  .ui-navi-body ul a .o{height:.765em;line-height:.765em;margin-top:.025em;margin-bottom:0;overflow:visible;display:block}
+  .ui-navi-body ul a .in{display:inline-block;width:auto}
+  .ui-navi-body ul li{height:40.4px;display:block;width:100%}
+  .ui-navi-body ul a .t{height:.765em;line-height:.765em}
+  .ui-navi-wrap{opacity:0} /* closed menu: live hides the lines by translateY(-120%) inside overflow hidden; same visual state, geometry kept for parity */
+}
+/* scroll indicator (fixed, bottom right) — 30px progress ring box inside a 90px / 60px flex */
+.ui-scroll{position:fixed;right:0;bottom:0;display:flex;align-items:center;justify-content:center;width:30px;height:90px;padding:0 37.8px;box-sizing:content-box;z-index:50}
+.ui-scroll-body{width:30px;height:30px;position:relative}
+@media(max-width:640px){.ui-scroll{width:60px;height:60px;padding:0}}

@@ -1,0 +1,36 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-10-05T16:06:13.760Z",
+    "stardustVersion": "0.0.0"
+  },
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://garden-eight.com/",
+    "da": {
+      "org": "aemcoder",
+      "site": "061e4e3f",
+      "ref": "main"
+    },
+    "liveHost": "main--061e4e3f--aemcoder.aem.live",
+    "previewHost": "main--061e4e3f--aemcoder.aem.page"
+  },
+  "lastRun": {
+    "at": "2026-10-05T18:11:01.773Z",
+    "pages": {
+      "total": 1,
+      "verified": 1,
+      "deployed": 0,
+      "pending": 0,
+      "contentPending": 0,
+      "stale": 0,
+      "failed": 0
+    },
+    "blocks": {
+      "total": 5,
+      "converted": 5,
+      "pending": 0
+    },
+    "verifyFailures": 0
+  }
+}

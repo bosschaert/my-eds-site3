@@ -1,0 +1,871 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-05T15:03:00.304Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "index",
+  "url": "https://garden-eight.com/",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-05T15:03:00.304Z",
+  "finalUrl": "https://garden-eight.com/",
+  "title": "Garden Eight",
+  "description": "Garden Eight is a digital design studio based in Tokyo.",
+  "og": {
+    "title": "Garden Eight",
+    "description": "Garden Eight is a digital design studio based in Tokyo.",
+    "image": "https://d1oo4riy5et4sg.cloudfront.net/v3-1/assets/img/ogp.png",
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Garden Eight"
+    }
+  ],
+  "body": [
+    "IG",
+    "TW",
+    "IN"
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Garden Eight",
+      "href": "/"
+    },
+    {
+      "label": "Cases",
+      "href": "/cases/"
+    },
+    {
+      "label": "About",
+      "href": "/about/"
+    },
+    {
+      "label": "Archives",
+      "href": "/archives/"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact/"
+    },
+    {
+      "label": "AI",
+      "href": "/ai/"
+    },
+    {
+      "label": "JA",
+      "href": "/ja/"
+    },
+    {
+      "label": "Takamitsu Motoyoshi Takamitsu Motoyoshi",
+      "href": "/cases/photoyoshi/"
+    },
+    {
+      "label": "Phil Studio Phil Studio Phil Studio",
+      "href": "/cases/phil-studio/"
+    },
+    {
+      "label": "Anai Wood Anai Wood Anai Wood",
+      "href": "/cases/anai-wood/"
+    },
+    {
+      "label": "View Cases",
+      "href": "/cases/"
+    },
+    {
+      "label": "TOP",
+      "href": "#"
+    },
+    {
+      "label": "ABOUT US",
+      "href": "/about/"
+    },
+    {
+      "label": "Garden Eight",
+      "href": "/"
+    },
+    {
+      "label": "FAQ",
+      "href": "/faq/"
+    },
+    {
+      "label": "PATIO",
+      "href": "https://patio.garden-eight.com/"
+    },
+    {
+      "label": "IG",
+      "href": "https://www.instagram.com/garden_eight/"
+    },
+    {
+      "label": "TW",
+      "href": "https://twitter.com/GardenEight/"
+    },
+    {
+      "label": "IN",
+      "href": "https://www.linkedin.com/company/gardeneight/"
+    },
+    {
+      "label": "M : hello@garden-eight.com Copy to clipboard Copied",
+      "href": "#"
+    },
+    {
+      "label": "Scroll",
+      "href": "#"
+    }
+  ],
+  "links": [
+    "https://garden-eight.com/",
+    "https://garden-eight.com/#",
+    "https://garden-eight.com/cases/",
+    "https://garden-eight.com/about/",
+    "https://garden-eight.com/archives/",
+    "https://garden-eight.com/contact/",
+    "https://garden-eight.com/ai/",
+    "https://garden-eight.com/ja/",
+    "https://garden-eight.com/cases/photoyoshi/",
+    "https://garden-eight.com/cases/phil-studio/",
+    "https://garden-eight.com/cases/anai-wood/",
+    "https://garden-eight.com/faq/",
+    "https://patio.garden-eight.com/",
+    "https://www.instagram.com/garden_eight/",
+    "https://twitter.com/GardenEight/",
+    "https://www.linkedin.com/company/gardeneight/"
+  ],
+  "media": {
+    "imgs": [],
+    "allImgCount": 0,
+    "cssBackgrounds": [],
+    "modals": [],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {
+    "--vh": "9px",
+    "--col-black": "#1e1f1f",
+    "--col-black2": "#1c1d1d",
+    "--col-black3": "#141414",
+    "--col-gray": "#3c3c3c",
+    "--col-white": "#dbd6d0",
+    "--col-orange": "#dc5648",
+    "--tt-h": "2.5em",
+    "--tt-blur": "9px",
+    "--tt-r": "1.25em",
+    "--form-footer-h": "5em",
+    "--form-h": "calc(2.7em + 5em)",
+    "--form-w": "40%",
+    "--input-min-h": "2.715rem",
+    "--input-max-h": "10rem"
+  },
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 1,
+    "mainTextLen": 530,
+    "realImageCount": 0,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/_api/chatApi/json/faq.json",
+        "query": [
+          "_"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://garden-eight.com/_api/chatApi/json/faq.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/_api/chatApi/json/setting.json",
+        "query": [
+          "_"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://garden-eight.com/_api/chatApi/json/setting.json",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/lizard/d/lizard.gltf",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/lizard/d/lizard.gltf",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/raccoon/g/raccoon.gltf",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/raccoon/g/raccoon.gltf",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "cdn.jsdelivr.net",
+        "path": "/npm/three@0.137.0/examples/js/libs/draco/draco_wasm_wrapper.js",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/javascript",
+        "status": 200,
+        "bytes": 10703,
+        "hits": 1,
+        "example": "https://cdn.jsdelivr.net/npm/three@0.137.0/examples/js/libs/draco/draco_wasm_wrapper.js",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "cdn.jsdelivr.net",
+        "path": "/npm/three@0.137.0/examples/js/libs/draco/draco_decoder.wasm",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/wasm",
+        "status": 200,
+        "bytes": 75823,
+        "hits": 1,
+        "example": "https://cdn.jsdelivr.net/npm/three@0.137.0/examples/js/libs/draco/draco_decoder.wasm",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/rabbit/k/rabbit.gltf",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/rabbit/k/rabbit.gltf",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/cat/h/cat.gltf",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/cat/h/cat.gltf",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/fox/e/fox.gltf",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/fox/e/fox.gltf",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/goat/f/goat.gltf",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/goat/f/goat.gltf",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/koala/d/koala.gltf",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/koala/d/koala.gltf",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/hachi/e/hachi.gltf",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/hachi/e/hachi.gltf",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/device/iphone.gltf",
+        "query": [
+          "2"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/device/iphone.gltf",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/device/desktop.gltf",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/device/desktop.gltf",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/device/ipad.gltf",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/device/ipad.gltf",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/particle/nuts-set.glb",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": 30916,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/particle/nuts-set.glb",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/about/{n}/about-8.glb",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": 19276,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/about/1/about-8.glb",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/gekkeiju/gekkeiju2.glb",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": 87640,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/gekkeiju/gekkeiju2.glb",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/eye/eyesFlat.glb",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": 10612,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/eye/eyesFlat.glb",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/about/{n}/about-plant2.glb",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": 49792,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/about/1/about-plant2.glb",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/frame/frame.glb",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": 10184,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/frame/frame.glb",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/home/{n}/stage-plants2.glb",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": 29164,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/home/1/stage-plants2.glb",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/about/{n}/field2.glb",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": 85912,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/about/2/field2.glb",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/lizard/d/rizard.jpg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/jpeg",
+        "status": 200,
+        "bytes": 7058,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/lizard/d/rizard.jpg",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/raccoon/g/raccoon2.jpg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/jpeg",
+        "status": 200,
+        "bytes": 12961,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/raccoon/g/raccoon2.jpg",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/raccoon/g/raccoon.bin",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/octet-stream",
+        "status": 200,
+        "bytes": 63152,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/raccoon/g/raccoon.bin",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/lizard/d/lizard.bin",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/octet-stream",
+        "status": 200,
+        "bytes": 39188,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/lizard/d/lizard.bin",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/rabbit/k/rabbit.jpg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/jpeg",
+        "status": 200,
+        "bytes": 4869,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/rabbit/k/rabbit.jpg",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/cat/h/cat.jpg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/jpeg",
+        "status": 200,
+        "bytes": 10572,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/cat/h/cat.jpg",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/fox/e/fox.jpg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/jpeg",
+        "status": 200,
+        "bytes": 17883,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/fox/e/fox.jpg",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/goat/f/goat.jpg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/jpeg",
+        "status": 200,
+        "bytes": 5256,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/goat/f/goat.jpg",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/koala/d/koala.jpg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/jpeg",
+        "status": 200,
+        "bytes": 9730,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/koala/d/koala.jpg",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/hachi/e/hachi.jpg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/jpeg",
+        "status": 200,
+        "bytes": 20871,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/hachi/e/hachi.jpg",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/rabbit/k/rabbit.bin",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/octet-stream",
+        "status": 200,
+        "bytes": 46008,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/rabbit/k/rabbit.bin",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/koala/d/koala.bin",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/octet-stream",
+        "status": 200,
+        "bytes": 45420,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/koala/d/koala.bin",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/cat/h/cat.bin",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/octet-stream",
+        "status": 200,
+        "bytes": 72420,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/cat/h/cat.bin",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/hachi/e/hachi.bin",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/octet-stream",
+        "status": 200,
+        "bytes": 85032,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/hachi/e/hachi.bin",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/fox/e/fox.bin",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/octet-stream",
+        "status": 200,
+        "bytes": 76900,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/fox/e/fox.bin",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/goat/f/goat.bin",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/octet-stream",
+        "status": 200,
+        "bytes": 67452,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/goat/f/goat.bin",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/device/iphone-tex.jpg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/jpeg",
+        "status": 200,
+        "bytes": 374,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/device/iphone-tex.jpg",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/device/ipad-tex.jpg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/jpeg",
+        "status": 200,
+        "bytes": 374,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/device/ipad-tex.jpg",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/device/desktop-tex.jpg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/jpeg",
+        "status": 200,
+        "bytes": 374,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/device/desktop-tex.jpg",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/device/iphone.bin",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/octet-stream",
+        "status": 200,
+        "bytes": 22312,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/device/iphone.bin",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/device/ipad.bin",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/octet-stream",
+        "status": 200,
+        "bytes": 10728,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/device/ipad.bin",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/device/desktop.bin",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/octet-stream",
+        "status": 200,
+        "bytes": 105136,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/device/desktop.bin",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/office/office-floor3.gltf",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/office/office-floor3.gltf",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/office/office-desk2.glb",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": 15196,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/office/office-desk2.glb",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/office/office-items2.glb",
+        "query": [
+          "13"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "status": 200,
+        "bytes": 164864,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/office/office-items2.glb",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/office/Wood_Herringbone_Tiles_002_basecolor.jpg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/jpeg",
+        "status": 200,
+        "bytes": 3548,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/office/Wood_Herringbone_Tiles_002_basecolor.jpg",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/office/office-floor3.bin",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/octet-stream",
+        "status": 200,
+        "bytes": 2880,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/office/office-floor3.bin",
+        "sameSite": true
+      },
+      {
+        "method": "GET",
+        "host": "garden-eight.com",
+        "path": "/assets/models/blender/office/Wood_Herringbone_Tiles_002_normal.jpg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/jpeg",
+        "status": 200,
+        "bytes": 1570,
+        "hits": 1,
+        "example": "https://garden-eight.com/assets/models/blender/office/Wood_Herringbone_Tiles_002_normal.jpg",
+        "sameSite": true
+      }
+    ],
+    "thirdPartyScriptHosts": [],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [
+      "__NUXT__"
+    ],
+    "frameworkHints": [
+      "nuxt"
+    ],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 49,
+      "thirdPartyEndpoints": 2,
+      "thirdPartyScriptHosts": 0,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": true
+    }
+  },
+  "screenshot": "assets/screenshots/index.png",
+  "renderedHtml": "pages/index.html"
+}

@@ -1,0 +1,381 @@
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+
+/* Garden Eight replica — tokens, fonts, base, utilities and the shared motion layer.
+   Every value is lifted verbatim from the source CSS (stardust/prototypes/canon.css,
+   index.css, motion.css); the long-precision vw values are the source's own. */
+
+/* stylelint-disable number-max-precision -- values lifted verbatim from the source CSS */
+
+:root {
+  --vh: 1vh;
+
+  /* colors */
+  --col-black: #1e1f1f;
+  --col-black2: #1c1d1d;
+  --col-black3: #141414;
+  --col-gray: #3c3c3c;
+  --col-white: #dbd6d0;
+  --col-orange: #dc5648;
+
+  /* capture-state: the WebGL canvas paints the page surface; sampled from the 1440x900 capture */
+  --surface-top: #e4dfd8;
+  --surface-mid: #e3ded7;
+  --surface-bottom: #dcd7d0;
+
+  /* geometry */
+  --gutter: 3.124999995vw;
+  --gutter-nav: 2.6249999958vw;
+  --col-gap: 2.08333333vw;
+  --body-pad: 12.49999998vw;
+  --chrome-h: 6.24999999vw;
+
+  /* type */
+  --fs-main: 1.076vw;
+  --fs-logo: 1.041vw;
+  --fs-small: 0.833vw;
+  --fs-chrome: 0.972vw;
+}
+
+@media (width >= 1680px) {
+  :root {
+    --fs-main: 17.98px;
+    --fs-logo: 16.24px;
+    --fs-small: 13.92px;
+  }
+}
+
+@media (width >= 1920px) {
+  :root {
+    --fs-main: 0.861vw;
+    --fs-logo: 0.833vw;
+    --fs-small: 0.666vw;
+  }
+}
+
+@media (width <= 1366px) {
+  :root {
+    --fs-main: 14.85px;
+    --fs-logo: 13.05px;
+    --fs-small: 11.7px;
+  }
+}
+
+@media (width <= 768px), (width <= 1180px) and (orientation: portrait) {
+  :root {
+    --gutter: 30px;
+    --chrome-h: 60px;
+    --body-pad: 90px;
+  }
+}
+
+@media (width <= 640px) {
+  :root {
+    --fs-main: 15px;
+    --fs-logo: 15px;
+    --fs-small: 12.5px;
+    --fs-chrome: 14px;
+    --gutter: 20px;
+    --body-pad: 20px;
+  }
+}
+
+/* base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-tap-highlight-color: rgb(255 255 255 / 0%);
+  text-size-adjust: 100%;
+  background-color: var(--col-black);
+  line-height: 1.42;
+  font-family: lausanne, sans-serif;
+  font-size: var(--fs-chrome);
+  color: var(--col-black);
+  text-rendering: auto;
+  -webkit-font-smoothing: auto;
+}
+
+body {
+  display: none;
+  margin: 0;
+  overscroll-behavior: none;
+  color: var(--col-black);
+}
+
+body.appear {
+  display: block;
+}
+
+/* capture-state: fixed page surface standing in for the WebGL canvas (#js-back, 100vw x 100vh) */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  height: calc(var(--vh) * 100);
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    var(--surface-top) 0%,
+    var(--surface-mid) 45%,
+    var(--surface-bottom) 100%
+  );
+}
+
+main {
+  display: block;
+  position: relative;
+  z-index: 1;
+  font-size: var(--fs-main);
+}
+
+/* the live header is entirely fixed: zero flow height */
+header {
+  height: 0;
+}
+
+header .header,
+footer .footer {
+  visibility: hidden;
+}
+
+header .header[data-block-status="loaded"],
+footer .footer[data-block-status="loaded"] {
+  visibility: visible;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+main img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+/* shared utilities */
+.f-logo {
+  font-size: var(--fs-logo);
+}
+
+.f-s,
+small {
+  font-size: var(--fs-small);
+}
+
+.w400 {
+  font-weight: 400;
+}
+
+.tx-r {
+  text-align: right;
+}
+
+.lh-r {
+  line-height: 0;
+}
+
+.op {
+  opacity: 0.9;
+}
+
+.serif {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: gunsan;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 0.51;
+}
+
+.words .w {
+  display: inline-block;
+  margin-right: 0.125em;
+}
+
+.words .w:last-child {
+  margin-right: 0;
+}
+
+.clip-y .o {
+  height: 1.25em;
+  margin-bottom: -0.25em;
+  overflow: hidden;
+  line-height: 1.25em;
+}
+
+.clip-y .t {
+  display: block;
+  line-height: 1.25em;
+  transform: translate3d(0, 140%, 0);
+}
+
+.hr {
+  height: 1px;
+  opacity: 0.2;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hr div,
+.hr::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: var(--col-white);
+}
+
+.hr div {
+  transform: translate(0) scaleX(0);
+}
+
+.hide-m {
+  display: block;
+}
+
+.show-m {
+  display: none;
+}
+
+@media (width <= 640px) {
+  .hide-m {
+    display: none;
+  }
+
+  .show-m {
+    display: block;
+  }
+}
+
+/* sections */
+main .section {
+  padding: 0;
+  margin: 0;
+}
+
+main .section > div {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* the closing dark band (.Pf): hosts the about teaser and the relocated footer bar */
+main .section.footer-band {
+  position: relative;
+  color: var(--col-white);
+  background-color: var(--col-black);
+  min-height: 100vh;
+  min-height: calc(var(--vh) * 100);
+}
+
+/* motion layer — only the behaviours that fired on the source site (motion.css verbatim):
+   clip-y line reveals, hr draw, editor paragraph fade, case-title reveal, marquee
+   visibility, mail button reveal / copied. No :hover rules (dead on live). */
+.clip-y[data-shown="1"] .t {
+  transform: translate(0);
+  transition: transform 1.4s cubic-bezier(0.32, 0.94, 0.6, 1);
+}
+
+.hr[data-shown="1"] div {
+  transform: translate(0) scale(1);
+  transition: transform 1.2s;
+}
+
+.editor.js-iv-c p {
+  opacity: 0;
+  transform: translate3d(0, 2em, 0);
+}
+
+.editor.js-iv-c[data-shown="1"] p {
+  opacity: 0.9;
+  transform: translate(0);
+  transition: transform 1.4s cubic-bezier(0.32, 0.94, 0.6, 1), opacity 0.6s;
+}
+
+.cases-h1 .l {
+  opacity: 0;
+  transform: translate3d(0, 140%, 0);
+  transition: transform 1.4s cubic-bezier(0.32, 0.94, 0.6, 1), opacity 0.6s;
+}
+
+.entered .pickup-a .cases-h1 .l {
+  opacity: 0.5;
+  transform: translate(0);
+}
+
+.entered .pickup-a.selected .cases-h1 .l {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.mq-t {
+  visibility: hidden;
+}
+
+.mq-t[data-visible="1"] {
+  visibility: visible;
+}
+
+.ui-btn-mail .o .t {
+  transform: translate3d(0, 100%, 0);
+}
+
+.ui-btn-mail[data-shown="1"] .o .t {
+  transform: translate(0);
+  transition: transform 0.7s cubic-bezier(0.32, 0.94, 0.6, 1);
+}
+
+.ui-btn-mail.copied .label .o .t {
+  transform: translate3d(0, -200%, 0);
+}

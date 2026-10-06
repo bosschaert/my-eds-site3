@@ -1,0 +1,144 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica handoff (C-deliver)",
+    "writtenAt": "2026-10-05T16:08:38Z",
+    "stardustVersion": "0.27.0"
+  },
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "home"
+      ],
+      "pages": 2,
+      "blocks": 2,
+      "gates": {
+        "chrome": "computed geometry of brand / nav ul / language switch identical to the prototype at 1440 and 360 (preview /nav, 1 Chromium); published-origin pixel + crop-compare + chrome-parity run with the archetype unit (no page existed yet)"
+      },
+      "startedAt": "2026-10-05T16:08:38Z",
+      "endedAt": "2026-10-05T16:41:52.513Z",
+      "verdict": "foundation: nav+footer live (preview+publish), code pushed 4daad53, lint 0 errors, files 24"
+    },
+    "archetype-home": {
+      "status": "done",
+      "kind": "archetype",
+      "templates": [
+        "home"
+      ],
+      "pages": 1,
+      "blocks": 3,
+      "gates": {
+        "360": {
+          "pixelPct": 2.16,
+          "gateShPixelPct": 7.95,
+          "heightDelta": -1984,
+          "heightOverride": "scroll-jacked live page (documented)",
+          "clipped": "2 (allow 2)",
+          "contentMissing": 2,
+          "contentMissingDetail": "R1 anai aria-label (register, presence sidecar) + footer mail control (foundation request queued; re-gated at gate-all after C-final)",
+          "contentHidden": 0,
+          "chromeParity": "13 deltas, all frozen header/footer",
+          "delivered": true
+        },
+        "1440": {
+          "pixelPct": 4.69,
+          "gateShPixelPct": 3.47,
+          "heightDelta": -2762,
+          "heightOverride": "scroll-jacked live page (documented, gates/all-1440/overrides.json)",
+          "clipped": "2 (allow 2: mail tip lines)",
+          "contentMissing": 0,
+          "contentHidden": 0,
+          "chromeParity": "10 deltas, all frozen header/footer",
+          "delivered": true
+        },
+        "readability": "code 99 (footer allowlist), strict 94",
+        "fixRounds": 1,
+        "evidence": [
+          "stardust/replica/gates/all-1440/runs",
+          "stardust/replica/gates/all-360/runs",
+          "stardust/replica/gates/index-1440/*-pub2.*",
+          "stardust/replica/gates/index-360/*-pub2.*",
+          "stardust/.work/rollout/archetype-home/report.md"
+        ]
+      },
+      "startedAt": "2026-10-05T16:44:11.013Z",
+      "endedAt": "2026-10-05T17:35:02.752Z",
+      "verdict": "archetype-home: /index live (preview+publish), gate 1440 4.69% / 360 2.16%, clip 2/2, content 0/0 (1440) · 2/0 (360, both documented), chrome 10 deltas (1440) · 13 (360) — all header/footer (frozen), readability 99 (code, footer allowlist; strict 94), code pushed 7533f37, lint 0 errors, fix rounds 1"
+    },
+    "cluster-home": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "home"
+      ],
+      "pages": 0,
+      "blocks": 0,
+      "gates": {
+        "note": "no sibling pages in scope (single-page run; site-plan selects / only); render-home recorded 0 siblings; nothing to PUT, preview or gate"
+      },
+      "startedAt": "2026-10-05T17:35:24.906Z",
+      "endedAt": "2026-10-05T17:35:24.906Z",
+      "verdict": "cluster-home: pages 0/0 (no siblings in scope), blocks 0, gate n/a, requests 0"
+    },
+    "gate-all": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "home"
+      ],
+      "pages": 1,
+      "blocks": 0,
+      "gates": {
+        "360": {
+          "pixelPct": 2.16,
+          "textPct": 9.23,
+          "heightDelta": -1984,
+          "heightOverride": "documented scroll-jack override",
+          "clipped": "2 (allow 2)",
+          "contentMissing": 0,
+          "contentHidden": 0,
+          "delivered": true
+        },
+        "1440": {
+          "pixelPct": 4.69,
+          "textPct": 9.08,
+          "heightDelta": -2762,
+          "heightOverride": "documented scroll-jack override",
+          "clipped": "2 (allow 2)",
+          "contentMissing": 0,
+          "contentHidden": 0,
+          "delivered": true
+        },
+        "foundationRequestsApplied": 2,
+        "note": "roster run against the published origin main--061e4e3f--aemcoder.aem.live after the two queued foundation requests were applied (footer mail control one link + mobile state line; nav/footer hrefs without trailing slash); register R1 (anai aria-label) carried as a presence sidecar",
+        "summary": [
+          "stardust/replica/gates/all-1440/summary.json",
+          "stardust/replica/gates/all-360/summary.json"
+        ]
+      },
+      "startedAt": "2026-10-05T17:38:08.286Z",
+      "endedAt": "2026-10-05T17:54:16.476Z",
+      "verdict": "gate-all: pages 1/1 delivered on aem.live, gate 1440 4.69% / 360 2.16%, content 0/0 both widths, clip 2/2 allowed, height under documented override, requests applied 2"
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "home"
+      ],
+      "pages": 1,
+      "blocks": 0,
+      "gates": {
+        "freeze": "foundation-freeze.mjs check: unchanged (17 files)",
+        "requestsApplied": 2,
+        "requestsPending": 0,
+        "origin": "/ , /nav, /footer answer 200 on aem.page and aem.live",
+        "coverage": "index deployed, delivery.gate.pass true at 1440 and 360 (update-coverage --gate at gate-all)"
+      },
+      "startedAt": "2026-10-05T17:56:32.024Z",
+      "endedAt": "2026-10-05T17:57:00.992Z",
+      "verdict": "final: freeze check clean (17 files), requests 2/2 applied at gate-all, 0 pending; root + nav + footer live 200; coverage 1/1 gated"
+    }
+  }
+}

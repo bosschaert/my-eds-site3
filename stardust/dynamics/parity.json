@@ -1,0 +1,138 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:dynamics (replica handoff, rollout D2)",
+    "writtenAt": "2026-10-05T18:01:00Z",
+    "stardustVersion": "0.27.0"
+  },
+  "method": "single home page; the two client-rendered behaviours that fired in motion-observe ship in the block code (hero/header/footer clip-y reveals, footer mail copy control); the WebGL scene and lazy videos are capture-state interims; first-party APIs are host-bound and have no consumer on the migrated page",
+  "features": [
+    {
+      "id": "client-rendered-reveals",
+      "feature": "clipped line reveals, split headline, case marquee (settled text authored verbatim)",
+      "class": "CR",
+      "pages": 1,
+      "disposition": "rebuild-native",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "motion-compare 4 parity / 0 extra at Phase 4; published-origin gate 1440 4.69% / 360 2.16%; clip-y line wrappers present after decoration",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": ".clip-y",
+          "min": 1
+        },
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": ".cases .pickup-a",
+          "min": 3
+        },
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": ".cases .mq",
+          "min": 1
+        },
+        {
+          "type": "no-page-errors",
+          "paths": [
+            "/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mail-copy",
+      "feature": "\"M : hello@garden-eight.com\" copy-to-clipboard control (Copy to clipboard / Copied)",
+      "class": "CR",
+      "pages": 1,
+      "disposition": "client-only",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "motion-observe: click flips the label to Copied (0.7 s) on live and build; one link named as on the source (content-presence 0 MISSING at gate-all); control present after footer decoration",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": ".ui-btn-mail",
+          "min": 1
+        },
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": ".ui-btn-mail a[href^='mailto:']",
+          "min": 1
+        }
+      ]
+    },
+    {
+      "id": "webgl-scene",
+      "feature": "three.js WebGL background (GLTF models + draco decoder) on the fixed canvas",
+      "class": "A",
+      "pages": 1,
+      "disposition": "static-snapshot",
+      "reproducibility": "needs-business-decision",
+      "status": "interim",
+      "verifiedBy": "replicated as captured: static CSS paint of the sampled surface colour; pixel gate holds at both widths",
+      "owner": "decide whether to port the 3D scene as a block script with the models on the code bus (13 model fetches, draco from jsdelivr)",
+      "checks": []
+    },
+    {
+      "id": "case-thumb-videos",
+      "feature": "lazily attached background videos on the case marquee and the about image",
+      "class": "CR",
+      "pages": 1,
+      "disposition": "static-snapshot",
+      "reproducibility": "needs-asset",
+      "status": "interim",
+      "verifiedBy": "empty in the settled capture (no <video> attached); replicated as captured",
+      "owner": "supply the video sources if the thumbnails should play",
+      "checks": []
+    },
+    {
+      "id": "locale-variants",
+      "feature": "locale variants en / ja (/ja/), hreflang",
+      "class": "I18N",
+      "pages": 1,
+      "disposition": "static-snapshot",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "/ja redirects 301 to https://garden-eight.com/ja/ (redirects sheet); hreflang en + x-default only, ja not migrated",
+      "checks": []
+    },
+    {
+      "id": "favicon-rehost",
+      "feature": "CloudFront asset host (favicon, icons)",
+      "class": "T",
+      "pages": 1,
+      "disposition": "static-snapshot",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "favicon self-hosted from the capture, answers 200 on the published origin",
+      "checks": []
+    },
+    {
+      "id": "chat-faq-settings",
+      "feature": "chat / FAQ settings fetch (/_api/chatApi/json/*)",
+      "class": "A",
+      "pages": 1,
+      "disposition": "decided-out",
+      "reproducibility": "host-bound",
+      "status": "decided-out",
+      "verifiedBy": "no consumer on the migrated page; endpoint host-bound on the target",
+      "checks": []
+    },
+    {
+      "id": "nuxt-hydration",
+      "feature": "Nuxt hydration state __NUXT__",
+      "class": "CR",
+      "pages": 1,
+      "disposition": "decided-out",
+      "reproducibility": "n/a",
+      "status": "decided-out",
+      "verifiedBy": "framework artefact; the migrated page is static EDS HTML",
+      "checks": []
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://garden-eight.com/#organization",
+      "name": "Garden Eight",
+      "description": "Garden Eight is a digital design studio based in Tokyo.",
+      "url": "https://garden-eight.com/",
+      "email": "hello@garden-eight.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kitazawa Takara Bld. 4F, 3-20-18 Kitazawa",
+        "addressLocality": "Setagaya-ku",
+        "addressRegion": "Tokyo",
+        "postalCode": "155-0031",
+        "addressCountry": "JP"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "project inquiries",
+          "email": "hello@garden-eight.com",
+          "availableLanguage": [
+            "en",
+            "ja"
+          ]
+        }
+      ],
+      "logo": "https://d1oo4riy5et4sg.cloudfront.net/v3-1/assets/icon/icon-192x192.png",
+      "image": "https://d1oo4riy5et4sg.cloudfront.net/v3-1/assets/img/ogp.png",
+      "sameAs": [
+        "https://www.instagram.com/garden_eight/",
+        "https://twitter.com/GardenEight/",
+        "https://www.linkedin.com/company/gardeneight/"
+      ],
+      "knowsAbout": [
+        "Digital Design",
+        "Web Design",
+        "Web Development",
+        "Front-end Development",
+        "Interactive Design",
+        "Creative Coding",
+        "WebGL",
+        "GLSL",
+        "3D Web Experiences",
+        "Motion Design",
+        "UI Animation",
+        "Digital Branding"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://garden-eight.com/#website",
+      "name": "Garden Eight",
+      "url": "https://garden-eight.com/",
+      "inLanguage": [
+        "en-US",
+        "ja-JP"
+      ],
+      "publisher": {
+        "@id": "https://garden-eight.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://garden-eight.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://garden-eight.com/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://garden-eight.com/#webpage",
+      "url": "https://garden-eight.com/",
+      "name": "Garden Eight",
+      "description": "Garden Eight is a digital design studio based in Tokyo.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://garden-eight.com/#website"
+      },
+      "about": {
+        "@id": "https://garden-eight.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://d1oo4riy5et4sg.cloudfront.net/v3-1/assets/img/ogp.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+/* motion.css — ONE shared motion layer. Only behaviours that FIRED in stardust/replica/motion/index.json
+   (live observation 2026-10-05): clip-y line reveals (transform 1.4s), hr draw (1.2s), editor paragraph fade,
+   case-title reveal (.entered / .selected), marquee visibility (data-visible), mail button "copied" (0.7s).
+   Values lifted verbatim from the source SSR CSS. Hover probes fired nothing → no :hover rules. */
+.clip-y .t{transform:translate3d(0,140%,0)}
+.clip-y[data-shown="1"] .t{transform:translate(0);transition:transform 1.4s cubic-bezier(.32,.94,.6,1)}
+.hr div{transform:translate(0) scaleX(0)}
+.hr[data-shown="1"] div{transform:translate(0) scale(1);transition:transform 1.2s}
+.editor.js-iv-c p{opacity:0;transform:translate3d(0,2em,0)}
+.editor.js-iv-c[data-shown="1"] p{opacity:.9;transform:translate(0);transition:transform 1.4s cubic-bezier(.32,.94,.6,1),opacity .6s}
+.cases-h1 .l{opacity:0;transform:translate3d(0,140%,0);transition:transform 1.4s cubic-bezier(.32,.94,.6,1),opacity .6s}
+.entered .pickup-a .cases-h1 .l{opacity:.5;transform:translate(0)}
+.entered .pickup-a.selected .cases-h1 .l{opacity:1;transform:translate(0)}
+.mq-t{visibility:hidden}
+.mq-t[data-visible="1"]{visibility:visible}
+.ui-btn-mail .o .t{transform:translate3d(0,100%,0)}
+.ui-btn-mail[data-shown="1"] .o .t{transform:translate(0);transition:transform .7s cubic-bezier(.32,.94,.6,1)}
+.ui-btn-mail.copied .label .o .t{transform:translate3d(0,-200%,0)}

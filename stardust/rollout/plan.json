@@ -1,0 +1,50 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-10-05T16:06:34.815Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-10-05T16:06:34.815Z",
+  "fragments": [
+    {
+      "id": "footer",
+      "blockPath": "fragments/footer.html",
+      "status": "pending"
+    },
+    {
+      "id": "header",
+      "blockPath": "fragments/header.html",
+      "status": "pending"
+    }
+  ],
+  "deliveryOrder": [
+    "index"
+  ],
+  "steps": [
+    {
+      "slug": "index",
+      "path": "/",
+      "templateId": "index",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "hero",
+          "edsBlockName": "hero"
+        },
+        {
+          "id": "cases",
+          "edsBlockName": "cases"
+        },
+        {
+          "id": "about-teaser",
+          "edsBlockName": "about-teaser"
+        }
+      ],
+      "reuse": []
+    }
+  ]
+}

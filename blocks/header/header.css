@@ -1,0 +1,313 @@
+/* header — Garden Eight fixed chrome; geometry lifted verbatim from the source CSS
+   (.Hd, .ui-name, .ui-navi, .ui-navi-r / .ui-lang, .ui-menu, .ui-navi-wrap). */
+
+/* stylelint-disable number-max-precision -- values lifted verbatim from the source CSS */
+
+header .header {
+  text-transform: uppercase;
+}
+
+/* brand — fixed top-left (.ui-name / .logo-txt) */
+header .header-brand {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  display: flex;
+  align-items: center;
+  height: var(--chrome-h);
+  padding: 0 var(--gutter);
+  font-size: var(--fs-logo);
+}
+
+header .header-brand p {
+  height: 1.25em;
+  margin: 0 0 -0.25em;
+  line-height: 1.25em;
+}
+
+/* the source renders the two brand words with gap: .33em; a Lausanne space is .2em wide */
+header .header-brand a {
+  display: block;
+  line-height: 1.25em;
+  word-spacing: 0.13em;
+  transform: translateY(0.6em);
+}
+
+/* menu button — fixed top-right (.ui-menu), shown at <= 640px */
+header .header-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 103;
+  display: none;
+  align-items: flex-start;
+  height: var(--chrome-h);
+  margin: 0;
+  padding: 0 var(--gutter);
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-transform: inherit;
+  text-align: right;
+  cursor: pointer;
+}
+
+header .header-menu .o {
+  display: block;
+  height: 1.5em;
+  margin-top: 1.5em;
+  overflow: visible;
+  line-height: 1;
+}
+
+header .header-menu .t {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+header .header-menu .title {
+  display: block;
+}
+
+header .header-menu .y {
+  display: block;
+  line-height: 1.5;
+  transform: translateY(-100%);
+}
+
+header .header-menu .y:first-child {
+  opacity: 0;
+}
+
+/* language switch — fixed top-right (.ui-navi-r / .ui-lang) */
+header .header-lang {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 102;
+  display: flex;
+  align-items: center;
+  height: var(--chrome-h);
+  padding: 0 var(--gutter-nav);
+}
+
+header .header-lang ul {
+  display: flex;
+  margin: 0 -0.25em;
+}
+
+header .header-lang a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: content-box;
+  width: 2.08333333vw;
+  height: 1em;
+  padding: 0.25em;
+  line-height: 1.25;
+}
+
+/* nav list — fixed top, right of the body padding (.ui-navi) */
+header .header-nav {
+  position: fixed;
+  top: 0;
+  right: var(--body-pad);
+  left: auto;
+  z-index: 102;
+  height: var(--chrome-h);
+}
+
+header .header-nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: -0.75em;
+  margin-left: -0.75em;
+}
+
+/* the authored li is the clip box (.o) and the authored a the revealed line (.t) */
+header .header-nav li {
+  height: 1.25em;
+  margin-bottom: -0.25em;
+  padding: 0 0.75em;
+  overflow: hidden;
+  line-height: 1.25em;
+}
+
+header .header-nav li a {
+  display: block;
+  line-height: 1.25em;
+  transform: translate3d(0, 140%, 0);
+}
+
+/* the Home item exists for the mobile overlay only */
+header .header-nav li:has(> a[href="/"]) {
+  display: none;
+}
+
+@media (width <= 768px), (width <= 1180px) and (orientation: portrait) {
+  header .header-nav {
+    right: 120px;
+  }
+}
+
+@media (width <= 640px) {
+  header .header-brand a {
+    transform: translateY(0.2em);
+  }
+
+  header .header-menu {
+    display: flex;
+  }
+
+  header .header-lang {
+    inset: auto auto 4px 0;
+    z-index: 100;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 60px;
+    padding: 0 0 0 27px;
+    color: var(--col-white);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  header .header-lang ul {
+    margin: 0;
+  }
+
+  header .header-lang a {
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    width: 68px;
+    min-width: 30px;
+    height: 30px;
+    padding: 0.25em 1.5em 0;
+    font-size: var(--fs-small);
+  }
+
+  /* the nav overlay is closed on load: background at translateY(-101%), lines hidden */
+  header .header-nav-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  header .header-nav-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: var(--col-black);
+    transform: translateY(-101%);
+  }
+
+  /* overlay geometry measured on the live page at 360: 40px rows, language switch in the
+     overlay footer */
+  header .header-nav-body {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: calc(40px + 1em) 20px 155px;
+  }
+
+  header .header-nav {
+    position: relative;
+    right: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  header .header-nav ul {
+    display: block;
+    height: auto;
+    margin: 0;
+  }
+
+  header .header-nav li {
+    display: block;
+    width: 100%;
+    height: 40.4px;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    line-height: normal;
+  }
+
+  header .header-nav li a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    min-height: 0;
+    padding: 0;
+    color: var(--col-white);
+    /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+    font-family: gunsan;
+    font-weight: 600;
+    font-size: 14.1835vw;
+    letter-spacing: 0;
+    line-height: 0.51;
+  }
+
+  header .header-nav li:has(> a[href="/"]) {
+    display: block;
+  }
+
+  header .header-nav li:has(> a[href="/"]) a {
+    padding-left: 0.5em;
+  }
+
+  /* open state */
+  header .header.menu-open .header-nav-wrap {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  header .header.menu-open .header-nav-bg {
+    transform: translateY(0);
+  }
+
+  header .header.menu-open .header-lang {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  header .header.menu-open .header-menu {
+    color: var(--col-white);
+  }
+
+  header .header.menu-open .header-menu .y {
+    transform: translateY(0);
+  }
+
+  header .header.menu-open .header-menu .y:first-child {
+    opacity: 1;
+  }
+
+  header .header.menu-open .header-menu .y:last-child {
+    opacity: 0;
+  }
+}
+
+/* reveal (clip-y): the lines slide in once the nav intersects */
+header .header-nav[data-shown="1"] li a {
+  transform: translate(0);
+  transition: transform 1.4s cubic-bezier(0.32, 0.94, 0.6, 1);
+}

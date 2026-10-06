@@ -1,0 +1,246 @@
+/* cases — Garden Eight home case list (.Pb); geometry lifted verbatim from the source CSS
+   (.intro-body / .intro, .St-wrap / .St-flex / .St-center / .St-body, .pickup*, .mq*, .cases-inf,
+   .cases-h1, .St-footer / .ui-link-hn). The motion classes (.pickup, .pickup-li, .pickup-a,
+   .cases-h1, .mq-t, .clip-y, .hr) keep their source names: styles.css carries their end states. */
+
+/* stylelint-disable number-max-precision -- values lifted verbatim from the source CSS */
+
+.cases {
+  position: relative;
+}
+
+/* the authored hard breaks stay in the DOM; the lines render as block spans */
+.cases br {
+  display: none;
+}
+
+/* intro (.body.intro-body > .intro): the authored p's lines as clip-y rows */
+.cases .cases-intro-body {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 8.3333vw var(--body-pad) 0;
+}
+
+.cases .cases-intro {
+  margin-bottom: -0.25em;
+  font-weight: 200;
+  text-align: center;
+}
+
+.cases .cases-intro .cases-intro-line {
+  display: block;
+  height: 1.25em;
+  margin-bottom: 0.25em;
+  overflow: hidden;
+  line-height: 1.25em;
+}
+
+.cases .cases-intro .t {
+  display: block;
+  line-height: 1.25em;
+}
+
+/* the list (.St-wrap / .St-flex / .St-center / .St-body.pickup-wrap) */
+.cases .cases-wrap {
+  position: relative;
+  padding: 14.5833vw 0;
+}
+
+.cases .cases-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.cases .cases-center {
+  display: flex;
+  align-items: center;
+}
+
+.cases .cases-body {
+  width: 100%;
+}
+
+/* glyphs of the .6-line-height display text extend ~3vw above/below their line box: the
+   clipping ancestors get that room (geometry unchanged) */
+.cases .pickup-wrap,
+.cases .mq {
+  width: 100vw;
+  margin: -3vw 0;
+  padding: 3vw 0;
+  overflow: hidden;
+}
+
+.cases .pickup-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  user-select: none;
+}
+
+.cases .pickup-a {
+  display: block;
+  line-height: 0;
+  text-align: center;
+}
+
+/* the info row (.cases-inf): an empty capture-state slot on the source page */
+.cases .cases-inf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.5em;
+  min-height: 3.124999995vw;
+  font-family: lausanne, sans-serif;
+  text-transform: uppercase;
+}
+
+.cases .pickup-h1 {
+  width: 100%;
+  margin-bottom: 0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.cases .mq {
+  font-size: 0;
+}
+
+.cases .mq-anim {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.cases .mq-ul {
+  display: inline-block;
+  margin-left: var(--gutter);
+}
+
+.cases .mq-li,
+.cases .mq-li .l,
+.cases .mq-t {
+  display: inline-block;
+}
+
+.cases .mq-li .o {
+  padding: 0;
+  overflow: visible;
+}
+
+.cases .cases-h1 .h1 {
+  position: relative;
+  display: inline-block;
+  font-size: 14.93vw;
+}
+
+.cases .cases-h1 .o,
+.cases .cases-h1 .t {
+  display: inline-block;
+  height: auto;
+  overflow: visible;
+  line-height: 0.6;
+}
+
+.cases .cases-h1 .l {
+  display: inline-block;
+}
+
+.cases .cases-h1 .p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.cases .cases-h1 .p:first-child .w:first-child {
+  padding-left: 0.73em;
+}
+
+.cases .mq-t .t:last-child {
+  padding-right: 0.24em;
+}
+
+/* View Cases (.St-footer > .body): the authored p plays the source's inline .o (height and
+   margin do not apply to an inline there), the authored a the revealed line (.t) */
+.cases .cases-footer {
+  padding-top: 2.0833vw;
+  text-align: center;
+}
+
+.cases .cases-footer-body {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-right: var(--body-pad);
+  padding-left: var(--body-pad);
+}
+
+.cases .cases-view {
+  display: inline-block;
+  margin-top: 3.89vw;
+  text-transform: uppercase;
+}
+
+.cases .cases-view p {
+  position: relative;
+  height: 1.25em;
+  line-height: 1.25em;
+}
+
+.cases .cases-view a {
+  display: block;
+  line-height: 1.25em;
+  transform: translate3d(0, 140%, 0);
+}
+
+.cases .cases-view[data-shown="1"] a {
+  transform: translate(0);
+  transition: transform 1.4s cubic-bezier(0.32, 0.94, 0.6, 1);
+}
+
+@media (width <= 768px), (width <= 1180px) and (orientation: portrait) {
+  .cases .cases-wrap {
+    height: 100vh;
+    height: calc(var(--vh) * 100);
+    padding: 0;
+  }
+
+  .cases .cases-flex {
+    height: 100%;
+    justify-content: center;
+  }
+}
+
+@media (width <= 640px) {
+  .cases .cases-intro-body {
+    padding-top: 0;
+  }
+
+  .cases .cases-intro {
+    padding-bottom: 20px;
+    text-align: left;
+  }
+
+  .cases .cases-intro .cases-intro-line {
+    margin-bottom: 0.1em;
+  }
+
+  .cases .cases-flex {
+    gap: 40px;
+  }
+
+  .cases .cases-inf {
+    justify-content: flex-start;
+    height: 1em;
+    min-height: 0;
+    padding-bottom: 0;
+  }
+
+  .cases .cases-footer {
+    padding-top: 0;
+  }
+
+  .cases .cases-view {
+    margin-top: 46px;
+  }
+}

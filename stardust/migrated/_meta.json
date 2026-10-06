@@ -1,0 +1,122 @@
+{
+  "slug": "index",
+  "type": "home",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "header",
+    "hero",
+    "cases",
+    "about-teaser",
+    "footer"
+  ],
+  "slotsFilled": [
+    "Ph",
+    "Pb",
+    "Pf"
+  ],
+  "canonShas": {
+    "header": "66887986e520",
+    "footer": null,
+    "css": "38c67366b905"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Garden Eight",
+    "description": "Garden Eight is a digital design studio…",
+    "canonical": "https://main--061e4e3f--aemcoder.aem.page/",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Garden Eight",
+    "description": "Garden Eight is a digital design studio…",
+    "url": "https://main--061e4e3f--aemcoder.aem.page/"
+  },
+  "migratedAt": "2026-10-05T16:05:36Z",
+  "designMdSha": "df13c9a05bc8",
+  "designJsonSha": "792c9104776e",
+  "sourceCurrentSha": "ac1fe0e7c680",
+  "sourceProposedSha": "cace6f255535",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "pixel-1440",
+    "pixel-360",
+    "content-diff",
+    "clip-probe",
+    "cap-probe"
+  ],
+  "gateEvidence": {
+    "pixel-1440": "3.47% PASS, hero; prototypes-1440/summary.json",
+    "pixel-360": "7.95% PASS; prototypes-360/summary.json",
+    "content-diff": "0 structural red at 1440 and 360 (content-diff-conf1.txt)",
+    "clip-probe": "Clipped 0 at both widths",
+    "cap-probe": "cap-probe PASS at 2560"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 9,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/ja/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/cases/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/about/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/archives/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/contact/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/ai/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/cases/photoyoshi/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/cases/phil-studio/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/cases/anai-wood/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/cases/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/about/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/about/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/faq/",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "index.html",
+  "outputPathDefault": null,
+  "sidecar": "_meta.json",
+  "driverVersion": "1"
+}

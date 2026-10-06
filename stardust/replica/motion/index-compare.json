@@ -1,0 +1,120 @@
+{
+  "live": "stardust/replica/motion/index.json",
+  "build": "stardust/replica/motion/index-build.json",
+  "toleranceMs": 150,
+  "tolerancePx": 8,
+  "advisory": true,
+  "findings": 5,
+  "counts": {
+    "behaviors": 14,
+    "parity": 4,
+    "missing": 4,
+    "extra": 0,
+    "tolerance": 1,
+    "dead": 5,
+    "advisory": 0
+  },
+  "verdicts": [
+    {
+      "cls": "header",
+      "name": "scroll-morph",
+      "state": "dead",
+      "note": "header static across the scroll traversal on both sides",
+      "line": "motion header scroll-morph: dead on live — not required (header static across the scroll traversal on both sides)"
+    },
+    {
+      "cls": "widget",
+      "name": ".ui-btn-mail",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .ui-btn-mail: dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "hover",
+      "name": ".ui-navi ul a",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .ui-navi ul a: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "hover",
+      "name": ".pickup-a",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .pickup-a: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "hover",
+      "name": ".ui-link-wrap",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .ui-link-wrap: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "transition",
+      "name": "opacity",
+      "state": "tolerance",
+      "deltas": [
+        "timing delta 400ms > 150ms [longest duration: live 1800ms, build 1400ms]"
+      ],
+      "note": "44 event(s) on live, 1 on build",
+      "line": "motion transition opacity: timing delta 400ms > 150ms [longest duration: live 1800ms, build 1400ms] (44 event(s) on live, 1 on build)"
+    },
+    {
+      "cls": "transition",
+      "name": "transform",
+      "state": "parity",
+      "note": "47 event(s) on live, 20 on build, 1400ms",
+      "line": "motion transition transform: parity (47 event(s) on live, 20 on build, 1400ms)"
+    },
+    {
+      "cls": "class",
+      "name": "copied",
+      "state": "parity",
+      "note": "added 1× on live, 1× on build",
+      "line": "motion class copied: parity (added 1× on live, 1× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "entered",
+      "state": "parity",
+      "note": "added 1× on live, 1× on build",
+      "line": "motion class entered: parity (added 1× on live, 1× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "is-img-load-start",
+      "state": "missing",
+      "note": "trigger class added 8× on live, never on build",
+      "line": "motion class is-img-load-start: MISSING on build (trigger class added 8× on live, never on build)"
+    },
+    {
+      "cls": "class",
+      "name": "is-img-loaded",
+      "state": "missing",
+      "note": "trigger class added 4× on live, never on build",
+      "line": "motion class is-img-loaded: MISSING on build (trigger class added 4× on live, never on build)"
+    },
+    {
+      "cls": "class",
+      "name": "is-video-loaded",
+      "state": "missing",
+      "note": "trigger class added 1× on live, never on build",
+      "line": "motion class is-video-loaded: MISSING on build (trigger class added 1× on live, never on build)"
+    },
+    {
+      "cls": "class",
+      "name": "js-loading-img",
+      "state": "missing",
+      "note": "trigger class added 4× on live, never on build",
+      "line": "motion class js-loading-img: MISSING on build (trigger class added 4× on live, never on build)"
+    },
+    {
+      "cls": "class",
+      "name": "selected",
+      "state": "parity",
+      "note": "added 2× on live, 3× on build",
+      "line": "motion class selected: parity (added 2× on live, 3× on build)"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-10-05T17:35:02Z",
+    "stardustVersion": "0.27.0"
+  },
+  "site": {
+    "originUrl": "https://garden-eight.com",
+    "deployUrl": "https://main--061e4e3f--aemcoder.aem.page",
+    "extractedAt": "2026-10-05T15:05:18.117Z",
+    "pageCap": 1,
+    "totalDiscovered": 1,
+    "crawled": 1
+  },
+  "direction": null,
+  "handsOff": true,
+  "flow": "replica",
+  "flowChosenAt": "2026-10-05T15:05:18.117Z",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "index",
+      "url": "https://garden-eight.com/",
+      "title": "Garden Eight",
+      "type": "home",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-05T15:05:18.117Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-05T15:13:44Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-05T15:53:55Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-05T15:57:59Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-05T17:35:02Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": "stardust/migrated/index.html"
+    }
+  ],
+  "migrate": {
+    "at": "2026-10-05T16:05:36Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/",
+        "outputPath": "index.html",
+        "slug": "index",
+        "outputPathDefault": null
+      }
+    ],
+    "totalAssetsBundled": 9,
+    "bundledAssets": [
+      "canon.css",
+      "favicon.svg",
+      "fonts/gunsan.woff2",
+      "fonts/lausanne/TWKLausanne-200.woff2",
+      "fonts/lausanne/TWKLausanne-300.woff2",
+      "fonts/lausanne/TWKLausanne-400.woff2",
+      "index.css",
+      "motion.css",
+      "motion.js"
+    ],
+    "pages": [
+      {
+        "slug": "index",
+        "file": "stardust/migrated/index.html",
+        "assetsBundled": 9
+      }
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "lastRun": {
+      "at": "2026-10-05T16:05:36Z",
+      "rendered": [
+        "index"
+      ],
+      "unchanged": [],
+      "refused": [],
+      "passthrough": []
+    }
+  }
+}

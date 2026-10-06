@@ -1,0 +1,82 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics check",
+  "writtenAt": "2026-10-05T18:01:24.792Z",
+  "origin": "https://main--061e4e3f--aemcoder.aem.live",
+  "parity": "stardust/dynamics/parity.json"
+ },
+ "results": [
+  {
+   "feature": "clipped line reveals, split headline, case marquee (settled text authored verbatim)",
+   "id": "client-rendered-reveals",
+   "class": "CR",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "6 × .clip-y (min 1)",
+   "thirdParty": "",
+   "ms": 2793,
+   "environmentLimit": null
+  },
+  {
+   "feature": "clipped line reveals, split headline, case marquee (settled text authored verbatim)",
+   "id": "client-rendered-reveals",
+   "class": "CR",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "3 × .cases .pickup-a (min 3)",
+   "thirdParty": "",
+   "ms": 2666,
+   "environmentLimit": null
+  },
+  {
+   "feature": "clipped line reveals, split headline, case marquee (settled text authored verbatim)",
+   "id": "client-rendered-reveals",
+   "class": "CR",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "3 × .cases .mq (min 1)",
+   "thirdParty": "",
+   "ms": 2227,
+   "environmentLimit": null
+  },
+  {
+   "feature": "clipped line reveals, split headline, case marquee (settled text authored verbatim)",
+   "id": "client-rendered-reveals",
+   "class": "CR",
+   "status": "done",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 1 page(s)",
+   "thirdParty": "",
+   "ms": 2420,
+   "environmentLimit": null
+  },
+  {
+   "feature": "\"M : hello@garden-eight.com\" copy-to-clipboard control (Copy to clipboard / Copied)",
+   "id": "mail-copy",
+   "class": "CR",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × .ui-btn-mail (min 1)",
+   "thirdParty": "",
+   "ms": 2124,
+   "environmentLimit": null
+  },
+  {
+   "feature": "\"M : hello@garden-eight.com\" copy-to-clipboard control (Copy to clipboard / Copied)",
+   "id": "mail-copy",
+   "class": "CR",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × .ui-btn-mail a[href^='mailto:'] (min 1)",
+   "thirdParty": "",
+   "ms": 2192,
+   "environmentLimit": null
+  }
+ ]
+}

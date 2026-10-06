@@ -1,0 +1,448 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-10-05T10:11:29.270Z",
+    "script": "style-census.mjs",
+    "readArtifacts": [
+      "https://www.example.com/"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "synthesizedInputs": [],
+    "failed": []
+  },
+  "pages": {
+    "https://www.example.com/": {
+      "360": {
+        "title": "Example Domain",
+        "viewport": {
+          "width": 360,
+          "height": 900
+        },
+        "elements": {
+          "total": 16,
+          "visible": 9
+        },
+        "occluders": [],
+        "headings": [],
+        "text": [
+          {
+            "tag": "p",
+            "text": "This domain is for use in documentation…",
+            "selector": "body > p:nth-of-type(1)",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "هذا النطاق مُخصص للاستخدام في أمثلة الت…",
+            "selector": "body > p:nth-of-type(2)",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "22.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "该域名仅用于文档示例，无需获得许可。这并非一项服务，请勿将其用于测试和监控目的。",
+            "selector": "body > p:nth-of-type(3)",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "22.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "L’usage de ce domaine est réservé à des…",
+            "selector": "body > p:nth-of-type(4)",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "22.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "Данный домен предназначен для использов…",
+            "selector": "body > p:nth-of-type(5)",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "22.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "Este dominio está destinado al uso en e…",
+            "selector": "body > p:nth-of-type(6)",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "22.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "buttons": [],
+        "links": [
+          {
+            "text": "Learn more",
+            "selector": "body > a",
+            "count": 1,
+            "color": "rgb(0, 0, 238)",
+            "textDecoration": "underline",
+            "fontWeight": "400",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 0, 238)",
+              "borderColor": "rgb(0, 0, 238)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "surfaces": [],
+        "radii": [],
+        "shadows": [],
+        "gradients": [],
+        "bgColors": [
+          {
+            "value": "rgb(238, 238, 238)",
+            "count": 1,
+            "area": 352643,
+            "sources": [
+              ""
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 6,
+            "sources": [
+              "body > p:nth-of-type(1)",
+              "body > p:nth-of-type(2)",
+              "body > p:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgb(0, 0, 238)",
+            "count": 1,
+            "sources": [
+              "body > a"
+            ]
+          }
+        ],
+        "borderColors": [],
+        "customProps": {},
+        "fonts": [],
+        "logoCandidates": [],
+        "iconFont": null,
+        "consent": {
+          "dismissed": null
+        },
+        "finalUrl": "https://www.example.com/"
+      },
+      "1440": {
+        "title": "Example Domain",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "elements": {
+          "total": 16,
+          "visible": 9
+        },
+        "occluders": [],
+        "headings": [],
+        "text": [
+          {
+            "tag": "p",
+            "text": "This domain is for use in documentation…",
+            "selector": "body > p:nth-of-type(1)",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "هذا النطاق مُخصص للاستخدام في أمثلة الت…",
+            "selector": "body > p:nth-of-type(2)",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "22.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "该域名仅用于文档示例，无需获得许可。这并非一项服务，请勿将其用于测试和监控目的。",
+            "selector": "body > p:nth-of-type(3)",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "22.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "L’usage de ce domaine est réservé à des…",
+            "selector": "body > p:nth-of-type(4)",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "22.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "Данный домен предназначен для использов…",
+            "selector": "body > p:nth-of-type(5)",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "22.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          },
+          {
+            "tag": "p",
+            "text": "Este dominio está destinado al uso en e…",
+            "selector": "body > p:nth-of-type(6)",
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "22.4px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 0, 0)"
+          }
+        ],
+        "buttons": [],
+        "links": [
+          {
+            "text": "Learn more",
+            "selector": "body > a",
+            "count": 1,
+            "color": "rgb(0, 0, 238)",
+            "textDecoration": "underline",
+            "fontWeight": "400",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 0, 238)",
+              "borderColor": "rgb(0, 0, 238)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "surfaces": [],
+        "radii": [],
+        "shadows": [],
+        "gradients": [],
+        "bgColors": [
+          {
+            "value": "rgb(238, 238, 238)",
+            "count": 1,
+            "area": 1212503,
+            "sources": [
+              ""
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 6,
+            "sources": [
+              "body > p:nth-of-type(1)",
+              "body > p:nth-of-type(2)",
+              "body > p:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgb(0, 0, 238)",
+            "count": 1,
+            "sources": [
+              "body > a"
+            ]
+          }
+        ],
+        "borderColors": [],
+        "customProps": {},
+        "fonts": [],
+        "logoCandidates": [],
+        "iconFont": null,
+        "consent": {
+          "dismissed": null
+        },
+        "finalUrl": "https://www.example.com/"
+      }
+    }
+  },
+  "aggregate": {
+    "counts": {
+      "pages": 1,
+      "widths": [
+        360,
+        1440
+      ],
+      "measurements": 2
+    },
+    "colors": [
+      {
+        "hex": "#000000",
+        "values": [
+          "rgb(0, 0, 0)"
+        ],
+        "weight": 12,
+        "by": {
+          "text": 12
+        },
+        "roles": [
+          "text"
+        ],
+        "sources": [
+          {
+            "url": "https://www.example.com/",
+            "selector": "body > p:nth-of-type(1)",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#0000ee",
+        "values": [
+          "rgb(0, 0, 238)"
+        ],
+        "weight": 4,
+        "by": {
+          "link": 2,
+          "text": 2
+        },
+        "roles": [
+          "accent"
+        ],
+        "sources": [
+          {
+            "url": "https://www.example.com/",
+            "selector": "body > a",
+            "prop": "link"
+          },
+          {
+            "url": "https://www.example.com/",
+            "selector": "body > a",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#eeeeee",
+        "values": [
+          "rgb(238, 238, 238)"
+        ],
+        "weight": 2,
+        "bgArea": 1565146,
+        "by": {
+          "background": 2
+        },
+        "roles": [
+          "background"
+        ],
+        "sources": [
+          {
+            "url": "https://www.example.com/",
+            "selector": null,
+            "prop": "background"
+          }
+        ]
+      }
+    ],
+    "type": {
+      "families": [
+        {
+          "family": "system-ui",
+          "count": 12,
+          "headings": 0,
+          "text": 12,
+          "buttons": 0
+        }
+      ],
+      "headingFamily": "system-ui",
+      "bodyFamily": "system-ui",
+      "sizes": [
+        {
+          "px": 16,
+          "count": 2,
+          "headings": 0,
+          "text": 2,
+          "buttons": 0
+        },
+        {
+          "px": 14,
+          "count": 10,
+          "headings": 0,
+          "text": 10,
+          "buttons": 0
+        }
+      ],
+      "weights": [
+        {
+          "weight": "400",
+          "count": 12,
+          "headings": 0,
+          "text": 12,
+          "buttons": 0
+        }
+      ],
+      "levels": {}
+    },
+    "motifs": {
+      "radius": {
+        "mode": null,
+        "areaMode": null,
+        "pill": null,
+        "values": []
+      },
+      "shadows": [],
+      "gradients": []
+    },
+    "hover": [],
+    "logo": {
+      "source": "none",
+      "url": null,
+      "selector": null
+    },
+    "iconFont": null
+  }
+}

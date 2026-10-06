@@ -1,0 +1,54 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-10-05T10:44:58.378Z",
+    "readArtifacts": [
+      "stardust/migrated",
+      "stardust/state.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-10-05T11:37:42.929Z",
+  "pages": [
+    {
+      "slug": "index",
+      "path": "/",
+      "title": "Example Domain",
+      "templateId": "index",
+      "source": {
+        "migratedHtml": "stardust/migrated/index.html",
+        "metaJson": "stardust/migrated/_meta.json",
+        "sourceHash": "sha256:f6fbe89aefed506734ff77622ef2d6c9f0c981f2f4f40706969c3602946dccb7"
+      },
+      "blocks": [
+        "notice"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--b3ee2d3b--aemcoder.aem.page/",
+        "deployedAt": "2026-10-05T11:25:31.413Z",
+        "verifiedAt": "2026-10-05T11:37:42.929Z",
+        "error": null,
+        "gate": {
+          "pass": true,
+          "pct": 0.29,
+          "heightDelta": 0,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 0,
+            "variable": []
+          },
+          "reasons": [],
+          "override": null,
+          "table": "stardust/replica/gates/all-360/summary.json",
+          "at": "2026-10-05T11:34:10.231Z"
+        }
+      }
+    }
+  ]
+}

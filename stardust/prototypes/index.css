@@ -1,0 +1,16 @@
+/* index.css — landing archetype (the notice page). Values lifted from the source's body <style>. */
+:root {
+  --icon-pull: -2.75em;
+  --icon-opacity: .55;
+  --secondary-size: .875em;
+  --secondary-opacity: .6;
+}
+.notice-icon {
+  display: block;
+  margin: var(--icon-pull) auto 0;
+  opacity: var(--icon-opacity);
+}
+.notice p + p {
+  font-size: var(--secondary-size);
+  opacity: var(--secondary-opacity);
+}

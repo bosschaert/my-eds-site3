@@ -1,0 +1,213 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-10-05T10:14:29Z",
+    "stardustVersion": "0.27.0",
+    "readArtifacts": [
+      "stardust/current/_brand-extraction.json",
+      "stardust/current/_computed-styles.json",
+      "stardust/current/pages/index.html"
+    ],
+    "synthesizedInputs": []
+  },
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-05T10:14:29Z",
+  "title": "Design System: Example Domain",
+  "extensions": {
+    "colorMeta": {
+      "page-bg": {
+        "role": "neutral",
+        "displayName": "Page grey",
+        "canonical": "#eeeeee",
+        "authored": "light-dark(#eee, #222)",
+        "scheme": "light"
+      },
+      "text": {
+        "role": "text",
+        "displayName": "Default text",
+        "canonical": "#000000",
+        "authored": "UA default"
+      },
+      "link": {
+        "role": "link",
+        "displayName": "Default link blue",
+        "canonical": "#0000ee",
+        "authored": "UA default :link"
+      }
+    },
+    "typographyMeta": {
+      "body": {
+        "displayName": "Body",
+        "purpose": "First paragraph and the link."
+      },
+      "body-secondary": {
+        "displayName": "Body secondary",
+        "purpose": "Every paragraph after the first (p + p), rendered at opacity .6."
+      }
+    },
+    "shadows": [],
+    "motion": [],
+    "opacity": [
+      {
+        "name": "icon",
+        "value": "0.55",
+        "selector": "body > svg"
+      },
+      {
+        "name": "secondary-copy",
+        "value": "0.6",
+        "selector": "p + p"
+      }
+    ],
+    "componentStyle": {
+      "buttons": "none",
+      "links": "browser default, underlined",
+      "cards": "none"
+    },
+    "motifs": [
+      "centered single column",
+      "icon above copy",
+      "translated paragraph stack"
+    ],
+    "voice": {
+      "heroHeadline": null,
+      "heroLede": "This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.",
+      "ctaLabels": [
+        "Learn more"
+      ],
+      "languages": [
+        "en",
+        "ar",
+        "zh",
+        "fr",
+        "ru",
+        "es"
+      ]
+    },
+    "modules": [],
+    "breakpoints": {
+      "containerMaxWidth": "480px",
+      "probeWidth": 2560,
+      "shellMaxWidth": "480px",
+      "caps": [
+        {
+          "kind": "shell",
+          "px": 480,
+          "via": "max-width",
+          "selector": "body",
+          "pages": [
+            "https://www.example.com/"
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "url": "https://www.example.com/",
+          "section": 0,
+          "selector": "body > svg",
+          "px": null
+        },
+        {
+          "url": "https://www.example.com/",
+          "section": 1,
+          "selector": "body > p",
+          "px": null
+        },
+        {
+          "url": "https://www.example.com/",
+          "section": 2,
+          "selector": "body > p",
+          "px": null
+        },
+        {
+          "url": "https://www.example.com/",
+          "section": 3,
+          "selector": "body > p",
+          "px": null
+        },
+        {
+          "url": "https://www.example.com/",
+          "section": 4,
+          "selector": "body > p",
+          "px": null
+        },
+        {
+          "url": "https://www.example.com/",
+          "section": 5,
+          "selector": "body > p",
+          "px": null
+        },
+        {
+          "url": "https://www.example.com/",
+          "section": 6,
+          "selector": "body > p",
+          "px": null
+        },
+        {
+          "url": "https://www.example.com/",
+          "section": 7,
+          "selector": "body > a",
+          "px": null
+        }
+      ],
+      "capRegister": [],
+      "capProvenance": {
+        "writtenBy": "skills/replica/scripts/cap-probe.mjs",
+        "writtenAt": "2026-10-05T10:14:29.840Z",
+        "baseWidth": 1440,
+        "urls": [
+          "https://www.example.com/"
+        ]
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Notice icon",
+      "kind": "custom",
+      "refersTo": "icon",
+      "description": "Inline SVG line icon above the copy; inherits text color at 55% opacity.",
+      "html": "<svg viewBox=\"0 0 20 20\" width=\"44\" height=\"44\" fill=\"currentColor\" aria-hidden=\"true\">…</svg>",
+      "css": "svg { display: block; margin: -2.75em auto 0; opacity: .55; }"
+    },
+    {
+      "name": "Notice paragraphs",
+      "kind": "custom",
+      "refersTo": "body",
+      "description": "Centered paragraphs; the first at 16px, every following one at .875em and opacity .6.",
+      "html": "<p>…</p><p>…</p>",
+      "css": "body { font: 16px/1.6 system-ui, sans-serif; text-align: center; } p + p { font-size: .875em; opacity: .6; }"
+    },
+    {
+      "name": "Learn more link",
+      "kind": "custom",
+      "refersTo": "link",
+      "description": "Bare anchor with browser-default styling.",
+      "html": "<a href=\"https://iana.org/help/example-domains\">Learn more</a>",
+      "css": ""
+    }
+  ],
+  "narrative": {
+    "northStar": "The browser default, centered",
+    "overview": "One notice page in six languages under a small line icon, centered in a 26em column on flat light grey. Four authored CSS rules on top of browser defaults; hierarchy by size and opacity only.",
+    "keyCharacteristics": [
+      "system-ui typeface, one weight",
+      "three colors, two of them browser defaults",
+      "no chrome: no header, footer or navigation",
+      "opacity steps instead of color steps"
+    ],
+    "rules": [
+      {
+        "name": "Four rules only",
+        "body": "html background, body font/column, svg placement, p+p size and opacity. Nothing else is authored.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Do keep every value exactly as captured."
+    ],
+    "donts": [
+      "Don't add headings, chrome, web fonts or new colors."
+    ]
+  }
+}

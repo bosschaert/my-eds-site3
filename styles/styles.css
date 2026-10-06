@@ -1,0 +1,127 @@
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+
+/*
+ * Replica foundation for https://www.example.com/ — one page, no header, no footer,
+ * no webfonts, no buttons. The EDS shell (body, header, main, footer, sections) must add
+ * zero boxes, margins, heights or paint; the live page's own body rules move onto `main`.
+ * Tokens are lifted verbatim from stardust/migrated/assets/canon.css.
+ */
+
+/* stylelint-disable color-hex-length -- token values kept verbatim from canon.css */
+:root {
+  /* colors */
+  --color-page-bg: #eeeeee;
+  --color-page-bg-dark: #222222;
+
+  /* type */
+  --font-body: system-ui, sans-serif;
+  --font-size-body: 16px;
+  --line-height-body: 1.6;
+
+  /* column */
+  --column-max: 26em;
+  --space-inline: 2em;
+  --space-top: 25vh;
+  --space-bottom: 2em;
+
+  /* nav height: the source has no chrome */
+  --nav-height: 0;
+}
+/* stylelint-enable color-hex-length */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+  background: light-dark(var(--color-page-bg), var(--color-page-bg-dark));
+}
+
+body {
+  display: none;
+  margin: 0;
+  font: var(--font-size-body) / var(--line-height-body) var(--font-body);
+}
+
+body.appear {
+  display: block;
+}
+
+/* chrome reservation: zero height, nothing painted */
+header {
+  height: var(--nav-height);
+}
+
+header,
+footer {
+  height: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header .header,
+footer .footer {
+  visibility: hidden;
+}
+
+header .header[data-block-status="loaded"],
+footer .footer[data-block-status="loaded"] {
+  visibility: visible;
+}
+
+/* the live page's body column: content-box 26em, padding outside it */
+main {
+  box-sizing: content-box;
+  max-width: var(--column-max);
+  margin: auto;
+  padding: var(--space-top) var(--space-inline) var(--space-bottom);
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+/* sections: transparent scaffold, no spacing of their own */
+main > .section {
+  margin: 0;
+  padding: 0;
+}
+
+main > .section > div {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+main .section:empty {
+  display: none;
+}

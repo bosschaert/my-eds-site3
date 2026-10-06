@@ -1,0 +1,101 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-05T11:35:09Z",
+    "stardustVersion": "0.27.0"
+  },
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "landing"
+      ],
+      "pages": 0,
+      "blocks": 2,
+      "startedAt": "2026-10-05T10:48:20Z",
+      "endedAt": "2026-10-05T10:58:18Z",
+      "gates": {
+        "shell": "pageerror 0, header/footer 0px, main 416px, padT 225@1440 200@360, scrollWidth = viewport",
+        "chrome": "nav+footer live, noindex"
+      },
+      "verdict": "foundation: shell ok, nav+footer live yes, code pushed 7282f5c, lint 0 errors, pageerror 0, header/footer h 0/0, main maxw 416 padT 225@1440 200@360"
+    },
+    "archetype-landing": {
+      "status": "done",
+      "kind": "archetype",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "blocks": 1,
+      "startedAt": "2026-10-05T10:59:08Z",
+      "endedAt": "2026-10-05T11:29:21Z",
+      "gates": {
+        "360": {
+          "archetype": "0.05% Δh0 (pub2)",
+          "gateAll": "0.29% Δh0 PASS"
+        },
+        "1440": {
+          "archetype": "0.01% Δh0 (pub2)",
+          "gateAll": "0.08% Δh0 PASS"
+        },
+        "crop": "n/a — source has no chrome, header/footer 0 px",
+        "chrome": "body-region parity 7/7 texts, 1/1 icons; expected EXTRA hidden h1 (recorded deviation)",
+        "capProbe": "PASS@2560",
+        "aiReadability": 100,
+        "structural": 0,
+        "clipped": 0
+      },
+      "verdict": "archetype landing: index live yes, gate 1440 0.01% Δh0 / 360 0.05% Δh0, structural 0, clipped 0, cap-probe PASS, gate-all 1440 PASS 360 PASS, ai-readability 100, pageerror 0, rounds 2, requests ~20"
+    },
+    "cluster-landing": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "landing"
+      ],
+      "pages": 0,
+      "blocks": 0,
+      "startedAt": "2026-10-05T11:31:14Z",
+      "endedAt": "2026-10-05T11:31:25Z",
+      "verdict": "cluster landing: 0 siblings, pages 0/0 to deliver (archetype index already live, / 200 on aem.live and aem.page, .plain.html 6 paragraphs), blocks 0 new, requests 3",
+      "gates": {
+        "note": "no sibling pages; archetype-landing carries the template gate row"
+      }
+    },
+    "gate-all": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-05T11:31:53Z",
+      "endedAt": "2026-10-05T11:34:10Z",
+      "verdict": "gate-all: roster 1/1 PASS at 1440 (0.08% Δh0, clipped 0, MISSING 0 HIDDEN 0) and 360 (0.29% Δh0, clipped 0, MISSING 0 HIDDEN 0); summary.json written both widths; coverage updated --gate; requests ~8",
+      "gates": {
+        "360": {
+          "roster": "0.29% Δh0 PASS 1/1"
+        },
+        "1440": {
+          "roster": "0.08% Δh0 PASS 1/1"
+        },
+        "clipped": 0,
+        "contentMissing": 0,
+        "contentHidden": 0
+      }
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-05T11:35:09Z",
+      "endedAt": "2026-10-05T11:35:09Z",
+      "verdict": "final: freeze check unchanged (16 files), foundation-requests queue empty (no file), gate-all roster 1/1 PASS both widths, coverage gated; delivered doc delivery-lint 0 P0/P1/P2; C-deliver closed"
+    }
+  }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- stardust:provenance
+  writtenBy:        stardust:extract
+  writtenAt:        2026-10-05T10:15:59Z
+  readArtifacts:
+    - stardust/current/_brand-extraction.json
+    - stardust/current/_computed-styles.json
+    - stardust/current/_crawl-log.json
+    - stardust/current/pages/index.json
+  synthesizedInputs: []
+  stardustVersion:  0.27.0
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brand review — Example Domain (current state)</title>
+<style>
+:root{--bg:#eeeeee;--text:#000000;--accent:#0000ee;--primary:#000000;--card:#ffffff;--muted:rgba(0,0,0,.6)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,sans-serif}
+nav.top{position:sticky;top:0;background:var(--card);border-bottom:1px solid rgba(0,0,0,.12);padding:10px 24px;display:flex;gap:18px;flex-wrap:wrap;font-size:14px}
+nav.top a{color:var(--accent)}
+main{max-width:980px;margin:0 auto;padding:32px 24px 64px}
+section{background:var(--card);padding:24px;margin:0 0 20px;border:1px solid rgba(0,0,0,.08)}
+h1{font-weight:400;font-size:28px;margin:0 0 8px}h2{font-weight:400;font-size:20px;margin:0 0 12px}
+.hero-line{color:var(--accent);margin:0 0 6px}
+.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{background:var(--bg);padding:14px}.stat b{display:block;font-size:22px;font-weight:400}
+.swatches{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.swatch{border:1px solid rgba(0,0,0,.12)}.swatch .chip{height:64px}.swatch div.meta{padding:10px;font-size:13px}
+.spec{margin:0 0 14px;padding:14px;background:var(--bg)}.spec small{display:block;color:var(--muted);font-size:12px;margin-top:6px}
+.badge{display:inline-block;font-size:12px;padding:2px 8px;border:1px solid rgba(0,0,0,.3);margin-left:8px;vertical-align:middle}
+.tensions{display:grid;grid-template-columns:1fr 1fr;gap:12px}.tension{padding:14px;border-left:3px solid var(--accent);background:var(--bg);font-size:14px}
+.pill{display:inline-block;padding:2px 12px;border:1px solid rgba(0,0,0,.3);font-size:13px;margin:0 6px 6px 0}
+.shot{max-width:100%;border:1px solid rgba(0,0,0,.15);display:block}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+.bars{display:flex;align-items:flex-end;gap:10px;height:120px}.bars div{width:40px;background:var(--primary);opacity:.6}.bars span{display:block;text-align:center;font-size:12px}
+footer{font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<nav class="top"><a href="#coverage">Coverage</a><a href="#pages">Pages</a><a href="#palette">Colors</a><a href="#type">Typography</a><a href="#voice">Voice</a><a href="#tensions">Tensions</a><a href="#motifs">Motifs</a><a href="#components">Components</a><a href="#logo">Logo</a><a href="#spacing">Spacing</a></nav>
+<main>
+<section id="masthead">
+  <h1>Example Domain</h1>
+  <p class="hero-line">This domain is for use in documentation examples without needing permission.</p>
+  <p class="mono">https://www.example.com/ · no meta description · 1 page</p>
+</section>
+
+<section id="coverage"><h2>Coverage</h2>
+  <div class="stats">
+    <div class="stat"><b>1 / 1</b>pages extracted (scope: the selected home page)</div>
+    <div class="stat"><b>medium · 2500 ms</b>wait strategy, 0 fallbacks, 0 failures</div>
+    <div class="stat"><b>3 colors · 1 family</b>no tokens, no web fonts, no raster media</div>
+  </div>
+  <p style="font-size:14px;color:var(--muted)">Not captured on this site: favicon (declared empty), headings (none exist), system header/footer (none exist).</p>
+</section>
+
+<section id="pages"><h2>Pages</h2>
+  <img class="shot" src="assets/screenshots/index.png" alt="Full-page screenshot of the home page at 1440 wide" width="720">
+  <p class="mono">Example Domain · /index</p>
+</section>
+
+<section id="palette"><h2>Color palette</h2>
+  <div class="swatches">
+    <div class="swatch"><div class="chip" style="background:#eeeeee"></div><div class="meta"><b>#eeeeee</b> background<br>1 occurrence · background<br><span class="mono">html · light-dark(#eee,#222)</span></div></div>
+    <div class="swatch"><div class="chip" style="background:#000000"></div><div class="meta"><b>#000000</b> text-primary<br>6 occurrences · text<br><span class="mono">body &gt; p · UA default</span></div></div>
+    <div class="swatch"><div class="chip" style="background:#0000ee"></div><div class="meta"><b>#0000ee</b> link<br>1 occurrence · text<br><span class="mono">body &gt; a · UA default :link</span></div></div>
+  </div>
+</section>
+
+<section id="type"><h2>Typography <span class="badge">modular ·875</span></h2>
+  <div class="spec" style="font-size:16px;line-height:1.6">This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.<small>body · system-ui, sans-serif · 16px / 25.6px · 400 · body &gt; p:first-of-type</small></div>
+  <div class="spec" style="font-size:14px;line-height:1.6;opacity:.6">L’usage de ce domaine est réservé à des exemples de documentation, sans autorisation préalable.<small>body-secondary · .875em (14px) / 22.4px · 400 · opacity .6 · p + p</small></div>
+  <p style="font-size:14px;color:var(--muted)">No headings on the page; one family, one weight. Source: <span class="mono">_brand-extraction.json § type</span>.</p>
+</section>
+
+<section id="voice"><h2>Voice <span class="badge">plain · institutional</span></h2>
+  <div class="stats">
+    <div class="stat"><b>—</b>hero headline (none)</div>
+    <div class="stat"><b>—</b>tagline (no meta description)</div>
+    <div class="stat" style="font-size:14px">“This domain is for use in documentation examples without needing permission…”<br><small>first paragraph</small></div>
+  </div>
+  <p style="margin:14px 0 6px">CTA frequency</p><span class="pill">Learn more ×1</span>
+  <div class="stats" style="margin-top:14px">
+    <div class="stat"><b>0 %</b>headings uppercase</div><div class="stat"><b>0</b>distinct headings</div><div class="stat"><b>1</b>distinct CTA labels</div>
+  </div>
+</section>
+
+<section id="tensions"><h2>Tensions</h2>
+  <div class="tensions">
+    <div class="tension"><b>T-no-tokens</b><br>No CSS custom properties defined. The current site has no design-token layer; the migration target will introduce tokens, which is a structural change worth calling out.</div>
+    <div class="tension"><b>T-logo-variants</b><br>Only one logo variant captured (inline-svg, currentColor at 55 % opacity). No inverted or on-dark variant exists on the site.</div>
+  </div>
+  <p style="font-size:14px;color:var(--muted)">Detectors run: all 13. Skipped for lack of data: T-radius-vocab, T-cta-vocab, T-link-content-free, T-color-imbalance, T-tokens-unused, T-img-alt-generic, T-img-alt-empty, T-embed-dominance, T-nav-conflict, T-temporal-mark. T-scale: not triggered (two sizes, one ratio).</p>
+</section>
+
+<section id="motifs"><h2>Motifs</h2>
+  <p>No radii, no shadows, no gradients. Hierarchy is carried by opacity:</p>
+  <span class="pill">icon opacity .55</span><span class="pill">p + p opacity .6</span>
+  <p style="font-size:14px;color:var(--muted)">Patterns: centered single column · icon above copy · translated paragraph stack.</p>
+</section>
+
+<section id="components"><h2>Components</h2>
+  <ul style="border-left:3px solid var(--primary);padding-left:18px;list-style:none;margin:0">
+    <li><b>Notice icon</b> — inline SVG 44×44, 1 instance</li>
+    <li><b>Notice paragraph</b> — 6 instances (en, ar, zh, fr, ru, es)</li>
+    <li><b>Learn more link</b> — 1 instance, external</li>
+  </ul>
+  <p style="font-size:14px;color:var(--muted)">System components (header / footer / nav): none detected — the page has no chrome.</p>
+</section>
+
+<section id="logo"><h2>Logo &amp; favicons</h2>
+  <div style="display:flex;gap:24px;align-items:flex-start">
+    <div style="padding:16px;background:var(--bg)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0,0,20,20" width="44" height="44" fill="currentColor" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" d="M6 4H3v12q4 0 7 1.5-1-3.5-4-4.5V2q3.5 1 4 3v12.5q3-1.5 7-1.5V4q-4.5 0-7 1"></path><g transform="rotate(-6,13.6,8.3)"><path id="q" d="M11.5 6.6h1.8v1.8l-1 1.6-.6-.3.8-1.3h-1z"></path><use href="#q" x="2.4"></use></g></svg></div>
+    <dl><dt>Source</dt><dd>inline SVG (<span class="mono">body &gt; svg</span>)</dd><dt>File</dt><dd>assets/logo.svg · SVG · 44×44 (viewBox 0 0 20 20)</dd><dt>Variants captured</dt><dd>default (currentColor, opacity .55)</dd><dt>Variants not captured</dt><dd>inverted, on-dark (none exist on the site)</dd><dt>Favicon</dt><dd>not captured — <span class="mono">link[rel=icon] href="data:,"</span></dd></dl>
+  </div>
+</section>
+
+<section id="spacing"><h2>Spacing &amp; shape</h2>
+  <p>Base unit: 1em = 16px. Authored spacing: column max-width 26em, side padding 2em, bottom padding 2em, top padding 25vh, icon pull −2.75em.</p>
+  <div class="bars"><div style="height:44px"><span>2em</span></div><div style="height:60px"><span>2.75em</span></div><div style="height:120px"><span>25vh</span></div></div>
+  <p style="margin-top:14px">Radii revisited: <span class="pill">0px</span></p>
+</section>
+
+<footer>
+  <p>Read: _brand-extraction.json, _computed-styles.json, _crawl-log.json, pages/index.json. Flow: replica — the design is kept as captured. Badge legend: typography scale kind · voice register guess.</p>
+</footer>
+</main>
+</body>
+</html>

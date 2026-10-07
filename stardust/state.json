@@ -1,0 +1,157 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout (archetype:index — state.mjs has no deployed transition; same shape, see eds-conversion-log.md)",
+    "writtenAt": "2026-10-06T11:43:10.599Z",
+    "stardustVersion": "0.27.0"
+  },
+  "site": {
+    "originUrl": "https://static-website.david-bosschaert.workers.dev/",
+    "deployUrl": null,
+    "extractedAt": "2026-10-06T10:13:18.502Z",
+    "pageCap": 100,
+    "totalDiscovered": 2,
+    "crawled": 2,
+    "captureGaps": []
+  },
+  "direction": null,
+  "handsOff": true,
+  "flow": "replica",
+  "flowChosenAt": "2026-10-06T10:13:18.502Z",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "index",
+      "url": "https://static-website.david-bosschaert.workers.dev/",
+      "title": "Good Morning!",
+      "type": "landing",
+      "status": "deployed",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-06T10:08:30.811Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-06T10:32:30Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-06T10:34:01Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-06T10:46:12Z"
+        },
+        {
+          "status": "deployed",
+          "at": "2026-10-06T11:26:51.919Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/index.json",
+      "prototypePath": "stardust/prototypes/index-proposed.html",
+      "migratedPath": "stardust/migrated/index.html",
+      "liveUrl": "https://main--bb2d4d27--aemcoder.aem.live/",
+      "deployedPath": "/",
+      "template": "index",
+      "fidelityTier": "archetype"
+    },
+    {
+      "slug": "page1",
+      "url": "https://static-website.david-bosschaert.workers.dev/page1",
+      "title": "Good Morning!",
+      "type": "static",
+      "status": "deployed",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-06T10:08:30.362Z"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-10-06T10:32:40Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-06T10:34:01Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-06T10:46:12Z"
+        },
+        {
+          "status": "deployed",
+          "at": "2026-10-06T11:43:10.599Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/page1.json",
+      "prototypePath": "stardust/prototypes/page1-proposed.html",
+      "migratedPath": "stardust/migrated/page1/index.html",
+      "liveUrl": "https://main--bb2d4d27--aemcoder.aem.live/page1",
+      "deployedPath": "/page1"
+    }
+  ],
+  "migrate": {
+    "at": "2026-10-06T10:44:10Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/",
+        "outputPath": "index.html",
+        "slug": "index",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/page1",
+        "outputPath": "page1/index.html",
+        "slug": "page1",
+        "outputPathDefault": "trailing-slash"
+      }
+    ],
+    "totalAssetsBundled": 12,
+    "bundledAssets": [
+      "css/canon.css",
+      "css/index.css",
+      "js/team-tabs.js",
+      "picsum-152-a7753dc8.jpg",
+      "picsum-155-d9e19940.jpg",
+      "picsum-164-4f7fd8f2.jpg",
+      "portrait-men-37-88a7693b.jpg",
+      "portrait-men-45-1d7dbb3d.jpg",
+      "portrait-men-59-96a17acb.jpg",
+      "portrait-women-25-79e173c4.jpg",
+      "portrait-women-43-41d9ee10.jpg",
+      "portrait-women-57-408c3470.jpg"
+    ],
+    "pages": [
+      {
+        "slug": "index",
+        "file": "stardust/migrated/index.html",
+        "assetsBundled": 12
+      },
+      {
+        "slug": "page1",
+        "file": "stardust/migrated/page1/index.html",
+        "assetsBundled": 8
+      }
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "lastRun": {
+      "at": "2026-10-06T10:44:10Z",
+      "rendered": [
+        "index",
+        "page1"
+      ],
+      "unchanged": [],
+      "refused": [],
+      "passthrough": []
+    }
+  }
+}

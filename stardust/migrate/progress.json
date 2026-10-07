@@ -1,0 +1,43 @@
+{
+  "units": {
+    "plan": {
+      "status": "done",
+      "kind": "plan",
+      "templates": [
+        "landing",
+        "static"
+      ],
+      "pages": 2,
+      "verdict": "plan: 2 pages Path A (index landing, page1 static), 0 siblings, 0 Path B; canon css e6cdf7a; DESIGN.md 8055b15, DESIGN.json 058dcfb",
+      "endedAt": "2026-10-06T10:42:47.448Z"
+    },
+    "render-archetypes": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "landing",
+        "static"
+      ],
+      "pages": 2,
+      "startedAt": "2026-10-06T10:43:03.842Z",
+      "verdict": "render-archetypes: 2/2 rendered (index → index.html 12 assets, page1 → page1/index.html 8 assets), 0 refused, 0 broken links, content-count pass on both",
+      "endedAt": "2026-10-06T10:44:57.833Z"
+    },
+    "assets": {
+      "status": "done",
+      "kind": "assets",
+      "pages": 2,
+      "startedAt": "2026-10-06T10:45:23.511Z",
+      "verdict": "assets: 12 bundled media/css/js files already per-page; no logo/fonts in capture; robots.txt + sitemap.xml (2 urls); 6 portability audits OK",
+      "endedAt": "2026-10-06T10:45:57.589Z"
+    },
+    "report": {
+      "status": "done",
+      "kind": "report",
+      "pages": 2,
+      "startedAt": "2026-10-06T10:46:12.520Z",
+      "verdict": "report: 2 migrated (index, page1), 0 unchanged, 0 failed; Path A 2; bundle 336K self-contained",
+      "endedAt": "2026-10-06T10:46:27.289Z"
+    }
+  }
+}

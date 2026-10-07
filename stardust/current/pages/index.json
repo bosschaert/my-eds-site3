@@ -1,0 +1,260 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-06T10:08:30.811Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "index",
+  "url": "https://static-website.david-bosschaert.workers.dev/",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-06T10:08:30.811Z",
+  "finalUrl": "https://static-website.david-bosschaert.workers.dev/",
+  "title": "Good Morning!",
+  "description": null,
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Super page"
+    },
+    {
+      "tag": "h2",
+      "text": "Here is a subheading"
+    },
+    {
+      "tag": "h4",
+      "text": "Alex Johnson"
+    },
+    {
+      "tag": "h4",
+      "text": "Maria Lopez"
+    }
+  ],
+  "body": [
+    "Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida",
+    "Project Lead with a knack for creative solutions and a love of adventure sports.",
+    "UI Designer who brings vibrant energy and stunning visuals to every project."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Page 1",
+      "href": "/page1"
+    },
+    {
+      "label": "Team Alpha",
+      "href": null
+    },
+    {
+      "label": "Team Beta",
+      "href": null
+    },
+    {
+      "label": "Team Gamma",
+      "href": null
+    }
+  ],
+  "links": [
+    "https://static-website.david-bosschaert.workers.dev/",
+    "https://static-website.david-bosschaert.workers.dev/page1"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://picsum.photos/id/152/800/600",
+        "alt": "Sample image",
+        "w": 800,
+        "h": 600
+      },
+      {
+        "src": "https://picsum.photos/id/155/800/600",
+        "alt": "Image 1",
+        "w": 800,
+        "h": 600
+      },
+      {
+        "src": "https://picsum.photos/id/164/800/600",
+        "alt": "Image 2",
+        "w": 800,
+        "h": 600
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/men/45.jpg",
+        "alt": "Team member 1",
+        "w": 128,
+        "h": 128
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/women/57.jpg",
+        "alt": "Team member 2",
+        "w": 128,
+        "h": 128
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/men/37.jpg",
+        "alt": "Team member 3",
+        "w": 128,
+        "h": 128
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/women/43.jpg",
+        "alt": "Team member 4",
+        "w": 128,
+        "h": 128
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/men/59.jpg",
+        "alt": "Team member 5",
+        "w": 128,
+        "h": 128
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/women/25.jpg",
+        "alt": "Team member 6",
+        "w": 128,
+        "h": 128
+      }
+    ],
+    "allImgCount": 9,
+    "cssBackgrounds": [],
+    "modals": [],
+    "videos": [],
+    "iframes": [
+      {
+        "src": "https://www.youtube.com/embed/b4Rr_7y068U",
+        "title": "YouTube video"
+      }
+    ]
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 4,
+    "mainTextLen": 1151,
+    "realImageCount": 9,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "googleads.g.doubleclick.net",
+        "path": "/pagead/id",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/html",
+        "status": 302,
+        "bytes": 120,
+        "hits": 2,
+        "example": "https://googleads.g.doubleclick.net/pagead/id",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "www.gstatic.com",
+        "path": "/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "image/svg+xml",
+        "status": 200,
+        "bytes": 272,
+        "hits": 1,
+        "example": "https://www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "jnn-pa.googleapis.com",
+        "path": "/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json+protobuf",
+        "status": 200,
+        "bytes": 130,
+        "hits": 1,
+        "example": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "www.youtube.com",
+        "path": "/youtubei/v1/log_event",
+        "query": [
+          "alt"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "status": 200,
+        "bytes": 31,
+        "hits": 1,
+        "example": "https://www.youtube.com/youtubei/v1/log_event",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.youtube.com",
+        "count": 4
+      },
+      {
+        "host": "static.doubleclick.net",
+        "count": 1
+      },
+      {
+        "host": "www.google.com",
+        "count": 1
+      }
+    ],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 4,
+      "thirdPartyScriptHosts": 3,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/index.png",
+  "renderedHtml": "pages/index.html",
+  "slots": {
+    "page-title": "Super page",
+    "lede": "Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida",
+    "media-row-1": [
+      "iframe:https://www.youtube.com/embed/b4Rr_7y068U",
+      "img:https://picsum.photos/id/152/800/600"
+    ],
+    "subheading": "Here is a subheading",
+    "media-row-2": [
+      "img:https://picsum.photos/id/155/800/600",
+      "img:https://picsum.photos/id/164/800/600"
+    ],
+    "prose-block": "A wild pangolin appears, juggling tiny umbrellas and humming a tune! Nearby, a mischievous squirrel rides a unicycle while an owl recites a poem about cheese. Suddenly, a parade of rubber ducks marches by, each one wearing a different colored hat, quacking a cheerful melody. In the distance, a pair of tap-dancing frogs put on a show, their shoes sparkling in the sunlight as a gentle breeze carries the scent of fresh popcorn through the air.",
+    "team-tabs": [
+      "Team Alpha",
+      "Team Beta",
+      "Team Gamma"
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica/handoff C-deliver",
+    "writtenAt": "2026-10-06T10:55:00Z"
+  },
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "index",
+        "page1"
+      ],
+      "pages": 0,
+      "blocks": 2,
+      "startedAt": "2026-10-06T10:55:30Z",
+      "endedAt": "2026-10-06T11:09:27Z",
+      "gates": {
+        "chrome": "nav+footer live, .plain.html 200, 0 about:error, noindex; header 1200x72@1440 / 328x72@360 = prototype (measure.mjs); pixel gate deferred to archetype:index unit (no page live yet)"
+      },
+      "verdict": "foundation: nav+footer 2/2 live, blocks 2, lint clean, code served yes, favicon boilerplate",
+      "commit": "91d5b74"
+    },
+    "archetype:index": {
+      "status": "done",
+      "kind": "archetype",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "blocks": 3,
+      "startedAt": "2026-10-06T11:16:00Z",
+      "endedAt": "2026-10-06T11:37:26Z",
+      "gates": {
+        "360": {
+          "archetype": "2.66%",
+          "heightDelta": 0,
+          "clipped": 0,
+          "contentMissing": 0
+        },
+        "1440": {
+          "archetype": "2.39%",
+          "heightDelta": -1,
+          "clipped": 0,
+          "contentMissing": 0
+        },
+        "crop": "header 0.00% / footer 0.00%",
+        "chrome": "0 deltas",
+        "motion": "parity (tabs)",
+        "rounds": 0,
+        "requests": 2
+      },
+      "verdict": "archetype:index: pages 1/1 live, blocks 3, gate 1440 2.39% / 360 2.66%, dh -1/0, clip 0/0, content missing 0, crop header 0.00%/footer 0.00%, chrome deltas 0, motion parity, rounds 0, requests 2",
+      "commits": [
+        "f92ed48",
+        "236674c"
+      ]
+    },
+    "archetype:page1": {
+      "status": "done",
+      "kind": "archetype",
+      "templates": [
+        "page1"
+      ],
+      "pages": 1,
+      "blocks": 0,
+      "startedAt": "2026-10-06T11:45:00Z",
+      "endedAt": "2026-10-06T11:48:34Z",
+      "gates": {
+        "360": {
+          "archetype": "1.06%",
+          "heightDelta": 0,
+          "clipped": 0,
+          "contentMissing": 0
+        },
+        "1440": {
+          "archetype": "0.55%",
+          "heightDelta": 0,
+          "clipped": 0,
+          "contentMissing": 0
+        },
+        "crop": "header 0.00% / footer 0.00%",
+        "chrome": "0 deltas",
+        "motion": "parity (tabs, 5/5)",
+        "rounds": 0,
+        "requests": 0
+      },
+      "verdict": "archetype:page1: pages 1/1 live, blocks 0, gate 1440 0.55% / 360 1.06%, dh 0/0, clip 0/0, content missing 0, crop header 0.00%/footer 0.00%, chrome deltas 0, motion parity, rounds 0, requests 0",
+      "commits": [
+        "1afd2fe",
+        "160c786"
+      ]
+    },
+    "cluster:index": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "index"
+      ],
+      "pages": 0,
+      "blocks": 0,
+      "startedAt": "2026-10-06T11:48:34Z",
+      "endedAt": "2026-10-06T11:48:34Z",
+      "gates": {},
+      "verdict": "cluster:index: pages 0/0 (template has no siblings; the archetype is the only page), blocks 0, requests 0"
+    },
+    "cluster:page1": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "page1"
+      ],
+      "pages": 0,
+      "blocks": 0,
+      "startedAt": "2026-10-06T11:48:34Z",
+      "endedAt": "2026-10-06T11:48:34Z",
+      "gates": {},
+      "verdict": "cluster:page1: pages 0/0 (template has no siblings; the archetype is the only page), blocks 0, requests 0"
+    },
+    "gate-all": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "index",
+        "page1"
+      ],
+      "pages": 2,
+      "blocks": 5,
+      "startedAt": "2026-10-06T11:48:48Z",
+      "endedAt": "2026-10-06T11:50:11Z",
+      "gates": {
+        "360": {
+          "index": "2.66% dh 0",
+          "page1": "1.06% dh 0",
+          "pass": "2/2"
+        },
+        "1440": {
+          "index": "2.39% dh -1",
+          "page1": "0.55% dh 0",
+          "pass": "2/2"
+        },
+        "clip": "0 on all rows",
+        "content": "0 missing/hidden"
+      },
+      "verdict": "gate-all: 2/2 PASS at 1440 (index 2.39%, page1 0.55%) and 360 (index 2.66%, page1 1.06%); dh ≤1px, clip 0, content 0 missing; coverage gate rows written, 0 flips"
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "index",
+        "page1"
+      ],
+      "pages": 2,
+      "blocks": 5,
+      "startedAt": "2026-10-06T11:52:54Z",
+      "endedAt": "2026-10-06T11:56:51Z",
+      "gates": {
+        "360": {
+          "index": "0.36%",
+          "page1": "0.44%",
+          "heightDelta": 0,
+          "clipped": 0,
+          "contentMissing": 0
+        },
+        "1440": {
+          "index": "0.05%",
+          "page1": "0.03%",
+          "heightDelta": 0,
+          "clipped": 0,
+          "contentMissing": 0
+        },
+        "requestsApplied": 1,
+        "requestsDispositioned": 2,
+        "freeze": "re-frozen after request 2"
+      },
+      "verdict": "final: freeze check ok; requests 2 dispositioned (1 applied: --nav-height 71.66px), foundation re-frozen; roster re-gate 2/2 PASS at 1440 (0.05%/0.03%) and 360 (0.36%/0.44%), dh 0, clip 0, content 0; coverage gate rows 2/2, 0 flips"
+    }
+  }
+}

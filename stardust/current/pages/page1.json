@@ -1,0 +1,155 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-10-06T10:08:30.362Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "page1",
+  "url": "https://static-website.david-bosschaert.workers.dev/page1",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-10-06T10:08:30.362Z",
+  "finalUrl": "https://static-website.david-bosschaert.workers.dev/page1",
+  "title": "Good Morning!",
+  "description": null,
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Super page"
+    },
+    {
+      "tag": "h4",
+      "text": "Alex Johnson"
+    },
+    {
+      "tag": "h4",
+      "text": "Maria Lopez"
+    }
+  ],
+  "body": [
+    "Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida",
+    "Project Lead with a knack for creative solutions and a love of adventure sports.",
+    "UI Designer who brings vibrant energy and stunning visuals to every project."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Page 1",
+      "href": "/page1"
+    },
+    {
+      "label": "Team Alpha",
+      "href": null
+    },
+    {
+      "label": "Team Beta",
+      "href": null
+    },
+    {
+      "label": "Team Gamma",
+      "href": null
+    }
+  ],
+  "links": [
+    "https://static-website.david-bosschaert.workers.dev/",
+    "https://static-website.david-bosschaert.workers.dev/page1"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://randomuser.me/api/portraits/men/45.jpg",
+        "alt": "Team member 1",
+        "w": 128,
+        "h": 128
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/women/57.jpg",
+        "alt": "Team member 2",
+        "w": 128,
+        "h": 128
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/men/37.jpg",
+        "alt": "Team member 3",
+        "w": 128,
+        "h": 128
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/women/43.jpg",
+        "alt": "Team member 4",
+        "w": 128,
+        "h": 128
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/men/59.jpg",
+        "alt": "Team member 5",
+        "w": 128,
+        "h": 128
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/women/25.jpg",
+        "alt": "Team member 6",
+        "w": 128,
+        "h": 128
+      }
+    ],
+    "allImgCount": 6,
+    "cssBackgrounds": [],
+    "modals": [],
+    "videos": [],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 3,
+    "mainTextLen": 685,
+    "realImageCount": 6,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [],
+    "thirdPartyScriptHosts": [],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 0,
+      "thirdPartyScriptHosts": 0,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/page1.png",
+  "renderedHtml": "pages/page1.html",
+  "slots": {
+    "page-title": "Super page",
+    "lede": "Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida",
+    "team-tabs": [
+      "Team Alpha",
+      "Team Beta",
+      "Team Gamma"
+    ]
+  }
+}

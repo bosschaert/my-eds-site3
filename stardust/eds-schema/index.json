@@ -1,0 +1,203 @@
+{
+ "source": "file:///workspace/bb2d4d27/stardust/.work/rollout/index/index-sectioned.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "media-cells",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Super page"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 2,
+   "repeats": [
+    {
+     "unitSelector": "DIV.media-cells__cell",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 0
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "media-cells",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Here is a subheading"
+    }
+   ],
+   "imgCount": 2,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "DIV.media-cells__cell",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 1,
+      "textRuns": 0
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "prose-block",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "A wild pangolin appears, juggling tiny umbrellas and humming a tune! Nearby, a mischievous squirrel rides a unicycle while an owl recites a poem about cheese. Suddenly, a parade of rubber ducks marches by, each one wearing a different colored hat, quacking a cheerful melody. In the distance, a pair of tap-dancing frogs put on a show, their shoes sparkling in the sunlight as a gentle breeze carries the scent of fresh popcorn through the air."
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 0,
+   "repeats": []
+  },
+  {
+   "section": "team-tabs",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Team Alpha"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Team Beta"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Team Gamma"
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "Alex Johnson"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Project Lead with a knack for creative solutions and a love of adventure sports."
+    },
+    {
+     "role": "heading",
+     "order": 5,
+     "text": "Maria Lopez"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "UI Designer who brings vibrant energy and stunning visuals to every project."
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "Brian Kim"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Backend engineer, automation enthusiast, and gourmet coffee taster."
+    },
+    {
+     "role": "heading",
+     "order": 9,
+     "text": "Sophia Patel"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "QA Analyst who catches every bug and knits amazing scarves in her free time."
+    },
+    {
+     "role": "heading",
+     "order": 11,
+     "text": "Elijah Brown"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "DevOps wizard, mountain hiker, and avid reader of mystery novels."
+    },
+    {
+     "role": "heading",
+     "order": 13,
+     "text": "Linda Zhang"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "Frontend guru who mixes pixel perfection with playful animations and memes."
+    }
+   ],
+   "imgCount": 6,
+   "editableTexts": 12,
+   "repeats": [
+    {
+     "unitSelector": "DIV.tab-content",
+     "count": 3,
+     "unit": {
+      "headings": 2,
+      "ctas": 0,
+      "imgs": 2,
+      "textRuns": 4
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.team-card",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 1,
+      "textRuns": 2
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.team-card",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 1,
+      "textRuns": 2
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.team-card",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 1,
+      "textRuns": 2
+     },
+     "uniform": true
+    }
+   ]
+  }
+ ]
+}

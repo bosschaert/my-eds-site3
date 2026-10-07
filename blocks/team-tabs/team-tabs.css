@@ -1,0 +1,143 @@
+/* team-tabs — lifted from stardust/prototypes/css/canon.css (.tabs-section, .tab-buttons,
+   .tab-buttons__button, .tab-content, .team-card*) and scoped under .team-tabs. */
+
+/* the source band is uncapped (1376px wide at 1440: body gutter only); the scaffold caps
+   section divs at 1200px — scoped release, see stardust/rollout/foundation-requests.md */
+.team-tabs-container .team-tabs-wrapper {
+  max-width: none;
+}
+
+.team-tabs {
+  margin: 2em 0;
+  border-radius: var(--radius-card);
+  padding: 1em;
+  background: var(--c-tabs-bg);
+}
+
+.team-tabs .tab-buttons {
+  display: flex;
+  margin-bottom: 1em;
+  border-bottom: 2px solid var(--c-tab-rule);
+}
+
+/* the source control is a bare <button>: UA control face (Arial on the gate machine),
+   700 / 1.1em / line-height normal — reproduced on the wrapper, which carries the paint */
+.team-tabs .tab {
+  position: relative;
+  padding: 1em 2em;
+  color: var(--c-tab-text);
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: normal;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.team-tabs .tab.active {
+  border-bottom: 3px solid var(--c-tab-active);
+  background: var(--c-surface);
+  color: var(--c-tab-active);
+}
+
+/* the generated control: no text (EW7), fills the tab, under the label */
+.team-tabs .tab button {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* the authored label (EW2: through the wrapper; undo the global `main p` lede rule) */
+.team-tabs .tab p {
+  position: relative;
+  max-width: none;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+}
+
+.team-tabs .tab-content {
+  display: none;
+  animation: fadeIn 0.4s;
+}
+
+.team-tabs .tab-content.active {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+/* stylelint-disable-next-line keyframes-name-pattern -- source name, motion parity */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.team-tabs .team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+  border-radius: var(--radius-team);
+  padding: 1em;
+  background: var(--c-surface);
+  box-shadow: var(--shadow-team);
+  transition: box-shadow 0.2s;
+}
+
+.team-tabs .team-card-photo img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* the source name is an <h4> (1em bold); the authored heading is an <h3> for the outline */
+.team-tabs .team-card-name :is(h2, h3, h4, h5, h6) {
+  margin: 0.2em 0;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-tabs .tab,
+  .team-tabs .team-card {
+    transition: none;
+  }
+
+  .team-tabs .tab-content {
+    animation: none;
+  }
+}
+
+@media (width <= 900px) {
+  .team-tabs .tab-content.active {
+    flex-direction: column;
+    gap: 1.2em;
+  }
+
+  .team-tabs .team-card {
+    width: 100%;
+  }
+}
+
+@media (width <= 768px) {
+  /* register R-03 (applied in the prototype): 2em button padding overflows 360px */
+  .team-tabs .tab {
+    padding: 1em;
+  }
+}

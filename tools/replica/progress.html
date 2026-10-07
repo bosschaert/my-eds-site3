@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Migration status</title>
+<link rel="stylesheet" href="spectrum.css">
+<style>
+  body { background-color: var(--spectrum-bg-app); }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 24px 64px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .meta { color: var(--spectrum-text-subdued); margin: 0 0 24px; }
+  .spectrum-panel { margin-bottom: 16px; }
+  .spectrum-panel-header { margin: 0; padding: 0 16px; }
+  .panel-body { padding: 16px; }
+  .panel-body > :last-child { margin-bottom: 0; }
+  .bar { height: 8px; border-radius: 9999px; background-color: var(--spectrum-gray-200); overflow: hidden; }
+  .bar span { display: block; height: 100%; background-color: var(--spectrum-accent-bg); }
+  .estimate { color: var(--spectrum-text-subdued); margin: 8px 0 0; }
+  ol.steps, ul.pages { list-style: none; padding: 0; margin: 0; }
+  ol.steps li, ul.pages li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; }
+  ol.steps li + li, ul.pages li + li { border-top: 1px solid var(--spectrum-gray-200); }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 8px; text-align: left; border-bottom: 1px solid var(--spectrum-gray-200); }
+  th { color: var(--spectrum-text-subdued); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Migration status</h1>
+    <span class="spectrum-badge spectrum-badge--positive">Ready</span>
+  </header>
+  <p class="meta">Source site: <a href="https://static-website.david-bosschaert.workers.dev/">https://static-website.david-bosschaert.workers.dev/</a><br>Preview site: <a href="https://main--bb2d4d27--aemcoder.aem.page/">https://main--bb2d4d27--aemcoder.aem.page/</a><br>Last updated: 2026-10-06 12:18 UTC</p>
+
+  <section class="spectrum-panel">
+    <h2 class="spectrum-panel-header">Journey</h2>
+    <div class="panel-body">
+      <ol class="steps">
+        <li>Analyzing your site<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
+        <li>Capturing brand and design<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
+        <li>Rebuilding page templates<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
+        <li>Checking fidelity<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
+        <li>Migrating your pages<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="spectrum-panel">
+    <h2 class="spectrum-panel-header">Page templates</h2>
+    <div class="panel-body">
+      <table>
+        <thead><tr><th>Template</th><th>Pages</th><th>Desktop</th><th>Mobile</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Home page</td><td>1</td><td><span class="spectrum-badge spectrum-badge--positive">Yes</span></td><td><span class="spectrum-badge spectrum-badge--positive">Yes</span></td><td><span class="spectrum-badge spectrum-badge--positive">Done</span></td></tr>
+          <tr><td>Team page</td><td>1</td><td><span class="spectrum-badge spectrum-badge--positive">Yes</span></td><td><span class="spectrum-badge spectrum-badge--positive">Yes</span></td><td><span class="spectrum-badge spectrum-badge--positive">Done</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="spectrum-panel">
+    <h2 class="spectrum-panel-header">Pages migrated: 2 of 2</h2>
+    <div class="panel-body">
+      <details open><summary>Pages</summary><ul class="pages"><li><a href="https://main--bb2d4d27--aemcoder.aem.page/">Home</a> <span class="spectrum-badge spectrum-badge--positive">Ready</span></li><li><a href="https://main--bb2d4d27--aemcoder.aem.page/page1">Page 1</a> <span class="spectrum-badge spectrum-badge--positive">Ready</span></li></ul></details>
+    </div>
+  </section>
+
+  <section class="spectrum-panel">
+    <h2 class="spectrum-panel-header">Progress: 100% complete</h2>
+    <div class="panel-body">
+      <div class="bar"><span style="width: 100%"></span></div>
+      <p class="estimate">Complete</p>
+    </div>
+  </section>
+
+  <section class="spectrum-panel">
+    <h2 class="spectrum-panel-header">What's happening now</h2>
+    <div class="panel-body">
+      <p>Your migration is complete. Both pages are live on the new site and match the original on desktop and mobile: layout, text, images, the video embed and the team tabs all line up. The sitemap, the redirects from the old page addresses, the link check and the quality review are all in place and passed.</p>
+    </div>
+  </section>
+
+  <section class="spectrum-panel">
+    <h2 class="spectrum-panel-header">What's next</h2>
+    <div class="panel-body">
+      <p>Review the pages on the preview site; the delivery report lists two optional refinements (per-page descriptions and page titles) you may want to author later.</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,2201 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-10-06T10:09:26.255Z",
+    "script": "style-census.mjs",
+    "readArtifacts": [
+      "https://static-website.david-bosschaert.workers.dev/",
+      "https://static-website.david-bosschaert.workers.dev/page1"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "synthesizedInputs": [],
+    "failed": []
+  },
+  "pages": {
+    "https://static-website.david-bosschaert.workers.dev/": {
+      "360": {
+        "title": "Good Morning!",
+        "viewport": {
+          "width": 360,
+          "height": 900
+        },
+        "elements": {
+          "total": 57,
+          "visible": 38
+        },
+        "occluders": [],
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Super page",
+            "selector": "#heading",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "28.8px",
+            "fontWeight": "700",
+            "lineHeight": "46.08px",
+            "letterSpacing": "-0.5px",
+            "textTransform": "none",
+            "color": "rgb(106, 27, 154)"
+          },
+          {
+            "tag": "h2",
+            "text": "Here is a subheading",
+            "selector": "body > h2",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "22.4px",
+            "fontWeight": "600",
+            "lineHeight": "35.84px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 137, 123)"
+          },
+          {
+            "tag": "h4",
+            "text": "Alex Johnson",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > h4",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h4",
+            "text": "Maria Lopez",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > h4",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          }
+        ],
+        "text": [
+          {
+            "tag": "p",
+            "text": "Tralalala ladida lalala ladida lalala l…",
+            "selector": "body > p",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "18.4px",
+            "fontWeight": "500",
+            "lineHeight": "29.44px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(94, 53, 177)"
+          },
+          {
+            "tag": "p",
+            "text": "Project Lead with a knack for creative …",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > p",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "18.4px",
+            "fontWeight": "500",
+            "lineHeight": "29.44px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(94, 53, 177)"
+          },
+          {
+            "tag": "p",
+            "text": "UI Designer who brings vibrant energy a…",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > p",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "18.4px",
+            "fontWeight": "500",
+            "lineHeight": "29.44px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(94, 53, 177)"
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Team Alpha",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(1)",
+            "count": 1,
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(33, 150, 243)",
+            "borderRadius": "0px",
+            "padding": "17.6px 35.2px",
+            "border": "",
+            "borderColor": "rgb(33, 150, 243)",
+            "boxShadow": "none",
+            "fontFamily": "Arial",
+            "fontSize": "17.6px",
+            "fontWeight": "700",
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "hover": {
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(33, 150, 243)",
+              "borderColor": "rgb(33, 150, 243)",
+              "boxShadow": "none",
+              "changed": false
+            }
+          }
+        ],
+        "links": [
+          {
+            "text": "Home",
+            "selector": "nav > a:nth-of-type(1)",
+            "count": 2,
+            "color": "rgb(106, 27, 154)",
+            "textDecoration": "none",
+            "fontWeight": "600",
+            "hover": {
+              "backgroundColor": "rgb(243, 229, 245)",
+              "color": "rgb(74, 20, 140)",
+              "borderColor": "rgb(74, 20, 140)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "surfaces": [
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 16,
+              "y": 16,
+              "w": 328,
+              "h": 72
+            },
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "16px 24px",
+            "maxWidth": "1200px",
+            "borderRadius": "12px",
+            "boxShadow": "rgba(106, 27, 154, 0.12) 0px 4px 20px 0px",
+            "position": "static",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "16px"
+          },
+          {
+            "matched": "footer",
+            "selector": "footer",
+            "rect": {
+              "x": 16,
+              "y": 2694,
+              "w": 328,
+              "h": 74
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(119, 119, 119)",
+            "padding": "24px",
+            "maxWidth": "1200px",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "15.2px"
+          }
+        ],
+        "radii": [
+          {
+            "value": "12px",
+            "count": 7,
+            "area": 705159,
+            "sources": [
+              "nav",
+              "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(1)",
+              "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "8px",
+            "count": 6,
+            "area": 198105,
+            "sources": [
+              "nav > a:nth-of-type(1)",
+              "nav > a:nth-of-type(2)",
+              "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(1) > iframe"
+            ]
+          },
+          {
+            "value": "10px",
+            "count": 2,
+            "area": 189606,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "50%",
+            "count": 2,
+            "area": 28800,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > img",
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > img"
+            ]
+          }
+        ],
+        "shadows": [
+          {
+            "value": "rgba(106, 27, 154, 0.12) 0px 4px 20px 0px",
+            "count": 5,
+            "sources": [
+              "nav",
+              "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(1)",
+              "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.07) 0px 2px 8px 0px",
+            "count": 2,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgba(233, 30, 99, 0.1) 0px 4px 20px 0px",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(1)"
+            ]
+          }
+        ],
+        "gradients": [
+          {
+            "value": "linear-gradient(135deg, rgb(224, 247, 250) 0%, rgb(243, 229, 245) 50%, rgb(255, 248, 225) 100%)",
+            "count": 1,
+            "area": 1002229,
+            "sources": [
+              "body"
+            ]
+          },
+          {
+            "value": "linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(252, 228, 236) 100%)",
+            "count": 1,
+            "area": 159828,
+            "sources": [
+              "body > div:nth-of-type(1)"
+            ]
+          }
+        ],
+        "bgColors": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 8,
+            "area": 485399,
+            "sources": [
+              "nav",
+              "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(1)",
+              "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgb(248, 248, 248)",
+            "count": 1,
+            "area": 259100,
+            "sources": [
+              "body > div:nth-of-type(2)"
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(106, 27, 154)",
+            "count": 3,
+            "sources": [
+              "nav > a:nth-of-type(1)",
+              "nav > a:nth-of-type(2)",
+              "#heading"
+            ]
+          },
+          {
+            "value": "rgb(94, 53, 177)",
+            "count": 3,
+            "sources": [
+              "body > p",
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > p",
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > p"
+            ]
+          },
+          {
+            "value": "rgb(102, 102, 102)",
+            "count": 2,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(2)",
+              "body > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 2,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > h4",
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > h4"
+            ]
+          },
+          {
+            "value": "rgb(0, 137, 123)",
+            "count": 1,
+            "sources": [
+              "body > h2"
+            ]
+          },
+          {
+            "value": "rgb(119, 119, 119)",
+            "count": 1,
+            "sources": [
+              "footer"
+            ]
+          },
+          {
+            "value": "rgb(33, 150, 243)",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(68, 68, 68)",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(1)"
+            ]
+          }
+        ],
+        "borderColors": [
+          {
+            "value": "rgb(221, 221, 221)",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(224, 224, 224)",
+            "count": 1,
+            "sources": [
+              "footer"
+            ]
+          },
+          {
+            "value": "rgb(236, 64, 122)",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(33, 150, 243)",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(38, 198, 218)",
+            "count": 1,
+            "sources": [
+              "body > h2"
+            ]
+          }
+        ],
+        "customProps": {},
+        "fonts": [],
+        "logoCandidates": [],
+        "iconFont": null,
+        "consent": {
+          "dismissed": null
+        },
+        "finalUrl": "https://static-website.david-bosschaert.workers.dev/"
+      },
+      "1440": {
+        "title": "Good Morning!",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "elements": {
+          "total": 57,
+          "visible": 38
+        },
+        "occluders": [],
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Super page",
+            "selector": "#heading",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "48px",
+            "fontWeight": "700",
+            "lineHeight": "76.8px",
+            "letterSpacing": "-0.5px",
+            "textTransform": "none",
+            "color": "rgb(106, 27, 154)"
+          },
+          {
+            "tag": "h2",
+            "text": "Here is a subheading",
+            "selector": "body > h2",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "32px",
+            "fontWeight": "600",
+            "lineHeight": "51.2px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(0, 137, 123)"
+          },
+          {
+            "tag": "h4",
+            "text": "Alex Johnson",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > h4",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h4",
+            "text": "Maria Lopez",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > h4",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          }
+        ],
+        "text": [
+          {
+            "tag": "p",
+            "text": "Tralalala ladida lalala ladida lalala l…",
+            "selector": "body > p",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "18.4px",
+            "fontWeight": "500",
+            "lineHeight": "29.44px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(94, 53, 177)"
+          },
+          {
+            "tag": "p",
+            "text": "Project Lead with a knack for creative …",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > p",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "18.4px",
+            "fontWeight": "500",
+            "lineHeight": "29.44px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(94, 53, 177)"
+          },
+          {
+            "tag": "p",
+            "text": "UI Designer who brings vibrant energy a…",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > p",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "18.4px",
+            "fontWeight": "500",
+            "lineHeight": "29.44px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(94, 53, 177)"
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Team Alpha",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(1)",
+            "count": 1,
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(33, 150, 243)",
+            "borderRadius": "0px",
+            "padding": "17.6px 35.2px",
+            "border": "",
+            "borderColor": "rgb(33, 150, 243)",
+            "boxShadow": "none",
+            "fontFamily": "Arial",
+            "fontSize": "17.6px",
+            "fontWeight": "700",
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "hover": {
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(33, 150, 243)",
+              "borderColor": "rgb(33, 150, 243)",
+              "boxShadow": "none",
+              "changed": false
+            }
+          }
+        ],
+        "links": [
+          {
+            "text": "Home",
+            "selector": "nav > a:nth-of-type(1)",
+            "count": 2,
+            "color": "rgb(106, 27, 154)",
+            "textDecoration": "none",
+            "fontWeight": "600",
+            "hover": {
+              "backgroundColor": "rgb(243, 229, 245)",
+              "color": "rgb(74, 20, 140)",
+              "borderColor": "rgb(74, 20, 140)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "surfaces": [
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 120,
+              "y": 32,
+              "w": 1200,
+              "h": 72
+            },
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "16px 24px",
+            "maxWidth": "1200px",
+            "borderRadius": "12px",
+            "boxShadow": "rgba(106, 27, 154, 0.12) 0px 4px 20px 0px",
+            "position": "static",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "16px"
+          },
+          {
+            "matched": "footer",
+            "selector": "footer",
+            "rect": {
+              "x": 120,
+              "y": 2004,
+              "w": 1200,
+              "h": 74
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(119, 119, 119)",
+            "padding": "24px",
+            "maxWidth": "1200px",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "15.2px"
+          }
+        ],
+        "radii": [
+          {
+            "value": "12px",
+            "count": 7,
+            "area": 1725603,
+            "sources": [
+              "nav",
+              "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(1)",
+              "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "8px",
+            "count": 6,
+            "area": 698325,
+            "sources": [
+              "nav > a:nth-of-type(1)",
+              "nav > a:nth-of-type(2)",
+              "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(1) > iframe"
+            ]
+          },
+          {
+            "value": "10px",
+            "count": 2,
+            "area": 375252,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "50%",
+            "count": 2,
+            "area": 28800,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > img",
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > img"
+            ]
+          }
+        ],
+        "shadows": [
+          {
+            "value": "rgba(106, 27, 154, 0.12) 0px 4px 20px 0px",
+            "count": 5,
+            "sources": [
+              "nav",
+              "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(1)",
+              "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.07) 0px 2px 8px 0px",
+            "count": 2,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgba(233, 30, 99, 0.1) 0px 4px 20px 0px",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(1)"
+            ]
+          }
+        ],
+        "gradients": [
+          {
+            "value": "linear-gradient(135deg, rgb(224, 247, 250) 0%, rgb(243, 229, 245) 50%, rgb(255, 248, 225) 100%)",
+            "count": 1,
+            "area": 3038805,
+            "sources": [
+              "body"
+            ]
+          },
+          {
+            "value": "linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(252, 228, 236) 100%)",
+            "count": 1,
+            "area": 185644,
+            "sources": [
+              "body > div:nth-of-type(1)"
+            ]
+          }
+        ],
+        "bgColors": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 8,
+            "area": 1374720,
+            "sources": [
+              "nav",
+              "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(1)",
+              "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgb(248, 248, 248)",
+            "count": 1,
+            "area": 550443,
+            "sources": [
+              "body > div:nth-of-type(2)"
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(106, 27, 154)",
+            "count": 3,
+            "sources": [
+              "nav > a:nth-of-type(1)",
+              "nav > a:nth-of-type(2)",
+              "#heading"
+            ]
+          },
+          {
+            "value": "rgb(94, 53, 177)",
+            "count": 3,
+            "sources": [
+              "body > p",
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > p",
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > p"
+            ]
+          },
+          {
+            "value": "rgb(102, 102, 102)",
+            "count": 2,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(2)",
+              "body > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 2,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > h4",
+              "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > h4"
+            ]
+          },
+          {
+            "value": "rgb(0, 137, 123)",
+            "count": 1,
+            "sources": [
+              "body > h2"
+            ]
+          },
+          {
+            "value": "rgb(119, 119, 119)",
+            "count": 1,
+            "sources": [
+              "footer"
+            ]
+          },
+          {
+            "value": "rgb(33, 150, 243)",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(68, 68, 68)",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(1)"
+            ]
+          }
+        ],
+        "borderColors": [
+          {
+            "value": "rgb(221, 221, 221)",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(224, 224, 224)",
+            "count": 1,
+            "sources": [
+              "footer"
+            ]
+          },
+          {
+            "value": "rgb(236, 64, 122)",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(33, 150, 243)",
+            "count": 1,
+            "sources": [
+              "body > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(38, 198, 218)",
+            "count": 1,
+            "sources": [
+              "body > h2"
+            ]
+          }
+        ],
+        "customProps": {},
+        "fonts": [],
+        "logoCandidates": [],
+        "iconFont": null,
+        "consent": {
+          "dismissed": null
+        },
+        "finalUrl": "https://static-website.david-bosschaert.workers.dev/"
+      }
+    },
+    "https://static-website.david-bosschaert.workers.dev/page1": {
+      "360": {
+        "title": "Good Morning!",
+        "viewport": {
+          "width": 360,
+          "height": 900
+        },
+        "elements": {
+          "total": 41,
+          "visible": 22
+        },
+        "occluders": [],
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Super page",
+            "selector": "#heading",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "28.8px",
+            "fontWeight": "700",
+            "lineHeight": "46.08px",
+            "letterSpacing": "-0.5px",
+            "textTransform": "none",
+            "color": "rgb(106, 27, 154)"
+          },
+          {
+            "tag": "h4",
+            "text": "Alex Johnson",
+            "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(1) > h4",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h4",
+            "text": "Maria Lopez",
+            "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(2) > h4",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          }
+        ],
+        "text": [
+          {
+            "tag": "p",
+            "text": "Tralalala ladida lalala ladida lalala l…",
+            "selector": "body > p",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "18.4px",
+            "fontWeight": "500",
+            "lineHeight": "29.44px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(94, 53, 177)"
+          },
+          {
+            "tag": "p",
+            "text": "Project Lead with a knack for creative …",
+            "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(1) > p",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "18.4px",
+            "fontWeight": "500",
+            "lineHeight": "29.44px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(94, 53, 177)"
+          },
+          {
+            "tag": "p",
+            "text": "UI Designer who brings vibrant energy a…",
+            "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(2) > p",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "18.4px",
+            "fontWeight": "500",
+            "lineHeight": "29.44px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(94, 53, 177)"
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Team Alpha",
+            "selector": "body > div > div:nth-of-type(1) > button:nth-of-type(1)",
+            "count": 1,
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(33, 150, 243)",
+            "borderRadius": "0px",
+            "padding": "17.6px 35.2px",
+            "border": "",
+            "borderColor": "rgb(33, 150, 243)",
+            "boxShadow": "none",
+            "fontFamily": "Arial",
+            "fontSize": "17.6px",
+            "fontWeight": "700",
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "hover": {
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(33, 150, 243)",
+              "borderColor": "rgb(33, 150, 243)",
+              "boxShadow": "none",
+              "changed": false
+            }
+          }
+        ],
+        "links": [
+          {
+            "text": "Home",
+            "selector": "nav > a:nth-of-type(1)",
+            "count": 2,
+            "color": "rgb(106, 27, 154)",
+            "textDecoration": "none",
+            "fontWeight": "600",
+            "hover": {
+              "backgroundColor": "rgb(243, 229, 245)",
+              "color": "rgb(74, 20, 140)",
+              "borderColor": "rgb(74, 20, 140)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "surfaces": [
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 16,
+              "y": 16,
+              "w": 328,
+              "h": 72
+            },
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "16px 24px",
+            "maxWidth": "1200px",
+            "borderRadius": "12px",
+            "boxShadow": "rgba(106, 27, 154, 0.12) 0px 4px 20px 0px",
+            "position": "static",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "16px"
+          },
+          {
+            "matched": "footer",
+            "selector": "footer",
+            "rect": {
+              "x": 16,
+              "y": 1087,
+              "w": 328,
+              "h": 74
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(119, 119, 119)",
+            "padding": "24px",
+            "maxWidth": "1200px",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "15.2px"
+          }
+        ],
+        "radii": [
+          {
+            "value": "12px",
+            "count": 2,
+            "area": 282603,
+            "sources": [
+              "nav",
+              "body > div"
+            ]
+          },
+          {
+            "value": "10px",
+            "count": 2,
+            "area": 189606,
+            "sources": [
+              "body > div > div:nth-of-type(2) > div:nth-of-type(1)",
+              "body > div > div:nth-of-type(2) > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "50%",
+            "count": 2,
+            "area": 28800,
+            "sources": [
+              "body > div > div:nth-of-type(2) > div:nth-of-type(1) > img",
+              "body > div > div:nth-of-type(2) > div:nth-of-type(2) > img"
+            ]
+          },
+          {
+            "value": "8px",
+            "count": 2,
+            "area": 6261,
+            "sources": [
+              "nav > a:nth-of-type(1)",
+              "nav > a:nth-of-type(2)"
+            ]
+          }
+        ],
+        "shadows": [
+          {
+            "value": "rgba(0, 0, 0, 0.07) 0px 2px 8px 0px",
+            "count": 2,
+            "sources": [
+              "body > div > div:nth-of-type(2) > div:nth-of-type(1)",
+              "body > div > div:nth-of-type(2) > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgba(106, 27, 154, 0.12) 0px 4px 20px 0px",
+            "count": 1,
+            "sources": [
+              "nav"
+            ]
+          }
+        ],
+        "gradients": [
+          {
+            "value": "linear-gradient(135deg, rgb(224, 247, 250) 0%, rgb(243, 229, 245) 50%, rgb(255, 248, 225) 100%)",
+            "count": 1,
+            "area": 423664,
+            "sources": [
+              "body"
+            ]
+          }
+        ],
+        "bgColors": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 4,
+            "area": 222671,
+            "sources": [
+              "nav",
+              "body > div > div:nth-of-type(1) > button:nth-of-type(1)",
+              "body > div > div:nth-of-type(2) > div:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(248, 248, 248)",
+            "count": 1,
+            "area": 259100,
+            "sources": [
+              "body > div"
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(106, 27, 154)",
+            "count": 3,
+            "sources": [
+              "nav > a:nth-of-type(1)",
+              "nav > a:nth-of-type(2)",
+              "#heading"
+            ]
+          },
+          {
+            "value": "rgb(94, 53, 177)",
+            "count": 3,
+            "sources": [
+              "body > p",
+              "body > div > div:nth-of-type(2) > div:nth-of-type(1) > p",
+              "body > div > div:nth-of-type(2) > div:nth-of-type(2) > p"
+            ]
+          },
+          {
+            "value": "rgb(102, 102, 102)",
+            "count": 2,
+            "sources": [
+              "body > div > div:nth-of-type(1) > button:nth-of-type(2)",
+              "body > div > div:nth-of-type(1) > button:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 2,
+            "sources": [
+              "body > div > div:nth-of-type(2) > div:nth-of-type(1) > h4",
+              "body > div > div:nth-of-type(2) > div:nth-of-type(2) > h4"
+            ]
+          },
+          {
+            "value": "rgb(119, 119, 119)",
+            "count": 1,
+            "sources": [
+              "footer"
+            ]
+          },
+          {
+            "value": "rgb(33, 150, 243)",
+            "count": 1,
+            "sources": [
+              "body > div > div:nth-of-type(1) > button:nth-of-type(1)"
+            ]
+          }
+        ],
+        "borderColors": [
+          {
+            "value": "rgb(221, 221, 221)",
+            "count": 1,
+            "sources": [
+              "body > div > div:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(224, 224, 224)",
+            "count": 1,
+            "sources": [
+              "footer"
+            ]
+          },
+          {
+            "value": "rgb(33, 150, 243)",
+            "count": 1,
+            "sources": [
+              "body > div > div:nth-of-type(1) > button:nth-of-type(1)"
+            ]
+          }
+        ],
+        "customProps": {},
+        "fonts": [],
+        "logoCandidates": [],
+        "iconFont": null,
+        "consent": {
+          "dismissed": null
+        },
+        "finalUrl": "https://static-website.david-bosschaert.workers.dev/page1"
+      },
+      "1440": {
+        "title": "Good Morning!",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "elements": {
+          "total": 41,
+          "visible": 22
+        },
+        "occluders": [],
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Super page",
+            "selector": "#heading",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "48px",
+            "fontWeight": "700",
+            "lineHeight": "76.8px",
+            "letterSpacing": "-0.5px",
+            "textTransform": "none",
+            "color": "rgb(106, 27, 154)"
+          },
+          {
+            "tag": "h4",
+            "text": "Alex Johnson",
+            "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(1) > h4",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          },
+          {
+            "tag": "h4",
+            "text": "Maria Lopez",
+            "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(2) > h4",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "16px",
+            "fontWeight": "700",
+            "lineHeight": "25.6px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(51, 51, 51)"
+          }
+        ],
+        "text": [
+          {
+            "tag": "p",
+            "text": "Tralalala ladida lalala ladida lalala l…",
+            "selector": "body > p",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "18.4px",
+            "fontWeight": "500",
+            "lineHeight": "29.44px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(94, 53, 177)"
+          },
+          {
+            "tag": "p",
+            "text": "Project Lead with a knack for creative …",
+            "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(1) > p",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "18.4px",
+            "fontWeight": "500",
+            "lineHeight": "29.44px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(94, 53, 177)"
+          },
+          {
+            "tag": "p",
+            "text": "UI Designer who brings vibrant energy a…",
+            "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(2) > p",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "18.4px",
+            "fontWeight": "500",
+            "lineHeight": "29.44px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(94, 53, 177)"
+          }
+        ],
+        "buttons": [
+          {
+            "text": "Team Alpha",
+            "selector": "body > div > div:nth-of-type(1) > button:nth-of-type(1)",
+            "count": 1,
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(33, 150, 243)",
+            "borderRadius": "0px",
+            "padding": "17.6px 35.2px",
+            "border": "",
+            "borderColor": "rgb(33, 150, 243)",
+            "boxShadow": "none",
+            "fontFamily": "Arial",
+            "fontSize": "17.6px",
+            "fontWeight": "700",
+            "textTransform": "none",
+            "letterSpacing": "normal",
+            "hover": {
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(33, 150, 243)",
+              "borderColor": "rgb(33, 150, 243)",
+              "boxShadow": "none",
+              "changed": false
+            }
+          }
+        ],
+        "links": [
+          {
+            "text": "Home",
+            "selector": "nav > a:nth-of-type(1)",
+            "count": 2,
+            "color": "rgb(106, 27, 154)",
+            "textDecoration": "none",
+            "fontWeight": "600",
+            "hover": {
+              "backgroundColor": "rgb(243, 229, 245)",
+              "color": "rgb(74, 20, 140)",
+              "borderColor": "rgb(74, 20, 140)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "surfaces": [
+          {
+            "matched": "nav",
+            "selector": "nav",
+            "rect": {
+              "x": 120,
+              "y": 32,
+              "w": 1200,
+              "h": 72
+            },
+            "backgroundColor": "rgb(255, 255, 255)",
+            "color": "rgb(51, 51, 51)",
+            "padding": "16px 24px",
+            "maxWidth": "1200px",
+            "borderRadius": "12px",
+            "boxShadow": "rgba(106, 27, 154, 0.12) 0px 4px 20px 0px",
+            "position": "static",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "16px"
+          },
+          {
+            "matched": "footer",
+            "selector": "footer",
+            "rect": {
+              "x": 120,
+              "y": 714,
+              "w": 1200,
+              "h": 74
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(119, 119, 119)",
+            "padding": "24px",
+            "maxWidth": "1200px",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Poppins, \"Segoe UI\", system-ui, sans-serif",
+            "fontSize": "15.2px"
+          }
+        ],
+        "radii": [
+          {
+            "value": "12px",
+            "count": 2,
+            "area": 636431,
+            "sources": [
+              "nav",
+              "body > div"
+            ]
+          },
+          {
+            "value": "10px",
+            "count": 2,
+            "area": 375252,
+            "sources": [
+              "body > div > div:nth-of-type(2) > div:nth-of-type(1)",
+              "body > div > div:nth-of-type(2) > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "50%",
+            "count": 2,
+            "area": 28800,
+            "sources": [
+              "body > div > div:nth-of-type(2) > div:nth-of-type(1) > img",
+              "body > div > div:nth-of-type(2) > div:nth-of-type(2) > img"
+            ]
+          },
+          {
+            "value": "8px",
+            "count": 2,
+            "area": 6261,
+            "sources": [
+              "nav > a:nth-of-type(1)",
+              "nav > a:nth-of-type(2)"
+            ]
+          }
+        ],
+        "shadows": [
+          {
+            "value": "rgba(0, 0, 0, 0.07) 0px 2px 8px 0px",
+            "count": 2,
+            "sources": [
+              "body > div > div:nth-of-type(2) > div:nth-of-type(1)",
+              "body > div > div:nth-of-type(2) > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgba(106, 27, 154, 0.12) 0px 4px 20px 0px",
+            "count": 1,
+            "sources": [
+              "nav"
+            ]
+          }
+        ],
+        "gradients": [
+          {
+            "value": "linear-gradient(135deg, rgb(224, 247, 250) 0%, rgb(243, 229, 245) 50%, rgb(255, 248, 225) 100%)",
+            "count": 1,
+            "area": 1296000,
+            "sources": [
+              "body"
+            ]
+          }
+        ],
+        "bgColors": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 4,
+            "area": 471192,
+            "sources": [
+              "nav",
+              "body > div > div:nth-of-type(1) > button:nth-of-type(1)",
+              "body > div > div:nth-of-type(2) > div:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(248, 248, 248)",
+            "count": 1,
+            "area": 550443,
+            "sources": [
+              "body > div"
+            ]
+          }
+        ],
+        "textColors": [
+          {
+            "value": "rgb(106, 27, 154)",
+            "count": 3,
+            "sources": [
+              "nav > a:nth-of-type(1)",
+              "nav > a:nth-of-type(2)",
+              "#heading"
+            ]
+          },
+          {
+            "value": "rgb(94, 53, 177)",
+            "count": 3,
+            "sources": [
+              "body > p",
+              "body > div > div:nth-of-type(2) > div:nth-of-type(1) > p",
+              "body > div > div:nth-of-type(2) > div:nth-of-type(2) > p"
+            ]
+          },
+          {
+            "value": "rgb(102, 102, 102)",
+            "count": 2,
+            "sources": [
+              "body > div > div:nth-of-type(1) > button:nth-of-type(2)",
+              "body > div > div:nth-of-type(1) > button:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 2,
+            "sources": [
+              "body > div > div:nth-of-type(2) > div:nth-of-type(1) > h4",
+              "body > div > div:nth-of-type(2) > div:nth-of-type(2) > h4"
+            ]
+          },
+          {
+            "value": "rgb(119, 119, 119)",
+            "count": 1,
+            "sources": [
+              "footer"
+            ]
+          },
+          {
+            "value": "rgb(33, 150, 243)",
+            "count": 1,
+            "sources": [
+              "body > div > div:nth-of-type(1) > button:nth-of-type(1)"
+            ]
+          }
+        ],
+        "borderColors": [
+          {
+            "value": "rgb(221, 221, 221)",
+            "count": 1,
+            "sources": [
+              "body > div > div:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(224, 224, 224)",
+            "count": 1,
+            "sources": [
+              "footer"
+            ]
+          },
+          {
+            "value": "rgb(33, 150, 243)",
+            "count": 1,
+            "sources": [
+              "body > div > div:nth-of-type(1) > button:nth-of-type(1)"
+            ]
+          }
+        ],
+        "customProps": {},
+        "fonts": [],
+        "logoCandidates": [],
+        "iconFont": null,
+        "consent": {
+          "dismissed": null
+        },
+        "finalUrl": "https://static-website.david-bosschaert.workers.dev/page1"
+      }
+    }
+  },
+  "aggregate": {
+    "counts": {
+      "pages": 2,
+      "widths": [
+        360,
+        1440
+      ],
+      "measurements": 4
+    },
+    "colors": [
+      {
+        "hex": "#ffffff",
+        "values": [
+          "rgb(255, 255, 255)",
+          "rgb(248, 248, 248)"
+        ],
+        "weight": 32,
+        "bgArea": 4173068,
+        "by": {
+          "background": 28,
+          "button-background": 4
+        },
+        "roles": [
+          "background"
+        ],
+        "sources": [
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "nav",
+            "prop": "background"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/page1",
+            "selector": "nav",
+            "prop": "background"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > div:nth-of-type(2)",
+            "prop": "background"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/page1",
+            "selector": "body > div",
+            "prop": "background"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(1)",
+            "prop": "button-background"
+          }
+        ]
+      },
+      {
+        "hex": "#6a1b9a",
+        "values": [
+          "rgb(106, 27, 154)"
+        ],
+        "weight": 24,
+        "by": {
+          "text": 12,
+          "link": 8,
+          "heading": 4
+        },
+        "roles": [
+          "text"
+        ],
+        "sources": [
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "nav > a:nth-of-type(1)",
+            "prop": "text"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/page1",
+            "selector": "nav > a:nth-of-type(1)",
+            "prop": "text"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "nav > a:nth-of-type(1)",
+            "prop": "link"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/page1",
+            "selector": "nav > a:nth-of-type(1)",
+            "prop": "link"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "#heading",
+            "prop": "heading"
+          }
+        ]
+      },
+      {
+        "hex": "#333333",
+        "values": [
+          "rgb(51, 51, 51)"
+        ],
+        "weight": 16,
+        "by": {
+          "text": 8,
+          "heading": 8
+        },
+        "roles": [
+          "heading"
+        ],
+        "sources": [
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > h4",
+            "prop": "text"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/page1",
+            "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(1) > h4",
+            "prop": "text"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > h4",
+            "prop": "heading"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > h4",
+            "prop": "heading"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/page1",
+            "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(1) > h4",
+            "prop": "heading"
+          }
+        ]
+      },
+      {
+        "hex": "#dddddd",
+        "values": [
+          "rgb(221, 221, 221)",
+          "rgb(224, 224, 224)"
+        ],
+        "weight": 8,
+        "by": {
+          "border": 8
+        },
+        "roles": [
+          "border"
+        ],
+        "sources": [
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(1)",
+            "prop": "border"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/page1",
+            "selector": "body > div > div:nth-of-type(1)",
+            "prop": "border"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "footer",
+            "prop": "border"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/page1",
+            "selector": "footer",
+            "prop": "border"
+          }
+        ]
+      },
+      {
+        "hex": "#2196f3",
+        "values": [
+          "rgb(33, 150, 243)"
+        ],
+        "weight": 12,
+        "by": {
+          "border": 4,
+          "button-text": 4,
+          "text": 4
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(1)",
+            "prop": "border"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/page1",
+            "selector": "body > div > div:nth-of-type(1) > button:nth-of-type(1)",
+            "prop": "border"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(1)",
+            "prop": "button-text"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/page1",
+            "selector": "body > div > div:nth-of-type(1) > button:nth-of-type(1)",
+            "prop": "button-text"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(1)",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#5e35b1",
+        "values": [
+          "rgb(94, 53, 177)"
+        ],
+        "weight": 12,
+        "by": {
+          "text": 12
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > p",
+            "prop": "text"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/page1",
+            "selector": "body > p",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#666666",
+        "values": [
+          "rgb(102, 102, 102)"
+        ],
+        "weight": 8,
+        "by": {
+          "text": 8
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(2)",
+            "prop": "text"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/page1",
+            "selector": "body > div > div:nth-of-type(1) > button:nth-of-type(2)",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#00897b",
+        "values": [
+          "rgb(0, 137, 123)"
+        ],
+        "weight": 4,
+        "by": {
+          "heading": 2,
+          "text": 2
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > h2",
+            "prop": "heading"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > h2",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#777777",
+        "values": [
+          "rgb(119, 119, 119)"
+        ],
+        "weight": 4,
+        "by": {
+          "text": 4
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "footer",
+            "prop": "text"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/page1",
+            "selector": "footer",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#26c6da",
+        "values": [
+          "rgb(38, 198, 218)"
+        ],
+        "weight": 2,
+        "by": {
+          "border": 2
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > h2",
+            "prop": "border"
+          }
+        ]
+      },
+      {
+        "hex": "#444444",
+        "values": [
+          "rgb(68, 68, 68)"
+        ],
+        "weight": 2,
+        "by": {
+          "text": 2
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > div:nth-of-type(1)",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#ec407a",
+        "values": [
+          "rgb(236, 64, 122)"
+        ],
+        "weight": 2,
+        "by": {
+          "border": 2
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "body > div:nth-of-type(1)",
+            "prop": "border"
+          }
+        ]
+      }
+    ],
+    "type": {
+      "families": [
+        {
+          "family": "Poppins",
+          "count": 20,
+          "headings": 8,
+          "text": 12,
+          "buttons": 0
+        },
+        {
+          "family": "Playfair Display",
+          "count": 6,
+          "headings": 6,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "family": "Arial",
+          "count": 4,
+          "headings": 0,
+          "text": 0,
+          "buttons": 4
+        }
+      ],
+      "headingFamily": "Poppins",
+      "bodyFamily": "Poppins",
+      "sizes": [
+        {
+          "px": 48,
+          "count": 2,
+          "headings": 2,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 32,
+          "count": 1,
+          "headings": 1,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 28.8,
+          "count": 2,
+          "headings": 2,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 22.4,
+          "count": 1,
+          "headings": 1,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 18.4,
+          "count": 12,
+          "headings": 0,
+          "text": 12,
+          "buttons": 0
+        },
+        {
+          "px": 17.6,
+          "count": 4,
+          "headings": 0,
+          "text": 0,
+          "buttons": 4
+        },
+        {
+          "px": 16,
+          "count": 8,
+          "headings": 8,
+          "text": 0,
+          "buttons": 0
+        }
+      ],
+      "weights": [
+        {
+          "weight": "700",
+          "count": 16,
+          "headings": 12,
+          "text": 0,
+          "buttons": 4
+        },
+        {
+          "weight": "500",
+          "count": 12,
+          "headings": 0,
+          "text": 12,
+          "buttons": 0
+        },
+        {
+          "weight": "600",
+          "count": 2,
+          "headings": 2,
+          "text": 0,
+          "buttons": 0
+        }
+      ],
+      "levels": {
+        "h1": {
+          "fontSize": 48,
+          "fontWeight": "700",
+          "count": 2,
+          "score": 118.79
+        },
+        "h2": {
+          "fontSize": 32,
+          "fontWeight": "600",
+          "count": 1,
+          "score": 48
+        },
+        "h4": {
+          "fontSize": 16,
+          "fontWeight": "700",
+          "count": 8,
+          "score": 79.2
+        }
+      }
+    },
+    "motifs": {
+      "radius": {
+        "mode": "12px",
+        "areaMode": "12px",
+        "pill": "50%",
+        "values": [
+          {
+            "value": "12px",
+            "count": 18,
+            "area": 3349796,
+            "sources": [
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/",
+                "selector": "nav"
+              },
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/",
+                "selector": "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(1)"
+              },
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/",
+                "selector": "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(2)"
+              },
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/page1",
+                "selector": "nav"
+              },
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/page1",
+                "selector": "body > div"
+              }
+            ]
+          },
+          {
+            "value": "8px",
+            "count": 16,
+            "area": 908952,
+            "sources": [
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/",
+                "selector": "nav > a:nth-of-type(1)"
+              },
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/",
+                "selector": "nav > a:nth-of-type(2)"
+              },
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/",
+                "selector": "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(1) > iframe"
+              },
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/page1",
+                "selector": "nav > a:nth-of-type(1)"
+              },
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/page1",
+                "selector": "nav > a:nth-of-type(2)"
+              }
+            ]
+          },
+          {
+            "value": "10px",
+            "count": 8,
+            "area": 1129716,
+            "sources": [
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/",
+                "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)"
+              },
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/",
+                "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2)"
+              },
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/page1",
+                "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(1)"
+              },
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/page1",
+                "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(2)"
+              }
+            ]
+          },
+          {
+            "value": "50%",
+            "count": 8,
+            "area": 115200,
+            "sources": [
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/",
+                "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > img"
+              },
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/",
+                "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > img"
+              },
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/page1",
+                "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(1) > img"
+              },
+              {
+                "url": "https://static-website.david-bosschaert.workers.dev/page1",
+                "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(2) > img"
+              }
+            ]
+          }
+        ]
+      },
+      "shadows": [
+        {
+          "value": "rgba(106, 27, 154, 0.12) 0px 4px 20px 0px",
+          "count": 12,
+          "sources": [
+            {
+              "url": "https://static-website.david-bosschaert.workers.dev/",
+              "selector": "nav"
+            },
+            {
+              "url": "https://static-website.david-bosschaert.workers.dev/",
+              "selector": "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(1)"
+            },
+            {
+              "url": "https://static-website.david-bosschaert.workers.dev/",
+              "selector": "body > table:nth-of-type(1) > tbody > tr > td:nth-of-type(2)"
+            },
+            {
+              "url": "https://static-website.david-bosschaert.workers.dev/page1",
+              "selector": "nav"
+            }
+          ]
+        },
+        {
+          "value": "rgba(0, 0, 0, 0.07) 0px 2px 8px 0px",
+          "count": 8,
+          "sources": [
+            {
+              "url": "https://static-website.david-bosschaert.workers.dev/",
+              "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)"
+            },
+            {
+              "url": "https://static-website.david-bosschaert.workers.dev/",
+              "selector": "body > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2)"
+            },
+            {
+              "url": "https://static-website.david-bosschaert.workers.dev/page1",
+              "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(1)"
+            },
+            {
+              "url": "https://static-website.david-bosschaert.workers.dev/page1",
+              "selector": "body > div > div:nth-of-type(2) > div:nth-of-type(2)"
+            }
+          ]
+        },
+        {
+          "value": "rgba(233, 30, 99, 0.1) 0px 4px 20px 0px",
+          "count": 2,
+          "sources": [
+            {
+              "url": "https://static-website.david-bosschaert.workers.dev/",
+              "selector": "body > div:nth-of-type(1)"
+            }
+          ]
+        }
+      ],
+      "gradients": [
+        {
+          "value": "linear-gradient(135deg, rgb(224, 247, 250) 0%, rgb(243, 229, 245) 50%, rgb(255, 248, 225) 100%)",
+          "count": 4,
+          "area": 5760698,
+          "sources": [
+            {
+              "url": "https://static-website.david-bosschaert.workers.dev/",
+              "selector": "body"
+            },
+            {
+              "url": "https://static-website.david-bosschaert.workers.dev/page1",
+              "selector": "body"
+            }
+          ]
+        },
+        {
+          "value": "linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(252, 228, 236) 100%)",
+          "count": 2,
+          "area": 345472,
+          "sources": [
+            {
+              "url": "https://static-website.david-bosschaert.workers.dev/",
+              "selector": "body > div:nth-of-type(1)"
+            }
+          ]
+        }
+      ]
+    },
+    "hover": [
+      {
+        "kind": "link",
+        "from": {
+          "color": "rgb(106, 27, 154)"
+        },
+        "to": {
+          "color": "rgb(74, 20, 140)"
+        },
+        "count": 4,
+        "sources": [
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "nav > a:nth-of-type(1)"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/",
+            "selector": "nav > a:nth-of-type(1)"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/page1",
+            "selector": "nav > a:nth-of-type(1)"
+          },
+          {
+            "url": "https://static-website.david-bosschaert.workers.dev/page1",
+            "selector": "nav > a:nth-of-type(1)"
+          }
+        ]
+      }
+    ],
+    "logo": {
+      "source": "none",
+      "url": null,
+      "selector": null
+    },
+    "iconFont": null
+  }
+}

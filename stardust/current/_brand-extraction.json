@@ -1,0 +1,105 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-10-06T10:14:00Z",
+    "readArtifacts": [
+      "https://static-website.david-bosschaert.workers.dev/",
+      "https://static-website.david-bosschaert.workers.dev/page1",
+      "https://static-website.david-bosschaert.workers.dev/styles.css",
+      "stardust/current/pages/index.json",
+      "stardust/current/pages/page1.json",
+      "stardust/current/_computed-styles.json"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.27.0",
+    "notes": [
+      "The stylesheet names 'Poppins' and 'Playfair Display' but loads no font files (no @font-face, no font <link>); the live site renders in the browser's system fallbacks ('Segoe UI', system-ui, sans-serif / Georgia, serif). No font files were intercepted during the crawl.",
+      "No logo and no favicon exist on the source site (no <img> logo, no inline SVG, no link[rel~=icon], /favicon.ico unreachable).",
+      "Home-only and cross-page modes agree on every motif (two pages, shared stylesheet)."
+    ]
+  },
+  "site": { "name": "Super Page", "tagline": null, "originUrl": "https://static-website.david-bosschaert.workers.dev/" },
+  "origins": [ { "url": "https://static-website.david-bosschaert.workers.dev/", "kind": "primary", "pages": ["index", "page1"] } ],
+  "logo": { "source": "none", "path": null, "selector": null, "note": "No logo on the site; the header is two text links." },
+  "favicon": null,
+  "palette": [
+    { "value": "#6a1b9a", "role": "primary", "usedAs": ["text"], "occurrences": 24, "source": "styles.css h1, .site-header a" },
+    { "value": "#4a148c", "role": "primary-deep", "usedAs": ["text"], "occurrences": 2, "source": "styles.css .site-header a:hover" },
+    { "value": "#5e35b1", "role": "text-lede", "usedAs": ["text"], "occurrences": 12, "source": "styles.css p" },
+    { "value": "#00897b", "role": "secondary", "usedAs": ["text"], "occurrences": 4, "source": "styles.css h2" },
+    { "value": "#26c6da", "role": "accent-cyan", "usedAs": ["border"], "occurrences": 2, "source": "styles.css h2 border-bottom, table td:hover border-color" },
+    { "value": "#ec407a", "role": "accent-pink", "usedAs": ["border"], "occurrences": 2, "source": "styles.css div content block border-left" },
+    { "value": "#2196f3", "role": "tab-active", "usedAs": ["text", "border"], "occurrences": 12, "source": "styles.css .tab-buttons button.active" },
+    { "value": "#ffffff", "role": "surface", "usedAs": ["background"], "occurrences": 32, "source": "styles.css .site-header, table td, .team-card" },
+    { "value": "#f8f8f8", "role": "surface-tabs", "usedAs": ["background"], "occurrences": 2, "source": "styles.css .tabs-section" },
+    { "value": "#f3e5f5", "role": "surface-hover", "usedAs": ["background"], "occurrences": 2, "source": "styles.css .site-header a:hover" },
+    { "value": "#333333", "role": "text-primary", "usedAs": ["text"], "occurrences": 16, "source": "styles.css body" },
+    { "value": "#444444", "role": "text-content", "usedAs": ["text"], "occurrences": 2, "source": "styles.css div content block" },
+    { "value": "#666666", "role": "text-tab", "usedAs": ["text"], "occurrences": 8, "source": "styles.css .tab-buttons button" },
+    { "value": "#777777", "role": "text-muted", "usedAs": ["text"], "occurrences": 4, "source": "styles.css .site-footer" },
+    { "value": "#dddddd", "role": "border", "usedAs": ["border"], "occurrences": 8, "source": "styles.css .tab-buttons" },
+    { "value": "#e0e0e0", "role": "border-footer", "usedAs": ["border"], "occurrences": 2, "source": "styles.css .site-footer" }
+  ],
+  "gradients": [
+    { "value": "linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 50%, #fff8e1 100%)", "usedOn": "body (page background)", "source": "styles.css body" },
+    { "value": "linear-gradient(135deg, #ffffff 0%, #fce4ec 100%)", "usedOn": "content block div", "source": "styles.css div:not(.tabs-section)…" }
+  ],
+  "type": {
+    "headingFamily": "'Playfair Display', Georgia, serif",
+    "bodyFamily": "'Poppins', 'Segoe UI', system-ui, sans-serif",
+    "buttonFamily": "(browser default button font; buttons do not inherit)",
+    "files": [],
+    "renderedFaces": "system fallbacks only — no web fonts are loaded by the source site",
+    "sizes": [
+      { "selector": "h1", "fontSize": "3rem (48px)", "fontWeight": 700, "lineHeight": 1.6, "letterSpacing": "-0.5px", "mobile": "1.8rem (28.8px) at ≤768px" },
+      { "selector": "h2", "fontSize": "2rem (32px)", "fontWeight": 600, "lineHeight": 1.6, "mobile": "1.4rem (22.4px) at ≤768px" },
+      { "selector": "h4 (team-card)", "fontSize": "1em (16px)", "fontWeight": 700 },
+      { "selector": "p", "fontSize": "1.15rem (18.4px)", "fontWeight": 500, "lineHeight": 1.6 },
+      { "selector": ".site-header a", "fontSize": "1.05rem (16.8px)", "fontWeight": 600 },
+      { "selector": "div content block", "fontSize": "1.05rem (16.8px)", "lineHeight": 1.8 },
+      { "selector": ".tab-buttons button", "fontSize": "1.1em (17.6px)", "fontWeight": "bold" },
+      { "selector": ".site-footer", "fontSize": "0.95rem (15.2px)" }
+    ],
+    "scaleAudit": { "kind": "ad-hoc", "sizesPx": [48, 32, 18.4, 17.6, 16.8, 16, 15.2], "note": "no consistent ratio" }
+  },
+  "spacing": { "baseUnit": "1rem (16px)", "observedScale": ["0.2em", "0.4rem", "0.5rem", "1rem", "1.5rem", "2rem", "2.5rem"], "pagePadding": "2rem (1rem at ≤768px)", "containerMaxWidth": "1200px" },
+  "motifs": {
+    "borderRadius": { "mode": "12px", "occurrences": { "12px": 18, "8px": 16, "10px": 8, "50%": 8 } },
+    "shadows": [
+      { "value": "0 4px 20px rgba(106, 27, 154, 0.12)", "usedOn": "header, media cells", "count": 12 },
+      { "value": "0 2px 8px rgba(0,0,0,0.07)", "usedOn": "team cards", "count": 8 },
+      { "value": "0 4px 20px rgba(233, 30, 99, 0.1)", "usedOn": "content block", "count": 2 },
+      { "value": "0 8px 30px rgba(0, 150, 136, 0.2)", "usedOn": "media cell hover", "count": 0 }
+    ],
+    "textShadow": [ { "value": "2px 2px 4px rgba(106, 27, 154, 0.15)", "usedOn": "h1" } ],
+    "patterns": ["card (white, 12px radius, soft purple shadow)", "media cell with 16:9 image / iframe", "tabbed team cards with circular 120px portraits", "gradient page canvas"]
+  },
+  "componentStyle": {
+    "navLink": { "padding": "0.4rem 1rem", "radius": "8px", "weight": 600, "color": "#6a1b9a", "hover": { "background": "#f3e5f5", "color": "#4a148c" }, "transition": "background 0.2s, color 0.2s" },
+    "tabButton": { "padding": "1em 2em", "weight": "bold", "color": "#666", "active": { "color": "#2196f3", "borderBottom": "3px solid #2196f3", "background": "#fff" } },
+    "card": { "background": "#fff", "radius": "12px / 10px (team)", "padding": "1rem / 1em", "border": "2px solid transparent (media cells)" },
+    "mediaCell": { "hover": { "transform": "translateY(-4px)", "shadow": "0 8px 30px rgba(0, 150, 136, 0.2)", "borderColor": "#26c6da" }, "transition": "transform 0.3s ease, box-shadow 0.3s ease" }
+  },
+  "systemComponents": [
+    { "kind": "header", "selector": "nav.site-header", "pages": ["index", "page1"], "ctaLabels": ["Home", "Page 1"] },
+    { "kind": "footer", "selector": "footer.site-footer", "pages": ["index", "page1"], "text": "© 2026 Super Page. All rights reserved." },
+    { "kind": "module", "selector": ".tabs-section", "pages": ["index", "page1"], "headingSequence": ["Alex Johnson", "Maria Lopez", "Brian Kim", "Sophia Patel", "Elijah Brown", "Linda Zhang"], "ctaLabels": ["Team Alpha", "Team Beta", "Team Gamma"] }
+  ],
+  "iconFont": null,
+  "voice": {
+    "heroHeadline": "Super page",
+    "heroLede": "Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida",
+    "firstParagraph": "Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida",
+    "ctaSamples": ["Home", "Page 1", "Team Alpha"],
+    "heroImage": "https://picsum.photos/id/152/800/600",
+    "heroMedium": null,
+    "tone": "placeholder / demo copy"
+  },
+  "voiceTable": {
+    "ctaFrequency": { "Home": 2, "Page 1": 2, "Team Alpha": 2, "Team Beta": 2, "Team Gamma": 2 },
+    "headingFrequency": { "Super page": 2, "Alex Johnson": 2, "Maria Lopez": 2, "Brian Kim": 2, "Sophia Patel": 2, "Elijah Brown": 2, "Linda Zhang": 2, "Here is a subheading": 1 },
+    "headingsUppercasePercent": 0, "distinctHeadings": 8, "distinctCtaLabels": 5
+  },
+  "crossPromo": { "detected": false },
+  "register": "brand"
+}

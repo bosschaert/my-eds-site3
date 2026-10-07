@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-10-06T10:44:10Z
+  page:             Good Morning!
+  slug:             index
+  pagePath:         migrated/index.html
+  renderBranch:     A
+  sourceProposed:   stardust/prototypes/index-proposed.html
+  sourceCurrent:    stardust/current/pages/index.json
+  againstDirection: stardust/direction.md (Active)
+  designMd:         DESIGN.md (sha: 8055b15eb64c)
+  designJson:       DESIGN.json (sha: 058dcfb68347)
+  canonShas:        header:null footer:9fd34a9f6014 css:e6cdf7a916ed
+  decisionTrace:    _meta.json
+  brokenInternalLinks: 0
+  stardustVersion:  0.27.0
+-->
+<style>
+:root {
+  /* palette */
+  --c-text: #333;
+  --c-text-prose: #444;
+  --c-primary: #6a1b9a;        /* h1, nav links */
+  --c-primary-dark: #4a148c;   /* nav link hover */
+  --c-primary-tint: #f3e5f5;   /* nav link hover bg */
+  --c-secondary: #5e35b1;      /* lede / body paragraphs */
+  --c-teal: #00897b;           /* h2 */
+  --c-cyan: #26c6da;           /* h2 underline, cell hover border */
+  --c-pink: #ec407a;           /* prose block left border */
+  --c-muted: #777;             /* footer text */
+  --c-rule: #e0e0e0;           /* footer top rule */
+  --c-surface: #fff;
+  --c-tabs-bg: #f8f8f8;
+  --c-tab-text: #666;
+  --c-tab-rule: #ddd;
+  --c-tab-active: #2196F3;
+
+  /* surfaces */
+  --bg-page: linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 50%, #fff8e1 100%);
+  --bg-prose: linear-gradient(135deg, #ffffff 0%, #fce4ec 100%);
+  --shadow-card: 0 4px 20px rgba(106, 27, 154, 0.12);
+  --shadow-card-hover: 0 8px 30px rgba(0, 150, 136, 0.2);
+  --shadow-prose: 0 4px 20px rgba(233, 30, 99, 0.1);
+  --shadow-team: 0 2px 8px rgba(0, 0, 0, 0.07);
+  --radius-card: 12px;
+  --radius-media: 8px;
+  --radius-link: 8px;
+  --radius-team: 10px;
+
+  /* type */
+  --font-body: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --lh-body: 1.6;
+
+  /* container model (measured by cap-probe: 1200px module cap on header, footer, media, prose) */
+  --container: 1200px;
+  --page-pad: 2rem;
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Good Morning!","url":"https://static-website.david-bosschaert.workers.dev/"}</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Good Morning!</title>
+<link rel="stylesheet" href="./assets/css/canon.css">
+<link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+<nav class="site-header" aria-label="Site">
+  <a class="site-header__link" href="./index.html">Home</a>
+  <a class="site-header__link" href="./page1/index.html">Page 1</a>
+</nav>
+<main data-template="index">
+<h1 class="page-title" id="heading" data-section="1">Super page</h1>
+<p class="lede" data-section="2">Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida</p>
+<div class="media-cells media-cells--video" data-section="3">
+  <div class="media-cells__cell">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/b4Rr_7y068U" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="media-cells__cell">
+    <img src="./assets/picsum-152-a7753dc8.jpg" alt="Sample image" width="560" height="315">
+  </div>
+</div>
+<h2 class="section-heading" data-section="4">Here is a subheading</h2>
+<div class="media-cells" data-section="5">
+  <div class="media-cells__cell">
+    <img src="./assets/picsum-155-d9e19940.jpg" alt="Image 1" width="560" height="315">
+  </div>
+  <div class="media-cells__cell">
+    <img src="./assets/picsum-164-4f7fd8f2.jpg" alt="Image 2" width="560" height="315">
+  </div>
+</div>
+<div class="prose-block" data-section="6">
+  A wild pangolin appears, juggling tiny umbrellas and humming a tune! Nearby, a mischievous squirrel rides a unicycle while an owl recites a poem about cheese. Suddenly, a parade of rubber ducks marches by, each one wearing a different colored hat, quacking a cheerful melody. In the distance, a pair of tap-dancing frogs put on a show, their shoes sparkling in the sunlight as a gentle breeze carries the scent of fresh popcorn through the air.
+</div>
+<div class="tabs-section team-tabs" data-section="7">
+  <div class="tab-buttons" role="tablist">
+    <button class="tab-buttons__button active" type="button" data-tab="0">Team Alpha</button>
+    <button class="tab-buttons__button" type="button" data-tab="1">Team Beta</button>
+    <button class="tab-buttons__button" type="button" data-tab="2">Team Gamma</button>
+  </div>
+  <div class="tab-content active">
+    <div class="team-card">
+      <img class="team-card__photo" src="./assets/portrait-men-45-1d7dbb3d.jpg" alt="Team member 1">
+      <h4 class="team-card__name">Alex Johnson</h4>
+      <p class="team-card__bio">Project Lead with a knack for creative solutions and a love of adventure sports.</p>
+    </div>
+    <div class="team-card">
+      <img class="team-card__photo" src="./assets/portrait-women-57-408c3470.jpg" alt="Team member 2">
+      <h4 class="team-card__name">Maria Lopez</h4>
+      <p class="team-card__bio">UI Designer who brings vibrant energy and stunning visuals to every project.</p>
+    </div>
+  </div>
+  <div class="tab-content">
+    <div class="team-card">
+      <img class="team-card__photo" src="./assets/portrait-men-37-88a7693b.jpg" alt="Team member 3">
+      <h4 class="team-card__name">Brian Kim</h4>
+      <p class="team-card__bio">Backend engineer, automation enthusiast, and gourmet coffee taster.</p>
+    </div>
+    <div class="team-card">
+      <img class="team-card__photo" src="./assets/portrait-women-43-41d9ee10.jpg" alt="Team member 4">
+      <h4 class="team-card__name">Sophia Patel</h4>
+      <p class="team-card__bio">QA Analyst who catches every bug and knits amazing scarves in her free time.</p>
+    </div>
+  </div>
+  <div class="tab-content">
+    <div class="team-card">
+      <img class="team-card__photo" src="./assets/portrait-men-59-96a17acb.jpg" alt="Team member 5">
+      <h4 class="team-card__name">Elijah Brown</h4>
+      <p class="team-card__bio">DevOps wizard, mountain hiker, and avid reader of mystery novels.</p>
+    </div>
+    <div class="team-card">
+      <img class="team-card__photo" src="./assets/portrait-women-25-79e173c4.jpg" alt="Team member 6">
+      <h4 class="team-card__name">Linda Zhang</h4>
+      <p class="team-card__bio">Frontend guru who mixes pixel perfection with playful animations and memes.</p>
+    </div>
+  </div>
+</div>
+</main>
+<footer class="site-footer">
+  © 2026 Super Page. All rights reserved.
+</footer>
+<script src="./assets/js/team-tabs.js"></script>
+</body>
+</html>

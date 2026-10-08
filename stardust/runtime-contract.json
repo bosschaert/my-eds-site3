@@ -1,0 +1,11 @@
+{
+  "runtime": "vanilla-eds",
+  "blockWrapperClass": "block",
+  "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "sectionShape": "div.section.<name>-container > div.<name>-wrapper > div.<name>.block",
+  "chrome": "none on the source; header/footer blocks render nothing without /nav and /footer documents",
+  "fonts": "system-ui, sans-serif; no web fonts"
+}

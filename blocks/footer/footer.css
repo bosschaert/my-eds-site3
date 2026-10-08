@@ -1,0 +1,4 @@
+/* no footer exists on the source (https://www.example.com/); the footer occupies no space */
+footer .footer {
+  height: 0;
+}

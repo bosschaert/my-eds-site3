@@ -1,0 +1,279 @@
+{
+  "url": "http://localhost:8791/page1-proposed.html",
+  "width": 1440,
+  "headerTimeline": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".tab-buttons button:nth-child(2)",
+      "frames": [
+        {
+          "t": 6062.9000000059605,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 6266.5999999940395,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 6470.20000000298,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 6673.4000000059605,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".tab-buttons button:nth-child(3)",
+      "frames": [
+        {
+          "t": 7684.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 7887.0999999940395,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 8090.20000000298,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 8292.79999999702,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".tab-buttons button:nth-child(1)",
+      "frames": [
+        {
+          "t": 9300.20000000298,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 9503,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 9706,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 9909.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".site-header a",
+      "changed": [
+        "self.color",
+        "self.background"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(106, 27, 154)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background 0.2s, color 0.2s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(74, 20, 140)",
+          "background": "rgb(243, 229, 245)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background 0.2s, color 0.2s"
+        },
+        "subs": []
+      }
+    }
+  ],
+  "events": {
+    "animations": [
+      {
+        "name": "fadeIn",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-content.active",
+        "txt": "Brian Kim\n      Backend engineer, automation enthu",
+        "y": 0
+      },
+      {
+        "name": "fadeIn",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-content.active",
+        "txt": "Elijah Brown\n      DevOps wizard, mountain hiker, ",
+        "y": 0
+      },
+      {
+        "name": "fadeIn",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-content.active",
+        "txt": "Alex Johnson\n      Project Lead with a knack for c",
+        "y": 0
+      }
+    ],
+    "transitions": [
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button.active",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button.active",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button.active",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button",
+        "y": 0,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > nav.site-header > a.site-header__link",
+        "y": 0,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "html > body > nav.site-header > a.site-header__link",
+        "y": 0,
+        "dur": "0.2s, 0.2s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button.active",
+        "y": 0
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-content.active",
+        "y": 0
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button.active",
+        "y": 0
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-content.active",
+        "y": 0
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button.active",
+        "y": 0
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-content.active",
+        "y": 0
+      }
+    ]
+  }
+}

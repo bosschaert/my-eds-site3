@@ -1,0 +1,7 @@
+# Learnings — replica run www.example.com (2026-10-08)
+
+- **Source-parity checks that have no parity branch:** `verify.mjs` (exactly one `<h1>`) and `optimize.mjs` (`seo/single-h1`) both fail a page whose SOURCE has no heading; `optimize.mjs` tags title/description/JSON-LD parity but not h1. Resolution used: `findings.mjs resolve … --status accepted` with the capture + content-diff evidence, and `update-coverage.mjs <slug> --status verified` with the decision named — never a fabricated heading. A re-run of `verify.mjs` flips the row back; record the decision where the next session will read it (journal, conversion log).
+- **The aem.page/aem.live CDN returns gzip to a plain `curl`:** probe served code with `curl --compressed` before concluding a push has not propagated (a grep on the raw body silently matched nothing).
+- **Cluster subagents may leave the block ledger at `pending`:** check `rollout.json.lastRun.blocks` at H-report and flip with `update-coverage.mjs --block <id> --status verified --eds-name <name>` when the block is live and gated.
+- **Chrome-less sites:** header/footer no-op blocks still fetch `/nav` and `/footer` (two tolerated 404s per load). Decide once (`chrome-fetch-404`) rather than editing the frozen foundation after C-final.
+- **Foundation request application at C-final** is a code push on `main`: lint → commit → push → confirm the served file → re-gate the archetype under a new `pub<N>` label in the existing gate dir → `foundation-freeze.mjs freeze` again before the `gate-all` unit.

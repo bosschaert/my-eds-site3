@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-10-08T10:21:51.855Z",
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://www.example.com/",
+    "liveHost": "main--f4c8728b--aemcoder.aem.live"
+  },
+  "stageCount": {
+    "identified": 1,
+    "prototyped": 1,
+    "deployed": 1,
+    "optimised": 0
+  },
+  "stageExclusive": {
+    "identified": 0,
+    "prototyped": 0,
+    "deployed": 1,
+    "optimised": 0
+  },
+  "pages": [
+    {
+      "slug": "index",
+      "path": "/",
+      "stage": "deployed",
+      "templateId": "index",
+      "isTemplate": true,
+      "openFindings": 2
+    }
+  ],
+  "templates": [
+    {
+      "id": "index",
+      "archetype": "index",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 1,
+        "optimised": 0
+      }
+    }
+  ],
+  "blocks": {
+    "total": 1,
+    "converted": 1
+  },
+  "quality": {
+    "overall": 100,
+    "dimensions": {
+      "brand-tensions": null,
+      "design-ux": null,
+      "accessibility": null,
+      "seo": 100,
+      "content-conversion": null,
+      "ai-search": 100,
+      "cross-page": null
+    },
+    "severity": {
+      "P1": 0,
+      "P2": 0,
+      "P3": 0
+    },
+    "history": [
+      88,
+      100
+    ]
+  },
+  "findings": {
+    "byFixability": {
+      "out-of-scope": 2
+    },
+    "byAutofix": {}
+  }
+}

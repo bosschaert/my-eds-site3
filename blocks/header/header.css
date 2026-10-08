@@ -1,0 +1,4 @@
+/* no nav exists on the source (https://www.example.com/); the header occupies no space */
+header .header {
+  height: 0;
+}

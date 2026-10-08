@@ -1,0 +1,44 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-10-08T09:24:52Z",
+    "readArtifacts": ["https://www.example.com/", "stardust/current/pages/index.json", "stardust/current/pages/index.html", "stardust/current/_computed-styles.json"],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.29.1"
+  },
+  "site": { "name": "Example Domain", "tagline": null, "originUrl": "https://www.example.com" },
+  "origins": [{ "url": "https://www.example.com", "role": "primary", "pages": ["index"] }],
+  "logo": { "source": "inline-svg", "path": "stardust/current/assets/logo.svg", "sourceSelector": "body > svg[viewBox='0,0,20,20']", "alt": null, "intrinsic": { "width": 44, "height": 44 }, "notes": "Decorative book/quote glyph, aria-hidden, fill currentColor at opacity .55; the page carries no wordmark." },
+  "palette": [
+    { "value": "#eeeeee", "role": "background", "usedAs": ["background"], "occurrences": 2, "sources": [{ "url": "https://www.example.com/", "selector": "html", "prop": "background (light-dark(#eee,#222), light scheme)" }] },
+    { "value": "#000000", "role": "text-primary", "usedAs": ["text"], "occurrences": 12, "sources": [{ "url": "https://www.example.com/", "selector": "p", "prop": "color (UA default)" }] },
+    { "value": "#0000ee", "role": "link", "usedAs": ["text"], "occurrences": 4, "sources": [{ "url": "https://www.example.com/", "selector": "a", "prop": "color (UA default link)" }] }
+  ],
+  "type": {
+    "headingFamily": null,
+    "bodyFamily": "system-ui, sans-serif",
+    "files": [],
+    "sizes": [
+      { "px": 16, "lineHeight": 1.6, "weight": 400, "role": "body", "count": 2, "selector": "body, p:first-of-type, a" },
+      { "px": 14, "lineHeight": 1.6, "weight": 400, "role": "body-secondary", "count": 10, "selector": "p + p (.875em, opacity .6)" }
+    ],
+    "scaleAudit": { "kind": "ad-hoc", "sizes": [14, 16], "notes": "Two sizes only; no heading levels on the page." }
+  },
+  "spacing": { "baseUnit": 16, "observed": [32, 44, 416], "notes": "body padding 25vh 2em 2em; max-width 26em (416 px); svg 44 px, margin -2.75em auto 0." },
+  "motifs": { "borderRadius": { "mode": 0, "occurrences": [] }, "shadows": [], "gradients": [], "patterns": [] },
+  "componentStyle": { "buttons": [], "links": [{ "selector": "a", "color": "#0000ee", "textDecoration": "underline", "fontSize": "16px" }] },
+  "systemComponents": [],
+  "iconFont": null,
+  "voice": {
+    "heroHeadline": null,
+    "heroLede": "This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.",
+    "firstParagraph": "This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.",
+    "ctaLabels": ["Learn more"],
+    "heroImage": null,
+    "heroMedium": null,
+    "languages": ["en", "ar", "zh", "fr", "ru", "es"]
+  },
+  "voiceTable": { "ctaFrequency": [{ "label": "Learn more", "count": 1 }], "headingFrequency": [], "headingsUppercasePercent": 0, "distinctHeadings": 0, "distinctCtaLabels": 1 },
+  "crossPromo": { "detected": false },
+  "register": "product"
+}

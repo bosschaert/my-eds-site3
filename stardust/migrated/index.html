@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-10-08T09:38:45Z
+  page:             Example Domain
+  slug:             index
+  pagePath:         migrated/index.html
+  renderBranch:     A
+  sourceProposed:   stardust/prototypes/index-proposed.html
+  sourceCurrent:    stardust/current/pages/index.json
+  againstDirection: stardust/direction.md (Active)
+  designMd:         DESIGN.md (sha: 7401d4726989)
+  designJson:       DESIGN.json (sha: fb2b95c6dc38)
+  canonShas:        header:null footer:null css:8cd4c89b6c24
+  decisionTrace:    _meta.json
+  brokenInternalLinks: 0
+  stardustVersion:  local
+-->
+<style>
+:root {
+  --page-bg-light: #eee;            /* html background, light scheme */
+  --page-bg-dark: #222;             /* html background, dark scheme */
+  --font-body: system-ui, sans-serif;
+  --font-size-body: 16px;
+  --line-height-body: 1.6;
+  --measure: 26em;                  /* body max-width (416px at 16px) */
+  --pad-top: 25vh;
+  --pad-inline: 2em;
+  --pad-bottom: 2em;
+}
+/* replica.css — shared canon layer, values lifted from https://www.example.com/ inline CSS (2026-10-08).
+   Source rules: html{color-scheme:light dark;background:light-dark(#eee,#222)}
+                 body{font:16px/1.6 system-ui,sans-serif;max-width:26em;margin:auto;padding:25vh 2em 2em;text-align:center} */
+:root {
+  --page-bg-light: #eee;            /* html background, light scheme */
+  --page-bg-dark: #222;             /* html background, dark scheme */
+  --font-body: system-ui, sans-serif;
+  --font-size-body: 16px;
+  --line-height-body: 1.6;
+  --measure: 26em;                  /* body max-width (416px at 16px) */
+  --pad-top: 25vh;
+  --pad-inline: 2em;
+  --pad-bottom: 2em;
+}
+html {
+  color-scheme: light dark;
+  background: light-dark(var(--page-bg-light), var(--page-bg-dark));
+}
+body {
+  font: var(--font-size-body) / var(--line-height-body) var(--font-body);
+  max-width: var(--measure);
+  margin: auto;
+  padding: var(--pad-top) var(--pad-inline) var(--pad-bottom);
+  text-align: center;
+}
+
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Example Domain","url":"https://www.example.com/"}</script>
+<!-- stardust:provenance
+  writtenBy:        stardust:replica
+  writtenAt:        2026-10-08T09:29:15Z
+  againstDirection: stardust/direction.md
+  readArtifacts:
+    - stardust/current/pages/index.json
+    - stardust/current/pages/index.html
+    - DESIGN.md
+    - DESIGN.json
+  synthesizedInputs: []
+  stardustVersion:  0.29.1
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example Domain</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./assets/replica.css">
+<link rel="stylesheet" href="./assets/index.css">
+</head>
+<body>
+<main class="notice" data-template="index">
+<svg class="notice__glyph" viewBox="0,0,20,20" width="44" height="44" fill="currentColor" aria-hidden="true" data-section="1"><path fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" d="M6 4H3v12q4 0 7 1.5-1-3.5-4-4.5V2q3.5 1 4 3v12.5q3-1.5 7-1.5V4q-4.5 0-7 1"/><g transform="rotate(-6,13.6,8.3)"><path id="q" d="M11.5 6.6h1.8v1.8l-1 1.6-.6-.3.8-1.3h-1z"/><use href="#q" x="2.4"/></g></svg>
+<p class="notice__text" lang="en" data-section="2">This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.</p>
+<p class="notice__text" lang="ar" dir="rtl" data-section="3">هذا النطاق مُخصص للاستخدام في أمثلة التوثيق دون الحاجة إلى إذن. هذه ليست خدمة، يُرجى تجنب الاعتماد عليها لأغراض الاختبار والمراقبة.</p>
+<p class="notice__text" lang="zh" data-section="4">该域名仅用于文档示例，无需获得许可。这并非一项服务，请勿将其用于测试和监控目的。</p>
+<p class="notice__text" lang="fr" data-section="5">L’usage de ce domaine est réservé à des exemples de documentation, sans autorisation préalable.  Il ne s’agit pas d’un service ; son utilisation à des fins de test ou de surveillance est à éviter.</p>
+<p class="notice__text" lang="ru" data-section="6">Данный домен предназначен для использования в примерах документации без необходимости получения предварительного разрешения. Это не сервис; не рекомендуется его использование для тестирования и мониторинга.</p>
+<p class="notice__text" lang="es" data-section="7">Este dominio está destinado al uso en ejemplos de documentación sin necesidad de permiso. Esto no es un servicio; evitar utilizarlo para realizar pruebas o monitoreos.</p>
+<a class="notice__link" href="https://iana.org/help/example-domains" data-section="8">Learn more</a>
+</main>
+</body>
+</html>

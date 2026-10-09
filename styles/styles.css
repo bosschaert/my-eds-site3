@@ -1,0 +1,57 @@
+/*
+ * Foundation styles for the same-design migration of https://www.example.com/
+ *
+ * The source page has no site chrome (no header, no footer, no web fonts) and
+ * exactly two inline rules, lifted verbatim:
+ *   html{color-scheme:light dark;background:light-dark(#eee,#222)}
+ *   body{font:16px/1.6 system-ui,sans-serif;max-width:26em;margin:auto;padding:25vh 2em 2em;text-align:center}
+ * Everything else keeps the browser default. Do not add styling here.
+ */
+
+:root {
+  --page-bg-light: #eee;
+  --page-bg-dark: #222;
+  --body-font-family: system-ui, sans-serif;
+  --body-font-size: 16px;
+  --body-line-height: 1.6;
+  --measure: 26em;
+  --pad-top: 25vh;
+  --pad-inline: 2em;
+  --pad-bottom: 2em;
+  --nav-height: 0px;
+}
+
+html {
+  color-scheme: light dark;
+  background: light-dark(var(--page-bg-light), var(--page-bg-dark));
+}
+
+body {
+  display: none;
+  margin: auto;
+  padding: var(--pad-top) var(--pad-inline) var(--pad-bottom);
+  max-width: var(--measure);
+  font: var(--body-font-size) / var(--body-line-height) var(--body-font-family);
+  text-align: center;
+}
+
+body.appear {
+  display: block;
+}
+
+header,
+footer {
+  height: var(--nav-height);
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+main > .section {
+  margin: 0;
+  padding: 0;
+}
+
+main .section:empty {
+  display: none;
+}

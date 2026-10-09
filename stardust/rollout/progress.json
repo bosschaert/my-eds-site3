@@ -1,0 +1,121 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-08T09:44:16Z",
+    "stardustVersion": "0.29.1"
+  },
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "index"
+      ],
+      "pages": 0,
+      "blocks": 2,
+      "startedAt": "2026-10-08T09:44:16Z",
+      "endedAt": "2026-10-08T09:49:57Z",
+      "gates": {
+        "origin": "main--f4c8728b--aemcoder.aem.page serves the new styles.css and null-safe header.js (Code Sync after push e8e6319)",
+        "lint": "npm run lint exit 0"
+      },
+      "verdict": "foundation: files 8 written, lint pass, chrome none, fonts none; frozen 16 files"
+    },
+    "archetype-index": {
+      "status": "done",
+      "kind": "archetype",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "blocks": 1,
+      "startedAt": "2026-10-08T09:49:30Z",
+      "endedAt": "2026-10-08T10:04:48Z",
+      "gates": {
+        "360": {
+          "archetypePct": 0,
+          "heightDelta": 0,
+          "clipped": 0,
+          "gateAllPct": 0.28,
+          "presence": "MISSING 0 HIDDEN 0",
+          "pass": true
+        },
+        "1440": {
+          "archetypePct": 0,
+          "heightDelta": 0,
+          "clipped": 0,
+          "gateAllPct": 0.08,
+          "presence": "MISSING 0 HIDDEN 0",
+          "pass": true
+        },
+        "crop": "no header/footer bands on either side (chrome-less site)",
+        "chrome": "gate.sh chrome-parity reports absent header/footer on both sides (known, justified)",
+        "content": "0 🔴 / 2 🟡 justified (live inline <style> text; CSS-mask glyph)",
+        "measure": "body,p,a Δ 0 at 1440 and 360",
+        "aiReadability": "strict 100 / code 100",
+        "decisions": [
+          "no-h1: source has no heading, none added"
+        ]
+      },
+      "verdict": "archetype-index: pages 1/1 live, blocks 1, gate 1440 0.00% / 360 0.00%, requests 1"
+    },
+    "cluster-index": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "index"
+      ],
+      "pages": 0,
+      "blocks": 0,
+      "startedAt": "2026-10-08T10:04:48Z",
+      "endedAt": "2026-10-08T10:04:48Z",
+      "gates": {},
+      "verdict": "cluster-index: pages 0/0 (template index has no siblings), blocks 0, requests 0"
+    },
+    "gate-all": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-08T10:14:20Z",
+      "endedAt": "2026-10-08T10:15:24Z",
+      "gates": {
+        "360": {
+          "pct": 0.28,
+          "heightDelta": 0,
+          "clipped": 0,
+          "presence": "0 missing / 0 hidden",
+          "pass": true
+        },
+        "1440": {
+          "pct": 0.08,
+          "heightDelta": 0,
+          "clipped": 0,
+          "presence": "0 missing / 0 hidden",
+          "pass": true
+        },
+        "archetypeRegate": "pub3 after foundation request applied: 0.00% / Δh 0 at 1440 and 360, 0 🔴, clip 0, overflow ok",
+        "evidence": "stardust/replica/gates/all-1440/summary.json, stardust/replica/gates/all-360/summary.json"
+      },
+      "verdict": "gate-all: pages 1/1 pass, gate 1440 0.08% / 360 0.28%, Δh 0, clipped 0, presence 0/0"
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "index"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-08T10:07:07Z",
+      "endedAt": "2026-10-08T10:15:52Z",
+      "gates": {
+        "freezeCheck": "foundation unchanged (16 files) before and after the request; refrozen at ebffb9d",
+        "requestsApplied": 1,
+        "archetypeRegate": "pub3 1440 0.00% Δh 0 / 360 0.00% Δh 0, 0 🔴, clip 0, overflow ok, chrome deltas = absent header/footer on both sides (justified)"
+      },
+      "verdict": "final: 1 foundation request applied (runtime link title dropped in decorateButtons), archetype re-gated 0.00%/0.00%, roster gate-all 1/1 pass, coverage gate rows written"
+    }
+  }
+}

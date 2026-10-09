@@ -1,0 +1,76 @@
+{
+  "slug": "index",
+  "type": "static",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "notice"
+  ],
+  "slotsFilled": [
+    "notice__glyph",
+    "notice__text",
+    "notice__text",
+    "notice__text",
+    "notice__text",
+    "notice__text",
+    "notice__text",
+    "notice__link"
+  ],
+  "canonShas": {
+    "header": null,
+    "footer": null,
+    "css": "8cd4c89b6c24"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "no-h1",
+      "reason": "source page has no heading; none added (no fabrication)",
+      "checks": [
+        "qa-gate h1",
+        "delivery-lint h1"
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Example Domain",
+    "description": null,
+    "canonical": null,
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Example Domain",
+    "url": "https://www.example.com/"
+  },
+  "migratedAt": "2026-10-08T09:38:45Z",
+  "designMdSha": "7401d4726989",
+  "designJsonSha": "fb2b95c6dc38",
+  "sourceCurrentSha": "470bbc7aa552",
+  "sourceProposedSha": "411fec74ec20",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "content-count",
+    "delivery-lint",
+    "media-reconcile"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "content-diff iter1 --full at 1440 and 360: 0 structural, 2 advisory (live inline <style> text read as a body node) — stardust/replica/gates/index-1440, index-360",
+    "content-count": "6 paragraphs, 1 CTA (https://iana.org/help/example-domains), 0 headings, 0 images on both sides; content-diff 198-node class match, 0 drops",
+    "delivery-lint": "delivery-lint content/index.html (type:page): 1 P0 (h1: expected exactly one <h1>, found 0) · 0 P1 · 0 P2; h1 finding accepted by decision no-h1 (source has no heading)",
+    "media-reconcile": "media-reconcile content/index.html: no findings (page has no images); exit 0"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 2,
+  "missingAssets": [],
+  "brokenInternalLinks": [],
+  "outputPath": "index.html",
+  "outputPathDefault": null,
+  "sidecar": "_meta.json",
+  "driverVersion": "1"
+}

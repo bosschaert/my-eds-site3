@@ -1,0 +1,26 @@
+{
+  "_provenance": { "writtenBy": "stardust:replica", "writtenAt": "2026-10-08T09:34:37Z", "stardustVersion": "0.29.1" },
+  "contentRoot": "body",
+  "contentRootNote": "The live page has no landmark or wrapper and no header/footer; body is the only selector that scopes both sides symmetrically. content-diff confirms header/footer absent on both sides.",
+  "pageTypes": {
+    "static": {
+      "archetype": "index",
+      "liveUrl": "https://www.example.com/",
+      "prototype": "stardust/prototypes/index-proposed.html",
+      "iterations": { "1440": 1, "360": 1 },
+      "gates": {
+        "1440": { "pixelPct": 0.0, "heightDelta": 0, "overflow": "ok (scrollWidth 1440 = viewport)", "contentDiffStructural": 0, "contentDiffAdvisory": 2, "visualDiffFlags": 0, "clipped": 0, "capProbe": "PASS at 2560 (0 of 9 rows failed)", "chromeParity": "no header/footer on either side; body-region parity quiet (exit 0)", "prototypeTableRow": "PASS (gates/prototypes-1440)", "round": "iter1 --full", "verdict": "PASS" },
+        "360":  { "pixelPct": 0.0, "heightDelta": 0, "overflow": "ok (scrollWidth 360 = viewport)", "contentDiffStructural": 0, "contentDiffAdvisory": 2, "visualDiffFlags": 0, "clipped": 0, "chromeParity": "no header/footer on either side; body-region parity quiet (exit 0)", "prototypeTableRow": "PASS (gates/prototypes-360)", "round": "iter1 --full", "verdict": "PASS" }
+      },
+      "residuals": [
+        { "kind": "content-diff 🟡 ×2", "status": "justified", "note": "The live page carries its CSS in an inline <style> inside <body>; content-diff reads that text as a body node ('svg{display:block;…') and anchors the icon to it. The prototype's CSS is in files, so the 'MISSING BODY' / 'ICON MOVED' findings are style text, not copy. All six paragraphs and the link match." },
+        { "kind": "chrome-parity REGION", "status": "justified", "note": "gate.sh's default chrome-parity reports 'no element matches header/footer' on BOTH sides as 2 deltas; there is no chrome on this page. Standalone chrome-parity --no-defaults --region body=body is quiet at 1440 and 360 (gates/index-<w>/chrome-parity-body-iter1.txt)." }
+      ],
+      "motion": { "observed": 0, "implemented": 0, "dead": ["hover a (no measured diff)"], "evidence": ["stardust/replica/motion/index.json", "stardust/replica/motion/index-build.json", "stardust/replica/motion/index-compare.txt"] },
+      "captureState": [ { "item": "color-scheme", "captured": "light (#eee ground)", "note": "source declares light dark; prototype lifts the same light-dark() rule" } ],
+      "fonts": { "policy": "system-ui, sans-serif — no font files on the source; nothing to self-host or substitute" },
+      "passedAt": "2026-10-08T09:34:37Z",
+      "approvedBy": "hands-off"
+    }
+  }
+}

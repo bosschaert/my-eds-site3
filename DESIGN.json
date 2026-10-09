@@ -1,0 +1,224 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-06T10:47:53Z",
+    "mode": "bounded-single",
+    "synthesizedFrom": [
+      "stardust/current/pages/webpage-dyft29wzo0qlk.json",
+      "stardust/current/assets/css/inline-theme.css",
+      "stardust/replica/lift/measure-static.json",
+      "stardust/current/DESIGN.json"
+    ]
+  },
+  "colors": {
+    "canvas": "#FFEF36",
+    "display": "#006E04",
+    "text": "#111A0B",
+    "heading-3": "#000000",
+    "title-on-photo": "#FFEE35",
+    "title-fallback-bg": "#484848",
+    "overlay": "rgba(0,0,0,0.25)",
+    "link-hover": "#012602",
+    "button-hover-border": "#00BB07"
+  },
+  "typography": {
+    "display": {
+      "family": "poplar-std, Anton, Impact, sans-serif",
+      "source": "Adobe Fonts kit lid8wnz (not rehosted); Anton self-hosted substitute"
+    },
+    "text": {
+      "family": "pt-sans, 'PT Sans', Arial, sans-serif",
+      "source": "PT Sans OFL self-hosted"
+    },
+    "ramp": {
+      "h1": {
+        "size": [
+          86,
+          46
+        ],
+        "weight": 400,
+        "lineHeight": 1.2,
+        "transform": "uppercase"
+      },
+      "subtitle": {
+        "size": [
+          24,
+          20
+        ],
+        "weight": 300,
+        "lineHeight": 1.3,
+        "transform": "uppercase"
+      },
+      "h2": {
+        "size": [
+          55,
+          33
+        ],
+        "weight": 100,
+        "lineHeight": 1.2,
+        "transform": "uppercase"
+      },
+      "h3": {
+        "size": [
+          28,
+          21
+        ],
+        "weight": 700,
+        "lineHeight": 1.5,
+        "transform": "uppercase",
+        "family": "text"
+      },
+      "p": {
+        "size": [
+          19,
+          17
+        ],
+        "weight": 400,
+        "lineHeight": 1.6
+      },
+      "blockquote": {
+        "size": [
+          29,
+          21
+        ],
+        "weight": 100,
+        "lineHeight": 1.3,
+        "transform": "uppercase"
+      },
+      "linkButton": {
+        "size": [
+          20,
+          19
+        ],
+        "weight": 100,
+        "lineHeight": 1.4,
+        "padding": "8px 17px 6px",
+        "border": "1px solid #006E04"
+      }
+    },
+    "mobileBreakpoint": 767
+  },
+  "rounded": "none",
+  "spacing": {
+    "contentGutter": {
+      "desktop": "20%",
+      "mobile": "12.5%",
+      "mobileMax": 768
+    },
+    "sectionPaddingBlock": {
+      "desktop": "2.5rem",
+      "mobile": "1.25rem"
+    },
+    "largeSectionPaddingBlock": {
+      "desktop": "5rem",
+      "mobile": "2.5rem"
+    },
+    "paragraphGap": 40,
+    "spacer": 2,
+    "cardMargin": 32,
+    "cardPadding": "56px 32px"
+  },
+  "components": [
+    "title-section",
+    "text-section",
+    "image-text-section",
+    "card-gallery",
+    "pull-quote",
+    "legal-footer",
+    "made-in-badge"
+  ],
+  "extensions": {
+    "breakpoints": {
+      "containerMaxWidth": "395px",
+      "probeWidth": 2560,
+      "shellMaxWidth": null,
+      "caps": [
+        {
+          "kind": "module",
+          "px": 395,
+          "via": "fixed",
+          "selector": "#my-personal-faves-heading-text > span",
+          "pages": [
+            "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 374,
+          "via": "fixed",
+          "selector": "#montego-bay-fishing-boats-heading-text > span",
+          "pages": [
+            "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 325,
+          "via": "fixed",
+          "selector": "#tips-and-tricks-heading-text > span",
+          "pages": [
+            "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 276,
+          "via": "fixed",
+          "selector": "#the-blue-mountains-heading-text > span",
+          "pages": [
+            "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static"
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "url": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static",
+          "section": 0,
+          "selector": "#app",
+          "px": 395
+        },
+        {
+          "url": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static",
+          "section": 1,
+          "selector": "#analytics-iframe",
+          "px": null
+        }
+      ],
+      "capRegister": [],
+      "capProvenance": {
+        "writtenBy": "skills/replica/scripts/cap-probe.mjs",
+        "writtenAt": "2026-10-06T10:41:46.563Z",
+        "baseWidth": 1440,
+        "urls": [
+          "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static"
+        ]
+      }
+    },
+    "gateBreakpoints": [
+      1440,
+      360
+    ],
+    "captureMode": "page-mode=static",
+    "measured": {
+      "360": {
+        "docHeight": 6670,
+        "title": 720,
+        "photoBand": 450
+      },
+      "1440": {
+        "docHeight": 9327,
+        "title": 720,
+        "column": {
+          "x": 360,
+          "w": 720
+        },
+        "photoBand": 450,
+        "cardImage": [
+          1024,
+          682
+        ],
+        "card": 950
+      }
+    }
+  }
+}

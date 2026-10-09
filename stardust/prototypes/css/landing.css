@@ -1,0 +1,83 @@
+/* landing archetype — webpage-dyft29wzo0qlk. Section-level geometry of the static page mode.
+   Sources: theme (inline-theme.css) line refs inline; runtime.css rule offsets @n; noscript.css; measure-static*.json. */
+
+/* ---- title section (noscript @563: 80% of the article; theme L129/L132/L136/L143/L161/L178; runtime @25801/@26142) ---- */
+.title-section { height: 80%; background-color: var(--photo-fallback); overflow: visible; }
+.title-section .section-view { position: relative; height: 100%; }
+.title-section .section-background { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0; }
+.title-section .section-background-image,
+.single-column-section .section-background-image { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-repeat: no-repeat; background-position: center center; background-size: cover; }
+.title-header { position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; padding: 64px 5%; box-sizing: border-box; text-align: center; font-size: 0; overflow: hidden; background-color: transparent; }
+.title-header::before { content: ''; display: inline-block; width: 0; height: 100%; vertical-align: middle; }
+.title-header-view { position: relative; display: inline-block; vertical-align: middle; width: 100%; max-width: 89%; margin: 0; padding: 0; box-sizing: border-box; text-align: center; white-space: normal; background-color: transparent; }
+@media (min-width: 1300px) { .title-center .title-header-view { padding-left: 15%; padding-right: 15%; } }
+@media (min-width: 1800px) { .title-center .title-header-view { padding-left: 25%; padding-right: 25%; } }
+@media (min-width: 2300px) { .title-center .title-header-view { padding-left: 30%; padding-right: 30%; } }
+.title-header .gradient-overlay { position: absolute; left: -25%; right: -25%; top: -200%; bottom: -200%; height: auto; min-height: 15rem; background-color: rgba(0,0,0,0);
+  background-image: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.25) 25%, rgba(0,0,0,.5) 50%, rgba(0,0,0,.25) 75%, rgba(0,0,0,0) 100%); }
+.title-header .title { position: relative; margin: 0; padding: 0; max-height: 3.6em; color: var(--title-on-photo); font-family: var(--display-family); font-size: 86px; font-style: normal; font-weight: normal; line-height: 1.2; letter-spacing: normal; text-transform: uppercase; text-shadow: 0 2px 2px rgba(0,0,0,.25); }
+.title-header .subtitle { position: relative; margin: 1rem 0 0; padding: 0; max-height: 3.9em; color: var(--title-on-photo); font-family: var(--display-family); font-size: 24px; font-weight: 300; line-height: 1.3; letter-spacing: normal; text-transform: uppercase; text-shadow: 0 2px 2px rgba(0,0,0,.25); }
+.navigation-hint { display: block; height: 0; }
+@media (max-width: 767px) {
+  .title-header { padding: 32px 5%; }
+  .title-header .title { font-size: 46px; }
+  .title-header .subtitle { font-size: 20px; }
+}
+
+/* ---- text + photo bands (noscript @1084–@2181: flex column, photo 50vh above or below the text; theme L12 fallback bg) ---- */
+.single-column-section { height: auto; }
+.single-column-section .section-background { position: relative; width: 100%; height: 50vh; background-color: var(--photo-fallback); z-index: 0; }
+.single-column-section.image-on-left .section-view,
+.single-column-section.image-on-right .section-view { display: flex; flex-direction: column; }
+.single-column-section.image-on-left .section-background { order: 1; }
+.single-column-section.image-on-left .section-content { order: 2; }
+.single-column-section.image-on-right .section-content { order: 1; }
+.single-column-section.image-on-right .section-background { order: 2; }
+
+/* ---- spacers and shadows (runtime @19084/@19149; the spacer is a 2px section — measured) ---- */
+.spacer-section.content-spacer { height: 2px; }
+.section.top-shadow { box-shadow: 0 -.375rem .375rem rgba(0,0,0,.2); }
+.section.bottom-shadow { box-shadow: 0 .375rem .375rem rgba(0,0,0,.2); }
+.card-flipbook-section + .section.top-shadow { box-shadow: none; }
+
+/* ---- card gallery (noscript @3234–@4062; theme L91/L99; measured: margin 32, padding 56/32 → 18/14, 31/13 at ≤767) ---- */
+.card-flipbook-section { overflow: hidden; height: auto; }
+.card-flipbook-section .section-background { position: relative; margin: 0; padding: 2rem 2rem 0; width: auto; box-sizing: border-box; }
+.card-flipbook-section .section-content-view { position: relative; }
+.card-flipbook-section .section-content .content-container { margin: 32px; padding: 56px 32px; width: auto; max-width: none; box-sizing: border-box; background-color: rgba(255,239,54,.9); box-shadow: 0 0 4px rgba(0,0,0,.25); }
+.card-flipbook-section .section-content .card-center .content-container { margin-left: 0; margin-right: 0; }
+.card-flipbook-section .content-container h2 { margin-top: 2.5rem; }
+@media (max-width: 767px) {
+  .card-flipbook-section .section-content .content-container { margin: 18px 14px; padding: 31px 13px; }
+  .card-flipbook-section .section-content .card-center .content-container { margin-left: 0; margin-right: 0; }
+  .card-flipbook-section .content-container h2 { margin-top: 1.25rem; }
+}
+
+/* ---- photo grid (runtime @45937–@53123) ---- */
+.photo-grid-section .photo-grid { position: relative; }
+.photo-grid-section .photo-group-container { margin: 0; padding: 1.6% 0 0; box-sizing: border-box; }
+.photo-grid-section .photo-group-container:first-child { padding: 0; }
+.photo-grid-section .photo-group { position: relative; height: 100%; padding-top: 72.3%; box-sizing: border-box; }
+.photo-grid-section .t3-layout-lpp-1 { padding-top: 36.1%; }
+.photo-grid-section .t2-layout-pp-1 { padding-top: 72.3%; }
+.photo-grid-section .tile { position: absolute; overflow: hidden; box-sizing: border-box; }
+.t2-layout-pp-1 > .tile:nth-child(1) { top: 0; left: 0; width: 50%; height: 100%; padding-right: .8%; }
+.t2-layout-pp-1 > .tile:nth-child(2) { top: 0; left: 50%; width: 50%; height: 100%; padding-left: .8%; }
+.t3-layout-lpp-1 > .tile:nth-child(1) { top: 0; left: 0; width: 50%; height: 100%; padding-right: .8%; }
+.t3-layout-lpp-1 > .tile:nth-child(2) { top: 0; left: 50%; width: 25%; height: 100%; padding-left: .8%; padding-right: .8%; }
+.t3-layout-lpp-1 > .tile:nth-child(3) { top: 0; left: 75%; width: 25%; height: 100%; padding-left: .8%; }
+.photo-grid-section .photo-image { display: block; border: none; width: 100%; height: 100%; background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; cursor: pointer; color: var(--display); }
+
+/* ---- legal footer (runtime @69714/@70605/@70726; measured 36px: UA serif 16px, line-height 1) ---- */
+.bumper-section { line-height: 1; -webkit-font-smoothing: antialiased; }
+.bumper-section .footer { padding: 10px 15px; max-width: none; line-height: 1; text-align: right; box-sizing: border-box; }
+.bumper-section .footer a { display: inline-block; white-space: nowrap; padding: 0 10px; color: inherit; text-decoration: none; }
+
+/* ---- fixed "Made in Adobe Express" badge (register R-03, replicated as captured; theme inline block 5; measured) ---- */
+.floating-adobe-express-button { position: fixed; bottom: 60px; left: 16px; z-index: 100; }
+.floating-adobe-express-button .brand-btn { display: flex; align-items: center; gap: 5px; margin: 0; padding: 2.5px 6px 2.5px 2.5px; box-sizing: border-box; background-color: #fff; border: 2px outset #000; border-radius: 6.3px; font: 400 13.3333px Arial, sans-serif; color: #000; text-align: center; cursor: pointer; }
+.floating-adobe-express-button .brand-logo { display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 24.69px; height: 25.32px; }
+.floating-adobe-express-button .brand-logo svg { display: block; width: 25.32px; height: 24.69px; }
+.floating-adobe-express-button .brand-text { display: block; color: #000b1d; font-family: 'Adobe Clean', adobe-clean, sans-serif; font-size: 12.9px; font-weight: 800; line-height: 12.9px; letter-spacing: -0.02em; white-space: nowrap; }
+/* theme inline block L1697: the badge sits 20px from the bottom on small screens */
+@media (max-width: 480px) { .floating-adobe-express-button { bottom: 20px; } }

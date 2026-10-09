@@ -1,0 +1,47 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-10-06T11:37:31.180Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-10-06T11:37:31.180Z",
+  "fragments": [],
+  "deliveryOrder": [
+    "webpage-dyft29wzo0qlk"
+  ],
+  "steps": [
+    {
+      "slug": "webpage-dyft29wzo0qlk",
+      "path": "/webpage/DYft29Wzo0QLK",
+      "templateId": "webpage-dyft29wzo0qlk",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "hero",
+          "edsBlockName": "hero"
+        },
+        {
+          "id": "photo-band",
+          "edsBlockName": "photo-band"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards"
+        },
+        {
+          "id": "figure",
+          "edsBlockName": "figure"
+        },
+        {
+          "id": "photo-grid",
+          "edsBlockName": "photo-grid"
+        }
+      ],
+      "reuse": []
+    }
+  ]
+}

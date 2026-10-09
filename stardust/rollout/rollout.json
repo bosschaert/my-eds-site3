@@ -1,0 +1,35 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-10-06T11:35:15.121Z",
+    "stardustVersion": "0.0.0"
+  },
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK",
+    "da": {
+      "org": "aemcoder",
+      "site": "b7aaf274",
+      "ref": "main"
+    },
+    "liveHost": "main--b7aaf274--aemcoder.aem.live"
+  },
+  "lastRun": {
+    "at": "2026-10-06T13:06:48.763Z",
+    "pages": {
+      "total": 1,
+      "verified": 1,
+      "deployed": 0,
+      "pending": 0,
+      "contentPending": 0,
+      "stale": 0,
+      "failed": 0
+    },
+    "blocks": {
+      "total": 5,
+      "converted": 5,
+      "pending": 0
+    },
+    "verifyFailures": 0
+  }
+}

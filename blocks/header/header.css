@@ -1,0 +1,8 @@
+/* the source page has no header: the chrome host contributes nothing to the document */
+body > header,
+header .header {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}

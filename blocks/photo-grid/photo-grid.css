@@ -1,0 +1,113 @@
+/* photo-grid — values lifted from stardust/prototypes/css/landing.css (.photo-grid-section:
+   group padding-top 1.6 %, t3-layout-lpp-1 36.1 % / t2-layout-pp-1 72.3 % aspect boxes,
+   tile gutters 0.8 %, cover photos) and replica-canon.css (.content-container column). */
+.photo-grid {
+  position: relative;
+  padding: var(--section-pad) var(--content-gutter);
+}
+
+.photo-grid .photo-group-container {
+  margin: 0;
+  padding: 1.6% 0 0;
+}
+
+.photo-grid .photo-group-container:first-child {
+  padding: 0;
+}
+
+.photo-grid .photo-group {
+  position: relative;
+  height: 100%;
+  padding-top: 72.3%;
+}
+
+.photo-grid .photo-group.tiles-3 {
+  padding-top: 36.1%;
+}
+
+.photo-grid .photo-group.tiles-2 {
+  padding-top: 72.3%;
+}
+
+.photo-grid .tile {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.photo-grid .tiles-1 > .tile {
+  left: 0;
+  width: 100%;
+}
+
+.photo-grid .tiles-4 > .tile {
+  width: 25%;
+  padding: 0 0.4%;
+}
+
+.photo-grid .tiles-2 > .tile:nth-child(1),
+.photo-grid .tiles-3 > .tile:nth-child(1) {
+  left: 0;
+  width: 50%;
+  padding-right: 0.8%;
+}
+
+.photo-grid .tiles-2 > .tile:nth-child(2) {
+  left: 50%;
+  width: 50%;
+  padding-left: 0.8%;
+}
+
+.photo-grid .tiles-3 > .tile:nth-child(2) {
+  left: 50%;
+  width: 25%;
+  padding-left: 0.8%;
+  padding-right: 0.8%;
+}
+
+.photo-grid .tiles-3 > .tile:nth-child(3) {
+  left: 75%;
+  width: 25%;
+  padding-left: 0.8%;
+}
+
+.photo-grid .tiles-4 > .tile:nth-child(1) {
+  left: 0;
+}
+
+.photo-grid .tiles-4 > .tile:nth-child(2) {
+  left: 25%;
+}
+
+.photo-grid .tiles-4 > .tile:nth-child(3) {
+  left: 50%;
+}
+
+.photo-grid .tiles-4 > .tile:nth-child(4) {
+  left: 75%;
+}
+
+.photo-grid .photo-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.photo-grid .photo-image :is(p, picture) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 0;
+}
+
+.photo-grid .photo-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 50% 50%;
+}

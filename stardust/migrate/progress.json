@@ -1,0 +1,31 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "phase": "handoff/migrate",
+    "writtenAt": "2026-10-06T11:40:00Z"
+  },
+  "units": {
+    "plan": {
+      "status": "done",
+      "kind": "plan",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-06T11:40:00Z",
+      "endedAt": "2026-10-06T11:34:27.557Z",
+      "verdict": "plan: 1 page, Path A archetype webpage-dyft29wzo0qlk rendered → stardust/migrated/webpage/DYft29Wzo0QLK/index.html (22 assets, 11 sections); modules hero photo-band cards figure photo-grid; 0 siblings → no render cluster"
+    },
+    "report": {
+      "status": "done",
+      "kind": "report",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-06T11:34:49.844Z",
+      "endedAt": "2026-10-06T11:35:00.736Z",
+      "verdict": "report: 1/1 page migrated (archetype A, 3 gates, 3 deviations, 22 assets); 0 siblings, 0 refused"
+    }
+  }
+}

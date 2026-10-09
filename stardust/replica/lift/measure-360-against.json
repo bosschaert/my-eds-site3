@@ -1,0 +1,2575 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/measure.mjs",
+    "writtenAt": "2026-10-06T11:14:52.515Z",
+    "urls": [
+      "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static",
+      "http://localhost:8791/webpage-dyft29wzo0qlk-proposed.html"
+    ],
+    "widths": [
+      360
+    ],
+    "selectors": [
+      "h2",
+      "h3",
+      ".content-container p",
+      ".caption",
+      "blockquote",
+      ".brand-btn",
+      ".content-container img",
+      ".title-header-view",
+      ".photo-grid",
+      "nav.footer"
+    ],
+    "props": [
+      "fontFamily",
+      "fontSize",
+      "lineHeight",
+      "letterSpacing",
+      "wordSpacing",
+      "textRendering",
+      "webkitFontSmoothing",
+      "whiteSpace",
+      "fontKerning",
+      "fontVariantLigatures",
+      "fontFeatureSettings",
+      "textSizeAdjust"
+    ],
+    "allMatches": true,
+    "failed": [],
+    "warnings": []
+  },
+  "widths": [
+    360
+  ],
+  "selectors": [
+    "h2",
+    "h3",
+    ".content-container p",
+    ".caption",
+    "blockquote",
+    ".brand-btn",
+    ".content-container img",
+    ".title-header-view",
+    ".photo-grid",
+    "nav.footer"
+  ],
+  "root": {
+    "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 6670,
+        "overflowX": 0
+      }
+    },
+    "http://localhost:8791/webpage-dyft29wzo0qlk-proposed.html": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 6654,
+        "overflowX": 0
+      }
+    }
+  },
+  "pages": {
+    "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static": {
+      "360": {
+        "h2": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 25,
+              "y": 760,
+              "w": 310,
+              "h": 40
+            },
+            "visible": true,
+            "text": "OVERVIEW",
+            "props": {
+              "fontFamily": "poplar-std, sans-serif",
+              "fontSize": "33px",
+              "lineHeight": "39.6px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 1,
+            "of": 4,
+            "rect": {
+              "x": 13,
+              "y": 3844,
+              "w": 334,
+              "h": 40
+            },
+            "visible": true,
+            "text": "HIGHLIGHTS",
+            "props": {
+              "fontFamily": "poplar-std, sans-serif",
+              "fontSize": "33px",
+              "lineHeight": "39.6px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 2,
+            "of": 4,
+            "rect": {
+              "x": 25,
+              "y": 5268,
+              "w": 310,
+              "h": 40
+            },
+            "visible": true,
+            "text": "TIPS AND TRICKS",
+            "props": {
+              "fontFamily": "poplar-std, sans-serif",
+              "fontSize": "33px",
+              "lineHeight": "39.6px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 3,
+            "of": 4,
+            "rect": {
+              "x": 25,
+              "y": 6012,
+              "w": 310,
+              "h": 40
+            },
+            "visible": true,
+            "text": "MY PERSONAL FAVES",
+            "props": {
+              "fontFamily": "poplar-std, sans-serif",
+              "fontSize": "33px",
+              "lineHeight": "39.6px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          }
+        ],
+        "h3": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 25,
+              "y": 2158,
+              "w": 310,
+              "h": 32
+            },
+            "visible": true,
+            "text": "BEST BEACHES",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "21px",
+              "lineHeight": "31.5px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 25,
+              "y": 2591,
+              "w": 310,
+              "h": 32
+            },
+            "visible": true,
+            "text": "FOOD & DRINK",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "21px",
+              "lineHeight": "31.5px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 4191,
+              "w": 306,
+              "h": 32
+            },
+            "visible": true,
+            "text": "WATERFALL TOURS",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "21px",
+              "lineHeight": "31.5px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 4632,
+              "w": 306,
+              "h": 32
+            },
+            "visible": true,
+            "text": "MONTEGO BAY FISHING BOATS",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "21px",
+              "lineHeight": "31.5px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 5046,
+              "w": 306,
+              "h": 32
+            },
+            "visible": true,
+            "text": "THE BLUE MOUNTAINS",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "21px",
+              "lineHeight": "31.5px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          }
+        ],
+        ".content-container p": [
+          {
+            "index": 0,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 820,
+              "w": 310,
+              "h": 272
+            },
+            "visible": true,
+            "text": "The quick brown fox jumped over the laz…",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "pre-wrap",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 1,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 1111,
+              "w": 310,
+              "h": 299
+            },
+            "visible": true,
+            "text": "The hem of the pool expands indefinitel…",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "pre-wrap",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 2,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 1431,
+              "w": 310,
+              "h": 218
+            },
+            "visible": true,
+            "text": "Known for his sweetness, this dog shake…",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "pre-wrap",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 3,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2210,
+              "w": 310,
+              "h": 82
+            },
+            "visible": true,
+            "text": "The fox and the dog free-fall off the e…",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "pre-wrap",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 4,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2311,
+              "w": 310,
+              "h": 109
+            },
+            "visible": true,
+            "text": "Landing promptly on the other side of t…",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "pre-wrap",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 5,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2440,
+              "w": 310,
+              "h": 109
+            },
+            "visible": true,
+            "text": "The hand bends toward them without beck…",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "pre-wrap",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 6,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2642,
+              "w": 310,
+              "h": 109
+            },
+            "visible": true,
+            "text": "Flat, gleaming, and forever, this place…",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "pre-wrap",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 7,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2771,
+              "w": 310,
+              "h": 136
+            },
+            "visible": true,
+            "text": "In a quiet flash, the dog remembers a l…",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "pre-wrap",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 8,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2927,
+              "w": 310,
+              "h": 163
+            },
+            "visible": true,
+            "text": "More pragmatic, the fox physically exam…",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "pre-wrap",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 9,
+            "of": 13,
+            "rect": {
+              "x": 27,
+              "y": 4243,
+              "w": 306,
+              "h": 82
+            },
+            "visible": true,
+            "text": "Jamaica is home to gorgeous waterfalls …",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "pre-wrap",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 10,
+            "of": 13,
+            "rect": {
+              "x": 27,
+              "y": 4683,
+              "w": 306,
+              "h": 54
+            },
+            "visible": true,
+            "text": "You can charter a boat for an hour, an …",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "pre-wrap",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          },
+          {
+            "index": 11,
+            "of": 13,
+            "rect": {
+              "x": 27,
+              "y": 5097,
+              "w": 306,
+              "h": 82
+            },
+            "visible": true,
+            "text": "The longest mountain range in Jamaica, …",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "pre-wrap",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          }
+        ],
+        ".caption": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 5944,
+              "w": 310,
+              "h": 48
+            },
+            "visible": true,
+            "text": "Of course, it helps to have an all-star…",
+            "props": {
+              "fontFamily": "pt-sans, sans-serif",
+              "fontSize": "15px",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          }
+        ],
+        "blockquote": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 6492,
+              "w": 310,
+              "h": 86
+            },
+            "visible": true,
+            "text": "\"OUT OF MANY, ONE PEOPLE\" - JAMAICA'S N…",
+            "props": {
+              "fontFamily": "poplar-std, sans-serif",
+              "fontSize": "21px",
+              "lineHeight": "27.3px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          }
+        ],
+        ".brand-btn": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 16,
+              "y": 846,
+              "w": 182,
+              "h": 34
+            },
+            "visible": true,
+            "text": "Made in Adobe Express",
+            "props": {
+              "fontFamily": "Arial",
+              "fontSize": "13.3333px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          }
+        ],
+        ".content-container img": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 13,
+              "y": 3643,
+              "w": 334,
+              "h": 177
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 542,
+              "currentSrc": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/3fc797bc-626a-4195-b8ef-347fdd072a04?asset_id=3fc797bc-626a-4195-b8ef-347fdd072a04&image_assets=false&size=1024"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 3963,
+              "w": 306,
+              "h": 204
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 682,
+              "currentSrc": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/4086d2a3-f3c9-4754-a075-7cc5e40fba29?asset_id=4086d2a3-f3c9-4754-a075-7cc5e40fba29&image_assets=false&size=1024"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 4404,
+              "w": 306,
+              "h": 204
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 682,
+              "currentSrc": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/db7c0944-4fb1-4b69-85e5-429ee1a73f60?asset_id=db7c0944-4fb1-4b69-85e5-429ee1a73f60&image_assets=false&size=1024"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 4818,
+              "w": 306,
+              "h": 204
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 682,
+              "currentSrc": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/7579e9c0-b40e-48a8-b550-3cf85909a754?asset_id=7579e9c0-b40e-48a8-b550-3cf85909a754&image_assets=false&size=1024"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 25,
+              "y": 5728,
+              "w": 310,
+              "h": 205
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 677,
+              "currentSrc": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/a9da7451-031a-45c8-9e5a-173f9ec3d993?asset_id=a9da7451-031a-45c8-9e5a-173f9ec3d993&image_assets=false&size=1024"
+            }
+          }
+        ],
+        ".title-header-view": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 36,
+              "y": 256,
+              "w": 288,
+              "h": 208
+            },
+            "visible": true,
+            "text": "THE ULTIMATE JAMAICA TRAVEL GUIDE BY DI…",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "0px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          }
+        ],
+        ".photo-grid": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 6092,
+              "w": 310,
+              "h": 341
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          }
+        ],
+        "nav.footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 6618,
+              "w": 360,
+              "h": 52
+            },
+            "visible": true,
+            "text": "Terms of Service Privacy Policy Report …",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "lineHeight": "16px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "antialiased",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "100%"
+            }
+          }
+        ]
+      }
+    },
+    "http://localhost:8791/webpage-dyft29wzo0qlk-proposed.html": {
+      "360": {
+        "h2": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 25,
+              "y": 760,
+              "w": 310,
+              "h": 40
+            },
+            "visible": true,
+            "text": "OVERVIEW",
+            "props": {
+              "fontFamily": "poplar-std, Anton, Impact, sans-serif",
+              "fontSize": "33px",
+              "lineHeight": "39.6px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 1,
+            "of": 4,
+            "rect": {
+              "x": 13,
+              "y": 3844,
+              "w": 334,
+              "h": 40
+            },
+            "visible": true,
+            "text": "HIGHLIGHTS",
+            "props": {
+              "fontFamily": "poplar-std, Anton, Impact, sans-serif",
+              "fontSize": "33px",
+              "lineHeight": "39.6px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 2,
+            "of": 4,
+            "rect": {
+              "x": 25,
+              "y": 5268,
+              "w": 310,
+              "h": 40
+            },
+            "visible": true,
+            "text": "TIPS AND TRICKS",
+            "props": {
+              "fontFamily": "poplar-std, Anton, Impact, sans-serif",
+              "fontSize": "33px",
+              "lineHeight": "39.6px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 3,
+            "of": 4,
+            "rect": {
+              "x": 25,
+              "y": 6012,
+              "w": 310,
+              "h": 40
+            },
+            "visible": true,
+            "text": "MY PERSONAL FAVES",
+            "props": {
+              "fontFamily": "poplar-std, Anton, Impact, sans-serif",
+              "fontSize": "33px",
+              "lineHeight": "39.6px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          }
+        ],
+        "h3": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 25,
+              "y": 2158,
+              "w": 310,
+              "h": 32
+            },
+            "visible": true,
+            "text": "BEST BEACHES",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "21px",
+              "lineHeight": "31.5px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 25,
+              "y": 2591,
+              "w": 310,
+              "h": 32
+            },
+            "visible": true,
+            "text": "FOOD & DRINK",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "21px",
+              "lineHeight": "31.5px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 4191,
+              "w": 306,
+              "h": 32
+            },
+            "visible": true,
+            "text": "WATERFALL TOURS",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "21px",
+              "lineHeight": "31.5px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 4632,
+              "w": 306,
+              "h": 32
+            },
+            "visible": true,
+            "text": "MONTEGO BAY FISHING BOATS",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "21px",
+              "lineHeight": "31.5px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 5046,
+              "w": 306,
+              "h": 32
+            },
+            "visible": true,
+            "text": "THE BLUE MOUNTAINS",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "21px",
+              "lineHeight": "31.5px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          }
+        ],
+        ".content-container p": [
+          {
+            "index": 0,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 820,
+              "w": 310,
+              "h": 272
+            },
+            "visible": true,
+            "text": "The quick brown fox jumped over the laz…",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 1,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 1111,
+              "w": 310,
+              "h": 299
+            },
+            "visible": true,
+            "text": "The hem of the pool expands indefinitel…",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 2,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 1431,
+              "w": 310,
+              "h": 218
+            },
+            "visible": true,
+            "text": "Known for his sweetness, this dog shake…",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 3,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2210,
+              "w": 310,
+              "h": 82
+            },
+            "visible": true,
+            "text": "The fox and the dog free-fall off the e…",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 4,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2311,
+              "w": 310,
+              "h": 109
+            },
+            "visible": true,
+            "text": "Landing promptly on the other side of t…",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 5,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2440,
+              "w": 310,
+              "h": 109
+            },
+            "visible": true,
+            "text": "The hand bends toward them without beck…",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 6,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2642,
+              "w": 310,
+              "h": 109
+            },
+            "visible": true,
+            "text": "Flat, gleaming, and forever, this place…",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 7,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2771,
+              "w": 310,
+              "h": 136
+            },
+            "visible": true,
+            "text": "In a quiet flash, the dog remembers a l…",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 8,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2927,
+              "w": 310,
+              "h": 163
+            },
+            "visible": true,
+            "text": "More pragmatic, the fox physically exam…",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 9,
+            "of": 13,
+            "rect": {
+              "x": 27,
+              "y": 4243,
+              "w": 306,
+              "h": 82
+            },
+            "visible": true,
+            "text": "Jamaica is home to gorgeous waterfalls …",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 10,
+            "of": 13,
+            "rect": {
+              "x": 27,
+              "y": 4683,
+              "w": 306,
+              "h": 54
+            },
+            "visible": true,
+            "text": "You can charter a boat for an hour, an …",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          },
+          {
+            "index": 11,
+            "of": 13,
+            "rect": {
+              "x": 27,
+              "y": 5097,
+              "w": 306,
+              "h": 82
+            },
+            "visible": true,
+            "text": "The longest mountain range in Jamaica, …",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          }
+        ],
+        ".caption": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 5944,
+              "w": 310,
+              "h": 48
+            },
+            "visible": true,
+            "text": "Of course, it helps to have an all-star…",
+            "props": {
+              "fontFamily": "pt-sans, \"PT Sans\", Arial, sans-serif",
+              "fontSize": "15px",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          }
+        ],
+        "blockquote": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 6492,
+              "w": 310,
+              "h": 86
+            },
+            "visible": true,
+            "text": "\"OUT OF MANY, ONE PEOPLE\" - JAMAICA'S N…",
+            "props": {
+              "fontFamily": "poplar-std, Anton, Impact, sans-serif",
+              "fontSize": "21px",
+              "lineHeight": "27.3px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          }
+        ],
+        ".brand-btn": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 16,
+              "y": 846,
+              "w": 182,
+              "h": 34
+            },
+            "visible": true,
+            "text": "Made in Adobe Express",
+            "props": {
+              "fontFamily": "Arial, sans-serif",
+              "fontSize": "13.3333px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          }
+        ],
+        ".content-container img": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 13,
+              "y": 3643,
+              "w": 334,
+              "h": 177
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 542,
+              "currentSrc": "http://localhost:8791/media/3fc797bc-626a-4195-b8ef-347fdd072a04-1024.jpg"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 3963,
+              "w": 306,
+              "h": 204
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 682,
+              "currentSrc": "http://localhost:8791/media/4086d2a3-f3c9-4754-a075-7cc5e40fba29-1024.jpg"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 4404,
+              "w": 306,
+              "h": 204
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 682,
+              "currentSrc": "http://localhost:8791/media/db7c0944-4fb1-4b69-85e5-429ee1a73f60-1024.jpg"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 4818,
+              "w": 306,
+              "h": 204
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 682,
+              "currentSrc": "http://localhost:8791/media/7579e9c0-b40e-48a8-b550-3cf85909a754-1024.jpg"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 25,
+              "y": 5728,
+              "w": 310,
+              "h": 205
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 677,
+              "currentSrc": "http://localhost:8791/media/a9da7451-031a-45c8-9e5a-173f9ec3d993-1024.jpg"
+            }
+          }
+        ],
+        ".title-header-view": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 36,
+              "y": 256,
+              "w": 288,
+              "h": 208
+            },
+            "visible": true,
+            "text": "THE ULTIMATE JAMAICA TRAVEL GUIDE BY DI…",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "0px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          }
+        ],
+        ".photo-grid": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 25,
+              "y": 6092,
+              "w": 310,
+              "h": 341
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "auto",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          }
+        ],
+        "nav.footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 6618,
+              "w": 360,
+              "h": 36
+            },
+            "visible": true,
+            "text": "Terms of Service Privacy Policy",
+            "props": {
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "lineHeight": "16px",
+              "letterSpacing": "normal",
+              "wordSpacing": "0px",
+              "textRendering": "auto",
+              "webkitFontSmoothing": "antialiased",
+              "whiteSpace": "normal",
+              "fontKerning": "auto",
+              "fontVariantLigatures": "normal",
+              "fontFeatureSettings": "normal",
+              "textSizeAdjust": "auto"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "deltas": {
+    "360": {
+      "h2": {
+        "status": "ok",
+        "countA": 4,
+        "countB": 4,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "poplar-std, sans-serif",
+                "poplar-std, Anton, Impact, sans-serif"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 1,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "poplar-std, sans-serif",
+                "poplar-std, Anton, Impact, sans-serif"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 2,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "poplar-std, sans-serif",
+                "poplar-std, Anton, Impact, sans-serif"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 3,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "poplar-std, sans-serif",
+                "poplar-std, Anton, Impact, sans-serif"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          }
+        ]
+      },
+      "h3": {
+        "status": "ok",
+        "countA": 5,
+        "countB": 5,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 1,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 2,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 3,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 4,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          }
+        ]
+      },
+      ".content-container p": {
+        "status": "ok",
+        "countA": 12,
+        "countB": 12,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "whiteSpace": [
+                "pre-wrap",
+                "normal"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 1,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "whiteSpace": [
+                "pre-wrap",
+                "normal"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 2,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "whiteSpace": [
+                "pre-wrap",
+                "normal"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 3,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "whiteSpace": [
+                "pre-wrap",
+                "normal"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 4,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "whiteSpace": [
+                "pre-wrap",
+                "normal"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 5,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "whiteSpace": [
+                "pre-wrap",
+                "normal"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 6,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "whiteSpace": [
+                "pre-wrap",
+                "normal"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 7,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "whiteSpace": [
+                "pre-wrap",
+                "normal"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 8,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "whiteSpace": [
+                "pre-wrap",
+                "normal"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 9,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "whiteSpace": [
+                "pre-wrap",
+                "normal"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 10,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "whiteSpace": [
+                "pre-wrap",
+                "normal"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          },
+          {
+            "index": 11,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "whiteSpace": [
+                "pre-wrap",
+                "normal"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          }
+        ]
+      },
+      ".caption": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "pt-sans, sans-serif",
+                "pt-sans, \"PT Sans\", Arial, sans-serif"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          }
+        ]
+      },
+      "blockquote": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "poplar-std, sans-serif",
+                "poplar-std, Anton, Impact, sans-serif"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          }
+        ]
+      },
+      ".brand-btn": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "fontFamily": [
+                "Arial",
+                "Arial, sans-serif"
+              ],
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          }
+        ]
+      },
+      ".content-container img": {
+        "status": "ok",
+        "countA": 5,
+        "countB": 5,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            },
+            "img": {
+              "file": [
+                "3fc797bc-626a-4195-b8ef-347fdd072a04",
+                "3fc797bc-626a-4195-b8ef-347fdd072a04-1024.jpg"
+              ]
+            }
+          },
+          {
+            "index": 1,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            },
+            "img": {
+              "file": [
+                "4086d2a3-f3c9-4754-a075-7cc5e40fba29",
+                "4086d2a3-f3c9-4754-a075-7cc5e40fba29-1024.jpg"
+              ]
+            }
+          },
+          {
+            "index": 2,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            },
+            "img": {
+              "file": [
+                "db7c0944-4fb1-4b69-85e5-429ee1a73f60",
+                "db7c0944-4fb1-4b69-85e5-429ee1a73f60-1024.jpg"
+              ]
+            }
+          },
+          {
+            "index": 3,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            },
+            "img": {
+              "file": [
+                "7579e9c0-b40e-48a8-b550-3cf85909a754",
+                "7579e9c0-b40e-48a8-b550-3cf85909a754-1024.jpg"
+              ]
+            }
+          },
+          {
+            "index": 4,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            },
+            "img": {
+              "file": [
+                "a9da7451-031a-45c8-9e5a-173f9ec3d993",
+                "a9da7451-031a-45c8-9e5a-173f9ec3d993-1024.jpg"
+              ]
+            }
+          }
+        ]
+      },
+      ".title-header-view": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          }
+        ]
+      },
+      ".photo-grid": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          }
+        ]
+      },
+      "nav.footer": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": -16
+            },
+            "props": {
+              "textSizeAdjust": [
+                "100%",
+                "auto"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rootDeltas": {
+    "360": {
+      "scrollWidth": 0,
+      "scrollHeight": -16
+    }
+  }
+}

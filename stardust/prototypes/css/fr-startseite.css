@@ -1,0 +1,42 @@
+/* fr-startseite (home) — page modules: hero, intro, products teaser, revision stamp. Values lifted from
+   teaser.theme.css / container.theme.css / overwritten.css at the 1440–1535 and ≤479 bands. */
+
+/* hero (.teaser--home-hero) and revision stamp (#last-vivo-id) moved to canon.css (shared with therapy-area). */
+
+/* hidden personalisation sections (captured hidden) */
+.page-section--tinted { background-color: var(--bgColor-supporting-1); padding-top: 20px; padding-bottom: 20px; }
+
+/* intro texts (.container--tb-space-md) */
+.intro { padding-top: 20px; padding-bottom: 20px; }
+@media screen and (min-width: 768px) { .intro { padding-top: 40px; padding-bottom: 40px; } }
+
+/* empty master content list */
+.masterlist, .masterlist__inner { height: 100%; }
+.masterlist__items { flex-direction: column; height: 100%; width: auto; display: flex; flex-wrap: wrap; }
+
+/* therapy-area grid section wrapper (.container--tb-space-md.container--3-column-wrap) */
+.ta-grid { padding-top: 20px; padding-bottom: 20px; }
+@media screen and (min-width: 768px) { .ta-grid { padding-top: 40px; padding-bottom: 40px; } }
+
+/* products teaser (.container--fixed.container--tb-space-md > .teaser--text-image) */
+.products { padding-top: 20px; padding-bottom: 20px; }
+.products__teaser { display: flex; flex-direction: column; width: 100%; position: relative; }
+.products__media { width: 100%; flex: 1; padding: 0; }
+.products__media .img__el { width: 100%; }
+.products__media-mobile { display: none; }
+.products__media-mobile .img__el { height: auto; }
+.products__content { color: var(--textColor-body-1); display: flex; flex: 1; flex-direction: column; text-align: center; padding: 24px 16px; width: 100%; gap: 16px; }
+.products__content p { margin: 0; }
+.products__desc { font-family: "Inter-Regular"; font-size: 16px; line-height: 24px; }
+.products__action { margin-top: auto; }
+@media only screen and (max-width: 767px) {
+  .products__media-mobile { display: block; }
+  .products__media-desktop { display: none; }
+}
+@media screen and (min-width: 768px) {
+  .products { padding-top: 40px; padding-bottom: 40px; }
+  .products__teaser { flex-direction: row; }
+  .products__media { order: 2; padding: 0 0 0 15px; width: 50%; }
+  .products__content { order: 1; width: 50%; padding: 0 15px 0 0; text-align: left; flex-direction: column; }
+}
+

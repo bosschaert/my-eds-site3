@@ -1,0 +1,14 @@
+/* hidden-section — the live page serves these containers with the `hidden` attribute:
+   the whole section stays out of the flow (canon .page-section--tinted.hidden) */
+main .section.hidden-section-container {
+  display: none;
+}
+
+.hidden-section {
+  background-color: var(--bg-color-supporting-1);
+  padding: 20px 0;
+}
+
+.hidden-section .hidden-section-title :is(h1, h2, h3, h4) {
+  color: var(--text-color-title-1);
+}

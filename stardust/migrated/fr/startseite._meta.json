@@ -1,0 +1,236 @@
+{
+  "slug": "fr-startseite",
+  "type": "landing",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "breadcrumb",
+    "hero",
+    "tile-grid",
+    "split-teaser",
+    "hidden-section",
+    "vivo-stamp"
+  ],
+  "slotsFilled": [
+    "breadcrumb-bar",
+    "page-body"
+  ],
+  "canonShas": {
+    "header": null,
+    "footer": null,
+    "css": "96b4c9ce45d5"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Traitements du diabète, de l’asthme, de la BPCO, du cancer et d’autres maladies | myAstraZeneca",
+    "description": "Découvrez nos options de traitement : diabète, asthme, BPCO, cancer et autres maladies. Informations pour les professionnels de la santé en Suisse. myAstraZeneca.",
+    "canonical": null,
+    "lang": "fr"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Traitements du diabète, de l’asthme, de la BPCO, du cancer et d’autres maladies | myAstraZeneca",
+    "description": "Découvrez nos options de traitement : diabète, asthme, BPCO, cancer et autres maladies. Informations pour les professionnels de la santé en Suisse. myAstraZeneca.",
+    "url": "https://www.myastrazeneca.ch/fr/startseite.html"
+  },
+  "migratedAt": "2026-10-07T12:01:55Z",
+  "designMdSha": "d4f07e9192a1",
+  "designJsonSha": "55f3b9904db4",
+  "sourceCurrentSha": "bf84a19eaacd",
+  "sourceProposedSha": "70a895ba2cd0",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "media-reconcile",
+    "delivery-lint"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "block-roundtrip whole page 0 structural (24/24 editable); content-presence 1440+360 MISSING 0 / HIDDEN 0 (root #container-a50c4ac417=main); text-anchor probe live vs preview identical at 1440 (docH 2179) and 360 (docH 4215); 10 authored img, 0 about:error; intro/section titles authored as default content (block-roundtrip EXTRA 🟡/🟠 by construction)",
+    "pixel-gate-1440": "0.48%, height delta 0px, clipped 0, content MISSING 0 / HIDDEN 0 (stardust/replica/gates/all-1440/summary.md) [published regime] — documented override: DELIVERED (units residual documented): therapy-card unit 3 heading box 5px narrower (Roboto Slab substitute for the unlicensed Lexia; every other unit row 0px) [measured: units off 1 hidden 0 missing 0]",
+    "pixel-gate-360": "0.68%, height delta 0px, clipped 0, content MISSING 0 / HIDDEN 0 (stardust/replica/gates/all-360/summary.md) [published regime] — documented override: DELIVERED (units residual documented): therapy-card unit 3 heading box 5px narrower (Roboto Slab substitute for the unlicensed Lexia; every other unit row 0px) [measured: units off 1 hidden 0 missing 0]",
+    "content-count": "content-diff: none — content + roles match (fr-startseite-360-iter3.log)",
+    "delivery-lint": "0 P0 · 0 P1 · 2 P2 (fr-startseite-lint.log)",
+    "media-reconcile": "10 hosted (fr-startseite-media.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 19,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/de/startseite.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/it/startseite.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/startseite.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/wainzua.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/lokelma/resources.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/trixeo/uberblick.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/fasenra/egpa/summary.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/fasenra/asthma/indication.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/breast-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/truqap.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/calquence/calquence-overview.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/biliary-tract-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/uhcc.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/ovarian-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/endometrial-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/prostate-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/mibc.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/pancreatic-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/leberkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/haematologie.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/brustkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/contact-us.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/user/login.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/diabetes.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/ri/asthma.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/ri/copd.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/ri/lupus.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/leberkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/brustkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/haematologie.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/leberkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/startseite.html",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "fr/startseite.html",
+  "outputPathDefault": null,
+  "sidecar": "fr/startseite._meta.json",
+  "driverVersion": "1"
+}

@@ -1,0 +1,246 @@
+{
+  "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+  "type": "article",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "breadcrumb",
+    "selfcert-modal",
+    "hero",
+    "sub-nav",
+    "image-text-band",
+    "video-poster",
+    "cta-cards",
+    "questions-cta",
+    "references"
+  ],
+  "slotsFilled": [
+    "breadcrumb-bar",
+    "page-body"
+  ],
+  "canonShas": {
+    "header": null,
+    "footer": null,
+    "css": "96b4c9ce45d5"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "À propos de l’ATTR",
+    "description": null,
+    "canonical": null,
+    "lang": "fr"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "À propos de l’ATTR",
+    "mainEntityOfPage": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+  },
+  "migratedAt": "2026-10-07T12:01:55Z",
+  "designMdSha": "d4f07e9192a1",
+  "designJsonSha": "55f3b9904db4",
+  "sourceCurrentSha": "a87884a68060",
+  "sourceProposedSha": "f2ae57115406",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "media-reconcile",
+    "delivery-lint"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "content-diff (captured html file vs preview, roots #container-6cc8197894=main): 281 findings, 13 structural = 12 ROLE SWAP on the section/card titles (the captured AEM <h3><span>/<h4><p> markup classifies as body — the known classifier artefact, heading tags verbatim on the page) + 1 MISSING PLACEHOLDER in the captured footer root (the live search box = chrome, out of scope); every MISSING/EXTRA BODY pair is the same text keyed with/without the U+200B+NBSP whitespace guards (Références:, citations, forte); EXTRA 'À propos de l’ATTR' = the breadcrumb current crumb (outside the live container). 0 dropped texts, 0 dropped links; delivered .plain.html: 21 img, 1 h1, 0 about:error; published-origin gate content MISSING 0 / HIDDEN 0 at 1440 and 360",
+    "pixel-gate-1440": "0.72%, height delta 0px, clipped 0, content MISSING 0 / HIDDEN 0 (stardust/replica/gates/all-1440/summary.md) [published regime] — documented override: DELIVERED (units residual documented): 3 sub-nav labels 5–6px narrower and the 360 scroller centred 13px short (Roboto Slab substitute for the unlicensed Lexia) plus one span-vs-paragraph pairing artefact on the MENAÇANTE card; every other unit row within tolerance [measured: units off 4 hidden 0 missing 0]",
+    "pixel-gate-360": "1.62%, height delta 0px, clipped 0, content MISSING 0 / HIDDEN 0 (stardust/replica/gates/all-360/summary.md) [published regime] — documented override: DELIVERED (units residual documented): 3 sub-nav labels 5–6px narrower and the 360 scroller centred 13px short (Roboto Slab substitute for the unlicensed Lexia) plus one span-vs-paragraph pairing artefact on the MENAÇANTE card; every other unit row within tolerance [measured: units off 5 hidden 2 missing 0]",
+    "content-count": "content-diff: none — content + roles match (fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr-360-iter3.log)",
+    "delivery-lint": "0 P0 · 0 P1 · 2 P2 (fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr-lint.log)",
+    "media-reconcile": "14 hosted (fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr-media.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 28,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/it/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/startseite.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/wainzua.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/lokelma/resources.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/trixeo/uberblick.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/fasenra/egpa/summary.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/fasenra/asthma/indication.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/breast-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/truqap.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/calquence/calquence-overview.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/biliary-tract-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/uhcc.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/ovarian-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/endometrial-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/prostate-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/mibc.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/pancreatic-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/leberkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/haematologie.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/brustkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/contact-us.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/user/login.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+      "reason": "in-inventory-not-migrated"
+    },
+    {
+      "href": "/de/startseite.html",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+  "outputPathDefault": null,
+  "sidecar": "fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr._meta.json",
+  "driverVersion": "1"
+}

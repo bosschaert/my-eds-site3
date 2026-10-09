@@ -1,0 +1,57 @@
+/* vivo-stamp — overwritten.css #last-vivo-id / #vivo-id-wrap (lifted) */
+.vivo-stamp {
+  position: relative;
+}
+
+.vivo-stamp .vivo-text {
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+  text-align: left;
+  margin: 0;
+}
+
+.vivo-stamp .vivo-wrap {
+  position: absolute;
+  right: 0;
+  top: 300px;
+  padding-bottom: 40px;
+}
+
+.vivo-stamp .vivo-wrap p {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+}
+
+@media (width <= 479px) {
+  .vivo-stamp .vivo-text {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (width >= 600px) and (width <= 767px) {
+  .vivo-stamp .vivo-wrap {
+    top: 475px;
+    left: 1%;
+    transform: translateX(-1%);
+    text-align: center;
+  }
+}
+
+@media (width <= 600px) {
+  .vivo-stamp .vivo-wrap {
+    top: 465px;
+    left: 1%;
+    transform: translateX(-1%);
+    text-align: center;
+  }
+}
+
+@media (width >= 768px) and (width <= 1200px) {
+  .vivo-stamp .vivo-wrap {
+    padding-right: 15px;
+  }
+}

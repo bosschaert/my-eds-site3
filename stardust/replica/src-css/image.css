@@ -1,0 +1,1 @@
+.cmp-image .cmp-image--mobile{display:none}@media only screen and (max-width: 767px){.cmp-image:has(.cmp-image--mobile) .cmp-image--desktop{display:none}.cmp-image:has(.cmp-image--mobile) .cmp-image--mobile{display:block}}

@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-10-07T21:43:31.868Z",
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://www.myastrazeneca.ch/",
+    "liveHost": "main--bf989f9e--aemcoder.aem.live"
+  },
+  "stageCount": {
+    "identified": 10,
+    "prototyped": 10,
+    "deployed": 10,
+    "optimised": 10
+  },
+  "stageExclusive": {
+    "identified": 0,
+    "prototyped": 0,
+    "deployed": 0,
+    "optimised": 10
+  },
+  "pages": [
+    {
+      "slug": "fr-startseite",
+      "path": "/fr/startseite",
+      "stage": "optimised",
+      "templateId": "fr-startseite",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz",
+      "path": "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz",
+      "stage": "optimised",
+      "templateId": "program",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-diabetes",
+      "path": "/fr/startseite/therapiegebiete/cvrm/diabetes",
+      "stage": "optimised",
+      "templateId": "program",
+      "isTemplate": false,
+      "openFindings": 0
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+      "path": "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz",
+      "stage": "optimised",
+      "templateId": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr",
+      "stage": "optimised",
+      "templateId": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+      "stage": "optimised",
+      "templateId": "article",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+      "stage": "optimised",
+      "templateId": "article",
+      "isTemplate": false,
+      "openFindings": 0
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes",
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+      "stage": "optimised",
+      "templateId": "article",
+      "isTemplate": false,
+      "openFindings": 0
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement",
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+      "stage": "optimised",
+      "templateId": "article",
+      "isTemplate": false,
+      "openFindings": 0
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-ri-lupus",
+      "path": "/fr/startseite/therapiegebiete/ri/lupus",
+      "stage": "optimised",
+      "templateId": "program",
+      "isTemplate": false,
+      "openFindings": 0
+    }
+  ],
+  "templates": [
+    {
+      "id": "article",
+      "archetype": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+      "pageCount": 4,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 4
+      }
+    },
+    {
+      "id": "fr-startseite",
+      "archetype": "fr-startseite",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+      "archetype": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+      "archetype": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+      "pageCount": 1,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "program",
+      "archetype": "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz",
+      "pageCount": 3,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 3
+      }
+    }
+  ],
+  "blocks": {
+    "total": 15,
+    "converted": 15
+  },
+  "quality": {
+    "overall": 100,
+    "dimensions": {
+      "brand-tensions": null,
+      "design-ux": null,
+      "accessibility": null,
+      "seo": 100,
+      "content-conversion": null,
+      "ai-search": 100,
+      "cross-page": 100
+    },
+    "severity": {
+      "P1": 0,
+      "P2": 0,
+      "P3": 0
+    },
+    "history": [
+      99,
+      100,
+      100
+    ]
+  },
+  "findings": {
+    "byFixability": {
+      "out-of-scope": 16
+    },
+    "byAutofix": {}
+  }
+}

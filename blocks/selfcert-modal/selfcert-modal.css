@@ -1,0 +1,97 @@
+/* selfcert-modal — the source's HCP self-certification gate (.cmp-selfcertification).
+   Dismissed state (Mode | dismissed, or the az-hcp-selfcert cookie): nothing renders, the section
+   measures 0px like the live fragment wrapper after certification. Open state (Mode | gate, no
+   cookie): values lifted from the live modal's computed styles at 1440 and 360 — grey 95% backdrop,
+   white 720px box (margin 138px auto; mobile 292px box, 60px + 152px above), 16/24 copy centred on
+   mobile and left-aligned on desktop, actions in a reversed, wrapping row (yes right / top). */
+.selfcert-modal {
+  display: none;
+}
+
+.selfcert-modal.selfcert-open {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow-y: auto;
+  background: rgb(60 66 66 / 95%);
+}
+
+.selfcert-modal .selfcert-overlay {
+  padding: 60px 0;
+}
+
+.selfcert-modal .selfcert-box {
+  box-sizing: border-box;
+  max-width: 720px;
+  margin: 152px 34px;
+  padding: 60px 16px 30px;
+  background: var(--bg-color-supporting-2);
+  color: var(--text-color-body-1);
+}
+
+.selfcert-modal .selfcert-body {
+  margin-top: 12px;
+}
+
+.selfcert-modal .selfcert-body :is(h1, h2, h3, h4) {
+  color: var(--text-color-title-1);
+}
+
+.selfcert-modal .selfcert-body :is(p, li) {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+  text-align: center;
+}
+
+.selfcert-modal .selfcert-actions {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.selfcert-modal .selfcert-actions p {
+  margin: 0;
+}
+
+.selfcert-modal .selfcert-actions a.button {
+  display: inline-block;
+  margin: 0;
+  padding: 8px 16px;
+  border: 1px solid var(--border-color-6);
+  border-radius: 4px;
+  background: var(--button-primary-bg-color);
+  color: var(--bg-color-supporting-2);
+  font-family: var(--font-bold);
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.selfcert-modal .selfcert-actions a.button.secondary {
+  background: transparent;
+  color: var(--text-color-interaction);
+}
+
+@media (width >= 768px) {
+  .selfcert-modal .selfcert-overlay {
+    padding: 0;
+  }
+
+  .selfcert-modal .selfcert-box {
+    margin: 138px auto;
+    padding: 80px 46px 60px;
+  }
+
+  .selfcert-modal .selfcert-body {
+    margin-top: 24px;
+  }
+
+  .selfcert-modal .selfcert-body :is(p, li) {
+    text-align: left;
+  }
+}

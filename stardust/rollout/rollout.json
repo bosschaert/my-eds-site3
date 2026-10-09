@@ -1,0 +1,36 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-10-07T12:03:17.574Z",
+    "stardustVersion": "0.0.0"
+  },
+  "target": "aem-eds",
+  "site": {
+    "sourceUrl": "https://www.myastrazeneca.ch/",
+    "da": {
+      "org": "aemcoder",
+      "site": "bf989f9e",
+      "ref": "main"
+    },
+    "liveHost": "main--bf989f9e--aemcoder.aem.live",
+    "previewHost": "main--bf989f9e--aemcoder.aem.page"
+  },
+  "lastRun": {
+    "at": "2026-10-07T21:40:36.471Z",
+    "pages": {
+      "total": 10,
+      "verified": 10,
+      "deployed": 0,
+      "pending": 0,
+      "contentPending": 0,
+      "stale": 0,
+      "failed": 0
+    },
+    "blocks": {
+      "total": 15,
+      "converted": 15,
+      "pending": 0
+    },
+    "verifyFailures": 0
+  }
+}

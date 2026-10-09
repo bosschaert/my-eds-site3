@@ -1,0 +1,125 @@
+/* hero — canon .teaser--home-hero (lifted; .hero__* flattened to kebab-case) */
+main .hero-container > div {
+  max-width: none;
+  padding: 0;
+}
+
+.hero {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .hero-teaser {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.hero .hero-media {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: #000;
+  overflow: hidden;
+}
+
+.hero .img {
+  height: 100%;
+  line-height: 0;
+}
+
+.hero .img picture {
+  display: block;
+  height: 100%;
+}
+
+.hero .img img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  opacity: 0.75;
+  object-fit: cover;
+}
+
+.hero .hero-media-desktop,
+.hero .hero-media-mobile {
+  max-height: 60vh;
+}
+
+.hero .hero-media-mobile {
+  display: none;
+}
+
+.hero .hero-content {
+  background-color: transparent;
+  color: var(--text-color-body-2);
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  padding: 20px 16px;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero .hero-content p {
+  margin: 0;
+}
+
+.hero .hero-title :is(h1, h2, h3, h4) {
+  color: inherit;
+}
+
+.hero .hero-desc {
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-l);
+  line-height: var(--body-line-height-l);
+  margin-top: 0;
+  overflow: auto;
+  width: 100%;
+}
+
+.hero .hero-desc :is(p, li) {
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-l);
+  line-height: var(--body-line-height-l);
+}
+
+@media (width <= 767px) {
+  .hero .hero-media-mobile {
+    display: block;
+  }
+
+  .hero .hero-media:not(.hero-media-single) .hero-media-desktop {
+    display: none;
+  }
+}
+
+@media (width >= 640px) and (width <= 1023px) {
+  .hero .hero-media-desktop,
+  .hero .hero-media-mobile {
+    max-height: 100vh;
+  }
+}
+
+@media (width >= 768px) {
+  .hero .hero-content {
+    padding: 40px 20px;
+  }
+
+  .hero .hero-desc {
+    max-width: 577px;
+  }
+}
+
+@media (width >= 1280px) {
+  .hero .hero-content {
+    max-width: var(--hero-content-max);
+  }
+}

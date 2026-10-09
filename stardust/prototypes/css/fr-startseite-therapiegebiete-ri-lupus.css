@@ -1,0 +1,4 @@
+/* fr-startseite-therapiegebiete-ri-lupus (therapy-area sibling) — VARIANT rules only.
+   Source: container.theme.css .container--tb-space = padding 20px top/bottom at EVERY width
+   (the archetype's .container--desktop-tb-space → .band--desktop pads from 768px up only). */
+.tb-space { padding-top: 20px; padding-bottom: 20px; }

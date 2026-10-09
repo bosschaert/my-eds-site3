@@ -1,0 +1,203 @@
+{
+  "slug": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+  "type": "program",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "breadcrumb",
+    "hero",
+    "intro-media",
+    "social-features",
+    "tile-grid",
+    "image-text-band",
+    "references",
+    "split-teaser",
+    "vivo-stamp"
+  ],
+  "slotsFilled": [
+    "breadcrumb-bar",
+    "page-body"
+  ],
+  "canonShas": {
+    "header": null,
+    "footer": null,
+    "css": "96b4c9ce45d5"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Insuffisance Cardiaque : Symptômes, Diagnostic et Traitement | MyAstraZeneca",
+    "description": "Découvrez les causes, symptômes, diagnostic et traitements de l’insuffisance cardiaque, une maladie chronique touchant près de 200 000 personnes en Suisse.",
+    "canonical": null,
+    "lang": "fr"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Insuffisance Cardiaque : Symptômes, Diagnostic et Traitement | MyAstraZeneca",
+    "description": "Découvrez les causes, symptômes, diagnostic et traitements de l’insuffisance cardiaque, une maladie chronique touchant près de 200 000 personnes en Suisse.",
+    "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html"
+  },
+  "migratedAt": "2026-10-07T12:01:55Z",
+  "designMdSha": "d4f07e9192a1",
+  "designJsonSha": "55f3b9904db4",
+  "sourceCurrentSha": "87965acc24be",
+  "sourceProposedSha": "0ac33f34d838",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "content-count",
+    "media-reconcile",
+    "delivery-lint"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "content-presence (gate-all, origin root #container-c789a40c87 = served main, banner dismissed): MISSING 0 / HIDDEN 0 at 1440 and 360; 3 breadcrumb links EXTRA on the served side (outside the live content container by construction). content-diff --profile generic advisory: 436 structural 🔴, all of them Cookie Reports consent-banner vendor links (Tealium, Digital Control Room, VMware, AWS, Microsoft…) read from the live DOM behind the dismissed banner — dynamic row 6 ships banner-less; 0 page-content findings. Text anchors live = served to the pixel at both widths (docH 3570/3570, 7326/7326), 10/10 images same x/y/w/h.",
+    "pixel-gate-1440": "0.48%, height delta 0px, clipped 0, content MISSING 0 / HIDDEN 0 (stardust/replica/gates/all-1440/summary.md) [published regime] — documented override: DELIVERED (units residual documented): Diagnostic band reference marker paired with the wrong served marker by the unit probe (zero-width guard in the key); the served marker measures identical to live [measured: units off 1 hidden 0 missing 0]",
+    "pixel-gate-360": "0.58%, height delta 0px, clipped 0, content MISSING 0 / HIDDEN 0 (stardust/replica/gates/all-360/summary.md) [published regime] — documented override: DELIVERED (units residual documented): Diagnostic band reference marker paired with the wrong served marker by the unit probe (zero-width guard in the key); the served marker measures identical to live [measured: units off 1 hidden 0 missing 0]",
+    "content-count": "content-diff: none — content + roles match (fr-startseite-therapiegebiete-cvrm-herzinsuffizienz-360-iter2.log)",
+    "delivery-lint": "0 P0 · 0 P1 · 2 P2 (fr-startseite-therapiegebiete-cvrm-herzinsuffizienz-lint.log)",
+    "media-reconcile": "17 hosted (fr-startseite-therapiegebiete-cvrm-herzinsuffizienz-media.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 22,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/de/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/it/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/startseite.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/wainzua.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/lokelma/resources.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/trixeo/uberblick.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/fasenra/egpa/summary.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/fasenra/asthma/indication.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/breast-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/truqap.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/calquence/calquence-overview.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/biliary-tract-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/uhcc.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/ovarian-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/endometrial-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/prostate-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/mibc.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/pancreatic-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/leberkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/haematologie.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/brustkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/contact-us.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/user/login.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/startseite.html",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+  "outputPathDefault": null,
+  "sidecar": "fr/startseite/therapiegebiete/cvrm/herzinsuffizienz._meta.json",
+  "driverVersion": "1"
+}

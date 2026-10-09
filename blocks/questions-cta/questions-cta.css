@@ -1,0 +1,117 @@
+/* questions-cta — canon .title.section-title--core.section-title--center + .text (+ --center)
+   + .button.button--center modules inside a container--tb-space section (lifted) */
+main .section.questions-cta-container {
+  padding: 20px 0;
+}
+
+.questions-cta .cta-title :is(h1, h2, h3, h4) {
+  text-align: center;
+  color: var(--text-color-title-1);
+}
+
+.questions-cta.left .cta-title :is(h1, h2, h3, h4) {
+  text-align: left;
+}
+
+/* lead: the page's single <h1> (#35) is the first section title, which the source renders on
+   the h3 ramp (26/34, 36/40 from 768px) — the outline is real, the pixels are the source's */
+.questions-cta.lead .cta-title h1 {
+  font-size: var(--heading-font-size-l);
+  line-height: var(--heading-line-height-l);
+}
+
+/* brand sheet @14036: h4 sub/sup are 16px (the foundation carries the h1–h3 26px rule only) */
+.questions-cta .cta-title h4 :is(sub, sup) {
+  font-size: 16px;
+  line-height: 0;
+}
+
+/* two stacked titles: the first carries title--b-space (20px) on this template */
+.questions-cta .cta-title + .cta-title {
+  margin-top: 20px;
+}
+
+.questions-cta .cta-text {
+  color: var(--text-color-body-1);
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+  text-align: left;
+  margin: 0;
+}
+
+.questions-cta.text-center .cta-text {
+  text-align: center;
+}
+
+.questions-cta .cta-text :is(p, li) {
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+  margin: 0;
+}
+
+.questions-cta .cta-text :is(b, strong) {
+  font-family: var(--font-bold);
+  font-weight: 700;
+}
+
+.questions-cta .cta-text :is(sub, sup) {
+  font-size: 10px;
+  line-height: 0;
+}
+
+.questions-cta .cta-text :is(ul, ol) {
+  padding: 4px 0 10px 20px;
+  list-style-position: outside;
+  overflow-wrap: anywhere;
+}
+
+.questions-cta .cta-action {
+  text-align: center;
+}
+
+.questions-cta .cta-action p {
+  margin: 0;
+}
+
+@media (width <= 767px) {
+  /* foundation request (archetype-pattrns, stardust/rollout/foundation-requests.md): the Roboto
+     Slab substitute renders 26px section titles ~1% narrower than Lexia — the symptomes centred
+     band "Un diagnostic incorrect ou tardif…" fits 328px by 2px where Lexia wraps to a 4th line
+     (34px reflow, 11.7% at 360). Scoped compensation on the centred bands' h3 only: every other
+     text-center h3 line on the five pages keeps ≥ 11px of slack after the quarter pixel
+     (probes/pattrns-heading-lines.mjs); the plain bands are excluded because the treatement
+     "La recherche…" h3 sits on the same 2px edge and the stitched live capture keeps it at
+     7 lines (a quarter pixel there reflowed the page the other way, 11.8%) */
+  .questions-cta.text-center .cta-title h3 {
+    letter-spacing: 0.25px;
+  }
+
+  .questions-cta .cta-title {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (width <= 479px) {
+  .questions-cta .cta-text {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 10px 0;
+  }
+}
+
+@media (width >= 768px) {
+  main .section.questions-cta-container:has(.questions-cta.space-md) {
+    padding: 40px 0;
+  }
+
+  .questions-cta .cta-text {
+    margin: 16px 0;
+  }
+
+  .questions-cta .cta-text :is(ul, ol) {
+    padding-bottom: 12px;
+  }
+}

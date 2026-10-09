@@ -1,0 +1,451 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-10-07T12:03:17.574Z",
+    "readArtifacts": [
+      "stardust/migrated",
+      "stardust/state.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-10-07T21:31:44.977Z",
+  "pages": [
+    {
+      "slug": "fr-startseite",
+      "path": "/fr/startseite",
+      "title": "Traitements du diabète, de l’asthme, de la BPCO, du cancer et d’autres maladies | myAstraZeneca",
+      "templateId": "fr-startseite",
+      "source": {
+        "migratedHtml": "stardust/migrated/fr/startseite.html",
+        "metaJson": "stardust/migrated/fr/startseite._meta.json",
+        "sourceHash": "sha256:8131686d94aff2438a40b96695276cc4a2103d3d6b583ebb6abda523cf6d3ee5"
+      },
+      "blocks": [
+        "breadcrumb",
+        "hero",
+        "tile-grid",
+        "split-teaser",
+        "hidden-section",
+        "vivo-stamp"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--bf989f9e--aemcoder.aem.page/fr/startseite",
+        "deployedAt": "2026-10-07T12:59:25.442Z",
+        "verifiedAt": "2026-10-07T21:31:44.977Z",
+        "error": null,
+        "gate": {
+          "pass": true,
+          "pct": 0.68,
+          "heightDelta": 0,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 18,
+            "variable": []
+          },
+          "reasons": [
+            "units off 1 hidden 0 missing 0"
+          ],
+          "override": "DELIVERED (units residual documented)",
+          "table": "stardust/replica/gates/all-360/summary.json",
+          "at": "2026-10-07T21:31:44.928Z"
+        }
+      }
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz",
+      "path": "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz",
+      "title": "Insuffisance Rénale Chronique (IRC) Informations - MyAstrazeneca",
+      "templateId": "program",
+      "representative": null,
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:38bf5bd0f3fc1c196f4833dca26b319662171efbf988191683840d3d44038d34",
+        "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz.json"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz",
+        "deployedAt": "2026-10-07T15:23:46.067Z",
+        "verifiedAt": "2026-10-07T21:31:44.977Z",
+        "error": null,
+        "gate": {
+          "pass": true,
+          "pct": 0.73,
+          "heightDelta": 0,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 10,
+            "variable": []
+          },
+          "reasons": [],
+          "override": null,
+          "table": "stardust/replica/gates/all-360/summary.json",
+          "at": "2026-10-07T21:31:44.928Z"
+        }
+      }
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-diabetes",
+      "path": "/fr/startseite/therapiegebiete/cvrm/diabetes",
+      "title": "Symptômes, Diagnostic et Traitement du Diabète Sucré | MyAstraZeneca",
+      "templateId": "program",
+      "representative": null,
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:db4d577f9de846dff97b9b257f855ebdb566a2a4875e5902793425b6c8950801",
+        "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-diabetes.json"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/diabetes",
+        "deployedAt": "2026-10-07T15:23:46.115Z",
+        "verifiedAt": "2026-10-07T21:31:44.977Z",
+        "error": null,
+        "gate": {
+          "pass": true,
+          "pct": 1.14,
+          "heightDelta": 0,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 13,
+            "variable": []
+          },
+          "reasons": [],
+          "override": null,
+          "table": "stardust/replica/gates/all-360/summary.json",
+          "at": "2026-10-07T21:31:44.928Z"
+        }
+      }
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+      "path": "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz",
+      "title": "Insuffisance Cardiaque : Symptômes, Diagnostic et Traitement | MyAstraZeneca",
+      "templateId": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+      "source": {
+        "migratedHtml": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "metaJson": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz._meta.json",
+        "sourceHash": "sha256:8a8b666a2744b7dbce0d68b6b30e2376894f72cb957a54635165e1dbf8ad8962"
+      },
+      "blocks": [
+        "breadcrumb",
+        "hero",
+        "intro-media",
+        "social-features",
+        "tile-grid",
+        "image-text-band",
+        "references",
+        "split-teaser",
+        "vivo-stamp"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz",
+        "deployedAt": "2026-10-07T13:58:34.323Z",
+        "verifiedAt": "2026-10-07T21:31:44.977Z",
+        "error": null,
+        "gate": {
+          "pass": true,
+          "pct": 0.58,
+          "heightDelta": 0,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 9,
+            "variable": []
+          },
+          "reasons": [
+            "units off 1 hidden 0 missing 0"
+          ],
+          "override": "DELIVERED (units residual documented)",
+          "table": "stardust/replica/gates/all-360/summary.json",
+          "at": "2026-10-07T21:31:44.928Z"
+        }
+      }
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr",
+      "title": "À propos de l’ATTR",
+      "templateId": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+      "source": {
+        "migratedHtml": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "metaJson": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr._meta.json",
+        "sourceHash": "sha256:44063bc7b1b6d9205e4be8663562d68ac808b46868839bb9e6deb5dd9f19fad7"
+      },
+      "blocks": [
+        "breadcrumb",
+        "selfcert-modal",
+        "hero",
+        "sub-nav",
+        "image-text-band",
+        "video-poster",
+        "cta-cards",
+        "questions-cta",
+        "references"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr",
+        "deployedAt": "2026-10-07T17:03:41.625Z",
+        "verifiedAt": "2026-10-07T21:31:44.977Z",
+        "error": null,
+        "gate": {
+          "pass": true,
+          "pct": 1.57,
+          "heightDelta": 0,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 24,
+            "variable": []
+          },
+          "reasons": [
+            "units off 5 hidden 2 missing 0"
+          ],
+          "override": "DELIVERED (units residual documented)",
+          "table": "stardust/replica/gates/all-360/summary.json",
+          "at": "2026-10-07T21:31:44.928Z"
+        }
+      }
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+      "title": "Diagnostic de l’ATTR",
+      "templateId": "article",
+      "representative": null,
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:bfae81792752cf1913fed9c38df72cf61cb339c708246926421a0fb1f1ca36e5",
+        "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis.json"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+        "deployedAt": "2026-10-07T18:08:18.803Z",
+        "verifiedAt": "2026-10-07T21:31:44.977Z",
+        "error": null,
+        "gate": {
+          "pass": true,
+          "pct": 1.12,
+          "heightDelta": 0,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 22,
+            "variable": []
+          },
+          "reasons": [
+            "units off 4 hidden 0 missing 10"
+          ],
+          "override": "DELIVERED (units residual documented)",
+          "table": "stardust/replica/gates/all-360/summary.json",
+          "at": "2026-10-07T21:31:44.928Z"
+        }
+      }
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+      "title": "Amylose à transthyrétine (ATTR-CM) – Diagnostic et prise en charge | MyAstraZeneca",
+      "templateId": "article",
+      "representative": null,
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:f3cd0301a669f67c7dd754dd6328cc79d5edc94294754cf697c1ae4267634a86",
+        "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home.json"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+        "deployedAt": "2026-10-07T18:08:18.329Z",
+        "verifiedAt": "2026-10-07T21:31:44.977Z",
+        "error": null,
+        "gate": {
+          "pass": true,
+          "pct": 1.51,
+          "heightDelta": 0,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 15,
+            "variable": []
+          },
+          "reasons": [
+            "units off 5 hidden 0 missing 1"
+          ],
+          "override": "DELIVERED (units residual documented)",
+          "table": "stardust/replica/gates/all-360/summary.json",
+          "at": "2026-10-07T21:31:44.928Z"
+        }
+      }
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes",
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+      "title": "Symptômes de l’ATTR",
+      "templateId": "article",
+      "representative": null,
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:8b3c79e90060eb322c4890b6573a86b53dd8fafddd894cee517d04b453011235",
+        "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes.json"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+        "deployedAt": "2026-10-07T18:08:19.644Z",
+        "verifiedAt": "2026-10-07T21:31:44.977Z",
+        "error": null,
+        "gate": {
+          "pass": true,
+          "pct": 4.16,
+          "heightDelta": 2,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 21,
+            "variable": []
+          },
+          "reasons": [
+            "units off 3 hidden 1 missing 0"
+          ],
+          "override": "DELIVERED (units residual documented)",
+          "table": "stardust/replica/gates/all-360/summary.json",
+          "at": "2026-10-07T21:31:44.928Z"
+        }
+      }
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement",
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+      "title": "Traitement",
+      "templateId": "article",
+      "representative": null,
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:c557c0db8a7a6a11ca28093ce197d39cf465e2d1e8c618220cf1e05cb684ffbd",
+        "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement.json"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+        "deployedAt": "2026-10-07T18:08:19.238Z",
+        "verifiedAt": "2026-10-07T21:31:44.977Z",
+        "error": null,
+        "gate": {
+          "pass": true,
+          "pct": 1.91,
+          "heightDelta": 0,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 20,
+            "variable": []
+          },
+          "reasons": [
+            "units off 5 hidden 0 missing 0"
+          ],
+          "override": "DELIVERED (units residual documented)",
+          "table": "stardust/replica/gates/all-360/summary.json",
+          "at": "2026-10-07T21:31:44.928Z"
+        }
+      }
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-ri-lupus",
+      "path": "/fr/startseite/therapiegebiete/ri/lupus",
+      "title": "Lupus Érythémateux Systémique: Symptômes, Diagnostic et Traitement | MyAstraZeneca",
+      "templateId": "program",
+      "representative": null,
+      "source": {
+        "migratedHtml": null,
+        "metaJson": null,
+        "sourceHash": "sha256:cc39cd767a1bc0a6f2a8130f90af46da0d7270ee1e34ab9c06d87076bfac7143",
+        "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-ri-lupus.json"
+      },
+      "blocks": [],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/ri/lupus",
+        "deployedAt": "2026-10-07T15:23:46.162Z",
+        "verifiedAt": "2026-10-07T21:31:44.977Z",
+        "error": null,
+        "gate": {
+          "pass": true,
+          "pct": 0.49,
+          "heightDelta": 0,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 11,
+            "variable": []
+          },
+          "reasons": [
+            "units off 1 hidden 0 missing 0"
+          ],
+          "override": "DELIVERED (units residual documented)",
+          "table": "stardust/replica/gates/all-360/summary.json",
+          "at": "2026-10-07T21:31:44.928Z"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,917 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "phase": "recreate",
+    "startedAt": "2026-10-07T09:34:12Z",
+    "breakpoints": [
+      1440,
+      360
+    ],
+    "endedAt": "2026-10-07T11:58:10.287Z"
+  },
+  "archetypes": {
+    "fr-startseite": {
+      "pageType": "landing",
+      "template": "home",
+      "archetype": "fr-startseite",
+      "prototype": "stardust/prototypes/fr-startseite-proposed.html",
+      "status": "gated",
+      "breakpoints": {
+        "360": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": 0,
+            "pixelPct": 0.56,
+            "heightDelta": 0,
+            "clipped": 0,
+            "overflowPx": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "chrome-parity (gate.sh default regions)",
+              "flag": "REGION header/footer: no element matches on either side",
+              "why": "live page has no <header>/<footer>/[role=banner]/[role=contentinfo]-outside-root landmarks; the prototype mirrors that (pure replica). Evidence instead: chrome-parity --no-defaults --region strip=.languagenavigation|.lang-nav --region header=.experiencefragment.cmp-experiencefragment--customMenu|.site-header --region footer=.cmp-experiencefragment--footerSocial|.site-footer-wrap -> exit 0 at both widths (gates/<slug>-<w>/chrome-live-regions.json, gates/fr-startseite-1440/chrome-parity-regions-1440.json)",
+              "permanent": true
+            }
+          ],
+          "residuals": [],
+          "captureState": [],
+          "chromeCrop": {
+            "header": "y0+86 0.78% PASS",
+            "footer": "y3686+529 0.00% PASS"
+          },
+          "rounds": [
+            "iter1 --full 0.56% d0 content none; unit-geometry FAIL = instrument (slug-keyed origin cache reused the 1440 inventory)",
+            "iter2 --full after cache clear: units PASS 26/26",
+            "iter3 --full confirmation 0.56% d0 units PASS"
+          ]
+        },
+        "1440": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": 0,
+            "pixelPct": 0.44,
+            "heightDelta": 0,
+            "clipped": 0,
+            "overflowPx": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "chrome-parity (gate.sh default regions)",
+              "flag": "REGION header/footer: no element matches on either side",
+              "why": "live page has no <header>/<footer>/[role=banner]/[role=contentinfo]-outside-root landmarks; the prototype mirrors that (pure replica). Evidence instead: chrome-parity --no-defaults --region strip=.languagenavigation|.lang-nav --region header=.experiencefragment.cmp-experiencefragment--customMenu|.site-header --region footer=.cmp-experiencefragment--footerSocial|.site-footer-wrap -> exit 0 at both widths (gates/<slug>-<w>/chrome-live-regions.json, gates/fr-startseite-1440/chrome-parity-regions-1440.json)",
+              "permanent": true
+            }
+          ],
+          "residuals": [],
+          "captureState": [],
+          "chromeCrop": {
+            "header": "y0+86 0.83% PASS",
+            "footer": "y1815+364 0.00% PASS"
+          },
+          "rounds": [
+            "iter1 --full 0.44% d0 (374 structural red = Cookie Reports consent panel inside body#restyle -> content root changed to .root)",
+            "iter2 --full 0.44% d0 content none",
+            "iter3 --full confirmation after motion layer + logo filename: 0.44% d0 content none, units PASS"
+          ]
+        }
+      },
+      "capProbe": "PASS",
+      "motion": {
+        "observed": "stardust/replica/motion/fr-startseite.json (1440; 2 nav clicks, search click, 8 hover families): 0 animations, 1 transition (searchbox background-color .5s), 13 class mutations (open, icon-arrow-down/up, open-col-3, searchbox-enabled); hovers fired: #loginHeader opacity, card description links colour, language links colour, image links colour",
+        "implemented": [
+          "js/motion.js: level-0 nav click toggles open (+ icon-arrow-down<->icon-arrow-up, open-col-3 on the group, siblings close)",
+          "js/motion.js: search icon click toggles searchbox-enabled (+focus)",
+          "canon.css: open-state panel rules lifted from megamenu.css/theme; .searchbox-enabled; #loginHeader hover opacity .8; global a:hover colour (lang links, card links, image links)"
+        ],
+        "dead": [
+          "nav level-0 link hover (Contactez-nous): no measured diff",
+          "primary CTA .cmp-teaser__action-link hover: no measured diff (theme opacity rule dead at runtime)",
+          "footer link hover: no colour change (footer rule holds body colour)",
+          "card teaser hover: none",
+          "level-1/level-2 submenu expansion and close-on-scroll: not probed, not implemented; flagged for the therapy-area archetype to observe"
+        ],
+        "compare": "motion-compare: 10 parity, 0 missing, 0 extra (stardust/replica/motion/fr-startseite-build.json)"
+      },
+      "fonts": {
+        "stack": "Lexia (400, intercepted woff2 self-hosted for measurement only), Inter-Regular / Inter-Medium / Inter-Bold (per-weight family names as the source declares), icomoon (icons)",
+        "substitutions": []
+      },
+      "cssPortations": [],
+      "scriptAdaptations": [
+        {
+          "script": "stardust/scripts/diff/unit-geometry.mjs",
+          "status": "NOT edited; confirmed bug logged for upstreaming",
+          "bug": "origin inventory cache key is `${slug}-units` (line 255) with no width component: the 360 round reused the 1440 live inventory (origin 130,615 387x730 reported at 360) and printed 26/26 off -> false FAIL. Workaround: delete stardust/current/measure/<slug>-units.json before every round at a new width. Upstream fix: key the cache by slug+width (or let gate.sh pass --force)."
+        }
+      ],
+      "units": {
+        "family": "therapy-card",
+        "origin": ".teaser--image-top-text-bottom .cmp-teaser",
+        "build": ".ta-card",
+        "n": 3,
+        "result": "26 elements within 4px at both widths"
+      },
+      "notes": [
+        "MEASUREMENT POLICY: live #restyle is <body> (the brief assumed a wrapper). --main #restyle pulled the Cookie Reports consent panel into the inventory (374 structural red, all vendor/consent strings = hardening rule 3 self-poisoning). Content root used for every probe: .root (live div.root.container.responsivegrid = lang-nav + header + breadcrumb + content + footer; excludes consent panel and scripts); the prototype wrapper carries class root and body keeps id=restyle for symmetry. Cap-probe: --main .root --build-main .root (PASS 5/5 at 2560).",
+        "No <header>/<footer> landmarks on the prototype because live has none (pure replica); chrome verified with explicit --region selectors (exit 0 both widths) and crop-compare header/footer bands <= 1%.",
+        "Chrome facts for later archetypes (canon.css already carries them): lang-nav strip 29px (Lexia 10/18, 8px padding, 1px top border) + header 57px (1px borders, 10px padding, 35px min-height flex grid); breadcrumb renders 0px tall on home (single Home item hidden) - on therapy-area pages it will have height, re-lift there.",
+        "Image renditions: desktop teaser images are authored with srcset `<file> 1920w` and NO sizes, so the browser density-corrects (naturalWidth 1080/291/431) and the rendered heights (245/156/280) depend on it; the prototype mirrors the exact srcset. Byte-identical files (curl == Playwright response bodies).",
+        "Hidden DOM mirrored for content parity: full 3-level mega-menu (67 menuitems / 28 menus from stardust/replica/fr-startseite-nav.json), search-result underscore template <script>, hidden personalisation sections (Votre specialite / Vos interets), zero-height breadcrumb, searchbox role=contentinfo quirk.",
+        "Header pixel residue (0.8-0.9% band, under the 2% bar, thin-ish texture): glyph rasterization of Lexia labels (live serves 400_Lexia_Rg.woff, prototype the intercepted woff2); every rect matches (nav items x490/654/835 w152/169/119).",
+        "Box model: the source itself uses a universal border-box reset; content-box exceptions restated in the canon.css header (.languagenavigation >=1280, #FooterLinks .text >=768)."
+      ]
+    },
+    "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz": {
+      "pageType": "program",
+      "template": "therapy-area",
+      "archetype": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+      "prototype": "stardust/prototypes/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz-proposed.html",
+      "status": "gated",
+      "breakpoints": {
+        "360": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": 0,
+            "pixelPct": 0.01,
+            "heightDelta": 0,
+            "clipped": 0,
+            "overflowPx": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "chrome-parity (gate.sh default regions)",
+              "flag": "REGION header/footer: no element matches on either side",
+              "why": "live page has no <header>/<footer> landmarks; the prototype mirrors that. Evidence instead: chrome-parity --no-defaults --region strip=.languagenavigation|.lang-nav --region header=.experiencefragment.cmp-experiencefragment--customMenu|.site-header --region breadcrumb=.breadcrumb|.breadcrumb-bar --region footer=.cmp-experiencefragment--footerSocial|.site-footer-wrap at 1440 and 360 (gates/<slug>-<w>/chrome-live-regions.json): strip/header/footer quiet; breadcrumb deltas (gray dummy links, 1px row) fixed before the first pixel round",
+              "permanent": true
+            }
+          ],
+          "residuals": [],
+          "captureState": [],
+          "chromeCrops": {
+            "headerBand": "y0+146: 292px = 0.56% (mixed texture, under 2%) PASS",
+            "footerBand": "y6797+485: 0.00% PASS",
+            "vivoTail": "y7282+44: 0.00% PASS"
+          },
+          "rounds": [
+            "iter1 --full: 0.01% (292px) Δh0, 0 structural (same 9 yellow); unit-geometry FAIL was the stale 1440 live inventory cache (origin rects 130,822 387x326 = desktop) → instrument-invalidated, cache deleted",
+            "iter2 --full: content+roles match, 0.01%, Δh0, clipped 0, units 6/6 PASS",
+            "motion verification round: 292px — identical"
+          ]
+        },
+        "1440": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": 0,
+            "pixelPct": 0.01,
+            "heightDelta": 0,
+            "clipped": 0,
+            "overflowPx": 0,
+            "pass": true
+          },
+          "justified": [
+            {
+              "probe": "chrome-parity (gate.sh default regions)",
+              "flag": "REGION header/footer: no element matches on either side",
+              "why": "live page has no <header>/<footer> landmarks; the prototype mirrors that. Evidence instead: chrome-parity --no-defaults --region strip=.languagenavigation|.lang-nav --region header=.experiencefragment.cmp-experiencefragment--customMenu|.site-header --region breadcrumb=.breadcrumb|.breadcrumb-bar --region footer=.cmp-experiencefragment--footerSocial|.site-footer-wrap at 1440 and 360 (gates/<slug>-<w>/chrome-live-regions.json): strip/header/footer quiet; breadcrumb deltas (gray dummy links, 1px row) fixed before the first pixel round",
+              "permanent": true
+            }
+          ],
+          "residuals": [],
+          "captureState": [],
+          "chromeCrops": {
+            "headerBand": "y0+114: 385px = 0.23% (thin-edge glyph texture) PASS",
+            "footerBand": "y3206+249: 0.00% PASS",
+            "vivoTail": "y3455+115: 0.00% PASS"
+          },
+          "rounds": [
+            "iter1 --full: 0.01% (385px) Δh0, 0 structural (9 yellow: 6 img title attrs, 3 hidden close glyphs under non-icon class names), units 6/6 PASS",
+            "iter2 --full (markup fix): content+roles match, 0.01%, Δh0, clipped 0, units 6/6 PASS",
+            "motion verification round: 385px — identical"
+          ]
+        }
+      },
+      "capProbe": "PASS",
+      "capProbeDetail": "cap-probe PASS at 2560 — 0 of 6 rows failed: content cap 1180=1180; modules full-bleed/1180/full-bleed/1220/1180 on both (gates/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz-2560/cap-iter.txt)",
+      "motion": {
+        "observed": "stardust/replica/motion/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz.json (1440; clicks: level-0 item, level-1 item, social share icon, social favorite icon; 6 hover families): 0 animations, 0 transitions, 10 class mutations (open x2 incl. level-1, icon-arrow-up/down, open-col-3 on level-0 AND level-1 groups, body.popup-open after the favorite click); hovers fired: breadcrumb link colour, level-0 parent label + arrow colour",
+        "implemented": [
+          "js/motion.js: nav parent toggle generalised to level-1 (megamenu.js toggleSubmenuItem: siblings in the same ul close, open + aria-expanded + arrow swap + open-col-3)",
+          "js/motion.js: close-on-scroll (megamenu.js closeAllNavItems: every .open item closes, arrow flips; hamburger state exempt)",
+          "js/motion.js: social icon click → showPopup (body.popup-open + request-to-sign-in wrapper un-hidden; share takes the same branch because data-share-allowed-anonymous=false and data-user-signed-in=false), close icon → hidePopup",
+          "canon.css: level-1 open rules (grid 229px columns x10 rows, border-left table-bgColor-1 + 16px padding; block/none ≤1023) and level-0 label hover colour ≥1024"
+        ],
+        "dead": [
+          "social icon hover: no measured diff",
+          "split teaser (.teaser--text-left .cmp-teaser) hover: none",
+          "primary CTA .cmp-teaser__action-link hover: none measured (source has an opacity .8 rule; kept dead as on home)",
+          "therapy-card hover: none",
+          "level-2 expansion: not poked, not implemented",
+          "document click-outside close: present in megamenu.js but not measurably observed — not implemented",
+          "share popup branch: never fires on live for anonymous users (share-allowed-anonymous=false)"
+        ],
+        "compare": "motion-compare: 7 parity, 0 missing, 0 extra, 8 dead-on-live not required (stardust/replica/motion/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz-build.json); pixel rounds after motion returned to 385px / 292px exactly"
+      },
+      "fonts": {
+        "stack": "Lexia (400) FIRST — the self-hosted copy is now the exact file live serves, publish/fonts/lexia/resources/400_Lexia_Rg.woff (measurement-only, never on the public origin); Inter-Regular/Inter-Medium/Inter-Bold woff2 (per-weight family names as the source); icomoon.woff also declared as \"Font Awesome\" 900 (the source aliases the same file; breadcrumb separator \\f04b)",
+        "substitutions": []
+      },
+      "cssPortations": [],
+      "scriptAdaptations": [],
+      "canonBackports": [
+        "@font-face Lexia → 400_Lexia_Rg.woff (the intercepted woff2 has different vertical metrics: ascent 14/descent 3 vs 13/4 at 14px → every Lexia line box 1px off; found via the breadcrumb 29px vs 28px row). Home re-check after: 1440 0.00% (was 0.44%)",
+        "@font-face \"Font Awesome\" 900 = icomoon.woff (publish/main.css alias)",
+        "breadcrumb re-lifted (breadcrumb.css + theme): inline-block items 6px/12px, \\f04b separator (8px/10px, bottom 1/2px), :last-child:first-child hidden (home stays 0px), gray non-clickable dummy links (overwritten.css href list incl. /fr/startseite/therapiegebiete.html and /fr/startseite/therapiegebiete/cvrm.html)",
+        "text module: .text--b-space-0 / .text--t-space-0, .text__body ul/ol list rules (4/10→12px, 20px indent, outside markers), .text--small variant (Inter-Medium 12/20, b Inter-Bold, sup 10/0)",
+        ".hero* and .vivo* rules moved verbatim from fr-startseite.css into canon.css (shared by both templates)",
+        "level-1 nav open rules + level-0 label hover (observed on this page)"
+      ],
+      "unitsDeclared": [
+        "therapy-card (pages += this slug, templates += therapy-area)",
+        "split-teaser: origin .teaser--text-left .cmp-teaser ↔ build .split-teaser--text-left, n 3, required"
+      ],
+      "homeRecheck": {
+        "360": "gate.sh fr-startseite 360 recheck-ta: 0 / 1517400 = 0.00%, height delta 0 (gated value was 0.56%)",
+        "1440": "gate.sh fr-startseite 1440 recheck-ta: 0 / 3137760 = 0.00%, height delta 0 (gated value was 0.44%; the header glyph residue was the Lexia metric fork, now gone)"
+      },
+      "notes": [
+        "MEASUREMENT POLICY (inherited): --main .root on every probe (live #restyle is <body>); cap-probe --main .root --build-main .root. unit-geometry live inventory cache stardust/current/measure/<slug>-units.json deleted before each new-width round (iter1@360 FAIL was that cache).",
+        "Chrome opened with chrome-parity (explicit regions) at both widths BEFORE content iteration: strip/header/footer quiet; breadcrumb (new chrome on this template) had 2 deltas (darkgray dummy links) + a 1px taller row — both lifted into canon. Header crop 0.23% @1440 / 0.56% @360, footer 0.00% both.",
+        "Breadcrumb lift: 28px row @1440 (Lexia 14/16 + 6px padding), 2 rows of 30px @360 (10/18); items inline-block, 12px gap, Font Awesome \\f04b separator; the links Domaines thérapeutiques and CVRM are pointer-events:none darkgray (overwritten.css); current item in the interaction colour.",
+        "Lexia: live loads 400_Lexia_Rg.woff (not the woff2 also declared in main.css). The two builds differ in vertical metrics; with the woff the home page re-measures 0.00% at 1440 — the glyph-rasterization residue note in the home record is superseded.",
+        "Live geometry at both widths matched the lifted container model before the first gate round (48 paired boxes within 1px, doc heights equal): containers --tb-space-md 20/40, --desktop-tb-space(-md) 0→20/40, title --t-space-md 20/40, text margins 10/16 with --b/t-space-0, teaser row 50/50 with 15px gutters from 768, 3-column cards gap 10 (calc(33.33% - 6.67px)), social icons 36x32 (20px icomoon glyph, 4px 8px padding, 10px gap, right-aligned ≥768, left-aligned with the 16px page padding ≤479; share item order 3).",
+        "Revision stamp (#vivo-id-wrap) is position:absolute top 300px (top 465px ≤600) in a 0-height #last-vivo-id → it renders BELOW the footer and extends the document (3570 vs footer end 3455 @1440; 7326 vs 7282 @360). Mirrored verbatim (same CSS as home, now in canon).",
+        "Image renditions mirrored exactly: desktop teasers srcset '<file> 1920w' without sizes (naturalWidth reads 1440/291/431 density-corrected), mobile JPGs plain src; 17 files harvested with curl (all 200) into stardust/prototypes/assets/img/<slug>/ — no source-host url() or src remains.",
+        "Products band (Informations utiles sur les produits) is the same source module as the home .products (.teaser--text-image); authored here as the reusable .split-teaser block (slug css) — the home sheet still carries .products; unify at block-conversion time.",
+        "Social features (dynamic-features row 2): counters static as captured (empty count spans), no POST; data-user-signed-in=false so every icon click opens the request-to-sign-in popup (observed body.popup-open). The live share click in the observe run produced no class mutation because the open mega-menu panel covered the icon (its scroll-into-view closed the menu at y=6) — the share-wrapper branch is dead for anonymous users anyway.",
+        "Content parity: img title attributes (keep title in html-slice --keep-attrs) and hidden icon-font glyph spans need an icon-class name (content-diff ICON_CLASS regex, e.g. class icon) to be inventoried — both fixed in iter2.",
+        "Next archetypes (chronischeniereninsuffizienz, diabetes, lupus): import canon.css + this slug's css for .split-teaser/.social/.band; expect the same container classes; the breadcrumb now renders — check each page's hrefs against the overwritten.css gray-link selector list (ri.html / onkologie.html are included)."
+      ]
+    },
+    "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr": {
+      "pageType": "article",
+      "template": "pattrns",
+      "archetype": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+      "prototype": "stardust/prototypes/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr-proposed.html",
+      "status": "gated",
+      "breakpoints": {
+        "360": {
+          "iterations": 3,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "1 justified",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "clipped": 0,
+            "overflowPx": 0,
+            "unitGeometry": "9 units, 38 within, 0 off, 1 hidden (justified, see justified[])",
+            "chromeParity": "strip/header/breadcrumb/subnav/footer ✓ (explicit regions)",
+            "chromeCrops": {
+              "header": 0,
+              "footer": 0,
+              "subnav": 0
+            },
+            "pass": true
+          },
+          "rounds": [
+            {
+              "iter": 1,
+              "full": true,
+              "pixelPct": 0.04,
+              "heightDelta": 0,
+              "structuralRed": 0,
+              "note": "1483 px all in the sub-nav band: live centres the active item in the scroller (scrollLeft 178)"
+            },
+            {
+              "iter": 2,
+              "full": false,
+              "pixelPct": 0.03,
+              "heightDelta": 0,
+              "note": "js/sub-nav.js added; the deferred script computed with fallback-font metrics (145px) → document.fonts.ready added"
+            },
+            {
+              "iter": 3,
+              "full": true,
+              "pixelPct": 0,
+              "heightDelta": 0,
+              "structuralRed": 0
+            },
+            {
+              "iter": "motion",
+              "full": false,
+              "pixelPct": 0,
+              "heightDelta": 0
+            }
+          ],
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE pattrns-vid-thumb.jpg 3540x1702 → 1180x664 (360x203)",
+              "why": "mirrors live: the Kaltura embed script sizes .cmp-video__player to a 16:9 box (inline height = round(width*9/16)) and the thumbnail is width/height 100% (object-fit fill) on live too",
+              "permanent": true
+            },
+            {
+              "probe": "unit-geometry",
+              "flag": "sub-nav-item unit 1 hidden (clipped) on the build",
+              "why": "origin −171,500 = served −171,500: the first item is scrolled out of the overflow:auto list on BOTH sides (live scrollLeft 178 after showActiveItemInCenter); the probe only tests build clipping",
+              "permanent": true
+            }
+          ],
+          "residuals": [],
+          "captureState": []
+        },
+        "1440": {
+          "iterations": 2,
+          "result": {
+            "structuralRed": 0,
+            "visualFlags": "1 justified",
+            "pixelPct": 0,
+            "heightDelta": 0,
+            "clipped": 0,
+            "overflowPx": 0,
+            "unitGeometry": "11 units, 39 within, 0 off → PASS",
+            "chromeParity": "strip/header/breadcrumb/subnav/footer ✓ (explicit regions, tolerance 1px, gates/<slug>-1440/chrome-parity-regions-iter2.json)",
+            "chromeCrops": {
+              "header": 0,
+              "footer": 0,
+              "subnav": 0
+            },
+            "pass": true
+          },
+          "rounds": [
+            {
+              "iter": 1,
+              "full": true,
+              "pixelPct": 7.15,
+              "heightDelta": 12,
+              "structuralRed": 5,
+              "note": "map: MENAÇANTE card 13px short (sup inside b inherits 16/24 on live), 5 sub-nav aria-labels, EN lang item, 5 img titles, plain cards shrink-wrapped by canon auto-margins"
+            },
+            {
+              "iter": 2,
+              "full": true,
+              "pixelPct": 0,
+              "heightDelta": 0,
+              "structuralRed": 0
+            },
+            {
+              "iter": "motion",
+              "full": false,
+              "pixelPct": 0,
+              "heightDelta": 0
+            }
+          ],
+          "justified": [
+            {
+              "probe": "visual",
+              "flag": "STRETCHED IMAGE pattrns-vid-thumb.jpg 3540x1702 → 1180x664 (360x203)",
+              "why": "mirrors live: the Kaltura embed script sizes .cmp-video__player to a 16:9 box (inline height = round(width*9/16)) and the thumbnail is width/height 100% (object-fit fill) on live too",
+              "permanent": true
+            }
+          ],
+          "residuals": [],
+          "captureState": []
+        }
+      },
+      "capProbe": "PASS at 2560 — 0 of 6 rows failed (gates/<slug>-2560/cap-iter.json)",
+      "motion": {
+        "observed": "stardust/replica/motion/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr.json (1440; 8 hover families: sub-nav link, text-image title link, text-image CTA, bgColor-card CTA, contact button, border card, breadcrumb link, video poster; 1 click: video poster): 0 animations, 0 transitions, 0 class mutations; hovers fired: text-image teaser CTA opacity 1→.8, contact button opacity 1→.8",
+        "implemented": [
+          "css/<slug>.css: .split-teaser--text-image .split-teaser__action .btn-primary:hover and .button .btn-primary:hover → opacity .8 (teaser.theme @495 / button.theme @495), scoped to the two families that fired",
+          "js/sub-nav.js: list.theme.js showActiveItemInCenter — active sub-nav item centred in the horizontal scroller on load (ul.scroll({left: li.offsetLeft − ul.width/2 + li.width/2, behavior:'smooth'})), computed after document.fonts.ready (the live clientlib runs with the webfont applied; measured 178px @360, 0 @1440) — initial-state JS, not motion",
+          "js/video.js: Kaltura poster box height = round(width*9/16) as the embed script sets inline (664 @1440 / 203 @360) — initial-state JS",
+          "js/motion.js reused unchanged (nav toggles, close-on-scroll, search, social popup) — same chrome fragments, not re-poked here"
+        ],
+        "dead": [
+          "sub-nav link hover (list.theme :hover colour rule present, no measured diff)",
+          "teaser title links (text-image) hover: no measured diff on live",
+          "bgColor-card CTAs (.teaser--bgColor-supporting-1 .cmp-teaser__action-link) hover: same source rule as the fired CTA, probe read no change — kept dead as measured",
+          "border cards (.teaser--border-base) hover: none",
+          "breadcrumb link hover: none",
+          "video poster hover: none",
+          "video poster click: no class/transform/scroll mutation sampled; the Kaltura iframe load is not replicated (addendum: poster state only) — dynamic-features row 8 for the delivery video block"
+        ],
+        "compare": "motion-compare: 2 parity, 0 missing, 0 extra, 1 advisory (build title-link hover changes colour via the lifted global brand a:hover @5327 — identical rule on live; the live probe read no diff because the inline <a> wraps a block <p>), 6 dead-on-live not required (stardust/replica/motion/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr-build.json); pixel rounds after motion: 1440 0.00% Δ0, 360 0.00% Δ0"
+      },
+      "fonts": {
+        "stack": "Lexia (400) FIRST — 400_Lexia_Rg.woff self-hosted for measurement only (never on the public origin); Inter-Regular/Inter-Medium/Inter-Bold woff2 per-weight family names as the source; icomoon.woff (also aliased \"Font Awesome\" 900 for the breadcrumb separator)",
+        "substitutions": []
+      },
+      "cssPortations": [],
+      "scriptAdaptations": [],
+      "unitsDeclared": [
+        "therapy-card (pages += this slug, templates += pattrns): 5 image-top-text-bottom teasers (2 plain, 2 bordered --text-center, 2 bgColor-supporting-1)",
+        "sub-nav-item: origin .list--fixed-width .cmp-list__item ↔ build .sub-nav__item, n 5, required",
+        "split-teaser-text-image: origin .teaser--text-image .cmp-teaser ↔ build .split-teaser--text-image, n 1, required"
+      ],
+      "canonBackports": [
+        "breadcrumb grey dummy links (overwritten.css L1–L43 href list → .breadcrumb__link[href*=…] { pointer-events:none; cursor:auto; color:darkgray }) — chrome-parity read \"Domaines thérapeutiques\" / \"CVRM\" as rgb(169,169,169) on live vs body colour on the build; the therapy record claimed this lift but canon did not carry it"
+      ],
+      "homeRecheck": {
+        "1440": {
+          "pixelPct": 0,
+          "heightDelta": 0,
+          "round": "gates/fr-startseite-1440 recheck-pattrns"
+        }
+      },
+      "therapyRecheck": {
+        "1440": {
+          "pixelPct": 0,
+          "heightDelta": 0,
+          "round": "gates/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz-1440 recheck-pattrns (was 0.01% — the therapy breadcrumb gained its grey crumbs)"
+        }
+      },
+      "captureState": [
+        {
+          "what": "Kaltura player (partner 432521 / uiconf 30358591 / entry 1_7kar7zpp) replicated in its captured POSTER state: static pattrns-vid-thumb.jpg stretched to the 16:9 player box the embed script sizes (js/video.js); the play glyph span is present but paints nothing on live either (no --playicon modifier); no embed, no source-host src",
+          "where": "section 7 'En savoir plus sur le mécanisme pathologique'",
+          "flaggedFor": "delivery (video block loads the iframe on click)"
+        },
+        {
+          "what": "HCP self-certification modal (.cmp-experiencefragment--self-certification): after dismissal the live fragment is an EMPTY 0px wrapper (div.selfCertification > div) — mirrored as .selfcert (empty), never a live-visible modal at capture",
+          "where": "top of .page-body",
+          "flaggedFor": "delivery (modal block, cookie-persisted like the source; dynamic-features row 10)"
+        },
+        {
+          "what": "sub-nav scroller initial state: active item centred (scrollLeft 178 @360) — part of the captured state; first item clipped on both sides",
+          "where": ".sub-nav",
+          "flaggedFor": "none"
+        }
+      ],
+      "images": {
+        "dir": "stardust/prototypes/assets/img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/",
+        "count": 22,
+        "note": "21 harvested with curl (all 200, Chrome UA + Accept headers) + the shared AstraZeneca logo svg. Desktop teaser/image renditions authored with srcset '<file> 1920w' and no sizes exactly as live (density-corrected naturalWidth 1080/436/1440/871/874 at 1440; 270/109/360/217/218 at 360); attr-symptome.png and img-9-png.png carry a plain src as live; mobile JPGs plain src; the coreimg '1920' renditions are byte-identical to the DAM originals (sources narrower than 1920). img-7_mobile.jpg is a 773x2956 infographic (1377px tall at 360)."
+      },
+      "notes": [
+        "MEASUREMENT POLICY (inherited): --main .root on every probe, both sides (live #restyle is <body>); cap-probe --main .root --build-main .root; unit-geometry live cache stardust/current/measure/<slug>-units.json deleted before each new-width round; chrome-parity with explicit regions --no-defaults strip/header/breadcrumb/subnav/footer (the --full round default header/footer regions match nothing and print ✗ 2 — artefact, the explicit run is the verdict); GATE_DISMISS_EXTRA / --dismiss a.wscrOk,button.self-certify-yes everywhere.",
+        "Template chrome: the PATTRNS page carries the SAME lang-nav/header/footer experience fragments as home/therapy (text identical, 67 menu items) — no template chrome; the lang-nav has DE/FR/IT only (no EN) on this page; no revision stamp (#vivo-id-wrap) on this template.",
+        "Sub-navigation (.list.list--fixed-width): white 1180px wrapper, 8px padding, 1px bottom border extended to the viewport edges by ::before/::after; inline-block items (whitespace gaps), Lexia 14/16 (14/18 ≤767) links with 10px 16px padding, active item interaction colour + 1px underline; ul overflow:auto with hidden scrollbar; live JS centres the active item (showActiveItemInCenter) — mirrored in js/sub-nav.js.",
+        "Section model: every top-level section is .container--fixed (1180px cap ≥1280, 20px side padding 768–1279, none ≤767) with --tb-space 20/20 or --tb-space-md 20→40 from 768; --bgColor-supporting-1 paints the full-bleed outer container; 2-column-wrap = flex gap 20 (50%−10px from 768), 3-column-wrap = canon .ta-grid__row (gap 10, 33.33%−6.67px) + content-center; components inside a section are plain blocks (no AEM grid floats at that level).",
+        "Canon candidates for block conversion (NOT changed in canon here, compensated in the slug sheet): .ta-card__body bakes two modifiers — background var(--bgColor-supporting-1) (= .teaser--bgColor-supporting-1) and centred shrink-wrapped children (= .teaser--text-center); this page has plain, bordered-centred and bgColor variants, hence .ta-card--plain / --border / --center. Type ramp: h4 sub/sup = 16px (brand @14036) and `.cmp-teaser__description b *` inherits size/line-height (teaser.theme @4444) — both lifted into the slug sheet; the latter cost 13px on the MENAÇANTE card (sup inside b renders 16/24, bullet lines 30.33px).",
+        "Shared module import: css/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz.css is linked for .split-teaser (text-image teaser) as the therapy record recommended; unify .split-teaser/.products at block-conversion time.",
+        "Content parity details: sub-nav <a> aria-labels carry a TRAILING SPACE on live (\"Traitement \") — mirrored; desktop teaser images carry title attributes; the video thumbnail alt is the literal string \"undefined\" on live — mirrored; references block byte patterns (<p>&nbsp;</p>, trailing &nbsp; per <li>, <br> &nbsp;) mirrored.",
+        "Round artefacts: 1440 iter1 was the map (7.15% / Δ12 / 5 🔴 — all named by content-diff, unit-geometry and one live measure of the card); iter2 0.00% Δ0 0 🔴 (full). 360 iter1 0.04% Δ0 0 🔴 (sub-nav scroll state), iter2 0.03% (fonts timing), iter3 0.00% Δ0 0 🔴 (full). Both post-motion pixel rounds 0.00% Δ0.",
+        "Sibling PATTRNS pages (home, symptomes, diagnosis, treatement): same chrome + sub-nav (set --active per page; the centring script handles any active item), same section model; expect Kaltura posters, 2/3-column teaser grids and stats infographics as plain .img-block images; check each breadcrumb href against the grey list (only therapiegebiete.html and cvrm.html are grey; see-the-pattrns/home.html is not); check img title / aria-label attributes per page (content-diff names them)."
+      ]
+    }
+  },
+  "prototypeTables": {
+    "360": {
+      "dir": "stardust/replica/gates/prototypes-360",
+      "pass": 2,
+      "overridePass": 1,
+      "of": 3,
+      "note": "pattrns: unit-geometry hidden 1 = sub-nav item scrolled out on both sides (justified, overrides.json); pixel 0% Δh 0 on all three"
+    },
+    "1440": {
+      "dir": "stardust/replica/gates/prototypes-1440",
+      "pass": 3,
+      "of": 3,
+      "note": "gate-all --stage prototype; live.png reused from the archetype rounds; unit caches (stardust/current/measure/<slug>-units.json) cleared first — they held the 360 inventory (per-slug cache, not per-width)"
+    },
+    "writtenAt": "2026-10-07T11:58:10.287Z"
+  },
+  "siblings": {
+    "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz": {
+      "archetype": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+      "variants": [
+        "space-bottom"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.73,
+          "px": null,
+          "heightDelta": 0,
+          "overflowX": null,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 10,
+            "variable": []
+          },
+          "verdict": "PASS",
+          "label": "table",
+          "regime": "published"
+        },
+        "1440": {
+          "pct": 0.41,
+          "px": null,
+          "heightDelta": 0,
+          "overflowX": null,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 10,
+            "variable": []
+          },
+          "verdict": "PASS",
+          "label": "table",
+          "regime": "published"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 2 P2",
+      "media": "17 hosted",
+      "gatesPassed": [
+        "variance-probe",
+        "content-count",
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "media-reconcile",
+        "delivery-lint"
+      ],
+      "migrated": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html"
+    },
+    "fr-startseite-therapiegebiete-cvrm-diabetes": {
+      "archetype": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+      "variants": [],
+      "pixel": {
+        "360": {
+          "pct": 1.14,
+          "px": null,
+          "heightDelta": 0,
+          "overflowX": null,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 13,
+            "variable": []
+          },
+          "verdict": "PASS",
+          "label": "table",
+          "regime": "published"
+        },
+        "1440": {
+          "pct": 0.38,
+          "px": null,
+          "heightDelta": 0,
+          "overflowX": null,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 13,
+            "variable": []
+          },
+          "verdict": "PASS",
+          "label": "table",
+          "regime": "published"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 2 P2",
+      "media": "17 hosted",
+      "gatesPassed": [
+        "variance-probe",
+        "content-count",
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "media-reconcile",
+        "delivery-lint"
+      ],
+      "migrated": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/diabetes.html"
+    },
+    "fr-startseite-therapiegebiete-ri-lupus": {
+      "archetype": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+      "variants": [
+        "tb-space",
+        "text-space space-bottom"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 0.49,
+          "px": null,
+          "heightDelta": 0,
+          "overflowX": null,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 11,
+            "variable": []
+          },
+          "verdict": "FAIL",
+          "label": "table",
+          "regime": "published"
+        },
+        "1440": {
+          "pct": 0.44,
+          "px": null,
+          "heightDelta": 0,
+          "overflowX": null,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 11,
+            "variable": []
+          },
+          "verdict": "FAIL",
+          "label": "table",
+          "regime": "published"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 2 P2",
+      "media": "17 hosted",
+      "gatesPassed": [
+        "variance-probe",
+        "content-count",
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "media-reconcile",
+        "delivery-lint"
+      ],
+      "migrated": "stardust/migrated/fr/startseite/therapiegebiete/ri/lupus.html"
+    },
+    "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home": {
+      "archetype": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+      "variants": [
+        "space-md"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 1.51,
+          "px": null,
+          "heightDelta": 0,
+          "overflowX": null,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 15,
+            "variable": []
+          },
+          "verdict": "FAIL",
+          "label": "table",
+          "regime": "published"
+        },
+        "1440": {
+          "pct": 0.47,
+          "px": null,
+          "heightDelta": 0,
+          "overflowX": null,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 17,
+            "variable": []
+          },
+          "verdict": "FAIL",
+          "label": "table",
+          "regime": "published"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 2 P2",
+      "media": "9 hosted",
+      "gatesPassed": [
+        "variance-probe",
+        "content-count",
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "media-reconcile",
+        "delivery-lint"
+      ],
+      "migrated": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html"
+    },
+    "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis": {
+      "archetype": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+      "variants": [
+        "space-md"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 1.12,
+          "px": null,
+          "heightDelta": 0,
+          "overflowX": null,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 22,
+            "variable": []
+          },
+          "verdict": "FAIL",
+          "label": "table",
+          "regime": "published"
+        },
+        "1440": {
+          "pct": 0.64,
+          "px": null,
+          "heightDelta": 0,
+          "overflowX": null,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 22,
+            "variable": []
+          },
+          "verdict": "FAIL",
+          "label": "table",
+          "regime": "published"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 2 P2",
+      "media": "8 hosted",
+      "gatesPassed": [
+        "variance-probe",
+        "content-count",
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "media-reconcile",
+        "delivery-lint"
+      ],
+      "migrated": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html"
+    },
+    "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement": {
+      "archetype": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+      "variants": [
+        "ta-grid__row>.text",
+        "space-md",
+        "cols-3-footnote"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 1.91,
+          "px": null,
+          "heightDelta": 0,
+          "overflowX": null,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 20,
+            "variable": []
+          },
+          "verdict": "FAIL",
+          "label": "table",
+          "regime": "published"
+        },
+        "1440": {
+          "pct": 1.07,
+          "px": null,
+          "heightDelta": 0,
+          "overflowX": null,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 20,
+            "variable": []
+          },
+          "verdict": "FAIL",
+          "label": "table",
+          "regime": "published"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 2 P2",
+      "media": "6 hosted",
+      "gatesPassed": [
+        "variance-probe",
+        "content-count",
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "media-reconcile",
+        "delivery-lint"
+      ],
+      "migrated": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html"
+    },
+    "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes": {
+      "archetype": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+      "variants": [
+        "ta-card__pretitle",
+        "space-md",
+        "card-pretitle"
+      ],
+      "pixel": {
+        "360": {
+          "pct": 4.16,
+          "px": null,
+          "heightDelta": 2,
+          "overflowX": null,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 21,
+            "variable": []
+          },
+          "verdict": "FAIL",
+          "label": "table",
+          "regime": "published"
+        },
+        "1440": {
+          "pct": 0.43,
+          "px": null,
+          "heightDelta": 0,
+          "overflowX": null,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 0,
+            "hiddenButtons": 0,
+            "findings": 22,
+            "variable": []
+          },
+          "verdict": "FAIL",
+          "label": "table",
+          "regime": "published"
+        }
+      },
+      "contentDiff": "none — content + roles match",
+      "deliveryLint": "0 P0 · 0 P1 · 2 P2",
+      "media": "13 hosted",
+      "gatesPassed": [
+        "variance-probe",
+        "content-count",
+        "content-fidelity",
+        "pixel-gate-1440",
+        "pixel-gate-360",
+        "media-reconcile",
+        "delivery-lint"
+      ],
+      "migrated": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html"
+    }
+  },
+  "migrate": {
+    "at": "2026-10-07T20:20:52.354Z",
+    "pages": 10,
+    "archetypes": 3,
+    "siblings": 7,
+    "thin": 0,
+    "gates": {
+      "variance-probe": 7,
+      "content-count": 10,
+      "content-fidelity": 10,
+      "pixel-gate-1440": 10,
+      "pixel-gate-360": 10,
+      "media-reconcile": 10,
+      "delivery-lint": 10
+    },
+    "missing": {}
+  }
+}

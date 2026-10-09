@@ -1,0 +1,75 @@
+/* intro-media — canon .text.text--b-space-0 (lifted); the section title above it is
+   default content: canon .title--color-title-1.title--t-space-md */
+.intro-media .intro-body {
+  color: var(--text-color-body-1);
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+  text-align: left;
+  margin: 0;
+}
+
+.intro-media .intro-body :is(p, li) {
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+  margin: 0;
+}
+
+.intro-media .intro-body :is(b, strong) {
+  font-family: var(--font-bold);
+  font-weight: 700;
+}
+
+.intro-media .intro-body :is(sub, sup) {
+  font-size: 10px;
+  line-height: 0;
+}
+
+.intro-media .intro-body :is(ul, ol) {
+  padding: 4px 0 10px 20px;
+  list-style-position: outside;
+  overflow-wrap: anywhere;
+}
+
+.intro-media .intro-figure .img {
+  line-height: 0;
+}
+
+.intro-media .intro-figure picture {
+  display: block;
+}
+
+.intro-media .intro-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* section title styled in place (default content before the blocks of this section) */
+main .section.intro-media-container .default-content-wrapper :is(h1, h2, h3) {
+  padding-top: 20px;
+  color: var(--text-color-title-1);
+}
+
+@media (width <= 479px) {
+  .intro-media .intro-body {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 10px;
+  }
+}
+
+@media (width >= 768px) {
+  .intro-media .intro-body {
+    margin-top: 16px;
+  }
+
+  .intro-media .intro-body :is(ul, ol) {
+    padding-bottom: 12px;
+  }
+
+  main .section.intro-media-container .default-content-wrapper :is(h1, h2, h3) {
+    padding-top: 40px;
+  }
+}

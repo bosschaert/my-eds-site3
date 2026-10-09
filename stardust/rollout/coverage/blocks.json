@@ -1,0 +1,331 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-10-07T12:03:34.809Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage/pages.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-10-07T21:40:36.471Z",
+  "blocks": [
+    {
+      "id": "breadcrumb",
+      "label": "breadcrumb",
+      "kind": "module",
+      "signature": "module:breadcrumb",
+      "source": null,
+      "usedByTemplates": [
+        "fr-startseite",
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "usedByPages": [
+        "fr-startseite",
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "instanceCount": 3,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "breadcrumb",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "cta-cards",
+      "label": "cta-cards",
+      "kind": "module",
+      "signature": "module:cta-cards",
+      "source": null,
+      "usedByTemplates": [
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "usedByPages": [
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "cta-cards",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hero",
+      "label": "hero",
+      "kind": "module",
+      "signature": "module:hero",
+      "source": null,
+      "usedByTemplates": [
+        "fr-startseite",
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "usedByPages": [
+        "fr-startseite",
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "instanceCount": 3,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "hero",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hidden-section",
+      "label": "hidden-section",
+      "kind": "module",
+      "signature": "module:hidden-section",
+      "source": null,
+      "usedByTemplates": [
+        "fr-startseite"
+      ],
+      "usedByPages": [
+        "fr-startseite"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "hidden-section",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "image-text-band",
+      "label": "image-text-band",
+      "kind": "module",
+      "signature": "module:image-text-band",
+      "source": null,
+      "usedByTemplates": [
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "usedByPages": [
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "image-text-band",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "intro-media",
+      "label": "intro-media",
+      "kind": "module",
+      "signature": "module:intro-media",
+      "source": null,
+      "usedByTemplates": [
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+      ],
+      "usedByPages": [
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "intro-media",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "questions-cta",
+      "label": "questions-cta",
+      "kind": "module",
+      "signature": "module:questions-cta",
+      "source": null,
+      "usedByTemplates": [
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "usedByPages": [
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "questions-cta",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "references",
+      "label": "references",
+      "kind": "module",
+      "signature": "module:references",
+      "source": null,
+      "usedByTemplates": [
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "usedByPages": [
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "references",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "selfcert-modal",
+      "label": "selfcert-modal",
+      "kind": "module",
+      "signature": "module:selfcert-modal",
+      "source": null,
+      "usedByTemplates": [
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "usedByPages": [
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "selfcert-modal",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "social-features",
+      "label": "social-features",
+      "kind": "module",
+      "signature": "module:social-features",
+      "source": null,
+      "usedByTemplates": [
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+      ],
+      "usedByPages": [
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "social-features",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "split-teaser",
+      "label": "split-teaser",
+      "kind": "module",
+      "signature": "module:split-teaser",
+      "source": null,
+      "usedByTemplates": [
+        "fr-startseite",
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+      ],
+      "usedByPages": [
+        "fr-startseite",
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "split-teaser",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "sub-nav",
+      "label": "sub-nav",
+      "kind": "module",
+      "signature": "module:sub-nav",
+      "source": null,
+      "usedByTemplates": [
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "usedByPages": [
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "sub-nav",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "tile-grid",
+      "label": "tile-grid",
+      "kind": "module",
+      "signature": "module:tile-grid",
+      "source": null,
+      "usedByTemplates": [
+        "fr-startseite",
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+      ],
+      "usedByPages": [
+        "fr-startseite",
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "tile-grid",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "video-poster",
+      "label": "video-poster",
+      "kind": "module",
+      "signature": "module:video-poster",
+      "source": null,
+      "usedByTemplates": [
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "usedByPages": [
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "video-poster",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "vivo-stamp",
+      "label": "vivo-stamp",
+      "kind": "module",
+      "signature": "module:vivo-stamp",
+      "source": null,
+      "usedByTemplates": [
+        "fr-startseite",
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+      ],
+      "usedByPages": [
+        "fr-startseite",
+        "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "vivo-stamp",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    }
+  ]
+}

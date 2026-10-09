@@ -1,0 +1,703 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-10-07T09:20:19.199Z",
+    "stardustVersion": "0.27.0+e68296b7aee4",
+    "readArtifacts": [
+      "stardust/current/_brand-extraction.json",
+      "stardust/current/_computed-styles.json",
+      "stardust/current/DESIGN.md"
+    ],
+    "synthesizedInputs": []
+  },
+  "name": "myAstraZeneca Suisse (FR)",
+  "extensions": {
+    "componentStyle": {
+      "buttonPrimary": {
+        "bg": "#D0006F",
+        "text": "#FFFFFF",
+        "border": "#D0006F",
+        "radius": "4px",
+        "font": "Inter-Bold 16px"
+      },
+      "buttonSecondary": {
+        "bg": "#FFFFFF",
+        "text": "#D0006F",
+        "border": "#D0006F",
+        "radius": "4px"
+      },
+      "buttonTertiary": {
+        "bg": "#FFFFFF",
+        "text": "#3C4242",
+        "border": "#3C4242",
+        "radius": "4px"
+      },
+      "link": {
+        "color": "#3C4242",
+        "hover": "#D0006F"
+      },
+      "tabs": {
+        "on": "#D0006F",
+        "off": "#EBEFEE"
+      },
+      "table": {
+        "header": "#D8DFDE",
+        "rowAlt": "#EBEFEE",
+        "highlight": "#E6CCDC"
+      }
+    },
+    "motifs": {
+      "radius": {
+        "mode": "4px",
+        "areaMode": "8px",
+        "values": [
+          "4px",
+          "8px",
+          "20px"
+        ],
+        "pill": null
+      },
+      "shadows": [],
+      "gradients": [],
+      "patterns": [
+        "icon stat tile (3-up)",
+        "image + text row (Symptômes / Diagnostic / Traitement)",
+        "product-info image band with CTA",
+        "therapy-area image card with link list",
+        "PATTRNS dark starry panel",
+        "pill tab sub-navigation",
+        "paired CTA cards",
+        "references list",
+        "breadcrumb"
+      ]
+    },
+    "voice": {
+      "heroHeadline": "Bienvenue sur myAstraZeneca!",
+      "heroImage": "https://www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/_jcr_content/root/container/container_copy_copy_/teaser.coreimg.80.1920.jpeg/1742292435374/home-teaser-desktop.jpeg",
+      "heroMedium": null,
+      "ctaSamples": [
+        "Contactez-nous",
+        "Se connecter",
+        "Diabète de type 2",
+        "Insuffisance cardiaque",
+        "Asthme",
+        "BPCO"
+      ],
+      "firstParagraph": "Nos médicaments Cardiovasculaire, rénal & métabolisme Insuffisance cardiaque Forxiga ® (Dapagliflozine) Maladie rénale chronique (MRC) Forxiga ® (Dapagliflozine) Diabète de type 2 Forxiga ® (Dapagliflozine) Xigduo® (Dapagliflozine/Metformine HCl) Amylose Wainzua® (Eplontersen) Hyperkaliémie Lokelma® (Sodium zirconium cyclosilicate) Respiratoire & Immunologie Bronchopneumopathie chronique obstructive Trixeo® (Formotérol/Glycopyrronium/Budésonide) Granulomatose éosinophilique avec polyangéite (EGPA) Fasenra® (Benralizumab) Lupus érythémateux systémique (LES) Saphnelo® (Anifrolumab) Asthme Fasenra® (Benralizumab) Symbicort® (Budésonide/Formotérol) Tezspire® (Tézépelumab) Oncologie et Hématologie Cancer du sein Lynparza® (Olaparib) Enhertu® (Trastuzumab Deruxtecan) Truqap® (Capivasertib) Hématologie Calquence® (Acalabrutinib) Cancer des voies biliaires Imfinzi® (Durvalumab) Carcinome hépatocellulaire Imfinzi® (Durvalumab) + Imjudo® (Tremelimumab) Cancer du poumon Imfinzi® (Durvalumab) Tagrisso® (Osimertinib) Enhertu® (Trastuzumab Deruxtecan) Cancer de l’ovaire Lynparza® (Olaparib) Cancer de l’endomètre Imfinzi® (Durvalumab) Cancer de la prostate Lynparza® (Olaparib) Cancer de la vessie infiltrant le muscle Imfinzi® (Durvalumab) Adénocarcinome de l'estomac ou de la jonction œsogastrique (GC/GEJC) Imfinzi® (Durvalumab) Enhertu® (Trastuzumab Deruxtecan) Cancer du pancréas Lynparza® (Olaparib) Cancer de l’estomac Imfinzi® (Durvalumab) Traitement agnostique de la tumeur Enhertu® (Trastuzumab Deruxtecan) Voir tous les médicaments",
+      "register": "brand"
+    },
+    "shadows": [],
+    "gradients": [],
+    "motion": {
+      "observed": "link hover colour only (census); carousel/accordion behaviour observed per archetype in Phase 3 (motion-observe)"
+    },
+    "fonts": [
+      {
+        "family": "Lexia",
+        "role": "heading",
+        "weights": [
+          300,
+          400,
+          700
+        ],
+        "files": [
+          "300_Lexia_Lt.woff2",
+          "400_Lexia_Rg.woff2",
+          "700_Lexia_Bd.woff2",
+          "LexiaVF_W_Wght.woff2",
+          "lexialight-webfont.woff2"
+        ],
+        "license": "commercial (Dalton Maag) — self-hosted by the source site; confirm web licence for the new host"
+      },
+      {
+        "family": "Inter",
+        "role": "body",
+        "weights": [
+          300,
+          400,
+          500,
+          600,
+          700,
+          800
+        ],
+        "files": [
+          "Inter-Light.woff2",
+          "Inter-Regular.woff2",
+          "Inter-Medium.woff2",
+          "Inter-SemiBold.woff2",
+          "Inter-Bold.woff2",
+          "Inter-ExtraBold.woff2"
+        ],
+        "license": "OFL",
+        "note": "declared as separate families Inter-Regular / Inter-Medium / Inter-Bold in the source CSS"
+      },
+      {
+        "family": "Montserrat",
+        "role": "secondary (campaign)",
+        "weights": [
+          500,
+          700,
+          800
+        ],
+        "files": [
+          "montserrat-medium.woff2",
+          "montserrat-bold.woff2",
+          "montserrat-extrabold.woff2"
+        ],
+        "license": "OFL"
+      },
+      {
+        "family": "icomoon",
+        "role": "icon",
+        "files": [
+          "icomoon.woff"
+        ],
+        "license": "site-specific icon set"
+      }
+    ],
+    "iconFont": {
+      "families": [
+        "icomoon",
+        "Font Awesome"
+      ],
+      "file": "stardust/current/assets/fonts/icomoon.woff",
+      "glyphs": [
+        {
+          "family": "Font Awesome",
+          "codepoint": "U+F002",
+          "use": "search"
+        },
+        {
+          "family": "Font Awesome",
+          "codepoint": "U+F00D",
+          "use": "close"
+        },
+        {
+          "family": "Font Awesome",
+          "codepoint": "U+F078",
+          "use": "chevron-down"
+        },
+        {
+          "family": "Font Awesome",
+          "codepoint": "U+F04B",
+          "use": "play"
+        },
+        {
+          "family": "icomoon",
+          "codepoint": "U+E90C"
+        },
+        {
+          "family": "icomoon",
+          "codepoint": "U+E91B"
+        },
+        {
+          "family": "icomoon",
+          "codepoint": "U+E91D"
+        },
+        {
+          "family": "icomoon",
+          "codepoint": "U+E915"
+        },
+        {
+          "family": "icomoon",
+          "codepoint": "U+E91A"
+        },
+        {
+          "family": "Font Awesome",
+          "codepoint": "U+F110",
+          "use": "spinner"
+        }
+      ]
+    },
+    "systemComponents": [
+      {
+        "id": "site-header",
+        "kind": "header",
+        "pages": 10,
+        "fingerprint": "AZ logo · Nos médicaments · Aires thérapeutiques · (nav) · search · language DE/EN/FR/IT · login",
+        "evidence": "html-slice header on every page; ctas repeat"
+      },
+      {
+        "id": "breadcrumb",
+        "kind": "strip",
+        "pages": 9,
+        "fingerprint": "cmp-breadcrumb under header on all inner pages"
+      },
+      {
+        "id": "site-footer",
+        "kind": "footer",
+        "pages": 10,
+        "fingerprint": "AZ logo · 3 link columns · legal line · CH code / revision date",
+        "evidence": "vision check: footer identical on all 10 pages"
+      },
+      {
+        "id": "product-info-band",
+        "kind": "cta-band",
+        "pages": 5,
+        "fingerprint": "\"Informations utiles sur les produits\" heading + image + CTA",
+        "evidence": "headings repeat on home + 4 therapy-area pages"
+      },
+      {
+        "id": "pattrns-banner-tabs",
+        "kind": "sub-nav",
+        "pages": 5,
+        "fingerprint": "dark PATTRNS banner + pill tab sub-navigation",
+        "evidence": "vision check on 5 see-the-pattrns pages"
+      },
+      {
+        "id": "questions-cta",
+        "kind": "cta-band",
+        "pages": 5,
+        "fingerprint": "\"Vous avez des questions ?\" block",
+        "evidence": "vision check on 5 see-the-pattrns pages"
+      }
+    ],
+    "templates": [
+      {
+        "id": "home",
+        "type": "landing",
+        "pages": [
+          "fr-startseite"
+        ],
+        "archetype": "fr-startseite"
+      },
+      {
+        "id": "therapy-area",
+        "type": "program",
+        "pages": [
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz",
+          "fr-startseite-therapiegebiete-cvrm-diabetes",
+          "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+          "fr-startseite-therapiegebiete-ri-lupus"
+        ],
+        "archetype": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+      },
+      {
+        "id": "pattrns",
+        "type": "article",
+        "pages": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+        ],
+        "archetype": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+        "note": "see-the-pattrns-home carries a galaxy image hero; the other four open with the dark banner + tabs and a pink h3 headline"
+      }
+    ],
+    "modules": [
+      {
+        "id": "site-header",
+        "status": "candidate",
+        "instances": 10,
+        "pages": "all",
+        "signal": "header landmark + repeated CTA labels (Se connecter, DE/EN/FR/IT)"
+      },
+      {
+        "id": "breadcrumb",
+        "status": "candidate",
+        "instances": 9,
+        "pages": "all inner pages",
+        "signal": ".cmp-breadcrumb"
+      },
+      {
+        "id": "site-footer",
+        "status": "candidate",
+        "instances": 10,
+        "pages": "all",
+        "signal": "footer landmark + logo + 3 link columns"
+      },
+      {
+        "id": "hero-band",
+        "status": "candidate",
+        "instances": 5,
+        "pages": [
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz",
+          "fr-startseite-therapiegebiete-cvrm-diabetes",
+          "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+          "fr-startseite-therapiegebiete-ri-lupus",
+          "fr-startseite"
+        ],
+        "signal": "teaser with full-width image and white h1"
+      },
+      {
+        "id": "stat-tiles",
+        "status": "candidate",
+        "instances": 4,
+        "pages": [
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz",
+          "fr-startseite-therapiegebiete-cvrm-diabetes",
+          "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+          "fr-startseite-therapiegebiete-ri-lupus"
+        ],
+        "signal": "3-up icon tile row after intro (Incidence / Mortalité / …)"
+      },
+      {
+        "id": "image-text-row",
+        "status": "candidate",
+        "instances": 4,
+        "pages": [
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz",
+          "fr-startseite-therapiegebiete-cvrm-diabetes",
+          "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+          "fr-startseite-therapiegebiete-ri-lupus"
+        ],
+        "signal": "headings Symptômes / Diagnostic / Traitement repeat on 4 pages"
+      },
+      {
+        "id": "product-info-band",
+        "status": "candidate",
+        "instances": 5,
+        "pages": [
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz",
+          "fr-startseite-therapiegebiete-cvrm-diabetes",
+          "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+          "fr-startseite-therapiegebiete-ri-lupus",
+          "fr-startseite"
+        ],
+        "signal": "heading \"Informations utiles sur les produits\" repeats on 5 pages"
+      },
+      {
+        "id": "references",
+        "status": "candidate",
+        "instances": 9,
+        "pages": "all inner pages",
+        "signal": "references list before footer"
+      },
+      {
+        "id": "therapy-cards",
+        "status": "candidate",
+        "instances": 1,
+        "pages": [
+          "fr-startseite"
+        ],
+        "signal": "3 image cards with link lists under \"Nos domaines thérapeutiques\""
+      },
+      {
+        "id": "pattrns-banner-tabs",
+        "status": "candidate",
+        "instances": 5,
+        "pages": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+        ],
+        "signal": "dark banner + pill tab sub-navigation"
+      },
+      {
+        "id": "pattrns-cta-cards",
+        "status": "candidate",
+        "instances": 5,
+        "pages": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+        ],
+        "signal": "paired starry CTA cards"
+      },
+      {
+        "id": "questions-cta",
+        "status": "candidate",
+        "instances": 5,
+        "pages": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+        ],
+        "signal": "\"Vous avez des questions ?\" block"
+      }
+    ],
+    "breakpoints": {
+      "containerMaxWidth": "1180px",
+      "probeWidth": 2560,
+      "shellMaxWidth": null,
+      "caps": [
+        {
+          "kind": "module",
+          "px": 1220,
+          "via": "max-width",
+          "selector": "div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__content",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 1180,
+          "via": "max-width",
+          "selector": "div.root.container > div.cmp-container > div.experiencefragment > div.cmp-experiencefragment.cmp-experiencefragment--Header",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 1159,
+          "via": "fixed",
+          "selector": "div.text.text--b-space-0 > div.cmp-text > p > b",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 1130,
+          "via": "fixed",
+          "selector": "div.title.title--center > div.cmp-title > h4.cmp-title__text.cmp-title__text--h4 > span",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 1107,
+          "via": "fixed",
+          "selector": "div.title.title--center > div.cmp-title > h3.cmp-title__text.cmp-title__text--h3 > span",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 1086,
+          "via": "fixed",
+          "selector": "div.text.text--b-space-0 > div.cmp-text > p > b",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 999,
+          "via": "fixed",
+          "selector": "div.title.title--color-title-1 > div.cmp-title > h4.cmp-title__text.cmp-title__text--h4 > span",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 944,
+          "via": "fixed",
+          "selector": "div.cmp-experiencefragment.cmp-experiencefragment--Header > div.cmp-container > div.aem-Grid.aem-Grid--12 > div.megaMenu.aem-GridColumn--default--none",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 903,
+          "via": "fixed",
+          "selector": "div.aem-Grid.aem-Grid--12 > div.list.list--fixed-width > div.cmp-list__wrapper > ul.cmp-list",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 880,
+          "via": "fixed",
+          "selector": "div.cmp-experiencefragment.cmp-experiencefragment--footer > div.cmp-container > div.aem-Grid.aem-Grid--12 > div.container.responsivegrid",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 775,
+          "via": "fixed",
+          "selector": "div.title.title--center > div.cmp-title > h3.cmp-title__text.cmp-title__text--h3 > span",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 710,
+          "via": "fixed",
+          "selector": "div.title.title--center > div.cmp-title > h3.cmp-title__text.cmp-title__text--h3 > span",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 667,
+          "via": "fixed",
+          "selector": "div.title.title--color-title-1 > div.cmp-title > h2.cmp-title__text.cmp-title__text--h2 > span",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 577,
+          "via": "max-width",
+          "selector": "div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__content > div.cmp-teaser__description",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 488,
+          "via": "fixed",
+          "selector": "div.title.title--color-title-1 > div.cmp-title > h3.cmp-title__text.cmp-title__text--h3 > span",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 440,
+          "via": "fixed",
+          "selector": "#FooterLinks > div.aem-Grid.aem-Grid--9 > div.text.aem-GridColumn--tablet--12",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 387,
+          "via": "fixed",
+          "selector": "#container-0ca7a7cc4e > div.container.responsivegrid > div.cmp-container > div.teaser.teaser--image-top-text-bottom",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 298,
+          "via": "fixed",
+          "selector": "div.teaser.teaser--image-top-text-bottom > div.cmp-teaser > div.cmp-teaser__content > h4.cmp-teaser__title",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 273,
+          "via": "fixed",
+          "selector": "div.list.list--fixed-width > div.cmp-list__wrapper > ul.cmp-list > li.cmp-list__item",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 248,
+          "via": "fixed",
+          "selector": "#vivo-id-wrap",
+          "pages": [
+            "https://www.myastrazeneca.ch/fr/startseite.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+            "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "url": "https://www.myastrazeneca.ch/fr/startseite.html",
+          "section": 0,
+          "selector": "#restyle > div.root.container > div.cmp-container > div.languagenavigation",
+          "px": null
+        },
+        {
+          "url": "https://www.myastrazeneca.ch/fr/startseite.html",
+          "section": 1,
+          "selector": "#restyle > div.root.container > div.cmp-container > div.experiencefragment",
+          "px": 1180
+        },
+        {
+          "url": "https://www.myastrazeneca.ch/fr/startseite.html",
+          "section": 2,
+          "selector": "#restyle > div.root.container > div.cmp-container > div.container.responsivegrid",
+          "px": 1220
+        },
+        {
+          "url": "https://www.myastrazeneca.ch/fr/startseite.html",
+          "section": 3,
+          "selector": "#restyle > div.root.container > div.cmp-container > div.experiencefragment",
+          "px": 1180
+        },
+        {
+          "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+          "section": 0,
+          "selector": "#restyle > div.root.container > div.cmp-container > div.languagenavigation",
+          "px": null
+        },
+        {
+          "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+          "section": 1,
+          "selector": "#restyle > div.root.container > div.cmp-container > div.experiencefragment",
+          "px": 1180
+        },
+        {
+          "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+          "section": 2,
+          "selector": "#restyle > div.root.container > div.cmp-container > div.breadcrumb",
+          "px": null
+        },
+        {
+          "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+          "section": 3,
+          "selector": "#restyle > div.root.container > div.cmp-container > div.container.responsivegrid",
+          "px": 1220
+        },
+        {
+          "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+          "section": 4,
+          "selector": "#restyle > div.root.container > div.cmp-container > div.experiencefragment",
+          "px": 1180
+        },
+        {
+          "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+          "section": 0,
+          "selector": "body.page.basicpage > div.cmp-experiencefragment",
+          "px": null
+        },
+        {
+          "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+          "section": 1,
+          "selector": "body.page.basicpage > div.root.container",
+          "px": 1180
+        }
+      ],
+      "capRegister": [],
+      "capProvenance": {
+        "writtenBy": "skills/replica/scripts/cap-probe.mjs",
+        "writtenAt": "2026-10-07T09:20:31.362Z",
+        "baseWidth": 1440,
+        "urls": [
+          "https://www.myastrazeneca.ch/fr/startseite.html",
+          "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+          "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+        ]
+      }
+    }
+  }
+}

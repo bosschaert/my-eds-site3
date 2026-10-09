@@ -1,0 +1,721 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-10-07T12:04:28.404Z",
+  "settleMs": 5000,
+  "width": 1440,
+  "urls": [
+   "https://www.myastrazeneca.ch/fr/startseite.html",
+   "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+   "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html"
+  ],
+  "reachSource": "stardust/current/pages"
+ },
+ "pages": {
+  "/fr/startseite.html": {
+   "url": "https://www.myastrazeneca.ch/fr/startseite.html",
+   "status": 200,
+   "host": "www.myastrazeneca.ch",
+   "title": "Traitements du diabète, de l’asthme, de la BPCO et du cancer | MyAstraZeneca",
+   "forms": [
+    {
+     "name": "",
+     "action": null,
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:search-text-box"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [
+    {
+     "role": "dialog",
+     "heading": "Strictly Necessary Cookies",
+     "textLen": 23703,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    }
+   ],
+   "dialogCount": 2,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [
+    "https://tagrisso.ch/",
+    "https://www.myastrazeneca.ch/fr/user/login.html"
+   ],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "fr",
+    "hreflang": [],
+    "switcher": [
+     "https://support.microsoft.com/en-us/windows/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5947fc64d",
+     "https://support.apple.com/en-gb/guide/safari/sfri11471/mac",
+     "https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US",
+     "https://www.myastrazeneca.ch/de/startseite.html",
+     "https://www.myastrazeneca.ch/en/startseite.html"
+    ]
+   },
+   "cms": {
+    "utag_data": [
+     "page_name",
+     "page_section",
+     "page_subsection",
+     "visitor_time",
+     "server_time",
+     "page_path",
+     "page_content_type",
+     "visitor_auth_status",
+     "core_target_country",
+     "core_language",
+     "page_brand",
+     "visitor_azid",
+     "page_therapy_area",
+     "core_target_audience",
+     "savings_card_number",
+     "visitor_login_event",
+     "visitor_register_event",
+     "specialty",
+     "page_uniqueid",
+     "gdpr_site",
+     "campaign_source",
+     "campaign_medium",
+     "campaign_publisher",
+     "campaign_id",
+     "campaign_creative",
+     "campaign_placement",
+     "campaign_outcome",
+     "campaign_cmpid",
+     "campaign_assetid",
+     "cp.AWSALB"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "utag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 5,
+   "inlineFetch": false,
+   "mainText": 3974,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.myastrazeneca.ch": 64,
+    "rum.hlx.page": 1,
+    "policy.cookiereports.com": 2,
+    "tags.tiqcdn.com": 2
+   },
+   "thirdPartyHosts": [
+    "rum.hlx.page",
+    "policy.cookiereports.com",
+    "tags.tiqcdn.com"
+   ],
+   "scripts": [
+    "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+    "https://policy.cookiereports.com/b50c8635_panel-en-gb.js",
+    "https://policy.cookiereports.com/j/jquery.min.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/theme/brands/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/button.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/megamenu/resources/themes/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/megamenu.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/user.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/breadcrumb.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/searchbox/resources/themes/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/text/resources/themes/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/user/resources/themes/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/searchbox.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/text.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/mastercontentlist.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/teaser.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/commons.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/container.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/main.js",
+    "https://tags.tiqcdn.com/utag/astrazeneca/ch-weseportal/prod/utag.js",
+    "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=astrazeneca/ch-weseportal/202609071255&cb=1791374669742"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.myastrazeneca.ch",
+     "path": "/bin/secureCookies",
+     "query": [
+      "cookieName"
+     ],
+     "status": 200,
+     "contentType": "",
+     "example": "https://www.myastrazeneca.ch/bin/secureCookies"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 3974,
+   "mainEmptyAtLoad": false
+  },
+  "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html": {
+   "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+   "status": 200,
+   "host": "www.myastrazeneca.ch",
+   "title": "Insuffisance Rénale Chronique (IRC) Informations - MyAstrazeneca",
+   "forms": [
+    {
+     "name": "",
+     "action": null,
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:search-text-box"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [
+    {
+     "role": "dialog",
+     "heading": "Strictly Necessary Cookies",
+     "textLen": 23703,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    }
+   ],
+   "dialogCount": 2,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [
+    "https://tagrisso.ch/",
+    "https://www.myastrazeneca.ch/fr/user/login.html"
+   ],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "fr",
+    "hreflang": [],
+    "switcher": [
+     "https://support.microsoft.com/en-us/windows/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5947fc64d",
+     "https://support.apple.com/en-gb/guide/safari/sfri11471/mac",
+     "https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US",
+     "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+     "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html"
+    ]
+   },
+   "cms": {
+    "utag_data": [
+     "page_name",
+     "page_section",
+     "page_subsection",
+     "visitor_time",
+     "server_time",
+     "page_path",
+     "page_content_type",
+     "visitor_auth_status",
+     "core_target_country",
+     "core_language",
+     "page_brand",
+     "visitor_azid",
+     "page_therapy_area",
+     "core_target_audience",
+     "savings_card_number",
+     "visitor_login_event",
+     "visitor_register_event",
+     "specialty",
+     "page_uniqueid",
+     "gdpr_site",
+     "campaign_source",
+     "campaign_medium",
+     "campaign_publisher",
+     "campaign_id",
+     "campaign_creative",
+     "campaign_placement",
+     "campaign_outcome",
+     "campaign_cmpid",
+     "campaign_assetid",
+     "cp.AWSALB"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "utag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 5,
+   "inlineFetch": false,
+   "mainText": 9089,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.myastrazeneca.ch": 73,
+    "rum.hlx.page": 1,
+    "policy.cookiereports.com": 2,
+    "tags.tiqcdn.com": 2
+   },
+   "thirdPartyHosts": [
+    "rum.hlx.page",
+    "policy.cookiereports.com",
+    "tags.tiqcdn.com"
+   ],
+   "scripts": [
+    "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+    "https://policy.cookiereports.com/b50c8635_panel-en-gb.js",
+    "https://policy.cookiereports.com/j/jquery.min.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/megamenu.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/user.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/button.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/user/resources/themes/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/teaser.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/breadcrumb.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/main.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/socialfeatures.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/text.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/searchbox.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/commons.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/megamenu/resources/themes/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/theme/brands/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/socialfeatures/resources/themes/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/text/resources/themes/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/container.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/searchbox/resources/themes/wese-hcp-portal-v1.js",
+    "https://tags.tiqcdn.com/utag/astrazeneca/ch-weseportal/prod/utag.js",
+    "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=astrazeneca/ch-weseportal/202609071255&cb=1791374681802"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.myastrazeneca.ch",
+     "path": "/bin/secureCookies",
+     "query": [
+      "cookieName"
+     ],
+     "status": 200,
+     "contentType": "",
+     "example": "https://www.myastrazeneca.ch/bin/secureCookies"
+    },
+    {
+     "method": "POST",
+     "host": "www.myastrazeneca.ch",
+     "path": "/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz/jcr:content.socialFeaturesPost.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz/jcr:content.socialFeaturesPost.json"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [
+    {
+     "url": "https://www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz/jcr:content.socialFeaturesPost.json",
+     "body": "------WebKitFormBoundaryqMXel8o3pv1hpsW9\r\nContent-Disposition: form-data; name=\"userId\"\r\n\r\n\r\n------WebKitFormBoundaryqMXel8o3pv1hpsW9\r\nContent-Disposition: form-data; name=\"pagePath\"\r\n\r\n/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz\r\n------WebKitFormBoundaryqMXel8o3pv1hpsW9\r\nContent-Disposition: form-data; name=\"siteDomain\"\r\n\r\nhttps://www"
+    }
+   ],
+   "textAtLoad": 9089,
+   "mainEmptyAtLoad": false
+  },
+  "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html": {
+   "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+   "status": 200,
+   "host": "www.myastrazeneca.ch",
+   "title": "Amylose à transthyrétine (ATTR-CM) – Diagnostic et prise en charge | MyAstraZeneca",
+   "forms": [
+    {
+     "name": "",
+     "action": null,
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:search-text-box"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [
+    {
+     "role": "div",
+     "heading": "",
+     "textLen": 125,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "main",
+     "heading": "",
+     "textLen": 125,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "dialog",
+     "heading": "Strictly Necessary Cookies",
+     "textLen": 23703,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    }
+   ],
+   "dialogCount": 4,
+   "media": [],
+   "iframes": [],
+   "mounts": [],
+   "auth": [
+    "https://tagrisso.ch/",
+    "https://www.myastrazeneca.ch/fr/user/login.html"
+   ],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "fr",
+    "hreflang": [],
+    "switcher": [
+     "https://support.microsoft.com/en-us/windows/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5947fc64d",
+     "https://support.apple.com/en-gb/guide/safari/sfri11471/mac",
+     "https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US",
+     "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+     "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html"
+    ]
+   },
+   "cms": {
+    "utag_data": [
+     "page_name",
+     "page_section",
+     "page_subsection",
+     "visitor_time",
+     "server_time",
+     "page_path",
+     "page_content_type",
+     "visitor_auth_status",
+     "core_target_country",
+     "core_language",
+     "page_brand",
+     "visitor_azid",
+     "page_therapy_area",
+     "core_target_audience",
+     "savings_card_number",
+     "visitor_login_event",
+     "visitor_register_event",
+     "specialty",
+     "page_uniqueid",
+     "gdpr_site",
+     "campaign_source",
+     "campaign_medium",
+     "campaign_publisher",
+     "campaign_id",
+     "campaign_creative",
+     "campaign_placement",
+     "campaign_outcome",
+     "campaign_cmpid",
+     "campaign_assetid",
+     "cp.AWSALB"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "utag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 5,
+   "inlineFetch": false,
+   "mainText": 3330,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.myastrazeneca.ch": 73,
+    "rum.hlx.page": 1,
+    "policy.cookiereports.com": 2,
+    "tags.tiqcdn.com": 2
+   },
+   "thirdPartyHosts": [
+    "rum.hlx.page",
+    "policy.cookiereports.com",
+    "tags.tiqcdn.com"
+   ],
+   "scripts": [
+    "https://rum.hlx.page/.rum/@adobe/helix-rum-js@%5E2/dist/rum-standalone.js",
+    "https://policy.cookiereports.com/b50c8635_panel-en-gb.js",
+    "https://policy.cookiereports.com/j/jquery.min.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/megamenu.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/theme/brands/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/megamenu/resources/themes/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/user/resources/themes/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/selfcertification/resources/themes/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/socialfeatures.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/commons.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/main.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/button.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/user.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/searchbox.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/text.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/list.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/searchbox/resources/themes/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/selfcertification.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/teaser.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/socialfeatures/resources/themes/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/breadcrumb.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/text/resources/themes/wese-hcp-portal-v1.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/container.js",
+    "https://www.myastrazeneca.ch/etc.clientlibs/intelligentcontent/clientlibs/publish/components/list/resources/themes/wese-hcp-portal-v1.js",
+    "https://tags.tiqcdn.com/utag/astrazeneca/ch-weseportal/prod/utag.js",
+    "https://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=astrazeneca/ch-weseportal/202609071255&cb=1791374694263"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.myastrazeneca.ch",
+     "path": "/bin/secureCookies",
+     "query": [
+      "cookieName"
+     ],
+     "status": 200,
+     "contentType": "",
+     "example": "https://www.myastrazeneca.ch/bin/secureCookies"
+    },
+    {
+     "method": "POST",
+     "host": "www.myastrazeneca.ch",
+     "path": "/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home/jcr:content.socialFeaturesPost.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home/jcr:content.socialFeaturesPost.json"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [
+    {
+     "url": "https://www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home/jcr:content.socialFeaturesPost.json",
+     "body": "------WebKitFormBoundaryAmYZmZ9husnzpMKs\r\nContent-Disposition: form-data; name=\"userId\"\r\n\r\n\r\n------WebKitFormBoundaryAmYZmZ9husnzpMKs\r\nContent-Disposition: form-data; name=\"pagePath\"\r\n\r\n/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home\r\n------WebKitFormBoundaryAmYZmZ9husnzpMKs\r\nContent-Disposition: form-data; name=\"siteDomain\"\r\n\r\nhttps://www.myastra"
+    }
+   ],
+   "textAtLoad": 3330,
+   "mainEmptyAtLoad": false
+  }
+ },
+ "findings": [
+  {
+   "id": "a-cms-app-settings-object-utag-data",
+   "class": "A",
+   "feature": "CMS / app settings object utag_data",
+   "hint": "settings",
+   "evidence": [
+    "campaign_source",
+    "campaign_medium",
+    "campaign_publisher",
+    "campaign_id",
+    "campaign_creative",
+    "campaign_placement",
+    "campaign_outcome",
+    "campaign_cmpid"
+   ],
+   "pages": [
+    "/fr/startseite.html",
+    "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html"
+   ]
+  },
+  {
+   "id": "a-first-party-api-post-content-intelligentcontent-portals-hc",
+   "class": "A",
+   "feature": "first-party API POST /content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz/jcr:content.socialFeaturesPost.json",
+   "api": {
+    "method": "POST",
+    "path": "/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz/jcr:content.socialFeaturesPost.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "POST /content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz/jcr:content.socialFeaturesPost.json → 200"
+   ],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 10
+   }
+  },
+  {
+   "id": "a-first-party-api-post-content-intelligentcontent-portals-hc",
+   "class": "A",
+   "feature": "first-party API POST /content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home/jcr:content.socialFeaturesPost.json",
+   "api": {
+    "method": "POST",
+    "path": "/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home/jcr:content.socialFeaturesPost.json"
+   },
+   "hint": "api",
+   "evidence": [
+    "POST /content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home/jcr:content.socialFeaturesPost.json → 200"
+   ],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 10
+   }
+  },
+  {
+   "id": "f-form-text-search-text-box-no-action-js-wired-1-fields",
+   "class": "F",
+   "feature": "form \"text:search-text-box\" → no action (JS-wired) (1 fields)",
+   "signature": [
+    "text:search-text-box"
+   ],
+   "hint": "client-compute?",
+   "evidence": [
+    "text:search-text-box"
+   ],
+   "pages": [
+    "/fr/startseite.html",
+    "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html"
+   ]
+  },
+  {
+   "id": "i18n-locale-variants-en-us-en-gb-en-us-de-en",
+   "class": "I18N",
+   "feature": "locale variants en-us,en-gb,en-US,de,en",
+   "hint": "locale",
+   "evidence": [
+    "https://support.microsoft.com/en-us/windows/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5947fc64d",
+    "https://support.apple.com/en-gb/guide/safari/sfri11471/mac",
+    "https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US"
+   ],
+   "pages": [
+    "/fr/startseite.html",
+    "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html"
+   ]
+  },
+  {
+   "id": "i18n-locale-variants-en-us-en-gb-en-us-de-it",
+   "class": "I18N",
+   "feature": "locale variants en-us,en-gb,en-US,de,it",
+   "hint": "locale",
+   "evidence": [
+    "https://support.microsoft.com/en-us/windows/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5947fc64d",
+    "https://support.apple.com/en-gb/guide/safari/sfri11471/mac",
+    "https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US"
+   ],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-rum-hlx-page",
+   "class": "T",
+   "feature": "unknown third-party host rum.hlx.page",
+   "hint": "inspect",
+   "evidence": [
+    "rum.hlx.page"
+   ],
+   "pages": [
+    "/fr/startseite.html",
+    "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-policy-cookiereports-com",
+   "class": "T",
+   "feature": "unknown third-party host policy.cookiereports.com",
+   "hint": "inspect",
+   "evidence": [
+    "policy.cookiereports.com"
+   ],
+   "pages": [
+    "/fr/startseite.html",
+    "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html"
+   ]
+  },
+  {
+   "id": "t-tag-manager-tealium",
+   "class": "T",
+   "feature": "tag manager: Tealium",
+   "role": "tag manager: Tealium",
+   "hint": "tags",
+   "evidence": [
+    "tags.tiqcdn.com"
+   ],
+   "pages": [
+    "/fr/startseite.html",
+    "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html"
+   ]
+  },
+  {
+   "id": "x-sign-in-account-links",
+   "class": "X",
+   "feature": "sign-in / account links",
+   "hint": "decided-out",
+   "evidence": [
+    "https://tagrisso.ch/",
+    "https://www.myastrazeneca.ch/fr/user/login.html"
+   ],
+   "pages": [
+    "/fr/startseite.html",
+    "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html"
+   ]
+  }
+ ],
+ "reach": {
+  "pagesWithEvidence": 10,
+  "of": 10,
+  "endpoints": {
+   "GET www.myastrazeneca.ch/bin/secureCookies": 10,
+   "GET dpm.demdex.net/id": 3,
+   "GET astrazenecaeurope.d3.sc.omtrdc.net/id": 3,
+   "POST astrazenecauklimited.tt.omtrdc.net/rest/v1/delivery": 10,
+   "POST policy.cookiereports.com/consent/": 3,
+   "POST www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz/jcr:content.socialFeaturesPost.json": 1,
+   "POST www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/diabetes/jcr:content.socialFeaturesPost.json": 1,
+   "POST www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz/jcr:content.socialFeaturesPost.json": 1,
+   "POST www.google.com/ccm/collect": 5,
+   "POST www.google.com/rmkt/collect/{n}/": 5,
+   "POST px.ads.linkedin.com/wa/": 5,
+   "POST ad.doubleclick.net/ccm/s/collect": 3,
+   "GET www.googleadservices.com/pagead/conversion/{n}/": 3,
+   "POST www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis/jcr:content.getSecureCookies.json": 1,
+   "POST googleads.g.doubleclick.net/pagead/viewthroughconversion/{n}/": 3,
+   "GET www.google.com/pagead/1p-conversion/{n}/": 3,
+   "POST www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home/jcr:content.socialFeaturesPost.json": 1,
+   "POST www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home/jcr:content.getSecureCookies.json": 1,
+   "POST www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement/jcr:content.getSecureCookies.json": 1,
+   "POST www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/ri/lupus/jcr:content.socialFeaturesPost.json": 1
+  },
+  "searchFormPages": 0,
+  "formPages": 10,
+  "triggerPages": {}
+ }
+}

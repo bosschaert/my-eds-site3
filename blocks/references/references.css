@@ -1,0 +1,94 @@
+/* references — canon .text.text--small modules (lifted): Inter-Medium 12/20, flush notes,
+   the label line with the .text 10/16px margins */
+.references {
+  color: var(--text-color-body-1);
+  text-align: left;
+}
+
+.references :is(.ref-note, .ref-label, .ref-list),
+.references :is(.ref-note, .ref-label, .ref-list) :is(p, li) {
+  font-family: var(--font-medium);
+  font-size: var(--body-font-size-s);
+  line-height: var(--body-line-height-s);
+  margin: 0;
+}
+
+.references :is(b, strong) {
+  font-family: var(--font-bold);
+  font-weight: 700;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.references :is(sub, sup) {
+  font-size: 10px;
+  line-height: 0;
+}
+
+.references :is(ul, ol) {
+  padding: 4px 0 10px 20px;
+  list-style-position: outside;
+  overflow-wrap: anywhere;
+}
+
+@media (width <= 479px) {
+  .references :is(.ref-note, .ref-label, .ref-list) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .references .ref-label {
+    margin: 10px 0;
+  }
+}
+
+@media (width >= 768px) {
+  .references .ref-label {
+    margin: 16px 0;
+  }
+
+  .references :is(ul, ol) {
+    padding-bottom: 12px;
+  }
+}
+
+/* row spacing: every authored ROW after the first opens a spaced module (the canon .text
+   margins 10px / 16px from 768px, collapsing with a label's own margin); nodes inside one
+   row stay flush. space-bottom = the last module keeps its canon bottom margin
+   (source .text.text--small without text--b-space-0). */
+.references .ref-row-start {
+  margin-top: 10px;
+}
+
+.references.space-bottom {
+  margin-bottom: 10px;
+}
+
+@media (width >= 768px) {
+  .references .ref-row-start {
+    margin-top: 16px;
+  }
+
+  .references.space-bottom {
+    margin-bottom: 16px;
+  }
+}
+
+/* space = the module keeps BOTH canon .text margins (10px, 16px from 768px — the source
+   .text.text--small without --t/--b-space-0, PATTRNS template); band = the block is the only
+   module of its section, which carries the source's container--tb-space (20px) */
+main .section.references-container:has(.references.band) {
+  padding: 20px 0;
+}
+
+@media (width <= 479px) {
+  .references.space {
+    margin: 10px 0;
+  }
+}
+
+@media (width >= 768px) {
+  .references.space {
+    margin: 16px 0;
+  }
+}

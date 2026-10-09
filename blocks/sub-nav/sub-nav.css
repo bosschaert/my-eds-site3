@@ -1,0 +1,89 @@
+/* sub-nav — canon .list--fixed-width (list.theme.css, lifted): white 1180px strip, its 1px
+   bottom border extended to the viewport edges by the pseudo-elements; inline items 5px
+   apart, links Lexia 14/18 (14/16 from 768px), the current page in the interaction colour */
+main .section.sub-nav-container {
+  overflow: hidden;
+}
+
+.sub-nav {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 8px 0;
+  background-color: var(--bg-color-supporting-2);
+  border-bottom: 1px solid var(--border-color-1);
+}
+
+.sub-nav::before,
+.sub-nav::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color-supporting-2);
+  border-bottom: 1px solid var(--border-color-1);
+}
+
+.sub-nav::before {
+  left: -100%;
+}
+
+.sub-nav::after {
+  right: -100%;
+}
+
+.sub-nav .sub-nav-list {
+  display: flex;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.sub-nav .sub-nav-list :is(ul, ol) {
+  display: block;
+  overflow: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.sub-nav .sub-nav-list :is(ul, ol)::-webkit-scrollbar {
+  display: none;
+}
+
+.sub-nav .sub-nav-list li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px 0 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+.sub-nav .sub-nav-list a:any-link {
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: inherit;
+  text-decoration: none;
+}
+
+.sub-nav .sub-nav-list a[aria-current="page"] {
+  color: var(--text-color-interaction);
+  border-bottom: 1px solid var(--text-color-interaction);
+}
+
+@media (width >= 768px) {
+  .sub-nav .sub-nav-list a:any-link {
+    line-height: 16px;
+  }
+}

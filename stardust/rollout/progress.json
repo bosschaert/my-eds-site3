@@ -1,0 +1,565 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica handoff (C-deliver unit ledger)",
+    "createdAt": "2026-10-07T12:05:22.562Z",
+    "da": {
+      "org": "aemcoder",
+      "repo": "bf989f9e",
+      "branch": "main"
+    },
+    "previewHost": "main--bf989f9e--aemcoder.aem.page",
+    "liveHost": "main--bf989f9e--aemcoder.aem.live"
+  },
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "home",
+        "therapy-area",
+        "pattrns"
+      ],
+      "pages": 0,
+      "blocks": 2,
+      "gates": {
+        "360": {
+          "chromeParityDeltas": 2,
+          "headerCropPct": 1.42,
+          "footerCropPct": 0.28,
+          "geometry": "strip 29 / header 57 / footer 485 = live"
+        },
+        "1440": {
+          "chromeParityDeltas": 4,
+          "headerCropPct": 1.49,
+          "footerCropPct": 0,
+          "geometry": "strip 29 / header 57 / footer 249 = live"
+        },
+        "crop": "header ≤1.49%, footer ≤0.28% (bar 2%)",
+        "chrome": "6 font-inherent deltas (Roboto Slab substitute for Lexia)"
+      },
+      "startedAt": "2026-10-07T12:07:00.042Z",
+      "endedAt": "2026-10-07T12:37:43.209Z",
+      "verdict": "foundation: nav+footer live (published), chrome-parity 1440 4 deltas / 360 2 (font-inherent), crop header 1.49/1.42% footer 0.00/0.28%, lint ok (devDeps installed, 13 stylelint fixes), fonts Roboto Slab metric-matched (Lexia local-first)",
+      "scope": "runtime-contract, styles, fonts, favicon, header+footer blocks, /nav + /footer documents (published)",
+      "files": [
+        "stardust/runtime-contract.json",
+        "styles/styles.css",
+        "styles/fonts.css",
+        "fonts/*",
+        "favicon.ico",
+        "blocks/header/*",
+        "blocks/footer/*",
+        "content/nav.html",
+        "content/footer.html"
+      ]
+    },
+    "archetype-home": {
+      "status": "done",
+      "kind": "archetype",
+      "templates": [
+        "home"
+      ],
+      "pages": 1,
+      "blocks": 6,
+      "gates": {
+        "360": {
+          "archetypePct": 0.68,
+          "textPct": 1.21,
+          "heightDelta": 0,
+          "clipped": 0,
+          "contentMissing": 0,
+          "contentHidden": 0,
+          "unitsOff": 1,
+          "override": "units: card-3 heading box −5px, Roboto Slab for Lexia",
+          "headerCropPct": 1.42,
+          "footerCropPct": 0
+        },
+        "1440": {
+          "archetypePct": 0.48,
+          "textPct": 2.57,
+          "heightDelta": 0,
+          "clipped": 0,
+          "contentMissing": 0,
+          "contentHidden": 0,
+          "unitsOff": 1,
+          "override": "units: card-3 heading box −5px, Roboto Slab for Lexia",
+          "headerCropPct": 1.49,
+          "footerCropPct": 0
+        },
+        "crop": "header ≤1.49%, footer 0.00% (bar 2%)",
+        "chrome": "computed-style guard 1440+360 clean; 0 pageerror; 7 images visible"
+      },
+      "startedAt": "2026-10-07T12:42:31.069Z",
+      "endedAt": "2026-10-07T13:33:20.182Z",
+      "verdict": "archetype-home: pages 1/1 live, blocks 6, gate 1440 0.48% / 360 0.68%, Δh 0 / 0, clipped 0, content 0, requests 0",
+      "archetype": "fr-startseite",
+      "convert": [
+        "breadcrumb",
+        "hero",
+        "tile-grid",
+        "split-teaser",
+        "hidden-section",
+        "vivo-stamp"
+      ],
+      "reuse": [],
+      "blocksCreated": {
+        "breadcrumb": "template-slotted",
+        "hero": "template-slotted",
+        "hidden-section": "template-slotted",
+        "vivo-stamp": "template-slotted",
+        "tile-grid": "reconstructive",
+        "split-teaser": "reconstructive"
+      },
+      "urls": {
+        "preview": "https://main--bf989f9e--aemcoder.aem.page/fr/startseite",
+        "live": "https://main--bf989f9e--aemcoder.aem.live/fr/startseite"
+      },
+      "commits": [
+        "c956753",
+        "a64f922",
+        "d0d4776"
+      ]
+    },
+    "cluster-home": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "home"
+      ],
+      "pages": 0,
+      "blocks": 0,
+      "gates": {},
+      "startedAt": "2026-10-07T13:33:43.011Z",
+      "endedAt": "2026-10-07T13:33:43.011Z",
+      "verdict": "cluster-home: pages 0/0 (home template has no siblings; archetype /fr/startseite covers the template), blocks 0, requests 0",
+      "note": "home has no siblings"
+    },
+    "archetype-therapy-area": {
+      "status": "done",
+      "kind": "archetype",
+      "templates": [
+        "therapy-area"
+      ],
+      "pages": 1,
+      "blocks": 4,
+      "gates": {
+        "360": {
+          "archetypePct": 0.58,
+          "textPct": 1.12,
+          "heightDelta": 0,
+          "clipped": 0,
+          "contentMissing": 0,
+          "contentHidden": 0,
+          "unitsOff": 1,
+          "override": "units: reference-marker key artefact (ZWSP guard), served marker identical to live",
+          "headerCropPct": 1.42,
+          "footerCropPct": 0
+        },
+        "1440": {
+          "archetypePct": 0.48,
+          "textPct": 1.92,
+          "heightDelta": 0,
+          "clipped": 0,
+          "contentMissing": 0,
+          "contentHidden": 0,
+          "unitsOff": 1,
+          "override": "units: reference-marker key artefact (ZWSP guard), served marker identical to live",
+          "headerCropPct": 1.49,
+          "footerCropPct": 0
+        },
+        "crop": "header ≤1.49%, footer 0.00% (bar 2%)",
+        "chrome": "computed-style guard 1440+360 clean; 11 blocks loaded; 10 images visible; 0 pageerror"
+      },
+      "startedAt": "2026-10-07T13:34:03.875Z",
+      "endedAt": "2026-10-07T14:41:32.833Z",
+      "verdict": "archetype-therapy-area: pages 1/1 live, blocks 4, gate 1440 0.48% / 360 0.58%, Δh 0, clipped 0, content 0, requests 0",
+      "archetype": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+      "convert": [
+        "intro-media",
+        "social-features",
+        "image-text-band",
+        "references"
+      ],
+      "reuse": [
+        "breadcrumb",
+        "hero",
+        "tile-grid",
+        "split-teaser",
+        "vivo-stamp"
+      ],
+      "blocksCreated": {
+        "intro-media": "template-slotted",
+        "social-features": "template-slotted (static tier)",
+        "image-text-band": "reconstructive (variants text-image, text-left, space-md, space-desktop-md, space-desktop)",
+        "references": "reconstructive"
+      },
+      "urls": {
+        "preview": "https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz",
+        "live": "https://main--bf989f9e--aemcoder.aem.live/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz"
+      },
+      "commits": [
+        "548170c",
+        "f551e22",
+        "323180a",
+        "dc2e639",
+        "f7ee2a2"
+      ]
+    },
+    "cluster-therapy-area": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "therapy-area"
+      ],
+      "pages": 3,
+      "blocks": 9,
+      "gates": {
+        "360": {
+          "chronischeniereninsuffizienz": {
+            "pct": 0.73,
+            "dh": 0,
+            "clipped": 0,
+            "content": 0,
+            "pass": true
+          },
+          "diabetes": {
+            "pct": 1.14,
+            "dh": 0,
+            "clipped": 0,
+            "content": 0,
+            "pass": true
+          },
+          "lupus": {
+            "pct": 0.49,
+            "dh": 0,
+            "clipped": 0,
+            "content": 0,
+            "pass": true,
+            "override": "same units row"
+          }
+        },
+        "1440": {
+          "chronischeniereninsuffizienz": {
+            "pct": 0.41,
+            "dh": 0,
+            "clipped": 0,
+            "content": 0,
+            "pass": true
+          },
+          "diabetes": {
+            "pct": 0.38,
+            "dh": 0,
+            "clipped": 0,
+            "content": 0,
+            "pass": true
+          },
+          "lupus": {
+            "pct": 0.44,
+            "dh": 0,
+            "clipped": 0,
+            "content": 0,
+            "pass": true,
+            "override": "units off 1: live <h4>Diagnostic&nbsp;</h4> box 10px wider, NBSP trimmed by the pipeline, 0 visible px"
+          }
+        },
+        "crop": {
+          "header": "1.49% / 1.42%",
+          "footer": "0.00% / 0.00%"
+        },
+        "chrome": "computed-style guard clean on 3 pages, both widths"
+      },
+      "startedAt": "2026-10-07T15:06:29.996Z",
+      "endedAt": "2026-10-07T16:23:48.332Z",
+      "verdict": "cluster-therapy-area: pages 3/3 live, blocks 9 reused (+3 variant classes), gate 1440 0.41/0.38/0.44% / 360 0.73/1.14/0.49%, Δh 0, clipped 0, content 0, requests 0",
+      "slugs": [
+        "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz",
+        "fr-startseite-therapiegebiete-cvrm-diabetes",
+        "fr-startseite-therapiegebiete-ri-lupus"
+      ],
+      "reuse": [
+        "breadcrumb",
+        "hero",
+        "social-features",
+        "intro-media",
+        "tile-grid",
+        "image-text-band",
+        "references",
+        "split-teaser",
+        "vivo-stamp"
+      ],
+      "convert": [],
+      "variants": {
+        "image-text-band": [
+          "space",
+          "text-space"
+        ],
+        "references": [
+          "space-bottom"
+        ]
+      },
+      "urls": {
+        "preview": "https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/diabetes",
+        "live": "https://main--bf989f9e--aemcoder.aem.live/fr/startseite/therapiegebiete/cvrm/diabetes"
+      },
+      "commits": [
+        "61bcd07",
+        "09086fd",
+        "2d67f21"
+      ]
+    },
+    "archetype-pattrns": {
+      "status": "done",
+      "kind": "archetype",
+      "templates": [
+        "pattrns"
+      ],
+      "pages": 1,
+      "blocks": 5,
+      "gates": {
+        "360": {
+          "archetypePct": 1.57,
+          "textPct": 3.77,
+          "heightDelta": 0,
+          "clipped": 0,
+          "contentMissing": 0,
+          "contentHidden": 0,
+          "unitsOff": 5,
+          "unitsHidden": 2,
+          "override": "same + 360 sub-nav scroll offset 165 vs 178 (font), hidden flags on clipped sub-nav items as captured",
+          "headerCropPct": 1.18,
+          "footerCropPct": 0
+        },
+        "1440": {
+          "archetypePct": 0.72,
+          "textPct": 5.62,
+          "heightDelta": 0,
+          "clipped": 0,
+          "contentMissing": 0,
+          "contentHidden": 0,
+          "unitsOff": 4,
+          "override": "units: sub-nav label boxes dw −5/−6 (Roboto Slab for Lexia), span-vs-p pairing, inline-anchor link rows",
+          "headerCropPct": 1.43,
+          "footerCropPct": 0
+        },
+        "crop": "header ≤1.43%, footer 0.00% (bar 2%)",
+        "chrome": "computed-style guard 1440+360 clean; 21 sections, 0 pageerror, 13 images visible, video box 0 iframes at load, selfcert-modal display none"
+      },
+      "startedAt": "2026-10-07T16:27:15.883Z",
+      "endedAt": "2026-10-07T17:27:20.030Z",
+      "verdict": "archetype-pattrns: pages 1/1 live, blocks 5 (+2 extended, 4 reused), gate 1440 0.72% / 360 1.57%, Δh 0 / 0, clipped 0, content 0, requests 1",
+      "archetype": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+      "convert": [
+        "selfcert-modal",
+        "sub-nav",
+        "video-poster",
+        "cta-cards",
+        "questions-cta"
+      ],
+      "reuse": [
+        "breadcrumb",
+        "hero",
+        "image-text-band",
+        "references"
+      ],
+      "blocksCreated": {
+        "sub-nav": "template-slotted",
+        "selfcert-modal": "template-slotted",
+        "video-poster": "template-slotted",
+        "cta-cards": "reconstructive",
+        "questions-cta": "template-slotted"
+      },
+      "extended": {
+        "image-text-band": "band-action CTA slot + linked title (therapy pages unaffected)",
+        "references": "variants space, band"
+      },
+      "urls": {
+        "preview": "https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr",
+        "live": "https://main--bf989f9e--aemcoder.aem.live/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr"
+      },
+      "commits": [
+        "e8ac180",
+        "b120b01",
+        "7811a5a",
+        "f9b7e23",
+        "65b7641"
+      ],
+      "requests": [
+        "Roboto Slab uppercase 26px titles ~1% narrower than Lexia (MENAÇANTE POUR LA VIE wraps on live at 360); scoped letter-spacing override in cta-cards"
+      ],
+      "residuals": [
+        "360 text-heavy title bands ≤6.3% (font substitute)",
+        "gate-evidence lints the prototype-shaped migrated render: 1 P0 no-h1 there; delivered page has one h1"
+      ],
+      "decisions": [
+        "live page has no h1 → first section title authored <h1> on the h3 ramp (questions-cta lead)",
+        "no live meta description → Title only",
+        "HCP modal copy never captured → dismissed state only (dynamic-features row 10, owner)"
+      ],
+      "unitsSelectors": {
+        "therapy-card": ".cta-cards .card:not(.card-image)",
+        "sub-nav-item": ".sub-nav .sub-nav-list li",
+        "split-teaser-text-image": ".image-text-band.text-image .band-teaser"
+      }
+    },
+    "cluster-pattrns": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "pattrns"
+      ],
+      "pages": 4,
+      "blocks": 8,
+      "gates": {
+        "360": {
+          "home": 1.51,
+          "diagnosis": 1.12,
+          "treatement": 1.91,
+          "symptomes": 4.16,
+          "heightDelta": "0 (symptomes +2)",
+          "clipped": 0,
+          "contentMissing": 0,
+          "contentHidden": 0,
+          "override": "same",
+          "headerCropPct": 1.18,
+          "footerCropPct": 0
+        },
+        "1440": {
+          "home": 0.47,
+          "diagnosis": 0.64,
+          "treatement": 1.07,
+          "symptomes": 0.43,
+          "heightDelta": 0,
+          "clipped": 0,
+          "contentMissing": 0,
+          "contentHidden": 0,
+          "override": "units: sub-nav label boxes −5/−6 px (Roboto Slab for Lexia), <a><p> / h4>p heading-fragment pairing, bold title runs dw −8/−12",
+          "headerCropPct": 1.43,
+          "footerCropPct": 0
+        },
+        "crop": "header ≤1.43%, footer 0.00% (bar 2%)",
+        "chrome": "computed-style guard 4 pages × 2 widths clean; bordered card rect/padding = live at 1440; archetype re-checked at 360 after the shared questions-cta rule: 1.62% Δh 0"
+      },
+      "startedAt": "2026-10-07T17:53:46.031Z",
+      "endedAt": "2026-10-07T19:15:00.128Z",
+      "verdict": "cluster-pattrns: pages 4/4 live, blocks 8 reused (+3 cta-cards variant classes), gate 1440 0.47/0.64/1.07/0.43% / 360 1.51/1.12/1.91/4.16%, Δh 0 (symptomes 360 +2), clipped 0, content 0, requests 1",
+      "slugs": [
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes"
+      ],
+      "reuse": [
+        "breadcrumb",
+        "hero",
+        "sub-nav",
+        "selfcert-modal",
+        "cta-cards",
+        "questions-cta",
+        "references",
+        "social-features"
+      ],
+      "convert": [],
+      "variants": {
+        "cta-cards": [
+          "space-md",
+          "card-pretitle",
+          "cols-3-footnote"
+        ],
+        "questions-cta": [
+          "text-center h3 letter-spacing ≤767 (scoped font compensation)"
+        ]
+      },
+      "urls": {
+        "preview": "https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/",
+        "live": "https://main--bf989f9e--aemcoder.aem.live/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/"
+      },
+      "commits": [
+        "643d221",
+        "7306723",
+        "1107cf3",
+        "17ebc75",
+        "f48f659",
+        "677e03f"
+      ],
+      "requests": [
+        "Lexia-substitute width: section h3 wraps on symptomes (11.73% → 4.16% after scoped compensation)"
+      ],
+      "residuals": [
+        "treatement plain-band h3 on a 2px Lexia wrap edge (live stitch 7 lines, DOM probe 8; served follows the stitch)",
+        "symptomes 360 text 14.33% / Δh 2 on text-heavy centred bands (font substitute)"
+      ],
+      "decisions": [
+        "home social-features row above the sub-nav (live DOM order)",
+        "home h1 = questions band title on the h3 ramp",
+        "PDF CTAs fully-qualified to www.myastrazeneca.ch; smw.ch + target=_blank kept"
+      ]
+    },
+    "gate-all": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "home",
+        "therapy-area",
+        "pattrns"
+      ],
+      "pages": 10,
+      "blocks": 0,
+      "gates": {
+        "360": {
+          "pass": 2,
+          "overridePass": 8,
+          "fail": 0,
+          "pixelRange": "0.49–4.16%",
+          "heightDelta": "0 (symptomes +2)",
+          "clipped": 0,
+          "content": 0,
+          "unitsOff": "0–5 (font-shaped, documented)"
+        },
+        "1440": {
+          "pass": 2,
+          "overridePass": 8,
+          "fail": 0,
+          "pixelRange": "0.38–1.07%",
+          "heightDelta": "0",
+          "clipped": 0,
+          "content": 0,
+          "unitsOff": "0–5 (font-shaped, documented)"
+        },
+        "runs": [
+          "roster-gate1440b",
+          "roster-gate360b"
+        ],
+        "summaries": [
+          "stardust/replica/gates/all-1440/summary.json",
+          "stardust/replica/gates/all-360/summary.json"
+        ]
+      },
+      "startedAt": "2026-10-07T19:18:55Z",
+      "endedAt": "2026-10-07T20:08:22Z",
+      "verdict": "gate-all: pages 10/10 delivered at 1440 and 360 (2 PASS + 8 documented units overrides per width); pixel 1440 0.38–1.07% / 360 0.49–4.16%, Δh 0 (symptomes 360 +2), clipped 0, content MISSING+HIDDEN 0; units re-probed on fresh same-width origin inventories (IRC + diabetes 0 off at both widths); coverage gate written 10/10 rows",
+      "note": "roster published-origin gate, both widths, --skip-existing",
+      "decisions": "[\"unit-geometry caches the origin inventory per slug without a width key (stardust/current/measure/<slug>-units.json): the first roster pass at 1440 compared six 360-taken inventories (IRC 50, diabetes 40, lupus 48 off) → caches set aside under stardust/.work/replica/units-cache-*, each width re-run on a fresh inventory; shipped script left unedited, finding recorded for the report\",\"foundation requests (licensed Lexia woff) deferred to the owner: a commercial kit is never rehosted; scoped overrides stay; no frozen file changed, no archetype re-gate needed\"]"
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "home",
+        "therapy-area",
+        "pattrns"
+      ],
+      "pages": 10,
+      "blocks": 0,
+      "gates": {
+        "freeze": "foundation unchanged (21 files)",
+        "requests": "2 queued lines, both the licensed Lexia woff → deferred to owner, scoped overrides stay, no frozen file changed, no re-gate needed",
+        "coverage": "10/10 rows delivery.gate.pass true (gate-all)",
+        "live": "10/10 pages 200 on aem.live and aem.page; /nav /footer 200"
+      },
+      "startedAt": "2026-10-07T20:10:37Z",
+      "endedAt": "2026-10-07T20:11:17Z",
+      "verdict": "final: freeze clean 21 files, 2 foundation requests deferred to owner (licensed Lexia woff), coverage 10/10 gate pass, 10/10 pages + nav/footer live; C-deliver closed",
+      "note": "foundation-freeze check, foundation-requests applied once, update-coverage --gate, C-deliver end"
+    }
+  }
+}

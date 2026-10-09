@@ -1,0 +1,183 @@
+/* image-text-band — canon .teaser--text-left .cmp-teaser row model (teaser.theme.css) +
+   the trailing .text--b-space-0.text--t-space-0 modules (lifted) */
+.image-text-band .band-teaser {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.image-text-band .band-media {
+  width: 100%;
+  flex: 1;
+  padding: 0;
+}
+
+.image-text-band .band-media-mobile {
+  display: none;
+}
+
+.image-text-band .img {
+  line-height: 0;
+}
+
+.image-text-band .img picture {
+  display: block;
+}
+
+.image-text-band .img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-text-band .band-body {
+  color: var(--text-color-body-1);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+  padding: 24px 16px;
+  width: 100%;
+  gap: 16px;
+}
+
+.image-text-band .band-title :is(h2, h3, h4) {
+  overflow-wrap: anywhere;
+}
+
+/* a linked title (teaser--text-image on the PATTRNS template) keeps the body colour and is
+   a full-width block box like the source's <a><p> (unit-geometry row "link:<title>") */
+.image-text-band .band-title a:any-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* the primary CTA sits at the bottom of the body column (.cmp-teaser__action-container) */
+.image-text-band .band-action {
+  margin-top: auto;
+}
+
+.image-text-band .band-action p {
+  margin: 0;
+}
+
+.image-text-band .band-text {
+  color: var(--text-color-body-1);
+  text-align: left;
+  margin: 0;
+}
+
+.image-text-band :is(.band-desc, .band-text),
+.image-text-band :is(.band-desc, .band-text) :is(p, li) {
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+  margin: 0;
+}
+
+.image-text-band :is(.band-desc, .band-text) :is(ul, ol) {
+  padding: 4px 0 10px 20px;
+  list-style-position: outside;
+  overflow-wrap: anywhere;
+}
+
+.image-text-band :is(b, strong) {
+  font-family: var(--font-bold);
+  font-weight: 700;
+}
+
+.image-text-band :is(sub, sup) {
+  font-size: 10px;
+  line-height: 0;
+}
+
+/* text-left: the source's teaser--text-left — left-aligned, shrink-to-fit rows */
+.image-text-band.text-left .band-body :is(.band-title, .band-desc) {
+  text-align: left;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+/* band spacing variants (the source's container modifiers);
+   space = container--tb-space: 20px at EVERY width (no desktop override below) */
+.image-text-band.space,
+.image-text-band.space-md {
+  padding: 20px 0;
+}
+
+@media (width <= 767px) {
+  .image-text-band .band-media-mobile {
+    display: block;
+  }
+
+  .image-text-band .band-media:not(.band-media-single) .band-media-desktop {
+    display: none;
+  }
+}
+
+@media (width <= 479px) {
+  .image-text-band .band-text {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (width >= 768px) {
+  .image-text-band .band-teaser {
+    flex-direction: row;
+  }
+
+  .image-text-band :is(.band-desc, .band-text) :is(ul, ol) {
+    padding-bottom: 12px;
+  }
+
+  .image-text-band .band-media {
+    order: 0;
+    padding: 0 15px 0 0;
+    width: 50%;
+  }
+
+  .image-text-band .band-body {
+    order: 2;
+    width: 50%;
+    padding: 0 0 0 15px;
+    text-align: left;
+  }
+
+  .image-text-band.text-image .band-body {
+    order: 1;
+    padding: 0 15px 0 0;
+  }
+
+  .image-text-band.text-image .band-media {
+    order: 2;
+    padding: 0 0 0 15px;
+  }
+
+  .image-text-band.space-md,
+  .image-text-band.space-desktop-md {
+    padding: 40px 0;
+  }
+
+  .image-text-band.space-desktop {
+    padding: 20px 0;
+  }
+}
+
+/* trailing text modules: the canon .text margins (10px, 16px from 768px) between consecutive
+   modules — the source's text--t-space-0 / text--b-space-0 zero one side each, so two stacked
+   modules keep one collapsed margin; text-space = the FIRST module keeps its top margin
+   (source .text.text--b-space-0 right after the teaser) */
+.image-text-band .band-text + .band-text,
+.image-text-band.text-space .band-teaser + .band-text {
+  margin-top: 10px;
+}
+
+@media (width >= 768px) {
+  .image-text-band .band-text + .band-text,
+  .image-text-band.text-space .band-teaser + .band-text {
+    margin-top: 16px;
+  }
+}

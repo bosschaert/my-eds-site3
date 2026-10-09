@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Migration status</title>
+<link rel="stylesheet" href="spectrum.css">
+<style>
+  body { background-color: var(--spectrum-bg-app); }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 24px 64px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .meta { color: var(--spectrum-text-subdued); margin: 0 0 24px; }
+  .spectrum-panel { margin-bottom: 16px; }
+  .spectrum-panel-header { margin: 0; padding: 0 16px; }
+  .panel-body { padding: 16px; }
+  .panel-body > :last-child { margin-bottom: 0; }
+  .bar { height: 8px; border-radius: 9999px; background-color: var(--spectrum-gray-200); overflow: hidden; }
+  .bar span { display: block; height: 100%; background-color: var(--spectrum-accent-bg); }
+  .estimate { color: var(--spectrum-text-subdued); margin: 8px 0 0; }
+  ol.steps, ul.pages { list-style: none; padding: 0; margin: 0; }
+  ol.steps li, ul.pages li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; }
+  ol.steps li + li, ul.pages li + li { border-top: 1px solid var(--spectrum-gray-200); }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 8px; text-align: left; border-bottom: 1px solid var(--spectrum-gray-200); }
+  th { color: var(--spectrum-text-subdued); }
+  details summary { cursor: pointer; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Migration status</h1>
+    <span class="spectrum-badge spectrum-badge--positive">Ready</span>
+  </header>
+  <p class="meta">Source site: <a href="https://www.myastrazeneca.ch/">https://www.myastrazeneca.ch/</a><br>Preview site: <a href="https://main--bf989f9e--aemcoder.aem.page/">https://main--bf989f9e--aemcoder.aem.page/</a><br>Last updated: 2026-10-07 21:44 UTC</p>
+
+  <section class="spectrum-panel">
+    <h2 class="spectrum-panel-header">Your migration journey</h2>
+    <div class="panel-body">
+      <ol class="steps">
+        <li>Analyzing your site<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
+        <li>Capturing brand and design<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
+        <li>Rebuilding page templates<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
+        <li>Checking fidelity<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
+        <li>Migrating your pages<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="spectrum-panel">
+    <h2 class="spectrum-panel-header">Page templates</h2>
+    <div class="panel-body">
+      <table>
+        <thead><tr><th>Template</th><th>Pages</th><th>Desktop</th><th>Mobile</th><th>Status</th></tr></thead>
+        <tbody>
+        <tr><td>Home page</td><td>1</td><td>Looks right</td><td>Looks right</td><td><span class="spectrum-badge spectrum-badge--positive">Done</span></td></tr>
+        <tr><td>Therapy-area page</td><td>4</td><td>Looks right</td><td>Looks right</td><td><span class="spectrum-badge spectrum-badge--positive">Done</span></td></tr>
+        <tr><td>PATTRNS campaign page</td><td>5</td><td>Looks right</td><td>Looks right</td><td><span class="spectrum-badge spectrum-badge--positive">Done</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="spectrum-panel">
+    <h2 class="spectrum-panel-header">Pages migrated: 10 of 10</h2>
+    <div class="panel-body">
+      <details open>
+        <summary>Page list</summary>
+        <ul class="pages">
+          <li><a href="https://main--bf989f9e--aemcoder.aem.page/fr/startseite">Traitements du diabète, de l’asthme, de la BPCO et du cancer | MyAstraZeneca</a> <span class="spectrum-badge spectrum-badge--positive">Ready</span></li>
+          <li><a href="https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz">Insuffisance Rénale Chronique (IRC) Informations - MyAstrazeneca</a> <span class="spectrum-badge spectrum-badge--positive">Ready</span></li>
+          <li><a href="https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/diabetes">Symptômes, Diagnostic et Traitement du Diabète Sucré | MyAstraZeneca</a> <span class="spectrum-badge spectrum-badge--positive">Ready</span></li>
+          <li><a href="https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz">Insuffisance Cardiaque : Symptômes, Diagnostic et Traitement | MyAstraZeneca</a> <span class="spectrum-badge spectrum-badge--positive">Ready</span></li>
+          <li><a href="https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home">Amylose à transthyrétine (ATTR-CM) – Diagnostic et prise en charge | MyAstraZeneca</a> <span class="spectrum-badge spectrum-badge--positive">Ready</span></li>
+          <li><a href="https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis">Diagnostic de l’ATTR</a> <span class="spectrum-badge spectrum-badge--positive">Ready</span></li>
+          <li><a href="https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement">Traitement</a> <span class="spectrum-badge spectrum-badge--positive">Ready</span></li>
+          <li><a href="https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes">Symptômes de l’ATTR</a> <span class="spectrum-badge spectrum-badge--positive">Ready</span></li>
+          <li><a href="https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr">À propos de l’ATTR</a> <span class="spectrum-badge spectrum-badge--positive">Ready</span></li>
+          <li><a href="https://main--bf989f9e--aemcoder.aem.page/fr/startseite/therapiegebiete/ri/lupus">Lupus Érythémateux Systémique: Symptômes, Diagnostic et Traitement | MyAstraZeneca</a> <span class="spectrum-badge spectrum-badge--positive">Ready</span></li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <section class="spectrum-panel">
+    <h2 class="spectrum-panel-header">Progress: 100% complete</h2>
+    <div class="panel-body">
+      <div class="bar"><span style="width: 100%"></span></div>
+      <p class="estimate">Estimated time remaining: none, the migration is complete</p>
+    </div>
+  </section>
+
+  <section class="spectrum-panel">
+    <h2 class="spectrum-panel-header">What's happening now</h2>
+    <div class="panel-body"><p>All ten pages are live on the preview site and have passed every check: each one loads, matches your current site on desktop and mobile, its links resolve, and the healthcare-professional confirmation, video player, cookie consent and search box work as they do today. The quality review and the final completeness check have both passed. The migration is ready for your review.</p></div>
+  </section>
+
+  <section class="spectrum-panel">
+    <h2 class="spectrum-panel-header">What's next</h2>
+    <div class="panel-body"><p>Review the preview site; the summary report lists the few items that need your decision, such as the licensed brand font and links to pages outside this migration.</p></div>
+  </section>
+</main>
+</body>
+</html>

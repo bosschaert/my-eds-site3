@@ -1,0 +1,6 @@
+/* fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement — sibling variant of the PATTRNS archetype sheet: ONE rule the
+   archetype lacks. The 3-column wrap (.container--3-column-wrap.container--content-center) carries a footnote text component as
+   its 4th flex child after the three bordered step cards; live lays it out full width on its own row (measured 1440: 1180×80,
+   10px row gap, text-align left, no text margins). canon .text has 16px (≥768) / 10px (≤479) vertical margins — not in this
+   flex context on live. Nothing else differs. */
+.ta-grid__row > .text { flex: 1 1 100%; max-width: 100%; margin-top: 0; margin-bottom: 0; }

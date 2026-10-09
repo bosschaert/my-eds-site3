@@ -1,0 +1,208 @@
+{
+  "slug": "fr-startseite-therapiegebiete-ri-lupus",
+  "type": "program",
+  "renderBranch": "A'",
+  "template": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+  "modules": [
+    "breadcrumb",
+    "hero",
+    "intro-media",
+    "social-features",
+    "tile-grid",
+    "image-text-band",
+    "references",
+    "split-teaser",
+    "vivo-stamp"
+  ],
+  "slotsFilled": [
+    "breadcrumb-bar",
+    "page-body"
+  ],
+  "canonShas": {
+    "header": null,
+    "footer": null,
+    "css": "96b4c9ce45d5"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Lupus Érythémateux Systémique: Symptômes, Diagnostic et Traitement | MyAstraZeneca",
+    "description": "En savoir plus sur le lupus érythémateux systémique (LES), ses causes, symptômes variés et options de traitement pour une prise en charge optimale, pour les professionnels de la santé.",
+    "canonical": null,
+    "lang": "fr"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Lupus Érythémateux Systémique: Symptômes, Diagnostic et Traitement | MyAstraZeneca",
+    "description": "En savoir plus sur le lupus érythémateux systémique (LES), ses causes, symptômes variés et options de traitement pour une prise en charge optimale, pour les professionnels de la santé.",
+    "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/lupus.html"
+  },
+  "migratedAt": "2026-10-07T15:00:59Z",
+  "designMdSha": "d4f07e9192a1",
+  "designJsonSha": "55f3b9904db4",
+  "sourceCurrentSha": "cebb9c2b5ab2",
+  "sourceProposedSha": "7525d35da00a",
+  "fidelityTier": "sibling",
+  "archetypeSource": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+  "archetypeSha": "0ac33f34d838",
+  "variants": [
+    "tb-space",
+    "text-space space-bottom"
+  ],
+  "gatesPassed": [
+    "variance-probe",
+    "content-count",
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "media-reconcile",
+    "delivery-lint"
+  ],
+  "gateEvidence": {
+    "variance-probe": "sibling-variance 1440: content-driven heights only, no style-family delta, 0 variants",
+    "content-count": "content-diff: none — content + roles match (fr-startseite-therapiegebiete-ri-lupus-cc2.log)",
+    "pixel-gate-1440": "0.44%, height delta 0px, clipped 0, content MISSING 0 / HIDDEN 0 (stardust/replica/gates/all-1440/summary.md) [published regime] — documented override: DELIVERED (units residual documented): Diagnostic heading box 10px narrower: the live heading carries a trailing no-break space the pipeline trims; glyph positions identical [measured: units off 1 hidden 0 missing 0]",
+    "pixel-gate-360": "0.49%, height delta 0px, clipped 0, content MISSING 0 / HIDDEN 0 (stardust/replica/gates/all-360/summary.md) [published regime] — documented override: DELIVERED (units residual documented): Diagnostic heading box 10px narrower: the live heading carries a trailing no-break space the pipeline trims; glyph positions identical [measured: units off 1 hidden 0 missing 0]",
+    "delivery-lint": "0 P0 · 0 P1 · 2 P2 (fr-startseite-therapiegebiete-ri-lupus-lint.log)",
+    "content-fidelity": "content-presence (gate-all, origin root #container-91717e2862 = served main, banner dismissed, headless origin): MISSING 0 / HIDDEN 0 at 1440 and 360, clipped 0; 3 breadcrumb links EXTRA on the served side (outside the live content container by construction). Text anchors live = served to the pixel at 1440 (anchors.mjs: every landmark dx/dy/dw/dh 0, docH equal); 10/10 images same x/y/w/h. content-diff --profile generic advisory against the live DOM: 436 structural 🔴, all consent-banner vendor / language-strip / mega-menu links outside the page-content container; 0 page-content findings.",
+    "media-reconcile": "17 hosted (fr-startseite-therapiegebiete-ri-lupus-media.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 23,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/de/startseite/therapiegebiete/ri/lupus.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/therapiegebiete/ri/lupus.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/it/startseite/therapiegebiete/ri/lupus.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/startseite.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/wainzua.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/lokelma/resources.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/trixeo/uberblick.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/fasenra/egpa/summary.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/fasenra/asthma/indication.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/breast-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/truqap.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/calquence/calquence-overview.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/biliary-tract-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/uhcc.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/ovarian-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/endometrial-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/prostate-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/mibc.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/pancreatic-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/leberkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/haematologie.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/brustkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/contact-us.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/user/login.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/ri.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/startseite.html",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "fr/startseite/therapiegebiete/ri/lupus.html",
+  "outputPathDefault": null,
+  "sidecar": "fr/startseite/therapiegebiete/ri/lupus._meta.json",
+  "driverVersion": "1"
+}

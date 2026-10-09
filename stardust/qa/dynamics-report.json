@@ -1,0 +1,106 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics check",
+  "writtenAt": "2026-10-07T20:42:50.734Z",
+  "origin": "https://main--bf989f9e--aemcoder.aem.live",
+  "parity": "stardust/dynamics/parity.json"
+ },
+ "results": [
+  {
+   "feature": "HCP self-certification modal",
+   "id": "m-hcp-self-certification-modal",
+   "class": "M",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "2 × .selfcert-modal .selfcert-box .selfcert-actions a (min 2)",
+   "thirdParty": "",
+   "ms": 2894,
+   "environmentLimit": null
+  },
+  {
+   "feature": "HCP self-certification modal",
+   "id": "m-hcp-self-certification-modal",
+   "class": "M",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × .selfcert-modal .selfcert-overlay (min 1)",
+   "thirdParty": "",
+   "ms": 5853,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Kaltura player, click-to-play poster",
+   "id": "v-player-element-div",
+   "class": "V",
+   "status": "done",
+   "type": "video-plays",
+   "pass": true,
+   "detail": "iframe/video: true · playback requests 31 (ok)",
+   "thirdParty": "cdnapisec.kaltura.com:302×1 cdnapisec.kaltura.com:200×6 cfvod.kaltura.com:200×15 stats.kaltura.com:200×5 analytics.kaltura.com:200×4 :200×1",
+   "ms": 9629,
+   "environmentLimit": null
+  },
+  {
+   "feature": "RUM telemetry (rum.hlx.page)",
+   "id": "t-unknown-third-party-host-rum-hlx-page",
+   "class": "T",
+   "status": "done",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 10 page(s)",
+   "thirdParty": "",
+   "ms": 38546,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Tealium iQ + Adobe Target / Mouseflow / LinkedIn Insight",
+   "id": "t-tag-manager-tealium",
+   "class": "T",
+   "status": "interim",
+   "type": "consent-gate",
+   "pass": true,
+   "detail": "no request to 5 gated host pattern(s) before consent",
+   "thirdParty": "",
+   "ms": 5909,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Cookie Reports consent banner",
+   "id": "t-unknown-third-party-host-policy-cookiereports-com",
+   "class": "T",
+   "status": "interim",
+   "type": "consent-gate",
+   "pass": true,
+   "detail": "no request to 2 gated host pattern(s) before consent",
+   "thirdParty": "",
+   "ms": 6024,
+   "environmentLimit": null
+  },
+  {
+   "feature": "header search box",
+   "id": "f-form-text-search-text-box-no-action-js-wired-1-fields",
+   "class": "F",
+   "status": "interim",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × header form.site-search-form input.site-search-input (min 1)",
+   "thirdParty": "",
+   "ms": 1934,
+   "environmentLimit": null
+  },
+  {
+   "feature": "social-features favorite counter (socialFeaturesPost.json)",
+   "id": "a-first-party-api-post-content-intelligentcontent-portals-hc",
+   "class": "A",
+   "status": "interim",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × .social-features (min 1)",
+   "thirdParty": "",
+   "ms": 1940,
+   "environmentLimit": null
+  }
+ ]
+}

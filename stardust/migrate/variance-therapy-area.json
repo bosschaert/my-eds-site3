@@ -1,0 +1,689 @@
+{
+  "archetype": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+  "width": 1440,
+  "tolerance": 2,
+  "probes": {
+    "hero": ".teaser--home-hero",
+    "tile": ".teaser--image-top-text-bottom",
+    "band": ".teaser--text-image",
+    "title": ".cmp-title",
+    "text": ".cmp-text",
+    "crumb": ".cmp-breadcrumb__item"
+  },
+  "archetypeRaw": {
+    "sections": [],
+    "probes": {
+      "hero": {
+        "sel": ".teaser--home-hero",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 1440,
+            "h": 250
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(60, 66, 66)",
+          "padding": "0px 0px 0px 0px",
+          "font": "inter-regular 16px/24px 400",
+          "borderRadius": "0px",
+          "heading": "h1 lexia 56px/60px 400 rgb(255, 255, 255)",
+          "image": {
+            "w": 1440,
+            "h": 250
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 1,
+        "text": "Insuffisance cardiaque"
+      },
+      "tile": {
+        "sel": ".teaser--image-top-text-bottom",
+        "count": 3,
+        "first": {
+          "rect": {
+            "w": 387,
+            "h": 326
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(60, 66, 66)",
+          "padding": "0px 0px 0px 0px",
+          "font": "inter-regular 16px/24px 400",
+          "borderRadius": "8px",
+          "heading": "h4 lexia 26px/34px 400 rgb(60, 66, 66)",
+          "image": {
+            "w": 387,
+            "h": 156
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 1,
+        "text": "Incidence En Suisse, 200 000 personnes souffrent d’insuffisa"
+      },
+      "band": {
+        "sel": ".teaser--text-image",
+        "count": 3,
+        "first": {
+          "rect": {
+            "w": 1180,
+            "h": 280
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(60, 66, 66)",
+          "padding": "0px 0px 0px 0px",
+          "font": "inter-regular 16px/24px 400",
+          "borderRadius": "0px",
+          "heading": "h4 lexia 26px/34px 400 rgb(60, 66, 66)",
+          "image": {
+            "w": 575,
+            "h": 280
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 2,
+        "text": "Symptômes de l’insuffisance cardiaque Les symptômes cardinau"
+      },
+      "title": {
+        "sel": ".cmp-title",
+        "count": 2,
+        "first": {
+          "rect": {
+            "w": 1180,
+            "h": 50
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(131, 0, 81)",
+          "padding": "0px 0px 0px 0px",
+          "font": "inter-regular 16px/24px 400",
+          "borderRadius": "0px",
+          "heading": "h2 lexia 46px/50px 400 rgb(131, 0, 81)",
+          "image": null,
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 2,
+        "text": "L’insuffisance cardiaque en bref"
+      },
+      "text": {
+        "sel": ".cmp-text",
+        "count": 10,
+        "first": {
+          "rect": {
+            "w": 1180,
+            "h": 280
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(60, 66, 66)",
+          "padding": "0px 0px 0px 0px",
+          "font": "inter-regular 16px/24px 400",
+          "borderRadius": "0px",
+          "heading": null,
+          "image": null,
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 3,
+        "text": "L’insuffisance cardiaque est une maladie chronique et évolut"
+      },
+      "crumb": {
+        "sel": ".cmp-breadcrumb__item",
+        "count": 4,
+        "first": {
+          "rect": {
+            "w": 56,
+            "h": 28
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(60, 66, 66)",
+          "padding": "6px 0px 6px 0px",
+          "font": "lexia 14px/16px 400",
+          "borderRadius": "0px",
+          "heading": null,
+          "image": null,
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 2,
+        "text": "Home"
+      }
+    }
+  },
+  "siblings": [
+    {
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "tile",
+          "msg": "rect{h 326 → 384}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "band",
+          "msg": "rect{h 280 → 498}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "title",
+          "msg": "rect{h 50 → 100}"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "text",
+          "msg": "10 → 12 matches"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "text",
+          "msg": "rect{h 280 → 288}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".teaser--home-hero",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 251
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h1 lexia 56px/60px 400 rgb(255, 255, 255)",
+              "image": {
+                "w": 1440,
+                "h": 251
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Insuffisance rénale chronique"
+          },
+          "tile": {
+            "sel": ".teaser--image-top-text-bottom",
+            "count": 3,
+            "first": {
+              "rect": {
+                "w": 387,
+                "h": 384
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "8px",
+              "heading": "h4 lexia 26px/34px 400 rgb(60, 66, 66)",
+              "image": {
+                "w": 387,
+                "h": 156
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Mortalité L’IRC cause 1,2 million de décès par an dans le mo"
+          },
+          "band": {
+            "sel": ".teaser--text-image",
+            "count": 3,
+            "first": {
+              "rect": {
+                "w": 1180,
+                "h": 498
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h4 lexia 26px/34px 400 rgb(60, 66, 66)",
+              "image": {
+                "w": 575,
+                "h": 280
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Symptômes Bon nombre de patientes et patients sont asymptoma"
+          },
+          "title": {
+            "sel": ".cmp-title",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 1180,
+                "h": 100
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(131, 0, 81)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h2 lexia 46px/50px 400 rgb(131, 0, 81)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Les principales informations sur l’insuffisance rénale chron"
+          },
+          "text": {
+            "sel": ".cmp-text",
+            "count": 12,
+            "first": {
+              "rect": {
+                "w": 1180,
+                "h": 288
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 3,
+            "text": "L’insuffisance rénale chronique (IRC, ou CKD en anglais pour"
+          },
+          "crumb": {
+            "sel": ".cmp-breadcrumb__item",
+            "count": 4,
+            "first": {
+              "rect": {
+                "w": 56,
+                "h": 28
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "6px 0px 6px 0px",
+              "font": "lexia 14px/16px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Home"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/diabetes.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "tile",
+          "msg": "rect{h 326 → 375}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "band",
+          "msg": "rect{h 280 → 370}"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "title",
+          "msg": "rect{h 50 → 100}"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "text",
+          "msg": "10 → 11 matches"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "text",
+          "msg": "rect{h 280 → 240}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".teaser--home-hero",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 251
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h1 lexia 56px/60px 400 rgb(255, 255, 255)",
+              "image": {
+                "w": 1440,
+                "h": 251
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Diabète"
+          },
+          "tile": {
+            "sel": ".teaser--image-top-text-bottom",
+            "count": 3,
+            "first": {
+              "rect": {
+                "w": 387,
+                "h": 375
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "8px",
+              "heading": "h4 lexia 26px/34px 400 rgb(60, 66, 66)",
+              "image": {
+                "w": 387,
+                "h": 157
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Incidence En Suisse, environ 500 000 personnes vivent avec l"
+          },
+          "band": {
+            "sel": ".teaser--text-image",
+            "count": 3,
+            "first": {
+              "rect": {
+                "w": 1180,
+                "h": 370
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h4 lexia 26px/34px 400 rgb(60, 66, 66)",
+              "image": {
+                "w": 575,
+                "h": 280
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Symptômes Les principaux symptômes du diabète sucré sont les"
+          },
+          "title": {
+            "sel": ".cmp-title",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 1180,
+                "h": 100
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(131, 0, 81)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h2 lexia 46px/50px 400 rgb(131, 0, 81)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Le diabète en un coup d’œil: informations spécialisées et ac"
+          },
+          "text": {
+            "sel": ".cmp-text",
+            "count": 11,
+            "first": {
+              "rect": {
+                "w": 1180,
+                "h": 240
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 3,
+            "text": "Le diabète sucré est une maladie métabolique chronique. Elle"
+          },
+          "crumb": {
+            "sel": ".cmp-breadcrumb__item",
+            "count": 4,
+            "first": {
+              "rect": {
+                "w": 56,
+                "h": 28
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "6px 0px 6px 0px",
+              "font": "lexia 14px/16px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Home"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/lupus.html",
+      "findings": [
+        {
+          "kind": "PROBE",
+          "probe": "band",
+          "msg": "rect{h 280 → 546}"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "text",
+          "msg": "10 → 11 matches"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "text",
+          "msg": "rect{h 280 → 288}"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".teaser--home-hero",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 250
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h1 lexia 56px/60px 400 rgb(255, 255, 255)",
+              "image": {
+                "w": 1440,
+                "h": 250
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Lupus érythémateux systémique"
+          },
+          "tile": {
+            "sel": ".teaser--image-top-text-bottom",
+            "count": 3,
+            "first": {
+              "rect": {
+                "w": 387,
+                "h": 326
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "8px",
+              "heading": "h4 lexia 26px/34px 400 rgb(60, 66, 66)",
+              "image": {
+                "w": 387,
+                "h": 156
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Caractéristique Le LES est une maladie auto-immune chronique"
+          },
+          "band": {
+            "sel": ".teaser--text-image",
+            "count": 3,
+            "first": {
+              "rect": {
+                "w": 1180,
+                "h": 546
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h4 lexia 26px/34px 400 rgb(60, 66, 66)",
+              "image": {
+                "w": 575,
+                "h": 280
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Symptômes Les manifestations cliniques et le profil d’attein"
+          },
+          "title": {
+            "sel": ".cmp-title",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 1180,
+                "h": 50
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(131, 0, 81)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h2 lexia 46px/50px 400 rgb(131, 0, 81)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Le lupus, une maladie aux différents visages"
+          },
+          "text": {
+            "sel": ".cmp-text",
+            "count": 11,
+            "first": {
+              "rect": {
+                "w": 1180,
+                "h": 288
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 3,
+            "text": "Le lupus érythémateux systémique (LES) est une maladie auto-"
+          },
+          "crumb": {
+            "sel": ".cmp-breadcrumb__item",
+            "count": 4,
+            "first": {
+              "rect": {
+                "w": 56,
+                "h": 28
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "6px 0px 6px 0px",
+              "font": "lexia 14px/16px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Home"
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "siblings": 3,
+    "varying": 3,
+    "probesVarying": [
+      "tile",
+      "band",
+      "title",
+      "text"
+    ]
+  }
+}

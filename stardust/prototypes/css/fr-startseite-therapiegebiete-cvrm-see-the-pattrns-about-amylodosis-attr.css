@@ -1,0 +1,99 @@
+/* fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr (PATTRNS template, pageType article) — NEW page
+   modules only. Chrome, type ramp, .text/.section-title, .ta-card (image-top-text-bottom teaser), hero and icon font come from
+   canon.css; .split-teaser (text-image teaser) from the therapy-area slug sheet (imported before this one).
+   Values lifted from: container.theme.css (--fixed, --tb-space, --tb-space-md, --bgColor-supporting-1, --2-column-wrap,
+   --content-center), title.theme.css (--center, --b-space, --b-space-md), list.theme.css (.list--fixed-width sub-nav),
+   video.css + video.theme.css (Kaltura poster box), teaser.theme.css (--text-center, --border-base, --bgColor-supporting-1),
+   text.theme.css (--center), button.theme.css (--center), image.css + publish/main.css (.cmp-image__image width 100%,
+   desktop/mobile rendition toggle at 767). Live rects confirmed in stardust/replica/measure/<slug>-live.json (1440 + 360).
+   Box model: border-box everywhere (source universal reset); the sub-nav wrapper pseudo-elements are content-box as authored. */
+
+/* ---- section containers (.container.container--fixed[.container--tb-space|--tb-space-md][.container--bgColor-supporting-1]) ---- */
+.sec { width: 100%; }
+.sec--tb { padding-top: 20px; padding-bottom: 20px; }
+.sec--tb-md { padding-top: 20px; padding-bottom: 20px; }
+.sec--bg { background-color: var(--bgColor-supporting-1); }
+.sec__inner { max-width: 100%; width: 100%; margin: auto; padding: 0; }
+@media screen and (min-width: 768px) { .sec--tb-md { padding-top: 40px; padding-bottom: 40px; } }
+@media screen and (min-width: 768px) and (max-width: 1279px) { .sec__inner { padding-left: 20px; padding-right: 20px; } }
+@media screen and (min-width: 1280px) { .sec__inner { max-width: var(--container-max); } }
+
+/* 2-column wrap (.container--2-column-wrap > .cmp-container): flex row, 20px gap, 50% columns from 768 up */
+.sec__grid--2 { display: flex; flex-wrap: wrap; gap: 20px; }
+.sec__grid--2 > * { flex: 1 1 100%; max-width: 100%; margin: 0; }
+.sec__grid--2 .ta-card { height: 100%; }
+.sec__grid--2 .ta-card__media { padding: 0; flex: 0 1 auto; }
+.sec__grid--2 .ta-card__title { word-break: break-word; }
+@media screen and (min-width: 768px) { .sec__grid--2 > * { flex: 1 1 calc(50% - 10px); max-width: calc(50% - 10px); } }
+/* 3-column wrap = canon .ta-grid__row/.ta-grid__item; content-center (.container--content-center .cmp-container) */
+.ta-grid__row--center { text-align: center; justify-content: center; }
+
+/* ---- title modifiers (title.theme.css) ---- */
+.section-title--center { text-align: center; }
+.section-title--b-space { padding-bottom: 20px; }
+.section-title--b-space-md { padding-bottom: 20px; }
+@media screen and (min-width: 768px) { .section-title--b-space-md { padding-bottom: 40px; } }
+
+/* ---- text modifiers (text.theme.css) ---- */
+.text--center .text__body { text-align: center; }
+
+/* ---- button wrapper (button.theme.css) ---- */
+.button--center { text-align: center; }
+
+/* ---- image component (.image > .cmp-image > img.cmp-image--desktop + img.cmp-image--mobile) ---- */
+.img-block .img__el { width: 100%; }
+@media only screen and (max-width: 767px) {
+  .img:has(.img__el--mobile) .img__el--desktop { display: none; }
+  .img:has(.img__el--mobile) .img__el--mobile { display: block; }
+}
+
+/* ---- image-top-text-bottom teaser variants on this template (teaser.theme.css) ---- */
+.ta-card--plain .ta-card__body { background-color: rgba(0, 0, 0, 0); } /* no --bgColor-supporting-1 modifier on these cards (canon .ta-card__body bakes it in) */
+.ta-card--border { border: 1px solid var(--borderColor-2); }            /* .teaser--border-base .cmp-teaser */
+.ta-card__action { margin-top: auto; }                                   /* .cmp-teaser__action-container */
+.ta-card__media-link { display: inline; color: inherit; }
+
+/* ---- HCP self-certification fragment: captured (dismissed) state is an empty wrapper ---- */
+.selfcert, .selfcert__inner, .selfcert__modal { display: block; }
+
+/* ---- sub-navigation (.list.list--fixed-width > .cmp-list__wrapper > ul.cmp-list) ---- */
+.sub-nav { max-width: 100vw; overflow: hidden; }
+.sub-nav__wrap { display: flex; background-color: var(--bgColor-supporting-2); padding: 8px 0; border-bottom: 1px solid var(--borderColor-1); position: relative; width: 100%; max-width: 1180px; margin: 0 auto; overflow: visible; }
+.sub-nav__wrap::before, .sub-nav__wrap::after { background-color: var(--bgColor-supporting-2); box-sizing: content-box; content: ""; position: absolute; border-bottom: 1px solid var(--borderColor-1); width: 100%; height: 100%; top: 0; }
+.sub-nav__wrap::before { left: -100%; right: unset; }
+.sub-nav__wrap::after { right: -100%; left: unset; }
+.sub-nav__list { overflow: auto; scrollbar-width: none; scroll-behavior: smooth; display: block; white-space: nowrap; -ms-overflow-style: none; -webkit-overflow-scrolling: touch; list-style: none; margin: 0; padding: 0; }
+.sub-nav__list::-webkit-scrollbar { display: none; }
+.sub-nav__item { display: inline-block; list-style-type: none; }
+.sub-nav__link { display: inline-block; padding: 10px 16px; font-family: "Lexia"; font-size: 14px; line-height: 18px; font-weight: 400; letter-spacing: normal; margin: 0; text-decoration: none; }
+.sub-nav__item--active .sub-nav__link { color: var(--textColor-interaction); border-bottom: 1px solid var(--textColor-interaction); }
+@media screen and (min-width: 768px) { .sub-nav__link { line-height: 16px; } }
+
+/* ---- Kaltura video, captured POSTER state (video.css + video.theme.css): the embed script sets the player height to
+   width * 9/16 (inline style, 664px @1440 / 203px @360) — mirrored by js/video.js; the thumbnail stretches to that box
+   (width/height 100%, object-fit fill as on live); the play glyph has no painted content (no --playicon modifier) ---- */
+.video__player, .video__content { width: 100%; padding: 0; }
+.video__video { position: relative; cursor: pointer; width: 100%; height: 100%; text-align: center; }
+.video__thumbnail { width: 100%; height: 100%; }
+.video__playicon { font-family: "icomoon" !important; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; display: block; position: absolute; font-size: 45px; width: auto; height: auto; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; margin: 0; padding: 0; background: rgba(0, 0, 0, 0); }
+.video__playicon:before { content: ""; display: none; }
+.video__item-text { cursor: inherit; }
+@media screen and (min-width: 768px) { .video__playicon { font-size: 68px; } }
+
+/* ---- lifted after gate iter1 (unit-geometry + live measure of #teaser-b96acbf36b) ---- */
+/* brand sheet @14036: h4 sub/sup are 16px (canon only carries the h1–h3 26px rule) */
+h4 sub, h4 sup, h4 *:not(sub, sup, b) sub, h4 *:not(sub, sup, b) sup { font-size: 16px; line-height: 0; }
+/* teaser.theme @4444: `.cmp-teaser__description b *` inherits size/line-height — a <sup> inside <b> renders 16/24 (bullet lines 30.33px tall) */
+.ta-card__desc b *, .split-teaser__desc b * { font-family: "Inter-Bold"; font-size: inherit; line-height: inherit; }
+/* centred, shrink-wrapped children (margin auto in the column flex) belong to the --text-center modifier only (teaser.theme @6515);
+   canon .ta-card__body > * bakes it — plain cards keep full-width children with the content's text-align */
+.ta-card:not(.ta-card--center) .ta-card__body > * { margin-left: 0; margin-right: 0; }
+
+/* ---- observed interaction states (stardust/replica/motion/<slug>.json, 1440: 8 hover families + poster click) ----
+   FIRED: primary CTA of the text-image teaser (teaser.theme @495 .teaser .cmp-teaser__action-link:hover → opacity .8) and the
+   contact button (button.theme @495 .button .cmp-button:hover → opacity .8); colours/border unchanged, no transition (duration 0).
+   DEAD on this page (no measured diff, not implemented): sub-nav link hover (list.theme rule present, no diff), teaser title
+   links, bgColor-card CTAs (same source rule, probe read no change — kept dead as measured), border cards, breadcrumb link,
+   video poster hover; poster click produced no class/transform mutation (Kaltura embed is not replicated — captureState). */
+.split-teaser--text-image .split-teaser__action .btn-primary:hover,
+.button .btn-primary:hover { background-color: var(--button-primary-bgColor); border-color: var(--button-primary-borderColor); color: var(--button-primary-textColor); opacity: .8; text-decoration: none; }

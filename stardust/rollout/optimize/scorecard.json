@@ -1,0 +1,105 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/autofix-aem",
+    "writtenAt": "2026-10-07T21:39:00.843Z",
+    "stardustVersion": "0.0.0"
+  },
+  "current": {
+    "runId": "autofix-2026-10-07T21:39:00.843Z",
+    "at": "2026-10-07T21:39:00.843Z",
+    "overall": 100,
+    "dimensions": {
+      "brand-tensions": null,
+      "design-ux": null,
+      "accessibility": null,
+      "seo": 100,
+      "content-conversion": null,
+      "ai-search": 100,
+      "cross-page": 100
+    },
+    "severity": {
+      "P1": 0,
+      "P2": 0,
+      "P3": 0
+    },
+    "fixed": {
+      "P1": 0,
+      "P2": 0,
+      "P3": 0
+    }
+  },
+  "history": [
+    {
+      "runId": "run-1",
+      "at": "2026-10-07T21:36:49.824Z",
+      "overall": 99,
+      "dimensions": {
+        "brand-tensions": null,
+        "design-ux": null,
+        "accessibility": null,
+        "seo": 100,
+        "content-conversion": null,
+        "ai-search": 100,
+        "cross-page": 96
+      },
+      "severity": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 1
+      },
+      "fixed": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      }
+    },
+    {
+      "runId": "run-2",
+      "at": "2026-10-07T21:38:11.804Z",
+      "overall": 100,
+      "dimensions": {
+        "brand-tensions": null,
+        "design-ux": null,
+        "accessibility": null,
+        "seo": 100,
+        "content-conversion": null,
+        "ai-search": 100,
+        "cross-page": 100
+      },
+      "severity": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      },
+      "fixed": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      }
+    },
+    {
+      "runId": "autofix-2026-10-07T21:39:00.843Z",
+      "at": "2026-10-07T21:39:00.843Z",
+      "overall": 100,
+      "dimensions": {
+        "brand-tensions": null,
+        "design-ux": null,
+        "accessibility": null,
+        "seo": 100,
+        "content-conversion": null,
+        "ai-search": 100,
+        "cross-page": 100
+      },
+      "severity": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      },
+      "fixed": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      }
+    }
+  ]
+}

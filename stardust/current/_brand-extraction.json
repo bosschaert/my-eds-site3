@@ -1,0 +1,604 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:extract",
+    "writtenAt": "2026-10-07T09:18:38.436Z",
+    "readArtifacts": [
+      "stardust/current/_computed-styles.json",
+      "stardust/current/_crawl-log.json",
+      "stardust/current/assets/css/main.css",
+      "stardust/current/assets/css/wese-hcp-portal-v1.css",
+      "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz.json",
+      "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-diabetes.json",
+      "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz.json",
+      "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr.json",
+      "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis.json",
+      "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home.json",
+      "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes.json",
+      "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement.json",
+      "stardust/current/pages/fr-startseite-therapiegebiete-ri-lupus.json",
+      "stardust/current/pages/fr-startseite.json"
+    ],
+    "synthesizedInputs": [],
+    "stardustVersion": "0.27.0+e68296b7aee4",
+    "notes": [
+      "Palette and type aggregated across all 10 captured pages at 1440 and 360 (style-census).",
+      "Fonts: Lexia (commercial, Dalton Maag — licensed webfont self-hosted by the source), Inter, Montserrat (open), icomoon + Font Awesome icon fonts; files under assets/fonts/.",
+      "Radius: element mode 4px (buttons/inputs), area mode 8px (cards/tiles); no shadows or gradients measured.",
+      "Cookie Reports banner and HCP self-certification modal dismissed before capture (crawl --dismiss)."
+    ]
+  },
+  "site": {
+    "name": "myAstraZeneca (Suisse)",
+    "tagline": "Bienvenue sur myAstraZeneca!",
+    "originUrl": "https://www.myastrazeneca.ch/"
+  },
+  "origins": [
+    {
+      "origin": "https://www.myastrazeneca.ch",
+      "role": "primary",
+      "pages": 10
+    }
+  ],
+  "logo": {
+    "source": "img-logo-class",
+    "url": "https://www.myastrazeneca.ch/content/experience-fragments/intelligentcontent/portals/hcp/ch/fr/Header/master/_jcr_content/root/image.coreimg.svg/1724337955585/astrazeneca-logo.svg",
+    "file": "stardust/current/assets/logo.svg",
+    "alt": "Logo",
+    "width": 165,
+    "height": 40
+  },
+  "favicon": {
+    "file": "stardust/current/assets/favicon.ico"
+  },
+  "palette": [
+    {
+      "role": "primary",
+      "hex": "#D0006F",
+      "name": "magenta",
+      "usage": "buttons, links hover, title accents, tabs on",
+      "sources": [
+        {
+          "file": "stardust/current/_computed-styles.json",
+          "selector": ":root",
+          "prop": "--bgColor-core-3"
+        },
+        {
+          "file": "stardust/current/_computed-styles.json",
+          "selector": ":root",
+          "prop": "--button-primary-bgColor"
+        }
+      ]
+    },
+    {
+      "role": "primary-deep",
+      "hex": "#830051",
+      "name": "mulberry",
+      "usage": "title color 1, core background 1",
+      "sources": [
+        {
+          "file": "stardust/current/_computed-styles.json",
+          "selector": ":root",
+          "prop": "--textColor-title-1"
+        }
+      ]
+    },
+    {
+      "role": "primary-darkest",
+      "hex": "#4F0031",
+      "name": "aubergine",
+      "usage": "core background 2 (dark bands)",
+      "sources": [
+        {
+          "file": "stardust/current/_computed-styles.json",
+          "selector": ":root",
+          "prop": "--bgColor-core-2"
+        }
+      ]
+    },
+    {
+      "role": "text",
+      "hex": "#3C4242",
+      "name": "graphite",
+      "usage": "body text, headings, tertiary button border",
+      "sources": [
+        {
+          "file": "stardust/current/_computed-styles.json",
+          "selector": ":root",
+          "prop": "--textColor-body-1"
+        },
+        {
+          "file": "stardust/current/_computed-styles.json",
+          "selector": "h1..h4,p",
+          "prop": "color"
+        }
+      ]
+    },
+    {
+      "role": "background",
+      "hex": "#FFFFFF",
+      "name": "white",
+      "usage": "page background, cards",
+      "sources": [
+        {
+          "file": "stardust/current/_computed-styles.json",
+          "selector": "body",
+          "prop": "background-color"
+        }
+      ]
+    },
+    {
+      "role": "surface",
+      "hex": "#EBEFEE",
+      "name": "mist",
+      "usage": "supporting background bands, borders 1, tabs off",
+      "sources": [
+        {
+          "file": "stardust/current/_computed-styles.json",
+          "selector": ":root",
+          "prop": "--bgColor-supporting-1"
+        }
+      ]
+    },
+    {
+      "role": "border",
+      "hex": "#D8DFDE",
+      "name": "mist-dark",
+      "usage": "borders 2, table header",
+      "sources": [
+        {
+          "file": "stardust/current/_computed-styles.json",
+          "selector": ":root",
+          "prop": "--borderColor-2"
+        }
+      ]
+    },
+    {
+      "role": "accent",
+      "hex": "#F0AB00",
+      "name": "mustard",
+      "usage": "secondary background 1 (rare)",
+      "sources": [
+        {
+          "file": "stardust/current/_computed-styles.json",
+          "selector": ":root",
+          "prop": "--bgColor-secondary-1"
+        }
+      ]
+    },
+    {
+      "role": "accent-2",
+      "hex": "#9DB0AC",
+      "name": "sage",
+      "usage": "secondary background 2 (rare)",
+      "sources": [
+        {
+          "file": "stardust/current/_computed-styles.json",
+          "selector": ":root",
+          "prop": "--bgColor-secondary-2"
+        }
+      ]
+    },
+    {
+      "role": "muted",
+      "hex": "#656969",
+      "name": "slate",
+      "usage": "labels, placeholders",
+      "sources": [
+        {
+          "file": "stardust/current/_computed-styles.json",
+          "selector": ":root",
+          "prop": "--textColor-label-2"
+        }
+      ]
+    },
+    {
+      "role": "muted-light",
+      "hex": "#B2B4B4",
+      "name": "silver",
+      "usage": "placeholders, border 7",
+      "sources": [
+        {
+          "file": "stardust/current/_computed-styles.json",
+          "selector": ":root",
+          "prop": "--textColor-placeholder-1"
+        }
+      ]
+    },
+    {
+      "role": "dark",
+      "hex": "#000000",
+      "name": "black",
+      "usage": "PATTRNS campaign dark panels (measured surface)",
+      "sources": [
+        {
+          "file": "stardust/current/_computed-styles.json",
+          "selector": ".container--bgColor-*",
+          "prop": "background-color"
+        }
+      ]
+    }
+  ],
+  "type": {
+    "headingFamily": "Lexia",
+    "bodyFamily": "Inter",
+    "families": [
+      {
+        "family": "Lexia",
+        "role": "heading",
+        "weights": [
+          300,
+          400,
+          700
+        ],
+        "files": [
+          "300_Lexia_Lt.woff2",
+          "400_Lexia_Rg.woff2",
+          "700_Lexia_Bd.woff2",
+          "LexiaVF_W_Wght.woff2",
+          "lexialight-webfont.woff2"
+        ],
+        "license": "commercial (Dalton Maag) — self-hosted by the source site; confirm web licence for the new host"
+      },
+      {
+        "family": "Inter",
+        "role": "body",
+        "weights": [
+          300,
+          400,
+          500,
+          600,
+          700,
+          800
+        ],
+        "files": [
+          "Inter-Light.woff2",
+          "Inter-Regular.woff2",
+          "Inter-Medium.woff2",
+          "Inter-SemiBold.woff2",
+          "Inter-Bold.woff2",
+          "Inter-ExtraBold.woff2"
+        ],
+        "license": "OFL",
+        "note": "declared as separate families Inter-Regular / Inter-Medium / Inter-Bold in the source CSS"
+      },
+      {
+        "family": "Montserrat",
+        "role": "secondary (campaign)",
+        "weights": [
+          500,
+          700,
+          800
+        ],
+        "files": [
+          "montserrat-medium.woff2",
+          "montserrat-bold.woff2",
+          "montserrat-extrabold.woff2"
+        ],
+        "license": "OFL"
+      },
+      {
+        "family": "icomoon",
+        "role": "icon",
+        "files": [
+          "icomoon.woff"
+        ],
+        "license": "site-specific icon set"
+      }
+    ],
+    "levels": {
+      "h1": {
+        "fontSize": "56px",
+        "fontWeight": 400,
+        "family": "Lexia"
+      },
+      "h2": {
+        "fontSize": "46px",
+        "fontWeight": 400,
+        "family": "Lexia"
+      },
+      "h3": {
+        "fontSize": "36px",
+        "fontWeight": 400,
+        "family": "Lexia"
+      },
+      "h4": {
+        "fontSize": "26px",
+        "fontWeight": 400,
+        "family": "Lexia"
+      }
+    },
+    "body": {
+      "fontSize": "16px",
+      "fontWeight": 400,
+      "family": "Inter-Regular"
+    },
+    "small": {
+      "fontSize": "12px"
+    },
+    "button": {
+      "fontSize": "16px",
+      "family": "Inter-Bold"
+    },
+    "label": {
+      "fontSize": "12px",
+      "family": "Inter-Medium"
+    },
+    "sizes": [
+      56,
+      46,
+      36,
+      26,
+      18,
+      16,
+      14,
+      12
+    ],
+    "scaleAudit": {
+      "kind": "ad-hoc",
+      "note": "56/46/36/26 heading steps of 10px, body 16, small 12/14 — arithmetic, not modular"
+    },
+    "files": [
+      {
+        "file": "stardust/current/assets/fonts/300_Lexia_Lt.woff2",
+        "family": "Lexia",
+        "licensing": "commercial"
+      },
+      {
+        "file": "stardust/current/assets/fonts/400_Lexia_Rg.woff2",
+        "family": "Lexia",
+        "licensing": "commercial"
+      },
+      {
+        "file": "stardust/current/assets/fonts/700_Lexia_Bd.woff2",
+        "family": "Lexia",
+        "licensing": "commercial"
+      },
+      {
+        "file": "stardust/current/assets/fonts/Inter-Bold.woff2",
+        "family": "Inter",
+        "licensing": "open"
+      },
+      {
+        "file": "stardust/current/assets/fonts/Inter-ExtraBold.woff2",
+        "family": "Inter",
+        "licensing": "open"
+      },
+      {
+        "file": "stardust/current/assets/fonts/Inter-Light.woff2",
+        "family": "Inter",
+        "licensing": "open"
+      },
+      {
+        "file": "stardust/current/assets/fonts/Inter-Medium.woff2",
+        "family": "Inter",
+        "licensing": "open"
+      },
+      {
+        "file": "stardust/current/assets/fonts/Inter-Regular.woff2",
+        "family": "Inter",
+        "licensing": "open"
+      },
+      {
+        "file": "stardust/current/assets/fonts/Inter-SemiBold.woff2",
+        "family": "Inter",
+        "licensing": "open"
+      },
+      {
+        "file": "stardust/current/assets/fonts/LexiaVF_W_Wght.woff2",
+        "family": "Lexia",
+        "licensing": "commercial"
+      },
+      {
+        "file": "stardust/current/assets/fonts/icomoon.woff",
+        "family": "icomoon",
+        "licensing": "site-specific"
+      },
+      {
+        "file": "stardust/current/assets/fonts/lexialight-webfont.woff2",
+        "family": "Lexia",
+        "licensing": "commercial"
+      },
+      {
+        "file": "stardust/current/assets/fonts/montserrat-bold.woff2",
+        "family": "Montserrat",
+        "licensing": "open"
+      },
+      {
+        "file": "stardust/current/assets/fonts/montserrat-extrabold.woff2",
+        "family": "Montserrat",
+        "licensing": "open"
+      },
+      {
+        "file": "stardust/current/assets/fonts/montserrat-medium.woff2",
+        "family": "Montserrat",
+        "licensing": "open"
+      }
+    ]
+  },
+  "spacing": {
+    "sectionPadding": "measured per archetype in Phase 3 (container--tb-space / container--tb-space-md)",
+    "containerModel": "AEM 12-column responsive grid, container--fixed",
+    "note": "see DESIGN.json extensions.breakpoints after cap-probe"
+  },
+  "motifs": {
+    "radius": {
+      "mode": "4px",
+      "areaMode": "8px",
+      "values": [
+        "4px",
+        "8px",
+        "20px"
+      ],
+      "pill": null
+    },
+    "shadows": [],
+    "gradients": [],
+    "patterns": [
+      "icon stat tile (3-up)",
+      "image + text row (Symptômes / Diagnostic / Traitement)",
+      "product-info image band with CTA",
+      "therapy-area image card with link list",
+      "PATTRNS dark starry panel",
+      "pill tab sub-navigation",
+      "paired CTA cards",
+      "references list",
+      "breadcrumb"
+    ]
+  },
+  "componentStyle": {
+    "buttonPrimary": {
+      "bg": "#D0006F",
+      "text": "#FFFFFF",
+      "border": "#D0006F",
+      "radius": "4px",
+      "font": "Inter-Bold 16px"
+    },
+    "buttonSecondary": {
+      "bg": "#FFFFFF",
+      "text": "#D0006F",
+      "border": "#D0006F",
+      "radius": "4px"
+    },
+    "buttonTertiary": {
+      "bg": "#FFFFFF",
+      "text": "#3C4242",
+      "border": "#3C4242",
+      "radius": "4px"
+    },
+    "link": {
+      "color": "#3C4242",
+      "hover": "#D0006F"
+    },
+    "tabs": {
+      "on": "#D0006F",
+      "off": "#EBEFEE"
+    },
+    "table": {
+      "header": "#D8DFDE",
+      "rowAlt": "#EBEFEE",
+      "highlight": "#E6CCDC"
+    }
+  },
+  "systemComponents": [
+    {
+      "id": "site-header",
+      "kind": "header",
+      "pages": 10,
+      "fingerprint": "AZ logo · Nos médicaments · Aires thérapeutiques · (nav) · search · language DE/EN/FR/IT · login",
+      "evidence": "html-slice header on every page; ctas repeat"
+    },
+    {
+      "id": "breadcrumb",
+      "kind": "strip",
+      "pages": 9,
+      "fingerprint": "cmp-breadcrumb under header on all inner pages"
+    },
+    {
+      "id": "site-footer",
+      "kind": "footer",
+      "pages": 10,
+      "fingerprint": "AZ logo · 3 link columns · legal line · CH code / revision date",
+      "evidence": "vision check: footer identical on all 10 pages"
+    },
+    {
+      "id": "product-info-band",
+      "kind": "cta-band",
+      "pages": 5,
+      "fingerprint": "\"Informations utiles sur les produits\" heading + image + CTA",
+      "evidence": "headings repeat on home + 4 therapy-area pages"
+    },
+    {
+      "id": "pattrns-banner-tabs",
+      "kind": "sub-nav",
+      "pages": 5,
+      "fingerprint": "dark PATTRNS banner + pill tab sub-navigation",
+      "evidence": "vision check on 5 see-the-pattrns pages"
+    },
+    {
+      "id": "questions-cta",
+      "kind": "cta-band",
+      "pages": 5,
+      "fingerprint": "\"Vous avez des questions ?\" block",
+      "evidence": "vision check on 5 see-the-pattrns pages"
+    }
+  ],
+  "iconFont": {
+    "families": [
+      "icomoon",
+      "Font Awesome"
+    ],
+    "file": "stardust/current/assets/fonts/icomoon.woff",
+    "glyphs": [
+      {
+        "family": "Font Awesome",
+        "codepoint": "U+F002",
+        "use": "search"
+      },
+      {
+        "family": "Font Awesome",
+        "codepoint": "U+F00D",
+        "use": "close"
+      },
+      {
+        "family": "Font Awesome",
+        "codepoint": "U+F078",
+        "use": "chevron-down"
+      },
+      {
+        "family": "Font Awesome",
+        "codepoint": "U+F04B",
+        "use": "play"
+      },
+      {
+        "family": "icomoon",
+        "codepoint": "U+E90C"
+      },
+      {
+        "family": "icomoon",
+        "codepoint": "U+E91B"
+      },
+      {
+        "family": "icomoon",
+        "codepoint": "U+E91D"
+      },
+      {
+        "family": "icomoon",
+        "codepoint": "U+E915"
+      },
+      {
+        "family": "icomoon",
+        "codepoint": "U+E91A"
+      },
+      {
+        "family": "Font Awesome",
+        "codepoint": "U+F110",
+        "use": "spinner"
+      }
+    ]
+  },
+  "voice": {
+    "heroHeadline": "Bienvenue sur myAstraZeneca!",
+    "heroImage": "https://www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/_jcr_content/root/container/container_copy_copy_/teaser.coreimg.80.1920.jpeg/1742292435374/home-teaser-desktop.jpeg",
+    "heroMedium": null,
+    "ctaSamples": [
+      "Contactez-nous",
+      "Se connecter",
+      "Diabète de type 2",
+      "Insuffisance cardiaque",
+      "Asthme",
+      "BPCO"
+    ],
+    "firstParagraph": "Nos médicaments Cardiovasculaire, rénal & métabolisme Insuffisance cardiaque Forxiga ® (Dapagliflozine) Maladie rénale chronique (MRC) Forxiga ® (Dapagliflozine) Diabète de type 2 Forxiga ® (Dapagliflozine) Xigduo® (Dapagliflozine/Metformine HCl) Amylose Wainzua® (Eplontersen) Hyperkaliémie Lokelma® (Sodium zirconium cyclosilicate) Respiratoire & Immunologie Bronchopneumopathie chronique obstructive Trixeo® (Formotérol/Glycopyrronium/Budésonide) Granulomatose éosinophilique avec polyangéite (EGPA) Fasenra® (Benralizumab) Lupus érythémateux systémique (LES) Saphnelo® (Anifrolumab) Asthme Fasenra® (Benralizumab) Symbicort® (Budésonide/Formotérol) Tezspire® (Tézépelumab) Oncologie et Hématologie Cancer du sein Lynparza® (Olaparib) Enhertu® (Trastuzumab Deruxtecan) Truqap® (Capivasertib) Hématologie Calquence® (Acalabrutinib) Cancer des voies biliaires Imfinzi® (Durvalumab) Carcinome hépatocellulaire Imfinzi® (Durvalumab) + Imjudo® (Tremelimumab) Cancer du poumon Imfinzi® (Durvalumab) Tagrisso® (Osimertinib) Enhertu® (Trastuzumab Deruxtecan) Cancer de l’ovaire Lynparza® (Olaparib) Cancer de l’endomètre Imfinzi® (Durvalumab) Cancer de la prostate Lynparza® (Olaparib) Cancer de la vessie infiltrant le muscle Imfinzi® (Durvalumab) Adénocarcinome de l'estomac ou de la jonction œsogastrique (GC/GEJC) Imfinzi® (Durvalumab) Enhertu® (Trastuzumab Deruxtecan) Cancer du pancréas Lynparza® (Olaparib) Cancer de l’estomac Imfinzi® (Durvalumab) Traitement agnostique de la tumeur Enhertu® (Trastuzumab Deruxtecan) Voir tous les médicaments",
+    "register": "brand"
+  },
+  "voiceTable": {
+    "note": "HCP portal: professional, informational French; disease sections Symptômes / Diagnostic / Traitement; references cited"
+  },
+  "crossPromo": {
+    "bands": [
+      "product-info-band",
+      "questions-cta"
+    ]
+  },
+  "register": "brand"
+}

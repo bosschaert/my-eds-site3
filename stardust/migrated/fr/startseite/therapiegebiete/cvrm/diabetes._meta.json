@@ -1,0 +1,218 @@
+{
+  "slug": "fr-startseite-therapiegebiete-cvrm-diabetes",
+  "type": "program",
+  "renderBranch": "A'",
+  "template": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+  "modules": [
+    "breadcrumb",
+    "hero",
+    "intro-media",
+    "social-features",
+    "tile-grid",
+    "image-text-band",
+    "references",
+    "split-teaser",
+    "vivo-stamp"
+  ],
+  "slotsFilled": [
+    "breadcrumb-bar",
+    "page-body"
+  ],
+  "canonShas": {
+    "header": null,
+    "footer": null,
+    "css": "96b4c9ce45d5"
+  },
+  "deviations": [],
+  "migrationDecisions": [
+    {
+      "kind": "section-merge",
+      "source": "container--fixed holding one cmp-text (CH-9815-Revision date 05/2024) between the references container and the product-info title",
+      "target": "last .text module of section.references (same wrapper classes text--b-space-0 text--t-space-0)",
+      "reason": "adjacent unpadded container--fixed blocks render identically; keeps the archetype section shape (one .references) for the proven encoder; content preserved verbatim"
+    },
+    {
+      "kind": "section-split",
+      "source": "the regular-size cmp-text CH-9815-Revision date 05/2024 after the references container (live: #last-vivo-id container, #vivo-id-wrap absolutely positioned top 300px/465px right 0 — a second vivo stamp, 0px in the flow)",
+      "target": "its own section right after the references section, authored as a second vivo-stamp block (the existing block lifts exactly that #vivo-id-wrap rule)",
+      "reason": "deploy fix round 2 off the 1440 anchors: as the last references row it took 20px of flow and sat at the wrong x/y (dx -935, dy -364); as a vivo-stamp it takes 0px and lands on the live position; supersedes the render-time section-merge note"
+    }
+  ],
+  "metadata": {
+    "title": "Symptômes, Diagnostic et Traitement du Diabète Sucré | MyAstraZeneca",
+    "description": "Aperçu diagnostique, complications cardiorénales, et stratégies thérapeutiques dans le diabète sucré (type 2) au sein de la médecine cardiovasculaire, rénale et métabolique (CVRM) pour les professionnels de sant.",
+    "canonical": null,
+    "lang": "fr"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Symptômes, Diagnostic et Traitement du Diabète Sucré | MyAstraZeneca",
+    "description": "Aperçu diagnostique, complications cardiorénales, et stratégies thérapeutiques dans le diabète sucré (type 2) au sein de la médecine cardiovasculaire, rénale et métabolique (CVRM) pour les professionnels de sant.",
+    "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/diabetes.html"
+  },
+  "migratedAt": "2026-10-07T15:00:59Z",
+  "designMdSha": "d4f07e9192a1",
+  "designJsonSha": "55f3b9904db4",
+  "sourceCurrentSha": "65927e75dfcf",
+  "sourceProposedSha": "0bf6fe1c7824",
+  "fidelityTier": "sibling",
+  "archetypeSource": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+  "archetypeSha": "0ac33f34d838",
+  "variants": [],
+  "gatesPassed": [
+    "variance-probe",
+    "content-count",
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360",
+    "media-reconcile",
+    "delivery-lint"
+  ],
+  "gateEvidence": {
+    "variance-probe": "sibling-variance 1440: content-driven heights only, no style-family delta, 0 variants",
+    "content-count": "content-diff: none — content + roles match (fr-startseite-therapiegebiete-cvrm-diabetes-cc2.log)",
+    "pixel-gate-1440": "0.38%, height delta 0px, clipped 0, content MISSING 0 / HIDDEN 0 (stardust/replica/gates/all-1440/summary.md) [published regime]",
+    "pixel-gate-360": "1.14%, height delta 0px, clipped 0, content MISSING 0 / HIDDEN 0 (stardust/replica/gates/all-360/summary.md) [published regime]",
+    "delivery-lint": "0 P0 · 0 P1 · 2 P2 (fr-startseite-therapiegebiete-cvrm-diabetes-lint.log)",
+    "content-fidelity": "content-presence (gate-all, origin root #container-e312af5a37 = served main, banner dismissed, headless origin): MISSING 0 / HIDDEN 0 at 1440 and 360, clipped 0; 3 breadcrumb links EXTRA on the served side (outside the live content container by construction). Text anchors live = served to the pixel at 1440 (anchors.mjs: every landmark dx/dy/dw/dh 0, docH equal); 10/10 images same x/y/w/h. content-diff --profile generic advisory against the live DOM: 436 structural 🔴, all consent-banner vendor / language-strip / mega-menu links outside the page-content container; 0 page-content findings.",
+    "media-reconcile": "17 hosted (fr-startseite-therapiegebiete-cvrm-diabetes-media.log)"
+  },
+  "contentDeviations": [],
+  "assetsBundled": 22,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/de/startseite/therapiegebiete/cvrm/diabetes.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/therapiegebiete/cvrm/diabetes.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/it/startseite/therapiegebiete/cvrm/diabetes.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/startseite.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/wainzua.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/lokelma/resources.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/trixeo/uberblick.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/fasenra/egpa/summary.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte/fasenra/asthma/indication.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/breast-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/truqap.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/calquence/calquence-overview.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/biliary-tract-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/uhcc.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/ovarian-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/endometrial-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/prostate-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/imfinzi/mibc.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/en/startseite/produkte/LYNPARZA/pancreatic-cancer.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/produkte.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/leberkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/haematologie.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/onkologie/brustkrebs.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/contact-us.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/user/login.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/fr/startseite/therapiegebiete/cvrm.html",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/startseite/produkte.html#tabs-3e5292059f-item-54029d7fbd-tab",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/startseite/produkte.html#tabs-3e5292059f-item-54029d7fbd-tab",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/de/startseite.html",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "fr/startseite/therapiegebiete/cvrm/diabetes.html",
+  "outputPathDefault": null,
+  "sidecar": "fr/startseite/therapiegebiete/cvrm/diabetes._meta.json",
+  "driverVersion": "1"
+}

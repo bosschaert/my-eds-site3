@@ -1,0 +1,5 @@
+/* fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes — sibling variant of the PATTRNS archetype sheet: ONE rule the
+   archetype lacks. The first bgColor card carries an empty teaser pretitle (h6.cmp-teaser__pretitle > p > sup + &nbsp;) on live;
+   teaser.theme.css: Lexia 14/16, margin-top -10px (measured 1440: h6 and its p 532×16, margin -10px 0 0). Nothing else differs. */
+.ta-card__pretitle { margin: -10px 0 0; }
+.ta-card__pretitle, .ta-card__pretitle *:not(sub, sup, b) { font-family: "Lexia"; font-size: 14px; line-height: 16px; font-weight: 400; letter-spacing: normal; }

@@ -1,0 +1,202 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:dynamics",
+    "writtenAt": "2026-10-07T20:00:51Z",
+    "source": "stardust/dynamic-features.md (10 rows), stardust/dynamic-features-plan.md"
+  },
+  "method": "replica run: the 4 self rows were rebuilt as blocks inside the archetypes (selfcert-modal, video-poster, header search UI, RUM via aem.js); the 6 owner rows ship their interim tier (tags disabled by the boilerplate consent stand-in, static counter, non-functional search, verbatim links); every check replays against the published origin",
+  "features": [
+    {
+      "id": "m-hcp-self-certification-modal",
+      "feature": "HCP self-certification modal",
+      "class": "M",
+      "pages": 5,
+      "disposition": "rebuild-native",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "blocks/selfcert-modal in Mode | gate on the 5 PATTRNS documents: copy captured from the live modal before dismissal (2026-10-07: one paragraph, yes button 'Je suis médecin', no link 'Je suis patient·e.' → amyloidose-schweiz.ch); flow verified on the published origin at 1440 and 360: the modal opens for a cookie-less visitor, the yes control sets the az-hcp-selfcert cookie and closes it, a reload stays closed, the no link leaves to the external site; box/copy/actions geometry lifted from the live computed styles (720px box, 292px on mobile). Interim: the gate persists client-side (cookie) where the source posts to a servlet — decision named in dynamic-features-plan.md.",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr",
+          "selector": ".selfcert-modal .selfcert-box .selfcert-actions a",
+          "min": 2
+        },
+        {
+          "type": "dom-count",
+          "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+          "selector": ".selfcert-modal .selfcert-overlay",
+          "min": 1
+        }
+      ],
+      "interim": {
+        "decision": "client-side cookie persistence instead of the source servlet POST (no backend on the new host); same visible flow",
+        "owner": "site owner, if a server-side record of the certification is required"
+      }
+    },
+    {
+      "id": "v-player-element-div",
+      "feature": "Kaltura player, click-to-play poster",
+      "class": "V",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "blocks/video-poster: captured poster at load, no iframe; click inserts the Kaltura iframe (partner 432521, entry 1_7kar7zpp) at 16:9",
+      "checks": [
+        {
+          "type": "video-plays",
+          "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr",
+          "trigger": ".video-poster a",
+          "iframeSelector": ".video-poster iframe",
+          "playbackHost": "kaltura.com"
+        }
+      ]
+    },
+    {
+      "id": "t-unknown-third-party-host-rum-hlx-page",
+      "feature": "RUM telemetry (rum.hlx.page)",
+      "class": "T",
+      "pages": 10,
+      "disposition": "embed-passthrough",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "aem.js emits RUM natively; the 10 pages load without uncaught exceptions",
+      "checks": [
+        {
+          "type": "no-page-errors",
+          "paths": [
+            "/fr/startseite",
+            "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz",
+            "/fr/startseite/therapiegebiete/cvrm/diabetes",
+            "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz",
+            "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+            "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+            "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+            "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+            "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr",
+            "/fr/startseite/therapiegebiete/ri/lupus"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t-tag-manager-tealium",
+      "feature": "Tealium iQ + Adobe Target / Mouseflow / LinkedIn Insight",
+      "class": "T",
+      "pages": 10,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision",
+      "status": "interim",
+      "verifiedBy": "no request to the tag hosts before consent on the home page (boilerplate consent stand-in declines by default)",
+      "owner": "which of Tealium iQ, Adobe Target, Mouseflow and LinkedIn Insight run on the new host, with property ids and consent wiring",
+      "checks": [
+        {
+          "type": "consent-gate",
+          "path": "/fr/startseite",
+          "forbiddenHosts": [
+            "tags.tiqcdn.com",
+            "tt.omtrdc.net",
+            "mouseflow.com",
+            "snap.licdn.com",
+            "px.ads.linkedin.com"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t-unknown-third-party-host-policy-cookiereports-com",
+      "feature": "Cookie Reports consent banner",
+      "class": "T",
+      "pages": 10,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision",
+      "status": "interim",
+      "verifiedBy": "no request to policy.cookiereports.com on the home page",
+      "owner": "which CMP and property id run on the new host",
+      "checks": [
+        {
+          "type": "consent-gate",
+          "path": "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz",
+          "forbiddenHosts": [
+            "policy.cookiereports.com",
+            "cookiereports.com"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-cms-app-settings-object-utag-data",
+      "feature": "Tealium data layer utag_data",
+      "class": "A",
+      "pages": 10,
+      "disposition": "static-snapshot",
+      "reproducibility": "self",
+      "status": "interim",
+      "verifiedBy": "keys documented in stardust/dynamic-features.md row 1; no data layer is emitted while the tag manager is disabled (owner batch rows 6-7)",
+      "owner": "part of the tags decision: once Tealium runs on the new host the data layer ships with it",
+      "checks": []
+    },
+    {
+      "id": "f-form-text-search-text-box-no-action-js-wired-1-fields",
+      "feature": "header search box",
+      "class": "F",
+      "pages": 10,
+      "disposition": "static-snapshot",
+      "reproducibility": "needs-business-decision",
+      "status": "interim",
+      "verifiedBy": "header renders the collapsed search form as captured; submit is prevented (no results page in scope)",
+      "owner": "extend the scope with /fr/startseite/search-result.html (then a query index is authored), link the box to the live results page, or leave it non-functional",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/fr/startseite",
+          "selector": "header form.site-search-form input.site-search-input",
+          "min": 1
+        }
+      ]
+    },
+    {
+      "id": "a-first-party-api-post-content-intelligentcontent-portals-hc",
+      "feature": "social-features favorite counter (socialFeaturesPost.json)",
+      "class": "A",
+      "pages": 1,
+      "disposition": "static-snapshot",
+      "reproducibility": "needs-business-decision",
+      "status": "interim",
+      "verifiedBy": "counter ships as captured (static); the first-party endpoint is 404 on the target (B2-dynamic)",
+      "owner": "proxy the endpoint same-origin, snapshot the count, or drop the counter",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz",
+          "selector": ".social-features",
+          "min": 1
+        }
+      ]
+    },
+    {
+      "id": "i18n-locale-variants",
+      "feature": "DE / IT language switcher links",
+      "class": "I18N",
+      "pages": 10,
+      "disposition": "decided-out",
+      "reproducibility": "needs-business-decision",
+      "status": "decided-out",
+      "verifiedBy": "hrefs verbatim as captured (content-diff 0 structural)",
+      "owner": "whether the DE and IT trees migrate",
+      "checks": []
+    },
+    {
+      "id": "x-sign-in-account-links",
+      "feature": "sign-in / account links",
+      "class": "X",
+      "pages": 10,
+      "disposition": "decided-out",
+      "reproducibility": "needs-backend",
+      "status": "decided-out",
+      "verifiedBy": "links kept absolute to the live login (register)",
+      "checks": []
+    }
+  ]
+}

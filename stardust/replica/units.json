@@ -1,0 +1,58 @@
+{
+  "therapy-card": {
+    "origin": ".teaser--image-top-text-bottom .cmp-teaser",
+    "build": ".ta-card, .tile-grid .tile-card, .cta-cards .card:not(.card-image)",
+    "n": 3,
+    "required": true,
+    "pages": [
+      "fr-startseite",
+      "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+      "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+    ],
+    "templates": [
+      "home",
+      "therapy-area",
+      "pattrns"
+    ],
+    "note": "build: .ta-card on the prototype, .tile-grid .tile-card on the delivered EDS page (archetype-home), .cta-cards .card:not(.card-image) on the delivered PATTRNS page (archetype-pattrns; image-only cards are the source .image blocks, not teasers)"
+  },
+  "split-teaser": {
+    "origin": ".teaser--text-left .cmp-teaser",
+    "build": ".split-teaser--text-left, .image-text-band .band-teaser",
+    "n": 3,
+    "required": true,
+    "pages": [
+      "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+    ],
+    "templates": [
+      "therapy-area"
+    ],
+    "note": "build: .split-teaser--text-left on the prototype, .image-text-band .band-teaser on the delivered page (archetype-therapy-area)"
+  },
+  "sub-nav-item": {
+    "origin": ".list--fixed-width .cmp-list__item",
+    "build": ".sub-nav__item, .sub-nav .sub-nav-list li",
+    "n": 5,
+    "required": true,
+    "pages": [
+      "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+    ],
+    "templates": [
+      "pattrns"
+    ],
+    "note": "build: .sub-nav__item on the prototype, .sub-nav .sub-nav-list li on the delivered EDS page (archetype-pattrns)"
+  },
+  "split-teaser-text-image": {
+    "origin": ".teaser--text-image .cmp-teaser",
+    "build": ".split-teaser--text-image, .image-text-band.text-image .band-teaser",
+    "n": 1,
+    "required": true,
+    "pages": [
+      "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+    ],
+    "templates": [
+      "pattrns"
+    ],
+    "note": "build: .split-teaser--text-image on the prototype, .image-text-band.text-image .band-teaser on the delivered EDS page (archetype-pattrns)"
+  }
+}

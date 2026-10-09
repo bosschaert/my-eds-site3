@@ -1,0 +1,691 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/measure.mjs",
+    "writtenAt": "2026-10-07T12:34:26.333Z",
+    "urls": [
+      "https://www.myastrazeneca.ch/fr/startseite.html",
+      "https://main--bf989f9e--aemcoder.aem.page/nav"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "selectors": [
+      ".cmp-experiencefragment--footerSocial",
+      ".site-footer-wrap",
+      ".languagenavigation",
+      ".lang-nav",
+      ".experiencefragment.cmp-experiencefragment--customMenu",
+      ".site-header"
+    ],
+    "props": [
+      "display",
+      "position",
+      "boxSizing",
+      "width",
+      "height",
+      "maxWidth",
+      "margin",
+      "padding",
+      "gap",
+      "backgroundColor",
+      "backgroundImage",
+      "color",
+      "fontFamily",
+      "fontSize",
+      "fontWeight",
+      "lineHeight",
+      "letterSpacing",
+      "textTransform",
+      "textAlign",
+      "borderRadius",
+      "border",
+      "boxShadow",
+      "opacity",
+      "objectFit"
+    ],
+    "allMatches": false,
+    "failed": [],
+    "warnings": []
+  },
+  "widths": [
+    1440,
+    360
+  ],
+  "selectors": [
+    ".cmp-experiencefragment--footerSocial",
+    ".site-footer-wrap",
+    ".languagenavigation",
+    ".lang-nav",
+    ".experiencefragment.cmp-experiencefragment--customMenu",
+    ".site-header"
+  ],
+  "root": {
+    "https://www.myastrazeneca.ch/fr/startseite.html": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 4215,
+        "overflowX": 0
+      },
+      "1440": {
+        "viewport": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 2179,
+        "overflowX": 0
+      }
+    },
+    "https://main--bf989f9e--aemcoder.aem.page/nav": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 3191,
+        "overflowX": 0
+      },
+      "1440": {
+        "viewport": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 2607,
+        "overflowX": 0
+      }
+    }
+  },
+  "pages": {
+    "https://www.myastrazeneca.ch/fr/startseite.html": {
+      "360": {
+        ".cmp-experiencefragment--footerSocial": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 3686,
+              "w": 360,
+              "h": 485
+            },
+            "visible": true,
+            "text": "Ces contenus sont exclusivement destiné…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "485px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "20px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(60, 66, 66)",
+              "fontFamily": "Inter-Regular",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".site-footer-wrap": [],
+        ".languagenavigation": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 29
+            },
+            "visible": true,
+            "text": "DE EN FR IT",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "29px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "8px 16px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(60, 66, 66)",
+              "fontFamily": "Lexia",
+              "fontSize": "10px",
+              "fontWeight": "400",
+              "lineHeight": "18px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".lang-nav": [],
+        ".experiencefragment.cmp-experiencefragment--customMenu": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 29,
+              "w": 360,
+              "h": 57
+            },
+            "visible": true,
+            "text": "Se connecter",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "57px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "10px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(60, 66, 66)",
+              "fontFamily": "Lexia",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".site-header": []
+      },
+      "1440": {
+        ".cmp-experiencefragment--footerSocial": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 1815,
+              "w": 1440,
+              "h": 249
+            },
+            "visible": true,
+            "text": "Ces contenus sont exclusivement destiné…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "249px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "40px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(60, 66, 66)",
+              "fontFamily": "Inter-Regular",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".site-footer-wrap": [],
+        ".languagenavigation": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 29
+            },
+            "visible": true,
+            "text": "DE EN FR IT",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1180px",
+              "height": "12px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "8px 130px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(60, 66, 66)",
+              "fontFamily": "Lexia",
+              "fontSize": "10px",
+              "fontWeight": "400",
+              "lineHeight": "18px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".lang-nav": [],
+        ".experiencefragment.cmp-experiencefragment--customMenu": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 29,
+              "w": 1440,
+              "h": 57
+            },
+            "visible": true,
+            "text": "Nos médicaments Aires thérapeutiques Co…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "57px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "10px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(60, 66, 66)",
+              "fontFamily": "Lexia",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".site-header": []
+      }
+    },
+    "https://main--bf989f9e--aemcoder.aem.page/nav": {
+      "360": {
+        ".cmp-experiencefragment--footerSocial": [],
+        ".site-footer-wrap": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2706,
+              "w": 360,
+              "h": 485
+            },
+            "visible": true,
+            "text": "Ces contenus sont exclusivement destiné…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "485px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "20px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(60, 66, 66)",
+              "fontFamily": "Inter-Regular, inter-fallback, sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".languagenavigation": [],
+        ".lang-nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 29
+            },
+            "visible": true,
+            "text": "DE EN FR IT",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "29px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "8px 16px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(60, 66, 66)",
+              "fontFamily": "Lexia, \"Roboto Slab\", lexia-fallback, serif",
+              "fontSize": "10px",
+              "fontWeight": "400",
+              "lineHeight": "18px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".experiencefragment.cmp-experiencefragment--customMenu": [],
+        ".site-header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 29,
+              "w": 360,
+              "h": 57
+            },
+            "visible": true,
+            "text": "Se connecter",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "360px",
+              "height": "57px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "10px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(60, 66, 66)",
+              "fontFamily": "Lexia, \"Roboto Slab\", lexia-fallback, serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      },
+      "1440": {
+        ".cmp-experiencefragment--footerSocial": [],
+        ".site-footer-wrap": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 2358,
+              "w": 1440,
+              "h": 249
+            },
+            "visible": true,
+            "text": "Ces contenus sont exclusivement destiné…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "249px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "40px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(60, 66, 66)",
+              "fontFamily": "Inter-Regular, inter-fallback, sans-serif",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "24px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".languagenavigation": [],
+        ".lang-nav": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 29
+            },
+            "visible": true,
+            "text": "DE EN FR IT",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "content-box",
+              "width": "1180px",
+              "height": "12px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "8px 130px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(60, 66, 66)",
+              "fontFamily": "Lexia, \"Roboto Slab\", lexia-fallback, serif",
+              "fontSize": "10px",
+              "fontWeight": "400",
+              "lineHeight": "18px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".experiencefragment.cmp-experiencefragment--customMenu": [],
+        ".site-header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 29,
+              "w": 1440,
+              "h": 57
+            },
+            "visible": true,
+            "text": "Nos médicaments Aires thérapeutiques Co…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1440px",
+              "height": "57px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "10px 0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(60, 66, 66)",
+              "fontFamily": "Lexia, \"Roboto Slab\", lexia-fallback, serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "16px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "deltas": {
+    "360": {
+      ".cmp-experiencefragment--footerSocial": {
+        "status": "missing-b",
+        "countA": 1,
+        "countB": 0,
+        "pairs": []
+      },
+      ".site-footer-wrap": {
+        "status": "missing-a",
+        "countA": 0,
+        "countB": 1,
+        "pairs": []
+      },
+      ".languagenavigation": {
+        "status": "missing-b",
+        "countA": 1,
+        "countB": 0,
+        "pairs": []
+      },
+      ".lang-nav": {
+        "status": "missing-a",
+        "countA": 0,
+        "countB": 1,
+        "pairs": []
+      },
+      ".experiencefragment.cmp-experiencefragment--customMenu": {
+        "status": "missing-b",
+        "countA": 1,
+        "countB": 0,
+        "pairs": []
+      },
+      ".site-header": {
+        "status": "missing-a",
+        "countA": 0,
+        "countB": 1,
+        "pairs": []
+      }
+    },
+    "1440": {
+      ".cmp-experiencefragment--footerSocial": {
+        "status": "missing-b",
+        "countA": 1,
+        "countB": 0,
+        "pairs": []
+      },
+      ".site-footer-wrap": {
+        "status": "missing-a",
+        "countA": 0,
+        "countB": 1,
+        "pairs": []
+      },
+      ".languagenavigation": {
+        "status": "missing-b",
+        "countA": 1,
+        "countB": 0,
+        "pairs": []
+      },
+      ".lang-nav": {
+        "status": "missing-a",
+        "countA": 0,
+        "countB": 1,
+        "pairs": []
+      },
+      ".experiencefragment.cmp-experiencefragment--customMenu": {
+        "status": "missing-b",
+        "countA": 1,
+        "countB": 0,
+        "pairs": []
+      },
+      ".site-header": {
+        "status": "missing-a",
+        "countA": 0,
+        "countB": 1,
+        "pairs": []
+      }
+    }
+  },
+  "rootDeltas": {
+    "360": {
+      "scrollWidth": 0,
+      "scrollHeight": -1024
+    },
+    "1440": {
+      "scrollWidth": 0,
+      "scrollHeight": 428
+    }
+  }
+}

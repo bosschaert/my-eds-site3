@@ -1,0 +1,570 @@
+{
+  "url": "https://www.myastrazeneca.ch/fr/startseite.html",
+  "width": 1440,
+  "headerTimeline": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".cmp-megamenu__item--level-0:nth-child(1) > .cmp-megamenu__content",
+      "frames": [
+        {
+          "t": 19956.199999999255,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 20159.900000000373,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 20363.900000000373,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 20568.099999999627,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".cmp-megamenu__item--level-0:nth-child(2) > .cmp-megamenu__content",
+      "frames": [
+        {
+          "t": 21591,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 21795.299999998882,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 22000.299999998882,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 22203.699999999255,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".cmp-searchbox__icon",
+      "frames": [
+        {
+          "t": 23222.400000000373,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 23425.900000000373,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 23629.299999998882,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 23832.900000000373,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".cmp-megamenu__item--level-0:nth-child(3) a",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(60, 66, 66)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(60, 66, 66)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": "#loginHeader",
+      "changed": [
+        "self.opacity"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(208, 0, 111)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(208, 0, 111)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "0.8",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".cmp-teaser__action-link",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(208, 0, 111)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(208, 0, 111)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".teaser--image-top-text-bottom .cmp-teaser__description a",
+      "changed": [
+        "self.color"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(60, 66, 66)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(208, 0, 111)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".cmp-languagenavigation__item-link",
+      "changed": [
+        "self.color"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(60, 66, 66)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(208, 0, 111)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": "#FooterLinks a",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(60, 66, 66)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(60, 66, 66)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".teaser--image-top-text-bottom .cmp-teaser",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(60, 66, 66)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "img.cmp-image__image.cmp-image--desktop",
+            "transform": "none",
+            "color": "rgb(60, 66, 66)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "img.cmp-image__image",
+            "transform": "none",
+            "color": "rgb(60, 66, 66)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "h4.cmp-teaser__title",
+            "transform": "none",
+            "color": "rgb(60, 66, 66)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "a.",
+            "transform": "none",
+            "color": "rgb(60, 66, 66)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "a.",
+            "transform": "none",
+            "color": "rgb(60, 66, 66)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(60, 66, 66)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "img.cmp-image__image.cmp-image--desktop",
+            "transform": "none",
+            "color": "rgb(60, 66, 66)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "img.cmp-image__image",
+            "transform": "none",
+            "color": "rgb(60, 66, 66)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "h4.cmp-teaser__title",
+            "transform": "none",
+            "color": "rgb(60, 66, 66)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "a.",
+            "transform": "none",
+            "color": "rgb(60, 66, 66)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          },
+          {
+            "el": "a.",
+            "transform": "none",
+            "color": "rgb(60, 66, 66)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      }
+    },
+    {
+      "sel": ".cmp-image__link",
+      "changed": [
+        "self.color",
+        "img.cmp-image__image.cmp-image--desktop.color"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(60, 66, 66)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "img.cmp-image__image.cmp-image--desktop",
+            "transform": "none",
+            "color": "rgb(60, 66, 66)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(208, 0, 111)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": [
+          {
+            "el": "img.cmp-image__image.cmp-image--desktop",
+            "transform": "none",
+            "color": "rgb(208, 0, 111)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      }
+    }
+  ],
+  "events": {
+    "animations": [],
+    "transitions": [
+      {
+        "prop": "background-color",
+        "el": "div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn--default--none > div.cmp-container > div.searchbox.searchbox-enabled",
+        "y": 0,
+        "dur": "0.5s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "open"
+        ],
+        "el": "div.megaMenu.aem-GridColumn--default--none.aem-GridColumn > div.megamenu-header > nav.cmp-megamenu > ul.cmp-megamenu__group > li.cmp-megamenu__item.cmp-megamenu__item--level-0.cmp-megamenu__item-parent",
+        "y": 0
+      },
+      {
+        "added": [
+          "icon-arrow-up"
+        ],
+        "el": "nav.cmp-megamenu > ul.cmp-megamenu__group > li.cmp-megamenu__item.cmp-megamenu__item--level-0.cmp-megamenu__item-parent > div.cmp-megamenu__content > span.icon-arrow-up",
+        "y": 0
+      },
+      {
+        "added": [
+          "icon-arrow-up"
+        ],
+        "el": "nav.cmp-megamenu > ul.cmp-megamenu__group > li.cmp-megamenu__item.cmp-megamenu__item--level-0.cmp-megamenu__item-parent > div.cmp-megamenu__content > span.icon-arrow-up",
+        "y": 0
+      },
+      {
+        "added": [
+          "open-col-3"
+        ],
+        "el": "div.megamenu-header > nav.cmp-megamenu > ul.cmp-megamenu__group > li.cmp-megamenu__item.cmp-megamenu__item--level-0.cmp-megamenu__item-parent > ul.cmp-megamenu__group.open-col-3",
+        "y": 0
+      },
+      {
+        "added": [
+          "open-col-3"
+        ],
+        "el": "div.megamenu-header > nav.cmp-megamenu > ul.cmp-megamenu__group > li.cmp-megamenu__item.cmp-megamenu__item--level-0.cmp-megamenu__item-parent > ul.cmp-megamenu__group.open-col-3",
+        "y": 0
+      },
+      {
+        "added": [
+          "icon-arrow-down"
+        ],
+        "el": "nav.cmp-megamenu > ul.cmp-megamenu__group > li.cmp-megamenu__item.cmp-megamenu__item--level-0.cmp-megamenu__item-parent > div.cmp-megamenu__content > span.icon-arrow-down",
+        "y": 0
+      },
+      {
+        "added": [
+          "open"
+        ],
+        "el": "div.megaMenu.aem-GridColumn--default--none.aem-GridColumn > div.megamenu-header > nav.cmp-megamenu > ul.cmp-megamenu__group > li.cmp-megamenu__item.cmp-megamenu__item--level-0.cmp-megamenu__item-parent",
+        "y": 0
+      },
+      {
+        "added": [
+          "icon-arrow-up"
+        ],
+        "el": "nav.cmp-megamenu > ul.cmp-megamenu__group > li.cmp-megamenu__item.cmp-megamenu__item--level-0.cmp-megamenu__item-parent > div.cmp-megamenu__content > span.icon-arrow-up",
+        "y": 0
+      },
+      {
+        "added": [
+          "icon-arrow-up"
+        ],
+        "el": "nav.cmp-megamenu > ul.cmp-megamenu__group > li.cmp-megamenu__item.cmp-megamenu__item--level-0.cmp-megamenu__item-parent > div.cmp-megamenu__content > span.icon-arrow-up",
+        "y": 0
+      },
+      {
+        "added": [
+          "open-col-3"
+        ],
+        "el": "div.megamenu-header > nav.cmp-megamenu > ul.cmp-megamenu__group > li.cmp-megamenu__item.cmp-megamenu__item--level-0.cmp-megamenu__item-parent > ul.cmp-megamenu__group.open-col-3",
+        "y": 0
+      },
+      {
+        "added": [
+          "open-col-3"
+        ],
+        "el": "div.megamenu-header > nav.cmp-megamenu > ul.cmp-megamenu__group > li.cmp-megamenu__item.cmp-megamenu__item--level-0.cmp-megamenu__item-parent > ul.cmp-megamenu__group.open-col-3",
+        "y": 0
+      },
+      {
+        "added": [
+          "searchbox-enabled"
+        ],
+        "el": "div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn--default--none > div.cmp-container > div.searchbox.searchbox-enabled",
+        "y": 0
+      },
+      {
+        "added": [
+          "icon-arrow-down"
+        ],
+        "el": "nav.cmp-megamenu > ul.cmp-megamenu__group > li.cmp-megamenu__item.cmp-megamenu__item--level-0.cmp-megamenu__item-parent > div.cmp-megamenu__content > span.icon-arrow-down",
+        "y": 0
+      }
+    ]
+  }
+}

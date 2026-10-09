@@ -1,0 +1,89 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "lexia",
+        "createdAt": "2026-10-07T12:21:18.436Z",
+        "reason": "replica canon: source brand faces lifted from stardust/prototypes/css/canon.css; Roboto Slab = metric-matched open substitute for the non-rehostable Lexia, *-fallback = first-paint local faces (deploy SKILL step 4), icomoon/Font Awesome = the source icon font (stardust/eds-conversion-log.md fonts decision)"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "lexia-fallback",
+        "createdAt": "2026-10-07T12:21:18.449Z",
+        "reason": "replica canon: source brand faces lifted from stardust/prototypes/css/canon.css; Roboto Slab = metric-matched open substitute for the non-rehostable Lexia, *-fallback = first-paint local faces (deploy SKILL step 4), icomoon/Font Awesome = the source icon font (stardust/eds-conversion-log.md fonts decision)"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "inter-fallback",
+        "createdAt": "2026-10-07T12:21:18.464Z",
+        "reason": "replica canon: source brand faces lifted from stardust/prototypes/css/canon.css; Roboto Slab = metric-matched open substitute for the non-rehostable Lexia, *-fallback = first-paint local faces (deploy SKILL step 4), icomoon/Font Awesome = the source icon font (stardust/eds-conversion-log.md fonts decision)"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "roboto slab",
+        "createdAt": "2026-10-07T12:21:18.484Z",
+        "reason": "replica canon: source brand faces lifted from stardust/prototypes/css/canon.css; Roboto Slab = metric-matched open substitute for the non-rehostable Lexia, *-fallback = first-paint local faces (deploy SKILL step 4), icomoon/Font Awesome = the source icon font (stardust/eds-conversion-log.md fonts decision)"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "inter-regular",
+        "createdAt": "2026-10-07T12:21:18.506Z",
+        "reason": "replica canon: source brand faces lifted from stardust/prototypes/css/canon.css; Roboto Slab = metric-matched open substitute for the non-rehostable Lexia, *-fallback = first-paint local faces (deploy SKILL step 4), icomoon/Font Awesome = the source icon font (stardust/eds-conversion-log.md fonts decision)"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "inter-medium",
+        "createdAt": "2026-10-07T12:21:18.528Z",
+        "reason": "replica canon: source brand faces lifted from stardust/prototypes/css/canon.css; Roboto Slab = metric-matched open substitute for the non-rehostable Lexia, *-fallback = first-paint local faces (deploy SKILL step 4), icomoon/Font Awesome = the source icon font (stardust/eds-conversion-log.md fonts decision)"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "inter-bold",
+        "createdAt": "2026-10-07T12:21:18.545Z",
+        "reason": "replica canon: source brand faces lifted from stardust/prototypes/css/canon.css; Roboto Slab = metric-matched open substitute for the non-rehostable Lexia, *-fallback = first-paint local faces (deploy SKILL step 4), icomoon/Font Awesome = the source icon font (stardust/eds-conversion-log.md fonts decision)"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "icomoon",
+        "createdAt": "2026-10-07T12:21:18.562Z",
+        "reason": "replica canon: source brand faces lifted from stardust/prototypes/css/canon.css; Roboto Slab = metric-matched open substitute for the non-rehostable Lexia, *-fallback = first-paint local faces (deploy SKILL step 4), icomoon/Font Awesome = the source icon font (stardust/eds-conversion-log.md fonts decision)"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "font awesome",
+        "createdAt": "2026-10-07T12:21:18.579Z",
+        "reason": "replica canon: source brand faces lifted from stardust/prototypes/css/canon.css; Roboto Slab = metric-matched open substitute for the non-rehostable Lexia, *-fallback = first-paint local faces (deploy SKILL step 4), icomoon/Font Awesome = the source icon font (stardust/eds-conversion-log.md fonts decision)"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-10-07T12:39:03.784Z",
+        "reason": "replica migration: the source site's own faces are kept (Inter is myastrazeneca.ch's body font); Roboto Slab is the recorded metric-matched substitute for the licensed Lexia (stardust/eds-conversion-log.md). A same-design migration never changes fonts."
+      },
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "createdAt": "2026-10-07T12:39:03.909Z",
+        "reason": "replica migration: the source site's own faces are kept (Inter is myastrazeneca.ch's body font); Roboto Slab is the recorded metric-matched substitute for the licensed Lexia (stardust/eds-conversion-log.md). A same-design migration never changes fonts."
+      },
+      {
+        "rule": "overused-font",
+        "value": "roboto slab",
+        "createdAt": "2026-10-07T12:39:03.971Z",
+        "reason": "replica migration: the source site's own faces are kept (Inter is myastrazeneca.ch's body font); Roboto Slab is the recorded metric-matched substitute for the licensed Lexia (stardust/eds-conversion-log.md). A same-design migration never changes fonts."
+      },
+      {
+        "rule": "layout-transition",
+        "value": "*",
+        "files": [
+          "blocks/header/header.css"
+        ],
+        "createdAt": "2026-10-07T12:39:54.063Z",
+        "reason": "replica: the live site's search box animates width (source searchbox CSS); the lifted transition is the fidelity spec"
+      }
+    ]
+  }
+}

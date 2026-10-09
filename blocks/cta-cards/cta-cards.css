@@ -1,0 +1,282 @@
+/* cta-cards — canon .ta-card (teaser--image-top-text-bottom, lifted) inside the PATTRNS
+   column wraps (.container--2-column-wrap / --3-column-wrap) and the plain .image blocks;
+   the section is the source's container--tb-space (20px) unless the block is `flush` */
+main .section.cta-cards-container {
+  padding: 20px 0;
+}
+
+main .section.cta-cards-container:has(.cta-cards.flush) {
+  padding: 0;
+}
+
+/* container--tb-space-md: 20px, 40px from 768px */
+main .section.cta-cards-container:has(.cta-cards.space-md) {
+  padding: 20px 0;
+}
+
+/* section head styled in place: section-title--core --center --b-space-md */
+main .section.cta-cards-container .default-content-wrapper :is(h1, h2, h3, h4) {
+  text-align: center;
+  color: var(--text-color-title-1);
+  padding-bottom: 20px;
+}
+
+main .section.cta-cards-container .default-content-wrapper h4 :is(sub, sup) {
+  font-size: 16px;
+  line-height: 0;
+}
+
+.cta-cards .card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* container--3-column-wrap = canon .ta-grid__row: 10px gap at every width */
+.cta-cards.cols-3 .card-row {
+  gap: 10px;
+}
+
+.cta-cards .card-item {
+  flex: 1 1 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.cta-cards .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.cta-cards.border .card {
+  border: 1px solid var(--border-color-2);
+}
+
+.cta-cards .card-media {
+  order: 0;
+  padding: 0;
+  width: 100%;
+  flex: 0 1 auto;
+}
+
+.cta-cards .card-media-mobile {
+  display: none;
+}
+
+.cta-cards .img {
+  line-height: 0;
+}
+
+.cta-cards .img a {
+  display: inline;
+  color: inherit;
+}
+
+.cta-cards .img picture {
+  display: block;
+}
+
+.cta-cards .img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cta-cards .card-body {
+  order: 1;
+  color: var(--text-color-body-1);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+  padding: 24px 16px;
+  width: 100%;
+  gap: 16px;
+  background-color: var(--bg-color-supporting-1);
+}
+
+.cta-cards.plain .card-body {
+  background-color: transparent;
+}
+
+.cta-cards .card-body > * {
+  text-align: center;
+}
+
+.cta-cards .card-body p {
+  margin: 0;
+}
+
+.cta-cards .card-title :is(h2, h3, h4) {
+  overflow-wrap: anywhere;
+}
+
+/* teaser.theme: the pretitle (h6.cmp-teaser__pretitle) is Lexia 14/16 pulled up 10px; the
+   symptomes card carries an EMPTY one whose line box survives (measured 532×16, margin -10px) */
+.cta-cards .card-pretitle {
+  margin: -10px 0 0;
+}
+
+.cta-cards .card-pretitle :is(h5, h6) {
+  font-family: var(--font-display);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+/* the source title link wraps a block <p>, so it is a full-width block box (unit-geometry
+   row "link:<title>" measures 532px × the line boxes on live) */
+.cta-cards .card-title a:any-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* teaser.theme: a bold run inside the title keeps the title face (live `.cmp-teaser__title b`
+   computes Lexia 700, not Inter-Bold — the diagnosis ">3 ans" / ">5 médecins" lines) */
+.cta-cards .card-title :is(b, strong) {
+  font-family: inherit;
+  font-weight: 700;
+}
+
+/* brand sheet @14036: h4 sub/sup are 16px */
+.cta-cards .card-title h4 :is(sub, sup) {
+  font-size: 16px;
+  line-height: 0;
+}
+
+.cta-cards .card-desc,
+.cta-cards .card-desc :is(p, li) {
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+}
+
+.cta-cards .card-desc :is(sub, sup) {
+  font-size: 10px;
+  line-height: 0;
+}
+
+.cta-cards .card-desc :is(b, strong) {
+  font-family: var(--font-bold);
+  font-weight: 700;
+}
+
+/* teaser.theme @4444: `.cmp-teaser__description b *` inherits size/line-height — a marker
+   inside a bold run renders 16/24 (the bullet lines of the MENAÇANTE card) */
+.cta-cards .card-desc :is(b, strong) * {
+  font-family: var(--font-bold);
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* teaser--text-center: centred, shrink-wrapped children (the canon default bakes it in;
+   plain / tinted cards on this template keep full-width children) */
+.cta-cards.center .card-body > * {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cta-cards .card-desc :is(ul, ol) {
+  padding: 4px 0 10px 20px;
+  list-style-position: outside;
+  overflow-wrap: anywhere;
+}
+
+.cta-cards .card-action {
+  margin-top: auto;
+}
+
+/* a footnote authored AFTER the grid (the source .text--small under the stats infographic):
+   Inter-Medium 12/20 with the canon .text margins (10px, 16px from 768px) */
+main .section.cta-cards-container .cta-cards-wrapper ~ .default-content-wrapper {
+  margin: 10px 0;
+}
+
+main .section.cta-cards-container .cta-cards-wrapper ~ .default-content-wrapper p {
+  font-family: var(--font-medium);
+  font-size: var(--body-font-size-s);
+  line-height: var(--body-line-height-s);
+  color: var(--text-color-body-1);
+}
+
+/* the treatement footnote is the 4th flex child of the source 3-column wrap: full width on its
+   own row after the 10px row gap, no canon .text margins (measured 1440: 1180×80, left) */
+main .section.cta-cards-container .cta-cards-wrapper:has(.cta-cards.cols-3)
+  ~ .default-content-wrapper {
+  margin: 10px 0 0;
+  text-align: left;
+}
+
+@media (width <= 767px) {
+  .cta-cards .card-media-mobile {
+    display: block;
+  }
+
+  /* foundation request (archetype-pattrns, stardust/rollout/foundation-requests.md): the
+     Roboto Slab substitute renders 26px uppercase titles ~1% narrower than Lexia — the
+     MENAÇANTE POUR LA VIE card title fits a 328px card (325px) where Lexia wraps to two lines
+     (34px reflow of everything below at 360). Scoped compensation: a quarter-pixel of
+     letter-spacing below 768px (every other title on the page keeps ≥ 9px of line slack) */
+  .cta-cards .card-title :is(h2, h3, h4) {
+    letter-spacing: 0.25px;
+  }
+
+  .cta-cards .card-media:not(.card-media-single) .card-media-desktop {
+    display: none;
+  }
+}
+
+@media (width >= 768px) {
+  .cta-cards.cols-2 .card-item {
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+
+  .cta-cards.cols-3 .card-row {
+    justify-content: center;
+  }
+
+  .cta-cards.cols-3 .card-item {
+    flex: 1 1 calc(33.33% - 6.67px);
+    max-width: calc(33.33% - 6.67px);
+    border-radius: 8px;
+  }
+
+  .cta-cards .card-desc :is(ul, ol) {
+    padding-bottom: 12px;
+  }
+
+  main .section.cta-cards-container .default-content-wrapper :is(h1, h2, h3, h4) {
+    padding-bottom: 40px;
+  }
+
+  main .section.cta-cards-container .cta-cards-wrapper ~ .default-content-wrapper {
+    margin: 16px 0;
+  }
+
+  main .section.cta-cards-container .cta-cards-wrapper:has(.cta-cards.cols-3)
+    ~ .default-content-wrapper {
+    margin: 10px 0 0;
+  }
+
+  main .section.cta-cards-container:has(.cta-cards.space-md) {
+    padding: 40px 0;
+  }
+}
+
+@media (width >= 1280px) {
+  .cta-cards .card {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .cta-cards .card-body {
+    padding: 24px;
+  }
+}

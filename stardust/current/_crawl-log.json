@@ -1,0 +1,772 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 10,
+    "concurrency": 3
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": {
+    "url": "https://www.myastrazeneca.ch/content/dam/intelligentcontent/portals/hcp/ch/en/icon-favicon.ico",
+    "file": "assets/favicon.ico"
+  },
+  "crawl": {
+    "failures": []
+  },
+  "captureGaps": {
+    "roots": [],
+    "detail": "uncaptured first-level targets: none (no locale root captured)"
+  },
+  "dynamicSurface": {
+    "pages": 10,
+    "pagesWithSameSiteData": 10,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 10,
+    "truncatedPages": 0,
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "www.myastrazeneca.ch",
+        "path": "/bin/secureCookies",
+        "query": [
+          "cookieName"
+        ],
+        "resourceType": "xhr",
+        "contentType": null,
+        "sameSite": true,
+        "example": "https://www.myastrazeneca.ch/bin/secureCookies",
+        "pages": 10,
+        "examples": [
+          "fr-startseite",
+          "fr-startseite-therapiegebiete-cvrm-diabetes",
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "astrazenecauklimited.tt.omtrdc.net",
+        "path": "/rest/v1/delivery",
+        "query": [
+          "client",
+          "sessionId",
+          "version"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://astrazenecauklimited.tt.omtrdc.net/rest/v1/delivery",
+        "pages": 10,
+        "examples": [
+          "fr-startseite",
+          "fr-startseite-therapiegebiete-cvrm-diabetes",
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/ccm/collect",
+        "query": [
+          "apvc",
+          "auid",
+          "did",
+          "dl",
+          "dma",
+          "dt",
+          "en",
+          "ep.enable_event_matching_conversions",
+          "fmt",
+          "frm",
+          "gcd",
+          "gdid",
+          "gtm",
+          "navt",
+          "npa",
+          "rcb",
+          "rnd",
+          "scrsrc",
+          "tag_exp",
+          "tfd",
+          "tft",
+          "tid",
+          "tids"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://www.google.com/ccm/collect",
+        "pages": 5,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.google.com",
+        "path": "/rmkt/collect/{n}/",
+        "query": [
+          "async",
+          "auid",
+          "bg",
+          "cv",
+          "data",
+          "did",
+          "dma",
+          "en",
+          "ept",
+          "fmt",
+          "frm",
+          "fst",
+          "gcd",
+          "gcp",
+          "gdid",
+          "gtm",
+          "guid",
+          "hn",
+          "npa",
+          "pscdl",
+          "random",
+          "rcb",
+          "tag_exp",
+          "tiba",
+          "u_h",
+          "u_w",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "url"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://www.google.com/rmkt/collect/17507076860/",
+        "pages": 5,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "px.ads.linkedin.com",
+        "path": "/wa/",
+        "query": [
+          "fmt",
+          "medium"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://px.ads.linkedin.com/wa/",
+        "pages": 5,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "dpm.demdex.net",
+        "path": "/id",
+        "query": [
+          "d_fieldgroup",
+          "d_nsid",
+          "d_orgid",
+          "d_rtbd",
+          "d_ver",
+          "d_visid_ver",
+          "ts"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://dpm.demdex.net/id",
+        "pages": 3,
+        "examples": [
+          "fr-startseite",
+          "fr-startseite-therapiegebiete-cvrm-diabetes",
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "astrazenecaeurope.d3.sc.omtrdc.net",
+        "path": "/id",
+        "query": [
+          "d_fieldgroup",
+          "d_visid_ver",
+          "mcorgid",
+          "mid",
+          "ts"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/x-javascript",
+        "sameSite": false,
+        "example": "https://astrazenecaeurope.d3.sc.omtrdc.net/id",
+        "pages": 3,
+        "examples": [
+          "fr-startseite",
+          "fr-startseite-therapiegebiete-cvrm-diabetes",
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "policy.cookiereports.com",
+        "path": "/consent/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://policy.cookiereports.com/consent/",
+        "pages": 3,
+        "examples": [
+          "fr-startseite",
+          "fr-startseite-therapiegebiete-cvrm-diabetes",
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "ad.doubleclick.net",
+        "path": "/ccm/s/collect",
+        "query": [
+          "auid",
+          "fmt",
+          "gtm"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://ad.doubleclick.net/ccm/s/collect",
+        "pages": 3,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.googleadservices.com",
+        "path": "/pagead/conversion/{n}/",
+        "query": [
+          "async",
+          "auid",
+          "bg",
+          "category",
+          "cv",
+          "data",
+          "did",
+          "dma",
+          "en",
+          "ept",
+          "fmt",
+          "frm",
+          "fst",
+          "gcd",
+          "gcl_ctr",
+          "gdid",
+          "gtm",
+          "gtm_ee",
+          "guid",
+          "hn",
+          "label",
+          "npa",
+          "oid",
+          "pscdl",
+          "random",
+          "rcb",
+          "tag_exp",
+          "tiba",
+          "u_h",
+          "u_w",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "url"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://www.googleadservices.com/pagead/conversion/17507076860/",
+        "pages": 3,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "googleads.g.doubleclick.net",
+        "path": "/pagead/viewthroughconversion/{n}/",
+        "query": [
+          "async",
+          "auid",
+          "bg",
+          "category",
+          "cerd",
+          "crd",
+          "ct_cookie_present",
+          "cv",
+          "data",
+          "did",
+          "dma",
+          "en",
+          "eoid",
+          "ept",
+          "fmt",
+          "frm",
+          "fsk",
+          "fst",
+          "gcd",
+          "gcl_ctr",
+          "gdid",
+          "gtm",
+          "gtm_ee",
+          "guid",
+          "hn",
+          "label",
+          "npa",
+          "pscdl",
+          "pscrd",
+          "random",
+          "rcb",
+          "tag_exp",
+          "tiba",
+          "u_h",
+          "u_w",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "url"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "sameSite": false,
+        "example": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/17507076860/",
+        "pages": 3,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.google.com",
+        "path": "/pagead/1p-conversion/{n}/",
+        "query": [
+          "async",
+          "auid",
+          "bg",
+          "category",
+          "cerd",
+          "cid",
+          "crd",
+          "ct_cookie_present",
+          "cv",
+          "data",
+          "did",
+          "dma",
+          "en",
+          "eoid",
+          "ept",
+          "fmt",
+          "frm",
+          "fsk",
+          "fst",
+          "gcd",
+          "gcl_ctr",
+          "gdid",
+          "gtm",
+          "gtm_ee",
+          "guid",
+          "hn",
+          "is_vtc",
+          "label",
+          "npa",
+          "pscdl",
+          "pscrd",
+          "random",
+          "rcb",
+          "tag_exp",
+          "tiba",
+          "u_h",
+          "u_w",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "url"
+        ],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": false,
+        "example": "https://www.google.com/pagead/1p-conversion/17507076860/",
+        "pages": 3,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.myastrazeneca.ch",
+        "path": "/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/diabetes/jcr:content.socialFeaturesPost.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/diabetes/jcr:content.socialFeaturesPost.json",
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-diabetes"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.myastrazeneca.ch",
+        "path": "/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz/jcr:content.socialFeaturesPost.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz/jcr:content.socialFeaturesPost.json",
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.myastrazeneca.ch",
+        "path": "/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz/jcr:content.socialFeaturesPost.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz/jcr:content.socialFeaturesPost.json",
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.myastrazeneca.ch",
+        "path": "/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home/jcr:content.socialFeaturesPost.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home/jcr:content.socialFeaturesPost.json",
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.myastrazeneca.ch",
+        "path": "/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home/jcr:content.getSecureCookies.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home/jcr:content.getSecureCookies.json",
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.myastrazeneca.ch",
+        "path": "/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis/jcr:content.getSecureCookies.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis/jcr:content.getSecureCookies.json",
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.myastrazeneca.ch",
+        "path": "/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement/jcr:content.getSecureCookies.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement/jcr:content.getSecureCookies.json",
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.myastrazeneca.ch",
+        "path": "/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/ri/lupus/jcr:content.socialFeaturesPost.json",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.myastrazeneca.ch/content/intelligentcontent/portals/hcp/ch/fr/startseite/therapiegebiete/ri/lupus/jcr:content.socialFeaturesPost.json",
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-ri-lupus"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "tags.tiqcdn.com",
+        "pages": 10,
+        "examples": [
+          "fr-startseite",
+          "fr-startseite-therapiegebiete-cvrm-diabetes",
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz"
+        ]
+      },
+      {
+        "host": "policy.cookiereports.com",
+        "pages": 10,
+        "examples": [
+          "fr-startseite",
+          "fr-startseite-therapiegebiete-cvrm-diabetes",
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz"
+        ]
+      },
+      {
+        "host": "rum.hlx.page",
+        "pages": 10,
+        "examples": [
+          "fr-startseite",
+          "fr-startseite-therapiegebiete-cvrm-diabetes",
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz"
+        ]
+      },
+      {
+        "host": "cdn.mouseflow.com",
+        "pages": 10,
+        "examples": [
+          "fr-startseite",
+          "fr-startseite-therapiegebiete-cvrm-diabetes",
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz"
+        ]
+      },
+      {
+        "host": "snap.licdn.com",
+        "pages": 5,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement"
+        ]
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "pages": 5,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement"
+        ]
+      },
+      {
+        "host": "googleads.g.doubleclick.net",
+        "pages": 5,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement"
+        ]
+      }
+    ],
+    "frameworkHints": [
+      {
+        "hint": "aem-sites",
+        "pages": 10,
+        "examples": [
+          "fr-startseite",
+          "fr-startseite-therapiegebiete-cvrm-diabetes",
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz"
+        ]
+      }
+    ],
+    "globalState": [
+      {
+        "name": "dataLayer",
+        "pages": 5,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement"
+        ]
+      }
+    ],
+    "formTargets": [
+      {
+        "action": "https://www.myastrazeneca.ch/fr/startseite.html",
+        "method": "get",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [
+          "search-text-box"
+        ],
+        "pages": 1,
+        "examples": [
+          "fr-startseite"
+        ]
+      },
+      {
+        "action": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/diabetes.html",
+        "method": "get",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [
+          "search-text-box"
+        ],
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-diabetes"
+        ]
+      },
+      {
+        "action": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+        "method": "get",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [
+          "search-text-box"
+        ],
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz"
+        ]
+      },
+      {
+        "action": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "method": "get",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [
+          "search-text-box"
+        ],
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+        ]
+      },
+      {
+        "action": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+        "method": "get",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [
+          "search-text-box"
+        ],
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home"
+        ]
+      },
+      {
+        "action": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+        "method": "get",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [
+          "search-text-box"
+        ],
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis"
+        ]
+      },
+      {
+        "action": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+        "method": "get",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [
+          "search-text-box"
+        ],
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement"
+        ]
+      },
+      {
+        "action": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+        "method": "get",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [
+          "search-text-box"
+        ],
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes"
+        ]
+      },
+      {
+        "action": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "method": "get",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [
+          "search-text-box"
+        ],
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+        ]
+      },
+      {
+        "action": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/lupus.html",
+        "method": "get",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [
+          "search-text-box"
+        ],
+        "pages": 1,
+        "examples": [
+          "fr-startseite-therapiegebiete-ri-lupus"
+        ]
+      }
+    ]
+  }
+}

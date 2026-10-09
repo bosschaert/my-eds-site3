@@ -1,0 +1,97 @@
+{
+  "overall": "In progress",
+  "steps": [
+    "Done",
+    "Done",
+    "Done",
+    "Done",
+    "In progress"
+  ],
+  "templates": [
+    {
+      "name": "Home page",
+      "pages": 1,
+      "desktop": "Looks right",
+      "mobile": "Looks right",
+      "status": "Done"
+    },
+    {
+      "name": "Therapy-area page",
+      "pages": 4,
+      "desktop": "Looks right",
+      "mobile": "Looks right",
+      "status": "Done"
+    },
+    {
+      "name": "PATTRNS campaign page",
+      "pages": 5,
+      "desktop": "Looks right",
+      "mobile": "Looks right",
+      "status": "Done"
+    }
+  ],
+  "pages": [
+    {
+      "path": "/fr/startseite",
+      "title": "Traitements du diabète, de l’asthme, de la BPCO et du cancer | MyAstraZeneca",
+      "ready": true,
+      "state": "Ready"
+    },
+    {
+      "path": "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz",
+      "title": "Insuffisance Rénale Chronique (IRC) Informations - MyAstrazeneca",
+      "ready": true,
+      "state": "Ready"
+    },
+    {
+      "path": "/fr/startseite/therapiegebiete/cvrm/diabetes",
+      "title": "Symptômes, Diagnostic et Traitement du Diabète Sucré | MyAstraZeneca",
+      "ready": true,
+      "state": "Ready"
+    },
+    {
+      "path": "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz",
+      "title": "Insuffisance Cardiaque : Symptômes, Diagnostic et Traitement | MyAstraZeneca",
+      "ready": true,
+      "state": "Ready"
+    },
+    {
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+      "title": "Amylose à transthyrétine (ATTR-CM) – Diagnostic et prise en charge | MyAstraZeneca",
+      "ready": true,
+      "state": "Ready"
+    },
+    {
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+      "title": "Diagnostic de l’ATTR",
+      "ready": true,
+      "state": "Ready"
+    },
+    {
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+      "title": "Traitement",
+      "ready": true,
+      "state": "Ready"
+    },
+    {
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+      "title": "Symptômes de l’ATTR",
+      "ready": true,
+      "state": "Ready"
+    },
+    {
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr",
+      "title": "À propos de l’ATTR",
+      "ready": true,
+      "state": "Ready"
+    },
+    {
+      "path": "/fr/startseite/therapiegebiete/ri/lupus",
+      "title": "Lupus Érythémateux Systémique: Symptômes, Diagnostic et Traitement | MyAstraZeneca",
+      "ready": true,
+      "state": "Ready"
+    }
+  ],
+  "now": "All ten pages are live on the preview site and have passed the final site-wide check against your current pages on desktop and mobile. We are now wrapping up delivery: wiring redirects from your existing addresses, assembling the sitemap, and running the last verification of the whole site.",
+  "next": "Once the site-wide verification and the quality report are done, the migration is ready for your review."
+}

@@ -1,0 +1,1111 @@
+{
+  "archetype": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+  "width": 1440,
+  "tolerance": 2,
+  "probes": {
+    "hero": ".teaser--home-hero",
+    "tile": ".teaser--image-top-text-bottom",
+    "band": ".teaser--text-image",
+    "title": ".cmp-title",
+    "text": ".cmp-text",
+    "crumb": ".cmp-breadcrumb__item",
+    "subnav": ".list--fixed-width .cmp-list__item",
+    "embed": ".cmp-embed",
+    "image": ".image"
+  },
+  "archetypeRaw": {
+    "sections": [],
+    "probes": {
+      "hero": {
+        "sel": ".teaser--home-hero",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 1440,
+            "h": 251
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(60, 66, 66)",
+          "padding": "0px 0px 0px 0px",
+          "font": "inter-regular 16px/24px 400",
+          "borderRadius": "0px",
+          "heading": null,
+          "image": {
+            "w": 1440,
+            "h": 251
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 1,
+        "text": ""
+      },
+      "tile": {
+        "sel": ".teaser--image-top-text-bottom",
+        "count": 6,
+        "first": {
+          "rect": {
+            "w": 580,
+            "h": 479
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(60, 66, 66)",
+          "padding": "0px 0px 0px 0px",
+          "font": "inter-regular 16px/24px 400",
+          "borderRadius": "0px",
+          "heading": "h4 lexia 26px/34px 400 rgb(60, 66, 66)",
+          "image": {
+            "w": 580,
+            "h": 224
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 4,
+        "text": "PROGRESSIVE La maladie progresse rapidement. Elle cause des "
+      },
+      "band": {
+        "sel": ".teaser--text-image",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 1180,
+            "h": 280
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(60, 66, 66)",
+          "padding": "0px 0px 0px 0px",
+          "font": "inter-regular 16px/24px 400",
+          "borderRadius": "0px",
+          "heading": "h4 lexia 26px/34px 400 rgb(60, 66, 66)",
+          "image": {
+            "w": 575,
+            "h": 280
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 1,
+        "text": "SYSTÉMIQUE L’amylose ATTR se caractérise par une dysfonction"
+      },
+      "title": {
+        "sel": ".cmp-title",
+        "count": 10,
+        "first": {
+          "rect": {
+            "w": 1180,
+            "h": 80
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(131, 0, 81)",
+          "padding": "0px 0px 0px 0px",
+          "font": "inter-regular 16px/24px 400",
+          "borderRadius": "0px",
+          "heading": "h3 lexia 36px/40px 400 rgb(131, 0, 81)",
+          "image": null,
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 2,
+        "text": "Une maladie systémique, à progression rapide et menaçante po"
+      },
+      "text": {
+        "sel": ".cmp-text",
+        "count": 9,
+        "first": {
+          "rect": {
+            "w": 628,
+            "h": 48
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(60, 66, 66)",
+          "padding": "0px 0px 0px 0px",
+          "font": "inter-regular 16px/24px 400",
+          "borderRadius": "0px",
+          "heading": null,
+          "image": null,
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 2,
+        "text": "Le contenu de ce site web est réservé exclusivement aux prof"
+      },
+      "crumb": {
+        "sel": ".cmp-breadcrumb__item",
+        "count": 5,
+        "first": {
+          "rect": {
+            "w": 56,
+            "h": 28
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(60, 66, 66)",
+          "padding": "6px 0px 6px 0px",
+          "font": "lexia 14px/16px 400",
+          "borderRadius": "0px",
+          "heading": null,
+          "image": null,
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 2,
+        "text": "Home"
+      },
+      "subnav": {
+        "sel": ".list--fixed-width .cmp-list__item",
+        "count": 5,
+        "first": {
+          "rect": {
+            "w": 273,
+            "h": 36
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(60, 66, 66)",
+          "padding": "0px 0px 0px 0px",
+          "font": "inter-regular 16px/24px 400",
+          "borderRadius": "0px",
+          "heading": null,
+          "image": null,
+          "listStyle": "none",
+          "before": null
+        },
+        "clusters": 1,
+        "text": "Amylose à transthyrétine (ATTR-CM)"
+      },
+      "embed": {
+        "sel": ".cmp-embed",
+        "count": 0
+      },
+      "image": {
+        "sel": ".image",
+        "count": 6,
+        "first": {
+          "rect": {
+            "w": 120,
+            "h": 29
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(60, 66, 66)",
+          "padding": "0px 0px 0px 0px",
+          "font": "lexia 14px/16px 400",
+          "borderRadius": "0px",
+          "heading": null,
+          "image": {
+            "w": 120,
+            "h": 29
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 6,
+        "text": ""
+      }
+    }
+  },
+  "siblings": [
+    {
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+      "findings": [
+        {
+          "kind": "COUNT",
+          "probe": "tile",
+          "msg": "6 → 2 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "tile",
+          "msg": "4 → 1 distinct style families among matches (a second visual family = a variant class)"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tile",
+          "msg": "image{h 224 → 182}"
+        },
+        {
+          "kind": "MISSING",
+          "probe": "band",
+          "msg": "\".teaser--text-image\" matches 1 on the archetype, 0 on the sibling"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "title",
+          "msg": "10 → 1 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "title",
+          "msg": "2 → 1 distinct style families among matches (a second visual family = a variant class)"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "title",
+          "msg": "rect{h 80 → 40}"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "text",
+          "msg": "9 → 6 matches"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "image",
+          "msg": "6 → 3 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "image",
+          "msg": "6 → 3 distinct style families among matches (a second visual family = a variant class)"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".teaser--home-hero",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 251
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 251
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": ""
+          },
+          "tile": {
+            "sel": ".teaser--image-top-text-bottom",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 580,
+                "h": 478
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h4 lexia 26px/34px 400 rgb(60, 66, 66)",
+              "image": {
+                "w": 580,
+                "h": 182
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "L’amylose ATTR peut se manifester sous différentes formes.1-"
+          },
+          "band": {
+            "sel": ".teaser--text-image",
+            "count": 0
+          },
+          "title": {
+            "sel": ".cmp-title",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1180,
+                "h": 40
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(131, 0, 81)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h3 lexia 36px/40px 400 rgb(131, 0, 81)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Vous avez des questions ?"
+          },
+          "text": {
+            "sel": ".cmp-text",
+            "count": 6,
+            "first": {
+              "rect": {
+                "w": 628,
+                "h": 48
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Le contenu de ce site web est réservé exclusivement aux prof"
+          },
+          "crumb": {
+            "sel": ".cmp-breadcrumb__item",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 56,
+                "h": 28
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "6px 0px 6px 0px",
+              "font": "lexia 14px/16px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Home"
+          },
+          "subnav": {
+            "sel": ".list--fixed-width .cmp-list__item",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 273,
+                "h": 37
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "none",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Amylose à transthyrétine (ATTR-CM)"
+          },
+          "embed": {
+            "sel": ".cmp-embed",
+            "count": 0
+          },
+          "image": {
+            "sel": ".image",
+            "count": 3,
+            "first": {
+              "rect": {
+                "w": 120,
+                "h": 29
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "lexia 14px/16px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 120,
+                "h": 29
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 3,
+            "text": ""
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+      "findings": [
+        {
+          "kind": "COUNT",
+          "probe": "tile",
+          "msg": "6 → 8 matches"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tile",
+          "msg": "rect{h 479 → 252}; image [object Object] → null"
+        },
+        {
+          "kind": "MISSING",
+          "probe": "band",
+          "msg": "\".teaser--text-image\" matches 1 on the archetype, 0 on the sibling"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "title",
+          "msg": "10 → 5 matches"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "text",
+          "msg": "9 → 8 matches"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "image",
+          "msg": "6 → 4 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "image",
+          "msg": "6 → 4 distinct style families among matches (a second visual family = a variant class)"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".teaser--home-hero",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 251
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 251
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": ""
+          },
+          "tile": {
+            "sel": ".teaser--image-top-text-bottom",
+            "count": 8,
+            "first": {
+              "rect": {
+                "w": 580,
+                "h": 252
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h4 lexia 26px/34px 400 rgb(60, 66, 66)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 4,
+            "text": "Les patient·e·s avec une amyloidose ATTR ont un retard de di"
+          },
+          "band": {
+            "sel": ".teaser--text-image",
+            "count": 0
+          },
+          "title": {
+            "sel": ".cmp-title",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 1180,
+                "h": 80
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(131, 0, 81)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h3 lexia 36px/40px 400 rgb(131, 0, 81)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Plus tôt l’amyloidose ATTR est diagnostiquée, plus tôt un tr"
+          },
+          "text": {
+            "sel": ".cmp-text",
+            "count": 8,
+            "first": {
+              "rect": {
+                "w": 628,
+                "h": 48
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Le contenu de ce site web est réservé exclusivement aux prof"
+          },
+          "crumb": {
+            "sel": ".cmp-breadcrumb__item",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 56,
+                "h": 28
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "6px 0px 6px 0px",
+              "font": "lexia 14px/16px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Home"
+          },
+          "subnav": {
+            "sel": ".list--fixed-width .cmp-list__item",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 273,
+                "h": 36
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "none",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Amylose à transthyrétine (ATTR-CM)"
+          },
+          "embed": {
+            "sel": ".cmp-embed",
+            "count": 0
+          },
+          "image": {
+            "sel": ".image",
+            "count": 4,
+            "first": {
+              "rect": {
+                "w": 120,
+                "h": 29
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "lexia 14px/16px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 120,
+                "h": 29
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 4,
+            "text": ""
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+      "findings": [
+        {
+          "kind": "COUNT",
+          "probe": "tile",
+          "msg": "6 → 5 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "tile",
+          "msg": "4 → 3 distinct style families among matches (a second visual family = a variant class)"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tile",
+          "msg": "rect{w 580 → 387, h 479 → 196}; borderRadius 0px → 8px; image [object Object] → null"
+        },
+        {
+          "kind": "MISSING",
+          "probe": "band",
+          "msg": "\".teaser--text-image\" matches 1 on the archetype, 0 on the sibling"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "title",
+          "msg": "10 → 5 matches"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "title",
+          "msg": "rect{h 80 → 40}"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "text",
+          "msg": "9 → 8 matches"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "image",
+          "msg": "6 → 3 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "image",
+          "msg": "6 → 3 distinct style families among matches (a second visual family = a variant class)"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".teaser--home-hero",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 251
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 251
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": ""
+          },
+          "tile": {
+            "sel": ".teaser--image-top-text-bottom",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 387,
+                "h": 196
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "8px",
+              "heading": "h4 lexia 26px/34px 400 rgb(60, 66, 66)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 3,
+            "text": "Suspicion Identifiez les symptômes de l’amylose ATTR – y com"
+          },
+          "band": {
+            "sel": ".teaser--text-image",
+            "count": 0
+          },
+          "title": {
+            "sel": ".cmp-title",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 1180,
+                "h": 40
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(131, 0, 81)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h3 lexia 36px/40px 400 rgb(131, 0, 81)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "L’amylose ATTR peut être traitée avec des thérapies ciblées1"
+          },
+          "text": {
+            "sel": ".cmp-text",
+            "count": 8,
+            "first": {
+              "rect": {
+                "w": 628,
+                "h": 48
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Le contenu de ce site web est réservé exclusivement aux prof"
+          },
+          "crumb": {
+            "sel": ".cmp-breadcrumb__item",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 56,
+                "h": 28
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "6px 0px 6px 0px",
+              "font": "lexia 14px/16px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Home"
+          },
+          "subnav": {
+            "sel": ".list--fixed-width .cmp-list__item",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 273,
+                "h": 36
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "none",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Amylose à transthyrétine (ATTR-CM)"
+          },
+          "embed": {
+            "sel": ".cmp-embed",
+            "count": 0
+          },
+          "image": {
+            "sel": ".image",
+            "count": 3,
+            "first": {
+              "rect": {
+                "w": 120,
+                "h": 29
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "lexia 14px/16px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 120,
+                "h": 29
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 3,
+            "text": ""
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+      "findings": [
+        {
+          "kind": "COUNT",
+          "probe": "tile",
+          "msg": "6 → 7 matches"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "tile",
+          "msg": "rect{w 580 → 387, h 479 → 98}; borderRadius 0px → 8px; heading h4 lexia 26px/34px 400 rgb(60, 66, 66) → null; image [object Object] → null"
+        },
+        {
+          "kind": "MISSING",
+          "probe": "band",
+          "msg": "\".teaser--text-image\" matches 1 on the archetype, 0 on the sibling"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "title",
+          "msg": "10 → 5 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "title",
+          "msg": "2 → 1 distinct style families among matches (a second visual family = a variant class)"
+        },
+        {
+          "kind": "PROBE",
+          "probe": "title",
+          "msg": "rect{h 80 → 40}"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "image",
+          "msg": "6 → 5 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "image",
+          "msg": "6 → 5 distinct style families among matches (a second visual family = a variant class)"
+        }
+      ],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".teaser--home-hero",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 251
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 251
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": ""
+          },
+          "tile": {
+            "sel": ".teaser--image-top-text-bottom",
+            "count": 7,
+            "first": {
+              "rect": {
+                "w": 387,
+                "h": 98
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "8px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 4,
+            "text": "Un stade avancé de la maladie peut affecter la réponse à cer"
+          },
+          "band": {
+            "sel": ".teaser--text-image",
+            "count": 0
+          },
+          "title": {
+            "sel": ".cmp-title",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 1180,
+                "h": 40
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(131, 0, 81)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": "h3 lexia 36px/40px 400 rgb(131, 0, 81)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Reconnaître les modèles de symptômes accélère le diagnostic1"
+          },
+          "text": {
+            "sel": ".cmp-text",
+            "count": 9,
+            "first": {
+              "rect": {
+                "w": 628,
+                "h": 48
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Le contenu de ce site web est réservé exclusivement aux prof"
+          },
+          "crumb": {
+            "sel": ".cmp-breadcrumb__item",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 56,
+                "h": 28
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "6px 0px 6px 0px",
+              "font": "lexia 14px/16px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Home"
+          },
+          "subnav": {
+            "sel": ".list--fixed-width .cmp-list__item",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 273,
+                "h": 36
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "inter-regular 16px/24px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": null,
+              "listStyle": "none",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Amylose à transthyrétine (ATTR-CM)"
+          },
+          "embed": {
+            "sel": ".cmp-embed",
+            "count": 0
+          },
+          "image": {
+            "sel": ".image",
+            "count": 5,
+            "first": {
+              "rect": {
+                "w": 120,
+                "h": 29
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(60, 66, 66)",
+              "padding": "0px 0px 0px 0px",
+              "font": "lexia 14px/16px 400",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 120,
+                "h": 29
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 5,
+            "text": ""
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "siblings": 4,
+    "varying": 4,
+    "probesVarying": [
+      "tile",
+      "band",
+      "title",
+      "text",
+      "image"
+    ]
+  }
+}

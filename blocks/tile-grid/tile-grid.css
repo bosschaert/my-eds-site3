@@ -1,0 +1,154 @@
+/* tile-grid — canon .container--3-column-wrap > .teaser--image-top-text-bottom (lifted) */
+.tile-grid {
+  padding: 20px 0;
+}
+
+.tile-grid .tile-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tile-grid .tile-item {
+  flex: 1 1 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.tile-grid .tile-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.tile-grid .tile-media {
+  order: 0;
+  padding: 0;
+  width: 100%;
+  flex: 0 1 auto;
+}
+
+.tile-grid .tile-media-mobile {
+  display: none;
+}
+
+.tile-grid .img {
+  line-height: 0;
+}
+
+.tile-grid .img picture {
+  display: block;
+}
+
+.tile-grid .img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tile-grid .tile-body {
+  order: 1;
+  color: var(--text-color-body-1);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+  padding: 24px 16px;
+  width: 100%;
+  gap: 16px;
+  background-color: var(--bg-color-supporting-1);
+}
+
+.tile-grid .tile-body > * {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tile-grid .tile-body p {
+  margin: 0;
+}
+
+.tile-grid .tile-title :is(h2, h3, h4) {
+  overflow-wrap: anywhere;
+}
+
+.tile-grid .tile-desc,
+.tile-grid .tile-desc :is(p, li) {
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+}
+
+/* the source's `<p>&nbsp;</p>` spacer line above the indication links (#112: authored
+   whitespace never survives the pipeline — modelled as one 24px line of margin) */
+.tile-grid .tile-desc p:has(a) {
+  margin-top: 24px;
+}
+
+.tile-grid .tile-desc :is(b, strong) {
+  font-family: var(--font-bold);
+  font-weight: 700;
+}
+
+/* section head styled in place (default content before the block): the canon intro
+   `.text` modules (margin 16/10px) and the `.section-title--t-space` title (20px top) */
+main .section.tile-grid-container .default-content-wrapper {
+  padding-top: 20px;
+}
+
+main .section.tile-grid-container .default-content-wrapper p {
+  margin-top: 10px;
+}
+
+main .section.tile-grid-container .default-content-wrapper :is(h2, h3) {
+  margin-top: 40px;
+  color: var(--text-color-title-1);
+}
+
+@media (width <= 767px) {
+  .tile-grid .tile-media-mobile {
+    display: block;
+  }
+
+  .tile-grid .tile-media:not(.tile-media-single) .tile-media-desktop {
+    display: none;
+  }
+}
+
+@media (width >= 768px) {
+  .tile-grid {
+    padding: 40px 0;
+  }
+
+  .tile-grid .tile-item {
+    flex: 1 1 calc(33.33% - 6.67px);
+    max-width: calc(33.33% - 6.67px);
+    border-radius: 8px;
+  }
+
+  main .section.tile-grid-container .default-content-wrapper {
+    padding-top: 40px;
+  }
+
+  main .section.tile-grid-container .default-content-wrapper p {
+    margin-top: 16px;
+  }
+
+  main .section.tile-grid-container .default-content-wrapper :is(h2, h3) {
+    margin-top: 60px;
+  }
+}
+
+@media (width >= 1280px) {
+  .tile-grid .tile-card {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .tile-grid .tile-body {
+    padding: 24px;
+  }
+}

@@ -1,0 +1,274 @@
+/*in override CSS to remove breadcumb dummy page issue*/
+a.cmp-breadcrumb__item-link[href*='/de/startseite/therapiegebiete.html'],
+a.cmp-breadcrumb__item-link[href*='/de/startseite/therapiegebiete/cvrm.html'],
+a.cmp-breadcrumb__item-link[href*='/de/startseite/therapiegebiete/ri.html'],
+a.cmp-breadcrumb__item-link[href*='/de/startseite/therapiegebiete/onkologie.html'],
+a.cmp-breadcrumb__item-link[href*='/de/startseite/produkte/fasenra/asthma.html'],
+a.cmp-breadcrumb__item-link[href*='/fr/startseite/produkte/fasenra/egpa.html'],
+a.cmp-breadcrumb__item-link[href*='/fr/startseite/produkte/fasenra/asthma.html'],
+a.cmp-breadcrumb__item-link[href*='/de/startseite/produkte/fasenra/egpa.html'],
+a.cmp-breadcrumb__item-link[href*='/en/startseite/therapiegebiete.html'],
+a.cmp-breadcrumb__item-link[href*='/en/startseite/therapiegebiete/cvrm.html'],
+a.cmp-breadcrumb__item-link[href*='/en/startseite/therapiegebiete/ri.html'],
+a.cmp-breadcrumb__item-link[href*='/en/startseite/therapiegebiete/onkologie.html'],
+a.cmp-breadcrumb__item-link[href*='/fr/startseite/therapiegebiete.html'],
+a.cmp-breadcrumb__item-link[href*='/fr/startseite/therapiegebiete/cvrm.html'],
+a.cmp-breadcrumb__item-link[href*='/fr/startseite/therapiegebiete/ri.html'],
+a.cmp-breadcrumb__item-link[href*='/fr/startseite/therapiegebiete/onkologie.html'],
+a.cmp-breadcrumb__item-link[href*='/it/startseite/therapiegebiete.html'],
+a.cmp-breadcrumb__item-link[href*='/it/startseite/therapiegebiete/cvrm.html'],
+a.cmp-breadcrumb__item-link[href*='/it/startseite/therapiegebiete/ri.html'],
+a.cmp-breadcrumb__item-link[href*='/it/startseite/therapiegebiete/onkologie.html'],
+a.cmp-breadcrumb__item-link[href*='/de/startseite/produkte/handling.html'],
+a.cmp-breadcrumb__item-link[href*='/fr/startseite/produkte/handling.html'],
+a.cmp-breadcrumb__item-link[href*='/it/startseite/produkte/handling.html'],
+a.cmp-breadcrumb__item-link[href*='/de/startseite/produkte/product-instructions.html'],
+a.cmp-breadcrumb__item-link[href*='/en/startseite/produkte/product-instructions.html'],
+a.cmp-breadcrumb__item-link[href*='/fr/startseite/produkte/product-instructions.html'],
+a.cmp-breadcrumb__item-link[href*='/it/startseite/produkte/product-instructions.html'],
+a.cmp-breadcrumb__item-link[href*='/en/impactacademy.html'],
+a.cmp-breadcrumb__item-link[href*='/en/de.html'],
+a.cmp-breadcrumb__item-link[href*='/en/de/impactacademy.html'],
+a.cmp-breadcrumb__item-link[href*='/en/fr.html'],
+a.cmp-breadcrumb__item-link[href*='/en/fr/impactacademy.html'],
+a.cmp-breadcrumb__item-link[href*='/en/it.html'],
+a.cmp-breadcrumb__item-link[href*='/en/startseite/produkte/calquence.html'],
+a.cmp-breadcrumb__item-link[href*='en/startseite/produkte/calquence/cll-plus.html'],
+a.cmp-breadcrumb__item-link[href*='/en/it/impactacademy.html'], 
+a.cmp-breadcrumb__item-link[href*='/de/startseite/produkte/trixeo.html'],
+a.cmp-breadcrumb__item-link[href*='/en/startseite/produkte/imfinzi/gastric-cancer.html']{
+  pointer-events: none;
+  cursor: auto;
+  color: darkgray;
+}
+/*---------------------------------------------------*/
+
+
+/*in override CSS to remove scroll bars starts*/
+body {
+  overflow-x: visible!important;
+}
+
+div.container {
+  overflow: visible;
+}
+/*in override CSS to remove scroll bars end*/
+
+/*-------Footer Code starts*/
+body#restyle div#last-vivo-id {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+body#restyle div#vivo-id-wrap {
+  position: absolute;
+  right: 0px;
+  top: 300px;
+  padding-bottom: 40px;
+}
+
+body#restyle .root > .cmp-container > .container > .cmp-container > .aem-Grid > .container > div#last-vivo-id.cmp-container > .container {
+  padding: 0px 3em;
+}
+
+@media screen and (max-width:767px) {
+  body#restyle .root > .cmp-container > .container > .cmp-container > .aem-Grid > .container > div#last-vivo-id.cmp-container > .container {
+    padding: 0px 1em !important;
+  }
+}
+
+@media screen and (max-width:767px) and (min-width: 600px) {
+  body#restyle div#vivo-id-wrap {
+    top: 475px;
+    left: 1%;
+    transform: translateX(-1%);
+    text-align: center;
+  }
+
+  body#restyle #myAccountPage div#vivo-id-wrap {
+    top: 720px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  body#restyle div#vivo-id-wrap {
+    top: 465px;
+    left: 1%;
+    transform: translateX(-1%);
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  body#restyle div#vivo-id-wrap {
+    padding-right: 15px !important;
+  }
+}
+
+@media screen and (max-width:540px) {
+  body#restyle div#vivo-id-wrap {
+    position: absolute;
+    left: 1%;
+    transform: translateX(-1% );
+      /* transform: translate(-50%, 814%); */
+    text-align: center;
+  }
+}
+
+@media screen and (orientation:landscape) and (max-device-width: 480px) {
+  #restyle div#vivo-id-wrap {
+    top: 475px;
+    left: 1%;
+    transform: translateX(-1%);
+    text-align: center;
+  }
+}
+  /*-------Footer Code end*/
+
+/*------ Wainzua brand */
+#wainzua .teaser .cmp-teaser__action-link, #wainzua .button .cmp-button{
+    border: none !important;
+    background: linear-gradient(to right, #006838, #005F32, #004625, #004122);
+}
+
+#wainzua .cmp-teaser__title{
+    color: #3C4242 !important;
+}
+
+#wainzua h1, #wainzua h2, #wainzua h3, #wainzua h4, #wainzua h5, #wainzua h6, #wainzua h7{
+    color: #004122 !important;
+}
+
+#wainzua .cmp-teaser__title-link:hover{
+    color: #004122 !important;
+}
+
+#wainzua .cmp-tabs__tab--active{
+    color: #004122 !important;
+    border-bottom: 1px solid #004122 !important;
+}
+
+#wainzua .cmp-accordion__header, #wainzua .cmp-accordion__title{
+    color:#004122 !important;
+}
+
+#wainzua .cmp-tabs__tab:hover{
+    color: #004122 !important;
+    
+}
+
+#wainzua .otext{
+    color:#F26522 !important;
+}
+
+#wainzua-banner .cmp-image__image{
+    opacity: 1 !important;
+}
+
+#wainzua-banner .cmp-teaser__title{
+    color: #004122 !important;
+}
+
+#wainzua #rbox, #wainzua #rbox1, #wainzua #rbox2, #wainzua #rbox3{
+    background: linear-gradient(to right, #FFF33B, #FEEA39, #FBD135, #F8AA2E, #F37324, #F26522);
+    padding: 20px 20px 20px 20px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 780px) {
+    #wainzua-banner .cmp-teaser__title{
+        margin-top:-100px !important;
+    }
+}
+/*------ Wainzua brand end */
+
+/*Impact Academy header - hide navigation */
+
+/*navigation desktop and burger menu mobile**/
+#impact-academy-navigation-display-none, #impact-academy-header .navigation {
+    display:none;
+}
+
+#secondary-navigation-impact-academy ul, #secondary-navigation-forxiga ul {
+    justify-content: left;
+}
+
+
+/*---------- impact academy section end ------------*/
+
+
+/*Lynparza video height issue */
+#imfinzi-video-container .cmp-video__player{
+    height: auto!important;
+}
+
+/*Lynparza video height issue end */
+
+#lynparza-navigation ul li:first-child {
+    display: none;
+}
+
+/*---------- Fasenra Asthma Nav --------*/
+#asthmamenu a {
+    padding-right:15px !important;
+    padding-left:15px !important;
+}
+/*--------------- END -----------------*/
+
+.trixeo-button-group {
+    display: flex; gap: 1rem; justify-content: center;
+}
+
+.trixeo-button-group .cmp-button {
+    font-weight: bold !important;
+}
+
+@media screen and (max-width:767px) { 
+    .trixeo-button-group {
+        display: block;
+    }
+    
+    .trixeo-button-group .cmp-button {
+        margin-bottom: 16px;
+    }
+    
+    
+}
+
+div#container-77857e3fe2 .cmp-html-video--viewport {
+    position: relative;
+}
+
+div#container-77857e3fe2 .section-blur-layer, div#container-77857e3fe2 .playpause{
+    display: none;
+}
+
+
+#opt-in-form input[type="checkbox"][name="consent"] + span {
+  
+    color: #000;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    #wainzua-ch-reduced-h1 h1 span, #wainzua-ch-reduced-h1 h1 {
+        font-size: 26px;
+        line-height: 34px;
+        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #wainzua-ch-reduced-h1 h1 span, #wainzua-ch-reduced-h1 h1 {
+        font-size: 36px;
+        line-height: 40px;
+        
+    }
+}
+
+#pdf-container-h-900 .cmp-pdfviewer__content{
+  height: 900px;       
+  width: 100%;         
+  position: relative; 
+}

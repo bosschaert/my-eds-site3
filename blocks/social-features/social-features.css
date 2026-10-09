@@ -1,0 +1,97 @@
+/* social-features — socialfeatures.css + .theme.css (.cmp-socialFeatures__*, lifted);
+   static tier: icons + captured counters, popups hidden */
+.social-features .social-base {
+  display: grid;
+  padding: 0;
+  position: relative;
+}
+
+.social-features .social-wrap {
+  position: relative;
+  width: fit-content;
+}
+
+.social-features .social-list {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+  list-style: none;
+}
+
+.social-features .social-item {
+  padding: 0;
+  cursor: pointer;
+}
+
+.social-features .social-item-share {
+  order: 3;
+}
+
+.social-features .social-icon {
+  display: block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+}
+
+.social-features .social-glyph {
+  color: var(--text-color-interaction);
+  display: inline-block;
+  font-family: var(--font-icon);
+  font-size: 20px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.social-features .social-glyph-like::before {
+  content: "\e91d";
+}
+
+.social-features .social-glyph-share::before {
+  content: "\e915";
+}
+
+.social-features .social-glyph-favorite::before {
+  content: "\e91b";
+}
+
+.social-features .social-count {
+  display: inline-block;
+  line-height: 20px;
+}
+
+.social-features .social-popup,
+.social-features .social-popup[hidden] {
+  display: none;
+}
+
+.social-features .social-note {
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+}
+
+@media (width <= 767px) {
+  .social-features {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (width >= 768px) {
+  .social-features .social-wrap {
+    display: flex;
+    justify-self: flex-end;
+  }
+
+  .social-features .social-list {
+    justify-content: flex-end;
+  }
+}

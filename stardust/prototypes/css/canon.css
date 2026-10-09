@@ -1,0 +1,375 @@
+/* ============================================================================
+   myastrazeneca.ch (FR) replica — shared canon (tokens, fonts, chrome, shared modules)
+   Every value here is LIFTED from the source stylesheets (clientlibs theme "wese-hcp-portal-v1",
+   publish/main.css, component css) and confirmed against live computed styles at 1440 and 360.
+   Source breakpoint bands: ≤479 | 480–639 | 640–767 | 768–1023 | 1024–1279 | 1280–1439 | 1440–1535 | ≥1536.
+   Gate widths: 1440 (band 1440–1535) and 360 (band ≤479). Grid (AEM grid.css) breaks: ≤650 phone, 651–1200 tablet.
+
+   BOX MODEL (per container family, lifted):
+     - Source declares a UNIVERSAL reset `*, *:before, *:after { box-sizing: border-box }` (brand sheet @4863)
+       and `html, body { box-sizing: border-box }` — so the default for every container family is border-box.
+     - Exceptions authored content-box by the source:
+         .languagenavigation (≥1280: content-box, width 1180px + padding (100%-1180px)/2 each side)
+         .cmp-experiencefragment--footer #FooterLinks .text (≥768: content-box, width 50%/max-width 34% + padding-left 16%)
+     - A later replica delivery scopes its border-box reset exactly like this: universal (as the source does),
+       with the two content-box exceptions above restated per block.
+
+   SCROLL-STATE CHROME: none. The live header does not morph with scroll (source JS only closes open
+   menus on `scroll`; no fixed/sticky header rule). No prototype JS for chrome.
+
+   FONTS: Lexia (Dalton Maag, commercial) kept FIRST in every stack; the file live actually serves, 400_Lexia_Rg.woff
+   (publish/fonts/lexia/resources), is self-hosted ONLY inside this prototype for measurement (never on the public
+   origin). NOT the woff2 build: its vertical metrics differ (ascent 14/descent 3 vs 13/4 at 14px) and shifted every
+   Lexia baseline by 1px (found on the therapy-area breadcrumb: 29px rows vs 28px live). Inter-* families are
+   declared per weight as separate family names exactly as the source does ("Inter-Regular", "Inter-Medium",
+   "Inter-Bold"); icomoon is the icon font (icon-arrow-down \f078, fa-search \f002, fa-times-circle \f057).
+   ============================================================================ */
+
+@font-face { font-family: "Lexia"; font-weight: 400; font-style: normal; font-display: swap; src: url("../assets/fonts/400_Lexia_Rg.woff") format("woff"); } /* the exact file live serves (publish/fonts/lexia/resources/400_Lexia_Rg.woff); the intercepted woff2 build has different vertical metrics (ascent 14/descent 3 vs 13/4 at 14px) and shifted every Lexia baseline by 1px */
+@font-face { font-family: "Inter-Regular"; font-weight: 400; font-style: normal; font-display: swap; src: url("../assets/fonts/Inter-Regular.woff2") format("woff2"); }
+@font-face { font-family: "Inter-Medium"; font-weight: 500; font-style: normal; font-display: swap; src: url("../assets/fonts/Inter-Medium.woff2") format("woff2"); }
+@font-face { font-family: "Inter-Bold"; font-weight: 700; font-style: normal; font-display: swap; src: url("../assets/fonts/Inter-Bold.woff2") format("woff2"); }
+@font-face { font-family: "icomoon"; font-weight: normal; font-style: normal; font-display: swap; src: url("../assets/fonts/icomoon.woff") format("woff"); }
+@font-face { font-family: "Font Awesome"; font-weight: 900; font-style: normal; font-display: swap; src: url("../assets/fonts/icomoon.woff") format("woff"); } /* publish/main.css aliases the SAME icomoon file as "Font Awesome" 900 (breadcrumb separator \f04b) */
+
+:root {
+  --bgColor-core-1: #830051; --bgColor-core-2: #4F0031; --bgColor-core-3: #D0006F;
+  --bgColor-secondary-1: #F0AB00; --bgColor-secondary-2: #9DB0AC; --bgColor-secondary-3: #3C4242;
+  --bgColor-supporting-1: #EBEFEE; --bgColor-supporting-2: #ffffff;
+  --textColor-body-1: #3C4242; --textColor-body-2: #ffffff;
+  --textColor-title-1: #830051; --textColor-title-2: #D0006F; --textColor-interaction: #D0006F;
+  --textColor-label-1: #8D8F8F; --textColor-label-2: #656969;
+  --borderColor-1: #EBEFEE; --borderColor-2: #D8DFDE; --borderColor-3: #D8DADA; --borderColor-4: #3C4242;
+  --borderColor-6: #D0006F; --borderColor-7: #B2B4B4; --borderColor-8: #656969;
+  --button-primary-bgColor: #D0006F; --button-primary-borderColor: #D0006F; --button-primary-textColor: #ffffff;
+  --button-secondary-bgColor: #ffffff; --button-secondary-borderColor: #D0006F; --button-secondary-textColor: #D0006F;
+  --table-bgColor-1: #C4CFCD;
+  --font-body: "Inter-Regular"; --font-bold: "Inter-Bold"; --font-medium: "Inter-Medium"; --font-display: "Lexia";
+  --container-max: 1180px;   /* content cap (DESIGN.json containerMaxWidth) */
+  --hero-content-max: 1220px; /* hero content module cap */
+}
+
+/* ---- base (brand sheet) ---- */
+*, *:before, *:after { box-sizing: border-box; }
+html, body { font-family: "Inter-Regular"; font-size: 16px; line-height: 24px; margin: 0; color: var(--textColor-body-1); font-weight: 400; scroll-behavior: smooth; box-sizing: border-box; overflow-x: hidden; }
+body { overflow-x: visible !important; } /* overwritten.css L48 */
+html b, html b *, body b, body b * { font-family: "Inter-Bold"; font-weight: 700; }
+a { text-decoration: underline; color: inherit; }
+a:hover { color: var(--textColor-interaction); }
+p, p *:not(sub, sup, b) { font-family: "Inter-Regular"; font-size: 16px; line-height: 24px; font-weight: 400; letter-spacing: normal; margin: 0; }
+sub, sup { font-size: 10px; line-height: 0; }
+ul, ol { padding: 0; margin: 0; list-style-position: inside; }
+ul ul, ul ol, ol ul, ol ol { padding-left: 32px; }
+.hidden { display: none; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
+/* heading ramp (brand sheet, per band) */
+h1, h1 *:not(sub, sup, b) { font-family: "Lexia"; font-size: 36px; line-height: 40px; font-weight: 400; letter-spacing: normal; margin: 0; text-decoration: none; }
+h2, h2 *:not(sub, sup, b) { font-family: "Lexia"; font-size: 36px; line-height: 40px; font-weight: 400; letter-spacing: normal; margin: 0; text-decoration: none; }
+h3, h3 *:not(sub, sup, b) { font-family: "Lexia"; font-size: 26px; line-height: 34px; font-weight: 400; letter-spacing: normal; margin: 0; text-decoration: none; }
+h4, h4 *:not(sub, sup, b) { font-family: "Lexia"; font-size: 26px; line-height: 34px; font-weight: 400; letter-spacing: normal; margin: 0; text-decoration: none; }
+@media screen and (min-width: 768px) {
+  h1, h1 *:not(sub, sup, b) { font-size: 56px; line-height: 60px; }
+  h2, h2 *:not(sub, sup, b) { font-size: 46px; line-height: 50px; }
+  h3, h3 *:not(sub, sup, b) { font-size: 36px; line-height: 40px; }
+}
+h1 sub, h1 sup, h2 sub, h2 sup, h3 sub, h3 sup { font-size: 26px; line-height: 0; }
+
+/* icon font (publish/main.css) */
+.icon, .main-nav__icon, [class^="icon-"], [class*=" icon-"] { font-family: "icomoon" !important; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.icon { display: inline-block; }
+.icon--search:before { content: "\f002"; }
+.icon--times-circle:before { content: "\f057"; }
+.icon--chevron-right:before { content: "\f054"; }
+
+/* image component (.cmp-image) */
+.img { line-height: 0; }
+.img__el--mobile { display: none; }
+
+/* ---- site root (.root.container.responsivegrid) ---- */
+.site { width: 100%; margin: auto; }
+
+/* ---- language navigation (.languagenavigation) ---- */
+.lang-nav { width: 100%; margin: auto; font-family: "Lexia"; font-size: 10px; line-height: 18px; font-weight: 400; padding-top: 8px; padding-bottom: 8px; border-top: 1px solid var(--borderColor-1); }
+.lang-nav__country { display: none; margin: 15px 20px 15px; color: #fff; }
+.lang-nav__list { display: flex; justify-content: flex-end; list-style: none; margin: 0; padding: 0; }
+.lang-nav__item { border-right: 1px solid var(--borderColor-4); line-height: 12px; }
+.lang-nav__item:first-child { border-left: 1px solid var(--borderColor-4); }
+.lang-nav__link { text-transform: uppercase; padding: 0 6px; }
+.lang-nav__item--active { color: var(--textColor-interaction); }
+@media screen and (max-width: 767px) { .lang-nav { padding-left: 16px; padding-right: 16px; } }
+@media screen and (min-width: 768px) and (max-width: 1279px) { .lang-nav { padding-left: 16px; padding-right: 16px; } }
+@media screen and (min-width: 1280px) { .lang-nav { box-sizing: content-box; width: var(--container-max); padding-left: calc((100% - var(--container-max)) / 2); padding-right: calc((100% - var(--container-max)) / 2); } }
+
+/* ---- header (.experiencefragment.cmp-experiencefragment--customMenu) ---- */
+.site-header { font-family: "Lexia"; font-size: 14px; line-height: 16px; font-weight: 400; border-top: 1px solid var(--borderColor-1); border-bottom: 1px solid var(--borderColor-1); padding: 10px 0; text-decoration: none; }
+.site-header b, .site-header b * { font-weight: 700; }
+.site-header__inner { max-width: 100%; width: 100%; margin: auto; }
+.site-header__grid { display: flex; align-items: center; min-height: 35px; width: 100%; }
+.site-header__grid::after { clear: both; }
+.site-header__logo { width: 16.66666667%; min-width: 82px; max-width: 120px; }
+.site-header__logo .img__el { width: 100%; height: auto; }
+.site-header__nav { width: auto; min-width: 20px; margin-left: 12px; font-size: 14px; }
+.site-header__account { position: relative; margin: 0 0 0 auto; width: auto; overflow: visible; }
+.site-header__account-row { display: flex; flex-direction: row-reverse; align-items: center; padding: 0; }
+.site-header__user { position: relative; display: flex; padding: 0; }
+@media screen and (max-width: 767px) {
+  .site-header__inner { padding-left: 16px; padding-right: 16px; }
+  .site-header__nav { order: 3; }
+  .site-header__account { order: 2; }
+}
+@media screen and (min-width: 1280px) {
+  .site-header__inner { max-width: var(--container-max); }
+  .site-header__nav { flex: 1; margin-left: 0; }
+  .site-header__account { display: flex; flex: 0 1 auto; }
+}
+
+/* login button (#loginHeader — secondary-small spec) */
+.btn__el { background-color: rgba(0, 0, 0, 0); border: 1px solid var(--button-secondary-borderColor); color: var(--button-secondary-textColor); display: inline-block; font-family: "Inter-Medium"; font-size: 12px; font-weight: normal; font-style: normal; line-height: 20px; padding: 6px 16px; text-decoration: none; border-radius: 4px; text-align: center; }
+.btn__el:hover { background-color: rgba(0, 0, 0, 0); border-color: var(--button-secondary-borderColor); color: var(--button-secondary-textColor); opacity: .8; text-decoration: none; }
+.btn__el:focus, .btn__el:focus-visible { outline: -webkit-focus-ring-color auto 1px; }
+
+/* primary CTA (.cmp-teaser__action-link / .button .cmp-button) */
+.btn-primary { background-color: var(--button-primary-bgColor); border: 1px solid var(--button-primary-borderColor); color: var(--button-primary-textColor); display: inline-block; font-family: "Inter-Bold"; font-weight: normal; font-style: normal; font-size: 16px; line-height: 24px; padding: 8px 16px; text-decoration: none; border-radius: 4px; text-align: center; }
+.btn-primary:focus, .btn-primary:focus-visible { outline: -webkit-focus-ring-color auto 1px; }
+
+/* main navigation (megamenu.css + theme) — closed state as captured */
+.main-nav__nav ul { padding: 0; }
+.main-nav__list { display: flex; justify-content: center; background: none; gap: 12px; align-items: center; list-style: none; margin: 0; }
+.main-nav__group { list-style: none; display: flex; }
+.main-nav__group a, .main-nav__list a { text-decoration: none; }
+.main-nav__item { margin: 0; }
+.main-nav__item a { font-family: "Lexia"; font-size: 14px; font-weight: 400; line-height: 18px; }
+.main-nav__item .main-nav__group { flex-direction: column; display: none; }
+.main-nav__item--l0 { padding: 7px 10px 8px 10px; cursor: pointer; }
+.main-nav__item--l0 > .main-nav__group { width: 100vw; height: 75vh; position: absolute; left: 0; top: 138px; margin: 0; background-color: var(--bgColor-supporting-1); color: var(--textColor-title-1); padding: 32px 32px 38px; box-sizing: border-box; overflow: auto; z-index: 1; }
+.main-nav__item--l1, .main-nav__item--l2 { display: flex; width: max-content; }
+.main-nav__item--l1 .main-nav__content { padding: 8px 20px 8px 8px; width: 220px; font-family: "Lexia"; font-size: 16px; font-weight: 400; line-height: 18px; white-space: initial; word-break: break-word; cursor: pointer; }
+.main-nav__item--l1 .main-nav__content a { font-size: 16px; }
+.main-nav__item--l1 .main-nav__item--l2 > .main-nav__content { width: 229px; }
+.main-nav__icon { font-size: 14px; line-height: 14px; }
+.main-nav__icon.icon-arrow-down:before { content: "\f078"; }
+.main-nav__icon.icon-arrow-up:before { content: "\f077"; }
+.main-nav__burger { display: block; position: absolute; right: 0; top: 2px; margin: 0; z-index: 2; height: 28px; width: 20px; background: none; border: none; padding: 0; cursor: pointer; }
+.main-nav__burger-wrap { position: relative; display: block; width: 100%; height: 100%; }
+.main-nav__burger-bar { width: 100%; height: 3px; position: absolute; left: 0; background-color: var(--bgColor-secondary-3); display: block; }
+.main-nav__burger-bar--top { top: 8px; }
+.main-nav__burger-bar--mid { top: 8px; display: none; }
+.main-nav__burger-bar--bottom { top: 16px; }
+.main-nav__overlay { height: auto; background-color: var(--bgColor-secondary-2); box-shadow: 0 6px 9pt rgba(0, 0, 0, .18); }
+@media only screen and (max-width: 1023px) {
+  .main-nav { position: relative; min-width: 22px; min-height: 30px; }
+  .main-nav__nav { display: none; }
+}
+@media only screen and (min-width: 1024px) { .main-nav__burger { display: none; } }
+
+/* header search box (.searchbox) — collapsed 40px state as captured */
+.site-search { font-family: "Lexia"; font-size: 14px; line-height: 16px; font-weight: 400; transition: all .5s; position: absolute; max-width: 40px; right: calc(100% + 6px); width: 928px; }
+.site-search__inner { position: relative; }
+.site-search label { display: none; }
+.site-search__field { width: 100%; position: relative; display: flex; align-items: center; border: none; border-radius: 2px; }
+.site-search__icon { padding: 0 12px; white-space: nowrap; cursor: pointer; font-size: 18px; display: block; }
+.site-search__input { background-color: var(--bgColor-supporting-2); position: initial; opacity: 1; padding: 4px 0; width: 100%; height: 40px; transition: all .5s; color: var(--textColor-body-1); font-family: "Inter-Regular"; font-size: 16px; line-height: 24px; border: none; outline: none; flex-grow: 100; }
+.site-search__clear { padding: 0 6px; flex-grow: 0; }
+.site-search__clear-link { border: none; cursor: pointer; padding: 0; background-color: rgba(0, 0, 0, 0); }
+.site-search__helper { display: none; }
+.site-search__results { position: absolute; width: 100%; z-index: 9; }
+@media screen and (max-width: 767px) { .site-search { width: 95vw; z-index: 9; } }
+
+/* breadcrumb (.breadcrumb .cmp-breadcrumb--horizantal.cmp-breadcrumb--play-icon) — lifted breadcrumb.css + breadcrumb.theme.css.
+   Home: the single "Home" item is hidden (:last-child:first-child) so the bar renders 0px; therapy-area: 4 items, 28px @1440 (14/16 + 6px padding), 2 rows of 30px @360 (10/18). */
+.breadcrumb-bar { padding: 0; }
+.breadcrumb { max-width: 100%; width: 100%; margin: auto; font-family: "Lexia"; font-size: 10px; line-height: 18px; font-weight: 400; }
+.breadcrumb__list { list-style: none; margin: 0; padding: 0; }
+.breadcrumb__item { display: inline-block; padding: 6px 0; margin-right: 12px; vertical-align: middle; }
+.breadcrumb__item:after { content: "\f04b"; font-family: "Font Awesome"; font-weight: 900; margin-left: 6px; font-size: 8px; bottom: 1px; position: relative; }
+.breadcrumb__item:last-child { margin-right: 0; }
+.breadcrumb__item:last-child:first-child { display: none; }
+.breadcrumb__item:last-child:after { display: none; }
+.breadcrumb__link { text-decoration: none; }
+.breadcrumb__item--active, .breadcrumb__item--active span { color: var(--textColor-interaction); }
+.breadcrumb__current { color: #000; text-decoration: none; }
+@media screen and (max-width: 767px) { .breadcrumb { padding-left: 16px; padding-right: 16px; } }
+@media screen and (min-width: 768px) { .breadcrumb { font-size: 14px; line-height: 16px; } .breadcrumb__item:after { bottom: 2px; font-size: 10px; margin-left: 6px; } }
+@media screen and (min-width: 768px) and (max-width: 1279px) { .breadcrumb { padding-left: 20px; padding-right: 20px; } }
+@media screen and (min-width: 1280px) { .breadcrumb { max-width: var(--container-max); } }
+
+/* ---- shared content modules ---- */
+/* .container / .container--fixed */
+.page-body { display: block; width: 100%; }
+.page-main { width: 100%; margin: auto; }
+.page-main__inner { max-width: 100%; width: 100%; margin: auto; }
+@media screen and (min-width: 1280px) { .page-main__inner { max-width: var(--container-max); } }
+
+/* .text component */
+.text { font-family: "Inter-Regular"; font-size: 16px; line-height: 24px; text-align: left; }
+.text__body { font-family: "Inter-Regular"; font-size: 16px; line-height: 24px; padding: 0; word-wrap: break-word; word-break: break-word; }
+.text__body *:not(sub):not(sup):not(b) { font-family: "Inter-Regular"; font-size: 16px; line-height: 24px; }
+.text__body a { word-wrap: break-word; word-break: break-word; }
+.text--flush { margin-top: 0; margin-bottom: 0; }
+@media screen and (max-width: 479px) { .text { padding-left: 16px; padding-right: 16px; margin-bottom: 10px; margin-top: 10px; } .text--flush { margin-top: 0; margin-bottom: 0; } }
+@media screen and (min-width: 768px) { .text { margin-bottom: 16px; margin-top: 16px; } .text--flush { margin-top: 0; margin-bottom: 0; } }
+.text--b-space-0 { margin-bottom: 0; }
+.text--t-space-0 { margin-top: 0; }
+.text__body ul, .text__body ol { padding-top: 4px; padding-bottom: 10px; padding-left: 20px; word-wrap: break-word; word-break: break-word; list-style-position: outside; }
+.text__body ul ul, .text__body ul ol, .text__body ol ul, .text__body ol ol { padding-left: 20px; }
+@media screen and (min-width: 768px) { .text__body ul, .text__body ol { padding-bottom: 12px; } }
+.text--small .text__body, .text--small .text__body *:not(sub):not(sup):not(b) { font-family: "Inter-Medium"; font-size: 12px; line-height: 20px; }
+.text--small .text__body b, .text--small .text__body b *, .text--small .text__body *:not(sub):not(sup):not(b) b { font-family: "Inter-Bold"; font-size: inherit; line-height: inherit; }
+.text--small .text__body sub, .text--small .text__body sup, .text--small .text__body *:not(sub):not(sup):not(b) sub, .text--small .text__body *:not(sub):not(sup):not(b) sup { font-size: 10px; line-height: 0; }
+
+/* .title component */
+.section-title--core { color: var(--textColor-title-1); }
+.section-title--t-space { padding-top: 20px; }
+.section-title--t-space-md { padding-top: 20px; }
+@media screen and (max-width: 767px) { .section-title { padding-left: 16px; padding-right: 16px; } .section-title--mobile-center { text-align: center; } }
+@media screen and (min-width: 768px) { .section-title--t-space-md { padding-top: 40px; } }
+
+/* section vertical rhythm (.container--tb-space-md) */
+.tb-space-md { padding-top: 20px; padding-bottom: 20px; }
+@media screen and (min-width: 768px) { .tb-space-md { padding-top: 40px; padding-bottom: 40px; } }
+
+/* therapy-area card grid (.container--3-column-wrap > teaser--image-top-text-bottom) */
+.ta-grid__row { display: flex; flex-wrap: wrap; gap: 10px; }
+.ta-grid__item { flex: 1 1 100%; max-width: 100%; margin: 0; }
+.ta-card { display: flex; flex-direction: column; height: 100%; width: 100%; position: relative; }
+.ta-card__media { order: 0; padding: 0; width: 100%; flex: 0 1 auto; }
+.ta-card__media-mobile { display: none; }
+.ta-card__media .img__el { width: 100%; }
+.ta-card__media-mobile .img__el { height: auto; }
+.ta-card__body { order: 1; color: var(--textColor-body-1); display: flex; flex: 1; flex-direction: column; text-align: center; padding: 24px 16px; width: 100%; gap: 16px; background-color: var(--bgColor-supporting-1); }
+.ta-card__body > * { text-align: center; margin-right: auto; margin-left: auto; }
+.ta-card__body p { margin: 0; }
+.ta-card__title { word-break: break-word; }
+.ta-card__desc { font-family: "Inter-Regular"; font-size: 16px; line-height: 24px; }
+.ta-card__desc b, .ta-card__desc strong { font-family: "Inter-Bold"; font-weight: 700; }
+@media only screen and (max-width: 767px) {
+  .ta-card__media-mobile { display: block; }
+  .ta-card__media-desktop { display: none; }
+}
+@media screen and (min-width: 768px) {
+  .ta-grid__item { flex: 1 1 calc(33.33% - 6.67px); max-width: calc(33.33% - 6.67px); border-radius: 8px; }
+}
+@media screen and (min-width: 1280px) {
+  .ta-card { border-radius: 8px; overflow: hidden; }
+  .ta-card__body { padding: 24px; }
+}
+
+/* ---- footer (.experiencefragment.cmp-experiencefragment--footerSocial > .cmp-experiencefragment--footer) ---- */
+.site-footer-wrap { border-top: 1px solid var(--borderColor-1); padding: 20px 0; }
+.site-footer { max-width: 100%; width: 100%; margin: auto; }
+.site-footer__grid { display: block; width: 100%; }
+.site-footer__grid::after { content: ""; display: table; clear: both; }
+.site-footer__col { float: left; clear: none; width: 100%; }
+.site-footer__logo { line-height: 0; }
+.site-footer__logo .img { width: auto; max-width: 165px; height: auto; margin: auto; }
+.site-footer .text { text-align: center; padding: 0; }
+.site-footer__links-grid { display: block; width: 100%; }
+.site-footer__links-grid::after { content: ""; display: table; clear: both; }
+.site-footer__links-col { float: left; clear: none; width: 100%; }
+.site-footer__links-col p { margin-top: 0; margin-bottom: 16px; }
+.site-footer__links-col p:last-child { margin-bottom: 0; }
+.site-footer__links-col p a { text-decoration: none; }
+@media screen and (max-width: 479px) {
+  .site-footer { padding-left: 16px; padding-right: 16px; }
+  .site-footer__col { width: calc(80% + 16px); display: block; margin: 0 auto; float: none; }
+}
+@media screen and (min-width: 768px) {
+  .site-footer-wrap { padding: 40px 0; }
+  .site-footer__col--brand { width: 100%; max-width: 300px; }
+  .site-footer__col--links { width: calc(100% - 300px); }
+  .site-footer__logo .img { margin: 0; max-width: 165px; }
+  .site-footer .text { text-align: left; }
+  .site-footer__links .site-footer__links-col { margin: 0; width: 50%; max-width: 34%; padding-left: 16%; box-sizing: content-box; }
+  .site-footer__links-col p { margin-bottom: 24px; }
+  .site-footer__links-col p:last-child { margin-bottom: 0; }
+}
+@media screen and (min-width: 1280px) { .site-footer { max-width: var(--container-max); } }
+
+/* search clear icon glyph (searchbox.theme @4293: U+F00D) */
+.site-search__clear-text:before { content: "\f00d"; font-size: 16px; padding: 8px; }
+
+/* utility override must outrank .icon { display:inline-block } — source order: main.css (.fa inline-block) then brand sheet (.hidden none) */
+.hidden { display: none; }
+
+/* ---- observed interaction states (see js/motion.js; live class names reused) ---- */
+.main-nav__item.open > .main-nav__content { color: var(--bgColor-core-3); }
+.main-nav__item.open > .main-nav__group { display: block; padding: 0; margin: 0; }
+.main-nav__item.open.main-nav__item--l0 > .main-nav__group { padding: 32px 32px 38px; display: flex; }
+/* level-1 expansion (OBSERVED on the therapy-area archetype: li.level-1 gains open, its group open-col-3; megamenu.css @2436/@2771, theme @17905 border colour) */
+.main-nav__item.open.main-nav__item--l1 > .main-nav__group { display: grid; grid-template-columns: repeat(auto-fill, minmax(0, 229px)); grid-auto-flow: column; grid-template-rows: repeat(10, auto); }
+.main-nav__item.open.main-nav__item--l1 .main-nav__group { border-left: 1px solid var(--table-bgColor-1); padding-left: 16px; }
+@media only screen and (max-width: 1023px) {
+  .main-nav__item.open.main-nav__item--l1 > .main-nav__group { display: block; }
+  .main-nav__item.open.main-nav__item--l1 .main-nav__group { border-left: none; padding-left: 0; }
+}
+/* level-0 parent label hover (OBSERVED: colour + arrow icon colour → interaction; megamenu.theme @27012, bands ≥1024) */
+@media screen and (min-width: 1024px) { .main-nav__item--l0 > .main-nav__content:hover { color: var(--textColor-interaction); } }
+.main-nav__item--viewall { margin-top: auto; }
+.main-nav__item--viewall .main-nav__content { border: none; }
+.main-nav__item--l1 > .main-nav__group { flex-direction: row; position: absolute; left: 252px; top: 0; }
+@media only screen and (min-width: 1024px) {
+  .main-nav__item--l1 .main-nav__content:has(a) { padding: 0; }
+  .main-nav__item--l1 .main-nav__content:has(a) a { display: block; width: 100%; padding: 8px 20px 8px 8px; }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) { .main-nav__item.open.main-nav__item--l0 > .main-nav__group { padding: 25px 32px 38px; } }
+@media only screen and (min-width: 1440px) {
+  .main-nav__item.open.main-nav__item--l0 > .main-nav__group { overflow: hidden; }
+  .main-nav__group > .main-nav__item--l1 { left: calc(50% - 650px); position: relative; }
+  .main-nav__item--l1 > .open-col-3 { width: 480px; }
+}
+.site-search.searchbox-enabled { max-width: inherit; background-color: var(--bgColor-supporting-2); }
+@media screen and (max-width: 767px) { .site-search.searchbox-enabled { right: -39px; transition: width .5s; } }
+/* footer links: hover colour did not fire on live (footer rule keeps body colour) */
+.site-footer__links-col p a:hover { color: var(--textColor-body-1); }
+
+/* ---- shared page modules (moved from fr-startseite.css after the therapy-area archetype re-used them) ---- */
+/* hero (.teaser--home-hero) */
+.hero { padding: 0; position: relative; overflow: hidden; }
+.hero__teaser { display: block; width: 100%; position: relative; }
+.hero__media { width: 100%; height: 100%; padding: 0; background: #000; overflow: hidden; }
+.hero__media .img { height: 100%; }
+.hero__media .img__el { height: 100%; display: block; opacity: .75; width: 100%; object-fit: cover; }
+.hero__media-desktop, .hero__media-mobile { max-height: 60vh; }
+.hero__media-mobile { display: none; }
+.hero__content { background-color: rgba(0, 0, 0, 0); color: var(--textColor-body-2); position: absolute; width: 100%; max-width: 100%; margin: auto; top: 50%; left: 50%; padding: 20px 16px; transform: translate(-50%, -50%); text-align: left; display: flex; flex-direction: column; gap: 16px; }
+.hero__content p { margin: 0; }
+.hero__desc { font-family: "Inter-Regular"; font-size: 18px; line-height: 28px; margin-top: 0; overflow: auto; width: 100%; }
+.hero__desc *:not(sub):not(sup):not(b) { font-family: "Inter-Regular"; font-size: 18px; line-height: 28px; }
+@media only screen and (max-width: 767px) {
+  .hero__media-mobile { display: block; }
+  .hero__media-desktop { display: none; }
+}
+@media screen and (min-width: 640px) and (max-width: 1023px) { .hero__media-desktop, .hero__media-mobile { max-height: 100vh; } }
+@media screen and (min-width: 768px) {
+  .hero__content { padding: 40px 20px; }
+  .hero__desc { max-width: 577px; }
+}
+@media screen and (min-width: 1280px) { .hero__content { max-width: var(--hero-content-max); } }
+
+/* revision stamp (overwritten.css: #last-vivo-id / #vivo-id-wrap) */
+.vivo { position: relative; max-width: 1180px; margin: 0 auto; }
+.vivo__wrap { position: absolute; right: 0; top: 300px; padding-bottom: 40px; }
+@media screen and (max-width: 767px) and (min-width: 600px) { .vivo__wrap { top: 475px; left: 1%; transform: translateX(-1%); text-align: center; } }
+@media screen and (max-width: 600px) { .vivo__wrap { top: 465px; left: 1%; transform: translateX(-1%); text-align: center; } }
+@media screen and (min-width: 768px) and (max-width: 1200px) { .vivo__wrap { padding-right: 15px !important; } }
+@media screen and (max-width: 540px) { .vivo__wrap { position: absolute; left: 1%; transform: translateX(-1%); text-align: center; } }
+
+/* ---- breadcrumb dummy links (overwritten.css L1–L43, lifted verbatim on the PATTRNS archetype: chrome-parity read
+   "Domaines thérapeutiques" / "CVRM" as rgb(169,169,169) = darkgray on live, body colour on the build). The hrefs listed
+   are non-clickable grey crumbs; everything else in the trail keeps the body colour. ---- */
+.breadcrumb__link[href*='/de/startseite/therapiegebiete.html'], .breadcrumb__link[href*='/de/startseite/therapiegebiete/cvrm.html'],
+.breadcrumb__link[href*='/de/startseite/therapiegebiete/ri.html'], .breadcrumb__link[href*='/de/startseite/therapiegebiete/onkologie.html'],
+.breadcrumb__link[href*='/en/startseite/therapiegebiete.html'], .breadcrumb__link[href*='/en/startseite/therapiegebiete/cvrm.html'],
+.breadcrumb__link[href*='/en/startseite/therapiegebiete/ri.html'], .breadcrumb__link[href*='/en/startseite/therapiegebiete/onkologie.html'],
+.breadcrumb__link[href*='/fr/startseite/therapiegebiete.html'], .breadcrumb__link[href*='/fr/startseite/therapiegebiete/cvrm.html'],
+.breadcrumb__link[href*='/fr/startseite/therapiegebiete/ri.html'], .breadcrumb__link[href*='/fr/startseite/therapiegebiete/onkologie.html'],
+.breadcrumb__link[href*='/it/startseite/therapiegebiete.html'], .breadcrumb__link[href*='/it/startseite/therapiegebiete/cvrm.html'],
+.breadcrumb__link[href*='/it/startseite/therapiegebiete/ri.html'], .breadcrumb__link[href*='/it/startseite/therapiegebiete/onkologie.html'],
+.breadcrumb__link[href*='/de/startseite/produkte/product-instructions.html'], .breadcrumb__link[href*='/en/startseite/produkte/product-instructions.html'],
+.breadcrumb__link[href*='/fr/startseite/produkte/product-instructions.html'], .breadcrumb__link[href*='/it/startseite/produkte/product-instructions.html'],
+.breadcrumb__link[href*='/en/impactacademy.html'], .breadcrumb__link[href*='/en/de.html'], .breadcrumb__link[href*='/en/de/impactacademy.html'],
+.breadcrumb__link[href*='/en/fr.html'], .breadcrumb__link[href*='/en/fr/impactacademy.html'], .breadcrumb__link[href*='/en/it.html'],
+.breadcrumb__link[href*='/en/startseite/produkte/calquence.html'], .breadcrumb__link[href*='en/startseite/produkte/calquence/cll-plus.html'],
+.breadcrumb__link[href*='/en/it/impactacademy.html'], .breadcrumb__link[href*='/de/startseite/produkte/trixeo.html'],
+.breadcrumb__link[href*='/en/startseite/produkte/imfinzi/gastric-cancer.html'] { pointer-events: none; cursor: auto; color: darkgray; }

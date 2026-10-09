@@ -1,0 +1,67 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica handoff (migrate units)",
+    "startedAt": "2026-10-07T12:03:43.323Z"
+  },
+  "units": {
+    "plan": {
+      "status": "done",
+      "kind": "plan",
+      "templates": [
+        "home",
+        "therapy-area",
+        "pattrns"
+      ],
+      "pages": 10,
+      "startedAt": "2026-10-07T12:00:00Z",
+      "endedAt": "2026-10-07T12:03:43.323Z",
+      "verdict": "pagemap 10 entries, 0 collisions; 3 archetypes rendered branch A (main wrap added to the prototypes, re-gated 0.00% at 1440); modules declared on all 3; render units run per template after its C-archetype unit"
+    },
+    "render-therapy-area": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "therapy-area"
+      ],
+      "pages": 3,
+      "slugs": [
+        "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz",
+        "fr-startseite-therapiegebiete-cvrm-diabetes",
+        "fr-startseite-therapiegebiete-ri-lupus"
+      ],
+      "startedAt": "2026-10-07T14:46:07.074Z",
+      "endedAt": "2026-10-07T15:05:59.206Z",
+      "verdict": "render-therapy-area: rendered 3, unchanged 0, refused 0, passthrough 0; content-count 3/3 (main root headings 9=9, CTAs all present, 17 img, body strings 81/81, 65/65, 80/80); variance-probe content-driven heights only; 1 variant (lupus tb-space), 1 decision (diabetes section-merge CH-9815 stamp), 0 deviations; 54/54 images fetched"
+    },
+    "render-pattrns": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "pattrns"
+      ],
+      "pages": 4,
+      "slugs": [
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes"
+      ],
+      "startedAt": "2026-10-07T17:27:56.779Z",
+      "endedAt": "2026-10-07T17:52:32.567Z",
+      "verdict": "render-pattrns: rendered 4, unchanged 0, refused 0, passthrough 0; content-count 4/4 (main root headings 3/3, 9/9, 10/10, 7/7; CTAs all present minus 12 chrome; img 9/10/8/16); variance-probe content-driven counts only, no novel modifier; 2 variants (treatement ta-grid__row>.text footnote full-width, symptomes ta-card__pretitle), 0 deviations; 42/42 images fetched; section heights = live at 1440 on all four"
+    },
+    "report": {
+      "status": "done",
+      "kind": "report",
+      "templates": [
+        "home",
+        "therapy-area",
+        "pattrns"
+      ],
+      "pages": 10,
+      "startedAt": "2026-10-07T20:12:07Z",
+      "endedAt": "2026-10-07T20:21:57Z",
+      "verdict": "report: 10/10 migrated (3 archetypes Path A, 7 siblings Path A′), 0 refused/failed; gate-evidence 10 sidecars, siblings 7/7 acceptance gates, content-count none ×7 (live vs render), lint 0 P0 · 0 P1 ×10 (delivered files), media 128 hosted / 0 omit / 0 unresolved; 161 assets bundled, 0 missing"
+    }
+  }
+}

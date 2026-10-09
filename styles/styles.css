@@ -1,0 +1,599 @@
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+
+/*
+ * myastrazeneca.ch (FR) replica — foundation.
+ * Tokens are lifted from stardust/prototypes/css/canon.css (source theme
+ * "wese-hcp-portal-v1"), renamed to kebab-case for the lint: bgColor-core-1 → --bg-color-core-1,
+ * textColor-body-1 → --text-color-body-1, textColor-title-1 → --text-color-title-1,
+ * textColor-interaction → --text-color-interaction, textColor-label-1 → --text-color-label-1,
+ * borderColor-N → --border-color-N, button-primary-bgColor → --button-primary-bg-color,
+ * button-secondary-textColor → --button-secondary-text-color,
+ * table-bgColor-1 → --table-bg-color-1.
+ * Fonts: Lexia (Dalton Maag, commercial) is NOT rehosted — "Lexia" stays first in the stack as a
+ * local() face (styles/fonts.css), then the metric-matched open substitute "Roboto Slab" (OFL,
+ * self-hosted, size-adjust 95.7%), then lexia-fallback (local Times New Roman, first paint).
+ * Inter is self-hosted per weight as Inter-Regular / Inter-Medium / Inter-Bold (as the source).
+ */
+
+:root {
+  /* brand colours (canon :root) */
+  --bg-color-core-1: #830051;
+  --bg-color-core-2: #4f0031;
+  --bg-color-core-3: #d0006f;
+  --bg-color-secondary-1: #f0ab00;
+  --bg-color-secondary-2: #9db0ac;
+  --bg-color-secondary-3: #3c4242;
+  --bg-color-supporting-1: #ebefee;
+  --bg-color-supporting-2: #fff;
+  --text-color-body-1: #3c4242;
+  --text-color-body-2: #fff;
+  --text-color-title-1: #830051;
+  --text-color-title-2: #d0006f;
+  --text-color-interaction: #d0006f;
+  --text-color-label-1: #8d8f8f;
+  --text-color-label-2: #656969;
+  --border-color-1: #ebefee;
+  --border-color-2: #d8dfde;
+  --border-color-3: #d8dada;
+  --border-color-4: #3c4242;
+  --border-color-6: #d0006f;
+  --border-color-7: #b2b4b4;
+  --border-color-8: #656969;
+  --button-primary-bg-color: #d0006f;
+  --button-primary-border-color: #d0006f;
+  --button-primary-text-color: #fff;
+  --button-secondary-bg-color: #fff;
+  --button-secondary-border-color: #d0006f;
+  --button-secondary-text-color: #d0006f;
+  --table-bg-color-1: #c4cfcd;
+
+  /* boilerplate aliases (stock blocks reference these) */
+  --background-color: #fff;
+  --light-color: #ebefee;
+  --dark-color: #3c4242;
+  --text-color: #3c4242;
+  --link-color: #3c4242;
+  --link-hover-color: #d0006f;
+
+  /* fonts — every stack names its first-paint fallback second-to-last */
+  --font-display: lexia, "Roboto Slab", lexia-fallback, serif;
+  --font-body: inter-regular, inter-fallback, sans-serif;
+  --font-medium: inter-medium, inter-fallback, sans-serif;
+  --font-bold: inter-bold, inter-fallback, sans-serif;
+  --font-icon: icomoon, sans-serif;
+  --body-font-family: var(--font-body);
+  --heading-font-family: var(--font-display);
+
+  /* body sizes (canon: 16/24 everywhere; small text 12/20; lead 18/28) */
+  --body-font-size-m: 16px;
+  --body-line-height-m: 24px;
+  --body-font-size-s: 12px;
+  --body-line-height-s: 20px;
+  --body-font-size-xs: 10px;
+  --body-line-height-xs: 18px;
+  --body-font-size-l: 18px;
+  --body-line-height-l: 28px;
+
+  /* heading ramp (canon, band < 768) */
+  --heading-font-size-xxl: 36px;
+  --heading-line-height-xxl: 40px;
+  --heading-font-size-xl: 36px;
+  --heading-line-height-xl: 40px;
+  --heading-font-size-l: 26px;
+  --heading-line-height-l: 34px;
+  --heading-font-size-m: 26px;
+  --heading-line-height-m: 34px;
+  --heading-font-size-s: 20px;
+  --heading-line-height-s: 28px;
+  --heading-font-size-xs: 16px;
+  --heading-line-height-xs: 24px;
+
+  /* layout (DESIGN.json containerMaxWidth / hero module cap) */
+  --container-max: 1180px;
+  --hero-content-max: 1220px;
+  --gutter: 16px;
+
+  /* chrome reservation: lang strip 29px + header row 57px (measured 1440 and 360) */
+  --nav-height: 86px;
+
+  /* motion (the only observed transition: search box .5s) */
+  --duration-chrome: 0.5s;
+}
+
+/* first-paint fallbacks (metric-matched to the self-hosted faces; see fonts.css) */
+@font-face {
+  font-family: lexia-fallback;
+  size-adjust: 113.38%;
+  ascent-override: 83.79%;
+  descent-override: 22.05%;
+  line-gap-override: 0%;
+  src: local("Times New Roman");
+}
+
+@font-face {
+  font-family: inter-fallback;
+  size-adjust: 107.54%;
+  ascent-override: 90.09%;
+  descent-override: 22.46%;
+  line-gap-override: 0%;
+  src: local("Arial");
+}
+
+@media (width >= 768px) {
+  :root {
+    --heading-font-size-xxl: 56px;
+    --heading-line-height-xxl: 60px;
+    --heading-font-size-xl: 46px;
+    --heading-line-height-xl: 50px;
+    --heading-font-size-l: 36px;
+    --heading-line-height-l: 40px;
+  }
+}
+
+/* document reset (the source declares a universal border-box reset) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: none;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color-body-1);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  font-weight: 400;
+  line-height: var(--body-line-height-m);
+}
+
+body.appear {
+  display: block;
+}
+
+body > header {
+  position: relative;
+  z-index: 10;
+  height: var(--nav-height);
+  background: var(--bg-color-supporting-2);
+}
+
+body > header .header,
+body > footer .footer {
+  visibility: hidden;
+}
+
+body > header .header[data-block-status="loaded"],
+body > footer .footer[data-block-status="loaded"] {
+  visibility: visible;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  letter-spacing: normal;
+  text-decoration: none;
+  scroll-margin: calc(var(--nav-height) + 8px);
+}
+
+h1 {
+  font-size: var(--heading-font-size-xxl);
+  line-height: var(--heading-line-height-xxl);
+}
+
+h2 {
+  font-size: var(--heading-font-size-xl);
+  line-height: var(--heading-line-height-xl);
+}
+
+h3 {
+  font-size: var(--heading-font-size-l);
+  line-height: var(--heading-line-height-l);
+}
+
+h4 {
+  font-size: var(--heading-font-size-m);
+  line-height: var(--heading-line-height-m);
+}
+
+h5 {
+  font-size: var(--heading-font-size-s);
+  line-height: var(--heading-line-height-s);
+}
+
+h6 {
+  font-size: var(--heading-font-size-xs);
+  line-height: var(--heading-line-height-xs);
+}
+
+h1 sub,
+h1 sup,
+h2 sub,
+h2 sup,
+h3 sub,
+h3 sup {
+  font-size: 26px;
+  line-height: 0;
+}
+
+p,
+dl,
+ol,
+ul,
+pre,
+blockquote {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style-position: inside;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  padding-left: 32px;
+}
+
+b,
+strong {
+  font-family: var(--font-bold);
+  font-weight: 700;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+sub,
+/* stylelint-disable-next-line no-descending-specificity */
+sup {
+  font-size: 10px;
+  line-height: 0;
+}
+
+code,
+pre {
+  font-size: var(--body-font-size-s);
+}
+
+pre {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--light-color);
+  overflow-x: auto;
+  white-space: pre;
+}
+
+main > div {
+  margin: 0;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+/* icon font glyphs (icomoon, the source's own icon set; see fonts.css) */
+.glyph {
+  display: inline-block;
+  font-family: var(--font-icon);
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+}
+
+.glyph-search::before {
+  content: "\f002";
+}
+
+.glyph-times::before {
+  content: "\f00d";
+}
+
+.glyph-times-circle::before {
+  content: "\f057";
+}
+
+.glyph-chevron-right::before {
+  content: "\f054";
+}
+
+.glyph-arrow-down::before {
+  content: "\f078";
+}
+
+.glyph-arrow-up::before {
+  content: "\f077";
+}
+
+.glyph-play::before {
+  content: "\f04b";
+}
+
+/* links */
+a:any-link {
+  color: inherit;
+  text-decoration: underline;
+  overflow-wrap: break-word;
+}
+
+a:hover {
+  color: var(--text-color-interaction);
+}
+
+/* buttons (canon .btn-primary / .btn__el secondary-small) */
+p.button-wrapper {
+  margin: 0;
+}
+
+a.button:any-link,
+button.button {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-family: var(--font-bold);
+  font-size: var(--body-font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--body-line-height-m);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.button.primary,
+button.button.primary,
+a.button.accent,
+button.button.accent {
+  border-color: var(--button-primary-border-color);
+  background-color: var(--button-primary-bg-color);
+  color: var(--button-primary-text-color);
+}
+
+a.button.primary:hover,
+a.button.primary:focus-visible,
+button.button.primary:hover,
+button.button.primary:focus-visible,
+a.button.accent:hover,
+a.button.accent:focus-visible,
+button.button.accent:hover,
+button.button.accent:focus-visible {
+  color: var(--button-primary-text-color);
+  opacity: 0.8;
+}
+
+a.button.secondary,
+button.button.secondary {
+  border-color: var(--button-secondary-border-color);
+  background-color: transparent;
+  color: var(--button-secondary-text-color);
+  font-family: var(--font-medium);
+  font-size: var(--body-font-size-s);
+  line-height: var(--body-line-height-s);
+  padding: 6px 16px;
+}
+
+a.button.secondary:hover,
+a.button.secondary:focus-visible,
+button.button.secondary:hover,
+button.button.secondary:focus-visible {
+  color: var(--button-secondary-text-color);
+  opacity: 0.8;
+}
+
+a.button[aria-disabled="true"],
+button.button:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  border-color: var(--border-color-3);
+  background-color: var(--light-color);
+  color: var(--text-color-label-2);
+}
+
+/* stock svg icons (span.icon.icon-<name> → /icons/<name>.svg) */
+.icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+/* sections — module cap model: the shell is fluid, each section wrapper caps at 1180px */
+main > .section {
+  margin: 0;
+}
+
+main > .section > div {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0;
+}
+
+main > .section > .default-content-wrapper {
+  padding: 0 var(--gutter);
+}
+
+main .section:empty {
+  display: none;
+}
+
+@media (width >= 768px) {
+  main > .section > .default-content-wrapper {
+    padding: 0;
+  }
+}
+
+/* the ONE full-bleed escape: hero / band sections route through it */
+main > .section.full-bleed > div {
+  max-width: none;
+  padding: 0;
+}
+
+/* section style vocabulary — a small closed set (section-metadata style: …) */
+main .section.tinted {
+  background-color: var(--bg-color-supporting-1);
+}
+
+main .section.spaced {
+  padding: 20px 0;
+}
+
+main .section.centered {
+  text-align: center;
+}
+
+main .section.title-core :is(h1, h2, h3, h4) {
+  color: var(--text-color-title-1);
+}
+
+@media (width >= 768px) {
+  main .section.spaced {
+    padding: 40px 0;
+  }
+}
+
+/* empty styled sections keep the runtime's pre-load hiding */
+main .section.tinted[data-section-status="loaded"],
+main .section.spaced[data-section-status="loaded"] {
+  display: block !important;
+}
+
+/* default-content prose (EW10: descendant selectors, no positional pseudo-classes) */
+main .default-content-wrapper p {
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+}
+
+main .default-content-wrapper ul,
+main .default-content-wrapper ol {
+  padding: 4px 0 10px 20px;
+  list-style-position: outside;
+  overflow-wrap: break-word;
+}
+
+main .default-content-wrapper picture {
+  display: block;
+}
+
+@media (width >= 768px) {
+  main .default-content-wrapper ul,
+  main .default-content-wrapper ol {
+    padding-bottom: 12px;
+  }
+}
+
+/* Experience Workspace edit mode: repaint CTAs from their authored marks (EW3) */
+.prosemirror-editor p > :is(strong, em) > a:any-link,
+.prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-family: var(--font-bold);
+  font-size: var(--body-font-size-m);
+  font-weight: 400;
+  line-height: var(--body-line-height-m);
+  text-align: center;
+  text-decoration: none;
+}
+
+.prosemirror-editor p > a:any-link > :is(strong, em) {
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.prosemirror-editor p > strong > a:any-link,
+.prosemirror-editor p > a:any-link:has(> strong:only-child) {
+  border-color: var(--button-primary-border-color);
+  background-color: var(--button-primary-bg-color);
+  color: var(--button-primary-text-color);
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.prosemirror-editor p > em > a:any-link,
+.prosemirror-editor p > a:any-link:has(> em:only-child) {
+  border-color: var(--button-secondary-border-color);
+  background-color: transparent;
+  color: var(--button-secondary-text-color);
+  font-family: var(--font-medium);
+  font-size: var(--body-font-size-s);
+  line-height: var(--body-line-height-s);
+  padding: 6px 16px;
+}
+
+/* card-as-link inner anchor while editing (EW6) */
+/* stylelint-disable-next-line no-descending-specificity */
+a .prosemirror-editor a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* styled-text-link utilities as wrapper variants at equal specificity (EW2 c) */
+.affordance,
+.affordance-wrap :where(a) {
+  color: var(--text-color-interaction);
+  text-decoration: none;
+}
+
+.affordance:hover,
+.affordance-wrap :where(a):hover {
+  text-decoration: underline;
+}

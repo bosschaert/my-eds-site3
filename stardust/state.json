@@ -1,0 +1,593 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-10-07T18:51:51Z",
+    "stardustVersion": "0.27.0+e68296b7aee4"
+  },
+  "site": {
+    "originUrl": "https://www.myastrazeneca.ch/",
+    "deployUrl": null,
+    "extractedAt": "2026-10-07T09:18:38.436Z",
+    "pageCap": null,
+    "totalDiscovered": 10,
+    "crawled": 10,
+    "captureGaps": []
+  },
+  "direction": null,
+  "handsOff": true,
+  "flow": "replica",
+  "flowChosenAt": "2026-10-07T09:18:38.436Z",
+  "flowSource": "user-phrase",
+  "pages": [
+    {
+      "slug": "fr-startseite",
+      "url": "https://www.myastrazeneca.ch/fr/startseite.html",
+      "title": "Traitements du diabète, de l’asthme, de la BPCO et du cancer | MyAstraZeneca",
+      "type": "landing",
+      "template": "home",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-07T09:12:45.685Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-07T10:27:26Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-07T13:27:40Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/fr-startseite.json",
+      "prototypePath": "stardust/prototypes/fr-startseite-proposed.html",
+      "migratedPath": "stardust/migrated/fr/startseite.html"
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz",
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+      "title": "Insuffisance Rénale Chronique (IRC) Informations - MyAstrazeneca",
+      "type": "program",
+      "template": "therapy-area",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-07T09:12:47.587Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-07T15:00:14Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-07T16:19:45Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html"
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-diabetes",
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/diabetes.html",
+      "title": "Symptômes, Diagnostic et Traitement du Diabète Sucré | MyAstraZeneca",
+      "type": "program",
+      "template": "therapy-area",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-07T09:12:47.568Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-07T15:00:14Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-07T16:19:45Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-diabetes.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/diabetes.html"
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+      "title": "Insuffisance Cardiaque : Symptômes, Diagnostic et Traitement | MyAstraZeneca",
+      "type": "program",
+      "template": "therapy-area",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-07T09:12:55.183Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-07T11:03:20Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-07T14:34:24Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz.json",
+      "prototypePath": "stardust/prototypes/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz-proposed.html",
+      "migratedPath": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html"
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+      "title": "Amylose à transthyrétine (ATTR-CM) – Diagnostic et prise en charge | MyAstraZeneca",
+      "type": "article",
+      "template": "pattrns",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-07T09:13:01.919Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-07T17:47:09Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-07T18:51:51Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html"
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+      "title": "Diagnostic de l’ATTR",
+      "type": "article",
+      "template": "pattrns",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-07T09:13:02.902Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-07T17:47:09Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-07T18:51:51Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html"
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement",
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+      "title": "Traitement",
+      "type": "article",
+      "template": "pattrns",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-07T09:13:10.238Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-07T17:47:09Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-07T18:51:51Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html"
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes",
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+      "title": "Symptômes de l’ATTR",
+      "type": "article",
+      "template": "pattrns",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-07T09:13:12.035Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-07T17:47:09Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-07T18:51:51Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html"
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+      "title": "À propos de l’ATTR",
+      "type": "article",
+      "template": "pattrns",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-07T09:13:12.856Z"
+        },
+        {
+          "status": "approved",
+          "at": "2026-10-07T11:43:40Z",
+          "approvedBy": "hands-off"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-07T17:24:22Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr.json",
+      "prototypePath": "stardust/prototypes/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr-proposed.html",
+      "migratedPath": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html"
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-ri-lupus",
+      "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/lupus.html",
+      "title": "Lupus Érythémateux Systémique: Symptômes, Diagnostic et Traitement | MyAstraZeneca",
+      "type": "program",
+      "template": "therapy-area",
+      "status": "migrated",
+      "history": [
+        {
+          "status": "extracted",
+          "at": "2026-10-07T09:13:19.495Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-07T15:00:14Z"
+        },
+        {
+          "status": "migrated",
+          "at": "2026-10-07T16:19:45Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": "stardust/current/pages/fr-startseite-therapiegebiete-ri-lupus.json",
+      "prototypePath": null,
+      "migratedPath": "stardust/migrated/fr/startseite/therapiegebiete/ri/lupus.html"
+    }
+  ],
+  "migrate": {
+    "at": "2026-10-07T17:47:09Z",
+    "outputDir": "stardust/migrated/",
+    "selfContained": true,
+    "pageMap": [
+      {
+        "sourceUrl": "/fr/startseite.html",
+        "outputPath": "fr/startseite.html",
+        "slug": "fr-startseite",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+        "outputPath": "fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+        "slug": "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/fr/startseite/therapiegebiete/cvrm/diabetes.html",
+        "outputPath": "fr/startseite/therapiegebiete/cvrm/diabetes.html",
+        "slug": "fr-startseite-therapiegebiete-cvrm-diabetes",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "outputPath": "fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "slug": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+        "outputPath": "fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+        "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+        "outputPath": "fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+        "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+        "outputPath": "fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+        "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+        "outputPath": "fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+        "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "outputPath": "fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+        "outputPathDefault": null
+      },
+      {
+        "sourceUrl": "/fr/startseite/therapiegebiete/ri/lupus.html",
+        "outputPath": "fr/startseite/therapiegebiete/ri/lupus.html",
+        "slug": "fr-startseite-therapiegebiete-ri-lupus",
+        "outputPathDefault": null
+      }
+    ],
+    "totalAssetsBundled": 161,
+    "bundledAssets": [
+      "css/canon.css",
+      "css/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz.css",
+      "css/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr.css",
+      "css/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes.css",
+      "css/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement.css",
+      "css/fr-startseite-therapiegebiete-ri-lupus.css",
+      "css/fr-startseite.css",
+      "fonts/400_Lexia_Rg.woff",
+      "fonts/Inter-Bold.woff2",
+      "fonts/Inter-Medium.woff2",
+      "fonts/Inter-Regular.woff2",
+      "fonts/icomoon.woff",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/astrazeneca-logo.svg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/behandlung-ch-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/behandlung-cn.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/chro-teaser-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/chronic-header-desktop.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/diagnose-ch-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/diagnose-cn.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/folgeerkrankung-cn.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/folgeerkrankung-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/fruherkennung-wichtig-cn.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/fruherkennung-wichtig-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/mail.svg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/mortaliat-ch-desktop.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/mortaliat-ch-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/nutzliche-produktinformationen-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/nutzliche-produktinformationen.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/symtome-ch-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz/symtome-cn.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/astrazeneca-logo.svg",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/banner-header-mobile.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/banner-header.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/behandlung-desktop.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/behandlung-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/diagnose-desktop.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/diagnose-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/folgeerkrankung-desktop.png",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/folgeerkrankung-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/inzidenz-desktop.png",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/inzidenz-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/mail.svg",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/mortalitaat-desktop.png",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/mortalitaat-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/nutzliche-produktinformationen-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/nutzliche-produktinformationen.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/symptome-desktop.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-diabetes/symptome-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/Inzidenz-herz-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/astrazeneca-logo.svg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/behandlung-herz-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/behandlung-herzinsuffizienz.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/diagnose-herz-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/diagnose-herzinsuffizienz.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/herzinsuffizienz-dekstop.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/herzinsuffizienz-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/herzinsuffizienz-symptome-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/inzidenz-herzinsuffizienz.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/lebensbedrohlich-herz-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/lebensbedrohlich-herzinsuffizienz.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/mail.svg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/mortalitat-herz-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/mortalitat-herzinsuffizienz.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/nutzliche-produktinformationen-mob.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/nutzliche-produktinformationen.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz/symptome-herzinsuffizienz.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/astrazeneca-logo.svg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/attr-diagnose-und-behandlung-bannerbild.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/attr-diagnose-und-behandlung-bannerbild.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/attr-gemischte-phanotypen-banner-bild.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/attr-gemischte-phanotypen-banner-bild.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/attr-symptome.png",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/img-7.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/img-7_mobile.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/img-8a.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/img-8a.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/img-8b.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/img-8b.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/img-9-png.png",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/img-9_mobile.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/pattrns-banner-mobile.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/pattrns-banner.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/pattrns-vid-thumb.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/pfeile-symbol.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/pfeile-symbol.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/uhr-symbol.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr/uhr-symbol.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis/attr-diagnose-und-behandlung-bannerbild.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis/attr-diagnose-und-behandlung-bannerbild.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis/attr-gemischte-phanotypen-banner-bild.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis/attr-gemischte-phanotypen-banner-bild.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis/img-19.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis/img-19_mobile.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis/img-20.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis/img-20_mobile.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis/pattrns-banner-mobile.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis/pattrns-banner.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home/attr-amyloidose-formen.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home/attr-amyloidose-formen.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home/attr-amyloidose-warnzeichen.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home/attr-amyloidose-warnzeichen.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home/img-1_mobile.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home/img-patterns-png.png",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home/pattrns-banner-mobile.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home/pattrns-banner.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/attr-diagnose-und-behandlung-bannerbild.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/attr-diagnose-und-behandlung-bannerbild.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/attr-gemischte-phanotypen-banner-bild.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/attr-gemischte-phanotypen-banner-bild.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/herz-symbol.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/herz-symbol.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/img-12.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/img-12_mobile.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/img-13.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/img-13_mobile.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/img-14.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/img-14_mobile.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/pattrns-banner-mobile.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/pattrns-banner.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/warn-symbol-dup.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes/warn-symbol.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement/attr-diagnose-und-behandlung-bannerbild.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement/attr-diagnose-und-behandlung-bannerbild.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement/attr-gemischte-phanotypen-banner-bild.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement/attr-gemischte-phanotypen-banner-bild.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement/img-22.jpeg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement/img-22_mobile.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement/pattrns-banner-mobile.jpg",
+      "img/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement/pattrns-banner.jpeg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/astrazeneca-logo.svg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/behandlung-lupus-mob.jpg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/behandlung-von-lupus.jpeg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/charakteristik-mob.jpg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/diagnose-lupus-mob.jpg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/diagnose-von-lupus.jpeg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/karakteristieke-symbolen.jpeg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/lupus-desktop.jpeg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/lupus-mobile.jpg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/mail.svg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/nutzliche-produktinformationen-mob.jpg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/nutzliche-produktinformationen.jpeg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/pr-valenz-symbolen.jpeg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/pravalenz-lupus-mob.jpg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/symptome-lupus-mob.jpg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/symptome-von-lupus.jpeg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/ungleiche-geschlechterverteilung-mob.jpg",
+      "img/fr-startseite-therapiegebiete-ri-lupus/ungleiche-geschlechterverteilung-symbolen.jpeg",
+      "img/fr-startseite/astrazeneca-logo.svg",
+      "img/fr-startseite/atemwegserkrankungen-immunologie-mob.jpg",
+      "img/fr-startseite/atemwegserkrankungen-immunologie.jpeg",
+      "img/fr-startseite/cvrm-mob.jpg",
+      "img/fr-startseite/cvrm.jpeg",
+      "img/fr-startseite/home-teaser-desktop.jpeg",
+      "img/fr-startseite/home-teaser-mob.jpg",
+      "img/fr-startseite/nutzliche-produktinformationen-mob.jpg",
+      "img/fr-startseite/nutzliche-produktinformationen.jpeg",
+      "img/fr-startseite/onkologie-hamatologie-mob.jpg",
+      "img/fr-startseite/onkologie-hamatologie.jpeg",
+      "js/motion.js",
+      "js/sub-nav.js",
+      "js/video.js"
+    ],
+    "pages": [
+      {
+        "slug": "fr-startseite",
+        "file": "stardust/migrated/fr/startseite.html",
+        "assetsBundled": 19
+      },
+      {
+        "slug": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+        "file": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "assetsBundled": 22
+      },
+      {
+        "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+        "file": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "assetsBundled": 28
+      },
+      {
+        "slug": "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz",
+        "file": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+        "assetsBundled": 27
+      },
+      {
+        "slug": "fr-startseite-therapiegebiete-cvrm-diabetes",
+        "file": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/diabetes.html",
+        "assetsBundled": 22
+      },
+      {
+        "slug": "fr-startseite-therapiegebiete-ri-lupus",
+        "file": "stardust/migrated/fr/startseite/therapiegebiete/ri/lupus.html",
+        "assetsBundled": 23
+      },
+      {
+        "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+        "file": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+        "assetsBundled": 21
+      },
+      {
+        "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+        "file": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+        "assetsBundled": 17
+      },
+      {
+        "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement",
+        "file": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+        "assetsBundled": 16
+      },
+      {
+        "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes",
+        "file": "stardust/migrated/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+        "assetsBundled": 24
+      }
+    ],
+    "missingAssets": [],
+    "cleanedAssets": [],
+    "lastRun": {
+      "at": "2026-10-07T17:47:09Z",
+      "rendered": [
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement",
+        "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes"
+      ],
+      "unchanged": [],
+      "refused": [],
+      "passthrough": []
+    }
+  }
+}

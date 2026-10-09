@@ -1,0 +1,782 @@
+{
+ "summary": {
+  "host": "https://main--bf989f9e--aemcoder.aem.live",
+  "checkedAt": "2026-10-07T21:34:58.440Z",
+  "docStatus": {
+   "/nav": 200,
+   "/footer": 200,
+   "/fr/startseite": 200,
+   "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz": 200,
+   "/fr/startseite/therapiegebiete/cvrm/diabetes": 200,
+   "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz": 200,
+   "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home": 200,
+   "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis": 200,
+   "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement": 200,
+   "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes": 200,
+   "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr": 200,
+   "/fr/startseite/therapiegebiete/ri/lupus": 200
+  },
+  "counts": {
+   "hrefs": 69,
+   "internal": 10,
+   "source": 34,
+   "external": 25,
+   "internalNot200": 0,
+   "internalDefects": 0,
+   "sourceNot200": 1,
+   "externalNot200": 5
+  }
+ },
+ "results": [
+  {
+   "href": "http://www.enhertu.ch",
+   "kind": "external",
+   "status": 200,
+   "final": "https://enhertu.ch/login?target_url=http%3A%2F%2Flocalhost%3A3015%2F",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "http://www.enhertu.ch/.html",
+   "kind": "external",
+   "status": 403,
+   "final": "https://enhertu.ch/.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://cdnapisec.kaltura.com/p/432521/sp/43252100/embedIframeJs/uiconf_id/30358591/partner_id/432521?iframeembed=true&playerId=kaltura_player&entry_id=1_7kar7zpp",
+   "kind": "external",
+   "status": 200,
+   "final": "https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/432521/uiconf_id/30358591/entry_id/1_7kar7zpp?wid=_432521&iframeembed=true&playerId=kaltura_player&entry_id=1_7kar7zpp",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr"
+   ]
+  },
+  {
+   "href": "https://contactazmedical.astrazeneca.com/content/astrazeneca-champion/ch/fr/amp-form.html",
+   "kind": "external",
+   "status": 200,
+   "final": "https://contactazmedical.astrazeneca.com/content/astrazeneca-champion/ch/fr/amp-form.html",
+   "defects": [],
+   "pages": [
+    "/footer"
+   ]
+  },
+  {
+   "href": "https://enhertu.ch",
+   "kind": "external",
+   "status": 200,
+   "final": "https://enhertu.ch/login?target_url=http%3A%2F%2Flocalhost%3A3015%2F",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://enhertu.ch/.html",
+   "kind": "external",
+   "status": 403,
+   "final": "https://enhertu.ch/.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://forxiga.ch",
+   "kind": "external",
+   "status": 200,
+   "final": "https://forxiga.ch/",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://imfinzi.ch",
+   "kind": "external",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/en/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Fen%2Fstartseite%2Fprodukte%2Fimfinzi.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://policy.cookiereports.com/b50c8635-fr-ch.html",
+   "kind": "external",
+   "status": 404,
+   "final": "https://policy.cookiereports.com/b50c8635-fr-ch.html",
+   "defects": [],
+   "pages": [
+    "/footer"
+   ]
+  },
+  {
+   "href": "https://rheumaliga-schweiz.ch/fr/shop/produits/publications/maladies-rhumatismales/lupus/lupus-erythemateux9/",
+   "kind": "external",
+   "status": 200,
+   "final": "https://rheumaliga-schweiz.ch/fr/shop/article/lupus-erythemateux9/",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/ri/lupus"
+   ]
+  },
+  {
+   "href": "https://saphnelo.ch",
+   "kind": "external",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/de/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Fde%2Fstartseite%2Fprodukte%2Fsaphnelo.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://smw.ch/index.php/smw/article/view/3089",
+   "kind": "external",
+   "status": 200,
+   "final": "https://smw.ch/index.php/smw/article/view/3089",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement"
+   ]
+  },
+  {
+   "href": "https://tagrisso.ch",
+   "kind": "external",
+   "status": 200,
+   "final": "https://tagrisso.ch/",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://tezspire.ch",
+   "kind": "external",
+   "status": 200,
+   "final": "https://tezspire.ch/",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://vizhub.healthdata.org/gbd-results/",
+   "kind": "external",
+   "status": 200,
+   "final": "https://vizhub.healthdata.org/gbd-results/",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/diabetes"
+   ]
+  },
+  {
+   "href": "https://www.amyloidose-schweiz.ch/",
+   "kind": "external",
+   "status": 200,
+   "final": "https://www.amyloidose-schweiz.ch/",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr"
+   ]
+  },
+  {
+   "href": "https://www.astrazeneca.ch/fr/contact-us.html",
+   "kind": "external",
+   "status": 200,
+   "final": "https://www.astrazeneca.ch/fr/contact-us.html",
+   "defects": [],
+   "pages": [
+    "/footer"
+   ]
+  },
+  {
+   "href": "https://www.astrazeneca.ch/fr/terms-of-use.html",
+   "kind": "external",
+   "status": 200,
+   "final": "https://www.astrazeneca.ch/fr/terms-of-use.html",
+   "defects": [],
+   "pages": [
+    "/footer"
+   ]
+  },
+  {
+   "href": "https://www.azprivacy.astrazeneca.com/europe/switzerland/ch-fr/privacy-notices.html",
+   "kind": "external",
+   "status": 200,
+   "final": "https://www.azprivacy.astrazeneca.com/us/en/privacy-notices/",
+   "defects": [],
+   "pages": [
+    "/footer"
+   ]
+  },
+  {
+   "href": "https://www.bag.admin.ch/fr/diabete-fr",
+   "kind": "external",
+   "status": 200,
+   "final": "https://www.bag.admin.ch/fr/diabete-fr",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/diabetes"
+   ]
+  },
+  {
+   "href": "https://www.cdc.gov/diabetes/managing/diabetes-kidney-disease.html",
+   "kind": "external",
+   "status": 404,
+   "final": "https://www.cdc.gov/diabetes/managing/diabetes-kidney-disease.html",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz"
+   ]
+  },
+  {
+   "href": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/SGED-SSED_long_Recommendations_2023_fr.pdf",
+   "kind": "external",
+   "status": 200,
+   "final": "https://www.sgedssed.ch/SgedSsed/fileadmin/6_Diabetologie/61_Empfehlungen_Facharzt/SGED-SSED_long_Recommendations_2023_fr.pdf",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/diabetes"
+   ]
+  },
+  {
+   "href": "https://www.swissmedicinfo-pro.ch/showText.html?textType=FI&lang=DE&authNr=55568&supportMultipleResults=1",
+   "kind": "external",
+   "status": 404,
+   "final": "https://www.swissmedicinfo-pro.ch/showText.html?textType=FI&lang=DE&authNr=55568&supportMultipleResults=1",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.usz.ch/krankheit/systemischer-lupus-erythematodes/",
+   "kind": "external",
+   "status": 200,
+   "final": "https://www.usz.ch/krankheit/systemischer-lupus-erythematodes/",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/ri/lupus"
+   ]
+  },
+  {
+   "href": "https://www.who.int/fr/news-room/fact-sheets/detail/diabetes",
+   "kind": "external",
+   "status": 200,
+   "final": "https://www.who.int/fr/news-room/fact-sheets/detail/diabetes",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/diabetes"
+   ]
+  },
+  {
+   "href": "/fr/startseite",
+   "kind": "internal",
+   "status": 200,
+   "final": "https://main--bf989f9e--aemcoder.aem.live/fr/startseite",
+   "defects": [],
+   "pages": [
+    "/nav",
+    "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz",
+    "/fr/startseite/therapiegebiete/cvrm/diabetes",
+    "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr",
+    "/fr/startseite/therapiegebiete/ri/lupus"
+   ]
+  },
+  {
+   "href": "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz",
+   "kind": "internal",
+   "status": 200,
+   "final": "https://main--bf989f9e--aemcoder.aem.live/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz",
+   "defects": [],
+   "pages": [
+    "/fr/startseite"
+   ]
+  },
+  {
+   "href": "/fr/startseite/therapiegebiete/cvrm/diabetes",
+   "kind": "internal",
+   "status": 200,
+   "final": "https://main--bf989f9e--aemcoder.aem.live/fr/startseite/therapiegebiete/cvrm/diabetes",
+   "defects": [],
+   "pages": [
+    "/fr/startseite"
+   ]
+  },
+  {
+   "href": "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz",
+   "kind": "internal",
+   "status": 200,
+   "final": "https://main--bf989f9e--aemcoder.aem.live/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz",
+   "defects": [],
+   "pages": [
+    "/fr/startseite"
+   ]
+  },
+  {
+   "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr",
+   "kind": "internal",
+   "status": 200,
+   "final": "https://main--bf989f9e--aemcoder.aem.live/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr"
+   ]
+  },
+  {
+   "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+   "kind": "internal",
+   "status": 200,
+   "final": "https://main--bf989f9e--aemcoder.aem.live/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr"
+   ]
+  },
+  {
+   "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+   "kind": "internal",
+   "status": 200,
+   "final": "https://main--bf989f9e--aemcoder.aem.live/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr"
+   ]
+  },
+  {
+   "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+   "kind": "internal",
+   "status": 200,
+   "final": "https://main--bf989f9e--aemcoder.aem.live/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr"
+   ]
+  },
+  {
+   "href": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+   "kind": "internal",
+   "status": 200,
+   "final": "https://main--bf989f9e--aemcoder.aem.live/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr"
+   ]
+  },
+  {
+   "href": "/fr/startseite/therapiegebiete/ri/lupus",
+   "kind": "internal",
+   "status": 200,
+   "final": "https://main--bf989f9e--aemcoder.aem.live/fr/startseite/therapiegebiete/ri/lupus",
+   "defects": [],
+   "pages": [
+    "/fr/startseite"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/content/dam/intelligentcontent/portals/hcp/ch/fr/home/therapiegebiete/cvrm/pattrns/CH-10979_OnePager%20RedFlags_FR_04.2025.pdf",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/content/dam/intelligentcontent/portals/hcp/ch/fr/home/therapiegebiete/cvrm/pattrns/CH-10979_OnePager%20RedFlags_FR_04.2025.pdf",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/content/dam/intelligentcontent/portals/hcp/ch/fr/home/therapiegebiete/cvrm/pattrns/CH-10980_OnePager%20Diagnosepfad_FR_04.2025.pdf",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/content/dam/intelligentcontent/portals/hcp/ch/fr/home/therapiegebiete/cvrm/pattrns/CH-10980_OnePager%20Diagnosepfad_FR_04.2025.pdf",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/de/startseite.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/de/startseite.html",
+   "defects": [],
+   "pages": [
+    "/nav",
+    "/footer"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/de/startseite/produkte.html#tabs-3e5292059f-item-54029d7fbd-tab",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/de/startseite/produkte.html",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz",
+    "/fr/startseite/therapiegebiete/cvrm/diabetes"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/en/startseite.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/en/startseite.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/en/startseite/produkte/calquence/calquence-overview.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/en/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Fen%2Fstartseite%2Fprodukte%2Fcalquence%2Fcalquence-overview.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/en/startseite/produkte/imfinzi/biliary-tract-cancer.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/en/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Fen%2Fstartseite%2Fprodukte%2Fimfinzi%2Fbiliary-tract-cancer.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/en/startseite/produkte/imfinzi/endometrial-cancer.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/en/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Fen%2Fstartseite%2Fprodukte%2Fimfinzi%2Fendometrial-cancer.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/en/startseite/produkte/imfinzi/mibc.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/en/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Fen%2Fstartseite%2Fprodukte%2Fimfinzi%2Fmibc.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/en/startseite/produkte/imfinzi/uhcc.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/en/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Fen%2Fstartseite%2Fprodukte%2Fimfinzi%2Fuhcc.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/en/startseite/produkte/LYNPARZA/breast-cancer.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/en/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Fen%2Fstartseite%2Fprodukte%2FLYNPARZA%2Fbreast-cancer.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/en/startseite/produkte/LYNPARZA/ovarian-cancer.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/en/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Fen%2Fstartseite%2Fprodukte%2FLYNPARZA%2Fovarian-cancer.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/en/startseite/produkte/LYNPARZA/pancreatic-cancer.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/en/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Fen%2Fstartseite%2Fprodukte%2FLYNPARZA%2Fpancreatic-cancer.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/en/startseite/produkte/LYNPARZA/prostate-cancer.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/en/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Fen%2Fstartseite%2Fprodukte%2FLYNPARZA%2Fprostate-cancer.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/en/startseite/produkte/truqap.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/en/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Fen%2Fstartseite%2Fprodukte%2Ftruqap.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/contact-us.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/startseite/contact-us.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/produkte.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/startseite/produkte.html",
+   "defects": [],
+   "pages": [
+    "/nav",
+    "/fr/startseite",
+    "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz",
+    "/fr/startseite/therapiegebiete/ri/lupus"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/produkte/fasenra/asthma/indication.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Ffr%2Fstartseite%2Fprodukte%2Ffasenra%2Fasthma%2Findication.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/produkte/fasenra/egpa/summary.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Ffr%2Fstartseite%2Fprodukte%2Ffasenra%2Fegpa%2Fsummary.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/produkte/lokelma/resources.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Ffr%2Fstartseite%2Fprodukte%2Flokelma%2Fresources.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/uberblick.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/uberblick.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/produkte/wainzua.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/user/login.html?requesturl=%2Fcontent%2Fintelligentcontent%2Fportals%2Fhcp%2Fch%2Ffr%2Fstartseite%2Fprodukte%2Fwainzua.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete.html",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz",
+    "/fr/startseite/therapiegebiete/cvrm/diabetes",
+    "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr",
+    "/fr/startseite/therapiegebiete/ri/lupus"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm.html",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz",
+    "/fr/startseite/therapiegebiete/cvrm/diabetes",
+    "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+    "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/brustkrebs.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/brustkrebs.html",
+   "defects": [],
+   "pages": [
+    "/nav",
+    "/fr/startseite"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+   "defects": [],
+   "pages": [
+    "/nav",
+    "/fr/startseite"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/haematologie.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/haematologie.html",
+   "defects": [],
+   "pages": [
+    "/nav",
+    "/fr/startseite"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/leberkrebs.html",
+   "kind": "source",
+   "status": 404,
+   "final": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/leberkrebs.html",
+   "defects": [],
+   "pages": [
+    "/nav",
+    "/fr/startseite"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+   "defects": [],
+   "pages": [
+    "/nav",
+    "/fr/startseite"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri.html",
+   "defects": [],
+   "pages": [
+    "/fr/startseite/therapiegebiete/ri/lupus"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/asthma.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/asthma.html",
+   "defects": [],
+   "pages": [
+    "/fr/startseite"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/copd.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/copd.html",
+   "defects": [],
+   "pages": [
+    "/fr/startseite"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/fr/user/login.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/fr/user/login.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  },
+  {
+   "href": "https://www.myastrazeneca.ch/it/startseite.html",
+   "kind": "source",
+   "status": 200,
+   "final": "https://www.myastrazeneca.ch/it/startseite.html",
+   "defects": [],
+   "pages": [
+    "/nav"
+   ]
+  }
+ ]
+}

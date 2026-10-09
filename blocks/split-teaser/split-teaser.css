@@ -1,0 +1,113 @@
+/* split-teaser — canon .container--fixed.container--tb-space-md > .teaser--text-image (lifted) */
+.split-teaser {
+  padding: 20px 0;
+}
+
+.split-teaser .split-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.split-teaser .split-media {
+  width: 100%;
+  flex: 1;
+  padding: 0;
+}
+
+.split-teaser .split-media-mobile {
+  display: none;
+}
+
+.split-teaser .img {
+  line-height: 0;
+}
+
+.split-teaser .img picture {
+  display: block;
+}
+
+.split-teaser .img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.split-teaser .split-content {
+  color: var(--text-color-body-1);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+  padding: 24px 16px;
+  width: 100%;
+  gap: 16px;
+}
+
+.split-teaser .split-content p {
+  margin: 0;
+}
+
+.split-teaser .split-title :is(h2, h3, h4) {
+  color: var(--text-color-title-1);
+}
+
+.split-teaser .split-desc,
+.split-teaser .split-desc :is(p, li) {
+  font-family: var(--font-body);
+  font-size: var(--body-font-size-m);
+  line-height: var(--body-line-height-m);
+}
+
+.split-teaser .split-action {
+  margin-top: auto;
+}
+
+/* band title styled in place (default content before the block): canon
+   .section-title--core.section-title--t-space-md.section-title--mobile-center */
+main .section.split-teaser-container .default-content-wrapper :is(h2, h3) {
+  padding-top: 20px;
+  color: var(--text-color-title-1);
+}
+
+@media (width <= 767px) {
+  .split-teaser .split-media-mobile {
+    display: block;
+  }
+
+  .split-teaser .split-media:not(.split-media-single) .split-media-desktop {
+    display: none;
+  }
+
+  main .section.split-teaser-container .default-content-wrapper :is(h2, h3) {
+    text-align: center;
+  }
+}
+
+@media (width >= 768px) {
+  .split-teaser {
+    padding: 40px 0;
+  }
+
+  .split-teaser .split-inner {
+    flex-direction: row;
+  }
+
+  .split-teaser .split-media {
+    order: 2;
+    padding: 0 0 0 15px;
+    width: 50%;
+  }
+
+  .split-teaser .split-content {
+    order: 1;
+    width: 50%;
+    padding: 0 15px 0 0;
+    text-align: left;
+  }
+
+  main .section.split-teaser-container .default-content-wrapper :is(h2, h3) {
+    padding-top: 40px;
+  }
+}

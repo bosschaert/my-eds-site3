@@ -1,0 +1,226 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-10-07T12:03:34.886Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-10-07T12:03:34.886Z",
+  "fragments": [],
+  "deliveryOrder": [
+    "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+    "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+    "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes",
+    "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement",
+    "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz",
+    "fr-startseite-therapiegebiete-cvrm-diabetes",
+    "fr-startseite-therapiegebiete-ri-lupus",
+    "fr-startseite",
+    "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+    "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr"
+  ],
+  "steps": [
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis",
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis",
+      "templateId": "article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home",
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home",
+      "templateId": "article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes",
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes",
+      "templateId": "article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement",
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement",
+      "templateId": "article",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz",
+      "path": "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz",
+      "templateId": "program",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-diabetes",
+      "path": "/fr/startseite/therapiegebiete/cvrm/diabetes",
+      "templateId": "program",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-ri-lupus",
+      "path": "/fr/startseite/therapiegebiete/ri/lupus",
+      "templateId": "program",
+      "status": "content-pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": []
+    },
+    {
+      "slug": "fr-startseite",
+      "path": "/fr/startseite",
+      "templateId": "fr-startseite",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero"
+        },
+        {
+          "id": "tile-grid",
+          "edsBlockName": "tile-grid"
+        },
+        {
+          "id": "split-teaser",
+          "edsBlockName": "split-teaser"
+        },
+        {
+          "id": "hidden-section",
+          "edsBlockName": "hidden-section"
+        },
+        {
+          "id": "vivo-stamp",
+          "edsBlockName": "vivo-stamp"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+      "path": "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz",
+      "templateId": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "intro-media",
+          "edsBlockName": "intro-media"
+        },
+        {
+          "id": "social-features",
+          "edsBlockName": "social-features"
+        },
+        {
+          "id": "image-text-band",
+          "edsBlockName": "image-text-band"
+        },
+        {
+          "id": "references",
+          "edsBlockName": "references"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "fr-startseite"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "fr-startseite"
+        },
+        {
+          "id": "tile-grid",
+          "edsBlockName": "tile-grid",
+          "convertedBy": "fr-startseite"
+        },
+        {
+          "id": "split-teaser",
+          "edsBlockName": "split-teaser",
+          "convertedBy": "fr-startseite"
+        },
+        {
+          "id": "vivo-stamp",
+          "edsBlockName": "vivo-stamp",
+          "convertedBy": "fr-startseite"
+        }
+      ]
+    },
+    {
+      "slug": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+      "path": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr",
+      "templateId": "fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "selfcert-modal",
+          "edsBlockName": "selfcert-modal"
+        },
+        {
+          "id": "sub-nav",
+          "edsBlockName": "sub-nav"
+        },
+        {
+          "id": "video-poster",
+          "edsBlockName": "video-poster"
+        },
+        {
+          "id": "cta-cards",
+          "edsBlockName": "cta-cards"
+        },
+        {
+          "id": "questions-cta",
+          "edsBlockName": "questions-cta"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb",
+          "convertedBy": "fr-startseite"
+        },
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "fr-startseite"
+        },
+        {
+          "id": "image-text-band",
+          "edsBlockName": "image-text-band",
+          "convertedBy": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+        },
+        {
+          "id": "references",
+          "edsBlockName": "references",
+          "convertedBy": "fr-startseite-therapiegebiete-cvrm-herzinsuffizienz"
+        }
+      ]
+    }
+  ]
+}

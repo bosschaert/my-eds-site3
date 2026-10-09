@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>myAstraZeneca (Suisse) · Current state · Brand review</title>
+<style>
+@font-face{font-family:"Lexia";font-weight:300;src:url("assets/fonts/300_Lexia_Lt.woff2") format("woff2")}
+@font-face{font-family:"Lexia";font-weight:400;src:url("assets/fonts/400_Lexia_Rg.woff2") format("woff2")}
+@font-face{font-family:"Lexia";font-weight:700;src:url("assets/fonts/700_Lexia_Bd.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-weight:400;src:url("assets/fonts/Inter-Regular.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-weight:500;src:url("assets/fonts/Inter-Medium.woff2") format("woff2")}
+@font-face{font-family:"Inter";font-weight:700;src:url("assets/fonts/Inter-Bold.woff2") format("woff2")}
+@font-face{font-family:"Montserrat";font-weight:700;src:url("assets/fonts/montserrat-bold.woff2") format("woff2")}
+:root{--primary:#D0006F;--primary-dark:#830051;--primary-darkest:#4F0031;--accent:#D0006F;--secondary:#830051;--text:#3C4242;--text-muted:#656969;--surface:#FFFFFF;--surface-alt:#EBEFEE;--border:#D8DFDE;--display:Lexia,Georgia,serif;--body:Inter,Arial,-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);font-size:16px;line-height:1.5;color:var(--text);background:var(--surface)}
+h1,h2,h3,h4{font-family:var(--display);font-weight:400;color:var(--text);margin:0 0 .4em;line-height:1.2}
+h1{font-size:56px;line-height:1.15}h2{font-size:36px}h3{font-size:26px}h4{font-size:20px}
+a{color:var(--text)}a:hover{color:var(--primary)}
+code,.mono{font-family:var(--mono);font-size:12px}
+.topnav{position:sticky;top:0;z-index:10;background:var(--primary-dark);color:#fff;display:flex;flex-wrap:wrap;align-items:center;gap:2px 4px;padding:8px 24px;font-family:var(--display);font-size:12px;letter-spacing:1.5px;text-transform:uppercase}
+.topnav strong{margin-right:16px;font-weight:700}
+.topnav a{color:#fff;text-decoration:none;padding:6px 12px;border-radius:150px}
+.topnav a:hover{background:rgba(255,255,255,.18);color:#fff}
+section{padding:48px 24px;max-width:1180px;margin:0 auto;border-bottom:1px solid var(--border)}
+.sechead{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:20px}
+.sechead h2{margin:0}
+.badge,.tag,.pill{display:inline-block;font-family:var(--display);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;padding:3px 10px;border-radius:4px;border:1px solid var(--border);background:var(--surface-alt);color:var(--text)}
+.badge.observed,.badge.cross-page{background:var(--primary);color:#fff;border-color:var(--primary)}
+.badge.inferred{background:#fff;color:var(--primary-dark);border-color:var(--primary-dark)}
+.badge.synthesized{background:var(--primary-dark);color:#fff;border-color:var(--primary-dark)}
+.badge.home-only{background:var(--surface-alt)}
+.src{font-size:12px;color:var(--text-muted);margin-top:12px}.src code{color:var(--text-muted)}
+.masthead{padding:64px 24px 40px}
+.masthead img{height:40px;width:auto;display:block;margin-bottom:24px}
+.hero-line{font-family:var(--display);font-size:46px;line-height:1.2;color:var(--accent);margin:0 0 12px}
+.masthead .tagline{font-size:18px;max-width:760px}
+.statrow{display:flex;flex-wrap:wrap;gap:16px}
+.stat{flex:1 1 220px;min-width:220px;background:var(--surface-alt);padding:20px 24px;border-radius:8px}
+.stat b{display:block;font-family:var(--display);font-size:36px;line-height:1.1;color:var(--primary-dark)}
+.stat small{display:block;font-size:12px;color:var(--text-muted);margin-top:4px}
+.callout{margin-top:16px;padding:16px 20px;border-left:4px solid var(--primary);background:#fff;border:1px solid var(--border);border-left:4px solid var(--primary)}
+.callout ul{margin:6px 0 0;padding-left:18px;font-size:14px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px}
+@media(min-width:1024px){.grid4{grid-template-columns:repeat(4,1fr)}}
+.thumb img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border:1px solid var(--border);border-radius:8px;background:var(--surface-alt);display:block}
+.thumb figcaption{font-size:14px;margin-top:8px}.thumb figcaption code{display:block;color:var(--text-muted);word-break:break-all}
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+.sw{min-height:200px;border:1px solid var(--border);border-radius:8px;overflow:hidden;background:#fff}
+.sw .chip{height:96px}.sw .meta{padding:12px 14px;font-size:13px}
+.sw .role{font-family:var(--display);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;display:block}
+.sw code{display:block;margin:2px 0 6px;font-size:13px}.sw .use{color:var(--text-muted);font-size:12px}
+.spec{border-top:1px solid var(--border);padding:16px 0}.spec .lbl{font-family:var(--mono);font-size:12px;color:var(--text-muted);display:block;margin-bottom:6px}
+.spec p{margin:0}
+.cards{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:720px){.cards{grid-template-columns:1fr 1fr}}
+.vcard{background:var(--surface-alt);padding:24px;border-radius:8px}
+.vcard h4{font-size:14px;font-family:var(--display);letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px}
+.vcard p{margin:0;font-family:var(--display);font-size:22px;line-height:1.3}
+.vcard p.small{font-family:var(--body);font-size:15px}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:12px 0}
+th{font-family:var(--display);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;text-align:left;background:#D8DFDE;padding:8px 12px}
+td{padding:8px 12px;border-bottom:1px solid var(--border)}tr:nth-child(even) td{background:var(--surface-alt)}
+.pill{border-radius:4px;background:var(--primary);color:#fff;border-color:var(--primary);text-transform:none;letter-spacing:0;font-family:var(--body);font-weight:700}
+.pill.off{background:var(--surface-alt);color:var(--text);border-color:var(--border)}
+.twocol{columns:2;column-gap:32px;font-size:15px;margin:0;padding-left:18px}
+.tension{border:1px solid var(--border);border-left:4px solid var(--accent);padding:16px 20px;background:#fff;border-radius:0 8px 8px 0}
+.tension .tag{margin-right:6px}.tension h4{font-size:20px;margin:10px 0 6px}.tension p{margin:0;font-size:15px}.tension .src{margin-top:8px}
+.motifs{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+.motif{border:1px solid var(--border);border-radius:8px;padding:16px;text-align:center;font-size:14px}
+.motif .box{width:72px;height:72px;margin:0 auto 10px;background:var(--primary)}
+.list{list-style:none;padding:0;margin:0}.list li{border-left:3px solid var(--primary);padding:8px 16px;margin:0 0 10px;font-size:15px}
+.list li b{font-family:var(--display);font-weight:400;font-size:18px}
+.logo-row{display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start}
+.logo-row .box{padding:32px;border:1px solid var(--border);border-radius:8px;background:#fff}.logo-row img{max-width:280px;height:auto;display:block}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 20px;font-size:14px;margin:0}dt{font-family:var(--display);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted)}dd{margin:0}
+.bars{display:flex;align-items:flex-end;gap:16px;height:96px;margin:16px 0}
+.bars div{width:48px;background:var(--primary);color:#fff;font-size:12px;text-align:center;border-radius:4px 4px 0 0;line-height:1}
+.bars div span{display:block;padding-top:4px}
+footer{padding:40px 24px 64px;max-width:1180px;margin:0 auto;font-size:14px;color:var(--text-muted)}
+@media print{.topnav{position:static}section{break-inside:avoid;page-break-inside:avoid}.thumb img{aspect-ratio:auto;max-height:180px}}
+</style>
+</head>
+<body>
+<nav class="topnav" aria-label="Sections"><strong>myAstraZeneca (Suisse) · Current state</strong>
+<a href="#coverage">Coverage</a><a href="#pages">Pages</a><a href="#palette">Palette</a><a href="#typography">Typography</a><a href="#voice">Voice</a><a href="#tensions">Tensions</a><a href="#motifs">Motifs</a><a href="#components">Components</a><a href="#system">System</a><a href="#logo">Logo</a><a href="#spacing">Spacing</a></nav>
+
+<section class="masthead" id="top">
+<img src="assets/logo.svg" alt="AstraZeneca logo (captured)" width="165" height="40">
+<h1>myAstraZeneca (Suisse) <span class="mono" style="font-size:14px;color:var(--text-muted)">· French tree · current state</span></h1>
+<p class="hero-line">Bienvenue sur myAstraZeneca!</p>
+<p class="tagline">Découvrez nos options de traitement : diabète de type 2, asthme, MPOC, lupus et cancers, y compris le cancer du poumon et du sein pour les professionnels de la santé.</p>
+<p class="mono">origin: <a href="https://www.myastrazeneca.ch/fr/">https://www.myastrazeneca.ch/fr/</a> · og:description null → metaDescription of <code>fr-startseite</code> used</p>
+<p class="src">Source: <code>_brand-extraction.json § site, voice.heroHeadline</code> · <code>pages/fr-startseite.json § description, og</code></p>
+</section>
+
+<section id="coverage">
+<div class="sechead"><h2>Coverage</h2><span class="badge cross-page">cross-page</span></div>
+<div class="statrow">
+<div class="stat"><b>10 / 10</b>pages extracted, headless (concurrency 3), HTTP 200 on every page<small>0 failures · 0 truncated · 10 hydrated · consent dismissed automatically</small></div>
+<div class="stat"><b>medium · 2500 ms</b>wait strategy and average wait<small>identical on all 10 pages (<code>_provenance.waitMode / waitMs</code>)</small></div>
+<div class="stat"><b>12 · 4 · 8</b>palette colors · font families · type sizes<small>3 radii · 0 shadows · 0 gradients · 46 CSS custom properties · 6 system components · 20 dynamic endpoints across 7 third-party hosts (aem-sites)</small></div>
+</div>
+<div class="callout"><strong>Data not captured — sections or rules below were omitted or adapted rather than invented:</strong>
+<ul>
+<li><code>voiceTable.ctaFrequency / headingFrequency / toneMetrics</code> absent — the extraction carries only a note. The Voice tables below are counted directly from <code>pages/*.json § ctas, headings</code>.</li>
+<li><code>palette[].usedAs</code> and <code>occurrences</code> absent — swatches show source property instead of counts; detector <code>T-color-imbalance</code> skipped.</li>
+<li><code>motifs.borderRadius.occurrences</code> absent — <code>T-radius-vocab</code> skipped (only 3 radius values recorded anyway).</li>
+<li><code>pages/*.json § links</code> stores URLs, not link text — <code>T-link-content-free</code> was run against CTA labels only (no hit).</li>
+<li>No <code>landmarks</code> field — <code>T-nav-conflict</code> was run against the <code>systemComponents[site-header].fingerprint</code> (no hit). No <code>embedDominance</code> field — iframe counts (0 on every page) used instead; Embed-dominated section omitted.</li>
+<li><code>crossPromo.detected</code> absent (only <code>bands</code> listed) — Cross-promo reproduction section omitted; the two bands appear under System components.</li>
+<li>Logo captured as a single variant; <code>spacing.sectionPadding</code> is a pointer to Phase 3 archetype measurements, so Spacing uses the DESIGN.md scale.</li>
+</ul></div>
+<p class="src">Source: <code>_crawl-log.json § discovery, crawl.failures, consent, dynamicSurface</code> · <code>pages/*.json § _provenance</code> · <code>_brand-extraction.json § _provenance.notes</code></p>
+</section>
+
+<section id="pages">
+<div class="sechead"><h2>Pages</h2><span class="badge cross-page">cross-page</span><span class="tag">10 screenshots · 1440</span></div>
+<div class="grid4">
+<figure class="thumb"><img src="assets/screenshots/fr-startseite.png" alt="" loading="lazy"><figcaption>Traitements du diabète, de l’asthme, de la BPCO et du cancer<code>/fr/startseite.html</code></figcaption></figure>
+<figure class="thumb"><img src="assets/screenshots/fr-startseite-therapiegebiete-cvrm-chronischeniereninsuffizienz.png" alt="" loading="lazy"><figcaption>Insuffisance Rénale Chronique (IRC) Informations<code>/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html</code></figcaption></figure>
+<figure class="thumb"><img src="assets/screenshots/fr-startseite-therapiegebiete-cvrm-diabetes.png" alt="" loading="lazy"><figcaption>Symptômes, Diagnostic et Traitement du Diabète Sucré<code>/fr/startseite/therapiegebiete/cvrm/diabetes.html</code></figcaption></figure>
+<figure class="thumb"><img src="assets/screenshots/fr-startseite-therapiegebiete-cvrm-herzinsuffizienz.png" alt="" loading="lazy"><figcaption>Insuffisance Cardiaque : Symptômes, Diagnostic et Traitement<code>/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html</code></figcaption></figure>
+<figure class="thumb"><img src="assets/screenshots/fr-startseite-therapiegebiete-ri-lupus.png" alt="" loading="lazy"><figcaption>Lupus Érythémateux Systémique: Symptômes, Diagnostic et Traitement<code>/fr/startseite/therapiegebiete/ri/lupus.html</code></figcaption></figure>
+<figure class="thumb"><img src="assets/screenshots/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-home.png" alt="" loading="lazy"><figcaption>Amylose à transthyrétine (ATTR-CM) – Diagnostic et prise en charge<code>/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html</code></figcaption></figure>
+<figure class="thumb"><img src="assets/screenshots/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-about-amylodosis-attr.png" alt="" loading="lazy"><figcaption>À propos de l’ATTR<code>/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html</code></figcaption></figure>
+<figure class="thumb"><img src="assets/screenshots/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-symptomes.png" alt="" loading="lazy"><figcaption>Symptômes de l’ATTR<code>/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html</code></figcaption></figure>
+<figure class="thumb"><img src="assets/screenshots/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-diagnosis.png" alt="" loading="lazy"><figcaption>Diagnostic de l’ATTR<code>/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html</code></figcaption></figure>
+<figure class="thumb"><img src="assets/screenshots/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-treatement.png" alt="" loading="lazy"><figcaption>Traitement<code>/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html</code></figcaption></figure>
+</div>
+<p class="src">Source: <code>pages/*.json § title, url, screenshot</code> · <code>assets/screenshots/*.png</code></p>
+</section>
+
+<section id="palette">
+<div class="sechead"><h2>Color palette</h2><span class="badge observed">observed</span><span class="tag">12 colors · 1440 + 360 census</span></div>
+<div class="swatches">
+<div class="sw"><div class="chip" style="background:#D0006F"></div><div class="meta"><span class="role">primary · magenta</span><code>#D0006F</code><span class="use">buttons, links hover, title accents, tabs on · <code>--bgColor-core-3, --button-primary-bgColor</code></span></div></div>
+<div class="sw"><div class="chip" style="background:#830051"></div><div class="meta"><span class="role">primary-deep · mulberry</span><code>#830051</code><span class="use">title color 1, core background 1 · <code>--textColor-title-1</code></span></div></div>
+<div class="sw"><div class="chip" style="background:#4F0031"></div><div class="meta"><span class="role">primary-darkest · aubergine</span><code>#4F0031</code><span class="use">core background 2 (dark bands) · <code>--bgColor-core-2</code></span></div></div>
+<div class="sw"><div class="chip" style="background:#3C4242"></div><div class="meta"><span class="role">text · graphite</span><code>#3C4242</code><span class="use">body text, headings, tertiary button border · <code>--textColor-body-1, color</code></span></div></div>
+<div class="sw"><div class="chip" style="background:#FFFFFF;border-bottom:1px solid #D8DFDE"></div><div class="meta"><span class="role">background · white</span><code>#FFFFFF</code><span class="use">page background, cards · <code>background-color</code></span></div></div>
+<div class="sw"><div class="chip" style="background:#EBEFEE"></div><div class="meta"><span class="role">surface · mist</span><code>#EBEFEE</code><span class="use">supporting bands, borders 1, tabs off · <code>--bgColor-supporting-1</code></span></div></div>
+<div class="sw"><div class="chip" style="background:#D8DFDE"></div><div class="meta"><span class="role">border · mist-dark</span><code>#D8DFDE</code><span class="use">borders 2, table header · <code>--borderColor-2</code></span></div></div>
+<div class="sw"><div class="chip" style="background:#F0AB00"></div><div class="meta"><span class="role">accent · mustard</span><code>#F0AB00</code><span class="use">secondary background 1 (rare) · <code>--bgColor-secondary-1</code></span></div></div>
+<div class="sw"><div class="chip" style="background:#9DB0AC"></div><div class="meta"><span class="role">accent-2 · sage</span><code>#9DB0AC</code><span class="use">secondary background 2 (rare) · <code>--bgColor-secondary-2</code></span></div></div>
+<div class="sw"><div class="chip" style="background:#656969"></div><div class="meta"><span class="role">muted · slate</span><code>#656969</code><span class="use">labels, placeholders · <code>--textColor-label-2</code></span></div></div>
+<div class="sw"><div class="chip" style="background:#B2B4B4"></div><div class="meta"><span class="role">muted-light · silver</span><code>#B2B4B4</code><span class="use">placeholders, border 7 · <code>--textColor-placeholder-1</code></span></div></div>
+<div class="sw"><div class="chip" style="background:#000000"></div><div class="meta"><span class="role">dark · black</span><code>#000000</code><span class="use">PATTRNS campaign dark panels (measured surface) · <code>background-color</code></span></div></div>
+</div>
+<p class="src">Source: <code>_brand-extraction.json § palette[].hex, role, name, usage, sources[].prop</code> (occurrences / usedAs not recorded). Secondary tokens also present in <code>pages/*.json § customProps</code>: <code>--tableHighlight #E6CCDC</code>, <code>--inpage-textColor-1 #E366A9</code>, <code>--borderColor-3 #D8DADA</code>, <code>--textColor-label-1 #8D8F8F</code>.</p>
+</section>
+
+<section id="typography">
+<div class="sechead"><h2>Typography</h2><span class="badge observed">observed</span><span class="badge synthesized">No modular scale</span><span class="tag">56 · 46 · 36 · 26 · 18 · 16 · 14 · 12</span></div>
+<div class="spec"><span class="lbl">H1 · Lexia 400 / 56px / 1.15</span><p style="font-family:var(--display);font-size:56px;line-height:1.15">Insuffisance cardiaque</p></div>
+<div class="spec"><span class="lbl">H2 · Lexia 400 / 46px / 1.2</span><p style="font-family:var(--display);font-size:46px;line-height:1.2">Le lupus, une maladie aux différents visages</p></div>
+<div class="spec"><span class="lbl">H3 · Lexia 400 / 36px / 1.2</span><p style="font-family:var(--display);font-size:36px;line-height:1.2">Informations utiles sur les produits</p></div>
+<div class="spec"><span class="lbl">H4 · Lexia 400 / 26px / 1.25</span><p style="font-family:var(--display);font-size:26px;line-height:1.25">Symptômes · Diagnostic · Traitement</p></div>
+<div class="spec"><span class="lbl">Body · Inter-Regular 400 / 16px / 1.5 — captured paragraph, pages/fr-startseite-therapiegebiete-ri-lupus.json § body</span><p style="max-width:72ch">Le lupus érythémateux systémique (LES) est une maladie auto-immune chronique qui peut affecter différents organes, notamment la peau, les articulations, le système nerveux central et les reins.1 Le LES se caractérise par la production d’auto-anticorps pathogènes et la perte de tolérance aux auto-antigènes nucléaires.2</p></div>
+<div class="spec"><span class="lbl">Button · Inter-Bold 700 / 16px · Label · Inter-Medium 500 / 12px · Small · 12px / 1.4</span><p><span class="pill">Se connecter</span> &nbsp; <span class="pill off">Contactez-nous</span> &nbsp; <span style="font-weight:500;font-size:12px;letter-spacing:.5px">LABEL 12PX</span> &nbsp; <span style="font-size:12px">Petit texte 12px — approbation CH / date de révision</span></p></div>
+<p class="src">Source: <code>_brand-extraction.json § type.levels, body, small, button, label, sizes, scaleAudit</code> ("56/46/36/26 heading steps of 10px, body 16, small 12/14 — arithmetic, not modular") · <code>DESIGN.md § typography</code>. Families: Lexia 300/400/700 (commercial, Dalton Maag, self-hosted), Inter 300–800 (OFL), Montserrat 500/700/800 (campaign, OFL), icomoon + Font Awesome icons.</p>
+</section>
+
+<section id="voice">
+<div class="sechead"><h2>Voice</h2><span class="badge home-only">home-only</span><span class="badge cross-page">cross-page</span><span class="badge inferred">tone: professional · informational</span><span class="tag">register: brand</span></div>
+<div class="cards">
+<div class="vcard"><h4>Hero headline</h4><p>Bienvenue sur myAstraZeneca!</p></div>
+<div class="vcard"><h4>Tagline (meta description)</h4><p class="small">Découvrez nos options de traitement : diabète de type 2, asthme, MPOC, lupus et cancers, y compris le cancer du poumon et du sein pour les professionnels de la santé.</p></div>
+<div class="vcard" style="grid-column:1/-1"><h4>First paragraph (captured — the home mega-menu, 1 545 chars, truncated)</h4><p class="small">Nos médicaments Cardiovasculaire, rénal &amp; métabolisme Insuffisance cardiaque Forxiga ® (Dapagliflozine) Maladie rénale chronique (MRC) Forxiga ® (Dapagliflozine) Diabète de type 2 Forxiga ® (Dapagliflozine) Xigduo® (Dapagliflozine/Metformine HCl) Amylose Wainzua® (Eplontersen) Hyperkaliémie Lokelma® (Sodium zirconium cyclosilicate) Respiratoire &amp; Immunologie … Voir tous les médicaments</p></div>
+</div>
+<h3 style="margin-top:32px">CTA frequency · top 8 of 67 distinct labels</h3>
+<table><thead><tr><th>Label</th><th>Pages</th><th>Where</th></tr></thead><tbody>
+<tr><td><span class="pill off">DE</span> <span class="pill off">FR</span> <span class="pill off">IT</span></td><td>10 each</td><td>header language switcher (EN on 5)</td></tr>
+<tr><td><span class="pill">Se connecter</span></td><td>10</td><td>header login</td></tr>
+<tr><td><span class="pill off">Contactez-nous</span></td><td>10</td><td>header / footer</td></tr>
+<tr><td><span class="pill off">Contact</span></td><td>10</td><td>footer</td></tr>
+<tr><td><span class="pill off">Règlement sur les cookies</span></td><td>10</td><td>footer legal</td></tr>
+<tr><td><span class="pill off">Politique de confidentialité</span></td><td>10</td><td>footer legal</td></tr>
+<tr><td><span class="pill off">Conditions d'utilisation</span></td><td>10</td><td>footer legal</td></tr>
+<tr><td><span class="pill off">Déclaration d'effets secondaires</span></td><td>10</td><td>footer regulatory</td></tr>
+</tbody></table>
+<p style="font-size:14px;color:var(--text-muted)">Next tier (5 pages each, PATTRNS campaign chrome): Découvrir maintenant · See the pattrns · À propos de l’ATTR · Symptômes de l’ATTR · Diagnostic de l’ATTR · Traitement · Contactez-nous maintenant.</p>
+<h3 style="margin-top:24px">Repeated headings (≥3 pages)</h3>
+<ul class="twocol"><li>Diagnostic — 5</li><li>Traitement — 5</li><li>Informations utiles sur les produits — 5</li><li>Vous avez des questions ? — 5</li><li>Mortalité — 3</li><li>Symptômes — 3</li></ul>
+<div class="statrow" style="margin-top:24px">
+<div class="stat"><b>3.5%</b>headings uppercase<small>3 of 86 headings (SYSTÉMIQUE, PROGRESSIVE, MENAÇANTE POUR LA VIE) — mixed case inherited</small></div>
+<div class="stat"><b>64</b>distinct headings<small>86 headings across 10 pages</small></div>
+<div class="stat"><b>67</b>distinct CTA labels<small>219 CTAs across 10 pages</small></div>
+</div>
+<p class="src">Source: <code>_brand-extraction.json § voice, voiceTable.note, register</code> · counted from <code>pages/*.json § ctas[].label, headings[].text</code> (voiceTable frequency fields absent). Audience per <code>PRODUCT.md § Users</code>: Swiss HCPs behind a self-certification gate (inferred).</p>
+</section>
+
+<section id="tensions">
+<div class="sechead"><h2>Tensions</h2><span class="badge synthesized">synthesized</span><span class="tag">13 detector rules run · 3 fired · 3 inferred additions</span></div>
+<div class="cards">
+<div class="tension"><span class="tag">T-scale</span><span class="badge observed">observed</span><h4>Type scale is ad-hoc</h4><p>56 → 46 → 36 → 26 → 18 → 16 → 14 → 12, no consistent ratio (arithmetic 10 px heading steps). Direct will need to decide whether the target adopts a modular scale.</p><p class="src">Source: <code>_brand-extraction.json § type.scaleAudit</code></p></div>
+<div class="tension"><span class="tag">T-logo-variants</span><span class="badge home-only">home-only</span><h4>Only one logo variant captured</h4><p>Only one logo variant captured (<code>img-logo-class</code>, 165×40 SVG, alt "Logo"). The redesign will need a monochrome / inverted / SVG variant set; direct should plan that.</p><p class="src">Source: <code>_brand-extraction.json § logo</code></p></div>
+<div class="tension"><span class="tag">T-img-alt-generic</span><span class="badge cross-page">cross-page</span><h4>Generic alt text found</h4><p>10 image(s) carry alt text equal to a stock placeholder ("logo" — the header logo on every page). Distinct from empty alt — these images claim a label but the label is content-free. Failing screen readers.</p><p class="src">Source: <code>pages/*.json § media.imgs[].alt</code> (162 images; 44 empty = 27%, below the 30% <code>T-img-alt-empty</code> threshold)</p></div>
+<div class="tension"><span class="tag">T-cta-contact</span><span class="badge inferred">inferred</span><h4>Three labels for one contact action</h4><p>"Contactez-nous" (10 pages), "Contact" (10) and "Contactez-nous maintenant" (5) all point at the contact moment. The closed <code>contact</code> bucket matched only one, so <code>T-cta-vocab</code> did not fire mechanically; direct should pick a canonical label.</p><p class="src">Source: <code>pages/*.json § ctas[].label</code></p></div>
+<div class="tension"><span class="tag">T-alt-language</span><span class="badge inferred">inferred</span><h4>German alt text on French pages</h4><p>Hero and tile images on the therapy-area pages carry German alt text ("chronische niereninsuffizienz - header", "mortalität - herzinsuffizienz", "symptome - herzinsuffizienz"). Content decision for direct: translate alt text or carry verbatim.</p><p class="src">Source: <code>pages/*.json § media.imgs[].alt</code></p></div>
+<div class="tension"><span class="tag">T-outline-h1</span><span class="badge inferred">inferred</span><h4>Campaign pages have no H1/H2</h4><p>All 5 See the PATTRNS pages start their outline at <code>h3</code>/<code>h4</code> (the title sits in the dark banner image). Direct will need to decide whether the migrated template restores a textual H1.</p><p class="src">Source: <code>pages/fr-startseite-therapiegebiete-cvrm-see-the-pattrns-*.json § headings[].tag</code></p></div>
+</div>
+<p class="src">Did not fire: <code>T-cta-vocab</code>, <code>T-link-content-free</code>, <code>T-no-tokens</code> (46 custom properties), <code>T-tokens-unused</code> (<code>--button-primary-bgColor #D0006F</code> equals the measured primary), <code>T-img-alt-empty</code> (27%), <code>T-embed-dominance</code> (0 iframes), <code>T-nav-conflict</code>, <code>T-temporal-mark</code>, <code>T-contrast</code> (#3C4242 on #FFFFFF ≈ 10.2:1). Skipped for missing data: <code>T-radius-vocab</code>, <code>T-color-imbalance</code>.</p>
+</section>
+
+<section id="motifs">
+<div class="sechead"><h2>Motifs</h2><span class="badge observed">observed</span><span class="tag">3 radii · no shadows · no gradients</span></div>
+<div class="motifs">
+<div class="motif"><div class="box" style="border-radius:4px"></div><b>4px</b> · element mode<br><small>buttons, inputs</small></div>
+<div class="motif"><div class="box" style="border-radius:8px"></div><b>8px</b> · area mode<br><small>cards, tiles</small></div>
+<div class="motif"><div class="box" style="border-radius:20px;width:96px;height:96px"></div><b>20px</b><br><small>a few campaign cards</small></div>
+<div class="motif"><div class="box" style="background:#fff;border:1px solid var(--border);border-radius:8px"></div><b>Shadow</b> · none measured<br><small>depth comes from bands and photography</small></div>
+</div>
+<p class="src">Source: <code>_brand-extraction.json § motifs.radius (mode 4px, areaMode 8px, values, pill null), shadows [], gradients []</code> · <code>DESIGN.json § extensions.motion.observed</code>: link hover colour only.</p>
+</section>
+
+<section id="components">
+<div class="sechead"><h2>Components</h2><span class="badge cross-page">cross-page</span><span class="tag">9 patterns · 12 module candidates · 3 templates</span></div>
+<ul class="list">
+<li><b>site-header</b> — 10 pages · header landmark + repeated CTA labels (Se connecter, DE/EN/FR/IT) · pattern: breadcrumb below on 9 inner pages</li>
+<li><b>hero-band</b> — 5 pages · full-width photographic band with white H1 (therapy-area template)</li>
+<li><b>stat-tiles</b> — 4 pages · pattern "icon stat tile (3-up)"</li>
+<li><b>image-text-row</b> — 4 pages · pattern "image + text row (Symptômes / Diagnostic / Traitement)"</li>
+<li><b>product-info-band</b> — 5 pages · pattern "product-info image band with CTA"</li>
+<li><b>therapy-cards</b> — 1 page (home) · pattern "therapy-area image card with link list"</li>
+<li><b>pattrns-banner-tabs</b> — 5 pages · patterns "PATTRNS dark starry panel", "pill tab sub-navigation"</li>
+<li><b>pattrns-cta-cards</b> — 5 pages · pattern "paired CTA cards"</li>
+<li><b>questions-cta</b> — 5 pages · "Vous avez des questions ?" block</li>
+<li><b>references</b> — 9 pages · pattern "references list" before footer</li>
+<li><b>site-footer</b> — 10 pages · logo + 3 link columns + legal line (CH approval code, revision date)</li>
+</ul>
+<p style="font-size:14px;margin-top:16px">Component styles: primary button #D0006F/#FFF · secondary #FFF with #D0006F border and text · tertiary #FFF with #3C4242 border and text · all 4px radius, Inter-Bold 16px · link #3C4242, hover #D0006F · tabs on #D0006F / off #EBEFEE · table header #D8DFDE, alt rows #EBEFEE, highlight #E6CCDC. Templates: <code>home</code> (landing), <code>therapy-area</code> (program), <code>pattrns</code> (article).</p>
+<p class="src">Source: <code>DESIGN.json § extensions.modules, templates</code> · <code>_brand-extraction.json § motifs.patterns, componentStyle</code></p>
+</section>
+
+<section id="system">
+<div class="sechead"><h2>System components</h2><span class="badge cross-page">cross-page</span><span class="tag">6 landmark fingerprints</span></div>
+<table><thead><tr><th>Id</th><th>Kind</th><th>Pages</th><th>Fingerprint / heading sequence · CTA labels</th><th>Evidence</th></tr></thead><tbody>
+<tr><td>site-header</td><td><span class="tag">header</span></td><td>10</td><td>AZ logo · Nos médicaments · Aires thérapeutiques · search · language DE/EN/FR/IT · <span class="pill">Se connecter</span></td><td>html-slice header on every page; CTAs repeat</td></tr>
+<tr><td>breadcrumb</td><td><span class="tag">strip</span></td><td>9</td><td>cmp-breadcrumb under header on all inner pages (Home › Domaines thérapeutiques › CVRM › …)</td><td>—</td></tr>
+<tr><td>site-footer</td><td><span class="tag">footer</span></td><td>10</td><td>AZ logo · 3 link columns · legal line · CH code / revision date · Contact, Politique de confidentialité, Conditions d'utilisation, Déclaration d'effets secondaires, Rapport qualité défaut, Demandes médicales</td><td>vision check: identical on all 10 pages</td></tr>
+<tr><td>product-info-band</td><td><span class="tag">cta-band</span></td><td>5</td><td>"Informations utiles sur les produits" heading + image + CTA</td><td>headings repeat on home + 4 therapy-area pages</td></tr>
+<tr><td>pattrns-banner-tabs</td><td><span class="tag">sub-nav</span></td><td>5</td><td>dark PATTRNS banner + pill tabs: À propos de l’ATTR · Symptômes de l’ATTR · Diagnostic de l’ATTR · Traitement</td><td>vision check on 5 see-the-pattrns pages</td></tr>
+<tr><td>questions-cta</td><td><span class="tag">cta-band</span></td><td>5</td><td>"Vous avez des questions ?" · <span class="pill">Contactez-nous maintenant</span></td><td>vision check on 5 see-the-pattrns pages</td></tr>
+</tbody></table>
+<p class="src">Source: <code>_brand-extraction.json § systemComponents, crossPromo.bands</code> (product-info-band, questions-cta) · CTA labels from <code>pages/*.json § ctas</code></p>
+</section>
+
+<section id="logo">
+<div class="sechead"><h2>Logo &amp; favicon</h2><span class="badge home-only">home-only</span></div>
+<div class="logo-row">
+<div class="box"><img src="assets/logo.svg" alt="AstraZeneca logo, captured variant" width="165" height="40"></div>
+<dl>
+<dt>Source</dt><dd><code>img-logo-class</code> — header experience fragment <code>…/Header/master/_jcr_content/root/image.coreimg.svg/…/astrazeneca-logo.svg</code></dd>
+<dt>File</dt><dd><code>assets/logo.svg</code> · SVG · 165×40 intrinsic · 8.2 KB · alt "Logo"</dd>
+<dt>Variants captured</dt><dd>1 — full-colour SVG on white</dd>
+<dt>Variants not captured</dt><dd>monochrome, inverted / on-dark (the footer and PATTRNS panels show one), stacked, favicon-scale mark</dd>
+<dt>Favicon</dt><dd><code>assets/favicon.ico</code> · 34.5 KB</dd>
+</dl>
+</div>
+<p class="src">Source: <code>_brand-extraction.json § logo, favicon</code> · <code>_crawl-log.json § favicon</code></p>
+</section>
+
+<section id="spacing">
+<div class="sechead"><h2>Spacing &amp; shape</h2><span class="badge synthesized">synthesized</span><span class="tag">container 1180px · AEM 12-column grid</span></div>
+<p style="font-size:14px">Base unit 8px (implied by the DESIGN.md scale). Section rhythm comes from <code>container--tb-space</code> / <code>container--tb-space-md</code> paddings, measured per archetype in Phase 3.</p>
+<div class="bars"><div style="height:12px"><span>8</span></div><div style="height:24px"><span>16</span></div><div style="height:36px"><span>24</span></div><div style="height:60px"><span>40</span></div><div style="height:96px"><span>64</span></div></div>
+<p class="mono">xs 8 · sm 16 · md 24 · lg 40 · xl 64</p>
+<h3 style="margin-top:24px;font-size:20px">Radii revisited</h3>
+<p><span class="pill off" style="border-radius:4px">4px · element</span> &nbsp; <span class="pill off" style="border-radius:8px">8px · area</span> &nbsp; <span class="pill off" style="border-radius:20px">20px · campaign card</span></p>
+<p class="src">Source: <code>DESIGN.md § spacing, rounded</code> · <code>DESIGN.json § extensions.breakpoints.containerMaxWidth</code> · <code>_brand-extraction.json § spacing, motifs.radius</code></p>
+</section>
+
+<footer>
+<p><strong>Provenance.</strong> This review read <code>_brand-extraction.json</code>, <code>DESIGN.json</code>, <code>DESIGN.md</code>, <code>PRODUCT.md</code>, <code>_crawl-log.json</code>, the ten <code>pages/&lt;slug&gt;.json</code> files, <code>assets/logo.svg</code> and the screenshots. Chrome colours: <code>--primary #D0006F</code>, <code>--primary-dark #830051</code> (same hue family, lower luminance). <code>--accent</code> falls back to the primary: mustard #F0AB00 fails the saturation filter (max channel = 240) and no <code>secondary</code> role exists, so the review chrome is intentionally monochromatic. Headings stay mixed-case (3.5% uppercase).</p>
+<p><strong>What's next.</strong> Run <code>$stardust direct</code> to resolve the six tension cards above and set the migration direction.</p>
+<p><span class="badge observed">observed</span> frequency-counted from CSS across ≥3 pages &nbsp; <span class="badge cross-page">cross-page</span> aggregated across all 10 pages &nbsp; <span class="badge home-only">home-only</span> single-page source &nbsp; <span class="badge inferred">inferred</span> agent judgment, challenge it &nbsp; <span class="badge synthesized">synthesized</span> higher-level claim built from extracted inputs</p>
+</footer>
+</body>
+</html>

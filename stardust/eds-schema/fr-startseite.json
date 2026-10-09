@@ -1,0 +1,237 @@
+{
+ "source": "http://localhost:8791/fr-startseite-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Bienvenue sur myAstraZeneca!"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Vous trouverez ici des informations à propos de nos domaines thérapeutiques et de nos produits."
+    }
+   ],
+   "imgCount": 2,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "page-section",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Votre spécialité"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "page-section",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Vos intérêts"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": []
+  },
+  {
+   "section": "intro",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Le portail d’information pour les professionnels de la santé."
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Sur notre site, nous vous proposons tout ce qui concerne nos domaines thérapeutiques, nos indications et nos produits de manière compacte, actuelle et selon les normes de qualité les plus élevées."
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": [
+    {
+     "unitSelector": "DIV.text",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "ta-grid",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Maladies cardiovasculaires, rénales et métaboliques (CVRM)"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Les maladies CVRM sont complexes et interdépendantes. Ce n’est qu’en comprenant leurs interactions et en s’attaquant de manière ciblée aux mécanismes qui les déclenchent que nous pouvons identifier, diagnostiquer et traiter les patientes et patients plus tôt et plus efficacement. Nous pouvons stopper la progression de la maladie et, en fin de compte, améliorer et sauver la vie des millions de patientes et patients qui vivent avec ces maladies."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "En savoir plus sur les indications suivantes:"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Acute Care Insuffisance rénale chronique",
+     "href": "/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Diabète de type 2",
+     "href": "/fr/startseite/therapiegebiete/cvrm/diabetes.html"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Insuffisance cardiaque",
+     "href": "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Maladies respiratoires et immunologie"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Nous nous concentrons sur les maladies respiratoires chroniques telles que l’asthme et la bronchopneumopathie chronique obstructive (BPCO), ainsi que sur les maladies d’origine immunitaire comme le lupus. Nous nous inspirons de la science pour aborder des problèmes difficiles et complexes non résolus – en ciblant la biologie sous-jacente et en développant de nouvelles modalités et combinaisons médicamenteuses efficaces, dans le but ultime d’obtenir une modification de la maladie et une rémission clinique En savoir plus sur les indications suivantes:"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Asthme",
+     "href": "/fr/startseite/therapiegebiete/ri/asthma.html"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "BPCO",
+     "href": "/fr/startseite/therapiegebiete/ri/copd.html"
+    },
+    {
+     "role": "cta",
+     "order": 10,
+     "text": "Lupus",
+     "href": "/fr/startseite/therapiegebiete/ri/lupus.html"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Oncologie et hématologie"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Nous étudions des combinaisons de biothérapies et de traitements à bas poids moléculaire pour le traitement du cancer. Ces combinaisons ciblent directement la tumeur et certaines aident à renforcer le système immunitaire de l’organisme afin de provoquer la mort des cellules tumorales"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "En savoir plus sur les indications suivantes:"
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "Cholangiocarcinome",
+     "href": "/fr/startseite/therapiegebiete/onkologie/leberkrebs.html"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Cancer du sein",
+     "href": "/fr/startseite/therapiegebiete/onkologie/brustkrebs.html"
+    },
+    {
+     "role": "cta",
+     "order": 16,
+     "text": "Cancer des ovaires",
+     "href": "/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html"
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "Hématologie",
+     "href": "/fr/startseite/therapiegebiete/onkologie/haematologie.html"
+    },
+    {
+     "role": "cta",
+     "order": 18,
+     "text": "Carcinome hépatocellulaire",
+     "href": "/fr/startseite/therapiegebiete/onkologie/leberkrebs.html"
+    },
+    {
+     "role": "cta",
+     "order": 19,
+     "text": "Cancer du poumon",
+     "href": "/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html"
+    }
+   ],
+   "imgCount": 6,
+   "editableTexts": 11,
+   "repeats": [
+    {
+     "unitSelector": "DIV.ta-grid__item",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 3,
+      "imgs": 2,
+      "textRuns": 6
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "products",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Nous mettons à profit notre vaste expertise dans les domaines de la recherche et du développement tout au long du cycle de vie d’un médicament."
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Découvrez maintenant nos indications ou parcourez tous nos produits!"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Découvrir maintenant",
+     "href": "/fr/startseite/produkte.html"
+    }
+   ],
+   "imgCount": 2,
+   "editableTexts": 2,
+   "repeats": []
+  }
+ ]
+}

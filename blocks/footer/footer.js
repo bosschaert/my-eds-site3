@@ -1,25 +1,21 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
+/**
+ * Loads and decorates the footer.
+ * The source site has no chrome: this block renders nothing unless a /footer
+ * document (or the one named by the `footer` metadata) exists and has content.
+ * @param {Element} block The footer block element
+ */
 export default async function decorate(block) {
   const footerMeta = getMetadata('footer');
   const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
   const fragment = await loadFragment(footerPath);
 
   block.textContent = '';
-  const inner = document.createElement('div');
-  inner.className = 'footer-inner';
-  while (fragment.firstElementChild) inner.append(fragment.firstElementChild);
+  if (!fragment || !fragment.firstElementChild) return;
 
-  inner.children[0]?.classList.add('footer-brand');
-  inner.children[1]?.classList.add('footer-links');
-  const brandLink = inner.querySelector('.footer-brand a');
-  if (brandLink) {
-    const logo = document.createElement('img');
-    logo.src = '/img/balbriggan/fcc-logo.svg';
-    logo.alt = '';
-    brandLink.prepend(logo);
-  }
-
-  block.append(inner);
+  const footer = document.createElement('div');
+  while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
+  block.append(footer);
 }

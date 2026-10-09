@@ -7,12 +7,9 @@ helix-importer-ui
 .DS_Store
 *.bak
 .idea
-.env
-.env.*
-stardust/.work/
 
 # Ensure these files are tracked
 !CLAUDE.md
 !AGENTS.md
-.hlx/.da-token.json
-content
+# Replica runner writes the DA token to .env; keep it out of checkpoints.
+.env

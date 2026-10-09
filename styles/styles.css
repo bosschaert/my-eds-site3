@@ -1,272 +1,57 @@
 /*
- * Balbriggan uses Gotham commercially. No licensed webfont was supplied, so
- * this deployment intentionally uses Arial rather than redistributing Gotham.
+ * Foundation styles for the same-design migration of https://www.example.com/
+ *
+ * The source page has no site chrome (no header, no footer, no web fonts) and
+ * exactly two inline rules, lifted verbatim:
+ *   html{color-scheme:light dark;background:light-dark(#eee,#222)}
+ *   body{font:16px/1.6 system-ui,sans-serif;max-width:26em;margin:auto;padding:25vh 2em 2em;text-align:center}
+ * Everything else keeps the browser default. Do not add styling here.
  */
-/* stylelint-disable no-descending-specificity */
 
 :root {
-  --background-color: #fff;
-  --light-color: #f0f0f0;
-  --dark-color: #444;
-  --text-color: #3c3c3b;
-  --link-color: #2494d2;
-  --link-hover-color: #00699b;
-  --brand-blue: #2494d2;
-  --brand-cyan: #009bd9;
-  --brand-yellow: #f5ee2f;
-  --content-width: 1140px;
-  --body-font-family: arial, sans-serif;
-  --heading-font-family: arial, sans-serif;
-  --nav-height: 98px;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+  --page-bg-light: #eee;
+  --page-bg-dark: #222;
+  --body-font-family: system-ui, sans-serif;
+  --body-font-size: 16px;
+  --body-line-height: 1.6;
+  --measure: 26em;
+  --pad-top: 25vh;
+  --pad-inline: 2em;
+  --pad-bottom: 2em;
+  --nav-height: 0px;
 }
 
 html {
-  scroll-behavior: smooth;
+  color-scheme: light dark;
+  background: light-dark(var(--page-bg-light), var(--page-bg-dark));
 }
 
 body {
   display: none;
-  margin: 0;
-  background: var(--background-color);
-  color: var(--text-color);
-  font-family: var(--body-font-family);
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.5;
+  margin: auto;
+  padding: var(--pad-top) var(--pad-inline) var(--pad-bottom);
+  max-width: var(--measure);
+  font: var(--body-font-size) / var(--body-line-height) var(--body-font-family);
+  text-align: center;
 }
 
 body.appear {
   display: block;
 }
 
-body > header {
+header,
+footer {
   height: var(--nav-height);
-  background: var(--brand-blue);
-}
-
-header .header,
-footer .footer {
-  visibility: hidden;
-}
-
-header .header[data-block-status="loaded"],
-footer .footer[data-block-status="loaded"] {
-  visibility: visible;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+  min-height: 0;
   margin: 0;
-  font-family: var(--heading-font-family);
-  line-height: 1.2;
-}
-
-p,
-ol,
-ul {
-  margin-top: 0;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-}
-
-a:any-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
   padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-  border: 0;
 }
 
 main > .section {
-  margin: 0;
-}
-
-main > .section > div {
-  max-width: none;
   margin: 0;
   padding: 0;
 }
 
 main .section:empty {
   display: none;
-}
-
-main .section.intro {
-  min-height: 439px;
-  padding: 54px 20px 64px;
-  text-align: center;
-}
-
-main .section.intro .default-content-wrapper {
-  width: min(var(--content-width), 100%);
-  margin: 0 auto;
-}
-
-main .section.intro h2,
-.news-carousel-container .default-content-wrapper h2,
-.explore-grid-container .default-content-wrapper h2,
-.document-cards-container .default-content-wrapper h2 {
-  color: var(--text-color);
-  font-size: 32px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-main .section.intro h2::after,
-.news-carousel-container .default-content-wrapper h2::after,
-.explore-grid-container .default-content-wrapper h2::after,
-.document-cards-container .default-content-wrapper h2::after {
-  content: "";
-  display: block;
-  width: 10%;
-  margin: 0.5em auto 1.5em;
-  border-top: 5px solid var(--brand-yellow);
-}
-
-main .section.intro h2::after {
-  margin-bottom: 58px;
-}
-
-main .section.intro p {
-  max-width: 808px;
-  margin: 0 auto 16px;
-  line-height: 24px;
-}
-
-.news-carousel-container,
-.explore-grid-container,
-.document-cards-container {
-  position: relative;
-}
-
-.news-carousel-container .default-content-wrapper,
-.explore-grid-container .default-content-wrapper,
-.document-cards-container .default-content-wrapper {
-  position: absolute;
-  z-index: 2;
-  top: 54px;
-  right: 20px;
-  left: 20px;
-}
-
-.document-cards-container .default-content-wrapper h2::after {
-  margin-bottom: 65px;
-}
-
-p.button-wrapper {
-  margin: 0;
-}
-
-a.button:any-link,
-button.button {
-  display: inline-flex;
-  min-height: 38px;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  border: 2px solid var(--brand-yellow);
-  border-radius: 24px;
-  padding: 4px 32px;
-  background: var(--brand-yellow);
-  color: var(--text-color);
-  font-weight: 700;
-  line-height: 1.15;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-a.button:hover,
-a.button:focus-visible,
-button.button:hover,
-button.button:focus-visible {
-  border-color: #fff;
-  background: #fff;
-  color: var(--brand-blue);
-  text-decoration: none;
-}
-
-.prosemirror-editor p > :is(strong, em) > a:any-link,
-.prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--brand-yellow);
-  border-radius: 24px;
-  padding: 4px 32px;
-  background: var(--brand-yellow);
-  color: var(--text-color);
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.prosemirror-editor p > a:any-link > :is(strong, em) {
-  font-weight: inherit;
-  font-style: inherit;
-}
-
-a .prosemirror-editor a:any-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (width <= 800px) {
-  :root {
-    --nav-height: 90px;
-  }
-
-  main .section.intro {
-    height: 695px;
-    min-height: 0;
-    padding: 54px 15px 64px;
-    overflow: hidden;
-  }
-
-  main .section.intro h2::after {
-    margin-bottom: 90px;
-  }
-
-  main .section.intro p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .news-carousel-container .default-content-wrapper h2::after,
-  .explore-grid-container .default-content-wrapper h2::after {
-    margin-bottom: 58px;
-  }
-
-  .document-cards-container .default-content-wrapper h2::after {
-    margin-bottom: 74px;
-  }
 }

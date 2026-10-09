@@ -1,0 +1,67 @@
+{
+  "_provenance": { "writtenBy": "stardust:dynamics", "writtenAt": "2026-10-06T13:06:00Z", "phase": "rollout D2-dynamic" },
+  "method": "single-page roster; self rows implemented in the static recreation (settled DOM authored as EDS documents, heading copy-link anchors in scripts.js, footer badge block, footer links verbatim); decided-out rows carry production statements in stardust/dynamic-features.md § Register; replayed read-only against the aem.live origin",
+  "features": [
+    {
+      "id": "cr-main-empty-at-load",
+      "feature": "client-rendered page (publication JSON → DOM) delivered as static EDS content",
+      "class": "CR", "pages": 1,
+      "disposition": "static-snapshot", "reproducibility": "self", "status": "done",
+      "verifiedBy": "10 headings (1 h1, 4 h2, 5 h3) in the served main; 11 sections; roster gate 1440 2.39% / 360 5.23%",
+      "checks": [
+        { "type": "dom-count", "path": "/webpage/dyft29wzo0qlk", "selector": "main h1, main h2, main h3", "min": 10 },
+        { "type": "dom-count", "path": "/webpage/dyft29wzo0qlk", "selector": "main img", "min": 5 }
+      ]
+    },
+    {
+      "id": "heading-anchor-copy-link",
+      "feature": "\"Copy link\" buttons beside each h2/h3 (click copies the deep link and shows the toast)",
+      "class": "CR", "pages": 1,
+      "disposition": "rebuild-native", "reproducibility": "self", "status": "done",
+      "verifiedBy": "9 page-heading-anchor buttons after settle (4 h2 + 5 h3); motion-compare parity in recreate (stardust/replica/motion/)",
+      "checks": [
+        { "type": "dom-count", "path": "/webpage/dyft29wzo0qlk", "selector": "main button.page-heading-anchor", "min": 9 },
+        { "type": "dom-count", "path": "/webpage/dyft29wzo0qlk", "selector": "main button.page-heading-anchor .anchor-tooltip", "min": 9 }
+      ]
+    },
+    {
+      "id": "made-in-express-badge",
+      "feature": "fixed \"Made in Adobe Express\" badge (register R-03, replicated as captured)",
+      "class": "static", "pages": 1,
+      "disposition": "static-snapshot", "reproducibility": "self", "status": "done",
+      "owner": "say the word and the badge is removed (register R-03)",
+      "verifiedBy": "1 badge rendered by the footer block with its link to the Express template picker",
+      "checks": [
+        { "type": "dom-count", "path": "/webpage/dyft29wzo0qlk", "selector": ".made-in-express .brand-btn", "min": 1 },
+        { "type": "dom-count", "path": "/webpage/dyft29wzo0qlk", "selector": "footer a[href*='new.express.adobe.com/webpage/template-picker']", "min": 1 }
+      ]
+    },
+    {
+      "id": "i18n-locale-variants-go",
+      "feature": "adobe.com/go redirect links kept verbatim",
+      "class": "I18N", "pages": 1,
+      "disposition": "embed-passthrough", "reproducibility": "self", "status": "done",
+      "verifiedBy": "1 adobe.com/go link (privacy) in the served main",
+      "checks": [
+        { "type": "dom-count", "path": "/webpage/dyft29wzo0qlk", "selector": "main a[href*='adobe.com/go/']", "min": 1 }
+      ]
+    },
+    {
+      "id": "site-root-and-errors",
+      "feature": "site root resolves to the page; no uncaught exceptions on the delivered pages",
+      "class": "static", "pages": 1,
+      "disposition": "rebuild-native", "reproducibility": "self", "status": "done",
+      "verifiedBy": "/ → 200 on aem.live via the redirects sheet (D-site); 0 page errors",
+      "checks": [
+        { "type": "no-page-errors", "paths": ["/webpage/dyft29wzo0qlk", "/"] },
+        { "type": "dom-count", "path": "/", "selector": "main h1", "min": 1 }
+      ]
+    },
+    { "id": "a-first-party-api", "feature": "Express publication, feature-flag, identity and edge APIs", "class": "A", "pages": 1, "disposition": "decided-out", "reproducibility": "host-bound", "status": "decided-out", "verifiedBy": "11/11 host-bound; no consumer on the static page", "checks": [] },
+    { "id": "a-unknown-third-party-host", "feature": "Express platform services (telemetry, branch deep links)", "class": "A", "pages": 1, "disposition": "decided-out", "reproducibility": "host-bound", "status": "decided-out", "verifiedBy": "app-mode only", "checks": [] },
+    { "id": "cr-report-abuse", "feature": "Report Abuse dialog + form", "class": "CR/F", "pages": 1, "disposition": "decided-out", "reproducibility": "session-bound", "status": "decided-out", "verifiedBy": "register R-01: not offered on the migrated page", "checks": [] },
+    { "id": "d-first-party-data-file", "feature": "runtime locale bundle + login mini-app", "class": "D", "pages": 1, "disposition": "decided-out", "reproducibility": "n/a", "status": "decided-out", "verifiedBy": "app runtime only", "checks": [] },
+    { "id": "t-tags-analytics-rum", "feature": "Adobe Launch, analytics, New Relic, error monitoring", "class": "T", "pages": 1, "disposition": "decided-out", "reproducibility": "owner", "status": "decided-out", "owner": "add Adobe Launch to the project if the same reporting is wanted; EDS RUM is on by default", "verifiedBy": "no third-party tag ships", "checks": [] },
+    { "id": "x-auth-identity-provider", "feature": "IMS identity", "class": "X", "pages": 1, "disposition": "decided-out", "reproducibility": "session-bound", "status": "decided-out", "verifiedBy": "no sign-in surface on the migrated page", "checks": [] }
+  ]
+}

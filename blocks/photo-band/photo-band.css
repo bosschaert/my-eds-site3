@@ -1,0 +1,52 @@
+/* photo-band — values lifted from stardust/prototypes/css/landing.css
+   (.single-column-section .section-background 50vh cover, image-on-left / image-on-right
+   order) and replica-canon.css (.content-container column + block rhythm). */
+.photo-band {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.photo-band .photo-band-media {
+  position: relative;
+  order: 1;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  background-color: var(--photo-fallback);
+}
+
+.photo-band .photo-band-media :is(p, picture) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 0;
+}
+
+.photo-band .photo-band-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.photo-band .photo-band-body {
+  position: relative;
+  order: 2;
+  padding: var(--section-pad) var(--content-gutter);
+}
+
+.photo-band.image-right .photo-band-media {
+  order: 2;
+}
+
+.photo-band.image-right .photo-band-body {
+  order: 1;
+}
+
+.photo-band .photo-band-body > * + * {
+  margin-top: var(--block-gap);
+}

@@ -1,0 +1,533 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics plan",
+  "writtenAt": "2026-10-06T11:39:10.984Z",
+  "input": "stardust/current/_dynamics.json",
+  "target": "https://main--b7aaf274--aemcoder.aem.live",
+  "migrated": "stardust/migrated"
+ },
+ "rows": [
+  {
+   "id": "a-unknown-third-party-host-hz-gneiss-adobe-io",
+   "class": "A",
+   "feature": "unknown third-party host hz-gneiss.adobe.io",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "hz-gneiss.adobe.io"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-unknown-third-party-host-api2-branch-io",
+   "class": "A",
+   "feature": "unknown third-party host api2.branch.io",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "api2.branch.io"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-unknown-third-party-host-platform-cs-adobe-io",
+   "class": "A",
+   "feature": "unknown third-party host platform-cs.adobe.io",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "platform-cs.adobe.io"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-unknown-third-party-host-bps-il-adobe-io",
+   "class": "A",
+   "feature": "unknown third-party host bps-il.adobe.io",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "bps-il.adobe.io"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-first-party-api-get-json",
+   "class": "A",
+   "feature": "first-party API GET /json/",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 2,
+    "of": 2
+   },
+   "evidence": [
+    "GET /json/ → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "a-first-party-api-get-webpage-dyft29wzo0qlk-branding",
+   "class": "A",
+   "feature": "first-party API GET /webpage/DYft29Wzo0QLK/branding",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 2
+   },
+   "evidence": [
+    "GET /webpage/DYft29Wzo0QLK/branding?api_key → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "a-first-party-api-post-ims-check-v6-token",
+   "class": "A",
+   "feature": "first-party API POST /ims/check/v6/token",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 2,
+    "of": 2
+   },
+   "evidence": [
+    "POST /ims/check/v6/token?jslVersion → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "a-first-party-api-get-service-floodgate-fg-api-v3-feature",
+   "class": "A",
+   "feature": "first-party API GET /service/floodgate/fg/api/v3/feature",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 2,
+    "of": 2
+   },
+   "evidence": [
+    "GET /service/floodgate/fg/api/v3/feature?clientId → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "a-first-party-api-post-ee-v1-interact",
+   "class": "A",
+   "feature": "first-party API POST /ee/v1/interact",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 2,
+    "of": 2
+   },
+   "evidence": [
+    "POST /ee/v1/interact?configId,requestId → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "a-first-party-api-get-ims-country-code-v1",
+   "class": "A",
+   "feature": "first-party API GET /ims/country_code/v1",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 2,
+    "of": 2
+   },
+   "evidence": [
+    "GET /ims/country_code/v1?client_id → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "a-first-party-api-get-service-xcs-assets-cdn-unified",
+   "class": "A",
+   "feature": "first-party API GET /service/xcs-assets-cdn/unified",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 2,
+    "of": 2
+   },
+   "evidence": [
+    "GET /service/xcs-assets-cdn/unified?locale → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "a-first-party-api-get-webpage-api-metadata-dyft29wzo0qlk",
+   "class": "A",
+   "feature": "first-party API GET /webpage/api/metadata/DYft29Wzo0QLK",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 2,
+    "of": 2
+   },
+   "evidence": [
+    "GET /webpage/api/metadata/DYft29Wzo0QLK → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "a-first-party-api-post-ee-v2-interact",
+   "class": "A",
+   "feature": "first-party API POST /ee/v2/interact",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 2,
+    "of": 2
+   },
+   "evidence": [
+    "POST /ee/v2/interact?datastreamId,requestId → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "cr-client-rendered-slot-banner-success-js-report-success",
+   "class": "CR",
+   "feature": "client-rendered slot banner success js-report-success",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "Your report has been submitted."
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-banner-error-js-report-error",
+   "class": "CR",
+   "feature": "client-rendered slot banner error js-report-error",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "There was a problem submitting your report. Please contact A"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-report-abuse-dialog-js-report-abuse-",
+   "class": "CR",
+   "feature": "client-rendered slot report-abuse-dialog js-report-abuse-dialog",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "Report AbuseCloseIf you feel that the content of this page v"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-report-abuse-form-js-report-abuse-fo",
+   "class": "CR",
+   "feature": "client-rendered slot report-abuse-form js-report-abuse-form",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "If you feel that the content of this page violates the Adobe"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-main-empty-at-load-filled-after-client-rendered-page",
+   "class": "CR",
+   "feature": "main empty at load, filled after (client-rendered page)",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "text at load 57 → settled 2209"
+   ],
+   "pattern": "client-rendered-page",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "human-browser capture; never migrate blank"
+  },
+  {
+   "id": "d-first-party-data-file-get-static-en-us-6335cc348a9f4adc-js",
+   "class": "D",
+   "feature": "first-party data file GET /static/en-US.6335cc348a9f4adc.json",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 2,
+    "of": 2
+   },
+   "evidence": [
+    "GET /static/en-US.6335cc348a9f4adc.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "d-first-party-data-file-get-content-dam-pandora-react-mini-a",
+   "class": "D",
+   "feature": "first-party data file GET /content/dam/pandora/react-mini-app-susi-light-login/v1/en-us/main/index.cfm.gql.json",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 2,
+    "of": 2
+   },
+   "evidence": [
+    "GET /content/dam/pandora/react-mini-app-susi-light-login/v1/en-us/main/index.cfm.gql.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "f-form-report-abuse-form-no-action-js-wired-9-fields",
+   "class": "F",
+   "feature": "form \"report-abuse-form\" → no action (JS-wired) (9 fields)",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "email:email,text:name,radio:type,radio:type,radio:type,radio:type,radio:type,radio:type,textarea:description"
+   ],
+   "pattern": "client-compute",
+   "disposition": "client-only",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "client tools",
+   "decision": "none"
+  },
+  {
+   "id": "i18n-locale-variants-go-go-go",
+   "class": "I18N",
+   "feature": "locale variants go,go,go",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "http://www.adobe.com/go/privacy",
+    "http://www.adobe.com/go/tou"
+   ],
+   "pattern": "locale-tree",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-business-decision",
+   "status": "delivered-by-capture",
+   "phase": "locale wave",
+   "decision": "scope of the locale trees",
+   "alreadyDelivered": "output already carries \"http://www.adobe.com/go/privacy\""
+  },
+  {
+   "id": "t-tag-manager-adobe-launch",
+   "class": "T",
+   "feature": "tag manager: Adobe Launch",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "assets.adobedtm.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-unknown-third-party-host-app-link",
+   "class": "T",
+   "feature": "unknown third-party host app.link",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "app.link"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-analytics-adobe-analytics-experience-cloud-id",
+   "class": "T",
+   "feature": "analytics: Adobe Analytics / Experience Cloud ID",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "dcs.adobedc.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-rum-new-relic",
+   "class": "T",
+   "feature": "RUM: New Relic",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "bam.nr-data.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-rum-error-monitoring",
+   "class": "T",
+   "feature": "RUM: error monitoring",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "o1383653.ingest.us.sentry.io"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "x-auth-identity-provider",
+   "class": "X",
+   "feature": "auth: identity provider",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "ims-na1.adobelogin.com"
+   ],
+   "pattern": "decided-out",
+   "disposition": "decided-out",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "register",
+   "decision": "auth / commerce on the new host?"
+  }
+ ]
+}

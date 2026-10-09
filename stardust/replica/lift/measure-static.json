@@ -1,0 +1,4952 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/measure.mjs",
+    "writtenAt": "2026-10-06T10:45:30.965Z",
+    "urls": [
+      "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static"
+    ],
+    "widths": [
+      1440,
+      360
+    ],
+    "selectors": [
+      ".article",
+      ".title-section",
+      ".title-header",
+      ".title-header-view",
+      "h1.title",
+      "p.subtitle",
+      ".navigation-hint",
+      ".section.single-column-section",
+      ".section-content",
+      ".content-container",
+      ".section-background",
+      ".section-background-image",
+      ".card-flipbook-section",
+      ".section-content-view",
+      "img",
+      ".spacer-section",
+      "h2",
+      "h3",
+      ".content-container p",
+      ".page-heading-anchor",
+      ".made-in-express",
+      ".publication-footer",
+      "footer"
+    ],
+    "props": [
+      "position",
+      "display",
+      "width",
+      "height",
+      "maxWidth",
+      "margin",
+      "padding",
+      "backgroundColor",
+      "backgroundImage",
+      "backgroundSize",
+      "fontSize",
+      "lineHeight",
+      "textAlign",
+      "objectFit"
+    ],
+    "allMatches": true,
+    "failed": [],
+    "warnings": []
+  },
+  "widths": [
+    1440,
+    360
+  ],
+  "selectors": [
+    ".article",
+    ".title-section",
+    ".title-header",
+    ".title-header-view",
+    "h1.title",
+    "p.subtitle",
+    ".navigation-hint",
+    ".section.single-column-section",
+    ".section-content",
+    ".content-container",
+    ".section-background",
+    ".section-background-image",
+    ".card-flipbook-section",
+    ".section-content-view",
+    "img",
+    ".spacer-section",
+    "h2",
+    "h3",
+    ".content-container p",
+    ".page-heading-anchor",
+    ".made-in-express",
+    ".publication-footer",
+    "footer"
+  ],
+  "root": {
+    "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static": {
+      "360": {
+        "viewport": 360,
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "scrollHeight": 6670,
+        "overflowX": 0
+      },
+      "1440": {
+        "viewport": 1440,
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "scrollHeight": 9327,
+        "overflowX": 0
+      }
+    }
+  },
+  "pages": {
+    "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static": {
+      "360": {
+        ".article": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 900
+            },
+            "visible": true,
+            "text": "THE ULTIMATE JAMAICA TRAVEL GUIDE BY DI…",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "360px",
+              "height": "900px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".title-section": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 720
+            },
+            "visible": true,
+            "text": "THE ULTIMATE JAMAICA TRAVEL GUIDE BY DI…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "720px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(72, 72, 72)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".title-header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 720
+            },
+            "visible": true,
+            "text": "THE ULTIMATE JAMAICA TRAVEL GUIDE BY DI…",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "360px",
+              "height": "720px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "32px 18px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "0px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".title-header-view": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 36,
+              "y": 256,
+              "w": 288,
+              "h": 208
+            },
+            "visible": true,
+            "text": "THE ULTIMATE JAMAICA TRAVEL GUIDE BY DI…",
+            "props": {
+              "position": "relative",
+              "display": "inline-block",
+              "width": "288.359px",
+              "height": "207.562px",
+              "maxWidth": "89%",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "0px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "h1.title": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 36,
+              "y": 256,
+              "w": 288,
+              "h": 166
+            },
+            "visible": true,
+            "text": "THE ULTIMATE JAMAICA TRAVEL GUIDE",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "288.359px",
+              "height": "165.562px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "46px",
+              "lineHeight": "55.2px",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "p.subtitle": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 36,
+              "y": 438,
+              "w": 288,
+              "h": 26
+            },
+            "visible": true,
+            "text": "BY DIGIGIRL TRAVELS",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "288.359px",
+              "height": "26px",
+              "maxWidth": "none",
+              "margin": "16px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "20px",
+              "lineHeight": "26px",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".navigation-hint": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 0
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "360px",
+              "height": "0px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".section.single-column-section": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 0,
+              "y": 720,
+              "w": 360,
+              "h": 968
+            },
+            "visible": true,
+            "text": "OVERVIEW Copy link The quick brown fox …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "968.031px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 0,
+              "y": 1688,
+              "w": 360,
+              "h": 881
+            },
+            "visible": true,
+            "text": "BEST BEACHES Copy link The fox and the …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "880.562px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 0,
+              "y": 2571,
+              "w": 360,
+              "h": 989
+            },
+            "visible": true,
+            "text": "FOOD & DRINK Copy link Flat, gleaming, …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "989.312px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 0,
+              "y": 5228,
+              "w": 360,
+              "h": 844
+            },
+            "visible": true,
+            "text": "TIPS AND TRICKS Copy link An outline ap…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "844.016px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 0,
+              "y": 6452,
+              "w": 360,
+              "h": 166
+            },
+            "visible": true,
+            "text": "\"OUT OF MANY, ONE PEOPLE\" - JAMAICA'S N…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "166.094px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".section-content": [
+          {
+            "index": 0,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 720,
+              "w": 360,
+              "h": 968
+            },
+            "visible": true,
+            "text": "OVERVIEW Copy link The quick brown fox …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "968.031px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 2138,
+              "w": 360,
+              "h": 431
+            },
+            "visible": true,
+            "text": "BEST BEACHES Copy link The fox and the …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "430.562px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 2571,
+              "w": 360,
+              "h": 539
+            },
+            "visible": true,
+            "text": "FOOD & DRINK Copy link Flat, gleaming, …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "539.312px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 3612,
+              "w": 360,
+              "h": 1598
+            },
+            "visible": true,
+            "text": "HIGHLIGHTS Copy link WATERFALL TOURS Co…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "1597.77px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 5228,
+              "w": 360,
+              "h": 844
+            },
+            "visible": true,
+            "text": "TIPS AND TRICKS Copy link An outline ap…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "844.016px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 5,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 6072,
+              "w": 360,
+              "h": 381
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "380.562px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 6,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 6452,
+              "w": 360,
+              "h": 166
+            },
+            "visible": true,
+            "text": "\"OUT OF MANY, ONE PEOPLE\" - JAMAICA'S N…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "166.094px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".content-container": [
+          {
+            "index": 0,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 720,
+              "w": 360,
+              "h": 968
+            },
+            "visible": true,
+            "text": "OVERVIEW Copy link The quick brown fox …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "968.031px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "40px 25.1875px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 2138,
+              "w": 360,
+              "h": 431
+            },
+            "visible": true,
+            "text": "BEST BEACHES Copy link The fox and the …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "430.562px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "20px 25.1875px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 2571,
+              "w": 360,
+              "h": 539
+            },
+            "visible": true,
+            "text": "FOOD & DRINK Copy link Flat, gleaming, …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "539.312px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "20px 25.1875px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 3612,
+              "w": 360,
+              "h": 302
+            },
+            "visible": true,
+            "text": "HIGHLIGHTS Copy link",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "302.375px",
+              "maxWidth": "none",
+              "margin": "18px 0px",
+              "padding": "31px 13px",
+              "backgroundColor": "rgba(255, 239, 54, 0.9)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 10,
+            "rect": {
+              "x": 14,
+              "y": 3932,
+              "w": 332,
+              "h": 423
+            },
+            "visible": true,
+            "text": "WATERFALL TOURS Copy link Jamaica is ho…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "332px",
+              "height": "422.859px",
+              "maxWidth": "none",
+              "margin": "18px 14px",
+              "padding": "31px 13px",
+              "backgroundColor": "rgba(255, 239, 54, 0.9)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 5,
+            "of": 10,
+            "rect": {
+              "x": 14,
+              "y": 4373,
+              "w": 332,
+              "h": 396
+            },
+            "visible": true,
+            "text": "MONTEGO BAY FISHING BOATS Copy link You…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "332px",
+              "height": "395.672px",
+              "maxWidth": "none",
+              "margin": "18px 14px",
+              "padding": "31px 13px",
+              "backgroundColor": "rgba(255, 239, 54, 0.9)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 6,
+            "of": 10,
+            "rect": {
+              "x": 14,
+              "y": 4787,
+              "w": 332,
+              "h": 423
+            },
+            "visible": true,
+            "text": "THE BLUE MOUNTAINS Copy link The longes…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "332px",
+              "height": "422.859px",
+              "maxWidth": "none",
+              "margin": "18px 14px",
+              "padding": "31px 13px",
+              "backgroundColor": "rgba(255, 239, 54, 0.9)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 7,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 5228,
+              "w": 360,
+              "h": 844
+            },
+            "visible": true,
+            "text": "TIPS AND TRICKS Copy link An outline ap…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "844.016px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "40px 25.1875px 20px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 8,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 6072,
+              "w": 360,
+              "h": 381
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "380.562px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "20px 25.1875px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 9,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 6452,
+              "w": 360,
+              "h": 166
+            },
+            "visible": true,
+            "text": "\"OUT OF MANY, ONE PEOPLE\" - JAMAICA'S N…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "166.094px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "20px 25.1875px 40px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".section-background": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 720
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "360px",
+              "height": "720px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 4,
+            "rect": {
+              "x": 0,
+              "y": 1688,
+              "w": 360,
+              "h": 450
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "450px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(72, 72, 72)",
+              "backgroundImage": "none",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 4,
+            "rect": {
+              "x": 0,
+              "y": 3110,
+              "w": 360,
+              "h": 450
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "450px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(72, 72, 72)",
+              "backgroundImage": "none",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 4,
+            "rect": {
+              "x": 0,
+              "y": 3562,
+              "w": 360,
+              "h": 32
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "32px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "32px 32px 0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".section-background-image": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 360,
+              "h": 720
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "360px",
+              "height": "720px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "url(\"https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/d4ba3adf-fa8a-4ec2-a98f-a7030b8ac735?asset_id=d4ba3adf-fa8a-4ec2-a98f-a7030b8ac735&image_assets=false&size=1024\")",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 1688,
+              "w": 360,
+              "h": 450
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "360px",
+              "height": "450px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "url(\"https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/36d74809-853e-46ec-b14a-7d58509917e6?asset_id=36d74809-853e-46ec-b14a-7d58509917e6&image_assets=false&size=1024\")",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 3110,
+              "w": 360,
+              "h": 450
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "360px",
+              "height": "450px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "url(\"https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/5cc45b82-98a9-4fd9-b35e-28bd5c2b29a1?asset_id=5cc45b82-98a9-4fd9-b35e-28bd5c2b29a1&image_assets=false&size=1024\")",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".card-flipbook-section": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 3562,
+              "w": 360,
+              "h": 1666
+            },
+            "visible": true,
+            "text": "HIGHLIGHTS Copy link WATERFALL TOURS Co…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "1665.77px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".section-content-view": [
+          {
+            "index": 0,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 720,
+              "w": 360,
+              "h": 968
+            },
+            "visible": true,
+            "text": "OVERVIEW Copy link The quick brown fox …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "968.031px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 2138,
+              "w": 360,
+              "h": 431
+            },
+            "visible": true,
+            "text": "BEST BEACHES Copy link The fox and the …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "430.562px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 2571,
+              "w": 360,
+              "h": 539
+            },
+            "visible": true,
+            "text": "FOOD & DRINK Copy link Flat, gleaming, …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "539.312px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 3612,
+              "w": 360,
+              "h": 302
+            },
+            "visible": true,
+            "text": "HIGHLIGHTS Copy link",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "302.375px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 3932,
+              "w": 360,
+              "h": 423
+            },
+            "visible": true,
+            "text": "WATERFALL TOURS Copy link Jamaica is ho…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "422.859px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 5,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 4373,
+              "w": 360,
+              "h": 396
+            },
+            "visible": true,
+            "text": "MONTEGO BAY FISHING BOATS Copy link You…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "395.672px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 6,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 4787,
+              "w": 360,
+              "h": 423
+            },
+            "visible": true,
+            "text": "THE BLUE MOUNTAINS Copy link The longes…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "422.859px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 7,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 5228,
+              "w": 360,
+              "h": 844
+            },
+            "visible": true,
+            "text": "TIPS AND TRICKS Copy link An outline ap…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "844.016px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 8,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 6072,
+              "w": 360,
+              "h": 381
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "380.562px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 9,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 6452,
+              "w": 360,
+              "h": 166
+            },
+            "visible": true,
+            "text": "\"OUT OF MANY, ONE PEOPLE\" - JAMAICA'S N…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "166.094px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "img": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 13,
+              "y": 3643,
+              "w": 334,
+              "h": 177
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "display": "inline",
+              "width": "333.984px",
+              "height": "176.781px",
+              "maxWidth": "100%",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 542,
+              "currentSrc": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/3fc797bc-626a-4195-b8ef-347fdd072a04?asset_id=3fc797bc-626a-4195-b8ef-347fdd072a04&image_assets=false&size=1024"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 3963,
+              "w": 306,
+              "h": 204
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "display": "inline",
+              "width": "305.984px",
+              "height": "203.797px",
+              "maxWidth": "100%",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 682,
+              "currentSrc": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/4086d2a3-f3c9-4754-a075-7cc5e40fba29?asset_id=4086d2a3-f3c9-4754-a075-7cc5e40fba29&image_assets=false&size=1024"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 4404,
+              "w": 306,
+              "h": 204
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "display": "inline",
+              "width": "305.984px",
+              "height": "203.797px",
+              "maxWidth": "100%",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 682,
+              "currentSrc": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/db7c0944-4fb1-4b69-85e5-429ee1a73f60?asset_id=db7c0944-4fb1-4b69-85e5-429ee1a73f60&image_assets=false&size=1024"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 4818,
+              "w": 306,
+              "h": 204
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "display": "inline",
+              "width": "305.984px",
+              "height": "203.797px",
+              "maxWidth": "100%",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 682,
+              "currentSrc": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/7579e9c0-b40e-48a8-b550-3cf85909a754?asset_id=7579e9c0-b40e-48a8-b550-3cf85909a754&image_assets=false&size=1024"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 25,
+              "y": 5728,
+              "w": 310,
+              "h": 205
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "309.609px",
+              "height": "204.703px",
+              "maxWidth": "100%",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 677,
+              "currentSrc": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/a9da7451-031a-45c8-9e5a-173f9ec3d993?asset_id=a9da7451-031a-45c8-9e5a-173f9ec3d993&image_assets=false&size=1024"
+            }
+          }
+        ],
+        ".spacer-section": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 2569,
+              "w": 360,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "2px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 3560,
+              "w": 360,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "360px",
+              "height": "2px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "h2": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 25,
+              "y": 760,
+              "w": 310,
+              "h": 40
+            },
+            "visible": true,
+            "text": "OVERVIEW",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "309.625px",
+              "height": "39.5938px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "33px",
+              "lineHeight": "39.6px",
+              "textAlign": "left",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 4,
+            "rect": {
+              "x": 13,
+              "y": 3844,
+              "w": 334,
+              "h": 40
+            },
+            "visible": true,
+            "text": "HIGHLIGHTS",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "334px",
+              "height": "39.5938px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "33px",
+              "lineHeight": "39.6px",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 4,
+            "rect": {
+              "x": 25,
+              "y": 5268,
+              "w": 310,
+              "h": 40
+            },
+            "visible": true,
+            "text": "TIPS AND TRICKS",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "309.625px",
+              "height": "39.5938px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "33px",
+              "lineHeight": "39.6px",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 4,
+            "rect": {
+              "x": 25,
+              "y": 6012,
+              "w": 310,
+              "h": 40
+            },
+            "visible": true,
+            "text": "MY PERSONAL FAVES",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "309.625px",
+              "height": "39.5938px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "33px",
+              "lineHeight": "39.6px",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "h3": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 25,
+              "y": 2158,
+              "w": 310,
+              "h": 32
+            },
+            "visible": true,
+            "text": "BEST BEACHES",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "309.625px",
+              "height": "31.5px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "21px",
+              "lineHeight": "31.5px",
+              "textAlign": "left",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 25,
+              "y": 2591,
+              "w": 310,
+              "h": 32
+            },
+            "visible": true,
+            "text": "FOOD & DRINK",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "309.625px",
+              "height": "31.5px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "21px",
+              "lineHeight": "31.5px",
+              "textAlign": "left",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 4191,
+              "w": 306,
+              "h": 32
+            },
+            "visible": true,
+            "text": "WATERFALL TOURS",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "306px",
+              "height": "31.5px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "21px",
+              "lineHeight": "31.5px",
+              "textAlign": "left",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 4632,
+              "w": 306,
+              "h": 32
+            },
+            "visible": true,
+            "text": "MONTEGO BAY FISHING BOATS",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "306px",
+              "height": "31.5px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "21px",
+              "lineHeight": "31.5px",
+              "textAlign": "left",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 27,
+              "y": 5046,
+              "w": 306,
+              "h": 32
+            },
+            "visible": true,
+            "text": "THE BLUE MOUNTAINS",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "306px",
+              "height": "31.5px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "21px",
+              "lineHeight": "31.5px",
+              "textAlign": "left",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".content-container p": [
+          {
+            "index": 0,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 820,
+              "w": 310,
+              "h": 272
+            },
+            "visible": true,
+            "text": "The quick brown fox jumped over the laz…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "309.625px",
+              "height": "271.875px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 1111,
+              "w": 310,
+              "h": 299
+            },
+            "visible": true,
+            "text": "The hem of the pool expands indefinitel…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "309.625px",
+              "height": "299.062px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 1431,
+              "w": 310,
+              "h": 218
+            },
+            "visible": true,
+            "text": "Known for his sweetness, this dog shake…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "309.625px",
+              "height": "217.5px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2210,
+              "w": 310,
+              "h": 82
+            },
+            "visible": true,
+            "text": "The fox and the dog free-fall off the e…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "309.625px",
+              "height": "81.5625px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2311,
+              "w": 310,
+              "h": 109
+            },
+            "visible": true,
+            "text": "Landing promptly on the other side of t…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "309.625px",
+              "height": "108.75px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 5,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2440,
+              "w": 310,
+              "h": 109
+            },
+            "visible": true,
+            "text": "The hand bends toward them without beck…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "309.625px",
+              "height": "108.75px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 6,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2642,
+              "w": 310,
+              "h": 109
+            },
+            "visible": true,
+            "text": "Flat, gleaming, and forever, this place…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "309.625px",
+              "height": "108.75px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 7,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2771,
+              "w": 310,
+              "h": 136
+            },
+            "visible": true,
+            "text": "In a quiet flash, the dog remembers a l…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "309.625px",
+              "height": "135.938px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 8,
+            "of": 13,
+            "rect": {
+              "x": 25,
+              "y": 2927,
+              "w": 310,
+              "h": 163
+            },
+            "visible": true,
+            "text": "More pragmatic, the fox physically exam…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "309.625px",
+              "height": "163.125px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 9,
+            "of": 13,
+            "rect": {
+              "x": 27,
+              "y": 4243,
+              "w": 306,
+              "h": 82
+            },
+            "visible": true,
+            "text": "Jamaica is home to gorgeous waterfalls …",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "306px",
+              "height": "81.5625px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 10,
+            "of": 13,
+            "rect": {
+              "x": 27,
+              "y": 4683,
+              "w": 306,
+              "h": 54
+            },
+            "visible": true,
+            "text": "You can charter a boat for an hour, an …",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "306px",
+              "height": "54.375px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 11,
+            "of": 13,
+            "rect": {
+              "x": 27,
+              "y": 5097,
+              "w": 306,
+              "h": 82
+            },
+            "visible": true,
+            "text": "The longest mountain range in Jamaica, …",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "306px",
+              "height": "81.5625px",
+              "maxWidth": "none",
+              "margin": "20px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "17px",
+              "lineHeight": "27.2px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".page-heading-anchor": [
+          {
+            "index": 0,
+            "of": 9,
+            "rect": {
+              "x": 0,
+              "y": 768,
+              "w": 23,
+              "h": 23
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "23px",
+              "height": "23px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 9,
+            "rect": {
+              "x": 0,
+              "y": 2162,
+              "w": 23,
+              "h": 23
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "23px",
+              "height": "23px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 9,
+            "rect": {
+              "x": 0,
+              "y": 2595,
+              "w": 23,
+              "h": 23
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "23px",
+              "height": "23px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 9,
+            "rect": {
+              "x": 61,
+              "y": 3843,
+              "w": 40,
+              "h": 40
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "40px",
+              "height": "40px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 9,
+            "rect": {
+              "x": 2,
+              "y": 4195,
+              "w": 23,
+              "h": 23
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "23px",
+              "height": "23px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 5,
+            "of": 9,
+            "rect": {
+              "x": 2,
+              "y": 4636,
+              "w": 23,
+              "h": 23
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "23px",
+              "height": "23px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 6,
+            "of": 9,
+            "rect": {
+              "x": 2,
+              "y": 5050,
+              "w": 23,
+              "h": 23
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "23px",
+              "height": "23px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 7,
+            "of": 9,
+            "rect": {
+              "x": 33,
+              "y": 5267,
+              "w": 40,
+              "h": 40
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "40px",
+              "height": "40px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 8,
+            "of": 9,
+            "rect": {
+              "x": 12,
+              "y": 6012,
+              "w": 40,
+              "h": 40
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "40px",
+              "height": "40px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".made-in-express": [],
+        ".publication-footer": [],
+        "footer": []
+      },
+      "1440": {
+        ".article": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 900
+            },
+            "visible": true,
+            "text": "THE ULTIMATE JAMAICA TRAVEL GUIDE BY DI…",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "1440px",
+              "height": "900px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".title-section": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 720
+            },
+            "visible": true,
+            "text": "THE ULTIMATE JAMAICA TRAVEL GUIDE BY DI…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "720px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(72, 72, 72)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".title-header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 720
+            },
+            "visible": true,
+            "text": "THE ULTIMATE JAMAICA TRAVEL GUIDE BY DI…",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "1440px",
+              "height": "720px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "64px 72px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "0px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".title-header-view": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 143,
+              "y": 233,
+              "w": 1153,
+              "h": 254
+            },
+            "visible": true,
+            "text": "THE ULTIMATE JAMAICA TRAVEL GUIDE BY DI…",
+            "props": {
+              "position": "relative",
+              "display": "inline-block",
+              "width": "1153.44px",
+              "height": "253.562px",
+              "maxWidth": "89%",
+              "margin": "0px",
+              "padding": "0px 194.391px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "0px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "h1.title": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 338,
+              "y": 233,
+              "w": 765,
+              "h": 206
+            },
+            "visible": true,
+            "text": "THE ULTIMATE JAMAICA TRAVEL GUIDE",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "764.656px",
+              "height": "206.375px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "86px",
+              "lineHeight": "103.2px",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "p.subtitle": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 338,
+              "y": 456,
+              "w": 765,
+              "h": 31
+            },
+            "visible": true,
+            "text": "BY DIGIGIRL TRAVELS",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "764.656px",
+              "height": "31.1875px",
+              "maxWidth": "none",
+              "margin": "16px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "24px",
+              "lineHeight": "31.2px",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".navigation-hint": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 0
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "1440px",
+              "height": "0px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".section.single-column-section": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 0,
+              "y": 720,
+              "w": 1440,
+              "h": 771
+            },
+            "visible": true,
+            "text": "OVERVIEW Copy link The quick brown fox …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "771.469px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 0,
+              "y": 1491,
+              "w": 1440,
+              "h": 844
+            },
+            "visible": true,
+            "text": "BEST BEACHES Copy link The fox and the …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "843.953px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 0,
+              "y": 2337,
+              "w": 1440,
+              "h": 935
+            },
+            "visible": true,
+            "text": "FOOD & DRINK Copy link Flat, gleaming, …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "935.125px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 0,
+              "y": 7082,
+              "w": 1440,
+              "h": 1096
+            },
+            "visible": true,
+            "text": "TIPS AND TRICKS Copy link An outline ap…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "1096.25px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 0,
+              "y": 9050,
+              "w": 1440,
+              "h": 241
+            },
+            "visible": true,
+            "text": "\"OUT OF MANY, ONE PEOPLE\" - JAMAICA'S N…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "241.188px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".section-content": [
+          {
+            "index": 0,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 720,
+              "w": 1440,
+              "h": 771
+            },
+            "visible": true,
+            "text": "OVERVIEW Copy link The quick brown fox …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "771.469px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 1941,
+              "w": 1440,
+              "h": 394
+            },
+            "visible": true,
+            "text": "BEST BEACHES Copy link The fox and the …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "393.953px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 2337,
+              "w": 1440,
+              "h": 485
+            },
+            "visible": true,
+            "text": "FOOD & DRINK Copy link Flat, gleaming, …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "485.125px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 3339,
+              "w": 1440,
+              "h": 3711
+            },
+            "visible": true,
+            "text": "HIGHLIGHTS Copy link WATERFALL TOURS Co…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "3711.17px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 7082,
+              "w": 1440,
+              "h": 1096
+            },
+            "visible": true,
+            "text": "TIPS AND TRICKS Copy link An outline ap…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "1096.25px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 5,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 8178,
+              "w": 1440,
+              "h": 872
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "871.969px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 6,
+            "of": 7,
+            "rect": {
+              "x": 0,
+              "y": 9050,
+              "w": 1440,
+              "h": 241
+            },
+            "visible": true,
+            "text": "\"OUT OF MANY, ONE PEOPLE\" - JAMAICA'S N…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "241.188px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".content-container": [
+          {
+            "index": 0,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 720,
+              "w": 1440,
+              "h": 771
+            },
+            "visible": true,
+            "text": "OVERVIEW Copy link The quick brown fox …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "771.469px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "80px 360px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 1941,
+              "w": 1440,
+              "h": 394
+            },
+            "visible": true,
+            "text": "BEST BEACHES Copy link The fox and the …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "393.953px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "40px 360px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 2337,
+              "w": 1440,
+              "h": 485
+            },
+            "visible": true,
+            "text": "FOOD & DRINK Copy link Flat, gleaming, …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "485.125px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "40px 360px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 3339,
+              "w": 1440,
+              "h": 764
+            },
+            "visible": true,
+            "text": "HIGHLIGHTS Copy link",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "764px",
+              "maxWidth": "none",
+              "margin": "32px 0px",
+              "padding": "56px 32px",
+              "backgroundColor": "rgba(255, 239, 54, 0.9)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 10,
+            "rect": {
+              "x": 32,
+              "y": 4135,
+              "w": 1376,
+              "h": 950
+            },
+            "visible": true,
+            "text": "WATERFALL TOURS Copy link Jamaica is ho…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1376px",
+              "height": "950.391px",
+              "maxWidth": "none",
+              "margin": "32px",
+              "padding": "56px 32px",
+              "backgroundColor": "rgba(255, 239, 54, 0.9)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 5,
+            "of": 10,
+            "rect": {
+              "x": 32,
+              "y": 5117,
+              "w": 1376,
+              "h": 950
+            },
+            "visible": true,
+            "text": "MONTEGO BAY FISHING BOATS Copy link You…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1376px",
+              "height": "950.391px",
+              "maxWidth": "none",
+              "margin": "32px",
+              "padding": "56px 32px",
+              "backgroundColor": "rgba(255, 239, 54, 0.9)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 6,
+            "of": 10,
+            "rect": {
+              "x": 32,
+              "y": 6099,
+              "w": 1376,
+              "h": 950
+            },
+            "visible": true,
+            "text": "THE BLUE MOUNTAINS Copy link The longes…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1376px",
+              "height": "950.391px",
+              "maxWidth": "none",
+              "margin": "32px",
+              "padding": "56px 32px",
+              "backgroundColor": "rgba(255, 239, 54, 0.9)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 7,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 7082,
+              "w": 1440,
+              "h": 1096
+            },
+            "visible": true,
+            "text": "TIPS AND TRICKS Copy link An outline ap…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "1096.25px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "80px 360px 40px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 8,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 8178,
+              "w": 1440,
+              "h": 872
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "871.969px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "40px 360px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 9,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 9050,
+              "w": 1440,
+              "h": 241
+            },
+            "visible": true,
+            "text": "\"OUT OF MANY, ONE PEOPLE\" - JAMAICA'S N…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "241.188px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "40px 360px 80px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".section-background": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 720
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "1440px",
+              "height": "720px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 4,
+            "rect": {
+              "x": 0,
+              "y": 1491,
+              "w": 1440,
+              "h": 450
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "450px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(72, 72, 72)",
+              "backgroundImage": "none",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 4,
+            "rect": {
+              "x": 0,
+              "y": 2823,
+              "w": 1440,
+              "h": 450
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "450px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(72, 72, 72)",
+              "backgroundImage": "none",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 4,
+            "rect": {
+              "x": 0,
+              "y": 3275,
+              "w": 1440,
+              "h": 32
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "32px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "32px 32px 0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".section-background-image": [
+          {
+            "index": 0,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1440,
+              "h": 720
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "1440px",
+              "height": "720px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "url(\"https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/d4ba3adf-fa8a-4ec2-a98f-a7030b8ac735?asset_id=d4ba3adf-fa8a-4ec2-a98f-a7030b8ac735&image_assets=false&size=1024\")",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 1491,
+              "w": 1440,
+              "h": 450
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "1440px",
+              "height": "450px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "url(\"https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/36d74809-853e-46ec-b14a-7d58509917e6?asset_id=36d74809-853e-46ec-b14a-7d58509917e6&image_assets=false&size=1024\")",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 3,
+            "rect": {
+              "x": 0,
+              "y": 2823,
+              "w": 1440,
+              "h": 450
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "1440px",
+              "height": "450px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "url(\"https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/5cc45b82-98a9-4fd9-b35e-28bd5c2b29a1?asset_id=5cc45b82-98a9-4fd9-b35e-28bd5c2b29a1&image_assets=false&size=1024\")",
+              "backgroundSize": "cover",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".card-flipbook-section": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 3275,
+              "w": 1440,
+              "h": 3807
+            },
+            "visible": true,
+            "text": "HIGHLIGHTS Copy link WATERFALL TOURS Co…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "3807.17px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".section-content-view": [
+          {
+            "index": 0,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 720,
+              "w": 1440,
+              "h": 771
+            },
+            "visible": true,
+            "text": "OVERVIEW Copy link The quick brown fox …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "771.469px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 1941,
+              "w": 1440,
+              "h": 394
+            },
+            "visible": true,
+            "text": "BEST BEACHES Copy link The fox and the …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "393.953px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 2337,
+              "w": 1440,
+              "h": 485
+            },
+            "visible": true,
+            "text": "FOOD & DRINK Copy link Flat, gleaming, …",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "485.125px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 3339,
+              "w": 1440,
+              "h": 764
+            },
+            "visible": true,
+            "text": "HIGHLIGHTS Copy link",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "764px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 4135,
+              "w": 1440,
+              "h": 950
+            },
+            "visible": true,
+            "text": "WATERFALL TOURS Copy link Jamaica is ho…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "950.391px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 5,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 5117,
+              "w": 1440,
+              "h": 950
+            },
+            "visible": true,
+            "text": "MONTEGO BAY FISHING BOATS Copy link You…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "950.391px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 6,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 6099,
+              "w": 1440,
+              "h": 950
+            },
+            "visible": true,
+            "text": "THE BLUE MOUNTAINS Copy link The longes…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "950.391px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 7,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 7082,
+              "w": 1440,
+              "h": 1096
+            },
+            "visible": true,
+            "text": "TIPS AND TRICKS Copy link An outline ap…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "1096.25px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 8,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 8178,
+              "w": 1440,
+              "h": 872
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "871.969px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 9,
+            "of": 10,
+            "rect": {
+              "x": 0,
+              "y": 9050,
+              "w": 1440,
+              "h": 241
+            },
+            "visible": true,
+            "text": "\"OUT OF MANY, ONE PEOPLE\" - JAMAICA'S N…",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "241.188px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "img": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 208,
+              "y": 3395,
+              "w": 1024,
+              "h": 542
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "display": "inline",
+              "width": "1024px",
+              "height": "542px",
+              "maxWidth": "100%",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 542,
+              "currentSrc": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/3fc797bc-626a-4195-b8ef-347fdd072a04?asset_id=3fc797bc-626a-4195-b8ef-347fdd072a04&image_assets=false&size=1024"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 208,
+              "y": 4191,
+              "w": 1024,
+              "h": 682
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "display": "inline",
+              "width": "1024px",
+              "height": "682px",
+              "maxWidth": "100%",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 682,
+              "currentSrc": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/4086d2a3-f3c9-4754-a075-7cc5e40fba29?asset_id=4086d2a3-f3c9-4754-a075-7cc5e40fba29&image_assets=false&size=1024"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 208,
+              "y": 5173,
+              "w": 1024,
+              "h": 682
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "display": "inline",
+              "width": "1024px",
+              "height": "682px",
+              "maxWidth": "100%",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 682,
+              "currentSrc": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/db7c0944-4fb1-4b69-85e5-429ee1a73f60?asset_id=db7c0944-4fb1-4b69-85e5-429ee1a73f60&image_assets=false&size=1024"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 208,
+              "y": 6155,
+              "w": 1024,
+              "h": 682
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "display": "inline",
+              "width": "1024px",
+              "height": "682px",
+              "maxWidth": "100%",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 682,
+              "currentSrc": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/7579e9c0-b40e-48a8-b550-3cf85909a754?asset_id=7579e9c0-b40e-48a8-b550-3cf85909a754&image_assets=false&size=1024"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 360,
+              "y": 7520,
+              "w": 720,
+              "h": 476
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "720px",
+              "height": "476.016px",
+              "maxWidth": "100%",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            },
+            "img": {
+              "naturalWidth": 1024,
+              "naturalHeight": 677,
+              "currentSrc": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/resources/a9da7451-031a-45c8-9e5a-173f9ec3d993?asset_id=a9da7451-031a-45c8-9e5a-173f9ec3d993&image_assets=false&size=1024"
+            }
+          }
+        ],
+        ".spacer-section": [
+          {
+            "index": 0,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 2335,
+              "w": 1440,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "2px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 2,
+            "rect": {
+              "x": 0,
+              "y": 3273,
+              "w": 1440,
+              "h": 2
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "position": "relative",
+              "display": "block",
+              "width": "1440px",
+              "height": "2px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 239, 54)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "h2": [
+          {
+            "index": 0,
+            "of": 4,
+            "rect": {
+              "x": 360,
+              "y": 800,
+              "w": 720,
+              "h": 66
+            },
+            "visible": true,
+            "text": "OVERVIEW",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "720px",
+              "height": "66px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "55px",
+              "lineHeight": "66px",
+              "textAlign": "left",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 4,
+            "rect": {
+              "x": 32,
+              "y": 3981,
+              "w": 1376,
+              "h": 66
+            },
+            "visible": true,
+            "text": "HIGHLIGHTS",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "1376px",
+              "height": "66px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "55px",
+              "lineHeight": "66px",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 4,
+            "rect": {
+              "x": 360,
+              "y": 7162,
+              "w": 720,
+              "h": 66
+            },
+            "visible": true,
+            "text": "TIPS AND TRICKS",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "720px",
+              "height": "66px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "55px",
+              "lineHeight": "66px",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 4,
+            "rect": {
+              "x": 360,
+              "y": 8072,
+              "w": 720,
+              "h": 66
+            },
+            "visible": true,
+            "text": "MY PERSONAL FAVES",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "720px",
+              "height": "66px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "55px",
+              "lineHeight": "66px",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "h3": [
+          {
+            "index": 0,
+            "of": 5,
+            "rect": {
+              "x": 360,
+              "y": 1981,
+              "w": 720,
+              "h": 42
+            },
+            "visible": true,
+            "text": "BEST BEACHES",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "720px",
+              "height": "42px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "28px",
+              "lineHeight": "42px",
+              "textAlign": "left",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 5,
+            "rect": {
+              "x": 360,
+              "y": 2377,
+              "w": 720,
+              "h": 42
+            },
+            "visible": true,
+            "text": "FOOD & DRINK",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "720px",
+              "height": "42px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "28px",
+              "lineHeight": "42px",
+              "textAlign": "left",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 5,
+            "rect": {
+              "x": 64,
+              "y": 4917,
+              "w": 1312,
+              "h": 42
+            },
+            "visible": true,
+            "text": "WATERFALL TOURS",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "1312px",
+              "height": "42px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "28px",
+              "lineHeight": "42px",
+              "textAlign": "left",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 5,
+            "rect": {
+              "x": 64,
+              "y": 5899,
+              "w": 1312,
+              "h": 42
+            },
+            "visible": true,
+            "text": "MONTEGO BAY FISHING BOATS",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "1312px",
+              "height": "42px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "28px",
+              "lineHeight": "42px",
+              "textAlign": "left",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 5,
+            "rect": {
+              "x": 64,
+              "y": 6881,
+              "w": 1312,
+              "h": 42
+            },
+            "visible": true,
+            "text": "THE BLUE MOUNTAINS",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "1312px",
+              "height": "42px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "28px",
+              "lineHeight": "42px",
+              "textAlign": "left",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".content-container p": [
+          {
+            "index": 0,
+            "of": 13,
+            "rect": {
+              "x": 360,
+              "y": 906,
+              "w": 720,
+              "h": 152
+            },
+            "visible": true,
+            "text": "The quick brown fox jumped over the laz…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "720px",
+              "height": "151.953px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "19px",
+              "lineHeight": "30.4px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 13,
+            "rect": {
+              "x": 360,
+              "y": 1098,
+              "w": 720,
+              "h": 152
+            },
+            "visible": true,
+            "text": "The hem of the pool expands indefinitel…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "720px",
+              "height": "151.953px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "19px",
+              "lineHeight": "30.4px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 13,
+            "rect": {
+              "x": 360,
+              "y": 1290,
+              "w": 720,
+              "h": 122
+            },
+            "visible": true,
+            "text": "Known for his sweetness, this dog shake…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "720px",
+              "height": "121.562px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "19px",
+              "lineHeight": "30.4px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 13,
+            "rect": {
+              "x": 360,
+              "y": 2063,
+              "w": 720,
+              "h": 30
+            },
+            "visible": true,
+            "text": "The fox and the dog free-fall off the e…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "720px",
+              "height": "30.3906px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "19px",
+              "lineHeight": "30.4px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 13,
+            "rect": {
+              "x": 360,
+              "y": 2134,
+              "w": 720,
+              "h": 61
+            },
+            "visible": true,
+            "text": "Landing promptly on the other side of t…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "720px",
+              "height": "60.7812px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "19px",
+              "lineHeight": "30.4px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 5,
+            "of": 13,
+            "rect": {
+              "x": 360,
+              "y": 2235,
+              "w": 720,
+              "h": 61
+            },
+            "visible": true,
+            "text": "The hand bends toward them without beck…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "720px",
+              "height": "60.7812px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "19px",
+              "lineHeight": "30.4px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 6,
+            "of": 13,
+            "rect": {
+              "x": 360,
+              "y": 2459,
+              "w": 720,
+              "h": 61
+            },
+            "visible": true,
+            "text": "Flat, gleaming, and forever, this place…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "720px",
+              "height": "60.7812px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "19px",
+              "lineHeight": "30.4px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 7,
+            "of": 13,
+            "rect": {
+              "x": 360,
+              "y": 2560,
+              "w": 720,
+              "h": 91
+            },
+            "visible": true,
+            "text": "In a quiet flash, the dog remembers a l…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "720px",
+              "height": "91.1719px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "19px",
+              "lineHeight": "30.4px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 8,
+            "of": 13,
+            "rect": {
+              "x": 360,
+              "y": 2691,
+              "w": 720,
+              "h": 91
+            },
+            "visible": true,
+            "text": "More pragmatic, the fox physically exam…",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "720px",
+              "height": "91.1719px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "19px",
+              "lineHeight": "30.4px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 9,
+            "of": 13,
+            "rect": {
+              "x": 64,
+              "y": 4999,
+              "w": 1312,
+              "h": 30
+            },
+            "visible": true,
+            "text": "Jamaica is home to gorgeous waterfalls …",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "1312px",
+              "height": "30.3906px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "19px",
+              "lineHeight": "30.4px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 10,
+            "of": 13,
+            "rect": {
+              "x": 64,
+              "y": 5981,
+              "w": 1312,
+              "h": 30
+            },
+            "visible": true,
+            "text": "You can charter a boat for an hour, an …",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "1312px",
+              "height": "30.3906px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "19px",
+              "lineHeight": "30.4px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 11,
+            "of": 13,
+            "rect": {
+              "x": 64,
+              "y": 6963,
+              "w": 1312,
+              "h": 30
+            },
+            "visible": true,
+            "text": "The longest mountain range in Jamaica, …",
+            "props": {
+              "position": "static",
+              "display": "block",
+              "width": "1312px",
+              "height": "30.3906px",
+              "maxWidth": "none",
+              "margin": "40px 0px 0px",
+              "padding": "0px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "19px",
+              "lineHeight": "30.4px",
+              "textAlign": "start",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".page-heading-anchor": [
+          {
+            "index": 0,
+            "of": 9,
+            "rect": {
+              "x": 310,
+              "y": 813,
+              "w": 40,
+              "h": 40
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "40px",
+              "height": "40px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 1,
+            "of": 9,
+            "rect": {
+              "x": 310,
+              "y": 1982,
+              "w": 40,
+              "h": 40
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "40px",
+              "height": "40px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 2,
+            "of": 9,
+            "rect": {
+              "x": 310,
+              "y": 2378,
+              "w": 40,
+              "h": 40
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "40px",
+              "height": "40px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 3,
+            "of": 9,
+            "rect": {
+              "x": 556,
+              "y": 3994,
+              "w": 40,
+              "h": 40
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "40px",
+              "height": "40px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 4,
+            "of": 9,
+            "rect": {
+              "x": 39,
+              "y": 4926,
+              "w": 23,
+              "h": 23
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "23px",
+              "height": "23px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 5,
+            "of": 9,
+            "rect": {
+              "x": 39,
+              "y": 5908,
+              "w": 23,
+              "h": 23
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "23px",
+              "height": "23px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 6,
+            "of": 9,
+            "rect": {
+              "x": 39,
+              "y": 6891,
+              "w": 23,
+              "h": 23
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "23px",
+              "height": "23px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 7,
+            "of": 9,
+            "rect": {
+              "x": 508,
+              "y": 7175,
+              "w": 40,
+              "h": 40
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "40px",
+              "height": "40px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          },
+          {
+            "index": 8,
+            "of": 9,
+            "rect": {
+              "x": 473,
+              "y": 8085,
+              "w": 40,
+              "h": 40
+            },
+            "visible": true,
+            "text": "Copy link",
+            "props": {
+              "position": "absolute",
+              "display": "block",
+              "width": "40px",
+              "height": "40px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "backgroundImage": "none",
+              "backgroundSize": "auto",
+              "fontSize": "16px",
+              "lineHeight": "normal",
+              "textAlign": "center",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".made-in-express": [],
+        ".publication-footer": [],
+        "footer": []
+      }
+    }
+  }
+}

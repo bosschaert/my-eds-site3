@@ -1,0 +1,137 @@
+/* hero — values lifted from stardust/prototypes/css/landing.css (.title-section,
+   .title-header, .title-header-view, .gradient-overlay, .title, .subtitle):
+   the title section is 80 % of the viewport, photo cover, title stack centred. */
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: visible;
+  background-color: var(--photo-fallback);
+}
+
+.hero .hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero .hero-bg :is(p, picture) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 0;
+}
+
+.hero .hero-bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.hero .hero-stage {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 64px 5%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero .hero-stack {
+  position: relative;
+  width: 100%;
+  max-width: 89%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  white-space: normal;
+}
+
+.hero .hero-overlay {
+  position: absolute;
+  inset: -200% -25%;
+  height: auto;
+  min-height: 15rem;
+  background-image: linear-gradient(
+    0deg,
+    rgb(0 0 0 / 0%) 0%,
+    var(--overlay) 25%,
+    rgb(0 0 0 / 50%) 50%,
+    var(--overlay) 75%,
+    rgb(0 0 0 / 0%) 100%
+  );
+}
+
+.hero .hero-headline,
+.hero .hero-subtitle {
+  position: relative;
+}
+
+.hero .hero-headline :is(h1, h2, h3) {
+  margin: 0;
+  padding: 0;
+  max-height: 3.6em;
+  color: var(--title-on-photo);
+  font-family: var(--display-font-family);
+  font-size: var(--h1-font-size);
+  font-style: normal;
+  font-weight: var(--weight-title);
+  line-height: var(--lh-title);
+  letter-spacing: var(--tracking);
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: var(--shadow-title);
+}
+
+.hero .hero-subtitle :where(p) {
+  margin: 1rem 0 0;
+  padding: 0;
+  max-height: 3.9em;
+  color: var(--title-on-photo);
+  font-family: var(--display-font-family);
+  font-size: var(--subtitle-font-size);
+  font-weight: var(--weight-subtitle);
+  line-height: var(--lh-subtitle);
+  letter-spacing: var(--tracking);
+  text-transform: uppercase;
+  text-shadow: var(--shadow-title);
+}
+
+.hero .hero-hint {
+  display: block;
+  height: 0;
+}
+
+@media (width >= 1300px) {
+  .hero .hero-stack {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media (width >= 1800px) {
+  .hero .hero-stack {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+
+@media (width >= 2300px) {
+  .hero .hero-stack {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+}
+
+@media (width <= 767px) {
+  .hero .hero-stage {
+    padding: 32px 5%;
+  }
+}

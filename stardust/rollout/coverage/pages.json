@@ -1,0 +1,58 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-10-06T11:35:15.121Z",
+    "readArtifacts": [
+      "stardust/migrated",
+      "stardust/state.json"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-10-06T13:06:48.763Z",
+  "pages": [
+    {
+      "slug": "webpage-dyft29wzo0qlk",
+      "path": "/webpage/dyft29wzo0qlk",
+      "title": "test-page",
+      "templateId": "webpage-dyft29wzo0qlk",
+      "source": {
+        "migratedHtml": "stardust/migrated/webpage/DYft29Wzo0QLK/index.html",
+        "metaJson": "stardust/migrated/webpage/DYft29Wzo0QLK/_meta.json",
+        "sourceHash": "sha256:81d146cd3569fe91befba1f7b4a6d79a6fd16b82e23db76094a64805a3fd80c8"
+      },
+      "blocks": [
+        "hero",
+        "photo-band",
+        "cards",
+        "figure",
+        "photo-grid"
+      ],
+      "delivery": {
+        "status": "verified",
+        "deployedUrl": "https://main--b7aaf274--aemcoder.aem.live/webpage/dyft29wzo0qlk",
+        "deployedAt": "2026-10-06T13:02:17.791Z",
+        "verifiedAt": "2026-10-06T13:06:48.763Z",
+        "error": null,
+        "gate": {
+          "pass": true,
+          "pct": 5.23,
+          "heightDelta": 7,
+          "clipped": 0,
+          "content": {
+            "missing": 0,
+            "hidden": 0,
+            "controlState": 0,
+            "missingButtons": 1,
+            "hiddenButtons": 0,
+            "findings": 14,
+            "variable": []
+          },
+          "reasons": [],
+          "override": null,
+          "table": "stardust/replica/gates/all-360/summary.json",
+          "at": "2026-10-06T12:57:19.328Z"
+        }
+      }
+    }
+  ]
+}

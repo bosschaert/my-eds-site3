@@ -1,0 +1,103 @@
+/* replica canon — Jamaica Travel Guide (Adobe Express webpage), bounded-single replica.
+   Every value is lifted from stardust/current/assets/css/inline-theme.css (theme),
+   runtime.css / noscript.css (static page mode) or measured (stardust/replica/lift/measure-static*.json).
+   Box model: the source lays out every container border-box (measured boxSizing=border-box on
+   .title-header-view, .content-container, .photo-*, .brand-btn); declared per block below, never universally.
+   Fonts: PT Sans (OFL) self-hosted from its open source; Poplar Std is a licensed Adobe Fonts face and is
+   NOT rehosted — register R-02: poplar-std stays first in the stack, Anton (OFL, metric-matched) ships after it. */
+
+@font-face { font-family: 'PT Sans'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../fonts/PTSans-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'PT Sans'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../fonts/PTSans-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'PT Sans'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url(../fonts/PTSans-700-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'PT Sans'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url(../fonts/PTSans-700-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Anton'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../fonts/Anton-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Anton'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url(../fonts/Anton-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+:root {
+  /* theme L106 .article/.section */            --canvas: rgba(255, 239, 54, 1);
+  /* theme L293 h2, L394 blockquote */           --display: rgba(0, 110, 4, 1);
+  /* theme L332 p */                              --text: rgba(17, 26, 11, 1);
+  /* theme L315 h3 */                             --heading-3: rgba(0, 0, 0, 1);
+  /* theme L161 .title */                         --title-on-photo: rgba(255, 238, 53, 1);
+  /* theme L129 .title-section, L12 bg */         --photo-fallback: #484848;
+  /* theme L161 */                                --display-family: poplar-std, Anton, Impact, sans-serif;
+  /* theme L332 */                                --text-family: pt-sans, 'PT Sans', Arial, sans-serif;
+}
+
+/* ---- document / article model (noscript.css static mode: .article absolute, 100% of the viewport; sections overflow it) ---- */
+html, body { margin: 0; padding: 0; height: 100%; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+.article { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--canvas); overflow: visible; }
+.section { position: relative; box-sizing: border-box; background-color: var(--canvas); }
+.section-view, .section-content, .section-content-view { position: relative; }
+
+/* ---- content column: theme L111 + media variants L1368–L1462 ---- */
+.section-content .content-container { position: relative; box-sizing: border-box; padding: 2.5rem 20%; }
+.section.large-content-spacing-top .section-content .content-container { padding-top: 5rem; }
+.section.large-content-spacing-bottom .section-content .content-container { padding-bottom: 5rem; }
+@media (min-width: 1300px) { .section-content .content-container { padding-left: 25%; padding-right: 25%; } }
+@media (min-width: 1800px) { .section-content .content-container { padding-left: 30%; padding-right: 30%; } }
+@media (min-width: 2300px) { .section-content .content-container { padding-left: 33%; padding-right: 33%; } }
+@media (max-width: 768px)  { .section-content .content-container { padding-left: 12.5%; padding-right: 12.5%; } }
+@media (max-width: 480px)  { .section-content .content-container { padding-left: 7%; padding-right: 7%; } }
+@media (max-width: 767px) {
+  .section-content .content-container { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+  .section.large-content-spacing-top .section-content .content-container { padding-top: 2.5rem; }
+  .section.large-content-spacing-bottom .section-content .content-container { padding-bottom: 2.5rem; }
+}
+
+/* ---- type ramp (theme L293–L471) ---- */
+.content-container h2 { margin: 0; padding: 0; color: var(--display); font-family: var(--display-family); font-size: 55px; font-weight: 100; font-style: normal; line-height: 1.2; letter-spacing: normal; text-transform: uppercase; text-align: left; }
+.content-container h3 { margin: 0; padding: 0; color: var(--heading-3); font-family: var(--text-family); font-size: 28px; font-weight: bold; font-style: normal; line-height: 1.5; letter-spacing: normal; text-transform: uppercase; text-align: left; }
+.content-container p  { margin: 0; padding: 0; color: var(--text); font-family: var(--text-family); font-size: 19px; font-weight: normal; line-height: 1.6; letter-spacing: normal; }
+.content-container blockquote { margin: 0; padding: .75em 0; color: var(--display); font-family: var(--display-family); font-size: 29px; font-weight: 100; line-height: 1.3; text-transform: uppercase; text-align: center; position: relative; }
+.content-container .caption { margin: .5em 0; color: var(--text); font-family: var(--text-family); font-size: 15px; line-height: 1.6; text-align: center; }
+.content-container .text-center { text-align: center; }
+/* block rhythm: theme L750–L938 — every block after another block gets 2.5rem; the heading anchor button is transparent to it */
+.content-container > * + *:not(.page-heading-anchor) { margin-top: 2.5rem; }
+.content-container > blockquote { margin-top: 2.5rem; }   /* measured: 40px above the quote at 1440, 20px at 360 */
+@media (max-width: 767px) {
+  .content-container h2 { font-size: 33px; }
+  .content-container h3 { font-size: 21px; }
+  .content-container p  { font-size: 17px; white-space: pre-wrap; }   /* theme L347 */
+  .content-container blockquote { font-size: 21px; }
+  .content-container > * + *:not(.page-heading-anchor), .content-container > blockquote { margin-top: 1.25rem; }
+}
+
+/* ---- images (runtime.css .article .image-wrapper; cards: inline img in a block, natural size capped by the column) ---- */
+.content-container img { max-width: 100%; height: auto; }
+.content-container .image { text-align: center; }
+.article .image-wrapper { display: inline-block; position: relative; margin: 0 auto; max-width: 100%; }
+.article .image-wrapper img { display: block; }
+.content-container .image-viewer-link { display: inline; color: var(--display); }
+
+/* ---- heading anchors ("Copy link", runtime.css @86541/@84719): invisible at rest, revealed on hover/focus ---- */
+.content-container button.page-heading-anchor { position: absolute; display: inline-block; width: 40px; height: 40px; margin: -53px 0 0 -50px; padding: 0; border: none; border-radius: 40px; background-color: #fff; box-shadow: 0 3px 6px 0 rgba(0,0,0,.16); color: inherit; font: inherit; cursor: pointer; opacity: 0; z-index: 9999; transition-property: opacity; transition-delay: .35s; }
+.content-container button.page-heading-anchor.small { width: 23px; height: 23px; border-radius: 23px; margin: -32.5px 0 0 -25px; }
+.content-container button.page-heading-anchor .anchor-tooltip { position: absolute; left: 50%; transform: translateX(-50%); bottom: calc(100% + 4px); padding: 4px 8px; background-color: #2c2c2c; color: #f8f8f8; font-family: adobe-clean, system-ui, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.3; white-space: nowrap; border-radius: 4px; opacity: 0; pointer-events: none; transition: opacity .2s ease-in-out; z-index: 10000; }
+.content-container button.page-heading-anchor.small .anchor-tooltip { left: 0; transform: translateX(0); }
+.content-container button.page-heading-anchor:focus { outline: #1473e6 solid 2px; outline-offset: 2px; opacity: 1; }
+.content-container button.page-heading-anchor:focus:not(:focus-visible) { outline: 0; }
+.content-container button.page-heading-anchor:focus .anchor-tooltip { opacity: 1; }
+
+/* ---- interaction parity (observed live, stardust/replica/motion/webpage-dyft29wzo0qlk.json): ---- */
+/* anchor reveals itself on hover (runtime @87886); tooltip fades .2s; photo links transition color .15s (theme L540 hover colour) */
+.content-container button.page-heading-anchor:hover { opacity: 1; }
+.content-container button.page-heading-anchor:hover .anchor-tooltip { opacity: 1; }
+.article a { transition: color .15s; }
+.article a:hover { color: rgba(1, 38, 2, 1); }
+/* click → "Link copied to clipboard." toast (runtime @85324–@86249) */
+.toast-container { visibility: hidden; position: fixed; bottom: 8px; left: 50%; margin-left: -100px; min-width: 200px; padding: 0 40px; box-sizing: border-box; background-color: #444; border-radius: 4px; color: #fff; font-family: adobe-clean, sans-serif; font-size: 15px; line-height: 40px; text-align: center; -webkit-font-smoothing: antialiased; z-index: 10001; }
+.toast-container.show { visibility: visible; animation: .35s ease-in toast-message-fade-in; }
+@keyframes toast-message-fade-in { 0%, 50% { bottom: -45px; opacity: 0; } 100% { bottom: 10px; opacity: 1; } }

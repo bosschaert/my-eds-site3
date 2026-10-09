@@ -1,0 +1,416 @@
+{
+  "discovery": {
+    "fetchTechnique": "headless",
+    "count": 1,
+    "concurrency": 1
+  },
+  "consent": {
+    "method": "auto"
+  },
+  "favicon": {
+    "url": "https://new.express.adobe.com/webpage/static/runtime/images/favicon.ico",
+    "file": "assets/favicon.ico"
+  },
+  "crawl": {
+    "failures": []
+  },
+  "captureGaps": {
+    "roots": [],
+    "detail": "uncaptured first-level targets: none (no locale root captured)"
+  },
+  "dynamicSurface": {
+    "pages": 1,
+    "pagesWithSameSiteData": 1,
+    "pagesWithSearchForm": 0,
+    "pagesHydrated": 0,
+    "truncatedPages": 0,
+    "endpoints": [
+      {
+        "method": "GET",
+        "host": "geo2.adobe.com",
+        "path": "/json/",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://geo2.adobe.com/json/",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "adobeid-na1.services.adobe.com",
+        "path": "/ims/check/v6/token",
+        "query": [
+          "jslVersion"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://adobeid-na1.services.adobe.com/ims/check/v6/token",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "new.express.adobe.com",
+        "path": "/service/floodgate/fg/api/v3/feature",
+        "query": [
+          "clientId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://new.express.adobe.com/service/floodgate/fg/api/v3/feature",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "new.express.adobe.com",
+        "path": "/static/en-US.6335cc348a9f4adc.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://new.express.adobe.com/static/en-US.6335cc348a9f4adc.json",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "sstats.adobe.com",
+        "path": "/ee/v1/interact",
+        "query": [
+          "configId",
+          "requestId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://sstats.adobe.com/ee/v1/interact",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "new.express.adobe.com",
+        "path": "/service/xcs-assets-cdn/unified",
+        "query": [
+          "locale"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://new.express.adobe.com/service/xcs-assets-cdn/unified",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "dcs.adobedc.net",
+        "path": "/collection/{hash}",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://dcs.adobedc.net/collection/e891d3631145f2a3263cc9791b49ce1aa98295228a85170b4d9a0e9b7ac07d25",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "adobeid-na1.services.adobe.com",
+        "path": "/ims/country_code/v1",
+        "query": [
+          "client_id"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://adobeid-na1.services.adobe.com/ims/country_code/v1",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "api2.branch.io",
+        "path": "/v1/pageview",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://api2.branch.io/v1/pageview",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "api2.branch.io",
+        "path": "/v1/open",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://api2.branch.io/v1/open",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "platform-cs.adobe.io",
+        "path": "/index",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/vnd.adobecloud.index+json",
+        "sameSite": false,
+        "example": "https://platform-cs.adobe.io/index",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.adobe.com",
+        "path": "/experienceedge/v2/collect",
+        "query": [
+          "datastreamId",
+          "requestId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "sameSite": true,
+        "example": "https://www.adobe.com/experienceedge/v2/collect",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.adobe.com",
+        "path": "/experienceedge/v2/interact",
+        "query": [
+          "datastreamId",
+          "requestId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "sameSite": true,
+        "example": "https://www.adobe.com/experienceedge/v2/interact",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "bps-il.adobe.io",
+        "path": "/users/{uuid}@anonymous/subscriptions",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/octet-stream",
+        "sameSite": false,
+        "example": "https://bps-il.adobe.io/users/b0106f90-1dc5-4c42-be27-294b9f8354df@anonymous/subscriptions",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "sstats.adobe.com",
+        "path": "/ee/v2/interact",
+        "query": [
+          "datastreamId",
+          "requestId"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://sstats.adobe.com/ee/v2/interact",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "jil.adobe.com",
+        "path": "/users/{uuid}@anonymous/",
+        "query": [
+          "include"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/html",
+        "sameSite": true,
+        "example": "https://jil.adobe.com/users/b0106f90-1dc5-4c42-be27-294b9f8354df@anonymous/",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "bam.nr-data.net",
+        "path": "/{n}/476fdc8ce5",
+        "query": [
+          "a",
+          "be",
+          "ck",
+          "dc",
+          "fe",
+          "fsh",
+          "perf",
+          "ptid",
+          "ref",
+          "rst",
+          "s",
+          "sa",
+          "t",
+          "v"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://bam.nr-data.net/1/476fdc8ce5",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "new.express.adobe.com",
+        "path": "/webpage/api/metadata/DYft29Wzo0QLK",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://new.express.adobe.com/webpage/api/metadata/DYft29Wzo0QLK",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "auth.services.adobe.com",
+        "path": "/signin/v1/audit",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": null,
+        "sameSite": true,
+        "example": "https://auth.services.adobe.com/signin/v1/audit",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "odin.adobe.com",
+        "path": "/content/dam/pandora/react-mini-app-susi-light-login/v1/en-us/main/index.cfm.gql.json",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://odin.adobe.com/content/dam/pandora/react-mini-app-susi-light-login/v1/en-us/main/index.cfm.gql.json",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "ims-na1.adobelogin.com",
+        "path": "/ims/social/v2/providers",
+        "query": [
+          "client_id",
+          "susi-light-version"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://ims-na1.adobelogin.com/ims/social/v2/providers",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "o1383653.ingest.us.sentry.io",
+        "path": "/api/{hash}/envelope/",
+        "query": [
+          "sentry_client",
+          "sentry_key",
+          "sentry_version"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://o1383653.ingest.us.sentry.io/api/4509476881498112/envelope/",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "assets.adobedtm.com",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "host": "use.typekit.net",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      },
+      {
+        "host": "app.link",
+        "pages": 1,
+        "examples": [
+          "webpage-dyft29wzo0qlk"
+        ]
+      }
+    ],
+    "frameworkHints": [],
+    "globalState": [],
+    "formTargets": []
+  },
+  "visionCheck": [
+    {
+      "slug": "webpage-dyft29wzo0qlk",
+      "verdict": "recaptured",
+      "notes": "medium wait captured the loading splash (blurred hero + progress bar); slow wait captured the hero. App mode is a virtual scroller so fullPage = one viewport; recaptured via ?page-mode=static (full 9327px document, all 10 headings, 5 imgs, 13 backgrounds)."
+    }
+  ],
+  "captureMode": "page-mode=static"
+}

@@ -1,0 +1,118 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics check",
+  "writtenAt": "2026-10-06T13:05:55.032Z",
+  "origin": "https://main--b7aaf274--aemcoder.aem.live",
+  "parity": "stardust/dynamics/parity.json"
+ },
+ "results": [
+  {
+   "feature": "client-rendered page (publication JSON → DOM) delivered as static EDS content",
+   "id": "cr-main-empty-at-load",
+   "class": "CR",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "10 × main h1, main h2, main h3 (min 10)",
+   "thirdParty": "",
+   "ms": 2298,
+   "environmentLimit": null
+  },
+  {
+   "feature": "client-rendered page (publication JSON → DOM) delivered as static EDS content",
+   "id": "cr-main-empty-at-load",
+   "class": "CR",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "13 × main img (min 5)",
+   "thirdParty": "",
+   "ms": 1899,
+   "environmentLimit": null
+  },
+  {
+   "feature": "\"Copy link\" buttons beside each h2/h3 (click copies the deep link and shows the toast)",
+   "id": "heading-anchor-copy-link",
+   "class": "CR",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "9 × main button.page-heading-anchor (min 9)",
+   "thirdParty": "",
+   "ms": 1867,
+   "environmentLimit": null
+  },
+  {
+   "feature": "\"Copy link\" buttons beside each h2/h3 (click copies the deep link and shows the toast)",
+   "id": "heading-anchor-copy-link",
+   "class": "CR",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "9 × main button.page-heading-anchor .anchor-tooltip (min 9)",
+   "thirdParty": "",
+   "ms": 1872,
+   "environmentLimit": null
+  },
+  {
+   "feature": "fixed \"Made in Adobe Express\" badge (register R-03, replicated as captured)",
+   "id": "made-in-express-badge",
+   "class": "static",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × .made-in-express .brand-btn (min 1)",
+   "thirdParty": "",
+   "ms": 1865,
+   "environmentLimit": null
+  },
+  {
+   "feature": "fixed \"Made in Adobe Express\" badge (register R-03, replicated as captured)",
+   "id": "made-in-express-badge",
+   "class": "static",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × footer a[href*='new.express.adobe.com/webpage/template-picker'] (min 1)",
+   "thirdParty": "",
+   "ms": 1887,
+   "environmentLimit": null
+  },
+  {
+   "feature": "adobe.com/go redirect links kept verbatim",
+   "id": "i18n-locale-variants-go",
+   "class": "I18N",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × main a[href*='adobe.com/go/'] (min 1)",
+   "thirdParty": "",
+   "ms": 1919,
+   "environmentLimit": null
+  },
+  {
+   "feature": "site root resolves to the page; no uncaught exceptions on the delivered pages",
+   "id": "site-root-and-errors",
+   "class": "static",
+   "status": "done",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 2 page(s)",
+   "thirdParty": "",
+   "ms": 3768,
+   "environmentLimit": null
+  },
+  {
+   "feature": "site root resolves to the page; no uncaught exceptions on the delivered pages",
+   "id": "site-root-and-errors",
+   "class": "static",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "1 × main h1 (min 1)",
+   "thirdParty": "",
+   "ms": 1894,
+   "environmentLimit": null
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+  "slug": "webpage-dyft29wzo0qlk",
+  "type": "landing",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "hero",
+    "photo-band",
+    "cards",
+    "figure",
+    "photo-grid"
+  ],
+  "slotsFilled": [
+    "section",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section",
+    "section"
+  ],
+  "canonShas": {
+    "header": null,
+    "footer": null,
+    "css": "32d7dc99d59d"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "test-page",
+    "description": null,
+    "canonical": "https://main--b7aaf274--aemcoder.aem.page/webpage/DYft29Wzo0QLK/",
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "test-page",
+    "url": "https://main--b7aaf274--aemcoder.aem.page/webpage/DYft29Wzo0QLK/"
+  },
+  "migratedAt": "2026-10-06T11:33:49Z",
+  "designMdSha": "1988e760b7e1",
+  "designJsonSha": "0876b13eb5e1",
+  "sourceCurrentSha": "f57438f5410e",
+  "sourceProposedSha": "9ee0e8ab3a10",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [
+    "content-fidelity",
+    "pixel-gate-1440",
+    "pixel-gate-360"
+  ],
+  "gateEvidence": {
+    "content-fidelity": "recreate gate content-diff: 0 structural 🔴 on .article besides the R-01 MISSING CTA (register-justified); headings 10/10, body 15/15, CTAs 2/2 kept verbatim from current/pages/webpage-dyft29wzo0qlk.json",
+    "pixel-gate-1440": "0.49%, height delta 0px, clipped 0, content n/a (stardust/replica/gates/prototypes-1440/summary.md) [prototype regime]",
+    "pixel-gate-360": "2.29%, height delta 16px, clipped 0, content n/a (stardust/replica/gates/prototypes-360/summary.md) [prototype regime]",
+    "content-count": "OPEN: content-diff: 2 (1 structural 🔴) (webpage-dyft29wzo0qlk-360-iter3.log)",
+    "media-reconcile": "n/a: no delivered content file yet (content/webpage/DYft29Wzo0QLK.html) — media-reconcile runs in the delivery chain (row C)",
+    "delivery-lint": "FAIL: 1 P0 · 2 P1 · 1 P2 (delivery-lint --path /webpage/DYft29Wzo0QLK)"
+  },
+  "contentDeviations": [
+    {
+      "kind": "dropped",
+      "source": "Report Abuse (footer link opening the Express moderation dialog) + empty cookie-preferences anchor",
+      "target": "omitted",
+      "reason": "register R-01: session-bound Express moderation form, decided-out in dynamic-features.md row 4"
+    },
+    {
+      "kind": "font-substitution",
+      "source": "poplar-std (Adobe Fonts, licensed)",
+      "target": "Anton after poplar-std in the stack",
+      "reason": "register R-02: licensed kit never rehosted; metric-matched OFL substitute"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": "heading-anchor copy-link buttons, image large-preview links, Made in Adobe Express badge",
+      "target": "rebuilt native (copy-link toast), links to the delivered image, badge replicated as captured",
+      "reason": "dynamic-features.md rows 9 and 10; image viewer is the Express app viewer, replaced by a direct image link"
+    }
+  ],
+  "assetsBundled": 22,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "media/a9da7451-031a-45c8-9e5a-173f9ec3d993-1024.jpg",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "media/36fc1411-4278-4a0e-bf88-ce72615862a7-512.jpg",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "media/4a414667-acb6-4298-96fc-2d967cced228-512.jpg",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "media/e9f89470-c939-4bc0-a00d-c879b556197a-512.jpg",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "media/10d7d6da-d79e-4aa5-8d0f-ef5a6e8a6e07-512.jpg",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "media/cf9ea6f4-ee29-4d1b-b1c6-4718f7e4d322-512.jpg",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "webpage/DYft29Wzo0QLK/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "webpage/DYft29Wzo0QLK/_meta.json",
+  "driverVersion": "1"
+}

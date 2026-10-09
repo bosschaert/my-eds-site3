@@ -1,0 +1,33 @@
+/* figure — values lifted from stardust/prototypes/css/replica-canon.css
+   (.content-container .image, .image-wrapper inline-block centred, img block, .caption).
+   The block owns the content column; vertical rhythm comes from the neighbouring
+   default-content wrappers (section-pad above and below). */
+.figure {
+  padding: 0 var(--content-gutter);
+  text-align: center;
+}
+
+.figure .figure-media {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.figure .figure-media :is(p, picture) {
+  display: block;
+  margin: 0;
+  font-size: 16px;
+  line-height: normal;
+}
+
+/* the source wrapper is an inline-block in a 16px/normal block (measured): keep its line box */
+.figure .figure-media img {
+  display: inline;
+  vertical-align: baseline;
+  max-width: 100%;
+  height: auto;
+}
+
+.figure .figure-caption {
+  line-height: var(--lh-body);
+}

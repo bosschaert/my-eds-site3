@@ -1,0 +1,115 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-06T11:24:00Z",
+    "phase": "recreate",
+    "mode": "bounded-single"
+  },
+  "liveSide": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static",
+  "contentRoot": ".article",
+  "pageTypes": {
+    "landing": {
+      "archetype": "webpage-dyft29wzo0qlk",
+      "prototype": "stardust/prototypes/webpage-dyft29wzo0qlk-proposed.html",
+      "css": [
+        "stardust/prototypes/css/replica-canon.css",
+        "stardust/prototypes/css/landing.css"
+      ],
+      "fonts": {
+        "PT Sans": "self-hosted (OFL, Google Fonts woff2, 400/700 latin + latin-ext)",
+        "Poplar Std": "NOT rehosted (Adobe Fonts kit) → Anton self-hosted substitute, poplar-std first in the stack (register R-02)"
+      },
+      "boxModel": "border-box on every lifted container (.title-header-view, .content-container, .photo-*, .brand-btn), declared per block; no universal reset",
+      "iterations": {
+        "360": 3,
+        "1440": 3
+      },
+      "gates": {
+        "360": {
+          "pixel": 2.31,
+          "pixelTable": 2.29,
+          "heightDelta": 16,
+          "overflow": "ok (360 = viewport)",
+          "clip": 0,
+          "contentDiff": "same two findings as 1440",
+          "visualDiff": "0 flags",
+          "chromeParity": "footer region: Δh −16px (52→36), 2 paired links Δx −20px (wrapped second line absent), MISSING 'Report Abuse' — register R-01",
+          "bands": "6500–6654: 19.1% (footer tail, R-01); 0–500 4.2% and 1000–1500 4.0% (display glyphs R-02 / glyph AA); all others ≤ 3.1%",
+          "verdict": "PASS (height residual register-justified)",
+          "table": "stardust/replica/gates/prototypes-360/summary.md"
+        },
+        "1440": {
+          "pixel": 0.53,
+          "pixelTable": 0.49,
+          "heightDelta": 0,
+          "overflow": "ok (1440 = viewport)",
+          "clip": 0,
+          "contentDiff": "1 🔴 MISSING CTA 'Report Abuse' (register R-01) + 1 🟠 FONT FORK poplar-std→Anton on 7 lines (register R-02)",
+          "visualDiff": "0 flags",
+          "chromeParity": "no <header>/<footer> on either side; footer region (nav.footer) probed directly: 2 paired links Δx +115px, MISSING 'Report Abuse' — register R-01",
+          "bands": "0–500: 4.6% (title glyphs, R-02); 9000–9327: 1.7% (quote glyphs R-02 + footer R-01); all others ≤ 1.0%",
+          "verdict": "PASS",
+          "table": "stardust/replica/gates/prototypes-1440/summary.md"
+        }
+      },
+      "contentCap": {
+        "probeWidth": 2560,
+        "result": "FAIL 2 of 10 rows — both the same measurement: #my-personal-faves-heading-text > span live 395px → build 417px (Δ22px). The span is the heading's text run; its width is Anton's vs Poplar's metrics (register R-02), not a sizing rule. Every container cap is fluid-identical (modules 1–5, 7–9 ✓). Recorded as a register-justified residual.",
+        "evidence": "stardust/replica/gates/webpage-dyft29wzo0qlk-2560/cap-iter.json"
+      },
+      "fixesOffInstruments": [
+        "iter1→2: .title-section .section-view had no height, so the absolute title header collapsed to its padding (clip-probe: h1 cut 52px, subtitle hidden; 0–1000 bands 72%/25%) → height:100% on the view",
+        "iter1→2: food photo band carried the author's focal point (background-position 42.6218% 35.7056% in the live inline style) → lifted onto the prototype (2500–3500 bands 26%/33% → 0.5%/0.1%)",
+        "iter2→3 (360): live computes text-size-adjust:100% and white-space:pre-wrap on paragraphs ≤767px (theme L347); the build had auto/normal → glyph-level 4–9% text bands fell to ≤ 3.1% (5.00% → 2.31%)",
+        "iter2→3 (360): badge sits 20px from the bottom ≤480px (theme inline block L1697) → media rule; logo 24.69×25.32 lifted"
+      ],
+      "residuals": [
+        {
+          "id": "R-02",
+          "where": "every poplar-std line (h1, subtitle, h2 ×4, blockquote)",
+          "measure": "FONT FORK 🟠 ×7; title band 4.6%/4.2%; cap-probe span Δ22px at 2560",
+          "why": "licensed display face not rehosted; Anton is the metric-nearest open substitute",
+          "status": "permanent until a licensed Poplar Std drop-in"
+        },
+        {
+          "id": "R-01",
+          "where": "legal footer",
+          "measure": "content-diff 🔴 MISSING CTA; chrome-parity MISSING + Δx; 360 Δh +16px (live footer wraps to 2 lines)",
+          "why": "Report Abuse (Express moderation dialog) and the empty cookie-preferences anchor are platform controls with no consumer on the migrated page",
+          "status": "applied by register"
+        },
+        {
+          "id": "glyph-AA",
+          "where": "360 body text bands",
+          "measure": "≤ 3.1% per band after text-size-adjust parity",
+          "why": "anti-aliasing noise at identical boxes (measure.mjs: Δx/Δy/Δw/Δh 0 on every text box)",
+          "status": "accepted"
+        }
+      ],
+      "motion": {
+        "observed": [
+          "click button.page-heading-anchor → navigator.clipboard + toast '.toast-container.show' (toast-message-fade-in .35s) + tooltip opacity .2s",
+          "hover a.photo-image / a.image-viewer-link → color transition .15s"
+        ],
+        "implemented": [
+          "copy-link click + toast (minimal inline script in the prototype; block JS at delivery)",
+          "anchor :hover opacity 1 + tooltip fade (CSS)",
+          "a color transition .15s + hover colour rgba(1,38,2,1) (theme L540)"
+        ],
+        "dead": [
+          "hover h2 / h3 (no diff)",
+          "hover .brand-btn (no diff)",
+          "widget poke frames (static)"
+        ],
+        "compare": "stardust/replica/motion/webpage-dyft29wzo0qlk-compare.txt — 5 parity, 1 'MISSING opacity transition' = sampler miss: measure.mjs shows identical transitionProperty/Duration/Delay on button + tooltip both sides",
+        "files": [
+          "stardust/replica/motion/webpage-dyft29wzo0qlk.json",
+          "stardust/replica/motion/webpage-dyft29wzo0qlk-build.json"
+        ]
+      },
+      "approvedBy": "hands-off",
+      "status": "gated"
+    }
+  },
+  "siblings": {}
+}

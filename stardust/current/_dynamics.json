@@ -1,0 +1,940 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics detect",
+  "writtenAt": "2026-10-06T11:38:33.234Z",
+  "settleMs": 8000,
+  "width": 1440,
+  "urls": [
+   "https://new.express.adobe.com/webpage/DYft29Wzo0QLK"
+  ],
+  "reachSource": "stardust/current/pages"
+ },
+ "pages": {
+  "/webpage/DYft29Wzo0QLK": {
+   "url": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK",
+   "status": 200,
+   "host": "new.express.adobe.com",
+   "title": "test-page",
+   "forms": [
+    {
+     "name": "report-abuse-form",
+     "action": null,
+     "method": "get",
+     "role": "",
+     "inChrome": false,
+     "fields": 9,
+     "signature": [
+      "email:email",
+      "text:name",
+      "radio:type",
+      "radio:type",
+      "radio:type",
+      "radio:type",
+      "radio:type",
+      "radio:type",
+      "textarea:description"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [
+    {
+     "role": "dialog",
+     "heading": "Report Abuse",
+     "textLen": 480,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    }
+   ],
+   "dialogCount": 3,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "DYft29Wzo0QLK/analytics?_cb=1762332189116",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": "DYft29Wzo0QLK/analytics?_cb=1762332189116",
+     "title": null,
+     "w": 100,
+     "h": 100
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": [
+     "http://www.adobe.com/go/privacy",
+     "http://www.adobe.com/go/tou",
+     "http://www.adobe.com/go/tou"
+    ]
+   },
+   "cms": {},
+   "framework": null,
+   "globals": [],
+   "clientRendered": [
+    {
+     "cls": "banner success js-report-success",
+     "attrs": [],
+     "text": "Your report has been submitted."
+    },
+    {
+     "cls": "banner error js-report-error",
+     "attrs": [],
+     "text": "There was a problem submitting your report. Please contact A"
+    },
+    {
+     "cls": "report-abuse-dialog js-report-abuse-dialog",
+     "attrs": [],
+     "text": "Report AbuseCloseIf you feel that the content of this page v"
+    },
+    {
+     "cls": "report-abuse-form js-report-abuse-form",
+     "attrs": [],
+     "text": "If you feel that the content of this page violates the Adobe"
+    }
+   ],
+   "listingCandidates": [],
+   "inlineScripts": 2,
+   "inlineFetch": false,
+   "mainText": 2209,
+   "domAddedAfterLoad": 43,
+   "hosts": {
+    "new.express.adobe.com": 236,
+    "use.typekit.net": 22,
+    "p.typekit.net": 2,
+    "geo2.adobe.com": 1,
+    "adobeid-na1.services.adobe.com": 3,
+    "assets.adobedtm.com": 4,
+    "hz-gneiss.adobe.io": 1,
+    "sstats.adobe.com": 3,
+    "app.link": 1,
+    "api2.branch.io": 3,
+    "dcs.adobedc.net": 1,
+    "platform-cs.adobe.io": 1,
+    "bps-il.adobe.io": 1,
+    "www.adobe.com": 4,
+    "jil.adobe.com": 3,
+    "bam.nr-data.net": 1,
+    "auth-light.identity.adobe.com": 3,
+    "auth.services.adobe.com": 9,
+    "shared-components.adobe.com": 16,
+    "odin.adobe.com": 1,
+    "o1383653.ingest.us.sentry.io": 1,
+    "ims-na1.adobelogin.com": 1
+   },
+   "thirdPartyHosts": [
+    "use.typekit.net",
+    "p.typekit.net",
+    "assets.adobedtm.com",
+    "hz-gneiss.adobe.io",
+    "app.link",
+    "api2.branch.io",
+    "dcs.adobedc.net",
+    "platform-cs.adobe.io",
+    "bps-il.adobe.io",
+    "bam.nr-data.net",
+    "o1383653.ingest.us.sentry.io",
+    "ims-na1.adobelogin.com"
+   ],
+   "scripts": [
+    "https://new.express.adobe.com/webpage/static/runtime/base-fonts.gz.js",
+    "https://new.express.adobe.com/webpage/static/runtime/font-subgroup-kits/pt-sans.gz.js",
+    "https://new.express.adobe.com/webpage/static/runtime/typekit-load.gz.js",
+    "https://use.typekit.net/onz5gap.js",
+    "https://new.express.adobe.com/webpage/static/runtime/analytics-prod.gz.js",
+    "https://new.express.adobe.com/webpage/static/runtime/runtime-prod.gz.js",
+    "https://use.typekit.net/sys1rxz.js",
+    "https://new.express.adobe.com/static/load-cdn-selection.7a652ead26cf302d.js",
+    "https://new.express.adobe.com/static/runtime.9d3a89358be8b33c.js",
+    "https://new.express.adobe.com/static/vendor-startup-uuid.e3ce8009b7d9c53f.js",
+    "https://new.express.adobe.com/static/vendor-startup-lodash.b43e8cd56d569e75.js",
+    "https://new.express.adobe.com/static/newrelic-client.c4f4af76269e5e6c.js",
+    "https://new.express.adobe.com/static/408389.7a9984663460e488.js",
+    "https://new.express.adobe.com/static/compiled-app-config.12d8649eedf664d0.js",
+    "https://new.express.adobe.com/static/index-worker-preload.0babc5891256b259.js",
+    "https://new.express.adobe.com/static/vendor-startup-spectrum-web-components.fe9c3e1b13311596.js",
+    "https://new.express.adobe.com/static/load-otel.099b8f83f742d640.js",
+    "https://new.express.adobe.com/static/vendor-startup-otel.22a030ea811b5fb0.js",
+    "https://new.express.adobe.com/static/149504.784ba45ebf5758e7.js",
+    "https://new.express.adobe.com/static/vendor-startup-ims.e71c7128c88f245f.js",
+    "https://new.express.adobe.com/static/456429.9835e2c99809f8fb.js",
+    "https://new.express.adobe.com/static/vendor-startup-ui.6a18e95ae9722280.js",
+    "https://new.express.adobe.com/static/hz-startup-ui-index.ee10fc66c1917d78.js",
+    "https://new.express.adobe.com/static/789428.0e02095037d86535.js",
+    "https://new.express.adobe.com/static/592331.af8cbfc4c59c7e84.js",
+    "https://new.express.adobe.com/static/hz-startup-otel.0fe1f8b1e8de684a.js",
+    "https://new.express.adobe.com/static/vendor-document-organizer-utils.4f91b61e6a1f457e.js",
+    "https://new.express.adobe.com/static/16294.06d4e99359f012fc.js",
+    "https://new.express.adobe.com/static/475861.1ac23510a89a4126.js",
+    "https://new.express.adobe.com/static/11452.754a9001efe8d840.js",
+    "https://new.express.adobe.com/static/vendor-intl-adobe-locales-data.8040345288991305.js",
+    "https://new.express.adobe.com/static/326547.7cb369d0b6fb32cb.js",
+    "https://new.express.adobe.com/static/817853.95ec1953fb2da72d.js",
+    "https://new.express.adobe.com/static/752780.c8e88c429eca7378.js",
+    "https://new.express.adobe.com/static/130362.d1a44a0c446af359.js",
+    "https://new.express.adobe.com/static/969059.6dace685aad0f4f1.js",
+    "https://new.express.adobe.com/static/790490.f00629b9060e753b.js",
+    "https://new.express.adobe.com/static/718103.827ca0d3f1c48e55.js",
+    "https://new.express.adobe.com/static/779269.15a7c10579552137.js",
+    "https://new.express.adobe.com/static/hzx-app-component-deps.b249262298a5b3b1.js",
+    "https://new.express.adobe.com/static/vendor-startup-gl-matrix.766de8fb2bfb2e62.js",
+    "https://new.express.adobe.com/static/89203.8b7a63827d77efb9.js",
+    "https://new.express.adobe.com/static/69528.89f73c32f8f4a661.js",
+    "https://new.express.adobe.com/static/x-app-uiStartup.16a20e8e8506116e.js",
+    "https://new.express.adobe.com/static/936741.c7c6074b1e357780.js",
+    "https://new.express.adobe.com/static/771772.c1c04b2777ae363f.js",
+    "https://new.express.adobe.com/static/402055.31446dead8093d29.js",
+    "https://new.express.adobe.com/static/344118.10ebb24b59be48f4.js",
+    "https://new.express.adobe.com/static/x-app-appShellBricks.92ba00236596e2ed.js",
+    "https://assets.adobedtm.com/d4d114c60e50/a0e989131fd5/launch-5dd5dd2177e6.min.js",
+    "https://new.express.adobe.com/static/714196.f34400cfa0c60131.js",
+    "https://new.express.adobe.com/static/677343.014bf8a86a4e7a77.js",
+    "https://new.express.adobe.com/static/170526.3ad96f038344f817.js",
+    "https://new.express.adobe.com/static/744856.b389720538afd7a9.js",
+    "https://new.express.adobe.com/static/315654.0a5d390efe59686b.js",
+    "https://new.express.adobe.com/static/233531.2005861162d170b0.js",
+    "https://new.express.adobe.com/static/717074.2ed2dd107c0d867e.js",
+    "https://new.express.adobe.com/static/975273.91918f5791a59bc9.js",
+    "https://new.express.adobe.com/static/839341.d9f53b20d3736a46.js",
+    "https://new.express.adobe.com/static/759608.71312874d8bedee7.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "new.express.adobe.com",
+     "path": "/webpage/static/experiments/chrome/chrome.js",
+     "query": [],
+     "status": 200,
+     "contentType": "application/javascript",
+     "example": "https://new.express.adobe.com/webpage/static/experiments/chrome/chrome.js"
+    },
+    {
+     "method": "GET",
+     "host": "geo2.adobe.com",
+     "path": "/json/",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://geo2.adobe.com/json/"
+    },
+    {
+     "method": "GET",
+     "host": "new.express.adobe.com",
+     "path": "/webpage/DYft29Wzo0QLK/branding",
+     "query": [
+      "api_key"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK/branding"
+    },
+    {
+     "method": "POST",
+     "host": "adobeid-na1.services.adobe.com",
+     "path": "/ims/check/v6/token",
+     "query": [
+      "jslVersion"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://adobeid-na1.services.adobe.com/ims/check/v6/token"
+    },
+    {
+     "method": "GET",
+     "host": "new.express.adobe.com",
+     "path": "/service/floodgate/fg/api/v3/feature",
+     "query": [
+      "clientId"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://new.express.adobe.com/service/floodgate/fg/api/v3/feature"
+    },
+    {
+     "method": "GET",
+     "host": "new.express.adobe.com",
+     "path": "/static/en-US.6335cc348a9f4adc.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://new.express.adobe.com/static/en-US.6335cc348a9f4adc.json"
+    },
+    {
+     "method": "POST",
+     "host": "sstats.adobe.com",
+     "path": "/ee/v1/interact",
+     "query": [
+      "configId",
+      "requestId"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://sstats.adobe.com/ee/v1/interact"
+    },
+    {
+     "method": "GET",
+     "host": "adobeid-na1.services.adobe.com",
+     "path": "/ims/country_code/v1",
+     "query": [
+      "client_id"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://adobeid-na1.services.adobe.com/ims/country_code/v1"
+    },
+    {
+     "method": "GET",
+     "host": "new.express.adobe.com",
+     "path": "/service/xcs-assets-cdn/unified",
+     "query": [
+      "locale"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://new.express.adobe.com/service/xcs-assets-cdn/unified"
+    },
+    {
+     "method": "GET",
+     "host": "new.express.adobe.com",
+     "path": "/webpage/api/metadata/DYft29Wzo0QLK",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://new.express.adobe.com/webpage/api/metadata/DYft29Wzo0QLK"
+    },
+    {
+     "method": "POST",
+     "host": "www.adobe.com",
+     "path": "/experienceedge/v2/collect",
+     "query": [
+      "datastreamId",
+      "requestId"
+     ],
+     "status": 403,
+     "contentType": "text/html",
+     "example": "https://www.adobe.com/experienceedge/v2/collect"
+    },
+    {
+     "method": "GET",
+     "host": "jil.adobe.com",
+     "path": "/users/{uuid}@anonymous/",
+     "query": [
+      "include"
+     ],
+     "status": 503,
+     "contentType": "text/html",
+     "example": "https://jil.adobe.com/users/1ca5ff6d-ce81-496b-827c-b342f5118c31@anonymous/"
+    },
+    {
+     "method": "POST",
+     "host": "www.adobe.com",
+     "path": "/experienceedge/v2/interact",
+     "query": [
+      "datastreamId",
+      "requestId"
+     ],
+     "status": 403,
+     "contentType": "text/html",
+     "example": "https://www.adobe.com/experienceedge/v2/interact"
+    },
+    {
+     "method": "POST",
+     "host": "sstats.adobe.com",
+     "path": "/ee/v2/interact",
+     "query": [
+      "datastreamId",
+      "requestId"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://sstats.adobe.com/ee/v2/interact"
+    },
+    {
+     "method": "POST",
+     "host": "auth.services.adobe.com",
+     "path": "/signin/v1/audit",
+     "query": [],
+     "status": 200,
+     "contentType": "",
+     "example": "https://auth.services.adobe.com/signin/v1/audit"
+    },
+    {
+     "method": "GET",
+     "host": "odin.adobe.com",
+     "path": "/content/dam/pandora/react-mini-app-susi-light-login/v1/en-us/main/index.cfm.gql.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://odin.adobe.com/content/dam/pandora/react-mini-app-susi-light-login/v1/en-us/main/index.cfm.gql.json"
+    },
+    {
+     "method": "HEAD",
+     "host": "new.express.adobe.com",
+     "path": "/",
+     "query": [],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://new.express.adobe.com/"
+    }
+   ],
+   "thirdPartyXhr": [
+    "PUT hz-gneiss.adobe.io/alias/DYft29Wzo0QLK/count",
+    "POST api2.branch.io/v1/pageview",
+    "POST dcs.adobedc.net/collection/e891d3631145f2a3263cc9791b49ce1aa98295228a85170b4d9a0e9b7ac07d25",
+    "POST api2.branch.io/v1/open",
+    "GET platform-cs.adobe.io/index",
+    "GET bps-il.adobe.io/users/1ca5ff6d-ce81-496b-827c-b342f5118c31@anonymous/subscriptions",
+    "POST bam.nr-data.net/1/476fdc8ce5",
+    "POST o1383653.ingest.us.sentry.io/api/4509476881498112/envelope/",
+    "GET ims-na1.adobelogin.com/ims/social/v2/providers"
+   ],
+   "postBodies": [
+    {
+     "url": "https://adobeid-na1.services.adobe.com/ims/check/v6/token?jslVersion=v2-v0.58.0-1-gfa206ac",
+     "body": "guest_allowed=true&client_id=projectx_webapp&scope=ab.manage%2CAdobeID%2Copenid%2Cread_organizations%2Ccreative_cloud%2Ccreative_sdk%2Ctk_platform%2Ctk_platform_sync%2Caf_byof%2Cstk.a.license_skip.r%2Cstk.a.limited_license.cru%2Cadditional_info.optionalAgreements%2Cuds_read%2Cuds_write%2Caf_ltd_projectx%2Cunified_dev_portal%2Cadditional_info.ownerOrg%2Cadditional_info.roles%2Cadditional_info.roles"
+    },
+    {
+     "url": "https://sstats.adobe.com/ee/v1/interact?configId=28baacdc-56e1-4191-a72d-2b4086448495&requestId=1fdb60b4-4681-4d45-bb8c-9fb8f4230fa8",
+     "body": "{\"events\":[{\"query\":{\"personalization\":{\"schemas\":[\"https://ns.adobe.com/personalization/default-content-item\",\"https://ns.adobe.com/personalization/html-content-item\",\"https://ns.adobe.com/personalization/json-content-item\",\"https://ns.adobe.com/personalization/redirect-item\",\"https://ns.adobe.com/personalization/ruleset-item\",\"https://ns.adobe.com/personalization/message/in-app\",\"https://ns.adob"
+    },
+    {
+     "url": "https://api2.branch.io/v1/pageview",
+     "body": "event=pageview&metadata=%7B%22url%22%3A%22https%3A%2F%2Fnew.express.adobe.com%2Fwebpage%2FDYft29Wzo0QLK%22%2C%22user_agent%22%3A%22Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F153.0.8010.12%20Safari%2F537.36%22%2C%22language%22%3A%22en-US%22%2C%22screen_width%22%3A1440%2C%22screen_height%22%3A900%2C%22window_device_pixel_ratio%22%3"
+    },
+    {
+     "url": "https://dcs.adobedc.net/collection/e891d3631145f2a3263cc9791b49ce1aa98295228a85170b4d9a0e9b7ac07d25",
+     "body": "{\"header\":{\"schemaRef\":{\"id\":\"https://ns.adobe.com/adobe_corpnew/schemas/677fbfda18384db0633d015f2760f5717899103119feae9d\",\"contentType\":\"application/vnd.adobe.xed-full+json;version=1.0\"},\"imsOrgId\":\"9E1005A551ED61CA0A490D45@AdobeOrg\",\"datasetId\":\"689d24aea30f692b9395a0c4\",\"msgType\":\"xdmEntityUpdate\",\"msgVersion\":\"1.0\",\"msgId\":\"d15c0f3a-a239-4c31-8cc7-68968de7c0a7\",\"source\":{\"name\":\"Adobe Tags - E"
+    },
+    {
+     "url": "https://api2.branch.io/v1/open",
+     "body": "browser_fingerprint_id=1635981939657095947&sdk=web2.75.0&options=%7B%22timeout%22%3A10000%2C%22no_journeys%22%3Atrue%2C%22disable_entry_animation%22%3Atrue%2C%22disable_exit_animation%22%3Atrue%7D&current_url=https%3A%2F%2Fnew.express.adobe.com%2Fwebpage%2FDYft29Wzo0QLK&screen_height=900&screen_width=1440&branch_key=key_live_ikqc03rxCzFIX8gq8i2nBddbquai90pm"
+    },
+    {
+     "url": "https://api2.branch.io/v1/pageview",
+     "body": "event=pageview&metadata=%7B%22url%22%3A%22https%3A%2F%2Fnew.express.adobe.com%2Fwebpage%2FDYft29Wzo0QLK%22%2C%22user_agent%22%3A%22Mozilla%2F5.0%20(X11%3B%20Linux%20x86_64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20HeadlessChrome%2F153.0.8010.12%20Safari%2F537.36%22%2C%22language%22%3A%22en-US%22%2C%22screen_width%22%3A1440%2C%22screen_height%22%3A900%2C%22window_device_pixel_ratio%22%3"
+    },
+    {
+     "url": "https://bam.nr-data.net/1/476fdc8ce5?a=1834954870&sa=1&v=1.317.0&t=Unnamed%20Transaction&rst=2325&ck=0&s=34efd62a5580734c&ref=https://new.express.adobe.com/webpage/DYft29Wzo0QLK/analytics&ptid=6977848",
+     "body": "{\"ja\":{\"isMobileWebView\":\"false\",\"webSessionGuid\":\"0861d0d5-59b7-4ec3-8951-772b538659ff\",\"userId\":\"1ca5ff6d-ce81-496b-827c-b342f5118c31@anonymous\",\"webdriverDetected\":false}}"
+    },
+    {
+     "url": "https://www.adobe.com/experienceedge/v2/collect?datastreamId=c2ddbb32-4279-46db-8240-390fba13feeb&requestId=562b74fd-9798-473a-a400-d2a548565012",
+     "body": "{\"events\":[{\"xdm\":{\"implementationDetails\":{\"environment\":\"browser\",\"name\":\"https://ns.adobe.com/gsdk/browser\",\"version\":\"1.5.2.1092\"},\"environment\":{\"browserDetails\":{\"userAgent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36\",\"cookiesEnabled\":true,\"userAgentClientHints\":{},\"operatingSystem\":\"Linux\",\"operatingSystemVendor\":\"Linux"
+    },
+    {
+     "url": "https://www.adobe.com/experienceedge/v2/interact?datastreamId=c2ddbb32-4279-46db-8240-390fba13feeb&requestId=562b74fd-9798-473a-a400-d2a548565012",
+     "body": "{\"event\":{\"xdm\":{\"implementationDetails\":{\"environment\":\"browser\",\"name\":\"https://ns.adobe.com/gsdk/browser\",\"version\":\"1.5.2.1092\"},\"environment\":{\"browserDetails\":{\"userAgent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36\",\"cookiesEnabled\":true,\"thirdPartyCookiesEnabled\":true,\"userAgentClientHints\":{\"platform\":\"Linux\",\"mobile\":"
+    },
+    {
+     "url": "https://sstats.adobe.com/ee/v2/interact?datastreamId=c2ddbb32-4279-46db-8240-390fba13feeb&requestId=562b74fd-9798-473a-a400-d2a548565012",
+     "body": "{\"event\":{\"xdm\":{\"implementationDetails\":{\"environment\":\"browser\",\"name\":\"https://ns.adobe.com/gsdk/browser\",\"version\":\"1.5.2.1092\"},\"environment\":{\"browserDetails\":{\"userAgent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36\",\"cookiesEnabled\":true,\"thirdPartyCookiesEnabled\":true,\"userAgentClientHints\":{\"platform\":\"Linux\",\"mobile\":"
+    },
+    {
+     "url": "https://auth.services.adobe.com/signin/v1/audit",
+     "body": "{\"name\":\"app-info\",\"message\":{\"event\":\"render app\",\"url\":\"new.express.adobe.com/webpage/DYft29Wzo0QLK/analytics\",\"appState\":{\"queryState\":{\"client_id\":\"projectx_webapp\",\"locale\":\"en_US\",\"scope\":\"ab.manage,AdobeID,openid,read_organizations,creative_cloud,creative_sdk,tk_platform,tk_platform_sync,af_byof,stk.a.license_skip.r,stk.a.limited_license.cru,additional_info.optionalAgreements,uds_read,uds_w"
+    },
+    {
+     "url": "https://auth.services.adobe.com/signin/v1/audit",
+     "body": "{\"name\":\"app-info\",\"message\":{\"event\":\"render-timing\",\"variant\":\"react\",\"phase\":\"initialized\",\"durationMs\":203},\"variant\":\"standard\",\"renderer\":\"react\",\"envName\":\"susi-light-prod\",\"clientId\":\"projectx_webapp\",\"userAgent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36\"}"
+    }
+   ],
+   "textAtLoad": 57,
+   "mainEmptyAtLoad": true
+  }
+ },
+ "findings": [
+  {
+   "id": "a-unknown-third-party-host-hz-gneiss-adobe-io",
+   "class": "A",
+   "feature": "unknown third-party host hz-gneiss.adobe.io",
+   "hint": "inspect",
+   "evidence": [
+    "hz-gneiss.adobe.io"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-api2-branch-io",
+   "class": "A",
+   "feature": "unknown third-party host api2.branch.io",
+   "hint": "inspect",
+   "evidence": [
+    "api2.branch.io"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-platform-cs-adobe-io",
+   "class": "A",
+   "feature": "unknown third-party host platform-cs.adobe.io",
+   "hint": "inspect",
+   "evidence": [
+    "platform-cs.adobe.io"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-bps-il-adobe-io",
+   "class": "A",
+   "feature": "unknown third-party host bps-il.adobe.io",
+   "hint": "inspect",
+   "evidence": [
+    "bps-il.adobe.io"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-json",
+   "class": "A",
+   "feature": "first-party API GET /json/",
+   "api": {
+    "method": "GET",
+    "path": "/json/"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /json/ → 200"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ],
+   "reach": {
+    "pages": 2,
+    "of": 2
+   }
+  },
+  {
+   "id": "a-first-party-api-get-webpage-dyft29wzo0qlk-branding",
+   "class": "A",
+   "feature": "first-party API GET /webpage/DYft29Wzo0QLK/branding",
+   "api": {
+    "method": "GET",
+    "path": "/webpage/DYft29Wzo0QLK/branding"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /webpage/DYft29Wzo0QLK/branding?api_key → 200"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 2
+   }
+  },
+  {
+   "id": "a-first-party-api-post-ims-check-v6-token",
+   "class": "A",
+   "feature": "first-party API POST /ims/check/v6/token",
+   "api": {
+    "method": "POST",
+    "path": "/ims/check/v6/token"
+   },
+   "hint": "api",
+   "evidence": [
+    "POST /ims/check/v6/token?jslVersion → 200"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ],
+   "reach": {
+    "pages": 2,
+    "of": 2
+   }
+  },
+  {
+   "id": "a-first-party-api-get-service-floodgate-fg-api-v3-feature",
+   "class": "A",
+   "feature": "first-party API GET /service/floodgate/fg/api/v3/feature",
+   "api": {
+    "method": "GET",
+    "path": "/service/floodgate/fg/api/v3/feature"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /service/floodgate/fg/api/v3/feature?clientId → 200"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ],
+   "reach": {
+    "pages": 2,
+    "of": 2
+   }
+  },
+  {
+   "id": "a-first-party-api-post-ee-v1-interact",
+   "class": "A",
+   "feature": "first-party API POST /ee/v1/interact",
+   "api": {
+    "method": "POST",
+    "path": "/ee/v1/interact"
+   },
+   "hint": "api",
+   "evidence": [
+    "POST /ee/v1/interact?configId,requestId → 200"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ],
+   "reach": {
+    "pages": 2,
+    "of": 2
+   }
+  },
+  {
+   "id": "a-first-party-api-get-ims-country-code-v1",
+   "class": "A",
+   "feature": "first-party API GET /ims/country_code/v1",
+   "api": {
+    "method": "GET",
+    "path": "/ims/country_code/v1"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /ims/country_code/v1?client_id → 200"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ],
+   "reach": {
+    "pages": 2,
+    "of": 2
+   }
+  },
+  {
+   "id": "a-first-party-api-get-service-xcs-assets-cdn-unified",
+   "class": "A",
+   "feature": "first-party API GET /service/xcs-assets-cdn/unified",
+   "api": {
+    "method": "GET",
+    "path": "/service/xcs-assets-cdn/unified"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /service/xcs-assets-cdn/unified?locale → 200"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ],
+   "reach": {
+    "pages": 2,
+    "of": 2
+   }
+  },
+  {
+   "id": "a-first-party-api-get-webpage-api-metadata-dyft29wzo0qlk",
+   "class": "A",
+   "feature": "first-party API GET /webpage/api/metadata/DYft29Wzo0QLK",
+   "api": {
+    "method": "GET",
+    "path": "/webpage/api/metadata/DYft29Wzo0QLK"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /webpage/api/metadata/DYft29Wzo0QLK → 200"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ],
+   "reach": {
+    "pages": 2,
+    "of": 2
+   }
+  },
+  {
+   "id": "a-first-party-api-post-ee-v2-interact",
+   "class": "A",
+   "feature": "first-party API POST /ee/v2/interact",
+   "api": {
+    "method": "POST",
+    "path": "/ee/v2/interact"
+   },
+   "hint": "api",
+   "evidence": [
+    "POST /ee/v2/interact?datastreamId,requestId → 200"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ],
+   "reach": {
+    "pages": 2,
+    "of": 2
+   }
+  },
+  {
+   "id": "cr-client-rendered-slot-banner-success-js-report-success",
+   "class": "CR",
+   "feature": "client-rendered slot banner success js-report-success",
+   "hint": "client-rendered",
+   "evidence": [
+    "Your report has been submitted."
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-banner-error-js-report-error",
+   "class": "CR",
+   "feature": "client-rendered slot banner error js-report-error",
+   "hint": "client-rendered",
+   "evidence": [
+    "There was a problem submitting your report. Please contact A"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-report-abuse-dialog-js-report-abuse-",
+   "class": "CR",
+   "feature": "client-rendered slot report-abuse-dialog js-report-abuse-dialog",
+   "hint": "client-rendered",
+   "evidence": [
+    "Report AbuseCloseIf you feel that the content of this page v"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-report-abuse-form-js-report-abuse-fo",
+   "class": "CR",
+   "feature": "client-rendered slot report-abuse-form js-report-abuse-form",
+   "hint": "client-rendered",
+   "evidence": [
+    "If you feel that the content of this page violates the Adobe"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "cr-main-empty-at-load-filled-after-client-rendered-page",
+   "class": "CR",
+   "feature": "main empty at load, filled after (client-rendered page)",
+   "hint": "client-rendered-page",
+   "evidence": [
+    "text at load 57 → settled 2209"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "d-first-party-data-file-get-static-en-us-6335cc348a9f4adc-js",
+   "class": "D",
+   "feature": "first-party data file GET /static/en-US.6335cc348a9f4adc.json",
+   "api": {
+    "method": "GET",
+    "path": "/static/en-US.6335cc348a9f4adc.json"
+   },
+   "hint": "data",
+   "evidence": [
+    "GET /static/en-US.6335cc348a9f4adc.json → 200"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ],
+   "reach": {
+    "pages": 2,
+    "of": 2
+   }
+  },
+  {
+   "id": "d-first-party-data-file-get-content-dam-pandora-react-mini-a",
+   "class": "D",
+   "feature": "first-party data file GET /content/dam/pandora/react-mini-app-susi-light-login/v1/en-us/main/index.cfm.gql.json",
+   "api": {
+    "method": "GET",
+    "path": "/content/dam/pandora/react-mini-app-susi-light-login/v1/en-us/main/index.cfm.gql.json"
+   },
+   "hint": "data",
+   "evidence": [
+    "GET /content/dam/pandora/react-mini-app-susi-light-login/v1/en-us/main/index.cfm.gql.json → 200"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ],
+   "reach": {
+    "pages": 2,
+    "of": 2
+   }
+  },
+  {
+   "id": "f-form-report-abuse-form-no-action-js-wired-9-fields",
+   "class": "F",
+   "feature": "form \"report-abuse-form\" → no action (JS-wired) (9 fields)",
+   "signature": [
+    "email:email",
+    "text:name",
+    "radio:type",
+    "radio:type",
+    "radio:type",
+    "radio:type",
+    "radio:type",
+    "radio:type",
+    "textarea:description"
+   ],
+   "hint": "client-compute?",
+   "evidence": [
+    "email:email,text:name,radio:type,radio:type,radio:type,radio:type,radio:type,radio:type,textarea:description"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "i18n-locale-variants-go-go-go",
+   "class": "I18N",
+   "feature": "locale variants go,go,go",
+   "hint": "locale",
+   "evidence": [
+    "http://www.adobe.com/go/privacy",
+    "http://www.adobe.com/go/tou"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "t-tag-manager-adobe-launch",
+   "class": "T",
+   "feature": "tag manager: Adobe Launch",
+   "role": "tag manager: Adobe Launch",
+   "hint": "tags",
+   "evidence": [
+    "assets.adobedtm.com"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-app-link",
+   "class": "T",
+   "feature": "unknown third-party host app.link",
+   "hint": "inspect",
+   "evidence": [
+    "app.link"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "t-analytics-adobe-analytics-experience-cloud-id",
+   "class": "T",
+   "feature": "analytics: Adobe Analytics / Experience Cloud ID",
+   "role": "analytics: Adobe Analytics / Experience Cloud ID",
+   "hint": "tags",
+   "evidence": [
+    "dcs.adobedc.net"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "t-rum-new-relic",
+   "class": "T",
+   "feature": "RUM: New Relic",
+   "role": "RUM: New Relic",
+   "hint": "tags",
+   "evidence": [
+    "bam.nr-data.net"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "t-rum-error-monitoring",
+   "class": "T",
+   "feature": "RUM: error monitoring",
+   "role": "RUM: error monitoring",
+   "hint": "tags",
+   "evidence": [
+    "o1383653.ingest.us.sentry.io"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  },
+  {
+   "id": "x-auth-identity-provider",
+   "class": "X",
+   "feature": "auth: identity provider",
+   "role": "auth: identity provider",
+   "hint": "decided-out",
+   "evidence": [
+    "ims-na1.adobelogin.com"
+   ],
+   "pages": [
+    "/webpage/DYft29Wzo0QLK"
+   ]
+  }
+ ],
+ "reach": {
+  "pagesWithEvidence": 2,
+  "of": 2,
+  "endpoints": {
+   "GET new.express.adobe.com/webpage/static/experiments/chrome/chrome.js": 1,
+   "GET geo2.adobe.com/json/": 2,
+   "GET new.express.adobe.com/webpage/DYft29Wzo0QLK/branding": 1,
+   "POST adobeid-na1.services.adobe.com/ims/check/v6/token": 2,
+   "PUT hz-gneiss.adobe.io/alias/DYft29Wzo0QLK/count": 1,
+   "GET new.express.adobe.com/service/floodgate/fg/api/v3/feature": 2,
+   "GET new.express.adobe.com/static/en-US.6335cc348a9f4adc.json": 2,
+   "POST sstats.adobe.com/ee/v1/interact": 2,
+   "POST dcs.adobedc.net/collection/{hash}": 2,
+   "GET adobeid-na1.services.adobe.com/ims/country_code/v1": 2,
+   "GET new.express.adobe.com/service/xcs-assets-cdn/unified": 2,
+   "POST api2.branch.io/v1/pageview": 2,
+   "POST api2.branch.io/v1/open": 2,
+   "GET platform-cs.adobe.io/index": 2,
+   "POST www.adobe.com/experienceedge/v2/collect": 2,
+   "POST www.adobe.com/experienceedge/v2/interact": 2,
+   "GET bps-il.adobe.io/users/{uuid}@anonymous/subscriptions": 2,
+   "GET jil.adobe.com/users/{uuid}@anonymous/": 2,
+   "POST sstats.adobe.com/ee/v2/interact": 2,
+   "GET new.express.adobe.com/webpage/api/metadata/DYft29Wzo0QLK": 2,
+   "POST bam.nr-data.net/{n}/476fdc8ce5": 2,
+   "POST auth.services.adobe.com/signin/v1/audit": 2,
+   "GET odin.adobe.com/content/dam/pandora/react-mini-app-susi-light-login/v1/en-us/main/index.cfm.gql.json": 2,
+   "POST o1383653.ingest.us.sentry.io/api/{hash}/envelope/": 2,
+   "GET ims-na1.adobelogin.com/ims/social/v2/providers": 2
+  },
+  "searchFormPages": 0,
+  "formPages": 0,
+  "triggerPages": {}
+ }
+}

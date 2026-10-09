@@ -1,0 +1,108 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:replica/handoff",
+    "writtenAt": "2026-10-06T12:58:01.623Z",
+    "phase": "C-deliver"
+  },
+  "units": {
+    "foundation": {
+      "status": "done",
+      "kind": "foundation",
+      "templates": [
+        "webpage-dyft29wzo0qlk"
+      ],
+      "pages": 2,
+      "blocks": 2,
+      "gates": {
+        "shell": "no page deployed yet — the shell gate (pixel both widths, crop-compare footer band, chrome parity) runs inside the archetype unit against the preview URL; source page has no header, footer is the fixed badge (R-03)",
+        "nav": "/nav.plain.html 200 on aem.page + aem.live",
+        "footer": "/footer.plain.html 200 on aem.page + aem.live, badge text present, 0 about:error"
+      },
+      "startedAt": "2026-10-06T11:40:15.653Z",
+      "endedAt": "2026-10-06T12:03:23.468Z",
+      "verdict": "foundation: nav+footer live yes, styles+fonts pushed 84cf1b4 (final 43971e5), lint clean, token halt none"
+    },
+    "archetype:webpage-dyft29wzo0qlk": {
+      "status": "done",
+      "kind": "archetype",
+      "templates": [
+        "webpage-dyft29wzo0qlk"
+      ],
+      "pages": 1,
+      "blocks": 6,
+      "gates": {
+        "360": {
+          "archetype": 5.21,
+          "heightDelta": 8,
+          "clipped": 0,
+          "content": 0,
+          "verdict": "PASS",
+          "run": "stardust/replica/gates/all-360/runs/2026-10-06T12-31-17-549Z-webpage-dyft29wzo0qlk.json"
+        },
+        "1440": {
+          "archetype": 2.34,
+          "heightDelta": 0,
+          "clipped": 0,
+          "content": 0,
+          "verdict": "PASS",
+          "run": "stardust/replica/gates/all-1440/runs/2026-10-06T12-30-02-247Z-webpage-dyft29wzo0qlk.json"
+        },
+        "crop": "footer band 98.43% (PASS ≥ 98); header n/a (source has none)",
+        "chrome": "footer: 2 PAIR Δx +135px + 1 MISSING Report Abuse — register R-01; UA serif name delta only",
+        "aiReadability": 100,
+        "rounds": {
+          "360": 0,
+          "1440": 1
+        },
+        "originPolicy": "origin.png seeded from the recreate round static-mode live.png (app-mode URL is a virtual scroller); roster stardust/rollout/gate-state.json"
+      },
+      "startedAt": "2026-10-06T12:06:48.877Z",
+      "endedAt": "2026-10-06T12:35:06.581Z",
+      "verdict": "archetype webpage-dyft29wzo0qlk: pages 1/1 live, blocks 5, gate 1440 2.34% Δh0 clip0 content0 / 360 5.21% Δh8 clip0 content0, ai-readability 100, rounds 1/0, requests 2"
+    },
+    "gate-all": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "webpage-dyft29wzo0qlk"
+      ],
+      "pages": 1,
+      "blocks": 6,
+      "gates": {
+        "360": {
+          "pct": 5.23,
+          "heightDelta": 7,
+          "clipped": 0,
+          "content": 0,
+          "verdict": "PASS",
+          "summary": "stardust/replica/gates/all-360/summary.json"
+        },
+        "1440": {
+          "pct": 2.39,
+          "heightDelta": -8,
+          "clipped": 0,
+          "content": 0,
+          "verdict": "PASS",
+          "summary": "stardust/replica/gates/all-1440/summary.json"
+        },
+        "foundationRequests": "2 applied at C-final: blockquote p inherit (measure.mjs blockquote h 81 = live 81, props equal); heading copy-link anchors + toast (motion-observe eds: toast-message-fade-in fired, .toast-container.show)"
+      },
+      "startedAt": "2026-10-06T12:55:06.786Z",
+      "endedAt": "2026-10-06T12:57:19.399Z",
+      "verdict": "gate-all: pages 1/1 PASS, gate 1440 2.39% Δh-8 clip0 content0 / 360 5.23% Δh+7 clip0 content0; coverage gate rows written; foundation requests 2/2 applied"
+    },
+    "final": {
+      "status": "done",
+      "kind": "final",
+      "templates": [
+        "webpage-dyft29wzo0qlk"
+      ],
+      "pages": 1,
+      "blocks": 6,
+      "gates": {},
+      "startedAt": "2026-10-06T12:41:47.851Z",
+      "endedAt": "2026-10-06T12:58:01.623Z",
+      "verdict": "final: freeze check clean, 2/2 foundation requests applied, archetype re-gated 1440 2.39% / 360 5.23% PASS, gate-all 1/1 PASS, coverage gate rows written, C-deliver ended"
+    }
+  }
+}

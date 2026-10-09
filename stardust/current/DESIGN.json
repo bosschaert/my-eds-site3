@@ -1,0 +1,70 @@
+{
+  "extensions": {
+    "breakpoints": {
+      "containerMaxWidth": "395px",
+      "probeWidth": 2560,
+      "shellMaxWidth": null,
+      "caps": [
+        {
+          "kind": "module",
+          "px": 395,
+          "via": "fixed",
+          "selector": "#my-personal-faves-heading-text > span",
+          "pages": [
+            "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 374,
+          "via": "fixed",
+          "selector": "#montego-bay-fishing-boats-heading-text > span",
+          "pages": [
+            "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 325,
+          "via": "fixed",
+          "selector": "#tips-and-tricks-heading-text > span",
+          "pages": [
+            "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 276,
+          "via": "fixed",
+          "selector": "#the-blue-mountains-heading-text > span",
+          "pages": [
+            "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static"
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "url": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static",
+          "section": 0,
+          "selector": "#app",
+          "px": 395
+        },
+        {
+          "url": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static",
+          "section": 1,
+          "selector": "#analytics-iframe",
+          "px": null
+        }
+      ],
+      "capRegister": [],
+      "capProvenance": {
+        "writtenBy": "skills/replica/scripts/cap-probe.mjs",
+        "writtenAt": "2026-10-06T10:41:46.563Z",
+        "baseWidth": 1440,
+        "urls": [
+          "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static"
+        ]
+      }
+    }
+  }
+}

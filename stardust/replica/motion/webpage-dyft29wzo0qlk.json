@@ -1,0 +1,276 @@
+{
+  "url": "https://new.express.adobe.com/webpage/DYft29Wzo0QLK?page-mode=static",
+  "width": 1440,
+  "headerTimeline": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".content-container button.page-heading-anchor",
+      "frames": [
+        {
+          "t": 17616.900000002235,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 17819.800000000745,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 18023.10000000149,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 18226.300000000745,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".content-container h2",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 110, 4)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 110, 4)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".content-container h3",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".photo-image",
+      "changed": [
+        "self.color"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 110, 4)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "color 0.15s linear"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(1, 38, 2)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "color 0.15s linear"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".brand-btn",
+      "changed": [],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "all"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".image-viewer-link",
+      "changed": [
+        "self.color",
+        "img..color"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(0, 110, 4)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "color 0.15s linear"
+        },
+        "subs": [
+          {
+            "el": "img.",
+            "transform": "none",
+            "color": "rgb(0, 110, 4)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(1, 38, 2)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "color 0.15s linear"
+        },
+        "subs": [
+          {
+            "el": "img.",
+            "transform": "none",
+            "color": "rgb(1, 38, 2)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
+      }
+    }
+  ],
+  "events": {
+    "animations": [
+      {
+        "name": "toast-message-fade-in",
+        "el": "html.wf-adobeclean-n4-active.wf-proximanova-n7-active.wf-adobeclean-n7-active > body.static-mode.static-mode-ready > div > div.publication-viewer > div.toast-container.show",
+        "txt": "Link copied to clipboard.",
+        "y": 813
+      }
+    ],
+    "transitions": [
+      {
+        "prop": "opacity",
+        "el": "div.section-content > div.section-content-view > div.content-container > button.page-heading-anchor > span.anchor-tooltip",
+        "y": 813,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "opacity",
+        "el": "div.section-view > div.section-content > div.section-content-view > div.content-container > button.page-heading-anchor",
+        "y": 813,
+        "dur": "0s"
+      },
+      {
+        "prop": "color",
+        "el": "div.photo-grid > div.photo-group-container > div.photo-group.t3-layout-lpp-1 > div.photo-container.tile > a.photo-image",
+        "y": 7898,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "div.photo-grid > div.photo-group-container > div.photo-group.t3-layout-lpp-1 > div.photo-container.tile > a.photo-image",
+        "y": 7898,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "color",
+        "el": "div.section-content-view > div.content-container > div.image > div.image-wrapper > a.image-viewer-link",
+        "y": 7308,
+        "dur": "0.15s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "show"
+        ],
+        "el": "html.wf-adobeclean-n4-active.wf-proximanova-n7-active.wf-adobeclean-n7-active > body.static-mode.static-mode-ready > div > div.publication-viewer > div.toast-container.show",
+        "y": 813
+      }
+    ]
+  }
+}

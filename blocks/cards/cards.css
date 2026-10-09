@@ -1,0 +1,76 @@
+/* cards — values lifted from stardust/prototypes/css/landing.css (.card-flipbook-section:
+   background strip 2rem, .content-container margin 32px / padding 56px 32px, card ground,
+   card shadow, title card flush left/right, h2 margin-top 2.5rem; mobile 18px 14px /
+   31px 13px / 1.25rem) and replica-canon.css (block rhythm, .text-center, inline img). */
+.cards {
+  overflow: hidden;
+  height: auto;
+}
+
+.cards .cards-lead {
+  position: relative;
+  height: 2rem;
+}
+
+.cards .cards-list {
+  position: relative;
+  display: block;
+}
+
+.cards .cards-card {
+  position: relative;
+  margin: 32px;
+  padding: 56px 32px;
+  width: auto;
+  max-width: none;
+  background-color: var(--card-ground);
+  box-shadow: var(--shadow-card);
+}
+
+.cards .cards-card.center {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.cards .cards-card-image {
+  text-align: center;
+}
+
+.cards .cards-card-image :is(p, picture) {
+  display: block;
+  margin: 0;
+  font-size: 16px;
+  line-height: normal;
+}
+
+/* the source photo is an inline <img> in a 16px/normal block (measured): keep its line box */
+.cards .cards-card-image img {
+  display: inline;
+  vertical-align: baseline;
+  max-width: 100%;
+  height: auto;
+}
+
+.cards .cards-card-image + .cards-card-body {
+  margin-top: var(--block-gap);
+}
+
+.cards .cards-card-body > * + * {
+  margin-top: var(--block-gap);
+}
+
+.cards .cards-card.center :is(h1, h2, h3) {
+  text-align: center;
+}
+
+@media (width <= 767px) {
+  .cards .cards-card {
+    margin: 18px 14px;
+    padding: 31px 13px;
+  }
+
+  .cards .cards-card.center {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

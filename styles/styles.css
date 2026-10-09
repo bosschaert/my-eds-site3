@@ -1,0 +1,623 @@
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either implied or expressed. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+
+/*
+ * Replica foundation — Jamaica travel guide (Adobe Express webpage DYft29Wzo0QLK).
+ * Every token is lifted from stardust/prototypes/css/replica-canon.css + landing.css
+ * (themselves lifted from the source theme); nothing is invented.
+ * Register R-02: poplar-std is a licensed Adobe Fonts face and is NOT rehosted. It stays
+ * FIRST in the display stack so a licensed drop-in wins later; Anton (OFL, self-hosted in
+ * styles/fonts.css) ships after it. Body face: PT Sans (OFL, self-hosted).
+ */
+
+:root {
+  /* colors (canon :root / theme) */
+  --canvas: rgb(255 239 54);
+  --display: rgb(0 110 4);
+  --text: rgb(17 26 11);
+  --heading-3: rgb(0 0 0);
+  --title-on-photo: rgb(255 238 53);
+  --photo-fallback: #484848;
+  --link-hover: rgb(1 38 2);
+  --button-hover-border: rgb(0 187 7);
+  --button-hover-text: rgb(38 38 38);
+  --overlay: rgb(0 0 0 / 25%);
+  --card-ground: rgb(255 239 54 / 90%);
+  --shadow-band: 0 0.375rem 0.375rem rgb(0 0 0 / 20%);
+  --shadow-band-up: 0 -0.375rem 0.375rem rgb(0 0 0 / 20%);
+  --shadow-card: 0 0 4px rgb(0 0 0 / 25%);
+  --shadow-title: 0 2px 2px rgb(0 0 0 / 25%);
+
+  /* boilerplate structural aliases (stock blocks reference these names) */
+  --background-color: var(--canvas);
+  --light-color: var(--canvas);
+  --dark-color: var(--display);
+  --text-color: var(--text);
+  --link-color: var(--display);
+  --link-hover-color: var(--link-hover);
+
+  /* fonts (canon --display-family / --text-family + metric-matched fallbacks) */
+  --display-font-family: poplar-std, anton, anton-fallback, impact, sans-serif;
+  --text-font-family: pt-sans, "PT Sans", pt-sans-fallback, arial, sans-serif;
+  --body-font-family: var(--text-font-family);
+  --heading-font-family: var(--display-font-family);
+
+  /* type ramp (theme L293–L471, landing title/subtitle; mobile values at <= 767px) */
+  --body-font-size: 19px;
+  --caption-font-size: 15px;
+  --h1-font-size: 86px;
+  --subtitle-font-size: 24px;
+  --h2-font-size: 55px;
+  --h3-font-size: 28px;
+  --blockquote-font-size: 29px;
+  --button-font-size: 20px;
+  --weight-display: 100;
+  --weight-title: 400;
+  --weight-subtitle: 300;
+  --weight-bold: 700;
+  --lh-title: 1.2;
+  --lh-subtitle: 1.3;
+  --lh-h3: 1.5;
+  --lh-body: 1.6;
+  --lh-quote: 1.3;
+  --lh-button: 1.4;
+  --tracking: normal;
+
+  /* layout (canon .content-container + DESIGN.json spacing) */
+  --content-gutter: 20%;
+  --section-pad: 2.5rem;
+  --section-pad-large: 5rem;
+  --block-gap: 2.5rem;
+  --spacer-height: 2px;
+  --content-max-width: none;
+  --module-cap: 395px;
+
+  /* motion (theme link/button transitions) */
+  --transition-link: color 0.15s;
+  --transition-button: color 0.15s linear, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+
+  /* nav height: the source page has no header (nothing is reserved) */
+  --nav-height: 0;
+}
+
+/* fallback fonts — local faces re-declared with the brand fonts' metrics (first paint) */
+@font-face {
+  font-family: pt-sans-fallback;
+  src: local("Arial");
+  size-adjust: 97.63%;
+  ascent-override: 104.27%;
+  descent-override: 28.27%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: anton-fallback;
+  src: local("Arial");
+  size-adjust: 69.31%;
+  ascent-override: 169.71%;
+  descent-override: 47.48%;
+  line-gap-override: 0%;
+}
+
+@media (width >= 1300px) {
+  :root {
+    --content-gutter: 25%;
+  }
+}
+
+@media (width >= 1800px) {
+  :root {
+    --content-gutter: 30%;
+  }
+}
+
+@media (width >= 2300px) {
+  :root {
+    --content-gutter: 33%;
+  }
+}
+
+@media (width <= 768px) {
+  :root {
+    --content-gutter: 12.5%;
+  }
+}
+
+@media (width <= 767px) {
+  :root {
+    --body-font-size: 17px;
+    --h1-font-size: 46px;
+    --subtitle-font-size: 20px;
+    --h2-font-size: 33px;
+    --h3-font-size: 21px;
+    --blockquote-font-size: 21px;
+    --button-font-size: 19px;
+    --section-pad: 1.25rem;
+    --section-pad-large: 2.5rem;
+    --block-gap: 1.25rem;
+  }
+}
+
+@media (width <= 480px) {
+  :root {
+    --content-gutter: 7%;
+  }
+}
+
+/* document reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  display: none;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  line-height: var(--lh-body);
+}
+
+body.appear {
+  display: block;
+}
+
+/* header reservation: scoped to the chrome host so block-internal <header> elements stay free */
+body > header {
+  height: var(--nav-height);
+}
+
+header .header,
+footer .footer {
+  visibility: hidden;
+}
+
+header .header[data-block-status="loaded"],
+footer .footer[data-block-status="loaded"] {
+  visibility: visible;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  letter-spacing: var(--tracking);
+  text-transform: uppercase;
+  text-align: left;
+  scroll-margin: 40px;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--weight-title);
+  line-height: var(--lh-title);
+}
+
+h2 {
+  color: var(--display);
+  font-size: var(--h2-font-size);
+  font-weight: var(--weight-display);
+  line-height: var(--lh-title);
+}
+
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-3);
+  font-family: var(--body-font-family);
+  font-size: var(--h3-font-size);
+  font-weight: var(--weight-bold);
+  line-height: var(--lh-h3);
+}
+
+p,
+dl,
+ol,
+ul,
+pre,
+blockquote {
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  font-size: var(--body-font-size);
+  font-weight: 400;
+  line-height: var(--lh-body);
+  letter-spacing: var(--tracking);
+}
+
+blockquote {
+  position: relative;
+  padding: 0.75em 0;
+  color: var(--display);
+  font-family: var(--heading-font-family);
+  font-size: var(--blockquote-font-size);
+  font-weight: var(--weight-display);
+  line-height: var(--lh-quote);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* the pipeline wraps the quote in <p>; keep the blockquote ramp (foundation request, C-final) */
+blockquote p {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+code,
+pre {
+  font-size: var(--caption-font-size);
+}
+
+pre {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--card-ground);
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* prose rhythm (theme L750–L938: every block after another block gets one gap) */
+main .default-content-wrapper > * + * {
+  margin-top: var(--block-gap);
+}
+
+/* caption utility — wrapper variant at equal specificity for edit mode (EW10 c) */
+.caption,
+.caption-wrap :where(p) {
+  margin: 0.5em 0;
+  color: var(--text);
+  font-family: var(--text-font-family);
+  font-size: var(--caption-font-size);
+  line-height: var(--lh-body);
+  text-align: center;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+/* images (EDS emits width/height attributes: height auto keeps the ratio) */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* links (theme: content links paint display green, underlined; hover L540) */
+a:any-link {
+  color: var(--link-color);
+  text-decoration: underline;
+  overflow-wrap: break-word;
+  transition: var(--transition-link);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* buttons — the source has ONE button treatment (theme a.link-button, L478–L524):
+   primary, secondary and accent all paint this outline */
+p.button-wrapper {
+  margin: 0;
+}
+
+a.button:any-link,
+button.button {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  border: 1px solid var(--display);
+  border-radius: 0;
+  padding: 8px 17px 6px;
+  background-color: transparent;
+  color: var(--display);
+  font-family: var(--heading-font-family);
+  font-size: var(--button-font-size);
+  font-weight: var(--weight-display);
+  line-height: var(--lh-button);
+  letter-spacing: var(--tracking);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: var(--transition-button);
+}
+
+a.button:hover,
+a.button:focus-visible,
+button.button:hover,
+button.button:focus-visible {
+  border-color: var(--button-hover-border);
+  color: var(--button-hover-text);
+  text-decoration: none;
+}
+
+a.button[aria-disabled="true"],
+button.button:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+a.button.primary,
+a.button.secondary,
+a.button.accent,
+button.button.primary,
+button.button.secondary,
+button.button.accent {
+  border-color: var(--display);
+  background-color: transparent;
+  color: var(--display);
+}
+
+a.button.primary:hover,
+a.button.secondary:hover,
+a.button.accent:hover,
+a.button.primary:focus-visible,
+a.button.secondary:focus-visible,
+a.button.accent:focus-visible,
+button.button.primary:hover,
+button.button.secondary:hover,
+button.button.accent:hover {
+  border-color: var(--button-hover-border);
+  background-color: transparent;
+  color: var(--button-hover-text);
+}
+
+@media (width <= 767px) {
+  a.button:any-link,
+  button.button {
+    padding: 6px 17px 4px;
+  }
+}
+
+.icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+/* sections — the source lays sections flush (no inter-section margin); the content column
+   (canon .content-container) is the DEFAULT-CONTENT wrapper; every block wrapper is
+   full-bleed by construction (the block owns its own gutters) */
+main {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+main > .section {
+  position: relative;
+  margin: 0;
+  background-color: var(--canvas);
+}
+
+main > .section > div {
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+main > .section > .default-content-wrapper {
+  padding: var(--section-pad) var(--content-gutter);
+}
+
+main > .section:first-of-type {
+  margin-top: 0;
+}
+
+/* the metadata block leaves an empty first section */
+main .section:empty {
+  display: none;
+}
+
+/* section styles (closed set, lifted from the prototype's section classes) */
+main .section.large-spacing > .default-content-wrapper {
+  padding-top: var(--section-pad-large);
+  padding-bottom: var(--section-pad-large);
+}
+
+main .section.large-spacing-top > .default-content-wrapper,
+main .section.large-spacing-top-shadow > .default-content-wrapper {
+  padding-top: var(--section-pad-large);
+}
+
+main .section.large-spacing-bottom > .default-content-wrapper {
+  padding-bottom: var(--section-pad-large);
+}
+
+main .section.top-shadow,
+main .section.large-spacing-top-shadow {
+  box-shadow: var(--shadow-band-up);
+}
+
+main .section.bottom-shadow,
+main .section.spacer-bottom-shadow {
+  box-shadow: var(--shadow-band);
+}
+
+/* 2px spacer sections (runtime @19084): empty by design, so defeat :empty only once loaded */
+main .section.spacer[data-section-status="loaded"],
+main .section.spacer-bottom-shadow[data-section-status="loaded"] {
+  display: block !important;
+  height: var(--spacer-height);
+}
+
+/* Experience Workspace edit mode: a CTA moved into a card link reads like the card text (EW6) */
+a .prosemirror-editor a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Experience Workspace edit mode: repaint CTAs from their authored marks (EW3) */
+.prosemirror-editor p > :is(strong, em) > a:any-link,
+.prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
+  display: inline-block;
+  border: 1px solid var(--display);
+  padding: 8px 17px 6px;
+  background-color: transparent;
+  color: var(--display);
+  font-family: var(--heading-font-family);
+  font-size: var(--button-font-size);
+  font-weight: var(--weight-display);
+  line-height: var(--lh-button);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.prosemirror-editor p > a:any-link > :is(strong, em) {
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+/* heading anchors ("Copy link", dynamic-features row 9): an out-of-flow sibling of every
+   h2/h3 in main, invisible at rest, revealed on hover / focus (source runtime values) */
+main button.page-heading-anchor {
+  position: absolute;
+  z-index: 9999;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: -53px 0 0 -50px;
+  padding: 0;
+  border: none;
+  border-radius: 40px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  opacity: 0;
+  transition-property: opacity;
+  transition-delay: 0.35s;
+}
+
+main button.page-heading-anchor.small {
+  width: 23px;
+  height: 23px;
+  margin: -32.5px 0 0 -25px;
+  border-radius: 23px;
+}
+
+main button.page-heading-anchor .anchor-tooltip {
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  z-index: 10000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #2c2c2c;
+  color: #f8f8f8;
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%);
+  transition: opacity 0.2s ease-in-out;
+}
+
+main button.page-heading-anchor.small .anchor-tooltip {
+  left: 0;
+  transform: none;
+}
+
+main button.page-heading-anchor:hover,
+main button.page-heading-anchor:focus {
+  opacity: 1;
+}
+
+main button.page-heading-anchor:focus {
+  outline: 2px solid #1473e6;
+  outline-offset: 2px;
+}
+
+main button.page-heading-anchor:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+main button.page-heading-anchor:hover .anchor-tooltip,
+main button.page-heading-anchor:focus .anchor-tooltip {
+  opacity: 1;
+}
+
+/* "Link copied to clipboard." toast (source runtime values), shown 3 s after an anchor click */
+.toast-container {
+  position: fixed;
+  bottom: 8px;
+  left: 50%;
+  z-index: 10001;
+  box-sizing: border-box;
+  min-width: 200px;
+  margin-left: -100px;
+  padding: 0 40px;
+  border-radius: 4px;
+  background-color: #444;
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-size: 15px;
+  line-height: 40px;
+  text-align: center;
+  visibility: hidden;
+}
+
+.toast-container.show {
+  visibility: visible;
+  animation: 0.35s ease-in toast-message-fade-in;
+}
+
+@keyframes toast-message-fade-in {
+  0%,
+  50% {
+    bottom: -45px;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 10px;
+    opacity: 1;
+  }
+}

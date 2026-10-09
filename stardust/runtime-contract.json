@@ -1,0 +1,14 @@
+{
+  "runtime": "vanilla-eds",
+  "blockWrapperClass": "block",
+  "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "_evidence": {
+    "scripts/scripts.js decorateButtons": "requires a.closest('strong')||a.closest('em'); p.className='button-wrapper'; a.className='button' + primary (strong) / secondary (em) / accent (strong+em)",
+    "scripts/aem.js decorateBlock": "adds .block + data-block-name, wraps in div.<name>-wrapper, section gains .<name>-container; wrapTextNodes runs before decorate()",
+    "blocks/fragment/fragment.js loadFragment": "main.innerHTML = fetch(path + '.plain.html'); scripts inert (innerHTML never executes; trusted-types default policy strips <script> on fragment sinks)",
+    "sections": "decorateSections sets data-section-status + inline display:none; the metadata block leaves an empty first section -> styles.css adds main .section:empty { display: none }"
+  }
+}

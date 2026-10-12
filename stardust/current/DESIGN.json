@@ -1,581 +1,146 @@
 {
   "_provenance": {
     "writtenBy": "stardust:extract",
-    "writtenAt": "2026-10-06T10:14:00Z",
+    "writtenAt": "2026-10-08T09:24:52Z",
     "readArtifacts": [
       "stardust/current/_brand-extraction.json",
       "stardust/current/_computed-styles.json",
-      "https://static-website.david-bosschaert.workers.dev/styles.css"
+      "stardust/current/pages/index.html"
     ],
     "synthesizedInputs": [],
-    "stardustVersion": "0.27.0"
+    "stardustVersion": "0.29.1"
   },
-  "schemaVersion": 2,
-  "generatedAt": "2026-10-06T10:14:00Z",
-  "title": "Design System: Super Page",
   "extensions": {
-    "colorMeta": {
-      "primary": {
-        "role": "primary",
-        "displayName": "Deep Purple",
-        "canonical": "#6a1b9a"
-      },
-      "secondary": {
-        "role": "secondary",
-        "displayName": "Teal",
-        "canonical": "#00897b"
-      },
-      "accent-pink": {
-        "role": "tertiary",
-        "displayName": "Pink",
-        "canonical": "#ec407a"
-      },
-      "tab-active": {
-        "role": "tertiary",
-        "displayName": "Tab Blue",
-        "canonical": "#2196f3"
-      },
-      "surface": {
-        "role": "neutral",
-        "displayName": "White",
-        "canonical": "#ffffff"
-      }
+    "componentStyle": {
+      "buttons": [],
+      "links": [
+        {
+          "selector": "a",
+          "color": "#0000ee",
+          "textDecoration": "underline"
+        }
+      ]
     },
-    "typographyMeta": {
-      "display": {
-        "displayName": "Display",
-        "purpose": "The page title only."
-      },
-      "headline": {
-        "displayName": "Headline",
-        "purpose": "The teal underlined h2."
-      },
-      "lede": {
-        "displayName": "Lede",
-        "purpose": "Every paragraph: centered violet copy."
-      }
-    },
-    "shadows": [
-      {
-        "name": "card",
-        "value": "0 4px 20px rgba(106, 27, 154, 0.12)",
-        "purpose": "Header bar and media cells."
-      },
-      {
-        "name": "team-card",
-        "value": "0 2px 8px rgba(0, 0, 0, 0.07)",
-        "purpose": "Portrait cards."
-      },
-      {
-        "name": "prose-block",
-        "value": "0 4px 20px rgba(233, 30, 99, 0.1)",
-        "purpose": "Pink-edged prose block."
-      },
-      {
-        "name": "media-hover",
-        "value": "0 8px 30px rgba(0, 150, 136, 0.2)",
-        "purpose": "Hovered media cell (with translateY(-4px))."
-      },
-      {
-        "name": "h1-text",
-        "value": "2px 2px 4px rgba(106, 27, 154, 0.15)",
-        "purpose": "text-shadow on the page title."
-      }
-    ],
-    "gradients": [
-      {
-        "name": "canvas",
-        "value": "linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 50%, #fff8e1 100%)",
-        "purpose": "Page background (body)."
-      },
-      {
-        "name": "prose-block",
-        "value": "linear-gradient(135deg, #ffffff 0%, #fce4ec 100%)",
-        "purpose": "Highlighted prose block fill."
-      }
-    ],
-    "motion": [
-      {
-        "name": "nav-hover",
-        "value": "background 0.2s, color 0.2s",
-        "purpose": "Nav link hover."
-      },
-      {
-        "name": "media-hover",
-        "value": "transform 0.3s ease, box-shadow 0.3s ease",
-        "purpose": "Media cell lift."
-      },
-      {
-        "name": "tab-color",
-        "value": "color 0.2s",
-        "purpose": "Tab label colour."
-      },
-      {
-        "name": "tab-fade",
-        "value": "fadeIn 0.4s (opacity 0→1)",
-        "purpose": "Revealed tab panel."
-      }
-    ],
-    "sourceBreakpoints": [
-      {
-        "name": "team-stack",
-        "value": "900px",
-        "rule": "max-width"
-      },
-      {
-        "name": "mobile",
-        "value": "768px",
-        "rule": "max-width"
-      }
-    ],
     "motifs": {
       "borderRadius": {
-        "mode": "12px",
-        "occurrences": {
-          "12px": 18,
-          "8px": 16,
-          "10px": 8,
-          "50%": 8
-        }
+        "mode": 0
       },
-      "patterns": [
-        "gradient canvas + white cards",
-        "16:9 media cells in a 2-column table",
-        "pink-edged prose block",
-        "3-tab team roster with circular portraits"
+      "shadows": [],
+      "gradients": [],
+      "opacity": [
+        {
+          "selector": "svg",
+          "value": 0.55
+        },
+        {
+          "selector": "p + p",
+          "value": 0.6
+        }
       ]
     },
     "voice": {
-      "heroHeadline": "Super page",
-      "heroLede": "Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida",
-      "ctaSamples": [
-        "Home",
-        "Page 1",
-        "Team Alpha"
+      "ctaLabels": [
+        "Learn more"
       ],
-      "tone": "placeholder / demo copy"
+      "heroHeadline": null,
+      "languages": [
+        "en",
+        "ar",
+        "zh",
+        "fr",
+        "ru",
+        "es"
+      ]
     },
-    "componentStyle": {
-      "navLink": {
-        "padding": "0.4rem 1rem",
-        "radius": "8px"
+    "colorScheme": {
+      "declared": "light dark",
+      "background": {
+        "light": "#eeeeee",
+        "dark": "#222222"
       },
-      "tabButton": {
-        "padding": "1em 2em",
-        "activeBorder": "3px solid #2196f3"
-      },
-      "mediaCell": {
-        "padding": "1rem",
-        "radius": "12px",
-        "innerRadius": "8px",
-        "aspect": "16/9"
-      },
-      "teamCard": {
-        "width": "48%",
-        "padding": "1em",
-        "radius": "10px",
-        "portrait": "120px circle"
-      }
+      "captured": "light"
     },
-    "modules": [
-      {
-        "id": "site-header",
-        "name": "Site header",
-        "status": "candidate",
-        "confidence": "high",
-        "signals": [
-          "ctas",
-          "landmark"
-        ],
-        "slots": [
-          {
-            "name": "links",
-            "type": "link[]",
-            "required": true
-          }
-        ],
-        "instances": [
-          {
-            "slug": "index",
-            "selector": "nav.site-header"
-          },
-          {
-            "slug": "page1",
-            "selector": "nav.site-header"
-          }
-        ]
-      },
-      {
-        "id": "site-footer",
-        "name": "Site footer",
-        "status": "candidate",
-        "confidence": "high",
-        "signals": [
-          "landmark",
-          "text"
-        ],
-        "slots": [
-          {
-            "name": "text",
-            "type": "text",
-            "required": true
-          }
-        ],
-        "instances": [
-          {
-            "slug": "index",
-            "selector": "footer.site-footer"
-          },
-          {
-            "slug": "page1",
-            "selector": "footer.site-footer"
-          }
-        ]
-      },
-      {
-        "id": "team-tabs",
-        "name": "Team tabs",
-        "status": "candidate",
-        "confidence": "high",
-        "signals": [
-          "headings",
-          "ctas"
-        ],
-        "slots": [
-          {
-            "name": "tab-label",
-            "type": "text",
-            "required": true
-          },
-          {
-            "name": "card-portrait",
-            "type": "image",
-            "required": true
-          },
-          {
-            "name": "card-name",
-            "type": "text",
-            "required": true
-          },
-          {
-            "name": "card-bio",
-            "type": "text",
-            "required": false
-          }
-        ],
-        "instances": [
-          {
-            "slug": "index",
-            "selector": ".tabs-section"
-          },
-          {
-            "slug": "page1",
-            "selector": ".tabs-section"
-          }
-        ]
-      },
-      {
-        "id": "media-cells",
-        "name": "Media cells",
-        "status": "candidate",
-        "confidence": "medium",
-        "signals": [
-          "media",
-          "structure"
-        ],
-        "note": "two instances on one page (2-column table of 16:9 image or iframe cells)",
-        "slots": [
-          {
-            "name": "media",
-            "type": "image|iframe",
-            "required": true
-          }
-        ],
-        "instances": [
-          {
-            "slug": "index",
-            "selector": "table:nth-of-type(1)"
-          },
-          {
-            "slug": "index",
-            "selector": "table:nth-of-type(2)"
-          }
-        ]
-      },
-      {
-        "id": "prose-block",
-        "name": "Highlighted prose block",
-        "status": "candidate",
-        "confidence": "medium",
-        "signals": [
-          "structure"
-        ],
-        "slots": [
-          {
-            "name": "text",
-            "type": "text",
-            "required": true
-          }
-        ],
-        "instances": [
-          {
-            "slug": "index",
-            "selector": "body > div:not(.tabs-section)"
-          }
-        ]
-      }
-    ],
+    "modules": [],
+    "metadata": {
+      "siteName": "Example Domain",
+      "defaultOgImage": null,
+      "themeColor": null,
+      "defaultLocale": "en"
+    },
     "breakpoints": {
-      "containerMaxWidth": "1200px",
+      "containerMaxWidth": "480px",
       "probeWidth": 2560,
-      "shellMaxWidth": null,
+      "shellMaxWidth": "480px",
       "caps": [
         {
-          "kind": "module",
-          "px": 1200,
+          "kind": "shell",
+          "px": 480,
           "via": "max-width",
-          "selector": "body > table",
+          "selector": "body",
           "pages": [
-            "https://static-website.david-bosschaert.workers.dev/"
-          ]
-        },
-        {
-          "kind": "module",
-          "px": 1152,
-          "via": "fixed",
-          "selector": "body > table > tbody",
-          "pages": [
-            "https://static-website.david-bosschaert.workers.dev/"
-          ]
-        },
-        {
-          "kind": "module",
-          "px": 800,
-          "via": "max-width",
-          "selector": "body > p",
-          "pages": [
-            "https://static-website.david-bosschaert.workers.dev/",
-            "https://static-website.david-bosschaert.workers.dev/page1"
-          ]
-        },
-        {
-          "kind": "module",
-          "px": 635,
-          "via": "other",
-          "selector": "div.tabs-section > div.tab-content.active > div.team-card > p",
-          "pages": [
-            "https://static-website.david-bosschaert.workers.dev/",
-            "https://static-website.david-bosschaert.workers.dev/page1"
-          ]
-        },
-        {
-          "kind": "module",
-          "px": 607,
-          "via": "fixed",
-          "selector": "div.tabs-section > div.tab-content.active > div.team-card > p",
-          "pages": [
-            "https://static-website.david-bosschaert.workers.dev/",
-            "https://static-website.david-bosschaert.workers.dev/page1"
-          ]
-        },
-        {
-          "kind": "module",
-          "px": 564,
-          "via": "fixed",
-          "selector": "table > tbody > tr > td",
-          "pages": [
-            "https://static-website.david-bosschaert.workers.dev/"
-          ]
-        },
-        {
-          "kind": "module",
-          "px": 285,
-          "via": "fixed",
-          "selector": "body > h2",
-          "pages": [
-            "https://static-website.david-bosschaert.workers.dev/"
+            "https://www.example.com/"
           ]
         }
       ],
       "modules": [
         {
-          "url": "https://static-website.david-bosschaert.workers.dev/",
+          "url": "https://www.example.com/",
           "section": 0,
-          "selector": "body > nav.site-header",
+          "selector": "body > svg",
           "px": null
         },
         {
-          "url": "https://static-website.david-bosschaert.workers.dev/",
+          "url": "https://www.example.com/",
           "section": 1,
-          "selector": "#heading",
+          "selector": "body > p",
           "px": null
         },
         {
-          "url": "https://static-website.david-bosschaert.workers.dev/",
+          "url": "https://www.example.com/",
           "section": 2,
           "selector": "body > p",
-          "px": 800
+          "px": null
         },
         {
-          "url": "https://static-website.david-bosschaert.workers.dev/",
+          "url": "https://www.example.com/",
           "section": 3,
-          "selector": "body > table",
-          "px": 1200
+          "selector": "body > p",
+          "px": null
         },
         {
-          "url": "https://static-website.david-bosschaert.workers.dev/",
+          "url": "https://www.example.com/",
           "section": 4,
-          "selector": "body > h2",
-          "px": 285
+          "selector": "body > p",
+          "px": null
         },
         {
-          "url": "https://static-website.david-bosschaert.workers.dev/",
+          "url": "https://www.example.com/",
           "section": 5,
-          "selector": "body > table",
-          "px": 1200
-        },
-        {
-          "url": "https://static-website.david-bosschaert.workers.dev/",
-          "section": 6,
-          "selector": "body > div",
-          "px": 1200
-        },
-        {
-          "url": "https://static-website.david-bosschaert.workers.dev/",
-          "section": 7,
-          "selector": "body > div.tabs-section",
-          "px": 635
-        },
-        {
-          "url": "https://static-website.david-bosschaert.workers.dev/",
-          "section": 8,
-          "selector": "body > footer.site-footer",
-          "px": null
-        },
-        {
-          "url": "https://static-website.david-bosschaert.workers.dev/page1",
-          "section": 0,
-          "selector": "body > nav.site-header",
-          "px": null
-        },
-        {
-          "url": "https://static-website.david-bosschaert.workers.dev/page1",
-          "section": 1,
-          "selector": "#heading",
-          "px": null
-        },
-        {
-          "url": "https://static-website.david-bosschaert.workers.dev/page1",
-          "section": 2,
           "selector": "body > p",
-          "px": 800
+          "px": null
         },
         {
-          "url": "https://static-website.david-bosschaert.workers.dev/page1",
-          "section": 3,
-          "selector": "body > div.tabs-section",
-          "px": 635
+          "url": "https://www.example.com/",
+          "section": 6,
+          "selector": "body > p",
+          "px": null
         },
         {
-          "url": "https://static-website.david-bosschaert.workers.dev/page1",
-          "section": 4,
-          "selector": "body > footer.site-footer",
+          "url": "https://www.example.com/",
+          "section": 7,
+          "selector": "body > a",
           "px": null
         }
       ],
-      "capRegister": [
-        "contentMaxWidth differs between archetypes: 1200 (https://static-website.david-bosschaert.workers.dev/), 800 (https://static-website.david-bosschaert.workers.dev/page1) — decide per template in the inconsistency register",
-        "module cap 285px on a single section (body > h2, https://static-website.david-bosschaert.workers.dev/) — intent or mistake? register it"
-      ],
+      "capRegister": [],
       "capProvenance": {
         "writtenBy": "skills/replica/scripts/cap-probe.mjs",
-        "writtenAt": "2026-10-06T10:13:01.555Z",
+        "writtenAt": "2026-10-08T09:25:15.473Z",
         "baseWidth": 1440,
         "urls": [
-          "https://static-website.david-bosschaert.workers.dev/",
-          "https://static-website.david-bosschaert.workers.dev/page1"
+          "https://www.example.com/"
         ]
       }
     }
-  },
-  "components": [
-    {
-      "name": "Nav link",
-      "kind": "nav",
-      "refersTo": "nav-link",
-      "description": "Header text link.",
-      "html": "<a class=\"ds-nav-link\" href=\"/\">Home</a>",
-      "css": ".ds-nav-link { font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif; font-weight: 600; font-size: 1.05rem; color: #6a1b9a; text-decoration: none; padding: 0.4rem 1rem; border-radius: 8px; transition: background 0.2s, color 0.2s; } .ds-nav-link:hover { background: #f3e5f5; color: #4a148c; }"
-    },
-    {
-      "name": "Tab button",
-      "kind": "button",
-      "refersTo": "tab-button",
-      "description": "Team tab; .active = selected.",
-      "html": "<button class=\"ds-tab ds-tab--active\">Team Alpha</button>",
-      "css": ".ds-tab { background: none; border: none; padding: 1em 2em; cursor: pointer; font-size: 1.1em; font-weight: bold; color: #666; transition: color 0.2s; } .ds-tab--active { color: #2196F3; border-bottom: 3px solid #2196F3; background: #fff; }"
-    },
-    {
-      "name": "Media cell",
-      "kind": "card",
-      "refersTo": "card-media",
-      "description": "White cell holding one 16:9 image or iframe.",
-      "html": "<div class=\"ds-media-cell\"><img src=\"https://picsum.photos/id/152/800/600\" alt=\"Sample image\"></div>",
-      "css": ".ds-media-cell { background: #fff; border-radius: 12px; padding: 1rem; box-shadow: 0 4px 20px rgba(106, 27, 154, 0.12); border: 2px solid transparent; transition: transform 0.3s ease, box-shadow 0.3s ease; } .ds-media-cell:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0, 150, 136, 0.2); border-color: #26c6da; } .ds-media-cell img { display: block; width: 100%; height: auto; aspect-ratio: 16/9; border-radius: 8px; }"
-    },
-    {
-      "name": "Team card",
-      "kind": "card",
-      "refersTo": "card-team",
-      "description": "Portrait card inside the tabs.",
-      "html": "<div class=\"ds-team-card\"><img src=\"https://randomuser.me/api/portraits/men/45.jpg\" alt=\"Team member 1\"><h4>Alex Johnson</h4><p>Project Lead with a knack for creative solutions and a love of adventure sports.</p></div>",
-      "css": ".ds-team-card { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); width: 48%; padding: 1em; display: flex; flex-direction: column; align-items: center; } .ds-team-card img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 1em; } .ds-team-card h4 { margin: 0.2em 0; } .ds-team-card p { font-size: 1.15rem; color: #5e35b1; text-align: center; font-weight: 500; }"
-    },
-    {
-      "name": "Prose block",
-      "kind": "custom",
-      "refersTo": "prose-block",
-      "description": "Pink-edged highlighted paragraph block.",
-      "html": "<div class=\"ds-prose-block\">A wild pangolin appears…</div>",
-      "css": ".ds-prose-block { background: linear-gradient(135deg, #ffffff 0%, #fce4ec 100%); padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(233, 30, 99, 0.1); font-size: 1.05rem; color: #444; line-height: 1.8; border-left: 4px solid #ec407a; }"
-    }
-  ],
-  "narrative": {
-    "northStar": "Pastel Playground",
-    "overview": "The site is a light, playful presentation surface. A soft diagonal gradient (cyan → lavender → cream) fills the whole page; everything that carries content sits on it as a white, softly shadowed card with generously rounded corners. Deep-purple serif headings with a faint drop shadow give the page a storybook tone, while the body copy stays a friendly medium-weight sans-serif in violet and charcoal.",
-    "keyCharacteristics": [
-      "Gradient canvas with white cards (12 px radius, tinted soft shadows)",
-      "Deep-purple serif display headings, centered, with a 2 px text shadow",
-      "Violet lede copy, centered, capped at 800 px",
-      "Section-specific accents: teal + cyan (subheading), pink (prose block), blue (tabs)",
-      "Circular 120 px portraits in a three-tab team roster"
-    ],
-    "rules": [
-      {
-        "name": "The Colour-Per-Section Rule",
-        "body": "Each section owns one accent (teal/cyan, pink, blue); accents never travel between sections.",
-        "section": "colors"
-      },
-      {
-        "name": "The Centered Title Rule",
-        "body": "Title and lede are centered; everything below is left-aligned.",
-        "section": "typography"
-      },
-      {
-        "name": "The Tinted Shadow Rule",
-        "body": "Shadows take the hue of the section's accent (purple, pink, teal), never neutral black at full strength.",
-        "section": "elevation"
-      }
-    ],
-    "dos": [
-      "Do keep the 135° three-stop gradient on the body and white cards on top of it.",
-      "Do keep the h1 text shadow and the −0.5px tracking.",
-      "Do keep the source font stacks verbatim; no font files are loaded today."
-    ],
-    "donts": [
-      "Don't introduce a logo, favicon or hamburger menu; none exist.",
-      "Don't add ARIA tab roles or new states beyond .active; the tabs are plain buttons.",
-      "Don't flatten the tinted shadows to neutral grey."
-    ]
   }
 }

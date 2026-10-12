@@ -1,98 +1,52 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-10-06T10:47:01.670Z",
+    "writtenAt": "2026-10-08T09:42:29.011Z",
     "readArtifacts": [
       "stardust/migrated",
       "stardust/state.json"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-06T12:02:42.301Z",
+  "generatedAt": "2026-10-08T10:18:58.741Z",
   "pages": [
     {
       "slug": "index",
       "path": "/",
-      "title": "Good Morning!",
+      "title": "Example Domain",
       "templateId": "index",
       "source": {
         "migratedHtml": "stardust/migrated/index.html",
         "metaJson": "stardust/migrated/_meta.json",
-        "sourceHash": "sha256:cab2b72948ee469d0ce19ee696414bee5f7e0da8b2b8e48e14ec349a692a0c8a"
+        "sourceHash": "sha256:1e0431de102615c2d11376103c2638a092e09936d6a394f83ef05b254f522cd6"
       },
       "blocks": [
-        "site-header",
-        "media-cells",
-        "prose-block",
-        "team-tabs",
-        "site-footer"
+        "notice"
       ],
       "delivery": {
         "status": "verified",
-        "deployedUrl": "https://main--bb2d4d27--aemcoder.aem.live/",
-        "deployedAt": "2026-10-06T11:25:40.436Z",
-        "verifiedAt": "2026-10-06T12:02:42.301Z",
+        "deployedUrl": "https://main--f4c8728b--aemcoder.aem.live/",
+        "deployedAt": "2026-10-08T10:00:23.186Z",
+        "verifiedAt": "2026-10-08T10:18:58.741Z",
         "error": null,
         "gate": {
           "pass": true,
-          "pct": 0.36,
+          "pct": 0.28,
           "heightDelta": 0,
           "clipped": 0,
           "content": {
             "missing": 0,
             "hidden": 0,
             "controlState": 0,
-            "missingButtons": 3,
+            "missingButtons": 0,
             "hiddenButtons": 0,
-            "findings": 5,
+            "findings": 0,
             "variable": []
           },
           "reasons": [],
           "override": null,
           "table": "stardust/replica/gates/all-360/summary.json",
-          "at": "2026-10-06T11:56:35.850Z"
-        }
-      }
-    },
-    {
-      "slug": "page1",
-      "path": "/page1",
-      "title": "Good Morning!",
-      "templateId": "page1",
-      "source": {
-        "migratedHtml": "stardust/migrated/page1/index.html",
-        "metaJson": "stardust/migrated/page1/_meta.json",
-        "sourceHash": "sha256:0ead3e24911d85c50860352c1b66b13867df192b2571b094e40c12e5c51d109a"
-      },
-      "blocks": [
-        "site-header",
-        "team-tabs",
-        "site-footer"
-      ],
-      "delivery": {
-        "status": "verified",
-        "deployedUrl": "https://main--bb2d4d27--aemcoder.aem.live/page1",
-        "deployedAt": "2026-10-06T11:42:48.728Z",
-        "verifiedAt": "2026-10-06T12:02:42.301Z",
-        "error": null,
-        "gate": {
-          "pass": true,
-          "pct": 0.44,
-          "heightDelta": 0,
-          "clipped": 0,
-          "content": {
-            "missing": 0,
-            "hidden": 0,
-            "controlState": 0,
-            "missingButtons": 3,
-            "hiddenButtons": 0,
-            "findings": 5,
-            "variable": []
-          },
-          "reasons": [],
-          "override": null,
-          "table": "stardust/replica/gates/all-360/summary.json",
-          "at": "2026-10-06T11:56:35.850Z"
+          "at": "2026-10-08T10:15:23.949Z"
         }
       }
     }

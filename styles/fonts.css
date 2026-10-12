@@ -1,6 +1,1 @@
-/* fonts.css — intentionally empty of @font-face rules.
-   The source site names Poppins / Playfair Display but serves no font files, so both
-   sides fall back to the same system stack (--font-body / --font-display in styles.css).
-   scripts.js still loads this file in loadLazy; it must stay a valid stylesheet. */
-
-/* stylelint-disable-next-line no-empty-source */
+/* The source (https://www.example.com/) uses system-ui and loads no web fonts; nothing to self-host. */

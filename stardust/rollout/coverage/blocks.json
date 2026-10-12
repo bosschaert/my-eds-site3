@@ -1,19 +1,19 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/blocks",
-    "writtenAt": "2026-10-06T10:47:40.698Z",
+    "writtenAt": "2026-10-08T09:42:48.655Z",
     "readArtifacts": [
       "stardust/rollout/coverage/pages.json"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-06T12:06:05.572Z",
+  "generatedAt": "2026-10-08T10:21:34.563Z",
   "blocks": [
     {
-      "id": "media-cells",
-      "label": "media-cells",
+      "id": "notice",
+      "label": "notice",
       "kind": "module",
-      "signature": "module:media-cells",
+      "signature": "module:notice",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -23,96 +23,10 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "converted",
-        "edsBlockName": "media-cells",
-        "blockPath": null,
-        "convertedAt": "2026-10-06T11:25:40.306Z"
-      }
-    },
-    {
-      "id": "prose-block",
-      "label": "prose-block",
-      "kind": "module",
-      "signature": "module:prose-block",
-      "source": null,
-      "usedByTemplates": [
-        "index"
-      ],
-      "usedByPages": [
-        "index"
-      ],
-      "instanceCount": 1,
-      "delivery": {
-        "status": "converted",
-        "edsBlockName": "prose-block",
-        "blockPath": null,
-        "convertedAt": "2026-10-06T11:25:40.344Z"
-      }
-    },
-    {
-      "id": "site-footer",
-      "label": "site-footer",
-      "kind": "module",
-      "signature": "module:site-footer",
-      "source": null,
-      "usedByTemplates": [
-        "index",
-        "page1"
-      ],
-      "usedByPages": [
-        "index",
-        "page1"
-      ],
-      "instanceCount": 2,
-      "delivery": {
         "status": "verified",
-        "edsBlockName": "footer",
+        "edsBlockName": "notice",
         "blockPath": null,
         "convertedAt": null
-      }
-    },
-    {
-      "id": "site-header",
-      "label": "site-header",
-      "kind": "module",
-      "signature": "module:site-header",
-      "source": null,
-      "usedByTemplates": [
-        "index",
-        "page1"
-      ],
-      "usedByPages": [
-        "index",
-        "page1"
-      ],
-      "instanceCount": 2,
-      "delivery": {
-        "status": "verified",
-        "edsBlockName": "header",
-        "blockPath": null,
-        "convertedAt": null
-      }
-    },
-    {
-      "id": "team-tabs",
-      "label": "team-tabs",
-      "kind": "module",
-      "signature": "module:team-tabs",
-      "source": null,
-      "usedByTemplates": [
-        "index",
-        "page1"
-      ],
-      "usedByPages": [
-        "index",
-        "page1"
-      ],
-      "instanceCount": 2,
-      "delivery": {
-        "status": "converted",
-        "edsBlockName": "team-tabs",
-        "blockPath": null,
-        "convertedAt": "2026-10-06T11:25:40.395Z"
       }
     }
   ]

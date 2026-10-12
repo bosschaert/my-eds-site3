@@ -1,36 +1,5 @@
 {
-  "_provenance": { "writtenBy": "stardust:dynamics", "writtenAt": "2026-10-06T12:02:00Z" },
-  "method": "3 inventory rows, all reproducibility self: YouTube embed rebuilt as a media-cells video cell (link → iframe at decorate time); team tabs rebuilt as the team-tabs block (role=tablist/tab/tabpanel, .active toggle, fadeIn 0.4s); remote images rehosted into the DA media bus by media-reconcile.",
-  "features": [
-    {
-      "id": "v-video-youtube", "feature": "YouTube embed (video b4Rr_7y068U) in a media-table cell", "class": "V", "pages": 1,
-      "disposition": "embed-passthrough", "reproducibility": "self", "status": "done",
-      "verifiedBy": "1 iframe 560×315 src https://www.youtube.com/embed/b4Rr_7y068U on /, built by blocks/media-cells; published-origin pixel 0.05 % at 1440",
-      "checks": [
-        { "type": "video-plays", "path": "/", "iframeSelector": "iframe[src*='youtube.com/embed/b4Rr_7y068U']", "playbackHost": "youtube.com" }
-      ]
-    },
-    {
-      "id": "c-team-tabs", "feature": "Team tabs: 3 buttons toggle .active on tabs and panels; content fades in 0.4s", "class": "X", "pages": 2,
-      "disposition": "client-only", "reproducibility": "self", "status": "done",
-      "verifiedBy": "motion-compare live vs published: 5 parity / 0 missing / 0 extra on / and /page1 (active toggled 6×/6×, fadeIn on 3 panels, 200 ms colour transitions); 3 tabs + 3 panels per page",
-      "checks": [
-        { "type": "dom-count", "path": "/", "selector": ".team-tabs [role='tab']", "min": 3 },
-        { "type": "dom-count", "path": "/", "selector": ".team-tabs [role='tabpanel']", "min": 3 },
-        { "type": "dom-count", "path": "/page1", "selector": ".team-tabs [role='tab']", "min": 3 },
-        { "type": "dom-count", "path": "/page1", "selector": ".team-tabs [role='tabpanel']", "min": 3 },
-        { "type": "no-page-errors", "paths": ["/", "/page1"] }
-      ]
-    },
-    {
-      "id": "m-remote-image-hosts", "feature": "Remote images from randomuser.me, picsum.photos, fastly.picsum.photos (9 files)", "class": "M", "pages": 2,
-      "disposition": "static-snapshot", "reproducibility": "self", "status": "done",
-      "snapshot": "2026-10-06",
-      "verifiedBy": "media-reconcile: 9 files rehosted, 0 remote srcs left; served .plain.html carries 9 <img> on / and 6 on /page1 with the authored alts",
-      "checks": [
-        { "type": "dom-count", "path": "/", "selector": "main img", "min": 9 },
-        { "type": "dom-count", "path": "/page1", "selector": "main img", "min": 6 }
-      ]
-    }
-  ]
+  "_provenance": { "writtenBy": "stardust:dynamics", "writtenAt": "2026-10-08T10:17:10Z", "input": "stardust/dynamic-features.md" },
+  "method": "features fed from stardust/dynamic-features.md (detector on the one archetype, re-verified at B2): the surface is empty — 0 third-party hosts, 0 API paths, 0 forms, 0 modal triggers, 0 media players, 0 client-rendered regions, no listing blocks — so there is no row to replay",
+  "features": []
 }

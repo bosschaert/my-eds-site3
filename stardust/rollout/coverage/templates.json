@@ -1,14 +1,14 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-10-06T10:47:01.670Z",
+    "writtenAt": "2026-10-08T09:42:29.011Z",
     "readArtifacts": [
       "stardust/migrated",
       "stardust/state.json"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-06T12:06:05.572Z",
+  "generatedAt": "2026-10-08T10:21:34.563Z",
   "templates": [
     {
       "id": "index",
@@ -18,30 +18,7 @@
       ],
       "pageCount": 1,
       "blocks": [
-        "media-cells",
-        "prose-block",
-        "site-footer",
-        "site-header",
-        "team-tabs"
-      ],
-      "delivery": {
-        "verified": 1,
-        "deployed": 0,
-        "contentPending": 0,
-        "pending": 0
-      }
-    },
-    {
-      "id": "page1",
-      "representativeSlug": "page1",
-      "pages": [
-        "page1"
-      ],
-      "pageCount": 1,
-      "blocks": [
-        "site-footer",
-        "site-header",
-        "team-tabs"
+        "notice"
       ],
       "delivery": {
         "verified": 1,

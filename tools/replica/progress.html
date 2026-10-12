@@ -18,12 +18,13 @@
   .bar { height: 8px; border-radius: 9999px; background-color: var(--spectrum-gray-200); overflow: hidden; }
   .bar span { display: block; height: 100%; background-color: var(--spectrum-accent-bg); }
   .estimate { color: var(--spectrum-text-subdued); margin: 8px 0 0; }
-  ol.steps, ul.pages { list-style: none; padding: 0; margin: 0; }
-  ol.steps li, ul.pages li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; }
-  ol.steps li + li, ul.pages li + li { border-top: 1px solid var(--spectrum-gray-200); }
+  ol.steps { list-style: none; padding: 0; margin: 0; }
+  ol.steps li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; }
+  ol.steps li + li { border-top: 1px solid var(--spectrum-gray-200); }
   table { width: 100%; border-collapse: collapse; }
   th, td { padding: 8px; text-align: left; border-bottom: 1px solid var(--spectrum-gray-200); }
-  th { color: var(--spectrum-text-subdued); }
+  th { color: var(--spectrum-text-subdued); font-weight: 700; }
+  details ul { margin: 8px 0 0; padding-left: 20px; }
 </style>
 </head>
 <body>
@@ -32,7 +33,7 @@
     <h1>Migration status</h1>
     <span class="spectrum-badge spectrum-badge--positive">Ready</span>
   </header>
-  <p class="meta">Source site: <a href="https://static-website.david-bosschaert.workers.dev/">https://static-website.david-bosschaert.workers.dev/</a><br>Preview site: <a href="https://main--bb2d4d27--aemcoder.aem.page/">https://main--bb2d4d27--aemcoder.aem.page/</a><br>Last updated: 2026-10-06 12:18 UTC</p>
+  <p class="meta">Source site: <a href="https://www.example.com/">https://www.example.com/</a><br>Preview site: <a href="https://main--f4c8728b--aemcoder.aem.page/">https://main--f4c8728b--aemcoder.aem.page/</a><br>Last updated: 2026-10-08 10:22 UTC</p>
 
   <section class="spectrum-panel">
     <h2 class="spectrum-panel-header">Journey</h2>
@@ -54,22 +55,28 @@
         <thead><tr><th>Template</th><th>Pages</th><th>Desktop</th><th>Mobile</th><th>Status</th></tr></thead>
         <tbody>
           <tr><td>Home page</td><td>1</td><td><span class="spectrum-badge spectrum-badge--positive">Yes</span></td><td><span class="spectrum-badge spectrum-badge--positive">Yes</span></td><td><span class="spectrum-badge spectrum-badge--positive">Done</span></td></tr>
-          <tr><td>Team page</td><td>1</td><td><span class="spectrum-badge spectrum-badge--positive">Yes</span></td><td><span class="spectrum-badge spectrum-badge--positive">Yes</span></td><td><span class="spectrum-badge spectrum-badge--positive">Done</span></td></tr>
         </tbody>
       </table>
     </div>
   </section>
 
   <section class="spectrum-panel">
-    <h2 class="spectrum-panel-header">Pages migrated: 2 of 2</h2>
+    <h2 class="spectrum-panel-header">Pages migrated</h2>
     <div class="panel-body">
-      <details open><summary>Pages</summary><ul class="pages"><li><a href="https://main--bb2d4d27--aemcoder.aem.page/">Home</a> <span class="spectrum-badge spectrum-badge--positive">Ready</span></li><li><a href="https://main--bb2d4d27--aemcoder.aem.page/page1">Page 1</a> <span class="spectrum-badge spectrum-badge--positive">Ready</span></li></ul></details>
+      <p>1 of 1 pages are ready on the preview site.</p>
+      <details open>
+        <summary>Ready pages</summary>
+        <ul>
+          <li><a href="https://main--f4c8728b--aemcoder.aem.page/">Home page</a></li>
+        </ul>
+      </details>
     </div>
   </section>
 
   <section class="spectrum-panel">
-    <h2 class="spectrum-panel-header">Progress: 100% complete</h2>
+    <h2 class="spectrum-panel-header">Progress</h2>
     <div class="panel-body">
+      <p>100% complete</p>
       <div class="bar"><span style="width: 100%"></span></div>
       <p class="estimate">Complete</p>
     </div>
@@ -78,14 +85,14 @@
   <section class="spectrum-panel">
     <h2 class="spectrum-panel-header">What's happening now</h2>
     <div class="panel-body">
-      <p>Your migration is complete. Both pages are live on the new site and match the original on desktop and mobile: layout, text, images, the video embed and the team tabs all line up. The sitemap, the redirects from the old page addresses, the link check and the quality review are all in place and passed.</p>
+      <p>Your site is ready. The home page is live on the new platform and matches the original on desktop and on mobile. The final site-wide review, link audit and quality report are complete, and the sitemap is being served.</p>
     </div>
   </section>
 
   <section class="spectrum-panel">
     <h2 class="spectrum-panel-header">What's next</h2>
     <div class="panel-body">
-      <p>Review the pages on the preview site; the delivery report lists two optional refinements (per-page descriptions and page titles) you may want to author later.</p>
+      <p>Next is your review of the preview site and the handover of the new site.</p>
     </div>
   </section>
 </main>

@@ -1,97 +1,65 @@
 {
   "_provenance": {
-    "writtenBy": "stardust:replica/handoff C-deliver",
-    "writtenAt": "2026-10-06T10:55:00Z"
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-08T09:44:16Z",
+    "stardustVersion": "0.29.1"
   },
   "units": {
     "foundation": {
       "status": "done",
       "kind": "foundation",
       "templates": [
-        "index",
-        "page1"
+        "index"
       ],
       "pages": 0,
       "blocks": 2,
-      "startedAt": "2026-10-06T10:55:30Z",
-      "endedAt": "2026-10-06T11:09:27Z",
+      "startedAt": "2026-10-08T09:44:16Z",
+      "endedAt": "2026-10-08T09:49:57Z",
       "gates": {
-        "chrome": "nav+footer live, .plain.html 200, 0 about:error, noindex; header 1200x72@1440 / 328x72@360 = prototype (measure.mjs); pixel gate deferred to archetype:index unit (no page live yet)"
+        "origin": "main--f4c8728b--aemcoder.aem.page serves the new styles.css and null-safe header.js (Code Sync after push e8e6319)",
+        "lint": "npm run lint exit 0"
       },
-      "verdict": "foundation: nav+footer 2/2 live, blocks 2, lint clean, code served yes, favicon boilerplate",
-      "commit": "91d5b74"
+      "verdict": "foundation: files 8 written, lint pass, chrome none, fonts none; frozen 16 files"
     },
-    "archetype:index": {
+    "archetype-index": {
       "status": "done",
       "kind": "archetype",
       "templates": [
         "index"
       ],
       "pages": 1,
-      "blocks": 3,
-      "startedAt": "2026-10-06T11:16:00Z",
-      "endedAt": "2026-10-06T11:37:26Z",
+      "blocks": 1,
+      "startedAt": "2026-10-08T09:49:30Z",
+      "endedAt": "2026-10-08T10:04:48Z",
       "gates": {
         "360": {
-          "archetype": "2.66%",
+          "archetypePct": 0,
           "heightDelta": 0,
           "clipped": 0,
-          "contentMissing": 0
+          "gateAllPct": 0.28,
+          "presence": "MISSING 0 HIDDEN 0",
+          "pass": true
         },
         "1440": {
-          "archetype": "2.39%",
-          "heightDelta": -1,
-          "clipped": 0,
-          "contentMissing": 0
-        },
-        "crop": "header 0.00% / footer 0.00%",
-        "chrome": "0 deltas",
-        "motion": "parity (tabs)",
-        "rounds": 0,
-        "requests": 2
-      },
-      "verdict": "archetype:index: pages 1/1 live, blocks 3, gate 1440 2.39% / 360 2.66%, dh -1/0, clip 0/0, content missing 0, crop header 0.00%/footer 0.00%, chrome deltas 0, motion parity, rounds 0, requests 2",
-      "commits": [
-        "f92ed48",
-        "236674c"
-      ]
-    },
-    "archetype:page1": {
-      "status": "done",
-      "kind": "archetype",
-      "templates": [
-        "page1"
-      ],
-      "pages": 1,
-      "blocks": 0,
-      "startedAt": "2026-10-06T11:45:00Z",
-      "endedAt": "2026-10-06T11:48:34Z",
-      "gates": {
-        "360": {
-          "archetype": "1.06%",
+          "archetypePct": 0,
           "heightDelta": 0,
           "clipped": 0,
-          "contentMissing": 0
+          "gateAllPct": 0.08,
+          "presence": "MISSING 0 HIDDEN 0",
+          "pass": true
         },
-        "1440": {
-          "archetype": "0.55%",
-          "heightDelta": 0,
-          "clipped": 0,
-          "contentMissing": 0
-        },
-        "crop": "header 0.00% / footer 0.00%",
-        "chrome": "0 deltas",
-        "motion": "parity (tabs, 5/5)",
-        "rounds": 0,
-        "requests": 0
+        "crop": "no header/footer bands on either side (chrome-less site)",
+        "chrome": "gate.sh chrome-parity reports absent header/footer on both sides (known, justified)",
+        "content": "0 🔴 / 2 🟡 justified (live inline <style> text; CSS-mask glyph)",
+        "measure": "body,p,a Δ 0 at 1440 and 360",
+        "aiReadability": "strict 100 / code 100",
+        "decisions": [
+          "no-h1: source has no heading, none added"
+        ]
       },
-      "verdict": "archetype:page1: pages 1/1 live, blocks 0, gate 1440 0.55% / 360 1.06%, dh 0/0, clip 0/0, content missing 0, crop header 0.00%/footer 0.00%, chrome deltas 0, motion parity, rounds 0, requests 0",
-      "commits": [
-        "1afd2fe",
-        "160c786"
-      ]
+      "verdict": "archetype-index: pages 1/1 live, blocks 1, gate 1440 0.00% / 360 0.00%, requests 1"
     },
-    "cluster:index": {
+    "cluster-index": {
       "status": "done",
       "kind": "cluster",
       "templates": [
@@ -99,82 +67,55 @@
       ],
       "pages": 0,
       "blocks": 0,
-      "startedAt": "2026-10-06T11:48:34Z",
-      "endedAt": "2026-10-06T11:48:34Z",
+      "startedAt": "2026-10-08T10:04:48Z",
+      "endedAt": "2026-10-08T10:04:48Z",
       "gates": {},
-      "verdict": "cluster:index: pages 0/0 (template has no siblings; the archetype is the only page), blocks 0, requests 0"
-    },
-    "cluster:page1": {
-      "status": "done",
-      "kind": "cluster",
-      "templates": [
-        "page1"
-      ],
-      "pages": 0,
-      "blocks": 0,
-      "startedAt": "2026-10-06T11:48:34Z",
-      "endedAt": "2026-10-06T11:48:34Z",
-      "gates": {},
-      "verdict": "cluster:page1: pages 0/0 (template has no siblings; the archetype is the only page), blocks 0, requests 0"
+      "verdict": "cluster-index: pages 0/0 (template index has no siblings), blocks 0, requests 0"
     },
     "gate-all": {
       "status": "done",
       "kind": "final",
       "templates": [
-        "index",
-        "page1"
+        "index"
       ],
-      "pages": 2,
-      "blocks": 5,
-      "startedAt": "2026-10-06T11:48:48Z",
-      "endedAt": "2026-10-06T11:50:11Z",
+      "pages": 1,
+      "startedAt": "2026-10-08T10:14:20Z",
+      "endedAt": "2026-10-08T10:15:24Z",
       "gates": {
         "360": {
-          "index": "2.66% dh 0",
-          "page1": "1.06% dh 0",
-          "pass": "2/2"
+          "pct": 0.28,
+          "heightDelta": 0,
+          "clipped": 0,
+          "presence": "0 missing / 0 hidden",
+          "pass": true
         },
         "1440": {
-          "index": "2.39% dh -1",
-          "page1": "0.55% dh 0",
-          "pass": "2/2"
+          "pct": 0.08,
+          "heightDelta": 0,
+          "clipped": 0,
+          "presence": "0 missing / 0 hidden",
+          "pass": true
         },
-        "clip": "0 on all rows",
-        "content": "0 missing/hidden"
+        "archetypeRegate": "pub3 after foundation request applied: 0.00% / Δh 0 at 1440 and 360, 0 🔴, clip 0, overflow ok",
+        "evidence": "stardust/replica/gates/all-1440/summary.json, stardust/replica/gates/all-360/summary.json"
       },
-      "verdict": "gate-all: 2/2 PASS at 1440 (index 2.39%, page1 0.55%) and 360 (index 2.66%, page1 1.06%); dh ≤1px, clip 0, content 0 missing; coverage gate rows written, 0 flips"
+      "verdict": "gate-all: pages 1/1 pass, gate 1440 0.08% / 360 0.28%, Δh 0, clipped 0, presence 0/0"
     },
     "final": {
       "status": "done",
       "kind": "final",
       "templates": [
-        "index",
-        "page1"
+        "index"
       ],
-      "pages": 2,
-      "blocks": 5,
-      "startedAt": "2026-10-06T11:52:54Z",
-      "endedAt": "2026-10-06T11:56:51Z",
+      "pages": 1,
+      "startedAt": "2026-10-08T10:07:07Z",
+      "endedAt": "2026-10-08T10:15:52Z",
       "gates": {
-        "360": {
-          "index": "0.36%",
-          "page1": "0.44%",
-          "heightDelta": 0,
-          "clipped": 0,
-          "contentMissing": 0
-        },
-        "1440": {
-          "index": "0.05%",
-          "page1": "0.03%",
-          "heightDelta": 0,
-          "clipped": 0,
-          "contentMissing": 0
-        },
+        "freezeCheck": "foundation unchanged (16 files) before and after the request; refrozen at ebffb9d",
         "requestsApplied": 1,
-        "requestsDispositioned": 2,
-        "freeze": "re-frozen after request 2"
+        "archetypeRegate": "pub3 1440 0.00% Δh 0 / 360 0.00% Δh 0, 0 🔴, clip 0, overflow ok, chrome deltas = absent header/footer on both sides (justified)"
       },
-      "verdict": "final: freeze check ok; requests 2 dispositioned (1 applied: --nav-height 71.66px), foundation re-frozen; roster re-gate 2/2 PASS at 1440 (0.05%/0.03%) and 360 (0.36%/0.44%), dh 0, clip 0, content 0; coverage gate rows 2/2, 0 flips"
+      "verdict": "final: 1 foundation request applied (runtime link title dropped in decorateButtons), archetype re-gated 0.00%/0.00%, roster gate-all 1/1 pass, coverage gate rows written"
     }
   }
 }

@@ -1,17 +1,17 @@
 {
   "_provenance": {
     "renderedBy": "playwright",
-    "fetchedAt": "2026-10-06T10:08:30.811Z",
+    "fetchedAt": "2026-10-08T09:22:35.616Z",
     "waitMode": "medium",
     "waitMs": 2500,
     "httpStatus": 200
   },
   "slug": "index",
-  "url": "https://static-website.david-bosschaert.workers.dev/",
+  "url": "https://www.example.com/",
   "renderedBy": "playwright",
-  "fetchedAt": "2026-10-06T10:08:30.811Z",
-  "finalUrl": "https://static-website.david-bosschaert.workers.dev/",
-  "title": "Good Morning!",
+  "fetchedAt": "2026-10-08T09:22:35.616Z",
+  "finalUrl": "https://www.example.com/",
+  "title": "Example Domain",
   "description": null,
   "og": {
     "title": null,
@@ -19,205 +19,46 @@
     "image": null,
     "type": null
   },
-  "headings": [
-    {
-      "tag": "h1",
-      "text": "Super page"
-    },
-    {
-      "tag": "h2",
-      "text": "Here is a subheading"
-    },
-    {
-      "tag": "h4",
-      "text": "Alex Johnson"
-    },
-    {
-      "tag": "h4",
-      "text": "Maria Lopez"
-    }
-  ],
+  "headings": [],
   "body": [
-    "Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida",
-    "Project Lead with a knack for creative solutions and a love of adventure sports.",
-    "UI Designer who brings vibrant energy and stunning visuals to every project."
+    "This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.",
+    "هذا النطاق مُخصص للاستخدام في أمثلة التوثيق دون الحاجة إلى إذن. هذه ليست خدمة، يُرجى تجنب الاعتماد عليها لأغراض الاختبار والمراقبة.",
+    "该域名仅用于文档示例，无需获得许可。这并非一项服务，请勿将其用于测试和监控目的。",
+    "L’usage de ce domaine est réservé à des exemples de documentation, sans autorisation préalable. Il ne s’agit pas d’un service ; son utilisation à des fins de test ou de surveillance est à éviter.",
+    "Данный домен предназначен для использования в примерах документации без необходимости получения предварительного разрешения. Это не сервис; не рекомендуется его использование для тестирования и мониторинга.",
+    "Este dominio está destinado al uso en ejemplos de documentación sin necesidad de permiso. Esto no es un servicio; evitar utilizarlo para realizar pruebas o monitoreos."
   ],
   "codeBlocks": [],
   "ctas": [
     {
-      "label": "Home",
-      "href": "/"
-    },
-    {
-      "label": "Page 1",
-      "href": "/page1"
-    },
-    {
-      "label": "Team Alpha",
-      "href": null
-    },
-    {
-      "label": "Team Beta",
-      "href": null
-    },
-    {
-      "label": "Team Gamma",
-      "href": null
+      "label": "Learn more",
+      "href": "https://iana.org/help/example-domains"
     }
   ],
   "links": [
-    "https://static-website.david-bosschaert.workers.dev/",
-    "https://static-website.david-bosschaert.workers.dev/page1"
+    "https://iana.org/help/example-domains"
   ],
   "media": {
-    "imgs": [
-      {
-        "src": "https://picsum.photos/id/152/800/600",
-        "alt": "Sample image",
-        "w": 800,
-        "h": 600
-      },
-      {
-        "src": "https://picsum.photos/id/155/800/600",
-        "alt": "Image 1",
-        "w": 800,
-        "h": 600
-      },
-      {
-        "src": "https://picsum.photos/id/164/800/600",
-        "alt": "Image 2",
-        "w": 800,
-        "h": 600
-      },
-      {
-        "src": "https://randomuser.me/api/portraits/men/45.jpg",
-        "alt": "Team member 1",
-        "w": 128,
-        "h": 128
-      },
-      {
-        "src": "https://randomuser.me/api/portraits/women/57.jpg",
-        "alt": "Team member 2",
-        "w": 128,
-        "h": 128
-      },
-      {
-        "src": "https://randomuser.me/api/portraits/men/37.jpg",
-        "alt": "Team member 3",
-        "w": 128,
-        "h": 128
-      },
-      {
-        "src": "https://randomuser.me/api/portraits/women/43.jpg",
-        "alt": "Team member 4",
-        "w": 128,
-        "h": 128
-      },
-      {
-        "src": "https://randomuser.me/api/portraits/men/59.jpg",
-        "alt": "Team member 5",
-        "w": 128,
-        "h": 128
-      },
-      {
-        "src": "https://randomuser.me/api/portraits/women/25.jpg",
-        "alt": "Team member 6",
-        "w": 128,
-        "h": 128
-      }
-    ],
-    "allImgCount": 9,
+    "imgs": [],
+    "allImgCount": 0,
     "cssBackgrounds": [],
     "modals": [],
     "videos": [],
-    "iframes": [
-      {
-        "src": "https://www.youtube.com/embed/b4Rr_7y068U",
-        "title": "YouTube video"
-      }
-    ]
+    "iframes": []
   },
   "customProps": {},
   "_signals": {
     "filteredInterstitials": 0,
-    "distinctHeadings": 4,
-    "mainTextLen": 1151,
-    "realImageCount": 9,
+    "distinctHeadings": 0,
+    "mainTextLen": 989,
+    "realImageCount": 0,
     "trackingOnlyMedia": false,
     "spaShellSuspect": false,
     "screenshotMode": "fullPage"
   },
   "dynamic": {
-    "endpoints": [
-      {
-        "method": "GET",
-        "host": "googleads.g.doubleclick.net",
-        "path": "/pagead/id",
-        "query": [],
-        "resourceType": "xhr",
-        "contentType": "text/html",
-        "status": 302,
-        "bytes": 120,
-        "hits": 2,
-        "example": "https://googleads.g.doubleclick.net/pagead/id",
-        "sameSite": false
-      },
-      {
-        "method": "GET",
-        "host": "www.gstatic.com",
-        "path": "/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
-        "query": [],
-        "resourceType": "fetch",
-        "contentType": "image/svg+xml",
-        "status": 200,
-        "bytes": 272,
-        "hits": 1,
-        "example": "https://www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
-        "sameSite": false
-      },
-      {
-        "method": "POST",
-        "host": "jnn-pa.googleapis.com",
-        "path": "/$rpc/google.internal.waa.v1.Waa/GenerateIT",
-        "query": [],
-        "resourceType": "xhr",
-        "contentType": "application/json+protobuf",
-        "status": 200,
-        "bytes": 130,
-        "hits": 1,
-        "example": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
-        "sameSite": false
-      },
-      {
-        "method": "POST",
-        "host": "www.youtube.com",
-        "path": "/youtubei/v1/log_event",
-        "query": [
-          "alt"
-        ],
-        "resourceType": "xhr",
-        "contentType": "application/json",
-        "status": 200,
-        "bytes": 31,
-        "hits": 1,
-        "example": "https://www.youtube.com/youtubei/v1/log_event",
-        "sameSite": false
-      }
-    ],
-    "thirdPartyScriptHosts": [
-      {
-        "host": "www.youtube.com",
-        "count": 4
-      },
-      {
-        "host": "static.doubleclick.net",
-        "count": 1
-      },
-      {
-        "host": "www.google.com",
-        "count": 1
-      }
-    ],
+    "endpoints": [],
+    "thirdPartyScriptHosts": [],
     "truncated": false,
     "inlineData": [],
     "globalState": [],
@@ -228,8 +69,8 @@
     "mediaIds": [],
     "summary": {
       "sameSiteEndpoints": 0,
-      "thirdPartyEndpoints": 4,
-      "thirdPartyScriptHosts": 3,
+      "thirdPartyEndpoints": 0,
+      "thirdPartyScriptHosts": 0,
       "inlineDataBlobs": 0,
       "forms": 0,
       "searchForms": 0,
@@ -237,24 +78,5 @@
     }
   },
   "screenshot": "assets/screenshots/index.png",
-  "renderedHtml": "pages/index.html",
-  "slots": {
-    "page-title": "Super page",
-    "lede": "Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida",
-    "media-row-1": [
-      "iframe:https://www.youtube.com/embed/b4Rr_7y068U",
-      "img:https://picsum.photos/id/152/800/600"
-    ],
-    "subheading": "Here is a subheading",
-    "media-row-2": [
-      "img:https://picsum.photos/id/155/800/600",
-      "img:https://picsum.photos/id/164/800/600"
-    ],
-    "prose-block": "A wild pangolin appears, juggling tiny umbrellas and humming a tune! Nearby, a mischievous squirrel rides a unicycle while an owl recites a poem about cheese. Suddenly, a parade of rubber ducks marches by, each one wearing a different colored hat, quacking a cheerful melody. In the distance, a pair of tap-dancing frogs put on a show, their shoes sparkling in the sunlight as a gentle breeze carries the scent of fresh popcorn through the air.",
-    "team-tabs": [
-      "Team Alpha",
-      "Team Beta",
-      "Team Gamma"
-    ]
-  }
+  "renderedHtml": "pages/index.html"
 }

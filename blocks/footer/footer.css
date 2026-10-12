@@ -1,16 +1,4 @@
-/* footer — the source's `.site-footer`. Its own box styles sit on the host element
-   (outside <main>): the gap above it is the footer's own top margin (#31). */
-
-footer {
-  max-width: var(--container);
-  margin: 2rem auto 0;
-  padding: 1.5rem;
-  border-top: 2px solid var(--c-rule);
-  text-align: center;
-  font-size: 0.95rem;
-  color: var(--c-muted);
-}
-
-footer .footer p {
-  margin: 0;
+/* no footer exists on the source (https://www.example.com/); the footer occupies no space */
+footer .footer {
+  height: 0;
 }

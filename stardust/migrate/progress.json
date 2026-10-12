@@ -1,43 +1,42 @@
 {
+  "_provenance": {
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-08T09:38:31Z",
+    "stardustVersion": "0.29.1"
+  },
   "units": {
     "plan": {
       "status": "done",
       "kind": "plan",
       "templates": [
-        "landing",
         "static"
       ],
-      "pages": 2,
-      "verdict": "plan: 2 pages Path A (index landing, page1 static), 0 siblings, 0 Path B; canon css e6cdf7a; DESIGN.md 8055b15, DESIGN.json 058dcfb",
-      "endedAt": "2026-10-06T10:42:47.448Z"
+      "pages": 1,
+      "startedAt": "2026-10-08T09:38:14Z",
+      "endedAt": "2026-10-08T09:38:31Z",
+      "verdict": "1 template (static), 1 archetype (index → /), 0 siblings, 0 media to rehost: units = render static (archetype), report"
     },
-    "render-archetypes": {
+    "static": {
       "status": "done",
       "kind": "render",
       "templates": [
-        "landing",
         "static"
       ],
-      "pages": 2,
-      "startedAt": "2026-10-06T10:43:03.842Z",
-      "verdict": "render-archetypes: 2/2 rendered (index → index.html 12 assets, page1 → page1/index.html 8 assets), 0 refused, 0 broken links, content-count pass on both",
-      "endedAt": "2026-10-06T10:44:57.833Z"
-    },
-    "assets": {
-      "status": "done",
-      "kind": "assets",
-      "pages": 2,
-      "startedAt": "2026-10-06T10:45:23.511Z",
-      "verdict": "assets: 12 bundled media/css/js files already per-page; no logo/fonts in capture; robots.txt + sitemap.xml (2 urls); 6 portability audits OK",
-      "endedAt": "2026-10-06T10:45:57.589Z"
+      "pages": 1,
+      "startedAt": "2026-10-08T09:38:45Z",
+      "endedAt": "2026-10-08T09:41:48Z",
+      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 (index → index.html, branch A, 2 assets, 8 slots, modules [notice])"
     },
     "report": {
       "status": "done",
       "kind": "report",
-      "pages": 2,
-      "startedAt": "2026-10-06T10:46:12.520Z",
-      "verdict": "report: 2 migrated (index, page1), 0 unchanged, 0 failed; Path A 2; bundle 336K self-contained",
-      "endedAt": "2026-10-06T10:46:27.289Z"
+      "templates": [
+        "static"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-08T09:42:05Z",
+      "endedAt": "2026-10-08T09:42:15Z",
+      "verdict": "1 of 1 pages migrated (index, archetype, gates content-fidelity + content-count); 0 siblings, 0 thin, 0 assets rehosted"
     }
   }
 }

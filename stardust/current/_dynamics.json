@@ -1,126 +1,20 @@
 {
  "_provenance": {
   "writtenBy": "stardust:dynamics detect",
-  "writtenAt": "2026-10-06T10:48:53.799Z",
+  "writtenAt": "2026-10-08T09:27:27.055Z",
   "settleMs": 5000,
   "width": 1440,
   "urls": [
-   "https://static-website.david-bosschaert.workers.dev/",
-   "https://static-website.david-bosschaert.workers.dev/page1"
+   "https://www.example.com/"
   ],
   "reachSource": "stardust/current/pages"
  },
  "pages": {
   "/": {
-   "url": "https://static-website.david-bosschaert.workers.dev/",
+   "url": "https://www.example.com/",
    "status": 200,
-   "host": "static-website.david-bosschaert.workers.dev",
-   "title": "Good Morning!",
-   "forms": [],
-   "controlGroups": [],
-   "triggers": [],
-   "dialogs": [],
-   "dialogCount": 0,
-   "media": [
-    {
-     "tag": "iframe",
-     "src": "https://www.youtube.com/embed/b4Rr_7y068U",
-     "account": null,
-     "player": null,
-     "videoId": null,
-     "inDialog": false
-    }
-   ],
-   "iframes": [
-    {
-     "src": "https://www.youtube.com/embed/b4Rr_7y068U",
-     "title": "YouTube video",
-     "w": 288,
-     "h": 162
-    }
-   ],
-   "mounts": [],
-   "auth": [],
-   "commerce": {
-    "cart": false,
-    "prices": 0
-   },
-   "locale": {
-    "lang": "en",
-    "hreflang": [],
-    "switcher": []
-   },
-   "cms": {},
-   "framework": null,
-   "globals": [],
-   "clientRendered": [],
-   "listingCandidates": [],
-   "inlineScripts": 0,
-   "inlineFetch": false,
-   "mainText": 816,
-   "domAddedAfterLoad": 0,
-   "hosts": {
-    "static-website.david-bosschaert.workers.dev": 3,
-    "randomuser.me": 6,
-    "picsum.photos": 3,
-    "www.youtube.com": 8,
-    "fastly.picsum.photos": 3,
-    "fonts.gstatic.com": 1,
-    "static.doubleclick.net": 1,
-    "googleads.g.doubleclick.net": 2,
-    "www.google.com": 1,
-    "i.ytimg.com": 1,
-    "yt3.ggpht.com": 1,
-    "www.gstatic.com": 1,
-    "jnn-pa.googleapis.com": 1
-   },
-   "thirdPartyHosts": [
-    "randomuser.me",
-    "picsum.photos",
-    "www.youtube.com",
-    "fastly.picsum.photos",
-    "fonts.gstatic.com",
-    "static.doubleclick.net",
-    "googleads.g.doubleclick.net",
-    "www.google.com",
-    "i.ytimg.com",
-    "yt3.ggpht.com",
-    "www.gstatic.com",
-    "jnn-pa.googleapis.com"
-   ],
-   "scripts": [
-    "https://static-website.david-bosschaert.workers.dev/script.js",
-    "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.qE2jLOFMdk8.es5.O/am=AAAAQA/d=1/excm=base,root/br=1/rs=AGKMywEulJB0YyWU89xIRf9H_HJYbRwwLA/m=root,base",
-    "https://www.youtube.com/s/player/c4fd1fc7/player_embed.vflset/en_US/base.js",
-    "https://static.doubleclick.net/instream/ad_status.js",
-    "https://www.youtube.com/s/_/ytembeds/_/js/k=ytembeds.base.en_US.qE2jLOFMdk8.es5.O/ck=ytembeds.base.T_le-qGe-a8.L.W.O/am=AAAAQA/d=1/exm=base,root/excm=base,root/ed=1/br=1/rs=AGKMywF1tGzbUMncLmfaPTAe2ij",
-    "https://www.google.com/js/th/bVQdRn6VMJ5C2nDVMLUwESAoLSPdZL_PNP5jTAKPN7E.js"
-   ],
-   "firstPartyApi": [],
-   "thirdPartyXhr": [
-    "GET googleads.g.doubleclick.net/pagead/id",
-    "GET www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg",
-    "POST jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
-    "POST www.youtube.com/youtubei/v1/log_event"
-   ],
-   "postBodies": [
-    {
-     "url": "https://jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT",
-     "body": "[\"O43z0dpjhgX20SCx4KAo\",\"$KbY5ttJRAAY_KLVEHyjeg-MTnt5O1-OnAEABEArZ1MdsFD-Jq8zkb9NN6xqiiErhXn95AEKa6ZM18rklf_sSf_Iknnk_V8od4jbKBIJX1VbPS6VQ4Hf7S42yngAAAEvOAAAABfQBB-IAV0Fy4seLvQMlR1duN9ErhSqFtFk66V91x5vKt-K2K52SY9eRA3bBuJUvlqf1MBNQwnEMe9ucyWlAg51Tw6KvhYo74hvOyItBgOMalSvZhcPxBzh7EyNfIQUFGDVokm7_xvArB0Gx9NZ-wgVEQKv-ZusmIr793weUxxay2MCp12Kdidkzn0qEMLBB9akpmImJGm7kMq4uL2U_HaWM0yQhacGUhy84pU0oOrgkCst2ZY"
-    },
-    {
-     "url": "https://www.youtube.com/youtubei/v1/log_event?alt=json",
-     "body": "{\"context\":{\"client\":{\"hl\":\"en\",\"gl\":\"US\",\"clientName\":56,\"clientVersion\":\"2.20261005.01.00\",\"configInfo\":{\"appInstallData\":\"CJakk9YGEMn2gBMQyvuAExD36NIcEKSOgRMQwY_QHBC9tq4FENut0hwQuOTOHBDa984cEIeszhwQrom4IhCvirgiEMHUqBcQn8-AExDM364FEN68zhwQ8N7RHBCBzc4cEJmNsQUQ9quwBRC-hNEcEPjEgBMQ0trSHBD82tIcEOfr0RwQrd7RHBCkqdEcEK7WzxwQ8bTQHBDRiLgiEL6KsAUQ8JywBRCe0LAFELyk0BwQpePSHBCMudIcEO-70hwQtdfSHBDQxtEcELD40Rw"
-    }
-   ],
-   "textAtLoad": 816,
-   "mainEmptyAtLoad": false
-  },
-  "/page1": {
-   "url": "https://static-website.david-bosschaert.workers.dev/page1",
-   "status": 200,
-   "host": "static-website.david-bosschaert.workers.dev",
-   "title": "Good Morning!",
+   "host": "www.example.com",
+   "title": "Example Domain",
    "forms": [],
    "controlGroups": [],
    "triggers": [],
@@ -146,150 +40,27 @@
    "listingCandidates": [],
    "inlineScripts": 0,
    "inlineFetch": false,
-   "mainText": 350,
+   "mainText": 911,
    "domAddedAfterLoad": 0,
    "hosts": {
-    "static-website.david-bosschaert.workers.dev": 3,
-    "randomuser.me": 6
+    "www.example.com": 2
    },
-   "thirdPartyHosts": [
-    "randomuser.me"
-   ],
+   "thirdPartyHosts": [],
    "scripts": [
-    "https://static-website.david-bosschaert.workers.dev/script.js"
+    "https://www.example.com/s.js"
    ],
    "firstPartyApi": [],
    "thirdPartyXhr": [],
    "postBodies": [],
-   "textAtLoad": 350,
+   "textAtLoad": 911,
    "mainEmptyAtLoad": false
   }
  },
- "findings": [
-  {
-   "id": "a-unknown-third-party-host-www-gstatic-com",
-   "class": "A",
-   "feature": "unknown third-party host www.gstatic.com",
-   "hint": "inspect",
-   "evidence": [
-    "www.gstatic.com"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "a-unknown-third-party-host-jnn-pa-googleapis-com",
-   "class": "A",
-   "feature": "unknown third-party host jnn-pa.googleapis.com",
-   "hint": "inspect",
-   "evidence": [
-    "jnn-pa.googleapis.com"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "t-unknown-third-party-host-randomuser-me",
-   "class": "T",
-   "feature": "unknown third-party host randomuser.me",
-   "hint": "inspect",
-   "evidence": [
-    "randomuser.me"
-   ],
-   "pages": [
-    "/",
-    "/page1"
-   ]
-  },
-  {
-   "id": "t-unknown-third-party-host-picsum-photos",
-   "class": "T",
-   "feature": "unknown third-party host picsum.photos",
-   "hint": "inspect",
-   "evidence": [
-    "picsum.photos"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "t-unknown-third-party-host-fastly-picsum-photos",
-   "class": "T",
-   "feature": "unknown third-party host fastly.picsum.photos",
-   "hint": "inspect",
-   "evidence": [
-    "fastly.picsum.photos"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "t-marketing-ad-retargeting-pixel",
-   "class": "T",
-   "feature": "marketing: ad / retargeting pixel",
-   "role": "marketing: ad / retargeting pixel",
-   "hint": "tags",
-   "evidence": [
-    "static.doubleclick.net",
-    "googleads.g.doubleclick.net"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "t-unknown-third-party-host-www-google-com",
-   "class": "T",
-   "feature": "unknown third-party host www.google.com",
-   "hint": "inspect",
-   "evidence": [
-    "www.google.com"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "t-unknown-third-party-host-yt3-ggpht-com",
-   "class": "T",
-   "feature": "unknown third-party host yt3.ggpht.com",
-   "hint": "inspect",
-   "evidence": [
-    "yt3.ggpht.com"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "v-video-youtube",
-   "class": "V",
-   "feature": "video: YouTube",
-   "role": "video: YouTube",
-   "hint": "media",
-   "evidence": [
-    "www.youtube.com",
-    "i.ytimg.com",
-    "https://www.youtube.com/embed/b4Rr_7y068U"
-   ],
-   "pages": [
-    "/"
-   ]
-  }
- ],
+ "findings": [],
  "reach": {
-  "pagesWithEvidence": 2,
-  "of": 2,
-  "endpoints": {
-   "GET googleads.g.doubleclick.net/pagead/id": 1,
-   "GET www.gstatic.com/youtube/img/icons/mweb/youtube_fill/logo/v2/67px.svg": 1,
-   "POST jnn-pa.googleapis.com/$rpc/google.internal.waa.v1.Waa/GenerateIT": 1,
-   "POST www.youtube.com/youtubei/v1/log_event": 1
-  },
+  "pagesWithEvidence": 1,
+  "of": 1,
+  "endpoints": {},
   "searchFormPages": 0,
   "formPages": 0,
   "triggerPages": {}

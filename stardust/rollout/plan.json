@@ -1,17 +1,16 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/plan",
-    "writtenAt": "2026-10-06T10:47:40.744Z",
+    "writtenAt": "2026-10-08T09:42:48.695Z",
     "readArtifacts": [
       "stardust/rollout/coverage"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-06T10:47:40.744Z",
+  "generatedAt": "2026-10-08T09:42:48.695Z",
   "fragments": [],
   "deliveryOrder": [
-    "index",
-    "page1"
+    "index"
   ],
   "steps": [
     {
@@ -22,52 +21,11 @@
       "isRepresentative": true,
       "convert": [
         {
-          "id": "site-header",
-          "edsBlockName": "site-header"
-        },
-        {
-          "id": "media-cells",
-          "edsBlockName": "media-cells"
-        },
-        {
-          "id": "prose-block",
-          "edsBlockName": "prose-block"
-        },
-        {
-          "id": "team-tabs",
-          "edsBlockName": "team-tabs"
-        },
-        {
-          "id": "site-footer",
-          "edsBlockName": "site-footer"
+          "id": "notice",
+          "edsBlockName": "notice"
         }
       ],
       "reuse": []
-    },
-    {
-      "slug": "page1",
-      "path": "/page1",
-      "templateId": "page1",
-      "status": "pending",
-      "isRepresentative": false,
-      "convert": [],
-      "reuse": [
-        {
-          "id": "site-header",
-          "edsBlockName": "site-header",
-          "convertedBy": "index"
-        },
-        {
-          "id": "team-tabs",
-          "edsBlockName": "team-tabs",
-          "convertedBy": "index"
-        },
-        {
-          "id": "site-footer",
-          "edsBlockName": "site-footer",
-          "convertedBy": "index"
-        }
-      ]
     }
   ]
 }

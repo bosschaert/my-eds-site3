@@ -1,26 +1,4 @@
-/* header — the source's `.site-header` bar. The host box (max-width, margin, background,
-   radius, shadow, 72px reservation) lives in styles/styles.css so the pre-load reservation
-   already paints like the loaded bar (#81); this file owns the inner row and the links. */
-
-header .header .site-header {
-  display: flex;
-  gap: 1.5rem;
-  padding: 1rem 1.5rem;
-}
-
-header .header .site-header-link {
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 1.05rem;
-  color: var(--c-primary);
-  text-decoration: none;
-  padding: 0.4rem 1rem;
-  border-radius: var(--radius-link);
-  transition: background 0.2s, color 0.2s;
-}
-
-header .header .site-header-link:hover {
-  background: var(--c-primary-tint);
-  color: var(--c-primary-dark);
-  text-decoration: none;
+/* no nav exists on the source (https://www.example.com/); the header occupies no space */
+header .header {
+  height: 0;
 }

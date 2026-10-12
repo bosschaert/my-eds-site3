@@ -1,8 +1,16 @@
 {
   "runtime": "vanilla-eds",
   "blockWrapperClass": "block",
+  "blockWrapper": "div.<name>-wrapper around the block; section gains .<name>-container; block gets data-block-name + data-block-status",
   "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
   "buttonization": "formatted-only",
+  "buttonizationNote": "scripts.js decorateButtons requires an authored <strong>/<em> around the <a> (strong=primary, em=secondary, both=accent); a bare <a> alone in a <p> stays a plain link",
   "fragmentScriptPolicy": "inert-innerHTML",
-  "emptySectionCollapse": true
+  "emptySectionCollapse": true,
+  "emptySectionNote": "scripts/aem.js decorateSections neither folds section-metadata nor removes the metadata block client-side; the pipeline consumes it and leaves an empty .section, so styles.css carries main .section:empty { display: none }",
+  "sectionStatus": "decorateSections sets data-section-status=initialized + inline display:none; loadSections flips to loaded",
+  "chrome": "loadHeader/loadFooter decorate body > header / body > footer as blocks header/footer; header.js and footer.js loadFragment('/nav') / ('/footer') (overridable via nav/footer metadata)",
+  "fontsCss": "scripts.js loadFonts() loads /styles/fonts.css in loadLazy (eager on desktop or when sessionStorage fonts-loaded is set)",
+  "probedFrom": ["scripts/scripts.js", "scripts/aem.js", "blocks/fragment/fragment.js"],
+  "probedAt": "2026-10-06"
 }

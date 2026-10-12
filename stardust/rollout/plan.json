@@ -1,0 +1,73 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-10-06T10:47:40.744Z",
+    "readArtifacts": [
+      "stardust/rollout/coverage"
+    ],
+    "stardustVersion": "0.0.0"
+  },
+  "generatedAt": "2026-10-06T10:47:40.744Z",
+  "fragments": [],
+  "deliveryOrder": [
+    "index",
+    "page1"
+  ],
+  "steps": [
+    {
+      "slug": "index",
+      "path": "/",
+      "templateId": "index",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "site-header",
+          "edsBlockName": "site-header"
+        },
+        {
+          "id": "media-cells",
+          "edsBlockName": "media-cells"
+        },
+        {
+          "id": "prose-block",
+          "edsBlockName": "prose-block"
+        },
+        {
+          "id": "team-tabs",
+          "edsBlockName": "team-tabs"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "page1",
+      "path": "/page1",
+      "templateId": "page1",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "site-header",
+          "edsBlockName": "site-header",
+          "convertedBy": "index"
+        },
+        {
+          "id": "team-tabs",
+          "edsBlockName": "team-tabs",
+          "convertedBy": "index"
+        },
+        {
+          "id": "site-footer",
+          "edsBlockName": "site-footer",
+          "convertedBy": "index"
+        }
+      ]
+    }
+  ]
+}

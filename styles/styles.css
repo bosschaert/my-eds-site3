@@ -1,25 +1,75 @@
 /*
- * Balbriggan uses Gotham commercially. No licensed webfont was supplied, so
- * this deployment intentionally uses Arial rather than redistributing Gotham.
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
  */
-/* stylelint-disable no-descending-specificity */
+
+/* Super Page replica foundation — tokens and document rules lifted from
+   stardust/prototypes/css/canon.css (every value traces to the source stylesheet).
+   The boilerplate's structural layer (body gate, header reservation, section scaffold)
+   is kept; its demo typography/colour layer is replaced. */
 
 :root {
-  --background-color: #fff;
-  --light-color: #f0f0f0;
-  --dark-color: #444;
-  --text-color: #3c3c3b;
-  --link-color: #2494d2;
-  --link-hover-color: #00699b;
-  --brand-blue: #2494d2;
-  --brand-cyan: #009bd9;
-  --brand-yellow: #f5ee2f;
-  --content-width: 1140px;
-  --body-font-family: arial, sans-serif;
-  --heading-font-family: arial, sans-serif;
-  --nav-height: 98px;
+  /* palette */
+  --c-text: #333;
+  --c-text-prose: #444;
+  --c-primary: #6a1b9a; /* h1, nav links */
+  --c-primary-dark: #4a148c; /* nav link hover */
+  --c-primary-tint: #f3e5f5; /* nav link hover bg */
+  --c-secondary: #5e35b1; /* lede / body paragraphs */
+  --c-teal: #00897b; /* h2 */
+  --c-cyan: #26c6da; /* h2 underline, cell hover border */
+  --c-pink: #ec407a; /* prose block left border */
+  --c-muted: #777; /* footer text */
+  --c-rule: #e0e0e0; /* footer top rule */
+  --c-surface: #fff;
+  --c-tabs-bg: #f8f8f8;
+  --c-tab-text: #666;
+  --c-tab-rule: #ddd;
+  --c-tab-active: #2196f3;
+
+  /* surfaces */
+  --bg-page: linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 50%, #fff8e1 100%);
+  --bg-prose: linear-gradient(135deg, #fff 0%, #fce4ec 100%);
+  --shadow-card: 0 4px 20px rgb(106 27 154 / 12%);
+  --shadow-card-hover: 0 8px 30px rgb(0 150 136 / 20%);
+  --shadow-prose: 0 4px 20px rgb(233 30 99 / 10%);
+  --shadow-team: 0 2px 8px rgb(0 0 0 / 7%);
+  --shadow-title: 2px 2px 4px rgb(106 27 154 / 15%);
+  --radius-card: 12px;
+  --radius-media: 8px;
+  --radius-link: 8px;
+  --radius-team: 10px;
+
+  /* type (system stacks: the source names these faces but serves no font files) */
+  --font-body: poppins, 'Segoe UI', system-ui, sans-serif;
+  --font-display: 'Playfair Display', georgia, serif;
+  --lh-body: 1.6;
+
+  /* container model (cap-probe: 1200px module cap on header, footer, media, prose) */
+  --container: 1200px;
+  --page-pad: 2rem;
+
+  /* boilerplate aliases: the global button/link system below reads these */
+  --background-color: var(--c-surface);
+  --light-color: var(--c-tabs-bg);
+  --dark-color: var(--c-text-prose);
+  --text-color: var(--c-text);
+  --link-color: var(--c-primary);
+  --link-hover-color: var(--c-primary-dark);
+
+  /* nav height: the source header bar measures 71.66px at 1440 and 360 (no wrap zone);
+     72px shifted every element below it +0.34px (foundation request 2, applied at C-final) */
+  --nav-height: 71.66px;
 }
 
+/* ---- document reset (the source applies border-box universally) ---- */
 *,
 *::before,
 *::after {
@@ -33,21 +83,27 @@ html {
 body {
   display: none;
   margin: 0;
-  background: var(--background-color);
-  color: var(--text-color);
-  font-family: var(--body-font-family);
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.5;
+  padding: var(--page-pad);
+  min-height: 100vh;
+  background: var(--bg-page);
+  color: var(--c-text);
+  font-family: var(--font-body);
+  line-height: var(--lh-body);
 }
 
 body.appear {
   display: block;
 }
 
-body > header {
+/* header reservation (structural) + the chrome bar's own box, so the reserved band
+   already looks like the loaded header (#81) */
+header {
   height: var(--nav-height);
-  background: var(--brand-blue);
+  max-width: var(--container);
+  margin: 0 auto 2rem;
+  background: var(--c-surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
 }
 
 header .header,
@@ -60,213 +116,199 @@ footer .footer[data-block-status="loaded"] {
   visibility: visible;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-family: var(--heading-font-family);
-  line-height: 1.2;
-}
-
-p,
-ol,
-ul {
-  margin-top: 0;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-}
-
-a:any-link {
-  color: inherit;
-  text-decoration: none;
-}
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-  border: 0;
+input,
+textarea,
+select,
+button {
+  font: inherit;
 }
 
+/* ---- default-content typography (the source's h1 / p / h2 rules) ---- */
+main h1 {
+  margin: 0.67em 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--c-primary);
+  text-align: center;
+  letter-spacing: -0.5px;
+  text-shadow: var(--shadow-title);
+}
+
+/* the source's `p` rule: every paragraph on the site, lede and team bios alike */
+main p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--c-secondary);
+  text-align: center;
+}
+
+/* section heading: inline-block so the underline is text-wide */
+main h2 {
+  display: inline-block;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--c-cyan);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--c-teal);
+}
+
+/* links */
+a:any-link {
+  color: var(--link-color);
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* buttons (boilerplate convention; the source has no CTAs, so no brand button is invented) */
+p.button-wrapper {
+  margin: 12px 0;
+}
+
+a.button:any-link,
+button.button {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0;
+  border: 2px solid transparent;
+  border-radius: 2.4em;
+  padding: 0.5em 1.2em;
+  font: inherit;
+  font-weight: 500;
+  line-height: 1.25;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+a.button[aria-disabled="true"],
+button.button:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+a.button.primary,
+button.button.primary {
+  border-color: var(--text-color);
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+a.button.primary:hover,
+a.button.primary:focus-visible,
+button.button.primary:hover,
+button.button.primary:focus-visible {
+  border-color: var(--dark-color);
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+a.button.secondary,
+button.button.secondary {
+  border-color: var(--text-color);
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+a.button.secondary:hover,
+a.button.secondary:focus-visible,
+button.button.secondary:hover,
+button.button.secondary:focus-visible {
+  border-color: var(--dark-color);
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+a.button.accent,
+button.button.accent {
+  border-color: var(--link-color);
+  background-color: var(--link-color);
+  color: var(--background-color);
+}
+
+a.button.accent:hover,
+a.button.accent:focus-visible,
+button.button.accent:hover,
+button.button.accent:focus-visible {
+  border-color: var(--link-hover-color);
+  background-color: var(--link-hover-color);
+}
+
+a.button[aria-disabled="true"],
+a.button[aria-disabled="true"]:hover,
+a.button[aria-disabled="true"]:focus-visible,
+button.button:disabled,
+button.button:disabled:hover,
+button.button:disabled:focus-visible {
+  background-color: var(--light-color);
+  border-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ---- sections: the source has no section rhythm; element margins carry it, the body
+   padding is the gutter and the 1200px module cap sits on the section wrapper (#124) ---- */
 main > .section {
   margin: 0;
 }
 
 main > .section > div {
-  max-width: none;
-  margin: 0;
+  max-width: var(--container);
+  margin: auto;
   padding: 0;
 }
 
+main > .section:first-of-type {
+  margin-top: 0;
+}
+
+/* the pipeline consumes the metadata block and leaves its section empty */
 main .section:empty {
   display: none;
 }
 
-main .section.intro {
-  min-height: 439px;
-  padding: 54px 20px 64px;
-  text-align: center;
-}
-
-main .section.intro .default-content-wrapper {
-  width: min(var(--content-width), 100%);
-  margin: 0 auto;
-}
-
-main .section.intro h2,
-.news-carousel-container .default-content-wrapper h2,
-.explore-grid-container .default-content-wrapper h2,
-.document-cards-container .default-content-wrapper h2 {
-  color: var(--text-color);
-  font-size: 32px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-main .section.intro h2::after,
-.news-carousel-container .default-content-wrapper h2::after,
-.explore-grid-container .default-content-wrapper h2::after,
-.document-cards-container .default-content-wrapper h2::after {
-  content: "";
-  display: block;
-  width: 10%;
-  margin: 0.5em auto 1.5em;
-  border-top: 5px solid var(--brand-yellow);
-}
-
-main .section.intro h2::after {
-  margin-bottom: 58px;
-}
-
-main .section.intro p {
-  max-width: 808px;
-  margin: 0 auto 16px;
-  line-height: 24px;
-}
-
-.news-carousel-container,
-.explore-grid-container,
-.document-cards-container {
-  position: relative;
-}
-
-.news-carousel-container .default-content-wrapper,
-.explore-grid-container .default-content-wrapper,
-.document-cards-container .default-content-wrapper {
-  position: absolute;
-  z-index: 2;
-  top: 54px;
-  right: 20px;
-  left: 20px;
-}
-
-.document-cards-container .default-content-wrapper h2::after {
-  margin-bottom: 65px;
-}
-
-p.button-wrapper {
-  margin: 0;
-}
-
-a.button:any-link,
-button.button {
-  display: inline-flex;
-  min-height: 38px;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  border: 2px solid var(--brand-yellow);
-  border-radius: 24px;
-  padding: 4px 32px;
-  background: var(--brand-yellow);
-  color: var(--text-color);
-  font-weight: 700;
-  line-height: 1.15;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-a.button:hover,
-a.button:focus-visible,
-button.button:hover,
-button.button:focus-visible {
-  border-color: #fff;
-  background: #fff;
-  color: var(--brand-blue);
-  text-decoration: none;
-}
-
-.prosemirror-editor p > :is(strong, em) > a:any-link,
-.prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--brand-yellow);
-  border-radius: 24px;
-  padding: 4px 32px;
-  background: var(--brand-yellow);
-  color: var(--text-color);
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.prosemirror-editor p > a:any-link > :is(strong, em) {
-  font-weight: inherit;
-  font-style: inherit;
-}
-
-a .prosemirror-editor a:any-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (width <= 800px) {
+/* ---- responsive (the source's single page-geometry query) ---- */
+@media (width <= 768px) {
   :root {
-    --nav-height: 90px;
+    --page-pad: 1rem;
   }
 
-  main .section.intro {
-    height: 695px;
-    min-height: 0;
-    padding: 54px 15px 64px;
-    overflow: hidden;
+  main h1 {
+    font-size: 1.8rem;
   }
 
-  main .section.intro h2::after {
-    margin-bottom: 90px;
-  }
-
-  main .section.intro p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .news-carousel-container .default-content-wrapper h2::after,
-  .explore-grid-container .default-content-wrapper h2::after {
-    margin-bottom: 58px;
-  }
-
-  .document-cards-container .default-content-wrapper h2::after {
-    margin-bottom: 74px;
+  main h2 {
+    font-size: 1.4rem;
   }
 }

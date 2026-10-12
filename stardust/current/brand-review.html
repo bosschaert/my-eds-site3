@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand review — Super Page (current state)</title>
+<!-- stardust:provenance writtenBy=stardust:extract writtenAt=2026-10-06T10:16:00Z readArtifacts=_brand-extraction.json,_computed-styles.json,_crawl-log.json,pages/*.json -->
+<style>
+:root{--primary:#6a1b9a;--primary-deep:#4a148c;--accent:#00897b;--cyan:#26c6da;--pink:#ec407a;--blue:#2196f3;--text:#333;--muted:#777;--surface:#fff;--line:#ddd}
+*{box-sizing:border-box}
+body{margin:0;padding:2rem;font-family:'Poppins','Segoe UI',system-ui,sans-serif;line-height:1.6;color:var(--text);background:linear-gradient(135deg,#e0f7fa 0%,#f3e5f5 50%,#fff8e1 100%);min-height:100vh}
+h1,h2{font-family:'Playfair Display',Georgia,serif;color:var(--primary)}
+h1{font-size:3rem;text-align:center;letter-spacing:-.5px;text-shadow:2px 2px 4px rgba(106,27,154,.15);margin:.5rem 0}
+h2{font-size:2rem;color:var(--accent);border-bottom:3px solid var(--cyan);display:inline-block;padding-bottom:.5rem;margin:2.5rem 0 1.5rem}
+nav.review{position:sticky;top:0;z-index:2;display:flex;flex-wrap:wrap;gap:1rem;max-width:1200px;margin:0 auto 2rem;padding:1rem 1.5rem;background:var(--surface);border-radius:12px;box-shadow:0 4px 20px rgba(106,27,154,.12)}
+nav.review a{font-weight:600;color:var(--primary);text-decoration:none;padding:.4rem 1rem;border-radius:8px}
+nav.review a:hover{background:#f3e5f5;color:var(--primary-deep)}
+main{max-width:1200px;margin:0 auto}
+section{break-inside:avoid}
+.card{background:var(--surface);border-radius:12px;padding:1.5rem;box-shadow:0 4px 20px rgba(106,27,154,.12);margin:0 0 1.5rem}
+.hero-line{color:var(--accent);font-size:1.15rem;font-weight:500;text-align:center;margin:0 auto 2rem;max-width:800px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+.stat b{display:block;font-size:1.6rem;color:var(--primary)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1.5rem}
+.swatch{border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.07);background:var(--surface)}
+.swatch .chip{height:64px}
+.swatch dl{margin:0;padding:.75rem;font-size:.85rem}
+.swatch dd{margin:0;color:var(--muted)}
+code,.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.85em}
+.badge{display:inline-block;padding:.15em .6em;border-radius:999px;font-size:.8rem;font-weight:600;background:#f3e5f5;color:var(--primary-deep);margin-left:.5rem}
+.badge.warn{background:#fce4ec;color:var(--pink)}
+.tensions{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem}
+.tension{border-left:4px solid var(--pink);background:linear-gradient(135deg,#fff 0%,#fce4ec 100%);box-shadow:0 4px 20px rgba(233,30,99,.1)}
+.pages img{width:100%;height:auto;border-radius:8px;display:block}
+table{width:100%;border-collapse:collapse}td,th{padding:.5rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.pill{display:inline-block;background:#f8f8f8;border:1px solid var(--line);border-radius:999px;padding:.2em .8em;margin:.2em}
+.motif{display:flex;flex-direction:column;align-items:center;gap:.5rem}
+.motif .box{width:96px;height:64px;background:var(--primary)}
+.bars{display:flex;align-items:flex-end;gap:.5rem;height:80px}.bars span{display:block;width:32px;background:var(--cyan);border-radius:4px 4px 0 0}
+footer.review{max-width:1200px;margin:2rem auto 0;padding:1.5rem;text-align:center;font-size:.95rem;color:var(--muted);border-top:2px solid #e0e0e0}
+@media print{nav.review{position:static}body{background:#fff}}
+</style>
+</head>
+<body>
+<nav class="review"><a href="#coverage">Coverage</a><a href="#pages">Pages</a><a href="#palette">Palette</a><a href="#type">Typography</a><a href="#voice">Voice</a><a href="#tensions">Tensions</a><a href="#motifs">Motifs</a><a href="#components">Components</a><a href="#system">System components</a><a href="#logo">Logo</a><a href="#spacing">Spacing</a></nav>
+<main>
+<header class="card" style="text-align:center">
+  <h1>Super Page</h1>
+  <p class="hero-line">Super page</p>
+  <p>Document title: <em>Good Morning!</em> · no meta description · <a class="mono" href="https://static-website.david-bosschaert.workers.dev/">static-website.david-bosschaert.workers.dev</a></p>
+</header>
+
+<section id="coverage"><h2>Coverage</h2><div class="card stats">
+  <div class="stat"><b>2 / 2</b>pages extracted (live Playwright renders, headless, HTTP 200)</div>
+  <div class="stat"><b>medium</b>wait strategy · avg 2 s per page · 0 failures</div>
+  <div class="stat"><b>16 colours · 3 families · 4 radii</b>brand surface from <code>styles.css</code> + computed-style census at 1440 and 360</div>
+</div></section>
+
+<section id="pages"><h2>Pages</h2><div class="grid pages">
+  <div class="card"><img src="assets/screenshots/index-thumb.png" alt="Home page capture"><p><strong>Good Morning!</strong><br><span class="mono">/ (index) · landing · 1440×2110</span></p></div>
+  <div class="card"><img src="assets/screenshots/page1-thumb.png" alt="Page 1 capture"><p><strong>Good Morning!</strong><br><span class="mono">/page1 · static · 1440×900</span></p></div>
+</div></section>
+
+<section id="palette"><h2>Color palette</h2><div class="grid">
+  <div class="swatch"><div class="chip" style="background:#6a1b9a"></div><dl><dt>#6a1b9a · primary</dt><dd>text · 24× · h1, nav links · index, page1</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:#4a148c"></div><dl><dt>#4a148c · primary-deep</dt><dd>text (hover) · nav links</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:#5e35b1"></div><dl><dt>#5e35b1 · text-lede</dt><dd>text · 12× · every p</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:#00897b"></div><dl><dt>#00897b · secondary</dt><dd>text · 4× · h2 · index</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:#26c6da"></div><dl><dt>#26c6da · accent-cyan</dt><dd>border · h2 underline, media hover</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:#ec407a"></div><dl><dt>#ec407a · accent-pink</dt><dd>border · prose block · index</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:#2196f3"></div><dl><dt>#2196f3 · tab-active</dt><dd>text + border · 12× · active tab</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:#ffffff;border-bottom:1px solid #ddd"></div><dl><dt>#ffffff · surface</dt><dd>background · 32× · cards, header</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:#f8f8f8"></div><dl><dt>#f8f8f8 · surface-tabs</dt><dd>background · tabs section</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:#f3e5f5"></div><dl><dt>#f3e5f5 · surface-hover</dt><dd>background · nav hover, canvas mid-stop</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:#333333"></div><dl><dt>#333333 · text-primary</dt><dd>text · 16× · body</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:#444444"></div><dl><dt>#444444 · text-content</dt><dd>text · prose block</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:#666666"></div><dl><dt>#666666 · text-tab</dt><dd>text · 8× · inactive tabs</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:#777777"></div><dl><dt>#777777 · text-muted</dt><dd>text · 4× · footer</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:#dddddd"></div><dl><dt>#dddddd · border</dt><dd>border · 8× · tab bar</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:#e0e0e0"></div><dl><dt>#e0e0e0 · border-footer</dt><dd>border · footer top</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:linear-gradient(135deg,#e0f7fa 0%,#f3e5f5 50%,#fff8e1 100%)"></div><dl><dt>canvas gradient</dt><dd>body background · 135° #e0f7fa → #f3e5f5 → #fff8e1</dd></dl></div>
+  <div class="swatch"><div class="chip" style="background:linear-gradient(135deg,#fff 0%,#fce4ec 100%)"></div><dl><dt>prose-block gradient</dt><dd>135° #ffffff → #fce4ec</dd></dl></div>
+</div></section>
+
+<section id="type"><h2>Typography</h2><span class="badge warn">No modular scale</span><div class="card">
+  <p class="mono">Display: 'Playfair Display', Georgia, serif · Body: 'Poppins', 'Segoe UI', system-ui, sans-serif · neither family is loaded by the site (no @font-face, no font link) — the live site renders in system fallbacks.</p>
+  <p style="font-family:'Playfair Display',Georgia,serif;font-size:3rem;font-weight:700;color:#6a1b9a;letter-spacing:-.5px;text-shadow:2px 2px 4px rgba(106,27,154,.15);margin:.5rem 0;text-align:left">Super page <small class="mono" style="font-size:.9rem;color:#777;text-shadow:none">h1 · 48px / 700 / lh 1.6 / −0.5px</small></p>
+  <p style="font-family:'Playfair Display',Georgia,serif;font-size:2rem;font-weight:600;color:#00897b;margin:.5rem 0">Here is a subheading <small class="mono" style="font-size:.9rem;color:#777">h2 · 32px / 600</small></p>
+  <p style="font-size:1.15rem;font-weight:500;color:#5e35b1;margin:.5rem 0">Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida <small class="mono" style="font-size:.9rem;color:#777">p · 18.4px / 500 / lh 1.6</small></p>
+  <p style="font-size:1.05rem;color:#444;line-height:1.8;margin:.5rem 0">A wild pangolin appears, juggling tiny umbrellas and humming a tune! <small class="mono" style="font-size:.9rem;color:#777">prose block · 16.8px / 400 / lh 1.8</small></p>
+  <p style="margin:.5rem 0"><b style="font-size:1rem">Alex Johnson</b> <small class="mono" style="color:#777">h4 · 16px / 700</small> · <b style="font-size:1.1em;color:#666;font-family:Arial,sans-serif">Team Alpha</b> <small class="mono" style="color:#777">tab button · 17.6px / bold / default button font</small></p>
+</div></section>
+
+<section id="voice"><h2>Voice</h2><span class="badge">tone guess: demo / placeholder copy</span><div class="grid">
+  <div class="card"><b>Hero headline</b><p>Super page</p></div>
+  <div class="card"><b>Tagline</b><p><em>none captured (no meta description)</em></p></div>
+  <div class="card"><b>First paragraph</b><p>Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida</p></div>
+</div><div class="card"><b>CTA frequency</b><p><span class="pill">Home ×2</span><span class="pill">Page 1 ×2</span><span class="pill">Team Alpha ×2</span><span class="pill">Team Beta ×2</span><span class="pill">Team Gamma ×2</span></p>
+  <b>Repeated headings (both pages)</b><p>Super page · Alex Johnson · Maria Lopez · Brian Kim · Sophia Patel · Elijah Brown · Linda Zhang</p>
+  <div class="stats"><div class="stat"><b>0 %</b>uppercase headings</div><div class="stat"><b>8</b>distinct headings</div><div class="stat"><b>5</b>distinct CTA labels</div></div></div></section>
+
+<section id="tensions"><h2>Tensions</h2><div class="tensions">
+  <div class="card tension"><b>T-scale</b><p>Type scale is ad-hoc (48 → 32 → 18.4 → 17.6 → 16.8 → 16 → 15.2 px, no consistent ratio). A replica keeps it as is; direct would need to decide whether a redesign adopts a modular scale.</p></div>
+  <div class="card tension"><b>T-logo-variants</b><p>No logo captured at all (no inline SVG, no logo image, no icon link, /favicon.ico unreachable). The header is two text links; the replica ships without a logo and without a favicon unless the owner provides them.</p></div>
+  <div class="card tension"><b>T-color-imbalance</b><p>#6a1b9a (primary), #5e35b1 (lede) and #00897b (secondary) appear as text only — never as a fill; #26c6da and #ec407a appear as borders only. In a replica these stay exactly where they are.</p></div>
+  <div class="card tension"><b>T-no-tokens</b><p>No CSS custom properties defined. The current site has no design-token layer; the Edge Delivery target introduces tokens in styles.css, which is a structural (not visual) change.</p></div>
+  <div class="card tension"><b>Fonts named, not loaded</b><p>'Poppins' and 'Playfair Display' are named in the stylesheet but no font files are served; the page renders in whatever system fonts the visitor's device has. The replica keeps the identical stacks so the rendering stays the same device-for-device.</p></div>
+</div></section>
+
+<section id="motifs"><h2>Motifs</h2><div class="grid">
+  <div class="card motif"><div class="box" style="border-radius:12px"></div><span>12px · 18× (header, media cells, prose block)</span></div>
+  <div class="card motif"><div class="box" style="border-radius:8px"></div><span>8px · 16× (nav links, media)</span></div>
+  <div class="card motif"><div class="box" style="border-radius:10px"></div><span>10px · 8× (team cards)</span></div>
+  <div class="card motif"><div class="box" style="border-radius:50%;width:64px"></div><span>50% · 8× (portraits)</span></div>
+  <div class="card motif"><div class="box" style="background:#fff;box-shadow:0 4px 20px rgba(106,27,154,.12);border-radius:12px"></div><span class="mono">0 4px 20px rgba(106,27,154,.12)</span></div>
+  <div class="card motif"><div class="box" style="background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.07);border-radius:10px"></div><span class="mono">0 2px 8px rgba(0,0,0,.07)</span></div>
+</div></section>
+
+<section id="components"><h2>Components</h2><div class="card"><table>
+  <tr><th>Component</th><th>Pages</th><th>Pattern</th></tr>
+  <tr><td>Nav link</td><td>2</td><td>text link, 600, purple, 8px radius, lavender hover</td></tr>
+  <tr><td>Media cell</td><td>1 (4 cells)</td><td>white 12px card, 16:9 image or iframe, lift + cyan border on hover</td></tr>
+  <tr><td>Prose block</td><td>1</td><td>white→blush gradient, pink left border</td></tr>
+  <tr><td>Team tabs</td><td>2</td><td>3 flat tab buttons, blue active underline; 2 portrait cards per tab</td></tr>
+  <tr><td>Team card</td><td>2 (6 each)</td><td>white 10px card, 120px circular portrait, h4, p</td></tr>
+</table></div></section>
+
+<section id="system"><h2>System components</h2><div class="card"><table>
+  <tr><th>Kind</th><th>Selector</th><th>Occurrences</th><th>Content</th></tr>
+  <tr><td>header</td><td class="mono">nav.site-header</td><td>2 / 2</td><td>Home · Page 1</td></tr>
+  <tr><td>footer</td><td class="mono">footer.site-footer</td><td>2 / 2</td><td>© 2026 Super Page. All rights reserved.</td></tr>
+  <tr><td>module</td><td class="mono">.tabs-section</td><td>2 / 2</td><td>Team Alpha / Beta / Gamma · 6 portrait cards</td></tr>
+</table></div></section>
+
+<section id="logo"><h2>Logo &amp; favicons</h2><div class="card"><dl><dt>Source</dt><dd>none — no logo element on either page</dd><dt>File</dt><dd>—</dd><dt>Variants captured</dt><dd>0</dd><dt>Variants not captured</dt><dd>all (no favicon either: <code>/favicon.ico</code> unreachable)</dd></dl></div></section>
+
+<section id="spacing"><h2>Spacing &amp; shape</h2><div class="card"><p>Base unit 1rem (16px) · container 1200px · page padding 2rem (1rem ≤768px)</p>
+  <div class="bars"><span style="height:10%" title="0.4rem"></span><span style="height:12%" title="0.5rem"></span><span style="height:25%" title="1rem"></span><span style="height:37%" title="1.5rem"></span><span style="height:50%" title="2rem"></span><span style="height:62%" title="2.5rem"></span></div>
+  <p class="mono">0.4rem · 0.5rem · 1rem · 1.5rem · 2rem · 2.5rem</p>
+  <p><b>Radii revisited</b> <span class="pill">8px</span><span class="pill">10px</span><span class="pill">12px</span><span class="pill">50%</span></p></div></section>
+</main>
+<footer class="review">Read: _brand-extraction.json, _computed-styles.json, _crawl-log.json, pages/index.json, pages/page1.json, styles.css. · Flow: replica — the design is kept; next: preserve-direction (verbatim promotion). · Badges: <span class="badge">info</span> <span class="badge warn">tension</span></footer>
+</body>
+</html>

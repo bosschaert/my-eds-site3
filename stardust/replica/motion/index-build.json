@@ -1,0 +1,335 @@
+{
+  "url": "http://localhost:8791/index-proposed.html",
+  "width": 1440,
+  "headerTimeline": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "widgetSamples": [
+    {
+      "sel": ".tab-buttons button:nth-child(2)",
+      "frames": [
+        {
+          "t": 7046.4000000059605,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 7250.300000011921,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 7453.70000000298,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 7656.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".tab-buttons button:nth-child(3)",
+      "frames": [
+        {
+          "t": 8667.40000000596,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 8870.40000000596,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 9072.90000000596,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 9274.60000000894,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    },
+    {
+      "sel": ".tab-buttons button:nth-child(1)",
+      "frames": [
+        {
+          "t": 10282.5,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 10485.10000000894,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 10687.800000011921,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        },
+        {
+          "t": 10890.800000011921,
+          "trackTransform": null,
+          "trackTransition": null,
+          "boxScrollLeft": null,
+          "boxTransform": null,
+          "dots": []
+        }
+      ]
+    }
+  ],
+  "hoverSamples": [
+    {
+      "sel": ".site-header a",
+      "changed": [
+        "self.color",
+        "self.background"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(106, 27, 154)",
+          "background": "rgba(0, 0, 0, 0)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background 0.2s, color 0.2s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(74, 20, 140)",
+          "background": "rgb(243, 229, 245)",
+          "boxShadow": "none",
+          "opacity": "1",
+          "transition": "background 0.2s, color 0.2s"
+        },
+        "subs": []
+      }
+    },
+    {
+      "sel": ".media-cells__cell",
+      "changed": [
+        "self.transform",
+        "self.boxShadow"
+      ],
+      "before": {
+        "self": {
+          "transform": "none",
+          "color": "rgb(51, 51, 51)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "rgba(106, 27, 154, 0.12) 0px 4px 20px 0px",
+          "opacity": "1",
+          "transition": "transform 0.3s, box-shadow 0.3s"
+        },
+        "subs": []
+      },
+      "after": {
+        "self": {
+          "transform": "matrix(1, 0, 0, 1, 0, -4)",
+          "color": "rgb(51, 51, 51)",
+          "background": "rgb(255, 255, 255)",
+          "boxShadow": "rgba(0, 150, 136, 0.2) 0px 8px 30px 0px",
+          "opacity": "1",
+          "transition": "transform 0.3s, box-shadow 0.3s"
+        },
+        "subs": []
+      }
+    }
+  ],
+  "events": {
+    "animations": [
+      {
+        "name": "fadeIn",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-content.active",
+        "txt": "Brian Kim\n      Backend engineer, automation enthu",
+        "y": 1168
+      },
+      {
+        "name": "fadeIn",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-content.active",
+        "txt": "Elijah Brown\n      DevOps wizard, mountain hiker, ",
+        "y": 1168
+      },
+      {
+        "name": "fadeIn",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-content.active",
+        "txt": "Alex Johnson\n      Project Lead with a knack for c",
+        "y": 1168
+      }
+    ],
+    "transitions": [
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button.active",
+        "y": 1168,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button",
+        "y": 1168,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button",
+        "y": 1168,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button.active",
+        "y": 1168,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button.active",
+        "y": 1168,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button",
+        "y": 1168,
+        "dur": "0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > nav.site-header > a.site-header__link",
+        "y": 0,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "html > body > nav.site-header > a.site-header__link",
+        "y": 0,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "color",
+        "el": "html > body > nav.site-header > a.site-header__link",
+        "y": 0,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "background-color",
+        "el": "html > body > nav.site-header > a.site-header__link",
+        "y": 0,
+        "dur": "0.2s, 0.2s"
+      },
+      {
+        "prop": "box-shadow",
+        "el": "html > body > div.media-cells.media-cells--video > div.media-cells__cell",
+        "y": 90,
+        "dur": "0.3s, 0.3s"
+      },
+      {
+        "prop": "transform",
+        "el": "html > body > div.media-cells.media-cells--video > div.media-cells__cell",
+        "y": 90,
+        "dur": "0.3s, 0.3s"
+      }
+    ],
+    "classMutations": [
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button.active",
+        "y": 1168
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-content.active",
+        "y": 1168
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button.active",
+        "y": 1168
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-content.active",
+        "y": 1168
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-buttons > button.tab-buttons__button.active",
+        "y": 1168
+      },
+      {
+        "added": [
+          "active"
+        ],
+        "el": "html > body > div.tabs-section.team-tabs > div.tab-content.active",
+        "y": 1168
+      }
+    ]
+  }
+}

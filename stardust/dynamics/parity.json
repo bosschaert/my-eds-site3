@@ -1,5 +1,89 @@
 {
-  "_provenance": { "writtenBy": "stardust:dynamics", "writtenAt": "2026-10-08T10:17:10Z", "input": "stardust/dynamic-features.md" },
-  "method": "features fed from stardust/dynamic-features.md (detector on the one archetype, re-verified at B2): the surface is empty — 0 third-party hosts, 0 API paths, 0 forms, 0 modal triggers, 0 media players, 0 client-rendered regions, no listing blocks — so there is no row to replay",
-  "features": []
+  "_provenance": {
+    "writtenBy": "stardust:dynamics",
+    "writtenAt": "2026-10-12T15:42:38.679Z"
+  },
+  "method": "single page /; features from stardust/dynamic-features.md (4 rows, B2-dynamic re-verified); hreflang rebuilt natively in scripts.js; tags off pending the owner — replay asserts no tag-host requests",
+  "features": [
+    {
+      "id": "a-cms-app-settings-object-datalayer",
+      "feature": "window.dataLayer (GTM queue)",
+      "class": "A",
+      "pages": 1,
+      "disposition": "static-snapshot",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "no consumer on the page; nothing shipped (tag manager queue, not app settings)",
+      "checks": []
+    },
+    {
+      "id": "i18n-locale-variants-en-x-default",
+      "feature": "hreflang alternates en + x-default → self",
+      "class": "I18N",
+      "pages": 1,
+      "disposition": "rebuild-native",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "2 link[rel=alternate][hreflang] in head after load (en, x-default), href = page URL",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "link[rel=\"alternate\"][hreflang]",
+          "min": 2
+        },
+        {
+          "type": "no-page-errors",
+          "paths": [
+            "/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t-tag-manager-google-tag-manager",
+      "feature": "Google Tag Manager / gtag G-00QDEH6N5W (+ GA4 collect)",
+      "class": "T",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision",
+      "status": "scaffolded-awaiting-owner",
+      "owner": "confirm the GTM/GA4 property id to carry over and whether a consent banner is required; until then tags are off on the new host",
+      "verifiedBy": "0 requests to googletagmanager.com / google-analytics.com on /",
+      "checks": [
+        {
+          "type": "consent-gate",
+          "path": "/",
+          "forbiddenHosts": [
+            "www.googletagmanager.com",
+            "googletagmanager.com",
+            "www.google-analytics.com",
+            "google-analytics.com",
+            "analytics.google.com"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t-unknown-third-party-host-static-cloudflareinsights-com",
+      "feature": "Cloudflare Web Analytics beacon + bot-management challenge frame",
+      "class": "T",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision",
+      "status": "scaffolded-awaiting-owner",
+      "owner": "confirm whether Cloudflare Web Analytics is wanted on the new host (bot-management frame is the source CDN, not carried)",
+      "verifiedBy": "0 requests to cloudflareinsights.com on /",
+      "checks": [
+        {
+          "type": "consent-gate",
+          "path": "/",
+          "forbiddenHosts": [
+            "static.cloudflareinsights.com",
+            "cloudflareinsights.com"
+          ]
+        }
+      ]
+    }
+  ]
 }

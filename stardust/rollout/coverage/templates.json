@@ -1,14 +1,14 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-10-08T09:42:29.011Z",
+    "writtenAt": "2026-10-12T14:06:10.364Z",
     "readArtifacts": [
       "stardust/migrated",
       "stardust/state.json"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-08T10:21:34.563Z",
+  "generatedAt": "2026-10-12T15:48:49.704Z",
   "templates": [
     {
       "id": "index",
@@ -18,7 +18,15 @@
       ],
       "pageCount": 1,
       "blocks": [
-        "notice"
+        "books",
+        "bouquet",
+        "conversation",
+        "departure",
+        "doors",
+        "hero",
+        "host",
+        "rooms-also",
+        "story-nursery"
       ],
       "delivery": {
         "verified": 1,

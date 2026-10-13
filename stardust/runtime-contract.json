@@ -1,11 +1,16 @@
 {
   "runtime": "vanilla-eds",
+  "probedAt": "2026-10-12",
+  "probedFiles": ["scripts/scripts.js", "scripts/aem.js"],
   "blockWrapperClass": "block",
+  "blockWrapper": "div.<name>-wrapper around the block; section gains .<name>-container",
   "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
   "buttonization": "formatted-only",
+  "buttonizationNote": "decorateButtons() requires <strong> (primary) / <em> (secondary) / both (accent); bare <a> alone in a <p> stays a link",
   "fragmentScriptPolicy": "inert-innerHTML",
   "emptySectionCollapse": true,
-  "sectionShape": "div.section.<name>-container > div.<name>-wrapper > div.<name>.block",
-  "chrome": "none on the source; header/footer blocks render nothing without /nav and /footer documents",
-  "fonts": "system-ui, sans-serif; no web fonts"
+  "fontsLoader": "loadFonts() loads /styles/fonts.css (desktop >= 900px eagerly, else loadLazy; sessionStorage fonts-loaded)",
+  "chromeReservation": "header { height: var(--nav-height) } + header .header / footer .footer visibility gate on data-block-status=loaded",
+  "navDocument": "/nav (overridable via nav metadata), sections: brand / sections / tools",
+  "footerDocument": "/footer (overridable via footer metadata)"
 }

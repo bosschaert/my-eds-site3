@@ -2,12 +2,16 @@
   "discovery": {
     "fetchTechnique": "headless",
     "count": 1,
-    "concurrency": 1
+    "concurrency": 1,
+    "userChoice": "--single (bounded replica run; scope fixed by stardust/.labs/site-plan.json)"
   },
   "consent": {
     "method": "auto"
   },
-  "favicon": null,
+  "favicon": {
+    "url": "https://www.niravmanubhai.com/assets/favicon-ab9476.png",
+    "file": "assets/favicon.png"
+  },
   "crawl": {
     "failures": []
   },
@@ -17,22 +21,123 @@
   },
   "dynamicSurface": {
     "pages": 1,
-    "pagesWithSameSiteData": 0,
+    "pagesWithSameSiteData": 1,
     "pagesWithSearchForm": 0,
     "pagesHydrated": 0,
     "truncatedPages": 0,
-    "endpoints": [],
-    "thirdPartyScriptHosts": [],
+    "endpoints": [
+      {
+        "method": "POST",
+        "host": "www.niravmanubhai.com",
+        "path": "/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.7089602957524744:1791806719:0feDvVNt4SiCXNjg63wlUQoHiIlp2B_wbdROml2pIJA/{hash}",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/plain",
+        "sameSite": true,
+        "example": "https://www.niravmanubhai.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.7089602957524744:1791806719:0feDvVNt4SiCXNjg63wlUQoHiIlp2B_wbdROml2pIJA/a49640a1ddea2537",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.niravmanubhai.com",
+        "path": "/cdn-cgi/rum",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/plain",
+        "sameSite": true,
+        "example": "https://www.niravmanubhai.com/cdn-cgi/rum",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_ee",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "cid",
+          "dl",
+          "dma",
+          "dt",
+          "en",
+          "frm",
+          "gcd",
+          "gtm",
+          "ngs",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://www.google-analytics.com/g/collect",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "static.cloudflareinsights.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
     "frameworkHints": [],
-    "globalState": [],
+    "globalState": [
+      {
+        "name": "dataLayer",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
     "formTargets": []
   },
   "visionCheck": [
     {
       "slug": "index",
       "verdict": "ok",
-      "notes": "thumbnail shows glyph, six paragraphs (en/ar/zh/fr/ru/es) and the Learn more link on the #eee ground; record matches; no imagery expected (cssBackgrounds [] is correct)"
+      "notes": "hero (Come, Sit. + Gujarati line over courtyard photo), palette (paper/ink/leaf) and logo wordmark match the pixels; two image boxes (host portrait .host-img, My Study card) render blank in the crawler fullPage screenshot only — a live probe shows both complete/visible and clipped captures paint them; recaptured once at --wait slow with the same result; record is correct"
     }
-  ],
-  "siblingCandidates": []
+  ]
 }

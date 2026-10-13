@@ -17,14 +17,15 @@
   .panel-body > :last-child { margin-bottom: 0; }
   .bar { height: 8px; border-radius: 9999px; background-color: var(--spectrum-gray-200); overflow: hidden; }
   .bar span { display: block; height: 100%; background-color: var(--spectrum-accent-bg); }
-  .estimate { color: var(--spectrum-text-subdued); margin: 8px 0 0; }
   ol.steps { list-style: none; padding: 0; margin: 0; }
   ol.steps li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; }
   ol.steps li + li { border-top: 1px solid var(--spectrum-gray-200); }
+  details summary { cursor: pointer; }
+  table.pages { margin-top: 8px; }
+  table.pages td { word-break: break-all; }
   table { width: 100%; border-collapse: collapse; }
   th, td { padding: 8px; text-align: left; border-bottom: 1px solid var(--spectrum-gray-200); }
   th { color: var(--spectrum-text-subdued); font-weight: 700; }
-  details ul { margin: 8px 0 0; padding-left: 20px; }
 </style>
 </head>
 <body>
@@ -33,7 +34,7 @@
     <h1>Migration status</h1>
     <span class="spectrum-badge spectrum-badge--positive">Ready</span>
   </header>
-  <p class="meta">Source site: <a href="https://www.example.com/">https://www.example.com/</a><br>Preview site: <a href="https://main--f4c8728b--aemcoder.aem.page/">https://main--f4c8728b--aemcoder.aem.page/</a><br>Last updated: 2026-10-08 10:22 UTC</p>
+  <p class="meta">Source site: <a href="https://www.niravmanubhai.com/" target="_blank" rel="noopener">https://www.niravmanubhai.com/</a><br>Preview site: <a href="https://main--9552f862--aemcoder.aem.page/" target="_blank" rel="noopener">https://main--9552f862--aemcoder.aem.page/</a><br>Last updated: 2026-10-12 15:51 UTC</p>
 
   <section class="spectrum-panel">
     <h2 class="spectrum-panel-header">Journey</h2>
@@ -42,9 +43,26 @@
         <li>Analyzing your site<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
         <li>Capturing brand and design<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
         <li>Rebuilding page templates<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
-        <li>Checking fidelity<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
-        <li>Migrating your pages<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
+        <li>Publishing your pages<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
+        <li>Checking every page against the original<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
+        <li>Final checks<span class="spectrum-badge spectrum-badge--positive">Done</span></li>
       </ol>
+    </div>
+  </section>
+
+  <section class="spectrum-panel">
+    <h2 class="spectrum-panel-header">Pages</h2>
+    <div class="panel-body">
+      <p>This migration covers 1 page. 1 of 1 are published on the preview site; 1 has passed the side-by-side check against the original.</p>
+      <details open>
+        <summary>1 page in this migration</summary>
+        <table class="pages">
+          <thead><tr><th>Source page</th><th>On the preview site</th><th>Status</th></tr></thead>
+          <tbody>
+          <tr><td><a href="https://www.niravmanubhai.com/" target="_blank" rel="noopener">https://www.niravmanubhai.com/</a></td><td><a href="https://main--9552f862--aemcoder.aem.page/" target="_blank" rel="noopener">Nirav Manubhai — Writer, Observer &amp;amp; A Home on the Web</a></td><td><span class="spectrum-badge spectrum-badge--positive">Checked</span></td></tr>
+          </tbody>
+        </table>
+      </details>
     </div>
   </section>
 
@@ -61,38 +79,24 @@
   </section>
 
   <section class="spectrum-panel">
-    <h2 class="spectrum-panel-header">Pages migrated</h2>
-    <div class="panel-body">
-      <p>1 of 1 pages are ready on the preview site.</p>
-      <details open>
-        <summary>Ready pages</summary>
-        <ul>
-          <li><a href="https://main--f4c8728b--aemcoder.aem.page/">Home page</a></li>
-        </ul>
-      </details>
-    </div>
-  </section>
-
-  <section class="spectrum-panel">
     <h2 class="spectrum-panel-header">Progress</h2>
     <div class="panel-body">
       <p>100% complete</p>
       <div class="bar"><span style="width: 100%"></span></div>
-      <p class="estimate">Complete</p>
     </div>
   </section>
 
   <section class="spectrum-panel">
     <h2 class="spectrum-panel-header">What's happening now</h2>
     <div class="panel-body">
-      <p>Your site is ready. The home page is live on the new platform and matches the original on desktop and on mobile. The final site-wide review, link audit and quality report are complete, and the sitemap is being served.</p>
+      <p>Your migration is complete. Your home page is live on the new platform, matching the original at desktop and mobile widths, with every link checked and the quality review closed with no open issues. The final report and dashboard are ready for you.</p>
     </div>
   </section>
 
   <section class="spectrum-panel">
     <h2 class="spectrum-panel-header">What's next</h2>
     <div class="panel-body">
-      <p>Next is your review of the preview site and the handover of the new site.</p>
+      <p>Your decisions on analytics tags and the production domain are all that remain before the new site replaces the old one.</p>
     </div>
   </section>
 </main>

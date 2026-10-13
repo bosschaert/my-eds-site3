@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-10-08T10:21:51.855Z",
+  "generatedAt": "2026-10-12T15:50:31.484Z",
   "target": "aem-eds",
   "site": {
-    "sourceUrl": "https://www.example.com/",
-    "liveHost": "main--f4c8728b--aemcoder.aem.live"
+    "sourceUrl": "https://www.niravmanubhai.com/",
+    "liveHost": "main--9552f862--aemcoder.aem.live"
   },
   "stageCount": {
     "identified": 1,
     "prototyped": 1,
     "deployed": 1,
-    "optimised": 0
+    "optimised": 1
   },
   "stageExclusive": {
     "identified": 0,
     "prototyped": 0,
-    "deployed": 1,
-    "optimised": 0
+    "deployed": 0,
+    "optimised": 1
   },
   "pages": [
     {
       "slug": "index",
       "path": "/",
-      "stage": "deployed",
+      "stage": "optimised",
       "templateId": "index",
       "isTemplate": true,
-      "openFindings": 2
+      "openFindings": 0
     }
   ],
   "templates": [
@@ -35,14 +35,14 @@
       "stages": {
         "identified": 0,
         "prototyped": 0,
-        "deployed": 1,
-        "optimised": 0
+        "deployed": 0,
+        "optimised": 1
       }
     }
   ],
   "blocks": {
-    "total": 1,
-    "converted": 1
+    "total": 9,
+    "converted": 9
   },
   "quality": {
     "overall": 100,
@@ -50,7 +50,7 @@
       "brand-tensions": null,
       "design-ux": null,
       "accessibility": null,
-      "seo": 100,
+      "seo": null,
       "content-conversion": null,
       "ai-search": 100,
       "cross-page": null
@@ -61,14 +61,12 @@
       "P3": 0
     },
     "history": [
-      88,
+      90,
       100
     ]
   },
   "findings": {
-    "byFixability": {
-      "out-of-scope": 2
-    },
+    "byFixability": {},
     "byAutofix": {}
   }
 }

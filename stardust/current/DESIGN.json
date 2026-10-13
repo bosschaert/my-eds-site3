@@ -1,144 +1,125 @@
 {
-  "_provenance": {
-    "writtenBy": "stardust:extract",
-    "writtenAt": "2026-10-08T09:24:52Z",
-    "readArtifacts": [
-      "stardust/current/_brand-extraction.json",
-      "stardust/current/_computed-styles.json",
-      "stardust/current/pages/index.html"
-    ],
-    "synthesizedInputs": [],
-    "stardustVersion": "0.29.1"
-  },
   "extensions": {
-    "componentStyle": {
-      "buttons": [],
-      "links": [
-        {
-          "selector": "a",
-          "color": "#0000ee",
-          "textDecoration": "underline"
-        }
-      ]
-    },
-    "motifs": {
-      "borderRadius": {
-        "mode": 0
-      },
-      "shadows": [],
-      "gradients": [],
-      "opacity": [
-        {
-          "selector": "svg",
-          "value": 0.55
-        },
-        {
-          "selector": "p + p",
-          "value": 0.6
-        }
-      ]
-    },
-    "voice": {
-      "ctaLabels": [
-        "Learn more"
-      ],
-      "heroHeadline": null,
-      "languages": [
-        "en",
-        "ar",
-        "zh",
-        "fr",
-        "ru",
-        "es"
-      ]
-    },
-    "colorScheme": {
-      "declared": "light dark",
-      "background": {
-        "light": "#eeeeee",
-        "dark": "#222222"
-      },
-      "captured": "light"
-    },
-    "modules": [],
-    "metadata": {
-      "siteName": "Example Domain",
-      "defaultOgImage": null,
-      "themeColor": null,
-      "defaultLocale": "en"
-    },
     "breakpoints": {
-      "containerMaxWidth": "480px",
+      "containerMaxWidth": "1184px",
       "probeWidth": 2560,
-      "shellMaxWidth": "480px",
+      "shellMaxWidth": null,
       "caps": [
         {
-          "kind": "shell",
-          "px": 480,
+          "kind": "module",
+          "px": 1184,
           "via": "max-width",
-          "selector": "body",
+          "selector": "#host > div.wrap",
           "pages": [
-            "https://www.example.com/"
+            "https://www.niravmanubhai.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 1100,
+          "via": "fixed",
+          "selector": "#story-nursery > div.story-nursery-home-wrap",
+          "pages": [
+            "https://www.niravmanubhai.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 920,
+          "via": "fixed",
+          "selector": "#story-nursery > div.story-nursery-home-wrap > figure.story-nursery-home-image",
+          "pages": [
+            "https://www.niravmanubhai.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 704,
+          "via": "fixed",
+          "selector": "#host > div.wrap > div.host-figure > div.host-note",
+          "pages": [
+            "https://www.niravmanubhai.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 672,
+          "via": "max-width",
+          "selector": "#rooms > div.wrap > p.rooms-first-visit",
+          "pages": [
+            "https://www.niravmanubhai.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 297,
+          "via": "fixed",
+          "selector": "div.wrap.split > div > div.r24-follow > a.btn.r24-btn-solid",
+          "pages": [
+            "https://www.niravmanubhai.com/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 270,
+          "via": "fixed",
+          "selector": "div.wrap.split > div > div.doors > a.btn",
+          "pages": [
+            "https://www.niravmanubhai.com/"
           ]
         }
       ],
       "modules": [
         {
-          "url": "https://www.example.com/",
+          "url": "https://www.niravmanubhai.com/",
           "section": 0,
-          "selector": "body > svg",
+          "selector": "#courtyard",
           "px": null
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://www.niravmanubhai.com/",
           "section": 1,
-          "selector": "body > p",
-          "px": null
+          "selector": "#host",
+          "px": 1184
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://www.niravmanubhai.com/",
           "section": 2,
-          "selector": "body > p",
-          "px": null
+          "selector": "#story-nursery",
+          "px": 1100
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://www.niravmanubhai.com/",
           "section": 3,
-          "selector": "body > p",
-          "px": null
+          "selector": "#rooms",
+          "px": 1184
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://www.niravmanubhai.com/",
           "section": 4,
-          "selector": "body > p",
-          "px": null
+          "selector": "#story-bouquet-home",
+          "px": 1184
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://www.niravmanubhai.com/",
           "section": 5,
-          "selector": "body > p",
-          "px": null
+          "selector": "#conversation",
+          "px": 1184
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://www.niravmanubhai.com/",
           "section": 6,
-          "selector": "body > p",
-          "px": null
-        },
-        {
-          "url": "https://www.example.com/",
-          "section": 7,
-          "selector": "body > a",
-          "px": null
+          "selector": "#main > section.departure.home-farewell-section",
+          "px": 1184
         }
       ],
       "capRegister": [],
       "capProvenance": {
         "writtenBy": "skills/replica/scripts/cap-probe.mjs",
-        "writtenAt": "2026-10-08T09:25:15.473Z",
+        "writtenAt": "2026-10-12T12:58:11.610Z",
         "baseWidth": 1440,
         "urls": [
-          "https://www.example.com/"
+          "https://www.niravmanubhai.com/"
         ]
       }
     }

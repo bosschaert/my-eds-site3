@@ -1,0 +1,39 @@
+stardust/current/assets/css/home.css: 19 of 1190 rules match /\bh3\b/i
+@2546 h1,h2,h3
+      font-family: "Playfair Display",Georgia,serif; font-weight: 500; line-height: 1.16;
+@4800 .corridor-copy h3
+      font-size: 1.35rem; margin: 0 0 .2rem;
+@8310 .corridor-copy h3   @media (max-width:720px)
+      font-size: 1.15rem;
+@12942 .spine-copy h3
+      font-family: "Playfair Display",Georgia,serif; font-size: 1.2rem; font-weight: 500; margin: 0 0 .18rem; line-height: 1.2;
+@13395 .spine.next .spine-copy h3
+      color: var(--ink-soft);
+@13806 .spine.wp .spine-copy h3
+      font-size: 1.05rem; color: #5a4e38;
+@13863 .spine.wp.next .spine-copy h3
+      color: var(--ink-soft);
+@15313 .spine-copy h3   @media (max-width:430px)
+      font-size: 1.05rem;
+@23807 h1,h2,h3
+      font-family: "Playfair Display",Georgia,serif; font-weight: 400;
+@26967 .room-card h3
+      font-size: 1.55rem; line-height: 1.08; margin: .9rem 0 .55rem;
+@29576 .phase h3
+      font-family: Georgia,serif; font-size: 1.05rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin-bottom: .5rem; color: var(--dk);
+@36193 #study .phase h3
+      font-family: "Playfair Display",Georgia,serif; font-size: 1.22rem; font-weight: 600; letter-spacing: 0; text-transform: none; line-height: 1.38; margin-bottom: .72rem; color: var(--ink);
+@37354 #study .phase h3   @media (max-width:640px)
+      font-size: 1.12rem;
+@49749 .qs-reading-room .spine-copy h3   @media (max-width:380px)
+      font-size: 1rem;
+@60327 .reading-door h3
+      font-family: "Playfair Display",Georgia,serif; font-size: 1.35rem; line-height: 1.15; margin: .45rem 0 .5rem; font-weight: 500;
+@78423 .qs-reading-room .spine-copy h3   @media (max-width:640px)
+      white-space: normal; word-break: normal; overflow-wrap: normal; font-size: 1.08rem; line-height: 1.24;
+@80015 .reading-room .shelf-items>.shelf-spine-with-thumb .spine-copy h3,.stills-reading-room .shelf-items>.stills-spine .spine-copy h3
+      margin-top: 0;
+@95250 .r24-books-copy h3
+      margin: 0; font-family: "Playfair Display",Georgia,serif; font-weight: 400; font-size: 1.9rem; color: var(--ink,#2c2519);
+@97590 .r24-door h3   @media (max-width:720px)
+      font-size: 1.05rem; line-height: 1.25; margin: .35rem .7rem 0;

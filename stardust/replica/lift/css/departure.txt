@@ -1,0 +1,41 @@
+stardust/current/assets/css/home.css: 20 of 1190 rules match /\.departure|home-farewell|r24-doors-open|\.blessing|guj-blessing|r24-arriving|home-now-note|home-inline-link-accent|home-visually-hidden-heading/i
+@29239 .departure
+      padding: 4rem 0;
+@29265 .departure p
+      line-height: 1.8; margin-bottom: .6rem;
+@29314 .departure .blessing
+      font-family: "Playfair Display",Georgia,serif; font-size: 1.6rem; margin-top: 1.4rem;
+@29415 .guj-blessing
+      font-family: "Rasa","Playfair Display",serif; font-weight: 600; font-size: 2.2rem; color: #43533b; margin-top: .4rem;
+@38297 .departure .wrap   @media (max-width:640px)
+      grid-template-columns: 1fr; text-align: center;
+@38358 .departure img   @media (max-width:640px)
+      width: 200px; margin: 0 auto;
+@96416 .r24-doors-open
+      margin-top: .8rem; font-family: "Playfair Display",Georgia,serif; font-style: italic; color: var(--ink-soft,#5e5340); max-width: 34rem; line-height: 1.6;
+@96574 .r24-arriving
+      display: inline-flex; align-items: center; min-height: 44px; font: 600 .8rem/1.2 Inter,Arial,sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--leaf,#4e5d44); text-decoration: none; border-bottom: 1px solid currentColor;
+@97198 .departure .wrap img   @media (max-width:720px)
+      margin: 0 auto;
+@97864 .departure .wrap   @media (max-width:720px)
+      grid-template-columns: 1fr; text-align: center;
+@111590 .home-farewell-section
+      padding: 4rem 0;
+@111628 .home-visually-hidden-heading
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+@111782 .home-farewell-layout
+      display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center;
+@111876 .home-farewell-opening
+      margin-top: .9rem;
+@111956 .home-farewell-arrivals-link
+      margin-top: 1.1rem;
+@112003 .home-now-note
+      margin-top: 1.45rem; max-width: 34rem; font-family: "Playfair Display",Georgia,serif; font-size: .98rem; line-height: 1.7; color: var(--ink-soft);
+@112153 .home-inline-link-accent
+      color: var(--leaf); text-underline-offset: 3px;
+@112222 .home-farewell-portrait-wrap
+      text-align: center; flex-shrink: 0;
+@112283 .home-farewell-portrait-image
+      width: 260px; height: auto; display: block; border: none;
+@112363 .home-farewell-thanks
+      margin-top: .85rem; font-family: "Playfair Display",Georgia,serif; font-style: italic; font-size: 1rem; color: var(--ink-soft); letter-spacing: .02em;

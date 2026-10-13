@@ -1,74 +1,208 @@
 {
   "slug": "index",
-  "type": "static",
+  "type": "landing",
   "renderBranch": "A",
   "template": null,
   "modules": [
-    "notice"
+    "hero",
+    "host",
+    "story-nursery",
+    "doors",
+    "books",
+    "rooms-also",
+    "bouquet",
+    "conversation",
+    "departure"
   ],
   "slotsFilled": [
-    "notice__glyph",
-    "notice__text",
-    "notice__text",
-    "notice__text",
-    "notice__text",
-    "notice__text",
-    "notice__text",
-    "notice__link"
+    "hero",
+    "room-section",
+    "story-nursery-home",
+    "rooms",
+    "room-section",
+    "room-section",
+    "departure"
   ],
   "canonShas": {
-    "header": null,
-    "footer": null,
-    "css": "8cd4c89b6c24"
+    "header": "116e55a2549a",
+    "footer": "eba2a669e373",
+    "css": "5692adbd4cf7"
   },
   "deviations": [],
   "migrationDecisions": [
     {
-      "kind": "no-h1",
-      "reason": "source page has no heading; none added (no fabrication)",
-      "checks": [
-        "qa-gate h1",
-        "delivery-lint h1"
-      ]
+      "kind": "link-scope",
+      "brokenInternalLinks": 30,
+      "distinctTargets": 19,
+      "decision": "single-page run: every other site page is outside the declared scope (site-plan.json selects only /); internal hrefs are repointed to the source origin https://www.niravmanubhai.com at delivery (E2 rule: scope extension → repoint); none left as a 404"
     }
   ],
   "metadata": {
-    "title": "Example Domain",
-    "description": null,
-    "canonical": null,
+    "title": "Nirav Manubhai — Writer, Observer &amp; A Home on the Web",
+    "description": "Enter Nirav Manubhai’s home on the web: literary rooms, chamber mysteries, still-image stories, essays and books shaped by observation, slowness and human attention.",
+    "canonical": "https://main--9552f862--aemcoder.aem.page/",
     "lang": "en"
   },
   "jsonLd": {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Example Domain",
-    "url": "https://www.example.com/"
+    "name": "Nirav Manubhai — Writer, Observer &amp; A Home on the Web",
+    "description": "Enter Nirav Manubhai’s home on the web: literary rooms, chamber mysteries, still-image stories, essays and books shaped by observation, slowness and human attention.",
+    "url": "https://main--9552f862--aemcoder.aem.page/"
   },
-  "migratedAt": "2026-10-08T09:38:45Z",
-  "designMdSha": "7401d4726989",
-  "designJsonSha": "fb2b95c6dc38",
-  "sourceCurrentSha": "470bbc7aa552",
-  "sourceProposedSha": "411fec74ec20",
+  "migratedAt": "2026-10-12T14:00:43Z",
+  "designMdSha": "94644f476f42",
+  "designJsonSha": "ec019f938792",
+  "sourceCurrentSha": "e854e04bf1c3",
+  "sourceProposedSha": "6d0ccf462ae8",
   "fidelityTier": "archetype",
   "archetypeSource": null,
   "archetypeSha": null,
   "variants": [],
   "gatesPassed": [
-    "content-fidelity",
-    "content-count",
-    "delivery-lint",
-    "media-reconcile"
+    "content-count"
   ],
   "gateEvidence": {
-    "content-fidelity": "content-diff iter1 --full at 1440 and 360: 0 structural, 2 advisory (live inline <style> text read as a body node) — stardust/replica/gates/index-1440, index-360",
-    "content-count": "6 paragraphs, 1 CTA (https://iana.org/help/example-domains), 0 headings, 0 images on both sides; content-diff 198-node class match, 0 drops",
-    "delivery-lint": "delivery-lint content/index.html (type:page): 1 P0 (h1: expected exactly one <h1>, found 0) · 0 P1 · 0 P2; h1 finding accepted by decision no-h1 (source has no heading)",
-    "media-reconcile": "media-reconcile content/index.html: no findings (page has no images); exit 0"
+    "content-count": "rendered = prototype: 12 headings, 12 img, 40 a, 44 p; recreate content-diff vs live: findings none (main + chrome), stardust/replica/progress.json"
   },
-  "contentDeviations": [],
-  "assetsBundled": 2,
+  "contentDeviations": [
+    {
+      "kind": "dynamic-dependency",
+      "source": "GTM/gtag G-00QDEH6N5W + Cloudflare Web Analytics beacon (head)",
+      "target": "no tags shipped (martech off; scaffolded OFF pending owner opt-in)",
+      "reason": "dynamic-features.md rows 3–4: embed-passthrough, needs-business-decision; hands-off never enables tags"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": "hreflang alternates en + x-default → /",
+      "target": "emitted at deploy as metadata rows",
+      "reason": "dynamic-features.md row 2: rebuild-native, planned for deploy"
+    }
+  ],
+  "assetsBundled": 32,
   "missingAssets": [],
-  "brokenInternalLinks": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/kabir-vaidya",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/come-sit-just-ask",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/stills",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/house-specials",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/my-books",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/quiet-signal",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/axiom-stories",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/my-study",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/story-nursery",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/story-bouquet",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/patrons",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/contact",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/story-nursery",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/kabir-vaidya",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/come-sit-just-ask",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/stills",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/house-specials",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/my-books",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/quiet-signal",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/axiom-stories",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/my-study",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/story-bouquet",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/story-nursery",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/now",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/contact",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/story-bouquet",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/privacy",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/license",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/sitemap",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/follow",
+      "reason": "not-in-inventory"
+    }
+  ],
   "outputPath": "index.html",
   "outputPathDefault": null,
   "sidecar": "_meta.json",

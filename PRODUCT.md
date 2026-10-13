@@ -1,12 +1,4 @@
-<!-- stardust:provenance
-  writtenBy: stardust:extract
-  writtenAt: 2026-10-08T09:25:15Z
-  readArtifacts:
-    - stardust/current/pages/index.json
-    - stardust/current/_brand-extraction.json
-  synthesizedInputs: []
-  stardustVersion: 0.29.1
--->
+<!-- stardust:provenance writtenBy=stardust:replica mode=bounded-single synthesizedFrom=stardust/current/pages/index.json,stardust/replica/tokens.json -->
 # Product
 
 <!-- impeccable:product-schema 1 -->
@@ -17,40 +9,47 @@ web
 
 ## Users
 
-People who meet "example.com" in documentation, code samples or tests and follow it to see what it is. They arrive once, read one notice, and leave.
+Readers who arrive at a personal literary site: people interested in essays, chamber mysteries,
+still-image stories and books, invited to "come in, look around, stay as long as you like".
+_provenance: inferred from the captured copy and room list._
 
 ## Product Purpose
 
-The site exists so that a reserved domain used in documentation resolves to a clear, harmless explanation. Success is a reader understanding in one glance that this is a placeholder, not a service, and that it may be used in examples without permission.
+Nirav Manubhai's home on the web: "Rooms for stories, books and a life observed closely." The
+page welcomes the visitor, introduces the host, points to what is growing in the Story Nursery,
+opens the rooms (Kabir Vaidya, Come, Sit – Just Ask, STILLS, House Specials, Books, The Quiet
+Signal, Axiom Stories, My Study), offers Story Bouquets sent on WhatsApp, and opens a
+conversation by email, WhatsApp, Substack, LinkedIn, Instagram and Facebook.
 
 ## Positioning
 
-The one domain reserved by the IANA for documentation examples: it never belongs to a company and never becomes a service.
+"Enter Nirav Manubhai's home on the web: literary rooms, chamber mysteries, still-image stories,
+essays and books shaped by observation, slowness and human attention." (meta description,
+verbatim)
 
 ## Capabilities and Constraints
 
-- A single static page; no navigation, header, footer, forms or search.
-- The notice is repeated in six languages (en, ar, zh, fr, ru, es), the English version leading.
-- One outbound link, "Learn more", to the IANA help page on example domains.
-- Declares light and dark colour schemes; the migration captures and reproduces the light scheme.
+One page in scope (`/`). Static content with outbound links; no forms, players or client-rendered
+content. Analytics tags (Google Tag Manager, Google Analytics, Cloudflare Insights) exist on the
+source and are an owner decision on the new host (`stardust/dynamic-features.md`).
 
 ## Brand Commitments
 
-- Register: `product` — a utilitarian notice, not marketing.
-  _provenance: inferred_ — basis: plain system type, no imagery, no CTA beyond a reference link.
-- Personality: neutral, institutional, deliberately unremarkable.
-- Assets: a decorative book-and-quotes glyph (inline SVG); no wordmark, no favicon (`rel=icon` is `data:,`).
+Register: brand (personal literary site). Name and wordmark: "Nirav Manubhai" as text, no image
+logo. Voice as captured: first person, unhurried, hospitable ("Come, Sit." / "આવો, બેસો.").
+This is a same-design migration: the captured design is binding in full.
 
 ## Evidence on Hand
 
-- Rendered page record and DOM: `stardust/current/pages/index.json`, `stardust/current/pages/index.html`.
-- Screenshot at 1440: `stardust/current/assets/screenshots/index.png`.
-- Glyph: `stardust/current/assets/logo.svg`.
-- Computed-style census at 1440 and 360: `stardust/current/_computed-styles.json`.
-- Absent, not to be fabricated: headings, images, a favicon, a tagline, any second page.
+- `stardust/current/pages/index.json` + `index.html` — the captured page (verbatim content).
+- `stardust/current/assets/screenshots/index.png` — full-page reference at 1440.
+- `stardust/current/assets/css/home.css`, `google-fonts.css` — the source stylesheets.
+- `stardust/current/assets/fonts/` — 29 woff2 files (Playfair Display, Inter, Rasa).
+- `stardust/current/_computed-styles.json`, `stardust/current/DESIGN.json` — census and cap model.
+No testimonials, press or case studies were captured; none may be fabricated.
 
 ## Product Principles
 
-- Say one thing, once per language, and stop.
-- Never look like a product or a company.
-- Stay legible on any device with no dependencies.
+1. Same words, same order, same links as the source page.
+2. Same design values; the inconsistency register (empty) is the only permitted delta.
+3. Static first: every section ships as content before any tag or integration is wired.

@@ -1,0 +1,63 @@
+stardust/current/assets/css/home.css: 31 of 1190 rules match /\.r24-doors\b|\.reading-door|\.r24-door\b|courtyard-door-media|home-door-image-center-crop/i
+@59687 .reading-door-rail
+      display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.2rem; margin-top: 1.8rem;
+@59929 .reading-door
+      display: block; text-decoration: none; color: inherit; border: 1px solid var(--line); background: rgba(255,255,255,.22); padding: 1rem; transition: transform .22s ease,border-color .22s ease;
+@60121 .reading-door:hover
+      transform: translateY(-3px); border-color: var(--taupe);
+@60194 .reading-door small
+      display: block; margin-top: .9rem; font-size: .64rem; letter-spacing: .16em; text-transform: uppercase; color: var(--taupe);
+@60327 .reading-door h3
+      font-family: "Playfair Display",Georgia,serif; font-size: 1.35rem; line-height: 1.15; margin: .45rem 0 .5rem; font-weight: 500;
+@60462 .reading-door p
+      font-size: .9rem; line-height: 1.55; color: var(--ink-soft); min-height: 4.2em;
+@60550 .reading-door span
+      display: inline-block; margin-top: .85rem; color: var(--leaf); font-size: .68rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+@60883 .reading-door-rail   @media (max-width:920px)
+      display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 1rem; padding-bottom: .75rem;
+@60991 .reading-door   @media (max-width:920px)
+      flex: 0 0 82%; scroll-snap-align: start;
+@61068 .reading-door p   @media (max-width:600px)
+      min-height: 0;
+@69936 body.home .reading-door-rail,.reading-door-rail
+      display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.25rem; overflow: visible; scroll-snap-type: none;
+@70094 body.home .reading-door,.reading-door
+      min-width: 0; width: auto; flex: none;
+@70190 body.home .reading-door-rail,.reading-door-rail   @media (max-width:920px)
+      grid-template-columns: repeat(2,minmax(0,1fr));
+@70310 body.home .reading-door-rail,.reading-door-rail   @media (max-width:600px)
+      grid-template-columns: 1fr;
+@71643 .courtyard-door-media,.room-hero-frame,.axiom-threshold-frame,.book-cover-frame,.cover-frame,.frame-media
+      overflow: hidden; position: relative;
+@71783 .courtyard-door-media>img,.room-hero-frame>img,.axiom-threshold-frame>img,.book-cover-frame>img,.cover-frame>img,.frame-media>img
+      display: block; width: 100%; height: 100%; max-width: none; max-height: none;
+@72214 .courtyard-door-media
+      width: 100%; aspect-ratio: var(--frame-room-card-ratio); height: auto; border: 1px solid var(--line); background: #e9e2d4;
+@72349 .courtyard-door-media>img
+      object-fit: cover; object-position: center center;
+@94486 .r24-doors
+      display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.6rem; margin-top: 1.8rem;
+@94585 .r24-door .courtyard-door-media
+      aspect-ratio: 4/3; overflow: hidden;
+@94650 .r24-door .courtyard-door-media img
+      width: 100%; height: 100%; object-fit: cover;
+@94726 .r24-door .r24-short
+      display: none;
+@96416 .r24-doors-open
+      margin-top: .8rem; font-family: "Playfair Display",Georgia,serif; font-style: italic; color: var(--ink-soft,#5e5340); max-width: 34rem; line-height: 1.6;
+@96839 .r24-doors   @media (max-width:720px)
+      grid-template-columns: repeat(2,minmax(0,1fr)); gap: .75rem;
+@96907 .r24-door .r24-long   @media (max-width:720px)
+      display: none;
+@97570 .r24-door   @media (max-width:720px)
+      padding: 0;
+@97590 .r24-door h3   @media (max-width:720px)
+      font-size: 1.05rem; line-height: 1.25; margin: .35rem .7rem 0;
+@97660 .r24-door small   @media (max-width:720px)
+      margin: .6rem .7rem 0; display: block;
+@97711 .r24-door .r24-short   @media (max-width:720px)
+      display: block; margin: .3rem .7rem 0; font-size: .9rem; line-height: 1.4;
+@97799 .r24-door .r24-rhythm   @media (max-width:720px)
+      margin: .35rem .7rem .8rem; font-size: .72rem;
+@111397 .home-door-image-center-crop
+      object-position: 50% 50%;

@@ -1,0 +1,107 @@
+stardust/current/assets/css/home.css: 53 of 1190 rules match /\.nmh-/i
+@23290 .nmh-read-time
+      font-family: "Playfair Display",Georgia,serif; font-style: italic; font-size: 0.88rem; color: #9a8a72; text-align: center; margin: 1.2rem auto 0; display: block;
+@49960 .nmh-read-time   @media (max-width:720px)
+      font-size: 0.82rem; margin-top: 0.9rem;
+@86445 .nmh-header
+      position: relative; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 18px 28px; background: #f4efe3; color: #2c2519; z-index: 20;
+@86604 .nmh-header .nmh-home
+      justify-self: start; font-family: Inter,Arial,sans-serif; font-size: 14px; letter-spacing: .08em; color: #2c2519; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; padding-right: 8px;
+@86824 .nmh-header .nmh-title
+      justify-self: center; text-align: center; font-family: "Playfair Display",Georgia,serif; color: #2c2519;
+@86944 .nmh-header .nmh-menu-btn
+      justify-self: end; background: none; border: 0; color: #2c2519; font-size: 26px; cursor: pointer; min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; padding: 0;
+@87152 .nmh-overlay
+      display: none; position: fixed; inset: 0; background: rgba(0,0,0,.28); z-index: 9998;
+@87241 .nmh-overlay.open
+      display: block;
+@87273 .nmh-menu
+      position: fixed; top: 0; right: 0; width: min(340px,70vw); height: 100vh; overflow-y: auto; padding: 72px 28px 40px; background: #f4efe3; z-index: 9999; box-shadow: -8px 0 30px rgba(0,0,0,.12); transform: translateX(100%); transition: transform .28s ease;
+@87515 .nmh-menu.open
+      transform: translateX(0);
+@87554 .nmh-menu a
+      display: block; margin: 0 0 18px; text-decoration: none; font-family: "Playfair Display",Georgia,serif; color: #2c2519; font-size: 19px;
+@87691 .nmh-menu a:hover
+      color: #4e5d44;
+@87723 .nmh-menu-close
+      position: absolute; top: 16px; right: 20px; background: none; border: 0; font-size: 28px; color: #2c2519; cursor: pointer; min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; padding: 0;
+@87942 .nmh-footer
+      display: flex; gap: 22px; justify-content: center; padding: 30px 20px; font-family: Inter,Arial,sans-serif; color: #2c2519; font-size: 14px;
+@88136 .nmh-header   @media (max-width:720px)
+      padding: 16px;
+@88161 .nmh-title   @media (max-width:720px)
+      font-size: 14px;
+@88187 .nmh-footer   @media (max-width:720px)
+      flex-wrap: wrap;
+@88215 .nmh-header
+      position: sticky; top: 0; border-bottom: 1px solid rgba(44,37,25,.10);
+@88292 .nmh-footer a
+      color: #6b5f47; font-size: 13px; letter-spacing: .065em; text-transform: uppercase; text-decoration: none;
+@88403 .nmh-footer a:hover
+      color: #2c2519;
+@88856 .nmh-yah
+      display: block; position: fixed; bottom: calc(env(safe-area-inset-bottom,0px)+1.4rem); right: 1.2rem; z-index: 8000; font-family: Inter,Arial,sans-serif; font-size: .64rem; letter-spacing: .06em; opacity: 1; transition: opacity .3s ease,transform .3s ease;
+@89102 .nmh-yah.hidden
+      opacity: 0; pointer-events: none; transform: translateY(6px);
+@89174 .nmh-yah-pill
+      display: flex; align-items: center; gap: .35rem; background: rgba(244,239,227,.94); border: 1px solid rgba(78,93,68,.18); border-radius: 3px; padding: .3rem .6rem; cursor: pointer; color: #4e5d44; text-decoration: none; white-space: nowrap; max-width: 200px; overflow: hidden; text-overflow: ellipsis;
+@89462 .nmh-yah-pill:hover
+      border-color: rgba(78,93,68,.38); background: rgba(238,232,220,.97);
+@89547 .nmh-yah-icon
+      display: none;
+@89574 .nmh-yah-text
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+@89646 .nmh-yah-text::after
+      content: " →";
+@89705 .nmh-yah   @media (max-width:480px)
+      bottom: calc(env(safe-area-inset-bottom,0px)+1rem); right: .8rem;
+@89776 .nmh-yah-pill   @media (max-width:480px)
+      max-width: 160px; font-size: .62rem; padding: .28rem .55rem; min-height: 44px; align-items: center;
+@89881 .nmh-yah-icon
+      font-size: .85rem; flex-shrink: 0;
+@89926 .nmh-yah-text
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+@90023 .nmh-yah   @media (max-width:480px)
+      bottom: calc(env(safe-area-inset-bottom,0px)+1rem); right: .8rem;
+@90094 .nmh-yah-pill   @media (max-width:480px)
+      max-width: 180px; font-size: .65rem; padding: .6rem .9rem; min-height: 44px;
+@90178 .nmh-title
+      display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1.25; gap: 0.1em; min-width: 0; overflow: hidden;
+@90321 .nmh-title-property
+      font-family: "Playfair Display",Georgia,serif; font-size: 14px; color: #2c2519; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
+@90488 .nmh-title-context
+      font-family: Inter,Arial,sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.07em; color: #2c2519; opacity: 0.65; white-space: nowrap;
+@90641 .nmh-title-context.has-divider::before
+      content: "· ";
+@90718 .nmh-title   @media (min-width:640px)
+      flex-direction: row; gap: 0.35em; align-items: baseline;
+@90780 .nmh-title-context   @media (min-width:640px)
+      font-size: 11px;
+@90815 .nmh-back-nav
+      display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 0.75rem; margin: 1.5rem auto 0; padding-top: 1rem; border-top: 1px solid var(--line,rgba(44,37,25,.16)); max-width: 760px; width: 100%; box-sizing: border-box;
+@91061 .nmh-back-nav a
+      font-family: Inter,Arial,sans-serif; font-size: 0.76rem; font-weight: 600; letter-spacing: 0.075em; text-transform: uppercase; color: var(--leaf,#4e5d44); text-decoration: none; border: 1px solid var(--leaf,#4e5d44); padding: 0.65rem 1.4rem; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; border-radius: 2px; transition: background 0.15s ease,color 0.15s ease; white-space: nowrap;
+@91466 .nmh-back-nav a:hover
+      background: var(--leaf,#4e5d44); color: var(--paper,#f4efe3);
+@91546 .nmh-back-nav a.nmh-next
+      background: var(--leaf,#4e5d44); color: var(--paper,#f4efe3); border-color: var(--leaf,#4e5d44);
+@91662 .nmh-back-nav a.nmh-next:hover
+      background: var(--leaf-dark,#3c4934); border-color: var(--leaf-dark,#3c4934);
+@91792 .nmh-back-nav   @media (max-width:640px)
+      flex-direction: column; gap: 0.65rem;
+@91840 .nmh-back-nav a   @media (max-width:640px)
+      width: 100%; justify-content: center;
+@91891 .nmh-house-note
+      max-width: 760px; margin: 2.5rem auto 0; padding-top: 1.8rem; text-align: center;
+@91981 .nmh-house-note-text
+      font-family: "Playfair Display",Georgia,serif; font-style: italic; font-size: 0.95rem; line-height: 1.6; color: var(--ink-soft,#6b5f47); display: block; margin-bottom: 0.6rem;
+@92164 .nmh-house-note-link
+      font-family: Inter,Arial,sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.06em; color: var(--leaf,#4e5d44); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s ease;
+@92394 .nmh-house-note-link:hover
+      border-bottom-color: var(--leaf,#4e5d44);
+@92517 .nmh-drawer-descriptor
+      font-family: "Playfair Display",Georgia,serif; font-style: italic; font-size: 0.92rem; font-weight: 400; line-height: 1.35; color: #4e5d44; text-align: center; width: 100%; margin: 0.15rem 0 1.15rem;
+@92747 .nmh-drawer-descriptor   @media (max-width:720px)
+      font-size: 0.94rem; margin: 0.1rem 0 0.65rem;
+@92946 .nmh-header+*   @media (max-width:720px)
+      margin-top: 0;

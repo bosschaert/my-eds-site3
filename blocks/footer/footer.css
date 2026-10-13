@@ -1,4 +1,51 @@
-/* no footer exists on the source (https://www.example.com/); the footer occupies no space */
-footer .footer {
-  height: 0;
+/* footer chrome lifted from canon.css (.nmh-footer): a centred uppercase link row; the
+   parchment ground + top rule sit on the <footer> host (styles.css), the authored <ul> keeps
+   its items, each item is the flex child */
+
+footer .footer .nmh-footer {
+  padding: 30px 20px;
+  color: #2c2519;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer .footer .nmh-footer ul,
+footer .footer .nmh-footer ol {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer .nmh-footer li {
+  display: flex;
+  margin: 0;
+}
+
+footer .footer .nmh-footer p {
+  margin: 0;
+}
+
+footer .footer .nmh-footer a:any-link {
+  color: #6b5f47;
+  font-size: 13px;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+footer .footer .nmh-footer a:any-link:hover {
+  color: #2c2519;
+}
+
+@media (width <= 720px) {
+  footer .footer .nmh-footer ul,
+  footer .footer .nmh-footer ol {
+    flex-wrap: wrap;
+  }
 }

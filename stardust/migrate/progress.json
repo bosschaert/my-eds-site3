@@ -1,42 +1,53 @@
 {
   "_provenance": {
-    "writtenBy": "stardust:replica",
-    "writtenAt": "2026-10-08T09:38:31Z",
-    "stardustVersion": "0.29.1"
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-10-12T14:00:24Z",
+    "stardustVersion": "0.31.0"
   },
   "units": {
     "plan": {
       "status": "done",
       "kind": "plan",
       "templates": [
-        "static"
+        "landing"
       ],
       "pages": 1,
-      "startedAt": "2026-10-08T09:38:14Z",
-      "endedAt": "2026-10-08T09:38:31Z",
-      "verdict": "1 template (static), 1 archetype (index → /), 0 siblings, 0 media to rehost: units = render static (archetype), report"
+      "startedAt": "2026-10-12T13:59:17Z",
+      "endedAt": "2026-10-12T14:00:24Z",
+      "verdict": "plan: 1 page in scope (index, Path A approved archetype, tier archetype); 0 skipped; canon auto-bootstrapped from index-proposed.html; provenance ok 1/1; mobile-adapt ok"
     },
-    "static": {
+    "render-landing": {
       "status": "done",
       "kind": "render",
       "templates": [
-        "static"
+        "landing"
       ],
       "pages": 1,
-      "startedAt": "2026-10-08T09:38:45Z",
-      "endedAt": "2026-10-08T09:41:48Z",
-      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0 (index → index.html, branch A, 2 assets, 8 slots, modules [notice])"
+      "startedAt": "2026-10-12T14:00:43Z",
+      "endedAt": "2026-10-12T14:01:42Z",
+      "verdict": "render-landing: 1/1 rendered (index → index.html, Path A, tier archetype; 32 assets, 7 sections, 0 refused); content-count pass; 30 internal hrefs to out-of-scope pages recorded as link-scope decision (repoint at delivery); 2 dynamic-dependency deviations"
+    },
+    "assets": {
+      "status": "done",
+      "kind": "assets",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-12T14:02:03Z",
+      "endedAt": "2026-10-12T14:03:03Z",
+      "verdict": "assets: 32 bundled (canon.css, index.css, 6 fonts, 18 images, favicon); no logo file in the capture (warned); robots.txt + sitemap.xml written; 30 out-of-scope hrefs repointed to the source origin; audits: source-tree escapes 0, absolute refs 0, directory hrefs 0, pagemap-audit OK, file-protocol-audit OK"
     },
     "report": {
       "status": "done",
       "kind": "report",
       "templates": [
-        "static"
+        "landing"
       ],
       "pages": 1,
-      "startedAt": "2026-10-08T09:42:05Z",
-      "endedAt": "2026-10-08T09:42:15Z",
-      "verdict": "1 of 1 pages migrated (index, archetype, gates content-fidelity + content-count); 0 siblings, 0 thin, 0 assets rehosted"
+      "startedAt": "2026-10-12T14:03:17Z",
+      "endedAt": "2026-10-12T14:03:29Z",
+      "verdict": "report: 1 migrated (index, Path A, tier archetype), 0 unchanged, 0 failed, 0 stale; 1 gate (content-count), 2 deviations (dynamic-dependency), 30 out-of-scope links repointed; state index → migrated"
     }
   }
 }

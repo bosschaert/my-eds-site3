@@ -1,10 +1,10 @@
 {
   "_provenance": {
     "writtenBy": "stardust:extract",
-    "writtenAt": "2026-10-08T09:23:09.838Z",
+    "writtenAt": "2026-10-12T12:56:40.770Z",
     "script": "style-census.mjs",
     "readArtifacts": [
-      "https://www.example.com/"
+      "https://www.niravmanubhai.com/"
     ],
     "widths": [
       1440,
@@ -15,298 +15,2234 @@
     "failed": []
   },
   "pages": {
-    "https://www.example.com/": {
+    "https://www.niravmanubhai.com/": {
       "360": {
-        "title": "Example Domain",
+        "title": "Nirav Manubhai — Writer, Observer & A Home on the Web",
         "viewport": {
           "width": 360,
           "height": 900
         },
         "elements": {
-          "total": 16,
-          "visible": 9
+          "total": 194,
+          "visible": 154
         },
         "occluders": [],
-        "headings": [],
+        "headings": [
+          {
+            "tag": "h2",
+            "text": "Welcome to my home.",
+            "selector": "#host > div > h2",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "28px",
+            "fontWeight": "400",
+            "lineHeight": "32.48px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h2",
+            "text": "The Story Nursery",
+            "selector": "#story-nursery-home-title",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "32px",
+            "fontWeight": "400",
+            "lineHeight": "35.2px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(78, 93, 68)"
+          },
+          {
+            "tag": "h2",
+            "text": "Come in. Look around. Stay as long as y…",
+            "selector": "#rooms > div > h2",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "35.2px",
+            "fontWeight": "400",
+            "lineHeight": "40.832px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h3",
+            "text": "Kabir Vaidya",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1) > h3",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "16.8px",
+            "fontWeight": "500",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h3",
+            "text": "Come, Sit – Just Ask",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(2) > h3",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "16.8px",
+            "fontWeight": "500",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h3",
+            "text": "STILLS",
+            "selector": "#stills > h3",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "16.8px",
+            "fontWeight": "500",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h3",
+            "text": "House Specials",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(4) > h3",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "16.8px",
+            "fontWeight": "500",
+            "lineHeight": "21px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h3",
+            "text": "Books written by Nirav Manubhai",
+            "selector": "#bookshelf-door > div:nth-of-type(2) > h3",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "30.4px",
+            "fontWeight": "400",
+            "lineHeight": "35.264px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h2",
+            "text": "Some stories are meant to be sent.",
+            "selector": "#r24-bouquet-title",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "35.2px",
+            "fontWeight": "400",
+            "lineHeight": "40.832px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h2",
+            "text": "If something sparked a thought, the doo…",
+            "selector": "#conversation > div > div:nth-of-type(2) > h2",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "35.2px",
+            "fontWeight": "400",
+            "lineHeight": "40.832px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          }
+        ],
         "text": [
           {
             "tag": "p",
-            "text": "This domain is for use in documentation…",
-            "selector": "body > p:nth-of-type(1)",
-            "fontFamily": "system-ui, sans-serif",
+            "text": "Rooms for stories, books and a life obs…",
+            "selector": "#host > div > p",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "18.88px",
+            "fontWeight": "400",
+            "lineHeight": "31.152px",
+            "letterSpacing": "0.1888px",
+            "textTransform": "none",
+            "color": "rgb(107, 95, 71)"
+          },
+          {
+            "tag": "p",
+            "text": "I have spent decades moving through ver…",
+            "selector": "#host > div > div > div > p:nth-of-type(1)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px",
+            "fontWeight": "400",
+            "lineHeight": "29.75px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "p",
+            "text": "Today I follow my passion — working wit…",
+            "selector": "#host > div > div > div > p:nth-of-type(2)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px",
+            "fontWeight": "400",
+            "lineHeight": "29.75px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "p",
+            "text": "My sincere and heartfelt wish is to giv…",
+            "selector": "#host > div > div > div > p:nth-of-type(3)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px",
+            "fontWeight": "400",
+            "lineHeight": "29.75px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "p",
+            "text": "Not sure where to begin? See what is in…",
+            "selector": "#story-nursery > div > div > p",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
             "fontSize": "16px",
             "fontWeight": "400",
-            "lineHeight": "25.6px",
+            "lineHeight": "27.52px",
             "letterSpacing": "normal",
             "textTransform": "none",
-            "color": "rgb(0, 0, 0)"
+            "color": "rgb(107, 95, 71)"
           },
           {
             "tag": "p",
-            "text": "هذا النطاق مُخصص للاستخدام في أمثلة الت…",
-            "selector": "body > p:nth-of-type(2)",
-            "fontFamily": "system-ui, sans-serif",
-            "fontSize": "14px",
+            "text": "Stories, books, field notes and work ob…",
+            "selector": "#rooms > div > p:nth-of-type(2)",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "15.2px",
             "fontWeight": "400",
-            "lineHeight": "22.4px",
+            "lineHeight": "25.08px",
             "letterSpacing": "normal",
             "textTransform": "none",
-            "color": "rgb(0, 0, 0)"
+            "color": "rgb(107, 95, 71)"
           },
           {
             "tag": "p",
-            "text": "该域名仅用于文档示例，无需获得许可。这并非一项服务，请勿将其用于测试和监控目的。",
-            "selector": "body > p:nth-of-type(3)",
-            "fontFamily": "system-ui, sans-serif",
-            "fontSize": "14px",
+            "text": "A lawyer who listens for what isn’t sai…",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1) > p:nth-of-type(2)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "14.4px",
             "fontWeight": "400",
-            "lineHeight": "22.4px",
+            "lineHeight": "20.16px",
             "letterSpacing": "normal",
             "textTransform": "none",
-            "color": "rgb(0, 0, 0)"
+            "color": "rgb(107, 95, 71)"
           },
           {
             "tag": "p",
-            "text": "L’usage de ce domaine est réservé à des…",
-            "selector": "body > p:nth-of-type(4)",
-            "fontFamily": "system-ui, sans-serif",
-            "fontSize": "14px",
+            "text": "AI, understood through lives you know.",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(2) > p:nth-of-type(2)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "14.4px",
             "fontWeight": "400",
-            "lineHeight": "22.4px",
+            "lineHeight": "20.16px",
             "letterSpacing": "normal",
             "textTransform": "none",
-            "color": "rgb(0, 0, 0)"
+            "color": "rgb(107, 95, 71)"
           },
           {
             "tag": "p",
-            "text": "Данный домен предназначен для использов…",
-            "selector": "body > p:nth-of-type(5)",
-            "fontFamily": "system-ui, sans-serif",
-            "fontSize": "14px",
+            "text": "Rooms we have all entered. One object, …",
+            "selector": "#stills > p:nth-of-type(2)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "14.4px",
             "fontWeight": "400",
-            "lineHeight": "22.4px",
+            "lineHeight": "20.16px",
             "letterSpacing": "normal",
             "textTransform": "none",
-            "color": "rgb(0, 0, 0)"
+            "color": "rgb(107, 95, 71)"
           },
           {
             "tag": "p",
-            "text": "Este dominio está destinado al uso en e…",
-            "selector": "body > p:nth-of-type(6)",
-            "fontFamily": "system-ui, sans-serif",
-            "fontSize": "14px",
+            "text": "The stories that had to be written.",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(4) > p:nth-of-type(2)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "14.4px",
             "fontWeight": "400",
-            "lineHeight": "22.4px",
+            "lineHeight": "20.16px",
             "letterSpacing": "normal",
             "textTransform": "none",
-            "color": "rgb(0, 0, 0)"
+            "color": "rgb(107, 95, 71)"
+          },
+          {
+            "tag": "p",
+            "text": "Books written across different rooms of…",
+            "selector": "#bookshelf-door > div:nth-of-type(2) > p:nth-of-type(1)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px",
+            "fontWeight": "400",
+            "lineHeight": "27.2px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(107, 95, 71)"
+          },
+          {
+            "tag": "p",
+            "text": "Every book here is free. Just ask, and …",
+            "selector": "#bookshelf-door > div:nth-of-type(2) > p:nth-of-type(2)",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "17px",
+            "fontWeight": "400",
+            "lineHeight": "27.2px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(107, 95, 71)"
           }
         ],
-        "buttons": [],
-        "links": [
+        "buttons": [
           {
-            "text": "Learn more",
-            "selector": "body > a",
-            "count": 1,
-            "color": "rgb(0, 0, 238)",
-            "textDecoration": "underline",
-            "fontWeight": "400",
+            "text": "Gift a Story Bouquet →",
+            "selector": "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a",
+            "count": 2,
+            "backgroundColor": "rgb(78, 93, 68)",
+            "color": "rgb(251, 248, 241)",
+            "borderRadius": "3px",
+            "padding": "11.52px 16px",
+            "border": "1px solid rgb(78, 93, 68)",
+            "borderColor": "rgb(78, 93, 68)",
+            "boxShadow": "none",
+            "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "fontSize": "11.84px",
+            "fontWeight": "600",
+            "textTransform": "uppercase",
+            "letterSpacing": "0.8288px",
             "hover": {
-              "backgroundColor": "rgba(0, 0, 0, 0)",
-              "color": "rgb(0, 0, 238)",
-              "borderColor": "rgb(0, 0, 238)",
+              "backgroundColor": "rgba(78, 93, 68, 0.08)",
+              "color": "rgb(251, 248, 241)",
+              "borderColor": "rgb(78, 93, 68)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "Email me",
+            "selector": "#conversation > div > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1)",
+            "count": 6,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(78, 93, 68)",
+            "borderRadius": "3px",
+            "padding": "11.52px 16px",
+            "border": "1px solid rgb(78, 93, 68)",
+            "borderColor": "rgb(78, 93, 68)",
+            "boxShadow": "none",
+            "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "fontSize": "11.84px",
+            "fontWeight": "600",
+            "textTransform": "uppercase",
+            "letterSpacing": "0.8288px",
+            "hover": {
+              "backgroundColor": "rgba(78, 93, 68, 0.08)",
+              "color": "rgb(78, 93, 68)",
+              "borderColor": "rgb(78, 93, 68)",
               "boxShadow": "none",
               "changed": true
             }
           }
         ],
-        "surfaces": [],
-        "radii": [],
-        "shadows": [],
+        "links": [
+          {
+            "text": "Enter the Story Nursery →",
+            "selector": "#story-nursery > div > div > a",
+            "count": 2,
+            "color": "rgb(78, 93, 68)",
+            "textDecoration": "none",
+            "fontWeight": "600",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(78, 93, 68)",
+              "borderColor": "rgb(78, 93, 68)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "Kabir VaidyaA world of stories where ob…",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1)",
+            "count": 8,
+            "color": "rgb(44, 37, 25)",
+            "textDecoration": "none",
+            "fontWeight": "400",
+            "hover": {
+              "backgroundColor": "rgba(255, 255, 255, 0.22)",
+              "color": "rgb(44, 37, 25)",
+              "borderColor": "rgb(138, 127, 102)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "there is this page for that.",
+            "selector": "#main > section:nth-of-type(7) > div > div:nth-of-type(1) > p:nth-of-type(7) > a",
+            "count": 1,
+            "color": "rgb(78, 93, 68)",
+            "textDecoration": "none",
+            "fontWeight": "400",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(78, 93, 68)",
+              "borderColor": "rgb(78, 93, 68)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "surfaces": [
+          {
+            "matched": "header",
+            "selector": "header",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 345,
+              "h": 77
+            },
+            "backgroundColor": "rgb(244, 239, 227)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "16px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "rgba(40, 50, 34, 0.25) 0px 1px 8px 0px",
+            "position": "sticky",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px"
+          },
+          {
+            "matched": "nav",
+            "selector": "#nmh-drawer",
+            "rect": {
+              "x": 345,
+              "y": 0,
+              "w": 252,
+              "h": 900
+            },
+            "backgroundColor": "rgb(244, 239, 227)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "72px 28px 40px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "rgba(0, 0, 0, 0.12) -8px 0px 30px 0px",
+            "position": "fixed",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px"
+          },
+          {
+            "matched": "main",
+            "selector": "#main",
+            "rect": {
+              "x": 0,
+              "y": 77,
+              "w": 345,
+              "h": 7724
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px"
+          },
+          {
+            "matched": "footer",
+            "selector": "footer",
+            "rect": {
+              "x": 0,
+              "y": 7801,
+              "w": 345,
+              "h": 170
+            },
+            "backgroundColor": "rgb(236, 227, 209)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "30px 20px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, Arial, sans-serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "#courtyard",
+            "rect": {
+              "x": 0,
+              "y": 77,
+              "w": 345,
+              "h": 194
+            },
+            "backgroundColor": "rgb(236, 227, 209)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "relative",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "#host",
+            "rect": {
+              "x": 0,
+              "y": 271,
+              "w": 345,
+              "h": 1262
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "72px 0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "#story-nursery",
+            "rect": {
+              "x": 0,
+              "y": 1533,
+              "w": 345,
+              "h": 472
+            },
+            "backgroundColor": "rgb(244, 239, 227)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "43.2px 0px 44.8px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "#rooms",
+            "rect": {
+              "x": 0,
+              "y": 2005,
+              "w": 345,
+              "h": 2215
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "72px 0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px"
+          }
+        ],
+        "radii": [
+          {
+            "value": "3px",
+            "count": 9,
+            "area": 161884,
+            "sources": [
+              "#story-bouquet-home > div > div:nth-of-type(1)",
+              "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a",
+              "#conversation > div > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "14px",
+            "count": 1,
+            "area": 57903,
+            "sources": [
+              "#conversation > div > div:nth-of-type(1)"
+            ]
+          }
+        ],
+        "shadows": [
+          {
+            "value": "rgba(44, 37, 25, 0.12) 0px 3px 16px 0px",
+            "count": 2,
+            "sources": [
+              "#story-bouquet-home > div > div:nth-of-type(1)",
+              "#conversation > div > div:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.12) -8px 0px 30px 0px",
+            "count": 1,
+            "sources": [
+              "#nmh-drawer"
+            ]
+          },
+          {
+            "value": "rgba(40, 50, 34, 0.25) 0px 1px 8px 0px",
+            "count": 1,
+            "sources": [
+              "header"
+            ]
+          },
+          {
+            "value": "rgba(44, 37, 25, 0.12) 0px 2px 14px 0px",
+            "count": 1,
+            "sources": [
+              "#host > div > div > img"
+            ]
+          },
+          {
+            "value": "rgba(44, 37, 25, 0.14) 0px 14px 34px 0px",
+            "count": 1,
+            "sources": [
+              "#conversation > div > div:nth-of-type(1) > img"
+            ]
+          }
+        ],
         "gradients": [],
         "bgColors": [
           {
-            "value": "rgb(238, 238, 238)",
-            "count": 1,
-            "area": 352643,
+            "value": "rgb(233, 226, 212)",
+            "count": 6,
+            "area": 170540,
             "sources": [
-              ""
+              "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1) > div",
+              "#rooms > div > div:nth-of-type(1) > a:nth-of-type(2) > div",
+              "#stills > div"
+            ]
+          },
+          {
+            "value": "rgb(244, 239, 227)",
+            "count": 4,
+            "area": 3166389,
+            "sources": [
+              "body",
+              "header",
+              "#nmh-drawer"
+            ]
+          },
+          {
+            "value": "rgba(255, 255, 255, 0.22)",
+            "count": 4,
+            "area": 149492,
+            "sources": [
+              "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1)",
+              "#rooms > div > div:nth-of-type(1) > a:nth-of-type(2)",
+              "#stills"
+            ]
+          },
+          {
+            "value": "rgb(236, 227, 209)",
+            "count": 3,
+            "area": 814793,
+            "sources": [
+              "#courtyard",
+              "#conversation",
+              "footer"
+            ]
+          },
+          {
+            "value": "rgb(251, 248, 241)",
+            "count": 2,
+            "area": 228707,
+            "sources": [
+              "#bookshelf-door",
+              "#conversation > div > div:nth-of-type(2) > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgb(78, 93, 68)",
+            "count": 2,
+            "area": 26036,
+            "sources": [
+              "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a",
+              "#conversation > div > div:nth-of-type(2) > div:nth-of-type(2) > a"
             ]
           }
         ],
         "textColors": [
           {
-            "value": "rgb(0, 0, 0)",
-            "count": 6,
+            "value": "rgb(107, 95, 71)",
+            "count": 32,
             "sources": [
-              "body > p:nth-of-type(1)",
-              "body > p:nth-of-type(2)",
-              "body > p:nth-of-type(3)"
+              "#host > div > p",
+              "#story-nursery > div > div > p",
+              "#rooms > div > p:nth-of-type(2)"
             ]
           },
           {
-            "value": "rgb(0, 0, 238)",
+            "value": "rgb(44, 37, 25)",
+            "count": 31,
+            "sources": [
+              "header > a",
+              "header > div > span",
+              "header > button"
+            ]
+          },
+          {
+            "value": "rgb(78, 93, 68)",
+            "count": 17,
+            "sources": [
+              "#story-nursery-home-title",
+              "#story-nursery > div > div > a",
+              "#rooms > div > p:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(138, 106, 47)",
+            "count": 5,
+            "sources": [
+              "#nmh-drawer > p:nth-of-type(1)",
+              "#nmh-drawer > p:nth-of-type(2)",
+              "#nmh-drawer > p:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgb(251, 248, 241)",
+            "count": 2,
+            "sources": [
+              "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a",
+              "#conversation > div > div:nth-of-type(2) > div:nth-of-type(2) > a"
+            ]
+          },
+          {
+            "value": "rgb(164, 124, 61)",
             "count": 1,
             "sources": [
-              "body > a"
+              "#story-nursery > div > p"
+            ]
+          },
+          {
+            "value": "rgb(67, 83, 59)",
+            "count": 1,
+            "sources": [
+              "#main > section:nth-of-type(7) > div > div:nth-of-type(1) > p:nth-of-type(5)"
             ]
           }
         ],
-        "borderColors": [],
-        "customProps": {},
-        "fonts": [],
+        "borderColors": [
+          {
+            "value": "rgb(202, 191, 163)",
+            "count": 14,
+            "sources": [
+              "#host",
+              "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1)",
+              "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1) > div"
+            ]
+          },
+          {
+            "value": "rgb(78, 93, 68)",
+            "count": 9,
+            "sources": [
+              "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a",
+              "#conversation > div > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1)",
+              "#conversation > div > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgba(44, 37, 25, 0.14)",
+            "count": 5,
+            "sources": [
+              "#bookshelf-door",
+              "#rooms > div > div:nth-of-type(2) > div > a:nth-of-type(1)",
+              "#axiom"
+            ]
+          },
+          {
+            "value": "rgba(44, 37, 25, 0.1)",
+            "count": 1,
+            "sources": [
+              "header"
+            ]
+          },
+          {
+            "value": "rgba(44, 37, 25, 0.25)",
+            "count": 1,
+            "sources": [
+              "#host > div > div > img"
+            ]
+          },
+          {
+            "value": "rgba(78, 93, 68, 0.4)",
+            "count": 1,
+            "sources": [
+              "#story-nursery > div > div > a"
+            ]
+          }
+        ],
+        "customProps": {
+          "--paper": {
+            "declared": "#f4efe3",
+            "computed": "#f4efe3"
+          },
+          "--parch": {
+            "declared": "#ece3d1",
+            "computed": "#ece3d1"
+          },
+          "--ink": {
+            "declared": "#2c2519",
+            "computed": "#2c2519"
+          },
+          "--ink-soft": {
+            "declared": "#6b5f47",
+            "computed": "#6b5f47"
+          },
+          "--leaf": {
+            "declared": "#4e5d44",
+            "computed": "#4e5d44"
+          },
+          "--leaf-dark": {
+            "declared": "#3c4934",
+            "computed": "#3c4934"
+          },
+          "--line": {
+            "declared": "#cabfa3",
+            "computed": "#cabfa3"
+          },
+          "--gold": {
+            "declared": "#b2843e",
+            "computed": "#b2843e"
+          },
+          "--noir": {
+            "declared": "#0f0d09",
+            "computed": "#0f0d09"
+          },
+          "--cream": {
+            "declared": "#f5eddc",
+            "computed": "#f5eddc"
+          },
+          "--max-reader": {
+            "declared": "46rem",
+            "computed": "46rem"
+          },
+          "--max-room": {
+            "declared": "68rem",
+            "computed": "68rem"
+          },
+          "--taupe": {
+            "declared": "#8a7f66",
+            "computed": "#8a7f66"
+          },
+          "--nav-h": {
+            "declared": "72px",
+            "computed": "72px"
+          },
+          "--nm-gutter": {
+            "declared": "clamp(1rem,3.2vw,2.25rem)",
+            "computed": "clamp(1rem,3.2vw,2.25rem)"
+          },
+          "--nm-reading": {
+            "declared": "44rem",
+            "computed": "44rem"
+          },
+          "--nm-space-1": {
+            "declared": ".5rem",
+            "computed": ".5rem"
+          },
+          "--nm-space-2": {
+            "declared": ".75rem",
+            "computed": ".75rem"
+          },
+          "--nm-space-3": {
+            "declared": "1rem",
+            "computed": "1rem"
+          },
+          "--nm-space-4": {
+            "declared": "1.5rem",
+            "computed": "1.5rem"
+          },
+          "--nm-space-5": {
+            "declared": "2rem",
+            "computed": "2rem"
+          },
+          "--nm-space-6": {
+            "declared": "3rem",
+            "computed": "3rem"
+          },
+          "--nm-space-7": {
+            "declared": "4.5rem",
+            "computed": "4.5rem"
+          },
+          "--nm-radius": {
+            "declared": "3px",
+            "computed": "3px"
+          },
+          "--nm-shadow": {
+            "declared": "0 10px 34px rgba(44,37,25,.13)",
+            "computed": "0 10px 34px rgba(44,37,25,.13)"
+          },
+          "--nm-focus": {
+            "declared": "#e6c77d",
+            "computed": "#e6c77d"
+          },
+          "--nm-preview-image-max": {
+            "declared": "540px",
+            "computed": "540px"
+          },
+          "--nm-property-image-max": {
+            "declared": "500px",
+            "computed": "500px"
+          },
+          "--nm-reading-hero-max": {
+            "declared": "1120px",
+            "computed": "1120px"
+          },
+          "--frame-room-card-ratio": {
+            "declared": "16/10",
+            "computed": "16/10"
+          },
+          "--frame-reading-ratio": {
+            "declared": "16/9",
+            "computed": "16/9"
+          },
+          "--frame-poster-ratio": {
+            "declared": "4/5",
+            "computed": "4/5"
+          },
+          "--frame-story-ratio": {
+            "declared": "3/2",
+            "computed": "3/2"
+          },
+          "--frame-story-portrait": {
+            "declared": "4/5",
+            "computed": "4/5"
+          },
+          "--frame-book-ratio": {
+            "declared": "5/7",
+            "computed": "5/7"
+          },
+          "--frame-reading-max": {
+            "declared": "1120px",
+            "computed": "1120px"
+          },
+          "--frame-property-max": {
+            "declared": "1120px",
+            "computed": "1120px"
+          },
+          "--frame-property-home-max": {
+            "declared": "360px",
+            "computed": "360px"
+          },
+          "--frame-property-home-mobile": {
+            "declared": "330px",
+            "computed": "330px"
+          },
+          "--frame-book-max": {
+            "declared": "320px",
+            "computed": "320px"
+          },
+          "--frame-story-max": {
+            "declared": "900px",
+            "computed": "900px"
+          },
+          "--house-image-radius": {
+            "declared": "14px",
+            "computed": "14px"
+          },
+          "--house-room-radius": {
+            "declared": "16px",
+            "computed": "16px"
+          },
+          "--wr-paper": {
+            "declared": "#f4efe3",
+            "computed": "#f4efe3"
+          },
+          "--wr-lime": {
+            "declared": "#f8f5ee",
+            "computed": "#f8f5ee"
+          },
+          "--wr-ink": {
+            "declared": "#2c2519",
+            "computed": "#2c2519"
+          },
+          "--wr-soft": {
+            "declared": "#5f5547",
+            "computed": "#5f5547"
+          },
+          "--wr-muted": {
+            "declared": "#857a6b",
+            "computed": "#857a6b"
+          },
+          "--wr-indigo": {
+            "declared": "#2e4369",
+            "computed": "#2e4369"
+          },
+          "--wr-line": {
+            "declared": "rgba(46,67,105,.28)",
+            "computed": "rgba(46,67,105,.28)"
+          },
+          "--wr-label": {
+            "declared": "rgba(247,242,232,.93)",
+            "computed": "rgba(247,242,232,.93)"
+          },
+          "--wr-teak": {
+            "declared": "#6b4729",
+            "computed": "#6b4729"
+          },
+          "--wr-mat": {
+            "declared": "#ece6da",
+            "computed": "#ece6da"
+          },
+          "--wr-display": {
+            "declared": "\"Playfair Display\",Georgia,\"Times New Roman\",serif",
+            "computed": "\"Playfair Display\",Georgia,\"Times New Roman\",serif"
+          },
+          "--wr-serif": {
+            "declared": "Georgia,\"Times New Roman\",serif",
+            "computed": "Georgia,\"Times New Roman\",serif"
+          },
+          "--wr-ui": {
+            "declared": "Inter,Arial,Helvetica,sans-serif",
+            "computed": "Inter,Arial,Helvetica,sans-serif"
+          }
+        },
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "300",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "400",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "400",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "600",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "600",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "400",
+            "style": "italic",
+            "status": "unloaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "400",
+            "style": "italic",
+            "status": "loaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "500",
+            "style": "italic",
+            "status": "unloaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "600",
+            "style": "italic",
+            "status": "unloaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "400",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "400",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "500",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "500",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "600",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "600",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Rasa",
+            "weight": "400",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Rasa",
+            "weight": "500",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Rasa",
+            "weight": "600",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Rasa",
+            "weight": "600",
+            "style": "normal",
+            "status": "unloaded"
+          }
+        ],
         "logoCandidates": [],
         "iconFont": null,
         "consent": {
           "dismissed": null
         },
-        "finalUrl": "https://www.example.com/"
+        "finalUrl": "https://www.niravmanubhai.com/"
       },
       "1440": {
-        "title": "Example Domain",
+        "title": "Nirav Manubhai — Writer, Observer & A Home on the Web",
         "viewport": {
           "width": 1440,
           "height": 900
         },
         "elements": {
-          "total": 16,
-          "visible": 9
+          "total": 196,
+          "visible": 154
         },
         "occluders": [],
-        "headings": [],
+        "headings": [
+          {
+            "tag": "h2",
+            "text": "Welcome to my home.",
+            "selector": "#host > div > h2",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "57.6px",
+            "fontWeight": "400",
+            "lineHeight": "66.816px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h2",
+            "text": "The Story Nursery",
+            "selector": "#story-nursery-home-title",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "48px",
+            "fontWeight": "400",
+            "lineHeight": "52.8px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(78, 93, 68)"
+          },
+          {
+            "tag": "h2",
+            "text": "Come in. Look around. Stay as long as y…",
+            "selector": "#rooms > div > h2",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "57.6px",
+            "fontWeight": "400",
+            "lineHeight": "66.816px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h3",
+            "text": "Kabir Vaidya",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1) > h3",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "21.6px",
+            "fontWeight": "500",
+            "lineHeight": "24.84px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h3",
+            "text": "Come, Sit – Just Ask",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(2) > h3",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "21.6px",
+            "fontWeight": "500",
+            "lineHeight": "24.84px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h3",
+            "text": "STILLS",
+            "selector": "#stills > h3",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "21.6px",
+            "fontWeight": "500",
+            "lineHeight": "24.84px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h3",
+            "text": "House Specials",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(4) > h3",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "21.6px",
+            "fontWeight": "500",
+            "lineHeight": "24.84px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h3",
+            "text": "Books written by Nirav Manubhai",
+            "selector": "#bookshelf-door > div:nth-of-type(2) > h3",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "30.4px",
+            "fontWeight": "400",
+            "lineHeight": "35.264px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h2",
+            "text": "Some stories are meant to be sent.",
+            "selector": "#r24-bouquet-title",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "57.6px",
+            "fontWeight": "400",
+            "lineHeight": "66.816px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          },
+          {
+            "tag": "h2",
+            "text": "If something sparked a thought, the doo…",
+            "selector": "#conversation > div > div:nth-of-type(2) > h2",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "57.6px",
+            "fontWeight": "400",
+            "lineHeight": "66.816px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(44, 37, 25)"
+          }
+        ],
         "text": [
           {
             "tag": "p",
-            "text": "This domain is for use in documentation…",
-            "selector": "body > p:nth-of-type(1)",
-            "fontFamily": "system-ui, sans-serif",
-            "fontSize": "16px",
+            "text": "Rooms for stories, books and a life obs…",
+            "selector": "#host > div > p",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "18.88px",
             "fontWeight": "400",
-            "lineHeight": "25.6px",
-            "letterSpacing": "normal",
+            "lineHeight": "31.152px",
+            "letterSpacing": "0.1888px",
             "textTransform": "none",
-            "color": "rgb(0, 0, 0)"
+            "color": "rgb(107, 95, 71)"
           },
           {
             "tag": "p",
-            "text": "هذا النطاق مُخصص للاستخدام في أمثلة الت…",
-            "selector": "body > p:nth-of-type(2)",
-            "fontFamily": "system-ui, sans-serif",
-            "fontSize": "14px",
+            "text": "I have spent decades moving through ver…",
+            "selector": "#host > div > div > div > p:nth-of-type(1)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px",
             "fontWeight": "400",
-            "lineHeight": "22.4px",
+            "lineHeight": "29.75px",
             "letterSpacing": "normal",
             "textTransform": "none",
-            "color": "rgb(0, 0, 0)"
+            "color": "rgb(44, 37, 25)"
           },
           {
             "tag": "p",
-            "text": "该域名仅用于文档示例，无需获得许可。这并非一项服务，请勿将其用于测试和监控目的。",
-            "selector": "body > p:nth-of-type(3)",
-            "fontFamily": "system-ui, sans-serif",
-            "fontSize": "14px",
+            "text": "Today I follow my passion — working wit…",
+            "selector": "#host > div > div > div > p:nth-of-type(2)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px",
             "fontWeight": "400",
-            "lineHeight": "22.4px",
+            "lineHeight": "29.75px",
             "letterSpacing": "normal",
             "textTransform": "none",
-            "color": "rgb(0, 0, 0)"
+            "color": "rgb(44, 37, 25)"
           },
           {
             "tag": "p",
-            "text": "L’usage de ce domaine est réservé à des…",
-            "selector": "body > p:nth-of-type(4)",
-            "fontFamily": "system-ui, sans-serif",
-            "fontSize": "14px",
+            "text": "My sincere and heartfelt wish is to giv…",
+            "selector": "#host > div > div > div > p:nth-of-type(3)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px",
             "fontWeight": "400",
-            "lineHeight": "22.4px",
+            "lineHeight": "29.75px",
             "letterSpacing": "normal",
             "textTransform": "none",
-            "color": "rgb(0, 0, 0)"
+            "color": "rgb(44, 37, 25)"
           },
           {
             "tag": "p",
-            "text": "Данный домен предназначен для использов…",
-            "selector": "body > p:nth-of-type(5)",
-            "fontFamily": "system-ui, sans-serif",
-            "fontSize": "14px",
+            "text": "Not sure where to begin? See what is in…",
+            "selector": "#story-nursery > div > div > p",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "16.48px",
             "fontWeight": "400",
-            "lineHeight": "22.4px",
+            "lineHeight": "28.3456px",
             "letterSpacing": "normal",
             "textTransform": "none",
-            "color": "rgb(0, 0, 0)"
+            "color": "rgb(107, 95, 71)"
           },
           {
             "tag": "p",
-            "text": "Este dominio está destinado al uso en e…",
-            "selector": "body > p:nth-of-type(6)",
-            "fontFamily": "system-ui, sans-serif",
-            "fontSize": "14px",
+            "text": "Stories, books, field notes and work ob…",
+            "selector": "#rooms > div > p:nth-of-type(2)",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "15.2px",
             "fontWeight": "400",
-            "lineHeight": "22.4px",
+            "lineHeight": "25.08px",
             "letterSpacing": "normal",
             "textTransform": "none",
-            "color": "rgb(0, 0, 0)"
+            "color": "rgb(107, 95, 71)"
+          },
+          {
+            "tag": "p",
+            "text": "A world of stories where observation, h…",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1) > p:nth-of-type(1)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "14.4px",
+            "fontWeight": "400",
+            "lineHeight": "22.32px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(107, 95, 71)"
+          },
+          {
+            "tag": "p",
+            "text": "Short social stories that explore every…",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(2) > p:nth-of-type(1)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "14.4px",
+            "fontWeight": "400",
+            "lineHeight": "22.32px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(107, 95, 71)"
+          },
+          {
+            "tag": "p",
+            "text": "Rooms we have all entered. One object, …",
+            "selector": "#stills > p:nth-of-type(1)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "14.4px",
+            "fontWeight": "400",
+            "lineHeight": "22.32px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(107, 95, 71)"
+          },
+          {
+            "tag": "p",
+            "text": "Some stories arrive uninvited and refus…",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(4) > p:nth-of-type(1)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "14.4px",
+            "fontWeight": "400",
+            "lineHeight": "22.32px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(107, 95, 71)"
+          },
+          {
+            "tag": "p",
+            "text": "Books written across different rooms of…",
+            "selector": "#bookshelf-door > div:nth-of-type(2) > p:nth-of-type(1)",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px",
+            "fontWeight": "400",
+            "lineHeight": "27.2px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(107, 95, 71)"
+          },
+          {
+            "tag": "p",
+            "text": "Every book here is free. Just ask, and …",
+            "selector": "#bookshelf-door > div:nth-of-type(2) > p:nth-of-type(2)",
+            "fontFamily": "\"Playfair Display\", Georgia, serif",
+            "fontSize": "17px",
+            "fontWeight": "400",
+            "lineHeight": "27.2px",
+            "letterSpacing": "normal",
+            "textTransform": "none",
+            "color": "rgb(107, 95, 71)"
           }
         ],
-        "buttons": [],
-        "links": [
+        "buttons": [
           {
-            "text": "Learn more",
-            "selector": "body > a",
-            "count": 1,
-            "color": "rgb(0, 0, 238)",
-            "textDecoration": "underline",
-            "fontWeight": "400",
+            "text": "Gift a Story Bouquet →",
+            "selector": "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a",
+            "count": 2,
+            "backgroundColor": "rgb(78, 93, 68)",
+            "color": "rgb(251, 248, 241)",
+            "borderRadius": "3px",
+            "padding": "11.52px 16px",
+            "border": "1px solid rgb(78, 93, 68)",
+            "borderColor": "rgb(78, 93, 68)",
+            "boxShadow": "none",
+            "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "fontSize": "11.84px",
+            "fontWeight": "600",
+            "textTransform": "uppercase",
+            "letterSpacing": "0.8288px",
             "hover": {
-              "backgroundColor": "rgba(0, 0, 0, 0)",
-              "color": "rgb(0, 0, 238)",
-              "borderColor": "rgb(0, 0, 238)",
+              "backgroundColor": "rgba(78, 93, 68, 0.08)",
+              "color": "rgb(251, 248, 241)",
+              "borderColor": "rgb(78, 93, 68)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "Email me",
+            "selector": "#conversation > div > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1)",
+            "count": 6,
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(78, 93, 68)",
+            "borderRadius": "3px",
+            "padding": "11.52px 16px",
+            "border": "1px solid rgb(78, 93, 68)",
+            "borderColor": "rgb(78, 93, 68)",
+            "boxShadow": "none",
+            "fontFamily": "Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+            "fontSize": "11.84px",
+            "fontWeight": "600",
+            "textTransform": "uppercase",
+            "letterSpacing": "0.8288px",
+            "hover": {
+              "backgroundColor": "rgba(78, 93, 68, 0.08)",
+              "color": "rgb(78, 93, 68)",
+              "borderColor": "rgb(78, 93, 68)",
               "boxShadow": "none",
               "changed": true
             }
           }
         ],
-        "surfaces": [],
-        "radii": [],
-        "shadows": [],
+        "links": [
+          {
+            "text": "Enter the Story Nursery →",
+            "selector": "#story-nursery > div > div > a",
+            "count": 2,
+            "color": "rgb(78, 93, 68)",
+            "textDecoration": "none",
+            "fontWeight": "600",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(78, 93, 68)",
+              "borderColor": "rgb(78, 93, 68)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "Kabir VaidyaA world of stories where ob…",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1)",
+            "count": 8,
+            "color": "rgb(44, 37, 25)",
+            "textDecoration": "none",
+            "fontWeight": "400",
+            "hover": {
+              "backgroundColor": "rgba(255, 255, 255, 0.22)",
+              "color": "rgb(44, 37, 25)",
+              "borderColor": "rgb(138, 127, 102)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          },
+          {
+            "text": "there is this page for that.",
+            "selector": "#main > section:nth-of-type(7) > div > div:nth-of-type(1) > p:nth-of-type(7) > a",
+            "count": 1,
+            "color": "rgb(78, 93, 68)",
+            "textDecoration": "none",
+            "fontWeight": "400",
+            "hover": {
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(78, 93, 68)",
+              "borderColor": "rgb(78, 93, 68)",
+              "boxShadow": "none",
+              "changed": true
+            }
+          }
+        ],
+        "surfaces": [
+          {
+            "matched": "header",
+            "selector": "header",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1425,
+              "h": 81
+            },
+            "backgroundColor": "rgb(244, 239, 227)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "18px 28px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "rgba(40, 50, 34, 0.25) 0px 1px 8px 0px",
+            "position": "sticky",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px"
+          },
+          {
+            "matched": "nav",
+            "selector": "#nmh-drawer",
+            "rect": {
+              "x": 1425,
+              "y": 0,
+              "w": 340,
+              "h": 900
+            },
+            "backgroundColor": "rgb(244, 239, 227)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "72px 28px 40px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "rgba(0, 0, 0, 0.12) -8px 0px 30px 0px",
+            "position": "fixed",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px"
+          },
+          {
+            "matched": "main",
+            "selector": "#main",
+            "rect": {
+              "x": 0,
+              "y": 81,
+              "w": 1425,
+              "h": 7435
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px"
+          },
+          {
+            "matched": "footer",
+            "selector": "footer",
+            "rect": {
+              "x": 0,
+              "y": 7516,
+              "w": 1425,
+              "h": 83
+            },
+            "backgroundColor": "rgb(236, 227, 209)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "30px 20px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, Arial, sans-serif",
+            "fontSize": "14px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "#courtyard",
+            "rect": {
+              "x": 0,
+              "y": 81,
+              "w": 1425,
+              "h": 900
+            },
+            "backgroundColor": "rgb(236, 227, 209)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "relative",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "#host",
+            "rect": {
+              "x": 0,
+              "y": 981,
+              "w": 1425,
+              "h": 1024
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "72px 0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "#story-nursery",
+            "rect": {
+              "x": 0,
+              "y": 2005,
+              "w": 1425,
+              "h": 769
+            },
+            "backgroundColor": "rgb(244, 239, 227)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "48px 0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px"
+          },
+          {
+            "matched": "main > *",
+            "selector": "#rooms",
+            "rect": {
+              "x": 0,
+              "y": 2775,
+              "w": 1425,
+              "h": 2227
+            },
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "color": "rgb(44, 37, 25)",
+            "padding": "72px 0px",
+            "maxWidth": "none",
+            "borderRadius": "0px",
+            "boxShadow": "none",
+            "position": "static",
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": "17px"
+          }
+        ],
+        "radii": [
+          {
+            "value": "3px",
+            "count": 9,
+            "area": 177048,
+            "sources": [
+              "#story-bouquet-home > div > div:nth-of-type(1)",
+              "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a",
+              "#conversation > div > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "14px",
+            "count": 1,
+            "area": 126862,
+            "sources": [
+              "#conversation > div > div:nth-of-type(1)"
+            ]
+          }
+        ],
+        "shadows": [
+          {
+            "value": "rgba(44, 37, 25, 0.12) 0px 3px 16px 0px",
+            "count": 2,
+            "sources": [
+              "#story-bouquet-home > div > div:nth-of-type(1)",
+              "#conversation > div > div:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.12) -8px 0px 30px 0px",
+            "count": 1,
+            "sources": [
+              "#nmh-drawer"
+            ]
+          },
+          {
+            "value": "rgba(40, 50, 34, 0.25) 0px 1px 8px 0px",
+            "count": 1,
+            "sources": [
+              "header"
+            ]
+          },
+          {
+            "value": "rgba(44, 37, 25, 0.12) 0px 2px 14px 0px",
+            "count": 1,
+            "sources": [
+              "#host > div > div > img"
+            ]
+          },
+          {
+            "value": "rgba(44, 37, 25, 0.14) 0px 14px 34px 0px",
+            "count": 1,
+            "sources": [
+              "#conversation > div > div:nth-of-type(1) > img"
+            ]
+          }
+        ],
         "gradients": [],
         "bgColors": [
           {
-            "value": "rgb(238, 238, 238)",
-            "count": 1,
-            "area": 1212503,
+            "value": "rgb(233, 226, 212)",
+            "count": 6,
+            "area": 749681,
             "sources": [
-              ""
+              "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1) > div",
+              "#rooms > div > div:nth-of-type(1) > a:nth-of-type(2) > div",
+              "#stills > div"
+            ]
+          },
+          {
+            "value": "rgb(244, 239, 227)",
+            "count": 4,
+            "area": 12346315,
+            "sources": [
+              "body",
+              "header",
+              "#nmh-drawer"
+            ]
+          },
+          {
+            "value": "rgba(255, 255, 255, 0.22)",
+            "count": 4,
+            "area": 1029232,
+            "sources": [
+              "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1)",
+              "#rooms > div > div:nth-of-type(1) > a:nth-of-type(2)",
+              "#stills"
+            ]
+          },
+          {
+            "value": "rgb(236, 227, 209)",
+            "count": 3,
+            "area": 3518927,
+            "sources": [
+              "#courtyard",
+              "#conversation",
+              "footer"
+            ]
+          },
+          {
+            "value": "rgb(251, 248, 241)",
+            "count": 2,
+            "area": 403315,
+            "sources": [
+              "#bookshelf-door",
+              "#conversation > div > div:nth-of-type(2) > div:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgb(78, 93, 68)",
+            "count": 2,
+            "area": 22650,
+            "sources": [
+              "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a",
+              "#conversation > div > div:nth-of-type(2) > div:nth-of-type(2) > a"
             ]
           }
         ],
         "textColors": [
           {
-            "value": "rgb(0, 0, 0)",
-            "count": 6,
+            "value": "rgb(107, 95, 71)",
+            "count": 32,
             "sources": [
-              "body > p:nth-of-type(1)",
-              "body > p:nth-of-type(2)",
-              "body > p:nth-of-type(3)"
+              "#host > div > p",
+              "#story-nursery > div > div > p",
+              "#rooms > div > p:nth-of-type(2)"
             ]
           },
           {
-            "value": "rgb(0, 0, 238)",
+            "value": "rgb(44, 37, 25)",
+            "count": 31,
+            "sources": [
+              "header > a",
+              "header > div > span",
+              "header > button"
+            ]
+          },
+          {
+            "value": "rgb(78, 93, 68)",
+            "count": 17,
+            "sources": [
+              "#story-nursery-home-title",
+              "#story-nursery > div > div > a",
+              "#rooms > div > p:nth-of-type(1)"
+            ]
+          },
+          {
+            "value": "rgb(138, 106, 47)",
+            "count": 5,
+            "sources": [
+              "#nmh-drawer > p:nth-of-type(1)",
+              "#nmh-drawer > p:nth-of-type(2)",
+              "#nmh-drawer > p:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgb(251, 248, 241)",
+            "count": 2,
+            "sources": [
+              "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a",
+              "#conversation > div > div:nth-of-type(2) > div:nth-of-type(2) > a"
+            ]
+          },
+          {
+            "value": "rgb(164, 124, 61)",
             "count": 1,
             "sources": [
-              "body > a"
+              "#story-nursery > div > p"
+            ]
+          },
+          {
+            "value": "rgb(67, 83, 59)",
+            "count": 1,
+            "sources": [
+              "#main > section:nth-of-type(7) > div > div:nth-of-type(1) > p:nth-of-type(5)"
             ]
           }
         ],
-        "borderColors": [],
-        "customProps": {},
-        "fonts": [],
+        "borderColors": [
+          {
+            "value": "rgb(202, 191, 163)",
+            "count": 14,
+            "sources": [
+              "#host",
+              "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1)",
+              "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1) > div"
+            ]
+          },
+          {
+            "value": "rgb(78, 93, 68)",
+            "count": 9,
+            "sources": [
+              "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a",
+              "#conversation > div > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1)",
+              "#conversation > div > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(2)"
+            ]
+          },
+          {
+            "value": "rgba(44, 37, 25, 0.14)",
+            "count": 4,
+            "sources": [
+              "#bookshelf-door",
+              "#axiom",
+              "#rooms > div > div:nth-of-type(2) > div > a:nth-of-type(3)"
+            ]
+          },
+          {
+            "value": "rgba(44, 37, 25, 0.1)",
+            "count": 1,
+            "sources": [
+              "header"
+            ]
+          },
+          {
+            "value": "rgba(44, 37, 25, 0.25)",
+            "count": 1,
+            "sources": [
+              "#host > div > div > img"
+            ]
+          },
+          {
+            "value": "rgba(78, 93, 68, 0.4)",
+            "count": 1,
+            "sources": [
+              "#story-nursery > div > div > a"
+            ]
+          }
+        ],
+        "customProps": {
+          "--paper": {
+            "declared": "#f4efe3",
+            "computed": "#f4efe3"
+          },
+          "--parch": {
+            "declared": "#ece3d1",
+            "computed": "#ece3d1"
+          },
+          "--ink": {
+            "declared": "#2c2519",
+            "computed": "#2c2519"
+          },
+          "--ink-soft": {
+            "declared": "#6b5f47",
+            "computed": "#6b5f47"
+          },
+          "--leaf": {
+            "declared": "#4e5d44",
+            "computed": "#4e5d44"
+          },
+          "--leaf-dark": {
+            "declared": "#3c4934",
+            "computed": "#3c4934"
+          },
+          "--line": {
+            "declared": "#cabfa3",
+            "computed": "#cabfa3"
+          },
+          "--gold": {
+            "declared": "#b2843e",
+            "computed": "#b2843e"
+          },
+          "--noir": {
+            "declared": "#0f0d09",
+            "computed": "#0f0d09"
+          },
+          "--cream": {
+            "declared": "#f5eddc",
+            "computed": "#f5eddc"
+          },
+          "--max-reader": {
+            "declared": "46rem",
+            "computed": "46rem"
+          },
+          "--max-room": {
+            "declared": "68rem",
+            "computed": "68rem"
+          },
+          "--taupe": {
+            "declared": "#8a7f66",
+            "computed": "#8a7f66"
+          },
+          "--nav-h": {
+            "declared": "72px",
+            "computed": "72px"
+          },
+          "--nm-gutter": {
+            "declared": "clamp(1rem,3.2vw,2.25rem)",
+            "computed": "clamp(1rem,3.2vw,2.25rem)"
+          },
+          "--nm-reading": {
+            "declared": "44rem",
+            "computed": "44rem"
+          },
+          "--nm-space-1": {
+            "declared": ".5rem",
+            "computed": ".5rem"
+          },
+          "--nm-space-2": {
+            "declared": ".75rem",
+            "computed": ".75rem"
+          },
+          "--nm-space-3": {
+            "declared": "1rem",
+            "computed": "1rem"
+          },
+          "--nm-space-4": {
+            "declared": "1.5rem",
+            "computed": "1.5rem"
+          },
+          "--nm-space-5": {
+            "declared": "2rem",
+            "computed": "2rem"
+          },
+          "--nm-space-6": {
+            "declared": "3rem",
+            "computed": "3rem"
+          },
+          "--nm-space-7": {
+            "declared": "4.5rem",
+            "computed": "4.5rem"
+          },
+          "--nm-radius": {
+            "declared": "3px",
+            "computed": "3px"
+          },
+          "--nm-shadow": {
+            "declared": "0 10px 34px rgba(44,37,25,.13)",
+            "computed": "0 10px 34px rgba(44,37,25,.13)"
+          },
+          "--nm-focus": {
+            "declared": "#e6c77d",
+            "computed": "#e6c77d"
+          },
+          "--nm-preview-image-max": {
+            "declared": "540px",
+            "computed": "540px"
+          },
+          "--nm-property-image-max": {
+            "declared": "500px",
+            "computed": "500px"
+          },
+          "--nm-reading-hero-max": {
+            "declared": "1120px",
+            "computed": "1120px"
+          },
+          "--frame-room-card-ratio": {
+            "declared": "16/10",
+            "computed": "16/10"
+          },
+          "--frame-reading-ratio": {
+            "declared": "16/9",
+            "computed": "16/9"
+          },
+          "--frame-poster-ratio": {
+            "declared": "4/5",
+            "computed": "4/5"
+          },
+          "--frame-story-ratio": {
+            "declared": "3/2",
+            "computed": "3/2"
+          },
+          "--frame-story-portrait": {
+            "declared": "4/5",
+            "computed": "4/5"
+          },
+          "--frame-book-ratio": {
+            "declared": "5/7",
+            "computed": "5/7"
+          },
+          "--frame-reading-max": {
+            "declared": "1120px",
+            "computed": "1120px"
+          },
+          "--frame-property-max": {
+            "declared": "1120px",
+            "computed": "1120px"
+          },
+          "--frame-property-home-max": {
+            "declared": "360px",
+            "computed": "360px"
+          },
+          "--frame-property-home-mobile": {
+            "declared": "330px",
+            "computed": "330px"
+          },
+          "--frame-book-max": {
+            "declared": "320px",
+            "computed": "320px"
+          },
+          "--frame-story-max": {
+            "declared": "900px",
+            "computed": "900px"
+          },
+          "--house-image-radius": {
+            "declared": "14px",
+            "computed": "14px"
+          },
+          "--house-room-radius": {
+            "declared": "16px",
+            "computed": "16px"
+          },
+          "--wr-paper": {
+            "declared": "#f4efe3",
+            "computed": "#f4efe3"
+          },
+          "--wr-lime": {
+            "declared": "#f8f5ee",
+            "computed": "#f8f5ee"
+          },
+          "--wr-ink": {
+            "declared": "#2c2519",
+            "computed": "#2c2519"
+          },
+          "--wr-soft": {
+            "declared": "#5f5547",
+            "computed": "#5f5547"
+          },
+          "--wr-muted": {
+            "declared": "#857a6b",
+            "computed": "#857a6b"
+          },
+          "--wr-indigo": {
+            "declared": "#2e4369",
+            "computed": "#2e4369"
+          },
+          "--wr-line": {
+            "declared": "rgba(46,67,105,.28)",
+            "computed": "rgba(46,67,105,.28)"
+          },
+          "--wr-label": {
+            "declared": "rgba(247,242,232,.93)",
+            "computed": "rgba(247,242,232,.93)"
+          },
+          "--wr-teak": {
+            "declared": "#6b4729",
+            "computed": "#6b4729"
+          },
+          "--wr-mat": {
+            "declared": "#ece6da",
+            "computed": "#ece6da"
+          },
+          "--wr-display": {
+            "declared": "\"Playfair Display\",Georgia,\"Times New Roman\",serif",
+            "computed": "\"Playfair Display\",Georgia,\"Times New Roman\",serif"
+          },
+          "--wr-serif": {
+            "declared": "Georgia,\"Times New Roman\",serif",
+            "computed": "Georgia,\"Times New Roman\",serif"
+          },
+          "--wr-ui": {
+            "declared": "Inter,Arial,Helvetica,sans-serif",
+            "computed": "Inter,Arial,Helvetica,sans-serif"
+          }
+        },
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "300",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "400",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "400",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "600",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Inter",
+            "weight": "600",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "400",
+            "style": "italic",
+            "status": "unloaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "400",
+            "style": "italic",
+            "status": "loaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "500",
+            "style": "italic",
+            "status": "unloaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "600",
+            "style": "italic",
+            "status": "unloaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "400",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "400",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "500",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "500",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "600",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Playfair Display",
+            "weight": "600",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Rasa",
+            "weight": "400",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Rasa",
+            "weight": "500",
+            "style": "normal",
+            "status": "unloaded"
+          },
+          {
+            "family": "Rasa",
+            "weight": "600",
+            "style": "normal",
+            "status": "loaded"
+          },
+          {
+            "family": "Rasa",
+            "weight": "600",
+            "style": "normal",
+            "status": "unloaded"
+          }
+        ],
         "logoCandidates": [],
         "iconFont": null,
         "consent": {
           "dismissed": null
         },
-        "finalUrl": "https://www.example.com/"
+        "finalUrl": "https://www.niravmanubhai.com/"
       }
     }
   },
@@ -321,69 +2257,328 @@
     },
     "colors": [
       {
-        "hex": "#000000",
+        "hex": "#4e5d44",
         "values": [
-          "rgb(0, 0, 0)"
+          "rgb(78, 93, 68)",
+          "rgb(67, 83, 59)"
         ],
-        "weight": 12,
+        "weight": 98,
+        "bgArea": 48686,
         "by": {
-          "text": 12
+          "text": 36,
+          "border": 18,
+          "button-border": 16,
+          "button-text": 12,
+          "background": 4,
+          "button-background": 4,
+          "link": 6,
+          "heading": 2
+        },
+        "roles": [
+          "primary"
+        ],
+        "sources": [
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#story-nursery-home-title",
+            "prop": "text"
+          },
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a",
+            "prop": "border"
+          },
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#conversation > div > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1)",
+            "prop": "button-border"
+          },
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#conversation > div > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1)",
+            "prop": "button-text"
+          },
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a",
+            "prop": "background"
+          }
+        ]
+      },
+      {
+        "hex": "#2c2519",
+        "values": [
+          "rgb(44, 37, 25)"
+        ],
+        "weight": 96,
+        "by": {
+          "text": 62,
+          "link": 16,
+          "heading": 18
+        },
+        "roles": [
+          "accent",
+          "heading"
+        ],
+        "sources": [
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "header > a",
+            "prop": "text"
+          },
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1)",
+            "prop": "link"
+          },
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#bookshelf-door > div:nth-of-type(2) > h3",
+            "prop": "heading"
+          },
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#conversation > div > div:nth-of-type(2) > h2",
+            "prop": "heading"
+          },
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#host > div > h2",
+            "prop": "heading"
+          }
+        ]
+      },
+      {
+        "hex": "#6b5f47",
+        "values": [
+          "rgb(107, 95, 71)"
+        ],
+        "weight": 64,
+        "by": {
+          "text": 64
         },
         "roles": [
           "text"
         ],
         "sources": [
           {
-            "url": "https://www.example.com/",
-            "selector": "body > p:nth-of-type(1)",
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#host > div > p",
             "prop": "text"
           }
         ]
       },
       {
-        "hex": "#0000ee",
+        "hex": "#cabfa3",
         "values": [
-          "rgb(0, 0, 238)"
+          "rgb(202, 191, 163)"
         ],
-        "weight": 4,
+        "weight": 28,
         "by": {
-          "link": 2,
-          "text": 2
+          "border": 28
         },
         "roles": [
-          "accent"
+          "border"
         ],
         "sources": [
           {
-            "url": "https://www.example.com/",
-            "selector": "body > a",
-            "prop": "link"
-          },
-          {
-            "url": "https://www.example.com/",
-            "selector": "body > a",
-            "prop": "text"
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#host",
+            "prop": "border"
           }
         ]
       },
       {
-        "hex": "#eeeeee",
+        "hex": "#e9e2d4",
         "values": [
-          "rgb(238, 238, 238)"
+          "rgb(233, 226, 212)",
+          "rgb(236, 227, 209)"
         ],
-        "weight": 2,
-        "bgArea": 1565146,
+        "weight": 18,
+        "bgArea": 5253941,
         "by": {
-          "background": 2
+          "background": 18
+        },
+        "roles": [
+          "surface"
+        ],
+        "sources": [
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1) > div",
+            "prop": "background"
+          },
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#courtyard",
+            "prop": "background"
+          }
+        ]
+      },
+      {
+        "hex": "#f4efe3",
+        "values": [
+          "rgb(244, 239, 227)"
+        ],
+        "weight": 8,
+        "bgArea": 15512704,
+        "by": {
+          "background": 8
         },
         "roles": [
           "background"
         ],
         "sources": [
           {
-            "url": "https://www.example.com/",
-            "selector": null,
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "body",
             "prop": "background"
+          }
+        ]
+      },
+      {
+        "hex": "#fbf8f1",
+        "values": [
+          "rgb(251, 248, 241)"
+        ],
+        "weight": 12,
+        "bgArea": 632022,
+        "by": {
+          "background": 4,
+          "button-text": 4,
+          "text": 4
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#bookshelf-door",
+            "prop": "background"
+          },
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a",
+            "prop": "button-text"
+          },
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#2c251924",
+        "values": [
+          "rgba(44, 37, 25, 0.14)",
+          "rgba(44, 37, 25, 0.1)"
+        ],
+        "weight": 11,
+        "by": {
+          "border": 11
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#bookshelf-door",
+            "prop": "border"
+          },
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "header",
+            "prop": "border"
+          }
+        ]
+      },
+      {
+        "hex": "#8a6a2f",
+        "values": [
+          "rgb(138, 106, 47)"
+        ],
+        "weight": 10,
+        "by": {
+          "text": 10
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#nmh-drawer > p:nth-of-type(1)",
+            "prop": "text"
+          }
+        ]
+      },
+      {
+        "hex": "#ffffff38",
+        "values": [
+          "rgba(255, 255, 255, 0.22)"
+        ],
+        "weight": 8,
+        "bgArea": 1178724,
+        "by": {
+          "background": 8
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#rooms > div > div:nth-of-type(1) > a:nth-of-type(1)",
+            "prop": "background"
+          }
+        ]
+      },
+      {
+        "hex": "#2c251940",
+        "values": [
+          "rgba(44, 37, 25, 0.25)"
+        ],
+        "weight": 2,
+        "by": {
+          "border": 2
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#host > div > div > img",
+            "prop": "border"
+          }
+        ]
+      },
+      {
+        "hex": "#4e5d4466",
+        "values": [
+          "rgba(78, 93, 68, 0.4)"
+        ],
+        "weight": 2,
+        "by": {
+          "border": 2
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#story-nursery > div > div > a",
+            "prop": "border"
+          }
+        ]
+      },
+      {
+        "hex": "#a47c3d",
+        "values": [
+          "rgb(164, 124, 61)"
+        ],
+        "weight": 2,
+        "by": {
+          "text": 2
+        },
+        "roles": [],
+        "sources": [
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#story-nursery > div > p",
+            "prop": "text"
           }
         ]
       }
@@ -391,53 +2586,285 @@
     "type": {
       "families": [
         {
-          "family": "system-ui",
-          "count": 12,
+          "family": "Inter",
+          "count": 32,
           "headings": 0,
-          "text": 12,
+          "text": 16,
+          "buttons": 16
+        },
+        {
+          "family": "Playfair Display",
+          "count": 28,
+          "headings": 20,
+          "text": 8,
           "buttons": 0
         }
       ],
-      "headingFamily": "system-ui",
-      "bodyFamily": "system-ui",
+      "headingFamily": "Playfair Display",
+      "bodyFamily": "Inter",
       "sizes": [
         {
-          "px": 16,
+          "px": 57.6,
+          "count": 4,
+          "headings": 4,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 48,
+          "count": 1,
+          "headings": 1,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 35.2,
+          "count": 3,
+          "headings": 3,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 32,
+          "count": 1,
+          "headings": 1,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 30.4,
+          "count": 2,
+          "headings": 2,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 28,
+          "count": 1,
+          "headings": 1,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 21.6,
+          "count": 4,
+          "headings": 4,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 18.88,
           "count": 2,
           "headings": 0,
           "text": 2,
           "buttons": 0
         },
         {
-          "px": 14,
+          "px": 17,
           "count": 10,
           "headings": 0,
           "text": 10,
           "buttons": 0
+        },
+        {
+          "px": 16.8,
+          "count": 4,
+          "headings": 4,
+          "text": 0,
+          "buttons": 0
+        },
+        {
+          "px": 16.48,
+          "count": 1,
+          "headings": 0,
+          "text": 1,
+          "buttons": 0
+        },
+        {
+          "px": 16,
+          "count": 1,
+          "headings": 0,
+          "text": 1,
+          "buttons": 0
+        },
+        {
+          "px": 15.2,
+          "count": 2,
+          "headings": 0,
+          "text": 2,
+          "buttons": 0
+        },
+        {
+          "px": 14.4,
+          "count": 8,
+          "headings": 0,
+          "text": 8,
+          "buttons": 0
+        },
+        {
+          "px": 11.84,
+          "count": 16,
+          "headings": 0,
+          "text": 0,
+          "buttons": 16
         }
       ],
       "weights": [
         {
           "weight": "400",
-          "count": 12,
+          "count": 36,
+          "headings": 12,
+          "text": 24,
+          "buttons": 0
+        },
+        {
+          "weight": "600",
+          "count": 16,
           "headings": 0,
-          "text": 12,
+          "text": 0,
+          "buttons": 16
+        },
+        {
+          "weight": "500",
+          "count": 8,
+          "headings": 8,
+          "text": 0,
           "buttons": 0
         }
       ],
-      "levels": {}
+      "levels": {
+        "h2": {
+          "fontSize": 57.6,
+          "fontWeight": "400",
+          "count": 4,
+          "score": 115.2
+        },
+        "h3": {
+          "fontSize": 21.6,
+          "fontWeight": "500",
+          "count": 4,
+          "score": 54
+        }
+      }
     },
     "motifs": {
       "radius": {
-        "mode": null,
-        "areaMode": null,
+        "mode": "3px",
+        "areaMode": "3px",
         "pill": null,
-        "values": []
+        "values": [
+          {
+            "value": "3px",
+            "count": 18,
+            "area": 338932,
+            "sources": [
+              {
+                "url": "https://www.niravmanubhai.com/",
+                "selector": "#story-bouquet-home > div > div:nth-of-type(1)"
+              },
+              {
+                "url": "https://www.niravmanubhai.com/",
+                "selector": "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a"
+              },
+              {
+                "url": "https://www.niravmanubhai.com/",
+                "selector": "#conversation > div > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1)"
+              }
+            ]
+          },
+          {
+            "value": "14px",
+            "count": 2,
+            "area": 184765,
+            "sources": [
+              {
+                "url": "https://www.niravmanubhai.com/",
+                "selector": "#conversation > div > div:nth-of-type(1)"
+              }
+            ]
+          }
+        ]
       },
-      "shadows": [],
+      "shadows": [
+        {
+          "value": "rgba(44, 37, 25, 0.12) 0px 3px 16px 0px",
+          "count": 4,
+          "sources": [
+            {
+              "url": "https://www.niravmanubhai.com/",
+              "selector": "#story-bouquet-home > div > div:nth-of-type(1)"
+            },
+            {
+              "url": "https://www.niravmanubhai.com/",
+              "selector": "#conversation > div > div:nth-of-type(1)"
+            }
+          ]
+        },
+        {
+          "value": "rgba(0, 0, 0, 0.12) -8px 0px 30px 0px",
+          "count": 2,
+          "sources": [
+            {
+              "url": "https://www.niravmanubhai.com/",
+              "selector": "#nmh-drawer"
+            }
+          ]
+        },
+        {
+          "value": "rgba(40, 50, 34, 0.25) 0px 1px 8px 0px",
+          "count": 2,
+          "sources": [
+            {
+              "url": "https://www.niravmanubhai.com/",
+              "selector": "header"
+            }
+          ]
+        }
+      ],
       "gradients": []
     },
-    "hover": [],
+    "hover": [
+      {
+        "kind": "button",
+        "from": {
+          "backgroundColor": "rgb(78, 93, 68)"
+        },
+        "to": {
+          "backgroundColor": "rgba(78, 93, 68, 0.08)"
+        },
+        "count": 2,
+        "sources": [
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a"
+          },
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#story-bouquet-home > div > div:nth-of-type(2) > p:nth-of-type(3) > a"
+          }
+        ]
+      },
+      {
+        "kind": "button",
+        "from": {
+          "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        "to": {
+          "backgroundColor": "rgba(78, 93, 68, 0.08)"
+        },
+        "count": 2,
+        "sources": [
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#conversation > div > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1)"
+          },
+          {
+            "url": "https://www.niravmanubhai.com/",
+            "selector": "#conversation > div > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1)"
+          }
+        ]
+      }
+    ],
     "logo": {
       "source": "none",
       "url": null,

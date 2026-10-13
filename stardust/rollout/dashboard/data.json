@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-08T10:21:51.855Z",
+  "generatedAt": "2026-10-13T12:10:24.309Z",
   "target": "aem-eds",
   "site": {
-    "sourceUrl": "https://www.example.com/",
-    "liveHost": "main--f4c8728b--aemcoder.aem.live"
+    "sourceUrl": "https://current-design.jp/",
+    "liveHost": "main--032a8915--aemcoder.aem.live"
   },
   "stageCount": {
     "identified": 1,
@@ -24,7 +24,7 @@
       "stage": "deployed",
       "templateId": "index",
       "isTemplate": true,
-      "openFindings": 2
+      "openFindings": 1
     }
   ],
   "templates": [
@@ -41,8 +41,8 @@
     }
   ],
   "blocks": {
-    "total": 1,
-    "converted": 1
+    "total": 9,
+    "converted": 9
   },
   "quality": {
     "overall": 100,
@@ -50,7 +50,7 @@
       "brand-tensions": null,
       "design-ux": null,
       "accessibility": null,
-      "seo": 100,
+      "seo": null,
       "content-conversion": null,
       "ai-search": 100,
       "cross-page": null
@@ -61,13 +61,12 @@
       "P3": 0
     },
     "history": [
-      88,
       100
     ]
   },
   "findings": {
     "byFixability": {
-      "out-of-scope": 2
+      "out-of-scope": 1
     },
     "byAutofix": {}
   }

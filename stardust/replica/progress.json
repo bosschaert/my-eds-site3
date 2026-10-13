@@ -1,26 +1,33 @@
 {
-  "_provenance": { "writtenBy": "stardust:replica", "writtenAt": "2026-10-08T09:34:37Z", "stardustVersion": "0.29.1" },
-  "contentRoot": "body",
-  "contentRootNote": "The live page has no landmark or wrapper and no header/footer; body is the only selector that scopes both sides symmetrically. content-diff confirms header/footer absent on both sides.",
-  "pageTypes": {
-    "static": {
-      "archetype": "index",
-      "liveUrl": "https://www.example.com/",
+  "site": "https://current-design.jp/",
+  "archetypes": {
+    "home": {
+      "slug": "index",
       "prototype": "stardust/prototypes/index-proposed.html",
-      "iterations": { "1440": 1, "360": 1 },
+      "status": "gated",
+      "iterations": {"1440": 3, "360": 3},
+      "note": "pixel rounds iter1–iter4 (iter3 was a self-inflicted cascade regression, fixed in iter4) + confirmation rounds; fixes all off instruments",
       "gates": {
-        "1440": { "pixelPct": 0.0, "heightDelta": 0, "overflow": "ok (scrollWidth 1440 = viewport)", "contentDiffStructural": 0, "contentDiffAdvisory": 2, "visualDiffFlags": 0, "clipped": 0, "capProbe": "PASS at 2560 (0 of 9 rows failed)", "chromeParity": "no header/footer on either side; body-region parity quiet (exit 0)", "prototypeTableRow": "PASS (gates/prototypes-1440)", "round": "iter1 --full", "verdict": "PASS" },
-        "360":  { "pixelPct": 0.0, "heightDelta": 0, "overflow": "ok (scrollWidth 360 = viewport)", "contentDiffStructural": 0, "contentDiffAdvisory": 2, "visualDiffFlags": 0, "clipped": 0, "chromeParity": "no header/footer on either side; body-region parity quiet (exit 0)", "prototypeTableRow": "PASS (gates/prototypes-360)", "round": "iter1 --full", "verdict": "PASS" }
+        "1440": {"pixel": "2.76% masked (10.00% unmasked; hero carousel band 0:780 masked)", "heightDelta": 0, "contentDiffStructuralRed": 0, "clipped": 0, "overflow": "ok", "visualDiff": "3 FONT MISMATCH advisories — R-01 substitute face", "gateAll": "PASS 2.7%"},
+        "360": {"pixel": "3.90% masked (9.53% unmasked; hero band 0:873 masked)", "heightDelta": 0, "contentDiffStructuralRed": 0, "clipped": 0, "overflow": "ok", "visualDiff": "2 FONT MISMATCH advisories — R-01", "gateAll": "PASS 3.84%"},
+        "capProbe": "PASS at 2560 (content cap 1280 = 1280, 6/6 modules)"
       },
       "residuals": [
-        { "kind": "content-diff 🟡 ×2", "status": "justified", "note": "The live page carries its CSS in an inline <style> inside <body>; content-diff reads that text as a body node ('svg{display:block;…') and anchors the icon to it. The prototype's CSS is in files, so the 'MISSING BODY' / 'ICON MOVED' findings are style text, not copy. All six paragraphs and the link match." },
-        { "kind": "chrome-parity REGION", "status": "justified", "note": "gate.sh's default chrome-parity reports 'no element matches header/footer' on BOTH sides as 2 deltas; there is no chrome on this page. Standalone chrome-parity --no-defaults --region body=body is quiet at 1440 and 360 (gates/index-<w>/chrome-parity-body-iter1.txt)." }
+        {"what": "chrome-parity: Montserrat nav labels 'Home'/'News' 2px narrower than live boxes (47→45, 42→40); identical literal-string widths on both sides (fontwidth probe) — live box sizing quirk, sub-pixel-gate", "where": "header nav, footer nav"},
+        {"what": "Japanese glyph shapes differ (Noto Sans JP vs 秀英角ゴシック金) — widths, wraps and line boxes match", "where": "all JP text", "register": "R-01"},
+        {"what": "footer address block 22px narrower (glyph advance of the substitute in the Latin/digit run)", "where": "footer", "register": "R-01"}
       ],
-      "motion": { "observed": 0, "implemented": 0, "dead": ["hover a (no measured diff)"], "evidence": ["stardust/replica/motion/index.json", "stardust/replica/motion/index-build.json", "stardust/replica/motion/index-compare.txt"] },
-      "captureState": [ { "item": "color-scheme", "captured": "light (#eee ground)", "note": "source declares light dark; prototype lifts the same light-dark() rule" } ],
-      "fonts": { "policy": "system-ui, sans-serif — no font files on the source; nothing to self-host or substitute" },
-      "passedAt": "2026-10-08T09:34:37Z",
-      "approvedBy": "hands-off"
+      "captureState": [
+        {"what": "hero carousel band masked in the pixel gate (slide on screen at capture is nondeterministic)", "where": "hero", "restoreAtDelivery": "hero: 4 slides, cut every 8 s, each settles from scale 1.03 → 1 over 10 s (sd-carousel interval 8000)"},
+        {"what": "marquee frozen by stitch-shot animation freeze", "where": "contact band", "restoreAtDelivery": "logo marquee scrolls continuously (sd-carousel animate-duration 40000 per slide), opacity .4"},
+        {"what": "appear reveals settled for capture", "where": "news/about/service/works/company media, hero title", "restoreAtDelivery": "blur(8px)+fade in on scroll entry, 200 ms delay, 1000–1800 ms per element; hero title blur 11px 1800 ms; about backdrop scale 1.1→1 over 4 s"}
+      ],
+      "motion": {
+        "observed": "stardust/replica/motion/index.json, index-360.json",
+        "implemented": ["nav/footer label roll-up hover", "logo swap hover", "contact pill hover (bg + dot)", "pill buttons roll-up + bg/border hover", "post/work/card media zoom + title colour hover", "service card underline grow", "contact circle hover scale + arrow slide", "social icon scale", "hero auto-rotation 8 s + zoom settle", "appear reveal (appear → appear-active)", "mobile menu dialog (modal-ready)", "marquee"],
+        "dead": [".list-1__item hover (no measured diff at probe)", ".symbol-1__sd-7 hover (no measured diff at probe)"],
+        "compare": "1440: 12 parity, 0 missing, 0 extra, 2 advisory (hero 10 s zoom outside the observe window); 360: 5 parity, 0 missing"
+      }
     }
   }
 }

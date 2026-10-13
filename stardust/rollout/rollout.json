@@ -1,22 +1,21 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-10-08T09:42:29.011Z",
+    "writtenAt": "2026-10-13T11:13:06.110Z",
     "stardustVersion": "0.0.0"
   },
   "target": "aem-eds",
   "site": {
-    "sourceUrl": "https://www.example.com/",
+    "sourceUrl": "https://current-design.jp/",
     "da": {
       "org": "aemcoder",
-      "site": "f4c8728b",
+      "site": "032a8915",
       "ref": "main"
     },
-    "liveHost": "main--f4c8728b--aemcoder.aem.live",
-    "previewHost": "main--f4c8728b--aemcoder.aem.page"
+    "liveHost": "main--032a8915--aemcoder.aem.live"
   },
   "lastRun": {
-    "at": "2026-10-08T10:21:34.563Z",
+    "at": "2026-10-13T12:10:17.918Z",
     "pages": {
       "total": 1,
       "verified": 1,
@@ -27,8 +26,8 @@
       "failed": 0
     },
     "blocks": {
-      "total": 1,
-      "converted": 1,
+      "total": 9,
+      "converted": 9,
       "pending": 0
     },
     "verifyFailures": 0

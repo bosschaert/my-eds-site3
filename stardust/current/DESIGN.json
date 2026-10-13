@@ -1,144 +1,173 @@
 {
-  "_provenance": {
-    "writtenBy": "stardust:extract",
-    "writtenAt": "2026-10-08T09:24:52Z",
-    "readArtifacts": [
-      "stardust/current/_brand-extraction.json",
-      "stardust/current/_computed-styles.json",
-      "stardust/current/pages/index.html"
-    ],
-    "synthesizedInputs": [],
-    "stardustVersion": "0.29.1"
-  },
   "extensions": {
-    "componentStyle": {
-      "buttons": [],
-      "links": [
-        {
-          "selector": "a",
-          "color": "#0000ee",
-          "textDecoration": "underline"
-        }
-      ]
-    },
-    "motifs": {
-      "borderRadius": {
-        "mode": 0
-      },
-      "shadows": [],
-      "gradients": [],
-      "opacity": [
-        {
-          "selector": "svg",
-          "value": 0.55
-        },
-        {
-          "selector": "p + p",
-          "value": 0.6
-        }
-      ]
-    },
-    "voice": {
-      "ctaLabels": [
-        "Learn more"
-      ],
-      "heroHeadline": null,
-      "languages": [
-        "en",
-        "ar",
-        "zh",
-        "fr",
-        "ru",
-        "es"
-      ]
-    },
-    "colorScheme": {
-      "declared": "light dark",
-      "background": {
-        "light": "#eeeeee",
-        "dark": "#222222"
-      },
-      "captured": "light"
-    },
-    "modules": [],
-    "metadata": {
-      "siteName": "Example Domain",
-      "defaultOgImage": null,
-      "themeColor": null,
-      "defaultLocale": "en"
-    },
     "breakpoints": {
-      "containerMaxWidth": "480px",
+      "containerMaxWidth": "1280px",
       "probeWidth": 2560,
-      "shellMaxWidth": "480px",
+      "shellMaxWidth": null,
       "caps": [
         {
-          "kind": "shell",
-          "px": 480,
-          "via": "max-width",
-          "selector": "body",
+          "kind": "module",
+          "px": 1280,
+          "via": "fixed",
+          "selector": "main.box.sd-2 > div.box.sd-3 > div.box.sd-10 > div.box.sd-11",
           "pages": [
-            "https://www.example.com/"
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 1014,
+          "via": "fixed",
+          "selector": "main.box.sd-2 > div.box.sd-20 > div.box.sd-21 > div.box.list-1",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 742,
+          "via": "fixed",
+          "selector": "main.box.sd-2 > div.box.sd-88 > div.box.sd-89 > div.box.sd-96",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 651,
+          "via": "fixed",
+          "selector": "div.box.sd-3 > div.box.sd-10 > div.box.sd-11 > p.text.sd-14",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 624,
+          "via": "fixed",
+          "selector": "div.box.sd-3 > div.box.sd-10 > div.box.sd-11 > h1.text.sd-13",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 512,
+          "via": "fixed",
+          "selector": "div.box.sd-32 > div.box.sd-33 > div.box.sd-34 > div.box.sd-35",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 474,
+          "via": "fixed",
+          "selector": "main.box.sd-2 > div.box.sd-88 > div.box.sd-89 > div.box.sd-90",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 384,
+          "via": "fixed",
+          "selector": "div.box.sd-51 > div.box.sd-52 > div.box.sd-56 > a.box.sd-57",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 358,
+          "via": "fixed",
+          "selector": "div.box.sd-56 > a.box.sd-57 > div.box.sd-60 > div.box.sd-62",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 333,
+          "via": "fixed",
+          "selector": "div.box.sd-89 > div.box.sd-90 > div.box.sd-91 > div.box.sd-92",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 306,
+          "via": "fixed",
+          "selector": "div.box.sd-20 > div.box.sd-21 > div.box.list-1 > a.box.list-1__item",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 282,
+          "via": "fixed",
+          "selector": "div.box.sd-3 > div.box.sd-10 > div.box.sd-11 > a.box.sd-15",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 253,
+          "via": "fixed",
+          "selector": "div.box.sd-3 > div.box.sd-10 > div.box.sd-11 > p.text.sd-12",
+          "pages": [
+            "https://current-design.jp/"
           ]
         }
       ],
       "modules": [
         {
-          "url": "https://www.example.com/",
+          "url": "https://current-design.jp/",
           "section": 0,
-          "selector": "body > svg",
-          "px": null
+          "selector": "body > div.box.sd-1 > main.box.sd-2 > div.box.sd-3",
+          "px": 1280
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://current-design.jp/",
           "section": 1,
-          "selector": "body > p",
-          "px": null
+          "selector": "body > div.box.sd-1 > main.box.sd-2 > div.box.sd-20",
+          "px": 1280
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://current-design.jp/",
           "section": 2,
-          "selector": "body > p",
-          "px": null
+          "selector": "body > div.box.sd-1 > main.box.sd-2 > div.box.sd-30",
+          "px": 1280
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://current-design.jp/",
           "section": 3,
-          "selector": "body > p",
-          "px": null
+          "selector": "body > div.box.sd-1 > main.box.sd-2 > div.box.sd-51",
+          "px": 1280
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://current-design.jp/",
           "section": 4,
-          "selector": "body > p",
-          "px": null
+          "selector": "body > div.box.sd-1 > main.box.sd-2 > div.box.sd-88",
+          "px": 1280
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://current-design.jp/",
           "section": 5,
-          "selector": "body > p",
-          "px": null
-        },
-        {
-          "url": "https://www.example.com/",
-          "section": 6,
-          "selector": "body > p",
-          "px": null
-        },
-        {
-          "url": "https://www.example.com/",
-          "section": 7,
-          "selector": "body > a",
-          "px": null
+          "selector": "body > div.box.sd-1 > main.box.sd-2 > div.box",
+          "px": 1280
         }
       ],
       "capRegister": [],
       "capProvenance": {
         "writtenBy": "skills/replica/scripts/cap-probe.mjs",
-        "writtenAt": "2026-10-08T09:25:15.473Z",
+        "writtenAt": "2026-10-13T10:38:22.971Z",
         "baseWidth": 1440,
         "urls": [
-          "https://www.example.com/"
+          "https://current-design.jp/"
         ]
       }
     }

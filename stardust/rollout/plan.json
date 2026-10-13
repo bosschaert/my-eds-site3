@@ -1,14 +1,25 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/plan",
-    "writtenAt": "2026-10-08T09:42:48.695Z",
+    "writtenAt": "2026-10-13T11:13:06.216Z",
     "readArtifacts": [
       "stardust/rollout/coverage"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-08T09:42:48.695Z",
-  "fragments": [],
+  "generatedAt": "2026-10-13T11:13:06.216Z",
+  "fragments": [
+    {
+      "id": "footer",
+      "blockPath": "fragments/footer.html",
+      "status": "pending"
+    },
+    {
+      "id": "header",
+      "blockPath": "fragments/header.html",
+      "status": "pending"
+    }
+  ],
   "deliveryOrder": [
     "index"
   ],
@@ -21,8 +32,32 @@
       "isRepresentative": true,
       "convert": [
         {
-          "id": "notice",
-          "edsBlockName": "notice"
+          "id": "hero",
+          "edsBlockName": "hero"
+        },
+        {
+          "id": "news-list",
+          "edsBlockName": "news-list"
+        },
+        {
+          "id": "about",
+          "edsBlockName": "about"
+        },
+        {
+          "id": "service-cards",
+          "edsBlockName": "service-cards"
+        },
+        {
+          "id": "works",
+          "edsBlockName": "works"
+        },
+        {
+          "id": "company",
+          "edsBlockName": "company"
+        },
+        {
+          "id": "contact-band",
+          "edsBlockName": "contact-band"
         }
       ],
       "reuse": []

@@ -1,83 +1,28 @@
-<!-- stardust:provenance
-  writtenBy: stardust:extract
-  writtenAt: 2026-10-08T09:24:52Z
-  readArtifacts:
-    - stardust/current/_brand-extraction.json
-    - stardust/current/_computed-styles.json
-    - stardust/current/pages/index.html
-  synthesizedInputs: []
-  stardustVersion: 0.29.1
--->
 ---
-name: Example Domain
-description: A single, centered explanatory page in system type on a light grey ground.
-colors:
-  page-bg: "#eeeeee"
-  text: "#000000"
-  link: "#0000ee"
-typography:
-  body:
-    fontFamily: "system-ui, sans-serif"
-    fontSize: "16px"
-    fontWeight: 400
-    lineHeight: 1.6
-    letterSpacing: "normal"
-  body-secondary:
-    fontFamily: "system-ui, sans-serif"
-    fontSize: "0.875em"
-    fontWeight: 400
-    lineHeight: 1.6
-    letterSpacing: "normal"
-rounded: {}
-spacing:
-  inline: "2em"
-  bottom: "2em"
-  top: "25vh"
-  measure: "26em"
-components:
-  link:
-    textColor: "{colors.link}"
-    typography: "{typography.body}"
+_provenance:
+  writtenBy: stardust:replica
+  mode: bounded-single
+  writtenAt: 2026-10-13T10:43:04Z
+  synthesizedFrom:
+    - stardust/current/pages/index.json
+    - stardust/replica/lift/tokens.json
 ---
 
-# Example Domain — current state
+# DESIGN — current-design.jp (preserve, bounded-single)
 
-## Overview
+Values lifted from the source site's own CSS (STUDIO-generated) and computed styles at 1440 / 360. Machine-readable twin: DESIGN.json.
 
-One centered column of text, 26em wide, vertically offset by a quarter of the viewport, on a flat light grey page. A small decorative glyph (book with quotation marks) sits above the copy at 55% opacity. Six paragraphs repeat the same notice in six languages; the first is full size, the rest smaller and at 60% opacity. One underlined link closes the page. The page declares `color-scheme: light dark`; the captured state is the light scheme.
+## Palette
+Primary blue #009bdd · text #444040 · muted #717171 · sand #f4f2ef · rule #d0cac4 · white. Nav pill rgba(255,255,255,.804). About scrim rgba(0,0,0,.33); contact-band scrim rgba(0,0,0,.17) + blur(3px) over a #717171 band; hero gradient 0deg rgba(0,0,0,.6)→0.
 
-## Colors
-
-- Page background `#eeeeee` (light scheme of `light-dark(#eee,#222)`).
-- Text `#000000` (user-agent default; paragraphs after the first render at opacity .6).
-- Link `#0000ee` (user-agent default, underlined; visited and focus colours are defaults too).
-
-## Typography
-
-- One family, `system-ui, sans-serif`, weight 400, line-height 1.6.
-- Body 16px; secondary paragraphs 0.875em (14px). No headings exist on the page.
-- Text is centered. Arabic paragraph is `dir="rtl"`.
-
-## Layout
-
-- `body`: `max-width: 26em; margin: auto; padding: 25vh 2em 2em; text-align: center`.
-- The glyph: 44×44, `display: block; margin: -2.75em auto 0`.
-- No breakpoints: the layout is fluid down to 2em side padding.
-
-## Elevation & Depth
-
-None. Flat surface, no shadows, no borders.
-
-## Shapes
-
-No radii. The only shape is the inline SVG glyph.
+## Type
+- Japanese: 秀英角ゴシック金 B / M JIS2004 (TypeSquare, licensed). Delivered with a metric-matched open substitute (Noto Sans JP) behind the brand family name — see stardust/replica/inconsistency-register.md R-01.
+- Latin labels / nav / buttons: Montserrat 400/500.
+- Ramp (desktop / mobile): H1 40/20 lh 1.8 ls .04em · section title 28/20 lh 1.8 ls .08em · News title 24 · section label Montserrat 14/500 lh 1.8 blue · body 15 lh 2.11 ls .06em · card body 14 lh 1.8 ls .18em palt justified · card title 18/16 · item title 16/14 lh 1.6 · tag 13/12 · date 12 muted.
 
 ## Components
+- Pill buttons: radius 999px, padding 18px 32px (12px 32px mobile), 1px border, Montserrat 14 label; variants blue / sand / white.
+- Header: fixed, top 24px, padding 0 40px (24px mobile); centred translucent pill nav; blue Contact pill 24px 38px; hamburger (sand pill) under 840px.
 
-- Link: default underlined anchor, `#0000ee`, 16px.
-
-## Do's and Don'ts
-
-- Do keep the six-language sequence and order verbatim.
-- Do keep the opacity steps (.55 glyph, .6 secondary paragraphs) rather than approximating with grey.
-- Don't add headings, a header or a footer: the page has none.
+## Layout
+Container max 1280px; gutters 80px desktop / 24px mobile; section padding 120px / 80px. Source breakpoints: max-width 840px and 540px.

@@ -1,0 +1,43 @@
+{
+ "tool": "chrome-compare",
+ "at": "2026-10-13T12:04:26.273Z",
+ "source": "https://current-design.jp/",
+ "build": "https://main--032a8915--aemcoder.aem.live/",
+ "profile": "replica",
+ "bar": 0.02,
+ "widths": [
+  390,
+  1440
+ ],
+ "counts": {
+  "error": 1,
+  "warn": 2,
+  "decided": 0
+ },
+ "findings": [
+  {
+   "key": "link-missing@390 link",
+   "width": 390,
+   "path": "link",
+   "id": "link-missing",
+   "severity": "warn",
+   "detail": "top-level link / not in the build header"
+  },
+  {
+   "key": "control-missing@1440 link",
+   "width": 1440,
+   "path": "link",
+   "id": "control-missing",
+   "severity": "error",
+   "detail": "the source link control opens on hover; the build has no control named \"\""
+  },
+  {
+   "key": "link-missing@1440 link",
+   "width": 1440,
+   "path": "link",
+   "id": "link-missing",
+   "severity": "warn",
+   "detail": "top-level link /design_current not in the build header"
+  }
+ ]
+}

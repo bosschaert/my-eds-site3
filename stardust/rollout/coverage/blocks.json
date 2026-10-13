@@ -1,19 +1,19 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/blocks",
-    "writtenAt": "2026-10-08T09:42:48.655Z",
+    "writtenAt": "2026-10-13T11:13:06.159Z",
     "readArtifacts": [
       "stardust/rollout/coverage/pages.json"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-08T10:21:34.563Z",
+  "generatedAt": "2026-10-13T12:10:17.918Z",
   "blocks": [
     {
-      "id": "notice",
-      "label": "notice",
+      "id": "about",
+      "label": "about",
       "kind": "module",
-      "signature": "module:notice",
+      "signature": "module:about",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -23,8 +23,168 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "verified",
-        "edsBlockName": "notice",
+        "status": "deployed",
+        "edsBlockName": "about",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "company",
+      "label": "company",
+      "kind": "module",
+      "signature": "module:company",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "company",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "contact-band",
+      "label": "contact-band",
+      "kind": "module",
+      "signature": "module:contact-band",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "footer",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "footer",
+      "label": "footer",
+      "kind": "chrome",
+      "signature": "chrome:footer",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "footer",
+        "blockPath": "fragments/footer.html",
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "header",
+      "label": "header",
+      "kind": "chrome",
+      "signature": "chrome:header",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "header",
+        "blockPath": "fragments/header.html",
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hero",
+      "label": "hero",
+      "kind": "module",
+      "signature": "module:hero",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "hero",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "news-list",
+      "label": "news-list",
+      "kind": "module",
+      "signature": "module:news-list",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "news-list",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "service-cards",
+      "label": "service-cards",
+      "kind": "module",
+      "signature": "module:service-cards",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "service-cards",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "works",
+      "label": "works",
+      "kind": "module",
+      "signature": "module:works",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "works",
         "blockPath": null,
         "convertedAt": null
       }

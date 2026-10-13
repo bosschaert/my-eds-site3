@@ -5,7 +5,11 @@
   "buttonization": "formatted-only",
   "fragmentScriptPolicy": "inert-innerHTML",
   "emptySectionCollapse": true,
-  "sectionShape": "div.section.<name>-container > div.<name>-wrapper > div.<name>.block",
-  "chrome": "none on the source; header/footer blocks render nothing without /nav and /footer documents",
-  "fonts": "system-ui, sans-serif; no web fonts"
+  "evidence": {
+    "scripts.js": "decorateButtons(): p a[href], requires closest strong/em; p.className='button-wrapper', a.className='button' + primary|secondary|accent",
+    "aem.js": "decorateBlock adds .block + data-block-name, wraps in div.<name>-wrapper, section gains .<name>-container; wrapTextNodes folds non-P-led cells into one <p>",
+    "fragment.js": "loadFragment fetches <path>.plain.html into main.innerHTML (scripts inert), runs decorateMain + loadSections",
+    "chrome": "loadHeader/loadFooter in loadLazy; header/footer blocks load /nav and /footer (overridable via nav/footer metadata)"
+  },
+  "probedAt": "2026-10-13"
 }

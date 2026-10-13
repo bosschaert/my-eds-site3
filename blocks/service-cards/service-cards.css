@@ -1,0 +1,250 @@
+/* service-cards — values lifted from stardust/prototypes/index.css (.service*, .card*) */
+main > .section > .service-cards-wrapper {
+  max-width: none;
+}
+
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 80px;
+}
+
+.service-cards .service-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 48px;
+  width: 1280px;
+  max-width: 100%;
+}
+
+.service-cards .sec-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+
+.service-cards .sec-label :is(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+  font-family: var(--f-latin);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  color: var(--c-primary);
+}
+
+.service-cards .sec-title p {
+  font-family: var(--f-jp-b);
+  font-weight: var(--w-jp-b);
+  font-size: 28px;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+  color: var(--c-text);
+}
+
+.service-cards .service-more p {
+  display: flex;
+}
+
+.service-cards .service-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.service-cards .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 30%;
+  color: var(--c-ink);
+}
+
+.service-cards .card-media {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.service-cards .card-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 50%;
+  transition: scale 800ms;
+}
+
+.service-cards .card-foot {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  color: inherit;
+}
+
+.service-cards .card-foot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.service-cards .card-num p {
+  font-family: var(--f-latin);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  color: var(--c-primary);
+}
+
+.service-cards .card-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+  padding: 0 0 18px;
+  border-bottom: 1px solid var(--c-rule);
+}
+
+.service-cards .card-title :is(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+  font-family: var(--f-jp-b);
+  font-weight: var(--w-jp-b);
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  color: var(--c-text);
+}
+
+.service-cards .card-desc p {
+  font-family: var(--f-jp-m);
+  font-weight: var(--w-jp-m);
+  font-feature-settings: "palt" 1;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: var(--ls-palt-18);
+  text-align: justify;
+  color: var(--c-text);
+}
+
+.service-cards .card-line {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 60px;
+  height: 1px;
+  background: var(--c-primary);
+  transition: width 800ms;
+}
+
+/* ---------- interactions (observed) ---------- */
+.service-cards .card:hover .card-media img {
+  scale: 1.05;
+  transition-duration: 1200ms;
+}
+
+.service-cards .card:hover .card-title :is(h1, h2, h3, h4, h5, h6, p) {
+  color: var(--c-primary);
+  transition: color 600ms;
+}
+
+.service-cards .card:hover .card-line {
+  width: 100%;
+}
+
+/* ---------- tablet (source 840) ---------- */
+@media (width <= 840px) {
+  .service-cards .service-grid {
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  .service-cards .card {
+    width: 100%;
+  }
+}
+
+/* ---------- mobile (source 540) ---------- */
+@media (width <= 540px) {
+  .service-cards {
+    padding: 80px 24px;
+  }
+
+  .service-cards .service-inner {
+    gap: 24px;
+  }
+
+  .service-cards .sec-head {
+    gap: 2px;
+  }
+
+  .service-cards .sec-title p {
+    font-size: 20px;
+  }
+
+  .service-cards .service-grid {
+    gap: 48px;
+  }
+
+  .service-cards .card-media {
+    height: 240px;
+  }
+
+  .service-cards .card-foot {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .service-cards .card-text {
+    gap: 2px;
+    width: 100%;
+  }
+
+  .service-cards .card-title :is(h1, h2, h3, h4, h5, h6, p) {
+    font-size: 16px;
+  }
+}
+
+/* ---------- appear reveal (canon .appear → .appear-active) ---------- */
+.service-cards .appear {
+  transition: opacity var(--appear-d, 1000ms) 200ms, filter var(--appear-d, 1000ms) 200ms;
+}
+
+.service-cards .appear:not(.appear-active) {
+  opacity: 0;
+  filter: blur(8px);
+}
+
+.service-cards .card:nth-child(1) .card-media {
+  --appear-d: 1400ms;
+}
+
+.service-cards .card:nth-child(2) .card-media {
+  --appear-d: 1800ms;
+}
+
+.service-cards .card:nth-child(3) .card-media {
+  --appear-d: 1600ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-cards .appear:not(.appear-active) {
+    opacity: 1;
+    filter: none;
+  }
+}

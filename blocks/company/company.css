@@ -1,0 +1,157 @@
+/* company — values lifted from stardust/prototypes/index.css (.company*) */
+main > .section > .company-wrapper {
+  max-width: none;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  padding: 0 80px 180px;
+  background: var(--c-sand);
+}
+
+.company .company-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  width: 1280px;
+  max-width: 100%;
+}
+
+.company .company-photo {
+  position: relative;
+  width: 100%;
+  height: 584px;
+  overflow: hidden;
+}
+
+.company .company-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+.company .company-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 64px;
+  width: 100%;
+}
+
+.company .company-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.company .sec-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.company .sec-label :is(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+  font-family: var(--f-latin);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  color: var(--c-primary);
+}
+
+.company .sec-title p {
+  font-family: var(--f-jp-b);
+  font-weight: var(--w-jp-b);
+  font-size: 28px;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+  color: var(--c-text);
+}
+
+.company .sec-body p {
+  font-family: var(--f-jp-m);
+  font-weight: var(--w-jp-m);
+  font-size: 15px;
+  line-height: 2.11;
+  letter-spacing: 0.06em;
+  color: var(--c-text);
+}
+
+.company .company-more p {
+  display: flex;
+}
+
+/* ---------- tablet (source 840) ---------- */
+@media (width <= 840px) {
+  .company .company-row {
+    flex-direction: column;
+  }
+
+  .company .company-text {
+    flex: 1;
+    width: auto;
+  }
+}
+
+/* ---------- mobile (source 540) ---------- */
+@media (width <= 540px) {
+  .company {
+    padding: 0 24px 120px;
+  }
+
+  .company .sec-head {
+    gap: 2px;
+  }
+
+  .company .sec-title p {
+    font-size: 20px;
+  }
+
+  .company .company-photo {
+    height: 400px;
+  }
+
+  .company .company-row {
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+  }
+
+  .company .company-text {
+    gap: 24px;
+    width: 100%;
+  }
+}
+
+/* ---------- appear reveal (canon .appear → .appear-active) ---------- */
+.company .appear {
+  transition: opacity var(--appear-d, 1000ms) 200ms, filter var(--appear-d, 1000ms) 200ms;
+}
+
+.company .appear:not(.appear-active) {
+  opacity: 0;
+  filter: blur(8px);
+}
+
+.company .company-inner .company-photo {
+  --appear-d: 1800ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .company .appear:not(.appear-active) {
+    opacity: 1;
+    filter: none;
+  }
+}

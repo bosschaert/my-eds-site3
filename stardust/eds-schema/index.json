@@ -1,6 +1,261 @@
 {
- "source": "http://localhost:8791/stardust/prototypes/index-proposed.html",
+ "source": "http://localhost:8791/index-proposed.html",
  "width": 1280,
- "profile": "generic",
- "sections": []
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Design your brand and graphic."
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "いいオモイを、つたえるオモイに"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "大阪のブランディング・デザイン事務所カレントです。 コンセプト設計から、ロゴ・グラフィック・Webまで、 まだ言葉になっていない想いや大切にしてきた価値観、その会社やお店だけが持つ空気感。 そんな“いいオモイ”を丁寧にくみ取り、共感や関係がうまれるようにデザインします。"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "はじめてご依頼をお考えの方へはじめてご依頼をお考えの方へ",
+     "href": "/welcome"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 3,
+   "repeats": []
+  },
+  {
+   "section": "news",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "( News )"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "お知らせ"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "View allView all",
+     "href": "/news"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "お知らせ世界にひとつだけの風鈴の七夕飾りをデザインしよう！ワークショップ開催2026/5/29",
+     "href": "/news/260529"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "お客様の声aru. hair design 様2026/5/21",
+     "href": "/news/voice_aru-hairdesign"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "お客様の声東横堀川水辺再生協議会 様2025/12/15",
+     "href": "/news/voice_eyokokai"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 8,
+   "repeats": [
+    {
+     "unitSelector": "A.post",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "about",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "( About )"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "会話して 関わりをもって 一緒に考える"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "デザインは誰のためのものだろう？ もちろんお客さまのためにつくっています。 でも、ただつくるだけじゃ足りない。 きちんと使ってもらってこそ意味がある。 だから私たちは、デザインの前にまず お客さまの話をじっくり聞くことから始めます。 事業への想い、大切にしてきたこと、 まだ言葉にできていないことも、 対話のなかで一緒に見つけていく。 一緒に悩み、一緒に考え、一緒に喜べる。 そんな関係の先に本当に意味のある デザインが生まれると信じて。 ぜひ一度お話しを聞かせてください。"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "View moreView more",
+     "href": "/welcome"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 3,
+   "repeats": []
+  },
+  {
+   "section": "service",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "( Service )"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "できること"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "01つくる（デザインワーク）ロゴやパンフレット・Webサイト・パッケージなど目的やターゲットに合わせ最適なデザインをつくります。見た目だけではなく、伝えたいことを整理することも大切にしています。",
+     "href": "/service#designwork"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "02ささえる（ブランディングデザイン）対話を通じておもいを丁寧にくみ取り、コンセプトからビジュアルまで落とし込んでいきます。つくって終わりではなく、ともに育てていくパートナーでありたいと思っています。",
+     "href": "/service#brandingdesign"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "03かんがえる（コンセプト、販促企画）\"何を伝えるか\"\"どう伝えるか\"をお客さまと一緒に考えます。コンセプトやステートメントの作成、販促企画の立案など、これからの道筋をつくるお手伝いをしています。",
+     "href": "/service#conceptcreation"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "View moreView more",
+     "href": "/service"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 11,
+   "repeats": [
+    {
+     "unitSelector": "A.card",
+     "count": 3,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "works",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "( Works )"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "関わりの中から生まれた デザイン事例"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "お客さまとの関わりを大切にしながら まだ言葉になっていないおもいや空気感、 大切にしてきた価値観を一緒にかたちにした デザイン事例をご紹介します。 飲食・建築・不動産・農業・美容・ 教育・福祉・製造業など業種を問わず ご対応いたします。"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "HALO, pâtisserie最新の実績ロゴ",
+     "href": "/works/halo"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "ミズカラプロジェクト最新の実績ブランディングデザインロゴWebサイト動画",
+     "href": "/works/mizkaraproject"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "日本ヴァリティー株式会社ブランディングデザインロゴ",
+     "href": "/works/nihonvarity"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "View moreView more",
+     "href": "/works"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 9,
+   "repeats": [
+    {
+     "unitSelector": "A.work",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "company",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "( Company )"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "会社概要"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "大阪で最も古い東横堀川が見える趣のあるビルの1階にあります。 遊歩道があるお陰でビジネス街の中でも静かでのんびりとした場所です。 ぜひ、お気軽にお立ち寄りください。"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "View moreView more",
+     "href": "/company"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 3,
+   "repeats": []
+  }
+ ]
 }

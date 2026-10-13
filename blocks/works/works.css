@@ -1,0 +1,253 @@
+/* works — values lifted from stardust/prototypes/index.css (.works*, .work*, .tags) */
+main > .section > .works-wrapper {
+  max-width: none;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 80px;
+  background: var(--c-sand);
+}
+
+.works .works-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 64px;
+  width: 1280px;
+  max-width: 100%;
+}
+
+.works .works-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1;
+  min-width: 0;
+}
+
+.works .sec-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.works .sec-label :is(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+  font-family: var(--f-latin);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  color: var(--c-primary);
+}
+
+.works .sec-title p {
+  font-family: var(--f-jp-b);
+  font-weight: var(--w-jp-b);
+  font-size: 28px;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+  color: var(--c-text);
+}
+
+.works .sec-body p {
+  font-family: var(--f-jp-m);
+  font-weight: var(--w-jp-m);
+  font-size: 15px;
+  line-height: 2.11;
+  letter-spacing: 0.06em;
+  color: var(--c-text);
+}
+
+.works .works-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 48px;
+  width: calc(60% - 25.6px);
+}
+
+.works .works-more p {
+  display: flex;
+}
+
+.works .works-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  width: 100%;
+  padding: 110px 0 0;
+}
+
+.works .work {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  color: var(--c-ink);
+}
+
+.works .work-media {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.works .work-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 50%;
+  transition: scale 800ms;
+}
+
+.works .work-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  color: inherit;
+}
+
+.works .work-meta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.works .work-title p {
+  font-family: var(--f-jp-b);
+  font-weight: var(--w-jp-b);
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  color: var(--c-text);
+}
+
+.works .tags :is(ul, ol) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.works .tags li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px 1px;
+  background: var(--c-sand);
+  border: 1px solid var(--c-primary);
+  border-radius: 999px;
+  font-family: var(--f-jp-b);
+  font-weight: var(--w-jp-b);
+  font-size: 13px;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  color: var(--c-primary);
+}
+
+/* ---------- interactions (observed) ---------- */
+.works .work:hover .work-media img {
+  scale: 1.02;
+}
+
+.works .work:hover .work-title p {
+  color: #828282;
+  transition: color 600ms;
+}
+
+/* ---------- tablet (source 840) ---------- */
+@media (width <= 840px) {
+  .works .works-row {
+    flex-direction: column;
+  }
+
+  .works .works-intro {
+    width: auto;
+  }
+
+  .works .works-side {
+    width: 100%;
+  }
+
+  .works .works-list {
+    gap: 80px;
+    padding: 0;
+  }
+}
+
+/* ---------- mobile (source 540) ---------- */
+@media (width <= 540px) {
+  .works {
+    padding: 80px 24px;
+  }
+
+  .works .sec-head {
+    gap: 2px;
+  }
+
+  .works .sec-title p {
+    font-size: 20px;
+  }
+
+  .works .works-row {
+    align-items: flex-end;
+    gap: 24px;
+  }
+
+  .works .works-intro {
+    gap: 24px;
+    width: 100%;
+  }
+
+  .works .works-side {
+    gap: 24px;
+  }
+
+  .works .work-meta {
+    gap: 4px;
+  }
+
+  .works .tags li {
+    flex-direction: column;
+    font-size: 12px;
+  }
+}
+
+/* ---------- appear reveal (canon .appear → .appear-active) ---------- */
+.works .appear {
+  transition: opacity var(--appear-d, 1000ms) 200ms, filter var(--appear-d, 1000ms) 200ms;
+}
+
+.works .appear:not(.appear-active) {
+  opacity: 0;
+  filter: blur(8px);
+}
+
+.works .work .work-media {
+  --appear-d: 1400ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .works .appear:not(.appear-active) {
+    opacity: 1;
+    filter: none;
+  }
+}

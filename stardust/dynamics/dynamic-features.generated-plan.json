@@ -1,10 +1,403 @@
 {
  "_provenance": {
   "writtenBy": "stardust:dynamics plan",
-  "writtenAt": "2026-10-08T09:27:37.653Z",
+  "writtenAt": "2026-10-13T11:13:15.394Z",
   "input": "stardust/current/_dynamics.json",
-  "target": "https://main--f4c8728b--aemcoder.aem.page",
-  "migrated": null
+  "target": "https://main--032a8915--aemcoder.aem.page",
+  "migrated": "stardust/migrated",
+  "knowledge": null,
+  "chrome": null
  },
- "rows": []
+ "rows": [
+  {
+   "id": "a-unknown-third-party-host-typesquare-com",
+   "class": "A",
+   "feature": "unknown third-party host typesquare.com",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "typesquare.com"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-unknown-third-party-host-l-typesquare-com",
+   "class": "A",
+   "feature": "unknown third-party host l.typesquare.com",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "l.typesquare.com"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-unknown-third-party-host-analytics-studiodesignapp-com",
+   "class": "A",
+   "feature": "unknown third-party host analytics.studiodesignapp.com",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "analytics.studiodesignapp.com"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-cms-app-settings-object-datalayer",
+   "class": "A",
+   "feature": "CMS / app settings object dataLayer",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [],
+   "pattern": "read-settings",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "— (keys name endpoints, ids, vendors)"
+  },
+  {
+   "id": "m-modal-trigger-data-modal-chrome-only-dialog-content",
+   "class": "M",
+   "feature": "modal trigger data-modal (chrome only) → dialog:content",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 1
+   },
+   "evidence": [],
+   "pattern": "chrome-interaction",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none (the header contract is the spec)"
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-2-target-outside-dom-at-captur",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-2 → target outside DOM at capture",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 1
+   },
+   "evidence": [],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none"
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-8-target-outside-dom-at-captur",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-8 → target outside DOM at capture",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 1
+   },
+   "evidence": [
+    "https://current-design.jp/"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "delivered-by-capture",
+   "phase": "interactive",
+   "decision": "none",
+   "alreadyDelivered": "output already carries \"https://current-design.jp/\""
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-13-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-13 → target outside DOM at capture",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 1
+   },
+   "evidence": [
+    "https://current-design.jp/welcome"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none"
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-18-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-18 → target outside DOM at capture",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 1
+   },
+   "evidence": [
+    "https://current-design.jp/service"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none"
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-23-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-23 → target outside DOM at capture",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 1
+   },
+   "evidence": [
+    "https://current-design.jp/works"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none"
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-28-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-28 → target outside DOM at capture",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 1
+   },
+   "evidence": [
+    "https://current-design.jp/company"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none"
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-33-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-33 → target outside DOM at capture",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 1
+   },
+   "evidence": [
+    "https://current-design.jp/news"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none"
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-38-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-38 → target outside DOM at capture",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 1
+   },
+   "evidence": [
+    "https://current-design.jp/news/category/voice"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none"
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-43-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-43 → target outside DOM at capture",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 1
+   },
+   "evidence": [
+    "https://current-design.jp/contact"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "interactive",
+   "decision": "none"
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-49-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-49 → target outside DOM at capture",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 1
+   },
+   "evidence": [
+    "https://www.instagram.com/design_current/"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "delivered-by-capture",
+   "phase": "interactive",
+   "decision": "none",
+   "alreadyDelivered": "output already carries \"https://www.instagram.com/design_current\""
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-50-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-50 → target outside DOM at capture",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 1
+   },
+   "evidence": [
+    "https://jp.pinterest.com/currentbrandingstudioinc/_created/"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
+   "status": "delivered-by-capture",
+   "phase": "interactive",
+   "decision": "none",
+   "alreadyDelivered": "output already carries \"https://jp.pinterest.com/currentbranding\""
+  },
+  {
+   "id": "t-unknown-third-party-host-storage-googleapis-com",
+   "class": "T",
+   "feature": "unknown third-party host storage.googleapis.com",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "storage.googleapis.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "feature": "tag manager: Google Tag Manager",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "www.googletagmanager.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-unknown-third-party-host-wf-typesquare-com",
+   "class": "T",
+   "feature": "unknown third-party host wf.typesquare.com",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "wf.typesquare.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-analytics-google-analytics-ads",
+   "class": "T",
+   "feature": "analytics: Google Analytics / Ads",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "analytics.google.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-marketing-ad-retargeting-pixel",
+   "class": "T",
+   "feature": "marketing: ad / retargeting pixel",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "stats.g.doubleclick.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  }
+ ]
 }

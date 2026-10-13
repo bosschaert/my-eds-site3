@@ -1,146 +1,390 @@
 {
   "_provenance": {
-    "writtenBy": "stardust:extract",
-    "writtenAt": "2026-10-08T09:24:52Z",
-    "readArtifacts": [
-      "stardust/current/_brand-extraction.json",
-      "stardust/current/_computed-styles.json",
-      "stardust/current/pages/index.html"
+    "writtenBy": "stardust:replica",
+    "mode": "bounded-single",
+    "writtenAt": "2026-10-13T10:43:04Z",
+    "synthesizedFrom": [
+      "stardust/current/pages/index.json",
+      "stardust/replica/lift/tokens.json"
+    ]
+  },
+  "name": "CURRENT branding studio — current design (preserve)",
+  "colors": {
+    "primary": "#009bdd",
+    "text": "#444040",
+    "muted": "#717171",
+    "sand": "#f4f2ef",
+    "rule": "#d0cac4",
+    "white": "#ffffff",
+    "nav-pill-bg": "rgba(255,255,255,0.804)",
+    "cta-band-bg": "#717171",
+    "about-scrim": "rgba(0,0,0,0.33)",
+    "cta-scrim": "rgba(0,0,0,0.17)",
+    "hero-gradient": "linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0))"
+  },
+  "typography": {
+    "fonts": {
+      "latin": "Montserrat",
+      "jp-bold": "'秀英角ゴシック金 B JIS2004'",
+      "jp-medium": "'秀英角ゴシック金 M JIS2004'",
+      "eyebrow-serif": "'Arial Hebrew'",
+      "icons": [
+        "Material Icons",
+        "Font Awesome 6 Brands"
+      ]
+    },
+    "ramp": {
+      "hero-eyebrow": {
+        "family": "Arial Hebrew",
+        "size": [
+          18,
+          13
+        ],
+        "weight": 500,
+        "lh": 1.8,
+        "ls": "0.04em"
+      },
+      "h1": {
+        "family": "jp-bold",
+        "size": [
+          40,
+          20
+        ],
+        "lh": 1.8,
+        "ls": "0.04em"
+      },
+      "hero-body": {
+        "family": "jp-medium",
+        "size": [
+          15,
+          13
+        ],
+        "lh": 1.8,
+        "ls": [
+          "0.06em",
+          "0.1em"
+        ]
+      },
+      "section-label": {
+        "family": "Montserrat",
+        "size": 14,
+        "weight": 500,
+        "lh": 1.8,
+        "ls": "0.04em",
+        "color": "primary"
+      },
+      "section-title": {
+        "family": "jp-bold",
+        "size": [
+          28,
+          20
+        ],
+        "lh": 1.8,
+        "ls": "0.08em"
+      },
+      "news-title": {
+        "family": "jp-bold",
+        "size": [
+          24,
+          24
+        ],
+        "lh": 1.8,
+        "ls": "0.04em"
+      },
+      "body": {
+        "family": "jp-medium",
+        "size": 15,
+        "lh": 2.11,
+        "ls": "0.06em"
+      },
+      "card-body": {
+        "family": "jp-medium",
+        "size": 14,
+        "lh": 1.8,
+        "ls": "0.18em",
+        "palt": true,
+        "align": "justify"
+      },
+      "card-title": {
+        "family": "jp-bold",
+        "size": [
+          18,
+          16
+        ],
+        "lh": [
+          1.8,
+          1.8
+        ],
+        "ls": "0.04em"
+      },
+      "item-title": {
+        "family": "jp-bold",
+        "size": [
+          16,
+          14
+        ],
+        "lh": 1.6,
+        "ls": "0.04em"
+      },
+      "tag": {
+        "family": "jp-bold",
+        "size": [
+          13,
+          12
+        ],
+        "lh": 1.6,
+        "ls": "0.04em"
+      },
+      "date": {
+        "family": "jp-medium",
+        "size": 12,
+        "lh": 1.8,
+        "ls": "0.04em",
+        "color": "muted"
+      },
+      "nav": {
+        "family": "Montserrat",
+        "size": 14,
+        "lh": 1.4,
+        "ls": "0.04em"
+      },
+      "footer-tagline": {
+        "family": "jp-bold",
+        "size": 15,
+        "lh": 1.4,
+        "ls": "0.22em"
+      },
+      "footer-address": {
+        "family": "jp-medium",
+        "size": 12,
+        "lh": 1.8,
+        "ls": "0.04em"
+      },
+      "copyright": {
+        "family": "Montserrat",
+        "size": 11,
+        "lh": 1.8,
+        "ls": "0.04em"
+      }
+    }
+  },
+  "components": {
+    "buttons": {
+      "pill": {
+        "radius": "999px",
+        "padding": [
+          "18px 32px",
+          "12px 32px"
+        ],
+        "border": "1px solid",
+        "label": "Montserrat 14/19.6 0.04em",
+        "variants": {
+          "primary": "#009bdd bg, white label",
+          "sand": "#f4f2ef bg/border, #444040 label",
+          "white": "#fff bg/border"
+        }
+      },
+      "header-contact": {
+        "radius": "999px",
+        "padding": "24px 38px",
+        "bg": "#009bdd"
+      }
+    }
+  },
+  "layout": {
+    "max": "1280px",
+    "gutter": [
+      "80px",
+      "24px"
     ],
-    "synthesizedInputs": [],
-    "stardustVersion": "0.29.1"
+    "sectionPadding": [
+      "120px",
+      "80px"
+    ],
+    "header": {
+      "top": "24px",
+      "padX": [
+        "40px",
+        "24px"
+      ],
+      "position": "fixed"
+    }
   },
   "extensions": {
-    "componentStyle": {
-      "buttons": [],
-      "links": [
-        {
-          "selector": "a",
-          "color": "#0000ee",
-          "textDecoration": "underline"
-        }
-      ]
-    },
-    "motifs": {
-      "borderRadius": {
-        "mode": 0
-      },
-      "shadows": [],
-      "gradients": [],
-      "opacity": [
-        {
-          "selector": "svg",
-          "value": 0.55
-        },
-        {
-          "selector": "p + p",
-          "value": 0.6
-        }
-      ]
-    },
-    "voice": {
-      "ctaLabels": [
-        "Learn more"
-      ],
-      "heroHeadline": null,
-      "languages": [
-        "en",
-        "ar",
-        "zh",
-        "fr",
-        "ru",
-        "es"
-      ]
-    },
-    "colorScheme": {
-      "declared": "light dark",
-      "background": {
-        "light": "#eeeeee",
-        "dark": "#222222"
-      },
-      "captured": "light"
-    },
-    "modules": [],
-    "metadata": {
-      "siteName": "Example Domain",
-      "defaultOgImage": null,
-      "themeColor": null,
-      "defaultLocale": "en"
-    },
     "breakpoints": {
-      "containerMaxWidth": "480px",
+      "containerMaxWidth": "1280px",
       "probeWidth": 2560,
-      "shellMaxWidth": "480px",
+      "shellMaxWidth": null,
       "caps": [
         {
-          "kind": "shell",
-          "px": 480,
-          "via": "max-width",
-          "selector": "body",
+          "kind": "module",
+          "px": 1280,
+          "via": "fixed",
+          "selector": "main.box.sd-2 > div.box.sd-3 > div.box.sd-10 > div.box.sd-11",
           "pages": [
-            "https://www.example.com/"
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 1014,
+          "via": "fixed",
+          "selector": "main.box.sd-2 > div.box.sd-20 > div.box.sd-21 > div.box.list-1",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 742,
+          "via": "fixed",
+          "selector": "main.box.sd-2 > div.box.sd-88 > div.box.sd-89 > div.box.sd-96",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 651,
+          "via": "fixed",
+          "selector": "div.box.sd-3 > div.box.sd-10 > div.box.sd-11 > p.text.sd-14",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 624,
+          "via": "fixed",
+          "selector": "div.box.sd-3 > div.box.sd-10 > div.box.sd-11 > h1.text.sd-13",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 512,
+          "via": "fixed",
+          "selector": "div.box.sd-32 > div.box.sd-33 > div.box.sd-34 > div.box.sd-35",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 474,
+          "via": "fixed",
+          "selector": "main.box.sd-2 > div.box.sd-88 > div.box.sd-89 > div.box.sd-90",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 384,
+          "via": "fixed",
+          "selector": "div.box.sd-51 > div.box.sd-52 > div.box.sd-56 > a.box.sd-57",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 358,
+          "via": "fixed",
+          "selector": "div.box.sd-56 > a.box.sd-57 > div.box.sd-60 > div.box.sd-62",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 333,
+          "via": "fixed",
+          "selector": "div.box.sd-89 > div.box.sd-90 > div.box.sd-91 > div.box.sd-92",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 306,
+          "via": "fixed",
+          "selector": "div.box.sd-20 > div.box.sd-21 > div.box.list-1 > a.box.list-1__item",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 282,
+          "via": "fixed",
+          "selector": "div.box.sd-3 > div.box.sd-10 > div.box.sd-11 > a.box.sd-15",
+          "pages": [
+            "https://current-design.jp/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 253,
+          "via": "fixed",
+          "selector": "div.box.sd-3 > div.box.sd-10 > div.box.sd-11 > p.text.sd-12",
+          "pages": [
+            "https://current-design.jp/"
           ]
         }
       ],
       "modules": [
         {
-          "url": "https://www.example.com/",
+          "url": "https://current-design.jp/",
           "section": 0,
-          "selector": "body > svg",
-          "px": null
+          "selector": "body > div.box.sd-1 > main.box.sd-2 > div.box.sd-3",
+          "px": 1280
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://current-design.jp/",
           "section": 1,
-          "selector": "body > p",
-          "px": null
+          "selector": "body > div.box.sd-1 > main.box.sd-2 > div.box.sd-20",
+          "px": 1280
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://current-design.jp/",
           "section": 2,
-          "selector": "body > p",
-          "px": null
+          "selector": "body > div.box.sd-1 > main.box.sd-2 > div.box.sd-30",
+          "px": 1280
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://current-design.jp/",
           "section": 3,
-          "selector": "body > p",
-          "px": null
+          "selector": "body > div.box.sd-1 > main.box.sd-2 > div.box.sd-51",
+          "px": 1280
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://current-design.jp/",
           "section": 4,
-          "selector": "body > p",
-          "px": null
+          "selector": "body > div.box.sd-1 > main.box.sd-2 > div.box.sd-88",
+          "px": 1280
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://current-design.jp/",
           "section": 5,
-          "selector": "body > p",
-          "px": null
-        },
-        {
-          "url": "https://www.example.com/",
-          "section": 6,
-          "selector": "body > p",
-          "px": null
-        },
-        {
-          "url": "https://www.example.com/",
-          "section": 7,
-          "selector": "body > a",
-          "px": null
+          "selector": "body > div.box.sd-1 > main.box.sd-2 > div.box",
+          "px": 1280
         }
       ],
       "capRegister": [],
       "capProvenance": {
         "writtenBy": "skills/replica/scripts/cap-probe.mjs",
-        "writtenAt": "2026-10-08T09:25:15.473Z",
+        "writtenAt": "2026-10-13T10:38:22.971Z",
         "baseWidth": 1440,
         "urls": [
-          "https://www.example.com/"
+          "https://current-design.jp/"
         ]
       }
-    }
+    },
+    "sourceBreakpoints": [
+      "max-width: 840px",
+      "max-width: 540px"
+    ]
   }
 }

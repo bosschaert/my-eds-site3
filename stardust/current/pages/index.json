@@ -1,76 +1,541 @@
 {
   "_provenance": {
     "renderedBy": "playwright",
-    "fetchedAt": "2026-10-08T09:22:35.616Z",
+    "fetchedAt": "2026-10-13T10:37:19.500Z",
     "waitMode": "medium",
     "waitMs": 2500,
     "httpStatus": 200
   },
   "slug": "index",
-  "url": "https://www.example.com/",
+  "url": "https://current-design.jp/",
   "renderedBy": "playwright",
-  "fetchedAt": "2026-10-08T09:22:35.616Z",
-  "finalUrl": "https://www.example.com/",
-  "title": "Example Domain",
-  "description": null,
+  "fetchedAt": "2026-10-13T10:37:19.500Z",
+  "finalUrl": "https://current-design.jp/",
+  "title": "大阪のブランディング・デザイン会社｜カレントブランディングスタジオ",
+  "description": "大阪・中央区のブランディング・デザイン会社カレントブランディングスタジオです。お客さまの想いをじっくり聞き、コンセプトづくりからロゴ・パッケージ・Webサイトまでトータルでサポートします。まずはお気軽にご相談ください。",
   "og": {
-    "title": null,
-    "description": null,
-    "image": null,
-    "type": null
+    "title": "大阪のブランディング・デザイン会社｜カレントブランディングスタジオ",
+    "description": "大阪・中央区のブランディング・デザイン会社カレントブランディングスタジオです。お客さまの想いをじっくり聞き、コンセプトづくりからロゴ・パッケージ・Webサイトまでトータルでサポートします。まずはお気軽にご相談ください。",
+    "image": "https://storage.googleapis.com/production-os-assets/assets/0da74a5e-2996-4db1-a8b2-b9d2b0761044",
+    "type": "website"
   },
-  "headings": [],
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "いいオモイを、つたえるオモイに"
+    },
+    {
+      "tag": "h2",
+      "text": "( News )"
+    },
+    {
+      "tag": "h2",
+      "text": "( About )"
+    },
+    {
+      "tag": "h2",
+      "text": "( Service )"
+    },
+    {
+      "tag": "h3",
+      "text": "つくる（デザインワーク）"
+    },
+    {
+      "tag": "h3",
+      "text": "ささえる（ブランディングデザイン）"
+    },
+    {
+      "tag": "h3",
+      "text": "かんがえる（コンセプト、販促企画）"
+    },
+    {
+      "tag": "h2",
+      "text": "( Works )"
+    },
+    {
+      "tag": "h2",
+      "text": "( Company )"
+    }
+  ],
   "body": [
-    "This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.",
-    "هذا النطاق مُخصص للاستخدام في أمثلة التوثيق دون الحاجة إلى إذن. هذه ليست خدمة، يُرجى تجنب الاعتماد عليها لأغراض الاختبار والمراقبة.",
-    "该域名仅用于文档示例，无需获得许可。这并非一项服务，请勿将其用于测试和监控目的。",
-    "L’usage de ce domaine est réservé à des exemples de documentation, sans autorisation préalable. Il ne s’agit pas d’un service ; son utilisation à des fins de test ou de surveillance est à éviter.",
-    "Данный домен предназначен для использования в примерах документации без необходимости получения предварительного разрешения. Это не сервис; не рекомендуется его использование для тестирования и мониторинга.",
-    "Este dominio está destinado al uso en ejemplos de documentación sin necesidad de permiso. Esto no es un servicio; evitar utilizarlo para realizar pruebas o monitoreos."
+    "Design your brand and graphic.",
+    "大阪のブランディング・デザイン事務所カレントです。コンセプト設計から、ロゴ・グラフィック・Webまで、まだ言葉になっていない想いや大切にしてきた価値観、その会社やお店だけが持つ空気感。そんな“いいオモイ”を丁寧にくみ取り、共感や関係がうまれるようにデザインします。",
+    "はじめてご依頼をお考えの方へ",
+    "お知らせ",
+    "View all",
+    "お知らせ",
+    "世界にひとつだけの風鈴の七夕飾りをデザインしよう！ワークショップ開催",
+    "2026/5/29",
+    "お客様の声",
+    "aru. hair design 様",
+    "2026/5/21",
+    "お客様の声",
+    "東横堀川水辺再生協議会 様",
+    "2025/12/15",
+    "会話して関わりをもって一緒に考える",
+    "デザインは誰のためのものだろう？もちろんお客さまのためにつくっています。でも、ただつくるだけじゃ足りない。きちんと使ってもらってこそ意味がある。だから私たちは、デザインの前にまずお客さまの話をじっくり聞くことから始めます。事業への想い、大切にしてきたこと、まだ言葉にできていないことも、対話のなかで一緒に見つけていく。一緒に悩み、一緒に考え、一緒に喜べる。そんな関係の先に本当に意味のあるデザインが生まれると信じて。ぜひ一度お話しを聞かせてください。",
+    "View more",
+    "できること",
+    "01",
+    "ロゴやパンフレット・Webサイト・パッケージなど目的やターゲットに合わせ最適なデザインをつくります。見た目だけではなく、伝えたいことを整理することも大切にしています。",
+    "02",
+    "対話を通じておもいを丁寧にくみ取り、コンセプトからビジュアルまで落とし込んでいきます。つくって終わりではなく、ともに育てていくパートナーでありたいと思っています。",
+    "03",
+    "\"何を伝えるか\"\"どう伝えるか\"をお客さまと一緒に考えます。コンセプトやステートメントの作成、販促企画の立案など、これからの道筋をつくるお手伝いをしています。",
+    "View more",
+    "関わりの中から生まれたデザイン事例",
+    "お客さまとの関わりを大切にしながらまだ言葉になっていないおもいや空気感、大切にしてきた価値観を一緒にかたちにしたデザイン事例をご紹介します。飲食・建築・不動産・農業・美容・教育・福祉・製造業など業種を問わずご対応いたします。",
+    "HALO, pâtisserie",
+    "最新の実績",
+    "最新の実績",
+    "ロゴ",
+    "ロゴ",
+    "ミズカラプロジェクト",
+    "最新の実績",
+    "最新の実績",
+    "ブランディングデザイン",
+    "ブランディングデザイン",
+    "ロゴ",
+    "ロゴ",
+    "Webサイト",
+    "Webサイト",
+    "動画",
+    "動画",
+    "日本ヴァリティー株式会社",
+    "ブランディングデザイン",
+    "ブランディングデザイン",
+    "ロゴ",
+    "ロゴ",
+    "View more",
+    "会社概要",
+    "大阪で最も古い東横堀川が見える趣のあるビルの1階にあります。遊歩道があるお陰でビジネス街の中でも静かでのんびりとした場所です。ぜひ、お気軽にお立ち寄りください。",
+    "View more"
   ],
   "codeBlocks": [],
   "ctas": [
     {
-      "label": "Learn more",
-      "href": "https://iana.org/help/example-domains"
+      "label": "ホームHome",
+      "href": "/"
+    },
+    {
+      "label": "はじめての方へWelcome",
+      "href": "/welcome"
+    },
+    {
+      "label": "できることService",
+      "href": "/service"
+    },
+    {
+      "label": "制作実績Works",
+      "href": "/works"
+    },
+    {
+      "label": "会社概要Company",
+      "href": "/company"
+    },
+    {
+      "label": "お知らせNews",
+      "href": "/news"
+    },
+    {
+      "label": "お客様の声Voice",
+      "href": "/news/category/voice"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "はじめてご依頼をお考えの方へはじめてご依頼をお考えの方へ",
+      "href": "/welcome"
+    },
+    {
+      "label": "View allView all",
+      "href": "/news"
+    },
+    {
+      "label": "お知らせ世界にひとつだけの風鈴の七夕飾りをデザインしよう！ワークショップ開催2026/5/29",
+      "href": "/news/260529"
+    },
+    {
+      "label": "お客様の声aru. hair design 様2026/5/21",
+      "href": "/news/voice_aru-hairdesign"
+    },
+    {
+      "label": "お客様の声東横堀川水辺再生協議会 様2025/12/15",
+      "href": "/news/voice_eyokokai"
+    },
+    {
+      "label": "View moreView more",
+      "href": "/welcome"
+    },
+    {
+      "label": "01つくる（デザインワーク）ロゴやパンフレット・Webサイト・パッケージなど目的やターゲットに合わせ最適なデザインをつくります。見た目だけではなく、伝えたいことを整理することも大切にしています。",
+      "href": "/service#designwork"
+    },
+    {
+      "label": "02ささえる（ブランディングデザイン）対話を通じておもいを丁寧にくみ取り、コンセプトからビジュアルまで落とし込んでいきます。つくって終わりではなく、ともに育てていくパートナーでありたいと思っています。",
+      "href": "/service#brandingdesign"
+    },
+    {
+      "label": "03かんがえる（コンセプト、販促企画）\"何を伝えるか\"\"どう伝えるか\"をお客さまと一緒に考えます。コンセプトやステートメントの作成、販促企画の立案など、これからの道筋をつくるお手伝いをしています。",
+      "href": "/service#conceptcreation"
+    },
+    {
+      "label": "View moreView more",
+      "href": "/service"
+    },
+    {
+      "label": "HALO, pâtisserie最新の実績ロゴ",
+      "href": "/works/halo"
+    },
+    {
+      "label": "ミズカラプロジェクト最新の実績ブランディングデザインロゴWebサイト動画",
+      "href": "/works/mizkaraproject"
+    },
+    {
+      "label": "日本ヴァリティー株式会社ブランディングデザインロゴ",
+      "href": "/works/nihonvarity"
+    },
+    {
+      "label": "View moreView more",
+      "href": "/works"
+    },
+    {
+      "label": "View moreView more",
+      "href": "/company"
+    },
+    {
+      "label": "arrow_forwardarrow_forward",
+      "href": "/contact"
+    },
+    {
+      "label": "HomeHome",
+      "href": "/"
+    },
+    {
+      "label": "WelcomeWelcome",
+      "href": "/welcome"
+    },
+    {
+      "label": "ServiceService",
+      "href": "/service"
+    },
+    {
+      "label": "WorksWorks",
+      "href": "/works"
+    },
+    {
+      "label": "CompanyCompany",
+      "href": "/company"
+    },
+    {
+      "label": "ContactContact",
+      "href": "/contact"
+    },
+    {
+      "label": "NewsNews",
+      "href": "/news"
+    },
+    {
+      "label": "VoiceVoice",
+      "href": "/news/category/voice"
     }
   ],
   "links": [
-    "https://iana.org/help/example-domains"
+    "https://current-design.jp/",
+    "https://current-design.jp/welcome",
+    "https://current-design.jp/service",
+    "https://current-design.jp/works",
+    "https://current-design.jp/company",
+    "https://current-design.jp/news",
+    "https://current-design.jp/news/category/voice",
+    "https://www.instagram.com/design_current/",
+    "https://current-design.jp/contact",
+    "https://current-design.jp/news/260529",
+    "https://current-design.jp/news/voice_aru-hairdesign",
+    "https://current-design.jp/news/voice_eyokokai",
+    "https://current-design.jp/service#designwork",
+    "https://current-design.jp/service#brandingdesign",
+    "https://current-design.jp/service#conceptcreation",
+    "https://current-design.jp/works/halo",
+    "https://current-design.jp/works/mizkaraproject",
+    "https://current-design.jp/works/nihonvarity",
+    "https://jp.pinterest.com/currentbrandingstudioinc/_created/",
+    "https://note.com/current_design",
+    "https://current-design.jp/#header"
   ],
   "media": {
-    "imgs": [],
-    "allImgCount": 0,
+    "imgs": [
+      {
+        "src": "https://storage.googleapis.com/studio-design-asset-files/projects/nBW2MK21av/s-300x107_bec8e237-a8e3-4c3f-8436-5e4dca119441.svg",
+        "alt": "",
+        "w": 300,
+        "h": 107
+      },
+      {
+        "src": "https://storage.googleapis.com/studio-design-asset-files/projects/nBW2MK21av/s-300x107_bec8e237-a8e3-4c3f-8436-5e4dca119441.svg",
+        "alt": "",
+        "w": 300,
+        "h": 107
+      },
+      {
+        "src": "https://storage.googleapis.com/studio-design-asset-files/projects/BmqM07orOX/s-2400x208_v-frms_webp_7a4410ab-9105-43fa-880e-dc6ad21a3839_regular.webp",
+        "alt": "",
+        "w": 1800,
+        "h": 155
+      },
+      {
+        "src": "https://storage.googleapis.com/studio-design-asset-files/projects/nBW2MK21av/s-300x24_e37dd0f9-0a7f-4de1-b295-956a415608f7.svg",
+        "alt": "",
+        "w": 300,
+        "h": 24
+      },
+      {
+        "src": "https://storage.googleapis.com/studio-design-asset-files/projects/nBW2MK21av/s-300x24_e37dd0f9-0a7f-4de1-b295-956a415608f7.svg",
+        "alt": "",
+        "w": 300,
+        "h": 24
+      },
+      {
+        "src": "https://storage.googleapis.com/studio-design-asset-files/projects/nBW2MK21av/s-300x24_e37dd0f9-0a7f-4de1-b295-956a415608f7.svg",
+        "alt": "",
+        "w": 300,
+        "h": 24
+      },
+      {
+        "src": "https://storage.googleapis.com/studio-design-asset-files/projects/nBW2MK21av/s-300x24_e37dd0f9-0a7f-4de1-b295-956a415608f7.svg",
+        "alt": "",
+        "w": 300,
+        "h": 24
+      },
+      {
+        "src": "https://storage.googleapis.com/studio-design-asset-files/projects/nBW2MK21av/s-300x24_e37dd0f9-0a7f-4de1-b295-956a415608f7.svg",
+        "alt": "",
+        "w": 300,
+        "h": 24
+      },
+      {
+        "src": "https://storage.googleapis.com/studio-design-asset-files/projects/nBW2MK21av/s-300x24_e37dd0f9-0a7f-4de1-b295-956a415608f7.svg",
+        "alt": "",
+        "w": 300,
+        "h": 24
+      },
+      {
+        "src": "https://storage.googleapis.com/studio-design-asset-files/projects/nBW2MK21av/s-300x24_e37dd0f9-0a7f-4de1-b295-956a415608f7.svg",
+        "alt": "",
+        "w": 300,
+        "h": 24
+      },
+      {
+        "src": "https://storage.googleapis.com/studio-design-asset-files/projects/nBW2MK21av/s-300x26_a33ca76d-ee8e-4980-a8e0-848822ae6a86.svg",
+        "alt": "",
+        "w": 300,
+        "h": 26
+      },
+      {
+        "src": "https://storage.googleapis.com/studio-design-asset-files/projects/nBW2MK21av/s-300x107_3029a456-7afc-42a4-aed8-7d412e163e49.svg",
+        "alt": "",
+        "w": 300,
+        "h": 107
+      }
+    ],
+    "allImgCount": 12,
     "cssBackgrounds": [],
     "modals": [],
     "videos": [],
     "iframes": []
   },
-  "customProps": {},
+  "customProps": {
+    "--fa-style-family-classic": "'Font Awesome 6 Free'",
+    "--fa-font-solid": "normal 900 1em/1 'Font Awesome 6 Free'",
+    "--fa-style-family-brands": "'Font Awesome 6 Brands'",
+    "--fa-font-brands": "normal 400 1em/1 'Font Awesome 6 Brands'",
+    "--s-font-7297727e": "Montserrat",
+    "--s-font-53b3c580": "'秀英角ゴシック金 B JIS2004'",
+    "--s-font-bdb35bc1": "'Arial Hebrew'",
+    "--s-font-bfb5e6fa": "'秀英角ゴシック金 M JIS2004'",
+    "--s-color-f59d28d4": "#009bddff",
+    "--s-color-8da665a0": "#009bddff",
+    "--s-color-1c8c352d": "#444040ff",
+    "--s-color-ba91c421": "#717171",
+    "--s-color-2a8a8b83": "#f4f2ef",
+    "--s-color-608c2ff9": "#d0cac4ff"
+  },
   "_signals": {
     "filteredInterstitials": 0,
-    "distinctHeadings": 0,
-    "mainTextLen": 989,
-    "realImageCount": 0,
+    "distinctHeadings": 9,
+    "mainTextLen": 1538,
+    "realImageCount": 12,
     "trackingOnlyMedia": false,
     "spaShellSuspect": false,
     "screenshotMode": "fullPage"
   },
   "dynamic": {
-    "endpoints": [],
-    "thirdPartyScriptHosts": [],
+    "endpoints": [
+      {
+        "method": "POST",
+        "host": "analytics.google.com",
+        "path": "/g/collect",
+        "query": [
+          "_ee",
+          "_eu",
+          "_fv",
+          "_gaz",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "cid",
+          "dl",
+          "dma",
+          "dt",
+          "en",
+          "frm",
+          "gaf",
+          "gcd",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 204,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://analytics.google.com/g/collect",
+        "sameSite": false
+      },
+      {
+        "method": "GET",
+        "host": "l.typesquare.com",
+        "path": "/{n}/ts/finish/ja/ts",
+        "query": [
+          "bw[ftf]",
+          "bw[name]",
+          "bw[os]",
+          "condition",
+          "eid",
+          "f[0][id]",
+          "f[0][num]",
+          "f[1][id]",
+          "f[1][num]",
+          "location",
+          "onetime_condition"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 200,
+        "bytes": null,
+        "hits": 2,
+        "example": "https://l.typesquare.com/3/ts/finish/ja/ts",
+        "sameSite": false
+      },
+      {
+        "method": "POST",
+        "host": "analytics.studiodesignapp.com",
+        "path": "/event",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "status": 200,
+        "bytes": null,
+        "hits": 1,
+        "example": "https://analytics.studiodesignapp.com/event",
+        "sameSite": false
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "count": 1
+      },
+      {
+        "host": "typesquare.com",
+        "count": 1
+      }
+    ],
     "truncated": false,
     "inlineData": [],
-    "globalState": [],
+    "globalState": [
+      "dataLayer"
+    ],
     "frameworkHints": [],
     "forms": [],
     "ariaLiveRegions": 0,
-    "triggers": [],
+    "triggers": [
+      {
+        "marker": "data-modal",
+        "href": null
+      },
+      {
+        "marker": "modal-menu__sd-2",
+        "href": null
+      },
+      {
+        "marker": "modal-menu__sd-8",
+        "href": "/"
+      },
+      {
+        "marker": "modal-menu__sd-13",
+        "href": "/welcome"
+      },
+      {
+        "marker": "modal-menu__sd-18",
+        "href": "/service"
+      },
+      {
+        "marker": "modal-menu__sd-23",
+        "href": "/works"
+      },
+      {
+        "marker": "modal-menu__sd-28",
+        "href": "/company"
+      },
+      {
+        "marker": "modal-menu__sd-33",
+        "href": "/news"
+      },
+      {
+        "marker": "modal-menu__sd-38",
+        "href": "/news/category/voice"
+      },
+      {
+        "marker": "modal-menu__sd-43",
+        "href": "/contact"
+      },
+      {
+        "marker": "modal-menu__sd-49",
+        "href": "https://www.instagram.com/design_current/"
+      },
+      {
+        "marker": "modal-menu__sd-50",
+        "href": "https://jp.pinterest.com/currentbrandingstudioinc/_created/"
+      }
+    ],
     "mediaIds": [],
     "summary": {
       "sameSiteEndpoints": 0,
-      "thirdPartyEndpoints": 0,
-      "thirdPartyScriptHosts": 0,
+      "thirdPartyEndpoints": 3,
+      "thirdPartyScriptHosts": 2,
       "inlineDataBlobs": 0,
       "forms": 0,
       "searchForms": 0,

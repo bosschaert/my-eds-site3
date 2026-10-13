@@ -1,0 +1,281 @@
+/* about — values lifted from stardust/prototypes/index.css (.about*, .collage*) */
+main > .section > .about-wrapper {
+  max-width: none;
+}
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.about .about-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  filter: brightness(120%);
+}
+
+.about :is(.about-photo, .collage-a, .collage-b, .collage-c, .collage-d) {
+  position: relative;
+  overflow: hidden;
+}
+
+.about :is(.about-bg, .about-photo, .collage, .collage-row) img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+.about .about-veil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 120px 80px;
+  background: rgb(0 0 0 / 33%);
+  backdrop-filter: saturate(130%) blur(10px);
+}
+
+.about .about-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1280px;
+  max-width: 100%;
+}
+
+.about .about-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin: 0 0 120px;
+}
+
+.about .about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  width: 40%;
+}
+
+.about .sec-label :is(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+  font-family: var(--f-latin);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.about .sec-title p {
+  font-family: var(--f-jp-b);
+  font-weight: var(--w-jp-b);
+  font-size: 28px;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+  color: #fff;
+}
+
+.about .about-body p {
+  font-family: var(--f-jp-m);
+  font-weight: var(--w-jp-m);
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  color: #fff;
+}
+
+.about .about-more {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  width: 100%;
+}
+
+.about .about-more p {
+  display: flex;
+}
+
+.about .about-photo {
+  width: 40%;
+  height: 540px;
+}
+
+.about .collage {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 75%;
+  margin: 0 0 -40px;
+}
+
+.about .collage-a {
+  width: 50%;
+  height: 370px;
+}
+
+.about .collage-b {
+  width: 20%;
+  height: 240px;
+}
+
+.about .collage-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 100px;
+  width: 100%;
+}
+
+.about .collage-c {
+  width: calc(24% - 76px);
+  height: 160px;
+}
+
+.about .collage-d {
+  width: 397px;
+  max-width: 100%;
+  height: 290px;
+  filter: contrast(79%) saturate(104%);
+}
+
+/* ---------- tablet (source 840) ---------- */
+@media (width <= 840px) {
+  .about .about-veil {
+    padding: 120px 80px;
+  }
+
+  .about .about-top {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .about .about-text {
+    width: 100%;
+    margin: 70px 0 0;
+  }
+
+  .about .about-more {
+    margin: 35px 0 0;
+  }
+
+  .about .about-photo {
+    width: 100%;
+  }
+}
+
+/* ---------- mobile (source 540) ---------- */
+@media (width <= 540px) {
+  .about .about-veil {
+    padding: 80px 24px;
+  }
+
+  .about .about-top {
+    justify-content: space-around;
+    gap: 24px;
+    margin: 0 0 32px;
+  }
+
+  .about .about-text {
+    gap: 12px;
+    margin: 50px 0 0;
+  }
+
+  .about .sec-title p {
+    font-size: 20px;
+  }
+
+  .about .about-body p {
+    font-size: 14px;
+  }
+
+  .about .about-more {
+    gap: 12px;
+  }
+
+  .about .about-photo {
+    height: 224px;
+  }
+
+  .about .collage {
+    align-items: center;
+    width: 100%;
+    margin: 0 0 -20px;
+  }
+
+  .about .collage-a {
+    height: 250px;
+  }
+
+  .about .collage-b {
+    width: 104px;
+    height: 158px;
+  }
+
+  .about .collage-row {
+    gap: 24px;
+  }
+
+  .about .collage-c {
+    width: 126px;
+    height: 97px;
+  }
+
+  .about .collage-d {
+    width: 183px;
+    height: 130px;
+  }
+}
+
+/* ---------- appear reveal (canon .appear → .appear-active) ---------- */
+.about .appear {
+  transition: opacity var(--appear-d, 1000ms) 200ms, filter var(--appear-d, 1000ms) 200ms;
+}
+
+.about .appear:not(.appear-active) {
+  opacity: 0;
+  filter: blur(8px);
+}
+
+.about .about-bg img {
+  transition: scale 4000ms;
+}
+
+.about .about-bg.appear,
+.about .about-bg.appear:not(.appear-active) {
+  opacity: 1;
+  filter: brightness(120%);
+}
+
+.about .about-bg.appear:not(.appear-active) img {
+  scale: 1.1;
+}
+
+.about :is(.collage-b, .collage-c) {
+  --appear-d: 1400ms;
+}
+
+.about .collage-row .collage-d {
+  --appear-d: 1200ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about .appear:not(.appear-active) {
+    opacity: 1;
+    filter: none;
+  }
+}

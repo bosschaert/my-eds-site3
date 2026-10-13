@@ -1,0 +1,596 @@
+{
+ "tool": "chrome-explore",
+ "url": "https://current-design.jp/",
+ "at": "2026-10-13T11:14:36.297Z",
+ "shots": "stardust/.work/chrome/header-contract",
+ "widths": {
+  "390": {
+   "root": "#header",
+   "controls": [
+    {
+     "name": "",
+     "key": "",
+     "role": "link",
+     "kind": "link",
+     "sel": "#header>a:nth-of-type(1)",
+     "href": "https://current-design.jp/",
+     "expanded": null,
+     "rect": [
+      24,
+      24,
+      174,
+      63
+     ],
+     "actions": {}
+    },
+    {
+     "name": "メニュー",
+     "key": "メニュー",
+     "role": "toggle",
+     "kind": "menu",
+     "sel": "#header>button",
+     "expanded": null,
+     "rect": [
+      296,
+      35,
+      70,
+      40
+     ],
+     "actions": {
+      "click": {
+       "opened": true,
+       "hidden": 0,
+       "panel": {
+        "links": [
+         {
+          "text": "ホーム Home",
+          "href": "https://current-design.jp/"
+         },
+         {
+          "text": "初めての方へ Welcome",
+          "href": "https://current-design.jp/welcome"
+         },
+         {
+          "text": "できること Service",
+          "href": "https://current-design.jp/service"
+         },
+         {
+          "text": "制作実績 Works",
+          "href": "https://current-design.jp/works"
+         },
+         {
+          "text": "会社概要 Company",
+          "href": "https://current-design.jp/company"
+         },
+         {
+          "text": "お知らせ News",
+          "href": "https://current-design.jp/news"
+         },
+         {
+          "text": "お客様の声 Voice",
+          "href": "https://current-design.jp/news/category/voice"
+         },
+         {
+          "text": "お問い合わせ Contact",
+          "href": "https://current-design.jp/contact"
+         },
+         {
+          "text": "インスタグラム",
+          "href": "https://www.instagram.com/design_current/"
+         },
+         {
+          "text": "ピンタレスト",
+          "href": "https://jp.pinterest.com/currentbrandingstudioinc/_created/"
+         }
+        ],
+        "headings": [],
+        "images": 0,
+        "inputs": [],
+        "buttons": [
+         "メニューを閉じる"
+        ],
+        "options": 0,
+        "rect": [
+         24,
+         24,
+         342,
+         625
+        ]
+       },
+       "expanded": null,
+       "focus": "elsewhere",
+       "scrollLock": false,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "background-color",
+         "ms": null,
+         "delay": null,
+         "easing": null,
+         "target": "button.box"
+        },
+        {
+         "kind": "transition",
+         "prop": "translate",
+         "ms": null,
+         "delay": null,
+         "easing": null,
+         "target": "button.box"
+        },
+        {
+         "kind": "transition",
+         "prop": "transform",
+         "ms": 400,
+         "delay": 0,
+         "easing": "cubic-bezier(0.4, 0.4, 0, 1)",
+         "target": "div.modal-container"
+        },
+        {
+         "kind": "transition",
+         "prop": "opacity",
+         "ms": 400,
+         "delay": 0,
+         "easing": "cubic-bezier(0.4, 0.4, 0, 1)",
+         "target": "div.modal-container"
+        },
+        {
+         "kind": "transition",
+         "prop": "opacity",
+         "ms": 400,
+         "delay": 0,
+         "easing": "cubic-bezier(0.4, 0.4, 0, 1)",
+         "target": "div.modal-backdrop"
+        }
+       ],
+       "shot": "390-001---click.png"
+      },
+      "key": {
+       "opened": true,
+       "hidden": 0,
+       "panel": {
+        "links": [
+         {
+          "text": "ホーム Home",
+          "href": "https://current-design.jp/"
+         },
+         {
+          "text": "初めての方へ Welcome",
+          "href": "https://current-design.jp/welcome"
+         },
+         {
+          "text": "できること Service",
+          "href": "https://current-design.jp/service"
+         },
+         {
+          "text": "制作実績 Works",
+          "href": "https://current-design.jp/works"
+         },
+         {
+          "text": "会社概要 Company",
+          "href": "https://current-design.jp/company"
+         },
+         {
+          "text": "お知らせ News",
+          "href": "https://current-design.jp/news"
+         },
+         {
+          "text": "お客様の声 Voice",
+          "href": "https://current-design.jp/news/category/voice"
+         },
+         {
+          "text": "お問い合わせ Contact",
+          "href": "https://current-design.jp/contact"
+         },
+         {
+          "text": "インスタグラム",
+          "href": "https://www.instagram.com/design_current/"
+         },
+         {
+          "text": "ピンタレスト",
+          "href": "https://jp.pinterest.com/currentbrandingstudioinc/_created/"
+         }
+        ],
+        "headings": [],
+        "images": 0,
+        "inputs": [],
+        "buttons": [
+         "メニューを閉じる"
+        ],
+        "options": 0,
+        "rect": [
+         24,
+         24,
+         342,
+         625
+        ]
+       },
+       "expanded": null,
+       "focus": "elsewhere",
+       "scrollLock": false,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "outline-color",
+         "ms": null,
+         "delay": null,
+         "easing": null,
+         "target": "button.box"
+        },
+        {
+         "kind": "transition",
+         "prop": "outline-width",
+         "ms": null,
+         "delay": null,
+         "easing": null,
+         "target": "button.box"
+        },
+        {
+         "kind": "transition",
+         "prop": "transform",
+         "ms": 400,
+         "delay": 0,
+         "easing": "cubic-bezier(0.4, 0.4, 0, 1)",
+         "target": "div.modal-container"
+        },
+        {
+         "kind": "transition",
+         "prop": "opacity",
+         "ms": 400,
+         "delay": 0,
+         "easing": "cubic-bezier(0.4, 0.4, 0, 1)",
+         "target": "div.modal-container"
+        },
+        {
+         "kind": "transition",
+         "prop": "opacity",
+         "ms": 400,
+         "delay": 0,
+         "easing": "cubic-bezier(0.4, 0.4, 0, 1)",
+         "target": "div.modal-backdrop"
+        }
+       ],
+       "shot": "390-002---key.png",
+       "tabReachesPanel": true
+      }
+     },
+     "close": {
+      "escape": true,
+      "focusReturn": true,
+      "outside": null,
+      "toggle": true
+     },
+     "children": [
+      {
+       "name": "メニューを閉じる",
+       "key": "メニューを閉じる",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#sd-modal-4355540c6728bb13>div:nth-of-type(2)>div:nth-of-type(1)>button",
+       "expanded": null,
+       "rect": [
+        296,
+        24,
+        70,
+        40
+       ],
+       "actions": {
+        "click": {
+         "opened": false,
+         "hides": 11
+        },
+        "key": {
+         "opened": false,
+         "hides": 11
+        }
+       }
+      }
+     ]
+    }
+   ],
+   "scroll": [
+    {
+     "at": "top",
+     "y": 0,
+     "top": 24,
+     "height": 63,
+     "position": "fixed",
+     "inView": true
+    },
+    {
+     "at": "down",
+     "y": 1000,
+     "top": 24,
+     "height": 63,
+     "position": "fixed",
+     "inView": true
+    },
+    {
+     "at": "up",
+     "y": 700,
+     "top": 24,
+     "height": 63,
+     "position": "fixed",
+     "inView": true
+    },
+    {
+     "at": "back",
+     "y": 0,
+     "top": 24,
+     "height": 63,
+     "position": "fixed",
+     "inView": true
+    }
+   ],
+   "states": 2,
+   "truncated": null,
+   "loads": 5
+  },
+  "1440": {
+   "root": "#header",
+   "controls": [
+    {
+     "name": "",
+     "key": "",
+     "role": "link",
+     "kind": "link",
+     "sel": "#header>a:nth-of-type(1)",
+     "href": "https://current-design.jp/",
+     "expanded": null,
+     "rect": [
+      40,
+      27,
+      174,
+      63
+     ],
+     "actions": {
+      "hover": {
+       "opened": true,
+       "hidden": 1,
+       "panel": {
+        "links": [],
+        "headings": [],
+        "images": 1,
+        "inputs": [],
+        "buttons": [],
+        "options": 0,
+        "rect": [
+         39,
+         27,
+         175,
+         63
+        ]
+       },
+       "expanded": null,
+       "focus": "body",
+       "scrollLock": false,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "translate",
+         "ms": 300,
+         "delay": 0,
+         "easing": "cubic-bezier(0.4, 0.4, 0.1, 1)",
+         "target": "img.img"
+        },
+        {
+         "kind": "transition",
+         "prop": "opacity",
+         "ms": 300,
+         "delay": 0,
+         "easing": "cubic-bezier(0.4, 0.4, 0.1, 1)",
+         "target": "img.img"
+        },
+        {
+         "kind": "transition",
+         "prop": "opacity",
+         "ms": 1000,
+         "delay": 0,
+         "easing": "cubic-bezier(0.4, 0.4, 0, 1)",
+         "target": "div.box"
+        },
+        {
+         "kind": "transition",
+         "prop": "scale",
+         "ms": 10000,
+         "delay": 0,
+         "easing": "cubic-bezier(0.4, 0.4, 0, 1)",
+         "target": "div.box"
+        }
+       ],
+       "shot": "1440-001-link-hover.png"
+      }
+     },
+     "close": {
+      "escape": false,
+      "focusReturn": false,
+      "outside": true,
+      "leave": true
+     },
+     "children": []
+    },
+    {
+     "name": "ホーム Home",
+     "key": "ホーム home",
+     "role": "link",
+     "kind": "link",
+     "sel": "#header>div>ul>li:nth-of-type(1)>a",
+     "href": "https://current-design.jp/",
+     "expanded": null,
+     "rect": [
+      395,
+      48,
+      46,
+      20
+     ],
+     "actions": {}
+    },
+    {
+     "name": "はじめての方へ Welcome",
+     "key": "はじめての方へ welcome",
+     "role": "link",
+     "kind": "link",
+     "sel": "#header>div>ul>li:nth-of-type(2)>a",
+     "href": "https://current-design.jp/welcome",
+     "expanded": null,
+     "rect": [
+      465,
+      48,
+      104,
+      20
+     ],
+     "actions": {}
+    },
+    {
+     "name": "できること Service",
+     "key": "できること service",
+     "role": "link",
+     "kind": "link",
+     "sel": "#header>div>ul>li:nth-of-type(3)>a",
+     "href": "https://current-design.jp/service",
+     "expanded": null,
+     "rect": [
+      592,
+      48,
+      74,
+      20
+     ],
+     "actions": {}
+    },
+    {
+     "name": "制作実績 Works",
+     "key": "制作実績 works",
+     "role": "link",
+     "kind": "link",
+     "sel": "#header>div>ul>li:nth-of-type(4)>a",
+     "href": "https://current-design.jp/works",
+     "expanded": null,
+     "rect": [
+      691,
+      48,
+      58,
+      20
+     ],
+     "actions": {}
+    },
+    {
+     "name": "会社概要 Company",
+     "key": "会社概要 company",
+     "role": "link",
+     "kind": "link",
+     "sel": "#header>div>ul>li:nth-of-type(5)>a",
+     "href": "https://current-design.jp/company",
+     "expanded": null,
+     "rect": [
+      773,
+      48,
+      72,
+      20
+     ],
+     "actions": {}
+    },
+    {
+     "name": "お知らせ News",
+     "key": "お知らせ news",
+     "role": "link",
+     "kind": "link",
+     "sel": "#header>div>ul>li:nth-of-type(6)>a",
+     "href": "https://current-design.jp/news",
+     "expanded": null,
+     "rect": [
+      869,
+      48,
+      59,
+      20
+     ],
+     "actions": {}
+    },
+    {
+     "name": "お客様の声 Voice",
+     "key": "お客様の声 voice",
+     "role": "link",
+     "kind": "link",
+     "sel": "#header>div>ul>li:nth-of-type(7)>a",
+     "href": "https://current-design.jp/news/category/voice",
+     "expanded": null,
+     "rect": [
+      952,
+      48,
+      73,
+      20
+     ],
+     "actions": {}
+    },
+    {
+     "name": "",
+     "key": "",
+     "role": "link",
+     "kind": "link",
+     "sel": "#header>div>ul>a",
+     "href": "https://www.instagram.com/design_current/",
+     "expanded": null,
+     "rect": [
+      1050,
+      48,
+      18,
+      20
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Contact",
+     "key": "contact",
+     "role": "link",
+     "kind": "link",
+     "sel": "#header>a:nth-of-type(2)",
+     "href": "https://current-design.jp/contact",
+     "expanded": null,
+     "rect": [
+      1248,
+      24,
+      152,
+      68
+     ],
+     "actions": {}
+    }
+   ],
+   "scroll": [
+    {
+     "at": "top",
+     "y": 0,
+     "top": 24,
+     "height": 68,
+     "position": "fixed",
+     "inView": true
+    },
+    {
+     "at": "down",
+     "y": 1000,
+     "top": 24,
+     "height": 68,
+     "position": "fixed",
+     "inView": true
+    },
+    {
+     "at": "up",
+     "y": 700,
+     "top": 24,
+     "height": 68,
+     "position": "fixed",
+     "inView": true
+    },
+    {
+     "at": "back",
+     "y": 0,
+     "top": 24,
+     "height": 68,
+     "position": "fixed",
+     "inView": true
+    }
+   ],
+   "states": 1,
+   "truncated": null,
+   "loads": 3
+  }
+ },
+ "probe": "home"
+}

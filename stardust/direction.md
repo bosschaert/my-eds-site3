@@ -1,32 +1,23 @@
 ---
 _provenance:
   writtenBy: stardust:replica
-  writtenAt: 2026-10-08T09:27:26Z
-  againstInput: https://www.example.com/
+  writtenAt: 2026-10-13T10:43:04Z
+  againstInput: https://current-design.jp/
   readArtifacts:
-    - stardust/current/PRODUCT.md
-    - stardust/current/DESIGN.md
-    - stardust/current/DESIGN.json
+    - stardust/current/pages/index.json
+    - stardust/replica/lift/tokens.json
 ---
 
 # Direction — preserve mode (same-design migration)
 
-Mode: PRESERVE. The target spec is the captured current state of https://www.example.com/,
-promoted verbatim (no direct invocation, no creative decisions).
+Mode: PRESERVE. The target spec is the captured current state of https://current-design.jp/, synthesized descriptively (no direct invocation, no creative decisions).
 
-Promoted: current/PRODUCT.md → PRODUCT.md · current/DESIGN.md → DESIGN.md ·
-current/DESIGN.json → DESIGN.json (at 2026-10-08T09:27:26Z).
+Synthesized (bounded-single): current/pages/index.json + Phase-3 CSS lift → PRODUCT.md · DESIGN.md · DESIGN.json (at 2026-10-13T10:43:04Z).
 
-Permitted deltas: ONLY the entries of stardust/replica/inconsistency-register.md
-(empty — pure replica).
+Permitted deltas: ONLY the entries of stardust/replica/inconsistency-register.md (1 entry — R-01 licensed font substitution).
 
 Fidelity: ia verbatim · design verbatim · content verbatim.
 
-Hands-off: activated at 2026-10-08T09:27:26Z (`--hands-off` on `stardust:replica`); `state.json.handsOff: true`.
-Approvals are recorded as `approvedBy: "hands-off"` after every gate passes. One canonical
-direction; no variant fan-out. Volume: 1 page in scope (the run's site plan), 1 template.
+## Link-audit decision — out-of-scope internal targets repointed (2026-10-13)
 
-Named assumptions:
-- Colour scheme: the source declares `color-scheme: light dark`; the gate captures and the
-  delivered page reproduce the light scheme (background #eee), the state the capture recorded.
-- Scope is fixed to the site plan (1 page); no sibling discovery, no brand-sources.
+The run's scope is the home page only (site-plan.json selects one page). Every other internal target is a SCOPE EXTENSION, not a capture gap, so it is repointed to the source host (absolute https://current-design.jp/… links) rather than delivered: /welcome, /service (+ #designwork, #brandingdesign, #conceptcreation), /works (+ /works/halo, /works/mizkaraproject, /works/nihonvarity), /company, /news (+ /news/260529, /news/voice_aru-hairdesign, /news/voice_eyokokai, /news/category/voice), /contact. Scope debt: these 16 paths, for a later run. Logo/Home links stay root-relative (`/`).

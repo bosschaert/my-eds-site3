@@ -1,57 +1,361 @@
 /*
- * Foundation styles for the same-design migration of https://www.example.com/
- *
- * The source page has no site chrome (no header, no footer, no web fonts) and
- * exactly two inline rules, lifted verbatim:
- *   html{color-scheme:light dark;background:light-dark(#eee,#222)}
- *   body{font:16px/1.6 system-ui,sans-serif;max-width:26em;margin:auto;padding:25vh 2em 2em;text-align:center}
- * Everything else keeps the browser default. Do not add styling here.
+ * current-design.jp — EDS foundation (same-design replica).
+ * Tokens, base type, buttons and section scaffold lifted from the gated prototype
+ * (stardust/prototypes/canon.css). Values are the source's STUDIO styles; no redesign.
+ * Font licensing: Montserrat, Noto Sans JP (SIL OFL), Material Icons (Apache 2.0),
+ * Font Awesome 6 Brands (CC BY 4.0 / OFL) are self-hosted under /fonts. The brand face
+ * 秀英角ゴシック金 B/M JIS2004 is a domain-bound licensed kit, NOT shipped
+ * (register R-01).
  */
 
 :root {
-  --page-bg-light: #eee;
-  --page-bg-dark: #222;
-  --body-font-family: system-ui, sans-serif;
-  --body-font-size: 16px;
-  --body-line-height: 1.6;
-  --measure: 26em;
-  --pad-top: 25vh;
-  --pad-inline: 2em;
-  --pad-bottom: 2em;
-  --nav-height: 0px;
+  /* colors (canon) */
+  --c-primary: #009bdd;
+  --c-primary-70: #009bddb2;
+  --c-text: #444040;
+  --c-muted: #717171;
+  --c-sand: #f4f2ef;
+  --c-sand-dark: #eae3db;
+  --c-rule: #d0cac4;
+  --c-ink: #333;
+  --c-burger: #1f1f1f;
+  --c-sky: #c7eeff;
+
+  /* fonts — R-01: brand family first, open metric-matched substitute behind it */
+  --f-latin: montserrat, montserrat-fallback, sans-serif;
+  --f-jp-b: "秀英角ゴシック金 B JIS2004", "Noto Sans JP", sans-serif;
+  --f-jp-m: "秀英角ゴシック金 M JIS2004", "Noto Sans JP", sans-serif;
+  --f-eyebrow: "Arial Hebrew", sans-serif;
+  --f-icons: "Material Icons";
+  --f-brands: "Font Awesome 6 Brands";
+  --w-jp-b: 600;
+  --w-jp-m: 400;
+
+  /* R-01 metric match: palt kana run ~3% wider in the substitute;
+     tracking trimmed where palt is on */
+  --ls-palt-18: 0.15em;
+  --ls-palt-10: 0.1em;
+
+  /* layout */
+  --gutter: 80px;
+  --max-width: 1280px;
+
+  /* motion (observed on the live site) */
+  --ease-studio: cubic-bezier(0.4, 0.4, 0, 1);
+  --ease-logo: cubic-bezier(0.4, 0.4, 0.1, 1);
+
+  /* boilerplate compatibility */
+  --background-color: #fff;
+  --text-color: #000;
+  --body-font-family: var(--f-latin);
+
+  /* overlay chrome (#108): the header is fixed over the first section — nothing reserved */
+  --nav-height: 0;
+}
+
+/* Montserrat metrics on a local Arial (first paint, before fonts.css lands) */
+@font-face {
+  font-family: montserrat-fallback;
+  size-adjust: 113.39%;
+  ascent-override: 85.37%;
+  descent-override: 22.14%;
+  line-gap-override: 0%;
+  src: local("Arial");
+}
+
+/* ---------- reset (canon) ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html {
-  color-scheme: light dark;
-  background: light-dark(var(--page-bg-light), var(--page-bg-dark));
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   display: none;
-  margin: auto;
-  padding: var(--pad-top) var(--pad-inline) var(--pad-bottom);
-  max-width: var(--measure);
-  font: var(--body-font-size) / var(--body-line-height) var(--body-font-family);
-  text-align: center;
+  margin: 0;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  word-spacing: 1px;
 }
 
 body.appear {
   display: block;
 }
 
-header,
-footer {
-  height: var(--nav-height);
-  min-height: 0;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li {
   margin: 0;
   padding: 0;
+  font-weight: 400;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+/* ---------- chrome reservation (boilerplate structural layer) ---------- */
+header {
+  height: var(--nav-height);
+}
+
+header .header,
+footer .footer {
+  visibility: hidden;
+}
+
+header .header[data-block-status="loaded"],
+footer .footer[data-block-status="loaded"] {
+  visibility: visible;
+}
+
+/* ---------- icon fonts (canon) ---------- */
+.icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.mi {
+  font-family: var(--f-icons);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  direction: ltr;
+  font-feature-settings: "liga";
+}
+
+/* ---------- pill buttons (canon .pill → EDS a.button) ----------
+   strong → .primary (blue), em → .secondary (sand), strong+em → .accent (white).
+   The hover twin label is painted from the title decorateButtons() sets: the authored
+   text keeps the box (transparent), ::before is the label, ::after the twin. */
+p.button-wrapper {
+  margin: 0;
+}
+
+a.button:any-link,
+button.button {
+  --pill-py: 18px;
+  --pill-label: var(--c-text);
+  --pill-twin: var(--c-text);
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0;
+  padding: var(--pill-py) 32px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  overflow: hidden;
+  font-family: var(--f-latin);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  color: var(--pill-label);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-studio);
+}
+
+a.button:any-link {
+  color: transparent;
+}
+
+a.button:any-link::before,
+a.button:any-link::after {
+  content: attr(title);
+  position: absolute;
+  top: var(--pill-py);
+  left: 0;
+  right: 0;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--pill-label);
+  transition: opacity 600ms, translate 600ms;
+}
+
+a.button:any-link::after {
+  top: calc(var(--pill-py) + 14px * 1.4);
+  opacity: 0;
+  translate: 0 -8px;
+  color: var(--pill-twin);
+}
+
+a.button:any-link:hover::before {
+  opacity: 0;
+  translate: 0 -8px;
+}
+
+a.button:any-link:hover::after {
+  opacity: 1;
+  translate: 0 -20px;
+}
+
+a.button.primary,
+button.button.primary {
+  --pill-label: #fff;
+  --pill-twin: var(--c-primary);
+
+  background: var(--c-primary);
+  border-color: rgb(255 255 255 / 0%);
+}
+
+a.button.secondary,
+button.button.secondary {
+  background: var(--c-sand);
+  border-color: var(--c-sand);
+}
+
+a.button.primary:hover,
+a.button.secondary:hover,
+button.button.primary:hover,
+button.button.secondary:hover {
+  background: #fff;
+  border-color: var(--c-sand-dark);
+}
+
+a.button.accent,
+button.button.accent {
+  background: #fff;
+  border-color: #fff;
+}
+
+a.button.accent:hover,
+button.button.accent:hover {
+  background: var(--c-sand-dark);
+  border-color: var(--c-sand-dark);
+}
+
+a.button[aria-disabled="true"],
+button.button:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ---------- sections ---------- */
 main > .section {
   margin: 0;
-  padding: 0;
+}
+
+main > .section > div {
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 main .section:empty {
   display: none;
+}
+
+@media (width <= 540px) {
+  a.button:any-link,
+  button.button {
+    --pill-py: 12px;
+  }
+}
+
+/* stylelint-disable no-descending-specificity -- edit-mode repaint, ordered by role */
+
+/* ---------- Experience Workspace edit mode (EW3/EW6) — scoped to the inline editor ---------- */
+.prosemirror-editor p > :is(strong, em) > a:any-link,
+.prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 32px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-family: var(--f-latin);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: var(--c-text);
+}
+
+.prosemirror-editor p > a:any-link > :is(strong, em) {
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+.prosemirror-editor p > strong > a:any-link,
+.prosemirror-editor p > a:any-link:has(> strong:only-child) {
+  background: var(--c-primary);
+  color: #fff;
+}
+
+.prosemirror-editor p > em > a:any-link,
+.prosemirror-editor p > a:any-link:has(> em:only-child) {
+  background: var(--c-sand);
+  border-color: var(--c-sand);
+}
+
+.prosemirror-editor p > strong > em > a:any-link,
+.prosemirror-editor p > em > strong > a:any-link {
+  background: #fff;
+  border-color: #fff;
+  color: var(--c-text);
+}
+
+a .prosemirror-editor a:any-link {
+  color: inherit;
+  text-decoration: none;
 }

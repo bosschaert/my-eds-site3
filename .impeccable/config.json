@@ -1,0 +1,41 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/index-proposed.html"
+        ],
+        "createdAt": "2026-10-13T10:48:40.077Z",
+        "reason": "replica flow: colours are the live site's captured values, frozen by stardust/replica/inconsistency-register.md (no contrast entry)"
+      },
+      {
+        "rule": "overused-font",
+        "value": "montserrat",
+        "createdAt": "2026-10-13T11:11:22.687Z",
+        "reason": "replica flow: value lifted verbatim from the live site's CSS; frozen by stardust/replica/inconsistency-register.md (no entry)"
+      },
+      {
+        "rule": "wide-tracking",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/index-proposed.html"
+        ],
+        "createdAt": "2026-10-13T11:11:22.697Z",
+        "reason": "replica flow: value lifted verbatim from the live site's CSS; frozen by stardust/replica/inconsistency-register.md (no entry)"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/index-proposed.html"
+        ],
+        "createdAt": "2026-10-13T11:11:22.706Z",
+        "reason": "replica flow: value lifted verbatim from the live site's CSS; frozen by stardust/replica/inconsistency-register.md (no entry)"
+      }
+    ]
+  }
+}

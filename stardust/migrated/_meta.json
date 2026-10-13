@@ -1,74 +1,207 @@
 {
   "slug": "index",
-  "type": "static",
+  "type": "home",
   "renderBranch": "A",
   "template": null,
   "modules": [
-    "notice"
+    "header",
+    "hero",
+    "news-list",
+    "about",
+    "service-cards",
+    "works",
+    "company",
+    "contact-band",
+    "footer"
   ],
   "slotsFilled": [
-    "notice__glyph",
-    "notice__text",
-    "notice__text",
-    "notice__text",
-    "notice__text",
-    "notice__text",
-    "notice__text",
-    "notice__link"
+    "hero",
+    "news",
+    "about",
+    "service",
+    "works",
+    "company"
   ],
   "canonShas": {
-    "header": null,
-    "footer": null,
-    "css": "8cd4c89b6c24"
+    "header": "ce9871ce9b88",
+    "footer": "f75861520b0c",
+    "css": "0759230cda04"
   },
   "deviations": [],
-  "migrationDecisions": [
-    {
-      "kind": "no-h1",
-      "reason": "source page has no heading; none added (no fabrication)",
-      "checks": [
-        "qa-gate h1",
-        "delivery-lint h1"
-      ]
-    }
-  ],
+  "migrationDecisions": [],
   "metadata": {
-    "title": "Example Domain",
-    "description": null,
+    "title": "大阪のブランディング・デザイン会社｜カレントブランディングスタジオ",
+    "description": "大阪・中央区のブランディング・デザイン会社カレントブランディングスタジオです。お客さまの想いをじっくり聞き、コンセプトづくりからロゴ・パッケージ・Webサイトまでトータルでサポートします。まずはお気軽にご相談ください。",
     "canonical": null,
-    "lang": "en"
+    "lang": "ja"
   },
   "jsonLd": {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Example Domain",
-    "url": "https://www.example.com/"
+    "name": "大阪のブランディング・デザイン会社｜カレントブランディングスタジオ",
+    "description": "大阪・中央区のブランディング・デザイン会社カレントブランディングスタジオです。お客さまの想いをじっくり聞き、コンセプトづくりからロゴ・パッケージ・Webサイトまでトータルでサポートします。まずはお気軽にご相談ください。",
+    "url": "https://current-design.jp/"
   },
-  "migratedAt": "2026-10-08T09:38:45Z",
-  "designMdSha": "7401d4726989",
-  "designJsonSha": "fb2b95c6dc38",
-  "sourceCurrentSha": "470bbc7aa552",
-  "sourceProposedSha": "411fec74ec20",
+  "migratedAt": "2026-10-13T11:12:16Z",
+  "designMdSha": "0426f69029bc",
+  "designJsonSha": "81cae574cc4b",
+  "sourceCurrentSha": "fa8cc5df6027",
+  "sourceProposedSha": "8c7f996c166b",
   "fidelityTier": "archetype",
   "archetypeSource": null,
   "archetypeSha": null,
   "variants": [],
-  "gatesPassed": [
-    "content-fidelity",
-    "content-count",
-    "delivery-lint",
-    "media-reconcile"
-  ],
-  "gateEvidence": {
-    "content-fidelity": "content-diff iter1 --full at 1440 and 360: 0 structural, 2 advisory (live inline <style> text read as a body node) — stardust/replica/gates/index-1440, index-360",
-    "content-count": "6 paragraphs, 1 CTA (https://iana.org/help/example-domains), 0 headings, 0 images on both sides; content-diff 198-node class match, 0 drops",
-    "delivery-lint": "delivery-lint content/index.html (type:page): 1 P0 (h1: expected exactly one <h1>, found 0) · 0 P1 · 0 P2; h1 finding accepted by decision no-h1 (source has no heading)",
-    "media-reconcile": "media-reconcile content/index.html: no findings (page has no images); exit 0"
-  },
+  "gatesPassed": [],
+  "gateEvidence": {},
   "contentDeviations": [],
-  "assetsBundled": 2,
+  "assetsBundled": 168,
   "missingAssets": [],
-  "brokenInternalLinks": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/welcome",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/service",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/works",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/company",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/news",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/news/category/voice",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/contact",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/welcome",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/news",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/news/260529",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/news/voice_aru-hairdesign",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/news/voice_eyokokai",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/welcome",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/service#designwork",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/service#brandingdesign",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/service#conceptcreation",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/service",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/works/halo",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/works/mizkaraproject",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/works/nihonvarity",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/works",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/company",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/contact",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/welcome",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/service",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/works",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/company",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/contact",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/news",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/news/category/voice",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/welcome",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/service",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/works",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/company",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/news",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/news/category/voice",
+      "reason": "not-in-inventory"
+    }
+  ],
   "outputPath": "index.html",
   "outputPathDefault": null,
   "sidecar": "_meta.json",

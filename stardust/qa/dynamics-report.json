@@ -1,9 +1,32 @@
 {
  "_provenance": {
   "writtenBy": "stardust:dynamics check",
-  "writtenAt": "2026-10-08T10:17:11.578Z",
-  "origin": "https://main--f4c8728b--aemcoder.aem.live",
+  "writtenAt": "2026-10-13T12:05:49.402Z",
+  "origin": "https://main--032a8915--aemcoder.aem.live",
   "parity": "stardust/dynamics/parity.json"
  },
- "results": []
+ "results": [
+  {
+   "feature": "Site menu overlay (mobile)",
+   "id": "menu-overlay",
+   "class": "M",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "10 × dialog.menu-dialog a (min 10)",
+   "thirdParty": "",
+   "ms": 2114,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Hero carousel",
+   "id": "hero-carousel",
+   "class": "M",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "4 × .hero img (min 4)",
+   "thirdParty": "",
+   "ms": 1982,
+   "environmentLimit": null
+  }
+ ]
 }

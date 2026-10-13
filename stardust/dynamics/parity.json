@@ -1,5 +1,34 @@
 {
-  "_provenance": { "writtenBy": "stardust:dynamics", "writtenAt": "2026-10-08T10:17:10Z", "input": "stardust/dynamic-features.md" },
-  "method": "features fed from stardust/dynamic-features.md (detector on the one archetype, re-verified at B2): the surface is empty — 0 third-party hosts, 0 API paths, 0 forms, 0 modal triggers, 0 media players, 0 client-rendered regions, no listing blocks — so there is no row to replay",
-  "features": []
+  "site": "https://current-design.jp/",
+  "features": [
+    {
+      "id": "menu-overlay",
+      "class": "M",
+      "disposition": "rebuild-native",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "dialog.menu-dialog a",
+          "min": 10
+        }
+      ],
+      "feature": "Site menu overlay (mobile)",
+      "note": "the burger shows below 768 px only (as on the source); its open/close flow is asserted by the header contract at 390 (chrome-compare: toggle click+key, 10/10 links); dynamics-check runs at 1440"
+    },
+    {
+      "id": "hero-carousel",
+      "class": "M",
+      "disposition": "rebuild-native",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": ".hero img",
+          "min": 4
+        }
+      ],
+      "feature": "Hero carousel"
+    }
+  ]
 }

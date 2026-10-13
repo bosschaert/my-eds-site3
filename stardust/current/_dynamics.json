@@ -1,25 +1,226 @@
 {
  "_provenance": {
   "writtenBy": "stardust:dynamics detect",
-  "writtenAt": "2026-10-08T09:27:27.055Z",
+  "writtenAt": "2026-10-13T10:38:44.560Z",
   "settleMs": 5000,
   "width": 1440,
   "urls": [
-   "https://www.example.com/"
+   "https://current-design.jp/"
   ],
   "reachSource": "stardust/current/pages"
  },
  "pages": {
   "/": {
-   "url": "https://www.example.com/",
+   "url": "https://current-design.jp/",
    "status": 200,
-   "host": "www.example.com",
-   "title": "Example Domain",
+   "host": "current-design.jp",
+   "title": "大阪のブランディング・デザイン会社｜カレントブランディングスタジオ",
    "forms": [],
    "controlGroups": [],
-   "triggers": [],
-   "dialogs": [],
-   "dialogCount": 0,
+   "triggers": [
+    {
+     "text": "",
+     "href": null,
+     "marker": "data-modal",
+     "inChrome": true,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "dialog",
+      "heading": "",
+      "textLen": 83,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    },
+    {
+     "text": "",
+     "href": null,
+     "marker": "modal-menu__sd-2",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "ホームHome",
+     "href": "https://current-design.jp/",
+     "marker": "modal-menu__sd-8",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "初めての方へWelcome",
+     "href": "https://current-design.jp/welcome",
+     "marker": "modal-menu__sd-13",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "できることService",
+     "href": "https://current-design.jp/service",
+     "marker": "modal-menu__sd-18",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "制作実績Works",
+     "href": "https://current-design.jp/works",
+     "marker": "modal-menu__sd-23",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "会社概要Company",
+     "href": "https://current-design.jp/company",
+     "marker": "modal-menu__sd-28",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "お知らせNews",
+     "href": "https://current-design.jp/news",
+     "marker": "modal-menu__sd-33",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "お客様の声Voice",
+     "href": "https://current-design.jp/news/category/voice",
+     "marker": "modal-menu__sd-38",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "お問い合わせContact",
+     "href": "https://current-design.jp/contact",
+     "marker": "modal-menu__sd-43",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://www.instagram.com/design_current/",
+     "marker": "modal-menu__sd-49",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://jp.pinterest.com/currentbrandingstudioinc/_created/",
+     "marker": "modal-menu__sd-50",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [
+    {
+     "role": "dialog",
+     "heading": "",
+     "textLen": 83,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "",
+     "textLen": 83,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "",
+     "textLen": 83,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "ul",
+     "heading": "",
+     "textLen": 83,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "",
+     "textLen": 7,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "",
+     "textLen": 7,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "p",
+     "heading": "",
+     "textLen": 3,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "p",
+     "heading": "",
+     "textLen": 4,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "",
+     "textLen": 13,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "",
+     "textLen": 13,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "p",
+     "heading": "",
+     "textLen": 6,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "p",
+     "heading": "",
+     "textLen": 7,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    }
+   ],
+   "dialogCount": 43,
    "media": [],
    "iframes": [],
    "mounts": [],
@@ -29,40 +230,402 @@
     "prices": 0
    },
    "locale": {
-    "lang": "en",
+    "lang": "ja",
     "hreflang": [],
     "switcher": []
    },
-   "cms": {},
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "push"
+    ]
+   },
    "framework": null,
-   "globals": [],
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
    "clientRendered": [],
    "listingCandidates": [],
-   "inlineScripts": 0,
-   "inlineFetch": false,
-   "mainText": 911,
-   "domAddedAfterLoad": 0,
+   "inlineScripts": 4,
+   "inlineFetch": true,
+   "mainText": 1343,
+   "domAddedAfterLoad": 1,
    "hosts": {
-    "www.example.com": 2
+    "current-design.jp": 1,
+    "storage.googleapis.com": 29,
+    "fonts.googleapis.com": 1,
+    "typesquare.com": 1,
+    "www.googletagmanager.com": 1,
+    "fonts.gstatic.com": 1,
+    "wf.typesquare.com": 2,
+    "l.typesquare.com": 2,
+    "analytics.google.com": 1,
+    "stats.g.doubleclick.net": 1,
+    "analytics.studiodesignapp.com": 1
    },
-   "thirdPartyHosts": [],
+   "thirdPartyHosts": [
+    "storage.googleapis.com",
+    "fonts.googleapis.com",
+    "typesquare.com",
+    "www.googletagmanager.com",
+    "fonts.gstatic.com",
+    "wf.typesquare.com",
+    "l.typesquare.com",
+    "analytics.google.com",
+    "stats.g.doubleclick.net",
+    "analytics.studiodesignapp.com"
+   ],
    "scripts": [
-    "https://www.example.com/s.js"
+    "https://typesquare.com/3/tsst/script/ja/typesquare.js?5ad00062415c46a09fd67fd7ac1e024a&fadein=-1&apply_to_hidden=true",
+    "https://www.googletagmanager.com/gtag/js?id=G-Q5VLKV311Q"
    ],
    "firstPartyApi": [],
-   "thirdPartyXhr": [],
-   "postBodies": [],
-   "textAtLoad": 911,
+   "thirdPartyXhr": [
+    "GET l.typesquare.com/3/ts/finish/ja/ts",
+    "POST analytics.google.com/g/collect",
+    "POST analytics.studiodesignapp.com/event"
+   ],
+   "postBodies": [
+    {
+     "url": "https://analytics.google.com/g/collect?v=2&tid=G-Q5VLKV311Q&gtm=45je6a91v890007015za208zd890007015xf1&_p=1791887924667&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGA&cid=1930222587.1791887925&frm=0&p",
+     "body": ""
+    },
+    {
+     "url": "https://analytics.studiodesignapp.com/event",
+     "body": "{\"url\":\"https://current-design.jp/\",\"domain\":\"current-design.jp\",\"path\":\"/\",\"session_id\":\"XlSgPlpE\",\"user_agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36\",\"referrer\":\"none\",\"os\":\"etc\",\"browser\":\"chrome\",\"project_id\":\"nBW2MK21av\"}"
+    }
+   ],
+   "textAtLoad": 1343,
    "mainEmptyAtLoad": false
   }
  },
- "findings": [],
+ "findings": [
+  {
+   "id": "a-unknown-third-party-host-typesquare-com",
+   "class": "A",
+   "feature": "unknown third-party host typesquare.com",
+   "hint": "inspect",
+   "evidence": [
+    "typesquare.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-l-typesquare-com",
+   "class": "A",
+   "feature": "unknown third-party host l.typesquare.com",
+   "hint": "inspect",
+   "evidence": [
+    "l.typesquare.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-analytics-studiodesignapp-com",
+   "class": "A",
+   "feature": "unknown third-party host analytics.studiodesignapp.com",
+   "hint": "inspect",
+   "evidence": [
+    "analytics.studiodesignapp.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-cms-app-settings-object-datalayer",
+   "class": "A",
+   "feature": "CMS / app settings object dataLayer",
+   "hint": "settings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "m-modal-trigger-data-modal-chrome-only-dialog-content",
+   "class": "M",
+   "feature": "modal trigger data-modal (chrome only) → dialog:content",
+   "hint": "chrome-interaction",
+   "evidence": [],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-2-target-outside-dom-at-captur",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-2 → target outside DOM at capture",
+   "hint": "modal",
+   "evidence": [],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-8-target-outside-dom-at-captur",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-8 → target outside DOM at capture",
+   "hint": "modal",
+   "evidence": [
+    "https://current-design.jp/"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-13-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-13 → target outside DOM at capture",
+   "hint": "modal",
+   "evidence": [
+    "https://current-design.jp/welcome"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-18-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-18 → target outside DOM at capture",
+   "hint": "modal",
+   "evidence": [
+    "https://current-design.jp/service"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-23-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-23 → target outside DOM at capture",
+   "hint": "modal",
+   "evidence": [
+    "https://current-design.jp/works"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-28-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-28 → target outside DOM at capture",
+   "hint": "modal",
+   "evidence": [
+    "https://current-design.jp/company"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-33-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-33 → target outside DOM at capture",
+   "hint": "modal",
+   "evidence": [
+    "https://current-design.jp/news"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-38-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-38 → target outside DOM at capture",
+   "hint": "modal",
+   "evidence": [
+    "https://current-design.jp/news/category/voice"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-43-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-43 → target outside DOM at capture",
+   "hint": "modal",
+   "evidence": [
+    "https://current-design.jp/contact"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-49-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-49 → target outside DOM at capture",
+   "hint": "modal",
+   "evidence": [
+    "https://www.instagram.com/design_current/"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "m-modal-trigger-modal-menu-sd-50-target-outside-dom-at-captu",
+   "class": "M",
+   "feature": "modal trigger modal-menu__sd-50 → target outside DOM at capture",
+   "hint": "modal",
+   "evidence": [
+    "https://jp.pinterest.com/currentbrandingstudioinc/_created/"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
+  },
+  {
+   "id": "t-unknown-third-party-host-storage-googleapis-com",
+   "class": "T",
+   "feature": "unknown third-party host storage.googleapis.com",
+   "hint": "inspect",
+   "evidence": [
+    "storage.googleapis.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "feature": "tag manager: Google Tag Manager",
+   "role": "tag manager: Google Tag Manager",
+   "hint": "tags",
+   "evidence": [
+    "www.googletagmanager.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-wf-typesquare-com",
+   "class": "T",
+   "feature": "unknown third-party host wf.typesquare.com",
+   "hint": "inspect",
+   "evidence": [
+    "wf.typesquare.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-analytics-google-analytics-ads",
+   "class": "T",
+   "feature": "analytics: Google Analytics / Ads",
+   "role": "analytics: Google Analytics / Ads",
+   "hint": "tags",
+   "evidence": [
+    "analytics.google.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-marketing-ad-retargeting-pixel",
+   "class": "T",
+   "feature": "marketing: ad / retargeting pixel",
+   "role": "marketing: ad / retargeting pixel",
+   "hint": "tags",
+   "evidence": [
+    "stats.g.doubleclick.net"
+   ],
+   "pages": [
+    "/"
+   ]
+  }
+ ],
  "reach": {
   "pagesWithEvidence": 1,
   "of": 1,
-  "endpoints": {},
+  "endpoints": {
+   "POST analytics.google.com/g/collect": 1,
+   "GET l.typesquare.com/{n}/ts/finish/ja/ts": 1,
+   "POST analytics.studiodesignapp.com/event": 1
+  },
   "searchFormPages": 0,
   "formPages": 0,
-  "triggerPages": {}
+  "triggerPages": {
+   "data-modal": 1,
+   "modal-menu__sd-2": 1,
+   "modal-menu__sd-8": 1,
+   "modal-menu__sd-13": 1,
+   "modal-menu__sd-18": 1,
+   "modal-menu__sd-23": 1,
+   "modal-menu__sd-28": 1,
+   "modal-menu__sd-33": 1,
+   "modal-menu__sd-38": 1,
+   "modal-menu__sd-43": 1,
+   "modal-menu__sd-49": 1,
+   "modal-menu__sd-50": 1
+  }
  }
 }

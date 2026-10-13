@@ -1,18 +1,18 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/optimize",
-    "writtenAt": "2026-10-08T10:20:04.539Z",
+    "writtenAt": "2026-10-13T12:10:06.256Z",
     "stardustVersion": "0.0.0"
   },
   "current": {
-    "runId": "run-2",
-    "at": "2026-10-08T10:20:04.539Z",
+    "runId": "run-1",
+    "at": "2026-10-13T12:10:06.256Z",
     "overall": 100,
     "dimensions": {
       "brand-tensions": null,
       "design-ux": null,
       "accessibility": null,
-      "seo": 100,
+      "seo": null,
       "content-conversion": null,
       "ai-search": 100,
       "cross-page": null
@@ -31,37 +31,13 @@
   "history": [
     {
       "runId": "run-1",
-      "at": "2026-10-08T10:19:47.341Z",
-      "overall": 88,
-      "dimensions": {
-        "brand-tensions": null,
-        "design-ux": null,
-        "accessibility": null,
-        "seo": 75,
-        "content-conversion": null,
-        "ai-search": 100,
-        "cross-page": null
-      },
-      "severity": {
-        "P1": 1,
-        "P2": 0,
-        "P3": 0
-      },
-      "fixed": {
-        "P1": 0,
-        "P2": 0,
-        "P3": 0
-      }
-    },
-    {
-      "runId": "run-2",
-      "at": "2026-10-08T10:20:04.539Z",
+      "at": "2026-10-13T12:10:06.256Z",
       "overall": 100,
       "dimensions": {
         "brand-tensions": null,
         "design-ux": null,
         "accessibility": null,
-        "seo": 100,
+        "seo": null,
         "content-conversion": null,
         "ai-search": 100,
         "cross-page": null

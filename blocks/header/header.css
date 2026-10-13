@@ -1,4 +1,428 @@
-/* no nav exists on the source (https://www.example.com/); the header occupies no space */
-header .header {
-  height: 0;
+/* stylelint-disable no-descending-specificity -- unrelated chrome parts share element tails */
+
+/* header — lifted from the prototype canon (header.site-header + dialog.menu-dialog) */
+.header .site-header {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.header .site-header-brand,
+.header .site-header-brand p {
+  display: flex;
+  align-items: center;
+}
+
+.header .site-header-brand a {
+  display: flex;
+  align-items: center;
+  color: var(--c-ink);
+}
+
+.header .site-header-brand picture {
+  display: contents;
+}
+
+.header .site-header-brand img {
+  width: 175px;
+  height: auto;
+  max-width: 100%;
+  transition:
+    opacity 300ms var(--ease-logo),
+    translate 300ms var(--ease-logo);
+}
+
+.header .site-header-brand img.site-header-logo-twin,
+.header .site-header-brand .site-header-logo-twin img {
+  max-width: calc(100% + 176px);
+  margin: 0 0 0 -176px;
+  opacity: 0;
+  translate: 0 15px;
+}
+
+.header .site-header-brand a:hover img {
+  opacity: 0;
+  translate: 0 -15px;
+}
+
+.header .site-header-brand a:hover img.site-header-logo-twin,
+.header .site-header-brand a:hover .site-header-logo-twin img {
+  opacity: 1;
+  translate: 0 0;
+}
+
+/* nav pill bar: the authored <ul> and the Instagram paragraph lay out as one flex row */
+.header .site-header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header .site-header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 4px 32px;
+  background: rgb(255 255 255 / 80.4%);
+  border-radius: 999px;
+}
+
+.header .site-header-menu ul,
+.header .site-header-menu p {
+  display: contents;
+}
+
+.header .site-header-menu li {
+  display: flex;
+  align-items: center;
+}
+
+.header .site-header-menu li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: 20px;
+}
+
+.header .navlink-label {
+  display: block;
+  font-family: var(--f-latin);
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  color: var(--c-text);
+  white-space: nowrap;
+  transition: opacity 600ms, translate 600ms;
+}
+
+.header .navlink-label-twin {
+  opacity: 0;
+  translate: 0 -9px;
+}
+
+.header .site-header-menu li a:hover .navlink-label {
+  opacity: 0;
+  translate: 0 -14px;
+}
+
+.header .site-header-menu li a:hover .navlink-label-twin {
+  opacity: 1;
+  translate: 0 -20px;
+}
+
+/* Instagram: authored link text stays the accessible name; the brand font paints the glyph */
+.header .site-header-menu a[href*="instagram.com"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+  line-height: 1;
+  color: var(--c-text);
+}
+
+.header .site-header-menu a[href*="instagram.com"]::before {
+  content: "\f16d";
+  font-family: var(--f-brands);
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Contact */
+.header .site-header-contact p {
+  display: flex;
+}
+
+.header .site-header-contact a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px 38px;
+  background: var(--c-primary);
+  border-radius: 999px;
+  transition: all 0.3s var(--ease-studio);
+}
+
+.header .site-header-contact-label {
+  translate: 9px 0;
+  font-family: var(--f-latin);
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: all 0.3s var(--ease-studio);
+}
+
+.header .site-header-contact i {
+  flex: none;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 999px;
+  opacity: 0;
+  translate: -8px 0;
+  transition: all 0.3s var(--ease-studio);
+}
+
+.header .site-header-contact a:hover {
+  background: var(--c-primary-70);
+}
+
+.header .site-header-contact a:hover .site-header-contact-label {
+  translate: 0 0;
+}
+
+.header .site-header-contact a:hover i {
+  opacity: 1;
+  translate: 0 0;
+}
+
+/* burger */
+.header .site-header-burger {
+  display: none;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: var(--c-sand);
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.3s var(--ease-studio);
+}
+
+.header .site-header-burger span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 30px;
+}
+
+.header .site-header-burger span i {
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: var(--c-burger);
+}
+
+.header .site-header-burger:hover {
+  background: var(--c-sand-dark);
+}
+
+/* mobile menu dialog — measured on the live site at 390 (header contract, menu panel) */
+.header .menu-dialog {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--c-primary);
+  transition:
+    opacity 0.4s var(--ease-studio),
+    transform 0.4s var(--ease-studio);
+}
+
+.header .menu-dialog:not([open]) {
+  display: none;
+}
+
+.header .menu-dialog:not(.modal-ready) {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.header .menu-dialog-bar {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 24px;
+}
+
+.header .menu-dialog-close {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  background: #fff;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.3s var(--ease-studio);
+}
+
+.header .menu-dialog-close:hover {
+  background: var(--c-sky);
+}
+
+.header .menu-dialog-close i {
+  position: absolute;
+  left: 20px;
+  top: 19px;
+  width: 30px;
+  height: 1px;
+  background: var(--c-burger);
+}
+
+.header .menu-dialog-close i:first-child {
+  rotate: 20deg;
+}
+
+.header .menu-dialog-close i:last-child {
+  rotate: -20deg;
+}
+
+.header .menu-dialog-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 80px 0 0;
+  padding: 0 24px 30px;
+}
+
+.header .menu-dialog-list ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header .menu-dialog-list li a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 17px 0 12px;
+  border-bottom: 1px solid rgb(255 255 255 / 20%);
+}
+
+/* the first row carries the live site's extra inner padding (16px top, 10px bottom) */
+.header .menu-dialog-list li:first-child a {
+  padding: 33px 0 22px;
+}
+
+.header .menu-dialog-list li:last-child a {
+  border-bottom: 0;
+}
+
+.header .menu-dialog-labels {
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  overflow: hidden;
+}
+
+.header .menu-dialog-list .navlink-label {
+  display: block;
+  font-family: var(--f-jp-b);
+  font-weight: var(--w-jp-b);
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  white-space: nowrap;
+  transition: all 0.3s var(--ease-studio);
+}
+
+.header .menu-dialog-list .navlink-label-twin {
+  margin: -26px 0 0;
+  opacity: 0;
+}
+
+.header .menu-dialog-list li a:hover .navlink-label {
+  opacity: 0;
+  translate: 0 -5px;
+  transition-duration: 0.6s;
+}
+
+.header .menu-dialog-list li a:hover .navlink-label-twin {
+  opacity: 1;
+}
+
+/* social row: Instagram + Pinterest links (accessible names authored), note mark decorative */
+.header .menu-dialog-social {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 40px 0 0;
+}
+
+.header .menu-dialog-social p {
+  display: flex;
+}
+
+.header .menu-dialog-social a {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  font-size: 0;
+  line-height: 1;
+  color: #fff;
+}
+
+.header .menu-dialog-social a::before {
+  font-family: var(--f-brands);
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header .menu-dialog-social a[href*="instagram.com"]::before {
+  content: "\f16d";
+}
+
+.header .menu-dialog-social a[href*="pinterest."]::before {
+  content: "\f231";
+}
+
+.header .menu-dialog-social::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("/icons/note.svg") 50% / cover no-repeat;
+}
+
+@media (width <= 840px) {
+  .header .site-header-nav,
+  .header .site-header-contact {
+    display: none;
+  }
+
+  .header .site-header-burger {
+    display: flex;
+    background: #fff;
+  }
+
+  .header .site-header-burger:hover {
+    background: var(--c-sand-dark);
+  }
+}
+
+@media (width <= 540px) {
+  .header .site-header {
+    padding: 0 24px;
+  }
+
+  .header .site-header-burger {
+    align-items: flex-end;
+  }
 }

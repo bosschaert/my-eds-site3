@@ -7,7 +7,10 @@
   "consent": {
     "method": "auto"
   },
-  "favicon": null,
+  "favicon": {
+    "url": "https://storage.googleapis.com/production-os-assets/assets/df6a1cd1-b678-476d-81e5-e7eefd4ee8f8",
+    "file": "assets/favicon.svg"
+  },
   "crawl": {
     "failures": []
   },
@@ -21,18 +24,126 @@
     "pagesWithSearchForm": 0,
     "pagesHydrated": 0,
     "truncatedPages": 0,
-    "endpoints": [],
-    "thirdPartyScriptHosts": [],
+    "endpoints": [
+      {
+        "method": "POST",
+        "host": "analytics.google.com",
+        "path": "/g/collect",
+        "query": [
+          "_ee",
+          "_eu",
+          "_fv",
+          "_gaz",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "cid",
+          "dl",
+          "dma",
+          "dt",
+          "en",
+          "frm",
+          "gaf",
+          "gcd",
+          "gtm",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://analytics.google.com/g/collect",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "l.typesquare.com",
+        "path": "/{n}/ts/finish/ja/ts",
+        "query": [
+          "bw[ftf]",
+          "bw[name]",
+          "bw[os]",
+          "condition",
+          "eid",
+          "f[0][id]",
+          "f[0][num]",
+          "f[1][id]",
+          "f[1][num]",
+          "location",
+          "onetime_condition"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://l.typesquare.com/3/ts/finish/ja/ts",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "analytics.studiodesignapp.com",
+        "path": "/event",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://analytics.studiodesignapp.com/event",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "www.googletagmanager.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "typesquare.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
     "frameworkHints": [],
-    "globalState": [],
+    "globalState": [
+      {
+        "name": "dataLayer",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
     "formTargets": []
-  },
-  "visionCheck": [
-    {
-      "slug": "index",
-      "verdict": "ok",
-      "notes": "thumbnail shows glyph, six paragraphs (en/ar/zh/fr/ru/es) and the Learn more link on the #eee ground; record matches; no imagery expected (cssBackgrounds [] is correct)"
-    }
-  ],
-  "siblingCandidates": []
+  }
 }

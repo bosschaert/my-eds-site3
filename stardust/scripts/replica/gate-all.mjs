@@ -207,7 +207,14 @@ async function main() {
     const d = dir(p); mkdirSync(d, { recursive: true });
     const out = join(d, 'eds.png'); const meta = join(d, 'eds.json');
     if (opts.skip && !opts.recaptureEds && existsSync(out) && existsSync(meta)) { rec(p, 'eds', readJson(meta)); return; }
-    const s = await run('node', stitchArgs(edsUrl(p), out));
+    // replica INSTRUMENT FIX (unit archetype-landing, 2026-10-12 — flag for upstreaming): the
+    // origin stitch runs `--headed` (launchStealthHeaded → real Chrome) while this EDS stitch ran
+    // the bundled Chromium; the two tiers lay text out with different glyph-advance rounding
+    // (measured on the same page: Chrome 155 docH 7912 / h2 3 lines vs Chromium 156 docH 7972 /
+    // h2 4 lines, both for live AND for the EDS page), so the gate compared two browser tiers,
+    // not two pages (360px: 11.6 % with a +60 px text-only shift). Capture both sides in the
+    // same tier. Invalidates all-360 runs 15:00 and 15:11 and all-1440 runs 14:58 and 15:09.
+    const s = await run('node', [...stitchArgs(edsUrl(p), out), '--headed']);
     const r = s.code === 0 ? { instrument: 'stitch-live', url: edsUrl(p) } : { instrument: 'none', url: edsUrl(p), error: `stitch exit ${s.code}: ${lastLine(s.err)}` };
     r.at = new Date().toISOString(); writeFileSync(meta, JSON.stringify(r, null, 2)); rec(p, 'eds', r);
     log(`eds ${p.slug} → ${r.instrument}${r.error ? ` ERROR ${r.error}` : ''}`);

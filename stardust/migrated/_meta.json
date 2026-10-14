@@ -5,267 +5,201 @@
   "template": null,
   "modules": [
     "hero",
-    "intro",
-    "news",
-    "explore",
-    "map",
-    "docs",
-    "newsletter"
+    "host",
+    "story-nursery",
+    "doors",
+    "books",
+    "rooms-also",
+    "bouquet",
+    "conversation",
+    "departure"
   ],
   "slotsFilled": [
     "hero",
-    "intro",
-    "band",
-    "band",
-    "map",
-    "band",
-    "newsletter"
+    "room-section",
+    "story-nursery-home",
+    "rooms",
+    "room-section",
+    "room-section",
+    "departure"
   ],
   "canonShas": {
-    "header": "6e94bf3902fe",
-    "footer": "9abfac6c755e",
-    "css": "8b22dd9dcb82"
+    "header": "116e55a2549a",
+    "footer": "eba2a669e373",
+    "css": "5692adbd4cf7"
   },
   "deviations": [],
-  "migrationDecisions": [],
+  "migrationDecisions": [
+    {
+      "kind": "link-scope",
+      "brokenInternalLinks": 30,
+      "distinctTargets": 19,
+      "decision": "single-page run: every other site page is outside the declared scope (site-plan.json selects only /); internal hrefs are repointed to the source origin https://www.niravmanubhai.com at delivery (E2 rule: scope extension → repoint); none left as a 404"
+    }
+  ],
   "metadata": {
-    "title": "Our Balbriggan",
-    "description": "Balbriggan is set to be transformed; its rejuvenation plan sets out an ambitious new vison shaped by the towns people.",
-    "canonical": null,
-    "lang": "en-US"
+    "title": "Nirav Manubhai — Writer, Observer &amp; A Home on the Web",
+    "description": "Enter Nirav Manubhai’s home on the web: literary rooms, chamber mysteries, still-image stories, essays and books shaped by observation, slowness and human attention.",
+    "canonical": "https://main--9552f862--aemcoder.aem.page/",
+    "lang": "en"
   },
   "jsonLd": {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Our Balbriggan",
-    "description": "Balbriggan is set to be transformed; its rejuvenation plan sets out an ambitious new vison shaped by the towns people.",
-    "url": "https://balbriggan.ie/"
+    "name": "Nirav Manubhai — Writer, Observer &amp; A Home on the Web",
+    "description": "Enter Nirav Manubhai’s home on the web: literary rooms, chamber mysteries, still-image stories, essays and books shaped by observation, slowness and human attention.",
+    "url": "https://main--9552f862--aemcoder.aem.page/"
   },
-  "migratedAt": "2026-10-13T15:09:40Z",
-  "designMdSha": "2c9310b142aa",
-  "designJsonSha": "ffa72ed8e270",
-  "sourceCurrentSha": "49afb10a4a09",
-  "sourceProposedSha": "81fc38a31f1b",
+  "migratedAt": "2026-10-12T14:00:43Z",
+  "designMdSha": "94644f476f42",
+  "designJsonSha": "ec019f938792",
+  "sourceCurrentSha": "e854e04bf1c3",
+  "sourceProposedSha": "6d0ccf462ae8",
   "fidelityTier": "archetype",
   "archetypeSource": null,
   "archetypeSha": null,
   "variants": [],
   "gatesPassed": [
-    "content-fidelity"
+    "content-count"
   ],
   "gateEvidence": {
-    "content-fidelity": "approved archetype; content-diff 0 structural red @1440/360 (gates/index-*/iter3)"
+    "content-count": "rendered = prototype: 12 headings, 12 img, 40 a, 44 p; recreate content-diff vs live: findings none (main + chrome), stardust/replica/progress.json"
   },
-  "contentDeviations": [],
-  "assetsBundled": 36,
+  "contentDeviations": [
+    {
+      "kind": "dynamic-dependency",
+      "source": "GTM/gtag G-00QDEH6N5W + Cloudflare Web Analytics beacon (head)",
+      "target": "no tags shipped (martech off; scaffolded OFF pending owner opt-in)",
+      "reason": "dynamic-features.md rows 3–4: embed-passthrough, needs-business-decision; hands-off never enables tags"
+    },
+    {
+      "kind": "dynamic-dependency",
+      "source": "hreflang alternates en + x-default → /",
+      "target": "emitted at deploy as metadata rows",
+      "reason": "dynamic-features.md row 2: rebuild-native, planned for deploy"
+    }
+  ],
+  "assetsBundled": 32,
   "missingAssets": [],
   "brokenInternalLinks": [
     {
-      "href": "https://balbriggan.ie/news/",
+      "href": "/kabir-vaidya",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/downloads/",
+      "href": "/come-sit-just-ask",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/newsletters/",
+      "href": "/stills",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/contact/",
+      "href": "/house-specials",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/town-transformation/",
+      "href": "/my-books",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/smart-balbriggan/",
+      "href": "/quiet-signal",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/urbact-iplace/",
+      "href": "/axiom-stories",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/time4eu/",
+      "href": "/my-study",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/news/",
+      "href": "/story-nursery",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/leadership-governance/",
+      "href": "/story-bouquet",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/the-team/",
+      "href": "/patrons",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/community-development/",
+      "href": "/contact",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/education-skills-training/",
+      "href": "/story-nursery",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/sustainability-climate-action-and-biodiversity/",
+      "href": "/kabir-vaidya",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/economic-development/",
+      "href": "/come-sit-just-ask",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/",
+      "href": "/stills",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/#learning-timetable",
+      "href": "/house-specials",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/loves-learning-festival/",
+      "href": "/my-books",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/community-platform/",
+      "href": "/quiet-signal",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/contact/",
+      "href": "/axiom-stories",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/faq/",
+      "href": "/my-study",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/e15-million-harbour-square-will-be-heartbeat-of-balbriggan/",
+      "href": "/story-bouquet",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/prestigious-musical-theatre-degree-and-masters-to-be-offered-in-balbriggan/",
+      "href": "/story-nursery",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/balbriggan-to-be-seen-by-millions-worldwide-as-it-hosts-nfl-draft/",
+      "href": "/now",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/planning-for-balbriggan-swimming-pool-moves-to-next-phase/",
+      "href": "/contact",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/news",
+      "href": "/story-bouquet",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/town-transformation/",
+      "href": "/privacy",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/education-skills-training/",
+      "href": "/license",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/community-development/",
+      "href": "/sitemap",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/economic-development/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/sustainability-climate-action-and-biodiversity/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/town-transformation/#project12",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/town-transformation/#project11",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/town-transformation/#project10",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/town-transformation/#project9",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/town-transformation/#project8",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/town-transformation/#project7",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/town-transformation/#project6",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/town-transformation/#project5",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/town-transformation/#project4",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/town-transformation/#project3",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/town-transformation/#project2",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/town-transformation/#project1",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "https://balbriggan.ie/wp-content/uploads/2020/08/Ar_dTuras.pdf",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "https://balbriggan.ie/wp-content/uploads/2020/08/Ar_dTuras.pdf",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "https://balbriggan.ie/wp-content/uploads/2020/06/Our-Journey-Newsletter.pdf",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "https://balbriggan.ie/wp-content/uploads/2020/06/Our-Journey-Newsletter.pdf",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "https://balbriggan.ie/wp-content/uploads/2021/11/Web-A3-Balbriggan-Irish.pdf",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "https://balbriggan.ie/wp-content/uploads/2021/11/Web-A3-Balbriggan-Irish.pdf",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "https://balbriggan.ie/wp-content/uploads/2021/11/Web-A3-Balbriggan-English.pdf",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "https://balbriggan.ie/wp-content/uploads/2021/11/Web-A3-Balbriggan-English.pdf",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/downloads",
+      "href": "/follow",
       "reason": "not-in-inventory"
     }
   ],

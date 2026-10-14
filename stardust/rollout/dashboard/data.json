@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-10-13T16:30:11.841Z",
+  "generatedAt": "2026-10-12T15:50:31.484Z",
   "target": "aem-eds",
   "site": {
-    "sourceUrl": "https://balbriggan.ie/",
-    "liveHost": "main--e8103195--aemcoder.aem.live"
+    "sourceUrl": "https://www.niravmanubhai.com/",
+    "liveHost": "main--9552f862--aemcoder.aem.live"
   },
   "stageCount": {
     "identified": 1,
     "prototyped": 1,
     "deployed": 1,
-    "optimised": 0
+    "optimised": 1
   },
   "stageExclusive": {
     "identified": 0,
     "prototyped": 0,
-    "deployed": 1,
-    "optimised": 0
+    "deployed": 0,
+    "optimised": 1
   },
   "pages": [
     {
       "slug": "index",
       "path": "/",
-      "stage": "deployed",
+      "stage": "optimised",
       "templateId": "index",
       "isTemplate": true,
-      "openFindings": 1
+      "openFindings": 0
     }
   ],
   "templates": [
@@ -35,41 +35,38 @@
       "stages": {
         "identified": 0,
         "prototyped": 0,
-        "deployed": 1,
-        "optimised": 0
+        "deployed": 0,
+        "optimised": 1
       }
     }
   ],
   "blocks": {
-    "total": 7,
-    "converted": 7
+    "total": 9,
+    "converted": 9
   },
   "quality": {
-    "overall": 90,
+    "overall": 100,
     "dimensions": {
       "brand-tensions": null,
       "design-ux": null,
       "accessibility": null,
       "seo": null,
       "content-conversion": null,
-      "ai-search": 90,
+      "ai-search": 100,
       "cross-page": null
     },
     "severity": {
       "P1": 0,
-      "P2": 1,
+      "P2": 0,
       "P3": 0
     },
     "history": [
-      90
+      90,
+      100
     ]
   },
   "findings": {
-    "byFixability": {
-      "platform-migration": 1
-    },
-    "byAutofix": {
-      "pending": 1
-    }
+    "byFixability": {},
+    "byAutofix": {}
   }
 }

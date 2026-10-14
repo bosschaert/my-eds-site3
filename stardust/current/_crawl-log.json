@@ -2,13 +2,14 @@
   "discovery": {
     "fetchTechnique": "headless",
     "count": 1,
-    "concurrency": 1
+    "concurrency": 1,
+    "userChoice": "--single (bounded replica run; scope fixed by stardust/.labs/site-plan.json)"
   },
   "consent": {
     "method": "auto"
   },
   "favicon": {
-    "url": "https://balbriggan.ie/wp-content/uploads/2022/02/cropped-favicon-32x32.png",
+    "url": "https://www.niravmanubhai.com/assets/favicon-ab9476.png",
     "file": "assets/favicon.png"
   },
   "crawl": {
@@ -20,18 +21,45 @@
   },
   "dynamicSurface": {
     "pages": 1,
-    "pagesWithSameSiteData": 0,
+    "pagesWithSameSiteData": 1,
     "pagesWithSearchForm": 0,
-    "pagesHydrated": 1,
+    "pagesHydrated": 0,
     "truncatedPages": 0,
     "endpoints": [
+      {
+        "method": "POST",
+        "host": "www.niravmanubhai.com",
+        "path": "/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.7089602957524744:1791806719:0feDvVNt4SiCXNjg63wlUQoHiIlp2B_wbdROml2pIJA/{hash}",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/plain",
+        "sameSite": true,
+        "example": "https://www.niravmanubhai.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.7089602957524744:1791806719:0feDvVNt4SiCXNjg63wlUQoHiIlp2B_wbdROml2pIJA/a49640a1ddea2537",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.niravmanubhai.com",
+        "path": "/cdn-cgi/rum",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/plain",
+        "sameSite": true,
+        "example": "https://www.niravmanubhai.com/cdn-cgi/rum",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
       {
         "method": "POST",
         "host": "www.google-analytics.com",
         "path": "/g/collect",
         "query": [
           "_ee",
-          "_eu",
           "_fv",
           "_nsi",
           "_p",
@@ -45,7 +73,6 @@
           "frm",
           "gcd",
           "gtm",
-          "ir",
           "ngs",
           "npa",
           "pscdl",
@@ -80,7 +107,7 @@
     ],
     "thirdPartyScriptHosts": [
       {
-        "host": "connect.facebook.net",
+        "host": "static.cloudflareinsights.com",
         "pages": 1,
         "examples": [
           "index"
@@ -94,15 +121,7 @@
         ]
       }
     ],
-    "frameworkHints": [
-      {
-        "hint": "wordpress",
-        "pages": 1,
-        "examples": [
-          "index"
-        ]
-      }
-    ],
+    "frameworkHints": [],
     "globalState": [
       {
         "name": "dataLayer",
@@ -112,24 +131,13 @@
         ]
       }
     ],
-    "formTargets": [
-      {
-        "action": "https://balbriggan.ie/",
-        "method": "post",
-        "sameOrigin": true,
-        "search": false,
-        "fieldNames": [
-          "input_1",
-          "input_2",
-          "input_3",
-          "input_4.1",
-          "ak_hp_textarea"
-        ],
-        "pages": 1,
-        "examples": [
-          "index"
-        ]
-      }
-    ]
-  }
+    "formTargets": []
+  },
+  "visionCheck": [
+    {
+      "slug": "index",
+      "verdict": "ok",
+      "notes": "hero (Come, Sit. + Gujarati line over courtyard photo), palette (paper/ink/leaf) and logo wordmark match the pixels; two image boxes (host portrait .host-img, My Study card) render blank in the crawler fullPage screenshot only — a live probe shows both complete/visible and clipped captures paint them; recaptured once at --wait slow with the same result; record is correct"
+    }
+  ]
 }

@@ -5,201 +5,336 @@
   "template": null,
   "modules": [
     "hero",
-    "host",
-    "story-nursery",
-    "doors",
-    "books",
-    "rooms-also",
-    "bouquet",
-    "conversation",
-    "departure"
+    "split",
+    "attractions",
+    "reviews",
+    "tickets",
+    "callout",
+    "posts"
   ],
   "slotsFilled": [
-    "hero",
-    "room-section",
-    "story-nursery-home",
-    "rooms",
-    "room-section",
-    "room-section",
-    "departure"
+    "sm-header",
+    "sm-mobmenu",
+    "sm-content",
+    "sm-footer"
   ],
   "canonShas": {
-    "header": "116e55a2549a",
-    "footer": "eba2a669e373",
-    "css": "5692adbd4cf7"
+    "header": "5a0970f282ec",
+    "footer": "3c4b615b946b",
+    "css": "4bd9dbebbd0b"
   },
   "deviations": [],
-  "migrationDecisions": [
-    {
-      "kind": "link-scope",
-      "brokenInternalLinks": 30,
-      "distinctTargets": 19,
-      "decision": "single-page run: every other site page is outside the declared scope (site-plan.json selects only /); internal hrefs are repointed to the source origin https://www.niravmanubhai.com at delivery (E2 rule: scope extension → repoint); none left as a 404"
-    }
-  ],
+  "migrationDecisions": [],
   "metadata": {
-    "title": "Nirav Manubhai — Writer, Observer &amp; A Home on the Web",
-    "description": "Enter Nirav Manubhai’s home on the web: literary rooms, chamber mysteries, still-image stories, essays and books shaped by observation, slowness and human attention.",
-    "canonical": "https://main--9552f862--aemcoder.aem.page/",
-    "lang": "en"
+    "title": "Skerries Mills, A Unique Heritage Museum in Dublin",
+    "description": "Visit Skerries Mills, just 30 mins from Dublin, featuring 3 historic mills and a bakery, perfect for heritage tours and family days out.",
+    "canonical": "https://www.skerriesmills.ie/",
+    "lang": "en-GB"
   },
   "jsonLd": {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Nirav Manubhai — Writer, Observer &amp; A Home on the Web",
-    "description": "Enter Nirav Manubhai’s home on the web: literary rooms, chamber mysteries, still-image stories, essays and books shaped by observation, slowness and human attention.",
-    "url": "https://main--9552f862--aemcoder.aem.page/"
+    "name": "Skerries Mills, A Unique Heritage Museum in Dublin",
+    "description": "Visit Skerries Mills, just 30 mins from Dublin, featuring 3 historic mills and a bakery, perfect for heritage tours and family days out.",
+    "url": "https://www.skerriesmills.ie/"
   },
-  "migratedAt": "2026-10-12T14:00:43Z",
-  "designMdSha": "94644f476f42",
-  "designJsonSha": "ec019f938792",
-  "sourceCurrentSha": "e854e04bf1c3",
-  "sourceProposedSha": "6d0ccf462ae8",
+  "migratedAt": "2026-10-14T09:31:02Z",
+  "designMdSha": "79801e20e186",
+  "designJsonSha": "bc0684b0ef81",
+  "sourceCurrentSha": "f94fa0fa1878",
+  "sourceProposedSha": "c28dd4367f91",
   "fidelityTier": "archetype",
   "archetypeSource": null,
   "archetypeSha": null,
   "variants": [],
   "gatesPassed": [
-    "content-count"
+    "content-fidelity"
   ],
   "gateEvidence": {
-    "content-count": "rendered = prototype: 12 headings, 12 img, 40 a, 44 p; recreate content-diff vs live: findings none (main + chrome), stardust/replica/progress.json"
+    "content-fidelity": "archetype = gated prototype; content-diff 0 red at 1440+360 (stardust/replica/gates/index-*/)"
   },
-  "contentDeviations": [
-    {
-      "kind": "dynamic-dependency",
-      "source": "GTM/gtag G-00QDEH6N5W + Cloudflare Web Analytics beacon (head)",
-      "target": "no tags shipped (martech off; scaffolded OFF pending owner opt-in)",
-      "reason": "dynamic-features.md rows 3–4: embed-passthrough, needs-business-decision; hands-off never enables tags"
-    },
-    {
-      "kind": "dynamic-dependency",
-      "source": "hreflang alternates en + x-default → /",
-      "target": "emitted at deploy as metadata rows",
-      "reason": "dynamic-features.md row 2: rebuild-native, planned for deploy"
-    }
-  ],
-  "assetsBundled": 32,
+  "contentDeviations": [],
+  "assetsBundled": 63,
   "missingAssets": [],
   "brokenInternalLinks": [
     {
-      "href": "/kabir-vaidya",
+      "href": "https://www.skerriesmills.ie/attractions/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/come-sit-just-ask",
+      "href": "https://www.skerriesmills.ie/attractions/guided-tour/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/stills",
+      "href": "https://www.skerriesmills.ie/attractions/museum/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/house-specials",
+      "href": "https://www.skerriesmills.ie/attractions/art-at-the-mill/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/my-books",
+      "href": "https://www.skerriesmills.ie/history-of-the-mills/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/quiet-signal",
+      "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/axiom-stories",
+      "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/my-study",
+      "href": "https://www.skerriesmills.ie/school-tours/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/story-nursery",
+      "href": "https://www.skerriesmills.ie/hire-space-at-the-mill/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/story-bouquet",
+      "href": "https://www.skerriesmills.ie/visiting-groups/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/patrons",
+      "href": "https://www.skerriesmills.ie/about-us/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/contact",
+      "href": "https://www.skerriesmills.ie/about-us/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/story-nursery",
+      "href": "https://www.skerriesmills.ie/history-of-the-mills/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/kabir-vaidya",
+      "href": "https://www.skerriesmills.ie/community/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/come-sit-just-ask",
+      "href": "https://www.skerriesmills.ie/blog/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/stills",
+      "href": "https://www.skerriesmills.ie/category/events/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/house-specials",
+      "href": "https://www.skerriesmills.ie/plan-your-visit/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/my-books",
+      "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/quiet-signal",
+      "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/axiom-stories",
+      "href": "https://www.skerriesmills.ie/faq-accessibility/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/my-study",
+      "href": "https://www.skerriesmills.ie/explore-the-area/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/story-bouquet",
+      "href": "https://www.skerriesmills.ie/getting-here/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/story-nursery",
+      "href": "https://www.skerriesmills.ie/contact/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/now",
+      "href": "https://www.skerriesmills.ie/sustainability-dublin-things-to-do/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/contact",
+      "href": "/tickets/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/story-bouquet",
+      "href": "https://www.skerriesmills.ie/attractions/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/privacy",
+      "href": "https://www.skerriesmills.ie/attractions/guided-tour/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/license",
+      "href": "https://www.skerriesmills.ie/attractions/museum/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/sitemap",
+      "href": "https://www.skerriesmills.ie/attractions/art-at-the-mill/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/follow",
+      "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/school-tours/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/hire-space-at-the-mill/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/visiting-groups/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/about-us/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/history-of-the-mills/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/community/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/blog/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/category/events/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/plan-your-visit/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/faq-accessibility/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/explore-the-area/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/getting-here/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/contact/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/sustainability-dublin-things-to-do/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/works-to-repair-the-great-windmill-of-skerries/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/attractions/guided-tour/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/attractions/museum/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/attractions/art-at-the-mill/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/history-of-the-mills/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/tickets/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/attractions/the-watermill-cafe/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/wp-content/uploads/2024/04/Website-Sample-Menu-2024.pdf",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/skerries-mills-community-garden-scarecrow-festival/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/the-goddess-of-samhain/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/national-heritage-week-irish-language-tour/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/blog/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/the-beauty-of-wildflowers-at-skerries-mills/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/s-skerries-irelands-greenest-town-sustainabilitkerries-crowned-irelands-greenest-town-a-model-for-coastal-sustainability/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/works-to-repair-the-great-windmill-of-skerries/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/blog/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/privacy-policy/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/terms-of-service/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/cookies/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/accessibility/",
       "reason": "not-in-inventory"
     }
   ],

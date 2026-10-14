@@ -1,13 +1,13 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/optimize",
-    "writtenAt": "2026-10-12T15:48:50.008Z",
+    "writtenAt": "2026-10-14T10:54:36.537Z",
     "stardustVersion": "0.0.0"
   },
   "runs": [
     {
       "id": "run-1",
-      "at": "2026-10-12T15:47:26.399Z",
+      "at": "2026-10-14T10:54:36.537Z",
       "scopePages": [
         "index"
       ],
@@ -18,22 +18,7 @@
         "cross-page"
       ],
       "trigger": "deliver",
-      "source": "https://main--9552f862--aemcoder.aem.live"
-    },
-    {
-      "id": "run-2",
-      "at": "2026-10-12T15:48:50.008Z",
-      "scopePages": [
-        "index"
-      ],
-      "layersRun": [
-        "accessibility",
-        "seo",
-        "ai-search",
-        "cross-page"
-      ],
-      "trigger": "deliver",
-      "source": "https://main--9552f862--aemcoder.aem.live"
+      "source": "https://main--1370701b--aemcoder.aem.live"
     }
   ],
   "findings": [
@@ -62,7 +47,7 @@
         "at": null,
         "detail": null
       },
-      "status": "accepted",
+      "status": "open",
       "firstSeenRun": "run-1",
       "resolvedBy": null
     }

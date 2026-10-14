@@ -1,86 +1,89 @@
 {
   "_provenance": {
     "writtenBy": "stardust:dynamics",
-    "writtenAt": "2026-10-12T15:42:38.679Z"
+    "writtenAt": "2026-10-14T10:55:00Z"
   },
-  "method": "single page /; features from stardust/dynamic-features.md (4 rows, B2-dynamic re-verified); hreflang rebuilt natively in scripts.js; tags off pending the owner — replay asserts no tag-host requests",
+  "method": "Bounded single page; listings and carousels are document rows decorated by blocks; FareHarbor booking keeps verbatim hrefs + delayed lightframe script; tags/consent off pending owner decision D-3.",
   "features": [
     {
-      "id": "a-cms-app-settings-object-datalayer",
-      "feature": "window.dataLayer (GTM queue)",
-      "class": "A",
+      "id": "booking",
+      "feature": "FareHarbor booking (Book Now)",
+      "class": "A/T",
       "pages": 1,
-      "disposition": "static-snapshot",
+      "disposition": "embed-passthrough",
       "reproducibility": "self",
-      "status": "done",
-      "verifiedBy": "no consumer on the page; nothing shipped (tag manager queue, not app settings)",
-      "checks": []
-    },
-    {
-      "id": "i18n-locale-variants-en-x-default",
-      "feature": "hreflang alternates en + x-default → self",
-      "class": "I18N",
-      "pages": 1,
-      "disposition": "rebuild-native",
-      "reproducibility": "self",
-      "status": "done",
-      "verifiedBy": "2 link[rel=alternate][hreflang] in head after load (en, x-default), href = page URL",
+      "status": "interim",
+      "verifiedBy": "8 Book Now / ticket links to fareharbor.com/embeds/book/skerriesmills on / (live); lightframe script loaded delayed 3 s",
+      "owner": "D-1: keep the FareHarbor lightframe overlay on the new site (loaded delayed meanwhile)",
       "checks": [
         {
           "type": "dom-count",
           "path": "/",
-          "selector": "link[rel=\"alternate\"][hreflang]",
+          "selector": "main a[href*='fareharbor.com/embeds/book/skerriesmills']",
+          "min": 8
+        }
+      ]
+    },
+    {
+      "id": "carousels",
+      "feature": "attractions + testimonials carousels",
+      "class": "CR",
+      "pages": 1,
+      "disposition": "static-snapshot",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "2 arrows + 7 testimonial slides; autoplay 5500 ms loop observed on .aem.live (archetype unit)",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "main .attractions-arrow",
           "min": 2
         },
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "main .reviews-quote",
+          "min": 7
+        }
+      ]
+    },
+    {
+      "id": "tags",
+      "feature": "GTM GTM-5579WLK2 / GA4 + Complianz consent",
+      "class": "T",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision",
+      "status": "scaffolded-awaiting-owner",
+      "verifiedBy": "0 requests to GTM/GA hosts on /",
+      "owner": "D-3: which tags run on the new host and under which consent tool",
+      "checks": [
+        {
+          "type": "martech",
+          "path": "/",
+          "mode": "gate",
+          "forbiddenHosts": [
+            "www.googletagmanager.com",
+            "www.google-analytics.com"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page",
+      "feature": "home page runtime",
+      "class": "CR",
+      "pages": 1,
+      "disposition": "static-snapshot",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "0 page errors on /",
+      "checks": [
         {
           "type": "no-page-errors",
           "paths": [
             "/"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "t-tag-manager-google-tag-manager",
-      "feature": "Google Tag Manager / gtag G-00QDEH6N5W (+ GA4 collect)",
-      "class": "T",
-      "pages": 1,
-      "disposition": "embed-passthrough",
-      "reproducibility": "needs-business-decision",
-      "status": "scaffolded-awaiting-owner",
-      "owner": "confirm the GTM/GA4 property id to carry over and whether a consent banner is required; until then tags are off on the new host",
-      "verifiedBy": "0 requests to googletagmanager.com / google-analytics.com on /",
-      "checks": [
-        {
-          "type": "consent-gate",
-          "path": "/",
-          "forbiddenHosts": [
-            "www.googletagmanager.com",
-            "googletagmanager.com",
-            "www.google-analytics.com",
-            "google-analytics.com",
-            "analytics.google.com"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "t-unknown-third-party-host-static-cloudflareinsights-com",
-      "feature": "Cloudflare Web Analytics beacon + bot-management challenge frame",
-      "class": "T",
-      "pages": 1,
-      "disposition": "embed-passthrough",
-      "reproducibility": "needs-business-decision",
-      "status": "scaffolded-awaiting-owner",
-      "owner": "confirm whether Cloudflare Web Analytics is wanted on the new host (bot-management frame is the source CDN, not carried)",
-      "verifiedBy": "0 requests to cloudflareinsights.com on /",
-      "checks": [
-        {
-          "type": "consent-gate",
-          "path": "/",
-          "forbiddenHosts": [
-            "static.cloudflareinsights.com",
-            "cloudflareinsights.com"
           ]
         }
       ]

@@ -2,14 +2,13 @@
   "discovery": {
     "fetchTechnique": "headless",
     "count": 1,
-    "concurrency": 1,
-    "userChoice": "--single (bounded replica run; scope fixed by stardust/.labs/site-plan.json)"
+    "concurrency": 1
   },
   "consent": {
     "method": "auto"
   },
   "favicon": {
-    "url": "https://www.niravmanubhai.com/assets/favicon-ab9476.png",
+    "url": "https://www.skerriesmills.ie/wp-content/uploads/2024/04/cropped-skerries-mills-favi-32x32.png",
     "file": "assets/favicon.png"
   },
   "crawl": {
@@ -23,18 +22,18 @@
     "pages": 1,
     "pagesWithSameSiteData": 1,
     "pagesWithSearchForm": 0,
-    "pagesHydrated": 0,
+    "pagesHydrated": 1,
     "truncatedPages": 0,
     "endpoints": [
       {
         "method": "POST",
-        "host": "www.niravmanubhai.com",
-        "path": "/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.7089602957524744:1791806719:0feDvVNt4SiCXNjg63wlUQoHiIlp2B_wbdROml2pIJA/{hash}",
+        "host": "www.skerriesmills.ie",
+        "path": "/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.6305993991125491:1791965732:lSjblcijOZMuqAsLAjhEo4V1cPFgcIov3WJtUBjeWMU/{hash}",
         "query": [],
         "resourceType": "xhr",
         "contentType": "text/plain",
         "sameSite": true,
-        "example": "https://www.niravmanubhai.com/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.7089602957524744:1791806719:0feDvVNt4SiCXNjg63wlUQoHiIlp2B_wbdROml2pIJA/a49640a1ddea2537",
+        "example": "https://www.skerriesmills.ie/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.6305993991125491:1791965732:lSjblcijOZMuqAsLAjhEo4V1cPFgcIov3WJtUBjeWMU/a4a55b4e7a2ab35f",
         "pages": 1,
         "examples": [
           "index"
@@ -42,13 +41,16 @@
       },
       {
         "method": "POST",
-        "host": "www.niravmanubhai.com",
-        "path": "/cdn-cgi/rum",
-        "query": [],
-        "resourceType": "xhr",
-        "contentType": "text/plain",
-        "sameSite": true,
-        "example": "https://www.niravmanubhai.com/cdn-cgi/rum",
+        "host": "o10963.ingest.sentry.io",
+        "path": "/api/{n}/envelope/",
+        "query": [
+          "sentry_key",
+          "sentry_version"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://o10963.ingest.sentry.io/api/5933789/envelope/",
         "pages": 1,
         "examples": [
           "index"
@@ -59,21 +61,27 @@
         "host": "www.google-analytics.com",
         "path": "/g/collect",
         "query": [
-          "_ee",
+          "_eu",
           "_fv",
           "_nsi",
           "_p",
           "_s",
           "_ss",
+          "_tu",
           "cid",
           "dl",
           "dma",
+          "dma_cps",
           "dt",
+          "ecid",
           "en",
           "frm",
+          "gaf",
           "gcd",
+          "gcs",
+          "gdid",
           "gtm",
-          "ngs",
+          "ir",
           "npa",
           "pscdl",
           "rcb",
@@ -103,11 +111,78 @@
         "examples": [
           "index"
         ]
+      },
+      {
+        "method": "GET",
+        "host": "fareharbor.com",
+        "path": "/api/v1/persistence/{uuid}/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://fareharbor.com/api/v1/persistence/69669e6d-2afe-4308-89c0-3d4d0dc44f8e/",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.skerriesmills.ie",
+        "path": "/wp-json/complianz/v1/banner",
+        "query": [
+          "lang",
+          "locale",
+          "token"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.skerriesmills.ie/wp-json/complianz/v1/banner",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.skerriesmills.ie",
+        "path": "/wp-json/complianz/v1/track",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.skerriesmills.ie/wp-json/complianz/v1/track",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "otel-hfo.fareharbor.engineering",
+        "path": "/v1/traces",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://otel-hfo.fareharbor.engineering/v1/traces",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
       }
     ],
     "thirdPartyScriptHosts": [
       {
-        "host": "static.cloudflareinsights.com",
+        "host": "fareharbor.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "dipr2nuwo661l.cloudfront.net",
         "pages": 1,
         "examples": [
           "index"
@@ -121,7 +196,15 @@
         ]
       }
     ],
-    "frameworkHints": [],
+    "frameworkHints": [
+      {
+        "hint": "wordpress",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
     "globalState": [
       {
         "name": "dataLayer",
@@ -136,8 +219,8 @@
   "visionCheck": [
     {
       "slug": "index",
-      "verdict": "ok",
-      "notes": "hero (Come, Sit. + Gujarati line over courtyard photo), palette (paper/ink/leaf) and logo wordmark match the pixels; two image boxes (host portrait .host-img, My Study card) render blank in the crawler fullPage screenshot only — a live probe shows both complete/visible and clipped captures paint them; recaptured once at --wait slow with the same result; record is correct"
+      "verdict": "recaptured",
+      "notes": "crawler full-page shot shows the band between hero and footer blank: the live theme hides .js-show-on-scroll/.js-show-on-scroll-img (opacity-0) until an IntersectionObserver adds animate-fadeIn/animate-fadeInY; frozen/full-page captures never reveal them. Text/media were captured from the DOM. Ground truth recaptured with the reveal state forced visible: assets/screenshots/index-reveal-1440.png (replica/tools/reveal-shot.mjs). All sections present and rendered."
     }
   ]
 }

@@ -1,40 +1,69 @@
 /**
- * hero — #courtyard: the full-bleed courtyard photograph; the page's h1 is
- * screen-reader-only because its words are painted in the photograph.
- * Schema: stardust/eds-schema/index.json sections[0] (hero). Decode tier: template-slotted.
+ * hero — full-bleed photo hero with the copy pinned bottom-left over a scrim
+ * (prototype section.sm-hero; schema stardust/eds-schema/index.json section 0:
+ * heading, body, cta, 1 image).
  *
- * Authoring rows (positional):
- *   1. h1 (visually hidden)
- *   2. image — landscape art direction (> 640px)
- *   3. image — mobile art direction (<= 640px), optional; with one image it serves both
+ * Decode tier: template-slotted. Authored (any row/cell shape, DA-flattened ok):
+ *   <img> (hero photo) · <h1> · lede <p> · CTA <p><strong><a></a></strong></p>
+ * Every authored node is MOVED into the template slots (EW1/EW3).
  */
-// EW1/EW2: the generated wrapper carries the layout class; the authored node moves into it.
-function wrapNode(node, className) {
+
+const HEADING = 'h1, h2, h3, h4, h5, h6';
+
+// Flat list of the authored elements across every cell. A <p> that only wraps a
+// picture yields the picture (the empty paragraph is discarded with the rows).
+// HARNESS-ONLY fallback (EW5): a text-only cell is wrapped by MOVING its text nodes.
+function collectNodes(root) {
+  const out = [];
+  root.querySelectorAll(':scope > div > div').forEach((cell) => {
+    const kids = [...cell.children];
+    if (!kids.length && cell.textContent.trim()) {
+      const p = document.createElement('p');
+      p.append(...cell.childNodes);
+      out.push(p);
+      return;
+    }
+    kids.forEach((el) => {
+      const media = el.querySelector('picture, img');
+      if (el.tagName === 'P' && media && !el.textContent.trim()) {
+        out.push(media.closest('picture') || media);
+      } else if (el.tagName === 'P' && media) {
+        [...el.childNodes].forEach((n) => {
+          if (n.nodeType === 1) out.push(n);
+          else if (n.textContent.trim()) {
+            const p = document.createElement('p');
+            p.append(n);
+            out.push(p);
+          }
+        });
+      } else out.push(el);
+    });
+  });
+  return out;
+}
+
+function slot(className, ...nodes) {
   const w = document.createElement('div');
   w.className = className;
-  w.append(node);
+  w.append(...nodes);
   return w;
 }
 
 export default function decorate(block) {
-  const heading = block.querySelector('h1, h2, h3');
-  const pictures = [...new Set([...block.querySelectorAll('picture, img')]
-    .map((el) => el.closest('picture') || el))];
-  const frag = document.createDocumentFragment();
-  if (heading) frag.append(wrapNode(heading, 'hero-title'));
-  const mobile = window.matchMedia('(width <= 640px)').matches;
-  pictures.forEach((pic, i) => {
-    let role = 'hero-media hero-media-single';
-    if (pictures.length > 1) {
-      role = i === 0 ? 'hero-media hero-media-landscape' : 'hero-media hero-media-mobile';
-    }
-    frag.append(wrapNode(pic, role));
-    const img = pic.matches('img') ? pic : pic.querySelector('img');
-    const shown = pictures.length === 1 || (mobile ? i === 1 : i === 0);
-    if (img && shown) {
-      img.setAttribute('loading', 'eager');
-      img.setAttribute('fetchpriority', 'high');
-    }
-  });
-  block.replaceChildren(frag);
+  const nodes = collectNodes(block);
+  const isMedia = (n) => n.matches('picture, img');
+  const media = nodes.find(isMedia);
+  const heading = nodes.find((n) => n.matches(HEADING));
+  const ctas = nodes.filter((n) => !isMedia(n) && n !== heading && n.querySelector('a'));
+  const rest = nodes.filter((n) => n !== media && n !== heading && !ctas.includes(n));
+
+  const mediaSlot = slot('hero-media');
+  if (media) mediaSlot.append(media);
+
+  const copy = slot('hero-copy');
+  if (heading) copy.append(slot('hero-heading', heading));
+  if (rest.length) copy.append(slot('hero-text', ...rest));
+  if (ctas.length) copy.append(slot('hero-actions', ...ctas));
+
+  block.replaceChildren(mediaSlot, copy, slot('hero-scrim'));
 }

@@ -1,0 +1,20 @@
+{
+  "_provenance": {"writtenBy": "stardust:replica", "writtenAt": "2026-10-14T09:00:15Z", "sources": ["stardust/current/css/main.css", "stardust/current/_computed-styles.json", "stardust/current/DESIGN.json#extensions.breakpoints"]},
+  "colors": {
+    "background": "#fff8eb", "heading": "#415b6a", "text-dark": "#273b46", "primary-green": "#397a5c",
+    "maroon": "#6f3739", "footer-red": "#762728", "surface-slate": "#537486", "white": "#ffffff", "border": "#e5e7eb"
+  },
+  "fonts": {
+    "heading": "\"Libre Baskerville\", serif (Google Fonts, OFL; 400/700/400i)",
+    "body": "proxima-nova, sans-serif (Adobe Fonts kit pbd5qiw — licensed, referenced not rehosted; 300/400/500)"
+  },
+  "type": {"h1": "48px/400 Libre Baskerville", "h2": "36px/300", "h3": "24px/500", "h4": "24px/400"},
+  "container": {"contentMaxWidth": "1536px", "shell": "fluid"},
+  "radius": {"mode": "4px (.25rem)", "pill": "50%"},
+  "shadows": ["rgba(0,0,0,.18) 0 4px 44px 0", "tailwind shadow-xl"],
+  "buttons": {
+    ".btn": "bg #397a5c, white, radius .25rem, padding .75rem (md: 0 2.5rem horizontal), proxima-nova 500, hover bg #6f3739",
+    ".btn.brand-maroon": "bg #6f3739, hover #397a5c",
+    ".btn-txt / .btn-link": "maroon #6f3739 underlined (offset 8px), chevron after, hover #397a5c"
+  }
+}

@@ -1,0 +1,147 @@
+/* posts — ported from stardust/prototypes/css/index.css § Latest events / news (.sm-posts). */
+.posts {
+  display: flow-root;
+}
+
+.posts .posts-inner {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.posts .posts-head :is(h1, h2, h3) {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.posts .posts-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.posts .posts-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts .sm-card-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts .sm-card-link > * + * {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.posts .posts-card-img {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.posts .posts-card-img picture {
+  display: block;
+}
+
+.posts .posts-card-img img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 0.15s var(--sm-ease);
+}
+
+.posts .sm-card-link:hover .posts-card-img img {
+  transform: scale(1.05);
+}
+
+.posts .posts-card-title {
+  padding: 1.5rem 2rem 0;
+}
+
+.posts .posts-card-title :is(h2, h3, h4) {
+  margin: 0;
+  color: var(--sm-blue);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.posts .sm-card-link:hover .posts-card-title :is(h2, h3, h4) {
+  color: var(--sm-green);
+}
+
+.posts .posts-card-text {
+  padding-left: 2rem;
+  padding-right: 4rem;
+  color: var(--sm-blue);
+}
+
+.posts .posts-card-text p {
+  margin-bottom: 0;
+}
+
+.posts .posts-card-more {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.posts .posts-card-more p {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+.posts .posts-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+}
+
+.posts .posts-all p {
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: center;
+  margin: 0;
+}
+
+@media (width >= 768px) {
+  .posts .posts-inner {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .posts .posts-head :is(h1, h2, h3) {
+    margin-bottom: 4rem;
+  }
+
+  .posts .posts-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .posts .posts-card-title {
+    padding: 0;
+  }
+
+  .posts .posts-card-text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .posts .posts-card-more {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .posts .posts-all {
+    margin-top: 5rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

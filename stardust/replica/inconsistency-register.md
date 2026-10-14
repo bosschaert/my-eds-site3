@@ -1,4 +1,4 @@
-# Inconsistency register — niravmanubhai.com replica
+# Inconsistency register — skerriesmills.ie replica
 
 No entries — pure replica. Everything not listed here is frozen; any design
 delta found by the gate is a defect, not an improvement.

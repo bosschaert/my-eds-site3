@@ -1,25 +1,25 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/optimize",
-    "writtenAt": "2026-10-12T15:48:50.008Z",
+    "writtenAt": "2026-10-14T10:54:36.537Z",
     "stardustVersion": "0.0.0"
   },
   "current": {
-    "runId": "run-2",
-    "at": "2026-10-12T15:48:50.008Z",
-    "overall": 100,
+    "runId": "run-1",
+    "at": "2026-10-14T10:54:36.537Z",
+    "overall": 90,
     "dimensions": {
       "brand-tensions": null,
       "design-ux": null,
       "accessibility": null,
       "seo": null,
       "content-conversion": null,
-      "ai-search": 100,
+      "ai-search": 90,
       "cross-page": null
     },
     "severity": {
       "P1": 0,
-      "P2": 0,
+      "P2": 1,
       "P3": 0
     },
     "fixed": {
@@ -31,7 +31,7 @@
   "history": [
     {
       "runId": "run-1",
-      "at": "2026-10-12T15:47:26.399Z",
+      "at": "2026-10-14T10:54:36.537Z",
       "overall": 90,
       "dimensions": {
         "brand-tensions": null,
@@ -45,30 +45,6 @@
       "severity": {
         "P1": 0,
         "P2": 1,
-        "P3": 0
-      },
-      "fixed": {
-        "P1": 0,
-        "P2": 0,
-        "P3": 0
-      }
-    },
-    {
-      "runId": "run-2",
-      "at": "2026-10-12T15:48:50.008Z",
-      "overall": 100,
-      "dimensions": {
-        "brand-tensions": null,
-        "design-ux": null,
-        "accessibility": null,
-        "seo": null,
-        "content-conversion": null,
-        "ai-search": 100,
-        "cross-page": null
-      },
-      "severity": {
-        "P1": 0,
-        "P2": 0,
         "P3": 0
       },
       "fixed": {

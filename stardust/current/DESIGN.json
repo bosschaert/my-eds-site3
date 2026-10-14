@@ -1,125 +1,74 @@
 {
   "extensions": {
     "breakpoints": {
-      "containerMaxWidth": "1184px",
+      "containerMaxWidth": "1536px",
       "probeWidth": 2560,
       "shellMaxWidth": null,
       "caps": [
         {
           "kind": "module",
-          "px": 1184,
+          "px": 1536,
           "via": "max-width",
-          "selector": "#host > div.wrap",
+          "selector": "div.flex-1 > div.flex.flex-col > section.testimonials.bg-brand-blue > div.container.mx-auto",
           "pages": [
-            "https://www.niravmanubhai.com/"
-          ]
-        },
-        {
-          "kind": "module",
-          "px": 1100,
-          "via": "fixed",
-          "selector": "#story-nursery > div.story-nursery-home-wrap",
-          "pages": [
-            "https://www.niravmanubhai.com/"
-          ]
-        },
-        {
-          "kind": "module",
-          "px": 920,
-          "via": "fixed",
-          "selector": "#story-nursery > div.story-nursery-home-wrap > figure.story-nursery-home-image",
-          "pages": [
-            "https://www.niravmanubhai.com/"
-          ]
-        },
-        {
-          "kind": "module",
-          "px": 704,
-          "via": "fixed",
-          "selector": "#host > div.wrap > div.host-figure > div.host-note",
-          "pages": [
-            "https://www.niravmanubhai.com/"
+            "https://www.skerriesmills.ie/"
           ]
         },
         {
           "kind": "module",
           "px": 672,
+          "via": "fixed",
+          "selector": "#callOut > div.flex.flex-col",
+          "pages": [
+            "https://www.skerriesmills.ie/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 512,
           "via": "max-width",
-          "selector": "#rooms > div.wrap > p.rooms-first-visit",
+          "selector": "#hero > div.absolute.z-20",
           "pages": [
-            "https://www.niravmanubhai.com/"
+            "https://www.skerriesmills.ie/"
           ]
         },
         {
           "kind": "module",
-          "px": 297,
-          "via": "fixed",
-          "selector": "div.wrap.split > div > div.r24-follow > a.btn.r24-btn-solid",
+          "px": 411,
+          "via": "other",
+          "selector": "div.mx-auto.flex > div.w-full.flex > div.flex.flex-col > a.btn.brand-maroon",
           "pages": [
-            "https://www.niravmanubhai.com/"
-          ]
-        },
-        {
-          "kind": "module",
-          "px": 270,
-          "via": "fixed",
-          "selector": "div.wrap.split > div > div.doors > a.btn",
-          "pages": [
-            "https://www.niravmanubhai.com/"
+            "https://www.skerriesmills.ie/"
           ]
         }
       ],
       "modules": [
         {
-          "url": "https://www.niravmanubhai.com/",
+          "url": "https://www.skerriesmills.ie/",
           "section": 0,
-          "selector": "#courtyard",
+          "selector": "body.home.wp-singular > main.min-h-screen.flex > header.fixed.w-full",
           "px": null
         },
         {
-          "url": "https://www.niravmanubhai.com/",
+          "url": "https://www.skerriesmills.ie/",
           "section": 1,
-          "selector": "#host",
-          "px": 1184
+          "selector": "body.home.wp-singular > main.min-h-screen.flex > div.flex-1",
+          "px": 1536
         },
         {
-          "url": "https://www.niravmanubhai.com/",
+          "url": "https://www.skerriesmills.ie/",
           "section": 2,
-          "selector": "#story-nursery",
-          "px": 1100
-        },
-        {
-          "url": "https://www.niravmanubhai.com/",
-          "section": 3,
-          "selector": "#rooms",
-          "px": 1184
-        },
-        {
-          "url": "https://www.niravmanubhai.com/",
-          "section": 4,
-          "selector": "#story-bouquet-home",
-          "px": 1184
-        },
-        {
-          "url": "https://www.niravmanubhai.com/",
-          "section": 5,
-          "selector": "#conversation",
-          "px": 1184
-        },
-        {
-          "url": "https://www.niravmanubhai.com/",
-          "section": 6,
-          "selector": "#main > section.departure.home-farewell-section",
-          "px": 1184
+          "selector": "body.home.wp-singular > main.min-h-screen.flex > footer",
+          "px": null
         }
       ],
       "capRegister": [],
       "capProvenance": {
         "writtenBy": "skills/replica/scripts/cap-probe.mjs",
-        "writtenAt": "2026-10-12T12:58:11.610Z",
+        "writtenAt": "2026-10-14T08:59:37.456Z",
         "baseWidth": 1440,
         "urls": [
-          "https://www.niravmanubhai.com/"
+          "https://www.skerriesmills.ie/"
         ]
       }
     }

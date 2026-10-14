@@ -1,51 +1,287 @@
-/* footer chrome lifted from canon.css (.nmh-footer): a centred uppercase link row; the
-   parchment ground + top rule sit on the <footer> host (styles.css), the authored <ul> keeps
-   its items, each item is the flex child */
+/* stylelint-disable no-descending-specificity -- chrome rules follow the prototype source order */
 
-footer .footer .nmh-footer {
-  padding: 30px 20px;
-  color: #2c2519;
-  font-family: var(--font-ui);
-  font-size: 14px;
-  letter-spacing: 0.16em;
-  text-align: center;
-  text-transform: uppercase;
+/* Footer — lifted from the gated prototype (stardust/prototypes/css/canon.css § Footer). */
+
+footer .sm-footer-grass {
+  width: 100%;
+  height: 10rem;
+  background: url('footer-grass.png') 50% / cover no-repeat;
 }
 
-footer .footer .nmh-footer ul,
-footer .footer .nmh-footer ol {
+footer .sm-footer-body {
   display: flex;
-  gap: 22px;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  background-color: var(--sm-red);
 }
 
-footer .footer .nmh-footer li {
+footer .sm-footer-body p {
+  margin: 0;
+}
+
+/* logo band */
+footer .sm-footer-logo {
   display: flex;
-  margin: 0;
+  flex-direction: column;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3rem;
 }
 
-footer .footer .nmh-footer p {
-  margin: 0;
+footer .sm-footer-logo .icon {
+  display: block;
+  width: auto;
+  height: auto;
 }
 
-footer .footer .nmh-footer a:any-link {
-  color: #6b5f47;
-  font-size: 13px;
-  letter-spacing: 0.065em;
-  text-transform: uppercase;
+/* live: <img width="1024"> clamped by max-width — the band sizes to 42rem, not the svg's own box */
+footer .sm-footer-logo .icon img {
+  width: 1024px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* columns */
+footer .sm-footer-cols {
+  padding: 3rem 2rem;
+  border-top: 2px solid #fff;
+}
+
+footer .sm-footer-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .sm-footer-grid > * + * {
+  margin-top: 1rem;
+}
+
+footer .sm-footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .sm-footer-col > * + * {
+  margin-top: 0.5rem;
+}
+
+/* live: the Address and Socials columns use the looser 1rem rhythm */
+footer .sm-footer-col:nth-child(1) > * + *,
+footer .sm-footer-col:nth-child(4) > * + * {
+  margin-top: 1rem;
+}
+
+footer .sm-footer-col h4 {
+  color: #fff;
+}
+
+footer .sm-footer-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  color: #fff;
+  font-family: var(--sm-sans);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+footer .sm-footer-item .icon {
+  flex: none;
+  width: 1.5rem;
+  height: auto;
+}
+
+footer .sm-footer-item .icon img,
+footer .sm-footer-socials img {
+  filter: brightness(0) invert(100%);
+  transition: all 0.15s var(--sm-ease);
+}
+
+footer .sm-footer-item .icon img:hover,
+footer .sm-footer-socials img:hover {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(3%) saturate(1433%) hue-rotate(11deg)
+    brightness(96%) contrast(90%);
+}
+
+footer .sm-footer-item a {
   text-decoration: none;
+  transition: all 0.15s var(--sm-ease);
 }
 
-footer .footer .nmh-footer a:any-link:hover {
-  color: #2c2519;
+footer .sm-footer-item a:hover {
+  color: var(--sm-pearl);
 }
 
-@media (width <= 720px) {
-  footer .footer .nmh-footer ul,
-  footer .footer .nmh-footer ol {
-    flex-wrap: wrap;
+footer .sm-footer-socials p {
+  display: flex;
+}
+
+footer .sm-footer-socials a {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+footer .sm-footer-socials a + a {
+  margin-left: 1.5rem;
+}
+
+footer .sm-footer-socials .icon,
+footer .sm-footer-socials .icon img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* partners */
+footer .sm-footer-partners {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-top: 2px solid #fff;
+}
+
+footer .sm-footer-logos {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  align-content: center;
+  gap: 0;
+}
+
+footer .sm-footer-logos > div {
+  place-self: center;
+}
+
+footer .sm-footer-logos p {
+  line-height: 0;
+}
+
+footer .sm-footer-logos img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+footer .sm-footer-support {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+  color: #fff;
+  text-align: center;
+  font-family: var(--sm-serif);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+footer .sm-footer-support p {
+  font: inherit;
+}
+
+/* bottom bar */
+footer .sm-footer-bottom {
+  padding: 1.5rem 2rem 0;
+  border-top: 2px solid #fff;
+}
+
+footer .sm-footer-bottom-row {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .sm-footer-legal ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+footer .sm-footer-legal li {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  transition: all 0.15s var(--sm-ease);
+}
+
+footer .sm-footer-legal li:hover {
+  color: var(--sm-pearl);
+}
+
+footer .sm-footer-credit p {
+  margin: 0 0 1rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (width >= 768px) {
+  footer .sm-footer-body {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  footer .sm-footer-logo {
+    max-width: 42rem;
+  }
+
+  footer .sm-footer-cols {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  footer .sm-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+  }
+
+  footer .sm-footer-grid > * + * {
+    margin-top: 0;
+  }
+
+  footer .sm-footer-logos {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 3rem;
+  }
+
+  footer .sm-footer-support {
+    padding: 0 1rem;
+  }
+
+  footer .sm-footer-bottom {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  footer .sm-footer-bottom-row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer .sm-footer-legal ul {
+    gap: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  footer .sm-footer-legal li,
+  footer .sm-footer-credit p {
+    text-align: left;
+  }
+}
+
+@media (width >= 1024px) {
+  footer .sm-footer-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  footer .sm-footer-support {
+    margin-top: 2rem;
   }
 }

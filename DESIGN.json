@@ -1,367 +1,130 @@
 {
-  "schemaVersion": 2,
-  "generatedAt": "2026-10-12T13:01:52.164Z",
-  "title": "Design System: Nirav Manubhai — a home on the web",
   "_provenance": {
     "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-14T09:00:15.351Z",
     "mode": "bounded-single",
     "synthesizedFrom": [
       "stardust/current/pages/index.json",
-      "stardust/replica/tokens.json",
-      "stardust/current/_computed-styles.json",
-      "stardust/current/DESIGN.json#extensions.breakpoints"
+      "stardust/replica/lifted-tokens.json"
     ]
   },
+  "colors": {
+    "background": "#fff8eb",
+    "heading": "#415b6a",
+    "text-dark": "#273b46",
+    "primary-green": "#397a5c",
+    "maroon": "#6f3739",
+    "footer-red": "#762728",
+    "surface-slate": "#537486",
+    "white": "#ffffff",
+    "border": "#e5e7eb"
+  },
+  "typography": {
+    "fonts": {
+      "heading": "\"Libre Baskerville\", serif (Google Fonts, OFL; 400/700/400i)",
+      "body": "proxima-nova, sans-serif (Adobe Fonts kit pbd5qiw — licensed, referenced not rehosted; 300/400/500)"
+    },
+    "levels": {
+      "h1": "48px/400 Libre Baskerville",
+      "h2": "36px/300",
+      "h3": "24px/500",
+      "h4": "24px/400"
+    }
+  },
+  "rounded": {
+    "mode": "4px (.25rem)",
+    "pill": "50%"
+  },
+  "spacing": {
+    "contentMaxWidth": "1536px",
+    "shell": "fluid"
+  },
+  "components": {
+    ".btn": "bg #397a5c, white, radius .25rem, padding .75rem (md: 0 2.5rem horizontal), proxima-nova 500, hover bg #6f3739",
+    ".btn.brand-maroon": "bg #6f3739, hover #397a5c",
+    ".btn-txt / .btn-link": "maroon #6f3739 underlined (offset 8px), chevron after, hover #397a5c"
+  },
   "extensions": {
-    "colorMeta": {
-      "paper": {
-        "role": "neutral",
-        "displayName": "Paper"
-      },
-      "parch": {
-        "role": "neutral",
-        "displayName": "Parchment"
-      },
-      "surface": {
-        "role": "neutral",
-        "displayName": "Surface"
-      },
-      "ink": {
-        "role": "text",
-        "displayName": "Ink"
-      },
-      "ink-soft": {
-        "role": "text",
-        "displayName": "Soft ink"
-      },
-      "leaf": {
-        "role": "primary",
-        "displayName": "Leaf"
-      },
-      "leaf-dark": {
-        "role": "primary",
-        "displayName": "Leaf dark"
-      },
-      "gold": {
-        "role": "accent",
-        "displayName": "Gold"
-      },
-      "line": {
-        "role": "border",
-        "displayName": "Line"
-      },
-      "taupe": {
-        "role": "text",
-        "displayName": "Taupe"
-      }
-    },
-    "typographyMeta": {
-      "display": {
-        "displayName": "Display",
-        "purpose": "Section headings (h2) and card titles (h3) — Playfair Display 400/500."
-      },
-      "lede": {
-        "displayName": "Lede",
-        "purpose": "Playfair Display paragraphs under section headings, soft ink."
-      },
-      "body": {
-        "displayName": "Body",
-        "purpose": "Inter 17px/1.7 running text."
-      },
-      "eyebrow": {
-        "displayName": "Eyebrow",
-        "purpose": "Uppercase tracked section labels."
-      },
-      "button": {
-        "displayName": "Button",
-        "purpose": "Uppercase tracked button label."
-      }
-    },
-    "shadows": [
-      {
-        "name": "ambient",
-        "value": "0 10px 34px rgba(44,37,25,.13) (--nm-shadow)",
-        "purpose": "as lifted from the source CSS"
-      },
-      {
-        "name": "card",
-        "value": "0 3px 16px rgba(44,37,25,.12)",
-        "purpose": "as lifted from the source CSS"
-      },
-      {
-        "name": "portrait",
-        "value": "0 2px 14px rgba(44,37,25,.12) (host portrait)",
-        "purpose": "as lifted from the source CSS"
-      },
-      {
-        "name": "drawer",
-        "value": "-8px 0 30px rgba(0,0,0,.12)",
-        "purpose": "as lifted from the source CSS"
-      },
-      {
-        "name": "chip",
-        "value": "0 1px 8px rgba(40,50,34,.25)",
-        "purpose": "as lifted from the source CSS"
-      }
-    ],
-    "motion": [
-      {
-        "name": "btn-hover",
-        "value": "transform: translateY(-1px); none under prefers-reduced-motion",
-        "purpose": "Button hover lift (source .btn:hover)."
-      }
-    ],
     "breakpoints": {
-      "sourceLayoutBreakpoints": [
-        "920",
-        "900",
-        "820",
-        "760",
-        "720 (primary)",
-        "700",
-        "640",
-        "520",
-        "480",
-        "430"
-      ],
-      "containerMaxWidth": "1184px",
+      "containerMaxWidth": "1536px",
       "probeWidth": 2560,
       "shellMaxWidth": null,
       "caps": [
         {
           "kind": "module",
-          "px": 1184,
+          "px": 1536,
           "via": "max-width",
-          "selector": "#host > div.wrap",
+          "selector": "div.flex-1 > div.flex.flex-col > section.testimonials.bg-brand-blue > div.container.mx-auto",
           "pages": [
-            "https://www.niravmanubhai.com/"
-          ]
-        },
-        {
-          "kind": "module",
-          "px": 1100,
-          "via": "fixed",
-          "selector": "#story-nursery > div.story-nursery-home-wrap",
-          "pages": [
-            "https://www.niravmanubhai.com/"
-          ]
-        },
-        {
-          "kind": "module",
-          "px": 920,
-          "via": "fixed",
-          "selector": "#story-nursery > div.story-nursery-home-wrap > figure.story-nursery-home-image",
-          "pages": [
-            "https://www.niravmanubhai.com/"
-          ]
-        },
-        {
-          "kind": "module",
-          "px": 704,
-          "via": "fixed",
-          "selector": "#host > div.wrap > div.host-figure > div.host-note",
-          "pages": [
-            "https://www.niravmanubhai.com/"
+            "https://www.skerriesmills.ie/"
           ]
         },
         {
           "kind": "module",
           "px": 672,
+          "via": "fixed",
+          "selector": "#callOut > div.flex.flex-col",
+          "pages": [
+            "https://www.skerriesmills.ie/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 512,
           "via": "max-width",
-          "selector": "#rooms > div.wrap > p.rooms-first-visit",
+          "selector": "#hero > div.absolute.z-20",
           "pages": [
-            "https://www.niravmanubhai.com/"
+            "https://www.skerriesmills.ie/"
           ]
         },
         {
           "kind": "module",
-          "px": 297,
-          "via": "fixed",
-          "selector": "div.wrap.split > div > div.r24-follow > a.btn.r24-btn-solid",
+          "px": 411,
+          "via": "other",
+          "selector": "div.mx-auto.flex > div.w-full.flex > div.flex.flex-col > a.btn.brand-maroon",
           "pages": [
-            "https://www.niravmanubhai.com/"
-          ]
-        },
-        {
-          "kind": "module",
-          "px": 270,
-          "via": "fixed",
-          "selector": "div.wrap.split > div > div.doors > a.btn",
-          "pages": [
-            "https://www.niravmanubhai.com/"
+            "https://www.skerriesmills.ie/"
           ]
         }
       ],
       "modules": [
         {
-          "url": "https://www.niravmanubhai.com/",
+          "url": "https://www.skerriesmills.ie/",
           "section": 0,
-          "selector": "#courtyard",
+          "selector": "body.home.wp-singular > main.min-h-screen.flex > header.fixed.w-full",
           "px": null
         },
         {
-          "url": "https://www.niravmanubhai.com/",
+          "url": "https://www.skerriesmills.ie/",
           "section": 1,
-          "selector": "#host",
-          "px": 1184
+          "selector": "body.home.wp-singular > main.min-h-screen.flex > div.flex-1",
+          "px": 1536
         },
         {
-          "url": "https://www.niravmanubhai.com/",
+          "url": "https://www.skerriesmills.ie/",
           "section": 2,
-          "selector": "#story-nursery",
-          "px": 1100
-        },
-        {
-          "url": "https://www.niravmanubhai.com/",
-          "section": 3,
-          "selector": "#rooms",
-          "px": 1184
-        },
-        {
-          "url": "https://www.niravmanubhai.com/",
-          "section": 4,
-          "selector": "#story-bouquet-home",
-          "px": 1184
-        },
-        {
-          "url": "https://www.niravmanubhai.com/",
-          "section": 5,
-          "selector": "#conversation",
-          "px": 1184
-        },
-        {
-          "url": "https://www.niravmanubhai.com/",
-          "section": 6,
-          "selector": "#main > section.departure.home-farewell-section",
-          "px": 1184
+          "selector": "body.home.wp-singular > main.min-h-screen.flex > footer",
+          "px": null
         }
       ],
       "capRegister": [],
       "capProvenance": {
         "writtenBy": "skills/replica/scripts/cap-probe.mjs",
-        "writtenAt": "2026-10-12T12:58:11.610Z",
+        "writtenAt": "2026-10-14T08:59:37.456Z",
         "baseWidth": 1440,
         "urls": [
-          "https://www.niravmanubhai.com/"
+          "https://www.skerriesmills.ie/"
         ]
       }
     },
-    "boxModel": "border-box (global reset in source)",
-    "fonts": {
-      "files": "stardust/current/assets/fonts/ (29 woff2: Playfair Display, Inter, Rasa; Google Fonts, open licence)",
-      "manifest": "stardust/current/assets/fonts/manifest.json"
+    "motifs": {
+      "shadows": [
+        "rgba(0,0,0,.18) 0 4px 44px 0",
+        "tailwind shadow-xl"
+      ]
     },
     "voice": {
-      "heroHeadline": "Come, Sit. આવો, બેસો. (painted into the courtyard photograph; h1 is screen-reader only: \"Nirav Manubhai — a home on the web\")",
-      "lede": "Rooms for stories, books and a life observed closely.",
-      "ctas": [
-        "Gift a Story Bouquet →",
-        "Email me",
-        "Follow the House on WhatsApp"
-      ]
-    },
-    "captureState": [
-      {
-        "what": "hero <picture data-nmh-seasonal-default=\"diwali-courtyard-2026\">",
-        "policy": "replicate as captured (courtyard-cebb67.jpg); seasonal switch recorded, not re-implemented"
-      }
-    ],
-    "canon": {
-      "source": "auto-bootstrap: index",
-      "sourceSlug": "index",
-      "approvedAt": "2026-10-12T13:54:43Z",
-      "writtenAt": "2026-10-12T13:59:50Z",
-      "files": {
-        "header.html": {
-          "path": "stardust/canon/header.html",
-          "sha": "0bc3b6b46ba3"
-        },
-        "footer.html": {
-          "path": "stardust/canon/footer.html",
-          "sha": "0b2134b6979c"
-        },
-        "nav-drawer.html": {
-          "path": "stardust/canon/nav-drawer.html",
-          "sha": "53baf527b420"
-        },
-        "reading-progress.html": {
-          "path": "stardust/canon/reading-progress.html",
-          "sha": "51fb288d6bcc"
-        },
-        "canon.css": {
-          "path": "stardust/canon/canon.css",
-          "sha": "ebb948a8e642"
-        }
-      },
-      "pinned": {
-        "container.content": "1184px",
-        "container.shell": "fluid",
-        "densityTier": "as-captured",
-        "typeScale": "as-captured (lifted ramp, no modular ratio)"
-      },
-      "compositionalMoves": [
-        "replica: every compound rule is lifted verbatim from the source home.css; nothing is pinned by choice — see stardust/replica/lift/index-notes.md"
-      ],
-      "history": [
-        {
-          "at": "2026-10-12T13:59:50Z",
-          "event": "auto-bootstrap",
-          "by": "stardust:migrate",
-          "from": "stardust/prototypes/index-proposed.html"
-        }
-      ]
+      "heroHeadline": "Guided Tours 7 Days a Week, Book Now!"
     }
-  },
-  "components": [
-    {
-      "name": "Button (outline)",
-      "kind": "button",
-      "refersTo": "button",
-      "description": "Default .btn: outlined leaf, uppercase tracked label.",
-      "html": "<a class=\"btn\" href=\"#\">Email me</a>",
-      "css": ".btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:.75rem 1rem;border:1px solid #4e5d44;border-radius:3px;font:600 11.84px/1 Inter,system-ui,sans-serif;letter-spacing:.07em;text-transform:uppercase;background:transparent;color:#4e5d44;text-decoration:none}.btn:hover{background:rgba(78,93,68,.08);transform:translateY(-1px)}"
-    },
-    {
-      "name": "Button (primary)",
-      "kind": "button",
-      "refersTo": "button-primary",
-      "description": "Filled leaf variant.",
-      "html": "<a class=\"btn primary\" href=\"#\">Gift a Story Bouquet →</a>",
-      "css": ".btn.primary{background:#4e5d44;color:#f4efe3}.btn.primary:hover{background:#3c4934}"
-    },
-    {
-      "name": "Site header",
-      "kind": "nav",
-      "refersTo": "header",
-      "description": "Sticky paper bar: Home link · centered Playfair wordmark · menu glyph.",
-      "html": "<header class=\"nmh-header\"><a class=\"nmh-home\" href=\"/\">Home</a><div class=\"nmh-title\"><span class=\"nmh-title-property\">Nirav Manubhai</span></div><button class=\"nmh-menu-btn\" aria-label=\"Open menu\">☰</button></header>",
-      "css": ".nmh-header{position:sticky;top:0;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:18px 28px;background:#f4efe3;color:#2c2519;border-bottom:1px solid rgba(44,37,25,.10);z-index:20}"
-    },
-    {
-      "name": "Room card",
-      "kind": "card",
-      "refersTo": "card",
-      "description": "Door card: 16/10 image, h3 21.6px/500, small Inter note.",
-      "html": "<a class=\"door\"><img alt=\"\"><h3>Kabir Vaidya</h3><p>…</p></a>",
-      "css": ".door img{aspect-ratio:16/10;object-fit:cover;border-radius:14px}.door h3{font:500 21.6px/1.15 \"Playfair Display\",Georgia,serif;color:#2c2519}.door p{font:14.4px/1.55 Inter,system-ui,sans-serif;color:#6b5f47}"
-    }
-  ],
-  "narrative": {
-    "northStar": "A quiet house on paper",
-    "overview": "Descriptive record of the live site, not a direction: warm paper backgrounds, ink text, a single leaf-green accent, Playfair Display headings over Inter body copy, generous line-height, hairline rules between rooms, photographs with soft shadows.",
-    "keyCharacteristics": [
-      "paper + ink + leaf palette",
-      "Playfair Display headings, Inter body, Rasa for Gujarati",
-      "1184px centered content column, fluid shell",
-      "3px radii on controls, 14–16px on images and cards",
-      "uppercase tracked eyebrows and buttons"
-    ],
-    "rules": [],
-    "dos": [
-      "Keep every captured value; this is a replica."
-    ],
-    "donts": [
-      "Do not improve anything outside stardust/replica/inconsistency-register.md (empty)."
-    ]
   }
 }

@@ -1,19 +1,19 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/blocks",
-    "writtenAt": "2026-10-12T14:06:42.721Z",
+    "writtenAt": "2026-10-14T09:31:44.313Z",
     "readArtifacts": [
       "stardust/rollout/coverage/pages.json"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-12T14:55:00.748Z",
+  "generatedAt": "2026-10-14T10:39:52.201Z",
   "blocks": [
     {
-      "id": "books",
-      "label": "books",
+      "id": "attractions",
+      "label": "attractions",
       "kind": "module",
-      "signature": "module:books",
+      "signature": "module:attractions",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -24,16 +24,16 @@
       "instanceCount": 1,
       "delivery": {
         "status": "deployed",
-        "edsBlockName": "books",
+        "edsBlockName": "attractions",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "bouquet",
-      "label": "bouquet",
+      "id": "callout",
+      "label": "callout",
       "kind": "module",
-      "signature": "module:bouquet",
+      "signature": "module:callout",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -44,67 +44,7 @@
       "instanceCount": 1,
       "delivery": {
         "status": "deployed",
-        "edsBlockName": "bouquet",
-        "blockPath": null,
-        "convertedAt": null
-      }
-    },
-    {
-      "id": "conversation",
-      "label": "conversation",
-      "kind": "module",
-      "signature": "module:conversation",
-      "source": null,
-      "usedByTemplates": [
-        "index"
-      ],
-      "usedByPages": [
-        "index"
-      ],
-      "instanceCount": 1,
-      "delivery": {
-        "status": "deployed",
-        "edsBlockName": "conversation",
-        "blockPath": null,
-        "convertedAt": null
-      }
-    },
-    {
-      "id": "departure",
-      "label": "departure",
-      "kind": "module",
-      "signature": "module:departure",
-      "source": null,
-      "usedByTemplates": [
-        "index"
-      ],
-      "usedByPages": [
-        "index"
-      ],
-      "instanceCount": 1,
-      "delivery": {
-        "status": "deployed",
-        "edsBlockName": "departure",
-        "blockPath": null,
-        "convertedAt": null
-      }
-    },
-    {
-      "id": "doors",
-      "label": "doors",
-      "kind": "module",
-      "signature": "module:doors",
-      "source": null,
-      "usedByTemplates": [
-        "index"
-      ],
-      "usedByPages": [
-        "index"
-      ],
-      "instanceCount": 1,
-      "delivery": {
-        "status": "deployed",
-        "edsBlockName": "doors",
+        "edsBlockName": "callout",
         "blockPath": null,
         "convertedAt": null
       }
@@ -130,10 +70,10 @@
       }
     },
     {
-      "id": "host",
-      "label": "host",
+      "id": "posts",
+      "label": "posts",
       "kind": "module",
-      "signature": "module:host",
+      "signature": "module:posts",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -144,16 +84,16 @@
       "instanceCount": 1,
       "delivery": {
         "status": "deployed",
-        "edsBlockName": "host",
+        "edsBlockName": "posts",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "rooms-also",
-      "label": "rooms-also",
+      "id": "reviews",
+      "label": "reviews",
       "kind": "module",
-      "signature": "module:rooms-also",
+      "signature": "module:reviews",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -164,16 +104,16 @@
       "instanceCount": 1,
       "delivery": {
         "status": "deployed",
-        "edsBlockName": "rooms-also",
+        "edsBlockName": "reviews",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "story-nursery",
-      "label": "story-nursery",
+      "id": "split",
+      "label": "split",
       "kind": "module",
-      "signature": "module:story-nursery",
+      "signature": "module:split",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -184,7 +124,27 @@
       "instanceCount": 1,
       "delivery": {
         "status": "deployed",
-        "edsBlockName": "story-nursery",
+        "edsBlockName": "split",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "tickets",
+      "label": "tickets",
+      "kind": "module",
+      "signature": "module:tickets",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "tickets",
         "blockPath": null,
         "convertedAt": null
       }

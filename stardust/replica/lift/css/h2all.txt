@@ -1,0 +1,49 @@
+stardust/current/assets/css/home.css: 24 of 1190 rules match /\bh2\b/i
+@35 .home-books-copy h2
+      margin: .25rem 0 .8rem;
+@2546 h1,h2,h3
+      font-family: "Playfair Display",Georgia,serif; font-weight: 500; line-height: 1.16;
+@3966 .corridor-head h2
+      font-size: clamp(2rem,4vw,3rem); margin: 0;
+@6499 .gift-box h2
+      font-size: 1.65rem; margin: 0 0 .6rem;
+@7917 .quiet-card h2
+      font-size: 2rem; margin: .4rem 0;
+@10821 .csja-reader .gift-box h2
+      font-size: 2rem;
+@21799 .gift-box h2
+      font-family: "Playfair Display",Georgia,serif; font-size: 1.3rem; font-weight: 500; margin: 0 0 .4rem;
+@23807 h1,h2,h3
+      font-family: "Playfair Display",Georgia,serif; font-weight: 400;
+@25552 #host h2   @media (max-width:640px)
+      font-size: 1.75rem;
+@26301 h2
+      font-size: clamp(2.2rem,5vw,3.6rem); margin: .25rem 0 1rem;
+@34427 .csja-home-copy h2
+      font-size: clamp(2.35rem,4.35vw,3.5rem); line-height: 1.13; letter-spacing: -.018em; margin: .35rem 0 1.05rem; max-width: 14ch;
+@35168 .csja-home-copy h2   @media (max-width:900px)
+      font-size: clamp(2.1rem,4.8vw,3rem);
+@35401 .csja-home-copy h2   @media (max-width:820px)
+      max-width: 18ch;
+@35461 .csja-home-copy h2   @media (max-width:560px)
+      font-size: 2.15rem; line-height: 1.16; max-width: none;
+@42622 .quiet-field-note .story-body h2
+      margin: 3.25rem 0 1.1rem; font-family: Inter,system-ui,sans-serif; font-size: .72rem; font-weight: 600; letter-spacing: .19em; text-transform: uppercase; color: var(--leaf);
+@47369 .qs-reading-room .qs-room-intro h2
+      margin: 0 0 1.25rem; font-family: "Playfair Display",Georgia,serif; font-size: clamp(1.65rem,3vw,2.35rem); line-height: 1.25; font-weight: 500; color: var(--ink);
+@54480 .gift-box h2
+      font-family: "Playfair Display",Georgia,serif; font-size: 1.35rem; font-weight: 500; margin: 0 0 .4rem;
+@63031 .kabir-s2-reader .gift-box h2
+      margin: 0 0 .32rem;
+@93294 .story-nursery-home h2
+      margin: 0 0 1.15rem; text-align: center; font: 400 clamp(2rem,4vw,3rem)/1.1 "Playfair Display",Georgia,serif; color: var(--leaf,#4e5d44);
+@94248 .story-nursery-home-eyebrow,.story-nursery-home h2,.story-nursery-home-copy   @media (max-width:700px)
+      padding-left: 5vw; padding-right: 5vw;
+@108429 .wr-home h2
+      font-family: var(--wr-display); font-weight: 400; line-height: 1.05; margin: 0; font-size: clamp(2.55rem,5vw,4rem); color: var(--wr-ink);
+@109462 .wr-home h2   @media (max-width:700px)
+      font-size: 2.9rem;
+@109676 .wr-host-box h2
+      margin: 0 0 .35rem; font-family: var(--wr-display); font-weight: 400; font-size: 1.5rem; color: var(--wr-ink);
+@110412 .wr-after h2
+      font-family: var(--wr-display); font-weight: 400; font-size: 1.9rem; color: var(--wr-ink); margin: 2.6rem 0 .6rem;

@@ -1,1 +1,53 @@
-{"units":{"index":{"status":"done","kind":"render","templates":["landing"],"pages":1,"startedAt":"2026-10-13T15:09:40Z","endedAt":"2026-10-13T15:09:46Z","verdict":"rendered 1, unchanged 0, refused 0, passthrough 0"}}}
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-10-12T14:00:24Z",
+    "stardustVersion": "0.31.0"
+  },
+  "units": {
+    "plan": {
+      "status": "done",
+      "kind": "plan",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-12T13:59:17Z",
+      "endedAt": "2026-10-12T14:00:24Z",
+      "verdict": "plan: 1 page in scope (index, Path A approved archetype, tier archetype); 0 skipped; canon auto-bootstrapped from index-proposed.html; provenance ok 1/1; mobile-adapt ok"
+    },
+    "render-landing": {
+      "status": "done",
+      "kind": "render",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-12T14:00:43Z",
+      "endedAt": "2026-10-12T14:01:42Z",
+      "verdict": "render-landing: 1/1 rendered (index → index.html, Path A, tier archetype; 32 assets, 7 sections, 0 refused); content-count pass; 30 internal hrefs to out-of-scope pages recorded as link-scope decision (repoint at delivery); 2 dynamic-dependency deviations"
+    },
+    "assets": {
+      "status": "done",
+      "kind": "assets",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-12T14:02:03Z",
+      "endedAt": "2026-10-12T14:03:03Z",
+      "verdict": "assets: 32 bundled (canon.css, index.css, 6 fonts, 18 images, favicon); no logo file in the capture (warned); robots.txt + sitemap.xml written; 30 out-of-scope hrefs repointed to the source origin; audits: source-tree escapes 0, absolute refs 0, directory hrefs 0, pagemap-audit OK, file-protocol-audit OK"
+    },
+    "report": {
+      "status": "done",
+      "kind": "report",
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-12T14:03:17Z",
+      "endedAt": "2026-10-12T14:03:29Z",
+      "verdict": "report: 1 migrated (index, Path A, tier archetype), 0 unchanged, 0 failed, 0 stale; 1 gate (content-count), 2 deviations (dynamic-dependency), 30 out-of-scope links repointed; state index → migrated"
+    }
+  }
+}

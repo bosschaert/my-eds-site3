@@ -1,0 +1,117 @@
+{
+  "live": "stardust/replica/motion/index.json",
+  "build": "stardust/replica/motion/index-published.json",
+  "toleranceMs": 150,
+  "tolerancePx": 8,
+  "advisory": true,
+  "findings": 0,
+  "counts": {
+    "behaviors": 14,
+    "parity": 6,
+    "missing": 0,
+    "extra": 0,
+    "tolerance": 0,
+    "dead": 8,
+    "advisory": 0
+  },
+  "verdicts": [
+    {
+      "cls": "header",
+      "name": "scroll-morph",
+      "state": "dead",
+      "note": "header static across the scroll traversal on both sides",
+      "line": "motion header scroll-morph: dead on live — not required (header static across the scroll traversal on both sides)"
+    },
+    {
+      "cls": "widget",
+      "name": ".nmh-menu-btn",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .nmh-menu-btn: dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "hover",
+      "name": ".r24-door",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .r24-door: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "hover",
+      "name": ".btn",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .btn: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "hover",
+      "name": ".story-nursery-home-cta",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .story-nursery-home-cta: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "hover",
+      "name": ".r24-also-grid a",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .r24-also-grid a: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "hover",
+      "name": ".r24-books",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .r24-books: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "hover",
+      "name": ".nmh-footer a",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .nmh-footer a: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "transition",
+      "name": "opacity",
+      "state": "parity",
+      "note": "1 event(s) on live, 1 on build, 200ms",
+      "line": "motion transition opacity: parity (1 event(s) on live, 1 on build, 200ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "transform",
+      "state": "parity",
+      "note": "1 event(s) on live, 1 on build, 200ms",
+      "line": "motion transition transform: parity (1 event(s) on live, 1 on build, 200ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "visibility",
+      "state": "parity",
+      "note": "1 event(s) on live, 1 on build, 200ms",
+      "line": "motion transition visibility: parity (1 event(s) on live, 1 on build, 200ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "width",
+      "state": "parity",
+      "note": "398 event(s) on live, 398 on build, 80ms",
+      "line": "motion transition width: parity (398 event(s) on live, 398 on build, 80ms)"
+    },
+    {
+      "cls": "class",
+      "name": "open",
+      "state": "parity",
+      "note": "added 2× on live, 2× on build",
+      "line": "motion class open: parity (added 2× on live, 2× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "show",
+      "state": "parity",
+      "note": "added 2× on live, 2× on build",
+      "line": "motion class show: parity (added 2× on live, 2× on build)"
+    }
+  ]
+}

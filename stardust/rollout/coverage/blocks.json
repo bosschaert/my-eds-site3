@@ -1,19 +1,19 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/blocks",
-    "writtenAt": "2026-10-13T15:10:17.192Z",
+    "writtenAt": "2026-10-12T14:06:42.721Z",
     "readArtifacts": [
       "stardust/rollout/coverage/pages.json"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-13T16:30:01.251Z",
+  "generatedAt": "2026-10-12T14:55:00.748Z",
   "blocks": [
     {
-      "id": "docs",
-      "label": "docs",
+      "id": "books",
+      "label": "books",
       "kind": "module",
-      "signature": "module:docs",
+      "signature": "module:books",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -23,17 +23,17 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "verified",
-        "edsBlockName": "docs",
+        "status": "deployed",
+        "edsBlockName": "books",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "explore",
-      "label": "explore",
+      "id": "bouquet",
+      "label": "bouquet",
       "kind": "module",
-      "signature": "module:explore",
+      "signature": "module:bouquet",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -43,8 +43,68 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "verified",
-        "edsBlockName": "explore",
+        "status": "deployed",
+        "edsBlockName": "bouquet",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "conversation",
+      "label": "conversation",
+      "kind": "module",
+      "signature": "module:conversation",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "conversation",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "departure",
+      "label": "departure",
+      "kind": "module",
+      "signature": "module:departure",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "departure",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "doors",
+      "label": "doors",
+      "kind": "module",
+      "signature": "module:doors",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "doors",
         "blockPath": null,
         "convertedAt": null
       }
@@ -63,17 +123,17 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "verified",
+        "status": "deployed",
         "edsBlockName": "hero",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "intro",
-      "label": "intro",
+      "id": "host",
+      "label": "host",
       "kind": "module",
-      "signature": "module:intro",
+      "signature": "module:host",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -83,17 +143,17 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "verified",
-        "edsBlockName": "intro",
+        "status": "deployed",
+        "edsBlockName": "host",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "map",
-      "label": "map",
+      "id": "rooms-also",
+      "label": "rooms-also",
       "kind": "module",
-      "signature": "module:map",
+      "signature": "module:rooms-also",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -103,17 +163,17 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "verified",
-        "edsBlockName": "map",
+        "status": "deployed",
+        "edsBlockName": "rooms-also",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "news",
-      "label": "news",
+      "id": "story-nursery",
+      "label": "story-nursery",
       "kind": "module",
-      "signature": "module:news",
+      "signature": "module:story-nursery",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -123,28 +183,8 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "verified",
-        "edsBlockName": "news",
-        "blockPath": null,
-        "convertedAt": null
-      }
-    },
-    {
-      "id": "newsletter",
-      "label": "newsletter",
-      "kind": "module",
-      "signature": "module:newsletter",
-      "source": null,
-      "usedByTemplates": [
-        "index"
-      ],
-      "usedByPages": [
-        "index"
-      ],
-      "instanceCount": 1,
-      "delivery": {
-        "status": "verified",
-        "edsBlockName": "newsletter",
+        "status": "deployed",
+        "edsBlockName": "story-nursery",
         "blockPath": null,
         "convertedAt": null
       }

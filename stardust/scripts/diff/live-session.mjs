@@ -60,30 +60,6 @@ import { existsSync, readFileSync } from 'node:fs';
 // Current stable Chrome on macOS. Chrome's UA reduction freezes the platform
 // token at 10_15_7 and the minor version at .0.0.0 — only the major matters,
 // and standardHeaders() derives sec-ch-ua from it so the two never disagree.
-// replica INSTRUMENT FIX (balbriggan.ie, 2026-10-13): the source site declares a global
-// `function scrollTo(target)` (jQuery animate to $(target).offset().top) that shadows
-// window.scrollTo, so every instrument's `window.scrollTo(0, y)` throws inside the page
-// ("Cannot read properties of undefined (reading 'top')") and the capture fails. Keep the
-// native scroll for numeric/options calls and hand anything else to the site's function.
-// Flag for upstreaming into live-session.mjs / crawl.mjs.
-export const NATIVE_SCROLL_SHIM = () => {
-  const nativeScroll = window.scroll.bind(window);
-  const restore = () => {
-    const current = window.scrollTo;
-    if (current && current.__stardustShim) return;
-    const shim = function scrollToShim(a, b) {
-      if (typeof a === 'number' || (a && typeof a === 'object' && !a.jquery && !(a instanceof Element)
-        && ('top' in a || 'left' in a))) return nativeScroll(a, b);
-      if (typeof current === 'function' && current !== shim) return current.apply(this, arguments);
-      return undefined;
-    };
-    shim.__stardustShim = true;
-    try { window.scrollTo = shim; } catch (e) { /* non-writable: leave as is */ }
-  };
-  document.addEventListener('DOMContentLoaded', restore, true);
-  window.addEventListener('load', restore, true);
-};
-
 export const REAL_CHROME_UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36';
 
 const CHROME_MAJOR = (REAL_CHROME_UA.match(/Chrome\/(\d+)/) || [])[1] || '143';
@@ -196,7 +172,6 @@ export async function newLiveContext(browser, { ua, locale, viewport, authOrigin
   await ctx.addInitScript(() => {
     Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
   });
-  await ctx.addInitScript(NATIVE_SCROLL_SHIM); // replica INSTRUMENT FIX — see NATIVE_SCROLL_SHIM
   if (authOrigin && authHeader) await attachOriginAuth(ctx, authOrigin, authHeader);
   return ctx;
 }

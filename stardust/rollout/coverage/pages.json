@@ -1,59 +1,60 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-10-13T15:10:02.795Z",
+    "writtenAt": "2026-10-12T14:06:10.364Z",
     "readArtifacts": [
       "stardust/migrated",
       "stardust/state.json"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-13T16:27:52.946Z",
+  "generatedAt": "2026-10-12T15:48:49.704Z",
   "pages": [
     {
       "slug": "index",
       "path": "/",
-      "title": "Our Balbriggan",
+      "title": "Nirav Manubhai — Writer, Observer &amp; A Home on the Web",
       "templateId": "index",
       "source": {
         "migratedHtml": "stardust/migrated/index.html",
         "metaJson": "stardust/migrated/_meta.json",
-        "sourceHash": "sha256:9884eaeee004562aaa89dca7b0c36705338f4dd667944e1a15c0a4bb38a915d4",
-        "sourceUrl": "https://balbriggan.ie/"
+        "sourceHash": "sha256:ee9f8f3af403cf4e54eb5c207efe54200149c7e2182823e64559921a6dfdf59e"
       },
       "blocks": [
         "hero",
-        "intro",
-        "news",
-        "explore",
-        "map",
-        "docs",
-        "newsletter"
+        "host",
+        "story-nursery",
+        "doors",
+        "books",
+        "rooms-also",
+        "bouquet",
+        "conversation",
+        "departure"
       ],
       "delivery": {
         "status": "verified",
-        "deployedUrl": "https://main--e8103195--aemcoder.aem.live/",
-        "deployedAt": "2026-10-13T16:18:27.091Z",
-        "verifiedAt": "2026-10-13T16:27:47.604Z",
+        "deployedUrl": "https://main--9552f862--aemcoder.aem.page/",
+        "deployedAt": "2026-10-12T14:55:00.029Z",
+        "verifiedAt": "2026-10-12T15:48:49.704Z",
         "error": null,
         "gate": {
           "pass": true,
-          "pct": 2.4,
+          "pct": 0.63,
           "heightDelta": 0,
-          "clipped": 2,
+          "clipped": 0,
           "content": {
             "missing": 0,
             "hidden": 0,
             "controlState": 0,
             "missingButtons": 0,
             "hiddenButtons": 0,
-            "findings": 27,
+            "findings": 0,
             "variable": []
           },
           "reasons": [],
           "override": null,
           "table": "stardust/replica/gates/all-360/summary.json",
-          "at": "2026-10-13T16:27:52.946Z"
+          "at": "2026-10-12T15:38:33.451Z"
         }
       }
     }

@@ -1,38 +1,38 @@
-# Dynamic features — balbriggan.ie (home page only)
+# Dynamic features — niravmanubhai.com (home page, single-page scope)
 
-Source: `stardust/current/_dynamics.json` (detector, 7 findings) + manual reading of the captured DOM and the
-theme script (`wp-content/themes/balbriggan2024/js/scripts.js`). Curated 2026-10-13, hands-off.
+Source: `stardust/current/_dynamics.json` (1 page probed, 6 findings) · draft
+`stardust/dynamics/dynamic-features.generated-plan.md` · contract `skills/dynamics/reference/triage.md`.
 
 ## Listings contract
-none — the home page's "What's New" rail is a hand-ordered set of 4 stories captured as content (no listing
-block reads an index in this one-page scope).
+none — no listing blocks, no search form, no query index needed on this page.
 
 ## Features
 | # | id | feature | class | reach | disposition | reproducibility | status | pattern | decision / owner | evidence |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | a-cms-app-settings-object-wp | WP settings object | A | 1/1 | decided-out | self | done | read-settings | none — WordPress runtime globals have no consumer on the rebuilt page | `wp` global |
-| 2 | a-cms-app-settings-object-datalayer | dataLayer object | A | 1/1 | embed-passthrough | needs-business-decision | scaffolded-awaiting-owner | consent-gated-tags | merged into row 5 (GTM owns dataLayer) | `dataLayer` global |
-| 3 | f-form-gform-1-origin-5-fields | Newsletter sign-up (First/Last/Email + GDPR consent) | F | 1/1 | rebuild-native | needs-backend | interim | forms | production endpoint (owner). Interim: native form posts the same Gravity Forms fields to the source origin's form handler (top-level POST to https://balbriggan.ie/#gf_1 — the source's own non-AJAX submission path) | gform_1, 5 fields + hidden state |
-| 4 | m-modal-trigger-aria-haspopup-chrome-only-a-content | Main-menu dropdowns (4) + mobile hamburger collapse | M | 1/1 | rebuild-native | self | pending | chrome-interaction | none (header contract is the spec) | `.dropdown-toggle`, `.navbar-toggler` |
-| 5 | t-tag-manager-google-tag-manager | Google Tag Manager | T | 1/1 | embed-passthrough | needs-business-decision | scaffolded-awaiting-owner | consent-gated-tags | which tags run on the new host; container id (owner) | www.googletagmanager.com |
-| 6 | t-analytics-google-analytics-ads | Google Analytics | T | 1/1 | embed-passthrough | needs-business-decision | scaffolded-awaiting-owner | consent-gated-tags | merged with row 5 | www.google-analytics.com |
-| 7 | t-marketing-ad-retargeting-pixel | Facebook pixel | T | 1/1 | embed-passthrough | needs-business-decision | scaffolded-awaiting-owner | consent-gated-tags | merged with row 5 | connect.facebook.net |
-| 8 | m-hero-video | Hero background video (autoplay, muted, loop) | M | 1/1 | embed-passthrough | self | pending | media | none — same Vimeo-hosted mp4 | `video#videobanner` src player.vimeo.com/external/625598732 |
-| 9 | m-news-carousel | "What's New" carousel (slick: 3-up, 4 slides, dots + arrows, no autoplay) | M | 1/1 | rebuild-native | self | pending | carousel | none | `.news-cards` slick config in theme scripts.js |
-| 10 | m-map-pins | Project map: 12 linked pins, hover scale + sliding label | M | 1/1 | rebuild-native | self | pending | client-only | none (CSS hover; pin links to /town-transformation/#projectN) | inline SVG `.map-pin` |
-| 11 | m-sticky-header | Sticky header compacts after 100px scroll (`.scrolled`) | M | 1/1 | rebuild-native | self | pending | chrome-interaction | none | theme scripts.js `$(window).scroll` |
+| 1 | a-cms-app-settings-object-datalayer | `window.dataLayer` (GTM's own array) | A | 1/1 | static-snapshot | self | done — no consumer on the page; nothing to ship (reason: it is the tag manager's queue, not app settings; unfreeze: if tags are enabled, GTM recreates it) | read-settings | — | `_dynamics.json` globalState |
+| 2 | i18n-locale-variants-en-x-default | hreflang alternates `en` + `x-default`, both → `/` | I18N | 1/1 | rebuild-native | self | done (D2-dynamic: scripts.js loadEager emits `en` + `x-default` alternates pointing at the page URL; replay dom-count 2/2) | locale-tree | none — single locale, self-referential | `index.html` head |
+| 3 | t-tag-manager-google-tag-manager | Google Tag Manager / gtag `G-00QDEH6N5W` (+ GA4 collect, row 5 merged) | T | 1/1 | embed-passthrough | needs-business-decision | interim: scaffolded OFF on the new host (hands-off tier); decision named below | consent-gated-tags | owner: which tags run on the new host; property id | `www.googletagmanager.com`, `www.google-analytics.com/g/collect` |
+| 4 | t-unknown-third-party-host-static-cloudflareinsights-com | Cloudflare Web Analytics beacon + Cloudflare bot-management `cdn-cgi/challenge-platform` (its hidden 1×1 iframe, row 6 merged) | T | 1/1 | embed-passthrough | needs-business-decision | interim: OFF — Cloudflare-edge features that do not exist on the aem.live origin; no visible surface | consent-gated-tags | owner: analytics vendor on the new host | `static.cloudflareinsights.com`, `/cdn-cgi/rum`, hidden `iframe[width=1][height=1]` |
+
+Merged: row 5 (analytics: Google Analytics / Ads) into row 3 — same gtag script; row 6 (iframe without src, 1×1, `visibility:hidden`) into row 4 — the Cloudflare challenge-platform frame, not an embed.
 
 ## Decision batch
-One message to the site owner (recorded, hands-off — each item ships its interim path):
-1. **Newsletter form endpoint** — interim posts to the existing Gravity Forms handler on balbriggan.ie; confirm
-   whether that stays, or name the new list provider / endpoint.
-2. **Tags** — GTM / Google Analytics / Facebook pixel: which tags run on the new host, with which container and
-   property ids, and under which consent banner. Interim: none are loaded on the new host.
+One message to the owner (interim tier ships regardless; nothing blocks the static page):
+- **Tags on the new host.** The source loads Google Tag Manager/gtag `G-00QDEH6N5W` and Cloudflare Web Analytics. The migrated page ships with no tags (martech off). To carry them over, confirm the property id and whether a consent banner is required; then `dynamics-plan.mjs --martech` scaffolds the disabled routes.
 
 ## Register (decided-out)
 | feature | reason | production statement |
 |---|---|---|
-| WP settings object (`wp`) | WordPress runtime global, no consumer on the rebuilt page | not needed on Edge Delivery |
+| — | none decided out (hands-off never writes decided-out) | — |
 
-## Pre-import verification (rollout B2, 2026-10-13)
-Fresh `dynamics-detect.mjs` run (scrollTo shim) + `dynamics-plan.mjs --target-origin https://main--e8103195--aemcoder.aem.page --migrated stardust/migrated`: 7 findings, all 7 ids present above; no host-bound first-party API; dispositions unchanged.
+## B2 verification (2026-10-12, rollout pre-import gate)
+
+Re-detected live (`dynamics-detect.mjs --from-state --reach`): 6 findings, identical to the Phase-2
+set (dataLayer, hreflang, Cloudflare beacon + challenge iframe, GTM/gtag, GA4 collect) — no new rows.
+`dynamics-plan.mjs --target-origin https://main--9552f862--aemcoder.aem.live --migrated stardust/migrated`:
+host-bound 0/0 (no first-party API the page depends on), owner batch 4 (the tag rows, off), self 1.
+Every row keeps its disposition above; the inventory is verified for delivery.
+
+## D2-dynamic verification (2026-10-12)
+
+`dynamics-check.mjs --origin https://main--9552f862--aemcoder.aem.live`: 4/4 PASS — hreflang dom-count 2, no page errors on `/`, no request to any GTM/GA host, no request to any Cloudflare Insights host (tags off pending the owner decision above). Report: `stardust/qa/dynamics-report.md`; rows: `stardust/dynamics/parity.json`.

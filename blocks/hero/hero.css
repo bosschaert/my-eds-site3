@@ -1,97 +1,73 @@
-/* hero — values verbatim from stardust/prototypes/index.css (.hero*) */
-
-/* full-bleed: the block escapes the section's bootstrap container */
-main > .section > div:has(> .hero) {
-  max-width: none;
-  padding: 0;
-}
-
+/* hero — #courtyard (prototype index.css § #courtyard). The wrapper is full-bleed through the
+   foundation's :where(.hero-wrapper) escape; the media box is reserved at 100vh. */
 .hero {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 70vh;
-  min-height: 15rem;
+  min-height: 100vh;
   overflow: hidden;
+  line-height: 0;
+  background: var(--parch);
 }
 
-.hero .hero-card {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 37rem;
-  padding: 3rem;
-  background: #fff;
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgb(244 239 227 / 5%), rgb(44 37 25 / 10%));
+  pointer-events: none;
 }
 
 .hero .hero-title {
-  margin: 0;
-  color: var(--heading);
-  font-family: 'Gotham Bold', Helvetica, Arial, Lucida, sans-serif;
-  font-size: 1.75rem;
-  font-weight: 700;
-  line-height: 1.2em;
-  letter-spacing: 1px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.hero .hero-title :is(h1, h2, h3) {
-  margin: 0;
-  color: inherit;
-  font: inherit;
-  letter-spacing: inherit;
-  text-transform: inherit;
-}
-
-.hero .hero-title::after {
-  content: " ";
-  display: block;
-  width: 10%;
-  margin: .5em auto 1.5em;
-  border-top: 5px solid var(--rule-yellow);
-}
-
-.hero .hero-actions p {
-  margin: 0;
-}
-
-.hero .hero-actions p a {
-  display: block;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
 
 .hero .hero-media {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
-.hero .hero-video {
-  position: absolute;
-  inset: 0;
+.hero .hero-media picture,
+.hero .hero-media img {
+  display: block;
   width: 100%;
-  height: 100%;
-  min-width: 100%;
-  min-height: 100%;
-  margin: auto;
+}
+
+.hero .hero-media img {
+  height: 100vh;
   object-fit: cover;
+  object-position: center bottom;
 }
 
-.hero .hero-overlay {
-  position: absolute;
-  inset: 0;
-  background-color: var(--hero-blue);
-  mix-blend-mode: multiply;
+.hero .hero-media-mobile {
+  display: none;
 }
 
-@media (width <= 991px) {
-  .hero .hero-card {
-    margin: 2rem;
-    padding: 3rem 2rem;
+@media (width <= 640px) {
+  .hero {
+    min-height: 0;
+  }
+
+  .hero .hero-media {
+    min-height: 0;
+  }
+
+  .hero .hero-media img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .hero .hero-media-landscape {
+    display: none;
+  }
+
+  .hero .hero-media-mobile {
+    display: block;
   }
 }

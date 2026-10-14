@@ -1,0 +1,58 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics check",
+  "writtenAt": "2026-10-12T15:43:10.610Z",
+  "origin": "https://main--9552f862--aemcoder.aem.live",
+  "parity": "stardust/dynamics/parity.json"
+ },
+ "results": [
+  {
+   "feature": "hreflang alternates en + x-default → self",
+   "id": "i18n-locale-variants-en-x-default",
+   "class": "I18N",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "2 × link[rel=\"alternate\"][hreflang] (min 2)",
+   "thirdParty": "",
+   "ms": 2147,
+   "environmentLimit": null
+  },
+  {
+   "feature": "hreflang alternates en + x-default → self",
+   "id": "i18n-locale-variants-en-x-default",
+   "class": "I18N",
+   "status": "done",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 1 page(s)",
+   "thirdParty": "",
+   "ms": 1952,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Google Tag Manager / gtag G-00QDEH6N5W (+ GA4 collect)",
+   "id": "t-tag-manager-google-tag-manager",
+   "class": "T",
+   "status": "scaffolded-awaiting-owner",
+   "type": "consent-gate",
+   "pass": true,
+   "detail": "no request to 5 gated host pattern(s) before consent",
+   "thirdParty": "",
+   "ms": 6081,
+   "environmentLimit": null
+  },
+  {
+   "feature": "Cloudflare Web Analytics beacon + bot-management challenge frame",
+   "id": "t-unknown-third-party-host-static-cloudflareinsights-com",
+   "class": "T",
+   "status": "scaffolded-awaiting-owner",
+   "type": "consent-gate",
+   "pass": true,
+   "detail": "no request to 2 gated host pattern(s) before consent",
+   "thirdParty": "",
+   "ms": 5895,
+   "environmentLimit": null
+  }
+ ]
+}

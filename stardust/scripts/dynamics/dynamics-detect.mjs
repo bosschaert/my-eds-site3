@@ -23,7 +23,6 @@
 /* eslint-disable no-await-in-loop, no-restricted-syntax, max-len */
 import { readdirSync, existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { NATIVE_SCROLL_SHIM } from '../diff/live-session.mjs'; // replica INSTRUMENT FIX
 import {
   arg, flag, list, readJSON, writeJSON, writeText, provenance, loadPlaywright, vendorFor, registrable, sameSite, pathPattern, settlePage, slug,
 } from './lib.mjs';
@@ -188,7 +187,6 @@ for (const url of URLS) {
   const path = new URL(url).pathname || '/';
   const ctx = await browser.newContext({ viewport: { width: WIDTH, height: 900 }, locale: 'en-US' });
   await ctx.addInitScript(() => { window.__sdDomAfterLoad = 0; let loaded = false; window.addEventListener('load', () => setTimeout(() => { loaded = true; }, 300)); document.addEventListener('DOMContentLoaded', () => new MutationObserver((ms) => { if (loaded) for (const m of ms) window.__sdDomAfterLoad += m.addedNodes.length; }).observe(document.documentElement, { childList: true, subtree: true })); });
-  await ctx.addInitScript(NATIVE_SCROLL_SHIM); // replica INSTRUMENT FIX — the site shadows window.scrollTo (journal § Extract)
   const page = await ctx.newPage();
   const hosts = {}; const scripts = new Set(); const firstPartyApi = new Map(); const thirdPartyXhr = new Set(); const postBodies = [];
   page.on('request', (r) => { if (r.method() === 'POST' && ['xhr', 'fetch'].includes(r.resourceType()) && postBodies.length < 12) postBodies.push({ url: r.url().slice(0, 200), body: (r.postData() || '').slice(0, 400) }); });

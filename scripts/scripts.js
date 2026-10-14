@@ -159,8 +159,25 @@ export function decorateMain(main) {
  * Loads everything needed to get to LCP.
  * @param {Element} doc The container element
  */
+/**
+ * hreflang alternates — the source emits `en` + `x-default`, both self-referential
+ * (dynamic-features.md row 2, rebuild-native): one locale, so every page points at itself.
+ */
+function decorateHreflang() {
+  if (document.head.querySelector('link[rel="alternate"][hreflang]')) return;
+  const href = `${window.location.origin}${window.location.pathname}`;
+  ['en', 'x-default'].forEach((lang) => {
+    const link = document.createElement('link');
+    link.rel = 'alternate';
+    link.hreflang = lang;
+    link.href = href;
+    document.head.append(link);
+  });
+}
+
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
+  decorateHreflang();
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
   if (main) {
@@ -170,10 +187,10 @@ async function loadEager(doc) {
   }
 
   try {
-    /* if desktop (proxy for fast connection) or fonts already loaded, load fonts.css */
-    if (window.innerWidth >= 900 || sessionStorage.getItem('fonts-loaded')) {
-      loadFonts();
-    }
+    /* fonts.css is loaded eagerly at every width: the replicated type ramp depends on the
+       self-hosted faces, and a lazy mobile load shifted text boxes until the last section
+       loaded (foundation request archetype-landing | fonts eager, applied at C-final) */
+    loadFonts();
   } catch (e) {
     // do nothing
   }

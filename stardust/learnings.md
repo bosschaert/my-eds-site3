@@ -1,14 +1,8 @@
-# Learnings — balbriggan.ie replica (2026-10-13)
+# Learnings — replica migration of https://www.niravmanubhai.com/ (2026-10-12)
 
-- **Site-shadowed `window.scrollTo`.** The theme declares a global `function scrollTo(target)`; every instrument's
-  numeric `scrollTo(0, y)` threw. The NATIVE_SCROLL_SHIM in `diff/live-session.mjs` fixes the diff instruments;
-  `dynamics-detect.mjs` and `crawl.mjs` need it too (project copies patched). Upstream candidate.
-- **`unit-geometry.mjs` origin cache was per slug, not per width** — a 360 gate reused the 1440 inventory and printed
-  a false "FAIL (elements)". Key now `<slug>-<width>-units`. Upstream candidate.
-- **`chrome-explore` default header root missed a `div#wrapper-navbar` header** (0 controls); `--root` fixed it.
-- **Licensed font → substitute** passes page and band gates (≤ 2.3%) but fails the header contract's 2% open-state
-  crop bar on every small menu panel (4.6–7.3%): those findings need the site owner's sign-off by design.
-- **Flaky source captures:** a fresh live capture came back with unloaded images (+122px); the gate reused the
-  archetype's verified live captures rather than measuring against a broken origin.
-- **gate-all reads `status: deployed` from state.json** while `state.mjs` stops at `migrated`; the published gate ran
-  from a copy (`stardust/.work/rollout/gate-state.json`) with `liveUrl` + `deployedPath`.
+- **Boilerplate font lazy-load below 900 px skews mobile gates.** `scripts.js` loadEager loads `fonts.css` only when `innerWidth >= 900`; the 360 px published gate read 11.56 % from text-only shifts until fonts were eager. For a replica the type ramp is part of the spec: load fonts eagerly at every width in the foundation from C0, not as a per-block override.
+- **Served code is gzip-encoded regardless of Accept-Encoding.** `curl` without `--compressed` on `*.aem.live/scripts/*.js` returns gzip bytes; a grep for a marker silently matches nothing (the harness grep wrapper also skips binary). Always `curl --compressed` when polling for a code sync.
+- **Chrome tag parity is cheap to fix in the block.** The pipeline authors the nav title as `<p>`; the live header used `<span class="…">`. chrome-parity flags tag-only deltas even with identical computed style — render the live tag in `header.js` and widen the CSS `:is()` list, instead of carrying a justified delta.
+- **Bounded capture JSON has no `jsonld` key.** optimize.mjs can only tag `source parity` on JSON-LD when the capture records `jsonld: false`; on a `--single` run verify the source by a direct fetch and resolve the P2 by hand with the evidence.
+- **Single-page runs still need the link-scope decision written down.** 17 of 27 link targets were out of scope; `localize-links --check` passes while keeping them absolute, but E2 requires the named SCOPE EXTENSION record in `direction.md` with the list.
+- **Interaction parity on the published origin is a 30-second instrument.** Re-running `motion-observe` with the archetype's pokes against the live EDS page and comparing with the source observation caught nothing here but is the only check that the EDS build (not the prototype) carries the drawer, back-to-top and reading-progress behaviours.

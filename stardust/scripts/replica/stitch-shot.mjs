@@ -266,7 +266,7 @@ async function main() {
     // translate3d entrance transforms extend the document; recorded: 3183px
     // pre-settle vs 3093px settled). Pre-settle height is fake — mirror this
     // ordering in any ad-hoc probe that reads document height.
-    let totalH = await page.evaluate(() => Math.max(document.body.scrollHeight, document.documentElement.scrollHeight));
+    const totalH = await page.evaluate(() => Math.max(document.body.scrollHeight, document.documentElement.scrollHeight));
     if (!totalH || totalH < 10) throw new Error(`page height ${totalH}px — blank render? (bot challenge / hidden body)`);
 
     const chunks = [];
@@ -298,15 +298,6 @@ async function main() {
       // actualY reaches the clamped target (the last chunk's totalH - vh is
       // reachable by construction), so the no-advance condition stays false;
       // the 4px slack absorbs fractional-pixel scroll rounding.
-      // replica INSTRUMENT FIX (balbriggan.ie 360, 2026-10-13): body.scrollHeight can exceed the
-      // window's real scroll range (an overflowing descendant clipped by an overflow-x:hidden body:
-      // 5410 reported, 4497+900 scrollable). When the stall sits exactly at the window's true max
-      // scroll the page is fully captured — clamp totalH to it instead of failing the page. A
-      // genuine no-op scroller (actualY far below its own max) still fails loud below.
-      if (prevActualY !== null && actualY <= prevActualY && target - actualY > 4) {
-        const maxY = await page.evaluate(() => document.scrollingElement.scrollHeight - innerHeight);
-        if (actualY >= maxY - 1 && actualY > 0) { totalH = actualY + opts.vh; break; }
-      }
       if (prevActualY !== null && actualY <= prevActualY && target - actualY > 4) {
         throw new Error(`scroll stall at chunk target ${target}px: window scroll is a no-op (window.scrollY stuck at ${actualY}px) while the document reports ${totalH}px — likely an inner scroll container / scroll-jacked layout (html/body overflow:hidden). Stitched capture cannot measure this page class (capturing the inner scroller is future work): record the page as gate-blocked for the pixel probe and rely on content-diff/visual-diff.`);
       }

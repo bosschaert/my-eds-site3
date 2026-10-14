@@ -1,0 +1,35 @@
+stardust/current/assets/css/home.css: 17 of 1190 rules match /#conversation|home-conversation-scroll-anchor|\.alt\b|note-actions-spacing|r24-bouquet|#story-bouquet-home|#rooms|#host\b|#story-nursery|#departure|#main\b/i
+@25552 #host h2   @media (max-width:640px)
+      font-size: 1.75rem;
+@26153 .room-section.alt
+      background: var(--parch);
+@33646 #conversation .doors   @media (max-width:640px)
+      flex-direction: column; align-items: stretch;
+@33709 #conversation .doors .btn   @media (max-width:640px)
+      text-align: center; margin: 0 0 .6rem;
+@35641 #stills .visual.contain,#axiom .visual.contain,#kabir-preview .visual.contain,#csja .visual.contain,#conversation .visual.contain
+      width: min(100%,430px); aspect-ratio: 4/5; min-height: 0; margin: 0; justify-self: center; background: #111; border: 1px solid var(--line);
+@38521 #stills .visual.contain img,#axiom .visual.contain img,#kabir-preview .visual.contain img,#csja .visual.contain img,#conversation .visual.contain img
+      width: 100%; height: 100%; object-fit: contain; background: #111; box-shadow: none;
+@38770 #stills .visual.contain,#axiom .visual.contain,#kabir-preview .visual.contain,#csja .visual.contain,#conversation .visual.contain   @media (max-width:820px)
+      width: min(100%,420px); aspect-ratio: 4/5; margin: 0 auto 1.35rem; justify-self: center; background: #111; border: 1px solid var(--line);
+@39026 #stills .visual.contain img,#axiom .visual.contain img,#kabir-preview .visual.contain img,#csja .visual.contain img,#conversation .visual.contain img   @media (max-width:820px)
+      width: 100%; height: 100%; object-fit: contain; background: #111;
+@57764 #axiom .split,#kabir-preview .split,#csja .split,#conversation .split
+      align-items: start; grid-template-columns: minmax(320px,.95fr) minmax(0,1.05fr); gap: clamp(2rem,4.5vw,4rem);
+@57938 #axiom .visual,#kabir-preview .visual,#csja .visual,#conversation .visual
+      min-height: 0; height: auto; border: 0; background: transparent; overflow: visible; align-self: start; justify-self: start; width: min(100%,var(--nm-preview-image-max));
+@58166 #axiom .visual img,#kabir-preview .visual img,#csja .visual img,#conversation .visual img
+      width: 100%; height: auto; max-height: 640px; object-fit: contain; object-position: top center; background: transparent; display: block; box-shadow: 0 14px 34px rgba(44,37,25,.14);
+@59111 #axiom .split,#kabir-preview .split,#csja .split,#conversation .split   @media (max-width:820px)
+      grid-template-columns: 1fr; gap: 1.6rem;
+@59218 #axiom .visual,#kabir-preview .visual,#csja .visual,#conversation .visual   @media (max-width:820px)
+      width: 100%; max-width: 620px; justify-self: center;
+@59339 #axiom .visual img,#kabir-preview .visual img,#csja .visual img,#conversation .visual img   @media (max-width:820px)
+      max-height: none;
+@84354 #main
+      scroll-margin-top: 5.5rem;
+@111494 .home-conversation-scroll-anchor
+      scroll-margin-top: 4rem;
+@111916 .note-actions-spacing
+      margin-top: 1.2rem;

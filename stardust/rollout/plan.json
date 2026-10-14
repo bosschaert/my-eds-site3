@@ -1,13 +1,13 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/plan",
-    "writtenAt": "2026-10-13T15:10:17.239Z",
+    "writtenAt": "2026-10-12T14:06:42.792Z",
     "readArtifacts": [
       "stardust/rollout/coverage"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-13T15:10:17.239Z",
+  "generatedAt": "2026-10-12T14:06:42.792Z",
   "fragments": [],
   "deliveryOrder": [
     "index"
@@ -25,28 +25,36 @@
           "edsBlockName": "hero"
         },
         {
-          "id": "intro",
-          "edsBlockName": "intro"
+          "id": "host",
+          "edsBlockName": "host"
         },
         {
-          "id": "news",
-          "edsBlockName": "news"
+          "id": "story-nursery",
+          "edsBlockName": "story-nursery"
         },
         {
-          "id": "explore",
-          "edsBlockName": "explore"
+          "id": "doors",
+          "edsBlockName": "doors"
         },
         {
-          "id": "map",
-          "edsBlockName": "map"
+          "id": "books",
+          "edsBlockName": "books"
         },
         {
-          "id": "docs",
-          "edsBlockName": "docs"
+          "id": "rooms-also",
+          "edsBlockName": "rooms-also"
         },
         {
-          "id": "newsletter",
-          "edsBlockName": "newsletter"
+          "id": "bouquet",
+          "edsBlockName": "bouquet"
+        },
+        {
+          "id": "conversation",
+          "edsBlockName": "conversation"
+        },
+        {
+          "id": "departure",
+          "edsBlockName": "departure"
         }
       ],
       "reuse": []

@@ -1,22 +1,21 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-10-08T09:42:29.011Z",
+    "writtenAt": "2026-10-13T15:10:02.795Z",
     "stardustVersion": "0.0.0"
   },
   "target": "aem-eds",
   "site": {
-    "sourceUrl": "https://www.example.com/",
+    "sourceUrl": "https://balbriggan.ie/",
     "da": {
       "org": "aemcoder",
-      "site": "f4c8728b",
+      "site": "e8103195",
       "ref": "main"
     },
-    "liveHost": "main--f4c8728b--aemcoder.aem.live",
-    "previewHost": "main--f4c8728b--aemcoder.aem.page"
+    "liveHost": "main--e8103195--aemcoder.aem.live"
   },
   "lastRun": {
-    "at": "2026-10-08T10:21:34.563Z",
+    "at": "2026-10-13T16:30:01.251Z",
     "pages": {
       "total": 1,
       "verified": 1,
@@ -27,8 +26,8 @@
       "failed": 0
     },
     "blocks": {
-      "total": 1,
-      "converted": 1,
+      "total": 7,
+      "converted": 7,
       "pending": 0
     },
     "verifyFailures": 0

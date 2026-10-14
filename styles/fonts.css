@@ -1,1 +1,42 @@
-/* The source (https://www.example.com/) uses system-ui and loads no web fonts; nothing to self-host. */
+/*
+ * R-01 (stardust/replica/inconsistency-register.md): Gotham is licensed — never rehosted. The
+ * brand names stay first in every stack (styles.css); these self-hosted Montserrat faces (SIL OFL)
+ * render meanwhile. size-adjust matches advance widths; the overrides reproduce Gotham's measured
+ * ascent/descent/line-gap (Light .73/.20/.07em, Medium & Bold .80/.20/0em), divided by size-adjust.
+ * Values verbatim from stardust/prototypes/canon.css.
+ */
+@font-face {
+  font-family: 'Gotham Light Sub';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('../fonts/montserrat-300.woff2') format('woff2');
+  size-adjust: 99%;
+  ascent-override: 73.7%;
+  descent-override: 20.2%;
+  line-gap-override: 7.07%;
+}
+
+@font-face {
+  font-family: 'Gotham Medium Sub';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('../fonts/montserrat-500.woff2') format('woff2');
+  size-adjust: 98%;
+  ascent-override: 81.6%;
+  descent-override: 20.4%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'Gotham Bold Sub';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('../fonts/montserrat-700.woff2') format('woff2');
+  size-adjust: 100%;
+  ascent-override: 80%;
+  descent-override: 20%;
+  line-gap-override: 0%;
+}

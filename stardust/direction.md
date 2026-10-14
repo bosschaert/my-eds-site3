@@ -1,32 +1,27 @@
 ---
 _provenance:
   writtenBy: stardust:replica
-  writtenAt: 2026-10-08T09:27:26Z
-  againstInput: https://www.example.com/
+  writtenAt: 2026-10-13T14:43:31Z
+  againstInput: https://balbriggan.ie/
   readArtifacts:
-    - stardust/current/PRODUCT.md
-    - stardust/current/DESIGN.md
-    - stardust/current/DESIGN.json
+    - stardust/current/pages/index.json
+    - stardust/replica/lift/tokens.json
 ---
 
 # Direction — preserve mode (same-design migration)
 
-Mode: PRESERVE. The target spec is the captured current state of https://www.example.com/,
-promoted verbatim (no direct invocation, no creative decisions).
+Mode: PRESERVE. The target spec is the captured current state of https://balbriggan.ie/,
+synthesized mechanically (no direct invocation, no creative decisions).
 
-Promoted: current/PRODUCT.md → PRODUCT.md · current/DESIGN.md → DESIGN.md ·
-current/DESIGN.json → DESIGN.json (at 2026-10-08T09:27:26Z).
+Synthesized (bounded-single): current/pages/index.json + Phase-3 CSS lift → PRODUCT.md · DESIGN.md · DESIGN.json (at 2026-10-13T14:43:31Z).
 
 Permitted deltas: ONLY the entries of stardust/replica/inconsistency-register.md
-(empty — pure replica).
+(1 entry — font substitution forced by licensing; otherwise pure replica).
 
 Fidelity: ia verbatim · design verbatim · content verbatim.
 
-Hands-off: activated at 2026-10-08T09:27:26Z (`--hands-off` on `stardust:replica`); `state.json.handsOff: true`.
-Approvals are recorded as `approvedBy: "hands-off"` after every gate passes. One canonical
-direction; no variant fan-out. Volume: 1 page in scope (the run's site plan), 1 template.
+## Link scope decision (rollout E2, 2026-10-13)
 
-Named assumptions:
-- Colour scheme: the source declares `color-scheme: light dark`; the gate captures and the
-  delivered page reproduce the light scheme (background #eee), the state the capture recorded.
-- Scope is fixed to the site plan (1 page); no sibling discovery, no brand-sources.
+The run's page scope is fixed to the home page. Its 28 other balbriggan.ie link targets (menus, footer, cards, map pins)
+are SCOPE EXTENSION and stay pointed at the source site (absolute https://balbriggan.ie/… URLs, all answer 200);
+external targets kept as authored. No link on the delivered page 404s.

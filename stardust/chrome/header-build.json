@@ -1,0 +1,1518 @@
+{
+ "tool": "chrome-explore",
+ "url": "https://main--e8103195--aemcoder.aem.live/",
+ "at": "2026-10-13T16:23:12.636Z",
+ "shots": "stardust/.work/chrome/header-build",
+ "widths": {
+  "390": {
+   "root": "body>header",
+   "controls": [
+    {
+     "name": "Our Balbriggan logo",
+     "key": "our balbriggan logo",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>a",
+     "href": "https://main--e8103195--aemcoder.aem.live/",
+     "expanded": null,
+     "rect": [
+      16,
+      16,
+      142,
+      58
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Facebook",
+     "key": "facebook",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(1)>ul:nth-of-type(2)>li:nth-of-type(1)>a",
+     "href": "https://www.facebook.com/Our-Balbriggan-Get-Involved-186850462253496/",
+     "expanded": null,
+     "rect": [
+      244,
+      13,
+      11,
+      19
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Twitter",
+     "key": "twitter",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(1)>ul:nth-of-type(2)>li:nth-of-type(2)>a",
+     "href": "https://twitter.com/OurBalbriggan",
+     "expanded": null,
+     "rect": [
+      272,
+      13,
+      19,
+      19
+     ],
+     "actions": {}
+    },
+    {
+     "name": "LinkedIn",
+     "key": "linkedin",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(1)>ul:nth-of-type(2)>li:nth-of-type(3)>a",
+     "href": "https://www.linkedin.com/showcase/18913857/",
+     "expanded": null,
+     "rect": [
+      308,
+      13,
+      17,
+      19
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Instagram",
+     "key": "instagram",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(1)>ul:nth-of-type(2)>li:nth-of-type(4)>a",
+     "href": "https://www.instagram.com/ourbalbriggan/",
+     "expanded": null,
+     "rect": [
+      342,
+      13,
+      17,
+      19
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Toggle navigation",
+     "key": "toggle navigation",
+     "role": "toggle",
+     "kind": "drawer",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(2)>button",
+     "expanded": "false",
+     "rect": [
+      228,
+      42,
+      56,
+      40
+     ],
+     "actions": {
+      "click": {
+       "opened": true,
+       "hidden": 0,
+       "panel": {
+        "links": [
+         {
+          "text": "Plans & Projects",
+          "href": "https://main--e8103195--aemcoder.aem.live/#"
+         },
+         {
+          "text": "Discover",
+          "href": "https://main--e8103195--aemcoder.aem.live/#"
+         },
+         {
+          "text": "Leadership & Governance",
+          "href": "https://main--e8103195--aemcoder.aem.live/#"
+         },
+         {
+          "text": "Loves Learning Festival",
+          "href": "https://main--e8103195--aemcoder.aem.live/#"
+         },
+         {
+          "text": "Community Platform",
+          "href": "https://balbriggan.ie/community-platform/"
+         },
+         {
+          "text": "Get Involved",
+          "href": "https://balbriggan.ie/contact/"
+         }
+        ],
+        "headings": [],
+        "images": 0,
+        "inputs": [],
+        "buttons": [
+         "Plans & Projects",
+         "Discover",
+         "Leadership & Governance",
+         "Loves Learning Festival"
+        ],
+        "options": 0,
+        "rect": [
+         16,
+         140,
+         227,
+         298
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": false,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "height",
+         "ms": 350,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.site-header-main"
+        }
+       ],
+       "shot": "390-001-Toggle-navigation-click.png"
+      },
+      "key": {
+       "opened": true,
+       "hidden": 0,
+       "panel": {
+        "links": [
+         {
+          "text": "Plans & Projects",
+          "href": "https://main--e8103195--aemcoder.aem.live/#"
+         },
+         {
+          "text": "Discover",
+          "href": "https://main--e8103195--aemcoder.aem.live/#"
+         },
+         {
+          "text": "Leadership & Governance",
+          "href": "https://main--e8103195--aemcoder.aem.live/#"
+         },
+         {
+          "text": "Loves Learning Festival",
+          "href": "https://main--e8103195--aemcoder.aem.live/#"
+         },
+         {
+          "text": "Community Platform",
+          "href": "https://balbriggan.ie/community-platform/"
+         },
+         {
+          "text": "Get Involved",
+          "href": "https://balbriggan.ie/contact/"
+         }
+        ],
+        "headings": [],
+        "images": 0,
+        "inputs": [],
+        "buttons": [
+         "Plans & Projects",
+         "Discover",
+         "Leadership & Governance",
+         "Loves Learning Festival"
+        ],
+        "options": 0,
+        "rect": [
+         16,
+         140,
+         227,
+         298
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": false,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "height",
+         "ms": 338,
+         "delay": 0,
+         "easing": "ease",
+         "target": "div.site-header-main"
+        }
+       ],
+       "shot": "390-002-Toggle-navigation-key.png",
+       "tabReachesPanel": true
+      }
+     },
+     "close": {
+      "escape": true,
+      "focusReturn": true,
+      "outside": false,
+      "toggle": true
+     },
+     "children": [
+      {
+       "name": "Plans & Projects",
+       "key": "plans projects",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "body>header>div>div>nav>div>div:nth-of-type(2)>div>ul>li:nth-of-type(1)>a",
+       "expanded": "false",
+       "rect": [
+        16,
+        160,
+        227,
+        38
+       ],
+       "actions": {
+        "click": {
+         "opened": true,
+         "hidden": 0,
+         "panel": {
+          "links": [
+           {
+            "text": "Town Transformation",
+            "href": "https://balbriggan.ie/town-transformation/"
+           },
+           {
+            "text": "Smart Balbriggan",
+            "href": "https://balbriggan.ie/smart-balbriggan/"
+           },
+           {
+            "text": "URBACT & IPlace",
+            "href": "https://balbriggan.ie/urbact-iplace/"
+           },
+           {
+            "text": "Time4EU",
+            "href": "https://balbriggan.ie/time4eu/"
+           }
+          ],
+          "headings": [],
+          "images": 0,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           16,
+           200,
+           227,
+           156
+          ]
+         },
+         "expanded": "true",
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [],
+         "shot": "390-003-Plans-Projects-click.png"
+        },
+        "key": {
+         "opened": true,
+         "hidden": 0,
+         "panel": {
+          "links": [
+           {
+            "text": "Town Transformation",
+            "href": "https://balbriggan.ie/town-transformation/"
+           },
+           {
+            "text": "Smart Balbriggan",
+            "href": "https://balbriggan.ie/smart-balbriggan/"
+           },
+           {
+            "text": "URBACT & IPlace",
+            "href": "https://balbriggan.ie/urbact-iplace/"
+           },
+           {
+            "text": "Time4EU",
+            "href": "https://balbriggan.ie/time4eu/"
+           }
+          ],
+          "headings": [],
+          "images": 0,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           16,
+           200,
+           227,
+           156
+          ]
+         },
+         "expanded": "true",
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "outline-color",
+           "ms": 300,
+           "delay": 0,
+           "easing": "ease",
+           "target": "a.subnav-toggle"
+          },
+          {
+           "kind": "transition",
+           "prop": "outline-offset",
+           "ms": 300,
+           "delay": 0,
+           "easing": "ease",
+           "target": "a.subnav-toggle"
+          },
+          {
+           "kind": "transition",
+           "prop": "outline-width",
+           "ms": 300,
+           "delay": 0,
+           "easing": "ease",
+           "target": "a.subnav-toggle"
+          }
+         ],
+         "shot": "390-004-Plans-Projects-key.png",
+         "tabReachesPanel": true
+        }
+       },
+       "close": {
+        "escape": true,
+        "focusReturn": true,
+        "outside": true,
+        "toggle": true
+       },
+       "children": []
+      },
+      {
+       "name": "Discover",
+       "key": "discover",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "body>header>div>div>nav>div>div:nth-of-type(2)>div>ul>li:nth-of-type(2)>a",
+       "expanded": "false",
+       "rect": [
+        16,
+        206,
+        227,
+        38
+       ],
+       "actions": {
+        "click": {
+         "opened": true,
+         "hidden": 0,
+         "panel": {
+          "links": [
+           {
+            "text": "News",
+            "href": "https://balbriggan.ie/news/"
+           }
+          ],
+          "headings": [],
+          "images": 0,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           16,
+           245,
+           227,
+           56
+          ]
+         },
+         "expanded": "true",
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [],
+         "shot": "390-005-Discover-click.png"
+        },
+        "key": {
+         "opened": true,
+         "hidden": 0,
+         "panel": {
+          "links": [
+           {
+            "text": "News",
+            "href": "https://balbriggan.ie/news/"
+           }
+          ],
+          "headings": [],
+          "images": 0,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           16,
+           245,
+           227,
+           56
+          ]
+         },
+         "expanded": "true",
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "outline-color",
+           "ms": 300,
+           "delay": 0,
+           "easing": "ease",
+           "target": "a.subnav-toggle"
+          },
+          {
+           "kind": "transition",
+           "prop": "outline-offset",
+           "ms": 300,
+           "delay": 0,
+           "easing": "ease",
+           "target": "a.subnav-toggle"
+          },
+          {
+           "kind": "transition",
+           "prop": "outline-width",
+           "ms": 300,
+           "delay": 0,
+           "easing": "ease",
+           "target": "a.subnav-toggle"
+          }
+         ],
+         "shot": "390-006-Discover-key.png",
+         "tabReachesPanel": true
+        }
+       },
+       "close": {
+        "escape": true,
+        "focusReturn": true,
+        "outside": true,
+        "toggle": true
+       },
+       "children": []
+      },
+      {
+       "name": "Leadership & Governance",
+       "key": "leadership governance",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "body>header>div>div>nav>div>div:nth-of-type(2)>div>ul>li:nth-of-type(3)>a",
+       "expanded": "false",
+       "rect": [
+        16,
+        251,
+        227,
+        38
+       ],
+       "actions": {
+        "click": {
+         "opened": true,
+         "hidden": 0,
+         "panel": {
+          "links": [
+           {
+            "text": "Balbriggan Leadership Group",
+            "href": "https://balbriggan.ie/leadership-governance/"
+           },
+           {
+            "text": "Project Team",
+            "href": "https://balbriggan.ie/the-team/"
+           },
+           {
+            "text": "Community Development",
+            "href": "https://balbriggan.ie/community-development/"
+           },
+           {
+            "text": "Education Skills & Training",
+            "href": "https://balbriggan.ie/education-skills-training/"
+           },
+           {
+            "text": "Sustainability, Climate Action and Biodiversity",
+            "href": "https://balbriggan.ie/sustainability-climate-action-and-biodiversity/"
+           },
+           {
+            "text": "Economic Development Pillar",
+            "href": "https://balbriggan.ie/economic-development/"
+           }
+          ],
+          "headings": [],
+          "images": 0,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           16,
+           291,
+           370,
+           224
+          ]
+         },
+         "expanded": "true",
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [],
+         "shot": "390-007-Leadership-Governance-click.png"
+        },
+        "key": {
+         "opened": true,
+         "hidden": 0,
+         "panel": {
+          "links": [
+           {
+            "text": "Balbriggan Leadership Group",
+            "href": "https://balbriggan.ie/leadership-governance/"
+           },
+           {
+            "text": "Project Team",
+            "href": "https://balbriggan.ie/the-team/"
+           },
+           {
+            "text": "Community Development",
+            "href": "https://balbriggan.ie/community-development/"
+           },
+           {
+            "text": "Education Skills & Training",
+            "href": "https://balbriggan.ie/education-skills-training/"
+           },
+           {
+            "text": "Sustainability, Climate Action and Biodiversity",
+            "href": "https://balbriggan.ie/sustainability-climate-action-and-biodiversity/"
+           },
+           {
+            "text": "Economic Development Pillar",
+            "href": "https://balbriggan.ie/economic-development/"
+           }
+          ],
+          "headings": [],
+          "images": 0,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           16,
+           291,
+           370,
+           224
+          ]
+         },
+         "expanded": "true",
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "outline-color",
+           "ms": 300,
+           "delay": 0,
+           "easing": "ease",
+           "target": "a.subnav-toggle"
+          },
+          {
+           "kind": "transition",
+           "prop": "outline-offset",
+           "ms": 300,
+           "delay": 0,
+           "easing": "ease",
+           "target": "a.subnav-toggle"
+          },
+          {
+           "kind": "transition",
+           "prop": "outline-width",
+           "ms": 300,
+           "delay": 0,
+           "easing": "ease",
+           "target": "a.subnav-toggle"
+          }
+         ],
+         "shot": "390-008-Leadership-Governance-key.png",
+         "tabReachesPanel": true
+        }
+       },
+       "close": {
+        "escape": true,
+        "focusReturn": true,
+        "outside": true,
+        "toggle": true
+       },
+       "children": []
+      },
+      {
+       "name": "Loves Learning Festival",
+       "key": "loves learning festival",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "body>header>div>div>nav>div>div:nth-of-type(2)>div>ul>li:nth-of-type(4)>a",
+       "expanded": "false",
+       "rect": [
+        16,
+        297,
+        227,
+        38
+       ],
+       "actions": {
+        "click": {
+         "opened": true,
+         "hidden": 0,
+         "panel": {
+          "links": [
+           {
+            "text": "Loves Learning Festival 2023",
+            "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/"
+           },
+           {
+            "text": "Loves Learning Event Programme",
+            "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/#learning-timetable"
+           },
+           {
+            "text": "Loves Learning Festival 2022",
+            "href": "https://balbriggan.ie/loves-learning-festival/"
+           }
+          ],
+          "headings": [],
+          "images": 0,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           16,
+           336,
+           290,
+           123
+          ]
+         },
+         "expanded": "true",
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [],
+         "shot": "390-009-Loves-Learning-Festival-click.png"
+        },
+        "key": {
+         "opened": true,
+         "hidden": 0,
+         "panel": {
+          "links": [
+           {
+            "text": "Loves Learning Festival 2023",
+            "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/"
+           },
+           {
+            "text": "Loves Learning Event Programme",
+            "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/#learning-timetable"
+           },
+           {
+            "text": "Loves Learning Festival 2022",
+            "href": "https://balbriggan.ie/loves-learning-festival/"
+           }
+          ],
+          "headings": [],
+          "images": 0,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           16,
+           336,
+           290,
+           123
+          ]
+         },
+         "expanded": "true",
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [
+          {
+           "kind": "transition",
+           "prop": "outline-color",
+           "ms": 300,
+           "delay": 0,
+           "easing": "ease",
+           "target": "a.subnav-toggle"
+          },
+          {
+           "kind": "transition",
+           "prop": "outline-offset",
+           "ms": 300,
+           "delay": 0,
+           "easing": "ease",
+           "target": "a.subnav-toggle"
+          },
+          {
+           "kind": "transition",
+           "prop": "outline-width",
+           "ms": 300,
+           "delay": 0,
+           "easing": "ease",
+           "target": "a.subnav-toggle"
+          }
+         ],
+         "shot": "390-010-Loves-Learning-Festival-key.png",
+         "tabReachesPanel": true
+        }
+       },
+       "close": {
+        "escape": true,
+        "focusReturn": true,
+        "outside": true,
+        "toggle": true
+       },
+       "children": []
+      }
+     ]
+    }
+   ],
+   "scroll": [
+    {
+     "at": "top",
+     "y": 0,
+     "top": 0,
+     "height": 90,
+     "position": "sticky",
+     "inView": true
+    },
+    {
+     "at": "down",
+     "y": 987,
+     "top": 0,
+     "height": 77,
+     "position": "sticky",
+     "inView": true
+    },
+    {
+     "at": "up",
+     "y": 700,
+     "top": 0,
+     "height": 77,
+     "position": "sticky",
+     "inView": true
+    },
+    {
+     "at": "back",
+     "y": 0,
+     "top": 0,
+     "height": 90,
+     "position": "sticky",
+     "inView": true
+    }
+   ],
+   "states": 10,
+   "truncated": null,
+   "loads": 18
+  },
+  "1440": {
+   "root": "body>header",
+   "controls": [
+    {
+     "name": "Our Balbriggan logo",
+     "key": "our balbriggan logo",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>a",
+     "href": "https://main--e8103195--aemcoder.aem.live/",
+     "expanded": null,
+     "rect": [
+      16,
+      8,
+      206,
+      82
+     ],
+     "actions": {}
+    },
+    {
+     "name": "News",
+     "key": "news",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(1)>ul:nth-of-type(1)>li:nth-of-type(1)>a",
+     "href": "https://balbriggan.ie/news/",
+     "expanded": null,
+     "rect": [
+      820,
+      13,
+      49,
+      34
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Downloads",
+     "key": "downloads",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(1)>ul:nth-of-type(1)>li:nth-of-type(2)>a",
+     "href": "https://balbriggan.ie/downloads/",
+     "expanded": null,
+     "rect": [
+      872,
+      13,
+      83,
+      34
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Newsletters",
+     "key": "newsletters",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(1)>ul:nth-of-type(1)>li:nth-of-type(3)>a",
+     "href": "https://balbriggan.ie/newsletters/",
+     "expanded": null,
+     "rect": [
+      959,
+      13,
+      87,
+      34
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Fingal County Council",
+     "key": "fingal county council",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(1)>ul:nth-of-type(1)>li:nth-of-type(4)>a",
+     "href": "http://www.fingalcoco.ie/",
+     "expanded": null,
+     "rect": [
+      1048,
+      13,
+      147,
+      34
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Contact",
+     "key": "contact",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(1)>ul:nth-of-type(1)>li:nth-of-type(5)>a",
+     "href": "https://balbriggan.ie/contact/",
+     "expanded": null,
+     "rect": [
+      1198,
+      13,
+      63,
+      34
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Facebook",
+     "key": "facebook",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(1)>ul:nth-of-type(2)>li:nth-of-type(1)>a",
+     "href": "https://www.facebook.com/Our-Balbriggan-Get-Involved-186850462253496/",
+     "expanded": null,
+     "rect": [
+      1279,
+      18,
+      11,
+      19
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Twitter",
+     "key": "twitter",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(1)>ul:nth-of-type(2)>li:nth-of-type(2)>a",
+     "href": "https://twitter.com/OurBalbriggan",
+     "expanded": null,
+     "rect": [
+      1307,
+      18,
+      19,
+      19
+     ],
+     "actions": {}
+    },
+    {
+     "name": "LinkedIn",
+     "key": "linkedin",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(1)>ul:nth-of-type(2)>li:nth-of-type(3)>a",
+     "href": "https://www.linkedin.com/showcase/18913857/",
+     "expanded": null,
+     "rect": [
+      1343,
+      18,
+      17,
+      19
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Instagram",
+     "key": "instagram",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(1)>ul:nth-of-type(2)>li:nth-of-type(4)>a",
+     "href": "https://www.instagram.com/ourbalbriggan/",
+     "expanded": null,
+     "rect": [
+      1377,
+      18,
+      17,
+      19
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Plans & Projects",
+     "key": "plans projects",
+     "role": "toggle",
+     "kind": "menu",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(2)>div>ul>li:nth-of-type(1)>a",
+     "expanded": "false",
+     "rect": [
+      477,
+      51,
+      142,
+      34
+     ],
+     "actions": {
+      "hover": null,
+      "click": {
+       "opened": true,
+       "hidden": 0,
+       "panel": {
+        "links": [
+         {
+          "text": "Town Transformation",
+          "href": "https://balbriggan.ie/town-transformation/"
+         },
+         {
+          "text": "Smart Balbriggan",
+          "href": "https://balbriggan.ie/smart-balbriggan/"
+         },
+         {
+          "text": "URBACT & IPlace",
+          "href": "https://balbriggan.ie/urbact-iplace/"
+         },
+         {
+          "text": "Time4EU",
+          "href": "https://balbriggan.ie/time4eu/"
+         }
+        ],
+        "headings": [],
+        "images": 0,
+        "inputs": [],
+        "buttons": [],
+        "options": 0,
+        "rect": [
+         477,
+         87,
+         177,
+         122
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": false,
+       "motion": [],
+       "shot": "1440-001-Plans-Projects-click.png"
+      },
+      "key": {
+       "opened": true,
+       "hidden": 0,
+       "panel": {
+        "links": [
+         {
+          "text": "Town Transformation",
+          "href": "https://balbriggan.ie/town-transformation/"
+         },
+         {
+          "text": "Smart Balbriggan",
+          "href": "https://balbriggan.ie/smart-balbriggan/"
+         },
+         {
+          "text": "URBACT & IPlace",
+          "href": "https://balbriggan.ie/urbact-iplace/"
+         },
+         {
+          "text": "Time4EU",
+          "href": "https://balbriggan.ie/time4eu/"
+         }
+        ],
+        "headings": [],
+        "images": 0,
+        "inputs": [],
+        "buttons": [],
+        "options": 0,
+        "rect": [
+         477,
+         87,
+         177,
+         122
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": false,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "outline-color",
+         "ms": 300,
+         "delay": 0,
+         "easing": "ease",
+         "target": "a.subnav-toggle"
+        },
+        {
+         "kind": "transition",
+         "prop": "outline-offset",
+         "ms": 300,
+         "delay": 0,
+         "easing": "ease",
+         "target": "a.subnav-toggle"
+        },
+        {
+         "kind": "transition",
+         "prop": "outline-width",
+         "ms": 300,
+         "delay": 0,
+         "easing": "ease",
+         "target": "a.subnav-toggle"
+        }
+       ],
+       "shot": "1440-002-Plans-Projects-key.png",
+       "tabReachesPanel": true
+      }
+     },
+     "close": {
+      "escape": true,
+      "focusReturn": true,
+      "outside": true,
+      "toggle": true
+     },
+     "children": []
+    },
+    {
+     "name": "Discover",
+     "key": "discover",
+     "role": "toggle",
+     "kind": "menu",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(2)>div>ul>li:nth-of-type(2)>a",
+     "expanded": "false",
+     "rect": [
+      622,
+      51,
+      88,
+      34
+     ],
+     "actions": {
+      "hover": null,
+      "click": {
+       "opened": true,
+       "hidden": 0,
+       "panel": {
+        "links": [
+         {
+          "text": "News",
+          "href": "https://balbriggan.ie/news/"
+         }
+        ],
+        "headings": [],
+        "images": 0,
+        "inputs": [],
+        "buttons": [],
+        "options": 0,
+        "rect": [
+         622,
+         87,
+         160,
+         44
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": false,
+       "motion": [],
+       "shot": "1440-003-Discover-click.png"
+      },
+      "key": {
+       "opened": true,
+       "hidden": 0,
+       "panel": {
+        "links": [
+         {
+          "text": "News",
+          "href": "https://balbriggan.ie/news/"
+         }
+        ],
+        "headings": [],
+        "images": 0,
+        "inputs": [],
+        "buttons": [],
+        "options": 0,
+        "rect": [
+         622,
+         87,
+         160,
+         44
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": false,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "outline-color",
+         "ms": 300,
+         "delay": 0,
+         "easing": "ease",
+         "target": "a.subnav-toggle"
+        },
+        {
+         "kind": "transition",
+         "prop": "outline-offset",
+         "ms": 300,
+         "delay": 0,
+         "easing": "ease",
+         "target": "a.subnav-toggle"
+        },
+        {
+         "kind": "transition",
+         "prop": "outline-width",
+         "ms": 300,
+         "delay": 0,
+         "easing": "ease",
+         "target": "a.subnav-toggle"
+        }
+       ],
+       "shot": "1440-004-Discover-key.png",
+       "tabReachesPanel": true
+      }
+     },
+     "close": {
+      "escape": true,
+      "focusReturn": true,
+      "outside": true,
+      "toggle": true
+     },
+     "children": []
+    },
+    {
+     "name": "Leadership & Governance",
+     "key": "leadership governance",
+     "role": "toggle",
+     "kind": "menu",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(2)>div>ul>li:nth-of-type(3)>a",
+     "expanded": "false",
+     "rect": [
+      713,
+      51,
+      205,
+      34
+     ],
+     "actions": {
+      "hover": null,
+      "click": {
+       "opened": true,
+       "hidden": 0,
+       "panel": {
+        "links": [
+         {
+          "text": "Balbriggan Leadership Group",
+          "href": "https://balbriggan.ie/leadership-governance/"
+         },
+         {
+          "text": "Project Team",
+          "href": "https://balbriggan.ie/the-team/"
+         },
+         {
+          "text": "Community Development",
+          "href": "https://balbriggan.ie/community-development/"
+         },
+         {
+          "text": "Education Skills & Training",
+          "href": "https://balbriggan.ie/education-skills-training/"
+         },
+         {
+          "text": "Sustainability, Climate Action and Biodiversity",
+          "href": "https://balbriggan.ie/sustainability-climate-action-and-biodiversity/"
+         },
+         {
+          "text": "Economic Development Pillar",
+          "href": "https://balbriggan.ie/economic-development/"
+         }
+        ],
+        "headings": [],
+        "images": 0,
+        "inputs": [],
+        "buttons": [],
+        "options": 0,
+        "rect": [
+         713,
+         87,
+         320,
+         174
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": false,
+       "motion": [],
+       "shot": "1440-005-Leadership-Governance-click.png"
+      },
+      "key": {
+       "opened": true,
+       "hidden": 0,
+       "panel": {
+        "links": [
+         {
+          "text": "Balbriggan Leadership Group",
+          "href": "https://balbriggan.ie/leadership-governance/"
+         },
+         {
+          "text": "Project Team",
+          "href": "https://balbriggan.ie/the-team/"
+         },
+         {
+          "text": "Community Development",
+          "href": "https://balbriggan.ie/community-development/"
+         },
+         {
+          "text": "Education Skills & Training",
+          "href": "https://balbriggan.ie/education-skills-training/"
+         },
+         {
+          "text": "Sustainability, Climate Action and Biodiversity",
+          "href": "https://balbriggan.ie/sustainability-climate-action-and-biodiversity/"
+         },
+         {
+          "text": "Economic Development Pillar",
+          "href": "https://balbriggan.ie/economic-development/"
+         }
+        ],
+        "headings": [],
+        "images": 0,
+        "inputs": [],
+        "buttons": [],
+        "options": 0,
+        "rect": [
+         713,
+         87,
+         320,
+         174
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": false,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "outline-color",
+         "ms": 300,
+         "delay": 0,
+         "easing": "ease",
+         "target": "a.subnav-toggle"
+        },
+        {
+         "kind": "transition",
+         "prop": "outline-offset",
+         "ms": 300,
+         "delay": 0,
+         "easing": "ease",
+         "target": "a.subnav-toggle"
+        },
+        {
+         "kind": "transition",
+         "prop": "outline-width",
+         "ms": 300,
+         "delay": 0,
+         "easing": "ease",
+         "target": "a.subnav-toggle"
+        }
+       ],
+       "shot": "1440-006-Leadership-Governance-key.png",
+       "tabReachesPanel": true
+      }
+     },
+     "close": {
+      "escape": true,
+      "focusReturn": true,
+      "outside": true,
+      "toggle": true
+     },
+     "children": []
+    },
+    {
+     "name": "Loves Learning Festival",
+     "key": "loves learning festival",
+     "role": "toggle",
+     "kind": "menu",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(2)>div>ul>li:nth-of-type(4)>a",
+     "expanded": "false",
+     "rect": [
+      921,
+      51,
+      190,
+      34
+     ],
+     "actions": {
+      "hover": null,
+      "click": {
+       "opened": true,
+       "hidden": 0,
+       "panel": {
+        "links": [
+         {
+          "text": "Loves Learning Festival 2023",
+          "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/"
+         },
+         {
+          "text": "Loves Learning Event Programme",
+          "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/#learning-timetable"
+         },
+         {
+          "text": "Loves Learning Festival 2022",
+          "href": "https://balbriggan.ie/loves-learning-festival/"
+         }
+        ],
+        "headings": [],
+        "images": 0,
+        "inputs": [],
+        "buttons": [],
+        "options": 0,
+        "rect": [
+         921,
+         87,
+         253,
+         96
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": false,
+       "motion": [],
+       "shot": "1440-007-Loves-Learning-Festival-click.png"
+      },
+      "key": {
+       "opened": true,
+       "hidden": 0,
+       "panel": {
+        "links": [
+         {
+          "text": "Loves Learning Festival 2023",
+          "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/"
+         },
+         {
+          "text": "Loves Learning Event Programme",
+          "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/#learning-timetable"
+         },
+         {
+          "text": "Loves Learning Festival 2022",
+          "href": "https://balbriggan.ie/loves-learning-festival/"
+         }
+        ],
+        "headings": [],
+        "images": 0,
+        "inputs": [],
+        "buttons": [],
+        "options": 0,
+        "rect": [
+         921,
+         87,
+         253,
+         96
+        ]
+       },
+       "expanded": "true",
+       "focus": "trigger",
+       "scrollLock": false,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "outline-color",
+         "ms": 300,
+         "delay": 0,
+         "easing": "ease",
+         "target": "a.subnav-toggle"
+        },
+        {
+         "kind": "transition",
+         "prop": "outline-offset",
+         "ms": 300,
+         "delay": 0,
+         "easing": "ease",
+         "target": "a.subnav-toggle"
+        },
+        {
+         "kind": "transition",
+         "prop": "outline-width",
+         "ms": 300,
+         "delay": 0,
+         "easing": "ease",
+         "target": "a.subnav-toggle"
+        }
+       ],
+       "shot": "1440-008-Loves-Learning-Festival-key.png",
+       "tabReachesPanel": true
+      }
+     },
+     "close": {
+      "escape": true,
+      "focusReturn": true,
+      "outside": true,
+      "toggle": true
+     },
+     "children": []
+    },
+    {
+     "name": "Community Platform",
+     "key": "community platform",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(2)>div>ul>li:nth-of-type(5)>a",
+     "href": "https://balbriggan.ie/community-platform/",
+     "expanded": null,
+     "rect": [
+      1115,
+      51,
+      164,
+      34
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Get Involved",
+     "key": "get involved",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>div>div:nth-of-type(2)>div>ul>li:nth-of-type(6)>a",
+     "href": "https://balbriggan.ie/contact/",
+     "expanded": null,
+     "rect": [
+      1281,
+      55,
+      126,
+      27
+     ],
+     "actions": {}
+    }
+   ],
+   "scroll": [
+    {
+     "at": "top",
+     "y": 0,
+     "top": 0,
+     "height": 98,
+     "position": "sticky",
+     "inView": true
+    },
+    {
+     "at": "down",
+     "y": 978,
+     "top": 0,
+     "height": 75,
+     "position": "sticky",
+     "inView": true
+    },
+    {
+     "at": "up",
+     "y": 700,
+     "top": 0,
+     "height": 75,
+     "position": "sticky",
+     "inView": true
+    },
+    {
+     "at": "back",
+     "y": 0,
+     "top": 0,
+     "height": 98,
+     "position": "sticky",
+     "inView": true
+    }
+   ],
+   "states": 8,
+   "truncated": null,
+   "loads": 1
+  }
+ },
+ "probe": "skip"
+}

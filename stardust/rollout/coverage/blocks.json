@@ -1,19 +1,19 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/blocks",
-    "writtenAt": "2026-10-08T09:42:48.655Z",
+    "writtenAt": "2026-10-13T15:10:17.192Z",
     "readArtifacts": [
       "stardust/rollout/coverage/pages.json"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-08T10:21:34.563Z",
+  "generatedAt": "2026-10-13T16:30:01.251Z",
   "blocks": [
     {
-      "id": "notice",
-      "label": "notice",
+      "id": "docs",
+      "label": "docs",
       "kind": "module",
-      "signature": "module:notice",
+      "signature": "module:docs",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -24,7 +24,127 @@
       "instanceCount": 1,
       "delivery": {
         "status": "verified",
-        "edsBlockName": "notice",
+        "edsBlockName": "docs",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "explore",
+      "label": "explore",
+      "kind": "module",
+      "signature": "module:explore",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "explore",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hero",
+      "label": "hero",
+      "kind": "module",
+      "signature": "module:hero",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "hero",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "intro",
+      "label": "intro",
+      "kind": "module",
+      "signature": "module:intro",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "intro",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "map",
+      "label": "map",
+      "kind": "module",
+      "signature": "module:map",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "map",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "news",
+      "label": "news",
+      "kind": "module",
+      "signature": "module:news",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "news",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "newsletter",
+      "label": "newsletter",
+      "kind": "module",
+      "signature": "module:newsletter",
+      "source": null,
+      "usedByTemplates": [
+        "index"
+      ],
+      "usedByPages": [
+        "index"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "verified",
+        "edsBlockName": "newsletter",
         "blockPath": null,
         "convertedAt": null
       }

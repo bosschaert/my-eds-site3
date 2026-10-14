@@ -1,52 +1,59 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-10-08T09:42:29.011Z",
+    "writtenAt": "2026-10-13T15:10:02.795Z",
     "readArtifacts": [
       "stardust/migrated",
       "stardust/state.json"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-08T10:18:58.741Z",
+  "generatedAt": "2026-10-13T16:27:52.946Z",
   "pages": [
     {
       "slug": "index",
       "path": "/",
-      "title": "Example Domain",
+      "title": "Our Balbriggan",
       "templateId": "index",
       "source": {
         "migratedHtml": "stardust/migrated/index.html",
         "metaJson": "stardust/migrated/_meta.json",
-        "sourceHash": "sha256:1e0431de102615c2d11376103c2638a092e09936d6a394f83ef05b254f522cd6"
+        "sourceHash": "sha256:9884eaeee004562aaa89dca7b0c36705338f4dd667944e1a15c0a4bb38a915d4",
+        "sourceUrl": "https://balbriggan.ie/"
       },
       "blocks": [
-        "notice"
+        "hero",
+        "intro",
+        "news",
+        "explore",
+        "map",
+        "docs",
+        "newsletter"
       ],
       "delivery": {
         "status": "verified",
-        "deployedUrl": "https://main--f4c8728b--aemcoder.aem.live/",
-        "deployedAt": "2026-10-08T10:00:23.186Z",
-        "verifiedAt": "2026-10-08T10:18:58.741Z",
+        "deployedUrl": "https://main--e8103195--aemcoder.aem.live/",
+        "deployedAt": "2026-10-13T16:18:27.091Z",
+        "verifiedAt": "2026-10-13T16:27:47.604Z",
         "error": null,
         "gate": {
           "pass": true,
-          "pct": 0.28,
+          "pct": 2.4,
           "heightDelta": 0,
-          "clipped": 0,
+          "clipped": 2,
           "content": {
             "missing": 0,
             "hidden": 0,
             "controlState": 0,
             "missingButtons": 0,
             "hiddenButtons": 0,
-            "findings": 0,
+            "findings": 27,
             "variable": []
           },
           "reasons": [],
           "override": null,
           "table": "stardust/replica/gates/all-360/summary.json",
-          "at": "2026-10-08T10:15:23.949Z"
+          "at": "2026-10-13T16:27:52.946Z"
         }
       }
     }

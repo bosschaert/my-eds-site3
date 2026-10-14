@@ -1,14 +1,14 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-10-08T09:42:29.011Z",
+    "writtenAt": "2026-10-13T15:10:02.795Z",
     "readArtifacts": [
       "stardust/migrated",
       "stardust/state.json"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-08T10:21:34.563Z",
+  "generatedAt": "2026-10-13T16:30:01.251Z",
   "templates": [
     {
       "id": "index",
@@ -18,7 +18,13 @@
       ],
       "pageCount": 1,
       "blocks": [
-        "notice"
+        "docs",
+        "explore",
+        "hero",
+        "intro",
+        "map",
+        "news",
+        "newsletter"
       ],
       "delivery": {
         "verified": 1,

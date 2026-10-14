@@ -1,4 +1,86 @@
-/* no footer exists on the source (https://www.example.com/); the footer occupies no space */
-footer .footer {
-  height: 0;
+/* footer — dark band, council mark left, social + legal right (canon.css § Footer) */
+.footer .site-footer {
+  background-color: var(--footer-gray);
+}
+
+.footer .site-footer-main {
+  padding: 30px 0;
+}
+
+.footer .container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer .site-footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.footer .site-footer-col {
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.footer .site-footer-col p {
+  display: inline;
+  margin: 0;
+}
+
+.footer .site-footer-col-end {
+  text-align: right;
+}
+
+.footer .site-footer-col img {
+  width: 12rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.footer .site-footer-col .social {
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.footer .site-footer-col .social li:not(:last-child) {
+  margin-right: 12.9px;
+}
+
+.footer .site-footer-base {
+  height: 1px;
+}
+
+@media (width <= 1199px) {
+  .footer .container {
+    max-width: 960px;
+  }
+}
+
+@media (width <= 991px) {
+  .footer .container {
+    max-width: 720px;
+  }
+}
+
+@media (width <= 767px) {
+  .footer .container {
+    max-width: 540px;
+  }
+}
+
+@media (width <= 575px) {
+  .footer .container {
+    max-width: none;
+  }
+}
+
+@media (width >= 768px) {
+  .footer .site-footer-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }

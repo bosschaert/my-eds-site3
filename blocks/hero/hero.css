@@ -1,37 +1,97 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
+/* hero — values verbatim from stardust/prototypes/index.css (.hero*) */
+
+/* full-bleed: the block escapes the section's bootstrap container */
+main > .section > div:has(> .hero) {
+  max-width: none;
   padding: 0;
 }
 
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+  min-height: 15rem;
+  overflow: hidden;
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+.hero .hero-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 37rem;
+  padding: 3rem;
+  background: #fff;
 }
 
-.hero picture {
+.hero .hero-title {
+  margin: 0;
+  color: var(--heading);
+  font-family: 'Gotham Bold', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero .hero-title :is(h1, h2, h3) {
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+.hero .hero-title::after {
+  content: " ";
+  display: block;
+  width: 10%;
+  margin: .5em auto 1.5em;
+  border-top: 5px solid var(--rule-yellow);
+}
+
+.hero .hero-actions p {
+  margin: 0;
+}
+
+.hero .hero-actions p a {
+  display: block;
+}
+
+.hero .hero-media {
   position: absolute;
-  z-index: -1;
   inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.hero img {
-  object-fit: cover;
+.hero .hero-video {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  margin: auto;
+  object-fit: cover;
 }
 
-@media (width >= 900px) {
-  .hero {
-    padding: 40px 32px;
+.hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--hero-blue);
+  mix-blend-mode: multiply;
+}
+
+@media (width <= 991px) {
+  .hero .hero-card {
+    margin: 2rem;
+    padding: 3rem 2rem;
   }
 }

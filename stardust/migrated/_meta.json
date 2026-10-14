@@ -1,74 +1,274 @@
 {
   "slug": "index",
-  "type": "static",
+  "type": "landing",
   "renderBranch": "A",
   "template": null,
   "modules": [
-    "notice"
+    "hero",
+    "intro",
+    "news",
+    "explore",
+    "map",
+    "docs",
+    "newsletter"
   ],
   "slotsFilled": [
-    "notice__glyph",
-    "notice__text",
-    "notice__text",
-    "notice__text",
-    "notice__text",
-    "notice__text",
-    "notice__text",
-    "notice__link"
+    "hero",
+    "intro",
+    "band",
+    "band",
+    "map",
+    "band",
+    "newsletter"
   ],
   "canonShas": {
-    "header": null,
-    "footer": null,
-    "css": "8cd4c89b6c24"
+    "header": "6e94bf3902fe",
+    "footer": "9abfac6c755e",
+    "css": "8b22dd9dcb82"
   },
   "deviations": [],
-  "migrationDecisions": [
-    {
-      "kind": "no-h1",
-      "reason": "source page has no heading; none added (no fabrication)",
-      "checks": [
-        "qa-gate h1",
-        "delivery-lint h1"
-      ]
-    }
-  ],
+  "migrationDecisions": [],
   "metadata": {
-    "title": "Example Domain",
-    "description": null,
+    "title": "Our Balbriggan",
+    "description": "Balbriggan is set to be transformed; its rejuvenation plan sets out an ambitious new vison shaped by the towns people.",
     "canonical": null,
-    "lang": "en"
+    "lang": "en-US"
   },
   "jsonLd": {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Example Domain",
-    "url": "https://www.example.com/"
+    "name": "Our Balbriggan",
+    "description": "Balbriggan is set to be transformed; its rejuvenation plan sets out an ambitious new vison shaped by the towns people.",
+    "url": "https://balbriggan.ie/"
   },
-  "migratedAt": "2026-10-08T09:38:45Z",
-  "designMdSha": "7401d4726989",
-  "designJsonSha": "fb2b95c6dc38",
-  "sourceCurrentSha": "470bbc7aa552",
-  "sourceProposedSha": "411fec74ec20",
+  "migratedAt": "2026-10-13T15:09:40Z",
+  "designMdSha": "2c9310b142aa",
+  "designJsonSha": "ffa72ed8e270",
+  "sourceCurrentSha": "49afb10a4a09",
+  "sourceProposedSha": "81fc38a31f1b",
   "fidelityTier": "archetype",
   "archetypeSource": null,
   "archetypeSha": null,
   "variants": [],
   "gatesPassed": [
-    "content-fidelity",
-    "content-count",
-    "delivery-lint",
-    "media-reconcile"
+    "content-fidelity"
   ],
   "gateEvidence": {
-    "content-fidelity": "content-diff iter1 --full at 1440 and 360: 0 structural, 2 advisory (live inline <style> text read as a body node) — stardust/replica/gates/index-1440, index-360",
-    "content-count": "6 paragraphs, 1 CTA (https://iana.org/help/example-domains), 0 headings, 0 images on both sides; content-diff 198-node class match, 0 drops",
-    "delivery-lint": "delivery-lint content/index.html (type:page): 1 P0 (h1: expected exactly one <h1>, found 0) · 0 P1 · 0 P2; h1 finding accepted by decision no-h1 (source has no heading)",
-    "media-reconcile": "media-reconcile content/index.html: no findings (page has no images); exit 0"
+    "content-fidelity": "approved archetype; content-diff 0 structural red @1440/360 (gates/index-*/iter3)"
   },
   "contentDeviations": [],
-  "assetsBundled": 2,
+  "assetsBundled": 36,
   "missingAssets": [],
-  "brokenInternalLinks": [],
+  "brokenInternalLinks": [
+    {
+      "href": "https://balbriggan.ie/news/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/downloads/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/newsletters/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/contact/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/town-transformation/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/smart-balbriggan/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/urbact-iplace/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/time4eu/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/news/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/leadership-governance/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/the-team/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/community-development/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/education-skills-training/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/sustainability-climate-action-and-biodiversity/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/economic-development/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/#learning-timetable",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/loves-learning-festival/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/community-platform/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/contact/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/faq/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/e15-million-harbour-square-will-be-heartbeat-of-balbriggan/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/prestigious-musical-theatre-degree-and-masters-to-be-offered-in-balbriggan/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/balbriggan-to-be-seen-by-millions-worldwide-as-it-hosts-nfl-draft/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/planning-for-balbriggan-swimming-pool-moves-to-next-phase/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/news",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/town-transformation/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/education-skills-training/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/community-development/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/economic-development/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/sustainability-climate-action-and-biodiversity/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/town-transformation/#project12",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/town-transformation/#project11",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/town-transformation/#project10",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/town-transformation/#project9",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/town-transformation/#project8",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/town-transformation/#project7",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/town-transformation/#project6",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/town-transformation/#project5",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/town-transformation/#project4",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/town-transformation/#project3",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/town-transformation/#project2",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/town-transformation/#project1",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/wp-content/uploads/2020/08/Ar_dTuras.pdf",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/wp-content/uploads/2020/08/Ar_dTuras.pdf",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/wp-content/uploads/2020/06/Our-Journey-Newsletter.pdf",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/wp-content/uploads/2020/06/Our-Journey-Newsletter.pdf",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/wp-content/uploads/2021/11/Web-A3-Balbriggan-Irish.pdf",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/wp-content/uploads/2021/11/Web-A3-Balbriggan-Irish.pdf",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/wp-content/uploads/2021/11/Web-A3-Balbriggan-English.pdf",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://balbriggan.ie/wp-content/uploads/2021/11/Web-A3-Balbriggan-English.pdf",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/downloads",
+      "reason": "not-in-inventory"
+    }
+  ],
   "outputPath": "index.html",
   "outputPathDefault": null,
   "sidecar": "_meta.json",

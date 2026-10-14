@@ -1,7 +1,14 @@
-# Learnings — replica run www.example.com (2026-10-08)
+# Learnings — balbriggan.ie replica (2026-10-13)
 
-- **Source-parity checks that have no parity branch:** `verify.mjs` (exactly one `<h1>`) and `optimize.mjs` (`seo/single-h1`) both fail a page whose SOURCE has no heading; `optimize.mjs` tags title/description/JSON-LD parity but not h1. Resolution used: `findings.mjs resolve … --status accepted` with the capture + content-diff evidence, and `update-coverage.mjs <slug> --status verified` with the decision named — never a fabricated heading. A re-run of `verify.mjs` flips the row back; record the decision where the next session will read it (journal, conversion log).
-- **The aem.page/aem.live CDN returns gzip to a plain `curl`:** probe served code with `curl --compressed` before concluding a push has not propagated (a grep on the raw body silently matched nothing).
-- **Cluster subagents may leave the block ledger at `pending`:** check `rollout.json.lastRun.blocks` at H-report and flip with `update-coverage.mjs --block <id> --status verified --eds-name <name>` when the block is live and gated.
-- **Chrome-less sites:** header/footer no-op blocks still fetch `/nav` and `/footer` (two tolerated 404s per load). Decide once (`chrome-fetch-404`) rather than editing the frozen foundation after C-final.
-- **Foundation request application at C-final** is a code push on `main`: lint → commit → push → confirm the served file → re-gate the archetype under a new `pub<N>` label in the existing gate dir → `foundation-freeze.mjs freeze` again before the `gate-all` unit.
+- **Site-shadowed `window.scrollTo`.** The theme declares a global `function scrollTo(target)`; every instrument's
+  numeric `scrollTo(0, y)` threw. The NATIVE_SCROLL_SHIM in `diff/live-session.mjs` fixes the diff instruments;
+  `dynamics-detect.mjs` and `crawl.mjs` need it too (project copies patched). Upstream candidate.
+- **`unit-geometry.mjs` origin cache was per slug, not per width** — a 360 gate reused the 1440 inventory and printed
+  a false "FAIL (elements)". Key now `<slug>-<width>-units`. Upstream candidate.
+- **`chrome-explore` default header root missed a `div#wrapper-navbar` header** (0 controls); `--root` fixed it.
+- **Licensed font → substitute** passes page and band gates (≤ 2.3%) but fails the header contract's 2% open-state
+  crop bar on every small menu panel (4.6–7.3%): those findings need the site owner's sign-off by design.
+- **Flaky source captures:** a fresh live capture came back with unloaded images (+122px); the gate reused the
+  archetype's verified live captures rather than measuring against a broken origin.
+- **gate-all reads `status: deployed` from state.json** while `state.mjs` stops at `migrated`; the published gate ran
+  from a copy (`stardust/.work/rollout/gate-state.json`) with `liveUrl` + `deployedPath`.

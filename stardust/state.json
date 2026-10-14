@@ -1,47 +1,50 @@
 {
   "_provenance": {
     "writtenBy": "stardust:migrate",
-    "writtenAt": "2026-10-08T09:42:06Z",
-    "stardustVersion": "0.29.1"
+    "writtenAt": "2026-10-13T15:09:52Z",
+    "stardustVersion": "0.32.1"
   },
   "site": {
-    "originUrl": "https://www.example.com",
+    "originUrl": "https://balbriggan.ie/",
     "deployUrl": null,
-    "extractedAt": "2026-10-08T09:25:15Z",
+    "extractedAt": "2026-10-13T14:35:26Z",
     "pageCap": 1,
     "totalDiscovered": 1,
-    "crawled": 1,
-    "captureGaps": []
+    "crawled": 1
   },
   "direction": null,
   "handsOff": true,
   "flow": "replica",
-  "flowChosenAt": "2026-10-08T09:25:15Z",
+  "flowChosenAt": "2026-10-13T14:35:26Z",
   "flowSource": "user-phrase",
   "pages": [
     {
       "slug": "index",
-      "url": "https://www.example.com/",
-      "title": "Example Domain",
-      "type": "static",
+      "url": "https://balbriggan.ie/",
+      "title": "Our Balbriggan",
+      "type": "landing",
       "status": "migrated",
       "history": [
         {
           "status": "extracted",
-          "at": "2026-10-08T09:25:15Z"
+          "at": "2026-10-13T14:35:26Z"
+        },
+        {
+          "status": "directed",
+          "at": "2026-10-13T15:00:34Z"
         },
         {
           "status": "prototyped",
-          "at": "2026-10-08T09:33:27Z"
+          "at": "2026-10-13T15:00:34Z"
         },
         {
           "status": "approved",
-          "at": "2026-10-08T09:34:37Z",
+          "at": "2026-10-13T15:06:47Z",
           "approvedBy": "hands-off"
         },
         {
           "status": "migrated",
-          "at": "2026-10-08T09:42:06Z"
+          "at": "2026-10-13T15:09:52Z"
         }
       ],
       "stale": false,
@@ -52,7 +55,7 @@
     }
   ],
   "migrate": {
-    "at": "2026-10-08T09:38:45Z",
+    "at": "2026-10-13T15:09:40Z",
     "outputDir": "stardust/migrated/",
     "selfContained": true,
     "pageMap": [
@@ -63,22 +66,56 @@
         "outputPathDefault": null
       }
     ],
-    "totalAssetsBundled": 2,
+    "totalAssetsBundled": 36,
     "bundledAssets": [
+      "canon.css",
+      "favicon.png",
+      "fonts/fontawesome-webfont.woff2",
+      "fonts/montserrat-300.woff2",
+      "fonts/montserrat-500.woff2",
+      "fonts/montserrat-700.woff2",
+      "fonts/slick.woff",
+      "img/Ar_dTuras-cover-212x300.jpg",
+      "img/MichaelTDawsonTheLark001.jpg",
+      "img/MichaelTDawsonTheLark002.jpg",
+      "img/Our-Journey-Newsletter-coverjpg-212x300.jpg",
+      "img/SON7436-0002.jpg",
+      "img/balbriggan-beach-1.jpg",
+      "img/balbriggan-logo.svg",
+      "img/balbriggan-pool.png",
+      "img/ceardeileataagtarlu-209x300.jpg",
+      "img/fcc-logo.svg",
+      "img/pin-1.jpg",
+      "img/pin-10.jpg",
+      "img/pin-11.jpg",
+      "img/pin-12.jpg",
+      "img/pin-2.jpg",
+      "img/pin-3.jpg",
+      "img/pin-4.jpg",
+      "img/pin-5.jpg",
+      "img/pin-6.jpg",
+      "img/pin-7.jpg",
+      "img/pin-8.jpg",
+      "img/pin-9.jpg",
+      "img/project_community_health_wellbeing.jpg",
+      "img/project_employment_training_opportunities.jpg",
+      "img/project_making_our_economy_grow.jpg",
+      "img/project_town_transformation.jpg",
+      "img/whatnext-209x300.jpg",
       "index.css",
-      "replica.css"
+      "proto.js"
     ],
     "pages": [
       {
         "slug": "index",
         "file": "stardust/migrated/index.html",
-        "assetsBundled": 2
+        "assetsBundled": 36
       }
     ],
     "missingAssets": [],
     "cleanedAssets": [],
     "lastRun": {
-      "at": "2026-10-08T09:38:45Z",
+      "at": "2026-10-13T15:09:40Z",
       "rendered": [
         "index"
       ],

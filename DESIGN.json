@@ -1,145 +1,106 @@
 {
   "_provenance": {
-    "writtenBy": "stardust:extract",
-    "writtenAt": "2026-10-08T09:24:52Z",
-    "readArtifacts": [
-      "stardust/current/_brand-extraction.json",
-      "stardust/current/_computed-styles.json",
-      "stardust/current/pages/index.html"
-    ],
-    "synthesizedInputs": [],
-    "stardustVersion": "0.29.1"
+    "writtenBy": "stardust:replica",
+    "writtenAt": "2026-10-13T14:43:31.269Z",
+    "mode": "bounded-single",
+    "synthesizedFrom": [
+      "stardust/current/pages/index.json",
+      "stardust/replica/lift/tokens.json"
+    ]
+  },
+  "color": {
+    "brandBlue": "#2494d2",
+    "heroBlue": "#009bd9",
+    "yellow": "#f5ee2f",
+    "yellowAlt": "#f9ec31",
+    "ruleYellow": "#ffff00",
+    "text": "#3c3c3b",
+    "heading": "#3c3c3c",
+    "lightGray": "#f0f0f0",
+    "footerGray": "#444444",
+    "white": "#ffffff",
+    "gridScrim": "rgba(60,60,60,0.7)",
+    "gridScrimHover": "rgba(0,155,217,0.7)",
+    "docLink": "#000000"
+  },
+  "typography": {
+    "fonts": {
+      "body": "'Gotham-Light' (licensed) → substitute Montserrat 300, size-adjust 99%",
+      "medium": "'GothamMedium' (licensed) → substitute Montserrat 500, size-adjust 99%",
+      "bold": "'GothamBold' (licensed) → substitute Montserrat 700, size-adjust 100%",
+      "heroHeading": "'Gotham Bold', Helvetica, Arial, Lucida, sans-serif (undefined face on source → renders the Helvetica/Arial fallback)",
+      "icons": "FontAwesome 4.7 (OFL webfont, rehosted)"
+    },
+    "ramp": {
+      "body": "16px/24px, weight 400",
+      "h2Section": "32px/38.4px GothamBold, weight 500, uppercase, #3c3c3c, centred; ::after 10% wide 5px #ff0 rule, margin .5em auto 1.5em",
+      "h2Hero": "28px/33.6px, weight 700, letter-spacing 1px, uppercase, #3c3c3c; ::after 10% rule margin 14px auto 42px",
+      "topNav": "12px/18px GothamMedium #fff, padding 8px",
+      "mainNav": "12px/18px Gotham-Light uppercase #f5ee2f, padding 8px, li margin 0 1.6px (1200–1469 range: font-size .75rem)",
+      "newsTitle": "16px/24px GothamMedium #fff centred, min-height 9rem",
+      "gridLabel": "24px/normal GothamMedium uppercase #fff",
+      "docTitle": "19.2px/23.04px weight 700 #000",
+      "checkbox": "14px/21px"
+    }
+  },
+  "components": {
+    "buttons": {
+      "secondary": "bg #f5ee2f, color #2494d2, 16px/24px GothamMedium weight 700 uppercase, padding 2.4px 32px, border 2px solid #f5ee2f, radius 32px; hover bg #2494d2 color #fff",
+      "navCta": "same palette, 12px/18px, padding 2.4px 16px",
+      "submit": "bg #f5ee2f color #2494d2, 16px weight 700 uppercase, padding 8px 24px, border 2px, radius 4px"
+    }
+  },
+  "layout": {
+    "container": "Bootstrap 4: max-width 1140px (≥1200), padding 0 15px; rows margin 0 -15px",
+    "header": "sticky, 98px @1440 (padding 8px 16px, logo 176×72), 90px @360 (logo 142×48); scrolled>100px: logo 9rem×3.5rem, navbar padding .1rem 16px",
+    "hero": "height 70vh, overlay #009bd9 multiply, card max-width 592px padding 48px (mobile 48px 32px margin 32px)",
+    "section": "padding 4rem 0; newsletter 3rem 0 2rem",
+    "newsCard": "380px slides (3-up, all widths), card radius 24px, image 9rem",
+    "grid": "repeat(4,1fr), gap 20px, rows 15vw, first item spans 2×2",
+    "map": "inline SVG viewBox 0 0 1142.36 840.64 at 100% width",
+    "docs": "col-auto 242px (padding 0 15px), cover 212×300; even items image-first (column-reverse)",
+    "footer": "#444, padding 30px 0; fcc logo 192×192 left, social + Privacy right"
   },
   "extensions": {
-    "componentStyle": {
-      "buttons": [],
-      "links": [
-        {
-          "selector": "a",
-          "color": "#0000ee",
-          "textDecoration": "underline"
-        }
-      ]
-    },
-    "motifs": {
-      "borderRadius": {
-        "mode": 0
-      },
-      "shadows": [],
-      "gradients": [],
-      "opacity": [
-        {
-          "selector": "svg",
-          "value": 0.55
-        },
-        {
-          "selector": "p + p",
-          "value": 0.6
-        }
-      ]
-    },
-    "voice": {
-      "ctaLabels": [
-        "Learn more"
-      ],
-      "heroHeadline": null,
-      "languages": [
-        "en",
-        "ar",
-        "zh",
-        "fr",
-        "ru",
-        "es"
-      ]
-    },
-    "colorScheme": {
-      "declared": "light dark",
-      "background": {
-        "light": "#eeeeee",
-        "dark": "#222222"
-      },
-      "captured": "light"
-    },
-    "modules": [],
-    "metadata": {
-      "siteName": "Example Domain",
-      "defaultOgImage": null,
-      "themeColor": null,
-      "defaultLocale": "en"
-    },
     "breakpoints": {
-      "containerMaxWidth": "480px",
+      "containerMaxWidth": null,
       "probeWidth": 2560,
-      "shellMaxWidth": "480px",
-      "caps": [
-        {
-          "kind": "shell",
-          "px": 480,
-          "via": "max-width",
-          "selector": "body",
-          "pages": [
-            "https://www.example.com/"
-          ]
-        }
-      ],
+      "shellMaxWidth": null,
+      "caps": [],
       "modules": [
         {
-          "url": "https://www.example.com/",
+          "url": "https://balbriggan.ie/",
           "section": 0,
-          "selector": "body > svg",
+          "selector": "div.wp-block-group.section > div.wp-block-group__inner-container.is-layout-flow > div.wp-block-columns.is-layout-flex > div.wp-block-column.is-layout-flow",
           "px": null
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://balbriggan.ie/",
           "section": 1,
-          "selector": "body > p",
+          "selector": "div.wp-block-group.section > div.wp-block-group__inner-container.is-layout-flow > div.wp-block-columns.is-layout-flex > div.wp-block-column.is-layout-flow",
           "px": null
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://balbriggan.ie/",
           "section": 2,
-          "selector": "body > p",
-          "px": null
-        },
-        {
-          "url": "https://www.example.com/",
-          "section": 3,
-          "selector": "body > p",
-          "px": null
-        },
-        {
-          "url": "https://www.example.com/",
-          "section": 4,
-          "selector": "body > p",
-          "px": null
-        },
-        {
-          "url": "https://www.example.com/",
-          "section": 5,
-          "selector": "body > p",
-          "px": null
-        },
-        {
-          "url": "https://www.example.com/",
-          "section": 6,
-          "selector": "body > p",
-          "px": null
-        },
-        {
-          "url": "https://www.example.com/",
-          "section": 7,
-          "selector": "body > a",
+          "selector": "div.wp-block-group.section > div.wp-block-group__inner-container.is-layout-flow > div.wp-block-columns.is-layout-flex > div.wp-block-column.is-layout-flow",
           "px": null
         }
       ],
       "capRegister": [],
       "capProvenance": {
         "writtenBy": "skills/replica/scripts/cap-probe.mjs",
-        "writtenAt": "2026-10-08T09:25:15.473Z",
+        "writtenAt": "2026-10-13T14:36:29.022Z",
         "baseWidth": 1440,
         "urls": [
-          "https://www.example.com/"
+          "https://balbriggan.ie/"
         ]
+      },
+      "source": {
+        "navbarExpand": 1200,
+        "md": 768,
+        "lg": 992,
+        "navTight": "1200–1469"
       }
     }
   }

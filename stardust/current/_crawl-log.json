@@ -7,7 +7,10 @@
   "consent": {
     "method": "auto"
   },
-  "favicon": null,
+  "favicon": {
+    "url": "https://balbriggan.ie/wp-content/uploads/2022/02/cropped-favicon-32x32.png",
+    "file": "assets/favicon.png"
+  },
   "crawl": {
     "failures": []
   },
@@ -19,20 +22,114 @@
     "pages": 1,
     "pagesWithSameSiteData": 0,
     "pagesWithSearchForm": 0,
-    "pagesHydrated": 0,
+    "pagesHydrated": 1,
     "truncatedPages": 0,
-    "endpoints": [],
-    "thirdPartyScriptHosts": [],
-    "frameworkHints": [],
-    "globalState": [],
-    "formTargets": []
-  },
-  "visionCheck": [
-    {
-      "slug": "index",
-      "verdict": "ok",
-      "notes": "thumbnail shows glyph, six paragraphs (en/ar/zh/fr/ru/es) and the Learn more link on the #eee ground; record matches; no imagery expected (cssBackgrounds [] is correct)"
-    }
-  ],
-  "siblingCandidates": []
+    "endpoints": [
+      {
+        "method": "POST",
+        "host": "www.google-analytics.com",
+        "path": "/g/collect",
+        "query": [
+          "_ee",
+          "_eu",
+          "_fv",
+          "_nsi",
+          "_p",
+          "_s",
+          "_ss",
+          "cid",
+          "dl",
+          "dma",
+          "dt",
+          "en",
+          "frm",
+          "gcd",
+          "gtm",
+          "ir",
+          "ngs",
+          "npa",
+          "pscdl",
+          "rcb",
+          "sct",
+          "seg",
+          "sid",
+          "sr",
+          "tag_exp",
+          "tfd",
+          "tid",
+          "uaa",
+          "uab",
+          "uafvl",
+          "uam",
+          "uamb",
+          "uap",
+          "uapv",
+          "uaw",
+          "ul",
+          "v"
+        ],
+        "resourceType": "fetch",
+        "contentType": "text/plain",
+        "sameSite": false,
+        "example": "https://www.google-analytics.com/g/collect",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "thirdPartyScriptHosts": [
+      {
+        "host": "connect.facebook.net",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "www.googletagmanager.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "frameworkHints": [
+      {
+        "hint": "wordpress",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "globalState": [
+      {
+        "name": "dataLayer",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ],
+    "formTargets": [
+      {
+        "action": "https://balbriggan.ie/",
+        "method": "post",
+        "sameOrigin": true,
+        "search": false,
+        "fieldNames": [
+          "input_1",
+          "input_2",
+          "input_3",
+          "input_4.1",
+          "ak_hp_textarea"
+        ],
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      }
+    ]
+  }
 }

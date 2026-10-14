@@ -1,83 +1,33 @@
-<!-- stardust:provenance
-  writtenBy: stardust:extract
-  writtenAt: 2026-10-08T09:24:52Z
-  readArtifacts:
-    - stardust/current/_brand-extraction.json
-    - stardust/current/_computed-styles.json
-    - stardust/current/pages/index.html
-  synthesizedInputs: []
-  stardustVersion: 0.29.1
--->
 ---
-name: Example Domain
-description: A single, centered explanatory page in system type on a light grey ground.
-colors:
-  page-bg: "#eeeeee"
-  text: "#000000"
-  link: "#0000ee"
-typography:
-  body:
-    fontFamily: "system-ui, sans-serif"
-    fontSize: "16px"
-    fontWeight: 400
-    lineHeight: 1.6
-    letterSpacing: "normal"
-  body-secondary:
-    fontFamily: "system-ui, sans-serif"
-    fontSize: "0.875em"
-    fontWeight: 400
-    lineHeight: 1.6
-    letterSpacing: "normal"
-rounded: {}
-spacing:
-  inline: "2em"
-  bottom: "2em"
-  top: "25vh"
-  measure: "26em"
-components:
-  link:
-    textColor: "{colors.link}"
-    typography: "{typography.body}"
+_provenance:
+  writtenBy: stardust:replica
+  writtenAt: 2026-10-13T14:43:31Z
+  mode: bounded-single
+  synthesizedFrom:
+    - stardust/current/pages/index.json
+    - stardust/replica/lift/tokens.json
 ---
 
-# Example Domain — current state
+# Our Balbriggan — design (descriptive, bounded-single)
 
-## Overview
+Every value below is lifted from the live site's CSS / computed styles (stardust/replica/lift/tokens.json).
 
-One centered column of text, 26em wide, vertically offset by a quarter of the viewport, on a flat light grey page. A small decorative glyph (book with quotation marks) sits above the copy at 55% opacity. Six paragraphs repeat the same notice in six languages; the first is full size, the rest smaller and at 60% opacity. One underlined link closes the page. The page declares `color-scheme: light dark`; the captured state is the light scheme.
+## Palette
+brand blue #2494d2 (header, newsletter, news cards, links) · hero blue #009bd9 (multiply overlay) ·
+yellow #f5ee2f (buttons, main-nav text) / #f9ec31 · heading rule #ffff00 · text #3c3c3b / headings #3c3c3c ·
+light gray band #f0f0f0 · footer #444.
 
-## Colors
-
-- Page background `#eeeeee` (light scheme of `light-dark(#eee,#222)`).
-- Text `#000000` (user-agent default; paragraphs after the first render at opacity .6).
-- Link `#0000ee` (user-agent default, underlined; visited and focus colours are defaults too).
-
-## Typography
-
-- One family, `system-ui, sans-serif`, weight 400, line-height 1.6.
-- Body 16px; secondary paragraphs 0.875em (14px). No headings exist on the page.
-- Text is centered. Arabic paragraph is `dir="rtl"`.
-
-## Layout
-
-- `body`: `max-width: 26em; margin: auto; padding: 25vh 2em 2em; text-align: center`.
-- The glyph: 44×44, `display: block; margin: -2.75em auto 0`.
-- No breakpoints: the layout is fluid down to 2em side padding.
-
-## Elevation & Depth
-
-None. Flat surface, no shadows, no borders.
-
-## Shapes
-
-No radii. The only shape is the inline SVG glyph.
+## Type
+Gotham family (Light body 16/24, Medium for nav/buttons/card titles, Bold for section headings 32/38.4
+uppercase with a 10%-wide 5px yellow rule beneath). Gotham is a licensed commercial face: the rebuild keeps
+the Gotham family names first in every stack and renders a metric-matched open substitute (Montserrat
+300/500/700) until a licensed kit is dropped in. Hero heading uses the source's Helvetica/Arial stack.
 
 ## Components
+Pill buttons (yellow, blue text, radius 2rem, padding .15rem 2rem, uppercase). News cards (blue, radius 1.5rem,
+9rem image, centred title). Image grid tiles with a 70% charcoal scrim and uppercase labels. Document covers
+212×300 with titles, alternating above/below. Newsletter form on blue.
 
-- Link: default underlined anchor, `#0000ee`, 16px.
-
-## Do's and Don'ts
-
-- Do keep the six-language sequence and order verbatim.
-- Do keep the opacity steps (.55 glyph, .6 secondary paragraphs) rather than approximating with grey.
-- Don't add headings, a header or a footer: the page has none.
+## Layout
+Bootstrap 4 container 1140px; sections padded 4rem; sticky 98px header that compacts after 100px of scroll;
+hero 70vh. Breakpoints: navbar collapses below 1200px; columns stack below 768px.

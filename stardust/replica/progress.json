@@ -1,26 +1,35 @@
 {
-  "_provenance": { "writtenBy": "stardust:replica", "writtenAt": "2026-10-08T09:34:37Z", "stardustVersion": "0.29.1" },
-  "contentRoot": "body",
-  "contentRootNote": "The live page has no landmark or wrapper and no header/footer; body is the only selector that scopes both sides symmetrically. content-diff confirms header/footer absent on both sides.",
-  "pageTypes": {
-    "static": {
-      "archetype": "index",
-      "liveUrl": "https://www.example.com/",
+  "site": "https://balbriggan.ie/",
+  "breakpoints": [1440, 360],
+  "archetypes": {
+    "landing": {
+      "slug": "index",
+      "liveUrl": "https://balbriggan.ie/",
       "prototype": "stardust/prototypes/index-proposed.html",
-      "iterations": { "1440": 1, "360": 1 },
+      "css": ["stardust/prototypes/canon.css", "stardust/prototypes/index.css"],
+      "status": "gated",
+      "iterationsUsed": { "1440": 3, "360": 3 },
       "gates": {
-        "1440": { "pixelPct": 0.0, "heightDelta": 0, "overflow": "ok (scrollWidth 1440 = viewport)", "contentDiffStructural": 0, "contentDiffAdvisory": 2, "visualDiffFlags": 0, "clipped": 0, "capProbe": "PASS at 2560 (0 of 9 rows failed)", "chromeParity": "no header/footer on either side; body-region parity quiet (exit 0)", "prototypeTableRow": "PASS (gates/prototypes-1440)", "round": "iter1 --full", "verdict": "PASS" },
-        "360":  { "pixelPct": 0.0, "heightDelta": 0, "overflow": "ok (scrollWidth 360 = viewport)", "contentDiffStructural": 0, "contentDiffAdvisory": 2, "visualDiffFlags": 0, "clipped": 0, "chromeParity": "no header/footer on either side; body-region parity quiet (exit 0)", "prototypeTableRow": "PASS (gates/prototypes-360)", "round": "iter1 --full", "verdict": "PASS" }
+        "1440": { "pixel": "1.43%", "heightDelta": 0, "contentDiffRed": 0, "clip": 0, "overflow": "ok", "units": "PASS (12/12 within 4px)", "chromeCrop": { "header": "2.28% (residual, R-01)", "footer": "0.43%" }, "evidence": "stardust/replica/gates/index-1440/" },
+        "360": { "pixel": "2.35%", "heightDelta": 0, "contentDiffRed": 0, "clip": "2 (allowed: source parity, clip-allow.json)", "overflow": "ok (live overflows +10px; build does not)", "units": "PASS (12/12)", "chromeCrop": { "header": "0.00%", "footer": "0.67%" }, "evidence": "stardust/replica/gates/index-360/" },
+        "capProbe": "PASS at 2560 (8 rows)",
+        "prototypeTables": ["stardust/replica/gates/prototypes-1440/", "stardust/replica/gates/prototypes-360/"]
       },
       "residuals": [
-        { "kind": "content-diff 🟡 ×2", "status": "justified", "note": "The live page carries its CSS in an inline <style> inside <body>; content-diff reads that text as a body node ('svg{display:block;…') and anchors the icon to it. The prototype's CSS is in files, so the 'MISSING BODY' / 'ICON MOVED' findings are style text, not copy. All six paragraphs and the link match." },
-        { "kind": "chrome-parity REGION", "status": "justified", "note": "gate.sh's default chrome-parity reports 'no element matches header/footer' on BOTH sides as 2 deltas; there is no chrome on this page. Standalone chrome-parity --no-defaults --region body=body is quiet at 1440 and 360 (gates/index-<w>/chrome-parity-body-iter1.txt)." }
+        "header crop 2.28% @1440 and chrome-parity nav text Δx ≤ 10px / Δw ≤ 5px: substitute font glyph widths (R-01); all 12 header texts paired",
+        "inline link glyph boxes and Privacy link Δh +4 before metric overrides — resolved by ascent/descent overrides",
+        "visual-diff STRETCHED IMAGE ×9: object-fit cover crops identical to the source (news 350×144, grid tiles) — justified",
+        "chrome-parity default run reports a REGION mismatch (live has no <header>/<footer> element); explicit --region run: chrome-parity-regions-iter3.txt"
       ],
-      "motion": { "observed": 0, "implemented": 0, "dead": ["hover a (no measured diff)"], "evidence": ["stardust/replica/motion/index.json", "stardust/replica/motion/index-build.json", "stardust/replica/motion/index-compare.txt"] },
-      "captureState": [ { "item": "color-scheme", "captured": "light (#eee ground)", "note": "source declares light dark; prototype lifts the same light-dark() rule" } ],
-      "fonts": { "policy": "system-ui, sans-serif — no font files on the source; nothing to self-host or substitute" },
-      "passedAt": "2026-10-08T09:34:37Z",
-      "approvedBy": "hands-off"
+      "captureState": [
+        { "what": "hero video (autoplay muted loop mp4 from Vimeo)", "captured": "blank in headless Chromium on both sides (no H.264) — #009bd9 overlay only", "restoreAtDelivery": true }
+      ],
+      "motion": {
+        "observed": ["header .scrolled compaction after 100px", "main-menu dropdown (.show)", "news carousel arrows/dots (slick-active)", "button hover (bg #2494d2, color #fff, border #545b62, 300ms)", "explore tile hover (scrim rgba(0,155,217,.7), 3px #f9ec31 border, link color)", "hero video autoplay"],
+        "implemented": ["is-scrolled header compaction", "dropdown is-open", "news rail is-active dots + arrows", "button hover", "explore hover", "map pin hover scale + label slide (CSS)", "hero video autoplay muted loop"],
+        "dead": ["outline-* transitions (focus ring after the click poke)", "news-card hover / map-pin hover: no measured diff on live sampler (CSS present, implemented as in source CSS)"],
+        "evidence": ["stardust/replica/motion/index.json", "stardust/replica/motion/index-build.json"]
+      }
     }
   }
 }

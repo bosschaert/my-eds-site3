@@ -1,144 +1,37 @@
 {
-  "_provenance": {
-    "writtenBy": "stardust:extract",
-    "writtenAt": "2026-10-08T09:24:52Z",
-    "readArtifacts": [
-      "stardust/current/_brand-extraction.json",
-      "stardust/current/_computed-styles.json",
-      "stardust/current/pages/index.html"
-    ],
-    "synthesizedInputs": [],
-    "stardustVersion": "0.29.1"
-  },
   "extensions": {
-    "componentStyle": {
-      "buttons": [],
-      "links": [
-        {
-          "selector": "a",
-          "color": "#0000ee",
-          "textDecoration": "underline"
-        }
-      ]
-    },
-    "motifs": {
-      "borderRadius": {
-        "mode": 0
-      },
-      "shadows": [],
-      "gradients": [],
-      "opacity": [
-        {
-          "selector": "svg",
-          "value": 0.55
-        },
-        {
-          "selector": "p + p",
-          "value": 0.6
-        }
-      ]
-    },
-    "voice": {
-      "ctaLabels": [
-        "Learn more"
-      ],
-      "heroHeadline": null,
-      "languages": [
-        "en",
-        "ar",
-        "zh",
-        "fr",
-        "ru",
-        "es"
-      ]
-    },
-    "colorScheme": {
-      "declared": "light dark",
-      "background": {
-        "light": "#eeeeee",
-        "dark": "#222222"
-      },
-      "captured": "light"
-    },
-    "modules": [],
-    "metadata": {
-      "siteName": "Example Domain",
-      "defaultOgImage": null,
-      "themeColor": null,
-      "defaultLocale": "en"
-    },
     "breakpoints": {
-      "containerMaxWidth": "480px",
+      "containerMaxWidth": null,
       "probeWidth": 2560,
-      "shellMaxWidth": "480px",
-      "caps": [
-        {
-          "kind": "shell",
-          "px": 480,
-          "via": "max-width",
-          "selector": "body",
-          "pages": [
-            "https://www.example.com/"
-          ]
-        }
-      ],
+      "shellMaxWidth": null,
+      "caps": [],
       "modules": [
         {
-          "url": "https://www.example.com/",
+          "url": "https://balbriggan.ie/",
           "section": 0,
-          "selector": "body > svg",
+          "selector": "div.wp-block-group.section > div.wp-block-group__inner-container.is-layout-flow > div.wp-block-columns.is-layout-flex > div.wp-block-column.is-layout-flow",
           "px": null
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://balbriggan.ie/",
           "section": 1,
-          "selector": "body > p",
+          "selector": "div.wp-block-group.section > div.wp-block-group__inner-container.is-layout-flow > div.wp-block-columns.is-layout-flex > div.wp-block-column.is-layout-flow",
           "px": null
         },
         {
-          "url": "https://www.example.com/",
+          "url": "https://balbriggan.ie/",
           "section": 2,
-          "selector": "body > p",
-          "px": null
-        },
-        {
-          "url": "https://www.example.com/",
-          "section": 3,
-          "selector": "body > p",
-          "px": null
-        },
-        {
-          "url": "https://www.example.com/",
-          "section": 4,
-          "selector": "body > p",
-          "px": null
-        },
-        {
-          "url": "https://www.example.com/",
-          "section": 5,
-          "selector": "body > p",
-          "px": null
-        },
-        {
-          "url": "https://www.example.com/",
-          "section": 6,
-          "selector": "body > p",
-          "px": null
-        },
-        {
-          "url": "https://www.example.com/",
-          "section": 7,
-          "selector": "body > a",
+          "selector": "div.wp-block-group.section > div.wp-block-group__inner-container.is-layout-flow > div.wp-block-columns.is-layout-flex > div.wp-block-column.is-layout-flow",
           "px": null
         }
       ],
       "capRegister": [],
       "capProvenance": {
         "writtenBy": "skills/replica/scripts/cap-probe.mjs",
-        "writtenAt": "2026-10-08T09:25:15.473Z",
+        "writtenAt": "2026-10-13T14:36:29.022Z",
         "baseWidth": 1440,
         "urls": [
-          "https://www.example.com/"
+          "https://balbriggan.ie/"
         ]
       }
     }

@@ -1,13 +1,13 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/plan",
-    "writtenAt": "2026-10-08T09:42:48.695Z",
+    "writtenAt": "2026-10-13T15:10:17.239Z",
     "readArtifacts": [
       "stardust/rollout/coverage"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-08T09:42:48.695Z",
+  "generatedAt": "2026-10-13T15:10:17.239Z",
   "fragments": [],
   "deliveryOrder": [
     "index"
@@ -21,8 +21,32 @@
       "isRepresentative": true,
       "convert": [
         {
-          "id": "notice",
-          "edsBlockName": "notice"
+          "id": "hero",
+          "edsBlockName": "hero"
+        },
+        {
+          "id": "intro",
+          "edsBlockName": "intro"
+        },
+        {
+          "id": "news",
+          "edsBlockName": "news"
+        },
+        {
+          "id": "explore",
+          "edsBlockName": "explore"
+        },
+        {
+          "id": "map",
+          "edsBlockName": "map"
+        },
+        {
+          "id": "docs",
+          "edsBlockName": "docs"
+        },
+        {
+          "id": "newsletter",
+          "edsBlockName": "newsletter"
         }
       ],
       "reuse": []

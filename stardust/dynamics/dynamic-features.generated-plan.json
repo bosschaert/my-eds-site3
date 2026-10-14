@@ -1,28 +1,68 @@
 {
  "_provenance": {
   "writtenBy": "stardust:dynamics plan",
-  "writtenAt": "2026-10-13T14:44:13.093Z",
+  "writtenAt": "2026-10-14T09:00:43.445Z",
   "input": "stardust/current/_dynamics.json",
-  "target": "main--e8103195--aemcoder.aem.page",
+  "target": "main--1370701b--aemcoder.aem.page",
   "migrated": null,
   "knowledge": null,
   "chrome": null
  },
  "rows": [
   {
-   "id": "a-cms-app-settings-object-wp",
+   "id": "a-unknown-third-party-host-fareharbor-com",
    "class": "A",
-   "feature": "CMS / app settings object wp",
+   "feature": "unknown third-party host fareharbor.com",
    "pages": 1,
    "probed": 1,
    "reach": null,
-   "evidence": [],
-   "pattern": "read-settings",
+   "evidence": [
+    "fareharbor.com"
+   ],
+   "pattern": "inspect",
    "disposition": "static-snapshot",
-   "reproducibility": "self",
+   "reproducibility": "needs-human-capture",
    "status": "pending",
    "phase": "detect",
-   "decision": "— (keys name endpoints, ids, vendors)"
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-unknown-third-party-host-otel-hfo-fareharbor-engineering",
+   "class": "A",
+   "feature": "unknown third-party host otel-hfo.fareharbor.engineering",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "otel-hfo.fareharbor.engineering"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-first-party-api-get-wp-json-complianz-v1-banner",
+   "class": "A",
+   "feature": "first-party API GET /wp-json/complianz/v1/banner",
+   "pages": 1,
+   "probed": 1,
+   "reach": {
+    "pages": 1,
+    "of": 1
+   },
+   "evidence": [
+    "GET /wp-json/complianz/v1/banner?lang,locale,token → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (Failed to parse URL from main--1370701b--aemcoder.aem.page/wp-json/complianz/v1/)"
   },
   {
    "id": "a-cms-app-settings-object-datalayer",
@@ -40,39 +80,204 @@
    "decision": "— (keys name endpoints, ids, vendors)"
   },
   {
-   "id": "f-form-gform-1-origin-5-fields",
-   "class": "F",
-   "feature": "form \"gform_1\" → origin / (5 fields)",
+   "id": "cr-client-rendered-slot-mx-auto-flex-flex-col-reverse",
+   "class": "CR",
+   "feature": "client-rendered slot mx-auto flex flex-col-reverse",
    "pages": 1,
    "probed": 1,
    "reach": null,
    "evidence": [
-    "text:input_1,text:input_2,email:input_3,checkbox:input_4.1,textarea:ak_hp_textarea",
-    "gform_ajax,is_submit_1,gform_submit,gform_unique_id,state_1,gform_target_page_number_1,gform_source_page_number_1,gform_field_values,ak_js"
+    "Visit Skerries Mills Comprising of three national monuments "
    ],
-   "pattern": "forms",
-   "disposition": "rebuild-native",
-   "reproducibility": "needs-backend",
-   "status": "pending",
-   "phase": "forms",
-   "decision": "production endpoint; interim capture ships now"
-  },
-  {
-   "id": "m-modal-trigger-aria-haspopup-chrome-only-a-content",
-   "class": "M",
-   "feature": "modal trigger aria-haspopup (chrome only) → a:content",
-   "pages": 1,
-   "probed": 1,
-   "reach": null,
-   "evidence": [
-    "https://balbriggan.ie/#"
-   ],
-   "pattern": "chrome-interaction",
-   "disposition": "rebuild-native",
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
    "reproducibility": "self",
    "status": "pending",
-   "phase": "interactive",
-   "decision": "none (the header contract is the spec)"
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-attraction-carousel-relative-pb-32",
+   "class": "CR",
+   "feature": "client-rendered slot attraction-carousel relative pb-32",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "The Attractions Museum Commencing our guided tour, learn abo"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-flex-flex-col-items-stretch",
+   "class": "CR",
+   "feature": "client-rendered slot flex flex-col items-stretch",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "Museum Commencing our guided tour, learn about life at the M",
+    "Art At The Mill As a social enterprise, we are proud to show",
+    "The Watermill Cafe While freshly baked fare is at the heart ",
+    "The Craft Shop Our local Crafter Project showcases a series "
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-flex-flex-col-space-y-4",
+   "class": "CR",
+   "feature": "client-rendered slot flex flex-col space-y-4",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "History of the mills Windmills in Western Europe date from t"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-testimonials-bg-brand-blue-js-show-o",
+   "class": "CR",
+   "feature": "client-rendered slot testimonials bg-brand-blue js-show-on-scroll",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "What Our Visitors Say “Incredible experience!!! Worth the tr"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-py-16-pt-8-js-show-on-scroll",
+   "class": "CR",
+   "feature": "client-rendered slot py-16 pt-8 js-show-on-scroll",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "Tickets Adult Ticket €12 Book Now Student €11 Book Now Senio"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-flex-flex-col-js-show-on-scroll-img",
+   "class": "CR",
+   "feature": "client-rendered slot flex flex-col js-show-on-scroll-img",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "Adult Ticket €12 Book Now",
+    "Senior Citizen €11 Book Now"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "l-listing-candidate-flex-flex-col-6-cards",
+   "class": "L",
+   "feature": "listing candidate flex flex-col (6 cards)",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "l-listing-candidate-mob-sub-6-cards",
+   "class": "L",
+   "feature": "listing candidate mob-sub (6 cards)",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "l-listing-candidate-swiper-wrapper-6-cards",
+   "class": "L",
+   "feature": "listing candidate swiper-wrapper (6 cards)",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "l-listing-candidate-grid-grd-cols-1-3-cards",
+   "class": "L",
+   "feature": "listing candidate grid grd-cols-1 (3 cards)",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [],
+   "pattern": "listing-index-backed",
+   "disposition": "index-backed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "listings",
+   "decision": "index-driven or editorially curated?"
+  },
+  {
+   "id": "t-unknown-third-party-host-fh-kit-com",
+   "class": "T",
+   "feature": "unknown third-party host fh-kit.com",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "fh-kit.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
   },
   {
    "id": "t-tag-manager-google-tag-manager",
@@ -83,6 +288,57 @@
    "reach": null,
    "evidence": [
     "www.googletagmanager.com"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-unknown-third-party-host-dipr2nuwo661l-cloudfront-net",
+   "class": "T",
+   "feature": "unknown third-party host dipr2nuwo661l.cloudfront.net",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "dipr2nuwo661l.cloudfront.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-rum-error-monitoring",
+   "class": "T",
+   "feature": "RUM: error monitoring",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "o10963.ingest.sentry.io"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
+  },
+  {
+   "id": "t-unknown-third-party-host-marketing-fareharbor-com",
+   "class": "T",
+   "feature": "unknown third-party host marketing.fareharbor.com",
+   "pages": 1,
+   "probed": 1,
+   "reach": null,
+   "evidence": [
+    "marketing.fareharbor.com"
    ],
    "pattern": "consent-gated-tags",
    "disposition": "embed-passthrough",
@@ -109,21 +365,21 @@
    "decision": "which tags run on the new host; property ids"
   },
   {
-   "id": "t-marketing-ad-retargeting-pixel",
-   "class": "T",
-   "feature": "marketing: ad / retargeting pixel",
+   "id": "v-iframe-without-src-runtime-injected-embed",
+   "class": "V",
+   "feature": "iframe without src (runtime-injected embed)",
    "pages": 1,
    "probed": 1,
    "reach": null,
    "evidence": [
-    "connect.facebook.net"
+    "1×1"
    ],
-   "pattern": "consent-gated-tags",
+   "pattern": "embed-passthrough",
    "disposition": "embed-passthrough",
-   "reproducibility": "needs-business-decision",
+   "reproducibility": "needs-human-capture",
    "status": "pending",
-   "phase": "tags",
-   "decision": "which tags run on the new host; property ids"
+   "phase": "embeds",
+   "decision": "resolve the runtime src from a rendered capture"
   }
  ]
 }

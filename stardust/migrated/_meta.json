@@ -5,47 +5,44 @@
   "template": null,
   "modules": [
     "hero",
-    "intro",
-    "news",
-    "explore",
-    "map",
-    "docs",
-    "newsletter"
+    "split",
+    "attractions",
+    "reviews",
+    "tickets",
+    "callout",
+    "posts"
   ],
   "slotsFilled": [
-    "hero",
-    "intro",
-    "band",
-    "band",
-    "map",
-    "band",
-    "newsletter"
+    "sm-header",
+    "sm-mobmenu",
+    "sm-content",
+    "sm-footer"
   ],
   "canonShas": {
-    "header": "6e94bf3902fe",
-    "footer": "9abfac6c755e",
-    "css": "8b22dd9dcb82"
+    "header": "5a0970f282ec",
+    "footer": "3c4b615b946b",
+    "css": "4bd9dbebbd0b"
   },
   "deviations": [],
   "migrationDecisions": [],
   "metadata": {
-    "title": "Our Balbriggan",
-    "description": "Balbriggan is set to be transformed; its rejuvenation plan sets out an ambitious new vison shaped by the towns people.",
-    "canonical": null,
-    "lang": "en-US"
+    "title": "Skerries Mills, A Unique Heritage Museum in Dublin",
+    "description": "Visit Skerries Mills, just 30 mins from Dublin, featuring 3 historic mills and a bakery, perfect for heritage tours and family days out.",
+    "canonical": "https://www.skerriesmills.ie/",
+    "lang": "en-GB"
   },
   "jsonLd": {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Our Balbriggan",
-    "description": "Balbriggan is set to be transformed; its rejuvenation plan sets out an ambitious new vison shaped by the towns people.",
-    "url": "https://balbriggan.ie/"
+    "name": "Skerries Mills, A Unique Heritage Museum in Dublin",
+    "description": "Visit Skerries Mills, just 30 mins from Dublin, featuring 3 historic mills and a bakery, perfect for heritage tours and family days out.",
+    "url": "https://www.skerriesmills.ie/"
   },
-  "migratedAt": "2026-10-13T15:09:40Z",
-  "designMdSha": "2c9310b142aa",
-  "designJsonSha": "ffa72ed8e270",
-  "sourceCurrentSha": "49afb10a4a09",
-  "sourceProposedSha": "81fc38a31f1b",
+  "migratedAt": "2026-10-14T09:31:02Z",
+  "designMdSha": "79801e20e186",
+  "designJsonSha": "bc0684b0ef81",
+  "sourceCurrentSha": "f94fa0fa1878",
+  "sourceProposedSha": "c28dd4367f91",
   "fidelityTier": "archetype",
   "archetypeSource": null,
   "archetypeSha": null,
@@ -54,218 +51,290 @@
     "content-fidelity"
   ],
   "gateEvidence": {
-    "content-fidelity": "approved archetype; content-diff 0 structural red @1440/360 (gates/index-*/iter3)"
+    "content-fidelity": "archetype = gated prototype; content-diff 0 red at 1440+360 (stardust/replica/gates/index-*/)"
   },
   "contentDeviations": [],
-  "assetsBundled": 36,
+  "assetsBundled": 63,
   "missingAssets": [],
   "brokenInternalLinks": [
     {
-      "href": "https://balbriggan.ie/news/",
+      "href": "https://www.skerriesmills.ie/attractions/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/downloads/",
+      "href": "https://www.skerriesmills.ie/attractions/guided-tour/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/newsletters/",
+      "href": "https://www.skerriesmills.ie/attractions/museum/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/contact/",
+      "href": "https://www.skerriesmills.ie/attractions/art-at-the-mill/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/town-transformation/",
+      "href": "https://www.skerriesmills.ie/history-of-the-mills/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/smart-balbriggan/",
+      "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/urbact-iplace/",
+      "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/time4eu/",
+      "href": "https://www.skerriesmills.ie/school-tours/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/news/",
+      "href": "https://www.skerriesmills.ie/hire-space-at-the-mill/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/leadership-governance/",
+      "href": "https://www.skerriesmills.ie/visiting-groups/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/the-team/",
+      "href": "https://www.skerriesmills.ie/about-us/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/community-development/",
+      "href": "https://www.skerriesmills.ie/about-us/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/education-skills-training/",
+      "href": "https://www.skerriesmills.ie/history-of-the-mills/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/sustainability-climate-action-and-biodiversity/",
+      "href": "https://www.skerriesmills.ie/community/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/economic-development/",
+      "href": "https://www.skerriesmills.ie/blog/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/",
+      "href": "https://www.skerriesmills.ie/category/events/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/#learning-timetable",
+      "href": "https://www.skerriesmills.ie/plan-your-visit/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/loves-learning-festival/",
+      "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/community-platform/",
+      "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/contact/",
+      "href": "https://www.skerriesmills.ie/faq-accessibility/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/faq/",
+      "href": "https://www.skerriesmills.ie/explore-the-area/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/e15-million-harbour-square-will-be-heartbeat-of-balbriggan/",
+      "href": "https://www.skerriesmills.ie/getting-here/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/prestigious-musical-theatre-degree-and-masters-to-be-offered-in-balbriggan/",
+      "href": "https://www.skerriesmills.ie/contact/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/balbriggan-to-be-seen-by-millions-worldwide-as-it-hosts-nfl-draft/",
+      "href": "https://www.skerriesmills.ie/sustainability-dublin-things-to-do/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/planning-for-balbriggan-swimming-pool-moves-to-next-phase/",
+      "href": "/tickets/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/news",
+      "href": "https://www.skerriesmills.ie/attractions/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/town-transformation/",
+      "href": "https://www.skerriesmills.ie/attractions/guided-tour/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/education-skills-training/",
+      "href": "https://www.skerriesmills.ie/attractions/museum/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/community-development/",
+      "href": "https://www.skerriesmills.ie/attractions/art-at-the-mill/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/economic-development/",
+      "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/sustainability-climate-action-and-biodiversity/",
+      "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/town-transformation/#project12",
+      "href": "https://www.skerriesmills.ie/school-tours/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/town-transformation/#project11",
+      "href": "https://www.skerriesmills.ie/hire-space-at-the-mill/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/town-transformation/#project10",
+      "href": "https://www.skerriesmills.ie/visiting-groups/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/town-transformation/#project9",
+      "href": "https://www.skerriesmills.ie/about-us/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/town-transformation/#project8",
+      "href": "https://www.skerriesmills.ie/history-of-the-mills/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/town-transformation/#project7",
+      "href": "https://www.skerriesmills.ie/community/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/town-transformation/#project6",
+      "href": "https://www.skerriesmills.ie/blog/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/town-transformation/#project5",
+      "href": "https://www.skerriesmills.ie/category/events/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/town-transformation/#project4",
+      "href": "https://www.skerriesmills.ie/plan-your-visit/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/town-transformation/#project3",
+      "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/town-transformation/#project2",
+      "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/town-transformation/#project1",
+      "href": "https://www.skerriesmills.ie/faq-accessibility/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/wp-content/uploads/2020/08/Ar_dTuras.pdf",
+      "href": "https://www.skerriesmills.ie/explore-the-area/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/wp-content/uploads/2020/08/Ar_dTuras.pdf",
+      "href": "https://www.skerriesmills.ie/getting-here/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/wp-content/uploads/2020/06/Our-Journey-Newsletter.pdf",
+      "href": "https://www.skerriesmills.ie/contact/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/wp-content/uploads/2020/06/Our-Journey-Newsletter.pdf",
+      "href": "https://www.skerriesmills.ie/sustainability-dublin-things-to-do/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/wp-content/uploads/2021/11/Web-A3-Balbriggan-Irish.pdf",
+      "href": "https://www.skerriesmills.ie/works-to-repair-the-great-windmill-of-skerries/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/wp-content/uploads/2021/11/Web-A3-Balbriggan-Irish.pdf",
+      "href": "https://www.skerriesmills.ie/attractions/guided-tour/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/wp-content/uploads/2021/11/Web-A3-Balbriggan-English.pdf",
+      "href": "https://www.skerriesmills.ie/attractions/museum/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://balbriggan.ie/wp-content/uploads/2021/11/Web-A3-Balbriggan-English.pdf",
+      "href": "https://www.skerriesmills.ie/attractions/art-at-the-mill/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/downloads",
+      "href": "/history-of-the-mills/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/tickets/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/attractions/the-watermill-cafe/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/wp-content/uploads/2024/04/Website-Sample-Menu-2024.pdf",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/skerries-mills-community-garden-scarecrow-festival/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/the-goddess-of-samhain/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/national-heritage-week-irish-language-tour/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/blog/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/the-beauty-of-wildflowers-at-skerries-mills/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/s-skerries-irelands-greenest-town-sustainabilitkerries-crowned-irelands-greenest-town-a-model-for-coastal-sustainability/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/works-to-repair-the-great-windmill-of-skerries/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "/blog/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/privacy-policy/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/terms-of-service/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/cookies/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "https://www.skerriesmills.ie/accessibility/",
       "reason": "not-in-inventory"
     }
   ],

@@ -10,6 +10,7 @@ import {
   loadSections,
   loadCSS,
   buildBlock,
+  loadScript,
 } from './aem.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
@@ -156,12 +157,53 @@ export function decorateMain(main) {
 }
 
 /**
+ * Scroll reveal (live .js-show-on-scroll / .js-show-on-scroll-img). Blocks add the trigger
+ * class in decorate(); this layer hides each trigger (opacity-0) and toggles its fade
+ * animation as it enters / leaves the viewport — re-animating on every entry, as live does.
+ * A MutationObserver picks up elements decorated after load (sections, fragments).
+ */
+const REVEAL = [
+  ['js-show-on-scroll', 'animate-fade-in'],
+  ['js-show-on-scroll-img', 'animate-fade-in-y'],
+];
+const REVEAL_SELECTOR = REVEAL.map(([trigger]) => `.${trigger}`).join(', ');
+let revealObserver;
+
+function scanReveal(root) {
+  root.querySelectorAll(REVEAL_SELECTOR).forEach((el) => {
+    if (el.dataset.reveal) return;
+    el.dataset.reveal = 'on';
+    el.classList.add('opacity-0');
+    revealObserver.observe(el);
+  });
+}
+
+function initReveal() {
+  if (revealObserver || !('IntersectionObserver' in window)) return;
+  revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(({ target, isIntersecting }) => {
+      REVEAL.forEach(([trigger, animation]) => {
+        if (target.classList.contains(trigger)) target.classList.toggle(animation, isIntersecting);
+      });
+    });
+  });
+  new MutationObserver(() => scanReveal(document)).observe(document.documentElement, {
+    subtree: true,
+    childList: true,
+    attributes: true,
+    attributeFilter: ['class'],
+  });
+  scanReveal(document);
+}
+
+/**
  * Loads everything needed to get to LCP.
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
-  document.documentElement.lang = 'en';
+  document.documentElement.lang = 'en-GB';
   decorateTemplateAndTheme();
+  initReveal();
   const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);
@@ -206,6 +248,13 @@ async function loadLazy(doc) {
 function loadDelayed() {
   import('./consent-check.js');
   // load anything that can be postponed to the latest here
+  // FareHarbor booking overlay (dynamics D-1, interim): Book Now links open the lightframe as on
+  // the source; without the script they open the booking page.
+  window.setTimeout(() => {
+    if (document.querySelector('a[href*="fareharbor.com/embeds/book/"]')) {
+      loadScript('https://fareharbor.com/embeds/api/v1/?autolightframe=yes');
+    }
+  }, 3000);
 }
 
 async function loadPage() {

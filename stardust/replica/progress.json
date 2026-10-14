@@ -1,35 +1,32 @@
 {
-  "site": "https://balbriggan.ie/",
-  "breakpoints": [1440, 360],
+  "_provenance": { "writtenBy": "stardust:replica", "writtenAt": "2026-10-14T09:30:00Z" },
+  "live": "https://www.skerriesmills.ie/",
   "archetypes": {
     "landing": {
       "slug": "index",
-      "liveUrl": "https://balbriggan.ie/",
       "prototype": "stardust/prototypes/index-proposed.html",
-      "css": ["stardust/prototypes/canon.css", "stardust/prototypes/index.css"],
+      "files": ["stardust/prototypes/css/canon.css", "stardust/prototypes/css/index.css", "stardust/prototypes/js/motion.js"],
       "status": "gated",
       "iterationsUsed": { "1440": 3, "360": 3 },
       "gates": {
-        "1440": { "pixel": "1.43%", "heightDelta": 0, "contentDiffRed": 0, "clip": 0, "overflow": "ok", "units": "PASS (12/12 within 4px)", "chromeCrop": { "header": "2.28% (residual, R-01)", "footer": "0.43%" }, "evidence": "stardust/replica/gates/index-1440/" },
-        "360": { "pixel": "2.35%", "heightDelta": 0, "contentDiffRed": 0, "clip": "2 (allowed: source parity, clip-allow.json)", "overflow": "ok (live overflows +10px; build does not)", "units": "PASS (12/12)", "chromeCrop": { "header": "0.00%", "footer": "0.67%" }, "evidence": "stardust/replica/gates/index-360/" },
-        "capProbe": "PASS at 2560 (8 rows)",
-        "prototypeTables": ["stardust/replica/gates/prototypes-1440/", "stardust/replica/gates/prototypes-360/"]
+        "1440": { "round": "confirm", "pixel": 3.52, "heightDelta": 200, "contentDiffStructuralRed": 0, "clipped": 0, "overflow": "ok", "headerCrop": "99.92% match", "prototypeTableRow": "3.28% Δh 168 PASS" },
+        "360": { "round": "confirm", "pixel": 3.24, "heightDelta": 28, "contentDiffStructuralRed": 0, "clipped": 0, "overflow": "ok", "headerCrop": "98.77% match", "prototypeTableRow": "2.29% Δh -28 PASS" },
+        "capProbe": "PASS at 2560 (0 of 4 rows failed)"
       },
       "residuals": [
-        "header crop 2.28% @1440 and chrome-parity nav text Δx ≤ 10px / Δw ≤ 5px: substitute font glyph widths (R-01); all 12 header texts paired",
-        "inline link glyph boxes and Privacy link Δh +4 before metric overrides — resolved by ascent/descent overrides",
-        "visual-diff STRETCHED IMAGE ×9: object-fit cover crops identical to the source (news 350×144, grid tiles) — justified",
-        "chrome-parity default run reports a REGION mismatch (live has no <header>/<footer> element); explicit --region run: chrome-parity-regions-iter3.txt"
+        { "id": "RES-1", "kind": "capture-state", "where": "testimonials carousel (autoplay 5500 ms, autoHeight)", "detail": "Live stitched capture (taken with --settle, ~25 s timeline) lands on a later slide whose visible set includes the 600 px review; the prototype is captured at t≈2 s on slide 1. Height delta 200 px @1440 / 28 px @360 is this state alone: settled-sections at the same timeline gives 9074 = 9074 @1440 and identical section heights except the carousel. Behaviour mirrored exactly (Museum @6.5 s, Art @12.5 s on both).", "permanent": true },
+        { "id": "RES-2", "kind": "capture-state", "where": "scroll-reveal sections (.js-show-on-scroll / -img)", "detail": "The live theme hides every section between hero and footer until an IntersectionObserver adds animate-fadeIn/fadeInY; stitch-shot pauses animations, so both captures show those bands blank. Pixel fidelity of those sections was checked with the supplementary forced-visible capture (stardust/replica/tools/reveal-shot.mjs) and box-by-box (anchor/measure: every section y/h equal). At 360 the live settle pass restarts the first split's fade-in (hidden on live, visible on build): band 1000–1500 23% — instrument asymmetry, not a defect.", "permanent": true },
+        { "id": "RES-3", "kind": "out-of-scope chrome", "where": "Complianz 'Manage consent' tab bottom-right", "detail": "Consent tool not migrated (dynamics decision D-3); live tab visible in capture only.", "permanent": false },
+        { "id": "RES-4", "kind": "font", "where": "review author names (proxima-nova 600)", "detail": "Adobe Fonts kit pbd5qiw carries 300/400/500 only; content-diff reports one 🟠 face fork on 'Simon' @360 (source synthesises). Kit referenced, never rehosted.", "permanent": true }
       ],
-      "captureState": [
-        { "what": "hero video (autoplay muted loop mp4 from Vimeo)", "captured": "blank in headless Chromium on both sides (no H.264) — #009bd9 overlay only", "restoreAtDelivery": true }
-      ],
+      "fonts": { "Libre Baskerville": "self-hosted woff2 (OFL, Google Fonts)", "proxima-nova": "owner's Adobe Fonts kit pbd5qiw referenced by URL — licensed, not rehosted; the production domain must be on the kit's domain list" },
       "motion": {
-        "observed": ["header .scrolled compaction after 100px", "main-menu dropdown (.show)", "news carousel arrows/dots (slick-active)", "button hover (bg #2494d2, color #fff, border #545b62, 300ms)", "explore tile hover (scrim rgba(0,155,217,.7), 3px #f9ec31 border, link color)", "hero video autoplay"],
-        "implemented": ["is-scrolled header compaction", "dropdown is-open", "news rail is-active dots + arrows", "button hover", "explore hover", "map pin hover scale + label slide (CSS)", "hero video autoplay muted loop"],
-        "dead": ["outline-* transitions (focus ring after the click poke)", "news-card hover / map-pin hover: no measured diff on live sampler (CSS present, implemented as in source CSS)"],
-        "evidence": ["stardust/replica/motion/index.json", "stardust/replica/motion/index-build.json"]
-      }
+        "observed": ["scroll-reveal fadeIn/fadeInY (IntersectionObserver, removed on exit)", "header scrolling morph at scrollY >= header height (logo 160→128, gradient)", "attractions carousel autoplay 5500 ms loop + arrows", "testimonials carousel autoplay 5500 ms loop + bullets + autoHeight", "nav dropdowns on hover", "button/card hover colours + filters", "mobile menu toggle"],
+        "implemented": ["all of the observed list (stardust/prototypes/js/motion.js, canon.css)"],
+        "dead": ["hover probe on .nav-link / .cpt-item a reported no measured diff on live (dropdown/opacity mechanics implemented from CSS rules anyway)", "widget sampler saw no change on arrow/bullet pokes on live (sections hidden under the probe) — implemented from the observed class mutations"],
+        "compare": "motion-compare: 13 parity, 2 missing (filter transition events, idle auto-advance window timing — auto-advance verified on build at 6.5 s / 12.5 s), 0 extra"
+      },
+      "approvedBy": "hands-off"
     }
   }
 }

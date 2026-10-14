@@ -8,7 +8,7 @@
     "method": "auto"
   },
   "favicon": {
-    "url": "https://balbriggan.ie/wp-content/uploads/2022/02/cropped-favicon-32x32.png",
+    "url": "https://www.skerriesmills.ie/wp-content/uploads/2024/04/cropped-skerries-mills-favi-32x32.png",
     "file": "assets/favicon.png"
   },
   "crawl": {
@@ -20,33 +20,68 @@
   },
   "dynamicSurface": {
     "pages": 1,
-    "pagesWithSameSiteData": 0,
+    "pagesWithSameSiteData": 1,
     "pagesWithSearchForm": 0,
     "pagesHydrated": 1,
     "truncatedPages": 0,
     "endpoints": [
       {
         "method": "POST",
+        "host": "www.skerriesmills.ie",
+        "path": "/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.6305993991125491:1791965732:lSjblcijOZMuqAsLAjhEo4V1cPFgcIov3WJtUBjeWMU/{hash}",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "text/plain",
+        "sameSite": true,
+        "example": "https://www.skerriesmills.ie/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.6305993991125491:1791965732:lSjblcijOZMuqAsLAjhEo4V1cPFgcIov3WJtUBjeWMU/a4a55b4e7a2ab35f",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "o10963.ingest.sentry.io",
+        "path": "/api/{n}/envelope/",
+        "query": [
+          "sentry_key",
+          "sentry_version"
+        ],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://o10963.ingest.sentry.io/api/5933789/envelope/",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
         "host": "www.google-analytics.com",
         "path": "/g/collect",
         "query": [
-          "_ee",
           "_eu",
           "_fv",
           "_nsi",
           "_p",
           "_s",
           "_ss",
+          "_tu",
           "cid",
           "dl",
           "dma",
+          "dma_cps",
           "dt",
+          "ecid",
           "en",
           "frm",
+          "gaf",
           "gcd",
+          "gcs",
+          "gdid",
           "gtm",
           "ir",
-          "ngs",
           "npa",
           "pscdl",
           "rcb",
@@ -76,11 +111,78 @@
         "examples": [
           "index"
         ]
+      },
+      {
+        "method": "GET",
+        "host": "fareharbor.com",
+        "path": "/api/v1/persistence/{uuid}/",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://fareharbor.com/api/v1/persistence/69669e6d-2afe-4308-89c0-3d4d0dc44f8e/",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "GET",
+        "host": "www.skerriesmills.ie",
+        "path": "/wp-json/complianz/v1/banner",
+        "query": [
+          "lang",
+          "locale",
+          "token"
+        ],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.skerriesmills.ie/wp-json/complianz/v1/banner",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "www.skerriesmills.ie",
+        "path": "/wp-json/complianz/v1/track",
+        "query": [],
+        "resourceType": "xhr",
+        "contentType": "application/json",
+        "sameSite": true,
+        "example": "https://www.skerriesmills.ie/wp-json/complianz/v1/track",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "method": "POST",
+        "host": "otel-hfo.fareharbor.engineering",
+        "path": "/v1/traces",
+        "query": [],
+        "resourceType": "fetch",
+        "contentType": "application/json",
+        "sameSite": false,
+        "example": "https://otel-hfo.fareharbor.engineering/v1/traces",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
       }
     ],
     "thirdPartyScriptHosts": [
       {
-        "host": "connect.facebook.net",
+        "host": "fareharbor.com",
+        "pages": 1,
+        "examples": [
+          "index"
+        ]
+      },
+      {
+        "host": "dipr2nuwo661l.cloudfront.net",
         "pages": 1,
         "examples": [
           "index"
@@ -112,24 +214,13 @@
         ]
       }
     ],
-    "formTargets": [
-      {
-        "action": "https://balbriggan.ie/",
-        "method": "post",
-        "sameOrigin": true,
-        "search": false,
-        "fieldNames": [
-          "input_1",
-          "input_2",
-          "input_3",
-          "input_4.1",
-          "ak_hp_textarea"
-        ],
-        "pages": 1,
-        "examples": [
-          "index"
-        ]
-      }
-    ]
-  }
+    "formTargets": []
+  },
+  "visionCheck": [
+    {
+      "slug": "index",
+      "verdict": "recaptured",
+      "notes": "crawler full-page shot shows the band between hero and footer blank: the live theme hides .js-show-on-scroll/.js-show-on-scroll-img (opacity-0) until an IntersectionObserver adds animate-fadeIn/animate-fadeInY; frozen/full-page captures never reveal them. Text/media were captured from the DOM. Ground truth recaptured with the reveal state forced visible: assets/screenshots/index-reveal-1440.png (replica/tools/reveal-shot.mjs). All sections present and rendered."
+    }
+  ]
 }

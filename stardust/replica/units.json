@@ -1,5 +1,0 @@
-{
-  "news-cards": { "origin": ".news-cards .slick-active .news-card", "build": ".news-card", "n": 3, "required": true, "pages": ["index"], "templates": ["landing"] },
-  "explore-tiles": { "origin": ".grid .grid-item", "build": ".explore__item", "n": 5, "required": true, "pages": ["index"], "templates": ["landing"] },
-  "document-covers": { "origin": ".row-doc-downloads .doc-container", "build": ".doc", "n": 4, "required": true, "pages": ["index"], "templates": ["landing"] }
-}

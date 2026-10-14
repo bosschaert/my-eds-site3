@@ -1,37 +1,74 @@
 {
   "extensions": {
     "breakpoints": {
-      "containerMaxWidth": null,
+      "containerMaxWidth": "1536px",
       "probeWidth": 2560,
       "shellMaxWidth": null,
-      "caps": [],
+      "caps": [
+        {
+          "kind": "module",
+          "px": 1536,
+          "via": "max-width",
+          "selector": "div.flex-1 > div.flex.flex-col > section.testimonials.bg-brand-blue > div.container.mx-auto",
+          "pages": [
+            "https://www.skerriesmills.ie/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 672,
+          "via": "fixed",
+          "selector": "#callOut > div.flex.flex-col",
+          "pages": [
+            "https://www.skerriesmills.ie/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 512,
+          "via": "max-width",
+          "selector": "#hero > div.absolute.z-20",
+          "pages": [
+            "https://www.skerriesmills.ie/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 411,
+          "via": "other",
+          "selector": "div.mx-auto.flex > div.w-full.flex > div.flex.flex-col > a.btn.brand-maroon",
+          "pages": [
+            "https://www.skerriesmills.ie/"
+          ]
+        }
+      ],
       "modules": [
         {
-          "url": "https://balbriggan.ie/",
+          "url": "https://www.skerriesmills.ie/",
           "section": 0,
-          "selector": "div.wp-block-group.section > div.wp-block-group__inner-container.is-layout-flow > div.wp-block-columns.is-layout-flex > div.wp-block-column.is-layout-flow",
+          "selector": "body.home.wp-singular > main.min-h-screen.flex > header.fixed.w-full",
           "px": null
         },
         {
-          "url": "https://balbriggan.ie/",
+          "url": "https://www.skerriesmills.ie/",
           "section": 1,
-          "selector": "div.wp-block-group.section > div.wp-block-group__inner-container.is-layout-flow > div.wp-block-columns.is-layout-flex > div.wp-block-column.is-layout-flow",
-          "px": null
+          "selector": "body.home.wp-singular > main.min-h-screen.flex > div.flex-1",
+          "px": 1536
         },
         {
-          "url": "https://balbriggan.ie/",
+          "url": "https://www.skerriesmills.ie/",
           "section": 2,
-          "selector": "div.wp-block-group.section > div.wp-block-group__inner-container.is-layout-flow > div.wp-block-columns.is-layout-flex > div.wp-block-column.is-layout-flow",
+          "selector": "body.home.wp-singular > main.min-h-screen.flex > footer",
           "px": null
         }
       ],
       "capRegister": [],
       "capProvenance": {
         "writtenBy": "skills/replica/scripts/cap-probe.mjs",
-        "writtenAt": "2026-10-13T14:36:29.022Z",
+        "writtenAt": "2026-10-14T08:59:37.456Z",
         "baseWidth": 1440,
         "urls": [
-          "https://balbriggan.ie/"
+          "https://www.skerriesmills.ie/"
         ]
       }
     }

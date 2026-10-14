@@ -4,87 +4,91 @@
       "status": "done",
       "kind": "foundation",
       "templates": [
-        "index"
+        "landing"
       ],
       "pages": 0,
       "blocks": 2,
-      "startedAt": "2026-10-13T15:12:16Z",
-      "files": 21,
+      "startedAt": "2026-10-14T09:33:02Z",
+      "endedAt": "2026-10-14T10:06:49.394Z",
       "gates": {
-        "360": {
-          "headerBand": "0.01%",
-          "footerBand": "1.48%"
-        },
-        "1440": {
-          "headerBand": "2.29% (R-01 residual, prototype 2.28%)",
-          "footerBand": "1.20%"
-        },
-        "chrome": "chrome-compare: 0 behaviour findings; 9 open-state crop errors 4.6-7.3% = R-01 font substitution (owner decision)"
+        "chrome": "chrome-compare replica 390+1440: 0 errors, 2 warn (logo link name) → stardust/chrome/header-parity.json",
+        "crop": "deferred to landing-archetype unit: shell is the 404 page, stitch-shot refuses non-200; header/footer crop-compare runs on / after its PUT"
       },
-      "endedAt": "2026-10-13T15:46:49Z",
-      "verdict": "foundation: files 21, nav/footer/shell live 3/3, lint clean, chrome-compare exit 2 (9 R-01 font crops, 0 behaviour), header band 2.29%/0.01%, footer 1.20%/1.48%"
+      "verdict": "foundation: chrome live (nav, footer), styles+fonts+header+footer pushed 66a140c, lint clean, shell ok, header parity 0 errors"
     },
-    "archetype-index": {
+    "landing-archetype": {
       "status": "done",
       "kind": "archetype",
       "templates": [
-        "index"
+        "landing"
       ],
       "pages": 1,
+      "startedAt": "2026-10-14T10:06:58Z",
+      "endedAt": "2026-10-14T10:41:20.247Z",
       "blocks": 7,
-      "startedAt": "2026-10-13T15:47:41Z",
-      "endedAt": "2026-10-13T16:18:16Z",
       "gates": {
         "360": {
-          "archetype": "2.40% Δh0 clip2(allowed) missing0 PASS",
-          "headerBand": "0.01%",
-          "footerBand": "0.20%"
+          "pixel": "2.18%",
+          "dh": 19,
+          "clip": 0,
+          "missing": 0
         },
         "1440": {
-          "archetype": "1.43% Δh0 clip0 missing0 PASS",
-          "headerBand": "2.29% (R-01)",
-          "footerBand": "0.43%"
+          "pixel": "1.79%",
+          "dh": 26,
+          "clip": 0,
+          "missing": 0
         },
-        "contentDiff": "0 structural red"
+        "crop": "header 1.55%/0.69%, footer 1.50% @1440 / 2.18% @360 (consent tab RES-3; 0.65% without it)",
+        "chrome": "chrome-parity 32 deltas (icon filenames, lazy partner logos, funding-line padding — same classes as C0)"
       },
-      "verdict": "archetype-index: page live y (root 200 y), blocks 7, gate 1440 1.43% Δh 0 clip 0 missing 0 PASS / 360 2.40% Δh 0 clip 2 missing 0 PASS, header band 2.29% footer band 0.43%, content-diff 🔴 0, video autoplay y, rounds 3, requests 0"
+      "verdict": "landing-archetype: pages 1/1 live, blocks 7, gate 1440 1.79% Δh 26 / 360 2.18% Δh 19 (clip 0, missing 0), crop header 1.55%/0.69% footer 1.50%/2.18%, chrome-parity 32 deltas, requests 0, sha 6939fd7"
     },
-    "cluster-index": {
+    "landing": {
       "status": "done",
       "kind": "cluster",
       "templates": [
-        "index"
+        "landing"
       ],
       "pages": 0,
+      "startedAt": "2026-10-14T10:41:20.247Z",
+      "endedAt": "2026-10-14T10:41:20.247Z",
       "blocks": 0,
-      "startedAt": "2026-10-13T16:18:27Z",
-      "endedAt": "2026-10-13T16:18:27Z",
-      "verdict": "cluster-index: no siblings in scope (one-page run); archetype carries the template"
+      "verdict": "landing: pages 0/0 (no siblings in the bounded single-page scope), blocks 0, requests 0"
     },
     "gate-all": {
       "status": "done",
       "kind": "final",
       "templates": [
-        "index"
+        "landing"
       ],
       "pages": 1,
-      "startedAt": "2026-10-13T16:18:50Z",
-      "endedAt": "2026-10-13T16:23:01Z",
+      "startedAt": "2026-10-14T10:41:31.064Z",
+      "endedAt": "2026-10-14T10:44:36.764Z",
       "gates": {
-        "360": "2.40% Δh0 PASS",
-        "1440": "1.43% Δh0 PASS"
+        "360": {
+          "pass": "1/1",
+          "pixel": "2.18%",
+          "dh": 19
+        },
+        "1440": {
+          "pass": "1/1",
+          "pixel": "1.79%",
+          "dh": 26
+        }
       },
-      "verdict": "gate-all: 1/1 PASS on main--e8103195--aemcoder.aem.live (1440 1.43%, 360 2.40%)"
+      "verdict": "gate-all: 1/1 PASS at 1440 (1.79%) and 360 (2.18%), clip 0, content 0"
     },
     "final": {
       "status": "done",
       "kind": "final",
       "templates": [
-        "index"
+        "landing"
       ],
-      "startedAt": "2026-10-13T16:23:12Z",
-      "endedAt": "2026-10-13T16:25:46Z",
-      "verdict": "final: freeze check clean, 0 foundation requests, gate-all 1/1 PASS, shell draft unpublished, header parity on live host: 0 behaviour findings, 9 R-01 font crops pending owner decision"
+      "pages": 1,
+      "startedAt": "2026-10-14T10:44:48.458Z",
+      "endedAt": "2026-10-14T10:44:48.458Z",
+      "verdict": "final: foundation unchanged (17 files), 0 queued foundation requests, gate-all 1/1 PASS both widths"
     }
   }
 }

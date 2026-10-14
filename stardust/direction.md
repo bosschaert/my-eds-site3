@@ -1,27 +1,29 @@
 ---
 _provenance:
   writtenBy: stardust:replica
-  writtenAt: 2026-10-13T14:43:31Z
-  againstInput: https://balbriggan.ie/
+  writtenAt: 2026-10-14T09:00:21Z
+  againstInput: https://www.skerriesmills.ie/
+  mode: bounded-single
   readArtifacts:
     - stardust/current/pages/index.json
-    - stardust/replica/lift/tokens.json
+    - stardust/replica/lifted-tokens.json
 ---
 
 # Direction — preserve mode (same-design migration)
 
-Mode: PRESERVE. The target spec is the captured current state of https://balbriggan.ie/,
-synthesized mechanically (no direct invocation, no creative decisions).
+Mode: PRESERVE. The target spec is the captured current state of https://www.skerriesmills.ie/,
+synthesized from the capture (no direct invocation, no creative decisions).
 
-Synthesized (bounded-single): current/pages/index.json + Phase-3 CSS lift → PRODUCT.md · DESIGN.md · DESIGN.json (at 2026-10-13T14:43:31Z).
+Synthesized (bounded-single): current/pages/index.json + Phase-3 CSS lift → PRODUCT.md · DESIGN.md · DESIGN.json (at 2026-10-14T09:00:21Z).
 
-Permitted deltas: ONLY the entries of stardust/replica/inconsistency-register.md
-(1 entry — font substitution forced by licensing; otherwise pure replica).
+Permitted deltas: ONLY the entries of stardust/replica/inconsistency-register.md (empty — pure replica).
 
 Fidelity: ia verbatim · design verbatim · content verbatim.
 
-## Link scope decision (rollout E2, 2026-10-13)
+## Link-audit decision — scope extension repointed to the source (2026-10-14, rollout E2)
 
-The run's page scope is fixed to the home page. Its 28 other balbriggan.ie link targets (menus, footer, cards, map pins)
-are SCOPE EXTENSION and stay pointed at the source site (absolute https://balbriggan.ie/… URLs, all answer 200);
-external targets kept as authored. No link on the delivered page 404s.
+- Declared scope: one page (`/`). The home page, nav and footer link 33 distinct www.skerriesmills.ie pages
+  outside that scope → SCOPE EXTENSION: kept absolute to the source site (all 33 answer 200), never authored
+  from a live read. List: `stardust/rollout/scope-extension-targets.txt`.
+- The root link is root-relative `/` (200 on …aem.live). External targets kept verbatim; prf.hn affiliate and
+  weareopen.ie answer 403 to a bare curl (bot wall), identical hrefs on the source.

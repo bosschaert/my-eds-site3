@@ -1,13 +1,13 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/plan",
-    "writtenAt": "2026-10-13T15:10:17.239Z",
+    "writtenAt": "2026-10-14T09:31:44.358Z",
     "readArtifacts": [
       "stardust/rollout/coverage"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-13T15:10:17.239Z",
+  "generatedAt": "2026-10-14T09:31:44.358Z",
   "fragments": [],
   "deliveryOrder": [
     "index"
@@ -25,28 +25,28 @@
           "edsBlockName": "hero"
         },
         {
-          "id": "intro",
-          "edsBlockName": "intro"
+          "id": "split",
+          "edsBlockName": "split"
         },
         {
-          "id": "news",
-          "edsBlockName": "news"
+          "id": "attractions",
+          "edsBlockName": "attractions"
         },
         {
-          "id": "explore",
-          "edsBlockName": "explore"
+          "id": "reviews",
+          "edsBlockName": "reviews"
         },
         {
-          "id": "map",
-          "edsBlockName": "map"
+          "id": "tickets",
+          "edsBlockName": "tickets"
         },
         {
-          "id": "docs",
-          "edsBlockName": "docs"
+          "id": "callout",
+          "edsBlockName": "callout"
         },
         {
-          "id": "newsletter",
-          "edsBlockName": "newsletter"
+          "id": "posts",
+          "edsBlockName": "posts"
         }
       ],
       "reuse": []

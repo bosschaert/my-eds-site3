@@ -1,19 +1,19 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/blocks",
-    "writtenAt": "2026-10-13T15:10:17.192Z",
+    "writtenAt": "2026-10-14T09:31:44.313Z",
     "readArtifacts": [
       "stardust/rollout/coverage/pages.json"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-13T16:30:01.251Z",
+  "generatedAt": "2026-10-14T10:39:52.201Z",
   "blocks": [
     {
-      "id": "docs",
-      "label": "docs",
+      "id": "attractions",
+      "label": "attractions",
       "kind": "module",
-      "signature": "module:docs",
+      "signature": "module:attractions",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -23,17 +23,17 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "verified",
-        "edsBlockName": "docs",
+        "status": "deployed",
+        "edsBlockName": "attractions",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "explore",
-      "label": "explore",
+      "id": "callout",
+      "label": "callout",
       "kind": "module",
-      "signature": "module:explore",
+      "signature": "module:callout",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -43,8 +43,8 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "verified",
-        "edsBlockName": "explore",
+        "status": "deployed",
+        "edsBlockName": "callout",
         "blockPath": null,
         "convertedAt": null
       }
@@ -63,17 +63,17 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "verified",
+        "status": "deployed",
         "edsBlockName": "hero",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "intro",
-      "label": "intro",
+      "id": "posts",
+      "label": "posts",
       "kind": "module",
-      "signature": "module:intro",
+      "signature": "module:posts",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -83,17 +83,17 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "verified",
-        "edsBlockName": "intro",
+        "status": "deployed",
+        "edsBlockName": "posts",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "map",
-      "label": "map",
+      "id": "reviews",
+      "label": "reviews",
       "kind": "module",
-      "signature": "module:map",
+      "signature": "module:reviews",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -103,17 +103,17 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "verified",
-        "edsBlockName": "map",
+        "status": "deployed",
+        "edsBlockName": "reviews",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "news",
-      "label": "news",
+      "id": "split",
+      "label": "split",
       "kind": "module",
-      "signature": "module:news",
+      "signature": "module:split",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -123,17 +123,17 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "verified",
-        "edsBlockName": "news",
+        "status": "deployed",
+        "edsBlockName": "split",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "newsletter",
-      "label": "newsletter",
+      "id": "tickets",
+      "label": "tickets",
       "kind": "module",
-      "signature": "module:newsletter",
+      "signature": "module:tickets",
       "source": null,
       "usedByTemplates": [
         "index"
@@ -143,8 +143,8 @@
       ],
       "instanceCount": 1,
       "delivery": {
-        "status": "verified",
-        "edsBlockName": "newsletter",
+        "status": "deployed",
+        "edsBlockName": "tickets",
         "blockPath": null,
         "convertedAt": null
       }

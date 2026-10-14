@@ -252,7 +252,7 @@ async function main() {
   let oInv; let eInv; let tier;
   try {
     tier = browserTier(browser);
-    const cacheKey = opts.slug ? `${opts.slug}-${opts.width}-units` : null; // replica INSTRUMENT FIX — per-width cache (360 reused the 1440 inventory)
+    const cacheKey = opts.slug ? `${opts.slug}-units` : null;
     const cached = cacheKey && !opts.force ? readCache(cacheKey) : null;
     const oSels = opts.units.map((u) => u.origin);
     if (cached && oSels.every((s) => cached.bySel && cached.bySel[s])) { oInv = cached; console.log(`origin: cached ${cacheKey} (${cached.at})`); }

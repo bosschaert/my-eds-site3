@@ -1,145 +1,124 @@
-# EDS conversion log — balbriggan.ie
+# EDS conversion log — skerriesmills.ie (replica, bounded single page)
 
-## Publish decision (2026-10-13)
+## Publish decision (2026-10-14)
 
-Publish: every delivered page, the redirects sheet and the chrome documents (nav, footer) go live on
-main--e8103195--aemcoder.aem.live (deploy-batch.mjs without --no-publish / POST admin.hlx.page/live). Decided by the run brief (hands-off).
+- **Publish.** Decided by the run owner before Phase 5: every delivered page, the redirects sheet and the
+  chrome documents (nav, footer) go live on main--1370701b--aemcoder.aem.live (deploy-batch.mjs without
+  --no-publish / POST admin.hlx.page/live/…). Recorded once here; not re-asked.
 
-## Foundation
+## Target
 
-- **Runtime contract:** `stardust/runtime-contract.json` — vanilla EDS, `.block` wrapper,
-  `p.button-wrapper` + `a.button.primary|secondary|accent`, formatted-only buttonization, empty
-  metadata section collapsed (`main .section:empty`). Chrome hosts are `header.header-wrapper` /
-  `footer.footer-wrapper` directly.
-- **Foundation CSS:** `styles/styles.css` — canon.css shared layer verbatim (tokens, reset, base type,
-  `.heading-rule`, the `.btn` pill as the EDS button family, `.social`), boilerplate structural layer
-  kept (body gate, chrome reservation: `--nav-height` 98px >= 1200 / 90px below, released to
-  `height: auto` once the header block has loaded so the sticky header can compact to 75/77px),
-  section scaffold = the source's bootstrap container (1140/960/720/540/fluid, 15px gutters),
-  EW edit-mode repaint for CTAs. `main { min-height: calc(100vh - var(--nav-height)) }` keeps short
-  pages (the chrome shell) from floating the footer mid-viewport — no effect on the home page.
-  Canon keeps images inline (`vertical-align: middle`), so the EDS `img` reset adds only
-  `max-width: 100%; height: auto` (#36), not `display: block`.
-- **Fonts (R-01):** `fonts/montserrat-{300,500,700}.woff2` (SIL OFL) self-hosted as
-  `Gotham Light/Medium/Bold Sub` in `styles/fonts.css` with canon's size-adjust and
-  ascent/descent/line-gap overrides verbatim; `Gotham-Light` / `GothamMedium` / `GothamBold` stay
-  first in every stack (Gotham is never rehosted). Metric-matched `gotham-*-fallback` faces
-  (local Arial, computed against Liberation Sans with fontTools) sit third in each stack for first
-  paint. Boilerplate roboto files removed. No font lines in `head.html`.
-- **Icons:** no Font Awesome/slick webfont shipped. The four social glyphs are the Font Awesome 4
-  outlines extracted with fontTools into `styles/icons/{facebook,twitter,linkedin,instagram}.svg`,
-  drawn at FA's 20px em box (advance/1792 em wide, baseline offset -256/1792 em), so geometry
-  matches the source `<i class="fa">` glyphs.
-- **Favicon:** `favicon.png` (from `stardust/prototypes/assets/favicon.png`) + one
-  `<link rel="icon" href="/favicon.png"/>` line in `head.html`; boilerplate `favicon.ico` removed.
-- **header** (`blocks/header/`) — decode tier: template-slotted. `/nav` sections: (1) brand link,
-  (2) utility links `<ul>` + social `<ul>`, (3) main nav `<ul>` with nested `<ul>` panels and the
-  `<strong>` CTA. Authored nodes are moved into the canon chrome DOM (`site-header-*` classes,
-  kebab-cased from canon's BEM for stylelint); labels of icon/logo links are moved into `.sr-only`
-  spans, never rebuilt. Logo = `blocks/header/balbriggan-logo.svg` served from the code origin
-  (SVG brand mark). Behaviour per `stardust/chrome/header-contract.json`: the source opens its four
-  dropdowns on click/Enter (the contract records no hover state), closes on Escape (focus returns
-  to the trigger), click outside and trigger toggle; < 1200px a drawer with a 350ms height collapse
-  and drill-down dropdowns; sticky header compacts (`is-scrolled`) after 100px. Two canon values
-  were corrected against the live site where the prototype had never been gated in the open state:
-  dropdown items inherit the nav `li` font-size/margins (12px in the 1200–1469 band, 14.4px in the
-  drawer), and the utility links stay hidden when the drawer is open.
-- **footer** (`blocks/footer/`) — decode tier: template-slotted. `/footer` sections become the two
-  bootstrap columns (council mark | social + Privacy). Council mark = `blocks/footer/fcc-logo.svg`.
-- **Content:** `content/nav.html`, `content/footer.html` (metadata `Robots | noindex`),
-  `content/drafts/foundation-shell.html` (Title + `Robots | noindex`, one `<h1>`). davids-model-lint
-  PASS (0 🔴, 0 🟡); sanitise: no non-ASCII. Deployed and published with deploy-batch
-  (ledger `stardust/deploy/ledger-foundation.json`).
-- **Lint:** own files clean (eslint airbnb-base on `blocks/`+`scripts/`, stylelint standard on all
-  CSS). `npm run lint` as a whole still reports 2 pre-existing errors in tracked stardust evidence
-  files outside this unit's write scope (`stardust/prototypes/proto.js`,
-  `stardust/migrated/assets/proto.js`: `no-use-before-define`) and 1 warning in
-  `stardust/scripts/deploy/sanitise.js`.
-- **Residue (R-01):** header band 1440 measures 2.29% vs live (build vs prototype 0.07%; prototype vs
-  live 2.28%) — Montserrat glyph widths/antialiasing; header-contract open-state crops differ
-  4.6–7.3% for the same reason (behaviour findings all clear). Needs a site-owner decision on the
-  font substitution in `stardust/chrome/header-decisions.json`.
+- DA: aemcoder/1370701b, branch main. Preview main--1370701b--aemcoder.aem.page, live …aem.live.
+- Scope: one page, `/` (source https://www.skerriesmills.ie/), delivered as the root `index` document.
 
-## Archetype index
+## C0 foundation (2026-10-14)
 
-Unit C-archetype `index` (template `index`, page `/`, DA document `/index`). Prototype
-`stardust/prototypes/index-proposed.html` (+ `index.css`, `canon.css`, `proto.js`); content
-verbatim from `stardust/current/pages/index.json`; schema `stardust/eds-schema/index.json`.
+- **Runtime probe** → `stardust/runtime-contract.json`: vanilla EDS, `.block` + `<name>-wrapper`/`-container`,
+  buttons `a.button.primary|secondary|accent` in `p.button-wrapper`, formatted-only buttonization, section
+  metadata server-rendered, no `delayed.js` in this boilerplate vintage (loadDelayed → consent-check.js).
+- **styles/styles.css** = prototype canon (`css/canon.css`): `--sm-*` tokens, tailwind-preflight reset incl.
+  global border-box, type ramp (h1–h4, p, li sans), container model as the `--sm-wrap` token
+  (100%/640/768/1024/1280/1536) + `.sm-wrap` utility; `main > .section > div` is full-bleed (blocks paint
+  their bands and cap inner content with `var(--sm-wrap)`), only `.default-content-wrapper` is capped.
+  Shared canon utilities kept: `.sm-rich`, `.sm-more`, `.sm-txtlink`, `.sm-card-link`, `.sm-icon`.
+  Buttons: strong-link = primary = live `.btn` (green → maroon hover); em-link = secondary = live
+  `.btn.brand-maroon` (maroon → green); accent = primary paint. Shadow variant left to the owning block.
+  EW edit-mode CTA repaint + card-link snippets included.
+- **Fonts.** Libre Baskerville (OFL) self-hosted (`fonts/`, 4 woff2, latin + latin-ext, roman 400–700 +
+  italic 400) in `styles/fonts.css`. proxima-nova = the owner's Adobe Fonts kit `pbd5qiw`, referenced
+  exactly as the prototype/live do (`@import url('https://use.typekit.net/pbd5qiw.css')` at the top of
+  `styles/fonts.css`, so it loads via `loadFonts()` — never in head.html, never rehosted; kit serves the
+  aem.page origin, verified 200). Metric-matched fallbacks in styles.css, computed with fontTools from the
+  real faces against Liberation Sans/Serif: `proxima-nova-fallback` (Arial) size-adjust 98.12% /
+  ascent 109.97% / descent 33.12%; `libre-baskerville-fallback` (Times New Roman) 127.33% / 76.18% / 21.2%.
+  Stacks: `--sm-sans: proxima-nova, proxima-nova-fallback, sans-serif`; `--sm-serif: 'Libre Baskerville',
+  libre-baskerville-fallback, serif`. Boilerplate roboto woff2 removed.
+- **Chrome = overlay** (#108): `body > header` is `position: fixed` over the hero, `--nav-height: auto`
+  (nothing reserved, nothing shifts). Decode tier for header and footer: **template-slotted** — the blocks
+  hold the prototype's chrome DOM and MOVE authored nodes into fixed role slots (EW1); `<li><p><a>` live
+  shape unwrapped (#98).
+  - `/nav` contract: 1 brand (two `/` links holding `:skerries-logo:` desktop + `:skerries-mob-logo:` mobile),
+    2 left `<ul>`, 3 right `<ul>` (last item = green Book Now), 4 tools (mobile Book Now), 5 mobile-menu
+    `<ul>` (authored separately because the live mobile menu carries different items than the desktop
+    dropdowns). Behaviour per `stardust/chrome/header-contract.json`: hover/focus-within dropdowns
+    (contiguous: top 100%, -3px), header `.scrolling` at scrollY ≥ bar height (logo 10rem → 8rem),
+    burger toggle (no scroll lock, as live) + per-item sub-list toggles; Escape closes the menu (a11y floor).
+  - `/footer` contract: 1 logo (`:skerries-footer-logo:`), 2 columns (each `<h4>` opens a column; icon-led
+    paragraphs = items; icon-only links = social row), 3 partner logos (DA media `media/footer/*.png`) +
+    support line, 4 legal `<ul>` + credit. Grass band = decorative CSS background (`blocks/footer/footer-grass.png`).
+  - Logos and pictograms are small pure-vector SVGs served from the code repo `/icons/` via the EDS icon
+    convention (desktop logo extracted from the prototype's inline SVG with its fills embedded).
+  - Chrome documents authored in `content/nav.html` + `content/footer.html` (Robots: noindex), lint 0🔴,
+    sanitised, PUT → preview → **published** (`stardust/deploy/ledger-foundation.json`). `content/` added to
+    `.hlxignore` so the source copies are not served as code.
+- **Scroll reveal** lives in `scripts/scripts.js` `initReveal()` (started in loadEager): blocks add
+  `.js-show-on-scroll` / `.js-show-on-scroll-img`; the layer adds `.opacity-0` and toggles
+  `.animate-fade-in` / `.animate-fade-in-y` from an IntersectionObserver (re-animates on each entry, as live);
+  a MutationObserver picks up elements decorated later. No JS → nothing hidden (#16 safe).
+- **Favicon**: `stardust/current/assets/favicon.png` → `/favicon.png` + the one permitted head.html line;
+  boilerplate `favicon.ico` removed.
+- **Lint**: `.eslintignore` gains `stardust/prototypes` + `stardust/migrated` (design artifacts, not EDS
+  runtime); stylelint `no-descending-specificity` disabled per file in the chrome/canon CSS (prototype
+  source order kept). `npm run lint` clean (1 warning in stardust tooling).
+- **Verification** (deployed preview): 404 shell + /nav render header/footer decorated, Libre Baskerville +
+  proxima-nova 400/500 loaded, no pageerror, no broken images. `chrome-parity` vs live @1440/@390: header
+  26/26 texts paired, no box/style deltas beyond icon file names; mobile logo/Book Now rects identical to the
+  live header contract; footer geometry identical relative to the footer origin (remaining deltas = page
+  position, live partner logos not yet lazy-loaded on the live probe, support-line padding on wrapper vs p).
 
-**Triage + names (locked):** one block per prototype section; names = section intent.
+## Instrument fix — chrome-compare pairing of unnamed controls (2026-10-14, C0 gate)
 
-| section | block | D1/D11 | decode tier | authored shape |
-|---|---|---|---|---|
-| `.hero` | `hero` (boilerplate block replaced) | bespoke video hero (D11 hero) | template-slotted | `<h1>` + `<strong><a>` CTA in the block; video `.mp4` link as default content before the block (D1: no embed URL inside a block), reabsorbed — the `<p>` moves into the `<video>` as fallback content |
-| `.intro` | `intro` | prose; kept a block because the foundation CSS is frozen (no section-style vocabulary) | template-slotted | one cell: `<h2>` + paragraphs |
-| `.band.news` | `news` | carousel (D11 carousel-like rail) | reconstructive | `<h2>` row; per story `img \| <p><a>title</a></p>`; `<strong><a>See All</a>` row |
-| `.band.explore` | `explore` | tile grid (D11 cards) | reconstructive | `<h2>` row; per tile `img \| <p><a>label</a></p>` |
-| `.map` | `map` | client-only map (dynamic-features row 10) | template-slotted | per pin `img \| <p><a href=…#projectN>label</a></p>`; `@ew-exempt all` (pin labels are SVG artwork) |
-| `.band.docs` | `docs` | card list (D11 cards) | reconstructive | `<h2>` row; per doc `<h4><a pdf>title</a></h4> \| img`; `<strong><a>See All</a>` row |
-| `.newsletter` | `newsletter` | form (dynamic-features row 3) | template-slotted | `<h2>`+`<p>`; `<ul>` field labels; consent `<p>` (moved into its `<label>`); submit `<p>`; `@ew-exempt` labels/submit |
+- `stardust/scripts/diff/chrome-compare.mjs` `pairControls()` paired only by name (key) or by FAMILIES kind
+  (search/cart/account/locale/drawer). The source header's mobile toggle `#menu-btn` and its sub-menu toggles
+  are unnamed `<button>`s of kind `menu`, so they could never pair → permanent false 🔴 `control-missing@390`.
+- Run-local fix (one line, commented): an unnamed source control pairs in order with an unnamed build control
+  of the same kind. Upstream candidate. The header block mirrors the source (no aria-label on those toggles)
+  for role/aria parity, as the gated prototype did.
 
-**Decisions:**
-- Hero headline authored as the page's single `<h1>` (source markup is an `<h2>`; same text,
-  same paint — `.hero-title` carries the type, the heading inherits).
-- All blocks are full-bleed: each escapes the foundation's `main > .section > div` container
-  with a scoped `main > .section > div:has(> .<block>)` override and rebuilds the source's
-  bootstrap `.container` (1140/960/720/540/fluid) inside where the prototype has one.
-- Hero video: same Vimeo mp4 (external host, never content.da.live), `autoplay muted loop
-  playsinline` set as attributes + properties and `play()` attempted after decoration; no
-  reduced-motion pause (source parity; a paused/poster video is not the deliverable).
-- News rail: proto.js behaviour rebuilt natively in `news.js` (3-up, dots + arrows, no
-  autoplay, 500ms ease transform); the slick icon font ships as `blocks/news/slick.woff`
-  (block-scoped `@font-face`) so arrows/dots render the same glyphs.
-- Map: the 320 KB source artwork is split — the pin layer (12 linked pins, clip paths, labels,
-  17 KB) lives in `map.js` so it renders synchronously; the town artwork (`blocks/map/map-bg.svg`,
-  fixed decorative asset) is fetched and inlined (so its text uses the page fonts) behind it.
-  Each authored row slots one pin's href + photo (matched by `#projectN`). Pin hover scale +
-  label slide + load animation as on the source (CSS); disabled under reduced motion.
-- Newsletter: native form, `POST https://balbriggan.ie/#gf_1` multipart with the same Gravity
-  Forms field names and hidden state (interim, dynamic-features row 3).
-- Links to other balbriggan.ie pages stay absolute (only `/` is migrated) — localize-links
-  dry-run confirmed it keeps them (targets not in the migration set).
-- Media: 25 editorial images uploaded to `media/index/` (ledger
-  `stardust/deploy/media-ledger-index.json`), authored as content.da.live URLs, alt="" as on
-  the source.
-- Motion (progress.json `motion.implemented`): button hover (foundation), explore hover,
-  news dots/arrows, map pin hover + label slide, hero video autoplay — implemented; dead ones
-  (outline transitions) not implemented.
+### C0 header-contract parity follow-up (2026-10-14)
 
-**Local gates:** delivery-lint clean (0 P0/P1/P2); davids-model-lint PASS 0 🔴 / 5 🟡 (hero and
-intro single-cell bespoke widgets — justified above; D3 differing cell counts on news/explore/docs
-come from the in-table section heading row); block-roundtrip `--ew` exit 0 (27/41 editable, 0 dead,
-14 declared exempt); qa-gate 34 ok / 3 fail, all three instrument artefacts: the schema names the
-news/explore/docs sections all `band` (explore's 5 units get checked against the news block), the
-map's repeat selector is `g.[object SVGAnimatedString]` (SVG className), and the 2560 "no cap"
-check reads `containerMaxWidth: null` while the source's bootstrap container caps at 1140 (the
-prototype's cap-probe vs live PASSED at 2560 with the same caps). Lint clean.
+- Burger `#menu-btn` and mobile sub-menu toggles carry no aria-label (role/name parity with source +
+  prototype; aria-expanded kept). Accessibility trade-off accepted for replica parity — revisit post-launch.
+- Mobile sub-menu now mirrors the live theme JS (main.3ebd13ef…js): chevron swaps down/up
+  (`/icons/chevron-up-white.svg`), and a parent link first opens its sub-list, navigating only once open.
+- The Escape-closes-drawer handler was removed (source records no escape close path); supersedes the
+  earlier "Escape closes the menu" note.
+- `chrome-compare --profile replica` → 0 errors, 2 warnings (logo link-missing, accepted) →
+  `stardust/chrome/header-parity.json`.
 
-**Delivery (archetype index):** DA `/index` PUT → preview → live via deploy-batch (ledger
-`stardust/deploy/ledger-index.json`); `.plain.html` 200, one `<h1>`, 0 `about:error`, no `/img/`,
-25 `<img>`; `https://main--e8103195--aemcoder.aem.page/` 200 (live host 200). media-reconcile: 25
-hosted. Deployed probe: hero `<video>` autoplay/muted/loop/playsinline, `paused: false`, 0 page
-errors, 4 slides + 4 dots, 5 tiles, 12 linked pins with photos + artwork, 4 docs, 0 broken images.
+## C-archetype — landing (home `/index` → `/`), 2026-10-14
 
-**Published-origin gate** (`gate-all --only index`, state copy `stardust/.work/rollout/index/state.json`
-marking `/` deployed — `stardust/state.json` untouched):
-- 1440: pixel 1.43 % (text 6.67 %), Δh 0, clip 0, MISSING 0 / HIDDEN 0, units 0 off — PASS.
-  Fix rounds (block CSS/JS only, 3): news title `<p>` carries the 9rem flex box; doc and explore
-  `<picture>` boxes take the image geometry (unit-geometry measured the inline picture);
-  explore tiles carry the `explore__item` alias the `stardust/replica/units.json` family uses.
-- 360: pixel 2.40 % (text 3.19 %), Δh 0, clip 2 (allow 2, source parity sidecar copied to
-  `gates/all-360/clip-allow.json`), MISSING 0 / HIDDEN 0. Row prints FAIL (elements) from a
-  unit-geometry instrument artefact: the origin unit inventory is cached per slug
-  (`stardust/current/measure/index-units.json`, written by the 1440 run) and reused at 360
-  (origin docH 4696, 350px cards vs a 360px viewport). A fresh, uncached 360 measurement
-  (`stardust/.work/rollout/index/units-360-fresh.json`) reads 32/32 within 4px, 0 off.
-- Origin capture: the fresh 1440 stitch of balbriggan.ie this session was degraded (lazy
-  explore/doc/footer images unpainted, doc row wrapped, +122px → 12.74 %; kept in
-  `stardust/.work/rollout/index/fresh-origin-1440/`), so both widths gate against the archetype
-  round's verified captures (`gates/index-<w>/live.png`, noted in each `origin.json`).
-- Chrome bands (crop-compare): header 1440 2.29 % (R-01 font residual, known), footer 1440
-  0.43 %; header 360 0.01 %, footer 360 0.20 %.
-- content-diff (generic): 0 structural 🔴 (110 findings, all 🟡/advisory — chrome icon renders).
-- Video: Vimeo `external` mp4 answers 403 to this sandbox (curl and headless), so playback could
-  not be observed here; the element is wired exactly as the source (autoplay muted loop
-  playsinline, `play()` resolved without error in headless).
+- **Blocks + decode tiers** (schema `stardust/eds-schema/index.json`; each block's JSDoc cites it):
+  - `hero` — template-slotted (replaces the stock boilerplate hero). One cell: img · h1 · lede · strong-link CTA.
+    davids-model D1 🟡 ("prose-only 1-row block") justified: bespoke full-bleed photo layer + scrim + bottom-left
+    pinned copy; not expressible as default content. Live's duplicated desktop/mobile `<img>` is ONE authored
+    image with a breakpoint `object-position` (left below 768) — roundtrip 🟡 IMG COUNT 2→1 is intentional.
+  - `split` — template-slotted, 3 instances; variants `reverse`, `art-windmill`, `art-wheat` (decorative PNG
+    artwork = block-owned CSS assets). Café opening hours authored as a `<ul>` (days, time); clock icon is CSS.
+  - `callout` — template-slotted; harbour photo authored (editorial, alt "") and rendered as the background layer
+    under the 94 % maroon wash; opening-hours line = last plain paragraph, clock icon CSS.
+  - `attractions` — reconstructive (one row per card; card-as-link, EW6); Swiper-equivalent loop carousel ported
+    from prototype motion.js (autoplay 5500 ms, prev/next arrows, live breakpoints 4.2/3.2/2.2/1 per view).
+    Live's `--fixed` body height on the History card (≥1024) not reproduced — no authored marker, no visible effect.
+  - `reviews` — reconstructive (one row per review: quote | name); loop carousel with bullets + autoHeight,
+    autoplay 5500 ms; four presentational stars generated (no text).
+  - `tickets` — reconstructive: six ticket cards (card-as-link; Go City keeps its split links when the title is a
+    link) + the image-less "Useful Information" row as the span-2 panel (icons via `/icons/*.svg` icon spans,
+    IOE artwork CSS).
+  - `posts` — reconstructive, 2 instances (Latest Events / Latest News); trailing CTA row = "View All".
+  - Section heads (The Attractions, What Our Visitors Say, Tickets, Latest Events/News) authored as default
+    content and reabsorbed (EW8). Decorative section washes (attractions texture, reviews photo under 95 % overlay)
+    are block CSS assets; all 23 editorial images on DA `media/home/` (ledger `stardust/deploy/media-ledger-landing.json`).
+- **Gates**: delivery-lint 0 P0/P1; media-reconcile 23 hosted; davids-model 0 🔴; block-roundtrip whole page
+  0 structural 🔴, EW 100/100 editable. qa-gate (static harness): 3 instrument/harness FAILs — header/footer empty
+  (no `/nav` `/footer` on a static server) and the split ≥4 unit check (matches every `sm-split` schema section to
+  the first instance and counts Farmers Market prose `<p>`s as units).
+- **Published-origin gate** (`gate-all --only index`, state copy in `.work` since `state.json` is coordinator-owned;
+  `--eds-host` needs the scheme): 1440 1.79 % Δh 26 px, 360 2.18 % Δh 19 px, clipped 0, MISSING/HIDDEN 0.
+  Sidecar `stardust/replica/gates/all-{1440,360}/presence.json` roots live at `main > div.flex-1` because live puts
+  its header/footer INSIDE `<main>` (first run: 21 MISSING, all chrome links). Instrument note: content-presence
+  sees only the hero on both sides (scroll-reveal leaves off-screen items at opacity 0 — RES-2); a reveal-neutralised
+  one-shot check (`stardust/.work/deploy/probes/presence-revealed.mjs`) matched 29/29 headings, 34/34 links @1440.
+- Crop bands: header 1.55 % (1440) / 0.69 % (360); footer 1.50 % (1440) / 2.18 % (360 — live "Manage consent" tab,
+  RES-3; 0.65 % excluding those rows). chrome-parity @1440: 32 deltas, same classes as C0 (icon file names, live
+  partner logos 0×0 at probe time, support-line padding).

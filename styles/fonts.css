@@ -1,42 +1,43 @@
-/*
- * R-01 (stardust/replica/inconsistency-register.md): Gotham is licensed — never rehosted. The
- * brand names stay first in every stack (styles.css); these self-hosted Montserrat faces (SIL OFL)
- * render meanwhile. size-adjust matches advance widths; the overrides reproduce Gotham's measured
- * ascent/descent/line-gap (Light .73/.20/.07em, Medium & Bold .80/.20/0em), divided by size-adjust.
- * Values verbatim from stardust/prototypes/canon.css.
- */
+/* stylelint-disable max-line-length */
+
+/* proxima-nova: the owner's Adobe Fonts kit (pbd5qiw), referenced exactly as the prototype
+   and live site do — never rehosted. Loaded here (deferred by loadFonts()), never in head.html.
+   Weights in the kit: 300, 400, 500. */
+@import url('https://use.typekit.net/pbd5qiw.css');
+
+/* Libre Baskerville (SIL OFL 1.1) — self-hosted, latin + latin-ext subsets */
 @font-face {
-  font-family: 'Gotham Light Sub';
+  font-family: 'Libre Baskerville';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400 700;
   font-display: swap;
-  src: url('../fonts/montserrat-300.woff2') format('woff2');
-  size-adjust: 99%;
-  ascent-override: 73.7%;
-  descent-override: 20.2%;
-  line-gap-override: 7.07%;
+  src: url('../fonts/libre-baskerville-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
-  font-family: 'Gotham Medium Sub';
+  font-family: 'Libre Baskerville';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400 700;
   font-display: swap;
-  src: url('../fonts/montserrat-500.woff2') format('woff2');
-  size-adjust: 98%;
-  ascent-override: 81.6%;
-  descent-override: 20.4%;
-  line-gap-override: 0%;
+  src: url('../fonts/libre-baskerville-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-  font-family: 'Gotham Bold Sub';
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
   font-display: swap;
-  src: url('../fonts/montserrat-700.woff2') format('woff2');
-  size-adjust: 100%;
-  ascent-override: 80%;
-  descent-override: 20%;
-  line-gap-override: 0%;
+  src: url('../fonts/libre-baskerville-italic-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/libre-baskerville-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }

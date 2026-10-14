@@ -1,1 +1,4 @@
-{"units":{"index":{"status":"done","kind":"render","templates":["landing"],"pages":1,"startedAt":"2026-10-13T15:09:40Z","endedAt":"2026-10-13T15:09:46Z","verdict":"rendered 1, unchanged 0, refused 0, passthrough 0"}}}
+{ "units": {
+  "plan": { "status": "done", "kind": "plan", "templates": ["landing"], "pages": 1, "startedAt": "2026-10-14T09:31:11Z", "endedAt": "2026-10-14T09:31:11Z", "verdict": "1 page, 1 template (landing), archetype only, 0 siblings" },
+  "landing": { "status": "done", "kind": "render", "templates": ["landing"], "pages": 1, "startedAt": "2026-10-14T09:31:11Z", "endedAt": "2026-10-14T09:31:11Z", "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0" }
+} }

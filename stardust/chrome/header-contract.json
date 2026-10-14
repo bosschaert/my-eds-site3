@@ -1,104 +1,56 @@
 {
  "tool": "chrome-explore",
- "url": "https://balbriggan.ie/",
- "at": "2026-10-13T15:13:10.127Z",
+ "url": "https://www.skerriesmills.ie/",
+ "at": "2026-10-14T09:33:04.355Z",
  "shots": "stardust/.work/chrome/header-contract",
  "widths": {
   "390": {
-   "root": "#wrapper-navbar",
+   "root": "body>main>header",
    "controls": [
     {
-     "name": "Our Balbriggan logo",
-     "key": "our balbriggan logo",
+     "name": "",
+     "key": "",
      "role": "link",
      "kind": "link",
-     "sel": "#wrapper-navbar>nav>div>a",
-     "href": "https://balbriggan.ie/",
+     "sel": "body>main>header>div>div:nth-of-type(2)>a",
+     "href": "https://www.skerriesmills.ie/",
      "expanded": null,
      "rect": [
+      24,
       16,
-      16,
-      142,
-      58
+      112,
+      55
      ],
      "actions": {}
     },
     {
-     "name": "",
-     "key": "",
+     "name": "Book Now",
+     "key": "book now",
      "role": "link",
      "kind": "link",
-     "sel": "#wrapper-navbar>nav>div>div>div:nth-of-type(1)>ul>li:nth-of-type(1)>a",
-     "href": "https://www.facebook.com/Our-Balbriggan-Get-Involved-186850462253496/",
+     "sel": "#book",
+     "href": "https://www.skerriesmills.ie/tickets/",
      "expanded": null,
      "rect": [
-      244,
-      13,
-      11,
-      19
+      191,
+      22,
+      96,
+      44
      ],
      "actions": {}
     },
     {
      "name": "",
      "key": "",
-     "role": "link",
-     "kind": "link",
-     "sel": "#wrapper-navbar>nav>div>div>div:nth-of-type(1)>ul>li:nth-of-type(2)>a",
-     "href": "https://twitter.com/OurBalbriggan",
-     "expanded": null,
-     "rect": [
-      272,
-      13,
-      19,
-      19
-     ],
-     "actions": {}
-    },
-    {
-     "name": "",
-     "key": "",
-     "role": "link",
-     "kind": "link",
-     "sel": "#wrapper-navbar>nav>div>div>div:nth-of-type(1)>ul>li:nth-of-type(3)>a",
-     "href": "https://www.linkedin.com/showcase/18913857/",
-     "expanded": null,
-     "rect": [
-      308,
-      13,
-      17,
-      19
-     ],
-     "actions": {}
-    },
-    {
-     "name": "",
-     "key": "",
-     "role": "link",
-     "kind": "link",
-     "sel": "#wrapper-navbar>nav>div>div>div:nth-of-type(1)>ul>li:nth-of-type(4)>a",
-     "href": "https://www.instagram.com/ourbalbriggan/",
+     "role": "toggle",
+     "kind": "menu",
+     "sel": "#menu-btn",
      "expanded": null,
      "rect": [
       342,
-      13,
-      17,
-      19
-     ],
-     "actions": {}
-    },
-    {
-     "name": "Toggle navigation",
-     "key": "toggle navigation",
-     "role": "toggle",
-     "kind": "drawer",
-     "sel": "#wrapper-navbar>nav>div>div>div:nth-of-type(2)>button",
-     "expanded": "false",
-     "rect": [
-      228,
-      42,
-      56,
-      40
+      37,
+      24,
+      24
      ],
      "actions": {
       "click": {
@@ -107,56 +59,64 @@
        "panel": {
         "links": [
          {
-          "text": "Plans & Projects",
-          "href": "https://balbriggan.ie/#"
+          "text": "Attractions",
+          "href": "https://www.skerriesmills.ie/attractions/"
          },
          {
-          "text": "Discover",
-          "href": "https://balbriggan.ie/#"
+          "text": "School Tours",
+          "href": "https://www.skerriesmills.ie/school-tours/"
          },
          {
-          "text": "Leadership & Governance",
-          "href": "https://balbriggan.ie/#"
+          "text": "Groups & Venue",
+          "href": "https://www.skerriesmills.ie/?page_id=299"
          },
          {
-          "text": "Loves Learning Festival",
-          "href": "https://balbriggan.ie/#"
+          "text": "About Us",
+          "href": "https://www.skerriesmills.ie/about-us/"
          },
          {
-          "text": "Community Platform",
-          "href": "https://balbriggan.ie/community-platform/"
+          "text": "Plan Your Visit",
+          "href": "https://www.skerriesmills.ie/plan-your-visit/"
          },
          {
-          "text": "Get Involved",
-          "href": "https://balbriggan.ie/contact/"
+          "text": "Sustainability",
+          "href": "https://www.skerriesmills.ie/sustainability-dublin-things-to-do/"
          }
         ],
         "headings": [],
-        "images": 0,
+        "images": 4,
         "inputs": [],
         "buttons": [],
         "options": 0,
         "rect": [
-         16,
-         140,
-         233,
-         298
+         32,
+         159,
+         305,
+         289
         ]
        },
-       "expanded": "true",
+       "expanded": null,
        "focus": "trigger",
        "scrollLock": false,
        "motion": [
         {
          "kind": "transition",
-         "prop": "height",
-         "ms": 350,
+         "prop": "transform",
+         "ms": 500,
          "delay": 0,
          "easing": "ease",
-         "target": "div.navbar-collapse"
+         "target": "span.hamburger-top"
+        },
+        {
+         "kind": "transition",
+         "prop": "transform",
+         "ms": 500,
+         "delay": 0,
+         "easing": "ease",
+         "target": "span.hamburger-bottom"
         }
        ],
-       "shot": "390-001-Toggle-navigation-click.png"
+       "shot": "390-001-toggle-click.png"
       },
       "key": {
        "opened": true,
@@ -164,563 +124,559 @@
        "panel": {
         "links": [
          {
-          "text": "Plans & Projects",
-          "href": "https://balbriggan.ie/#"
+          "text": "Attractions",
+          "href": "https://www.skerriesmills.ie/attractions/"
          },
          {
-          "text": "Discover",
-          "href": "https://balbriggan.ie/#"
+          "text": "School Tours",
+          "href": "https://www.skerriesmills.ie/school-tours/"
          },
          {
-          "text": "Leadership & Governance",
-          "href": "https://balbriggan.ie/#"
+          "text": "Groups & Venue",
+          "href": "https://www.skerriesmills.ie/?page_id=299"
          },
          {
-          "text": "Loves Learning Festival",
-          "href": "https://balbriggan.ie/#"
+          "text": "About Us",
+          "href": "https://www.skerriesmills.ie/about-us/"
          },
          {
-          "text": "Community Platform",
-          "href": "https://balbriggan.ie/community-platform/"
+          "text": "Plan Your Visit",
+          "href": "https://www.skerriesmills.ie/plan-your-visit/"
          },
          {
-          "text": "Get Involved",
-          "href": "https://balbriggan.ie/contact/"
+          "text": "Sustainability",
+          "href": "https://www.skerriesmills.ie/sustainability-dublin-things-to-do/"
          }
         ],
         "headings": [],
-        "images": 0,
+        "images": 4,
         "inputs": [],
         "buttons": [],
         "options": 0,
         "rect": [
-         16,
-         140,
-         233,
-         298
+         32,
+         159,
+         305,
+         289
         ]
        },
-       "expanded": "true",
+       "expanded": null,
        "focus": "trigger",
        "scrollLock": false,
        "motion": [
         {
          "kind": "transition",
-         "prop": "height",
-         "ms": 350,
+         "prop": "transform",
+         "ms": 500,
          "delay": 0,
          "easing": "ease",
-         "target": "div.navbar-collapse"
+         "target": "span.hamburger-top"
+        },
+        {
+         "kind": "transition",
+         "prop": "transform",
+         "ms": 500,
+         "delay": 0,
+         "easing": "ease",
+         "target": "span.hamburger-bottom"
         }
        ],
-       "shot": "390-002-Toggle-navigation-key.png",
+       "shot": "390-002-toggle-key.png",
        "tabReachesPanel": true
       }
      },
      "close": {
       "escape": false,
       "focusReturn": false,
-      "outside": false,
+      "outside": null,
       "toggle": true
      },
      "children": [
       {
-       "name": "Plans & Projects",
-       "key": "plans projects",
+       "name": "Attractions",
+       "key": "attractions",
+       "role": "link",
+       "kind": "link",
+       "sel": "#menu-mobile>li:nth-of-type(1)>a",
+       "href": "https://www.skerriesmills.ie/attractions/",
+       "expanded": null,
+       "rect": [
+        32,
+        159,
+        130,
+        29
+       ],
+       "actions": {}
+      },
+      {
+       "name": "",
+       "key": "",
        "role": "toggle",
        "kind": "menu",
-       "sel": "#menu-item-dropdown-1117",
-       "expanded": "false",
+       "sel": "#menu-mobile>li:nth-of-type(1)>button",
+       "expanded": null,
        "rect": [
-        16,
-        160,
-        233,
-        38
+        312,
+        164,
+        25,
+        25
        ],
        "actions": {
         "click": {
          "opened": true,
-         "hidden": 0,
+         "hidden": 1,
          "panel": {
           "links": [
            {
-            "text": "Town Transformation",
-            "href": "https://balbriggan.ie/town-transformation/"
+            "text": "Our Tour",
+            "href": "https://www.skerriesmills.ie/attractions/guided-tour/"
            },
            {
-            "text": "Smart Balbriggan",
-            "href": "https://balbriggan.ie/smart-balbriggan/"
+            "text": "Museum",
+            "href": "https://www.skerriesmills.ie/attractions/museum/"
            },
            {
-            "text": "URBACT & IPlace",
-            "href": "https://balbriggan.ie/urbact-iplace/"
+            "text": "Art At The Mill",
+            "href": "https://www.skerriesmills.ie/attractions/art-at-the-mill/"
            },
            {
-            "text": "Time4EU",
-            "href": "https://balbriggan.ie/time4eu/"
+            "text": "The Watermill Cafe",
+            "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/"
+           },
+           {
+            "text": "The Craft Shop",
+            "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/"
            }
           ],
           "headings": [],
-          "images": 0,
+          "images": 1,
           "inputs": [],
           "buttons": [],
           "options": 0,
           "rect": [
-           16,
-           200,
-           233,
+           32,
+           160,
+           305,
+           184
+          ]
+         },
+         "expanded": null,
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [],
+         "shot": "390-003-toggle-click.png"
+        },
+        "key": {
+         "opened": true,
+         "hidden": 1,
+         "panel": {
+          "links": [
+           {
+            "text": "Our Tour",
+            "href": "https://www.skerriesmills.ie/attractions/guided-tour/"
+           },
+           {
+            "text": "Museum",
+            "href": "https://www.skerriesmills.ie/attractions/museum/"
+           },
+           {
+            "text": "Art At The Mill",
+            "href": "https://www.skerriesmills.ie/attractions/art-at-the-mill/"
+           },
+           {
+            "text": "The Watermill Cafe",
+            "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/"
+           },
+           {
+            "text": "The Craft Shop",
+            "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/"
+           }
+          ],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           32,
+           160,
+           305,
+           184
+          ]
+         },
+         "expanded": null,
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [],
+         "shot": "390-004-toggle-key.png",
+         "tabReachesPanel": false
+        }
+       },
+       "close": {
+        "escape": false,
+        "focusReturn": false,
+        "outside": null,
+        "toggle": false
+       },
+       "children": []
+      },
+      {
+       "name": "Groups & Venue",
+       "key": "groups venue",
+       "role": "link",
+       "kind": "link",
+       "sel": "#menu-mobile>li:nth-of-type(3)>a",
+       "href": "https://www.skerriesmills.ie/?page_id=299",
+       "expanded": null,
+       "rect": [
+        32,
+        263,
+        166,
+        29
+       ],
+       "actions": {}
+      },
+      {
+       "name": "",
+       "key": "",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#menu-mobile>li:nth-of-type(3)>button",
+       "expanded": null,
+       "rect": [
+        312,
+        268,
+        25,
+        25
+       ],
+       "actions": {
+        "click": {
+         "opened": true,
+         "hidden": 1,
+         "panel": {
+          "links": [
+           {
+            "text": "Hire Space at The Mill",
+            "href": "https://www.skerriesmills.ie/hire-space-at-the-mill/"
+           },
+           {
+            "text": "Visiting Groups",
+            "href": "https://www.skerriesmills.ie/visiting-groups/"
+           }
+          ],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           32,
+           264,
+           305,
+           100
+          ]
+         },
+         "expanded": null,
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [],
+         "shot": "390-005-toggle-click.png"
+        },
+        "key": {
+         "opened": true,
+         "hidden": 1,
+         "panel": {
+          "links": [
+           {
+            "text": "Hire Space at The Mill",
+            "href": "https://www.skerriesmills.ie/hire-space-at-the-mill/"
+           },
+           {
+            "text": "Visiting Groups",
+            "href": "https://www.skerriesmills.ie/visiting-groups/"
+           }
+          ],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           32,
+           264,
+           305,
+           100
+          ]
+         },
+         "expanded": null,
+         "focus": "trigger",
+         "scrollLock": false,
+         "motion": [],
+         "shot": "390-006-toggle-key.png",
+         "tabReachesPanel": false
+        }
+       },
+       "close": {
+        "escape": false,
+        "focusReturn": false,
+        "outside": null,
+        "toggle": false
+       },
+       "children": []
+      },
+      {
+       "name": "About Us",
+       "key": "about us",
+       "role": "link",
+       "kind": "link",
+       "sel": "#menu-mobile>li:nth-of-type(4)>a",
+       "href": "https://www.skerriesmills.ie/about-us/",
+       "expanded": null,
+       "rect": [
+        32,
+        315,
+        97,
+        29
+       ],
+       "actions": {}
+      },
+      {
+       "name": "",
+       "key": "",
+       "role": "toggle",
+       "kind": "menu",
+       "sel": "#menu-mobile>li:nth-of-type(4)>button",
+       "expanded": null,
+       "rect": [
+        312,
+        320,
+        25,
+        25
+       ],
+       "actions": {
+        "click": {
+         "opened": true,
+         "hidden": 1,
+         "panel": {
+          "links": [
+           {
+            "text": "History Of The Mills",
+            "href": "https://www.skerriesmills.ie/history-of-the-mills/"
+           },
+           {
+            "text": "Community",
+            "href": "https://www.skerriesmills.ie/community/"
+           },
+           {
+            "text": "Blog",
+            "href": "https://www.skerriesmills.ie/blog/"
+           },
+           {
+            "text": "Events",
+            "href": "https://www.skerriesmills.ie/category/events/"
+           }
+          ],
+          "headings": [],
+          "images": 1,
+          "inputs": [],
+          "buttons": [],
+          "options": 0,
+          "rect": [
+           32,
+           316,
+           305,
            156
           ]
          },
-         "expanded": "true",
+         "expanded": null,
          "focus": "trigger",
          "scrollLock": false,
          "motion": [],
-         "shot": "390-003-Plans-Projects-click.png"
+         "shot": "390-007-toggle-click.png"
         },
         "key": {
          "opened": true,
-         "hidden": 0,
+         "hidden": 1,
          "panel": {
           "links": [
            {
-            "text": "Town Transformation",
-            "href": "https://balbriggan.ie/town-transformation/"
+            "text": "History Of The Mills",
+            "href": "https://www.skerriesmills.ie/history-of-the-mills/"
            },
            {
-            "text": "Smart Balbriggan",
-            "href": "https://balbriggan.ie/smart-balbriggan/"
+            "text": "Community",
+            "href": "https://www.skerriesmills.ie/community/"
            },
            {
-            "text": "URBACT & IPlace",
-            "href": "https://balbriggan.ie/urbact-iplace/"
+            "text": "Blog",
+            "href": "https://www.skerriesmills.ie/blog/"
            },
            {
-            "text": "Time4EU",
-            "href": "https://balbriggan.ie/time4eu/"
+            "text": "Events",
+            "href": "https://www.skerriesmills.ie/category/events/"
            }
           ],
           "headings": [],
-          "images": 0,
+          "images": 1,
           "inputs": [],
           "buttons": [],
           "options": 0,
           "rect": [
-           16,
-           200,
-           233,
+           32,
+           316,
+           305,
            156
           ]
          },
-         "expanded": "true",
+         "expanded": null,
          "focus": "trigger",
          "scrollLock": false,
-         "motion": [
-          {
-           "kind": "transition",
-           "prop": "outline-color",
-           "ms": 300,
-           "delay": 0,
-           "easing": "ease",
-           "target": "a.dropdown-toggle"
-          },
-          {
-           "kind": "transition",
-           "prop": "outline-offset",
-           "ms": 300,
-           "delay": 0,
-           "easing": "ease",
-           "target": "a.dropdown-toggle"
-          },
-          {
-           "kind": "transition",
-           "prop": "outline-width",
-           "ms": 300,
-           "delay": 0,
-           "easing": "ease",
-           "target": "a.dropdown-toggle"
-          }
-         ],
-         "shot": "390-004-Plans-Projects-key.png",
-         "tabReachesPanel": true
+         "motion": [],
+         "shot": "390-008-toggle-key.png",
+         "tabReachesPanel": false
         }
        },
        "close": {
-        "escape": true,
-        "focusReturn": true,
-        "outside": true,
-        "toggle": true
+        "escape": false,
+        "focusReturn": false,
+        "outside": null,
+        "toggle": false
        },
        "children": []
       },
       {
-       "name": "Discover",
-       "key": "discover",
-       "role": "toggle",
-       "kind": "menu",
-       "sel": "#menu-item-dropdown-1135",
-       "expanded": "false",
+       "name": "Plan Your Visit",
+       "key": "plan your visit",
+       "role": "link",
+       "kind": "link",
+       "sel": "#menu-mobile>li:nth-of-type(5)>a",
+       "href": "https://www.skerriesmills.ie/plan-your-visit/",
+       "expanded": null,
        "rect": [
-        16,
-        206,
-        233,
-        38
+        32,
+        367,
+        159,
+        29
        ],
-       "actions": {
-        "click": {
-         "opened": true,
-         "hidden": 0,
-         "panel": {
-          "links": [
-           {
-            "text": "News",
-            "href": "https://balbriggan.ie/news/"
-           }
-          ],
-          "headings": [],
-          "images": 0,
-          "inputs": [],
-          "buttons": [],
-          "options": 0,
-          "rect": [
-           16,
-           245,
-           233,
-           56
-          ]
-         },
-         "expanded": "true",
-         "focus": "trigger",
-         "scrollLock": false,
-         "motion": [],
-         "shot": "390-005-Discover-click.png"
-        },
-        "key": {
-         "opened": true,
-         "hidden": 0,
-         "panel": {
-          "links": [
-           {
-            "text": "News",
-            "href": "https://balbriggan.ie/news/"
-           }
-          ],
-          "headings": [],
-          "images": 0,
-          "inputs": [],
-          "buttons": [],
-          "options": 0,
-          "rect": [
-           16,
-           245,
-           233,
-           56
-          ]
-         },
-         "expanded": "true",
-         "focus": "trigger",
-         "scrollLock": false,
-         "motion": [
-          {
-           "kind": "transition",
-           "prop": "outline-color",
-           "ms": 300,
-           "delay": 0,
-           "easing": "ease",
-           "target": "a.dropdown-toggle"
-          },
-          {
-           "kind": "transition",
-           "prop": "outline-offset",
-           "ms": 300,
-           "delay": 0,
-           "easing": "ease",
-           "target": "a.dropdown-toggle"
-          },
-          {
-           "kind": "transition",
-           "prop": "outline-width",
-           "ms": 300,
-           "delay": 0,
-           "easing": "ease",
-           "target": "a.dropdown-toggle"
-          }
-         ],
-         "shot": "390-006-Discover-key.png",
-         "tabReachesPanel": true
-        }
-       },
-       "close": {
-        "escape": true,
-        "focusReturn": true,
-        "outside": true,
-        "toggle": true
-       },
-       "children": []
+       "actions": {}
       },
       {
-       "name": "Leadership & Governance",
-       "key": "leadership governance",
+       "name": "",
+       "key": "",
        "role": "toggle",
        "kind": "menu",
-       "sel": "#menu-item-dropdown-1237",
-       "expanded": "false",
+       "sel": "#menu-mobile>li:nth-of-type(5)>button",
+       "expanded": null,
        "rect": [
-        16,
-        251,
-        233,
-        38
+        312,
+        372,
+        25,
+        25
        ],
        "actions": {
         "click": {
          "opened": true,
-         "hidden": 0,
+         "hidden": 1,
          "panel": {
           "links": [
            {
-            "text": "Balbriggan Leadership Group",
-            "href": "https://balbriggan.ie/leadership-governance/"
+            "text": "The Watermill Cafe",
+            "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/"
            },
            {
-            "text": "Project Team",
-            "href": "https://balbriggan.ie/the-team/"
+            "text": "The Craft Shop",
+            "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/"
            },
            {
-            "text": "Community Development",
-            "href": "https://balbriggan.ie/community-development/"
+            "text": "FAQ & Accessibility",
+            "href": "https://www.skerriesmills.ie/faq-accessibility/"
            },
            {
-            "text": "Education Skills & Training",
-            "href": "https://balbriggan.ie/education-skills-training/"
+            "text": "Explore The Area",
+            "href": "https://www.skerriesmills.ie/explore-the-area/"
            },
            {
-            "text": "Sustainability, Climate Action and Biodiversity",
-            "href": "https://balbriggan.ie/sustainability-climate-action-and-biodiversity/"
+            "text": "Getting Here",
+            "href": "https://www.skerriesmills.ie/getting-here/"
            },
            {
-            "text": "Economic Development Pillar",
-            "href": "https://balbriggan.ie/economic-development/"
+            "text": "Contact",
+            "href": "https://www.skerriesmills.ie/contact/"
            }
           ],
           "headings": [],
-          "images": 0,
+          "images": 1,
           "inputs": [],
           "buttons": [],
           "options": 0,
           "rect": [
-           16,
-           291,
-           374,
-           224
+           32,
+           368,
+           305,
+           212
           ]
          },
-         "expanded": "true",
+         "expanded": null,
          "focus": "trigger",
          "scrollLock": false,
          "motion": [],
-         "shot": "390-007-Leadership-Governance-click.png"
+         "shot": "390-009-toggle-click.png"
         },
         "key": {
          "opened": true,
-         "hidden": 0,
+         "hidden": 1,
          "panel": {
           "links": [
            {
-            "text": "Balbriggan Leadership Group",
-            "href": "https://balbriggan.ie/leadership-governance/"
+            "text": "The Watermill Cafe",
+            "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/"
            },
            {
-            "text": "Project Team",
-            "href": "https://balbriggan.ie/the-team/"
+            "text": "The Craft Shop",
+            "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/"
            },
            {
-            "text": "Community Development",
-            "href": "https://balbriggan.ie/community-development/"
+            "text": "FAQ & Accessibility",
+            "href": "https://www.skerriesmills.ie/faq-accessibility/"
            },
            {
-            "text": "Education Skills & Training",
-            "href": "https://balbriggan.ie/education-skills-training/"
+            "text": "Explore The Area",
+            "href": "https://www.skerriesmills.ie/explore-the-area/"
            },
            {
-            "text": "Sustainability, Climate Action and Biodiversity",
-            "href": "https://balbriggan.ie/sustainability-climate-action-and-biodiversity/"
+            "text": "Getting Here",
+            "href": "https://www.skerriesmills.ie/getting-here/"
            },
            {
-            "text": "Economic Development Pillar",
-            "href": "https://balbriggan.ie/economic-development/"
+            "text": "Contact",
+            "href": "https://www.skerriesmills.ie/contact/"
            }
           ],
           "headings": [],
-          "images": 0,
+          "images": 1,
           "inputs": [],
           "buttons": [],
           "options": 0,
           "rect": [
-           16,
-           291,
-           374,
-           224
+           32,
+           368,
+           305,
+           212
           ]
          },
-         "expanded": "true",
-         "focus": "trigger",
-         "scrollLock": false,
-         "motion": [
-          {
-           "kind": "transition",
-           "prop": "outline-color",
-           "ms": 300,
-           "delay": 0,
-           "easing": "ease",
-           "target": "a.dropdown-toggle"
-          },
-          {
-           "kind": "transition",
-           "prop": "outline-offset",
-           "ms": 300,
-           "delay": 0,
-           "easing": "ease",
-           "target": "a.dropdown-toggle"
-          },
-          {
-           "kind": "transition",
-           "prop": "outline-width",
-           "ms": 300,
-           "delay": 0,
-           "easing": "ease",
-           "target": "a.dropdown-toggle"
-          }
-         ],
-         "shot": "390-008-Leadership-Governance-key.png",
-         "tabReachesPanel": true
-        }
-       },
-       "close": {
-        "escape": true,
-        "focusReturn": true,
-        "outside": true,
-        "toggle": true
-       },
-       "children": []
-      },
-      {
-       "name": "Loves Learning Festival",
-       "key": "loves learning festival",
-       "role": "toggle",
-       "kind": "menu",
-       "sel": "#menu-item-dropdown-1589",
-       "expanded": "false",
-       "rect": [
-        16,
-        297,
-        233,
-        38
-       ],
-       "actions": {
-        "click": {
-         "opened": true,
-         "hidden": 0,
-         "panel": {
-          "links": [
-           {
-            "text": "Loves Learning Festival 2023",
-            "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/"
-           },
-           {
-            "text": "Loves Learning Event Programme",
-            "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/#learning-timetable"
-           },
-           {
-            "text": "Loves Learning Festival 2022",
-            "href": "https://balbriggan.ie/loves-learning-festival/"
-           }
-          ],
-          "headings": [],
-          "images": 0,
-          "inputs": [],
-          "buttons": [],
-          "options": 0,
-          "rect": [
-           16,
-           336,
-           289,
-           123
-          ]
-         },
-         "expanded": "true",
+         "expanded": null,
          "focus": "trigger",
          "scrollLock": false,
          "motion": [],
-         "shot": "390-009-Loves-Learning-Festival-click.png"
-        },
-        "key": {
-         "opened": true,
-         "hidden": 0,
-         "panel": {
-          "links": [
-           {
-            "text": "Loves Learning Festival 2023",
-            "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/"
-           },
-           {
-            "text": "Loves Learning Event Programme",
-            "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/#learning-timetable"
-           },
-           {
-            "text": "Loves Learning Festival 2022",
-            "href": "https://balbriggan.ie/loves-learning-festival/"
-           }
-          ],
-          "headings": [],
-          "images": 0,
-          "inputs": [],
-          "buttons": [],
-          "options": 0,
-          "rect": [
-           16,
-           336,
-           289,
-           123
-          ]
-         },
-         "expanded": "true",
-         "focus": "trigger",
-         "scrollLock": false,
-         "motion": [
-          {
-           "kind": "transition",
-           "prop": "outline-color",
-           "ms": 300,
-           "delay": 0,
-           "easing": "ease",
-           "target": "a.dropdown-toggle"
-          },
-          {
-           "kind": "transition",
-           "prop": "outline-offset",
-           "ms": 300,
-           "delay": 0,
-           "easing": "ease",
-           "target": "a.dropdown-toggle"
-          },
-          {
-           "kind": "transition",
-           "prop": "outline-width",
-           "ms": 300,
-           "delay": 0,
-           "easing": "ease",
-           "target": "a.dropdown-toggle"
-          }
-         ],
-         "shot": "390-010-Loves-Learning-Festival-key.png",
-         "tabReachesPanel": true
+         "shot": "390-010-toggle-key.png",
+         "tabReachesPanel": false
         }
        },
        "close": {
-        "escape": true,
-        "focusReturn": true,
-        "outside": true,
-        "toggle": true
+        "escape": false,
+        "focusReturn": false,
+        "outside": null,
+        "toggle": false
        },
        "children": []
       }
@@ -732,32 +688,32 @@
      "at": "top",
      "y": 0,
      "top": 0,
-     "height": 90,
-     "position": "sticky",
+     "height": 87,
+     "position": "fixed",
      "inView": true
     },
     {
      "at": "down",
-     "y": 987,
+     "y": 1000,
      "top": 0,
-     "height": 77,
-     "position": "sticky",
+     "height": 87,
+     "position": "fixed",
      "inView": true
     },
     {
      "at": "up",
      "y": 700,
      "top": 0,
-     "height": 77,
-     "position": "sticky",
+     "height": 87,
+     "position": "fixed",
      "inView": true
     },
     {
      "at": "back",
      "y": 0,
      "top": 0,
-     "height": 90,
-     "position": "sticky",
+     "height": 87,
+     "position": "fixed",
      "inView": true
     }
    ],
@@ -766,203 +722,51 @@
    "loads": 30
   },
   "1440": {
-   "root": "#wrapper-navbar",
+   "root": "body>main>header",
    "controls": [
     {
-     "name": "Our Balbriggan logo",
-     "key": "our balbriggan logo",
+     "name": "Attractions",
+     "key": "attractions",
      "role": "link",
      "kind": "link",
-     "sel": "#wrapper-navbar>nav>div>a",
-     "href": "https://balbriggan.ie/",
+     "sel": "body>main>header>div>nav:nth-of-type(1)>ul>li:nth-of-type(1)>a",
+     "href": "https://www.skerriesmills.ie/attractions/",
      "expanded": null,
      "rect": [
-      31,
-      8,
-      176,
-      82
-     ],
-     "actions": {}
-    },
-    {
-     "name": "News",
-     "key": "news",
-     "role": "link",
-     "kind": "link",
-     "sel": "#menu-item-1151>a",
-     "href": "https://balbriggan.ie/news/",
-     "expanded": null,
-     "rect": [
-      817,
-      13,
-      49,
-      34
-     ],
-     "actions": {}
-    },
-    {
-     "name": "Downloads",
-     "key": "downloads",
-     "role": "link",
-     "kind": "link",
-     "sel": "#menu-item-1574>a",
-     "href": "https://balbriggan.ie/downloads/",
-     "expanded": null,
-     "rect": [
-      869,
-      13,
-      83,
-      34
-     ],
-     "actions": {}
-    },
-    {
-     "name": "Newsletters",
-     "key": "newsletters",
-     "role": "link",
-     "kind": "link",
-     "sel": "#menu-item-2490>a",
-     "href": "https://balbriggan.ie/newsletters/",
-     "expanded": null,
-     "rect": [
-      955,
-      13,
-      87,
-      34
-     ],
-     "actions": {}
-    },
-    {
-     "name": "Fingal County Council",
-     "key": "fingal county council",
-     "role": "link",
-     "kind": "link",
-     "sel": "#menu-item-1152>a",
-     "href": "http://www.fingalcoco.ie/",
-     "expanded": null,
-     "rect": [
-      1045,
-      13,
-      149,
-      34
-     ],
-     "actions": {}
-    },
-    {
-     "name": "Contact",
-     "key": "contact",
-     "role": "link",
-     "kind": "link",
-     "sel": "#menu-item-1150>a",
-     "href": "https://balbriggan.ie/contact/",
-     "expanded": null,
-     "rect": [
-      1198,
-      13,
-      64,
-      34
-     ],
-     "actions": {}
-    },
-    {
-     "name": "",
-     "key": "",
-     "role": "link",
-     "kind": "link",
-     "sel": "#wrapper-navbar>nav>div>div>div:nth-of-type(1)>ul>li:nth-of-type(1)>a",
-     "href": "https://www.facebook.com/Our-Balbriggan-Get-Involved-186850462253496/",
-     "expanded": null,
-     "rect": [
-      1279,
-      18,
-      11,
-      19
-     ],
-     "actions": {}
-    },
-    {
-     "name": "",
-     "key": "",
-     "role": "link",
-     "kind": "link",
-     "sel": "#wrapper-navbar>nav>div>div>div:nth-of-type(1)>ul>li:nth-of-type(2)>a",
-     "href": "https://twitter.com/OurBalbriggan",
-     "expanded": null,
-     "rect": [
-      1307,
-      18,
-      19,
-      19
-     ],
-     "actions": {}
-    },
-    {
-     "name": "",
-     "key": "",
-     "role": "link",
-     "kind": "link",
-     "sel": "#wrapper-navbar>nav>div>div>div:nth-of-type(1)>ul>li:nth-of-type(3)>a",
-     "href": "https://www.linkedin.com/showcase/18913857/",
-     "expanded": null,
-     "rect": [
-      1343,
-      18,
-      17,
-      19
-     ],
-     "actions": {}
-    },
-    {
-     "name": "",
-     "key": "",
-     "role": "link",
-     "kind": "link",
-     "sel": "#wrapper-navbar>nav>div>div>div:nth-of-type(1)>ul>li:nth-of-type(4)>a",
-     "href": "https://www.instagram.com/ourbalbriggan/",
-     "expanded": null,
-     "rect": [
-      1377,
-      18,
-      17,
-      19
-     ],
-     "actions": {}
-    },
-    {
-     "name": "Plans & Projects",
-     "key": "plans projects",
-     "role": "toggle",
-     "kind": "menu",
-     "sel": "#menu-item-dropdown-1117",
-     "expanded": "false",
-     "rect": [
-      451,
-      51,
-      148,
-      34
+      59,
+      48,
+      109,
+      48
      ],
      "actions": {
-      "hover": null,
-      "click": {
+      "hover": {
        "opened": true,
        "hidden": 0,
        "panel": {
         "links": [
          {
-          "text": "Town Transformation",
-          "href": "https://balbriggan.ie/town-transformation/"
+          "text": "Our Tour",
+          "href": "https://www.skerriesmills.ie/attractions/guided-tour/"
          },
          {
-          "text": "Smart Balbriggan",
-          "href": "https://balbriggan.ie/smart-balbriggan/"
+          "text": "Museum",
+          "href": "https://www.skerriesmills.ie/attractions/museum/"
          },
          {
-          "text": "URBACT & IPlace",
-          "href": "https://balbriggan.ie/urbact-iplace/"
+          "text": "Art At The Mill",
+          "href": "https://www.skerriesmills.ie/attractions/art-at-the-mill/"
          },
          {
-          "text": "Time4EU",
-          "href": "https://balbriggan.ie/time4eu/"
+          "text": "History Of The Mills",
+          "href": "https://www.skerriesmills.ie/history-of-the-mills/"
+         },
+         {
+          "text": "The Watermill Cafe",
+          "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/"
+         },
+         {
+          "text": "The Craft Shop",
+          "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/"
          }
         ],
         "headings": [],
@@ -971,242 +775,79 @@
         "buttons": [],
         "options": 0,
         "rect": [
-         451,
-         87,
-         177,
-         122
+         1,
+         93,
+         224,
+         240
         ]
        },
-       "expanded": "true",
-       "focus": "trigger",
-       "scrollLock": false,
-       "motion": [],
-       "shot": "1440-001-Plans-Projects-click.png"
-      },
-      "key": {
-       "opened": true,
-       "hidden": 0,
-       "panel": {
-        "links": [
-         {
-          "text": "Town Transformation",
-          "href": "https://balbriggan.ie/town-transformation/"
-         },
-         {
-          "text": "Smart Balbriggan",
-          "href": "https://balbriggan.ie/smart-balbriggan/"
-         },
-         {
-          "text": "URBACT & IPlace",
-          "href": "https://balbriggan.ie/urbact-iplace/"
-         },
-         {
-          "text": "Time4EU",
-          "href": "https://balbriggan.ie/time4eu/"
-         }
-        ],
-        "headings": [],
-        "images": 0,
-        "inputs": [],
-        "buttons": [],
-        "options": 0,
-        "rect": [
-         451,
-         87,
-         177,
-         122
-        ]
-       },
-       "expanded": "true",
-       "focus": "trigger",
+       "expanded": null,
+       "focus": "body",
        "scrollLock": false,
        "motion": [
         {
          "kind": "transition",
-         "prop": "outline-color",
+         "prop": "opacity",
          "ms": 300,
          "delay": 0,
-         "easing": "ease",
-         "target": "a.dropdown-toggle"
-        },
-        {
-         "kind": "transition",
-         "prop": "outline-offset",
-         "ms": 300,
-         "delay": 0,
-         "easing": "ease",
-         "target": "a.dropdown-toggle"
-        },
-        {
-         "kind": "transition",
-         "prop": "outline-width",
-         "ms": 300,
-         "delay": 0,
-         "easing": "ease",
-         "target": "a.dropdown-toggle"
+         "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+         "target": "ul.dropdown-menu"
         }
        ],
-       "shot": "1440-002-Plans-Projects-key.png",
-       "tabReachesPanel": true
+       "shot": "1440-001-Attractions-hover.png"
       }
      },
      "close": {
-      "escape": true,
-      "focusReturn": true,
+      "escape": false,
+      "focusReturn": false,
       "outside": true,
-      "toggle": true
+      "leave": true
      },
      "children": []
     },
     {
-     "name": "Discover",
-     "key": "discover",
-     "role": "toggle",
-     "kind": "menu",
-     "sel": "#menu-item-dropdown-1135",
-     "expanded": "false",
+     "name": "School Tours",
+     "key": "school tours",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>main>header>div>nav:nth-of-type(1)>ul>li:nth-of-type(2)>a",
+     "href": "https://www.skerriesmills.ie/school-tours/",
+     "expanded": null,
      "rect": [
-      602,
-      51,
-      89,
-      34
+      200,
+      48,
+      101,
+      48
      ],
-     "actions": {
-      "hover": null,
-      "click": {
-       "opened": true,
-       "hidden": 0,
-       "panel": {
-        "links": [
-         {
-          "text": "News",
-          "href": "https://balbriggan.ie/news/"
-         }
-        ],
-        "headings": [],
-        "images": 0,
-        "inputs": [],
-        "buttons": [],
-        "options": 0,
-        "rect": [
-         602,
-         87,
-         160,
-         44
-        ]
-       },
-       "expanded": "true",
-       "focus": "trigger",
-       "scrollLock": false,
-       "motion": [],
-       "shot": "1440-003-Discover-click.png"
-      },
-      "key": {
-       "opened": true,
-       "hidden": 0,
-       "panel": {
-        "links": [
-         {
-          "text": "News",
-          "href": "https://balbriggan.ie/news/"
-         }
-        ],
-        "headings": [],
-        "images": 0,
-        "inputs": [],
-        "buttons": [],
-        "options": 0,
-        "rect": [
-         602,
-         87,
-         160,
-         44
-        ]
-       },
-       "expanded": "true",
-       "focus": "trigger",
-       "scrollLock": false,
-       "motion": [
-        {
-         "kind": "transition",
-         "prop": "outline-color",
-         "ms": 300,
-         "delay": 0,
-         "easing": "ease",
-         "target": "a.dropdown-toggle"
-        },
-        {
-         "kind": "transition",
-         "prop": "outline-offset",
-         "ms": 300,
-         "delay": 0,
-         "easing": "ease",
-         "target": "a.dropdown-toggle"
-        },
-        {
-         "kind": "transition",
-         "prop": "outline-width",
-         "ms": 300,
-         "delay": 0,
-         "easing": "ease",
-         "target": "a.dropdown-toggle"
-        }
-       ],
-       "shot": "1440-004-Discover-key.png",
-       "tabReachesPanel": true
-      }
-     },
-     "close": {
-      "escape": true,
-      "focusReturn": true,
-      "outside": true,
-      "toggle": true
-     },
-     "children": []
+     "actions": {}
     },
     {
-     "name": "Leadership & Governance",
-     "key": "leadership governance",
-     "role": "toggle",
-     "kind": "menu",
-     "sel": "#menu-item-dropdown-1237",
-     "expanded": "false",
+     "name": "Groups & Venue",
+     "key": "groups venue",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>main>header>div>nav:nth-of-type(1)>ul>li:nth-of-type(3)>a",
+     "href": "https://www.skerriesmills.ie/?page_id=299",
+     "expanded": null,
      "rect": [
-      695,
-      51,
-      210,
-      34
+      333,
+      48,
+      153,
+      48
      ],
      "actions": {
-      "hover": null,
-      "click": {
+      "hover": {
        "opened": true,
        "hidden": 0,
        "panel": {
         "links": [
          {
-          "text": "Balbriggan Leadership Group",
-          "href": "https://balbriggan.ie/leadership-governance/"
+          "text": "Hire Space at The Mill",
+          "href": "https://www.skerriesmills.ie/hire-space-at-the-mill/"
          },
          {
-          "text": "Project Team",
-          "href": "https://balbriggan.ie/the-team/"
-         },
-         {
-          "text": "Community Development",
-          "href": "https://balbriggan.ie/community-development/"
-         },
-         {
-          "text": "Education Skills & Training",
-          "href": "https://balbriggan.ie/education-skills-training/"
-         },
-         {
-          "text": "Sustainability, Climate Action and Biodiversity",
-          "href": "https://balbriggan.ie/sustainability-climate-action-and-biodiversity/"
-         },
-         {
-          "text": "Economic Development Pillar",
-          "href": "https://balbriggan.ie/economic-development/"
+          "text": "Visiting Groups",
+          "href": "https://www.skerriesmills.ie/visiting-groups/"
          }
         ],
         "headings": [],
@@ -1215,168 +856,91 @@
         "buttons": [],
         "options": 0,
         "rect": [
-         695,
-         87,
-         323,
-         174
-        ]
-       },
-       "expanded": "true",
-       "focus": "trigger",
-       "scrollLock": false,
-       "motion": [],
-       "shot": "1440-005-Leadership-Governance-click.png"
-      },
-      "key": {
-       "opened": true,
-       "hidden": 0,
-       "panel": {
-        "links": [
-         {
-          "text": "Balbriggan Leadership Group",
-          "href": "https://balbriggan.ie/leadership-governance/"
-         },
-         {
-          "text": "Project Team",
-          "href": "https://balbriggan.ie/the-team/"
-         },
-         {
-          "text": "Community Development",
-          "href": "https://balbriggan.ie/community-development/"
-         },
-         {
-          "text": "Education Skills & Training",
-          "href": "https://balbriggan.ie/education-skills-training/"
-         },
-         {
-          "text": "Sustainability, Climate Action and Biodiversity",
-          "href": "https://balbriggan.ie/sustainability-climate-action-and-biodiversity/"
-         },
-         {
-          "text": "Economic Development Pillar",
-          "href": "https://balbriggan.ie/economic-development/"
-         }
-        ],
-        "headings": [],
-        "images": 0,
-        "inputs": [],
-        "buttons": [],
-        "options": 0,
-        "rect": [
-         695,
-         87,
-         323,
-         174
-        ]
-       },
-       "expanded": "true",
-       "focus": "trigger",
-       "scrollLock": false,
-       "motion": [
-        {
-         "kind": "transition",
-         "prop": "outline-color",
-         "ms": 300,
-         "delay": 0,
-         "easing": "ease",
-         "target": "a.dropdown-toggle"
-        },
-        {
-         "kind": "transition",
-         "prop": "outline-offset",
-         "ms": 300,
-         "delay": 0,
-         "easing": "ease",
-         "target": "a.dropdown-toggle"
-        },
-        {
-         "kind": "transition",
-         "prop": "outline-width",
-         "ms": 300,
-         "delay": 0,
-         "easing": "ease",
-         "target": "a.dropdown-toggle"
-        }
-       ],
-       "shot": "1440-006-Leadership-Governance-key.png",
-       "tabReachesPanel": true
-      }
-     },
-     "close": {
-      "escape": true,
-      "focusReturn": true,
-      "outside": true,
-      "toggle": true
-     },
-     "children": []
-    },
-    {
-     "name": "Loves Learning Festival",
-     "key": "loves learning festival",
-     "role": "toggle",
-     "kind": "menu",
-     "sel": "#menu-item-dropdown-1589",
-     "expanded": "false",
-     "rect": [
-      908,
-      51,
-      198,
-      34
-     ],
-     "actions": {
-      "hover": null,
-      "click": {
-       "opened": true,
-       "hidden": 0,
-       "panel": {
-        "links": [
-         {
-          "text": "Loves Learning Festival 2023",
-          "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/"
-         },
-         {
-          "text": "Loves Learning Event Programme",
-          "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/#learning-timetable"
-         },
-         {
-          "text": "Loves Learning Festival 2022",
-          "href": "https://balbriggan.ie/loves-learning-festival/"
-         }
-        ],
-        "headings": [],
-        "images": 0,
-        "inputs": [],
-        "buttons": [],
-        "options": 0,
-        "rect": [
-         908,
-         87,
-         253,
+         298,
+         93,
+         224,
          96
         ]
        },
-       "expanded": "true",
-       "focus": "trigger",
+       "expanded": null,
+       "focus": "body",
        "scrollLock": false,
-       "motion": [],
-       "shot": "1440-007-Loves-Learning-Festival-click.png"
-      },
-      "key": {
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "opacity",
+         "ms": 300,
+         "delay": 0,
+         "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+         "target": "ul.dropdown-menu"
+        }
+       ],
+       "shot": "1440-002-Groups-Venue-hover.png"
+      }
+     },
+     "close": {
+      "escape": false,
+      "focusReturn": false,
+      "outside": true,
+      "leave": true
+     },
+     "children": []
+    },
+    {
+     "name": "",
+     "key": "",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>main>header>div>div:nth-of-type(1)>a",
+     "href": "https://www.skerriesmills.ie/",
+     "expanded": null,
+     "rect": [
+      581,
+      16,
+      160,
+      160
+     ],
+     "actions": {}
+    },
+    {
+     "name": "About Us",
+     "key": "about us",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>main>header>div>nav:nth-of-type(2)>ul>li:nth-of-type(1)>a",
+     "href": "https://www.skerriesmills.ie/about-us/",
+     "expanded": null,
+     "rect": [
+      835,
+      48,
+      97,
+      48
+     ],
+     "actions": {
+      "hover": {
        "opened": true,
        "hidden": 0,
        "panel": {
         "links": [
          {
-          "text": "Loves Learning Festival 2023",
-          "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/"
+          "text": "About Us",
+          "href": "https://www.skerriesmills.ie/about-us/"
          },
          {
-          "text": "Loves Learning Event Programme",
-          "href": "https://balbriggan.ie/loves-learning-festival/loves-learning-festival-2023/#learning-timetable"
+          "text": "History Of The Mills",
+          "href": "https://www.skerriesmills.ie/history-of-the-mills/"
          },
          {
-          "text": "Loves Learning Festival 2022",
-          "href": "https://balbriggan.ie/loves-learning-festival/"
+          "text": "Community",
+          "href": "https://www.skerriesmills.ie/community/"
+         },
+         {
+          "text": "Blog",
+          "href": "https://www.skerriesmills.ie/blog/"
+         },
+         {
+          "text": "Events",
+          "href": "https://www.skerriesmills.ie/category/events/"
          }
         ],
         "headings": [],
@@ -1385,82 +949,146 @@
         "buttons": [],
         "options": 0,
         "rect": [
-         908,
-         87,
-         253,
-         96
+         772,
+         93,
+         224,
+         204
         ]
        },
-       "expanded": "true",
-       "focus": "trigger",
+       "expanded": null,
+       "focus": "body",
        "scrollLock": false,
        "motion": [
         {
          "kind": "transition",
-         "prop": "outline-color",
+         "prop": "opacity",
          "ms": 300,
          "delay": 0,
-         "easing": "ease",
-         "target": "a.dropdown-toggle"
-        },
-        {
-         "kind": "transition",
-         "prop": "outline-offset",
-         "ms": 300,
-         "delay": 0,
-         "easing": "ease",
-         "target": "a.dropdown-toggle"
-        },
-        {
-         "kind": "transition",
-         "prop": "outline-width",
-         "ms": 300,
-         "delay": 0,
-         "easing": "ease",
-         "target": "a.dropdown-toggle"
+         "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+         "target": "ul.dropdown-menu"
         }
        ],
-       "shot": "1440-008-Loves-Learning-Festival-key.png",
-       "tabReachesPanel": true
+       "shot": "1440-003-About-Us-hover.png"
       }
      },
      "close": {
-      "escape": true,
-      "focusReturn": true,
+      "escape": false,
+      "focusReturn": false,
       "outside": true,
-      "toggle": true
+      "leave": true
      },
      "children": []
     },
     {
-     "name": "Community Platform",
-     "key": "community platform",
+     "name": "Plan Your Visit",
+     "key": "plan your visit",
      "role": "link",
      "kind": "link",
-     "sel": "#menu-item-2236>a",
-     "href": "https://balbriggan.ie/community-platform/",
+     "sel": "body>main>header>div>nav:nth-of-type(2)>ul>li:nth-of-type(2)>a",
+     "href": "https://www.skerriesmills.ie/plan-your-visit/",
      "expanded": null,
      "rect": [
-      1109,
-      51,
-      166,
-      34
+      964,
+      48,
+      136,
+      48
+     ],
+     "actions": {
+      "hover": {
+       "opened": true,
+       "hidden": 0,
+       "panel": {
+        "links": [
+         {
+          "text": "The Watermill Cafe",
+          "href": "https://www.skerriesmills.ie/attractions/the-watermill-cafe/"
+         },
+         {
+          "text": "The Craft Shop",
+          "href": "https://www.skerriesmills.ie/attractions/the-craft-shop/"
+         },
+         {
+          "text": "FAQ & Accessibility",
+          "href": "https://www.skerriesmills.ie/faq-accessibility/"
+         },
+         {
+          "text": "Explore The Area",
+          "href": "https://www.skerriesmills.ie/explore-the-area/"
+         },
+         {
+          "text": "Getting Here",
+          "href": "https://www.skerriesmills.ie/getting-here/"
+         },
+         {
+          "text": "Contact",
+          "href": "https://www.skerriesmills.ie/contact/"
+         }
+        ],
+        "headings": [],
+        "images": 0,
+        "inputs": [],
+        "buttons": [],
+        "options": 0,
+        "rect": [
+         920,
+         93,
+         224,
+         240
+        ]
+       },
+       "expanded": null,
+       "focus": "body",
+       "scrollLock": false,
+       "motion": [
+        {
+         "kind": "transition",
+         "prop": "opacity",
+         "ms": 300,
+         "delay": 0,
+         "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+         "target": "ul.dropdown-menu"
+        }
+       ],
+       "shot": "1440-004-Plan-Your-Visit-hover.png"
+      }
+     },
+     "close": {
+      "escape": false,
+      "focusReturn": false,
+      "outside": true,
+      "leave": true
+     },
+     "children": []
+    },
+    {
+     "name": "Sustainability",
+     "key": "sustainability",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>main>header>div>nav:nth-of-type(2)>ul>li:nth-of-type(3)>a",
+     "href": "https://www.skerriesmills.ie/sustainability-dublin-things-to-do/",
+     "expanded": null,
+     "rect": [
+      1132,
+      48,
+      104,
+      48
      ],
      "actions": {}
     },
     {
-     "name": "Get Involved",
-     "key": "get involved",
+     "name": "Book Now",
+     "key": "book now",
      "role": "link",
      "kind": "link",
-     "sel": "#menu-item-1149>a",
-     "href": "https://balbriggan.ie/contact/",
+     "sel": "body>main>header>div>nav:nth-of-type(2)>ul>li:nth-of-type(4)>a",
+     "href": "https://fareharbor.com/embeds/book/skerriesmills/?full-items=yes&flow=1260748",
      "expanded": null,
      "rect": [
-      1278,
-      55,
-      129,
-      27
+      1268,
+      48,
+      113,
+      48
      ],
      "actions": {}
     }
@@ -1470,39 +1098,39 @@
      "at": "top",
      "y": 0,
      "top": 0,
-     "height": 98,
-     "position": "sticky",
+     "height": 192,
+     "position": "fixed",
      "inView": true
     },
     {
      "at": "down",
-     "y": 977,
+     "y": 1000,
      "top": 0,
-     "height": 75,
-     "position": "sticky",
+     "height": 160,
+     "position": "fixed",
      "inView": true
     },
     {
      "at": "up",
      "y": 700,
      "top": 0,
-     "height": 75,
-     "position": "sticky",
+     "height": 160,
+     "position": "fixed",
      "inView": true
     },
     {
      "at": "back",
      "y": 0,
      "top": 0,
-     "height": 98,
-     "position": "sticky",
+     "height": 192,
+     "position": "fixed",
      "inView": true
     }
    ],
-   "states": 8,
+   "states": 4,
    "truncated": null,
-   "loads": 9
+   "loads": 13
   }
  },
- "probe": "skip"
+ "probe": "attractions"
 }

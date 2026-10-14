@@ -1,119 +1,38 @@
 {
  "_provenance": {
   "writtenBy": "stardust:dynamics detect",
-  "writtenAt": "2026-10-13T14:43:57.100Z",
+  "writtenAt": "2026-10-14T09:00:26.520Z",
   "settleMs": 5000,
   "width": 1440,
   "urls": [
-   "https://balbriggan.ie/"
-  ]
+   "https://www.skerriesmills.ie/"
+  ],
+  "reachSource": "stardust/current/pages"
  },
  "pages": {
   "/": {
-   "url": "https://balbriggan.ie/",
+   "url": "https://www.skerriesmills.ie/",
    "status": 200,
-   "host": "balbriggan.ie",
-   "title": "Our Balbriggan",
-   "forms": [
-    {
-     "name": "gform_1",
-     "action": "https://balbriggan.ie/#gf_1",
-     "method": "post",
-     "role": "",
-     "inChrome": false,
-     "fields": 5,
-     "signature": [
-      "text:input_1",
-      "text:input_2",
-      "email:input_3",
-      "checkbox:input_4.1",
-      "textarea:ak_hp_textarea"
-     ],
-     "hidden": [
-      "gform_ajax",
-      "is_submit_1",
-      "gform_submit",
-      "gform_unique_id",
-      "state_1",
-      "gform_target_page_number_1",
-      "gform_source_page_number_1",
-      "gform_field_values",
-      "ak_js"
-     ],
-     "tokens": [],
-     "search": false,
-     "inlineHandler": true
-    }
-   ],
+   "host": "www.skerriesmills.ie",
+   "title": "Skerries Mills, A Unique Heritage Museum in Dublin",
+   "forms": [],
    "controlGroups": [],
-   "triggers": [
+   "triggers": [],
+   "dialogs": [
     {
-     "text": "Plans & Projects",
-     "href": "https://balbriggan.ie/#",
-     "marker": "aria-haspopup",
-     "inChrome": true,
-     "titleOnTrigger": null,
-     "target": {
-      "role": "a",
-      "heading": "",
-      "textLen": 16,
-      "hasForm": false,
-      "hasIframe": false,
-      "hasVideo": false
-     }
-    },
-    {
-     "text": "Discover",
-     "href": "https://balbriggan.ie/#",
-     "marker": "aria-haspopup",
-     "inChrome": true,
-     "titleOnTrigger": null,
-     "target": {
-      "role": "a",
-      "heading": "",
-      "textLen": 8,
-      "hasForm": false,
-      "hasIframe": false,
-      "hasVideo": false
-     }
-    },
-    {
-     "text": "Leadership & Governance",
-     "href": "https://balbriggan.ie/#",
-     "marker": "aria-haspopup",
-     "inChrome": true,
-     "titleOnTrigger": null,
-     "target": {
-      "role": "a",
-      "heading": "",
-      "textLen": 23,
-      "hasForm": false,
-      "hasIframe": false,
-      "hasVideo": false
-     }
-    },
-    {
-     "text": "Loves Learning Festival",
-     "href": "https://balbriggan.ie/#",
-     "marker": "aria-haspopup",
-     "inChrome": true,
-     "titleOnTrigger": null,
-     "target": {
-      "role": "a",
-      "heading": "",
-      "textLen": 23,
-      "hasForm": false,
-      "hasIframe": false,
-      "hasVideo": false
-     }
+     "role": "dialog",
+     "heading": "Manage Consent",
+     "textLen": 1688,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
     }
    ],
-   "dialogs": [],
-   "dialogCount": 0,
+   "dialogCount": 1,
    "media": [
     {
      "tag": "iframe",
-     "src": "about:blank",
+     "src": "https://fareharbor.com/embeds/cart/?u=17ecbe99-cff8-43ae-8a57-d64c2dd10d17&from-ssl=yes&g4=yes&cp=no&csp=no&back=https%3A%2F%2Fwww.skerriesmills.ie%2F",
      "account": null,
      "player": null,
      "videoId": null,
@@ -122,17 +41,23 @@
    ],
    "iframes": [
     {
-     "src": "about:blank",
-     "title": "This iframe contains the logic required to handle Ajax powered Gravity Forms.",
+     "src": "https://fareharbor.com/embeds/cart/?u=17ecbe99-cff8-43ae-8a57-d64c2dd10d17&from-ssl=yes&g4=yes&cp=no&csp=no&back=https%3A%2F%2Fwww.skerriesmills.ie%2F",
+     "title": "FareHarbor",
      "w": 0,
      "h": 0
+    },
+    {
+     "src": null,
+     "title": null,
+     "w": 1,
+     "h": 1
     }
    ],
    "mounts": [],
    "auth": [],
    "commerce": {
     "cart": false,
-    "prices": 4
+    "prices": 5
    },
    "locale": {
     "lang": "en-GB",
@@ -140,97 +65,290 @@
     "switcher": []
    },
    "cms": {
-    "wp": [
-     "domReady",
-     "hooks",
-     "i18n",
-     "a11y"
-    ],
     "dataLayer": [
      "0",
      "1",
      "2",
      "3",
+     "4",
+     "5",
+     "6",
+     "7",
      "push"
     ]
    },
    "framework": null,
    "globals": [
-    "google_tag_manager",
-    "gtag"
+    "google_tag_manager"
    ],
-   "clientRendered": [],
-   "listingCandidates": [],
-   "inlineScripts": 18,
+   "clientRendered": [
+    {
+     "cls": "mx-auto flex flex-col-reverse",
+     "attrs": [],
+     "text": "Visit Skerries Mills Comprising of three national monuments "
+    },
+    {
+     "cls": "attraction-carousel relative pb-32",
+     "attrs": [],
+     "text": "The Attractions Museum Commencing our guided tour, learn abo"
+    },
+    {
+     "cls": "flex flex-col items-stretch",
+     "attrs": [],
+     "text": "Museum Commencing our guided tour, learn about life at the M"
+    },
+    {
+     "cls": "flex flex-col items-stretch",
+     "attrs": [],
+     "text": "Art At The Mill As a social enterprise, we are proud to show"
+    },
+    {
+     "cls": "flex flex-col space-y-4",
+     "attrs": [],
+     "text": "History of the mills Windmills in Western Europe date from t"
+    },
+    {
+     "cls": "flex flex-col items-stretch",
+     "attrs": [],
+     "text": "The Watermill Cafe While freshly baked fare is at the heart "
+    },
+    {
+     "cls": "flex flex-col items-stretch",
+     "attrs": [],
+     "text": "The Craft Shop Our local Crafter Project showcases a series "
+    },
+    {
+     "cls": "flex flex-col items-stretch",
+     "attrs": [],
+     "text": "Our Tour A visit to Skerries Mills Begin by introducing your"
+    },
+    {
+     "cls": "testimonials bg-brand-blue js-show-on-scroll",
+     "attrs": [],
+     "text": "What Our Visitors Say “Incredible experience!!! Worth the tr"
+    },
+    {
+     "cls": "py-16 pt-8 js-show-on-scroll",
+     "attrs": [],
+     "text": "Tickets Adult Ticket €12 Book Now Student €11 Book Now Senio"
+    },
+    {
+     "cls": "flex flex-col js-show-on-scroll-img",
+     "attrs": [],
+     "text": "Adult Ticket €12 Book Now"
+    },
+    {
+     "cls": "flex flex-col js-show-on-scroll-img",
+     "attrs": [],
+     "text": "Senior Citizen €11 Book Now"
+    }
+   ],
+   "listingCandidates": [
+    {
+     "cls": "flex flex-col",
+     "cards": 6,
+     "sameSite": 6,
+     "hasDate": false
+    },
+    {
+     "cls": "mob-sub",
+     "cards": 5,
+     "sameSite": 5,
+     "hasDate": false
+    },
+    {
+     "cls": "mob-sub",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": false
+    },
+    {
+     "cls": "mob-sub",
+     "cards": 6,
+     "sameSite": 6,
+     "hasDate": false
+    },
+    {
+     "cls": "swiper-wrapper",
+     "cards": 6,
+     "sameSite": 6,
+     "hasDate": false
+    },
+    {
+     "cls": "grid grd-cols-1",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": true
+    },
+    {
+     "cls": "grid grd-cols-1",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    }
+   ],
+   "inlineScripts": 6,
    "inlineFetch": false,
-   "mainText": 508,
-   "domAddedAfterLoad": 0,
+   "mainText": 6691,
+   "domAddedAfterLoad": 5,
    "hosts": {
-    "balbriggan.ie": 82,
-    "fonts.googleapis.com": 3,
-    "www.googletagmanager.com": 1,
-    "www.google-analytics.com": 1,
-    "connect.facebook.net": 3
+    "www.skerriesmills.ie": 64,
+    "fonts.googleapis.com": 1,
+    "fareharbor.com": 6,
+    "fh-kit.com": 1,
+    "fonts.gstatic.com": 2,
+    "www.googletagmanager.com": 3,
+    "dipr2nuwo661l.cloudfront.net": 6,
+    "o10963.ingest.sentry.io": 5,
+    "marketing.fareharbor.com": 1,
+    "www.google-analytics.com": 2,
+    "otel-hfo.fareharbor.engineering": 1
    },
    "thirdPartyHosts": [
     "fonts.googleapis.com",
+    "fareharbor.com",
+    "fh-kit.com",
+    "fonts.gstatic.com",
     "www.googletagmanager.com",
+    "dipr2nuwo661l.cloudfront.net",
+    "o10963.ingest.sentry.io",
+    "marketing.fareharbor.com",
     "www.google-analytics.com",
-    "connect.facebook.net"
+    "otel-hfo.fareharbor.engineering"
    ],
    "scripts": [
-    "https://www.googletagmanager.com/gtag/js?id=G-Z1D3MZ66RP",
-    "https://balbriggan.ie/wp-content/plugins/wd-instagram-feed/booster/assets/js/circle-progress.js?ver=1.2.2",
-    "https://balbriggan.ie/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
-    "https://balbriggan.ie/wp-content/plugins/wd-instagram-feed/booster/assets/js/global.js?ver=1.0.0",
-    "https://balbriggan.ie/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
-    "https://balbriggan.ie/wp-content/plugins/easy-facebook-likebox/frontend/assets/js/imagesloaded.pkgd.min.js?ver=6.6.10",
-    "https://balbriggan.ie/wp-content/plugins/easy-facebook-likebox//instagram/frontend/assets/js/esf-insta-public.js?ver=1",
-    "https://balbriggan.ie/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.8",
-    "https://balbriggan.ie/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.8",
-    "https://connect.facebook.net/en_US/fbevents.js",
-    "https://balbriggan.ie/wp-content/plugins/embedpress/assets/js/front.js?ver=4.1.2",
-    "https://balbriggan.ie/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381",
-    "https://balbriggan.ie/wp-includes/js/dist/a11y.min.js?ver=d90eebea464f6c09bfd5",
-    "https://balbriggan.ie/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6",
-    "https://balbriggan.ie/wp-content/themes/balbriggan2024/js/scripts.js?ver=1715679248",
-    "https://balbriggan.ie/wp-content/themes/balbriggan2024/library/slick/slick.min.js?ver=1.0.0",
-    "https://balbriggan.ie/wp-content/themes/balbriggan2024/js/theme.min.js?ver=0.8.8.1715679248",
-    "https://balbriggan.ie/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18",
-    "https://balbriggan.ie/wp-content/themes/balbriggan2024/library/fancybox/jquery.fancybox.min.js?ver=1.0.0",
-    "https://balbriggan.ie/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.18",
-    "https://balbriggan.ie/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.8.18",
-    "https://balbriggan.ie/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=bab19fd84843dabc070e73326d787910",
-    "https://balbriggan.ie/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=54e7080aa7a02c83aa61fae430b9d869",
-    "https://balbriggan.ie/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=50c7bea9c2320e16728e44ae9fde5f26",
-    "https://balbriggan.ie/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.8.18",
-    "https://connect.facebook.net/signals/config/860987271653326?v=2.9.419&r=stable&domain=balbriggan.ie&hme=7459fa3e38c2784dbaf309537bed5fa7e8560fab51fb61e53e5ffafeb46a02a9&ex_m=118%2C241%2C171%2C27%2C82%",
-    "https://connect.facebook.net/signals/config/358285138312853?v=2.9.419&r=stable&domain=balbriggan.ie&hme=7459fa3e38c2784dbaf309537bed5fa7e8560fab51fb61e53e5ffafeb46a02a9&ex_m=118%2C241%2C171%2C27%2C82%"
+    "https://www.skerriesmills.ie/wp-content/themes/skerries-mills/assets/dist/main.3ebd13ef3450a0c598de.js?ver=7.1.3",
+    "https://fareharbor.com/embeds/api/v1/?autolightframe=yes",
+    "https://www.skerriesmills.ie/wp-content/plugins/complianz-gdpr-premium/cookiebanner/js/complianz.min.js?ver=1775758336",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-5579WLK2",
+    "https://fareharbor.com/embeds/api/integration-kit-with-ssr/v1/?autolightframe=yes",
+    "https://www.skerriesmills.ie/cdn-cgi/challenge-platform/scripts/jsd/main.js",
+    "https://www.skerriesmills.ie/cdn-cgi/challenge-platform/h/g/scripts/jsd/4df4a60fa397/main.js?",
+    "https://www.googletagmanager.com/gtag/js?id=G-K1BCT8CCR0&cx=c&gtm=4e6ac1",
+    "https://fareharbor.com/static/dist/honeycomb-sdk-bundle.js",
+    "https://dipr2nuwo661l.cloudfront.net/static/cache/js/output.82ab8e14a2dd.js",
+    "https://dipr2nuwo661l.cloudfront.net/static/cache/js/output.7ce5787ffff1.js",
+    "https://fareharbor.com/static/jstranslation/en-us/djangojs.js",
+    "https://dipr2nuwo661l.cloudfront.net/static/cache/js/output.ae77d090f5d1.js",
+    "https://www.googletagmanager.com/gtag/js?id=G-6WXE90X597",
+    "https://dipr2nuwo661l.cloudfront.net/static/cache/js/chunk.84257.8b5654262e31b26a8417.js"
    ],
-   "firstPartyApi": [],
+   "firstPartyApi": [
+    {
+     "method": "POST",
+     "host": "www.skerriesmills.ie",
+     "path": "/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.6305993991125491:1791965732:lSjblcijOZMuqAsLAjhEo4V1cPFgcIov3WJtUBjeWMU/{hash}",
+     "query": [],
+     "status": 200,
+     "contentType": "text/plain",
+     "example": "https://www.skerriesmills.ie/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.6305993991125491:1791965732:lSjblcijOZMuqAsLAjhEo4V1cPFgcIov3WJtUBjeWMU/a4a564ca5e70b35f"
+    },
+    {
+     "method": "GET",
+     "host": "www.skerriesmills.ie",
+     "path": "/wp-json/complianz/v1/banner",
+     "query": [
+      "lang",
+      "locale",
+      "token"
+     ],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.skerriesmills.ie/wp-json/complianz/v1/banner"
+    }
+   ],
    "thirdPartyXhr": [
-    "POST www.google-analytics.com/g/collect"
+    "POST o10963.ingest.sentry.io/api/5933789/envelope/",
+    "GET fareharbor.com/api/v1/persistence/17ecbe99-cff8-43ae-8a57-d64c2dd10d17/",
+    "POST www.google-analytics.com/g/collect",
+    "POST otel-hfo.fareharbor.engineering/v1/traces"
    ],
    "postBodies": [
     {
-     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-Z1D3MZ66RP&gtm=45je6ac0h2v9172713029za208zd9172713029xf1&_p=1791902638116&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=EA&cid=1281197344.1791902638&frm=0&ir=1&",
+     "url": "https://www.skerriesmills.ie/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.6305993991125491:1791965732:lSjblcijOZMuqAsLAjhEo4V1cPFgcIov3WJtUBjeWMU/a4a564ca5e70b35f",
+     "body": "FtgjTW975mQE5i7PDvUGJNiDqbqKey5bXh8ojsYVrj1zik3CGjuYvSkMY67CRZt7m9wZD44vfyq--NwpDqekqgKZffGVG0uHyd7ldel7J51UXjaTlMLfMK4eAoE9zaCBDj$I-Un8SGnUfBUXynMG$6tv21wCgQeSz-geQ0zA-fzq07lJS-GGcKEV7lheSIckn$gnXjh7zHzagot8eelBNyKWSExWS2z1MfQvIjnX45V9E2VPvTiureXXYgn6w2jHjbLb8hKckzKk69S1zzQBINivhwWBQw59Ra8H27ycrzehS4EuQbFTRBJh85sywaTPynIg7-Fo86E3kmsMXxBZ$d-DUlCkLOq68r7K2W22LUkE8lAWl-UIFBCHLIpdhUGQUi$7qGbToAiFZu1n"
+    },
+    {
+     "url": "https://o10963.ingest.sentry.io/api/5933789/envelope/?sentry_key=3c9ece80fbdf4edfaf944d2be20b4532&sentry_version=7",
+     "body": "{\"sent_at\":\"2026-10-14T09:00:27.317Z\",\"sdk\":{\"name\":\"sentry.javascript.browser\",\"version\":\"6.11.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"a1be898c9a8340aba21e8fabbacd4aa6\",\"init\":true,\"started\":\"2026-10-14T09:00:27.316Z\",\"timestamp\":\"2026-10-14T09:00:27.316Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"deploy-2026-10-14-08-08-89c0b107-py3\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (X11; Linux x8"
+    },
+    {
+     "url": "https://o10963.ingest.sentry.io/api/5933789/envelope/?sentry_key=3c9ece80fbdf4edfaf944d2be20b4532&sentry_version=7",
+     "body": "{\"sent_at\":\"2026-10-14T09:00:27.688Z\",\"sdk\":{\"name\":\"sentry.javascript.browser\",\"version\":\"6.11.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"a1be898c9a8340aba21e8fabbacd4aa6\",\"init\":false,\"started\":\"2026-10-14T09:00:27.316Z\",\"timestamp\":\"2026-10-14T09:00:27.687Z\",\"status\":\"exited\",\"errors\":0,\"attrs\":{\"release\":\"deploy-2026-10-14-08-08-89c0b107-py3\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (X11; Lin"
+    },
+    {
+     "url": "https://o10963.ingest.sentry.io/api/5933789/envelope/?sentry_key=3c9ece80fbdf4edfaf944d2be20b4532&sentry_version=7",
+     "body": "{\"sent_at\":\"2026-10-14T09:00:27.688Z\",\"sdk\":{\"name\":\"sentry.javascript.browser\",\"version\":\"6.11.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"ef6fdeb7bde84af091da1d7dc6998154\",\"init\":true,\"started\":\"2026-10-14T09:00:27.687Z\",\"timestamp\":\"2026-10-14T09:00:27.687Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"deploy-2026-10-14-08-08-89c0b107-py3\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (X11; Linux x8"
+    },
+    {
+     "url": "https://o10963.ingest.sentry.io/api/5933789/envelope/?sentry_key=3c9ece80fbdf4edfaf944d2be20b4532&sentry_version=7",
+     "body": "{\"sent_at\":\"2026-10-14T09:00:27.690Z\",\"sdk\":{\"name\":\"sentry.javascript.browser\",\"version\":\"6.11.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"ef6fdeb7bde84af091da1d7dc6998154\",\"init\":false,\"started\":\"2026-10-14T09:00:27.687Z\",\"timestamp\":\"2026-10-14T09:00:27.689Z\",\"status\":\"exited\",\"errors\":0,\"attrs\":{\"release\":\"deploy-2026-10-14-08-08-89c0b107-py3\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (X11; Lin"
+    },
+    {
+     "url": "https://o10963.ingest.sentry.io/api/5933789/envelope/?sentry_key=3c9ece80fbdf4edfaf944d2be20b4532&sentry_version=7",
+     "body": "{\"sent_at\":\"2026-10-14T09:00:27.690Z\",\"sdk\":{\"name\":\"sentry.javascript.browser\",\"version\":\"6.11.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"ed3862c764e441c9a8c68c59deb118dc\",\"init\":true,\"started\":\"2026-10-14T09:00:27.689Z\",\"timestamp\":\"2026-10-14T09:00:27.689Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"deploy-2026-10-14-08-08-89c0b107-py3\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (X11; Linux x8"
+    },
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-K1BCT8CCR0&gtm=45je6ac1v9183627307za20ozb9183619704zd9183619704xf1&_p=1791968426728&gcs=G101&gcd=13p3t3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dYWVlZG&ec",
+     "body": ""
+    },
+    {
+     "url": "https://otel-hfo.fareharbor.engineering/v1/traces",
+     "body": "{\"resourceSpans\":[{\"resource\":{\"attributes\":[{\"key\":\"service.name\",\"value\":{\"stringValue\":\"fhcom-production-frontend\"}},{\"key\":\"browser.platform\",\"value\":{\"stringValue\":\"Linux\"}},{\"key\":\"browser.brands\",\"value\":{\"arrayValue\":{\"values\":[{\"stringValue\":\"Not:A-Brand 8\"},{\"stringValue\":\"Chromium 156\"},{\"stringValue\":\"HeadlessChrome 156\"}]}}},{\"key\":\"browser.mobile\",\"value\":{\"boolValue\":false}},{\"key\":"
+    },
+    {
+     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-K1BCT8CCR0&gtm=45je6ac1v9183627307za20gzb9183619704zd9183619704xf1&_p=1791968426728&gcs=G100&gcd=13q3u3q3q5l1&npa=1&dma_cps=-&dma=0&gdid=dYWVlZG&ec",
      "body": ""
     }
    ],
-   "textAtLoad": 508,
+   "textAtLoad": 6691,
    "mainEmptyAtLoad": false
   }
  },
  "findings": [
   {
-   "id": "a-cms-app-settings-object-wp",
+   "id": "a-unknown-third-party-host-fareharbor-com",
    "class": "A",
-   "feature": "CMS / app settings object wp",
-   "hint": "settings",
-   "evidence": [],
+   "feature": "unknown third-party host fareharbor.com",
+   "hint": "inspect",
+   "evidence": [
+    "fareharbor.com"
+   ],
    "pages": [
     "/"
    ]
+  },
+  {
+   "id": "a-unknown-third-party-host-otel-hfo-fareharbor-engineering",
+   "class": "A",
+   "feature": "unknown third-party host otel-hfo.fareharbor.engineering",
+   "hint": "inspect",
+   "evidence": [
+    "otel-hfo.fareharbor.engineering"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-wp-json-complianz-v1-banner",
+   "class": "A",
+   "feature": "first-party API GET /wp-json/complianz/v1/banner",
+   "api": {
+    "method": "GET",
+    "path": "/wp-json/complianz/v1/banner"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /wp-json/complianz/v1/banner?lang,locale,token → 200"
+   ],
+   "pages": [
+    "/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 1
+   }
   },
   {
    "id": "a-cms-app-settings-object-datalayer",
@@ -243,32 +361,141 @@
    ]
   },
   {
-   "id": "f-form-gform-1-origin-5-fields",
-   "class": "F",
-   "feature": "form \"gform_1\" → origin / (5 fields)",
-   "signature": [
-    "text:input_1",
-    "text:input_2",
-    "email:input_3",
-    "checkbox:input_4.1",
-    "textarea:ak_hp_textarea"
-   ],
-   "hint": "forms",
+   "id": "cr-client-rendered-slot-mx-auto-flex-flex-col-reverse",
+   "class": "CR",
+   "feature": "client-rendered slot mx-auto flex flex-col-reverse",
+   "hint": "client-rendered",
    "evidence": [
-    "text:input_1,text:input_2,email:input_3,checkbox:input_4.1,textarea:ak_hp_textarea",
-    "gform_ajax,is_submit_1,gform_submit,gform_unique_id,state_1,gform_target_page_number_1,gform_source_page_number_1,gform_field_values,ak_js"
+    "Visit Skerries Mills Comprising of three national monuments "
    ],
    "pages": [
     "/"
    ]
   },
   {
-   "id": "m-modal-trigger-aria-haspopup-chrome-only-a-content",
-   "class": "M",
-   "feature": "modal trigger aria-haspopup (chrome only) → a:content",
-   "hint": "chrome-interaction",
+   "id": "cr-client-rendered-slot-attraction-carousel-relative-pb-32",
+   "class": "CR",
+   "feature": "client-rendered slot attraction-carousel relative pb-32",
+   "hint": "client-rendered",
    "evidence": [
-    "https://balbriggan.ie/#"
+    "The Attractions Museum Commencing our guided tour, learn abo"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-flex-flex-col-items-stretch",
+   "class": "CR",
+   "feature": "client-rendered slot flex flex-col items-stretch",
+   "hint": "client-rendered",
+   "evidence": [
+    "Museum Commencing our guided tour, learn about life at the M",
+    "Art At The Mill As a social enterprise, we are proud to show",
+    "The Watermill Cafe While freshly baked fare is at the heart ",
+    "The Craft Shop Our local Crafter Project showcases a series ",
+    "Our Tour A visit to Skerries Mills Begin by introducing your"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-flex-flex-col-space-y-4",
+   "class": "CR",
+   "feature": "client-rendered slot flex flex-col space-y-4",
+   "hint": "client-rendered",
+   "evidence": [
+    "History of the mills Windmills in Western Europe date from t"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-testimonials-bg-brand-blue-js-show-o",
+   "class": "CR",
+   "feature": "client-rendered slot testimonials bg-brand-blue js-show-on-scroll",
+   "hint": "client-rendered",
+   "evidence": [
+    "What Our Visitors Say “Incredible experience!!! Worth the tr"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-py-16-pt-8-js-show-on-scroll",
+   "class": "CR",
+   "feature": "client-rendered slot py-16 pt-8 js-show-on-scroll",
+   "hint": "client-rendered",
+   "evidence": [
+    "Tickets Adult Ticket €12 Book Now Student €11 Book Now Senio"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-flex-flex-col-js-show-on-scroll-img",
+   "class": "CR",
+   "feature": "client-rendered slot flex flex-col js-show-on-scroll-img",
+   "hint": "client-rendered",
+   "evidence": [
+    "Adult Ticket €12 Book Now",
+    "Senior Citizen €11 Book Now"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-flex-flex-col-6-cards",
+   "class": "L",
+   "feature": "listing candidate flex flex-col (6 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-mob-sub-6-cards",
+   "class": "L",
+   "feature": "listing candidate mob-sub (6 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-swiper-wrapper-6-cards",
+   "class": "L",
+   "feature": "listing candidate swiper-wrapper (6 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-grid-grd-cols-1-3-cards",
+   "class": "L",
+   "feature": "listing candidate grid grd-cols-1 (3 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-fh-kit-com",
+   "class": "T",
+   "feature": "unknown third-party host fh-kit.com",
+   "hint": "inspect",
+   "evidence": [
+    "fh-kit.com"
    ],
    "pages": [
     "/"
@@ -288,6 +515,43 @@
    ]
   },
   {
+   "id": "t-unknown-third-party-host-dipr2nuwo661l-cloudfront-net",
+   "class": "T",
+   "feature": "unknown third-party host dipr2nuwo661l.cloudfront.net",
+   "hint": "inspect",
+   "evidence": [
+    "dipr2nuwo661l.cloudfront.net"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-rum-error-monitoring",
+   "class": "T",
+   "feature": "RUM: error monitoring",
+   "role": "RUM: error monitoring",
+   "hint": "tags",
+   "evidence": [
+    "o10963.ingest.sentry.io"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-marketing-fareharbor-com",
+   "class": "T",
+   "feature": "unknown third-party host marketing.fareharbor.com",
+   "hint": "inspect",
+   "evidence": [
+    "marketing.fareharbor.com"
+   ],
+   "pages": [
+    "/"
+   ]
+  },
+  {
    "id": "t-analytics-google-analytics-ads",
    "class": "T",
    "feature": "analytics: Google Analytics / Ads",
@@ -301,17 +565,32 @@
    ]
   },
   {
-   "id": "t-marketing-ad-retargeting-pixel",
-   "class": "T",
-   "feature": "marketing: ad / retargeting pixel",
-   "role": "marketing: ad / retargeting pixel",
-   "hint": "tags",
+   "id": "v-iframe-without-src-runtime-injected-embed",
+   "class": "V",
+   "feature": "iframe without src (runtime-injected embed)",
+   "hint": "embed-runtime",
    "evidence": [
-    "connect.facebook.net"
+    "1×1"
    ],
    "pages": [
     "/"
    ]
   }
- ]
+ ],
+ "reach": {
+  "pagesWithEvidence": 1,
+  "of": 1,
+  "endpoints": {
+   "POST www.skerriesmills.ie/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.6305993991125491:1791965732:lSjblcijOZMuqAsLAjhEo4V1cPFgcIov3WJtUBjeWMU/{hash}": 1,
+   "POST o10963.ingest.sentry.io/api/{n}/envelope/": 1,
+   "POST www.google-analytics.com/g/collect": 1,
+   "GET fareharbor.com/api/v1/persistence/{uuid}/": 1,
+   "GET www.skerriesmills.ie/wp-json/complianz/v1/banner": 1,
+   "POST www.skerriesmills.ie/wp-json/complianz/v1/track": 1,
+   "POST otel-hfo.fareharbor.engineering/v1/traces": 1
+  },
+  "searchFormPages": 0,
+  "formPages": 0,
+  "triggerPages": {}
+ }
 }

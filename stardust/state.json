@@ -1,50 +1,55 @@
 {
   "_provenance": {
     "writtenBy": "stardust:migrate",
-    "writtenAt": "2026-10-13T15:09:52Z",
+    "writtenAt": "2026-10-14T09:31:11Z",
     "stardustVersion": "0.32.1"
   },
   "site": {
-    "originUrl": "https://balbriggan.ie/",
+    "originUrl": "https://www.skerriesmills.ie",
     "deployUrl": null,
-    "extractedAt": "2026-10-13T14:35:26Z",
+    "extractedAt": "2026-10-14T08:54:09.417Z",
     "pageCap": 1,
     "totalDiscovered": 1,
     "crawled": 1
   },
-  "direction": null,
+  "direction": {
+    "resolvedAt": "2026-10-14T09:01:38.703Z",
+    "phrase": "replica — keep the current design (bounded-single)",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "verbatim"
+  },
   "handsOff": true,
   "flow": "replica",
-  "flowChosenAt": "2026-10-13T14:35:26Z",
+  "flowChosenAt": "2026-10-14T08:58:11.793Z",
   "flowSource": "user-phrase",
   "pages": [
     {
       "slug": "index",
-      "url": "https://balbriggan.ie/",
-      "title": "Our Balbriggan",
+      "url": "https://www.skerriesmills.ie/",
+      "title": "Skerries Mills, A Unique Heritage Museum in Dublin",
       "type": "landing",
       "status": "migrated",
       "history": [
         {
           "status": "extracted",
-          "at": "2026-10-13T14:35:26Z"
+          "at": "2026-10-14T08:54:09.417Z"
         },
         {
           "status": "directed",
-          "at": "2026-10-13T15:00:34Z"
+          "at": "2026-10-14T09:01:38Z"
         },
         {
           "status": "prototyped",
-          "at": "2026-10-13T15:00:34Z"
+          "at": "2026-10-14T09:28:02Z"
         },
         {
           "status": "approved",
-          "at": "2026-10-13T15:06:47Z",
+          "at": "2026-10-14T09:29:41Z",
           "approvedBy": "hands-off"
         },
         {
           "status": "migrated",
-          "at": "2026-10-13T15:09:52Z"
+          "at": "2026-10-14T09:31:11Z"
         }
       ],
       "stale": false,
@@ -55,7 +60,7 @@
     }
   ],
   "migrate": {
-    "at": "2026-10-13T15:09:40Z",
+    "at": "2026-10-14T09:31:02Z",
     "outputDir": "stardust/migrated/",
     "selfContained": true,
     "pageMap": [
@@ -66,56 +71,83 @@
         "outputPathDefault": null
       }
     ],
-    "totalAssetsBundled": 36,
+    "totalAssetsBundled": 63,
     "bundledAssets": [
-      "canon.css",
-      "favicon.png",
-      "fonts/fontawesome-webfont.woff2",
-      "fonts/montserrat-300.woff2",
-      "fonts/montserrat-500.woff2",
-      "fonts/montserrat-700.woff2",
-      "fonts/slick.woff",
-      "img/Ar_dTuras-cover-212x300.jpg",
-      "img/MichaelTDawsonTheLark001.jpg",
-      "img/MichaelTDawsonTheLark002.jpg",
-      "img/Our-Journey-Newsletter-coverjpg-212x300.jpg",
-      "img/SON7436-0002.jpg",
-      "img/balbriggan-beach-1.jpg",
-      "img/balbriggan-logo.svg",
-      "img/balbriggan-pool.png",
-      "img/ceardeileataagtarlu-209x300.jpg",
-      "img/fcc-logo.svg",
-      "img/pin-1.jpg",
-      "img/pin-10.jpg",
-      "img/pin-11.jpg",
-      "img/pin-12.jpg",
-      "img/pin-2.jpg",
-      "img/pin-3.jpg",
-      "img/pin-4.jpg",
-      "img/pin-5.jpg",
-      "img/pin-6.jpg",
-      "img/pin-7.jpg",
-      "img/pin-8.jpg",
-      "img/pin-9.jpg",
-      "img/project_community_health_wellbeing.jpg",
-      "img/project_employment_training_opportunities.jpg",
-      "img/project_making_our_economy_grow.jpg",
-      "img/project_town_transformation.jpg",
-      "img/whatnext-209x300.jpg",
-      "index.css",
-      "proto.js"
+      "07164d16e7aae0f4742d.png",
+      "09fb074ed3eb54753a10.svg",
+      "469753677_1302192927883865_501657220650618195_n-1.jpg",
+      "46E27105-1016-4556-B2D0-05E9E32C40E1-e1790676427333-1400x925.jpg",
+      "726494322_18099055991599944_7802252013948561681_n-1400x786.jpg",
+      "8ae22d1ab1e07d8f1a9d.svg",
+      "Chevron_Down.svg",
+      "Chevron_Down_White.svg",
+      "DRCD_logo_colour-web.png",
+      "Explore-Fingal_Logo_Tagline_WHITE-sm.png",
+      "FI_DublinCoastalTrail_Logo_FullColour.png",
+      "Fingal.png",
+      "Frame-18.jpg",
+      "Homepage-background-image-Image-11.webp",
+      "IMG-7857-1400x1000.jpg",
+      "IMG_0829-1400x1000.jpg",
+      "IMG_0883-2-1400x1000.jpg",
+      "IOE_1.png",
+      "Instagram.svg",
+      "Layer_1.svg",
+      "LinkedIn.svg",
+      "Placeholder-Image-4.jpg",
+      "Placeholder-Image-5.jpg",
+      "Placeholder-Image-6.jpg",
+      "Placeholder-Image-7.jpg",
+      "Placeholder-Image-8.jpg",
+      "Placeholder-Image.jpg",
+      "Pobal-logo-web.png",
+      "STN-Member-Logo-01-2026-white-smv1.png",
+      "Skerries-Mills-Blog-News.jpg",
+      "TikTok.svg",
+      "X.svg",
+      "c0906c9fbb5085e88959.svg",
+      "cropped-skerries-mills-favi-32x32.png",
+      "css/canon.css",
+      "css/index.css",
+      "d04693c2270b26a39da3.svg",
+      "envelope.svg",
+      "facebook.svg",
+      "fonts/libre-baskerville-italic-latin-ext.woff2",
+      "fonts/libre-baskerville-italic-latin.woff2",
+      "fonts/libre-baskerville-latin-ext.woff2",
+      "fonts/libre-baskerville-latin.woff2",
+      "image_80pct.webp",
+      "js/motion.js",
+      "map.svg",
+      "phone.svg",
+      "skerries-harbour-comp.jpeg",
+      "skerries-mill-home.jpg",
+      "skerries-tickets_0000_Layer-1.jpg",
+      "skerries-tickets_0001_go_city.jpg",
+      "skerries-tickets_0002_senior_citizens.jpg",
+      "skerries-tickets_0003_family_2x2.jpg",
+      "skerries-tickets_0004_child_16.jpg",
+      "skerries_mob-logo.svg",
+      "thumbnail_IMG_0381-1400x1000.jpg",
+      "time-maroon.svg",
+      "time-white.svg",
+      "time.svg",
+      "tripadvisor-white.svg",
+      "water-mill.jpg",
+      "wheat-bouquet.png",
+      "windmill.png"
     ],
     "pages": [
       {
         "slug": "index",
         "file": "stardust/migrated/index.html",
-        "assetsBundled": 36
+        "assetsBundled": 63
       }
     ],
     "missingAssets": [],
     "cleanedAssets": [],
     "lastRun": {
-      "at": "2026-10-13T15:09:40Z",
+      "at": "2026-10-14T09:31:02Z",
       "rendered": [
         "index"
       ],

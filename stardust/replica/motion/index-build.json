@@ -4,209 +4,242 @@
   "headerTimeline": [
     {
       "y": 0,
-      "cls": "site-header",
-      "position": "sticky",
-      "height": "98px",
+      "cls": "sm-header",
+      "position": "fixed",
+      "height": "192px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
       "y": 0,
-      "cls": "site-header",
-      "position": "sticky",
-      "height": "98px",
+      "cls": "sm-header",
+      "position": "fixed",
+      "height": "192px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
       "y": 1200,
-      "cls": "site-header is-scrolled",
-      "position": "sticky",
-      "height": "75.1875px",
+      "cls": "sm-header scrolling",
+      "position": "fixed",
+      "height": "160px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
       "y": 2400,
-      "cls": "site-header is-scrolled",
-      "position": "sticky",
-      "height": "75.1875px",
+      "cls": "sm-header scrolling",
+      "position": "fixed",
+      "height": "160px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
       "y": 3600,
-      "cls": "site-header is-scrolled",
-      "position": "sticky",
-      "height": "75.1875px",
+      "cls": "sm-header scrolling",
+      "position": "fixed",
+      "height": "160px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
-      "y": 2719,
-      "cls": "site-header is-scrolled",
-      "position": "sticky",
-      "height": "75.1875px",
+      "y": 4800,
+      "cls": "sm-header scrolling",
+      "position": "fixed",
+      "height": "160px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
-      "y": 1219,
-      "cls": "site-header is-scrolled",
-      "position": "sticky",
-      "height": "75.1875px",
+      "y": 6000,
+      "cls": "sm-header scrolling",
+      "position": "fixed",
+      "height": "160px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 7200,
+      "cls": "sm-header scrolling",
+      "position": "fixed",
+      "height": "160px",
+      "transform": "none",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 7042,
+      "cls": "sm-header scrolling",
+      "position": "fixed",
+      "height": "160px",
+      "transform": "none",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+      "mainPadTop": "0px",
+      "bodyPadTop": "0px",
+      "headerCount": 1
+    },
+    {
+      "y": 5542,
+      "cls": "sm-header scrolling",
+      "position": "fixed",
+      "height": "160px",
+      "transform": "none",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
       "y": 2400,
-      "cls": "site-header is-scrolled",
-      "position": "sticky",
-      "height": "75.1875px",
+      "cls": "sm-header scrolling",
+      "position": "fixed",
+      "height": "160px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
       "y": 1200,
-      "cls": "site-header is-scrolled",
-      "position": "sticky",
-      "height": "75.1875px",
+      "cls": "sm-header scrolling",
+      "position": "fixed",
+      "height": "160px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
       "y": 800,
-      "cls": "site-header is-scrolled",
-      "position": "sticky",
-      "height": "75.1875px",
+      "cls": "sm-header scrolling",
+      "position": "fixed",
+      "height": "160px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
       "y": 500,
-      "cls": "site-header is-scrolled",
-      "position": "sticky",
-      "height": "75.1875px",
+      "cls": "sm-header scrolling",
+      "position": "fixed",
+      "height": "160px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
       "y": 300,
-      "cls": "site-header is-scrolled",
-      "position": "sticky",
-      "height": "75.1875px",
+      "cls": "sm-header scrolling",
+      "position": "fixed",
+      "height": "160px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
       "y": 200,
-      "cls": "site-header is-scrolled",
-      "position": "sticky",
-      "height": "75.1875px",
+      "cls": "sm-header scrolling",
+      "position": "fixed",
+      "height": "160px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
       "y": 150,
-      "cls": "site-header is-scrolled",
-      "position": "sticky",
-      "height": "75.1875px",
+      "cls": "sm-header",
+      "position": "fixed",
+      "height": "192px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
       "y": 120,
-      "cls": "site-header is-scrolled",
-      "position": "sticky",
-      "height": "75.1875px",
+      "cls": "sm-header",
+      "position": "fixed",
+      "height": "192px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
-      "y": 103,
-      "cls": "site-header",
-      "position": "sticky",
-      "height": "88px",
+      "y": 90,
+      "cls": "sm-header",
+      "position": "fixed",
+      "height": "192px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
-      "y": 81,
-      "cls": "site-header",
-      "position": "sticky",
-      "height": "95.625px",
+      "y": 60,
+      "cls": "sm-header",
+      "position": "fixed",
+      "height": "192px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
-      "y": 32,
-      "cls": "site-header",
-      "position": "sticky",
-      "height": "98px",
+      "y": 30,
+      "cls": "sm-header",
+      "position": "fixed",
+      "height": "192px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
     },
     {
       "y": 0,
-      "cls": "site-header",
-      "position": "sticky",
-      "height": "98px",
+      "cls": "sm-header",
+      "position": "fixed",
+      "height": "192px",
       "transform": "none",
-      "transition": "all",
+      "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)",
       "mainPadTop": "0px",
       "bodyPadTop": "0px",
       "headerCount": 1
@@ -214,10 +247,10 @@
   ],
   "widgetSamples": [
     {
-      "sel": ".news__arrow--next",
+      "sel": ".sm-arrow--next",
       "frames": [
         {
-          "t": 10462.600000000093,
+          "t": 11966.69999999972,
           "trackTransform": null,
           "trackTransition": null,
           "boxScrollLeft": 0,
@@ -225,7 +258,7 @@
           "dots": []
         },
         {
-          "t": 10666.100000000093,
+          "t": 12169.899999999907,
           "trackTransform": null,
           "trackTransition": null,
           "boxScrollLeft": 0,
@@ -233,7 +266,7 @@
           "dots": []
         },
         {
-          "t": 10869.899999999907,
+          "t": 12372.899999999907,
           "trackTransform": null,
           "trackTransition": null,
           "boxScrollLeft": 0,
@@ -241,7 +274,7 @@
           "dots": []
         },
         {
-          "t": 11074.200000000186,
+          "t": 12576.299999999814,
           "trackTransform": null,
           "trackTransition": null,
           "boxScrollLeft": 0,
@@ -251,38 +284,38 @@
       ]
     },
     {
-      "sel": ".has-sub > a",
+      "sel": ".sm-dots span:nth-child(3)",
       "frames": [
         {
-          "t": 12086.399999999907,
+          "t": 13586.899999999907,
           "trackTransform": null,
           "trackTransition": null,
-          "boxScrollLeft": null,
-          "boxTransform": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
           "dots": []
         },
         {
-          "t": 12289.600000000093,
+          "t": 13790.399999999907,
           "trackTransform": null,
           "trackTransition": null,
-          "boxScrollLeft": null,
-          "boxTransform": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
           "dots": []
         },
         {
-          "t": 12493.200000000186,
+          "t": 13993.5,
           "trackTransform": null,
           "trackTransition": null,
-          "boxScrollLeft": null,
-          "boxTransform": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
           "dots": []
         },
         {
-          "t": 12697,
+          "t": 14197,
           "trackTransform": null,
           "trackTransition": null,
-          "boxScrollLeft": null,
-          "boxTransform": null,
+          "boxScrollLeft": 0,
+          "boxTransform": "none",
           "dots": []
         }
       ]
@@ -290,13 +323,13 @@
   ],
   "hoverSamples": [
     {
-      "sel": ".news-card",
+      "sel": ".sm-nav__link",
       "changed": [],
       "before": {
         "self": {
           "transform": "none",
-          "color": "rgb(36, 148, 210)",
-          "background": "rgb(36, 148, 210)",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
           "boxShadow": "none",
           "opacity": "1",
           "transition": "all"
@@ -305,7 +338,7 @@
           {
             "el": "img.",
             "transform": "none",
-            "color": "rgb(36, 148, 210)",
+            "color": "rgb(255, 255, 255)",
             "background": "rgba(0, 0, 0, 0)",
             "boxShadow": "none",
             "opacity": "1",
@@ -316,8 +349,8 @@
       "after": {
         "self": {
           "transform": "none",
-          "color": "rgb(36, 148, 210)",
-          "background": "rgb(36, 148, 210)",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgba(0, 0, 0, 0)",
           "boxShadow": "none",
           "opacity": "1",
           "transition": "all"
@@ -326,7 +359,7 @@
           {
             "el": "img.",
             "transform": "none",
-            "color": "rgb(36, 148, 210)",
+            "color": "rgb(255, 255, 255)",
             "background": "rgba(0, 0, 0, 0)",
             "boxShadow": "none",
             "opacity": "1",
@@ -336,74 +369,82 @@
       }
     },
     {
-      "sel": ".explore__link",
-      "changed": [
-        "self.color",
-        "self.background"
-      ],
-      "before": {
-        "self": {
-          "transform": "none",
-          "color": "rgb(36, 148, 210)",
-          "background": "rgba(60, 60, 60, 0.7)",
-          "boxShadow": "none",
-          "opacity": "1",
-          "transition": "all"
-        },
-        "subs": []
-      },
-      "after": {
-        "self": {
-          "transform": "none",
-          "color": "rgb(38, 0, 230)",
-          "background": "rgba(0, 155, 217, 0.7)",
-          "boxShadow": "none",
-          "opacity": "1",
-          "transition": "all"
-        },
-        "subs": []
-      }
-    },
-    {
-      "sel": ".map-pin",
+      "sel": ".sm-card a",
       "changed": [],
       "before": {
         "self": {
           "transform": "none",
-          "color": "rgb(36, 148, 210)",
+          "color": "rgb(0, 0, 0)",
           "background": "rgba(0, 0, 0, 0)",
           "boxShadow": "none",
           "opacity": "1",
-          "transition": "0.5s"
+          "transition": "all"
         },
-        "subs": []
+        "subs": [
+          {
+            "el": "img.",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+          },
+          {
+            "el": "h2.",
+            "transform": "none",
+            "color": "rgb(39, 59, 70)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
       },
       "after": {
         "self": {
           "transform": "none",
-          "color": "rgb(36, 148, 210)",
+          "color": "rgb(0, 0, 0)",
           "background": "rgba(0, 0, 0, 0)",
           "boxShadow": "none",
           "opacity": "1",
-          "transition": "0.5s"
+          "transition": "all"
         },
-        "subs": []
+        "subs": [
+          {
+            "el": "img.",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "color": "rgb(0, 0, 0)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
+          },
+          {
+            "el": "h2.",
+            "transform": "none",
+            "color": "rgb(39, 59, 70)",
+            "background": "rgba(0, 0, 0, 0)",
+            "boxShadow": "none",
+            "opacity": "1",
+            "transition": "all"
+          }
+        ]
       }
     },
     {
-      "sel": ".btn",
+      "sel": ".sm-btn",
       "changed": [
-        "self.color",
         "self.background"
       ],
       "before": {
         "self": {
           "transform": "none",
-          "color": "rgb(36, 148, 210)",
-          "background": "rgb(245, 238, 47)",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(57, 122, 92)",
           "boxShadow": "none",
           "opacity": "1",
-          "transition": "0.3s"
+          "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
         },
         "subs": []
       },
@@ -411,341 +452,2181 @@
         "self": {
           "transform": "none",
           "color": "rgb(255, 255, 255)",
-          "background": "rgb(36, 148, 210)",
+          "background": "rgb(111, 55, 57)",
           "boxShadow": "none",
           "opacity": "1",
-          "transition": "0.3s"
+          "transition": "0.15s cubic-bezier(0.4, 0, 0.2, 1)"
         },
         "subs": []
       }
     }
   ],
   "media": {
-    "videos": [
-      {
-        "src": "https://player.vimeo.com/external/625598732.hd.mp4?s=2cc9e7208130af5a8df5d3845fcc936469586f0c&profile_id=174",
-        "autoplay": true,
-        "loop": true,
-        "muted": true,
-        "paused": true,
-        "currentTime": 0,
-        "readyState": 0,
-        "inViewport": true,
-        "currentTimeAfter": 0,
-        "playing": false
-      }
-    ],
+    "videos": [],
     "idleClassMutations": [],
     "idleClassMutationCount": 0
   },
   "events": {
-    "animations": [],
+    "animations": [
+      {
+        "name": "fadeIn",
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0",
+        "txt": "Visit Skerries Mills\n            \n          Compri",
+        "y": 400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "txt": "",
+        "y": 400
+      },
+      {
+        "name": "fadeInY",
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split > div.sm-split__art.js-show-on-scroll-img.opacity-0",
+        "txt": "",
+        "y": 800
+      },
+      {
+        "name": "fadeIn",
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-attractions.js-show-on-scroll.opacity-0",
+        "txt": "The Attractions\n          \n            \n          ",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Our Tour\n                    A visit to Skerries M",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Museum\n                    Commencing our guided t",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Art At The Mill\n                    As a social en",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "History of the mills\n                    Windmills",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Watermill Cafe\n                    While fresh",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Our Tour\n                    A visit to Skerries M",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Museum\n                    Commencing our guided t",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Art At The Mill\n                    As a social en",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "History of the mills\n                    Windmills",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Watermill Cafe\n                    While fresh",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Our Tour\n                    A visit to Skerries M",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Museum\n                    Commencing our guided t",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Art At The Mill\n                    As a social en",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "History of the mills\n                    Windmills",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Watermill Cafe\n                    While fresh",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Our Tour\n                    A visit to Skerries M",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Museum\n                    Commencing our guided t",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Art At The Mill\n                    As a social en",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "History of the mills\n                    Windmills",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Watermill Cafe\n                    While fresh",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Our Tour\n                    A visit to Skerries M",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Museum\n                    Commencing our guided t",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Art At The Mill\n                    As a social en",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "History of the mills\n                    Windmills",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Watermill Cafe\n                    While fresh",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Our Tour\n                    A visit to Skerries M",
+        "y": 1200
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Museum\n                    Commencing our guided t",
+        "y": 1200
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Art At The Mill\n                    As a social en",
+        "y": 1200
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "History of the mills\n                    Windmills",
+        "y": 1200
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Watermill Cafe\n                    While fresh",
+        "y": 1200
+      },
+      {
+        "name": "fadeIn",
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-reviews.js-show-on-scroll.opacity-0",
+        "txt": "What Our Visitors Say\n          \n            \n    ",
+        "y": 1600
+      },
+      {
+        "name": "fadeIn",
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0",
+        "txt": "Tickets\n          \n            \n              \n   ",
+        "y": 2400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "txt": "Adult Ticket€12\n                  Book Now",
+        "y": 2400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "txt": "Student€11\n                  Book Now",
+        "y": 2400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "txt": "Senior Citizen€11\n                  Book Now",
+        "y": 2400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "txt": "Family (2+2)€31\n                  Book Now",
+        "y": 2400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "txt": "Child Under 16€6.50\n                  Book Now",
+        "y": 3212
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "txt": "Go City Passes\n                Read More",
+        "y": 3212
+      },
+      {
+        "name": "fadeInY",
+        "el": "section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-useful > div.sm-useful__art.js-show-on-scroll-img.opacity-0",
+        "txt": "",
+        "y": 3600
+      },
+      {
+        "name": "fadeIn",
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-callout.js-show-on-scroll.opacity-0",
+        "txt": "Guarantee Your Tour Place\n              Skerries M",
+        "y": 3600
+      },
+      {
+        "name": "fadeIn",
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0",
+        "txt": "Café\n            \n            \n              \n    ",
+        "y": 4000
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0",
+        "txt": "",
+        "y": 4000
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0",
+        "txt": "",
+        "y": 4000
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0",
+        "txt": "",
+        "y": 4000
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0",
+        "txt": "",
+        "y": 4000
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0",
+        "txt": "",
+        "y": 4000
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "txt": "",
+        "y": 4400
+      },
+      {
+        "name": "fadeIn",
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0",
+        "txt": "Latest Events\n          \n            \n            ",
+        "y": 4800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Skerries Mills Community Garden Scarecrow Festival",
+        "y": 4800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "The Goddess of Samhain\n                An ancient ",
+        "y": 4800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "National Heritage Week Irish Language Tour\n       ",
+        "y": 4800
+      },
+      {
+        "name": "fadeIn",
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split.sm-split--reverse > div.sm-split__inner.js-show-on-scroll.opacity-0",
+        "txt": "Farmers Market\n            \n          Every Saturd",
+        "y": 5600
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-split.sm-split--reverse > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "txt": "",
+        "y": 5600
+      },
+      {
+        "name": "fadeInY",
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split.sm-split--reverse > div.sm-split__art.js-show-on-scroll-img.opacity-0",
+        "txt": "",
+        "y": 6000
+      },
+      {
+        "name": "fadeIn",
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0",
+        "txt": "Latest News\n          \n            \n              ",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "The beauty of WildFlowers at Skerries Mills\n      ",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Skerries Crowned Ireland’s Greenest Town – A Model",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Works to Repair the Great Windmill of Skerries\n   ",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "The beauty of WildFlowers at Skerries Mills\n      ",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Skerries Crowned Ireland’s Greenest Town – A Model",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Works to Repair the Great Windmill of Skerries\n   ",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "The beauty of WildFlowers at Skerries Mills\n      ",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Skerries Crowned Ireland’s Greenest Town – A Model",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Works to Repair the Great Windmill of Skerries\n   ",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "The beauty of WildFlowers at Skerries Mills\n      ",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Skerries Crowned Ireland’s Greenest Town – A Model",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Works to Repair the Great Windmill of Skerries\n   ",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "The beauty of WildFlowers at Skerries Mills\n      ",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Skerries Crowned Ireland’s Greenest Town – A Model",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Works to Repair the Great Windmill of Skerries\n   ",
+        "y": 6400
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "The beauty of WildFlowers at Skerries Mills\n      ",
+        "y": 6800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Skerries Crowned Ireland’s Greenest Town – A Model",
+        "y": 6800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Works to Repair the Great Windmill of Skerries\n   ",
+        "y": 6800
+      },
+      {
+        "name": "fadeIn",
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split.sm-split--reverse > div.sm-split__inner.js-show-on-scroll.opacity-0",
+        "txt": "Farmers Market\n            \n          Every Saturd",
+        "y": 7042
+      },
+      {
+        "name": "fadeIn",
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0",
+        "txt": "Latest News\n          \n            \n              ",
+        "y": 7042
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "The beauty of WildFlowers at Skerries Mills\n      ",
+        "y": 7042
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Skerries Crowned Ireland’s Greenest Town – A Model",
+        "y": 7042
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Works to Repair the Great Windmill of Skerries\n   ",
+        "y": 7042
+      },
+      {
+        "name": "fadeIn",
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0",
+        "txt": "Latest Events\n          \n            \n            ",
+        "y": 5542
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "Skerries Mills Community Garden Scarecrow Festival",
+        "y": 5542
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "The Goddess of Samhain\n                An ancient ",
+        "y": 5542
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "txt": "National Heritage Week Irish Language Tour\n       ",
+        "y": 5542
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-split.sm-split--reverse > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "txt": "",
+        "y": 5542
+      },
+      {
+        "name": "fadeIn",
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-attractions.js-show-on-scroll.opacity-0",
+        "txt": "The Attractions\n          \n            \n          ",
+        "y": 2400
+      },
+      {
+        "name": "fadeIn",
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-reviews.js-show-on-scroll.opacity-0",
+        "txt": "What Our Visitors Say\n          \n            \n    ",
+        "y": 2400
+      },
+      {
+        "name": "fadeIn",
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0",
+        "txt": "Tickets\n          \n            \n              \n   ",
+        "y": 2400
+      },
+      {
+        "name": "fadeIn",
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0",
+        "txt": "Visit Skerries Mills\n            \n          Compri",
+        "y": 1200
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "txt": "",
+        "y": 1200
+      },
+      {
+        "name": "fadeInY",
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split > div.sm-split__art.js-show-on-scroll-img.opacity-0",
+        "txt": "",
+        "y": 1200
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Museum\n                    Commencing our guided t",
+        "y": 1200
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Art At The Mill\n                    As a social en",
+        "y": 1200
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "History of the mills\n                    Windmills",
+        "y": 1200
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Watermill Cafe\n                    While fresh",
+        "y": 1200
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Craft Shop\n                    Our local Craft",
+        "y": 1200
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Museum\n                    Commencing our guided t",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Art At The Mill\n                    As a social en",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "History of the mills\n                    Windmills",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Watermill Cafe\n                    While fresh",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Craft Shop\n                    Our local Craft",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Museum\n                    Commencing our guided t",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Art At The Mill\n                    As a social en",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "History of the mills\n                    Windmills",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Watermill Cafe\n                    While fresh",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Craft Shop\n                    Our local Craft",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Museum\n                    Commencing our guided t",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Art At The Mill\n                    As a social en",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "History of the mills\n                    Windmills",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Watermill Cafe\n                    While fresh",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Craft Shop\n                    Our local Craft",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Museum\n                    Commencing our guided t",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Art At The Mill\n                    As a social en",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "History of the mills\n                    Windmills",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Watermill Cafe\n                    While fresh",
+        "y": 800
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Craft Shop\n                    Our local Craft",
+        "y": 800
+      },
+      {
+        "name": "fadeIn",
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-attractions.js-show-on-scroll.opacity-0",
+        "txt": "The Attractions\n          \n            \n          ",
+        "y": 1956
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Museum\n                    Commencing our guided t",
+        "y": 1956
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Art At The Mill\n                    As a social en",
+        "y": 1956
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "History of the mills\n                    Windmills",
+        "y": 1956
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Watermill Cafe\n                    While fresh",
+        "y": 1956
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Craft Shop\n                    Our local Craft",
+        "y": 1956
+      },
+      {
+        "name": "fadeIn",
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-reviews.js-show-on-scroll.opacity-0",
+        "txt": "What Our Visitors Say\n          \n            \n    ",
+        "y": 1956
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Art At The Mill\n                    As a social en",
+        "y": 1956
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "History of the mills\n                    Windmills",
+        "y": 1956
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Watermill Cafe\n                    While fresh",
+        "y": 1956
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Craft Shop\n                    Our local Craft",
+        "y": 1956
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Our Tour\n                    A visit to Skerries M",
+        "y": 1956
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Our Tour\n                    A visit to Skerries M",
+        "y": 1956
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "History of the mills\n                    Windmills",
+        "y": 1956
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Watermill Cafe\n                    While fresh",
+        "y": 1956
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Craft Shop\n                    Our local Craft",
+        "y": 1956
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Museum\n                    Commencing our guided t",
+        "y": 1956
+      },
+      {
+        "name": "fadeIn",
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0",
+        "txt": "Tickets\n          \n            \n              \n   ",
+        "y": 2504
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "txt": "Adult Ticket€12\n                  Book Now",
+        "y": 2504
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "txt": "Student€11\n                  Book Now",
+        "y": 2504
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "txt": "Senior Citizen€11\n                  Book Now",
+        "y": 2504
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "txt": "Family (2+2)€31\n                  Book Now",
+        "y": 2504
+      },
+      {
+        "name": "fadeInY",
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split > div.sm-split__art.js-show-on-scroll-img.opacity-0",
+        "txt": "",
+        "y": 1551
+      },
+      {
+        "name": "fadeIn",
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-attractions.js-show-on-scroll.opacity-0",
+        "txt": "The Attractions\n          \n            \n          ",
+        "y": 1551
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Our Tour\n                    A visit to Skerries M",
+        "y": 1551
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "Museum\n                    Commencing our guided t",
+        "y": 1551
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "History of the mills\n                    Windmills",
+        "y": 1551
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Watermill Cafe\n                    While fresh",
+        "y": 1551
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "txt": "The Craft Shop\n                    Our local Craft",
+        "y": 1551
+      },
+      {
+        "name": "fadeIn",
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0",
+        "txt": "Visit Skerries Mills\n            \n          Compri",
+        "y": 362
+      },
+      {
+        "name": "fadeInY",
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "txt": "",
+        "y": 362
+      }
+    ],
     "transitions": [
       {
         "prop": "width",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 387,
-        "dur": "0.3s"
+        "el": "main.sm-page > header.sm-header.scrolling > div.sm-header__bar > div.sm-logo > a",
+        "y": 400,
+        "dur": "0.15s"
       },
       {
-        "prop": "height",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 387,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "width",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "height",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "width",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "height",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "width",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "height",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "width",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "height",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "width",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "height",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "width",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "height",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "width",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "height",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "width",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "height",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "width",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "height",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "width",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "height",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "width",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "height",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "width",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "height",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 90,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "width",
-        "el": "body > header.site-header > nav.site-header__bar > a.site-header__brand > img",
-        "y": 73,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "height",
-        "el": "body > header.site-header > nav.site-header__bar > a.site-header__brand > img",
-        "y": 73,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "width",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 1025,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "height",
-        "el": "body > header.site-header.is-scrolled > nav.site-header__bar > a.site-header__brand > img",
-        "y": 1025,
+        "prop": "transform",
+        "el": "div.sm-sections.flex-col > section.sm-attractions.js-show-on-scroll.opacity-0 > div.sm-attractions__inner > div.sm-track > div.sm-track__rail",
+        "y": 2800,
         "dur": "0.3s"
       },
       {
         "prop": "transform",
-        "el": "section.band.band--gray.news > div.container > div.news__rail > div.news__viewport > ul.news__track",
-        "y": 1015,
-        "dur": "0.5s"
-      },
-      {
-        "prop": "width",
-        "el": "body > header.site-header > nav.site-header__bar > a.site-header__brand > img",
-        "y": 17,
+        "el": "div.sm-sections.flex-col > section.sm-reviews.js-show-on-scroll.opacity-0 > div.sm-reviews__inner.sm-wrap > div.sm-track > div.sm-track__rail",
+        "y": 2800,
         "dur": "0.3s"
       },
       {
         "prop": "height",
-        "el": "body > header.site-header > nav.site-header__bar > a.site-header__brand > img",
-        "y": 17,
+        "el": "div.sm-sections.flex-col > section.sm-reviews.js-show-on-scroll.opacity-0 > div.sm-reviews__inner.sm-wrap > div.sm-track > div.sm-track__rail",
+        "y": 2800,
         "dur": "0.3s"
       },
       {
-        "prop": "border-top-color",
-        "el": "body > main.wrapper-homepage > section.hero > div.hero__card > a.btn.hero__cta",
-        "y": 27,
+        "prop": "width",
+        "el": "main.sm-page > header.sm-header > div.sm-header__bar > div.sm-logo > a",
+        "y": 150,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "width",
+        "el": "main.sm-page > header.sm-header.scrolling > div.sm-header__bar > div.sm-logo > a",
+        "y": 1956,
+        "dur": "0.15s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.sm-sections.flex-col > section.sm-attractions.js-show-on-scroll.opacity-0 > div.sm-attractions__inner > div.sm-track > div.sm-track__rail",
+        "y": 1956,
+        "dur": "0.3s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.sm-sections.flex-col > section.sm-reviews.js-show-on-scroll.opacity-0 > div.sm-reviews__inner.sm-wrap > div.sm-track > div.sm-track__rail",
+        "y": 1956,
+        "dur": "0.3s"
+      },
+      {
+        "prop": "transform",
+        "el": "div.sm-sections.flex-col > section.sm-attractions.js-show-on-scroll.opacity-0 > div.sm-attractions__inner > div.sm-track > div.sm-track__rail",
+        "y": 1956,
+        "dur": "0.3s"
+      },
+      {
+        "prop": "opacity",
+        "el": "div.sm-header__bar > nav.sm-nav > ul.sm-nav__list.sm-nav__list--left > li > ul.sm-nav__drop",
+        "y": 2504,
+        "dur": "0.3s"
+      },
+      {
+        "prop": "opacity",
+        "el": "div.sm-header__bar > nav.sm-nav > ul.sm-nav__list.sm-nav__list--left > li > ul.sm-nav__drop",
+        "y": 1551,
         "dur": "0.3s"
       },
       {
         "prop": "background-color",
-        "el": "body > main.wrapper-homepage > section.hero > div.hero__card > a.btn.hero__cta",
-        "y": 27,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "border-bottom-color",
-        "el": "body > main.wrapper-homepage > section.hero > div.hero__card > a.btn.hero__cta",
-        "y": 27,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "border-left-color",
-        "el": "body > main.wrapper-homepage > section.hero > div.hero__card > a.btn.hero__cta",
-        "y": 27,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "color",
-        "el": "body > main.wrapper-homepage > section.hero > div.hero__card > a.btn.hero__cta",
-        "y": 27,
-        "dur": "0.3s"
-      },
-      {
-        "prop": "border-right-color",
-        "el": "body > main.wrapper-homepage > section.hero > div.hero__card > a.btn.hero__cta",
-        "y": 27,
-        "dur": "0.3s"
+        "el": "main.sm-page > div.sm-content.flex-1 > section.sm-hero > div.sm-hero__copy > a.sm-btn",
+        "y": 362,
+        "dur": "0.15s"
       }
     ],
     "classMutations": [
       {
         "added": [
-          "is-scrolled"
+          "scrolling"
         ],
-        "el": "html > body > header.site-header.is-scrolled",
-        "y": 387
+        "el": "html > body.home > main.sm-page > header.sm-header.scrolling",
+        "y": 400
       },
       {
         "added": [
-          "is-scrolled"
+          "animate-fadeIn"
         ],
-        "el": "html > body > header.site-header.is-scrolled",
-        "y": 90
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0",
+        "y": 400
       },
       {
         "added": [
-          "is-scrolled"
+          "animate-fadeInY"
         ],
-        "el": "html > body > header.site-header.is-scrolled",
-        "y": 90
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "y": 400
       },
       {
         "added": [
-          "is-scrolled"
+          "animate-fadeIn"
         ],
-        "el": "html > body > header.site-header.is-scrolled",
-        "y": 90
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-attractions.js-show-on-scroll.opacity-0",
+        "y": 800
       },
       {
         "added": [
-          "is-scrolled"
+          "animate-fadeInY"
         ],
-        "el": "html > body > header.site-header.is-scrolled",
-        "y": 90
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split > div.sm-split__art.js-show-on-scroll-img.opacity-0",
+        "y": 800
       },
       {
         "added": [
-          "is-scrolled"
+          "animate-fadeInY"
         ],
-        "el": "html > body > header.site-header.is-scrolled",
-        "y": 90
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
       },
       {
         "added": [
-          "is-scrolled"
+          "animate-fadeInY"
         ],
-        "el": "html > body > header.site-header.is-scrolled",
-        "y": 90
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
       },
       {
         "added": [
-          "is-scrolled"
+          "animate-fadeInY"
         ],
-        "el": "html > body > header.site-header.is-scrolled",
-        "y": 1025
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
       },
       {
         "added": [
-          "is-active"
+          "animate-fadeInY"
         ],
-        "el": "section.band.band--gray.news > div.container > div.news__rail > ul.news__dots > li.is-active",
-        "y": 1015
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
       },
       {
         "added": [
-          "is-open"
+          "animate-fadeInY"
         ],
-        "el": "div.site-header__navs > div.site-header__primary > div.site-header__main > ul.nav-list.nav-list--main > li.has-sub.is-open",
-        "y": 622
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-reviews.js-show-on-scroll.opacity-0",
+        "y": 1600
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0",
+        "y": 2400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "y": 2400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "y": 2400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "y": 2400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "y": 2400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "y": 3204
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "y": 3204
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-callout.js-show-on-scroll.opacity-0",
+        "y": 3600
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-useful > div.sm-useful__art.js-show-on-scroll-img.opacity-0",
+        "y": 3600
+      },
+      {
+        "added": [
+          "swiper-slide-prev"
+        ],
+        "el": "section.sm-attractions.js-show-on-scroll.opacity-0 > div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-prev",
+        "y": 3600
+      },
+      {
+        "added": [
+          "swiper-slide-prev"
+        ],
+        "el": "section.sm-attractions.js-show-on-scroll.opacity-0 > div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-prev",
+        "y": 3600
+      },
+      {
+        "added": [
+          "swiper-slide-active"
+        ],
+        "el": "section.sm-attractions.js-show-on-scroll.opacity-0 > div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active",
+        "y": 3600
+      },
+      {
+        "added": [
+          "swiper-slide-next"
+        ],
+        "el": "section.sm-attractions.js-show-on-scroll.opacity-0 > div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next",
+        "y": 3600
+      },
+      {
+        "added": [
+          "swiper-slide-prev"
+        ],
+        "el": "section.sm-reviews.js-show-on-scroll.opacity-0 > div.sm-reviews__inner.sm-wrap > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-prev",
+        "y": 3600
+      },
+      {
+        "added": [
+          "swiper-slide-prev"
+        ],
+        "el": "section.sm-reviews.js-show-on-scroll.opacity-0 > div.sm-reviews__inner.sm-wrap > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-prev",
+        "y": 3600
+      },
+      {
+        "added": [
+          "swiper-slide-active"
+        ],
+        "el": "section.sm-reviews.js-show-on-scroll.opacity-0 > div.sm-reviews__inner.sm-wrap > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active",
+        "y": 3600
+      },
+      {
+        "added": [
+          "swiper-slide-next"
+        ],
+        "el": "section.sm-reviews.js-show-on-scroll.opacity-0 > div.sm-reviews__inner.sm-wrap > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next",
+        "y": 3600
+      },
+      {
+        "added": [
+          "swiper-pagination-bullet-active"
+        ],
+        "el": "section.sm-reviews.js-show-on-scroll.opacity-0 > div.sm-reviews__inner.sm-wrap > div.sm-track > div.sm-dots > span.swiper-pagination-bullet-active",
+        "y": 3600
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0",
+        "y": 4000
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "y": 4000
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "y": 4000
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "y": 4000
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "y": 4000
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "y": 4000
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "y": 4000
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0",
+        "y": 4800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 4800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 4800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 4800
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split.sm-split--reverse > div.sm-split__inner.js-show-on-scroll.opacity-0",
+        "y": 5600
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-split.sm-split--reverse > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "y": 5600
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split.sm-split--reverse > div.sm-split__art.js-show-on-scroll-img.opacity-0",
+        "y": 6000
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 6400
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split.sm-split--reverse > div.sm-split__inner.js-show-on-scroll.opacity-0",
+        "y": 7042
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0",
+        "y": 7042
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 7042
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 7042
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 7042
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0",
+        "y": 5542
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 5542
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 5542
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-posts.js-show-on-scroll.opacity-0 > div.sm-posts__inner.sm-wrap > div.sm-posts__grid > article.sm-post.js-show-on-scroll-img.opacity-0",
+        "y": 5542
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-split.sm-split--reverse > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "y": 5542
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-attractions.js-show-on-scroll.opacity-0",
+        "y": 2400
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-reviews.js-show-on-scroll.opacity-0",
+        "y": 2400
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0",
+        "y": 2400
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split > div.sm-split__art.js-show-on-scroll-img.opacity-0",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1200
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 800
+      },
+      {
+        "added": [
+          "scrolling"
+        ],
+        "el": "html > body.home > main.sm-page > header.sm-header.scrolling",
+        "y": 1956
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-attractions.js-show-on-scroll.opacity-0",
+        "y": 1956
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-reviews.js-show-on-scroll.opacity-0",
+        "y": 1956
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1956
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1956
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1956
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1956
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1956
+      },
+      {
+        "added": [
+          "swiper-slide-prev"
+        ],
+        "el": "section.sm-attractions.js-show-on-scroll.opacity-0 > div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-prev",
+        "y": 1956
+      },
+      {
+        "added": [
+          "swiper-slide-prev"
+        ],
+        "el": "section.sm-attractions.js-show-on-scroll.opacity-0 > div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-prev",
+        "y": 1956
+      },
+      {
+        "added": [
+          "swiper-slide-active"
+        ],
+        "el": "section.sm-attractions.js-show-on-scroll.opacity-0 > div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active",
+        "y": 1956
+      },
+      {
+        "added": [
+          "swiper-slide-next"
+        ],
+        "el": "section.sm-attractions.js-show-on-scroll.opacity-0 > div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next",
+        "y": 1956
+      },
+      {
+        "added": [
+          "swiper-slide-prev"
+        ],
+        "el": "section.sm-reviews.js-show-on-scroll.opacity-0 > div.sm-reviews__inner.sm-wrap > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-prev",
+        "y": 1956
+      },
+      {
+        "added": [
+          "swiper-slide-prev"
+        ],
+        "el": "section.sm-reviews.js-show-on-scroll.opacity-0 > div.sm-reviews__inner.sm-wrap > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-prev",
+        "y": 1956
+      },
+      {
+        "added": [
+          "swiper-slide-active"
+        ],
+        "el": "section.sm-reviews.js-show-on-scroll.opacity-0 > div.sm-reviews__inner.sm-wrap > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active",
+        "y": 1956
+      },
+      {
+        "added": [
+          "swiper-slide-next"
+        ],
+        "el": "section.sm-reviews.js-show-on-scroll.opacity-0 > div.sm-reviews__inner.sm-wrap > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next",
+        "y": 1956
+      },
+      {
+        "added": [
+          "swiper-pagination-bullet-active"
+        ],
+        "el": "section.sm-reviews.js-show-on-scroll.opacity-0 > div.sm-reviews__inner.sm-wrap > div.sm-track > div.sm-dots > span.swiper-pagination-bullet-active",
+        "y": 1956
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1956
+      },
+      {
+        "added": [
+          "swiper-slide-prev"
+        ],
+        "el": "section.sm-attractions.js-show-on-scroll.opacity-0 > div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-prev",
+        "y": 1956
+      },
+      {
+        "added": [
+          "swiper-slide-prev"
+        ],
+        "el": "section.sm-attractions.js-show-on-scroll.opacity-0 > div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-prev",
+        "y": 1956
+      },
+      {
+        "added": [
+          "swiper-slide-active"
+        ],
+        "el": "section.sm-attractions.js-show-on-scroll.opacity-0 > div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active",
+        "y": 1956
+      },
+      {
+        "added": [
+          "swiper-slide-next"
+        ],
+        "el": "section.sm-attractions.js-show-on-scroll.opacity-0 > div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next",
+        "y": 1956
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1956
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0",
+        "y": 2504
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "y": 2504
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "y": 2504
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "y": 2504
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-tickets.js-show-on-scroll.opacity-0 > div.sm-tickets__inner.sm-wrap > div.sm-tickets__grid > article.sm-ticket.js-show-on-scroll-img.opacity-0",
+        "y": 2504
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "body.home > main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-attractions.js-show-on-scroll.opacity-0",
+        "y": 1551
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split > div.sm-split__art.js-show-on-scroll-img.opacity-0",
+        "y": 1551
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1551
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1551
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-active > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1551
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide.swiper-slide-next > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1551
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-attractions__inner > div.sm-track > div.sm-track__rail > div.sm-track__slide > div.sm-card.js-show-on-scroll-img.opacity-0",
+        "y": 1551
+      },
+      {
+        "added": [
+          "animate-fadeIn"
+        ],
+        "el": "main.sm-page > div.sm-content.flex-1 > div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0",
+        "y": 362
+      },
+      {
+        "added": [
+          "animate-fadeInY"
+        ],
+        "el": "div.sm-sections.flex-col > section.sm-split > div.sm-split__inner.js-show-on-scroll.opacity-0 > div.sm-split__media > img.js-show-on-scroll-img.opacity-0.animate-fadeInY",
+        "y": 362
       }
     ]
   }

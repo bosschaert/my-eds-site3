@@ -1,59 +1,59 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-10-13T15:10:02.795Z",
+    "writtenAt": "2026-10-14T09:31:28.617Z",
     "readArtifacts": [
       "stardust/migrated",
       "stardust/state.json"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-13T16:27:52.946Z",
+  "generatedAt": "2026-10-14T10:53:17.539Z",
   "pages": [
     {
       "slug": "index",
       "path": "/",
-      "title": "Our Balbriggan",
+      "title": "Skerries Mills, A Unique Heritage Museum in Dublin",
       "templateId": "index",
       "source": {
         "migratedHtml": "stardust/migrated/index.html",
         "metaJson": "stardust/migrated/_meta.json",
-        "sourceHash": "sha256:9884eaeee004562aaa89dca7b0c36705338f4dd667944e1a15c0a4bb38a915d4",
-        "sourceUrl": "https://balbriggan.ie/"
+        "sourceHash": "sha256:9ea031c8efe4da39ca73277dfa949d84be0d77ecb6b0f2a89449c35d079fb20f",
+        "sourceUrl": "https://www.skerriesmills.ie/"
       },
       "blocks": [
         "hero",
-        "intro",
-        "news",
-        "explore",
-        "map",
-        "docs",
-        "newsletter"
+        "split",
+        "attractions",
+        "reviews",
+        "tickets",
+        "callout",
+        "posts"
       ],
       "delivery": {
         "status": "verified",
-        "deployedUrl": "https://main--e8103195--aemcoder.aem.live/",
-        "deployedAt": "2026-10-13T16:18:27.091Z",
-        "verifiedAt": "2026-10-13T16:27:47.604Z",
+        "deployedUrl": "https://main--1370701b--aemcoder.aem.page/",
+        "deployedAt": "2026-10-14T10:39:51.912Z",
+        "verifiedAt": "2026-10-14T10:52:38.250Z",
         "error": null,
         "gate": {
           "pass": true,
-          "pct": 2.4,
-          "heightDelta": 0,
-          "clipped": 2,
+          "pct": 2.18,
+          "heightDelta": 19,
+          "clipped": 0,
           "content": {
             "missing": 0,
             "hidden": 0,
             "controlState": 0,
             "missingButtons": 0,
             "hiddenButtons": 0,
-            "findings": 27,
+            "findings": 0,
             "variable": []
           },
           "reasons": [],
           "override": null,
           "table": "stardust/replica/gates/all-360/summary.json",
-          "at": "2026-10-13T16:27:52.946Z"
+          "at": "2026-10-14T10:53:17.539Z"
         }
       }
     }

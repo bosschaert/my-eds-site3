@@ -1,115 +1,84 @@
 {
   "_provenance": {
     "writtenBy": "stardust:dynamics",
-    "writtenAt": "2026-10-13T16:26:47Z"
+    "writtenAt": "2026-10-14T10:55:00Z"
   },
-  "method": "home page only; features rebuilt natively in the hero/news/map/newsletter blocks; replayed on the aem.live origin",
+  "method": "Bounded single page; listings and carousels are document rows decorated by blocks; FareHarbor booking keeps verbatim hrefs + delayed lightframe script; tags/consent off pending owner decision D-3.",
   "features": [
     {
-      "id": "m-hero-video",
-      "feature": "Hero background video (autoplay muted loop)",
-      "class": "M",
+      "id": "booking",
+      "feature": "FareHarbor booking (Book Now)",
+      "class": "A/T",
       "pages": 1,
       "disposition": "embed-passthrough",
       "reproducibility": "self",
-      "status": "done",
-      "verifiedBy": "attributes + play() call present; playback unreplayable from the test network (source identical)",
-      "checks": [
-        {
-          "type": "video-plays",
-          "path": "/",
-          "videoSelector": ".hero video"
-        }
-      ],
-      "environmentLimit": "player.vimeo.com answers 403 to this test network and the bundled Chromium has no H.264: the SOURCE video fails the same replay (readyState 0, paused) — not a defect; the build sets autoplay/muted/loop/playsinline and calls play() (blocks/hero/hero.js)"
-    },
-    {
-      "id": "m-news-carousel",
-      "feature": "What's New carousel (3-up, 4 slides, dots + arrows)",
-      "class": "M",
-      "pages": 1,
-      "disposition": "rebuild-native",
-      "reproducibility": "self",
-      "status": "done",
-      "verifiedBy": "4 slides rendered",
-      "checks": [
-        {
-          "type": "dom-count",
-          "path": "/",
-          "selector": ".news .news-slide",
-          "min": 4
-        }
-      ]
-    },
-    {
-      "id": "m-map-pins",
-      "feature": "Project map, 12 linked pins",
-      "class": "M",
-      "pages": 1,
-      "disposition": "rebuild-native",
-      "reproducibility": "self",
-      "status": "done",
-      "verifiedBy": "12 pins rendered",
-      "checks": [
-        {
-          "type": "dom-count",
-          "path": "/",
-          "selector": ".map .map-pin",
-          "min": 12
-        }
-      ]
-    },
-    {
-      "id": "f-form-gform-1-origin-5-fields",
-      "feature": "Newsletter sign-up",
-      "class": "F",
-      "pages": 1,
-      "disposition": "rebuild-native",
-      "reproducibility": "needs-backend",
       "status": "interim",
-      "owner": "production endpoint for the newsletter form; interim posts the same Gravity Forms fields to the source handler",
-      "environmentLimit": "a filled submission is not replayed: it would create a real sign-up on the production list",
-      "verifiedBy": "form + 4 visible inputs rendered",
+      "verifiedBy": "8 Book Now / ticket links to fareharbor.com/embeds/book/skerriesmills on / (live); lightframe script loaded delayed 3 s",
+      "owner": "D-1: keep the FareHarbor lightframe overlay on the new site (loaded delayed meanwhile)",
       "checks": [
         {
           "type": "dom-count",
           "path": "/",
-          "selector": ".newsletter form input:not([type=hidden])",
-          "min": 4
+          "selector": "main a[href*='fareharbor.com/embeds/book/skerriesmills']",
+          "min": 8
         }
       ]
     },
     {
-      "id": "t-tag-manager-google-tag-manager",
-      "feature": "Google Tag Manager / Analytics / Facebook pixel",
+      "id": "carousels",
+      "feature": "attractions + testimonials carousels",
+      "class": "CR",
+      "pages": 1,
+      "disposition": "static-snapshot",
+      "reproducibility": "self",
+      "status": "done",
+      "verifiedBy": "2 arrows + 7 testimonial slides; autoplay 5500 ms loop observed on .aem.live (archetype unit)",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "main .attractions-arrow",
+          "min": 2
+        },
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "main .reviews-quote",
+          "min": 7
+        }
+      ]
+    },
+    {
+      "id": "tags",
+      "feature": "GTM GTM-5579WLK2 / GA4 + Complianz consent",
       "class": "T",
       "pages": 1,
       "disposition": "embed-passthrough",
       "reproducibility": "needs-business-decision",
       "status": "scaffolded-awaiting-owner",
-      "owner": "which tags run on the new host and the container id",
-      "verifiedBy": "no tag host requested",
+      "verifiedBy": "0 requests to GTM/GA hosts on /",
+      "owner": "D-3: which tags run on the new host and under which consent tool",
       "checks": [
         {
-          "type": "consent-gate",
+          "type": "martech",
           "path": "/",
+          "mode": "gate",
           "forbiddenHosts": [
             "www.googletagmanager.com",
-            "www.google-analytics.com",
-            "connect.facebook.net"
+            "www.google-analytics.com"
           ]
         }
       ]
     },
     {
-      "id": "page-errors",
-      "feature": "page runs without uncaught errors",
-      "class": "M",
+      "id": "page",
+      "feature": "home page runtime",
+      "class": "CR",
       "pages": 1,
-      "disposition": "rebuild-native",
+      "disposition": "static-snapshot",
       "reproducibility": "self",
       "status": "done",
-      "verifiedBy": "0 page errors",
+      "verifiedBy": "0 page errors on /",
       "checks": [
         {
           "type": "no-page-errors",

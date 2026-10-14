@@ -1,14 +1,14 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-10-13T15:10:02.795Z",
+    "writtenAt": "2026-10-14T09:31:28.617Z",
     "readArtifacts": [
       "stardust/migrated",
       "stardust/state.json"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-13T16:30:01.251Z",
+  "generatedAt": "2026-10-14T10:53:17.539Z",
   "templates": [
     {
       "id": "index",
@@ -18,13 +18,13 @@
       ],
       "pageCount": 1,
       "blocks": [
-        "docs",
-        "explore",
+        "attractions",
+        "callout",
         "hero",
-        "intro",
-        "map",
-        "news",
-        "newsletter"
+        "posts",
+        "reviews",
+        "split",
+        "tickets"
       ],
       "delivery": {
         "verified": 1,

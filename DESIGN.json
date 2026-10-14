@@ -1,107 +1,130 @@
 {
   "_provenance": {
     "writtenBy": "stardust:replica",
-    "writtenAt": "2026-10-13T14:43:31.269Z",
+    "writtenAt": "2026-10-14T09:00:15.351Z",
     "mode": "bounded-single",
     "synthesizedFrom": [
       "stardust/current/pages/index.json",
-      "stardust/replica/lift/tokens.json"
+      "stardust/replica/lifted-tokens.json"
     ]
   },
-  "color": {
-    "brandBlue": "#2494d2",
-    "heroBlue": "#009bd9",
-    "yellow": "#f5ee2f",
-    "yellowAlt": "#f9ec31",
-    "ruleYellow": "#ffff00",
-    "text": "#3c3c3b",
-    "heading": "#3c3c3c",
-    "lightGray": "#f0f0f0",
-    "footerGray": "#444444",
+  "colors": {
+    "background": "#fff8eb",
+    "heading": "#415b6a",
+    "text-dark": "#273b46",
+    "primary-green": "#397a5c",
+    "maroon": "#6f3739",
+    "footer-red": "#762728",
+    "surface-slate": "#537486",
     "white": "#ffffff",
-    "gridScrim": "rgba(60,60,60,0.7)",
-    "gridScrimHover": "rgba(0,155,217,0.7)",
-    "docLink": "#000000"
+    "border": "#e5e7eb"
   },
   "typography": {
     "fonts": {
-      "body": "'Gotham-Light' (licensed) → substitute Montserrat 300, size-adjust 99%",
-      "medium": "'GothamMedium' (licensed) → substitute Montserrat 500, size-adjust 99%",
-      "bold": "'GothamBold' (licensed) → substitute Montserrat 700, size-adjust 100%",
-      "heroHeading": "'Gotham Bold', Helvetica, Arial, Lucida, sans-serif (undefined face on source → renders the Helvetica/Arial fallback)",
-      "icons": "FontAwesome 4.7 (OFL webfont, rehosted)"
+      "heading": "\"Libre Baskerville\", serif (Google Fonts, OFL; 400/700/400i)",
+      "body": "proxima-nova, sans-serif (Adobe Fonts kit pbd5qiw — licensed, referenced not rehosted; 300/400/500)"
     },
-    "ramp": {
-      "body": "16px/24px, weight 400",
-      "h2Section": "32px/38.4px GothamBold, weight 500, uppercase, #3c3c3c, centred; ::after 10% wide 5px #ff0 rule, margin .5em auto 1.5em",
-      "h2Hero": "28px/33.6px, weight 700, letter-spacing 1px, uppercase, #3c3c3c; ::after 10% rule margin 14px auto 42px",
-      "topNav": "12px/18px GothamMedium #fff, padding 8px",
-      "mainNav": "12px/18px Gotham-Light uppercase #f5ee2f, padding 8px, li margin 0 1.6px (1200–1469 range: font-size .75rem)",
-      "newsTitle": "16px/24px GothamMedium #fff centred, min-height 9rem",
-      "gridLabel": "24px/normal GothamMedium uppercase #fff",
-      "docTitle": "19.2px/23.04px weight 700 #000",
-      "checkbox": "14px/21px"
+    "levels": {
+      "h1": "48px/400 Libre Baskerville",
+      "h2": "36px/300",
+      "h3": "24px/500",
+      "h4": "24px/400"
     }
+  },
+  "rounded": {
+    "mode": "4px (.25rem)",
+    "pill": "50%"
+  },
+  "spacing": {
+    "contentMaxWidth": "1536px",
+    "shell": "fluid"
   },
   "components": {
-    "buttons": {
-      "secondary": "bg #f5ee2f, color #2494d2, 16px/24px GothamMedium weight 700 uppercase, padding 2.4px 32px, border 2px solid #f5ee2f, radius 32px; hover bg #2494d2 color #fff",
-      "navCta": "same palette, 12px/18px, padding 2.4px 16px",
-      "submit": "bg #f5ee2f color #2494d2, 16px weight 700 uppercase, padding 8px 24px, border 2px, radius 4px"
-    }
-  },
-  "layout": {
-    "container": "Bootstrap 4: max-width 1140px (≥1200), padding 0 15px; rows margin 0 -15px",
-    "header": "sticky, 98px @1440 (padding 8px 16px, logo 176×72), 90px @360 (logo 142×48); scrolled>100px: logo 9rem×3.5rem, navbar padding .1rem 16px",
-    "hero": "height 70vh, overlay #009bd9 multiply, card max-width 592px padding 48px (mobile 48px 32px margin 32px)",
-    "section": "padding 4rem 0; newsletter 3rem 0 2rem",
-    "newsCard": "380px slides (3-up, all widths), card radius 24px, image 9rem",
-    "grid": "repeat(4,1fr), gap 20px, rows 15vw, first item spans 2×2",
-    "map": "inline SVG viewBox 0 0 1142.36 840.64 at 100% width",
-    "docs": "col-auto 242px (padding 0 15px), cover 212×300; even items image-first (column-reverse)",
-    "footer": "#444, padding 30px 0; fcc logo 192×192 left, social + Privacy right"
+    ".btn": "bg #397a5c, white, radius .25rem, padding .75rem (md: 0 2.5rem horizontal), proxima-nova 500, hover bg #6f3739",
+    ".btn.brand-maroon": "bg #6f3739, hover #397a5c",
+    ".btn-txt / .btn-link": "maroon #6f3739 underlined (offset 8px), chevron after, hover #397a5c"
   },
   "extensions": {
     "breakpoints": {
-      "containerMaxWidth": null,
+      "containerMaxWidth": "1536px",
       "probeWidth": 2560,
       "shellMaxWidth": null,
-      "caps": [],
+      "caps": [
+        {
+          "kind": "module",
+          "px": 1536,
+          "via": "max-width",
+          "selector": "div.flex-1 > div.flex.flex-col > section.testimonials.bg-brand-blue > div.container.mx-auto",
+          "pages": [
+            "https://www.skerriesmills.ie/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 672,
+          "via": "fixed",
+          "selector": "#callOut > div.flex.flex-col",
+          "pages": [
+            "https://www.skerriesmills.ie/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 512,
+          "via": "max-width",
+          "selector": "#hero > div.absolute.z-20",
+          "pages": [
+            "https://www.skerriesmills.ie/"
+          ]
+        },
+        {
+          "kind": "module",
+          "px": 411,
+          "via": "other",
+          "selector": "div.mx-auto.flex > div.w-full.flex > div.flex.flex-col > a.btn.brand-maroon",
+          "pages": [
+            "https://www.skerriesmills.ie/"
+          ]
+        }
+      ],
       "modules": [
         {
-          "url": "https://balbriggan.ie/",
+          "url": "https://www.skerriesmills.ie/",
           "section": 0,
-          "selector": "div.wp-block-group.section > div.wp-block-group__inner-container.is-layout-flow > div.wp-block-columns.is-layout-flex > div.wp-block-column.is-layout-flow",
+          "selector": "body.home.wp-singular > main.min-h-screen.flex > header.fixed.w-full",
           "px": null
         },
         {
-          "url": "https://balbriggan.ie/",
+          "url": "https://www.skerriesmills.ie/",
           "section": 1,
-          "selector": "div.wp-block-group.section > div.wp-block-group__inner-container.is-layout-flow > div.wp-block-columns.is-layout-flex > div.wp-block-column.is-layout-flow",
-          "px": null
+          "selector": "body.home.wp-singular > main.min-h-screen.flex > div.flex-1",
+          "px": 1536
         },
         {
-          "url": "https://balbriggan.ie/",
+          "url": "https://www.skerriesmills.ie/",
           "section": 2,
-          "selector": "div.wp-block-group.section > div.wp-block-group__inner-container.is-layout-flow > div.wp-block-columns.is-layout-flex > div.wp-block-column.is-layout-flow",
+          "selector": "body.home.wp-singular > main.min-h-screen.flex > footer",
           "px": null
         }
       ],
       "capRegister": [],
       "capProvenance": {
         "writtenBy": "skills/replica/scripts/cap-probe.mjs",
-        "writtenAt": "2026-10-13T14:36:29.022Z",
+        "writtenAt": "2026-10-14T08:59:37.456Z",
         "baseWidth": 1440,
         "urls": [
-          "https://balbriggan.ie/"
+          "https://www.skerriesmills.ie/"
         ]
-      },
-      "source": {
-        "navbarExpand": 1200,
-        "md": 768,
-        "lg": 992,
-        "navTight": "1200–1469"
       }
+    },
+    "motifs": {
+      "shadows": [
+        "rgba(0,0,0,.18) 0 4px 44px 0",
+        "tailwind shadow-xl"
+      ]
+    },
+    "voice": {
+      "heroHeadline": "Guided Tours 7 Days a Week, Book Now!"
     }
   }
 }

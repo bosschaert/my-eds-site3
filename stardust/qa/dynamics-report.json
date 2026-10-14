@@ -1,0 +1,70 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics check",
+  "writtenAt": "2026-10-14T10:52:21.601Z",
+  "origin": "https://main--1370701b--aemcoder.aem.live",
+  "parity": "stardust/dynamics/parity.json"
+ },
+ "results": [
+  {
+   "feature": "FareHarbor booking (Book Now)",
+   "id": "booking",
+   "class": "A/T",
+   "status": "interim",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "8 × main a[href*='fareharbor.com/embeds/book/skerriesmills'] (min 8)",
+   "thirdParty": "use.typekit.net:200×3 p.typekit.net:200×1",
+   "ms": 2024,
+   "environmentLimit": null
+  },
+  {
+   "feature": "attractions + testimonials carousels",
+   "id": "carousels",
+   "class": "CR",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "2 × main .attractions-arrow (min 2)",
+   "thirdParty": "use.typekit.net:200×3 p.typekit.net:200×1",
+   "ms": 1892,
+   "environmentLimit": null
+  },
+  {
+   "feature": "attractions + testimonials carousels",
+   "id": "carousels",
+   "class": "CR",
+   "status": "done",
+   "type": "dom-count",
+   "pass": true,
+   "detail": "7 × main .reviews-quote (min 7)",
+   "thirdParty": "use.typekit.net:200×3 p.typekit.net:200×1",
+   "ms": 1884,
+   "environmentLimit": null
+  },
+  {
+   "feature": "GTM GTM-5579WLK2 / GA4 + Complianz consent",
+   "id": "tags",
+   "class": "T",
+   "status": "scaffolded-awaiting-owner",
+   "type": "martech",
+   "pass": true,
+   "detail": "no tag host requested (2 gated · 2 cross-site host(s) blocked)",
+   "thirdParty": "",
+   "ms": 6076,
+   "environmentLimit": null
+  },
+  {
+   "feature": "home page runtime",
+   "id": "page",
+   "class": "CR",
+   "status": "done",
+   "type": "no-page-errors",
+   "pass": true,
+   "detail": "none on 1 page(s)",
+   "thirdParty": "",
+   "ms": 1885,
+   "environmentLimit": null
+  }
+ ]
+}

@@ -205,25 +205,6 @@ async function launchHeadedStealth() {
 // re-challenged even after the probe cleared it.
 async function newContext(browser, stealth) {
   const ctx = await browser.newContext(CRAWL_CONTEXT);
-  // replica INSTRUMENT FIX (balbriggan.ie): the site's global scrollTo(target) shadows
-  // window.scrollTo; keep native numeric scrolling (same shim as diff/live-session.mjs).
-  await ctx.addInitScript(() => {
-    const nativeScroll = window.scroll.bind(window);
-    const restore = () => {
-      const current = window.scrollTo;
-      if (current && current.__stardustShim) return;
-      const shim = function scrollToShim(a, b) {
-        if (typeof a === 'number' || (a && typeof a === 'object' && !a.jquery && !(a instanceof Element)
-          && ('top' in a || 'left' in a))) return nativeScroll(a, b);
-        if (typeof current === 'function' && current !== shim) return current.apply(this, arguments);
-        return undefined;
-      };
-      shim.__stardustShim = true;
-      try { window.scrollTo = shim; } catch (e) { /* leave as is */ }
-    };
-    document.addEventListener('DOMContentLoaded', restore, true);
-    window.addEventListener('load', restore, true);
-  });
   if (stealth) {
     await ctx.addInitScript(() => {
       Object.defineProperty(navigator, 'webdriver', { get: () => undefined });

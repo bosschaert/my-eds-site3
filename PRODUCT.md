@@ -1,23 +1,29 @@
 ---
 _provenance:
   writtenBy: stardust:replica
-  writtenAt: 2026-10-13T14:43:31Z
+  writtenAt: 2026-10-14T09:00:15Z
   mode: bounded-single
   synthesizedFrom:
     - stardust/current/pages/index.json
-    - stardust/replica/lift/tokens.json
+    - stardust/replica/lifted-tokens.json
 ---
 
-# Our Balbriggan — product (descriptive, bounded-single)
+# Product
 
-- **Site:** https://balbriggan.ie/ — "Our Balbriggan", the Balbriggan Rejuvenation programme site
-  led by Fingal County Council's Economic, Community & Cultural Development.
-- **Page in scope:** the home page only (`index`, type `landing`).
-- **Title / description (verbatim):** "Our Balbriggan" — "Balbriggan is set to be transformed; it…" (see page JSON).
-- **Home page structure (captured order):** sticky blue header (logo, utility links, social, main menu with
-  four dropdowns, "Get Involved" CTA) → video hero with a white call-out card ("TRANSFORMATION OF QUAY STREET
-  AND HARBOUR BEGINS", Learn More) → intro "OUR BALBRIGGAN" → "What's New" news carousel (4 stories, See All)
-  → "Explore What We Do" 5-tile image grid → interactive project map (12 pins) → "Documents for Download"
-  (4 PDFs, See All) → Newsletter sign-up form → dark footer (Fingal County Council logo, social, Privacy).
-- **Languages:** English with Irish-language document titles (Ár dTuras, Céard eile atá ag tarlú?).
-- Voice and audiences are not synthesized here (site-scope `--prep` products).
+<!-- impeccable:product-schema 1 -->
+
+## Platform
+
+web
+
+## Product Purpose
+
+Skerries Mills (https://www.skerriesmills.ie/) — "A Unique Heritage Museum": a community heritage centre in Skerries on the Dublin Coastal Trail (two sail mills and a watermill, visitor centre, café, craft shop, community gardens). The home page sells guided tours and tickets and surfaces attractions, events, news and visitor information. (Source: captured title, description and hero copy.)
+
+## Brand Commitments
+
+Register: brand. Keep the current design exactly — same-design migration (replica). Permitted deltas: only stardust/replica/inconsistency-register.md (empty — pure replica).
+
+## Evidence on Hand
+
+stardust/current/pages/index.json + index.html (captured content), stardust/current/assets/screenshots/ (ground truth), stardust/current/_computed-styles.json, stardust/current/css/ (live stylesheets), stardust/replica/lifted-tokens.json.

@@ -48,6 +48,9 @@ export function pairControls(src, bld) {
   for (const s of src) {
     let b = s.key ? bld.find((x) => !used.has(x) && x.key === s.key) : null;
     if (!b && FAMILIES.has(s.kind)) b = bld.find((x) => !used.has(x) && x.kind === s.kind);
+    // unnamed control (no key): pair in order with an unnamed build control of the same kind
+    // (run-local fix, see stardust/eds-conversion-log.md)
+    if (!b && !s.key) b = bld.find((x) => !used.has(x) && !x.key && x.kind === s.kind);
     if (b) used.add(b);
     pairs.push([s, b || null]);
   }

@@ -1,0 +1,445 @@
+/* stardust:canon
+  writtenBy:        stardust:migrate (canon auto-bootstrap: index)
+  writtenAt:        2026-10-12T13:59:50Z
+  sourceSlug:       index
+  sourcePrototype:  stardust/prototypes/index-proposed.html
+  region:           css
+  stardustVersion:  0.31.0
+*/
+/* canon.css — shared layer for the Nirav Manubhai home-page recreation.
+   Tokens, @font-face, base/body/type, .wrap, buttons, header (+drawer), footer, back-to-top.
+   Every value is lifted from stardust/current/assets/css/home.css (cascade-resolved) or
+   stardust/current/assets/css/google-fonts.css; see stardust/replica/lift/index-notes.md. */
+
+/* ---------- tokens (home.css :root blocks, later declarations win) ---------- */
+:root {
+  --paper: #f4efe3;
+  --parch: #ece3d1;
+  --cream: #f5eddc;
+  --ink: #2c2519;
+  --ink-soft: #6b5f47;
+  --taupe: #8a7f66;
+  --leaf: #4e5d44;
+  --leaf-dark: #3c4934;
+  --gold: #b2843e;
+  --noir: #0f0d09;
+  --line: #cabfa3;
+  --nav-h: 72px;
+  --max-reader: 46rem;
+  --max-room: 68rem;
+  --nm-gutter: clamp(1rem, 3.2vw, 2.25rem);
+  --nm-reading: 44rem;
+  --nm-space-1: .5rem;
+  --nm-space-2: .75rem;
+  --nm-space-3: 1rem;
+  --nm-space-4: 1.5rem;
+  --nm-space-5: 2rem;
+  --nm-space-6: 3rem;
+  --nm-space-7: 4.5rem;
+  --nm-radius: 3px;
+  --nm-shadow: 0 10px 34px rgba(44, 37, 25, .13);
+  --nm-focus: #e6c77d;
+  --nm-preview-image-max: 540px;
+  --nm-property-image-max: 500px;
+  --nm-reading-hero-max: 1120px;
+  --frame-room-card-ratio: 16/10;
+  --frame-reading-ratio: 16/9;
+  --frame-poster-ratio: 4/5;
+  --frame-story-ratio: 3/2;
+  --frame-book-ratio: 5/7;
+  --frame-property-home-max: 360px;
+  --frame-property-home-mobile: 330px;
+  --house-image-radius: 14px;
+  --house-room-radius: 16px;
+
+  /* font stacks exactly as the source uses them */
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-ui: Inter, Arial, sans-serif;
+  --font-eyebrow: Inter, system-ui, sans-serif;
+  --font-gujarati: "Rasa", "Playfair Display", serif;
+}
+
+/* ---------- @font-face (self-hosted; same families/weights/styles/unicode-range as Google CSS) ---------- */
+/* Files: the builds Google serves to current Chrome (UA Chrome/143, fetched 2026-10-12) — the same bytes the live page
+   renders with; the earlier capture holds the hinted builds served to older UAs (see index-notes.md § Fonts). */
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 300; font-display: swap; src: url(../assets/fonts/gf143/inter-v20-normal-latin-ext-UcC73Fwr.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 300; font-display: swap; src: url(../assets/fonts/gf143/inter-v20-normal-latin-UcC73Fwr.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/gf143/inter-v20-normal-latin-ext-UcC73Fwr.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/gf143/inter-v20-normal-latin-UcC73Fwr.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url(../assets/fonts/gf143/inter-v20-normal-latin-ext-UcC73Fwr.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url(../assets/fonts/gf143/inter-v20-normal-latin-UcC73Fwr.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url(../assets/fonts/gf143/inter-v20-normal-latin-ext-UcC73Fwr.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url(../assets/fonts/gf143/inter-v20-normal-latin-UcC73Fwr.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 400; font-display: swap; src: url(../assets/fonts/gf143/playfair-display-v40-italic-latin-ext-nuFkD-vY.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 400; font-display: swap; src: url(../assets/fonts/gf143/playfair-display-v40-italic-latin-nuFkD-vY.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 500; font-display: swap; src: url(../assets/fonts/gf143/playfair-display-v40-italic-latin-ext-nuFkD-vY.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 500; font-display: swap; src: url(../assets/fonts/gf143/playfair-display-v40-italic-latin-nuFkD-vY.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 600; font-display: swap; src: url(../assets/fonts/gf143/playfair-display-v40-italic-latin-ext-nuFkD-vY.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 600; font-display: swap; src: url(../assets/fonts/gf143/playfair-display-v40-italic-latin-nuFkD-vY.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/gf143/playfair-display-v40-normal-latin-ext-nuFiD-vY.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/gf143/playfair-display-v40-normal-latin-nuFiD-vY.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 500; font-display: swap; src: url(../assets/fonts/gf143/playfair-display-v40-normal-latin-ext-nuFiD-vY.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 500; font-display: swap; src: url(../assets/fonts/gf143/playfair-display-v40-normal-latin-nuFiD-vY.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 600; font-display: swap; src: url(../assets/fonts/gf143/playfair-display-v40-normal-latin-ext-nuFiD-vY.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 600; font-display: swap; src: url(../assets/fonts/gf143/playfair-display-v40-normal-latin-nuFiD-vY.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Rasa'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/gf143/rasa-v28-normal-gujarati-xn7vYHIn.woff2) format('woff2'); unicode-range: U+0951-0952, U+0964-0965, U+0A80-0AFF, U+200C-200D, U+20B9, U+25CC, U+A830-A839; }
+@font-face { font-family: 'Rasa'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/gf143/rasa-v28-normal-latin-ext-xn7vYHIn.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Rasa'; font-style: normal; font-weight: 400; font-display: swap; src: url(../assets/fonts/gf143/rasa-v28-normal-latin-xn7vYHIn.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Rasa'; font-style: normal; font-weight: 500; font-display: swap; src: url(../assets/fonts/gf143/rasa-v28-normal-gujarati-xn7vYHIn.woff2) format('woff2'); unicode-range: U+0951-0952, U+0964-0965, U+0A80-0AFF, U+200C-200D, U+20B9, U+25CC, U+A830-A839; }
+@font-face { font-family: 'Rasa'; font-style: normal; font-weight: 500; font-display: swap; src: url(../assets/fonts/gf143/rasa-v28-normal-latin-ext-xn7vYHIn.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Rasa'; font-style: normal; font-weight: 500; font-display: swap; src: url(../assets/fonts/gf143/rasa-v28-normal-latin-xn7vYHIn.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Rasa'; font-style: normal; font-weight: 600; font-display: swap; src: url(../assets/fonts/gf143/rasa-v28-normal-gujarati-xn7vYHIn.woff2) format('woff2'); unicode-range: U+0951-0952, U+0964-0965, U+0A80-0AFF, U+200C-200D, U+20B9, U+25CC, U+A830-A839; }
+@font-face { font-family: 'Rasa'; font-style: normal; font-weight: 600; font-display: swap; src: url(../assets/fonts/gf143/rasa-v28-normal-latin-ext-xn7vYHIn.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Rasa'; font-style: normal; font-weight: 600; font-display: swap; src: url(../assets/fonts/gf143/rasa-v28-normal-latin-xn7vYHIn.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* ---------- resets / base (home.css @1304, @23583, @1347…@50621) ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #b9ab8e var(--parch);
+  scrollbar-gutter: stable;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background: var(--paper);
+  background-color: #f4efe3;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+/* body.nm-ready { animation: nm-page-in .42s ease both } — entrance fade (opacity 0→1); authored at its settled end state, no animation. */
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.16;
+}
+h2 {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  margin: .25rem 0 1rem;
+}
+
+img, svg, video { display: block; max-width: 100%; }
+img { height: auto; }
+
+a { color: inherit; text-decoration: none; }
+a, button, summary { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-visible {
+  outline: 3px solid var(--nm-focus);
+  outline-offset: 3px;
+}
+
+main p { widows: 3; orphans: 3; }
+section[id] { scroll-margin-top: calc(var(--nav-h) + 10px); }
+#main { scroll-margin-top: 5.5rem; }
+
+/* ---------- container ---------- */
+.wrap {
+  max-width: 74rem;
+  margin: 0 auto;
+  padding: 0 7vw;
+}
+
+/* ---------- utilities ---------- */
+.sr-only,
+.home-visually-hidden-heading {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.eyebrow {
+  font-family: var(--font-eyebrow);
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--leaf);
+  margin-bottom: .6rem;
+}
+
+.lede {
+  font-size: 1.12rem;
+  max-width: 48rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- buttons (cascade of .btn @3258 → @27588 → @53926 → @56934) ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: 1.15rem;
+  padding: .72rem 1rem;
+  border: 1px solid var(--leaf);
+  border-radius: var(--nm-radius);
+  background: transparent;
+  color: var(--leaf);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; /* @53536 */
+  font-size: .74rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+}
+.btn:hover { background: rgba(78, 93, 68, .08); transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+.r24-btn-solid {
+  background: var(--leaf);
+  color: #fbf8f1;
+  border-color: var(--leaf);
+}
+.doors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem;
+  margin-top: 1.6rem;
+}
+.doors a.btn { margin: 0; }
+
+@media (hover: hover) and (pointer: fine) {
+  a, .btn, button { transition: color .18s ease, background-color .18s ease, border-color .18s ease, transform .18s ease; }
+}
+@media (hover: none), (pointer: coarse) {
+  .btn { min-height: 48px; }
+}
+
+/* ---------- header (sticky; grid 1fr auto 1fr) ---------- */
+.nmh-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 18px 28px;
+  background: #f4efe3;
+  color: #2c2519;
+  border-bottom: 1px solid rgba(44, 37, 25, .10);
+  box-shadow: 0 1px 8px rgba(40, 50, 34, .25); /* survives from the element-level `header` rule (@23964) */
+}
+.nmh-header .nmh-home {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-right: 8px;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  letter-spacing: .08em;
+  color: #2c2519;
+  text-decoration: none;
+}
+.nmh-header .nmh-title {
+  justify-self: center;
+  text-align: center;
+  font-family: var(--font-display);
+  color: #2c2519;
+}
+.nmh-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.25;
+  gap: 0.1em;
+  min-width: 0;
+  overflow: hidden;
+}
+.nmh-title-property {
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: #2c2519;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.nmh-header .nmh-menu-btn {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #2c2519;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* drawer + overlay (closed by default; `open` toggled by the inline script) */
+.nmh-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .28);
+  z-index: 9998;
+}
+.nmh-overlay.open { display: block; }
+.nmh-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(340px, 70vw);
+  height: 100vh;
+  overflow-y: auto;
+  padding: 72px 28px 40px;
+  background: #f4efe3;
+  z-index: 9999;
+  box-shadow: -8px 0 30px rgba(0, 0, 0, .12);
+  transform: translateX(100%);
+  transition: transform .28s ease;
+}
+.nmh-menu.open { transform: translateX(0); }
+.nmh-menu a {
+  display: block;
+  margin: 0 0 18px;
+  font-family: var(--font-display);
+  font-size: 19px;
+  color: #2c2519;
+  text-decoration: none;
+}
+.nmh-menu a:hover { color: #4e5d44; }
+.nmh-menu-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #2c2519;
+  font-size: 28px;
+  cursor: pointer;
+}
+.house-menu-group-label {
+  margin: 1.1rem 0 .35rem;
+  font: 600 10px/1.4 Inter, Arial, sans-serif;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #8a6a2f;
+}
+
+@media (min-width: 640px) {
+  .nmh-title { flex-direction: row; gap: 0.35em; align-items: baseline; }
+}
+@media (max-width: 720px) {
+  .nmh-header { padding: 16px; }
+  .nmh-title { font-size: 14px; }
+  .nmh-header + * { margin-top: 0; }
+}
+
+/* ---------- footer ---------- */
+.nmh-footer {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  padding: 30px 20px;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  color: #2c2519;
+  /* from the element-level `footer` rule (@28104), not overridden by .nmh-footer */
+  background: var(--parch);
+  border-top: 1px solid var(--line);
+  text-align: center;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.nmh-footer a {
+  color: #6b5f47;
+  font-size: 13px;
+  letter-spacing: .065em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nmh-footer a:hover { color: #2c2519; }
+@media (max-width: 720px) {
+  .nmh-footer { flex-wrap: wrap; }
+}
+
+/* ---------- back-to-top (site-enhancements: `show` when scrollY > 500) ---------- */
+/* Reading-progress bar (observed live: width follows scroll; lifted @50992/@51110) */
+.nm-reading-progress { position: fixed; inset: 0 0 auto; z-index: 9999; height: 2px; pointer-events: none; background: transparent; }
+.nm-reading-progress > span { display: block; width: 0; height: 100%; background: var(--gold); transition: width .08s linear; }
+
+.nm-top {
+  position: fixed;
+  right: clamp(.8rem, 2vw, 1.4rem);
+  bottom: clamp(.8rem, 2vw, 1.4rem);
+  z-index: 70;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(44, 37, 25, .18);
+  border-radius: 50%;
+  background: rgba(244, 239, 227, .93);
+  color: var(--leaf);
+  box-shadow: 0 5px 18px rgba(44, 37, 25, .12);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: .2s ease;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+}
+.nm-top.show { opacity: 1; visibility: visible; transform: none; }
+.nm-top:hover { background: var(--parch); }
+.nm-top svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+@media (max-width: 420px) {
+  .nm-top { width: 42px; height: 42px; }
+}
+
+/* ---------- motion preferences (lifted) ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms; animation-iteration-count: 1; transition-duration: .01ms; scroll-behavior: auto; }
+  .btn:hover { transform: none; }
+  .nm-reading-progress > span, .nm-top, .btn { transition: none; }
+  .nm-top, .btn { transition: none; }
+}
+@media print {
+  body { background: #fff; color: #000; }
+  .nm-top { display: none; }
+}
+
+/* ---------- body line-height step ---------- */
+@media (max-width: 720px) {
+  body { line-height: 1.68; }
+}

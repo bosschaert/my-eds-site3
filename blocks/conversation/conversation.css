@@ -1,0 +1,133 @@
+/* conversation — #conversation (prototype index.css § split sections, id-scoped model) */
+.conversation {
+  padding: clamp(4rem, 8vh, 6rem) 0;
+}
+
+main .section.conversation-container {
+  border-top: 1px solid var(--line);
+  background: var(--parch);
+}
+
+.conversation .split {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(2rem, 4.5vw, 4rem);
+  align-items: start;
+}
+
+.conversation .visual {
+  width: min(100%, var(--nm-preview-image-max));
+  place-self: start start;
+  border-radius: var(--house-image-radius);
+}
+
+.conversation .visual picture,
+.conversation .visual img {
+  display: block;
+  width: 100%;
+}
+
+.conversation .visual img {
+  height: auto;
+  max-height: 640px;
+  object-fit: contain;
+  object-position: top center;
+  box-shadow: 0 14px 34px rgb(44 37 25 / 14%);
+}
+
+.conversation .eyebrow p {
+  margin-bottom: 0.6rem;
+  font-family: var(--font-eyebrow);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--leaf);
+}
+
+.conversation .lede p {
+  max-width: 48rem;
+  font-size: 1.12rem;
+  color: var(--ink-soft);
+}
+
+.conversation .lede-follow p {
+  margin-top: 1rem;
+}
+
+.conversation .doors-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.6rem;
+}
+
+.conversation .doors-links a.button {
+  margin: 0;
+}
+
+.conversation .follow {
+  margin-top: 1.6rem;
+  padding: 1.4rem 1.5rem;
+  border: 1px solid rgb(44 37 25 / 14%);
+  background: #fbf8f1;
+}
+
+.conversation .follow p {
+  margin: 0 0 0.9rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.conversation .follow-eyebrow p {
+  margin-bottom: 0.5rem;
+  font: 600 0.72rem / 1.4 var(--font-ui);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8a6a2f;
+}
+
+.conversation .follow-actions p {
+  margin: 0;
+}
+
+@media (width <= 820px) {
+  .conversation .split {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .conversation .visual {
+    width: 100%;
+    max-width: 620px;
+    justify-self: center;
+  }
+
+  .conversation .visual img {
+    max-height: none;
+  }
+}
+
+@media (width <= 640px) {
+  .conversation .doors-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .conversation .doors-links a.button {
+    margin: 0 0 0.6rem;
+    text-align: center;
+  }
+}
+
+@media (width <= 480px) {
+  .conversation .lede p {
+    font-size: 1rem;
+  }
+}
+
+@media (width <= 430px) {
+  .conversation a.button {
+    width: 100%;
+  }
+}

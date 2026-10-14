@@ -10,126 +10,165 @@
  * governing permissions and limitations under the License.
  */
 
-/*
- * balbriggan.ie replica foundation — values lifted verbatim from the gated prototype's shared
- * layer (stardust/prototypes/canon.css).
- * R-01: Gotham is licensed and never rehosted — the brand names stay FIRST in every stack; the
- * self-hosted Montserrat "Gotham * Sub" faces (styles/fonts.css) render meanwhile.
- */
+/* Foundation for the niravmanubhai.com replica. Tokens, reset, base type, buttons and the
+   chrome reservation are lifted from stardust/prototypes/css/canon.css (cascade-resolved
+   from the source's home.css); the structural layer (body appear gate, header reservation,
+   section scaffold) is the boilerplate's. */
 
 :root {
-  /* colors */
-  --blue: #2494d2;
-  --hero-blue: #009bd9;
-  --yellow: #f5ee2f;
-  --yellow-alt: #f9ec31;
-  --rule-yellow: #ff0;
-  --text: #3c3c3b;
-  --heading: #3c3c3c;
-  --light-gray: #f0f0f0;
-  --footer-gray: #444;
-  --link-hover: #2600e6;
+  /* colors (canon.css :root) */
+  --paper: #f4efe3;
+  --parch: #ece3d1;
+  --cream: #f5eddc;
+  --ink: #2c2519;
+  --ink-soft: #6b5f47;
+  --taupe: #8a7f66;
+  --leaf: #4e5d44;
+  --leaf-dark: #3c4934;
+  --gold: #b2843e;
+  --noir: #0f0d09;
+  --line: #cabfa3;
+  --nm-focus: #e6c77d;
+  --nm-shadow: 0 10px 34px rgb(44 37 25 / 13%);
 
-  /* fonts (R-01: Gotham first, the Sub face second, a metric-matched local fallback third) */
-  --ff-light: 'Gotham-Light', 'Gotham Light Sub', gotham-light-fallback, sans-serif;
-  --ff-medium: 'GothamMedium', 'Gotham Medium Sub', gotham-medium-fallback, sans-serif;
-  --ff-bold: 'GothamBold', 'Gotham Bold Sub', gotham-bold-fallback, sans-serif;
+  /* boilerplate-named aliases blocks may reference */
+  --background-color: var(--paper);
+  --light-color: var(--parch);
+  --dark-color: var(--ink-soft);
+  --text-color: var(--ink);
+  --link-color: var(--leaf);
+  --link-hover-color: var(--leaf-dark);
 
   /* layout */
-  --container: 1140px;
-  --container-gutter: 15px;
+  --nav-h: 72px;
+  --nav-height: 81px;
+  --max-width: 1184px;
+  --max-reader: 46rem;
+  --max-room: 68rem;
+  --nm-gutter: clamp(1rem, 3.2vw, 2.25rem);
+  --nm-reading: 44rem;
+  --nm-space-1: 0.5rem;
+  --nm-space-2: 0.75rem;
+  --nm-space-3: 1rem;
+  --nm-space-4: 1.5rem;
+  --nm-space-5: 2rem;
+  --nm-space-6: 3rem;
+  --nm-space-7: 4.5rem;
+  --nm-radius: 3px;
+  --nm-preview-image-max: 540px;
+  --nm-property-image-max: 500px;
+  --nm-reading-hero-max: 1120px;
+  --frame-room-card-ratio: 16/10;
+  --frame-reading-ratio: 16/9;
+  --frame-poster-ratio: 4/5;
+  --frame-story-ratio: 3/2;
+  --frame-book-ratio: 5/7;
+  --frame-property-home-max: 360px;
+  --frame-property-home-mobile: 330px;
+  --house-image-radius: 14px;
+  --house-room-radius: 16px;
 
-  /* boilerplate aliases still read by not-yet-converted blocks */
-  --background-color: #fff;
-  --light-color: var(--light-gray);
-  --text-color: var(--text);
-  --link-color: var(--blue);
-  --body-font-family: var(--ff-light);
-  --heading-font-family: var(--ff-bold);
-  --body-font-size-s: 1rem;
-  --body-font-size-xs: .875rem;
-  --heading-font-size-s: 1.25rem;
+  /* font stacks exactly as the source uses them, metric-matched fallback second */
+  --font-display: "Playfair Display", playfair-display-fallback, georgia, serif;
+  --font-body: inter, inter-fallback, system-ui, sans-serif;
+  --font-ui: inter, inter-fallback, arial, sans-serif;
+  --font-eyebrow: inter, inter-fallback, system-ui, sans-serif;
+  --font-gujarati: rasa, rasa-fallback, "Playfair Display", serif;
+  --body-font-family: var(--font-body);
+  --heading-font-family: var(--font-display);
 
-  /* chrome reservation: the source header is 98px tall at rest >= 1200px, 90px below */
-  --nav-height: 98px;
+  /* type */
+  --body-font-size-m: 17px;
+  --body-font-size-s: 15px;
+  --body-font-size-xs: 14px;
+  --heading-font-size-xxl: clamp(2.2rem, 5vw, 3.6rem);
+  --heading-font-size-xl: clamp(2.2rem, 5vw, 3.6rem);
+  --heading-font-size-l: 1.6rem;
+  --heading-font-size-m: 1.25rem;
+  --heading-font-size-s: 1.12rem;
+  --heading-font-size-xs: 1rem;
 }
 
-@media (width <= 1199px) {
-  :root {
-    --nav-height: 90px;
-  }
-}
-
-/* metric-matched local fallbacks for the Sub faces (first paint, before fonts.css lands) */
+/* fallback fonts: local faces re-declared with the brand fonts' metrics (fontTools,
+   a–z advance average against Arial / Times New Roman) so the swap does not shift */
 @font-face {
-  font-family: gotham-light-fallback;
-  src: local('Arial');
-  size-adjust: 109.41%;
-  ascent-override: 66.69%;
-  descent-override: 18.28%;
-  line-gap-override: 6.4%;
-}
-
-@font-face {
-  font-family: gotham-medium-fallback;
-  src: local('Arial');
-  size-adjust: 111.11%;
-  ascent-override: 71.97%;
-  descent-override: 17.99%;
+  font-family: inter-fallback;
+  src: local("Arial");
+  size-adjust: 109.38%;
+  ascent-override: 88.57%;
+  descent-override: 22.05%;
   line-gap-override: 0%;
 }
 
 @font-face {
-  font-family: gotham-bold-fallback;
-  src: local('Arial Bold'), local('Arial-BoldMT');
-  size-adjust: 109.02%;
-  ascent-override: 73.38%;
-  descent-override: 18.35%;
+  font-family: playfair-display-fallback;
+  src: local("Times New Roman");
+  size-adjust: 110.64%;
+  ascent-override: 97.8%;
+  descent-override: 22.69%;
   line-gap-override: 0%;
 }
 
+@font-face {
+  font-family: rasa-fallback;
+  src: local("Times New Roman");
+  size-adjust: 97.22%;
+  ascent-override: 74.88%;
+  descent-override: 27.98%;
+  line-gap-override: 22.42%;
+}
+
+/* reset (canon.css @1304 / @23583) */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
+  scroll-behavior: smooth;
+  scrollbar-color: #b9ab8e var(--parch);
+  scrollbar-gutter: stable;
   text-size-adjust: 100%;
+  scroll-padding-top: 5rem;
 }
 
 body {
   display: none;
-  position: relative;
   margin: 0;
-  background: #fff;
-  color: var(--text);
-  font-family: var(--ff-light);
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.5;
+  min-width: 320px;
+  overflow-x: hidden;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  line-height: 1.7;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 body.appear {
   display: block;
 }
 
-/* chrome reservation (#81): reserve the header's rest height until the block has loaded */
+/* chrome reservation: the header block lands in loadLazy; reserve its real height (81px) */
 header {
   position: sticky;
   top: 0;
-  z-index: 1020;
+  z-index: 20;
   height: var(--nav-height);
-  background-color: var(--blue);
+  background: var(--paper);
 }
 
-header:has(> .header[data-block-status="loaded"]) {
-  height: auto;
-  background-color: transparent;
-}
-
+/* the footer host carries the source footer's own ground and rule (deploy § 6 #31) */
 footer {
-  background-color: var(--footer-gray);
+  background: var(--parch);
+  border-top: 1px solid var(--line);
 }
 
 header .header,
@@ -144,26 +183,63 @@ footer .footer[data-block-status="loaded"] {
 
 h1,
 h2,
-h3,
-h4 {
-  margin: 0 0 .5rem;
-  font-weight: 500;
-  line-height: 1.2;
+h3 {
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  line-height: 1.16;
 }
+
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+h1 { font-size: var(--heading-font-size-xxl); }
 
 h2 {
-  color: var(--heading);
-  font-family: var(--ff-bold);
-  font-size: 2rem;
-  text-transform: uppercase;
+  font-size: var(--heading-font-size-xl);
+  margin: 0.25rem 0 1rem;
 }
 
-p {
-  margin: 0 0 1rem;
+h3 { font-size: var(--heading-font-size-l); }
+h4 { font-size: var(--heading-font-size-m); }
+h5 { font-size: var(--heading-font-size-s); }
+h6 { font-size: var(--heading-font-size-xs); }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  scroll-margin: calc(var(--nav-height) + 10px);
 }
 
-ul {
-  margin: 0 0 1rem;
+code,
+pre {
+  font-size: var(--body-font-size-s);
+}
+
+pre {
+  padding: 16px;
+  border-radius: var(--nm-radius);
+  background-color: var(--parch);
+  overflow-x: auto;
+  white-space: pre;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
 }
 
 input,
@@ -173,194 +249,193 @@ button {
   font: inherit;
 }
 
-a {
-  color: var(--blue);
+a,
+button,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--nm-focus);
+  outline-offset: 3px;
+}
+
+main p {
+  widows: 3;
+  orphans: 3;
+}
+
+main .section[id] {
+  scroll-margin-top: calc(var(--nav-h) + 10px);
+}
+
+/* links */
+a:any-link {
+  color: inherit;
   text-decoration: none;
+  overflow-wrap: break-word;
 }
 
-a:hover {
-  color: var(--link-hover);
-  text-decoration: underline;
+@media (hover: hover) and (pointer: fine) {
+  a,
+  button {
+    transition:
+      color 0.18s ease,
+      background-color 0.18s ease,
+      border-color 0.18s ease,
+      transform 0.18s ease;
+  }
 }
 
-/* canon keeps images inline (vertical-align: middle); EDS needs height: auto (#36) */
-img {
+/* buttons — the source's .btn (outline) / .r24-btn-solid (solid) on the EDS classes:
+   <em><a> → .secondary (outline), <strong><a> → .primary (solid), both → .accent (solid) */
+p.button-wrapper {
+  margin: 0;
+}
+
+a.button:any-link,
+button.button {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
   max-width: 100%;
-  height: auto;
-  border-style: none;
-  vertical-align: middle;
+  margin: 1.15rem 0 0;
+  padding: 0.72rem 1rem;
+  border: 1px solid var(--leaf);
+  border-radius: var(--nm-radius);
+  background: transparent;
+  color: var(--leaf);
+  font-family: var(--font-ui);
+  font-size: 0.74rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
 }
 
-figure {
-  margin: 0 0 1rem;
+a.button:any-link:hover,
+a.button:any-link:focus-visible,
+button.button:hover,
+button.button:focus-visible {
+  background: rgb(78 93 68 / 8%);
+  color: var(--leaf);
+  transform: translateY(-1px);
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-  border: 0;
+a.button:any-link:active,
+button.button:active {
+  transform: translateY(0);
 }
 
-/* short pages: main fills the first viewport so the footer never floats mid-screen */
-main {
-  min-height: calc(100vh - var(--nav-height));
+a.button[aria-disabled="true"],
+button.button:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.6;
 }
 
-/* sections: the source's bootstrap container (1140 / 960 / 720 / 540 / fluid, 15px gutters) */
+a.button.primary,
+a.button.accent,
+button.button.primary,
+button.button.accent {
+  border-color: var(--leaf);
+  background: var(--leaf);
+  color: #fbf8f1;
+}
+
+a.button.primary:hover,
+a.button.primary:focus-visible,
+a.button.accent:hover,
+a.button.accent:focus-visible,
+button.button.primary:hover,
+button.button.primary:focus-visible,
+button.button.accent:hover,
+button.button.accent:focus-visible {
+  border-color: var(--leaf-dark);
+  background: var(--leaf-dark);
+  color: #fbf8f1;
+}
+
+@media (hover: none), (pointer: coarse) {
+  a.button:any-link,
+  button.button {
+    min-height: 48px;
+  }
+}
+
+.icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon img {
+  height: 100%;
+  width: 100%;
+}
+
+/* sections — blocks paint their own bands; the module cap (DESIGN.json containerMaxWidth
+   1184px, the source's .wrap: max-width 74rem; padding 0 7vw) sits on the wrapper */
 main > .section {
   margin: 0;
 }
 
 main > .section > div {
-  width: 100%;
-  max-width: var(--container);
+  max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 var(--container-gutter);
+  padding: 0 7vw;
 }
 
+main > .section:first-of-type {
+  margin-top: 0;
+}
+
+/* the ONE template-level full-bleed escape: the hero (#courtyard) and any section
+   authored with style "full-bleed" run edge to edge */
+main > .section > div:where(.hero-wrapper),
+main > .section.full-bleed > div {
+  max-width: none;
+  padding: 0;
+}
+
+/* the metadata block leaves an empty section behind (runtime contract emptySectionCollapse) */
 main .section:empty {
   display: none;
 }
 
-@media (width <= 1199px) {
-  main > .section > div {
-    max-width: 960px;
-  }
-}
-
-@media (width <= 991px) {
-  main > .section > div {
-    max-width: 720px;
-  }
-}
-
-@media (width <= 767px) {
-  main > .section > div {
-    max-width: 540px;
-  }
-}
-
-@media (width <= 575px) {
-  main > .section > div {
-    max-width: none;
-  }
-}
-
-/* section heading with the 10% yellow rule */
-.heading-rule {
-  text-align: center;
-}
-
-.heading-rule::after {
-  content: " ";
-  display: block;
-  width: 10%;
-  margin: .5em auto 1.5em;
-  border-top: 5px solid var(--rule-yellow);
-}
-
-/* buttons: the source's single pill (.btn-secondary), applied to every authored CTA */
-p.button-wrapper {
-  margin: 0 0 1rem;
-}
-
-a.button:any-link,
-button.button {
-  display: inline-block;
-  padding: .15rem 2rem;
-  border: 2px solid var(--yellow);
-  border-radius: 2rem;
-  background-color: var(--yellow);
-  color: var(--blue);
-  font-family: var(--ff-medium);
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.5;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 300ms;
-}
-
-a.button:hover,
-button.button:hover {
-  border-color: #545b62;
-  background-color: var(--blue);
-  color: #fff;
-  text-decoration: none;
-}
-
-/* social icon list (header + footer): Font Awesome 4 glyph outlines as SVG, 20px em box */
-.social {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* source: inline-block items + a 0.245em word space — spaced explicitly, font-independent */
-.social li {
-  display: block;
-  font-size: 1.25rem;
-  line-height: 30px;
-}
-
-.social a {
-  color: #fff;
-}
-
-.social .social-icon {
-  display: inline-block;
-  width: calc(1024em / 1792);
-  height: 1em;
-  font-size: 20px;
-  vertical-align: calc(-256em / 1792);
-  background: no-repeat 0 0 / 100% 100%;
-}
-
-.social .social-icon.facebook {
-  background-image: url('icons/facebook.svg');
-}
-
-.social .social-icon.twitter {
-  width: calc(1664em / 1792);
-  background-image: url('icons/twitter.svg');
-}
-
-.social .social-icon.linkedin {
-  width: calc(1536em / 1792);
-  background-image: url('icons/linkedin.svg');
-}
-
-.social .social-icon.instagram {
-  width: calc(1536em / 1792);
-  background-image: url('icons/instagram.svg');
-}
-
-/* Experience Workspace: card-as-link inner anchor reads like the card text (EW6) */
-a .prosemirror-editor a:any-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Experience Workspace edit mode: repaint CTAs from their authored marks (EW3) */
+/* Experience Workspace edit mode: repaint CTAs from their authored marks (EW3) — the
+   deploy skill's selector order is load-bearing, so specificity ordering is relaxed here */
+/* stylelint-disable no-descending-specificity */
 .prosemirror-editor p > :is(strong, em) > a:any-link,
 .prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
-  display: inline-block;
-  padding: .15rem 2rem;
-  border: 2px solid var(--yellow);
-  border-radius: 2rem;
-  background-color: var(--yellow);
-  color: var(--blue);
-  font-family: var(--ff-medium);
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin: 1.15rem 0 0;
+  padding: 0.72rem 1rem;
+  border: 1px solid var(--leaf);
+  border-radius: var(--nm-radius);
+  background: transparent;
+  color: var(--leaf);
+  font-family: var(--font-ui);
+  font-size: 0.74rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -368,4 +443,56 @@ a .prosemirror-editor a:any-link {
 .prosemirror-editor p > a:any-link > :is(strong, em) {
   font-weight: inherit;
   font-style: inherit;
+}
+
+.prosemirror-editor p > strong > a:any-link,
+.prosemirror-editor p > a:any-link:has(> strong:only-child) {
+  background: var(--leaf);
+  color: #fbf8f1;
+}
+
+/* card-as-link inner anchor while editing (EW6) */
+a .prosemirror-editor a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+/* stylelint-enable no-descending-specificity */
+
+/* motion preferences (lifted) */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+    scroll-behavior: auto;
+  }
+
+  a.button:any-link:hover,
+  button.button:hover {
+    transform: none;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+}
+
+@media (width <= 720px) {
+  :root {
+    /* the header row drops to 16px padding below 720px (canon.css): 16 + 44 + 16 + 1 */
+    --nav-height: 77px;
+  }
+
+  body {
+    line-height: 1.68;
+  }
 }

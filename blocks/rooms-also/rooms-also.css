@@ -1,0 +1,78 @@
+/* rooms-also — .r24-also of #rooms (prototype index.css § also in the house) */
+.rooms-also {
+  margin-top: 2.4rem;
+}
+
+.rooms-also .also-eyebrow :is(p, h2, h3, h4) {
+  margin: 0 0 1rem;
+  text-align: center;
+  font: 600 0.75rem / 1.4 var(--font-ui);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8a6a2f;
+}
+
+.rooms-also .also-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.rooms-also .also-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0 1.4rem;
+  border-left: 1px solid rgb(44 37 25 / 14%);
+  text-decoration: none;
+}
+
+.rooms-also .also-item:first-child {
+  border-left: 0;
+}
+
+.rooms-also .also-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: var(--frame-room-card-ratio);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #e9e2d4;
+}
+
+.rooms-also .also-media picture {
+  display: block;
+  height: 100%;
+}
+
+.rooms-also .also-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.rooms-also .also-title p {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--leaf);
+}
+
+.rooms-also .also-line p {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+@media (width <= 720px) {
+  .rooms-also .also-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rooms-also .also-item {
+    padding: 0.9rem 0;
+    border-left: 0;
+    border-top: 1px solid rgb(44 37 25 / 14%);
+  }
+}

@@ -1,35 +1,65 @@
 {
-  "site": "https://balbriggan.ie/",
-  "breakpoints": [1440, 360],
-  "archetypes": {
-    "landing": {
-      "slug": "index",
-      "liveUrl": "https://balbriggan.ie/",
+  "_provenance": { "writtenBy": "stardust:replica", "writtenAt": "2026-10-12T13:58:00Z", "stardustVersion": "0.31.0", "regime": "prototype" },
+  "pageTypes": [
+    {
+      "pageType": "landing",
+      "archetype": "index",
       "prototype": "stardust/prototypes/index-proposed.html",
-      "css": ["stardust/prototypes/canon.css", "stardust/prototypes/index.css"],
-      "status": "gated",
-      "iterationsUsed": { "1440": 3, "360": 3 },
-      "gates": {
-        "1440": { "pixel": "1.43%", "heightDelta": 0, "contentDiffRed": 0, "clip": 0, "overflow": "ok", "units": "PASS (12/12 within 4px)", "chromeCrop": { "header": "2.28% (residual, R-01)", "footer": "0.43%" }, "evidence": "stardust/replica/gates/index-1440/" },
-        "360": { "pixel": "2.35%", "heightDelta": 0, "contentDiffRed": 0, "clip": "2 (allowed: source parity, clip-allow.json)", "overflow": "ok (live overflows +10px; build does not)", "units": "PASS (12/12)", "chromeCrop": { "header": "0.00%", "footer": "0.67%" }, "evidence": "stardust/replica/gates/index-360/" },
-        "capProbe": "PASS at 2560 (8 rows)",
-        "prototypeTables": ["stardust/replica/gates/prototypes-1440/", "stardust/replica/gates/prototypes-360/"]
+      "contentRoot": "#main",
+      "provenance": "bounded-single",
+      "breakpoints": {
+        "1440": {
+          "iterations": 3,
+          "result": { "structuralRed": 0, "visualFlags": "9 justified", "pixelPct": 0.05, "heightDelta": 0, "overflowPx": 0, "clipped": 0, "chromeHeaderPct": 1.22, "chromeFooterPct": 0.0, "pass": true },
+          "rounds": [
+            { "label": "iter1", "full": true, "pixelPct": 0.17, "heightDelta": -31, "note": "build capture read the pre-lazy-load height: live markup declares 1536×1024 for a 1672×941 image (My Books)" },
+            { "label": "iter2", "full": true, "pixelPct": 0.17, "heightDelta": 0, "note": "true intrinsic size declared on the My Books image" },
+            { "label": "iter3", "full": true, "pixelPct": 0.05, "heightDelta": 0, "note": "reading-progress bar added after motion-compare reported it MISSING; confirmation round" }
+          ],
+          "justified": [
+            { "probe": "visual", "flag": "STRETCHED IMAGE ×9 (object-fit: cover crops)", "why": "mirrors the live cover crops on the hero, door cards, books and study images; same rendition and box per measure.mjs" },
+            { "probe": "crop", "flag": "header band 1.22 %", "why": "thin-edge texture 0.0 % thick (glyph antialiasing), chrome-parity quiet; under the 2 % bar" }
+          ],
+          "residuals": [],
+          "capProbe": { "pass": true, "probeWidth": 2560, "rows": 8, "failed": 0, "evidence": "stardust/replica/gates/index-2560/cap-iter2.json" },
+          "evidence": "stardust/replica/gates/index-1440"
+        },
+        "360": {
+          "iterations": 3,
+          "result": { "structuralRed": 0, "visualFlags": "8 justified", "pixelPct": 0.04, "heightDelta": 0, "overflowPx": 0, "clipped": 0, "chromeHeaderPct": 1.23, "chromeFooterPct": 0.0, "pass": true },
+          "rounds": [
+            { "label": "iter1", "full": true, "pixelPct": 0.15, "heightDelta": 0 },
+            { "label": "iter2", "full": true, "pixelPct": 0.15, "heightDelta": 0 },
+            { "label": "iter3", "full": true, "pixelPct": 0.04, "heightDelta": 0, "note": "confirmation round after the reading-progress bar" }
+          ],
+          "justified": [
+            { "probe": "visual", "flag": "STRETCHED IMAGE ×8 (object-fit: cover crops)", "why": "mirrors the live cover crops; same rendition per width (mobile hero rendition courtyard-mobile selected on both sides)" },
+            { "probe": "crop", "flag": "header band 1.23 %", "why": "thin-edge texture 0.0 % thick, chrome-parity quiet; under the 2 % bar" }
+          ],
+          "residuals": [],
+          "evidence": "stardust/replica/gates/index-360"
+        }
       },
-      "residuals": [
-        "header crop 2.28% @1440 and chrome-parity nav text Δx ≤ 10px / Δw ≤ 5px: substitute font glyph widths (R-01); all 12 header texts paired",
-        "inline link glyph boxes and Privacy link Δh +4 before metric overrides — resolved by ascent/descent overrides",
-        "visual-diff STRETCHED IMAGE ×9: object-fit cover crops identical to the source (news 350×144, grid tiles) — justified",
-        "chrome-parity default run reports a REGION mismatch (live has no <header>/<footer> element); explicit --region run: chrome-parity-regions-iter3.txt"
-      ],
       "captureState": [
-        { "what": "hero video (autoplay muted loop mp4 from Vimeo)", "captured": "blank in headless Chromium on both sides (no H.264) — #009bd9 overlay only", "restoreAtDelivery": true }
+        { "what": "My Books image declares width=1536 height=1024 on live for a 1672×941 file; the prototype declares the file's true size so the pre-load reservation matches the loaded layout", "where": "#rooms .r24-books", "restoreAtDelivery": null },
+        { "what": "Analytics (GTM/gtag, GA4 G-00QDEH6N5W, Cloudflare Insights) not loaded on the prototype", "where": "head", "restoreAtDelivery": "per stardust/dynamic-features-plan.md: tags off pending the owner's decision" }
+      ],
+      "fonts": { "policy": "self-hosted open Google fonts (Playfair Display, Inter, Rasa) — the Chrome/143 unhinted builds Google serves the gate's UA, in stardust/current/assets/fonts/gf143/, same families, weights, styles and unicode-range", "substitutions": [] },
+      "boxModel": "global border-box reset lifted from the source (`*{box-sizing:border-box}`); html scrollbar-gutter: stable",
+      "portations": [],
+      "js": [
+        "reading-progress bar: .nm-reading-progress>span width = scrollY/(scrollHeight−innerHeight), lifted from site-enhancements.js",
+        "back-to-top: .nm-top gets `show` at scrollY > 500 (site-enhancements.js); click scrolls to top",
+        "drawer: .nmh-menu-btn toggles `open` on nav.nmh-menu + div.nmh-overlay, aria-expanded/aria-hidden flipped; close ×, overlay and Escape close (nmh-navigation-foundation.js)"
       ],
       "motion": {
-        "observed": ["header .scrolled compaction after 100px", "main-menu dropdown (.show)", "news carousel arrows/dots (slick-active)", "button hover (bg #2494d2, color #fff, border #545b62, 300ms)", "explore tile hover (scrim rgba(0,155,217,.7), 3px #f9ec31 border, link color)", "hero video autoplay"],
-        "implemented": ["is-scrolled header compaction", "dropdown is-open", "news rail is-active dots + arrows", "button hover", "explore hover", "map pin hover scale + label slide (CSS)", "hero video autoplay muted loop"],
-        "dead": ["outline-* transitions (focus ring after the click poke)", "news-card hover / map-pin hover: no measured diff on live sampler (CSS present, implemented as in source CSS)"],
-        "evidence": ["stardust/replica/motion/index.json", "stardust/replica/motion/index-build.json"]
-      }
+        "observed": ["class show on button.nm-top (scroll)", "class open on nav.nmh-menu + div.nmh-overlay (menu click)", "transition width on .nm-reading-progress>span (scroll, 80 ms)", "transitions opacity/transform/visibility on .nm-top (200 ms)"],
+        "implemented": ["nm-top show/hide + scroll-to-top", "drawer open/close", "reading-progress width", "nm-top transitions"],
+        "dead": ["header scroll-morph (sticky, constant 81 px)", "hover: .r24-door, .btn, .story-nursery-home-cta, .r24-also-grid a, .r24-books, .nmh-footer a (no measured hover diff)"],
+        "compare": "stardust/replica/motion/index-compare.json — 6 parity, 0 missing, 0 extra"
+      },
+      "approvedBy": "hands-off",
+      "status": "gated"
     }
-  }
+  ]
 }

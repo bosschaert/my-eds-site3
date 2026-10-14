@@ -1,29 +1,12 @@
 {
  "_provenance": {
   "writtenBy": "stardust:dynamics plan",
-  "writtenAt": "2026-10-13T14:44:13.093Z",
+  "writtenAt": "2026-10-12T14:07:41.720Z",
   "input": "stardust/current/_dynamics.json",
-  "target": "main--e8103195--aemcoder.aem.page",
-  "migrated": null,
-  "knowledge": null,
-  "chrome": null
+  "target": "https://main--9552f862--aemcoder.aem.live",
+  "migrated": "stardust/migrated"
  },
  "rows": [
-  {
-   "id": "a-cms-app-settings-object-wp",
-   "class": "A",
-   "feature": "CMS / app settings object wp",
-   "pages": 1,
-   "probed": 1,
-   "reach": null,
-   "evidence": [],
-   "pattern": "read-settings",
-   "disposition": "static-snapshot",
-   "reproducibility": "self",
-   "status": "pending",
-   "phase": "detect",
-   "decision": "— (keys name endpoints, ids, vendors)"
-  },
   {
    "id": "a-cms-app-settings-object-datalayer",
    "class": "A",
@@ -40,39 +23,39 @@
    "decision": "— (keys name endpoints, ids, vendors)"
   },
   {
-   "id": "f-form-gform-1-origin-5-fields",
-   "class": "F",
-   "feature": "form \"gform_1\" → origin / (5 fields)",
+   "id": "i18n-locale-variants-en-x-default",
+   "class": "I18N",
+   "feature": "locale variants en,x-default",
    "pages": 1,
    "probed": 1,
    "reach": null,
    "evidence": [
-    "text:input_1,text:input_2,email:input_3,checkbox:input_4.1,textarea:ak_hp_textarea",
-    "gform_ajax,is_submit_1,gform_submit,gform_unique_id,state_1,gform_target_page_number_1,gform_source_page_number_1,gform_field_values,ak_js"
+    "https://www.linkedin.com/in/niravmanubhai/"
    ],
-   "pattern": "forms",
+   "pattern": "locale-tree",
    "disposition": "rebuild-native",
-   "reproducibility": "needs-backend",
-   "status": "pending",
-   "phase": "forms",
-   "decision": "production endpoint; interim capture ships now"
+   "reproducibility": "needs-business-decision",
+   "status": "delivered-by-capture",
+   "phase": "locale wave",
+   "decision": "scope of the locale trees",
+   "alreadyDelivered": "output already carries \"https://www.linkedin.com/in/niravmanubha\""
   },
   {
-   "id": "m-modal-trigger-aria-haspopup-chrome-only-a-content",
-   "class": "M",
-   "feature": "modal trigger aria-haspopup (chrome only) → a:content",
+   "id": "t-unknown-third-party-host-static-cloudflareinsights-com",
+   "class": "T",
+   "feature": "unknown third-party host static.cloudflareinsights.com",
    "pages": 1,
    "probed": 1,
    "reach": null,
    "evidence": [
-    "https://balbriggan.ie/#"
+    "static.cloudflareinsights.com"
    ],
-   "pattern": "chrome-interaction",
-   "disposition": "rebuild-native",
-   "reproducibility": "self",
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
    "status": "pending",
-   "phase": "interactive",
-   "decision": "none (the header contract is the spec)"
+   "phase": "tags",
+   "decision": "which tags run on the new host; property ids"
   },
   {
    "id": "t-tag-manager-google-tag-manager",
@@ -109,21 +92,21 @@
    "decision": "which tags run on the new host; property ids"
   },
   {
-   "id": "t-marketing-ad-retargeting-pixel",
-   "class": "T",
-   "feature": "marketing: ad / retargeting pixel",
+   "id": "v-iframe-without-src-runtime-injected-embed",
+   "class": "V",
+   "feature": "iframe without src (runtime-injected embed)",
    "pages": 1,
    "probed": 1,
    "reach": null,
    "evidence": [
-    "connect.facebook.net"
+    "1×1"
    ],
-   "pattern": "consent-gated-tags",
+   "pattern": "embed-passthrough",
    "disposition": "embed-passthrough",
-   "reproducibility": "needs-business-decision",
+   "reproducibility": "needs-human-capture",
    "status": "pending",
-   "phase": "tags",
-   "decision": "which tags run on the new host; property ids"
+   "phase": "embeds",
+   "decision": "resolve the runtime src from a rendered capture"
   }
  ]
 }

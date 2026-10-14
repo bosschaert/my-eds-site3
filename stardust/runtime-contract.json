@@ -1,16 +1,16 @@
 {
   "runtime": "vanilla-eds",
+  "probedAt": "2026-10-12",
+  "probedFiles": ["scripts/scripts.js", "scripts/aem.js"],
   "blockWrapperClass": "block",
-  "blockWrapper": "div.<name>-wrapper > div.<name>.block[data-block-name]; section gains .<name>-container",
+  "blockWrapper": "div.<name>-wrapper around the block; section gains .<name>-container",
   "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
   "buttonization": "formatted-only",
-  "buttonizationNotes": "decorateButtons (scripts/scripts.js) matches 'p a[href]' alone in its paragraph, requires authored <strong>/<em>, skips links wrapping an <img>, and sets a.title = textContent on every p-wrapped link",
+  "buttonizationNote": "decorateButtons() requires <strong> (primary) / <em> (secondary) / both (accent); bare <a> alone in a <p> stays a link",
   "fragmentScriptPolicy": "inert-innerHTML",
   "emptySectionCollapse": true,
-  "wrapTextNodes": "cells whose first element is not P/PRE/UL/OL/PICTURE/TABLE/BLOCKQUOTE/H1-H6 are folded into one <p>",
-  "chromeHost": "<header class=\"header-wrapper\"> / <footer class=\"footer-wrapper\"> directly host div.header.block / div.footer.block",
-  "navDelivery": "a list item's bare label text is delivered as <li><p>label</p><ul>…</ul></li>; an emphasised link as <li><p><strong><a></a></strong></p></li> (buttonized by decorateButtons in the fragment)",
-  "fontsLoader": "loadFonts() loads styles/fonts.css eagerly at >= 900px or with the fonts-loaded session flag, always in loadLazy",
-  "detectedFrom": ["scripts/scripts.js", "scripts/aem.js", "http://localhost:3000/nav.plain.html"],
-  "detectedAt": "2026-10-13"
+  "fontsLoader": "loadFonts() loads /styles/fonts.css (desktop >= 900px eagerly, else loadLazy; sessionStorage fonts-loaded)",
+  "chromeReservation": "header { height: var(--nav-height) } + header .header / footer .footer visibility gate on data-block-status=loaded",
+  "navDocument": "/nav (overridable via nav metadata), sections: brand / sections / tools",
+  "footerDocument": "/footer (overridable via footer metadata)"
 }

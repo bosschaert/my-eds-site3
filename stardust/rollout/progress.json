@@ -1,90 +1,121 @@
 {
+  "_provenance": {
+    "writtenBy": "stardust:replica C-deliver",
+    "writtenAt": "2026-10-12T14:12:46.626Z"
+  },
   "units": {
     "foundation": {
       "status": "done",
       "kind": "foundation",
       "templates": [
-        "index"
+        "landing"
       ],
-      "pages": 0,
+      "pages": 2,
       "blocks": 2,
-      "startedAt": "2026-10-13T15:12:16Z",
-      "files": 21,
       "gates": {
-        "360": {
-          "headerBand": "0.01%",
-          "footerBand": "1.48%"
-        },
-        "1440": {
-          "headerBand": "2.29% (R-01 residual, prototype 2.28%)",
-          "footerBand": "1.20%"
-        },
-        "chrome": "chrome-compare: 0 behaviour findings; 9 open-state crop errors 4.6-7.3% = R-01 font substitution (owner decision)"
+        "chrome": "chrome-parity 1440/360 quiet after 1 fix round; remaining: tag span→p (EW1, justified), footer Δy on the short /nav shell (justified)",
+        "shell": "host sticky 81px/77px, reserve delta 0, overflow 0, drawer+overlay+Escape ok, back-to-top ok, fonts Inter+Playfair, pageerrors 0",
+        "deploy": "/nav + /footer PUT 201 / preview 200 / live 200, .plain.html 0 about:error, 14 + 7 links",
+        "code": "fb918f7 → bb3e92a"
       },
-      "endedAt": "2026-10-13T15:46:49Z",
-      "verdict": "foundation: files 21, nav/footer/shell live 3/3, lint clean, chrome-compare exit 2 (9 R-01 font crops, 0 behaviour), header band 2.29%/0.01%, footer 1.20%/1.48%"
+      "startedAt": "2026-10-12T14:12:46.626Z",
+      "endedAt": "2026-10-12T14:37:16.541Z",
+      "verdict": "foundation: nav+footer live 2/2, blocks 2 (header, footer), code pushed bb3e92a, shell 1440 ok, 360 ok, pageerrors 0, overflow 0; chrome-parity quiet (2 justified classes)"
     },
-    "archetype-index": {
+    "archetype-landing": {
       "status": "done",
       "kind": "archetype",
       "templates": [
-        "index"
+        "landing"
       ],
       "pages": 1,
-      "blocks": 7,
-      "startedAt": "2026-10-13T15:47:41Z",
-      "endedAt": "2026-10-13T16:18:16Z",
+      "startedAt": "2026-10-12T14:37:49.224Z",
+      "blocks": 9,
+      "endedAt": "2026-10-12T15:30:27.270Z",
       "gates": {
         "360": {
-          "archetype": "2.40% Δh0 clip2(allowed) missing0 PASS",
-          "headerBand": "0.01%",
-          "footerBand": "0.20%"
+          "archetype": "0.63%",
+          "heightDelta": 0,
+          "clip": 0,
+          "content": 0,
+          "gateSh": "0.53% Δh0 overflow ok"
         },
         "1440": {
-          "archetype": "1.43% Δh0 clip0 missing0 PASS",
-          "headerBand": "2.29% (R-01)",
-          "footerBand": "0.43%"
+          "archetype": "1.41%",
+          "heightDelta": -1,
+          "clip": 0,
+          "content": 0,
+          "gateSh": "1.39% Δh-1 overflow ok"
         },
-        "contentDiff": "0 structural red"
+        "crop": "header 1.22%/1.23%, footer 0.00%/0.00%",
+        "chrome": "1 delta (title tag span→p, justified EW1; request filed)",
+        "aiReadability": 100,
+        "rounds": 2,
+        "note": "rounds 1–2 at 360 (11.56/11.68%) were a stitch-tier asymmetry in gate-all (origin real Chrome vs EDS bundled Chromium); project copy fixed to the same tier, documented in the conversion log, flagged for upstreaming"
       },
-      "verdict": "archetype-index: page live y (root 200 y), blocks 7, gate 1440 1.43% Δh 0 clip 0 missing 0 PASS / 360 2.40% Δh 0 clip 2 missing 0 PASS, header band 2.29% footer band 0.43%, content-diff 🔴 0, video autoplay y, rounds 3, requests 0"
+      "verdict": "archetype-landing: page 1/1 live (/), blocks 9, gate 1440 1.41% Δh-1 clip0 content0 / 360 0.63% Δh0 clip0 content0, crops hdr 1.22%/1.23% ftr 0.00%/0.00%, chrome-parity 1 delta (header title tag span→p, frozen header block, no pixel effect), rounds 2, ai-readability 100, requests 2"
     },
-    "cluster-index": {
+    "cluster-landing": {
       "status": "done",
       "kind": "cluster",
       "templates": [
-        "index"
+        "landing"
       ],
       "pages": 0,
+      "note": "no siblings: the single page is the archetype",
+      "startedAt": "2026-10-12T15:30:27.270Z",
+      "endedAt": "2026-10-12T15:30:27.270Z",
       "blocks": 0,
-      "startedAt": "2026-10-13T16:18:27Z",
-      "endedAt": "2026-10-13T16:18:27Z",
-      "verdict": "cluster-index: no siblings in scope (one-page run); archetype carries the template"
+      "verdict": "cluster-landing: 0 siblings (single-page run) — nothing to render or deploy; the archetype is the template"
     },
     "gate-all": {
       "status": "done",
       "kind": "final",
       "templates": [
-        "index"
+        "landing"
       ],
       "pages": 1,
-      "startedAt": "2026-10-13T16:18:50Z",
-      "endedAt": "2026-10-13T16:23:01Z",
+      "startedAt": "2026-10-12T15:33:28.407Z",
+      "note": "C-final: freeze check unchanged; 2 foundation requests applied once (fonts eager at every width in scripts.js loadEager; header title rendered as span.nmh-title-property); hero override removed; roster gate-all fresh captures both widths",
+      "endedAt": "2026-10-12T15:39:10.956Z",
+      "blocks": 9,
       "gates": {
-        "360": "2.40% Δh0 PASS",
-        "1440": "1.43% Δh0 PASS"
+        "360": {
+          "archetype": "0.63%",
+          "heightDelta": 0,
+          "clip": 0,
+          "content": "MISSING 0 HIDDEN 0",
+          "text": "0.85%",
+          "verdict": "PASS"
+        },
+        "1440": {
+          "archetype": "1.41%",
+          "heightDelta": -1,
+          "clip": 0,
+          "content": "MISSING 0 HIDDEN 0",
+          "text": "4.25%",
+          "verdict": "PASS"
+        },
+        "chrome": "0 deltas at 1440 and 360 (header 3/3, footer 7/7) after the title-span request",
+        "coverage": "delivery.gate written from all-1440 + all-360 summaries, 0 status flips"
       },
-      "verdict": "gate-all: 1/1 PASS on main--e8103195--aemcoder.aem.live (1440 1.43%, 360 2.40%)"
+      "verdict": "gate-all: roster 1/1 PASS on the published origin (fresh captures), 1440 1.41% Δh-1 clip0 content0 / 360 0.63% Δh0 clip0 content0; chrome-parity 0 deltas; 2 foundation requests applied once, foundation re-frozen"
     },
     "final": {
       "status": "done",
       "kind": "final",
       "templates": [
-        "index"
+        "landing"
       ],
-      "startedAt": "2026-10-13T16:23:12Z",
-      "endedAt": "2026-10-13T16:25:46Z",
-      "verdict": "final: freeze check clean, 0 foundation requests, gate-all 1/1 PASS, shell draft unpublished, header parity on live host: 0 behaviour findings, 9 R-01 font crops pending owner decision"
+      "pages": 1,
+      "blocks": 9,
+      "startedAt": "2026-10-12T15:39:42.391Z",
+      "endedAt": "2026-10-12T15:39:42.391Z",
+      "gates": {
+        "freezeCheck": "foundation unchanged (21 files, manifest regenerated after the applied requests)",
+        "requestsQueue": "2 applied once at C-final, 0 open"
+      },
+      "verdict": "final: freeze check clean, 2 foundation requests applied once, 0 open; C-deliver closes with 1/1 page live and gated on the published origin (/), 9 blocks + header/footer chrome"
     }
   }
 }

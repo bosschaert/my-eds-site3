@@ -1,88 +1,64 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
-const SOCIAL = ['facebook', 'twitter', 'linkedin', 'instagram'];
-
-const el = (tag, className, attrs = {}) => {
-  const node = document.createElement(tag);
-  if (className) node.className = className;
-  Object.entries(attrs).forEach(([k, v]) => node.setAttribute(k, v));
-  return node;
-};
+/**
+ * Footer chrome for the niravmanubhai.com replica, template-slotted from the authored
+ * /footer document: one section holding the link row as a <ul> (one link per item).
+ * Authored lists/links are moved, never rebuilt (EW1); div.nmh-footer carries the paint.
+ */
 
 /**
- * Moves an authored link's child nodes into a visually hidden span (accessible name kept).
- * @param {Element} a the authored link
+ * #98: the pipeline wraps a list item's link in <p>; normalise to <li><a>.
+ * Also strips any button decoration — chrome links are never buttons.
+ * @param {Element} root
  */
-function hideLabel(a) {
-  const label = el('span', 'sr-only');
-  label.append(...a.childNodes);
-  a.append(label);
-}
-
-/**
- * Decorates an authored social link list: glyph span + hidden label.
- * @param {Element} ul authored list
- */
-function decorateSocial(ul) {
-  ul.className = 'social';
-  ul.querySelectorAll(':scope > li').forEach((li) => {
-    const wrap = li.querySelector(':scope > p');
-    if (wrap && wrap.querySelector('a')) wrap.replaceWith(...wrap.childNodes);
-    const a = li.querySelector('a');
-    if (!a) return;
-    const network = SOCIAL.find((n) => a.href.includes(n)) || '';
-    a.removeAttribute('title');
-    hideLabel(a);
-    a.prepend(el('span', `social-icon ${network}`, { 'aria-hidden': 'true' }));
+function normaliseLinks(root) {
+  root.querySelectorAll('a.button').forEach((a) => {
+    a.className = '';
+    const p = a.closest('p');
+    if (p) p.classList.remove('button-wrapper', 'button-container');
+  });
+  root.querySelectorAll('li > p').forEach((p) => {
+    const a = p.querySelector(':scope > a');
+    if (a && p.children.length === 1 && p.textContent.trim() === a.textContent.trim()) {
+      p.replaceWith(a);
+    }
+  });
+  root.querySelectorAll('a[href]').forEach((a) => {
+    try {
+      const url = new URL(a.href, window.location.href);
+      if (url.origin === window.location.origin && url.pathname === window.location.pathname) {
+        a.setAttribute('aria-current', 'page');
+      }
+    } catch (e) {
+      // not a URL we can compare
+    }
   });
 }
 
 /**
- * loads and decorates the footer: one column per authored section (logo | social + legal)
+ * loads and decorates the footer
  * @param {Element} block The footer block element
  */
 export default async function decorate(block) {
   const footerMeta = getMetadata('footer');
   const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
   const fragment = await loadFragment(footerPath);
-  if (!fragment) return;
 
-  const root = el('div', 'site-footer');
-  const mainBand = el('div', 'site-footer-main');
-  const container = el('div', 'container');
-  const row = el('div', 'site-footer-row');
-  const sections = [...fragment.querySelectorAll(':scope > .section')];
-  sections.forEach((section, i) => {
-    const col = el('div', `site-footer-col${i === sections.length - 1 && i > 0 ? ' site-footer-col-end' : ''}`);
-    const content = section.querySelector('.default-content-wrapper') || section;
-    content.querySelectorAll('ul').forEach((ul) => {
-      if ([...ul.querySelectorAll('a')].every((a) => SOCIAL.some((n) => a.href.includes(n)))) {
-        decorateSocial(ul);
-      }
-    });
-    content.querySelectorAll('a').forEach((a) => a.removeAttribute('title'));
-    // a logo link (first column, link-only paragraph) shows the council mark
-    if (i === 0) {
-      const logo = content.querySelector('p > a:only-child');
-      if (logo && !logo.querySelector('img, picture')) {
-        logo.classList.add('site-footer-logo');
-        hideLabel(logo);
-        logo.prepend(el('img', '', {
-          src: `${window.hlx.codeBasePath}/blocks/footer/fcc-logo.svg`,
-          alt: '',
-          width: '179',
-          height: '66',
-        }));
-      }
+  const footer = document.createElement('div');
+  footer.className = 'nmh-footer';
+  if (fragment) {
+    normaliseLinks(fragment);
+    const lists = [...fragment.querySelectorAll('ul, ol')]
+      .filter((l) => !l.parentElement.closest('ul, ol'));
+    if (lists.length) {
+      footer.append(...lists);
+    } else {
+      // harness-only fallback: links authored as paragraphs — move the paragraphs whole
+      fragment.querySelectorAll('.default-content-wrapper').forEach((w) => {
+        footer.append(...w.children);
+      });
     }
-    col.append(...content.childNodes);
-    row.append(col);
-  });
-  container.append(row);
-  mainBand.append(container);
-  root.append(mainBand, el('div', 'site-footer-base'));
-
-  block.textContent = '';
-  block.append(root);
+  }
+  block.replaceChildren(footer);
 }

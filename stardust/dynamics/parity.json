@@ -1,120 +1,86 @@
 {
   "_provenance": {
     "writtenBy": "stardust:dynamics",
-    "writtenAt": "2026-10-13T16:26:47Z"
+    "writtenAt": "2026-10-12T15:42:38.679Z"
   },
-  "method": "home page only; features rebuilt natively in the hero/news/map/newsletter blocks; replayed on the aem.live origin",
+  "method": "single page /; features from stardust/dynamic-features.md (4 rows, B2-dynamic re-verified); hreflang rebuilt natively in scripts.js; tags off pending the owner — replay asserts no tag-host requests",
   "features": [
     {
-      "id": "m-hero-video",
-      "feature": "Hero background video (autoplay muted loop)",
-      "class": "M",
+      "id": "a-cms-app-settings-object-datalayer",
+      "feature": "window.dataLayer (GTM queue)",
+      "class": "A",
       "pages": 1,
-      "disposition": "embed-passthrough",
+      "disposition": "static-snapshot",
       "reproducibility": "self",
       "status": "done",
-      "verifiedBy": "attributes + play() call present; playback unreplayable from the test network (source identical)",
-      "checks": [
-        {
-          "type": "video-plays",
-          "path": "/",
-          "videoSelector": ".hero video"
-        }
-      ],
-      "environmentLimit": "player.vimeo.com answers 403 to this test network and the bundled Chromium has no H.264: the SOURCE video fails the same replay (readyState 0, paused) — not a defect; the build sets autoplay/muted/loop/playsinline and calls play() (blocks/hero/hero.js)"
+      "verifiedBy": "no consumer on the page; nothing shipped (tag manager queue, not app settings)",
+      "checks": []
     },
     {
-      "id": "m-news-carousel",
-      "feature": "What's New carousel (3-up, 4 slides, dots + arrows)",
-      "class": "M",
+      "id": "i18n-locale-variants-en-x-default",
+      "feature": "hreflang alternates en + x-default → self",
+      "class": "I18N",
       "pages": 1,
       "disposition": "rebuild-native",
       "reproducibility": "self",
       "status": "done",
-      "verifiedBy": "4 slides rendered",
+      "verifiedBy": "2 link[rel=alternate][hreflang] in head after load (en, x-default), href = page URL",
       "checks": [
         {
           "type": "dom-count",
           "path": "/",
-          "selector": ".news .news-slide",
-          "min": 4
-        }
-      ]
-    },
-    {
-      "id": "m-map-pins",
-      "feature": "Project map, 12 linked pins",
-      "class": "M",
-      "pages": 1,
-      "disposition": "rebuild-native",
-      "reproducibility": "self",
-      "status": "done",
-      "verifiedBy": "12 pins rendered",
-      "checks": [
+          "selector": "link[rel=\"alternate\"][hreflang]",
+          "min": 2
+        },
         {
-          "type": "dom-count",
-          "path": "/",
-          "selector": ".map .map-pin",
-          "min": 12
-        }
-      ]
-    },
-    {
-      "id": "f-form-gform-1-origin-5-fields",
-      "feature": "Newsletter sign-up",
-      "class": "F",
-      "pages": 1,
-      "disposition": "rebuild-native",
-      "reproducibility": "needs-backend",
-      "status": "interim",
-      "owner": "production endpoint for the newsletter form; interim posts the same Gravity Forms fields to the source handler",
-      "environmentLimit": "a filled submission is not replayed: it would create a real sign-up on the production list",
-      "verifiedBy": "form + 4 visible inputs rendered",
-      "checks": [
-        {
-          "type": "dom-count",
-          "path": "/",
-          "selector": ".newsletter form input:not([type=hidden])",
-          "min": 4
+          "type": "no-page-errors",
+          "paths": [
+            "/"
+          ]
         }
       ]
     },
     {
       "id": "t-tag-manager-google-tag-manager",
-      "feature": "Google Tag Manager / Analytics / Facebook pixel",
+      "feature": "Google Tag Manager / gtag G-00QDEH6N5W (+ GA4 collect)",
       "class": "T",
       "pages": 1,
       "disposition": "embed-passthrough",
       "reproducibility": "needs-business-decision",
       "status": "scaffolded-awaiting-owner",
-      "owner": "which tags run on the new host and the container id",
-      "verifiedBy": "no tag host requested",
+      "owner": "confirm the GTM/GA4 property id to carry over and whether a consent banner is required; until then tags are off on the new host",
+      "verifiedBy": "0 requests to googletagmanager.com / google-analytics.com on /",
       "checks": [
         {
           "type": "consent-gate",
           "path": "/",
           "forbiddenHosts": [
             "www.googletagmanager.com",
+            "googletagmanager.com",
             "www.google-analytics.com",
-            "connect.facebook.net"
+            "google-analytics.com",
+            "analytics.google.com"
           ]
         }
       ]
     },
     {
-      "id": "page-errors",
-      "feature": "page runs without uncaught errors",
-      "class": "M",
+      "id": "t-unknown-third-party-host-static-cloudflareinsights-com",
+      "feature": "Cloudflare Web Analytics beacon + bot-management challenge frame",
+      "class": "T",
       "pages": 1,
-      "disposition": "rebuild-native",
-      "reproducibility": "self",
-      "status": "done",
-      "verifiedBy": "0 page errors",
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision",
+      "status": "scaffolded-awaiting-owner",
+      "owner": "confirm whether Cloudflare Web Analytics is wanted on the new host (bot-management frame is the source CDN, not carried)",
+      "verifiedBy": "0 requests to cloudflareinsights.com on /",
       "checks": [
         {
-          "type": "no-page-errors",
-          "paths": [
-            "/"
+          "type": "consent-gate",
+          "path": "/",
+          "forbiddenHosts": [
+            "static.cloudflareinsights.com",
+            "cloudflareinsights.com"
           ]
         }
       ]

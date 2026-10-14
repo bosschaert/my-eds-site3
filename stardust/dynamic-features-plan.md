@@ -1,10 +1,12 @@
-# Dynamic features — plan (balbriggan.ie home)
+# Dynamic features — plan (niravmanubhai.com home page)
 
-| phase | deliverable | authoring contract | verification | owner decision | effort |
-|---|---|---|---|---|---|
-| chrome | header dropdowns + mobile collapse + scrolled compaction | nav document (DA) → header block | header contract (chrome-compare), motion-compare | none | S |
-| media | hero video (muted autoplay loop, same mp4) | hero block: video link + card content | motion-observe media block, poster parity | none | S |
-| carousel | news rail: 3-up, dots, arrows | news block rows (image, title, link) | motion-compare (click next/dot) | none | S |
-| map | 12-pin SVG map with hover labels and links | map block: pin rows (label, link) bound to the SVG artwork shipped with the block | content-presence (12 links), hover observe | none | M |
-| forms | newsletter form, interim POST to source handler | form block (fields as authored rows) | submit dry-run (no live submission in gate) | endpoint | S |
-| tags | none on the new host until decided | — | — | tags + ids + consent | — |
+## Phases
+1. **static** (replica Phase 3–5): every section ships as static content; the hero photo, door cards and link lists are plain content. Deliverable: the gated page. Verification: source-fidelity gate + content-presence.
+2. **locale metadata** (deploy, head metadata): emit `hreflang="en"` and `hreflang="x-default"` alternates to the delivered `/`. Verification: `curl -sI` + grep on the published origin. Effort: minutes.
+3. **tags** (owner decision, not scheduled): GTM/gtag `G-00QDEH6N5W` and Cloudflare Web Analytics stay off. If the owner opts in, run `dynamics-plan.mjs --martech`, author `scripts/martech.js` disabled-by-default per `reference/martech.md`. Effort: small.
+
+## Authoring contract
+No block needs JavaScript for data. The header menu button (`.nmh-menu-btn`) is chrome interaction — observed and decided in replica's interaction-parity step (motion-observe), not here.
+
+## Owner decision
+See `stardust/dynamic-features.md` § Decision batch (one item: tags on the new host).

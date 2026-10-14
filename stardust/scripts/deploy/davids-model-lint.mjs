@@ -42,7 +42,6 @@
  */
 import { readFileSync, readdirSync, statSync } from 'fs';
 import path from 'path';
-import { pathKey } from './eds-path.mjs';
 
 // --help prints this file's usage header, so an agent never reads the source to learn the flags.
 if (process.argv.includes('--help') || process.argv.includes('-h')) {
@@ -264,8 +263,15 @@ function lintText(file, main, flag) {
   }
 }
 
-// D4 LOCALIZE — canonical lookup key for a path: eds-path.mjs pathKey, shared with localize-links.
-const canonicalPath = pathKey;
+// D4 LOCALIZE — canonical lookup key for a path (mirrors localize-links.mjs).
+function canonicalPath(p) {
+  let s = (p || '').split(/[?#]/)[0].replace(/\/{2,}/g, '/');
+  if (!s.startsWith('/')) s = `/${s}`;
+  s = s.replace(/\.html?$/i, '');
+  if (s.length > 1) s = s.replace(/\/+$/, '');
+  if (s === '' || s === '/index') s = '/';
+  return s.replace(/\/index$/, '').toLowerCase() || '/';
+}
 let LOCAL = null; // { hosts:Set, paths:Set } when --source-host is given
 
 function lintUrls(file, main, flag) {

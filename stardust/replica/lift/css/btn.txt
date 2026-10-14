@@ -1,0 +1,45 @@
+stardust/current/assets/css/home.css: 22 of 1190 rules match /^\.btn|\.r24-btn-solid|^\.doors|\.r24-follow|home-bouquet-cta-spacing/i
+@3258 .btn
+      display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: .75rem 1rem; border: 1px solid var(--leaf); border-radius: 2px; text-decoration: none; font-size: .76rem; font-weight: 600; letter-spacing: .075em; text-transform: uppercase; background: transparent; color: var(--leaf);
+@3550 .btn:hover
+      background: rgba(78,93,68,.08);
+@3591 .btn.primary
+      background: var(--leaf); color: var(--paper);
+@3646 .btn.primary:hover
+      background: var(--leaf-dark);
+@3693 .btn.whatsapp
+      background: #1f8f4e; border-color: #1f8f4e; color: white;
+@3759 .btn.whatsapp:hover
+      background: #187a42;
+@8689 .btn   @media (max-width:430px)
+      width: 100%;
+@27588 .btn
+      display: inline-block; margin-top: 1.15rem; border-bottom: 1px solid var(--leaf); padding-bottom: .25rem; color: var(--leaf); font-size: .7rem; letter-spacing: .16em; text-transform: uppercase;
+@29154 .doors
+      display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.6rem;
+@29217 .doors a.btn
+      margin: 0;
+@40193 .btn,.gift-link,.btn-gift,.story-nav-link   @media (hover:none),(pointer:coarse)
+      min-height: 48px;
+@51798 .btn:hover,.gift-link:hover
+      transform: translateY(-1px);
+@51853 .btn:active,.gift-link:active
+      transform: translateY(0);
+@53373 .btn:hover,.gift-link:hover   @media (prefers-reduced-motion:reduce)
+      transform: none;
+@53926 .btn,.gift-link
+      display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: .72rem 1rem; border-radius: 2px; font-size: .74rem; font-weight: 600; line-height: 1.2; letter-spacing: .07em; text-transform: uppercase; text-decoration: none;
+@55986 .btn,.gift-link,.next-shelf-card .nsc-actions .btn,.series-cta .btn   @media (max-width:430px)
+      width: 100%;
+@56934 .btn,.gift-link
+      border-radius: var(--nm-radius); transition: background-color .2s ease,color .2s ease,border-color .2s ease,tran…;
+@96078 .r24-follow
+      margin-top: 1.6rem; padding: 1.4rem 1.5rem; background: #fbf8f1; border: 1px solid rgba(44,37,25,.14);
+@96185 .r24-follow p
+      margin: 0 0 .9rem; line-height: 1.6; color: var(--ink-soft,#5e5340);
+@96262 .r24-follow .r24-follow-eyebrow
+      font: 600 .72rem/1.4 Inter,Arial,sans-serif; letter-spacing: .2em; text-transform: uppercase; color: #8a6a2f; margin-bottom: .5rem;
+@97452 .r24-btn-solid
+      background: var(--leaf,#4e5d44); color: #fbf8f1; border-color: var(--leaf,#4e5d44);
+@111450 .home-bouquet-cta-spacing
+      margin-top: 1.4rem;

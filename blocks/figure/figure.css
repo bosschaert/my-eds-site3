@@ -1,0 +1,117 @@
+/* figure — source c-media image-only CE (figure.c-image) and the has-columns row it sits in */
+.figure {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.figure .figure-column {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 16px;
+}
+
+.figure.has-columns .figure-column { margin-bottom: 48px; }
+
+@media (width >= 767px) {
+  .figure.has-columns .figure-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.figure .figure-gallery {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.figure .figure-item {
+  margin: 0;
+  text-align: center;
+}
+
+.figure .figure-media { position: relative; }
+
+.figure .figure-media :is(p, a, picture) {
+  display: block;
+  margin: 0;
+}
+
+.figure .figure-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 5.7143rem;
+}
+
+.figure .figure-caption {
+  padding-top: .6857rem;
+  margin-bottom: .6857rem;
+  font-size: .8rem;
+  text-align: left;
+}
+
+.figure .figure-caption p { margin: 0; }
+
+.figure .figure-caption p + p { margin-top: .3429rem; }
+
+/* text column = c-media__header + c-media__text.s-richtext */
+.figure .figure-text-header { margin-bottom: 1.8286rem; }
+
+.figure .figure-text-header :is(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+  padding: 0;
+}
+
+/* meta (cluster-content figure-meta.mjs): eyebrow above the text column heading
+   (source .c-media__meta: uppercase, weight 400, directly above the heading) */
+.figure.meta .figure-text-meta {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.figure.meta .figure-text-meta p { margin: 0; }
+
+/* image-first-mobile (cluster-content figure-order.mjs): source text order-2 / image order-1
+   below 767 — the image column stacks first on phones */
+@media (width < 767px) {
+  .figure.image-first-mobile .figure-column:has(.figure-gallery) { order: -1; }
+}
+
+/* a figure row under a section header row (default content ending in its heading): the source
+   keeps the header margin (1.8286rem) + the header row margin (2.7429rem) — cluster-content */
+main .section > .default-content-wrapper:has(> :is(h1, h2, h3):last-child) + .figure-wrapper {
+  margin-top: calc(1.8286rem + 2.7429rem);
+}
+
+/* gallery (cluster-hub gallery.mjs): conmask_gallery CE — row mt-n4, columns col-12 col-sm-6
+   col-md-4 col-lg-3 mt-4 (one linked figure each, no captions) */
+.figure.gallery { margin-top: -36px; }
+
+.figure.gallery.has-columns .figure-column {
+  margin-top: 36px;
+  margin-bottom: 0;
+}
+
+@media (width >= 1023px) {
+  .figure.gallery.has-columns .figure-column {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media (width >= 1279px) {
+  .figure.gallery.has-columns .figure-column {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+/* gallery after the intro text: the CE sits 3.6571rem below it (row mt-n4 / col mt-4 cancel) */
+main .section > .default-content-wrapper + .figure-wrapper > .figure.gallery { margin-top: 28px; }

@@ -1,75 +1,929 @@
 {
-  "generatedAt": "2026-10-14T10:55:45.714Z",
+  "generatedAt": "2026-10-10T13:01:30.424Z",
   "target": "aem-eds",
   "site": {
-    "sourceUrl": "https://www.skerriesmills.ie/",
-    "liveHost": "main--1370701b--aemcoder.aem.live"
+    "sourceUrl": "https://www.continental.com/",
+    "liveHost": "main--d9ddbc54--aemcoder.aem.live"
   },
   "stageCount": {
-    "identified": 1,
-    "prototyped": 1,
-    "deployed": 1,
-    "optimised": 0
+    "identified": 101,
+    "prototyped": 101,
+    "deployed": 101,
+    "optimised": 3
   },
   "stageExclusive": {
     "identified": 0,
     "prototyped": 0,
-    "deployed": 1,
-    "optimised": 0
+    "deployed": 98,
+    "optimised": 3
   },
   "pages": [
     {
       "slug": "index",
       "path": "/",
       "stage": "deployed",
-      "templateId": "index",
+      "templateId": "en",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "cs-cz",
+      "path": "/cs-cz",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de",
+      "path": "/de",
+      "stage": "deployed",
+      "templateId": "en",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-country-selector",
+      "path": "/de/country-selector",
+      "stage": "deployed",
+      "templateId": "en-general-legal-notice",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "de-impressum",
+      "path": "/de/impressum",
+      "stage": "deployed",
+      "templateId": "en-general-legal-notice",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-investoren",
+      "path": "/de/investoren",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "de-investoren-aktie",
+      "path": "/de/investoren/aktie",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "de-investoren-berichte-praesentationen",
+      "path": "/de/investoren/berichte-praesentationen",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "de-investoren-fremdkapital-rating",
+      "path": "/de/investoren/fremdkapital-rating",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "de-investoren-ir-kontakt",
+      "path": "/de/investoren/ir-kontakt",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "de-investoren-meldungen",
+      "path": "/de/investoren/meldungen",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "de-investoren-praesentationen",
+      "path": "/de/investoren/praesentationen",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-investoren-service",
+      "path": "/de/investoren/service",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-investoren-ueber-uns",
+      "path": "/de/investoren/ueber-uns",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-investoren-veranstaltungen",
+      "path": "/de/investoren/veranstaltungen",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "de-investoren-vitesco-technologies-spin-off",
+      "path": "/de/investoren/vitesco-technologies-spin-off",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "de-karriere",
+      "path": "/de/karriere",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-karriere-arbeiten-bei-continental",
+      "path": "/de/karriere/arbeiten-bei-continental",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "de-karriere-bewerbungsprozess",
+      "path": "/de/karriere/bewerbungsprozess",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-karriere-ihr-karrierelevel",
+      "path": "/de/karriere/ihr-karrierelevel",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-karriere-kontakt-faqs",
+      "path": "/de/karriere/kontakt-faqs",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-karriere-unsere-jobvielfalt",
+      "path": "/de/karriere/unsere-jobvielfalt",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-karriere-veranstaltungen",
+      "path": "/de/karriere/veranstaltungen",
+      "stage": "optimised",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 0
+    },
+    {
+      "slug": "de-karriere-woran-wir-arbeiten",
+      "path": "/de/karriere/woran-wir-arbeiten",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-meta-cookie-richtlinie",
+      "path": "/de/meta/cookie-richtlinie",
+      "stage": "deployed",
+      "templateId": "en-general-legal-notice",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-meta-datenschutz",
+      "path": "/de/meta/datenschutz",
+      "stage": "deployed",
+      "templateId": "en-general-legal-notice",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-meta-ihr-kontakt-zu-uns",
+      "path": "/de/meta/ihr-kontakt-zu-uns",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-meta-kontakt-lieferanten",
+      "path": "/de/meta/kontakt-lieferanten",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "de-meta-kontakt-nachhaltigkeit",
+      "path": "/de/meta/kontakt-nachhaltigkeit",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-meta-produkte",
+      "path": "/de/meta/produkte",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-meta-rechtliche-hinweise",
+      "path": "/de/meta/rechtliche-hinweise",
+      "stage": "deployed",
+      "templateId": "en-general-legal-notice",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-meta-suche",
+      "path": "/de/meta/suche",
+      "stage": "optimised",
+      "templateId": "search-results",
+      "isTemplate": false,
+      "openFindings": 0
+    },
+    {
+      "slug": "de-nachhaltigkeit",
+      "path": "/de/nachhaltigkeit",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-nachhaltigkeit-berichterstattung-und-downloads",
+      "path": "/de/nachhaltigkeit/berichterstattung-und-downloads",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-presse",
+      "path": "/de/presse",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-presse-mediathek",
+      "path": "/de/presse/mediathek",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-presse-messen-events",
+      "path": "/de/presse/messen-events",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-presse-pressemitteilungen",
+      "path": "/de/presse/pressemitteilungen",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-presse-presskontakte",
+      "path": "/de/presse/presskontakte",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-presse-studien-publikationen",
+      "path": "/de/presse/studien-publikationen",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-produkte-und-innovationen",
+      "path": "/de/produkte-und-innovationen",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "de-produkte-und-innovationen-contitech",
+      "path": "/de/produkte-und-innovationen/contitech",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-produkte-und-innovationen-produkte",
+      "path": "/de/produkte-und-innovationen/produkte",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "de-produkte-und-innovationen-reifen",
+      "path": "/de/produkte-und-innovationen/reifen",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-stories",
+      "path": "/de/stories",
+      "stage": "deployed",
+      "templateId": "en-stories",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "de-unternehmen",
+      "path": "/de/unternehmen",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "de-unternehmen-corporate-governance",
+      "path": "/de/unternehmen/corporate-governance",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-unternehmen-geschichte",
+      "path": "/de/unternehmen/geschichte",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-unternehmen-lieferanten",
+      "path": "/de/unternehmen/lieferanten",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-unternehmen-marke-continental",
+      "path": "/de/unternehmen/marke-continental",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "de-unternehmen-technische-compliance",
+      "path": "/de/unternehmen/technische-compliance",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en",
+      "path": "/en",
+      "stage": "deployed",
+      "templateId": "en",
       "isTemplate": true,
+      "openFindings": 3
+    },
+    {
+      "slug": "en-pt",
+      "path": "/en-pt",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-us-career",
+      "path": "/en-us/career",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-us-general-data-protection",
+      "path": "/en-us/general/data-protection",
+      "stage": "deployed",
+      "templateId": "en-general-legal-notice",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-career",
+      "path": "/en/career",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-career-application-process",
+      "path": "/en/career/application-process",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-career-contact-faqs",
+      "path": "/en/career/contact-faqs",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-career-our-range-of-jobs",
+      "path": "/en/career/our-range-of-jobs",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-career-what-we-are-working-on",
+      "path": "/en/career/what-we-are-working-on",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-career-working-at-continental",
+      "path": "/en/career/working-at-continental",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": true,
+      "openFindings": 2
+    },
+    {
+      "slug": "en-career-your-career-level",
+      "path": "/en/career/your-career-level",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-company",
+      "path": "/en/company",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-company-continental-brand",
+      "path": "/en/company/continental-brand",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-company-corporate-governance",
+      "path": "/en/company/corporate-governance",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-company-history",
+      "path": "/en/company/history",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-company-strategy-of-the-continental-group",
+      "path": "/en/company/strategy-of-the-continental-group",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-company-structure-of-the-continental-group",
+      "path": "/en/company/structure-of-the-continental-group",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-company-suppliers",
+      "path": "/en/company/suppliers",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-company-technical-compliance",
+      "path": "/en/company/technical-compliance",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-country-selector",
+      "path": "/en/country-selector",
+      "stage": "deployed",
+      "templateId": "en-general-legal-notice",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "en-general-contact-form-data-protection",
+      "path": "/en/general/contact-form-data-protection",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-general-contact-suppliers",
+      "path": "/en/general/contact-suppliers",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-general-contact-us",
+      "path": "/en/general/contact-us",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-general-cookie-policy",
+      "path": "/en/general/cookie-policy",
+      "stage": "deployed",
+      "templateId": "en-general-legal-notice",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-general-data-protection",
+      "path": "/en/general/data-protection",
+      "stage": "deployed",
+      "templateId": "en-general-legal-notice",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-general-legal-notice",
+      "path": "/en/general/legal-notice",
+      "stage": "deployed",
+      "templateId": "en-general-legal-notice",
+      "isTemplate": true,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-general-products",
+      "path": "/en/general/products",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-general-search",
+      "path": "/en/general/search",
+      "stage": "optimised",
+      "templateId": "search-results",
+      "isTemplate": true,
+      "openFindings": 0
+    },
+    {
+      "slug": "en-general-site-notice",
+      "path": "/en/general/site-notice",
+      "stage": "deployed",
+      "templateId": "en-general-legal-notice",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-general-sustainability-contact-form",
+      "path": "/en/general/sustainability-contact-form",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-investors",
+      "path": "/en/investors",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": true,
+      "openFindings": 2
+    },
+    {
+      "slug": "en-investors-about-us",
+      "path": "/en/investors/about-us",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-investors-debt-and-rating",
+      "path": "/en/investors/debt-and-rating",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "en-investors-events",
+      "path": "/en/investors/events",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "en-investors-ir-contact",
+      "path": "/en/investors/ir-contact",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 3
+    },
+    {
+      "slug": "en-investors-ir-news",
+      "path": "/en/investors/ir-news",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "en-investors-presentations",
+      "path": "/en/investors/presentations",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-investors-reports-presentations",
+      "path": "/en/investors/reports-presentations",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "en-investors-services",
+      "path": "/en/investors/services",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-investors-shares",
+      "path": "/en/investors/shares",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "en-investors-vitesco-technologies-spin-off",
+      "path": "/en/investors/vitesco-technologies-spin-off",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 2
+    },
+    {
+      "slug": "en-press",
+      "path": "/en/press",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-products-and-innovation",
+      "path": "/en/products-and-innovation",
+      "stage": "deployed",
+      "templateId": "en-career-working-at-continental",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "en-stories",
+      "path": "/en/stories",
+      "stage": "deployed",
+      "templateId": "en-stories",
+      "isTemplate": true,
+      "openFindings": 2
+    },
+    {
+      "slug": "en-sustainability",
+      "path": "/en/sustainability",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "es-mx-carrera",
+      "path": "/es-mx/carrera",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "fr-fr-carriere",
+      "path": "/fr-fr/carriere",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "pt-pt",
+      "path": "/pt-pt",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "ro-ro-cariera",
+      "path": "/ro-ro/cariera",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
+      "openFindings": 1
+    },
+    {
+      "slug": "sk-sk",
+      "path": "/sk-sk",
+      "stage": "deployed",
+      "templateId": "en-investors",
+      "isTemplate": false,
       "openFindings": 1
     }
   ],
   "templates": [
     {
-      "id": "index",
-      "archetype": "index",
-      "pageCount": 1,
+      "id": "en",
+      "archetype": "en",
+      "pageCount": 3,
       "stages": {
         "identified": 0,
         "prototyped": 0,
-        "deployed": 1,
+        "deployed": 3,
         "optimised": 0
+      }
+    },
+    {
+      "id": "en-career-working-at-continental",
+      "archetype": "en-career-working-at-continental",
+      "pageCount": 65,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 64,
+        "optimised": 1
+      }
+    },
+    {
+      "id": "en-general-legal-notice",
+      "archetype": "en-general-legal-notice",
+      "pageCount": 11,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 11,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "en-investors",
+      "archetype": "en-investors",
+      "pageCount": 18,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 18,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "en-stories",
+      "archetype": "en-stories",
+      "pageCount": 2,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 2,
+        "optimised": 0
+      }
+    },
+    {
+      "id": "search-results",
+      "archetype": "en-general-search",
+      "pageCount": 2,
+      "stages": {
+        "identified": 0,
+        "prototyped": 0,
+        "deployed": 0,
+        "optimised": 2
       }
     }
   ],
   "blocks": {
-    "total": 7,
-    "converted": 7
+    "total": 15,
+    "converted": 15
   },
   "quality": {
-    "overall": 90,
+    "overall": 100,
     "dimensions": {
       "brand-tensions": null,
       "design-ux": null,
       "accessibility": null,
-      "seo": null,
+      "seo": 100,
       "content-conversion": null,
-      "ai-search": 90,
-      "cross-page": null
+      "ai-search": 100,
+      "cross-page": 100
     },
     "severity": {
       "P1": 0,
-      "P2": 1,
+      "P2": 0,
       "P3": 0
     },
     "history": [
-      90
+      51,
+      81
     ]
   },
   "findings": {
     "byFixability": {
-      "platform-migration": 1
+      "out-of-scope": 125
     },
-    "byAutofix": {
-      "pending": 1
-    }
+    "byAutofix": {}
   }
 }

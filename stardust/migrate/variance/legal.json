@@ -1,0 +1,430 @@
+{
+  "archetype": "https://www.continental.com/en/general/legal-notice/",
+  "width": 1440,
+  "tolerance": 2,
+  "probes": {
+    "hero": ".c-heroteaser",
+    "text": ".c-media"
+  },
+  "archetypeRaw": {
+    "sections": [],
+    "probes": {
+      "hero": {
+        "sel": ".c-heroteaser",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 1440,
+            "h": 245
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)",
+          "padding": "0px 0px 0px 0px",
+          "font": "continentalstagsansw 17.5px/24.5px 300",
+          "borderRadius": "0px",
+          "heading": null,
+          "image": {
+            "w": 1440,
+            "h": 245
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 1,
+        "text": ""
+      },
+      "text": {
+        "sel": ".c-media",
+        "count": 0
+      }
+    }
+  },
+  "siblings": [
+    {
+      "url": "https://www.continental.com/de/country-selector/",
+      "findings": [],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".c-heroteaser",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 245
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 0, 0)",
+              "padding": "0px 0px 0px 0px",
+              "font": "continentalstagsansw 17.5px/24.5px 300",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 245
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": ""
+          },
+          "text": {
+            "sel": ".c-media",
+            "count": 0
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.continental.com/de/impressum/",
+      "findings": [],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".c-heroteaser",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 245
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 0, 0)",
+              "padding": "0px 0px 0px 0px",
+              "font": "continentalstagsansw 17.5px/24.5px 300",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 245
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": ""
+          },
+          "text": {
+            "sel": ".c-media",
+            "count": 0
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.continental.com/de/meta/cookie-richtlinie/",
+      "findings": [],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".c-heroteaser",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 245
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 0, 0)",
+              "padding": "0px 0px 0px 0px",
+              "font": "continentalstagsansw 17.5px/24.5px 300",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 245
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": ""
+          },
+          "text": {
+            "sel": ".c-media",
+            "count": 0
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.continental.com/de/meta/datenschutz/",
+      "findings": [],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".c-heroteaser",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 245
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 0, 0)",
+              "padding": "0px 0px 0px 0px",
+              "font": "continentalstagsansw 17.5px/24.5px 300",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 245
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": ""
+          },
+          "text": {
+            "sel": ".c-media",
+            "count": 0
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.continental.com/de/meta/rechtliche-hinweise/",
+      "findings": [],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".c-heroteaser",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 245
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 0, 0)",
+              "padding": "0px 0px 0px 0px",
+              "font": "continentalstagsansw 17.5px/24.5px 300",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 245
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": ""
+          },
+          "text": {
+            "sel": ".c-media",
+            "count": 0
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.continental.com/en/country-selector/",
+      "findings": [],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".c-heroteaser",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 245
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 0, 0)",
+              "padding": "0px 0px 0px 0px",
+              "font": "continentalstagsansw 17.5px/24.5px 300",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 245
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": ""
+          },
+          "text": {
+            "sel": ".c-media",
+            "count": 0
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.continental.com/en/general/cookie-policy/",
+      "findings": [],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".c-heroteaser",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 245
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 0, 0)",
+              "padding": "0px 0px 0px 0px",
+              "font": "continentalstagsansw 17.5px/24.5px 300",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 245
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": ""
+          },
+          "text": {
+            "sel": ".c-media",
+            "count": 0
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.continental.com/en/general/data-protection/",
+      "findings": [],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".c-heroteaser",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 245
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 0, 0)",
+              "padding": "0px 0px 0px 0px",
+              "font": "continentalstagsansw 17.5px/24.5px 300",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 245
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": ""
+          },
+          "text": {
+            "sel": ".c-media",
+            "count": 0
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.continental.com/en/general/site-notice/",
+      "findings": [],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".c-heroteaser",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 245
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 0, 0)",
+              "padding": "0px 0px 0px 0px",
+              "font": "continentalstagsansw 17.5px/24.5px 300",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 245
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": ""
+          },
+          "text": {
+            "sel": ".c-media",
+            "count": 0
+          }
+        }
+      }
+    },
+    {
+      "url": "https://www.continental.com/en-us/general/data-protection/",
+      "findings": [],
+      "raw": {
+        "sections": [],
+        "probes": {
+          "hero": {
+            "sel": ".c-heroteaser",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1440,
+                "h": 245
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 0, 0)",
+              "padding": "0px 0px 0px 0px",
+              "font": "continentalstagsansw 17.5px/24.5px 300",
+              "borderRadius": "0px",
+              "heading": null,
+              "image": {
+                "w": 1440,
+                "h": 245
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": ""
+          },
+          "text": {
+            "sel": ".c-media",
+            "count": 0
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "siblings": 10,
+    "varying": 0,
+    "probesVarying": []
+  }
+}

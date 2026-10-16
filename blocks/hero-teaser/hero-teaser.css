@@ -1,0 +1,35 @@
+/* hero-teaser — source c-heroteaser / c-heroteaser--small (canon.css + legal archetype CSS) */
+.hero-teaser {
+  position: relative;
+  width: 100%;
+}
+
+.hero-teaser .hero-teaser-picture {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 2000px;
+  overflow: hidden;
+}
+
+.hero-teaser .hero-teaser-rendition {
+  display: none;
+}
+
+.hero-teaser .hero-teaser-picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (width < 767px) {
+  .hero-teaser .hero-teaser-rendition.is-sm { display: block; }
+}
+
+@media (width >= 767px) and (width < 1023px) {
+  .hero-teaser .hero-teaser-rendition.is-md { display: block; }
+}
+
+@media (width >= 1023px) {
+  .hero-teaser .hero-teaser-rendition.is-lg { display: block; }
+}

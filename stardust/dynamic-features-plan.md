@@ -1,6 +1,9 @@
-# Dynamic features plan — skerriesmills.ie
+# Dynamic features plan — continental.com
 
-1. **Static (Phase 3 recreation):** carousels, reveal motion, curated listings as document rows — gated with the archetype.
-2. **Embeds (Phase 5 delivery):** FareHarbor hrefs verbatim; lightframe script in delayed.js (D-1 interim).
-3. **Tags/consent:** off until D-3 is answered.
-Verification: Book Now hrefs present + resolving on the published origin at 1440 and 360; carousels navigate.
+| phase | deliverable | rows | authoring contract | verification |
+|---|---|---|---|---|
+| D1 static-first | every page renders complete without network features; snapshots authored as content | 2, 3, 12, 14, 17 | sections authored in DA; interim notices in block JS | gate rows (pixel/content) |
+| D2 client behaviour | lightbox, language menu, sliders/tabs/accordions, stage overlay, download-cart UI | 3, 4, 5, 7, 8 | block JS, no external data | motion-observe parity per archetype |
+| D3 embeds | AdmiralCloud player, EquityStory widgets, job widgets, caralegal iframe | 9, 10, 11, 13 | embed block keyed by live-DOM ids | dynamics-check presence |
+| D4 index | `helix-query.yaml` + header search results over the migrated corpus; hreflang metadata | 1, 6 | query index config in code branch | search-query parity (count + titles over migrated corpus) |
+| owner | backends, allowlists, martech, live listings | 2, 3, 9–12, 14, 15 | decision batch in dynamic-features.md | — |

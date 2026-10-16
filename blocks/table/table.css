@@ -1,0 +1,87 @@
+/* table — source c-table / c-table__wrapper / c-scroll-hint (site.css), s-richtext rhythm */
+.table {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--content-max);
+  margin: 1.8286rem auto;
+  padding: 0 16px;
+}
+
+main .section > div:first-child > .table { margin-top: 0; }
+main .section > div:last-child > .table { margin-bottom: 0; }
+
+.table .table-shell { position: relative; }
+
+.table .table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table .table-shell::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.table .table-shell.is-left-scrollable::after {
+  background: linear-gradient(90deg, rgb(0 0 0 / 15%) 0, rgb(0 0 0 / 0%) 16px);
+}
+
+.table .table-shell.is-right-scrollable::after {
+  background: linear-gradient(270deg, rgb(0 0 0 / 15%) 0, rgb(0 0 0 / 0%) 16px);
+}
+
+.table .table-shell.is-left-scrollable.is-right-scrollable::after {
+  background:
+    linear-gradient(90deg, rgb(0 0 0 / 15%) 0, rgb(0 0 0 / 0%) 16px),
+    linear-gradient(270deg, rgb(0 0 0 / 15%) 0, rgb(0 0 0 / 0%) 16px);
+}
+
+.table table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table :is(th, td) {
+  font-weight: 300;
+  padding: 1.0286rem;
+  vertical-align: middle;
+  text-align: inherit;
+}
+
+.table :is(th, td)::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 200px;
+}
+
+.table :is(th, td) a { overflow-wrap: anywhere; }
+
+.table :is(th, td) * {
+  hyphens: none;
+  word-break: keep-all;
+}
+
+.table :is(th, td) > :first-child { margin-top: 0; }
+.table :is(th, td) > :last-child { margin-bottom: 0; }
+.table :is(th, td):first-child { text-align: left; }
+.table.striped tbody tr:nth-child(even) { background: var(--c-gray-mid); }
+
+.table.head thead :is(th, td) {
+  background: var(--c-slate);
+  color: var(--c-white);
+}
+
+/* authored RTE cell formatting (variants set by the encoder from the source's inline styles) */
+.table.highlight-head tr:first-child > :is(th, td) { background: #ffc000; }
+.table.highlight-orange :is(th, td) { background: #fe9a2e; }
+
+.table.centered :is(th, td),
+.table.centered :is(th, td):first-child { text-align: center; }
+.table.top :is(th, td) { vertical-align: top; }
+.table.bordered :is(th, td) { border: 1px solid var(--c-black); }
+.table.compact :is(th, td) { padding: 0 7.2px; }

@@ -1,0 +1,123 @@
+/* fact-box — source c-fact-box cards in the o-container grid (col-12 col-sm-6 col-md-3|4|6
+   d-flex mb-5). Values from canon.css / en-investors.css (rem = 17.5px). */
+main .section > .default-content-wrapper + .fact-box-wrapper { margin-top: 2.7429rem; }
+
+.fact-box {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.fact-box .fact-box-item {
+  display: flex;
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 48px;
+  padding: 0 16px;
+}
+
+@media (width >= 767px) {
+  .fact-box .fact-box-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (width >= 1023px) {
+  .fact-box .fact-box-item {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .fact-box.cols-4 .fact-box-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .fact-box.cols-2 .fact-box-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.fact-box .fact-box-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.3714rem;
+  background-color: var(--c-gray-light);
+}
+
+.fact-box.white .fact-box-card { background-color: #fff; }
+
+@media (width >= 1023px) {
+  .fact-box .fact-box-card { font-size: 1.1429rem; }
+}
+
+.fact-box .fact-box-section {
+  margin-top: 2.7429rem;
+  transition: var(--ease);
+}
+
+.fact-box .fact-box-section:first-child { margin-top: 0; }
+
+.fact-box .fact-box-foot {
+  display: flex;
+  align-items: flex-end;
+}
+
+.fact-box .fact-box-title {
+  margin-bottom: .2286rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.fact-box .fact-box-subtitle {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.fact-box .fact-box-number {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3714rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+
+.fact-box.yellow .fact-box-number { color: var(--c-orange); }
+.fact-box.number-white .fact-box-number { color: #fff; }
+
+@media (width >= 1023px) {
+  .fact-box .fact-box-number { font-size: 2.4rem; }
+}
+
+.fact-box .fact-box-number-component { margin: 0 .2286rem; }
+.fact-box .fact-box-number-component:first-child { margin-left: 0; }
+.fact-box .fact-box-number-component:last-child { margin-right: 0; }
+.fact-box .fact-box-countable { font-size: 2.7429rem; }
+
+@media (width >= 1023px) {
+  .fact-box .fact-box-countable { font-size: 3.4286rem; }
+}
+
+.fact-box .fact-box-text {
+  font-size: .9143rem;
+  letter-spacing: 0;
+}
+
+.fact-box .fact-box-text p:last-child { margin-bottom: 0; }
+
+/* variant foot-end (home de/index): the source equalises the foot, not the text — the
+   text sits at the bottom of the equalised foot (.fact-box-foot is flex-end) */
+.fact-box.foot-end .fact-box-text {
+  min-height: 0 !important;
+}

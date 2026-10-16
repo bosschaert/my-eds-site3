@@ -1,0 +1,212 @@
+/* content-list — source c-content-list (event teaser box). Values from en-investors.css /
+   site.css (rem = 17.5px); `inner` = the .container--inner rules. */
+.content-list {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.content-list .content-list-header {
+  margin-bottom: .9143rem;
+  font-size: 2.2857rem;
+  font-weight: 500;
+  line-height: 2.1714rem;
+}
+
+.content-list .content-list-row {
+  position: relative;
+  display: flex;
+  padding: 1.1429rem 0;
+  border-bottom: 1px solid var(--c-gray-mid);
+}
+
+.content-list .content-list-row:last-child { border-bottom: none; }
+
+.content-list .content-list-title {
+  font-size: 1.1429rem;
+  font-weight: 500;
+}
+
+.content-list .content-list-date-text {
+  margin-right: 6px;
+  color: var(--c-slate);
+  font-weight: 500;
+}
+
+.content-list .content-list-link {
+  display: flex;
+  margin-top: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.content-list .content-list-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content-list .content-list-link .u-icon { padding: .3429rem; }
+
+.content-list .content-list-link:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.content-list .content-list-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.content-list .content-list-button { margin: 0; }
+
+.content-list .content-list-calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin-right: 1.3714rem;
+  background: var(--c-gray-light);
+}
+
+@media (width >= 1023px) {
+  .content-list .content-list-calendar {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.content-list .content-list-calendar-day {
+  font-size: 1.7143rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.content-list .content-list-calendar-month {
+  font-size: .9143rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* inner (.container--inner): gray box, compact type */
+.content-list.inner {
+  flex: 1;
+  padding: 1.8286rem;
+  background: var(--c-gray-light);
+}
+
+.content-list.inner .content-list-header {
+  margin-bottom: .5714rem;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+}
+
+.content-list.inner .content-list-row { padding: .9143rem 0; }
+.content-list.inner .content-list-link { font-weight: 300; }
+.content-list.inner .content-list-footer { justify-content: flex-start; }
+
+.content-list.inner .content-list-calendar {
+  width: 60px;
+  height: 60px;
+  margin-right: .9143rem;
+  background: var(--c-gray-mid);
+}
+
+.content-list.inner .content-list-calendar-day { font-size: 1.3714rem; }
+.content-list.inner .content-list-calendar-month { font-size: .8rem; }
+
+@media (width < 1279px) {
+  .content-list.inner .content-list-title { font-size: 1rem; }
+}
+
+.content-list .content-list-row:hover .content-list-link { color: var(--c-orange-hover); }
+
+/* beside: the previous block wrapper and this list share a row (source .row: col-sm-6
+   col-md-8 | col-sm-6 col-md-4, d-flex mb-5) */
+main > .section:has(> .content-list-wrapper > .content-list.beside) > .content-list-wrapper {
+  display: flex;
+  margin-bottom: 48px;
+  padding: 0 16px;
+}
+
+@media (width >= 767px) {
+  main > .section > .default-content-wrapper + * + .content-list-wrapper:has(> .beside) {
+    margin-top: 2.7429rem;
+  }
+
+  main > .section:has(> .content-list-wrapper > .content-list.beside) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  main > .section:has(> .content-list-wrapper > .content-list.beside) > * {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  main > .section:has(> .content-list-wrapper > .content-list.beside)
+  > :has(+ .content-list-wrapper > .content-list.beside),
+  main > .section:has(> .content-list-wrapper > .content-list.beside) > .content-list-wrapper {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (width >= 1023px) {
+  main > .section:has(> .content-list-wrapper > .content-list.beside)
+  > :has(+ .content-list-wrapper > .content-list.beside) {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+
+  main > .section:has(> .content-list-wrapper > .content-list.beside) > .content-list-wrapper {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+/* downloads (cluster-content download-list.mjs): rows without calendar — title + download link
+   (source c-content-list__link--download: download icon, slate meta run) */
+.content-list.downloads .content-list-link.is-download {
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.content-list.downloads.inner .content-list-link.is-download { font-weight: 300; }
+
+.content-list.downloads .content-list-link.is-download .u-icon {
+  flex: 0 0 22px;
+  padding: .3429rem;
+}
+
+.content-list.downloads .content-list-link-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+}
+
+.content-list.downloads .content-list-secondary {
+  color: var(--c-slate);
+  white-space: nowrap;
+}
+
+/* half (with beside): two col-sm-6 lists share the row — 50/50 at every width >= 767 */
+@media (width >= 1023px) {
+  main > .section:has(> .content-list-wrapper > .content-list.beside.half)
+  > :has(+ .content-list-wrapper > .content-list.beside.half),
+  main > .section:has(> .content-list-wrapper > .content-list.beside.half)
+  > .content-list-wrapper:has(> .beside.half) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+main > .section > .default-content-wrapper
++ .content-list-wrapper:has(+ .content-list-wrapper > .beside.half) {
+  margin-top: 2.7429rem;
+}

@@ -1,150 +1,328 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/blocks",
-    "writtenAt": "2026-10-14T09:31:44.313Z",
+    "writtenAt": "2026-10-09T18:42:50.206Z",
     "readArtifacts": [
       "stardust/rollout/coverage/pages.json"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-14T10:39:52.201Z",
+  "generatedAt": "2026-10-10T13:00:31.955Z",
   "blocks": [
     {
-      "id": "attractions",
-      "label": "attractions",
+      "id": "breadcrumb",
+      "label": "breadcrumb",
       "kind": "module",
-      "signature": "module:attractions",
+      "signature": "module:breadcrumb",
       "source": null,
       "usedByTemplates": [
-        "index"
+        "en-career-working-at-continental"
       ],
       "usedByPages": [
-        "index"
+        "en-career-working-at-continental"
       ],
       "instanceCount": 1,
       "delivery": {
         "status": "deployed",
-        "edsBlockName": "attractions",
+        "edsBlockName": "breadcrumb",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "callout",
-      "label": "callout",
+      "id": "content-list",
+      "label": "content-list",
       "kind": "module",
-      "signature": "module:callout",
+      "signature": "module:content-list",
       "source": null,
       "usedByTemplates": [
-        "index"
+        "en-investors"
       ],
       "usedByPages": [
-        "index"
+        "en-investors"
       ],
       "instanceCount": 1,
       "delivery": {
         "status": "deployed",
-        "edsBlockName": "callout",
+        "edsBlockName": "content-list",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "hero",
-      "label": "hero",
+      "id": "content-slider",
+      "label": "content-slider",
       "kind": "module",
-      "signature": "module:hero",
+      "signature": "module:content-slider",
       "source": null,
       "usedByTemplates": [
-        "index"
+        "en-career-working-at-continental"
       ],
       "usedByPages": [
-        "index"
+        "en-career-working-at-continental"
       ],
       "instanceCount": 1,
       "delivery": {
         "status": "deployed",
-        "edsBlockName": "hero",
+        "edsBlockName": "content-slider",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "posts",
-      "label": "posts",
+      "id": "cs-article-cluster",
+      "label": "cs-article-cluster",
       "kind": "module",
-      "signature": "module:posts",
+      "signature": "module:cs-article-cluster",
       "source": null,
       "usedByTemplates": [
-        "index"
+        "en-stories"
       ],
       "usedByPages": [
-        "index"
+        "en-stories"
       ],
       "instanceCount": 1,
       "delivery": {
         "status": "deployed",
-        "edsBlockName": "posts",
+        "edsBlockName": "cs-article-cluster",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "reviews",
-      "label": "reviews",
+      "id": "cs-stage",
+      "label": "cs-stage",
       "kind": "module",
-      "signature": "module:reviews",
+      "signature": "module:cs-stage",
       "source": null,
       "usedByTemplates": [
-        "index"
+        "en-stories"
       ],
       "usedByPages": [
-        "index"
+        "en-stories"
       ],
       "instanceCount": 1,
       "delivery": {
         "status": "deployed",
-        "edsBlockName": "reviews",
+        "edsBlockName": "cs-stage",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "split",
-      "label": "split",
+      "id": "fact-box",
+      "label": "fact-box",
       "kind": "module",
-      "signature": "module:split",
+      "signature": "module:fact-box",
       "source": null,
       "usedByTemplates": [
-        "index"
+        "en",
+        "en-investors"
       ],
       "usedByPages": [
-        "index"
+        "en",
+        "en-investors"
       ],
-      "instanceCount": 1,
+      "instanceCount": 2,
       "delivery": {
         "status": "deployed",
-        "edsBlockName": "split",
+        "edsBlockName": "fact-box",
         "blockPath": null,
         "convertedAt": null
       }
     },
     {
-      "id": "tickets",
-      "label": "tickets",
+      "id": "hero-stage-slider",
+      "label": "hero-stage-slider",
       "kind": "module",
-      "signature": "module:tickets",
+      "signature": "module:hero-stage-slider",
       "source": null,
       "usedByTemplates": [
-        "index"
+        "en",
+        "en-investors"
       ],
       "usedByPages": [
-        "index"
+        "en",
+        "en-investors"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "hero-stage-slider",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hero-teaser",
+      "label": "hero-teaser",
+      "kind": "module",
+      "signature": "module:hero-teaser",
+      "source": null,
+      "usedByTemplates": [
+        "en-career-working-at-continental",
+        "en-general-legal-notice"
+      ],
+      "usedByPages": [
+        "en-career-working-at-continental",
+        "en-general-legal-notice"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "hero-teaser",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "image",
+      "label": "image",
+      "kind": "module",
+      "signature": "module:image",
+      "source": null,
+      "usedByTemplates": [
+        "en",
+        "en-career-working-at-continental"
+      ],
+      "usedByPages": [
+        "en",
+        "en-career-working-at-continental"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "figure",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "news-sidebar",
+      "label": "news-sidebar",
+      "kind": "module",
+      "signature": "module:news-sidebar",
+      "source": null,
+      "usedByTemplates": [
+        "en-investors"
+      ],
+      "usedByPages": [
+        "en-investors"
       ],
       "instanceCount": 1,
       "delivery": {
         "status": "deployed",
-        "edsBlockName": "tickets",
+        "edsBlockName": "news-sidebar",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "page-options",
+      "label": "page-options",
+      "kind": "module",
+      "signature": "module:page-options",
+      "source": null,
+      "usedByTemplates": [
+        "en-career-working-at-continental"
+      ],
+      "usedByPages": [
+        "en-career-working-at-continental"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "page-options",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "tabs",
+      "label": "tabs",
+      "kind": "module",
+      "signature": "module:tabs",
+      "source": null,
+      "usedByTemplates": [
+        "en-investors"
+      ],
+      "usedByPages": [
+        "en-investors"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "tabs",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "teaser",
+      "label": "teaser",
+      "kind": "module",
+      "signature": "module:teaser",
+      "source": null,
+      "usedByTemplates": [
+        "en",
+        "en-career-working-at-continental",
+        "en-investors"
+      ],
+      "usedByPages": [
+        "en",
+        "en-career-working-at-continental",
+        "en-investors"
+      ],
+      "instanceCount": 3,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "teaser",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "text-media",
+      "label": "text-media",
+      "kind": "module",
+      "signature": "module:text-media",
+      "source": null,
+      "usedByTemplates": [
+        "en",
+        "en-career-working-at-continental",
+        "en-general-legal-notice",
+        "en-investors"
+      ],
+      "usedByPages": [
+        "en",
+        "en-career-working-at-continental",
+        "en-general-legal-notice",
+        "en-investors"
+      ],
+      "instanceCount": 4,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "text-media",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "video-player",
+      "label": "video-player",
+      "kind": "module",
+      "signature": "module:video-player",
+      "source": null,
+      "usedByTemplates": [
+        "en"
+      ],
+      "usedByPages": [
+        "en"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "deployed",
+        "edsBlockName": "video-player",
         "blockPath": null,
         "convertedAt": null
       }

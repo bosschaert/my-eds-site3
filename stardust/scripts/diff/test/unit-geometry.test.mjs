@@ -41,6 +41,12 @@ check('alignUnit: identical units read all within, nothing off', () => {
   const r = alignUnit(u, { ...u, rect: { x: 300, y: 0, w: 100, h: 100 } }, 4);
   assert.equal(r.summary.within, 2); assert.equal(r.summary.off, 0); assert.equal(r.unit.dx, 300); assert.equal(r.summary.unitOff, false);
 });
+check('alignUnit: a CTA whose text prefixes the title does not steal the title (exact relaxed-role text wins over prefix)', () => {
+  const o = { rect: { x: 0, y: 0, w: 290, h: 400 }, elements: [el('text', 'Results Q2 2026 (August 4, 2026)', 0, 187, 290, 58), el('text', 'Results Q2 2026', 28, 352, 128, 25)] };
+  const e = { rect: { x: 0, y: 0, w: 290, h: 400 }, elements: [el('heading', 'Results Q2 2026 (August 4, 2026)', 0, 187, 290, 58), el('text', 'Results Q2 2026', 28, 352, 128, 25)] };
+  const r = alignUnit(o, e, 4);
+  assert.equal(r.summary.within, 2); assert.equal(r.summary.off, 0); assert.equal(r.summary.missing, 0);
+});
 check('missing + extra when nothing pairs; verdictOf totals; formatUnits marks rows', () => {
   const o = { rect: { x: 0, y: 0, w: 10, h: 10 }, elements: [el('link', 'Only here', 0, 0, 10, 10)] };
   const e = { rect: { x: 0, y: 0, w: 10, h: 10 }, elements: [el('button', 'Something else', 0, 0, 10, 10)] };

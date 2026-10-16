@@ -1,514 +1,849 @@
-/*
- * Copyright 2020 Adobe. All rights reserved.
- * This file is licensed to you under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License. You may obtain a copy
- * of the License at http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software distributed under
- * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
- * OF ANY KIND, either express or implied. See the License for the specific language
- * governing permissions and limitations under the License.
- */
+/* stylelint-disable no-descending-specificity -- source cascade order kept (canon.css) */
 
-/* stylelint-disable no-descending-specificity -- canon source order is kept verbatim */
+/* ==========================================================================
+   continental.com replica — foundation (canon layer, non-module).
+   Values lifted from stardust/prototypes/canon.css (site.css; rem = 17.5px).
+   Breakpoints: 767 / 1023 / 1279 / 1680 (site). Content cap 1460, shell cap 1920.
+   ========================================================================== */
 
-/*
- * Skerries Mills — shared canon (replica of www.skerriesmills.ie).
- * Values lifted verbatim from stardust/prototypes/css/canon.css (gated prototype).
- * proxima-nova is the owner's Adobe Fonts kit pbd5qiw — loaded by styles/fonts.css
- * (never rehosted, never in head.html). Libre Baskerville (OFL) is self-hosted in /fonts.
- */
-
+/* ---- Tokens ---- */
 :root {
-  /* brand colours */
-  --sm-cream: #fff8eb;
-  --sm-blue: #415b6a;
-  --sm-blue-dark: #273b46;
-  --sm-green: #397a5c;
-  --sm-maroon: #6f3739;
-  --sm-red: #762728;
-  --sm-testim: #537486;
-  --sm-pearl: #e5e1c8;
-  --sm-stone: #292524;
-  --sm-white: #fff;
-  --background-color: #fff; /* boilerplate compat (stock cards/hero demo blocks) */
-
-  /* fonts: brand face first, metric-matched local fallback second */
-  --sm-serif: 'Libre Baskerville', libre-baskerville-fallback, serif;
-  --sm-sans: proxima-nova, proxima-nova-fallback, sans-serif;
-  --body-font-family: var(--sm-serif);
-  --heading-font-family: var(--sm-serif);
-
-  /* motion */
-  --sm-ease: cubic-bezier(0.4, 0, 0.2, 1);
-
-  /* container model (live .container / prototype .sm-wrap): 100% below 640px,
-     then 640 / 768 / 1024 / 1280 / 1536. Blocks constrain their inner content
-     with max-width: var(--sm-wrap); margin-inline: auto. */
-  --sm-wrap: 100%;
-
-  /* overlay chrome: the fixed header floats over the hero, so nothing is reserved
-     (the host is out of flow; its height is its content's) */
-  --nav-height: auto;
+  --c-orange: #ffa500;
+  --c-orange-hover: #e38702;
+  --c-slate: #6b6b6b;
+  --c-gray: #969696;
+  --c-gray-mid: #cdcdcd;
+  --c-gray-light: #f0f0f0;
+  --c-pastel-yellow: #f4cf9b;
+  --c-pastel-red: #ffe0e1;
+  --c-pastel-blue: #e5edf7;
+  --c-pastel-green: #daebe6;
+  --c-black: #000;
+  --c-white: #fff;
+  --font-sans: continentalstagsansw, arial, helvetica, sans-serif;
+  --ease: all 150ms ease-in-out;
+  --content-max: 83.4286rem; /* 1460px */
+  --shell-max: 109.7143rem; /* 1920px */
+  --gutter: 16px;
+  --section-pad-x: 4.3429rem; /* 76px at >= 767 */
 }
 
-@media (width >= 640px) {
-  :root { --sm-wrap: 640px; }
-}
-
-@media (width >= 768px) {
-  :root { --sm-wrap: 768px; }
-}
-
-@media (width >= 1024px) {
-  :root { --sm-wrap: 1024px; }
-}
-
-@media (width >= 1280px) {
-  :root { --sm-wrap: 1280px; }
-}
-
-@media (width >= 1536px) {
-  :root { --sm-wrap: 1536px; }
-}
-
-/* metric-matched fallbacks (computed from the brand woff2 against Liberation Sans/Serif,
-   the Arial/Times metric clones) — available at first paint, before fonts.css lands */
-@font-face {
-  font-family: proxima-nova-fallback;
-  src: local('Arial');
-  size-adjust: 98.12%;
-  ascent-override: 109.97%;
-  descent-override: 33.12%;
-  line-gap-override: 0%;
-}
-
-@font-face {
-  font-family: libre-baskerville-fallback;
-  src: local('Times New Roman');
-  size-adjust: 127.33%;
-  ascent-override: 76.18%;
-  descent-override: 21.2%;
-  line-gap-override: 0%;
-}
-
-/* reset (prototype canon — tailwind preflight subset) */
+/* ---- Base (reboot subset) ---- */
 *,
-::before,
-::after {
-  box-sizing: border-box;
-  border: 0 solid #e5e7eb;
-}
+*::before,
+*::after { box-sizing: border-box; }
 
 html {
-  font-family: var(--sm-serif);
-  line-height: 1.5;
+  font-family: sans-serif;
+  line-height: 1.15;
   text-size-adjust: 100%;
-  tab-size: 4;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizelegibility;
+  -webkit-tap-highlight-color: transparent;
 }
+
+html,
+body { font-size: 17.5px; }
 
 body {
   display: none;
-  margin: 0;
-  line-height: inherit;
-  background-color: var(--sm-cream);
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizelegibility;
+  margin: 0 auto;
+  max-width: var(--shell-max);
+  min-width: 18.2857rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #000;
+  text-align: left;
+  background-color: #fff;
 }
 
-body.appear {
-  display: block;
-}
-
-/* chrome reservation (boilerplate structural layer; overlay chrome reserves nothing) */
-header {
-  height: var(--nav-height);
-}
-
-/* overlay chrome host (#108): fixed over the hero, out of flow — nothing to shift */
-body > header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 50;
-}
+body.appear { display: block; }
 
 header .header,
-footer .footer {
-  visibility: hidden;
-}
+footer .footer { visibility: hidden; }
 
 header .header[data-block-status="loaded"],
-footer .footer[data-block-status="loaded"] {
-  visibility: visible;
-}
+footer .footer[data-block-status="loaded"] { visibility: visible; }
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
 p,
-blockquote,
-ul,
 ol,
-figure,
-dl,
-pre {
-  margin: 0;
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+b,
+strong { font-weight: bolder; }
+
+/* source normalize sub / sup */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
 }
 
-img,
-svg {
-  display: block;
-  vertical-align: middle;
-  max-width: 100%;
-  height: auto;
-}
+sub { bottom: -.25em; }
+sup { top: -.5em; }
 
 a {
-  color: inherit;
-  text-decoration: inherit;
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+  transition: var(--ease);
 }
 
-a:any-link {
-  color: inherit;
-  overflow-wrap: break-word;
+a:hover {
+  color: var(--c-orange-hover);
+  text-decoration: none;
 }
 
-input,
-textarea,
-select,
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+figure { margin: 0 0 1rem; }
+
 button {
-  font: inherit;
+  border-radius: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  overflow: visible;
+  text-transform: none;
+  appearance: auto;
 }
 
-button {
-  color: inherit;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
+button:not(:disabled) { cursor: pointer; }
+button:focus:not(:focus-visible) { outline: 0; }
+
+input {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  overflow: visible;
 }
 
-li {
-  font-family: var(--sm-sans);
+/* ---- Type ramp ---- */
+h1,
+h2,
+h3,
+h4,
+.u-text-h1,
+.u-text-h2,
+.u-text-h3,
+.u-text-h4 {
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: .2px;
 }
 
-/* type ramp */
-h1 {
-  margin-bottom: 1rem;
-  font-family: var(--sm-serif);
-  font-size: 3.75rem;
-  line-height: 1;
-  font-weight: 400;
+h1,
+.u-text-h1 {
+  font-size: 1.875rem;
+  line-height: 2.0571rem;
+  margin-bottom: .9143rem;
 }
 
-h2 {
-  color: var(--sm-blue-dark);
-  margin-bottom: 1rem;
-  font-family: var(--sm-serif);
+h2,
+.u-text-h2 {
   font-size: 1.5rem;
+  line-height: 1.6rem;
+}
+
+h3,
+.u-text-h3 {
+  font-size: 1.5rem;
+  line-height: 1.6rem;
   font-weight: 300;
-  line-height: 2rem;
 }
 
-h3 {
-  margin-bottom: 1rem;
-  font-family: var(--sm-serif);
-  font-size: 1.5rem;
-  font-weight: 300;
-  line-height: 2rem;
+h4,
+.u-text-h4 {
+  font-size: 1.25rem;
+  line-height: 1.3714rem;
+  letter-spacing: 1px;
 }
 
-h4 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 2rem;
-}
+@media (width >= 767px) {
+  h1,
+  .u-text-h1 {
+    font-size: 2.5rem;
+    line-height: 2.7429rem;
+  }
 
-p {
-  margin-bottom: 1rem;
-  font-family: var(--sm-sans);
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-p a {
-  text-decoration-line: underline;
-}
-
-@media (width >= 1024px) {
-  h2 {
+  h2,
+  .u-text-h2 {
     font-size: 1.875rem;
-    line-height: 2.25rem;
+    line-height: 2.0571rem;
+  }
+
+  h3,
+  .u-text-h3 {
+    font-size: 1.875rem;
+    line-height: 2.2286rem;
+  }
+
+  h4,
+  .u-text-h4 {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
   }
 }
 
-pre {
-  padding: 16px;
-  overflow-x: auto;
-  white-space: pre;
+@media (width >= 1279px) {
+  h1,
+  .u-text-h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  h2,
+  .u-text-h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  h3,
+  .u-text-h3 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
 }
 
-/* icons (boilerplate) */
-.icon {
-  display: inline-block;
-  height: 24px;
-  width: 24px;
+.u-text-light { font-weight: 300; }
+
+/* Rich text scope (s-richtext): blocks add `.s-richtext`; default content gets it by default */
+.s-richtext,
+main .default-content-wrapper { letter-spacing: .2px; }
+
+@media (width >= 1023px) {
+  .s-richtext,
+  main .default-content-wrapper { font-size: 1.1429rem; }
 }
 
-.icon img {
-  height: 100%;
-  width: 100%;
+.s-richtext :is(h1, h2, h3, h4) {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-top: 1.3714rem;
 }
 
-/* sections: blocks paint their own full-bleed bands and constrain their inner
-   content to var(--sm-wrap); default content sits in the container. */
+.s-richtext ul,
+main .default-content-wrapper ul { padding-left: .9143rem; }
+
+.s-richtext li,
+main .default-content-wrapper li { margin-bottom: 1rem; }
+
+.s-richtext li:last-child,
+main .default-content-wrapper li:last-child { margin-bottom: 0; }
+
+.s-richtext :is(p, ul, table),
+main .default-content-wrapper :is(p, ul, ol, table) {
+  margin-top: 1.8286rem;
+  margin-bottom: 1.8286rem;
+}
+
+.s-richtext p,
+main .default-content-wrapper p {
+  overflow-wrap: anywhere;
+  hyphens: manual;
+}
+
+.s-richtext > :first-child,
+main .default-content-wrapper > :first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.s-richtext > :last-child,
+main .default-content-wrapper > :last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.s-richtext a,
+main .default-content-wrapper a { text-decoration: underline; }
+
+.s-richtext a.button,
+main .default-content-wrapper a.button { text-decoration: none; }
+
+/* default-content headings follow the c-media__header rhythm: block of 3.66rem between
+   content elements, header 1.83rem above its text */
+main .default-content-wrapper :is(h1, h2, h3, h4) {
+  margin-top: 3.6571rem;
+  margin-bottom: 1.8286rem;
+}
+
+main .default-content-wrapper :is(h1, h2, h3, h4) + p { margin-top: 0; }
+
+/* ---- Sections (o-container): the page band; content capped at 1460 ---- */
 main > .section {
-  margin: 0;
+  padding: 2.7429rem 0 3.6571rem;
+  position: relative;
 }
 
-main > .section > div {
+@media (width >= 767px) {
+  main > .section {
+    padding: 2.7429rem var(--section-pad-x) 3.6571rem;
+  }
+}
+
+main > .section:empty,
+main > .section[data-section-status="loaded"]:not(:has(> *)) { display: none; }
+main > .section.is-white + .section.is-white { padding-top: 0; }
+main > .section:first-child.is-white { padding-top: 0; }
+main > .section:last-child.is-white:not(.has-image) { padding-bottom: 0; }
+main > .section.full-bleed { padding: 0; }
+main > .section.is-yellow { background-color: var(--c-orange); }
+main > .section.is-lightgray { background-color: var(--c-gray-light); }
+main > .section.is-pastel-yellow { background-color: var(--c-pastel-yellow); }
+main > .section.is-pastel-red { background-color: var(--c-pastel-red); }
+main > .section.is-pastel-blue { background-color: var(--c-pastel-blue); }
+main > .section.is-pastel-green { background-color: var(--c-pastel-green); }
+main > .section.is-gray { background-color: var(--c-gray-mid); }
+
+/* image bands (o-container.has-image): the source keeps their top padding next to white bands */
+main > .section:first-child.is-white.has-image,
+main > .section.is-white + .section.is-white.has-image,
+main > .section.is-white.has-image + .section.is-white:not(.has-image) { padding-top: 2.8571rem; }
+
+/* section Style breadcrumb band first on the page (no hero): keeps the band's top padding */
+main > .section.breadcrumb-container:first-child { padding-top: 2.7429rem; }
+
+/* section Style empty-band: a source band that renders no content keeps only its padding */
+main > .section.empty-band > .default-content-wrapper {
+  height: 0;
+  overflow: hidden;
+}
+
+/* section Style empty-header: the band's header row is empty */
+main > .section.empty-header > :first-child { margin-top: 2.7429rem; }
+
+/* section Style header-row-end: the band ends in its header row + an empty row */
+main > .section.header-row-end { padding-bottom: calc(3.6571rem + 2.7429rem); }
+
+/* section Style heading-gap: a header CE with an empty media row before the next CE heading */
+main > .section.heading-gap .default-content-wrapper :is(h1, h2) + :is(h2, h3) {
+  margin-top: 5.4857rem;
+}
+
+/* section Style subheadline: h*.u-text-subheadline sits on the heading above it */
+main > .section.subheadline .default-content-wrapper :is(h1 + h2, h2 + h3) {
+  margin-top: -1.8286rem;
+}
+
+/* section Styles header-ce-hN / header-ce-hN-end: a header-only source CE keeps its header
+   margin (1.8286rem) + the CE margin-bottom (3.6571rem); -hr: inside a header row, CE gap only */
+main > .section.header-ce-h1 .default-content-wrapper > h1 + p,
+main > .section.header-ce-h3 .default-content-wrapper > h3 + p {
+  margin-top: calc(1.8286rem + 3.6571rem);
+}
+
+main > .section.header-ce-h2-end .default-content-wrapper > h2:last-child {
+  margin-bottom: calc(1.8286rem + 3.6571rem);
+}
+
+main > .section.header-ce-h3-hr .default-content-wrapper > h3 + p { margin-top: 3.6571rem; }
+
+/* section Style compact-headings: RTE "heading look" paragraphs (p.u-text-hN) keep the
+   s-richtext rhythm — 1.3714rem above, 16px below, none between stacked headings, none under
+   the page h1; the following text keeps its 1.8286rem top margin */
+main > .section.compact-headings .default-content-wrapper :is(h2, h3, h4) {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-top: 1.3714rem;
+}
+
+main > .section.compact-headings .default-content-wrapper :is(h1 + h2, h2 + h3, h3 + h4),
+main > .section.compact-headings .default-content-wrapper h1 + h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+main > .section.compact-headings .default-content-wrapper :is(h2, h3, h4) + :is(p, ul, ol) {
+  margin-top: 1.8286rem;
+}
+
+/* section Style inline-buttons: a source .c-button inside running text — the .c-button box;
+   icon from the target: other host → external, mailto → mail (hub pages add the internal
+   chevron in hero-stage-slider.css: content-page sources use the plain .c-button there) */
+main > .section.inline-buttons :is(.default-content-wrapper, .text-media-text)
+p strong > a:not(.button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.7429rem;
+  margin-right: .9143rem;
+  margin-bottom: .9143rem;
+  padding: .5714rem 1.3714rem;
+  border-radius: 1.3714rem;
+  background: var(--c-orange);
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  vertical-align: middle;
+  transition: var(--ease);
+}
+
+main > .section.inline-buttons :is(.default-content-wrapper, .text-media-text)
+p strong > a:not(.button):hover {
+  background: var(--c-slate);
+  color: #fff;
+}
+
+main > .section.inline-buttons :is(.default-content-wrapper, .text-media-text) p strong
+> a:not(.button):is(
+  [href^="mailto:"],
+  [href^="http"]:not([href^="https://www.continental.com"])
+)::before {
+  content: "";
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  margin-right: .4571rem;
+  background: currentcolor;
+  mask: url("/icons/link-external.svg") center / contain no-repeat;
+}
+
+main > .section.inline-buttons :is(.default-content-wrapper, .text-media-text)
+p strong > a:not(.button)[href^="mailto:"]::before {
+  mask-image: url("/icons/email.svg");
+}
+
+main > .section > .default-content-wrapper {
+  max-width: var(--content-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* ---- Grid + utilities used by the templates (Bootstrap-derived) ---- */
+.container {
+  width: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin: 0 .4571rem;
+}
+
+@media (width >= 767px) {
+  .container { margin: 0 2.2857rem; }
+}
+
+@media (width >= 1279px) {
+  .container { margin: 0 5.9429rem; }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -16px;
+  margin-left: -16px;
+}
+
+.col,
+[class*="col-"] {
+  position: relative;
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (width >= 767px) {
+  .col-sm-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (width >= 1023px) {
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-md-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+
+  .col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+
+@media (width >= 1279px) {
+  .order-lg-2 { order: 2; }
+
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-lg-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .col-lg-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+}
+
+@media (width >= 1680px) {
+  .col-xl-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+.d-none { display: none !important; }
+.d-inline-block { display: inline-block !important; }
+.d-flex { display: flex !important; }
+.d-block { display: block !important; }
+
+@media (width >= 767px) {
+  .d-sm-inline-block { display: inline-block !important; }
+  .d-sm-flex { display: flex !important; }
+  .d-sm-none { display: none !important; }
+}
+
+@media (width >= 1023px) {
+  .d-md-none { display: none !important; }
+  .d-md-inline-block { display: inline-block !important; }
+  .d-md-block { display: block !important; }
+  .d-md-flex { display: flex !important; }
+}
+
+.align-items-end { align-items: flex-end !important; }
+.align-items-center { align-items: center !important; }
+.position-relative { position: relative !important; }
+.w-100 { width: 100% !important; }
+.font-weight-bold { font-weight: 700 !important; }
+.mt-0 { margin-top: 0 !important; }
+.mb-0 { margin-bottom: 0 !important; }
+.ml-0 { margin-left: 0 !important; }
+.mr-0 { margin-right: 0 !important; }
+.mt-1 { margin-top: 6px !important; }
+.mr-1 { margin-right: 6px !important; }
+.mb-1 { margin-bottom: 6px !important; }
+.ml-1 { margin-left: 6px !important; }
+.mt-2 { margin-top: 12px !important; }
+.mr-2 { margin-right: 12px !important; }
+.mb-2 { margin-bottom: 12px !important; }
+.mt-3 { margin-top: 24px !important; }
+.mb-3 { margin-bottom: 24px !important; }
+.mt-4 { margin-top: 36px !important; }
+.mb-4 { margin-bottom: 36px !important; }
+.mb-5 { margin-bottom: 48px !important; }
+.mb-6 { margin-bottom: 64px !important; }
+.pt-3 { padding-top: 24px !important; }
+.pb-0 { padding-bottom: 0 !important; }
+
+.px-2 {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+.pr-4 { padding-right: 36px !important; }
+
+@media (width >= 767px) {
+  .mt-sm-0 { margin-top: 0 !important; }
+  .mt-sm-2 { margin-top: 12px !important; }
+  .mr-sm-3 { margin-right: 24px !important; }
+}
+
+@media (width >= 1023px) {
+  .mt-md-0 { margin-top: 0 !important; }
+  .mr-md-0 { margin-right: 0 !important; }
+  .mb-md-0 { margin-bottom: 0 !important; }
+}
+
+@media (width >= 1680px) {
+  .mt-xl-0 { margin-top: 0 !important; }
+  .mb-xl-0 { margin-bottom: 0 !important; }
+  .pr-xl-4 { padding-right: 36px !important; }
+}
+
+.visually-hidden {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c-list-clean {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-main > .section > .default-content-wrapper {
-  max-width: var(--sm-wrap);
-  margin: 0 auto;
+.c-list-clean li {
+  margin-bottom: 1.1429rem;
+  line-height: 1.1;
 }
 
-main .section:empty {
-  display: none;
+@media (width >= 1023px) {
+  .c-list-clean li { margin-bottom: .4571rem; }
 }
 
-/* shared container (live .container / prototype .sm-wrap) */
-.sm-wrap {
-  width: 100%;
-  max-width: var(--sm-wrap);
-  margin-left: auto;
-  margin-right: auto;
+.c-list-clean li:last-child { margin-bottom: 0; }
+
+/* ---- Icons: u-icon box + inline SVG (scripts/utils.js createIcon) ---- */
+.u-icon {
+  display: inline-block;
+  height: 1.6rem;
+  width: 1.6rem;
+  line-height: 1em;
+  overflow: hidden;
+  color: #000;
+  flex-shrink: 0;
+  font-style: normal;
 }
 
-/* rich text (live .the-content) — shared by split / card bodies */
-.sm-rich {
-  font-family: var(--sm-sans);
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  color: var(--sm-blue);
+.u-icon.has-bg {
+  transition: var(--ease);
+  background: var(--c-orange);
+  border-radius: 1.6rem;
+  padding: .5rem;
+  line-height: 0;
 }
 
-.sm-rich p {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.u-icon.has-bg.is-link:hover { background: var(--c-orange-hover); }
+.u-icon.is-link { cursor: pointer; }
+
+.u-icon.is-xs {
+  height: .7429rem;
+  width: .7429rem;
+  font-size: .5714rem;
 }
 
-/* buttons (live .btn / .btn.brand-maroon): strong-link = primary (green),
-   em-link = secondary (maroon), strong+em = accent (green, same as primary) */
-p.button-wrapper {
-  margin: 0;
+.u-icon.is-sm {
+  height: 1.2571rem;
+  width: 1.2571rem;
+  font-size: .6857rem;
 }
 
-a.button:any-link,
-button.button {
+.u-icon.is-facebook { color: #3b5998; }
+.u-icon.is-linkedin { color: #0077b5; }
+.u-icon.is-youtube { color: red; }
+.u-icon.is-instagram { color: #f00075; }
+.u-icon.is-tiktok { color: #000; }
+.u-icon.is-glassdoor { color: #0ea038; }
+.u-icon.is-rss { color: #f60; }
+.u-icon.is-xing { color: #026466; }
+.u-icon.is-kununu { color: #ffc600; }
+.u-icon.is-x { color: #000; }
+
+.icon {
   display: inline-block;
   width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0.75rem;
-  border-radius: 0.25rem;
-  background-color: var(--sm-green);
-  color: var(--sm-white);
-  text-align: center;
+  height: 100%;
+}
+
+.icon svg,
+.icon img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  transition: var(--ease);
+}
+
+.u-icon-plus-minus {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.u-icon-plus-minus::before,
+.u-icon-plus-minus::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  background: #000;
+  top: 50%;
+  left: 50%;
+  transition: var(--ease);
+}
+
+.u-icon-plus-minus::before { transform: translate(-50%, -50%) rotate(90deg); }
+.u-icon-plus-minus::after { transform: translate(-50%, -50%) rotate(0deg); }
+.u-icon-plus-minus.is-active::before { transform: translate(-50%, -50%) rotate(0deg); }
+.u-icon-plus-minus.is-active::after { transform: translate(-50%, -50%) rotate(180deg); }
+
+/* ---- Buttons (c-button family) — EDS button links + .c-button for block templates ---- */
+p.button-wrapper { margin: 0; }
+
+a.button:any-link,
+.c-button {
+  min-height: 2.7429rem;
+  border: 0;
+  padding: .5714rem 1.3714rem;
+  border-radius: 1.3714rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--c-orange);
+  color: #000;
   text-decoration: none;
-  font-family: var(--sm-sans);
+  margin-bottom: .9143rem;
+  margin-right: .9143rem;
+  font-weight: 600;
   font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.15s var(--sm-ease);
+  line-height: 1.4;
+  transition: var(--ease);
+  user-select: none;
 }
 
 a.button:hover,
 a.button:focus-visible,
-button.button:hover,
-button.button:focus-visible {
-  background-color: var(--sm-maroon);
-}
-
-a.button.secondary,
-button.button.secondary {
-  background-color: var(--sm-maroon);
-}
-
-a.button.secondary:hover,
-a.button.secondary:focus-visible,
-button.button.secondary:hover,
-button.button.secondary:focus-visible {
-  background-color: var(--sm-green);
-}
-
-a.button[aria-disabled="true"],
-button.button:disabled {
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-@media (width >= 768px) {
-  a.button:any-link,
-  button.button {
-    width: auto;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-}
-
-/* text links with the maroon chevron (live .btn-link / .btn-txt) */
-.sm-more {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  padding: 0.5rem 2.25rem 0.5rem 0;
-  border-radius: 0.375rem;
-  color: var(--sm-maroon);
-  font-family: var(--sm-sans);
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  cursor: pointer;
-}
-
-.sm-more::after,
-.sm-txtlink::after {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: url('/icons/arrow-more.svg') 50% / 10px 15px no-repeat;
-  filter: brightness(0) saturate(100%) invert(21%) sepia(20%) saturate(1721%) hue-rotate(309deg)
-    brightness(96%) contrast(82%);
-  transition: all 0.15s var(--sm-ease);
-}
-
-.sm-more::after {
-  top: 50%;
-  right: 0.5rem;
-  transform: translateY(-50%);
-}
-
-.sm-txtlink {
-  display: inline-block;
-  position: relative;
-  width: 8rem;
-  padding-right: 1.5rem;
-  color: var(--sm-maroon);
-  font-family: var(--sm-sans);
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  text-decoration-line: underline;
-  text-underline-offset: 8px;
-}
-
-.sm-txtlink::after {
-  top: 6px;
-  right: 0;
-}
-
-.sm-card-link:hover .sm-more,
-.sm-card-link:hover .sm-txtlink {
-  color: var(--sm-green);
-  filter: brightness(0) saturate(100%) invert(41%) sepia(12%) saturate(1767%) hue-rotate(100deg)
-    brightness(93%) contrast(78%);
-}
-
-.sm-card-link:hover .sm-more::after,
-.sm-card-link:hover .sm-txtlink::after {
-  right: -0.25rem;
-}
-
-/* icon hover (live .ficon:hover) */
-.sm-icon {
-  transition: all 0.15s var(--sm-ease);
-}
-
-.sm-icon:hover {
-  filter: brightness(0) saturate(100%) invert(95%) sepia(3%) saturate(1433%) hue-rotate(11deg)
-    brightness(96%) contrast(90%);
-}
-
-/* scroll reveal (live .js-show-on-scroll / .js-show-on-scroll-img). Blocks add the
-   js-show-on-scroll[-img] class; scripts.js adds opacity-0 and toggles the animation
-   class from an IntersectionObserver, so without JS nothing is ever hidden. */
-@keyframes fade-in {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes fade-in-y {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.js-show-on-scroll.opacity-0,
-.js-show-on-scroll-img.opacity-0 {
-  opacity: 0;
-}
-
-.animate-fade-in {
-  animation: 0.5s ease-in forwards fade-in;
-}
-
-.animate-fade-in-y {
-  animation: 0.5s ease-in forwards fade-in-y;
-}
-
-/* Experience Workspace edit mode: repaint CTAs from their authored marks (EW3) */
-.prosemirror-editor p > :is(strong, em) > a:any-link,
-.prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
-  display: inline-block;
-  padding: 0.75rem 2.5rem;
-  border-radius: 0.25rem;
-  color: var(--sm-white);
-  text-decoration: none;
-  font-family: var(--sm-sans);
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-}
-
-.prosemirror-editor p > a:any-link > :is(strong, em) {
-  font-weight: inherit;
-  font-style: inherit;
-}
-
-.prosemirror-editor p > strong > a:any-link,
-.prosemirror-editor p > a:any-link:has(> strong:only-child) {
-  background-color: var(--sm-green);
-}
-
-.prosemirror-editor p > em > a:any-link,
-.prosemirror-editor p > a:any-link:has(> em:only-child) {
-  background-color: var(--sm-maroon);
-}
-
-/* card-as-link inner anchor while editing (EW6) */
-a .prosemirror-editor a:any-link {
-  color: inherit;
+.c-button:hover {
+  background: var(--c-slate);
+  color: #fff;
   text-decoration: none;
 }
+
+.c-button .u-icon,
+a.button .u-icon {
+  color: #000;
+  width: .9143rem;
+  padding: 0 !important;
+}
+
+.c-button:hover .u-icon,
+a.button:hover .u-icon { color: #fff; }
+
+/* arrow (internal), external, download, mail variants: icon from /icons via mask, colour
+   follows the text (black, white on hover) */
+a.button::before,
+.c-button.is-internal::before,
+.c-button.is-external::before,
+.c-button.is-download::before,
+.c-button.is-mail::before {
+  transition: var(--ease);
+  display: inline-block;
+  content: "";
+  margin-right: .4571rem;
+  width: 14px;
+  height: 14px;
+  background-color: currentcolor;
+  mask: url("/icons/chevron-right.svg") center / contain no-repeat;
+}
+
+a.button[href^="http"]::before,
+.c-button.is-external::before { mask-image: url("/icons/link-external.svg"); }
+
+a.button[href$=".pdf"]::before,
+a.button[href$=".zip"]::before,
+a.button[download]::before,
+.c-button.is-download::before { mask-image: url("/icons/download-single.svg"); }
+
+a.button[href^="mailto:"]::before,
+.c-button.is-mail::before { mask-image: url("/icons/email.svg"); }
+
+/* ---- links (c-link) ---- */
+.c-link,
+.c-link-internal {
+  display: inline-block;
+  margin-left: .4571rem;
+  text-decoration: underline;
+}
+
+.c-link-internal::before {
+  transition: var(--ease);
+  display: inline-block;
+  content: "";
+  margin-right: .4571rem;
+  width: 14px;
+  height: 14px;
+  background-color: #000;
+  mask: url("/icons/chevron-right.svg") center / contain no-repeat;
+}
+
+.c-link-internal:hover::before { background-color: var(--c-orange-hover); }
+
+/* inline file links (source a.c-link--download, decorated in scripts.js): download icon,
+   trailing "pdf (263KB)" meta in capitals */
+a.c-link-download {
+  display: inline-block;
+  margin-left: .4571rem;
+  text-decoration: underline;
+}
+
+a.c-link-download:hover { text-decoration: none; }
+
+a.c-link-download::before {
+  transition: var(--ease);
+  display: inline-block;
+  content: "";
+  margin-right: .4571rem;
+  width: 14px;
+  height: 14px;
+  background-color: #000;
+  mask: url("/icons/download-single.svg") center / contain no-repeat;
+}
+
+a.c-link-download:hover::before { background-color: var(--c-orange-hover); }
+a.c-link-download .text-uppercase { text-transform: uppercase; }

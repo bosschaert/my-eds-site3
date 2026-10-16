@@ -1,23 +1,26 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/assemble",
-    "writtenAt": "2026-10-14T10:45:04.508Z",
+    "writtenAt": "2026-10-10T12:48:14.430Z",
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-14T10:45:04.508Z",
-  "host": "https://main--1370701b--aemcoder.aem.live",
+  "generatedAt": "2026-10-10T12:48:14.430Z",
+  "host": "https://main--d9ddbc54--aemcoder.aem.live",
   "sitemap": "stardust/rollout/site/sitemap.xml",
   "robots": "stardust/rollout/site/robots.txt",
   "fragments": [],
   "servedSitemap": {
-    "origin": "https://main--1370701b--aemcoder.aem.live",
-    "url": "https://main--1370701b--aemcoder.aem.live/sitemap.xml",
-    "checkedAt": "2026-10-14T10:45:04.508Z",
-    "match": true,
+    "origin": "https://main--d9ddbc54--aemcoder.aem.live",
+    "url": "https://main--d9ddbc54--aemcoder.aem.live/sitemap.xml",
+    "checkedAt": "2026-10-10T12:48:14.429Z",
+    "match": false,
     "error": null,
-    "count": 1,
-    "assembled": 1,
+    "count": 99,
+    "assembled": 101,
     "extra": [],
-    "missing": []
+    "missing": [
+      "/de/meta/suche",
+      "/en/general/search"
+    ]
   }
 }

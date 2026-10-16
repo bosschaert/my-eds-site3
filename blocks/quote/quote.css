@@ -1,0 +1,123 @@
+/* quote — source c-quote (site.css .c-quote*, rem = 17.5px) + its has-columns row */
+.quote {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.quote .quote-column {
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 16px;
+}
+
+.quote.has-columns .quote-column { margin-bottom: 48px; }
+
+@media (width >= 767px) {
+  .quote.has-columns .quote-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.quote .quote-column.is-image > p {
+  margin: 0;
+}
+
+.quote .quote-column.is-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.quote .quote-box {
+  --quote-text-color: var(--c-orange);
+  --quote-text-font-size: 1.3714rem;
+  --quote-author-font-size: 1.1429rem;
+  --quote-icon-top-spacing: 4.1143rem;
+  --quote-icon-font-size: 20.5714rem;
+  --quote-image-max-width: 13.7143rem;
+
+  width: 100%;
+  margin-top: -.6857rem;
+}
+
+.quote.dark .quote-box { --quote-text-color: #000; }
+.quote.yellow .quote-box { --quote-text-color: #fff; }
+
+@media (width >= 767px) {
+  .quote.static .quote-box {
+    --quote-text-font-size: 1.1429rem;
+    --quote-author-font-size: .9143rem;
+    --quote-icon-top-spacing: 3.4286rem;
+    --quote-icon-font-size: 17.1429rem;
+    --quote-image-max-width: 10.2857rem;
+  }
+}
+
+.quote .quote-image-container {
+  max-width: var(--quote-image-max-width);
+  margin: .6857rem auto 0;
+}
+
+.quote .quote-box .quote-image-container p { margin: 0; }
+
+.quote .quote-box .quote-image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.quote .quote-text-container {
+  position: relative;
+  padding-top: var(--quote-icon-top-spacing);
+}
+
+.quote .quote-text-container::before {
+  content: "\201C";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--font-sans, inherit);
+  font-weight: 300;
+  font-size: var(--quote-icon-font-size);
+  line-height: .72;
+  transform: translateX(-10%);
+  color: var(--c-orange);
+  pointer-events: none;
+}
+
+.quote.yellow .quote-text-container::before { color: #fff; }
+
+.quote.alt-icon .quote-text-container::before {
+  content: "\201E";
+  top: auto;
+  bottom: 100%;
+  line-height: .52;
+}
+
+.quote .quote-text {
+  color: var(--quote-text-color);
+  font-size: var(--quote-text-font-size);
+  line-height: 1.4;
+}
+
+.quote .quote-text-container .quote-text p { margin: 0; }
+
+.quote .quote-author {
+  margin-top: 1.3714rem;
+  font-size: var(--quote-author-font-size);
+  line-height: 1.4;
+  color: #000;
+}
+
+.quote .quote-text-container .quote-author p { margin: 0; }
+.quote .quote-author strong { font-weight: 700; }
+
+/* the quote row under a section header row (o-container__header margin-bottom 2.7429rem) */
+main .section > .default-content-wrapper + .quote-wrapper { margin-top: 2.7429rem; }

@@ -1,0 +1,2484 @@
+{
+ "archetype": "https://www.continental.com/en/investors/",
+ "width": 1440,
+ "tolerance": 2,
+ "probes": {
+  "hero": ".c-heroteaser-fixed",
+  "herox": ".c-heroteaser",
+  "teaser": ".c-teaser",
+  "factbox": ".c-fact-box",
+  "news": ".c-news-sidebar",
+  "list": ".c-content-list",
+  "slider": ".c-content-slider",
+  "breadcrumb": ".c-breadcrumb"
+ },
+ "batches": 3,
+ "archetypeRaw": {
+  "sections": [],
+  "probes": {
+   "hero": {
+    "sel": ".c-heroteaser-fixed",
+    "count": 1,
+    "first": {
+     "rect": {
+      "w": 1440,
+      "h": 443
+     },
+     "backgroundLayers": [],
+     "backgroundColor": "rgba(0, 0, 0, 0)",
+     "color": "rgb(0, 0, 0)",
+     "padding": "0px 0px 0px 0px",
+     "font": "continentalstagsansw 17.5px/24.5px 300",
+     "borderRadius": "0px",
+     "heading": null,
+     "image": {
+      "w": 1440,
+      "h": 413
+     },
+     "listStyle": "disc",
+     "before": null
+    },
+    "clusters": 1,
+    "text": "Capital Market Update Continental introduces new reporting s"
+   },
+   "herox": {
+    "sel": ".c-heroteaser",
+    "count": 0
+   },
+   "teaser": {
+    "sel": ".c-teaser",
+    "count": 23,
+    "first": {
+     "rect": {
+      "w": 387,
+      "h": 690
+     },
+     "backgroundLayers": [],
+     "backgroundColor": "rgba(0, 0, 0, 0)",
+     "color": "rgb(0, 0, 0)",
+     "padding": "0px 0px 0px 0px",
+     "font": "continentalstagsansw 17.5px/24.5px 300",
+     "borderRadius": "0px",
+     "heading": null,
+     "image": {
+      "w": 387,
+      "h": 217
+     },
+     "listStyle": "disc",
+     "before": null
+    },
+    "clusters": 5,
+    "text": "Porsche Chooses Continental Tires September 29, 2026 Contine"
+   },
+   "factbox": {
+    "sel": ".c-fact-box",
+    "count": 6,
+    "first": {
+     "rect": {
+      "w": 397,
+      "h": 257
+     },
+     "backgroundLayers": [],
+     "backgroundColor": "rgb(240, 240, 240)",
+     "color": "rgb(0, 0, 0)",
+     "padding": "24px 24px 24px 24px",
+     "font": "continentalstagsansw 20px/28px 300",
+     "borderRadius": "0px",
+     "heading": null,
+     "image": null,
+     "listStyle": "disc",
+     "before": null
+    },
+    "clusters": 1,
+    "text": "SalesQ2 2026€2.8bn"
+   },
+   "news": {
+    "sel": ".c-news-sidebar",
+    "count": 1,
+    "first": {
+     "rect": {
+      "w": 1224,
+      "h": 818
+     },
+     "backgroundLayers": [],
+     "backgroundColor": "rgba(0, 0, 0, 0)",
+     "color": "rgb(0, 0, 0)",
+     "padding": "0px 0px 0px 0px",
+     "font": "continentalstagsansw 17.5px/24.5px 300",
+     "borderRadius": "0px",
+     "heading": "h3 continentalstagsansw 35px/42px 300 rgb(0, 0, 0)",
+     "image": {
+      "w": 387,
+      "h": 217
+     },
+     "listStyle": "disc",
+     "before": null
+    },
+    "clusters": 1,
+    "text": "Porsche Chooses Continental Tires September 29, 2026 Contine"
+   },
+   "list": {
+    "sel": ".c-content-list",
+    "count": 1,
+    "first": {
+     "rect": {
+      "w": 397,
+      "h": 465
+     },
+     "backgroundLayers": [],
+     "backgroundColor": "rgb(240, 240, 240)",
+     "color": "rgb(0, 0, 0)",
+     "padding": "32px 32px 32px 32px",
+     "font": "continentalstagsansw 17.5px/24.5px 300",
+     "borderRadius": "0px",
+     "heading": null,
+     "image": null,
+     "listStyle": "disc",
+     "before": null
+    },
+    "clusters": 1,
+    "text": "Upcoming Events 4 Nov Quarterly Statement as at September 30"
+   },
+   "slider": {
+    "sel": ".c-content-slider",
+    "count": 0
+   },
+   "breadcrumb": {
+    "sel": ".c-breadcrumb",
+    "count": 0
+   }
+  }
+ },
+ "siblings": [
+  {
+   "url": "https://www.continental.com/cs-cz/",
+   "findings": [
+    {
+     "kind": "COUNT",
+     "probe": "teaser",
+     "msg": "23 → 6 matches"
+    },
+    {
+     "kind": "CLUSTERS",
+     "probe": "teaser",
+     "msg": "5 → 2 distinct style families among matches (a second visual family = a variant class)"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "teaser",
+     "msg": "rect{w 387 → 397, h 690 → 386}; image{w 387 → 397, h 217 → 223}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "factbox",
+     "msg": "\".c-fact-box\" matches 6 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "news",
+     "msg": "\".c-news-sidebar\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 443
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Kariéra v Continentalu Vaše cesta do společnosti Continental"
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 0
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 6,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 386
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 397,
+        "h": 223
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 2,
+      "text": "Práce ve společnosti Continental Společnost Continental zamě"
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 0
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 0
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 0
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/de/investoren/",
+   "findings": [
+    {
+     "kind": "PROBE",
+     "probe": "teaser",
+     "msg": "rect{h 690 → 713}"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "news",
+     "msg": "rect{h 818 → 841}"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "list",
+     "msg": "rect{h 465 → 485}"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 443
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Capital Market Update Continental führt neue Reporting-Struk"
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 0
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 23,
+      "first": {
+       "rect": {
+        "w": 387,
+        "h": 713
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 387,
+        "h": 217
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 5,
+      "text": "Porsche setzt auf Reifen von Continental 29. September 2026 "
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 6,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 257
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgb(240, 240, 240)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "24px 24px 24px 24px",
+       "font": "continentalstagsansw 20px/28px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": null,
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "UmsatzQ2 20262,4Mrd€"
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1224,
+        "h": 841
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": "h3 continentalstagsansw 35px/42px 300 rgb(0, 0, 0)",
+       "image": {
+        "w": 387,
+        "h": 217
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Porsche setzt auf Reifen von Continental 29. September 2026 "
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 485
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgb(240, 240, 240)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "32px 32px 32px 32px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": null,
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Nächste Termine 4 Nov. Quartalsmitteilung zum 30. September "
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 0
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/de/karriere/",
+   "findings": [
+    {
+     "kind": "MISSING",
+     "probe": "hero",
+     "msg": "\".c-heroteaser-fixed\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "EXTRA",
+     "probe": "herox",
+     "msg": "\".c-heroteaser\" matches 0 on the archetype, 1 on the sibling"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "teaser",
+     "msg": "23 → 10 matches"
+    },
+    {
+     "kind": "CLUSTERS",
+     "probe": "teaser",
+     "msg": "5 → 3 distinct style families among matches (a second visual family = a variant class)"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "teaser",
+     "msg": "rect{w 387 → 397, h 690 → 453}; image{w 387 → 397, h 217 → 223}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "factbox",
+     "msg": "\".c-fact-box\" matches 6 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "news",
+     "msg": "rect{h 818 → 627}; heading h3 continentalstagsansw 35px/42px 300 rgb(0, 0, 0) → null"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "EXTRA",
+     "probe": "slider",
+     "msg": "\".c-content-slider\" matches 0 on the archetype, 1 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 0
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 413
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": ""
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 10,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 453
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 397,
+        "h": 223
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 3,
+      "text": "Berufserfahrene Wünschen Sie sich eine berufliche Veränderun"
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 0
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1224,
+        "h": 627
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 387,
+        "h": 217
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Mein Weg bei Continental: Unendliche Möglichkeiten in einem "
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1256,
+        "h": 416
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 290,
+        "h": 163
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Materialentwicklung Erschaffen Sie neuartige Stoffe und Mate"
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/de/nachhaltigkeit/",
+   "findings": [
+    {
+     "kind": "PROBE",
+     "probe": "hero",
+     "msg": "rect{h 443 → 413}"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "teaser",
+     "msg": "23 → 17 matches"
+    },
+    {
+     "kind": "CLUSTERS",
+     "probe": "teaser",
+     "msg": "5 → 2 distinct style families among matches (a second visual family = a variant class)"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "teaser",
+     "msg": "rect{w 387 → 397, h 690 → 636}; image{w 387 → 397, h 217 → 223}"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "factbox",
+     "msg": "6 → 3 matches"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "factbox",
+     "msg": "rect{h 257 → 349}"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "news",
+     "msg": "rect{w 1224 → 1256, h 818 → 1291}; heading h3 continentalstagsansw 35px/42px 300 rgb(0, 0, 0) → null; image{w 387 → 397, h 217 → 223}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 413
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": ""
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 0
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 17,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 636
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 397,
+        "h": 223
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 2,
+      "text": "Continental entwickelt für EU-Projekt Konzeptreifen aus mehr"
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 3,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 349
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgb(240, 240, 240)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "24px 24px 24px 24px",
+       "font": "continentalstagsansw 20px/28px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": null,
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Treibhausgasintensität:0,16 t CO₂e pro TonneTreibhausgasinte"
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1256,
+        "h": 1291
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 397,
+        "h": 223
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Continental entwickelt für EU-Projekt Konzeptreifen aus mehr"
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 0
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/de/presse/",
+   "findings": [
+    {
+     "kind": "COUNT",
+     "probe": "teaser",
+     "msg": "23 → 14 matches"
+    },
+    {
+     "kind": "CLUSTERS",
+     "probe": "teaser",
+     "msg": "5 → 3 distinct style families among matches (a second visual family = a variant class)"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "teaser",
+     "msg": "rect{w 387 → 290, h 690 → 457}; image{w 387 → 290, h 217 → 163}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "factbox",
+     "msg": "\".c-fact-box\" matches 6 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "news",
+     "msg": "\".c-news-sidebar\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 443
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Continental baut Portfolio mit großen und leistungsstarken R"
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 0
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 14,
+      "first": {
+       "rect": {
+        "w": 290,
+        "h": 457
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 290,
+        "h": 163
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 3,
+      "text": "Continental WinterContact TS 870 gewinnt ADAC Winterreifente"
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 0
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 0
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 0
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/de/unternehmen/",
+   "findings": [
+    {
+     "kind": "PROBE",
+     "probe": "hero",
+     "msg": "rect{h 443 → 413}"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "teaser",
+     "msg": "23 → 5 matches"
+    },
+    {
+     "kind": "CLUSTERS",
+     "probe": "teaser",
+     "msg": "5 → 2 distinct style families among matches (a second visual family = a variant class)"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "teaser",
+     "msg": "rect{w 387 → 397, h 690 → 386}; image{w 387 → 397, h 217 → 223}"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "factbox",
+     "msg": "6 → 3 matches"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "factbox",
+     "msg": "rect{h 257 → 287}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "news",
+     "msg": "\".c-news-sidebar\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 413
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Geschäftsbericht 2025: Neue Wege gehen. Im Geschäftsbericht "
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 0
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 5,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 386
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 397,
+        "h": 223
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 2,
+      "text": "Vorstand Die Mitglieder des Vorstands und ihre Verantwortlic"
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 3,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 287
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgb(240, 240, 240)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "24px 24px 24px 24px",
+       "font": "continentalstagsansw 20px/28px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": null,
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Umsatz in 2025:15,2MrdEine solide Basis für die Zukunft"
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 0
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 0
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/en/career/",
+   "findings": [
+    {
+     "kind": "MISSING",
+     "probe": "hero",
+     "msg": "\".c-heroteaser-fixed\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "EXTRA",
+     "probe": "herox",
+     "msg": "\".c-heroteaser\" matches 0 on the archetype, 1 on the sibling"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "teaser",
+     "msg": "23 → 10 matches"
+    },
+    {
+     "kind": "CLUSTERS",
+     "probe": "teaser",
+     "msg": "5 → 3 distinct style families among matches (a second visual family = a variant class)"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "teaser",
+     "msg": "rect{w 387 → 397, h 690 → 430}; image{w 387 → 397, h 217 → 223}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "factbox",
+     "msg": "\".c-fact-box\" matches 6 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "news",
+     "msg": "rect{h 818 → 582}; heading h3 continentalstagsansw 35px/42px 300 rgb(0, 0, 0) → null"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "EXTRA",
+     "probe": "slider",
+     "msg": "\".c-content-slider\" matches 0 on the archetype, 1 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 0
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 413
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": ""
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 10,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 430
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 397,
+        "h": 223
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 3,
+      "text": "Experienced Professionals Would you like to change your care"
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 0
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1224,
+        "h": 582
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 387,
+        "h": 217
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Meet the Team Behind the Rayong Pride Project August 11, 202"
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1256,
+        "h": 400
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 290,
+        "h": 163
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Materials Development Create innovative fabrics and material"
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/en/company/",
+   "findings": [
+    {
+     "kind": "PROBE",
+     "probe": "hero",
+     "msg": "rect{h 443 → 413}"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "teaser",
+     "msg": "23 → 5 matches"
+    },
+    {
+     "kind": "CLUSTERS",
+     "probe": "teaser",
+     "msg": "5 → 2 distinct style families among matches (a second visual family = a variant class)"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "teaser",
+     "msg": "rect{w 387 → 397, h 690 → 363}; image{w 387 → 397, h 217 → 223}"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "factbox",
+     "msg": "6 → 3 matches"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "factbox",
+     "msg": "rect{h 257 → 280}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "news",
+     "msg": "\".c-news-sidebar\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 413
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "2025 Annual Report: Charting New Paths. The 2025 annual repo"
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 0
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 5,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 363
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 397,
+        "h": 223
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 2,
+      "text": "Executive Board Information about the members of the Executi"
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 3,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 280
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgb(240, 240, 240)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "24px 24px 24px 24px",
+       "font": "continentalstagsansw 20px/28px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": null,
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "In 2025 sales of:15.1billionSolid foundation for the future."
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 0
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 0
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/en/press/",
+   "findings": [
+    {
+     "kind": "COUNT",
+     "probe": "teaser",
+     "msg": "23 → 14 matches"
+    },
+    {
+     "kind": "CLUSTERS",
+     "probe": "teaser",
+     "msg": "5 → 3 distinct style families among matches (a second visual family = a variant class)"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "teaser",
+     "msg": "rect{w 387 → 290, h 690 → 742}; image{w 387 → 290, h 217 → 163}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "factbox",
+     "msg": "\".c-fact-box\" matches 6 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "news",
+     "msg": "\".c-news-sidebar\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 443
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Continental Expands Portfolio of Large and High-Performance "
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 0
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 14,
+      "first": {
+       "rect": {
+        "w": 290,
+        "h": 742
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 290,
+        "h": 163
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 3,
+      "text": "Continental Expands Portfolio of Large and High-Performance "
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 0
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 0
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 0
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/en-pt/",
+   "findings": [
+    {
+     "kind": "MISSING",
+     "probe": "teaser",
+     "msg": "\".c-teaser\" matches 23 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "factbox",
+     "msg": "6 → 3 matches"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "factbox",
+     "msg": "rect{h 257 → 303}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "news",
+     "msg": "\".c-news-sidebar\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "EXTRA",
+     "probe": "slider",
+     "msg": "\".c-content-slider\" matches 0 on the archetype, 2 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 443
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Continental in Portugal Continental in Portugal"
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 0
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 0
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 3,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 303
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgb(240, 240, 240)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "24px 24px 24px 24px",
+       "font": "continentalstagsansw 20px/28px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": null,
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Presence in Portugal>32years operating in Portugal"
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 0
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 2,
+      "first": {
+       "rect": {
+        "w": 1256,
+        "h": 932
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": "h3 continentalstagsansw 35px/42px 300 rgb(0, 0, 0)",
+       "image": {
+        "w": 290,
+        "h": 164
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 2,
+      "text": "Continental Mabor, Lousado (CMIP) Share:FacebookXLinkedInRed"
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/en/sustainability/",
+   "findings": [
+    {
+     "kind": "PROBE",
+     "probe": "hero",
+     "msg": "rect{h 443 → 413}"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "teaser",
+     "msg": "23 → 17 matches"
+    },
+    {
+     "kind": "CLUSTERS",
+     "probe": "teaser",
+     "msg": "5 → 2 distinct style families among matches (a second visual family = a variant class)"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "teaser",
+     "msg": "rect{w 387 → 397, h 690 → 607}; image{w 387 → 397, h 217 → 223}"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "factbox",
+     "msg": "6 → 3 matches"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "factbox",
+     "msg": "rect{h 257 → 349}"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "news",
+     "msg": "rect{w 1224 → 1256, h 818 → 1234}; heading h3 continentalstagsansw 35px/42px 300 rgb(0, 0, 0) → null; image{w 387 → 397, h 217 → 223}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 413
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": ""
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 0
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 17,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 607
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 397,
+        "h": 223
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 2,
+      "text": "Continental Develops Concept Tire Containing Over 40 Percent"
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 3,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 349
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgb(240, 240, 240)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "24px 24px 24px 24px",
+       "font": "continentalstagsansw 20px/28px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": null,
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Greenhouse gas intensity:0.17t CO₂e per tonGHG intensity rel"
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1256,
+        "h": 1234
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 397,
+        "h": 223
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Continental Develops Concept Tire Containing Over 40 Percent"
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 0
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/en-us/career/",
+   "findings": [
+    {
+     "kind": "COUNT",
+     "probe": "teaser",
+     "msg": "23 → 8 matches"
+    },
+    {
+     "kind": "CLUSTERS",
+     "probe": "teaser",
+     "msg": "5 → 2 distinct style families among matches (a second visual family = a variant class)"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "teaser",
+     "msg": "rect{w 387 → 827, h 690 → 465}; image{w 387 → 827, h 217 → 465}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "factbox",
+     "msg": "\".c-fact-box\" matches 6 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "news",
+     "msg": "\".c-news-sidebar\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 443
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Find endless opportunities in one career choice View Our Job"
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 0
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 8,
+      "first": {
+       "rect": {
+        "w": 827,
+        "h": 465
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 827,
+        "h": 465
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 2,
+      "text": "Teams Rewriting Mobility Our people are driven by their pass"
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 0
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 0
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 0
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/es-mx/carrera/",
+   "findings": [
+    {
+     "kind": "PROBE",
+     "probe": "hero",
+     "msg": "rect{h 443 → 413}"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "teaser",
+     "msg": "23 → 6 matches"
+    },
+    {
+     "kind": "CLUSTERS",
+     "probe": "teaser",
+     "msg": "5 → 2 distinct style families among matches (a second visual family = a variant class)"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "teaser",
+     "msg": "rect{w 387 → 827, h 690 → 465}; image{w 387 → 827, h 217 → 465}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "factbox",
+     "msg": "\".c-fact-box\" matches 6 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "news",
+     "msg": "\".c-news-sidebar\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 413
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Trabaja@Continental"
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 0
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 6,
+      "first": {
+       "rect": {
+        "w": 827,
+        "h": 465
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 827,
+        "h": 465
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 2,
+      "text": "Puestos vacantes actuales Más información Permite que tus id"
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 0
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 0
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 0
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/fr-fr/carriere/",
+   "findings": [
+    {
+     "kind": "PROBE",
+     "probe": "hero",
+     "msg": "rect{h 443 → 413}"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "teaser",
+     "msg": "23 → 7 matches"
+    },
+    {
+     "kind": "CLUSTERS",
+     "probe": "teaser",
+     "msg": "5 → 1 distinct style families among matches (a second visual family = a variant class)"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "teaser",
+     "msg": "rect{w 387 → 397, h 690 → 341}; image{w 387 → 397, h 217 → 223}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "factbox",
+     "msg": "\".c-fact-box\" matches 6 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "news",
+     "msg": "\".c-news-sidebar\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 413
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Travailler chez Continental Prêt à contribuer à la mobilité "
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 0
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 7,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 341
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 397,
+        "h": 223
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Prêt à contribuer à la mobilité du futur ? Découvrez les off"
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 0
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 0
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 0
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/pt-pt/",
+   "findings": [
+    {
+     "kind": "MISSING",
+     "probe": "teaser",
+     "msg": "\".c-teaser\" matches 23 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "factbox",
+     "msg": "6 → 3 matches"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "news",
+     "msg": "\".c-news-sidebar\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "EXTRA",
+     "probe": "slider",
+     "msg": "\".c-content-slider\" matches 0 on the archetype, 2 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 443
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Continental em Portugal Continental em Portugal"
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 0
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 0
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 3,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 258
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgb(240, 240, 240)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "24px 24px 24px 24px",
+       "font": "continentalstagsansw 20px/28px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": null,
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Presença em Portugal>34anos a operar em Portugal"
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 0
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 2,
+      "first": {
+       "rect": {
+        "w": 1256,
+        "h": 1016
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": "h3 continentalstagsansw 35px/42px 300 rgb(0, 0, 0)",
+       "image": {
+        "w": 290,
+        "h": 164
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 2,
+      "text": "Continental Mabor, Lousado (CMIP) Share:FacebookXLinkedInRed"
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/ro-ro/cariera/",
+   "findings": [
+    {
+     "kind": "PROBE",
+     "probe": "hero",
+     "msg": "rect{h 443 → 413}"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "teaser",
+     "msg": "23 → 13 matches"
+    },
+    {
+     "kind": "CLUSTERS",
+     "probe": "teaser",
+     "msg": "5 → 3 distinct style families among matches (a second visual family = a variant class)"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "teaser",
+     "msg": "rect{w 387 → 827, h 690 → 465}; image{w 387 → 827, h 217 → 465}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "factbox",
+     "msg": "\".c-fact-box\" matches 6 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "news",
+     "msg": "\".c-news-sidebar\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 413
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": ""
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 0
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 13,
+      "first": {
+       "rect": {
+        "w": 827,
+        "h": 465
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 827,
+        "h": 465
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 3,
+      "text": "Posturile vacante actuale Sute de posturi disponibile la Con"
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 0
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 0
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 0
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  },
+  {
+   "url": "https://www.continental.com/sk-sk/",
+   "findings": [
+    {
+     "kind": "PROBE",
+     "probe": "hero",
+     "msg": "rect{h 443 → 413}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "teaser",
+     "msg": "\".c-teaser\" matches 23 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "COUNT",
+     "probe": "factbox",
+     "msg": "6 → 3 matches"
+    },
+    {
+     "kind": "PROBE",
+     "probe": "factbox",
+     "msg": "rect{h 257 → 287}"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "news",
+     "msg": "\".c-news-sidebar\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "MISSING",
+     "probe": "list",
+     "msg": "\".c-content-list\" matches 1 on the archetype, 0 on the sibling"
+    },
+    {
+     "kind": "EXTRA",
+     "probe": "slider",
+     "msg": "\".c-content-slider\" matches 0 on the archetype, 1 on the sibling"
+    }
+   ],
+   "raw": {
+    "sections": [],
+    "probes": {
+     "hero": {
+      "sel": ".c-heroteaser-fixed",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1440,
+        "h": 413
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": {
+        "w": 1440,
+        "h": 413
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": ""
+     },
+     "herox": {
+      "sel": ".c-heroteaser",
+      "count": 0
+     },
+     "teaser": {
+      "sel": ".c-teaser",
+      "count": 0
+     },
+     "factbox": {
+      "sel": ".c-fact-box",
+      "count": 3,
+      "first": {
+       "rect": {
+        "w": 397,
+        "h": 287
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgb(240, 240, 240)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "24px 24px 24px 24px",
+       "font": "continentalstagsansw 20px/28px 300",
+       "borderRadius": "0px",
+       "heading": null,
+       "image": null,
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Počet zamestnancov+5 078"
+     },
+     "news": {
+      "sel": ".c-news-sidebar",
+      "count": 0
+     },
+     "list": {
+      "sel": ".c-content-list",
+      "count": 0
+     },
+     "slider": {
+      "sel": ".c-content-slider",
+      "count": 1,
+      "first": {
+       "rect": {
+        "w": 1256,
+        "h": 412
+       },
+       "backgroundLayers": [],
+       "backgroundColor": "rgba(0, 0, 0, 0)",
+       "color": "rgb(0, 0, 0)",
+       "padding": "0px 0px 0px 0px",
+       "font": "continentalstagsansw 17.5px/24.5px 300",
+       "borderRadius": "0px",
+       "heading": "h4 continentalstagsansw 26.25px/28px 500 rgb(0, 0, 0)",
+       "image": {
+        "w": 290,
+        "h": 193
+       },
+       "listStyle": "disc",
+       "before": null
+      },
+      "clusters": 1,
+      "text": "Pracovné voľno nad rámec zákona Spoločnosť poskytujezamestna"
+     },
+     "breadcrumb": {
+      "sel": ".c-breadcrumb",
+      "count": 0
+     }
+    }
+   }
+  }
+ ],
+ "summary": {
+  "siblings": 17,
+  "varying": 17,
+  "probesVarying": [
+   "teaser",
+   "factbox",
+   "news",
+   "list",
+   "hero",
+   "herox",
+   "slider"
+  ]
+ }
+}

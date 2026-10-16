@@ -1,0 +1,91 @@
+/* contact-list — source c-contact (site.css .c-contact*; row mb-6, image col-md-6 col-lg-4) */
+.contact-list {
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+
+.contact-list .contact-list-person {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px 64px;
+}
+
+.contact-list.has-bg .contact-list-person {
+  padding: 1.8286rem 1.8286rem .9143rem;
+  background: var(--c-gray-light);
+}
+
+.contact-list .contact-list-media,
+.contact-list .contact-list-text {
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 16px;
+}
+
+.contact-list .contact-list-media :is(p, picture) {
+  display: block;
+  margin: 0 0 24px;
+}
+
+.contact-list .contact-list-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.contact-list .contact-list-text p {
+  margin: 0 0 1rem;
+}
+
+.contact-list .contact-list-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list .contact-list-item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.contact-list .contact-list-label {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list .contact-list-email {
+  font-weight: 500;
+  color: #000;
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+}
+
+.contact-list .contact-list-email:hover { color: var(--c-orange-hover); }
+
+@media (width >= 1023px) {
+  .contact-list .contact-list-media,
+  .contact-list .contact-list-text {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (width >= 1279px) {
+  .contact-list .contact-list-media {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .contact-list .contact-list-text {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+}
+
+/* the contact CEs follow a text CE: source CE rhythm (o-page__ce + o-page__ce 3.6571rem) */
+main .section > .default-content-wrapper:has(> p:last-child) + .contact-list-wrapper {
+  margin-top: 3.6571rem;
+}

@@ -1,7 +1,7 @@
-# Learnings — skerriesmills.ie replica (2026-10-14)
+# Learnings — continental.com replica run
 
-- chrome-compare cannot pair unnamed source controls whose kind is outside FAMILIES (here `menu`): a permanent false 🔴. Run-local fix pairs unnamed controls in order by kind — upstream candidate.
-- stitch-shot refuses the 404 shell, so the C0 shell pixel/crop gate moves to the first page unit on one-page runs.
-- gate-all selects `status: deployed` rows from state.json, a status state.mjs cannot write; a --state copy carried the deployed row.
-- Live theme wraps header/footer inside `<main>`; content-presence needs presence.json scoping to `main > div.flex-1`.
-- Compressed asset responses: grep served JS with `curl --compressed`.
+- **Gate ingest is last-writer-wins per page.** `update-coverage.mjs --gate` keeps one `delivery.gate` per page, so re-ingesting an older `all-<w>/summary.json` after `--only` runs silently reverts fixed pages, and replaying runs/ blindly is worse. Merge first: latest row per slug per width by `_provenance.writtenAt`, then pass = both widths (`stardust/.work/rollout/probes/merge-gate-tables.mjs`). Upstream candidate: a `--gate` mode that takes several tables and merges.
+- **Replica vs the single-h1 rule.** verify.mjs (render check) and optimize.mjs (P1) both demand exactly one `<h1>`; a replica keeps the source's heading structure (16 pages had 0, 2, 3 or 4 h1s on the source). Both project copies now accept source parity from the capture sidecar — upstream candidate.
+- **Numeric entities break optimize's parity.** `&#x26;` in a `<title>` was not decoded, so a shared title the source also shares read as a design-pass finding.
+- **Chrome documents are where the 404s live.** Page bodies passed `localize-links --check`, but nav/footer docs authored root-relative to the whole source site carried 607 dead targets; the E2 GET sweep has to include the chrome documents, not only pages.
+- **Block coverage rows for page-specific modules** (cs-stage, cs-article-cluster) stayed `pending` after their pages went live; record `--block <id> --status deployed` when the cluster ships.

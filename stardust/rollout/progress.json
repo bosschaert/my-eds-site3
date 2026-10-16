@@ -4,91 +4,328 @@
       "status": "done",
       "kind": "foundation",
       "templates": [
-        "landing"
+        "home",
+        "hub",
+        "content",
+        "legal",
+        "stories"
       ],
-      "pages": 0,
+      "startedAt": "2026-10-09T18:46:07.640Z",
+      "endedAt": "2026-10-09T19:16:55.860Z",
       "blocks": 2,
-      "startedAt": "2026-10-14T09:33:02Z",
-      "endedAt": "2026-10-14T10:06:49.394Z",
+      "pages": 1,
       "gates": {
-        "chrome": "chrome-compare replica 390+1440: 0 errors, 2 warn (logo link name) → stardust/chrome/header-parity.json",
-        "crop": "deferred to landing-archetype unit: shell is the 404 page, stitch-shot refuses non-200; header/footer crop-compare runs on / after its PUT"
+        "360": {
+          "shellPixel": 85.6,
+          "crop": {
+            "header": 0,
+            "footer": 0.06
+          },
+          "chrome": "quiet"
+        },
+        "1440": {
+          "shellPixel": 85.7,
+          "crop": {
+            "header": 0.41,
+            "footer": 0.18
+          },
+          "chrome": "6 tag-only header deltas (a role=button vs button, EW7)"
+        },
+        "note": "shell body pixel not a bar (default-content shell, blocks come with archetype-legal)"
       },
-      "verdict": "foundation: chrome live (nav, footer), styles+fonts+header+footer pushed 66a140c, lint clean, shell ok, header parity 0 errors"
+      "verdict": "foundation: chrome docs 20/20 live, shell live, header/footer crop 0.41%/0.18% @1440, 0.00%/0.06% @360, chrome-parity 6 tag-only deltas @1440, quiet @360; 14 files frozen"
     },
-    "landing-archetype": {
+    "archetype-legal": {
       "status": "done",
       "kind": "archetype",
       "templates": [
-        "landing"
+        "legal"
       ],
+      "startedAt": "2026-10-09T19:17:09.470Z",
+      "endedAt": "2026-10-09T19:39:03.940Z",
       "pages": 1,
-      "startedAt": "2026-10-14T10:06:58Z",
-      "endedAt": "2026-10-14T10:41:20.247Z",
-      "blocks": 7,
+      "blocks": 2,
       "gates": {
         "360": {
-          "pixel": "2.18%",
-          "dh": 19,
-          "clip": 0,
-          "missing": 0
+          "archetype": 0.15,
+          "dh": 0
         },
         "1440": {
-          "pixel": "1.79%",
-          "dh": 26,
-          "clip": 0,
-          "missing": 0
+          "archetype": 0.08,
+          "dh": 0
         },
-        "crop": "header 1.55%/0.69%, footer 1.50% @1440 / 2.18% @360 (consent tab RES-3; 0.65% without it)",
-        "chrome": "chrome-parity 32 deltas (icon filenames, lazy partner logos, funding-line padding — same classes as C0)"
+        "crop": "header 0.41% / footer 0.15%",
+        "chrome": "quiet (foundation residual: 6 tag-only header deltas)"
       },
-      "verdict": "landing-archetype: pages 1/1 live, blocks 7, gate 1440 1.79% Δh 26 / 360 2.18% Δh 19 (clip 0, missing 0), crop header 1.55%/0.69% footer 1.50%/2.18%, chrome-parity 32 deltas, requests 0, sha 6939fd7"
+      "verdict": "archetype-legal: en-general-legal-notice live, blocks 2 (hero-teaser, text-media), gate 1440 0.08% Δh 0 / 360 0.15% Δh 0, clip 0, content 0, crop h 0.41%/f 0.15%, rounds 1, requests 1"
     },
-    "landing": {
+    "cluster-legal": {
       "status": "done",
       "kind": "cluster",
       "templates": [
-        "landing"
+        "legal"
       ],
-      "pages": 0,
-      "startedAt": "2026-10-14T10:41:20.247Z",
-      "endedAt": "2026-10-14T10:41:20.247Z",
-      "blocks": 0,
-      "verdict": "landing: pages 0/0 (no siblings in the bounded single-page scope), blocks 0, requests 0"
+      "startedAt": "2026-10-09T19:44:50.842Z",
+      "endedAt": "2026-10-09T20:43:56.000Z",
+      "pages": 10,
+      "blocks": 4,
+      "gates": {
+        "360": {
+          "worst": 9.67,
+          "pass": "10/10"
+        },
+        "1440": {
+          "worst": 7.48,
+          "pass": "10/10"
+        },
+        "dhMaxPct": 2
+      },
+      "verdict": "cluster-legal: pages 10/10 live, blocks 4 (new: table, country-selector), gate 1440 pass 10/10 (worst 7.48%) / 360 pass 10/10 (worst 9.67%), failing none, requests 2"
+    },
+    "archetype-content": {
+      "status": "done",
+      "kind": "archetype",
+      "templates": [
+        "content"
+      ],
+      "startedAt": "2026-10-09T19:44:50.842Z",
+      "endedAt": "2026-10-09T20:23:35.652Z",
+      "pages": 1,
+      "blocks": 5,
+      "gates": {
+        "360": {
+          "archetype": 18.6,
+          "dh": -25,
+          "override": "3.32% Δh 0 headed both sides (instrument asymmetry: origin headed, EDS headless; stardust/replica/gates/all-360/overrides.json)"
+        },
+        "1440": {
+          "archetype": 2.6,
+          "dh": 0
+        },
+        "crop": "header 1.24% / footer 0.83%",
+        "chrome": "quiet"
+      },
+      "verdict": "archetype-content: en-career-working-at-continental live, blocks 5 (breadcrumb, content-slider, figure, page-options, teaser), gate 1440 2.6% Δh 0 / 360 18.6% Δh -25 (override 3.32% Δh 0 headed both sides), clip 0, content 0, crop h 1.24%/f 0.83%, rounds 2"
+    },
+    "cluster-content": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "content"
+      ],
+      "startedAt": "2026-10-09T21:44:46.691Z",
+      "endedAt": "2026-10-10T04:23:01.242Z",
+      "pages": 64,
+      "gates": {
+        "360": "pass 62/64 (worst 32.24%)",
+        "1440": "pass 63/64 (worst 21.81%)"
+      },
+      "failing": [
+        "de-presse-studien-publikationen@1440,360",
+        "de-presse-mediathek@360"
+      ],
+      "verdict": "cluster-content: pages 64/64 live, blocks 23 (new: accordion, search, webform, contact-list, sidebar, quote, hotspots, media-columns, embed), gate 1440 pass 63/64 (worst 21.81%) / 360 pass 62/64 (worst 32.24%), failing de-presse-studien-publikationen (both, 3 rounds: card wrap drift), de-presse-mediathek (360, hero slide height), requests 2"
+    },
+    "archetype-hub": {
+      "status": "done",
+      "kind": "archetype",
+      "templates": [
+        "hub"
+      ],
+      "startedAt": "2026-10-09T20:26:44.000Z",
+      "endedAt": "2026-10-09T21:05:07.000Z",
+      "pages": 1,
+      "blocks": 5,
+      "gates": {
+        "360": {
+          "archetype": 20.92,
+          "dh": 49,
+          "override": "1.73% Δh 0 headed both sides (stardust/replica/gates/all-360/overrides.json)"
+        },
+        "1440": {
+          "archetype": 9.46,
+          "dh": -24,
+          "note": "hero slider lands on different slides; earlier run 10.14%"
+        },
+        "crop": "header 0.25% / footer 0.76%",
+        "chrome": "11 tag-only deltas"
+      },
+      "verdict": "archetype-hub: en-investors live, blocks 5 (hero-stage-slider, tabs, news-sidebar, fact-box, content-list), gate 1440 9.46% Δh -24 / 360 20.92% Δh +49 (override 1.73% Δh 0 headed both sides), clip 0, content 0, crop h 0.25%/f 0.76%, rounds 2, requests 1"
+    },
+    "cluster-hub": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "hub"
+      ],
+      "startedAt": "2026-10-10T04:24:34.511Z",
+      "pages": 17,
+      "endedAt": "2026-10-10T07:28:12.147Z",
+      "blocks": 22,
+      "gates": {
+        "360": "pass 12/17 (worst raw 27.13% en-career override, headed 6.68%)",
+        "1440": "pass 17/17 (worst raw 13.13% cs-cz override; worst outright 9.93%)",
+        "crop": "fr-fr-carriere 1440 0.71/1.21%, ro-ro-cariera 360 0/1.14%"
+      },
+      "failing": [
+        "en-pt",
+        "pt-pt",
+        "de-unternehmen",
+        "sk-sk",
+        "en-company"
+      ],
+      "followUp": "localize-links rewrote 45 content files of other clusters (commit 3b2641b) not yet redeployed incl. en-pt/pt-pt nav docs — redeploy at C-final",
+      "verdict": "cluster-hub: pages 17/17 live, blocks 22 (new: job-list, job-search), gate 1440 pass 17/17 (worst 13.13%) / 360 pass 12/17 (worst 27.13%), failing en-pt,pt-pt,de-unternehmen,sk-sk,en-company, requests 4"
+    },
+    "archetype-home": {
+      "status": "done",
+      "kind": "archetype",
+      "templates": [
+        "home"
+      ],
+      "startedAt": "2026-10-09T21:06:28.083Z",
+      "endedAt": "2026-10-09T21:44:23.531Z",
+      "slug": "en",
+      "blocks": 6,
+      "rounds": 4,
+      "gates": {
+        "360": {
+          "pixel": 16.09,
+          "dh": 0,
+          "override": 4.08,
+          "overrideMethod": "headed-both"
+        },
+        "1440": {
+          "pixel": 2.42,
+          "dh": 2
+        }
+      },
+      "verdict": "archetype-home: en live, blocks 6 (video-player, section-background, hero-stage-slider, teaser, text-media, fact-box), gate 1440 2.42% Δh 2 / 360 16.09% Δh 0 (override headed-both 4.08% Δh 2), clip 0, content 0, crop h 1.27%/f 0.92%, rounds 4, requests 1",
+      "finalTodo": "re-run localize-links on chrome docs (de/nav, en-pt/nav, pt-pt/nav, sk-sk/nav, de+en country-selector: EN switch links now localizable) and re-PUT"
+    },
+    "cluster-home": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "home"
+      ],
+      "startedAt": "2026-10-09T21:47:33.416Z",
+      "endedAt": "2026-10-09T22:15:39.055Z",
+      "pages": 2,
+      "blocks": 6,
+      "gates": {
+        "360": {
+          "worst": 4.99,
+          "raw": 26.83,
+          "pass": "2/2",
+          "override": "headed-both"
+        },
+        "1440": {
+          "worst": 2.47,
+          "pass": "2/2"
+        }
+      },
+      "verdict": "cluster-home: pages 2/2 live, blocks 6 (new: none; fact-box foot-end variant), gate 1440 pass 2/2 (worst 2.47%) / 360 pass 2/2 override (raw 26.83%, headed both 4.99%), failing none, requests 1",
+      "finalTodo": "localize-links also rewrites /de and / in en/nav, en+de country-selector — re-PUT at C-final"
+    },
+    "archetype-stories": {
+      "status": "done",
+      "kind": "archetype",
+      "templates": [
+        "stories"
+      ],
+      "startedAt": "2026-10-09T19:44:50.842Z",
+      "endedAt": "2026-10-09T20:28:34.000Z",
+      "pages": 1,
+      "blocks": 2,
+      "gates": {
+        "360": {
+          "archetype": 12.9,
+          "dh": 20,
+          "override": "3.49% Δh +2 headed both sides (instrument asymmetry; stardust/replica/gates/all-360/overrides.json)"
+        },
+        "1440": {
+          "archetype": 4.76,
+          "dh": -28
+        }
+      },
+      "verdict": "archetype-stories: en-stories live, blocks 2 (cs-stage, cs-article-cluster), gate 1440 4.76% Δh −28 / 360 12.9% Δh +20 (override 3.49% Δh +2 headed both sides), clip 0, content 0, rounds 1440 3 / 360 2, requests 0"
+    },
+    "cluster-stories": {
+      "status": "done",
+      "kind": "cluster",
+      "templates": [
+        "stories"
+      ],
+      "startedAt": "2026-10-09T21:06:43.396Z",
+      "endedAt": "2026-10-09T21:23:10.070Z",
+      "pages": 1,
+      "blocks": 2,
+      "gates": {
+        "360": {
+          "worst": 4.29,
+          "raw": 31.87,
+          "pass": "1/1",
+          "override": "headed-both"
+        },
+        "1440": {
+          "worst": 0.24,
+          "raw": 10.35,
+          "pass": "1/1",
+          "override": "headed-both"
+        }
+      },
+      "verdict": "cluster-stories: pages 1/1 live, blocks 2 (new: none), gate 1440 pass 1/1 (worst 0.24% override; raw 10.35%) / 360 pass 1/1 (worst 4.29% override; raw 31.87%), failing none, requests 1"
     },
     "gate-all": {
       "status": "done",
       "kind": "final",
-      "templates": [
-        "landing"
-      ],
-      "pages": 1,
-      "startedAt": "2026-10-14T10:41:31.064Z",
-      "endedAt": "2026-10-14T10:44:36.764Z",
+      "templates": [],
+      "startedAt": "2026-10-10T08:27:00Z",
+      "endedAt": "2026-10-10T11:05:21.595Z",
+      "pages": 99,
       "gates": {
         "360": {
-          "pass": "1/1",
-          "pixel": "2.18%",
-          "dh": 19
+          "pass": 91,
+          "fail": 8,
+          "failing": [
+            "de-presse-mediathek",
+            "de-presse-studien-publikationen",
+            "de-unternehmen",
+            "en-company",
+            "en-investors-events",
+            "en-pt",
+            "pt-pt",
+            "sk-sk"
+          ]
         },
         "1440": {
-          "pass": "1/1",
-          "pixel": "1.79%",
-          "dh": 26
+          "pass": 96,
+          "fail": 3,
+          "failing": [
+            "de-presse-studien-publikationen (21.66%)",
+            "de-investoren-veranstaltungen (units off 2)",
+            "en-investors-events (units off 2)"
+          ],
+          "overrides": 20
         }
       },
-      "verdict": "gate-all: 1/1 PASS at 1440 (1.79%) and 360 (2.18%), clip 0, content 0"
+      "note": "roster re-gate after C-final foundation requests: EDS re-shot at both widths. unit-geometry origin cache is keyed per slug, not per width (stale 360 geometry read at 1440): caches split per width under stardust/.work/replica/units-cache-<w>; units.json families content-teaser-card / content-slider-slide re-scoped from template to the pages that carry them, build selector paired to .teaser.cols-4",
+      "verdict": "gate-all: 99 pages; 1440 96 PASS (20 overrides) / 3 FAIL; 360 91 PASS (44 overrides) / 8 FAIL; 9 distinct pages failing → C-final fix rounds"
     },
     "final": {
       "status": "done",
       "kind": "final",
-      "templates": [
-        "landing"
-      ],
-      "pages": 1,
-      "startedAt": "2026-10-14T10:44:48.458Z",
-      "endedAt": "2026-10-14T10:44:48.458Z",
-      "verdict": "final: foundation unchanged (17 files), 0 queued foundation requests, gate-all 1/1 PASS both widths"
+      "templates": [],
+      "startedAt": "2026-10-10T07:29:53Z",
+      "note": "C-final: foundation requests 13/14 applied (8c695af, refrozen 3cbc8b7); foundation check unchanged (14 files); 45 localized pages redeployed (878c475); 9 failing pages fixed: content group e67f358/6138313 (mediathek video button, studien header-richtext + empty-band, unit-geometry exact-text pairing fix), hub group 462afd5/c89c0e1/d831322 (spacing variants, sk-sk text split, content-slider placeholder height); overrides with symmetric headed evidence for studien, de-unternehmen, en-company, en-pt, pt-pt, sk-sk",
+      "endedAt": "2026-10-10T12:27:33Z",
+      "pages": 99,
+      "gates": {
+        "360": "99/99 delivered (overrides documented)",
+        "1440": "99/99 delivered (overrides documented)"
+      },
+      "verdict": "final: 99/99 live and delivered at 1440+360; foundation unchanged; 0 pages_failed"
     }
   }
 }

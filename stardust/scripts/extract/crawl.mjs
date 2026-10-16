@@ -63,7 +63,7 @@
  *     --url <url>             required; the entry page — its origin scopes discovery
  *     --pages a,b,c           crawl exactly these paths/URLs (resolved against --url; the entry
  *                             is added) instead of discovering via sitemap / same-origin nav links
- *     --max <n>               discovery cap (default 25; 0 = no cap; listed --pages are never dropped)
+ *     --max <n>               discovery cap (default 25; listed --pages are never dropped)
  *     --out <dir>             output root (default stardust/current)
  *     --wait fast|medium|slow settle after load: 1200 / 2500 / 5000 ms (default medium)
  *     --no-consent-dismiss    do not auto-dismiss consent overlays before capture
@@ -129,9 +129,6 @@ const WAIT_MS = { fast: 1200, medium: 2500, slow: 5000 };
 // conditions than capture. Viewport here also saves a per-page CDP round-trip.
 const CRAWL_CONTEXT = { reducedMotion: 'reduce', viewport: { width: 1440, height: 900 } };
 
-/** The discovery cap from --max: 0 means no cap (--all, --prep), a missing or bad value the default 25. Pure. */
-export const maxPages = (v) => (String(v).trim() === '0' ? Infinity : Math.max(1, Math.floor(+v) || 25));
-
 function parseArgs(argv) {
   const a = { out: 'stardust/current', max: 25, wait: 'medium', consent: true, concurrency: 4, dynamics: false };
   for (let i = 2; i < argv.length; i += 1) {
@@ -139,7 +136,7 @@ function parseArgs(argv) {
     if (k === '--url') a.url = argv[(i += 1)];
     else if (k === '--pages') a.pages = argv[(i += 1)].split(',').map((s) => s.trim()).filter(Boolean);
     else if (k === '--out') a.out = argv[(i += 1)];
-    else if (k === '--max') a.max = maxPages(argv[(i += 1)]);
+    else if (k === '--max') a.max = Math.max(1, +argv[(i += 1)] || 25);
     else if (k === '--wait') a.wait = argv[(i += 1)];
     else if (k === '--no-consent-dismiss') a.consent = false;
     else if (k === '--concurrency') a.concurrency = Math.max(1, +argv[(i += 1)] || 4);
@@ -393,6 +390,14 @@ async function dismissConsent(page) {
   const sels = ['#onetrust-accept-btn-handler', '.truste-button2', '[aria-label*="Accept" i]',
     'button[id*="accept" i]', 'button[class*="accept" i]'];
   let matched = false;
+  // consentmanager.net (continental.com run): the CMP renders late inside an open shadow root
+  // (#cmpwrapper) — wait for it, then reject (no consent = the state a first visit renders).
+  const cmp = await page.waitForFunction(() => document.querySelector('#cmpwrapper')?.shadowRoot?.querySelector('.cmpboxbtnno'),
+    null, { timeout: 8000 }).catch(() => null);
+  if (cmp) {
+    await page.evaluate(() => document.querySelector('#cmpwrapper').shadowRoot.querySelector('.cmpboxbtnno').click()).catch(() => {});
+    matched = true; await page.waitForTimeout(500);
+  }
   for (const s of sels) {
     const el = await page.$(s);
     if (el) { await el.click().catch(() => {}); matched = true; await page.waitForTimeout(300); break; }
@@ -444,7 +449,7 @@ async function dismissConsent(page) {
   await page.waitForTimeout(300);
   // assert: prune any consent container still present (don't leave it for capture).
   await page.evaluate(() => {
-    document.querySelectorAll('#onetrust-banner-sdk, #truste-consent-track, #usercentrics-root, [class*="cookie" i][class*="banner" i], [id*="consent" i]')
+    document.querySelectorAll('#cmpwrapper, #onetrust-banner-sdk, #truste-consent-track, #usercentrics-root, [class*="cookie" i][class*="banner" i], [id*="consent" i]')
       .forEach((n) => n.remove());
   });
 }

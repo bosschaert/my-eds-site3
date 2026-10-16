@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "arial",
+        "createdAt": "2026-10-09T21:24:07.176Z",
+        "reason": "replica migration: video-player stage reproduces the source site's embedded player chrome (video.js default Arial stack); design changes are out of scope without an inconsistency-register entry"
+      }
+    ]
+  }
+}

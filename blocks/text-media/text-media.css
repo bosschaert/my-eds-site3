@@ -1,0 +1,158 @@
+/* text-media — source c-media (o-page__ce stacking, c-media__header/gallery/text, c-image) */
+.text-media {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: var(--content-max);
+  margin: 3.6571rem auto;
+  padding: 0 16px;
+}
+
+/* first / last content element of a section: no outer margin (o-page__ce:first/last-child) */
+main .section > div:first-child > .text-media { margin-top: 0; }
+main .section > div:last-child > .text-media { margin-bottom: 0; }
+
+.text-media .text-media-header { margin-bottom: 1.8286rem; }
+
+.text-media .text-media-header :is(h1, h2, h3, h4, h5, h6) { margin-bottom: 0; }
+
+.text-media .text-media-meta {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.text-media .text-media-meta p { margin: 0; }
+
+.text-media.heading-light .text-media-header :is(h1, h2, h3, h4, h5, h6) { font-weight: 300; }
+
+.text-media .text-media-gallery {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-media .text-media-figure {
+  margin: 0;
+  text-align: center;
+}
+
+.text-media .text-media-image { position: relative; }
+
+.text-media .text-media-image :is(p, a, picture) {
+  display: block;
+  margin: 0;
+}
+
+.text-media .text-media-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text-media .text-media-caption {
+  padding-top: .6857rem;
+  margin-bottom: .6857rem;
+  font-size: .8rem;
+  text-align: left;
+}
+
+.text-media .text-media-caption p { margin: 0; }
+
+.text-media .text-media-caption p + p { margin-top: .3429rem; }
+
+/* image above (default) / below the text */
+.text-media .text-media-gallery + .text-media-text { margin-top: 1.8286rem; }
+.text-media .text-media-text + .text-media-gallery { margin-top: 1.8286rem; }
+
+@media (width >= 1023px) {
+  .text-media .text-media-gallery + .text-media-text { margin-top: 3.6571rem; }
+  .text-media .text-media-text + .text-media-gallery { margin-top: 3.6571rem; }
+}
+
+/* image in the text (is-image-intext): floated left / right */
+.text-media:is(.image-left, .image-right) .text-media-content {
+  display: block;
+  overflow: hidden;
+}
+
+@media (width >= 767px) {
+  .text-media:is(.image-left, .image-right) .text-media-gallery { max-width: 50%; }
+  .text-media:is(.image-left, .image-right) .text-media-gallery + .text-media-text { margin-top: 0; }
+
+  .text-media.image-left .text-media-gallery {
+    float: left;
+    margin-right: 1.8286rem;
+  }
+
+  .text-media.image-right .text-media-gallery {
+    float: right;
+    margin-left: 1.8286rem;
+  }
+}
+
+@media (width >= 1023px) {
+  .text-media:is(.image-left, .image-right) .text-media-gallery { max-width: 33%; }
+}
+
+/* copy: header-less lead text CE (source p.u-text-copy) right after the header row
+   (o-container__header margin-bottom 2.7429rem) */
+.text-media.copy .text-media-text p { font-size: 1.25rem; }
+
+@media (width >= 767px) {
+  .text-media.copy .text-media-text p { font-size: 1.5rem; }
+}
+
+main .section > .default-content-wrapper + .text-media-wrapper > .text-media.copy {
+  margin-top: 2.7429rem;
+}
+
+/* copy + button paragraphs (cluster-content text-copy.mjs): the button paragraph keeps the
+   richtext size, only the lead paragraphs take the copy size */
+.text-media.copy .text-media-text p.button-wrapper { font-size: inherit; }
+
+/* copy, in-header: the lead text sits in the same CE as the heading (c-media__header margin) */
+main .section > .default-content-wrapper + .text-media-wrapper > .text-media.copy.in-header {
+  margin-top: 1.8286rem;
+}
+
+/* header-row (home): the CE is the section's o-container__header row — 2.7429rem before the
+   content row that follows (instead of the CE rhythm), no header margin when header-only */
+.text-media.header-row { margin-bottom: 2.7429rem; }
+.text-media.header-row .text-media-header:last-child { margin-bottom: 0; }
+
+/* section Style header-richtext (text-heading.mjs, C-final): the o-container__header row holds a
+   header CE (c-media__header h2, margin-bottom 1.8286rem) whose only rich text is a heading-look
+   paragraph (p.u-text-hN, mt-0) — neither takes the compact-headings padding — and the textpic
+   row below starts 2.7429rem under it (row gap, not the 3.6571rem CE rhythm) */
+main > .section.compact-headings.header-richtext > .default-content-wrapper > h2:first-child {
+  padding-top: 0;
+  margin-bottom: 1.8286rem;
+}
+
+main > .section.compact-headings.header-richtext > .default-content-wrapper > h2:first-child + :is(h3, h4) {
+  padding-top: 0;
+  margin-bottom: 0;
+}
+
+main > .section.header-richtext > .default-content-wrapper + .text-media-wrapper > .text-media {
+  margin-top: 2.7429rem;
+}
+
+/* ce / after-header (cluster-hub text-ce-gap.mjs): a text CE kept as its own block so the source
+   CE gap survives (3.6571rem block margin; default content would merge it into one paragraph
+   margin); after-header = first CE of the content row under the section's header row
+   (o-container__header margin-bottom 2.7429rem) */
+.text-media.after-header { margin-top: 2.7429rem; }
+
+.text-media.ce .text-media-text ol,
+.text-media.after-header .text-media-text ol {
+  margin-top: 1.8286rem;
+  margin-bottom: 1.8286rem;
+}
+
+.text-media.ce .text-media-text > ol:first-child,
+.text-media.after-header .text-media-text > ol:first-child { margin-top: 0; }
+
+.text-media.ce .text-media-text > ol:last-child,
+.text-media.after-header .text-media-text > ol:last-child { margin-bottom: 0; }

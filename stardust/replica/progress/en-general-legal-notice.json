@@ -1,0 +1,30 @@
+{
+  "pageType": "legal",
+  "slug": "en-general-legal-notice",
+  "live": "https://www.continental.com/en/general/legal-notice/",
+  "prototype": "stardust/prototypes/en-general-legal-notice-proposed.html",
+  "css": "stardust/prototypes/en-general-legal-notice.css",
+  "build": "stardust/.work/en-general-legal-notice/build.mjs (home en.tpl.html chrome + main.html; re-uses en build's icon/dropdown expansion)",
+  "regime": "prototype",
+  "covers": ["legal/privacy text pages (imprint, cookie policy, data protection)", "en-country-selector shell (small hero + o-container is-white container--inner; the c-country-selector list module itself is not in this archetype)"],
+  "iterations": { "1440": 1, "360": 1 },
+  "gates": {
+    "1440": { "pixel": 0.08, "dh": 0, "structuralRed": 0, "visualFlags": "none", "clipped": 0, "overflow": 0, "chromeCrop": { "header": 0.01, "footer": 0.02 }, "units": "n/a (no repeated units)", "verdict": "PASS", "evidence": "stardust/replica/gates/en-general-legal-notice-1440/*-iter1.*, *-confirm.*" },
+    "360": { "pixel": 0.09, "dh": 0, "structuralRed": 0, "visualFlags": "none", "clipped": 0, "overflow": 0, "chromeCrop": { "header": 0.00, "footer": 0.11 }, "units": "n/a (no repeated units)", "verdict": "PASS", "evidence": "stardust/replica/gates/en-general-legal-notice-360/*-iter1.*, *-confirm.*" }
+  },
+  "capProbe": "PASS at 2560 — 0 of 4 rows failed (stardust/replica/gates/en-general-legal-notice-2560/cap-iter.json)",
+  "residuals": [],
+  "motion": {
+    "observed": ["sticky header morph (is-sticky)", "language menu toggle", "main-nav mega dropdown + overlay", "hover colour: country selector button, download-cart toggle"],
+    "implemented": ["all via canon.js/canon.css unchanged — no page-specific behaviour on this archetype"],
+    "dead": ["hover: .s-richtext a, hero picture, social links, footer nav links (no measured diff on live)"],
+    "compare": "motion-compare: 25 parity, 0 missing, 0 extra, 1 advisory (z-index transition on overlay, same as home)",
+    "evidence": ["stardust/replica/motion/en-general-legal-notice.json", "stardust/replica/motion/en-general-legal-notice-build.json"],
+    "postMotionPixel": { "1440": 0.08, "360": 0.09 }
+  },
+  "captureState": [
+    { "element": "small hero c-heroteaser--small", "state": "static picture (csm_image_20flags 61942/233e4/1e713 renditions by breakpoint, live CDN URLs)", "restoreAtDelivery": null }
+  ],
+  "canonRequests": ["promote .o-page__ce stacking margins", "promote .c-heroteaser / .c-heroteaser--small"],
+  "passed": true
+}

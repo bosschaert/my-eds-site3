@@ -1,0 +1,140 @@
+/* hotspots — source c-hotspots-image (site.css .c-hotspots-image*) */
+.hotspots {
+  position: relative;
+  box-sizing: border-box;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.hotspots .hotspots-points {
+  position: relative;
+}
+
+.hotspots .hotspots-points :is(picture, img) {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hotspots .hotspots-trigger {
+  position: absolute;
+  z-index: 2;
+  overflow: visible;
+  width: 1.6rem;
+  height: 1.6rem;
+  font-size: .8rem;
+  cursor: pointer;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media (width >= 1023px) {
+  .hotspots .hotspots-trigger {
+    width: 2.2857rem;
+    height: 2.2857rem;
+  }
+}
+
+.hotspots .hotspots-indicator { display: none; }
+
+.hotspots .hotspots-box-wrapper {
+  position: absolute;
+  z-index: 3;
+  box-sizing: border-box;
+  max-width: 36.5714rem;
+  pointer-events: none;
+}
+
+.hotspots .hotspots-box-wrapper.is-right {
+  padding-left: 2.0571rem;
+  padding-right: .9143rem;
+  transform: translateY(-50%);
+}
+
+.hotspots .hotspots-box-wrapper.is-left {
+  padding-left: .9143rem;
+  padding-right: 2.0571rem;
+  transform: translateX(-100%) translateY(-50%);
+}
+
+.hotspots .hotspots-box {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 .2857rem rgb(0 0 0 / 50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--ease);
+}
+
+.hotspots .hotspots-box.is-visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.hotspots .hotspots-box-content {
+  position: relative;
+  max-height: 18.2857rem;
+  padding: 1.1429rem;
+  overflow: auto;
+}
+
+.hotspots .hotspots-box-content > :last-child { margin-bottom: 0; }
+
+@media (width >= 767px) {
+  .hotspots .hotspots-box::before {
+    content: "";
+    position: absolute;
+    left: -.4571rem;
+    top: 50%;
+    width: .9143rem;
+    height: .9143rem;
+    background: #fff;
+    transform: translateY(-50%) rotateZ(45deg);
+  }
+
+  .hotspots .hotspots-box-wrapper.is-left .hotspots-box::before {
+    left: auto;
+    right: -.4571rem;
+  }
+}
+
+@media (width >= 1023px) {
+  .hotspots .hotspots-box-content { max-height: 27.4286rem; }
+}
+
+@media (width < 767px) {
+  .hotspots .hotspots-box-wrapper,
+  .hotspots .hotspots-box-wrapper.is-left,
+  .hotspots .hotspots-box-wrapper.is-right {
+    position: static;
+    min-width: 100%;
+    max-width: none;
+    padding: 0;
+    transform: none;
+  }
+
+  .hotspots .hotspots-box {
+    display: none;
+    box-shadow: none;
+  }
+
+  .hotspots .hotspots-box.is-visible { display: block; }
+
+  .hotspots .hotspots-indicator.is-visible {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: .2286rem;
+    background: #fff;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+}
+
+/* the next CE keeps the source CE rhythm (o-page__ce margin-bottom 3.6571rem) */
+main .section > .hotspots-wrapper + .default-content-wrapper { margin-top: 3.6571rem; }
+
+/* hub (cluster-hub): a section header run (h2 + intro, o-container__header margin-bottom
+   2.7429rem) directly above the infographic — en-career / de-karriere "Our Range of Jobs" */
+main .section > .default-content-wrapper + .hotspots-wrapper { margin-top: 2.7429rem; }

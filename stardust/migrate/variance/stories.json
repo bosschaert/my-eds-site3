@@ -1,0 +1,241 @@
+{
+  "archetype": "https://www.continental.com/en/stories/",
+  "width": 1440,
+  "tolerance": 2,
+  "probes": {
+    "stage": ".c-cs-stage",
+    "cluster": ".c-cs-article-cluster",
+    "teaser": ".c-cs-article-cluster__teaser"
+  },
+  "archetypeRaw": {
+    "sections": [
+      {
+        "label": "o-container.py-0",
+        "h": 795
+      },
+      {
+        "label": "o-container.my-8",
+        "h": 2664
+      },
+      {
+        "label": "o-container.my-8",
+        "h": 1970
+      },
+      {
+        "label": "o-container.my-8",
+        "h": 1769
+      },
+      {
+        "label": "o-container.my-8",
+        "h": 1993
+      }
+    ],
+    "probes": {
+      "stage": {
+        "sel": ".c-cs-stage",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 1256,
+            "h": 586
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)",
+          "padding": "0px 0px 0px 0px",
+          "font": "continentalstagsansw 17.5px/24.5px 300",
+          "borderRadius": "0px",
+          "heading": "h3 continentalstagsansw 56px/61.6px 300 rgb(255, 255, 255)",
+          "image": {
+            "w": 1256,
+            "h": 586
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 1,
+        "text": "Latest Article What Drives People When Mobility Changes? Key"
+      },
+      "cluster": {
+        "sel": ".c-cs-article-cluster",
+        "count": 1,
+        "first": {
+          "rect": {
+            "w": 1288,
+            "h": 443
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)",
+          "padding": "36px 0px 0px 0px",
+          "font": "continentalstagsansw 17.5px/24.5px 300",
+          "borderRadius": "0px",
+          "heading": "h3 continentalstagsansw 40px/44px 600 rgb(0, 0, 0)",
+          "image": {
+            "w": 612,
+            "h": 344
+          },
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 1,
+        "text": "Featured Story Safe Driving in Old Age The number of elderly"
+      },
+      "teaser": {
+        "sel": ".c-cs-article-cluster__teaser",
+        "count": 22,
+        "first": {
+          "rect": {
+            "w": 582,
+            "h": 335
+          },
+          "backgroundLayers": [],
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)",
+          "padding": "0px 0px 0px 0px",
+          "font": "continentalstagsansw 17.5px/24.5px 300",
+          "borderRadius": "0px",
+          "heading": "h3 continentalstagsansw 40px/44px 600 rgb(0, 0, 0)",
+          "image": null,
+          "listStyle": "disc",
+          "before": null
+        },
+        "clusters": 3,
+        "text": "Featured Story Safe Driving in Old Age The number of elderly"
+      }
+    }
+  },
+  "siblings": [
+    {
+      "url": "https://www.continental.com/de/stories/",
+      "findings": [
+        {
+          "kind": "SECTION HEIGHTS",
+          "msg": "o-container.my-8 1970→2536, o-container.my-8 1993→2003"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "cluster",
+          "msg": "1 → 2 matches"
+        },
+        {
+          "kind": "CLUSTERS",
+          "probe": "cluster",
+          "msg": "1 → 2 distinct style families among matches (a second visual family = a variant class)"
+        },
+        {
+          "kind": "COUNT",
+          "probe": "teaser",
+          "msg": "22 → 24 matches"
+        }
+      ],
+      "raw": {
+        "sections": [
+          {
+            "label": "o-container.py-0",
+            "h": 795
+          },
+          {
+            "label": "o-container.my-8",
+            "h": 2664
+          },
+          {
+            "label": "o-container.my-8",
+            "h": 2536
+          },
+          {
+            "label": "o-container.my-8",
+            "h": 1771
+          },
+          {
+            "label": "o-container.my-8",
+            "h": 2003
+          }
+        ],
+        "probes": {
+          "stage": {
+            "sel": ".c-cs-stage",
+            "count": 1,
+            "first": {
+              "rect": {
+                "w": 1256,
+                "h": 586
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 0, 0)",
+              "padding": "0px 0px 0px 0px",
+              "font": "continentalstagsansw 17.5px/24.5px 300",
+              "borderRadius": "0px",
+              "heading": "h3 continentalstagsansw 56px/61.6px 300 rgb(255, 255, 255)",
+              "image": {
+                "w": 1256,
+                "h": 586
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 1,
+            "text": "Neuester Artikel Was Menschen bewegt, wenn sich die Mobilitä"
+          },
+          "cluster": {
+            "sel": ".c-cs-article-cluster",
+            "count": 2,
+            "first": {
+              "rect": {
+                "w": 1288,
+                "h": 443
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 0, 0)",
+              "padding": "36px 0px 0px 0px",
+              "font": "continentalstagsansw 17.5px/24.5px 300",
+              "borderRadius": "0px",
+              "heading": "h3 continentalstagsansw 40px/44px 600 rgb(0, 0, 0)",
+              "image": {
+                "w": 612,
+                "h": 344
+              },
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 2,
+            "text": "Featured Story Sicher fahren im Alter Die Zahl der älteren V"
+          },
+          "teaser": {
+            "sel": ".c-cs-article-cluster__teaser",
+            "count": 24,
+            "first": {
+              "rect": {
+                "w": 582,
+                "h": 335
+              },
+              "backgroundLayers": [],
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(0, 0, 0)",
+              "padding": "0px 0px 0px 0px",
+              "font": "continentalstagsansw 17.5px/24.5px 300",
+              "borderRadius": "0px",
+              "heading": "h3 continentalstagsansw 40px/44px 600 rgb(0, 0, 0)",
+              "image": null,
+              "listStyle": "disc",
+              "before": null
+            },
+            "clusters": 3,
+            "text": "Featured Story Sicher fahren im Alter Die Zahl der älteren V"
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "siblings": 1,
+    "varying": 1,
+    "probesVarying": [
+      "SECTION HEIGHTS",
+      "cluster",
+      "teaser"
+    ]
+  }
+}

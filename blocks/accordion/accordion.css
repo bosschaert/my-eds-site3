@@ -1,0 +1,126 @@
+/* accordion — source o-accordion (site.css .o-accordion__*) */
+.accordion {
+  box-sizing: border-box;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.tabs .accordion { padding: 0; }
+
+/* CE rhythm: an accordion CE after a header / text CE (o-page__ce + o-page__ce 3.6571rem) */
+main .section > .default-content-wrapper + .accordion-wrapper { margin-top: 3.6571rem; }
+main .section > .accordion-wrapper + .default-content-wrapper { margin-top: 3.6571rem; }
+
+/* header-ce (cluster-hub accordion-header-ce.mjs): the accordion sits in the SAME CE as the
+   heading above it (c-media__header margin 1.8286rem), not a CE of its own */
+main .section > .default-content-wrapper + .accordion-wrapper:has(> .accordion.header-ce) {
+  margin-top: 1.8286rem;
+}
+
+.accordion .accordion-item {
+  border-top: 1px solid #cdcdcd;
+}
+
+.accordion .accordion-item:last-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.accordion .accordion-header {
+  font-size: 1.1429rem;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 1.8286rem 2.7429rem 1.8286rem 0;
+  position: relative;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.accordion .accordion-header p {
+  margin: 0;
+  font: inherit;
+}
+
+.accordion .accordion-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.accordion .accordion-content {
+  overflow: hidden;
+  max-height: 0;
+}
+
+.accordion .accordion-item.is-open .accordion-content {
+  max-height: none;
+}
+
+.accordion .accordion-content-inner {
+  padding: 0 1.3714rem 1.3714rem 0;
+}
+
+.section:is(.is-gray, .is-lightgray, .is-yellow, .is-pastel-yellow, .is-pastel-red,
+  .is-pastel-blue, .is-pastel-green) .accordion .accordion-item {
+  border-top: 2px solid #fff;
+}
+
+.section:is(.is-gray, .is-lightgray, .is-yellow, .is-pastel-yellow, .is-pastel-red,
+  .is-pastel-blue, .is-pastel-green) .accordion .accordion-item:last-child {
+  border-bottom: 2px solid #fff;
+}
+
+.section.is-yellow .accordion .accordion-icon {
+  background: #fff;
+}
+
+/* events (career events list): logo | grey date + time, h4-look title, grey location */
+.accordion.events .accordion-event {
+  display: flex;
+  gap: 32px;
+}
+
+.accordion.events .accordion-event-logo {
+  display: none;
+  flex: 0 0 auto;
+}
+
+.accordion.events .accordion-event-logo img {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+
+@media (width >= 767px) {
+  .accordion.events .accordion-event-logo { display: block; }
+}
+
+.accordion.events .accordion-event-text {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.accordion.events .accordion-event-when {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--c-gray);
+  font-weight: 700;
+}
+
+.accordion.events .accordion-event-when p { margin: 0 6px 0 0; }
+
+.accordion.events .accordion-event-title {
+  margin: 12px 0;
+  font-size: 1.1429rem;
+  font-weight: 500;
+}
+
+.accordion.events .accordion-event-title strong { font-weight: inherit; }
+
+.accordion.events .accordion-event-where {
+  color: var(--c-gray);
+  font-weight: 700;
+}
+
+.accordion.events .accordion-header .accordion-event p { margin: 0; }

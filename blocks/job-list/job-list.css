@@ -1,0 +1,86 @@
+/* job-list — source c-job-widget-list (site.css: item border-bottom #cdcdcd, hover #f0f0f0,
+   title 18px bold, list icons 22x20 #6b6b6b; Bootstrap row py-3 / col padding 16px) */
+.job-list {
+  box-sizing: border-box;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.job-list .job-list-item {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 -16px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--c-gray-mid);
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+}
+
+.job-list a.job-list-item:hover {
+  background: var(--c-gray-light);
+  color: inherit;
+}
+
+.job-list .job-list-body {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0 16px;
+}
+
+.job-list .job-list-title {
+  padding-bottom: 6px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.job-list .job-list-meta {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.job-list .job-list-meta-item {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 100%;
+  align-items: center;
+  max-width: 100%;
+  padding: 0 16px;
+}
+
+@media (width >= 767px) {
+  .job-list .job-list-meta-item {
+    flex: 0 1 auto;
+    width: auto;
+  }
+}
+
+.job-list .job-list-icon {
+  width: 22px;
+  height: 20px;
+  margin-right: 6px;
+  color: var(--c-slate);
+}
+
+.job-list .job-list-chevron {
+  display: flex;
+  flex: 0 1 auto;
+  align-items: flex-end;
+  padding: 0 16px;
+}
+
+.job-list .job-list-more {
+  display: flex;
+  justify-content: center;
+}
+
+.job-list .job-list-more .c-button {
+  margin: 36px auto 16px;
+}
+
+/* the CE header heading (c-media__header margin-bottom 1.8286rem) sits above the list */
+main .section > .default-content-wrapper + .job-list-wrapper { margin-top: 1.8286rem; }

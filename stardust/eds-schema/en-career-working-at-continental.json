@@ -1,0 +1,300 @@
+{
+ "source": "http://localhost:3013/stardust/.work/archetype-content/proto-annotated.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero-teaser",
+   "items": [],
+   "imgCount": 1,
+   "editableTexts": 0,
+   "repeats": []
+  },
+  {
+   "section": "breadcrumb",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "Careers",
+     "href": "https://www.continental.com/en/career/"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Working at Continental"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "LI.c-breadcrumb__item",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "text-media",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Working at Continental"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Gain authentic insights into the cooperative spirit of our company and find out what and mean to us. Get to know your potential or an interesting . Browse the and find the right that heralds the first step towards a successful ."
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "innovation"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "sustainability"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "team"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "location"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "job vacancies"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "job"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "career"
+    },
+    {
+     "role": "cta",
+     "order": 9,
+     "text": "Go straight to the job portal",
+     "href": "https://jobs.continental.com/en/#/"
+    },
+    {
+     "role": "heading",
+     "order": 10,
+     "text": "Why Continental?"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Because you too can shape the . These days, choosing the right employer is about more than just salary issues. It is also about finding a meaningful job, being able to develop professionally and personally, and enjoying a healthy work–life balance. At Continental, we take our responsibility in these areas seriously and strive for continuous improvement for the benefit of our colleagues. This is the only way we can provide you with jobs that make a positive impact on the lives of millions."
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "future"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 5,
+   "repeats": [
+    {
+     "unitSelector": "DIV.row",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "teaser",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "What We Offer You"
+    }
+   ],
+   "imgCount": 3,
+   "editableTexts": 4,
+   "repeats": [
+    {
+     "unitSelector": "DIV.row",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.d-flex",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 2,
+      "textRuns": 3
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "content-slider",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "What We’re Working on"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Discover wich areas of buisness and activities are the perfect fit for you. Choose from the many diffrent possibilities we offer."
+    }
+   ],
+   "imgCount": 4,
+   "editableTexts": 3,
+   "repeats": [
+    {
+     "unitSelector": "DIV.row",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 2
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "image",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Our Range of Jobs"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Get a taste of the diverse professional fields that Continental has to offer."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Find out more",
+     "href": "/en/career/our-range-of-jobs/"
+    }
+   ],
+   "imgCount": 1,
+   "editableTexts": 3,
+   "repeats": [
+    {
+     "unitSelector": "DIV.d-flex",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 2,
+      "textRuns": 0
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "page-options",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Share:"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Facebook",
+     "href": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.continental.com%2Fen%2Fcareer%2Fworking-at-continental%2F&t=Working%20at%20Continental"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "X",
+     "href": "https://x.com/share?url=https%3A%2F%2Fwww.continental.com%2Fen%2Fcareer%2Fworking-at-continental%2F&text=Working%20at%20Continental"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "LinkedIn",
+     "href": "https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.continental.com%2Fen%2Fcareer%2Fworking-at-continental%2F&title=Working%20at%20Continental"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Reddit",
+     "href": "https://www.reddit.com/submit?url=https%3A%2F%2Fwww.continental.com%2Fen%2Fcareer%2Fworking-at-continental%2F&title=Working%20at%20Continental"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Xing",
+     "href": "https://www.xing.com/spi/shares/new?url=https%3A%2F%2Fwww.continental.com%2Fen%2Fcareer%2Fworking-at-continental%2F"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Tumblr",
+     "href": "http://tumblr.com/share?t=https%3A%2F%2Fwww.continental.com%2Fen%2Fcareer%2Fworking-at-continental%2F&u=Working%20at%20Continental"
+    },
+    {
+     "role": "cta",
+     "order": 7,
+     "text": "Email",
+     "href": "mailto:?subject=Working%20at%20Continental&body=%22Working%20at%20Continental%22%20-%20https%3A%2F%2Fwww.continental.com%2Fen%2Fcareer%2Fworking-at-continental%2F"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": [
+    {
+     "unitSelector": "LI.c-sharelist__item",
+     "count": 7,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  }
+ ]
+}

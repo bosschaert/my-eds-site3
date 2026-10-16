@@ -1,157 +1,112 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
-import {
-  createIcon,
-  uIcon,
-  throttle,
-  loadChromeFragment,
-  fragmentSections,
-  itemLink,
-} from '../../scripts/utils.js';
 
-/**
- * Footer chrome (source: c-socialmedia-list band + o-footer + scroll-to-top).
- * Content: /<locale>/footer — section 1 = social band (label + link list), then one
- * section per link column (label paragraph + list), last section = copyright line.
- * The social band is placed before <footer> (the source's footer element holds only
- * the link columns); authored nodes are moved, never copied.
+/*
+ * Footer — template-slotted chrome (prototype `.site-footer`).
+ * /footer document: section 1 = brand link + social link list (icon + label),
+ * every further section = one link column (heading + list).
+ * Authored nodes are MOVED into the slots, never re-created from text.
  */
 
-const el = (tag, className, ...children) => {
+function el(tag, className, attrs = {}) {
   const node = document.createElement(tag);
   if (className) node.className = className;
-  children.filter(Boolean).forEach((c) => node.append(c));
+  Object.entries(attrs).forEach(([k, v]) => node.setAttribute(k, v));
   return node;
-};
-
-const SOCIAL = ['facebook', 'tiktok', 'youtube', 'instagram', 'linkedin', 'glassdoor',
-  'xing', 'kununu', 'rss', 'x', 'reddit', 'tumblr'];
-
-function socialName(a) {
-  const label = a.textContent.trim().toLowerCase();
-  if (SOCIAL.includes(label)) return label;
-  const host = new URL(a.href, window.location).hostname;
-  return SOCIAL.find((s) => host.includes(`${s}.`)) || (/rss/.test(a.href) ? 'rss' : null);
 }
 
-function isExternal(a) {
-  const url = new URL(a.href, window.location);
-  return url.origin !== window.location.origin && !/(^|\.)continental\.com$/.test(url.hostname);
-}
-
-function buildSocial(section) {
-  const label = section.querySelector(':scope > p');
-  const list = section.querySelector(':scope > ul');
-  const band = el('section', 'social-band');
-  const container = el('div', 'social-band-container container');
-  const row = el('div', 'row');
-  const labelCol = el('div', 'social-band-label-col');
-  if (label) {
-    label.className = 'social-band-label';
-    labelCol.append(label);
-  }
-  const content = el('div', 'social-band-content');
-  if (list) {
-    list.className = 'social-band-list';
-    [...list.children].forEach((li) => {
-      li.className = 'social-band-item';
-      const a = itemLink(li);
-      if (!a) return;
-      if (a.parentElement !== li) a.parentElement.replaceWith(a);
-      a.className = 'social-band-link';
-      if (!a.title) a.title = a.textContent.trim();
-      if (isExternal(a)) {
-        a.target = '_blank';
-        a.rel = 'noopener noreferrer';
-      }
-      const name = socialName(a);
-      const text = el('span', 'social-band-text');
-      while (a.firstChild) text.append(a.firstChild);
-      a.append(uIcon(name || 'link-external', `mr-1 is-${name || 'link'}`), text);
-    });
-    content.append(list);
-  }
-  row.append(labelCol, content);
-  container.append(row);
-  band.append(container);
-  return band;
-}
-
-function buildColumn(section, index, total) {
-  const header = section.querySelector(':scope > p');
-  const list = section.querySelector(':scope > ul');
-  const wide = total === 4 && index === 3;
-  const col = el('div', `footer-col${wide ? ' is-wide' : ''}`);
-  const sec = el('div', `footer-nav-section${index === total - 1 ? ' is-last' : ''}`);
-  const content = el('div', 'footer-nav-content');
-  if (header) {
-    header.className = 'footer-nav-header';
-    const pm = el('span', 'u-icon-plus-minus');
-    const icon = el('i', 'footer-nav-icon u-icon has-bg', pm);
-    header.append(icon);
-    header.addEventListener('click', () => {
-      if (window.innerWidth >= 767) return;
-      content.classList.toggle('is-visible');
-      pm.classList.toggle('is-active');
-    });
-    sec.append(header);
-  }
-  if (list) {
-    list.className = 'c-list-clean';
-    [...list.children].forEach((li) => {
-      const a = itemLink(li);
-      if (a && a.parentElement !== li) a.parentElement.replaceWith(a);
-      if (a && !a.title) a.title = a.textContent.trim();
-      if (a && isExternal(a)) {
-        a.target = '_blank';
-        a.rel = 'noopener noreferrer';
-        a.append(' ', uIcon('link-external', 'is-xs ml-1'));
-      }
-    });
-    content.append(list);
-  }
-  sec.append(content);
-  col.append(sec);
-  return col;
-}
-
-function buildScrollTop() {
-  const button = el(
-    'button',
-    'scroll-to-top',
-    el('span', 'scroll-to-top-icon', createIcon('chevron-down')),
-  );
-  button.type = 'button';
-  button.setAttribute('aria-label', 'Scroll to top');
-  button.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+function decorateBrand(a) {
+  a.classList.add('brand');
+  const icon = el('span', 'brand-icon');
+  const name = el('div', 'brand-name');
+  [...a.childNodes].forEach((node) => {
+    if (node.nodeType === 1 && node.classList.contains('icon')) icon.append(node);
+    else name.append(node);
   });
-  const check = () => button.classList.toggle('is-visible', window.innerHeight < window.scrollY);
-  window.addEventListener('scroll', throttle(check, 300));
-  check();
-  return button;
+  a.append(icon, name);
+  return a;
 }
 
+/* the authored label text becomes the anchor's aria-label (icon-only link, as on the source) */
+function decorateSocials(list) {
+  list.classList.add('socials');
+  list.setAttribute('aria-label', 'Social media links');
+  list.querySelectorAll('a').forEach((a) => {
+    const text = [...a.childNodes]
+      .filter((node) => !(node.nodeType === 1 && node.classList.contains('icon')))
+      .map((node) => node.textContent).join('').trim();
+    if (text) a.setAttribute('aria-label', text);
+    [...a.childNodes].forEach((node) => {
+      if (!(node.nodeType === 1 && node.classList.contains('icon'))) node.remove();
+    });
+  });
+}
+
+/* swap the icon <img> for its inline SVG so the glyph paints in currentColor */
+async function inlineIcons(root) {
+  await Promise.all([...root.querySelectorAll('.icon img')].map(async (img) => {
+    try {
+      const resp = await fetch(img.src);
+      if (!resp.ok) return;
+      const tpl = document.createElement('template');
+      tpl.innerHTML = (await resp.text()).trim();
+      const svg = tpl.content.querySelector('svg');
+      if (!svg) return;
+      svg.setAttribute('aria-hidden', 'true');
+      svg.setAttribute('focusable', 'false');
+      img.replaceWith(svg);
+    } catch (e) {
+      // keep the <img> fallback
+    }
+  }));
+}
+
+/**
+ * loads and decorates the footer
+ * @param {Element} block The footer block element
+ */
 export default async function decorate(block) {
-  const fragment = await loadChromeFragment('footer', getMetadata('footer'), loadFragment);
+  const footerMeta = getMetadata('footer');
+  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
+  const fragment = await loadFragment(footerPath);
   if (!fragment) return;
-  const sections = fragmentSections(fragment);
-  const social = sections.find((s) => s.querySelector(':scope > p > strong'));
-  const rest = sections.filter((s) => s !== social);
-  const columns = rest.filter((s) => s.querySelector(':scope > ul'));
-  const copyright = rest.filter((s) => !s.querySelector(':scope > ul')).pop();
 
-  const nav = el('div', 'row footer-nav');
-  columns.forEach((s, i) => nav.append(buildColumn(s, i, columns.length)));
-  const content = el('div', 'footer-content container', nav);
-  if (copyright) {
-    const p = copyright.querySelector('p') || copyright;
-    p.className = 'footer-copyright';
-    content.append(p);
+  const root = el('div', 'site-footer');
+  const columns = el('div', 'container columns');
+  root.append(columns);
+
+  const [brandSection, ...linkSections] = fragment.querySelectorAll(':scope > .section');
+
+  if (brandSection) {
+    const col = el('div', 'brand-col');
+    const brandLink = brandSection.querySelector('a');
+    const socials = brandSection.querySelector('ul');
+    const brandOutside = brandLink && !(socials && socials.contains(brandLink));
+    if (brandOutside) col.append(decorateBrand(brandLink));
+    if (socials) {
+      decorateSocials(socials);
+      col.append(socials);
+    }
+    columns.append(col);
   }
-  block.replaceChildren(content, buildScrollTop());
 
-  const host = block.closest('footer');
-  if (social && host) host.before(buildSocial(social));
+  linkSections.forEach((section) => {
+    const content = section.querySelector('.default-content-wrapper');
+    if (!content) return;
+    const heading = content.querySelector('h2, h3, h4, p');
+    const nav = el('nav', 'footer-links');
+    if (heading) nav.setAttribute('aria-label', `${heading.textContent.trim()} links`);
+    nav.append(...content.childNodes);
+    // link text sits in a <div> inside the padded anchor, as on the source
+    nav.querySelectorAll('a').forEach((a) => {
+      const text = el('div');
+      text.append(...a.childNodes);
+      a.append(text);
+    });
+    columns.append(nav);
+  });
+
+  await inlineIcons(root);
+  block.textContent = '';
+  block.append(root);
 }

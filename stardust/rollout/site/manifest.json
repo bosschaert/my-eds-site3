@@ -1,26 +1,38 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/assemble",
-    "writtenAt": "2026-10-10T12:48:14.430Z",
+    "writtenAt": "2026-10-16T10:50:28.261Z",
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-10T12:48:14.430Z",
-  "host": "https://main--d9ddbc54--aemcoder.aem.live",
+  "generatedAt": "2026-10-16T10:50:28.261Z",
+  "host": "https://main--c579f7f0--aemcoder.aem.live",
   "sitemap": "stardust/rollout/site/sitemap.xml",
   "robots": "stardust/rollout/site/robots.txt",
-  "fragments": [],
+  "fragments": [
+    {
+      "id": "footer",
+      "target": "fragments/footer.html",
+      "canonSource": null,
+      "status": "pending",
+      "robots": "noindex"
+    },
+    {
+      "id": "header",
+      "target": "fragments/header.html",
+      "canonSource": null,
+      "status": "pending",
+      "robots": "noindex"
+    }
+  ],
   "servedSitemap": {
-    "origin": "https://main--d9ddbc54--aemcoder.aem.live",
-    "url": "https://main--d9ddbc54--aemcoder.aem.live/sitemap.xml",
-    "checkedAt": "2026-10-10T12:48:14.429Z",
-    "match": false,
+    "origin": "https://main--c579f7f0--aemcoder.aem.live",
+    "url": "https://main--c579f7f0--aemcoder.aem.live/sitemap.xml",
+    "checkedAt": "2026-10-16T10:50:28.261Z",
+    "match": true,
     "error": null,
-    "count": 99,
-    "assembled": 101,
+    "count": 1,
+    "assembled": 1,
     "extra": [],
-    "missing": [
-      "/de/meta/suche",
-      "/en/general/search"
-    ]
+    "missing": []
   }
 }

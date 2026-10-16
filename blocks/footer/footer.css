@@ -1,265 +1,137 @@
-/* stylelint-disable no-descending-specificity -- source cascade order kept (canon.css) */
-
-/* Footer chrome (source: c-socialmedia-list, o-footer, c-scroll-to-top; canon.css). */
-
-/* ---- social band (placed before <footer>) ---- */
-.social-band { padding: 3.2rem 0 2.0571rem; }
-
-@media (width >= 767px) {
-  .social-band { padding: 3.2rem var(--section-pad-x) 2.0571rem; }
+/* footer — lifted from the canon `.site-footer` rules, scoped to the chrome host */
+footer:has(.site-footer) {
+  background-color: var(--color-black);
 }
 
-.social-band-container {
-  max-width: var(--content-max);
-  margin-left: auto;
-  margin-right: auto;
+footer .site-footer {
+  --color-gray-500: #999;
+
+  padding-block: var(--space-4xl);
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
-.social-band-label-col {
-  position: relative;
-  width: 100%;
-  padding-right: 16px;
-  padding-left: 16px;
-  flex: 0 0 100%;
-  max-width: 100%;
+footer .site-footer .container {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
 }
 
-.social-band-label {
-  font-size: 1.0286rem;
-  font-weight: 500;
-  margin: 0 0 24px;
+footer .site-footer .columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2xl);
 }
 
-.social-band-content {
-  position: relative;
-  width: 100%;
-  padding-right: 16px;
-  padding-left: 16px;
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%;
+footer .site-footer .brand-col {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
 }
 
-@media (width >= 1680px) {
-  .social-band-label-col {
-    flex: 0 0 auto;
-    width: auto;
-    max-width: 100%;
-  }
-
-  .social-band-label {
-    padding: 1.1429rem 36px 1.1429rem 0;
-    margin-bottom: 0;
-  }
-}
-
-.social-band-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.social-band-item {
+footer .brand {
   display: flex;
   align-items: center;
-  white-space: nowrap;
-  padding: 1.1429rem 1.4286rem 1.1429rem 0;
+  gap: var(--space-xs);
+  flex-shrink: 0;
 }
 
-.social-band-item .u-icon {
-  height: 2.2857rem;
-  width: 2.2857rem;
-  font-size: .8rem;
+footer .brand-icon {
+  width: 2rem;
+  height: 2rem;
 }
 
-.social-band-link {
-  display: flex;
-  color: var(--c-slate);
-  font-weight: 600;
-  align-items: flex-end;
-  line-height: 1.0286rem;
-}
-
-.social-band-link:hover { color: #000; }
-.social-band-text { display: none; }
-
-@media (width >= 1023px) {
-  .social-band-list { justify-content: space-between; }
-
-  .social-band-item {
-    margin-bottom: 0;
-    padding-right: 0;
-  }
-
-  .social-band-item .u-icon {
-    height: .9714rem;
-    width: .9714rem;
-    font-size: .6857rem;
-    margin-bottom: 0;
-  }
-
-  .social-band-link { line-height: .8rem; }
-  .social-band-text { display: inline-block; }
-}
-
-/* ---- footer (o-footer) ---- */
-body > footer { background: var(--c-gray-light); }
-
-@media (width >= 767px) {
-  body > footer {
-    padding-left: var(--section-pad-x);
-    padding-right: var(--section-pad-x);
-  }
-}
-
-.footer .footer-content {
-  max-width: var(--content-max);
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: .9143rem;
-  padding-bottom: .9143rem;
-}
-
-@media (width >= 767px) {
-  .footer .footer-content {
-    padding-top: 2.1714rem;
-    padding-bottom: 2.1714rem;
-  }
-}
-
-.footer .footer-col {
-  position: relative;
+footer .brand-icon .icon,
+footer .brand-icon img {
+  display: block;
   width: 100%;
-  padding-right: 16px;
-  padding-left: 16px;
-  flex: 0 0 100%;
-  max-width: 100%;
+  height: 100%;
 }
 
-@media (width >= 767px) {
-  .footer .footer-col {
-    flex: 0 0 33.3333%;
-    max-width: 33.3333%;
+/* the logo and social glyphs are inlined currentColor SVGs; the <img> fallback inverts to white */
+footer .brand-icon img,
+footer .site-footer .socials .icon img {
+  filter: invert(1);
+}
+
+footer .brand-icon svg,
+footer .site-footer .socials .icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+footer .brand-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  text-transform: uppercase;
+}
+
+footer .site-footer .socials {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: auto;
+  padding-top: var(--space-xl);
+}
+
+footer .site-footer .socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-full);
+  background-color: var(--color-gray-700);
+  color: var(--color-white);
+  transition: background-color var(--transition-fast);
+}
+
+footer .site-footer .socials a:hover {
+  background-color: var(--color-gray-500);
+}
+
+footer .site-footer .socials .icon {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+}
+
+footer .site-footer .socials .icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+footer .site-footer h2 {
+  font-size: var(--text-sm);
+  letter-spacing: 0.05em;
+  color: var(--color-gray-500);
+}
+
+/* stylelint-disable-next-line no-descending-specificity -- disjoint from .socials links */
+footer .site-footer .footer-links a {
+  display: block;
+  padding-block: var(--space-xs);
+  font-size: var(--text-sm);
+  color: var(--color-gray-500);
+  transition: color var(--transition-fast);
+}
+
+footer .site-footer .footer-links a:hover {
+  color: var(--color-white);
+}
+
+@media (width <= 991px) {
+  footer .site-footer .columns {
+    grid-template-columns: repeat(2, 1fr);
   }
-
-  .footer .footer-col.is-wide {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 12px;
-  }
 }
 
-@media (width >= 1023px) {
-  .footer .footer-col,
-  .footer .footer-col.is-wide {
-    flex: 0 0 25%;
-    max-width: 25%;
-    margin-top: 0;
-  }
-}
-
-.footer .footer-nav-header {
-  font-size: 1.1429rem;
-  font-weight: 600;
-  margin: 0;
-}
-
-.footer .footer-nav-icon { display: none; }
-.footer .footer-nav-content { padding: 1.3714rem 0; }
-.footer .footer-nav-content a:hover .u-icon { color: var(--c-orange-hover); }
-.footer .footer-nav-content li { margin-bottom: 12px; }
-
-@media (width >= 767px) and (width < 1023px) {
-  .footer .footer-col.is-wide li {
-    display: inline-block;
-    margin-right: 24px;
-  }
-}
-
-@media (width < 767px) {
-  .footer .footer-nav-header {
-    padding: 1.6rem 2.2857rem 1.6rem 0;
-    position: relative;
-    cursor: pointer;
-  }
-
-  .footer .footer-nav-icon {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .footer .footer-nav-header:hover .footer-nav-icon { background: var(--c-orange-hover); }
-  .footer .footer-nav-section { border-bottom: 2px solid #fff; }
-  .footer .footer-nav-section.is-last { border-bottom: none; }
-  .footer .footer-nav-content { display: none; }
-  .footer .footer-nav-content.is-visible { display: block; }
-}
-
-@media (width >= 767px) {
-  .footer .footer-nav-content { margin-bottom: 1.3714rem; }
-}
-
-.footer .footer-copyright { margin: 36px 0 0; }
-
-@media (width >= 767px) {
-  .footer .footer-copyright { margin-top: 0; }
-}
-
-/* ---- scroll to top ---- */
-.footer .scroll-to-top {
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
-  z-index: 450;
-  right: .9143rem;
-  bottom: .9143rem;
-  border: .1143rem solid var(--c-orange);
-  border-radius: 50%;
-  background: transparent;
-  width: 2.7429rem;
-  height: 2.7429rem;
-  color: var(--c-orange);
-  transition: all 300ms ease-in-out;
-  padding: 0;
-}
-
-.footer .scroll-to-top.is-visible {
-  opacity: 1;
-  visibility: visible;
-}
-
-.footer .scroll-to-top:hover { border-color: var(--c-orange-hover); }
-.footer .scroll-to-top:hover .scroll-to-top-icon { width: 1.3714rem; }
-
-.footer .scroll-to-top-icon {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%) rotateZ(180deg);
-  width: 1.1429rem;
-  transition: var(--ease);
-  line-height: 0;
-}
-
-@media (width >= 767px) {
-  .footer .scroll-to-top {
-    bottom: 2.0571rem;
-    width: 3.4286rem;
-    height: 3.4286rem;
-  }
-
-  .footer .scroll-to-top-icon { width: 1.6rem; }
-
-  .footer .scroll-to-top:hover .scroll-to-top-icon {
-    width: 1.8286rem;
-    color: var(--c-orange-hover);
+@media (width <= 479px) {
+  footer .site-footer .columns {
+    grid-template-columns: 1fr;
   }
 }

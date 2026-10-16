@@ -1,50 +1,34 @@
-# EDS conversion log — continental.com
+# EDS conversion log — www.wknd-trendsetters.site replica
 
-## Publish decision (2026-10-09)
+Publish decision: publish (owner decision recorded by the run brief, 2026-10-16) — every delivered page, the redirects sheet and the chrome documents go live on aem.live.
 
-Decision: **publish**. Every delivered page, the redirects sheet and the chrome documents (nav, footer and their locale variants) go live on the aem.live origin (deploy-batch.mjs without --no-publish, or POST https://admin.hlx.page/live/…). Decided by the run brief; not re-asked.
+## C0 foundation (2026-10-16)
 
-## C0 foundation (2026-10-09)
+- Runtime contract: `stardust/runtime-contract.json` (vanilla-eds; buttons = `a.button.primary|secondary` in `p.button-wrapper`, formatted-only).
+- Fonts: Instrument Sans (variable 400–700) + Syncopate 400/700, SIL OFL 1.1, self-hosted in `fonts/`, declared in `styles/fonts.css`; metric-matched Arial fallbacks (`instrument-sans-fallback`, `syncopate-fallback`) in `styles/styles.css`. Boilerplate Roboto removed. No licensing alert (OFL).
+- Favicon: `favicon.svg` (captured source icon) + one `head.html` link.
+- Chrome reservation: `body > header` sticky, `--nav-height: 83.4px` (measured bar height, all widths); scoped to `body > header` so block-internal `<header>` elements are not clamped.
+- Register R-01 (≤479px nav-row compaction) implemented in `blocks/header/header.css`.
 
-- Chrome decode tier: **template-slotted** (header, footer, social band). Authored nav/footer nodes are
-  moved into the canon chrome template; the off-canvas tree and the dropdown title (when no alt h3) are
-  presentational clones (EW4, stripInstrumentation). Exempt (`@ew-exempt`): search placeholder /
-  aria-labels read from authored link text.
-- EW7 deviation recorded by chrome-parity: live `<button>` nav triggers / language button are `<a role=button>`
-  (no `<button>` may host authored text); footer column labels / copyright are `<p>` (live `<div>`).
-- Chrome documents: 10 locale pairs (/en, /de, /cs-cz, /sk-sk, /pt-pt, /en-pt, /es-mx, /fr-fr, /ro-ro,
-  /en-us) generated verbatim from each locale's capture (stardust/.work/foundation/gen-chrome.cjs), Robots noindex.
-- Shell: /en/general/legal-notice as default content only (legal archetype unit replaces it).
-- Lint: clean (eslint airbnb-base, stylelint standard; per-file `no-descending-specificity` disable keeps the
-  source cascade order); `lint:breakpoints` wired (no target set in DESIGN.json → skipped).
+## Decode tiers
 
-## C-archetype legal — en-general-legal-notice (2026-10-09)
+| Section | Block | Tier | Notes |
+|---|---|---|---|
+| Header (/nav) | `header` | Template-slotted | 3 sections: brand link (`:logo:` icon + text), nav list (nested lists → mega menu columns + promo item, or dropdown), tools (`**Subscribe**` CTA). Mega link = `[icon] link <br> description`. |
+| Footer (/footer) | `footer` | Template-slotted | Section 1 = brand link + social list (icon + label, label visually hidden); each further section = `h2` + link list column. |
+| Hero (index s1) | `hero` | Template-slotted | One row, two cells: h1 + lede `<p>` + `**primary**` / `*secondary*` CTA paragraphs; collage = 3 images. Section style `muted`. Prototype `<header>` host → section `div` (blocks emit no `<header>`). |
+| Featured story (s2) | `featured` | Template-slotted | Image cell; text cell = breadcrumb link `<p>` (Home, Case studies — chevron is a CSS mask on `a + a::before`), h2, byline paragraphs (`By **Taylor Brooks**`, date line). |
+| Gallery (s3) | `gallery` | Reconstructive | Head row h2 + lede; every image → one square tile. Style `muted`. |
+| Testimonials (s4) | `testimonials` | Reconstructive | One row per person: photo · (who `<p>` with `<strong>` name + role, quote `<p>`) · avatar. Tab labels are stripped presentational clones of the who `<p>` (EW4). Tabs: click + Arrow/Home/End (dynamics x-testimonial-tabs). |
+| Latest articles (s5) | `articles` | Reconstructive | Head row h2 + lede; one row per card: image · (tag `<p>`, date `<p>`, h3 with link). Card-as-link, inner anchor unwrapped (EW6). Style `muted`. |
+| FAQ (s6) | `faq` | Reconstructive | Head row h2 + lede; one row per Q (cell 1) / A (cell 2). Native `<details>` kept per dynamics row x-faq-details; the authored question `<p>` is moved into `<summary>` (EW7 deviation, accepted to keep the native accordion; text stays editable — EW gate 10/10). |
+| Closing banner (s7) | `banner` | Template-slotted | Image (absolute background, gradient overlay) + h2 + lede + `**See more**`. Style `inverse` (foundation paints the on-dark button). |
 
-- Blocks: `hero-teaser` (variant small) — template-slotted (art-directed renditions moved into
-  range slots); `text-media` — template-slotted (header / gallery / richtext slots). Encoder core
-  `stardust/rollout/encoders/encode.mjs` + modules hero-teaser, text-media; notes in
-  `stardust/rollout/encoders/legal.md`.
-- Text-only c-media CEs are authored as default content (David's model; foundation default-content
-  rhythm equals o-page__ce stacking). The legal archetype therefore has 1 block (hero-teaser);
-  text-media is exercised by image CEs on sibling templates (render-harness --ew: 7/7 editable).
-- davids-model-lint 🟡 D1 on hero-teaser (3 image-only rows): justified — art-directed renditions
-  (1920×327 / tablet / 800×454) differ in aspect ratio, one image cannot reproduce the hero height.
-- qa-gate cap row (DESIGN.json containerMaxWidth 1920 vs content cap 1460 at 2560) fails on the
-  default-content wrapper the foundation owns; prototype carries the same 1460 cap — not a block defect.
+### C-archetype landing / index (2026-10-16)
 
-## C-archetype home — en (2026-10-09)
-
-- Blocks: NEW `video-player` (template-slotted: poster / play / caption / text-column slots; D3
-  AdmiralCloud embed on click, poster fallback when the vendor refuses the host), NEW
-  `section-background` (template-slotted: o-container__bg-image layer). Shared, additive only:
-  text-media variant `header-row`; teaser `wide-narrow.with-embed` 512px frame; fact-box guarded
-  equalise re-run (boxes with foot text). Encoder modules + notes: stardust/rollout/encoders/home.md.
-- Section schema: stardust/eds-schema/en.json from an annotated copy (one data-section per block,
-  stardust/.work/archetype-home/annotate.cjs). qa-gate PASS 39/0/0; block-roundtrip --ew
-  video-player 4/4 editable, section-background 0/0. Whole page: pre-existing EW findings in the
-  shared hero-stage-slider (7 dead: textLine moves childNodes) and fact-box (6 dead), teaser
-  URL-display embed link (by design), text-media role swap on the light h1 — not touched (shared).
-- davids-model-lint 🟡 D1 section-background (image-only layer, decorative), D1 text-media eyebrow
-  header (bespoke c-media__meta styling), D3 teaser with-embed (embed row is one cell by design).
-- Published gate: 1440 2.42 % Δh 2 PASS; 360 16.09 % Δh 0 → override (headed-both 4.08 % Δh 2;
-  hero autoplay tick). Crop 1440 header 1.27 % / footer 0.92 %.
+- Media: 19 captured AVIF re-encoded to WebP in headless Chromium (DA media accepts jpg/png/webp), uploaded to `media/index/` via `da-media-upload.mjs` (19/19).
+- Local asserts: `block-roundtrip.mjs --ew` whole page — 0 structural 🔴, EW editable 45/45; `davids-model-lint` PASS (3 🟡: gallery/articles/faq head rows are 1-cell beside 2-cell item rows — intended); `localize-links --check` PASS; `npm run lint` clean.
+- Deploy: PUT 201 → preview 200 → live 200; `/` on aem.page and aem.live serves the index (title + description from the capture).
+- Gate pub1 (preview origin, `--main main`, symmetric: live `<main id="main-content">`, EDS `<main>`; marker "Fresh looks, bold stories" — "Fashion Blog" is JS-rendered chrome, absent from server HTML, so the identity assert cannot see it): 1440 0.01 % Δh 0; 360 1.23 % Δh 0; overflow ok; clip 4 (the 4 closed FAQ answers, origin also 4).
+- Structural 🔴 10 per width, none block-owned: 4 × ICON DIFF on the tab avatars = the pipeline's `media_<hash>` rename of authored images (filename-only compare; same image, pixel band 0.01 %); 6 × [footer] → foundation-requests line.
+- cap-probe @2560: content cap 1200 = 1200; module 1 row ✗ is a probe miss — the live hero is a `<header>` element the probe does not resolve (px null); measured directly the live hero `div.container` is 1200 px at x=680, same as the build.

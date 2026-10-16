@@ -5,9 +5,18 @@
     "ignoreValues": [
       {
         "rule": "overused-font",
-        "value": "arial",
-        "createdAt": "2026-10-09T21:24:07.176Z",
-        "reason": "replica migration: video-player stage reproduces the source site's embedded player chrome (video.js default Arial stack); design changes are out of scope without an inconsistency-register entry"
+        "value": "instrument sans",
+        "createdAt": "2026-10-16T11:03:52.582Z",
+        "reason": "replica run: Instrument Sans is the source site's own body face (wknd-trendsetters.site stylesheet), preserved by the same-design migration contract"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/replica/index-proposed.src.html"
+        ],
+        "createdAt": "2026-10-16T11:03:52.590Z",
+        "reason": "replica run: type ramp lifted verbatim from the source stylesheet; design changes are limited to the inconsistency register"
       }
     ]
   }

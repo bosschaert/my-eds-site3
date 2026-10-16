@@ -357,11 +357,6 @@ export const browserTier = (b) => b.stardustTier || 'chromium';
 // Consent-accept candidates (clicked, never DOM-removed, so consent-gated
 // layout settles the way a real visit does) — stitch-shot's proven list.
 const CONSENT_CANDIDATES = [
-  // replica INSTRUMENT FIX (continental.com run, 2026-10-09; flag for upstreaming): consentmanager.net
-  // renders its buttons as <a> inside an open shadow root (#cmpwrapper) — none of the candidates below
-  // match, so every live capture baked the banner in. Playwright CSS pierces open shadow roots.
-  // Reject = the run's recorded consent state (direction.md).
-  '.cmpboxbtnno',
   '#onetrust-accept-btn-handler',
   'button:has-text("Accept all")',
   'button:has-text("Accept All")',
@@ -377,12 +372,8 @@ const CONSENT_CANDIDATES = [
 // visible panel is a fixed child. Hence the popup/newsletter id+class
 // markers, and hence the close-control-visibility test below (the ROOT may
 // be 0x0 even while the interstitial is showing).
-// replica INSTRUMENT FIX (continental.com run, 2026-10-09; flag for upstreaming): the live site shows an
-// IP-geo redirect banner (section.c-ip-redirect-banner, 88px above the header) to en-US visitors; it is not
-// part of the captured page or the chrome — closed like a marketing interstitial (foundation-requests.md).
-const MODAL_ROOTS = '[role="dialog"], [aria-modal="true"], .modal, [id*="popup" i], [class*="popup" i], [id*="newsletter" i], [class*="newsletter" i], .c-ip-redirect-banner';
+const MODAL_ROOTS = '[role="dialog"], [aria-modal="true"], .modal, [id*="popup" i], [class*="popup" i], [id*="newsletter" i], [class*="newsletter" i]';
 const MODAL_CLOSE_CANDIDATES = [
-  '.c-ip-redirect-banner__close',
   '[aria-label*="close" i]',
   'button[class*="close" i]',
   '[class*="close" i] button',

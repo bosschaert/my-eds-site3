@@ -1,402 +1,120 @@
 {
- "_provenance": {
-  "writtenBy": "stardust:dynamics",
-  "writtenAt": "2026-10-10T12:45:24.375Z",
-  "phase": "rollout D2-dynamic",
-  "origin": "https://main--d9ddbc54--aemcoder.aem.live"
- },
- "method": "Features implemented during delivery (block JS, embeds, snapshots); D2 added helix-query.yaml (index 99 rows), the search block index variant on the header form targets (/en/general/search, /de/meta/suche) and image-link lightboxes; search expectations read from the SOURCE results pages (www.continental.com, tx_solr[q]) on 2026-10-10.",
- "features": [
-  {
-   "id": "header-search",
-   "feature": "header quick search + results over the migrated corpus",
-   "class": "S",
-   "pages": 99,
-   "disposition": "index-backed",
-   "reproducibility": "self",
-   "status": "interim",
-   "owner": "corpus: the source Solr index spans the full site (thousands of pages); terms whose source hits fall outside the 99-page scope differ in count — migrate the remaining corpus or accept the smaller result set",
-   "verifiedBy": "query-index 99 rows; impressum 1/1 + produktanfragen 1/1 match source; \"legal notice\" source 6 (3 out of scope) vs here 3",
-   "checks": [
+  "_provenance": {
+    "writtenBy": "stardust:dynamics",
+    "writtenAt": "2026-10-16T10:51:14.804Z"
+  },
+  "method": "one-page scope; 4 self rows rebuilt in block JS/CSS (header, testimonials, faq) during C-deliver; 1 T row (Cloudflare beacon) held for owner decision; no listings, so no query index",
+  "features": [
     {
-     "type": "fetch-json",
-     "url": "/query-index.json",
-     "minRows": 99,
-     "expectKeys": [
-      "total",
-      "data"
-     ]
+      "id": "t-unknown-third-party-host-static-cloudflareinsights-com",
+      "feature": "Cloudflare Web Analytics beacon",
+      "class": "T",
+      "pages": 1,
+      "disposition": "embed-passthrough",
+      "reproducibility": "needs-business-decision",
+      "status": "scaffolded-awaiting-owner",
+      "owner": "which analytics run on the new host; beacon token",
+      "verifiedBy": "interim: not shipped; replay asserts no beacon request",
+      "checks": [
+        {
+          "type": "consent-gate",
+          "path": "/",
+          "forbiddenHosts": [
+            "static.cloudflareinsights.com"
+          ]
+        }
+      ]
     },
     {
-     "type": "search-query",
-     "path": "/de/meta/suche",
-     "term": "impressum",
-     "resultSelector": ".search .search-result",
-     "titleSelector": ".search-result-title",
-     "expectCount": 1,
-     "expectTitles": [
-      "Impressum"
-     ],
-     "expectIncludes": "/de/impressum"
+      "id": "x-nav-mobile-toggle",
+      "feature": "Mobile navigation toggle",
+      "class": "X",
+      "pages": 1,
+      "disposition": "rebuild",
+      "reproducibility": "self",
+      "status": "done",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "header button.menu-toggle[aria-controls=\"site-nav\"][aria-expanded]",
+          "min": 1
+        }
+      ]
     },
     {
-     "type": "search-query",
-     "path": "/de/meta/suche",
-     "term": "produktanfragen",
-     "resultSelector": ".search .search-result",
-     "titleSelector": ".search-result-title",
-     "expectCount": 1,
-     "expectTitles": [
-      "Produktanfragen"
-     ],
-     "expectIncludes": "/de/meta/produkte"
+      "id": "x-nav-mega-menu",
+      "feature": "Trends mega menu + Support dropdown",
+      "class": "X",
+      "pages": 1,
+      "disposition": "rebuild",
+      "reproducibility": "self",
+      "status": "done",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": "header .mega-link",
+          "min": 1
+        }
+      ]
     },
     {
-     "type": "search-query",
-     "path": "/en/general/search",
-     "term": "legal notice",
-     "resultSelector": ".search .search-result",
-     "titleSelector": ".search-result-title",
-     "expectCount": 6,
-     "expectTitles": [
-      "Legal Notice",
-      "Contact Form Data Protection",
-      "Trust"
-     ],
-     "expectIncludes": "/en/general/legal-notice"
-    }
-   ]
-  },
-  {
-   "id": "solr-listings",
-   "feature": "Solr results lists (press releases, media library, career events)",
-   "class": "L",
-   "pages": 3,
-   "disposition": "static-snapshot",
-   "reproducibility": "needs-business-decision",
-   "status": "interim",
-   "snapshot": "2026-10-09",
-   "owner": "keep a live news feed? (assumed: snapshot until the press corpus migrates)",
-   "checks": [
-    {
-     "type": "dom-count",
-     "path": "/de/presse/pressemitteilungen",
-     "selector": ".search .search-result",
-     "min": 9
+      "id": "x-testimonial-tabs",
+      "feature": "Testimonial tabs",
+      "class": "X",
+      "pages": 1,
+      "disposition": "rebuild",
+      "reproducibility": "self",
+      "status": "done",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": ".testimonials [role=\"tab\"]",
+          "min": 4
+        },
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": ".testimonials [role=\"tabpanel\"]",
+          "min": 4
+        }
+      ]
     },
     {
-     "type": "dom-count",
-     "path": "/de/presse/mediathek",
-     "selector": ".search, .video-player",
-     "min": 1
-    }
-   ]
-  },
-  {
-   "id": "download-cart",
-   "feature": "download cart (tx_condownload checkboxes, header folder, zip export)",
-   "class": "F",
-   "pages": 9,
-   "disposition": "client-only",
-   "reproducibility": "needs-backend",
-   "status": "interim",
-   "owner": "server-side zip endpoint (assumed: per-file links); the client cart panel is not built — header cart button is inert (count 0)",
-   "checks": []
-  },
-  {
-   "id": "lightbox",
-   "feature": "image / share lightbox (data-lightbox)",
-   "class": "M",
-   "pages": 83,
-   "disposition": "rebuild-native",
-   "reproducibility": "self",
-   "status": "done",
-   "checks": [
-    {
-     "type": "click-dialog",
-     "path": "/en-pt",
-     "trigger": ".figure a[data-lightbox]"
+      "id": "x-faq-details",
+      "feature": "FAQ accordion (native details)",
+      "class": "X",
+      "pages": 1,
+      "disposition": "rebuild",
+      "reproducibility": "self",
+      "status": "done",
+      "checks": [
+        {
+          "type": "dom-count",
+          "path": "/",
+          "selector": ".faq details > summary",
+          "min": 1
+        }
+      ]
     },
     {
-     "type": "click-dialog",
-     "path": "/en/career/working-at-continental",
-     "trigger": ".page-options [tabindex=\"0\"]"
+      "id": "page-errors",
+      "feature": "no uncaught exceptions",
+      "class": "X",
+      "pages": 1,
+      "disposition": "rebuild",
+      "reproducibility": "self",
+      "status": "done",
+      "checks": [
+        {
+          "type": "no-page-errors",
+          "paths": [
+            "/"
+          ]
+        }
+      ]
     }
-   ]
-  },
-  {
-   "id": "language-menu",
-   "feature": "language menu dropdown + country selector",
-   "class": "M",
-   "pages": 99,
-   "disposition": "rebuild-native",
-   "reproducibility": "self",
-   "status": "done",
-   "checks": [
-    {
-     "type": "dom-count",
-     "path": "/en",
-     "selector": ".lang-menu-dropdown a[href^=\"/de\"]",
-     "min": 1
-    },
-    {
-     "type": "dom-count",
-     "path": "/de",
-     "selector": ".lang-menu-dropdown a[href^=\"/en\"]",
-     "min": 1
-    }
-   ]
-  },
-  {
-   "id": "locale-variants",
-   "feature": "hreflang alternates (de/en/x-default + country sites)",
-   "class": "I18N",
-   "pages": 99,
-   "disposition": "rebuild-native",
-   "reproducibility": "self",
-   "status": "interim",
-   "owner": "hreflang <link> emission needs a foundation change (head.html / scripts.js are frozen) or a helix-sitemap.yaml with language alternates — not shipped in D2",
-   "checks": [
-    {
-     "type": "dom-count",
-     "path": "/en",
-     "selector": "link[rel=alternate][hreflang]",
-     "min": 2
-    }
-   ]
-  },
-  {
-   "id": "stage-overlay",
-   "feature": "stories stage overlay",
-   "class": "M",
-   "pages": 2,
-   "disposition": "rebuild-native",
-   "reproducibility": "self",
-   "status": "done",
-   "checks": [
-    {
-     "type": "dom-count",
-     "path": "/en/stories",
-     "selector": ".cs-stage .cs-stage-overlay[href]",
-     "min": 1
-    }
-   ]
-  },
-  {
-   "id": "client-widgets",
-   "feature": "hero slider, tabs, accordions, content slider, fact-box counters",
-   "class": "L",
-   "pages": 70,
-   "disposition": "client-only",
-   "reproducibility": "self",
-   "status": "done",
-   "checks": [
-    {
-     "type": "dom-count",
-     "path": "/en/investors",
-     "selector": ".tabs [role=tab]",
-     "min": 2
-    },
-    {
-     "type": "dom-count",
-     "path": "/en/sustainability",
-     "selector": ".accordion details, .accordion [aria-expanded]",
-     "min": 2
-    },
-    {
-     "type": "no-page-errors",
-     "paths": [
-      "/en",
-      "/de",
-      "/en/investors",
-      "/en/career",
-      "/de/karriere",
-      "/en/sustainability",
-      "/en/stories",
-      "/de/presse/mediathek",
-      "/en-pt"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "video-player",
-   "feature": "AdmiralCloud player",
-   "class": "V",
-   "pages": 20,
-   "disposition": "embed-passthrough",
-   "reproducibility": "needs-business-decision",
-   "status": "interim",
-   "owner": "allow the AdmiralCloud player on the new host: api.admiralcloud.com deliverEmbed answers 403 for *.aem.live (domain allowlist) — the block falls back to the poster; replay passes once the host is allowlisted",
-   "checks": [
-    {
-     "type": "video-plays",
-     "path": "/en/company",
-     "trigger": ".video-player-play",
-     "playbackHost": "admiralcloud"
-    }
-   ]
-  },
-  {
-   "id": "share-widget",
-   "feature": "EquityStory share-price / IR widgets",
-   "class": "T",
-   "pages": 6,
-   "disposition": "embed-passthrough",
-   "reproducibility": "needs-business-decision",
-   "status": "interim",
-   "owner": "EquityStory domain allowlist for the new host",
-   "checks": [
-    {
-     "type": "dom-count",
-     "path": "/en/investors/shares",
-     "selector": "iframe[src*=equitystory], script[src*=equitystory], [id*=equitystory i], [class*=equitystory i]",
-     "min": 1
-    }
-   ]
-  },
-  {
-   "id": "job-widget",
-   "feature": "job search / job list widgets",
-   "class": "T",
-   "pages": 6,
-   "disposition": "embed-passthrough",
-   "reproducibility": "needs-business-decision",
-   "status": "interim",
-   "owner": "job widget allowlist; search hands off to jobs.continental.com",
-   "checks": [
-    {
-     "type": "dom-count",
-     "path": "/en/career",
-     "selector": "form.job-search-box input.job-search-input",
-     "min": 1
-    },
-    {
-     "type": "dom-count",
-     "path": "/es-mx/carrera",
-     "selector": ".job-list-item",
-     "min": 1
-    }
-   ]
-  },
-  {
-   "id": "contact-forms",
-   "feature": "contact forms (Portugal one-pager, sustainability)",
-   "class": "F",
-   "pages": 3,
-   "disposition": "rebuild-native",
-   "reproducibility": "needs-backend",
-   "status": "interim",
-   "owner": "form handler endpoint (assumed: none yet) — form-flow check added once an endpoint exists; submit shows \"No backend connected\"",
-   "checks": [
-    {
-     "type": "dom-count",
-     "path": "/en/general/sustainability-contact-form",
-     "selector": "form.webform-form [required]",
-     "min": 6
-    },
-    {
-     "type": "dom-count",
-     "path": "/en-pt",
-     "selector": "form.webform-form [required]",
-     "min": 1
-    }
-   ]
-  },
-  {
-   "id": "caralegal-form",
-   "feature": "data-protection request form (caralegal iframe)",
-   "class": "F",
-   "pages": 1,
-   "disposition": "embed-passthrough",
-   "reproducibility": "self",
-   "status": "done",
-   "checks": [
-    {
-     "type": "dom-count",
-     "path": "/en/general/contact-form-data-protection",
-     "selector": ".embed.caralegal iframe[src*=\"caralegal\"]",
-     "min": 1
-    }
-   ]
-  },
-  {
-   "id": "ip-banner",
-   "feature": "IP-redirect banner data (/<path>/api-dc/)",
-   "class": "A",
-   "pages": 99,
-   "disposition": "data-fed",
-   "reproducibility": "needs-business-decision",
-   "status": "interim",
-   "owner": "geo-redirect service for the new host (host-bound: dead on target)",
-   "checks": []
-  },
-  {
-   "id": "consent-tags",
-   "feature": "consentmanager CMP + GTM + analytics",
-   "class": "T",
-   "pages": 99,
-   "disposition": "embed-passthrough",
-   "reproducibility": "needs-business-decision",
-   "status": "scaffolded-awaiting-owner",
-   "owner": "tags + CMP on the new host",
-   "checks": [
-    {
-     "type": "consent-gate",
-     "path": "/",
-     "forbiddenHosts": [
-      "consentmanager.net",
-      "googletagmanager.com",
-      "google-analytics.com",
-      "doubleclick.net"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "site-assets",
-   "feature": "first-party icons / data files",
-   "class": "D",
-   "pages": 99,
-   "disposition": "data-fed",
-   "reproducibility": "self",
-   "status": "done",
-   "checks": [
-    {
-     "type": "dom-count",
-     "path": "/en",
-     "selector": ".u-icon svg, svg use",
-     "min": 20
-    }
-   ]
-  },
-  {
-   "id": "external-links",
-   "feature": "sign-in / portal links",
-   "class": "X",
-   "pages": 3,
-   "disposition": "static-snapshot",
-   "reproducibility": "self",
-   "status": "done",
-   "checks": []
-  },
-  {
-   "id": "social-wall",
-   "feature": "Flockler social wall",
-   "class": "E",
-   "pages": 5,
-   "disposition": "embed-passthrough",
-   "reproducibility": "needs-business-decision",
-   "status": "interim",
-   "owner": "keep the Flockler feed on the new host",
-   "checks": [
-    {
-     "type": "dom-count",
-     "path": "/en/career",
-     "selector": ".embed.flockler iframe[src*=\"flockler\"]",
-     "min": 1
-    }
-   ]
-  }
- ]
+  ]
 }

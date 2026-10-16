@@ -1,24 +1,24 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-10-09T19:44:25.789Z",
+    "writtenAt": "2026-10-16T10:06:16.258Z",
     "stardustVersion": "0.0.0"
   },
   "target": "aem-eds",
   "site": {
-    "sourceUrl": "https://www.continental.com/",
+    "sourceUrl": "https://www.wknd-trendsetters.site/",
     "da": {
       "org": "aemcoder",
-      "site": "d9ddbc54",
+      "site": "c579f7f0",
       "ref": "main"
     },
-    "liveHost": "main--d9ddbc54--aemcoder.aem.live"
+    "liveHost": "main--c579f7f0--aemcoder.aem.live"
   },
   "lastRun": {
-    "at": "2026-10-10T13:00:36.598Z",
+    "at": "2026-10-16T11:00:28.341Z",
     "pages": {
-      "total": 101,
-      "verified": 101,
+      "total": 1,
+      "verified": 1,
       "deployed": 0,
       "pending": 0,
       "contentPending": 0,
@@ -26,8 +26,8 @@
       "failed": 0
     },
     "blocks": {
-      "total": 15,
-      "converted": 15,
+      "total": 9,
+      "converted": 9,
       "pending": 0
     },
     "verifyFailures": 0

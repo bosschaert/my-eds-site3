@@ -1,362 +1,52 @@
 {
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-10-16T10:02:00Z"
+  },
   "units": {
     "plan": {
       "status": "done",
       "kind": "plan",
       "templates": [
-        "home",
-        "hub",
-        "content",
-        "legal",
-        "stories"
-      ],
-      "pages": 99,
-      "startedAt": "2026-10-09T18:41:28.368Z",
-      "endedAt": "2026-10-09T18:41:28.368Z",
-      "verdict": "plan: 5 archetypes (A) + 94 siblings (A′) in 16 render units"
-    },
-    "archetypes": {
-      "status": "done",
-      "kind": "render",
-      "templates": [
-        "home",
-        "hub",
-        "content",
-        "legal",
-        "stories"
-      ],
-      "pages": 5,
-      "slugs": [
-        "en",
-        "en-investors",
-        "en-career-working-at-continental",
-        "en-general-legal-notice",
-        "en-stories"
-      ],
-      "startedAt": "2026-10-09T18:41:50Z",
-      "endedAt": "2026-10-09T18:41:56.361Z",
-      "verdict": "rendered 5, unchanged 0, refused 0, passthrough 0"
-    },
-    "home": {
-      "status": "done",
-      "kind": "render",
-      "templates": [
-        "home"
-      ],
-      "pages": 2,
-      "slugs": [
-        "de",
-        "index"
-      ],
-      "archetype": "en",
-      "endedAt": "2026-10-09T21:47:17.279Z",
-      "verdict": "rendered 2, unchanged 0, refused 0, content-count ok 2/2",
-      "variance": "stardust/migrate/variance/home.json",
-      "commit": "8450869"
-    },
-    "stories": {
-      "status": "done",
-      "kind": "render",
-      "templates": [
-        "stories"
+        "landing"
       ],
       "pages": 1,
-      "slugs": [
-        "de-stories"
-      ],
-      "archetype": "en-stories",
-      "endedAt": "2026-10-09T20:50:11.000Z",
-      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0",
-      "variance": "stardust/migrate/variance/stories.json"
+      "startedAt": "2026-10-16T10:01:38Z",
+      "endedAt": "2026-10-16T10:02:00Z",
+      "verdict": "in scope 1: Path A (approved) index → index.html; Path A' 0; Path B 0; skipped 0; preconditions: dynamic-features.md present (5 rows), archetype landing gated 1440 0.00% / 360 1.20%"
     },
-    "legal-1": {
+    "landing": {
       "status": "done",
       "kind": "render",
       "templates": [
-        "legal"
+        "landing"
       ],
-      "pages": 5,
-      "slugs": [
-        "de-country-selector",
-        "de-impressum",
-        "de-meta-cookie-richtlinie",
-        "de-meta-datenschutz",
-        "de-meta-rechtliche-hinweise"
-      ],
-      "archetype": "en-general-legal-notice",
-      "startedAt": "2026-10-09T19:44:25.729Z",
-      "endedAt": "2026-10-09T19:44:25.729Z",
-      "verdict": "rendered 5, unchanged 0, refused 0, passthrough 0",
-      "variance": "stardust/migrate/variance/legal.json"
+      "pages": 1,
+      "startedAt": "2026-10-16T10:02:03Z",
+      "endedAt": "2026-10-16T10:03:00Z",
+      "verdict": "rendered 1, unchanged 0, refused 0, passthrough 0"
     },
-    "legal-2": {
+    "assets": {
       "status": "done",
-      "kind": "render",
+      "kind": "assets",
       "templates": [
-        "legal"
+        "landing"
       ],
-      "pages": 5,
-      "slugs": [
-        "en-country-selector",
-        "en-general-cookie-policy",
-        "en-general-data-protection",
-        "en-general-site-notice",
-        "en-us-general-data-protection"
-      ],
-      "archetype": "en-general-legal-notice",
-      "startedAt": "2026-10-09T19:44:25.729Z",
-      "endedAt": "2026-10-09T19:44:25.729Z",
-      "verdict": "rendered 5, unchanged 0, refused 0, passthrough 0",
-      "variance": "stardust/migrate/variance/legal.json"
-    },
-    "hub-1": {
-      "status": "done",
-      "kind": "render",
-      "templates": [
-        "hub"
-      ],
-      "pages": 6,
-      "slugs": [
-        "cs-cz",
-        "de-investoren",
-        "de-karriere",
-        "de-nachhaltigkeit",
-        "de-presse",
-        "de-unternehmen"
-      ],
-      "archetype": "en-investors",
-      "endedAt": "2026-10-09T21:30:48.377Z",
-      "verdict": "rendered 6, unchanged 0, refused 0, content-count ok 6/6",
-      "variance": "stardust/migrate/variance/hub.json",
-      "commit": "9efbd8a"
-    },
-    "hub-2": {
-      "status": "done",
-      "kind": "render",
-      "templates": [
-        "hub"
-      ],
-      "pages": 5,
-      "slugs": [
-        "en-career",
-        "en-company",
-        "en-press",
-        "en-pt",
-        "en-sustainability"
-      ],
-      "archetype": "en-investors",
-      "endedAt": "2026-10-09T21:30:48.377Z",
-      "verdict": "rendered 5, unchanged 0, refused 0, content-count ok 5/5",
-      "variance": "stardust/migrate/variance/hub.json",
-      "commit": "d0d0aa6"
-    },
-    "hub-3": {
-      "status": "done",
-      "kind": "render",
-      "templates": [
-        "hub"
-      ],
-      "pages": 6,
-      "slugs": [
-        "en-us-career",
-        "es-mx-carrera",
-        "fr-fr-carriere",
-        "pt-pt",
-        "ro-ro-cariera",
-        "sk-sk"
-      ],
-      "archetype": "en-investors",
-      "endedAt": "2026-10-09T21:30:48.377Z",
-      "verdict": "rendered 6, unchanged 0, refused 0, content-count ok 6/6",
-      "variance": "stardust/migrate/variance/hub.json",
-      "commit": "aa6b00b"
-    },
-    "content-1": {
-      "status": "done",
-      "kind": "render",
-      "templates": [
-        "content"
-      ],
-      "pages": 8,
-      "slugs": [
-        "de-investoren-aktie",
-        "de-investoren-berichte-praesentationen",
-        "de-investoren-fremdkapital-rating",
-        "de-investoren-ir-kontakt",
-        "de-investoren-meldungen",
-        "de-investoren-praesentationen",
-        "de-investoren-service",
-        "de-investoren-ueber-uns"
-      ],
-      "archetype": "en-career-working-at-continental",
-      "startedAt": "2026-10-09T21:00:00.000Z",
-      "endedAt": "2026-10-09T20:49:39.000Z",
-      "verdict": "rendered 8, unchanged 0, refused 0, passthrough 0",
-      "variance": "stardust/migrate/variance/content.json"
-    },
-    "content-2": {
-      "status": "done",
-      "kind": "render",
-      "templates": [
-        "content"
-      ],
-      "pages": 8,
-      "slugs": [
-        "de-investoren-veranstaltungen",
-        "de-investoren-vitesco-technologies-spin-off",
-        "de-karriere-arbeiten-bei-continental",
-        "de-karriere-bewerbungsprozess",
-        "de-karriere-ihr-karrierelevel",
-        "de-karriere-kontakt-faqs",
-        "de-karriere-unsere-jobvielfalt",
-        "de-karriere-veranstaltungen"
-      ],
-      "archetype": "en-career-working-at-continental",
-      "startedAt": "2026-10-09T21:00:00.000Z",
-      "endedAt": "2026-10-09T20:49:46.000Z",
-      "verdict": "rendered 8, unchanged 0, refused 0, passthrough 0",
-      "variance": "stardust/migrate/variance/content.json"
-    },
-    "content-3": {
-      "status": "done",
-      "kind": "render",
-      "templates": [
-        "content"
-      ],
-      "pages": 8,
-      "slugs": [
-        "de-karriere-woran-wir-arbeiten",
-        "de-meta-ihr-kontakt-zu-uns",
-        "de-meta-kontakt-lieferanten",
-        "de-meta-kontakt-nachhaltigkeit",
-        "de-meta-produkte",
-        "de-nachhaltigkeit-berichterstattung-und-downloads",
-        "de-presse-mediathek",
-        "de-presse-messen-events"
-      ],
-      "archetype": "en-career-working-at-continental",
-      "startedAt": "2026-10-09T21:00:00.000Z",
-      "endedAt": "2026-10-09T20:49:55.000Z",
-      "verdict": "rendered 8, unchanged 0, refused 0, passthrough 0",
-      "variance": "stardust/migrate/variance/content.json"
-    },
-    "content-4": {
-      "status": "done",
-      "kind": "render",
-      "templates": [
-        "content"
-      ],
-      "pages": 8,
-      "slugs": [
-        "de-presse-pressemitteilungen",
-        "de-presse-presskontakte",
-        "de-presse-studien-publikationen",
-        "de-produkte-und-innovationen",
-        "de-produkte-und-innovationen-contitech",
-        "de-produkte-und-innovationen-produkte",
-        "de-produkte-und-innovationen-reifen",
-        "de-unternehmen-corporate-governance"
-      ],
-      "archetype": "en-career-working-at-continental",
-      "endedAt": "2026-10-09T20:50:11.000Z",
-      "verdict": "rendered 8, unchanged 0, refused 0, passthrough 0",
-      "variance": "stardust/migrate/variance/content.json"
-    },
-    "content-5": {
-      "status": "done",
-      "kind": "render",
-      "templates": [
-        "content"
-      ],
-      "pages": 8,
-      "slugs": [
-        "de-unternehmen-geschichte",
-        "de-unternehmen-lieferanten",
-        "de-unternehmen-marke-continental",
-        "de-unternehmen-technische-compliance",
-        "en-career-application-process",
-        "en-career-contact-faqs",
-        "en-career-our-range-of-jobs",
-        "en-career-what-we-are-working-on"
-      ],
-      "archetype": "en-career-working-at-continental",
-      "endedAt": "2026-10-09T20:50:11.000Z",
-      "verdict": "rendered 8, unchanged 0, refused 0, passthrough 0",
-      "variance": "stardust/migrate/variance/content.json"
-    },
-    "content-6": {
-      "status": "done",
-      "kind": "render",
-      "templates": [
-        "content"
-      ],
-      "pages": 8,
-      "slugs": [
-        "en-career-your-career-level",
-        "en-company-continental-brand",
-        "en-company-corporate-governance",
-        "en-company-history",
-        "en-company-strategy-of-the-continental-group",
-        "en-company-structure-of-the-continental-group",
-        "en-company-suppliers",
-        "en-company-technical-compliance"
-      ],
-      "archetype": "en-career-working-at-continental",
-      "endedAt": "2026-10-09T20:50:11.000Z",
-      "verdict": "rendered 8, unchanged 0, refused 0, passthrough 0",
-      "variance": "stardust/migrate/variance/content.json"
-    },
-    "content-7": {
-      "status": "done",
-      "kind": "render",
-      "templates": [
-        "content"
-      ],
-      "pages": 8,
-      "slugs": [
-        "en-general-contact-form-data-protection",
-        "en-general-contact-suppliers",
-        "en-general-contact-us",
-        "en-general-products",
-        "en-general-sustainability-contact-form",
-        "en-investors-about-us",
-        "en-investors-debt-and-rating",
-        "en-investors-events"
-      ],
-      "archetype": "en-career-working-at-continental",
-      "endedAt": "2026-10-09T20:50:11.000Z",
-      "verdict": "rendered 8, unchanged 0, refused 0, passthrough 0",
-      "variance": "stardust/migrate/variance/content.json"
-    },
-    "content-8": {
-      "status": "done",
-      "kind": "render",
-      "templates": [
-        "content"
-      ],
-      "pages": 8,
-      "slugs": [
-        "en-investors-ir-contact",
-        "en-investors-ir-news",
-        "en-investors-presentations",
-        "en-investors-reports-presentations",
-        "en-investors-services",
-        "en-investors-shares",
-        "en-investors-vitesco-technologies-spin-off",
-        "en-products-and-innovation"
-      ],
-      "archetype": "en-career-working-at-continental",
-      "endedAt": "2026-10-09T20:50:11.000Z",
-      "verdict": "rendered 8, unchanged 0, refused 0, passthrough 0",
-      "variance": "stardust/migrate/variance/content.json"
+      "pages": 1,
+      "startedAt": "2026-10-16T10:03:09Z",
+      "endedAt": "2026-10-16T10:03:48Z",
+      "verdict": "no media rehosted; robots.txt + sitemap.xml added; logo inline (no file); favicon + 3 fonts present; 0 escapes/absolute refs; 21 out-of-scope links + 3 file:// policy blocks logged"
     },
     "report": {
       "status": "done",
       "kind": "report",
-      "templates": [],
-      "pages": 99,
-      "endedAt": "2026-10-10T12:28:10Z",
-      "verdict": "report: 99 migrated (5 Path A archetypes, 94 Path A' siblings), 0 failed; state.json 99/99 migrated"
+      "templates": [
+        "landing"
+      ],
+      "pages": 1,
+      "startedAt": "2026-10-16T10:03:56Z",
+      "endedAt": "2026-10-16T10:05:23Z",
+      "verdict": "1 migrated (index), 0 unchanged, 0 failed, 0 stale; Path A 1; 26 assets, 0 missing; 21 broken internal links (out of scope)"
     }
   }
 }

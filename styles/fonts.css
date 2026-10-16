@@ -1,48 +1,25 @@
-/* ContinentalStagSansW is licensed: served from the owner's CDN (CORS *), never copied. */
+/* Brand faces (self-hosted, SIL OFL 1.1) — loaded by loadFonts(), not parsed at first paint */
 @font-face {
-  font-family: ContinentalStagSansW;
-  src: url("https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/Fonts/ContinentalStagSans-Light-Web.woff2") format("woff2");
-  font-weight: 300;
+  font-family: 'Instrument Sans';
   font-style: normal;
+  font-weight: 400 700;
+  font-stretch: 100%;
   font-display: swap;
+  src: url('../fonts/instrument-sans-latin.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: ContinentalStagSansW;
-  src: url("https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/Fonts/ContinentalStagSans-LightItalic-Web.woff2") format("woff2");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: ContinentalStagSansW;
-  src: url("https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/Fonts/ContinentalStagSans-Book-Web.woff2") format("woff2");
+  font-family: Syncopate;
+  font-style: normal;
   font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/syncopate-400-latin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Syncopate;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: ContinentalStagSansW;
-  src: url("https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/Fonts/ContinentalStagSans-BookItalic-Web.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: ContinentalStagSansW;
-  src: url("https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/Fonts/ContinentalStagSans-Med-Web.woff2") format("woff2");
   font-weight: 700;
-  font-style: normal;
   font-display: swap;
-}
-
-@font-face {
-  font-family: ContinentalStagSansW;
-  src: url("https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/Fonts/ContinentalStagSans-MedItalic-Web.woff2") format("woff2");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+  src: url('../fonts/syncopate-700-latin.woff2') format('woff2');
 }

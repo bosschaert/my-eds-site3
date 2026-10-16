@@ -1,0 +1,344 @@
+/* teaser — source c-teaser (is-layout-default) cards in the o-container .row grid
+   (col-12 col-sm-6 col-md-3|4|8 mb-5, d-flex) */
+.teaser {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+/* header row (o-container__header, margin-bottom 2.7429rem) → grid */
+main .section > .default-content-wrapper + .teaser-wrapper { margin-top: 2.7429rem; }
+
+.teaser .teaser-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 48px;
+  padding: 0 16px;
+}
+
+@media (width >= 767px) {
+  .teaser .teaser-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .teaser.cols-2 .teaser-item,
+  .teaser.wide-narrow .teaser-item { flex-basis: 50%; }
+}
+
+@media (width >= 1023px) {
+  .teaser .teaser-item {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .teaser.cols-4 .teaser-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .teaser.cols-2 .teaser-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .teaser.wide-narrow .teaser-item:nth-child(odd) {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+}
+
+.teaser .teaser-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width: 100%;
+  color: #000;
+  text-decoration: none;
+}
+
+.teaser .teaser-card:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.teaser .teaser-image {
+  position: relative;
+  margin-bottom: 1.3714rem;
+  padding-top: 56.25%;
+}
+
+.teaser .teaser-image picture,
+.teaser .teaser-image > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.teaser .teaser-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 5.7143rem;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.teaser .teaser-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  flex-grow: 1;
+}
+
+.teaser .teaser-header {
+  margin: 0 0 16px;
+  padding: 0;
+  overflow: hidden;
+  font-size: 1.3714rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  hyphens: manual;
+}
+
+.teaser .teaser-text {
+  flex-grow: 1;
+  overflow-wrap: anywhere;
+}
+
+.teaser .teaser-text p {
+  font-size: .9143rem;
+  font-weight: 400;
+}
+
+.teaser .teaser-link {
+  display: flex;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.teaser .teaser-link .u-icon { padding: .4rem .3429rem .4rem .4571rem; }
+
+.teaser .teaser-card:hover .teaser-link {
+  color: var(--c-orange-hover);
+  text-decoration: underline;
+}
+
+.teaser .teaser-link p {
+  margin: 0;
+  font-size: inherit;
+}
+
+/* header-gap: the section header CE ends with an empty media row (source keeps the
+   c-media__header 1.8286rem margin) */
+.teaser.header-gap { padding-top: 1.8286rem; }
+
+/* ---- additive variants (hub template) ---- */
+
+/* single: the card fills the block (block laid out beside another block) */
+.teaser.single .teaser-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* image-layout (source c-teaser.is-layout-image): text over the image, button CTA */
+.teaser .teaser-link.is-button { display: none; }
+.teaser.image-layout .teaser-image { margin-bottom: 0; }
+.teaser.image-layout .teaser-link.is-button { display: flex; }
+.teaser.image-layout .teaser-link.is-link { display: none; }
+.teaser.image-layout .teaser-link .is-button-label { transition: all 150ms ease-in-out; }
+
+.teaser.image-layout .teaser-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 800px;
+  padding: 1.8286rem;
+  color: #fff;
+}
+
+.teaser.image-layout .teaser-header,
+.teaser.image-layout .teaser-text { text-shadow: 0 0 3px rgb(0 0 0 / 50%); }
+.teaser.image-layout.text-black .teaser-content { color: #000; }
+
+.teaser.image-layout.text-black .teaser-header,
+.teaser.image-layout.text-black .teaser-text { text-shadow: none; }
+
+/* live renders the image layout as the default layout at narrow widths (observed 360/575/576);
+   the CTA then looks like a teaser link (orange round icon + label) */
+@media (width <= 576px) {
+  .teaser.image-layout .teaser-image { margin-bottom: 1.3714rem; }
+
+  .teaser.image-layout .teaser-content {
+    position: relative;
+    max-width: none;
+    padding: 0;
+    color: inherit;
+  }
+
+  .teaser.image-layout .teaser-header,
+  .teaser.image-layout .teaser-text { text-shadow: none; }
+
+  .teaser.image-layout .teaser-link.is-button .c-button {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    font-weight: 500;
+  }
+
+  .teaser.image-layout .teaser-link.is-button .c-button .u-icon {
+    width: 1.2571rem;
+    height: 1.2571rem;
+    margin-right: 6px !important;
+    padding: .4rem .3429rem .4rem .4571rem !important;
+    border-radius: 1.6rem;
+    background: var(--c-orange);
+    font-size: .6857rem;
+    line-height: 0;
+  }
+}
+
+/* with-embed: third-party iframe column (EquityStory chart; the widget loader sizes the frame
+   475px in a half-width column, 512px at 360) + its buttons */
+.teaser .teaser-item.is-embed { flex-direction: column; }
+
+.teaser .teaser-embed {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.teaser .teaser-embed-frame {
+  display: inline;
+  width: 100%;
+  height: 475px;
+  overflow: hidden;
+  border: 0;
+}
+
+@media (width < 576px) {
+  .teaser .teaser-embed-frame { height: 512px; }
+}
+
+/* home: the share-price teaser in the narrow (col-md-4) column of a wide-narrow row — the
+   widget loader sizes the frame 512px there */
+.teaser.wide-narrow.with-embed .teaser-embed-frame { height: 512px; }
+
+.teaser .teaser-embed-links { padding-top: 24px; }
+.teaser .teaser-embed-links p { margin: 0; }
+
+
+/* variant row-text (cluster-content teaser-row-text.mjs): the trailing text column wraps onto the
+   next grid line and keeps its mb-5 */
+main .section > .teaser-wrapper:has(> .teaser.row-text) + .default-content-wrapper {
+  margin-bottom: 48px;
+}
+
+/* variant video (cluster-content teaser-video.mjs): source .c-teaser__image-overlay-icon */
+.teaser.video .teaser-image { position: relative; }
+
+.teaser.video .teaser-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+}
+
+.teaser.video .teaser-play .u-icon {
+  box-sizing: border-box;
+  width: 3.4286rem;
+  height: 3.4286rem;
+  padding: .9143rem .8rem .9143rem 1.0286rem;
+  border-radius: 1.6rem;
+  background: orange;
+  box-shadow: 0 0 100px 0 rgb(0 0 0 / 50%);
+  line-height: 0;
+}
+
+.teaser.video .teaser-play .u-icon :is(img, svg, .icon) {
+  width: 100%;
+  height: 100%;
+}
+
+/* h2 + h3.u-text-subheadline header (reifen whitepaper band): the subheadline sits on the h2
+   (section Style subheadline, styles.css), then the header margin + header row margin before
+   the content row (not subheadline-copy: copy in the same CE as the subheadline keeps the
+   default h + p rhythm) */
+main > .section.subheadline:not(.subheadline-copy) .default-content-wrapper h2 + h3 + p {
+  margin-top: calc(1.8286rem + 2.7429rem + 1.8286rem);
+}
+
+/* with-embed wide (cluster-content teaser-embed.mjs): the lone widget column is col-md-8 */
+@media (width >= 1023px) {
+  .teaser.with-embed.wide .teaser-item {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+}
+
+/* beside (cluster-hub teaser-beside.mjs): the previous block wrapper (image-layout teaser,
+   hotspots) and this single card share a row (source .row: col-sm-6 col-md-8 | col-sm-6
+   col-md-4, d-flex mb-5) */
+@media (width >= 767px) {
+  main > .section > .default-content-wrapper + * + .teaser-wrapper:has(> .teaser.beside) {
+    margin-top: 2.7429rem;
+  }
+
+  main > .section:has(> .teaser-wrapper > .teaser.beside) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  main > .section:has(> .teaser-wrapper > .teaser.beside) > * {
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  main > .section:has(> .teaser-wrapper > .teaser.beside) > :has(+ .teaser-wrapper > .teaser.beside),
+  main > .section:has(> .teaser-wrapper > .teaser.beside) > .teaser-wrapper:has(> .teaser.beside) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+}
+
+@media (width >= 1023px) {
+  main > .section:has(> .teaser-wrapper > .teaser.beside) > :has(+ .teaser-wrapper > .teaser.beside) {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+
+  main > .section:has(> .teaser-wrapper > .teaser.beside) > .teaser-wrapper:has(> .teaser.beside) {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+/* the infographic column keeps its mb-5 above the card at every width */
+main > .section > .hotspots-wrapper:has(+ .teaser-wrapper > .teaser.beside) { margin-bottom: 48px; }
+
+/* beside + header-gap stacked under 767: the card follows the first column (no header gap) */
+@media (width < 767px) {
+  .teaser.beside.header-gap { padding-top: 0; }
+}

@@ -1,0 +1,36 @@
+{
+  "pageType": "stories",
+  "slug": "en-stories",
+  "live": "https://www.continental.com/en/stories/",
+  "prototype": "stardust/prototypes/en-stories-proposed.html",
+  "files": ["stardust/prototypes/en-stories-proposed.html", "stardust/prototypes/en-stories.css", "stardust/prototypes/en-stories.js", "stardust/prototypes/assets/stories-api/182770-offset6.html"],
+  "build": "stardust/.work/en-stories/build.mjs (chrome from stardust/.work/en/en.tpl.html + offcanvas.mjs; <main> re-authored from data extracted from stardust/current/pages/en-stories.html; intrinsic img dims from stardust/.work/en-stories/dims.json)",
+  "cssSource": "stories template uses its own merged sheet (merged-969e161c….css), fetched to stardust/.work/en-stories/stories.css — c-cs-* / u-cs-* rules are NOT in stardust/current/assets/css/site.css",
+  "regime": "prototype",
+  "iterations": { "1440": 2, "360": 3 },
+  "gates": {
+    "1440": { "pixel": 0.04, "dh": 0, "structuralRed": 0, "visualFlags": "justified — 20× STRETCHED IMAGE (object-fit:cover fixed-height cards/stage, identical on live); 1× SURFACE/GROUND MISMATCH (duplicate heading text 'What Drives People…' stage h3 white + card h3 black — per-heading metrics identical on both sides, matcher artefact)", "clipped": 0, "clipAdvisory": "1 TEXT X-HIDDEN: stage popup parked off-canvas right until hover (live identical)", "overflow": 0, "chromeCrop": { "header": 0.01, "footer": 0.02 }, "chromeParity": "quiet", "units": "PASS 6/6, 44 elements within 4px (fresh-origin run units-confirm-fresh.txt; gate.sh units row FAIL was the width-agnostic origin cache holding the 360 inventory)", "verdict": "PASS", "evidence": "stardust/replica/gates/en-stories-1440/*-confirm.*" },
+    "360": { "pixel": 0.08, "dh": 0, "structuralRed": 0, "visualFlags": "none", "clipped": 0, "overflow": 0, "chromeCrop": { "header": 0.00, "footer": 0.10 }, "chromeParity": "quiet", "units": "PASS 6/6, 44 elements within 4px", "verdict": "PASS", "evidence": "stardust/replica/gates/en-stories-360/*-confirm.*" }
+  },
+  "capProbe": "PASS at 2560 — 0 of 6 rows failed (stardust/replica/gates/en-stories-2560/cap-iter.json)",
+  "residuals": [
+    { "id": "en-stories-cd-yellow-none", "breakpoint": "both", "cause": "n/a", "detail": "content-diff 0 findings after removing a build-only aria-label on the stage overlay link (live overlay <a> is empty and unlabeled — mirrored; an a11y improvement would be a register entry).", "justified": true },
+    { "id": "en-stories-loadmore-latency", "breakpoint": 1440, "cause": "network", "detail": "motion-compare: load-more settle 620ms live vs 205ms build — live fetches the TYPO3 constories API, prototype fetches a local snapshot; mechanism identical (disable+pulse → fetch → remove buttonwrapper → append).", "justified": true },
+    { "id": "en-stories-spin-name", "breakpoint": "both", "cause": "canon-keyframe-name", "detail": "motion-compare spin MISSING / c-spin EXTRA: canon names the spinner keyframes c-spin; canon request filed.", "justified": true }
+  ],
+  "motion": {
+    "observed": ["sticky header morph (is-sticky ×6 elements)", "ip-redirect banner .is-hidden", "scroll-to-top .is-visible", "lazy images entered/is-lazy-loading/is-lazy-loaded + placeholder fade", "featured single image .has-focus via IntersectionObserver rootMargin -50% 0% -50% 0% (transform scale 1.05, 500ms)", "stage hover/focus-within: popup right -420px → 0 (500ms cubic-bezier(.5,0,0,.5)); overlay link colour; popup button bg", "story card hover: image scale(1.05) 500ms cubic-bezier(.1,.41,.65,.89)", "featured teaser hover: .c-button bg #6b6b6b / #fff (150ms)", "load-more click: button disabled + pulse 2s → fetch data-constories-xhr → buttonwrapper removed, 1 card appended"],
+    "implemented": ["header/banner/scroll-to-top/lazy images (canon.js, unchanged)", "has-focus IntersectionObserver (en-stories.js)", "stage popup hover/focus-within (CSS)", "card image scale + featured button hover (CSS)", "load-more state machine (en-stories.js; local snapshot endpoint)", ".c-button[disabled] pulse (CSS)"],
+    "dead": ["hover .c-cs-stage__popup .c-button (no measured diff beyond stage hover)", "hover featured teaser self (no measured diff on the anchor itself)"],
+    "compare": "motion-compare: 22 parity, 1 missing (spin, canon keyframe name), 1 extra (c-spin), 0 advisory; out-of-tolerance: load-more latency (network), stage hover sub-element sampled differently (live transitions log shows the same overlay colour 150ms transition)",
+    "evidence": ["stardust/replica/motion/en-stories.json", "stardust/replica/motion/en-stories-build.json"],
+    "postMotionPixel": { "1440": 0.04, "360": 0.08 }
+  },
+  "captureState": [
+    { "element": "story card / stage / featured images", "state": "settled renditions (data-src / data-srcset) with is-lazy-loaded + hidden spinner placeholder; width/height = natural size of the img rendition so the box holds its settled height before canon.js's deferred load", "restoreAtDelivery": "vanilla-lazyload equivalent (300px) — authored images" },
+    { "element": "Technology & Innovation 'More articles' (constories XHR, contentElement 182770 offset 6)", "state": "initial 6 cards + button; click appends the 1 card the endpoint returned at capture (green-concept), snapshot at stardust/prototypes/assets/stories-api/182770-offset6.html", "restoreAtDelivery": "wire data-constories-xhr-live (/en/stories/stories-api/?…offset=6) or an EDS query-index pager; live API has no CORS headers" },
+    { "element": "stage popup", "state": "parked off-canvas right (desktop) until hover/focus-within", "restoreAtDelivery": "CSS only" }
+  ],
+  "canonRequests": ["utilities/grid promotion", "c-spin → spin keyframe name", ".c-button[disabled] + pulse"],
+  "passed": true
+}

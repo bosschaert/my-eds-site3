@@ -1,75 +1,18 @@
 {
  "_provenance": {
   "writtenBy": "stardust:dynamics plan",
-  "writtenAt": "2026-10-14T09:00:43.445Z",
-  "input": "stardust/current/_dynamics.json",
-  "target": "main--1370701b--aemcoder.aem.page",
-  "migrated": null,
-  "knowledge": null,
-  "chrome": null
+  "writtenAt": "2026-10-09T18:44:21.775Z",
+  "input": "stardust/.work/dynamics-b2/_dynamics.json",
+  "target": "https://main--d9ddbc54--aemcoder.aem.page",
+  "migrated": "stardust/migrated"
  },
  "rows": [
-  {
-   "id": "a-unknown-third-party-host-fareharbor-com",
-   "class": "A",
-   "feature": "unknown third-party host fareharbor.com",
-   "pages": 1,
-   "probed": 1,
-   "reach": null,
-   "evidence": [
-    "fareharbor.com"
-   ],
-   "pattern": "inspect",
-   "disposition": "static-snapshot",
-   "reproducibility": "needs-human-capture",
-   "status": "pending",
-   "phase": "detect",
-   "decision": "inspect the XHR, add a vendor row"
-  },
-  {
-   "id": "a-unknown-third-party-host-otel-hfo-fareharbor-engineering",
-   "class": "A",
-   "feature": "unknown third-party host otel-hfo.fareharbor.engineering",
-   "pages": 1,
-   "probed": 1,
-   "reach": null,
-   "evidence": [
-    "otel-hfo.fareharbor.engineering"
-   ],
-   "pattern": "inspect",
-   "disposition": "static-snapshot",
-   "reproducibility": "needs-human-capture",
-   "status": "pending",
-   "phase": "detect",
-   "decision": "inspect the XHR, add a vendor row"
-  },
-  {
-   "id": "a-first-party-api-get-wp-json-complianz-v1-banner",
-   "class": "A",
-   "feature": "first-party API GET /wp-json/complianz/v1/banner",
-   "pages": 1,
-   "probed": 1,
-   "reach": {
-    "pages": 1,
-    "of": 1
-   },
-   "evidence": [
-    "GET /wp-json/complianz/v1/banner?lang,locale,token → 200"
-   ],
-   "pattern": "off-origin-data",
-   "disposition": "data-fed",
-   "reproducibility": "needs-business-decision",
-   "status": "pending",
-   "phase": "off-origin data",
-   "decision": "which tier for the target host; consumer on the migrated pages?",
-   "hostBound": "dead on target (Failed to parse URL from main--1370701b--aemcoder.aem.page/wp-json/complianz/v1/)"
-  },
   {
    "id": "a-cms-app-settings-object-datalayer",
    "class": "A",
    "feature": "CMS / app settings object dataLayer",
-   "pages": 1,
-   "probed": 1,
+   "pages": 5,
+   "probed": 5,
    "reach": null,
    "evidence": [],
    "pattern": "read-settings",
@@ -80,14 +23,208 @@
    "decision": "— (keys name endpoints, ids, vendors)"
   },
   {
-   "id": "cr-client-rendered-slot-mx-auto-flex-flex-col-reverse",
-   "class": "CR",
-   "feature": "client-rendered slot mx-auto flex flex-col-reverse",
-   "pages": 1,
-   "probed": 1,
+   "id": "a-cms-app-settings-object-utag-data",
+   "class": "A",
+   "feature": "CMS / app settings object utag_data",
+   "pages": 5,
+   "probed": 5,
    "reach": null,
    "evidence": [
-    "Visit Skerries Mills Comprising of three national monuments "
+    "cmpConsentString",
+    "cmpVendorsConsent",
+    "cmpCustomVendorsConsent",
+    "cmpGoogleVendorsConsent"
+   ],
+   "pattern": "read-settings",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "— (keys name endpoints, ids, vendors)"
+  },
+  {
+   "id": "a-unknown-third-party-host-charts3-equitystory-com",
+   "class": "A",
+   "feature": "unknown third-party host charts3.equitystory.com",
+   "pages": 2,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "charts3.equitystory.com"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "delivered-by-capture",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row",
+   "alreadyDelivered": "output already carries \"charts3.equitystory.com\""
+  },
+  {
+   "id": "a-first-party-api-get-cs-cz-api-dc",
+   "class": "A",
+   "feature": "first-party API GET /cs-cz/api-dc/",
+   "pages": 1,
+   "probed": 5,
+   "reach": {
+    "pages": 1,
+    "of": 99
+   },
+   "evidence": [
+    "GET /cs-cz/api-dc/?cHash,tx_condownloadcenter_api[action],tx_condownloadcenter_api[controller] → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "a-first-party-api-get-de-country-selector-api-dc",
+   "class": "A",
+   "feature": "first-party API GET /de/country-selector/api-dc/",
+   "pages": 1,
+   "probed": 5,
+   "reach": {
+    "pages": 1,
+    "of": 99
+   },
+   "evidence": [
+    "GET /de/country-selector/api-dc/?cHash,tx_condownloadcenter_api[action],tx_condownloadcenter_api[controller] → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "a-first-party-api-get-de-investoren-aktie-api-dc",
+   "class": "A",
+   "feature": "first-party API GET /de/investoren/aktie/api-dc/",
+   "pages": 1,
+   "probed": 5,
+   "reach": {
+    "pages": 1,
+    "of": 99
+   },
+   "evidence": [
+    "GET /de/investoren/aktie/api-dc/?cHash,tx_condownloadcenter_api[action],tx_condownloadcenter_api[controller] → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "a-first-party-api-get-de-stories-api-dc",
+   "class": "A",
+   "feature": "first-party API GET /de/stories/api-dc/",
+   "pages": 1,
+   "probed": 5,
+   "reach": {
+    "pages": 1,
+    "of": 99
+   },
+   "evidence": [
+    "GET /de/stories/api-dc/?cHash,tx_condownloadcenter_api[action],tx_condownloadcenter_api[controller] → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "a-unknown-third-party-host-api-admiralcloud-com",
+   "class": "A",
+   "feature": "unknown third-party host api.admiralcloud.com",
+   "pages": 1,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "api.admiralcloud.com"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-unknown-third-party-host-analytics-admiralcloud-com",
+   "class": "A",
+   "feature": "unknown third-party host analytics.admiralcloud.com",
+   "pages": 1,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "analytics.admiralcloud.com"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-unknown-third-party-host-mediafra-217-admiralcloud-com",
+   "class": "A",
+   "feature": "unknown third-party host mediafra-217.admiralcloud.com",
+   "pages": 1,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "mediafra-217.admiralcloud.com"
+   ],
+   "pattern": "inspect",
+   "disposition": "static-snapshot",
+   "reproducibility": "needs-human-capture",
+   "status": "pending",
+   "phase": "detect",
+   "decision": "inspect the XHR, add a vendor row"
+  },
+  {
+   "id": "a-first-party-api-get-de-api-dc",
+   "class": "A",
+   "feature": "first-party API GET /de/api-dc/",
+   "pages": 1,
+   "probed": 5,
+   "reach": {
+    "pages": 1,
+    "of": 99
+   },
+   "evidence": [
+    "GET /de/api-dc/?cHash,tx_condownloadcenter_api[action],tx_condownloadcenter_api[controller] → 200"
+   ],
+   "pattern": "off-origin-data",
+   "disposition": "data-fed",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "off-origin data",
+   "decision": "which tier for the target host; consumer on the migrated pages?",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "cr-client-rendered-slot-video-js-vjs-default-skin-vjs-paused",
+   "class": "CR",
+   "feature": "client-rendered slot video-js vjs-default-skin vjs-paused",
+   "pages": 1,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "Play VideoWiedergabeTon ausGeladen: 0%Status: 0%Aktuelle Uhr"
    ],
    "pattern": "settled-dom-snapshot",
    "disposition": "static-snapshot",
@@ -97,14 +234,14 @@
    "decision": "inspect the consumer"
   },
   {
-   "id": "cr-client-rendered-slot-attraction-carousel-relative-pb-32",
+   "id": "cr-client-rendered-slot-vjs-control-bar",
    "class": "CR",
-   "feature": "client-rendered slot attraction-carousel relative pb-32",
+   "feature": "client-rendered slot vjs-control-bar",
    "pages": 1,
-   "probed": 1,
+   "probed": 5,
    "reach": null,
    "evidence": [
-    "The Attractions Museum Commencing our guided tour, learn abo"
+    "WiedergabeTon ausGeladen: 0%Status: 0%Aktuelle Uhrzeit 0:00/"
    ],
    "pattern": "settled-dom-snapshot",
    "disposition": "static-snapshot",
@@ -114,17 +251,14 @@
    "decision": "inspect the consumer"
   },
   {
-   "id": "cr-client-rendered-slot-flex-flex-col-items-stretch",
+   "id": "cr-client-rendered-slot-vjs-progress-control-vjs-control",
    "class": "CR",
-   "feature": "client-rendered slot flex flex-col items-stretch",
+   "feature": "client-rendered slot vjs-progress-control vjs-control",
    "pages": 1,
-   "probed": 1,
+   "probed": 5,
    "reach": null,
    "evidence": [
-    "Museum Commencing our guided tour, learn about life at the M",
-    "Art At The Mill As a social enterprise, we are proud to show",
-    "The Watermill Cafe While freshly baked fare is at the heart ",
-    "The Craft Shop Our local Crafter Project showcases a series "
+    "Geladen: 0%Status: 0%"
    ],
    "pattern": "settled-dom-snapshot",
    "disposition": "static-snapshot",
@@ -134,14 +268,14 @@
    "decision": "inspect the consumer"
   },
   {
-   "id": "cr-client-rendered-slot-flex-flex-col-space-y-4",
+   "id": "cr-client-rendered-slot-vjs-progress-holder-vjs-slider-vjs-s",
    "class": "CR",
-   "feature": "client-rendered slot flex flex-col space-y-4",
+   "feature": "client-rendered slot vjs-progress-holder vjs-slider vjs-slider-horizontal",
    "pages": 1,
-   "probed": 1,
+   "probed": 5,
    "reach": null,
    "evidence": [
-    "History of the mills Windmills in Western Europe date from t"
+    "Geladen: 0%Status: 0%"
    ],
    "pattern": "settled-dom-snapshot",
    "disposition": "static-snapshot",
@@ -151,14 +285,14 @@
    "decision": "inspect the consumer"
   },
   {
-   "id": "cr-client-rendered-slot-testimonials-bg-brand-blue-js-show-o",
+   "id": "cr-client-rendered-slot-vjs-current-time-vjs-time-control-vj",
    "class": "CR",
-   "feature": "client-rendered slot testimonials bg-brand-blue js-show-on-scroll",
+   "feature": "client-rendered slot vjs-current-time vjs-time-control vjs-control",
    "pages": 1,
-   "probed": 1,
+   "probed": 5,
    "reach": null,
    "evidence": [
-    "What Our Visitors Say “Incredible experience!!! Worth the tr"
+    "Aktuelle Uhrzeit 0:00"
    ],
    "pattern": "settled-dom-snapshot",
    "disposition": "static-snapshot",
@@ -168,14 +302,14 @@
    "decision": "inspect the consumer"
   },
   {
-   "id": "cr-client-rendered-slot-py-16-pt-8-js-show-on-scroll",
+   "id": "cr-client-rendered-slot-vjs-current-time-display",
    "class": "CR",
-   "feature": "client-rendered slot py-16 pt-8 js-show-on-scroll",
+   "feature": "client-rendered slot vjs-current-time-display",
    "pages": 1,
-   "probed": 1,
+   "probed": 5,
    "reach": null,
    "evidence": [
-    "Tickets Adult Ticket €12 Book Now Student €11 Book Now Senio"
+    "Aktuelle Uhrzeit 0:00"
    ],
    "pattern": "settled-dom-snapshot",
    "disposition": "static-snapshot",
@@ -185,15 +319,32 @@
    "decision": "inspect the consumer"
   },
   {
-   "id": "cr-client-rendered-slot-flex-flex-col-js-show-on-scroll-img",
+   "id": "cr-client-rendered-slot-vjs-error-display-vjs-modal-dialog-v",
    "class": "CR",
-   "feature": "client-rendered slot flex flex-col js-show-on-scroll-img",
+   "feature": "client-rendered slot vjs-error-display vjs-modal-dialog vjs-hidden",
    "pages": 1,
-   "probed": 1,
+   "probed": 5,
    "reach": null,
    "evidence": [
-    "Adult Ticket €12 Book Now",
-    "Senior Citizen €11 Book Now"
+    "This is a modal window."
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "delivered-by-capture",
+   "phase": "capture",
+   "decision": "inspect the consumer",
+   "alreadyDelivered": "output already carries \"This is a modal window.\""
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-caption-settings-vjs-modal-overl",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-caption-settings vjs-modal-overlay vjs-hidden",
+   "pages": 1,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "Foreground --- White Black Red Green Blue Yellow Magenta Cya"
    ],
    "pattern": "settled-dom-snapshot",
    "disposition": "static-snapshot",
@@ -203,11 +354,193 @@
    "decision": "inspect the consumer"
   },
   {
-   "id": "l-listing-candidate-flex-flex-col-6-cards",
+   "id": "cr-client-rendered-slot-vjs-tracksettings",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-tracksettings",
+   "pages": 1,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "Foreground --- White Black Red Green Blue Yellow Magenta Cya"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-tracksettings-colors",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-tracksettings-colors",
+   "pages": 1,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "Foreground --- White Black Red Green Blue Yellow Magenta Cya"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-fg-color-vjs-tracksetting",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-fg-color vjs-tracksetting",
+   "pages": 1,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "Foreground --- White Black Red Green Blue Yellow Magenta Cya"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-text-opacity-vjs-opacity",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-text-opacity vjs-opacity",
+   "pages": 1,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "--- Opaque Semi-Opaque"
+   ],
+   "pattern": "settled-dom-snapshot",
+   "disposition": "static-snapshot",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "capture",
+   "decision": "inspect the consumer"
+  },
+  {
+   "id": "d-first-party-data-file-get-assets-hash-javascript-hyphenopo",
+   "class": "D",
+   "feature": "first-party data file GET /_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json",
+   "pages": 5,
+   "probed": 5,
+   "reach": {
+    "pages": 99,
+    "of": 99
+   },
+   "evidence": [
+    "GET /_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json → 200"
+   ],
+   "pattern": "sheet-sync",
+   "disposition": "data-fed",
+   "reproducibility": "self",
+   "status": "pending",
+   "phase": "data",
+   "decision": "none (sync from the source origin)",
+   "hostBound": "dead on target (404)"
+  },
+  {
+   "id": "f-form-tx-solr-search-form-pi-results-header-origin-de-meta-",
+   "class": "F",
+   "feature": "form \"tx-solr-search-form-pi-results-header\" → origin /de/meta/suche/ (1 fields)",
+   "pages": 4,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "text:tx_solr[q]"
+   ],
+   "pattern": "forms",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "forms",
+   "decision": "production endpoint; interim capture ships now"
+  },
+  {
+   "id": "f-form-tx-solr-search-form-pi-results-header-origin-cs-cz-me",
+   "class": "F",
+   "feature": "form \"tx-solr-search-form-pi-results-header\" → origin /cs-cz/meta/content-syndication-search/ (1 fields)",
+   "pages": 1,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "text:tx_solr[q]"
+   ],
+   "pattern": "forms",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "forms",
+   "decision": "production endpoint; interim capture ships now"
+  },
+  {
+   "id": "i18n-locale-variants-de-de-en-x-default",
+   "class": "I18N",
+   "feature": "locale variants de-DE,en,x-default",
+   "pages": 3,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "https://www.continental.com/en-us/",
+    "https://www.continental.com/en/investors/shares/",
+    "https://webcast.continental.com/hv/2021/de/",
+    "https://www.continental.com/en/stories/"
+   ],
+   "pattern": "locale-tree",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-business-decision",
+   "status": "delivered-by-capture",
+   "phase": "locale wave",
+   "decision": "scope of the locale trees",
+   "alreadyDelivered": "output already carries \"https://www.continental.com/en/investors\""
+  },
+  {
+   "id": "i18n-locale-variants-en-us-cz-cz",
+   "class": "I18N",
+   "feature": "locale variants en-us,cz,cz",
+   "pages": 1,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "https://www.continental.com/en-us/",
+    "https://jobs.continental.com/cz/"
+   ],
+   "pattern": "locale-tree",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "locale wave",
+   "decision": "scope of the locale trees"
+  },
+  {
+   "id": "i18n-locale-variants-en-us-en-hv-en-en",
+   "class": "I18N",
+   "feature": "locale variants en-us,en,hv,en,en",
+   "pages": 1,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "https://www.continental.com/en-us/",
+    "https://www.continental.com/en/",
+    "https://webcast.continental.com/hv/2021/de/"
+   ],
+   "pattern": "locale-tree",
+   "disposition": "rebuild-native",
+   "reproducibility": "needs-business-decision",
+   "status": "delivered-by-capture",
+   "phase": "locale wave",
+   "decision": "scope of the locale trees",
+   "alreadyDelivered": "output already carries \"https://www.continental.com/en/\""
+  },
+  {
+   "id": "l-listing-candidate-c-country-selector-list-mb-6-6-cards",
    "class": "L",
-   "feature": "listing candidate flex flex-col (6 cards)",
+   "feature": "listing candidate c-country-selector__list mb-6 (6 cards)",
    "pages": 1,
-   "probed": 1,
+   "probed": 5,
    "reach": null,
    "evidence": [],
    "pattern": "listing-index-backed",
@@ -218,11 +551,11 @@
    "decision": "index-driven or editorially curated?"
   },
   {
-   "id": "l-listing-candidate-mob-sub-6-cards",
+   "id": "l-listing-candidate-c-heroteaser-fixed-slides-3-cards",
    "class": "L",
-   "feature": "listing candidate mob-sub (6 cards)",
+   "feature": "listing candidate c-heroteaser-fixed__slides (3 cards)",
    "pages": 1,
-   "probed": 1,
+   "probed": 5,
    "reach": null,
    "evidence": [],
    "pattern": "listing-index-backed",
@@ -233,58 +566,62 @@
    "decision": "index-driven or editorially curated?"
   },
   {
-   "id": "l-listing-candidate-swiper-wrapper-6-cards",
-   "class": "L",
-   "feature": "listing candidate swiper-wrapper (6 cards)",
+   "id": "m-modal-trigger-c-cs-stage-overlay-target-outside-dom-at-cap",
+   "class": "M",
+   "feature": "modal trigger c-cs-stage__overlay → target outside DOM at capture",
    "pages": 1,
-   "probed": 1,
+   "probed": 5,
    "reach": null,
-   "evidence": [],
-   "pattern": "listing-index-backed",
-   "disposition": "index-backed",
-   "reproducibility": "needs-business-decision",
+   "evidence": [
+    "https://www.continental.com/de/stories/wenn-sich-die-mobilitaet-veraendert/"
+   ],
+   "pattern": "modal-loader",
+   "disposition": "rebuild-native",
+   "reproducibility": "self",
    "status": "pending",
-   "phase": "listings",
-   "decision": "index-driven or editorially curated?"
+   "phase": "interactive",
+   "decision": "none"
   },
   {
-   "id": "l-listing-candidate-grid-grd-cols-1-3-cards",
-   "class": "L",
-   "feature": "listing candidate grid grd-cols-1 (3 cards)",
-   "pages": 1,
-   "probed": 1,
-   "reach": null,
-   "evidence": [],
-   "pattern": "listing-index-backed",
-   "disposition": "index-backed",
-   "reproducibility": "needs-business-decision",
-   "status": "pending",
-   "phase": "listings",
-   "decision": "index-driven or editorially curated?"
-  },
-  {
-   "id": "t-unknown-third-party-host-fh-kit-com",
+   "id": "t-unknown-third-party-host-d-delivery-consentmanager-net",
    "class": "T",
-   "feature": "unknown third-party host fh-kit.com",
-   "pages": 1,
-   "probed": 1,
+   "feature": "unknown third-party host d.delivery.consentmanager.net",
+   "pages": 5,
+   "probed": 5,
    "reach": null,
    "evidence": [
-    "fh-kit.com"
+    "d.delivery.consentmanager.net"
    ],
    "pattern": "consent-gated-tags",
    "disposition": "embed-passthrough",
    "reproducibility": "needs-business-decision",
    "status": "pending",
    "phase": "tags",
-   "decision": "which tags run on the new host; property ids"
+   "decision": "CMP domain script reuse on the new host"
+  },
+  {
+   "id": "t-unknown-third-party-host-cdn-consentmanager-net",
+   "class": "T",
+   "feature": "unknown third-party host cdn.consentmanager.net",
+   "pages": 5,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "cdn.consentmanager.net"
+   ],
+   "pattern": "consent-gated-tags",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-business-decision",
+   "status": "pending",
+   "phase": "tags",
+   "decision": "CMP domain script reuse on the new host"
   },
   {
    "id": "t-tag-manager-google-tag-manager",
    "class": "T",
    "feature": "tag manager: Google Tag Manager",
-   "pages": 1,
-   "probed": 1,
+   "pages": 5,
+   "probed": 5,
    "reach": null,
    "evidence": [
     "www.googletagmanager.com"
@@ -297,14 +634,32 @@
    "decision": "which tags run on the new host; property ids"
   },
   {
-   "id": "t-unknown-third-party-host-dipr2nuwo661l-cloudfront-net",
+   "id": "t-third-party-mount-div-data-src-tag-manager-injected-widget",
    "class": "T",
-   "feature": "unknown third-party host dipr2nuwo661l.cloudfront.net",
-   "pages": 1,
-   "probed": 1,
+   "feature": "third-party mount <div data-src> (tag-manager-injected widget)",
+   "pages": 4,
+   "probed": 5,
    "reach": null,
    "evidence": [
-    "dipr2nuwo661l.cloudfront.net"
+    "data-src data-lazyload data-ll-status",
+    "data-src data-lazyload"
+   ],
+   "pattern": "embed-passthrough",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-credential",
+   "status": "pending",
+   "phase": "embeds",
+   "decision": "vendor account ids stay the owner's"
+  },
+  {
+   "id": "t-unknown-third-party-host-plugins-flockler-com",
+   "class": "T",
+   "feature": "unknown third-party host plugins.flockler.com",
+   "pages": 1,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "plugins.flockler.com"
    ],
    "pattern": "consent-gated-tags",
    "disposition": "embed-passthrough",
@@ -314,14 +669,31 @@
    "decision": "which tags run on the new host; property ids"
   },
   {
-   "id": "t-rum-error-monitoring",
+   "id": "t-third-party-mount-div-data-article-cluster-focus-image-tag",
    "class": "T",
-   "feature": "RUM: error monitoring",
+   "feature": "third-party mount <div data-article-cluster-focus-image> (tag-manager-injected widget)",
    "pages": 1,
-   "probed": 1,
+   "probed": 5,
    "reach": null,
    "evidence": [
-    "o10963.ingest.sentry.io"
+    "data-article-cluster-focus-image data-src data-lazyload"
+   ],
+   "pattern": "embed-passthrough",
+   "disposition": "embed-passthrough",
+   "reproducibility": "needs-credential",
+   "status": "pending",
+   "phase": "embeds",
+   "decision": "vendor account ids stay the owner's"
+  },
+  {
+   "id": "t-unknown-third-party-host-player-admiralcloud-com",
+   "class": "T",
+   "feature": "unknown third-party host player.admiralcloud.com",
+   "pages": 1,
+   "probed": 5,
+   "reach": null,
+   "evidence": [
+    "player.admiralcloud.com"
    ],
    "pattern": "consent-gated-tags",
    "disposition": "embed-passthrough",
@@ -331,31 +703,14 @@
    "decision": "which tags run on the new host; property ids"
   },
   {
-   "id": "t-unknown-third-party-host-marketing-fareharbor-com",
+   "id": "t-unknown-third-party-host-images-admiralcloud-com",
    "class": "T",
-   "feature": "unknown third-party host marketing.fareharbor.com",
+   "feature": "unknown third-party host images.admiralcloud.com",
    "pages": 1,
-   "probed": 1,
+   "probed": 5,
    "reach": null,
    "evidence": [
-    "marketing.fareharbor.com"
-   ],
-   "pattern": "consent-gated-tags",
-   "disposition": "embed-passthrough",
-   "reproducibility": "needs-business-decision",
-   "status": "pending",
-   "phase": "tags",
-   "decision": "which tags run on the new host; property ids"
-  },
-  {
-   "id": "t-analytics-google-analytics-ads",
-   "class": "T",
-   "feature": "analytics: Google Analytics / Ads",
-   "pages": 1,
-   "probed": 1,
-   "reach": null,
-   "evidence": [
-    "www.google-analytics.com"
+    "images.admiralcloud.com"
    ],
    "pattern": "consent-gated-tags",
    "disposition": "embed-passthrough",
@@ -368,11 +723,11 @@
    "id": "v-iframe-without-src-runtime-injected-embed",
    "class": "V",
    "feature": "iframe without src (runtime-injected embed)",
-   "pages": 1,
-   "probed": 1,
+   "pages": 5,
+   "probed": 5,
    "reach": null,
    "evidence": [
-    "1×1"
+    "Intentionally hidden, please ignore"
    ],
    "pattern": "embed-passthrough",
    "disposition": "embed-passthrough",
@@ -380,6 +735,21 @@
    "status": "pending",
    "phase": "embeds",
    "decision": "resolve the runtime src from a rendered capture"
+  },
+  {
+   "id": "x-commerce-signals-cart-true-prices-0",
+   "class": "X",
+   "feature": "commerce signals (cart: true, prices: 0)",
+   "pages": 5,
+   "probed": 5,
+   "reach": null,
+   "evidence": [],
+   "pattern": "decided-out",
+   "disposition": "decided-out",
+   "reproducibility": "needs-backend",
+   "status": "pending",
+   "phase": "register",
+   "decision": "auth / commerce on the new host?"
   }
  ]
 }

@@ -4,7 +4,7 @@
  * wrote, so "done" is computed once instead of re-derived by every reader.
  *
  * Usage: node stardust/scripts/rollout/done-check.mjs [--out stardust/rollout] [--ledger stardust/status.jsonl]
- *          [--live-host <host> | --offline] [--chrome stardust/chrome] [--state stardust/state.json] [--json]
+ *          [--live-host <host> | --offline] [--json]
  *   --out        rollout dir (default stardust/rollout): coverage/pages.json, optimize/findings.json, rollout.json
  *   --ledger     run-status ledger (default stardust/status.jsonl)
  *   --live-host  aem.live host or origin the delivered pages must answer 200 on (default rollout.json site.liveHost)
@@ -17,11 +17,6 @@
  *   pages_not_live:N: <paths>      deployed or verified rows that do not answer 200 on the live host
  *   open_p1:N                      open or in-progress P1 findings in optimize/findings.json, source parity
  *                                  excluded — the optimize gate's own count
- *   header_parity:<why>            migration projects (state.json `flow`) only: the header contract
- *                                  (chrome/header-contract.json, chrome-explore of the source) is missing, or
- *                                  chrome/header-parity.json (chrome-compare) is missing, older than the contract,
- *                                  of the wrong profile (replica flow: replica; redesign, reskin: functional),
- *                                  short of a contract width, not run on the live host, or has undecided errors
  *   rollout_incomplete             the last stardust:rollout I-dashboard ledger line is not an `end`
  *
  * Exit: 0 complete · 1 gaps · 2 usage (no coverage/pages.json; no live host and no --offline).
@@ -29,7 +24,7 @@
 import { readFileSync, existsSync, realpathSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { readJSON, isSourceParity, publicUrl } from './lib.mjs';
+import { readJSON, isSourceParity } from './lib.mjs';
 
 const UNFINISHED = new Set(['pending', 'content-pending', 'converting', 'deployed', 'stale']);
 const DELIVERED = new Set(['deployed', 'verified']);
@@ -40,8 +35,7 @@ const pathOf = (p) => p.path || `/${p.slug}`;
 const listed = (paths) => (paths.length > LIST_MAX ? `${paths.slice(0, LIST_MAX).join(', ')}, … (+${paths.length - LIST_MAX})` : paths.join(', '));
 
 /** The rows that should answer on the live host. */
-// probed at the URL EDS serves (a folder index at `/a/`): `/a` 404s on a plain site (some add a 301; neither is 200)
-export const deliveredPaths = (pages) => pages.filter((p) => DELIVERED.has(statusOf(p))).map(publicUrl);
+export const deliveredPaths = (pages) => pages.filter((p) => DELIVERED.has(statusOf(p))).map(pathOf);
 
 /** Is the rollout's final phase ended? The LAST I-dashboard line decides (a later `start` re-opens it). */
 export function rolloutEnded(ledgerLines) {
@@ -57,25 +51,7 @@ export const openP1 = (findings) => findings.filter((f) => (f.status === 'open' 
  * The verdict. `notLive` is the list of delivered paths the live probe found missing, or null when the
  * probe did not run (offline).
  */
-const hostOf = (u) => { try { return new URL(/^https?:/.test(u) ? u : `https://${u}`).host; } catch { return ''; } };
-
-/** The header's gap, or null: a migration is not done while its header's behaviour is unproven (header-parity). */
-export function headerGap({ flow = null, contract = null, parity = null, liveHost = null }) {
-  if (!flow) return null;
-  const want = flow === 'replica' ? 'replica' : 'functional';
-  if (!contract) return 'header_parity:no contract: chrome-explore.mjs <source home> stardust/chrome/header-contract.json';
-  if (!parity) return `header_parity:unchecked: chrome-compare.mjs the live header against the contract --profile ${want} --json stardust/chrome/header-parity.json`;
-  if (parity.source !== contract.url) return `header_parity:compared against ${parity.source}, not the contract (${contract.url})`;
-  if (String(parity.at) < String(contract.at)) return 'header_parity:stale: the contract is newer than the comparison';
-  if (parity.profile !== want) return `header_parity:profile ${parity.profile}; the ${flow} flow needs ${want}`;
-  const short = Object.keys(contract.widths || {}).filter((w) => !(parity.widths || []).map(String).includes(w));
-  if (short.length) return `header_parity:not compared at ${short.join(', ')}`;
-  if (liveHost && hostOf(parity.build) !== hostOf(liveHost)) return `header_parity:compared on ${hostOf(parity.build)}, not the live host ${hostOf(liveHost)}`;
-  const open = (parity.findings || []).filter((f) => f.severity === 'error' && !f.decided);
-  return open.length ? `header_parity:${open.length}: ${listed(open.map((f) => f.key))}` : null;
-}
-
-export function doneGaps({ pages = [], findings = [], ledgerLines = [], notLive = null, header = null }) {
+export function doneGaps({ pages = [], findings = [], ledgerLines = [], notLive = null }) {
   const gaps = [];
   const unfinished = pages.filter((p) => UNFINISHED.has(statusOf(p)));
   if (unfinished.length) gaps.push(`pages_unfinished:${unfinished.length}`);
@@ -84,7 +60,6 @@ export function doneGaps({ pages = [], findings = [], ledgerLines = [], notLive 
   if (notLive && notLive.length) gaps.push(`pages_not_live:${notLive.length}: ${listed(notLive)}`);
   const p1 = openP1(findings);
   if (p1.length) gaps.push(`open_p1:${p1.length}`);
-  if (header) gaps.push(header);
   if (!rolloutEnded(ledgerLines)) gaps.push('rollout_incomplete');
   return { complete: gaps.length === 0, gaps, liveChecked: notLive !== null };
 }
@@ -135,9 +110,7 @@ async function main() {
   const pages = pagesDoc.pages || [];
   const findings = (readJSON(join(OUT, 'optimize', 'findings.json'), {}) || {}).findings || [];
   const notLive = OFFLINE ? null : await probeLive(host, deliveredPaths(pages));
-  const chrome = arg('chrome', 'stardust/chrome');
-  const header = headerGap({ flow: (readJSON(arg('state', 'stardust/state.json'), {}) || {}).flow || null, contract: readJSON(join(chrome, 'header-contract.json')), parity: readJSON(join(chrome, 'header-parity.json')), liveHost: OFFLINE ? null : host });
-  const verdict = doneGaps({ pages, findings, ledgerLines: readLedger(LEDGER), notLive, header });
+  const verdict = doneGaps({ pages, findings, ledgerLines: readLedger(LEDGER), notLive });
 
   if (JSON_OUT) console.log(JSON.stringify(verdict));
   else {

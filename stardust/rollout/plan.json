@@ -1,52 +1,175 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/plan",
-    "writtenAt": "2026-10-14T09:31:44.358Z",
+    "writtenAt": "2026-10-09T18:42:50.276Z",
     "readArtifacts": [
       "stardust/rollout/coverage"
     ],
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-14T09:31:44.358Z",
+  "generatedAt": "2026-10-09T18:42:50.276Z",
   "fragments": [],
   "deliveryOrder": [
-    "index"
+    "en",
+    "en-career-working-at-continental",
+    "en-general-legal-notice",
+    "en-investors",
+    "en-stories"
   ],
   "steps": [
     {
-      "slug": "index",
-      "path": "/",
-      "templateId": "index",
+      "slug": "en",
+      "path": "/en",
+      "templateId": "en",
       "status": "pending",
       "isRepresentative": true,
       "convert": [
         {
-          "id": "hero",
-          "edsBlockName": "hero"
+          "id": "fact-box",
+          "edsBlockName": "fact-box"
         },
         {
-          "id": "split",
-          "edsBlockName": "split"
+          "id": "hero-stage-slider",
+          "edsBlockName": "hero-stage-slider"
         },
         {
-          "id": "attractions",
-          "edsBlockName": "attractions"
+          "id": "image",
+          "edsBlockName": "image"
         },
         {
-          "id": "reviews",
-          "edsBlockName": "reviews"
+          "id": "teaser",
+          "edsBlockName": "teaser"
         },
         {
-          "id": "tickets",
-          "edsBlockName": "tickets"
+          "id": "text-media",
+          "edsBlockName": "text-media"
         },
         {
-          "id": "callout",
-          "edsBlockName": "callout"
+          "id": "video-player",
+          "edsBlockName": "video-player"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "en-career-working-at-continental",
+      "path": "/en/career/working-at-continental",
+      "templateId": "en-career-working-at-continental",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "breadcrumb",
+          "edsBlockName": "breadcrumb"
         },
         {
-          "id": "posts",
-          "edsBlockName": "posts"
+          "id": "content-slider",
+          "edsBlockName": "content-slider"
+        },
+        {
+          "id": "hero-teaser",
+          "edsBlockName": "hero-teaser"
+        },
+        {
+          "id": "page-options",
+          "edsBlockName": "page-options"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "image",
+          "edsBlockName": "image",
+          "convertedBy": "en"
+        },
+        {
+          "id": "teaser",
+          "edsBlockName": "teaser",
+          "convertedBy": "en"
+        },
+        {
+          "id": "text-media",
+          "edsBlockName": "text-media",
+          "convertedBy": "en"
+        }
+      ]
+    },
+    {
+      "slug": "en-general-legal-notice",
+      "path": "/en/general/legal-notice",
+      "templateId": "en-general-legal-notice",
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "hero-teaser",
+          "edsBlockName": "hero-teaser",
+          "convertedBy": "en-career-working-at-continental"
+        },
+        {
+          "id": "text-media",
+          "edsBlockName": "text-media",
+          "convertedBy": "en"
+        }
+      ]
+    },
+    {
+      "slug": "en-investors",
+      "path": "/en/investors",
+      "templateId": "en-investors",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "content-list",
+          "edsBlockName": "content-list"
+        },
+        {
+          "id": "news-sidebar",
+          "edsBlockName": "news-sidebar"
+        },
+        {
+          "id": "tabs",
+          "edsBlockName": "tabs"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "fact-box",
+          "edsBlockName": "fact-box",
+          "convertedBy": "en"
+        },
+        {
+          "id": "hero-stage-slider",
+          "edsBlockName": "hero-stage-slider",
+          "convertedBy": "en"
+        },
+        {
+          "id": "teaser",
+          "edsBlockName": "teaser",
+          "convertedBy": "en"
+        },
+        {
+          "id": "text-media",
+          "edsBlockName": "text-media",
+          "convertedBy": "en"
+        }
+      ]
+    },
+    {
+      "slug": "en-stories",
+      "path": "/en/stories",
+      "templateId": "en-stories",
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "cs-article-cluster",
+          "edsBlockName": "cs-article-cluster"
+        },
+        {
+          "id": "cs-stage",
+          "edsBlockName": "cs-stage"
         }
       ],
       "reuse": []

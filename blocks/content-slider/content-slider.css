@@ -1,0 +1,169 @@
+/* content-slider — source c-content-slider (Glide track, arrows, teaser slides) */
+.content-slider-wrapper {
+  box-sizing: border-box;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* header-gap: the section header CE ends with an empty media row (see teaser) */
+.content-slider-wrapper:has(> .content-slider.header-gap) { padding-top: 1.8286rem; }
+
+main .section > .default-content-wrapper + .content-slider-wrapper { margin-top: 2.7429rem; }
+
+.content-slider {
+  position: relative;
+  width: 100%;
+}
+
+.content-slider .content-slider-track,
+.content-slider .content-slider-slides { overflow: hidden; }
+
+.content-slider .content-slider-slides {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  touch-action: pan-y;
+  will-change: transform;
+  transition: transform 400ms cubic-bezier(.165, .84, .44, 1);
+}
+
+.content-slider .content-slider-slide {
+  flex-shrink: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  white-space: normal;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
+}
+
+.content-slider .content-slider-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.content-slider .content-slider-controls {
+  display: flex;
+  width: 100%;
+  margin-top: 36px;
+  pointer-events: none;
+}
+
+@media (width >= 767px) {
+  .content-slider .content-slider-controls {
+    position: absolute;
+    top: 50%;
+    justify-content: space-between;
+    margin-top: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.content-slider .content-slider-arrow {
+  position: relative;
+  box-sizing: border-box;
+  width: 2.7429rem;
+  height: 2.7429rem;
+  padding: .0571rem .3429rem;
+  border: 2px solid var(--c-orange);
+  border-radius: 3.4286rem;
+  background: transparent;
+  color: var(--c-orange);
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.content-slider .content-slider-arrow.is-left {
+  margin-right: 6px;
+  transform: rotate(180deg);
+}
+
+.content-slider .content-slider-arrow.is-right { margin-left: 6px; }
+
+.content-slider .content-slider-arrow > .icon {
+  display: block;
+  transform: scale(.6);
+  transition: var(--ease);
+}
+
+.content-slider .content-slider-arrow:hover > .icon { transform: scale(.8); }
+
+@media (width >= 767px) {
+  .content-slider .content-slider-arrow.is-left {
+    left: -4.5714rem;
+    margin-right: 0;
+  }
+
+  .content-slider .content-slider-arrow.is-right {
+    right: -4.5714rem;
+    margin-left: 0;
+  }
+}
+
+/* teaser slides: the teaser card on the light-gray ground, padded content */
+.content-slider .teaser {
+  display: flex;
+  height: 100%;
+  max-width: none;
+}
+
+.content-slider .teaser .teaser-item {
+  align-items: stretch;
+  flex: 1 1 auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content-slider .teaser .teaser-card {
+  height: 100%;
+  background: var(--c-gray-light);
+}
+
+.content-slider .teaser .teaser-content { padding: 0 .9143rem 1.3714rem; }
+
+/* media (cluster-hub content-slider-media.mjs): textmedia CE slides rendered by the text-media
+   block — the slide is the CE column (no outer margin / side padding of its own) */
+.content-slider.media .text-media {
+  margin: 0;
+  padding: 0;
+}
+
+/* media: the source lazy-loads every slide image but the first; until then each holds the TYPO3
+   20 x 12 placeholder (5:3 at full width — 197 px for a 328 px column where the 340 x 192
+   rendition gives 185), and the equal-height track takes the tallest slide: the arrows sit
+   12 px lower than the first slide's image alone (en-pt / pt-pt benefits + locations sliders)
+   — only the slides outside the first view (perView 1 / 2 / 3 / 4) */
+.content-slider.media .content-slider-slide:nth-child(n + 2) .text-media-gallery:has(img) {
+  aspect-ratio: 5 / 3;
+}
+
+@media (width >= 767px) {
+  .content-slider.media .content-slider-slide:nth-child(-n + 2) .text-media-gallery:has(img) {
+    aspect-ratio: auto;
+  }
+}
+
+@media (width >= 1023px) {
+  .content-slider.media .content-slider-slide:nth-child(-n + 3) .text-media-gallery:has(img) {
+    aspect-ratio: auto;
+  }
+}
+
+@media (width >= 1279px) {
+  .content-slider.media .content-slider-slide:nth-child(-n + 4) .text-media-gallery:has(img) {
+    aspect-ratio: auto;
+  }
+}

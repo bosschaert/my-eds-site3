@@ -1,0 +1,335 @@
+/* hero-stage-slider — source c-heroteaser-fixed (Glide stage slider). Values from canon.css /
+   site.css (rem = 17.5px). The section carries Style full-bleed. */
+.hero-stage-slider {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.hero-stage-slider .hero-stage-slider-track {
+  overflow: hidden;
+  background: var(--c-gray-light);
+}
+
+.hero-stage-slider .hero-stage-slider-slides {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  touch-action: pan-y;
+  will-change: transform;
+  transition: transform 1000ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hero-stage-slider .hero-stage-slider-slide {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  white-space: normal;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hero-stage-slider .hero-stage-slider-media {
+  position: relative;
+  aspect-ratio: 53 / 30;
+}
+
+.hero-stage-slider .hero-stage-slider-rendition { display: none; }
+
+.hero-stage-slider .hero-stage-slider-rendition picture {
+  display: block;
+  width: 100%;
+  max-width: 2000px;
+  height: auto;
+  overflow: hidden;
+}
+
+.hero-stage-slider .hero-stage-slider-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 53 / 30;
+  object-fit: cover;
+}
+
+@media (width < 767px) {
+  .hero-stage-slider .hero-stage-slider-rendition.is-sm { display: block; }
+}
+
+@media (width >= 767px) and (width < 1279px) {
+  .hero-stage-slider .hero-stage-slider-rendition.is-md { display: block; }
+}
+
+@media (width >= 1279px) {
+  .hero-stage-slider .hero-stage-slider-rendition.is-lg { display: block; }
+
+  .hero-stage-slider .hero-stage-slider-media,
+  .hero-stage-slider .hero-stage-slider-media img { aspect-ratio: 192 / 55; }
+}
+
+.hero-stage-slider .hero-stage-slider-content-container {
+  position: relative;
+  z-index: 2;
+  padding-top: 1.8286rem;
+}
+
+.hero-stage-slider .hero-stage-slider-content {
+  max-width: var(--content-max);
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-stage-slider .hero-stage-slider-content .container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero-stage-slider .hero-stage-slider-content .col {
+  position: relative;
+  display: flex;
+}
+
+.hero-stage-slider .hero-stage-slider-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 1.7143rem;
+  color: #000;
+}
+
+.hero-stage-slider.text-white .hero-stage-slider-text {
+  color: #fff;
+  text-shadow: 0 0 5px rgb(0 0 0 / 70%);
+}
+
+.hero-stage-slider .u-padded-text {
+  background: #fff;
+  box-decoration-break: clone;
+}
+
+.hero-stage-slider .hero-stage-slider-title {
+  max-height: 99px;
+  overflow: hidden;
+  font-size: 24px;
+  line-height: 32px;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.hero-stage-slider .hero-stage-slider-title .u-padded-text,
+.hero-stage-slider .hero-stage-slider-description .u-padded-text {
+  padding: .3429rem .6857rem;
+}
+
+.hero-stage-slider .hero-stage-slider-description {
+  max-height: 70px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0;
+  transform: translateX(-60px);
+}
+
+.hero-stage-slider .hero-stage-slider-links {
+  text-shadow: none;
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.hero-stage-slider .hero-stage-slider-text .is-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    transform 300ms cubic-bezier(0.28, 0.61, 0.32, 0.96),
+    opacity 300ms cubic-bezier(0.28, 0.61, 0.32, 0.96);
+}
+
+.hero-stage-slider .hero-stage-slider-link { margin-right: .5714rem; }
+.hero-stage-slider .hero-stage-slider-link .u-icon { height: 1.6rem; }
+
+@media (width >= 767px) {
+  .hero-stage-slider .hero-stage-slider-content-container {
+    padding-left: var(--section-pad-x);
+    padding-right: var(--section-pad-x);
+  }
+
+  .hero-stage-slider .hero-stage-slider-title {
+    max-height: 147px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .hero-stage-slider .hero-stage-slider-description {
+    max-height: 94px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media (width < 1023px) {
+  .hero-stage-slider .hero-stage-slider-content-container .hero-stage-slider-title,
+  .hero-stage-slider .hero-stage-slider-content-container .hero-stage-slider-description {
+    color: #000;
+    text-shadow: none;
+    opacity: 1;
+    transform: translate(0);
+  }
+
+  .hero-stage-slider .hero-stage-slider-content-container .u-padded-text {
+    padding: 0;
+    background: transparent;
+  }
+}
+
+@media (width >= 1023px) {
+  .hero-stage-slider .hero-stage-slider-content-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 0;
+    background: transparent;
+  }
+
+  .hero-stage-slider .hero-stage-slider-text { width: 80%; }
+}
+
+@media (width >= 1680px) {
+  .hero-stage-slider .hero-stage-slider-text {
+    width: 70%;
+    margin-bottom: 3.4286rem;
+  }
+}
+
+/* dots */
+.hero-stage-slider .hero-stage-slider-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.7143rem;
+}
+
+.hero-stage-slider .hero-stage-slider-dot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 5.7143rem;
+  height: 1.1429rem;
+  margin: 0 .5714rem;
+  cursor: pointer;
+}
+
+.hero-stage-slider .hero-stage-slider-dot::after {
+  content: "";
+  flex: 1 1 auto;
+  width: 100%;
+  height: 2px;
+  background: var(--c-slate);
+}
+
+.hero-stage-slider .hero-stage-slider-dot.is-active::after { background: var(--c-orange); }
+
+/* arrows (JS sets arrows-md 1025–1660, arrows-lg > 1660, hidden otherwise) */
+.hero-stage-slider .hero-stage-slider-arrows {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+}
+
+.hero-stage-slider .hero-stage-slider-arrow {
+  position: absolute;
+  padding: 1px 6px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 40%);
+  color: #fff;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.hero-stage-slider .hero-stage-slider-arrow .icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-stage-slider .hero-stage-slider-arrow svg {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  filter: drop-shadow(0 0 2px rgb(0 0 0 / 40%));
+  transform: scale(0.6);
+}
+
+.hero-stage-slider .hero-stage-slider-arrow:hover svg { transform: scale(0.8); }
+
+.hero-stage-slider .hero-stage-slider-arrow.is-prev {
+  left: 1.7143rem;
+  transform: rotate(180deg);
+}
+
+.hero-stage-slider .hero-stage-slider-arrow.is-next { right: 1.7143rem; }
+
+.hero-stage-slider .hero-stage-slider-arrows.arrows-md {
+  inset: auto 0 77px;
+  display: block;
+  width: 100%;
+  max-width: 83.4286rem;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: right;
+}
+
+.hero-stage-slider .hero-stage-slider-arrows.arrows-md .hero-stage-slider-arrow {
+  position: relative;
+  right: 0;
+  left: inherit;
+  width: 2.8571rem;
+  height: 2.8571rem;
+  margin-left: .5714rem;
+}
+
+.hero-stage-slider .hero-stage-slider-arrows.arrows-lg {
+  top: calc(50% - 45px);
+  display: block;
+  width: 100%;
+}
+
+.hero-stage-slider .hero-stage-slider-arrows.arrows-lg .hero-stage-slider-arrow {
+  width: 3.4286rem;
+  height: 3.4286rem;
+}
+
+/* hub pages (cluster-hub): section Style inline-buttons (box + external / mail icons in
+   styles.css) — the source a.c-button--internal: chevron ::before (site.css
+   .c-button--internal:before) for every non-external target */
+main:has(.hero-stage-slider) > .section.inline-buttons
+:is(.default-content-wrapper, .text-media-text) p strong > a:not(.button)::before {
+  content: "";
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  margin-right: .4571rem;
+  background: currentcolor;
+  mask: url("/icons/chevron-right.svg") center / contain no-repeat;
+}
+
+main:has(.hero-stage-slider) > .section.inline-buttons
+:is(.default-content-wrapper, .text-media-text) p strong
+> a:not(.button)[href^="http"]:not([href^="https://www.continental.com"])::before {
+  mask-image: url("/icons/link-external.svg");
+}
+
+main:has(.hero-stage-slider) > .section.inline-buttons
+:is(.default-content-wrapper, .text-media-text) p strong > a:not(.button)[href^="mailto:"]::before {
+  mask-image: url("/icons/email.svg");
+}

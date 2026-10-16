@@ -1,0 +1,314 @@
+/* cs-article-cluster — stories article cluster (source c-cs-article-cluster, stories merged sheet).
+   Section: the source o-container.my-8.py-0 (88px band margins, no vertical padding) */
+main > .section.cs-article-cluster-container {
+  margin-top: 88px;
+  margin-bottom: 88px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.cs-article-cluster-wrapper {
+  max-width: var(--content-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* heading: div.mb-5 > h2.u-cs-text--h2.u-cs-text--light.text-center */
+.cs-article-cluster .cs-article-cluster-head {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.cs-article-cluster .cs-article-cluster-head :is(h1, h2, h3) {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.1;
+  font-weight: 300;
+}
+
+.cs-article-cluster .cs-article-cluster-head strong {
+  font-weight: 600;
+}
+
+/* featured story: row of two col-md-6 */
+.cs-article-cluster .cs-article-cluster-featured {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.cs-article-cluster .cs-article-cluster-featured-media,
+.cs-article-cluster .cs-article-cluster-featured-text {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.cs-article-cluster .cs-article-cluster-featured-media {
+  text-align: right;
+}
+
+/* card grid: row.mt-4.mt-md-8 of col-12 col-md-6 col-lg-4 (wide: col-12 col-lg-8) */
+.cs-article-cluster .cs-article-cluster-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 36px -16px 0;
+}
+
+.cs-article-cluster .cs-article-cluster-item,
+.cs-article-cluster .cs-article-cluster-more {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.cs-article-cluster .cs-article-cluster-item {
+  margin-bottom: 48px;
+}
+
+.cs-article-cluster .cs-article-cluster-item[hidden] {
+  display: none;
+}
+
+.cs-article-cluster .cs-article-cluster-item.is-more {
+  margin-bottom: 0;
+}
+
+.cs-article-cluster .cs-article-cluster-more {
+  text-align: center;
+}
+
+.cs-article-cluster .cs-article-cluster-picture picture {
+  display: block;
+}
+
+/* c-button box: the padding sits on the authored <p> so the label box is the button box */
+.cs-article-cluster .c-button {
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.cs-article-cluster .c-button p {
+  display: flex;
+  align-items: center;
+  min-height: 2.7429rem;
+  margin: 0;
+  padding: .5714rem 1.3714rem;
+}
+
+.cs-article-cluster .cs-article-cluster-more .c-button {
+  cursor: pointer;
+}
+
+/* teaser (card-as-link; source a.row with -16px gutters around col-12 children) */
+.cs-article-cluster .cs-article-cluster-teaser {
+  display: block;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #000;
+}
+
+.cs-article-cluster .cs-article-cluster-teaser:hover {
+  color: #000;
+}
+
+.cs-article-cluster .cs-article-cluster-picture {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.cs-article-cluster .cs-article-cluster-featured-media .cs-article-cluster-picture {
+  margin-bottom: 20px;
+}
+
+.cs-article-cluster .cs-article-cluster-rendition.is-sm {
+  display: none;
+}
+
+.cs-article-cluster .cs-article-cluster-picture img {
+  max-width: 100%;
+  width: 100%;
+  min-height: 5.7143rem;
+  height: auto;
+  object-fit: cover;
+  vertical-align: middle;
+  transition: all 500ms cubic-bezier(.1, .41, .65, .89);
+  transform-origin: center;
+}
+
+.cs-article-cluster .cs-article-cluster-teaser:hover img {
+  transform: scale(1.05);
+}
+
+.cs-article-cluster .cs-article-cluster-picture.has-focus img {
+  transform: scale(1.05);
+}
+
+.cs-article-cluster .cs-article-cluster-eyebrow p {
+  margin: 0;
+  font-weight: 400;
+}
+
+.cs-article-cluster .cs-article-cluster-title :is(h1, h2, h3, h4, h5, h6) {
+  margin-top: 6px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+.cs-article-cluster .is-featured .cs-article-cluster-title :is(h1, h2, h3, h4, h5, h6) {
+  font-size: 26px;
+}
+
+.cs-article-cluster .cs-article-cluster-text p {
+  margin: 0 0 24px;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.cs-article-cluster .cs-article-cluster-cta {
+  text-align: center;
+}
+
+.cs-article-cluster .cs-article-cluster-teaser:hover .c-button {
+  background: var(--c-slate);
+  color: #fff;
+}
+
+/* c-teaser__link: chevron bubble + label */
+.cs-article-cluster .cs-article-cluster-link {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.cs-article-cluster .cs-article-cluster-link p {
+  margin: 0;
+}
+
+.cs-article-cluster .cs-article-cluster-link .u-icon {
+  margin-right: 6px;
+  padding: .4rem .3429rem .4rem .4571rem;
+}
+
+.cs-article-cluster .cs-article-cluster-teaser:hover .cs-article-cluster-link {
+  text-decoration: underline;
+}
+
+@media (width >= 767px) {
+  .cs-article-cluster .cs-article-cluster-rendition.is-lg {
+    display: block;
+  }
+
+  .cs-article-cluster .cs-article-cluster-rendition.is-sm {
+    display: none;
+  }
+}
+
+@media (width < 767px) {
+  .cs-article-cluster .cs-article-cluster-rendition.is-lg {
+    display: none;
+  }
+
+  .cs-article-cluster .cs-article-cluster-rendition.is-sm {
+    display: block;
+  }
+}
+
+@media (width >= 1023px) {
+  .cs-article-cluster .cs-article-cluster-head :is(h1, h2, h3) {
+    font-size: 40px;
+  }
+
+  .cs-article-cluster .cs-article-cluster-featured {
+    padding-top: 36px;
+  }
+
+  .cs-article-cluster .cs-article-cluster-featured-media,
+  .cs-article-cluster .cs-article-cluster-featured-text,
+  .cs-article-cluster .cs-article-cluster-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .cs-article-cluster .cs-article-cluster-item.is-wide {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .cs-article-cluster .cs-article-cluster-grid {
+    margin-top: 88px;
+  }
+
+  .cs-article-cluster .cs-article-cluster-item,
+  .cs-article-cluster .cs-article-cluster-item.is-more {
+    margin-bottom: 88px;
+  }
+
+  .cs-article-cluster .cs-article-cluster-sticky {
+    position: sticky;
+    top: 25%;
+  }
+
+  .cs-article-cluster .cs-article-cluster-text-length {
+    max-width: 50ch;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .cs-article-cluster .cs-article-cluster-title :is(h1, h2, h3, h4, h5, h6) {
+    font-size: 30px;
+  }
+
+  .cs-article-cluster .is-featured .cs-article-cluster-title :is(h1, h2, h3, h4, h5, h6) {
+    font-size: 40px;
+  }
+
+  .cs-article-cluster .cs-article-cluster-text p {
+    font-size: 20px;
+  }
+
+  .cs-article-cluster .cs-article-cluster-cta {
+    text-align: left;
+  }
+}
+
+@media (width >= 1279px) {
+  .cs-article-cluster .cs-article-cluster-item {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .cs-article-cluster .cs-article-cluster-item.is-wide {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+
+  .cs-article-cluster .cs-article-cluster-item .cs-article-cluster-picture img {
+    height: 450px;
+  }
+}
+
+@media (width >= 1680px) {
+  .cs-article-cluster .cs-article-cluster-item .cs-article-cluster-picture img {
+    height: 532px;
+  }
+}

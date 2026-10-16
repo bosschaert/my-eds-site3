@@ -1,38 +1,95 @@
 {
  "_provenance": {
   "writtenBy": "stardust:dynamics detect",
-  "writtenAt": "2026-10-14T09:00:26.520Z",
+  "writtenAt": "2026-10-09T17:35:37.790Z",
   "settleMs": 5000,
   "width": 1440,
   "urls": [
-   "https://www.skerriesmills.ie/"
+   "https://www.continental.com/en/",
+   "https://www.continental.com/en-pt/",
+   "https://www.continental.com/en/investors/",
+   "https://www.continental.com/en/career/working-at-continental/",
+   "https://www.continental.com/en/general/contact-us/",
+   "https://www.continental.com/en/general/legal-notice/",
+   "https://www.continental.com/de/presse/pressemitteilungen/",
+   "https://www.continental.com/en/stories/",
+   "https://www.continental.com/en/country-selector/",
+   "https://www.continental.com/en/general/sustainability-contact-form/"
   ],
   "reachSource": "stardust/current/pages"
  },
  "pages": {
-  "/": {
-   "url": "https://www.skerriesmills.ie/",
+  "/en/": {
+   "url": "https://www.continental.com/en/",
    "status": 200,
-   "host": "www.skerriesmills.ie",
-   "title": "Skerries Mills, A Unique Heritage Museum in Dublin",
-   "forms": [],
+   "host": "www.continental.com",
+   "title": "Home | Continental - Continental AG",
+   "forms": [
+    {
+     "name": "tx-solr-search-form-pi-results-header",
+     "action": "https://www.continental.com/en/general/search/",
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:tx_solr[q]"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
    "controlGroups": [],
    "triggers": [],
    "dialogs": [
     {
      "role": "dialog",
-     "heading": "Manage Consent",
-     "textLen": 1688,
+     "heading": "",
+     "textLen": 23,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "p",
+     "heading": "",
+     "textLen": 23,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "",
+     "textLen": 533,
      "hasForm": true,
      "hasIframe": false,
      "hasVideo": false
     }
    ],
-   "dialogCount": 1,
+   "dialogCount": 4,
    "media": [
     {
      "tag": "iframe",
-     "src": "https://fareharbor.com/embeds/cart/?u=17ecbe99-cff8-43ae-8a57-d64c2dd10d17&from-ssl=yes&g4=yes&cp=no&csp=no&back=https%3A%2F%2Fwww.skerriesmills.ie%2F",
+     "src": "https://charts3.equitystory.com/teaser-t1/continental-ag-v31/English/",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    },
+    {
+     "tag": "video",
+     "src": "blob:https://www.continental.com/de857e18-b447-4e89-a49a-8a72220e3295",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    },
+    {
+     "tag": "iframe",
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
      "account": null,
      "player": null,
      "videoId": null,
@@ -41,28 +98,112 @@
    ],
    "iframes": [
     {
-     "src": "https://fareharbor.com/embeds/cart/?u=17ecbe99-cff8-43ae-8a57-d64c2dd10d17&from-ssl=yes&g4=yes&cp=no&csp=no&back=https%3A%2F%2Fwww.skerriesmills.ie%2F",
-     "title": "FareHarbor",
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
      "w": 0,
      "h": 0
     },
     {
      "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://charts3.equitystory.com/teaser-t1/continental-ag-v31/English/",
      "title": null,
-     "w": 1,
-     "h": 1
+     "w": 397,
+     "h": 406
+    },
+    {
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
     }
    ],
-   "mounts": [],
+   "mounts": [
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload",
+      "data-ll-status"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    }
+   ],
    "auth": [],
    "commerce": {
-    "cart": false,
-    "prices": 5
+    "cart": true,
+    "prices": 0
    },
    "locale": {
-    "lang": "en-GB",
-    "hreflang": [],
-    "switcher": []
+    "lang": "en",
+    "hreflang": [
+     "de-DE",
+     "en",
+     "x-default"
+    ],
+    "switcher": [
+     "https://www.continental.com/en-us/",
+     "https://www.continental.com/de/",
+     "https://webcast.continental.com/hv/2021/en/",
+     "https://www.continental.com/de/"
+    ]
    },
    "cms": {
     "dataLayer": [
@@ -74,282 +215,3572 @@
      "5",
      "6",
      "7",
+     "8",
+     "9",
+     "10",
      "push"
+    ],
+    "utag_data": [
+     "cmpGDPR",
+     "cmpCCPA",
+     "cmpRegulation",
+     "cmpConsentString",
+     "cmpCurrentStatus",
+     "cmpLastStatus",
+     "cmpLastTCFStatus",
+     "cmpLoadingStatus",
+     "cmpDisplayStatus",
+     "cmpVendorsConsent",
+     "cmpCustomVendorsConsent",
+     "cmpGoogleVendorsConsent",
+     "cmpPurposesConsent",
+     "cmpCustomPurposeConsent",
+     "cmpConsentVendors",
+     "cmpConsentPurposes",
+     "cmpLIVendors",
+     "cmpLIPurposes",
+     "cmpIABUSP",
+     "cmpDesignId",
+     "consentExists",
+     "userChoiceExists",
+     "userChoiceType",
+     "userChoiceStatus",
+     "pauseChoice",
+     "pauseChoiceUntil",
+     "cmpUserCountry",
+     "cmpUserRegion",
+     "gtm.uniqueEventId"
     ]
    },
    "framework": null,
    "globals": [
-    "google_tag_manager"
+    "google_tag_manager",
+    "gtag"
    ],
    "clientRendered": [
     {
-     "cls": "mx-auto flex flex-col-reverse",
+     "cls": "video-js vjs-default-skin vjs-paused",
      "attrs": [],
-     "text": "Visit Skerries Mills Comprising of three national monuments "
+     "text": "Play VideoPlayMuteLoaded: 0%Progress: 0%Current Time 0:00/Du"
     },
     {
-     "cls": "attraction-carousel relative pb-32",
+     "cls": "vjs-control-bar",
      "attrs": [],
-     "text": "The Attractions Museum Commencing our guided tour, learn abo"
+     "text": "PlayMuteLoaded: 0%Progress: 0%Current Time 0:00/Duration Tim"
     },
     {
-     "cls": "flex flex-col items-stretch",
+     "cls": "vjs-progress-control vjs-control",
      "attrs": [],
-     "text": "Museum Commencing our guided tour, learn about life at the M"
+     "text": "Loaded: 0%Progress: 0%"
     },
     {
-     "cls": "flex flex-col items-stretch",
+     "cls": "vjs-progress-holder vjs-slider vjs-slider-horizontal",
      "attrs": [],
-     "text": "Art At The Mill As a social enterprise, we are proud to show"
+     "text": "Loaded: 0%Progress: 0%"
     },
     {
-     "cls": "flex flex-col space-y-4",
+     "cls": "vjs-error-display vjs-modal-dialog vjs-hidden",
      "attrs": [],
-     "text": "History of the mills Windmills in Western Europe date from t"
+     "text": "This is a modal window."
     },
     {
-     "cls": "flex flex-col items-stretch",
+     "cls": "vjs-caption-settings vjs-modal-overlay vjs-hidden",
      "attrs": [],
-     "text": "The Watermill Cafe While freshly baked fare is at the heart "
+     "text": "Foreground --- White Black Red Green Blue Yellow Magenta Cya"
     },
     {
-     "cls": "flex flex-col items-stretch",
+     "cls": "vjs-tracksettings",
      "attrs": [],
-     "text": "The Craft Shop Our local Crafter Project showcases a series "
+     "text": "Foreground --- White Black Red Green Blue Yellow Magenta Cya"
     },
     {
-     "cls": "flex flex-col items-stretch",
+     "cls": "vjs-tracksettings-colors",
      "attrs": [],
-     "text": "Our Tour A visit to Skerries Mills Begin by introducing your"
+     "text": "Foreground --- White Black Red Green Blue Yellow Magenta Cya"
     },
     {
-     "cls": "testimonials bg-brand-blue js-show-on-scroll",
+     "cls": "vjs-fg-color vjs-tracksetting",
      "attrs": [],
-     "text": "What Our Visitors Say “Incredible experience!!! Worth the tr"
+     "text": "Foreground --- White Black Red Green Blue Yellow Magenta Cya"
     },
     {
-     "cls": "py-16 pt-8 js-show-on-scroll",
+     "cls": "vjs-text-opacity vjs-opacity",
      "attrs": [],
-     "text": "Tickets Adult Ticket €12 Book Now Student €11 Book Now Senio"
+     "text": "--- Opaque Semi-Opaque"
     },
     {
-     "cls": "flex flex-col js-show-on-scroll-img",
+     "cls": "vjs-bg-color vjs-tracksetting",
      "attrs": [],
-     "text": "Adult Ticket €12 Book Now"
+     "text": "Background --- White Black Red Green Blue Yellow Magenta Cya"
     },
     {
-     "cls": "flex flex-col js-show-on-scroll-img",
+     "cls": "vjs-bg-opacity vjs-opacity",
      "attrs": [],
-     "text": "Senior Citizen €11 Book Now"
+     "text": "--- Opaque Semi-Transparent Transparent"
     }
    ],
    "listingCandidates": [
     {
-     "cls": "flex flex-col",
-     "cards": 6,
-     "sameSite": 6,
+     "cls": "row",
+     "cards": 3,
+     "sameSite": 3,
      "hasDate": false
+    }
+   ],
+   "inlineScripts": 4,
+   "inlineFetch": false,
+   "mainText": 4119,
+   "domAddedAfterLoad": 51,
+   "hosts": {
+    "www.continental.com": 4,
+    "cdn.continental.com": 23,
+    "player.admiralcloud.com": 4,
+    "charts3.equitystory.com": 12,
+    "d.delivery.consentmanager.net": 3,
+    "cdn.consentmanager.net": 5,
+    "www.googletagmanager.com": 1,
+    "api.admiralcloud.com": 5,
+    "images.admiralcloud.com": 2,
+    "image.continental.com": 1,
+    "analytics.admiralcloud.com": 3,
+    "mediafra-217.admiralcloud.com": 2
+   },
+   "thirdPartyHosts": [
+    "player.admiralcloud.com",
+    "charts3.equitystory.com",
+    "d.delivery.consentmanager.net",
+    "cdn.consentmanager.net",
+    "www.googletagmanager.com",
+    "api.admiralcloud.com",
+    "images.admiralcloud.com",
+    "analytics.admiralcloud.com",
+    "mediafra-217.admiralcloud.com"
+   ],
+   "scripts": [
+    "https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/ipRedirectBanner.min.js?1790924666",
+    "https://cdn.continental.com/typo3temp/assets/compressed/merged-c7263f98e6e15cc3faa4a978666b9c60-0b99e57ed84d5e36ca788519233ef538.js?1790924734",
+    "https://player.admiralcloud.com/acplayer.js",
+    "https://charts3.equitystory.com/widget/loader.js",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?&cdid=f893648c4ce4&h=https%3A%2F%2Fwww.continental.com%2Fen%2F&&l=en&ls=EN_EN&lp=EN_EN&o=1791567338739",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?__cmpcc=1&id=42619&o=1791567339&h=https%3A%2F%2Fwww.continental.com%2Fen%2F&&l=en&odw=0&dlt=1&l=en&lp=EN_EN",
+    "https://cdn.consentmanager.net/delivery/js/cmp_final.min.js?t=2026-10-9",
+    "https://cdn.consentmanager.net/delivery/customdata/bV8xLndfNDI2MTkucl9ST1cubF9lbi5kXzM2ODA0LnhfMTU2LnYucC50XzM2ODA0Lnh0Xzg5.js",
+    "https://charts3.equitystory.com/clients/continental-ag-v31/dist/chart/js/libs.js",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-WN9297K",
+    "https://charts3.equitystory.com/js/common-v3.1.0.min.js",
+    "https://charts3.equitystory.com/clients/continental-ag-v31/dist/chart/js/main.js",
+    "https://charts3.equitystory.com/clients/continental-ag-v31/dist/teaser/js/main.js",
+    "https://charts3.equitystory.com/js/_v3/vendor/iframeResizer.contentWindow.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/Hyphenopoly/ExcludedWords.json"
     },
     {
-     "cls": "mob-sub",
-     "cards": 5,
-     "sameSite": 5,
-     "hasDate": false
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en/api-dc/",
+     "query": [
+      "cHash",
+      "tx_condownloadcenter_api[action]",
+      "tx_condownloadcenter_api[controller]"
+     ],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/api-dc/"
     },
     {
-     "cls": "mob-sub",
-     "cards": 4,
-     "sameSite": 4,
-     "hasDate": false
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en/ipredirectbanner/",
+     "query": [],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/ipredirectbanner/"
+    }
+   ],
+   "thirdPartyXhr": [
+    "GET charts3.equitystory.com/tpl-t1/continental-ag-v31/English/",
+    "POST charts3.equitystory.com/teaser-t1/continental-ag-v31/English/",
+    "GET api.admiralcloud.com/v5/deliverEmbed/b44d4543-ee05-474d-8c6b-ea05bfdf66e4",
+    "GET api.admiralcloud.com/v5/deliverEmbed/b44d4543-ee05-474d-8c6b-ea05bfdf66e4/subtitle/35194",
+    "GET api.admiralcloud.com/v5/deliverEmbed/b44d4543-ee05-474d-8c6b-ea05bfdf66e4/subtitle/35316",
+    "GET api.admiralcloud.com/v5/deliverEmbed/b44d4543-ee05-474d-8c6b-ea05bfdf66e4/hlsManifest",
+    "GET api.admiralcloud.com/v5/deliverEmbed/b44d4543-ee05-474d-8c6b-ea05bfdf66e4/hls/240",
+    "POST analytics.admiralcloud.com/v4/player/requestTrackId",
+    "POST analytics.admiralcloud.com/v4/player/trackEvent",
+    "GET mediafra-217.admiralcloud.com/customer_217/e793d923-4998-4122-9f9a-0898de544990/files/240_index00000.ts",
+    "GET mediafra-217.admiralcloud.com/customer_217/e793d923-4998-4122-9f9a-0898de544990/files/240_index00001.ts"
+   ],
+   "postBodies": [
+    {
+     "url": "https://charts3.equitystory.com/teaser-t1/continental-ag-v31/English/",
+     "body": "action=teaser&language=English&company=continental-ag-v31&variant=t1&default_isin=DE0005439004&default_exchange%5B%5D=continental_ag_xetra&default_news_types%5B%5D=adhoc&default_news_types%5B%5D=corporate&default_news_types%5B%5D=dividend_marker&default_range=1D&default_type=spline&ignore_timezone_offset=true&default_decimal_precision=2&update_top_table=true&update_bottom_table=true&show_trade_his"
     },
     {
-     "cls": "mob-sub",
-     "cards": 6,
-     "sameSite": 6,
-     "hasDate": false
+     "url": "https://analytics.admiralcloud.com/v4/player/requestTrackId",
+     "body": "{\"playerId\":7296248,\"mediaContainerId\":4555468,\"customerId\":\"J0EpkwONLK\",\"duration\":432,\"partLength\":5,\"logdate\":1791567340.794,\"identifier\":\"b44d4543-ee05-474d-8c6b-ea05bfdf66e4\",\"link\":\"b44d4543-ee05-474d-8c6b-ea05bfdf66e4\",\"playbackFormat\":\"HLS\",\"playerVersion\":\"N/A\",\"lastTimeStamp\":0,\"lastMarkerSent\":0,\"jwt\":\"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwia2lkIjoiand0LmVtYmVkbGlua0RlbGl2ZXJ5LmVuY3J5c"
     },
     {
-     "cls": "swiper-wrapper",
-     "cards": 6,
-     "sameSite": 6,
-     "hasDate": false
+     "url": "https://analytics.admiralcloud.com/v4/player/trackEvent",
+     "body": "{\"event\":\"meta\",\"currentTime\":0,\"initiator\":\"trackEvent\",\"jwt\":\"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwia2lkIjoiand0LmVtYmVkbGlua0RlbGl2ZXJ5LmVuY3J5cHRpb25TZWNyZXQifQ..SNT8UrlJ-u1cQTTZ.z-JEjM-Ut7T4Pb8LHS5Y_GXBCCx-Y4J7YKEQVKXlqXsrNCV3B1W_1a1_m6DMGRR6-kYuzqJo9kShmTV7KMcZjtt48dKSIFvX7dCmSpdVFyVMpWJ9-nKSbhStVAQzQkVtbjGws3rDhw8IeF6_MVMr6h7Snl1-4UzypC19tTVcD_FY2kGjYs9SFx9Fj249_sCmzUxCodkBs_fo6ht5d49yqrQ"
     },
     {
-     "cls": "grid grd-cols-1",
+     "url": "https://analytics.admiralcloud.com/v4/player/trackEvent",
+     "body": "{\"event\":\"meta\",\"currentTime\":0,\"initiator\":\"trackEvent\",\"jwt\":\"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwia2lkIjoiand0LmVtYmVkbGlua0RlbGl2ZXJ5LmVuY3J5cHRpb25TZWNyZXQifQ..SNT8UrlJ-u1cQTTZ.z-JEjM-Ut7T4Pb8LHS5Y_GXBCCx-Y4J7YKEQVKXlqXsrNCV3B1W_1a1_m6DMGRR6-kYuzqJo9kShmTV7KMcZjtt48dKSIFvX7dCmSpdVFyVMpWJ9-nKSbhStVAQzQkVtbjGws3rDhw8IeF6_MVMr6h7Snl1-4UzypC19tTVcD_FY2kGjYs9SFx9Fj249_sCmzUxCodkBs_fo6ht5d49yqrQ"
+    }
+   ],
+   "textAtLoad": 4105,
+   "mainEmptyAtLoad": false
+  },
+  "/en-pt/": {
+   "url": "https://www.continental.com/en-pt/",
+   "status": 200,
+   "host": "www.continental.com",
+   "title": "Continental in Portugal - Continental Corporation Portugal",
+   "forms": [
+    {
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 3,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    },
+    {
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 3,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    },
+    {
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 3,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    },
+    {
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 3,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    },
+    {
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 3,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    },
+    {
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 3,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    },
+    {
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 3,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    },
+    {
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 3,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    },
+    {
+     "name": "portugalEN-ContactOnePager-174664",
+     "action": "https://www.continental.com/en-pt/?tx_form_formframework%5Baction%5D=perform&tx_form_formframework%5Bcontroller%5D=FormFrontend&cHash=4cfe1caec6d799bf6af9f16ef681e587#portugalEN-ContactOnePager-174664",
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 7,
+     "signature": [
+      "text:tx_form_formframework[portugalEN-ContactOnePager-174664][text-3]",
+      "text:tx_form_formframework[portugalEN-ContactOnePager-174664][text-2]",
+      "text:tx_form_formframework[portugalEN-ContactOnePager-174664][text-1]",
+      "text:tx_form_formframework[portugalEN-ContactOnePager-174664][hEyM9aU8r2n4sj5gBSNIJcz]",
+      "text:tx_form_formframework[portugalEN-ContactOnePager-174664][text-4]",
+      "textarea:tx_form_formframework[portugalEN-ContactOnePager-174664][textarea-1]",
+      "checkbox:tx_form_formframework[portugalEN-ContactOnePager-174664][linkedcheckbox-1]"
+     ],
+     "hidden": [
+      "tx_form_formframework[portugalEN-ContactOnePager-174664][__state]",
+      "tx_form_formframework[__trustedProperties]",
+      "tx_form_formframework[portugalEN-ContactOnePager-174664][linkedcheckbox-1]",
+      "tx_form_formframework[portugalEN-ContactOnePager-174664][hidden-1]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/location_20profiles/template_location_profiles__one-pager/one-pager/portugal1.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/location_20profiles/template_location_profiles__one-pager/one-pager/portugal2.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/location_20profiles/template_location_profiles__one-pager/one-pager/portugal3.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/location_20profiles/template_location_profiles__one-pager/one-pager/portugal4.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/english/portugal-img-2.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/english/img_7155_1.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/english/portugal-img-4.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/english/portugal-img-3.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/english/continental_mabor.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/english/c_ita_2024.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/english/continental_pneus.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/english/continental_lemmerz.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/english/continental_solution_center.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/english/files/2026/0079.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/english/files/2026/img_1296.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/english/files/2025/foto_anace_2.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/english/files/2025/799a9631_b.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/english/files/2025/continental_pp_tiretechnologyawards.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/portuguese/hubpages/media_2024/2024.12.12_continental_visita_ministro_economia_dsc_8377_-_copy.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/portuguese/hubpages/media_2024/continental_pp_lousadoplantsolar.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    },
+    {
+     "text": "",
+     "href": "https://cdn.continental.com/fileadmin/__imported/sites/corporate/portugal/english/files/lousado_portugal/eletrical_boiler_in_lousado_v2.jpg",
+     "marker": "data-lightbox",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [
+    {
+     "role": "h4",
+     "heading": "",
+     "textLen": 19,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "",
+     "textLen": 19,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "portugal1.jpg",
+     "textLen": 70,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "portugal1.jpg",
+     "textLen": 27,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "span",
+     "heading": "",
+     "textLen": 13,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "span",
+     "heading": "",
+     "textLen": 13,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "portugal1.jpg (small version)",
+     "textLen": 42,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "span",
+     "heading": "",
+     "textLen": 29,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "span",
+     "heading": "",
+     "textLen": 12,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "",
+     "textLen": 37,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "h4",
+     "heading": "",
+     "textLen": 19,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "",
+     "textLen": 19,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    }
+   ],
+   "dialogCount": 80,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [
+    {
+     "cls": "c-image__embed-item has-no-min-height",
+     "attrs": [
+      "data-src",
+      "data-lazyload",
+      "data-ll-status"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item has-no-min-height",
+     "attrs": [
+      "data-src",
+      "data-lazyload",
+      "data-ll-status"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item has-no-min-height",
+     "attrs": [
+      "data-src",
+      "data-lazyload",
+      "data-ll-status"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item has-no-min-height",
+     "attrs": [
+      "data-src",
+      "data-lazyload",
+      "data-ll-status"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item has-no-min-height",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item has-no-min-height",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item has-no-min-height",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item has-no-min-height",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    }
+   ],
+   "auth": [],
+   "commerce": {
+    "cart": false,
+    "prices": 2
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": [
+     "https://www.continental.com/en-us/",
+     "https://www.continental.com/pt-pt/",
+     "https://www.continental.com/pt-pt/",
+     "https://www.continental-tires.com/pt/pt/",
+     "https://www.continental-tires.com/pt/pt/"
+    ]
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "push"
+    ],
+    "utag_data": [
+     "cmpGDPR",
+     "cmpCCPA",
+     "cmpRegulation",
+     "cmpConsentString",
+     "cmpCurrentStatus",
+     "cmpLastStatus",
+     "cmpLastTCFStatus",
+     "cmpLoadingStatus",
+     "cmpDisplayStatus",
+     "cmpVendorsConsent",
+     "cmpCustomVendorsConsent",
+     "cmpGoogleVendorsConsent",
+     "cmpPurposesConsent",
+     "cmpCustomPurposeConsent",
+     "cmpConsentVendors",
+     "cmpConsentPurposes",
+     "cmpLIVendors",
+     "cmpLIPurposes",
+     "cmpIABUSP",
+     "cmpDesignId",
+     "consentExists",
+     "userChoiceExists",
+     "userChoiceType",
+     "userChoiceStatus",
+     "pauseChoice",
+     "pauseChoiceUntil",
+     "cmpUserCountry",
+     "cmpUserRegion"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "o-accordion u-align-default",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    }
+   ],
+   "inlineScripts": 3,
+   "inlineFetch": false,
+   "mainText": 12955,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.continental.com": 3,
+    "cdn.continental.com": 48,
+    "d.delivery.consentmanager.net": 3,
+    "cdn.consentmanager.net": 5,
+    "www.googletagmanager.com": 1
+   },
+   "thirdPartyHosts": [
+    "d.delivery.consentmanager.net",
+    "cdn.consentmanager.net",
+    "www.googletagmanager.com"
+   ],
+   "scripts": [
+    "https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/ipRedirectBanner.min.js?1790924666",
+    "https://cdn.continental.com/typo3temp/assets/compressed/merged-c7263f98e6e15cc3faa4a978666b9c60-0b99e57ed84d5e36ca788519233ef538.js?1790924734",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?&cdid=f893648c4ce4&h=https%3A%2F%2Fwww.continental.com%2Fen-pt%2F&&l=en&ls=EN_EN&lp=EN_EN&o=1791567350566",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?__cmpcc=1&id=42619&o=1791567350&h=https%3A%2F%2Fwww.continental.com%2Fen-pt%2F&&l=en&odw=0&dlt=1&l=en&lp=EN_EN",
+    "https://cdn.consentmanager.net/delivery/js/cmp_final.min.js?t=2026-10-9",
+    "https://cdn.consentmanager.net/delivery/customdata/bV8xLndfNDI2MTkucl9ST1cubF9lbi5kXzM2ODA0LnhfMTU2LnYucC50XzM2ODA0Lnh0Xzg5.js",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-WN9297K"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/Hyphenopoly/ExcludedWords.json"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en-pt/ipredirectbanner/",
+     "query": [],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en-pt/ipredirectbanner/"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 12955,
+   "mainEmptyAtLoad": false
+  },
+  "/en/investors/": {
+   "url": "https://www.continental.com/en/investors/",
+   "status": 200,
+   "host": "www.continental.com",
+   "title": "Investors | Continental - Continental AG",
+   "forms": [
+    {
+     "name": "tx-solr-search-form-pi-results-header",
+     "action": "https://www.continental.com/en/general/search/",
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:tx_solr[q]"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://charts3.equitystory.com/teaser-t1/continental-ag-v31/English/",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    },
+    {
+     "tag": "iframe",
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://charts3.equitystory.com/teaser-t1/continental-ag-v31/English/",
+     "title": null,
+     "w": 612,
+     "h": 475
+    },
+    {
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    }
+   ],
+   "auth": [
+    "https://www.continental.com/en/investors/services/registering-for-continental-ir-press-releases/"
+   ],
+   "commerce": {
+    "cart": true,
+    "prices": 5
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [
+     "de-DE",
+     "en",
+     "x-default"
+    ],
+    "switcher": [
+     "https://www.continental.com/en-us/",
+     "https://www.continental.com/de/investoren/",
+     "https://webcast.continental.com/hv/2021/en/",
+     "https://www.continental.com/de/investoren/"
+    ]
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "push"
+    ],
+    "utag_data": [
+     "cmpGDPR",
+     "cmpCCPA",
+     "cmpRegulation",
+     "cmpConsentString",
+     "cmpCurrentStatus",
+     "cmpLastStatus",
+     "cmpLastTCFStatus",
+     "cmpLoadingStatus",
+     "cmpDisplayStatus",
+     "cmpVendorsConsent",
+     "cmpCustomVendorsConsent",
+     "cmpGoogleVendorsConsent",
+     "cmpPurposesConsent",
+     "cmpCustomPurposeConsent",
+     "cmpConsentVendors",
+     "cmpConsentPurposes",
+     "cmpLIVendors",
+     "cmpLIPurposes",
+     "cmpIABUSP",
+     "cmpDesignId",
+     "consentExists",
+     "userChoiceExists",
+     "userChoiceType",
+     "userChoiceStatus",
+     "pauseChoice",
+     "pauseChoiceUntil",
+     "cmpUserCountry",
+     "cmpUserRegion",
+     "gtm.uniqueEventId"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "c-heroteaser-fixed__slides",
      "cards": 3,
      "sameSite": 3,
      "hasDate": true
     },
     {
-     "cls": "grid grd-cols-1",
+     "cls": "o-tabs__content",
+     "cards": 4,
+     "sameSite": 4,
+     "hasDate": true
+    },
+    {
+     "cls": "row",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": true
+    },
+    {
+     "cls": "row",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": true
+    },
+    {
+     "cls": "row",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": true
+    }
+   ],
+   "inlineScripts": 3,
+   "inlineFetch": false,
+   "mainText": 5447,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.continental.com": 4,
+    "cdn.continental.com": 36,
+    "charts3.equitystory.com": 12,
+    "d.delivery.consentmanager.net": 3,
+    "cdn.consentmanager.net": 5,
+    "www.googletagmanager.com": 1
+   },
+   "thirdPartyHosts": [
+    "charts3.equitystory.com",
+    "d.delivery.consentmanager.net",
+    "cdn.consentmanager.net",
+    "www.googletagmanager.com"
+   ],
+   "scripts": [
+    "https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/ipRedirectBanner.min.js?1790924666",
+    "https://cdn.continental.com/typo3temp/assets/compressed/merged-c7263f98e6e15cc3faa4a978666b9c60-0b99e57ed84d5e36ca788519233ef538.js?1790924734",
+    "https://charts3.equitystory.com/widget/loader.js",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?&cdid=f893648c4ce4&h=https%3A%2F%2Fwww.continental.com%2Fen%2Finvestors%2F&&l=en&ls=EN_EN&lp=EN_EN&o=1791567362566",
+    "https://cdn.consentmanager.net/delivery/js/cmp_final.min.js?t=2026-10-9",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?__cmpcc=1&__cmpfcc=1&id=42619&o=1791567363&h=https%3A%2F%2Fwww.continental.com%2Fen%2Finvestors%2F&&l=en&odw=0&dlt=1&l=en&lp=EN_EN",
+    "https://cdn.consentmanager.net/delivery/customdata/bV8xLndfNDI2MTkucl9ST1cubF9lbi5kXzM2ODA0LnhfMTU2LnYucC50XzM2ODA0Lnh0Xzg5.js",
+    "https://charts3.equitystory.com/clients/continental-ag-v31/dist/chart/js/libs.js",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-WN9297K",
+    "https://charts3.equitystory.com/clients/continental-ag-v31/dist/chart/js/main.js",
+    "https://charts3.equitystory.com/js/common-v3.1.0.min.js",
+    "https://charts3.equitystory.com/clients/continental-ag-v31/dist/teaser/js/main.js",
+    "https://charts3.equitystory.com/js/_v3/vendor/iframeResizer.contentWindow.min.js"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/Hyphenopoly/ExcludedWords.json"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en/investors/ipredirectbanner/",
+     "query": [],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/investors/ipredirectbanner/"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en/investors/api-dc/",
+     "query": [
+      "cHash",
+      "tx_condownloadcenter_api[action]",
+      "tx_condownloadcenter_api[controller]"
+     ],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/investors/api-dc/"
+    }
+   ],
+   "thirdPartyXhr": [
+    "POST charts3.equitystory.com/teaser-t1/continental-ag-v31/English/",
+    "GET charts3.equitystory.com/tpl-t1/continental-ag-v31/English/"
+   ],
+   "postBodies": [
+    {
+     "url": "https://charts3.equitystory.com/teaser-t1/continental-ag-v31/English/",
+     "body": "action=teaser&language=English&company=continental-ag-v31&variant=t1&default_isin=DE0005439004&default_exchange%5B%5D=continental_ag_xetra&default_news_types%5B%5D=adhoc&default_news_types%5B%5D=corporate&default_news_types%5B%5D=dividend_marker&default_range=1D&default_type=spline&ignore_timezone_offset=true&default_decimal_precision=2&update_top_table=true&update_bottom_table=true&show_trade_his"
+    }
+   ],
+   "textAtLoad": 5447,
+   "mainEmptyAtLoad": false
+  },
+  "/en/career/working-at-continental/": {
+   "url": "https://www.continental.com/en/career/working-at-continental/",
+   "status": 200,
+   "host": "www.continental.com",
+   "title": "Continental – Our Culture and Your Career Opportunities - Continental AG",
+   "forms": [
+    {
+     "name": "tx-solr-search-form-pi-results-header",
+     "action": "https://www.continental.com/en/general/search/",
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:tx_solr[q]"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    }
+   ],
+   "auth": [],
+   "commerce": {
+    "cart": true,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [
+     "de-DE",
+     "en",
+     "x-default"
+    ],
+    "switcher": [
+     "https://www.continental.com/en-us/",
+     "https://www.continental.com/de/karriere/arbeiten-bei-continental/",
+     "https://webcast.continental.com/hv/2021/en/",
+     "https://www.continental.com/de/karriere/arbeiten-bei-continental/"
+    ]
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "push"
+    ],
+    "utag_data": [
+     "cmpGDPR",
+     "cmpCCPA",
+     "cmpRegulation",
+     "cmpConsentString",
+     "cmpCurrentStatus",
+     "cmpLastStatus",
+     "cmpLastTCFStatus",
+     "cmpLoadingStatus",
+     "cmpDisplayStatus",
+     "cmpVendorsConsent",
+     "cmpCustomVendorsConsent",
+     "cmpGoogleVendorsConsent",
+     "cmpPurposesConsent",
+     "cmpCustomPurposeConsent",
+     "cmpConsentVendors",
+     "cmpConsentPurposes",
+     "cmpLIVendors",
+     "cmpLIPurposes",
+     "cmpIABUSP",
+     "cmpDesignId",
+     "consentExists",
+     "userChoiceExists",
+     "userChoiceType",
+     "userChoiceStatus",
+     "pauseChoice",
+     "pauseChoiceUntil",
+     "cmpUserCountry",
+     "cmpUserRegion",
+     "gtm.uniqueEventId"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 3,
+   "inlineFetch": false,
+   "mainText": 2373,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.continental.com": 4,
+    "cdn.continental.com": 20,
+    "d.delivery.consentmanager.net": 3,
+    "cdn.consentmanager.net": 5,
+    "www.googletagmanager.com": 1
+   },
+   "thirdPartyHosts": [
+    "d.delivery.consentmanager.net",
+    "cdn.consentmanager.net",
+    "www.googletagmanager.com"
+   ],
+   "scripts": [
+    "https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/ipRedirectBanner.min.js?1790924666",
+    "https://cdn.continental.com/typo3temp/assets/compressed/merged-c7263f98e6e15cc3faa4a978666b9c60-0b99e57ed84d5e36ca788519233ef538.js?1790924734",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?&cdid=f893648c4ce4&h=https%3A%2F%2Fwww.continental.com%2Fen%2Fcareer%2Fworking-at-continental%2F&&l=en&ls=EN_EN&lp=EN_EN&o=1791567374227",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?__cmpcc=1&id=42619&o=1791567374&h=https%3A%2F%2Fwww.continental.com%2Fen%2Fcareer%2Fworking-at-continental%2F&&l=en&odw=0&dlt=1&l=en&lp=EN_EN",
+    "https://cdn.consentmanager.net/delivery/js/cmp_final.min.js?t=2026-10-9",
+    "https://cdn.consentmanager.net/delivery/customdata/bV8xLndfNDI2MTkucl9ST1cubF9lbi5kXzM2ODA0LnhfMTU2LnYucC50XzM2ODA0Lnh0Xzg5.js",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-WN9297K"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/Hyphenopoly/ExcludedWords.json"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en/career/working-at-continental/api-dc/",
+     "query": [
+      "cHash",
+      "tx_condownloadcenter_api[action]",
+      "tx_condownloadcenter_api[controller]"
+     ],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/career/working-at-continental/api-dc/"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en/career/working-at-continental/ipredirectbanner/",
+     "query": [],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/career/working-at-continental/ipredirectbanner/"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 2373,
+   "mainEmptyAtLoad": false
+  },
+  "/en/general/contact-us/": {
+   "url": "https://www.continental.com/en/general/contact-us/",
+   "status": 200,
+   "host": "www.continental.com",
+   "title": "Contact Us - Continental AG - Continental AG",
+   "forms": [
+    {
+     "name": "tx-solr-search-form-pi-results-header",
+     "action": "https://www.continental.com/en/general/search/",
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:tx_solr[q]"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload",
+      "data-ll-status"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload",
+      "data-ll-status"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload",
+      "data-ll-status"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload",
+      "data-ll-status"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload",
+      "data-ll-status"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload",
+      "data-ll-status"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-img-16-9",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    }
+   ],
+   "auth": [],
+   "commerce": {
+    "cart": true,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [
+     "de-DE",
+     "en",
+     "x-default"
+    ],
+    "switcher": [
+     "https://www.continental.com/en-us/",
+     "https://www.continental.com/de/meta/ihr-kontakt-zu-uns/",
+     "https://webcast.continental.com/hv/2021/en/",
+     "https://www.continental.com/de/meta/ihr-kontakt-zu-uns/"
+    ]
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "push"
+    ],
+    "utag_data": [
+     "cmpGDPR",
+     "cmpCCPA",
+     "cmpRegulation",
+     "cmpConsentString",
+     "cmpCurrentStatus",
+     "cmpLastStatus",
+     "cmpLastTCFStatus",
+     "cmpLoadingStatus",
+     "cmpDisplayStatus",
+     "cmpVendorsConsent",
+     "cmpCustomVendorsConsent",
+     "cmpGoogleVendorsConsent",
+     "cmpPurposesConsent",
+     "cmpCustomPurposeConsent",
+     "cmpConsentVendors",
+     "cmpConsentPurposes",
+     "cmpLIVendors",
+     "cmpLIPurposes",
+     "cmpIABUSP",
+     "cmpDesignId",
+     "consentExists",
+     "userChoiceExists",
+     "userChoiceType",
+     "userChoiceStatus",
+     "pauseChoice",
+     "pauseChoiceUntil",
+     "cmpUserCountry",
+     "cmpUserRegion",
+     "gtm.uniqueEventId"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "row",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "row",
      "cards": 3,
      "sameSite": 3,
      "hasDate": false
     }
    ],
-   "inlineScripts": 6,
+   "inlineScripts": 3,
    "inlineFetch": false,
-   "mainText": 6691,
-   "domAddedAfterLoad": 5,
+   "mainText": 783,
+   "domAddedAfterLoad": 0,
    "hosts": {
-    "www.skerriesmills.ie": 64,
-    "fonts.googleapis.com": 1,
-    "fareharbor.com": 6,
-    "fh-kit.com": 1,
-    "fonts.gstatic.com": 2,
-    "www.googletagmanager.com": 3,
-    "dipr2nuwo661l.cloudfront.net": 6,
-    "o10963.ingest.sentry.io": 5,
-    "marketing.fareharbor.com": 1,
-    "www.google-analytics.com": 2,
-    "otel-hfo.fareharbor.engineering": 1
+    "www.continental.com": 4,
+    "cdn.continental.com": 25,
+    "d.delivery.consentmanager.net": 3,
+    "cdn.consentmanager.net": 5,
+    "www.googletagmanager.com": 1
    },
    "thirdPartyHosts": [
-    "fonts.googleapis.com",
-    "fareharbor.com",
-    "fh-kit.com",
-    "fonts.gstatic.com",
-    "www.googletagmanager.com",
-    "dipr2nuwo661l.cloudfront.net",
-    "o10963.ingest.sentry.io",
-    "marketing.fareharbor.com",
-    "www.google-analytics.com",
-    "otel-hfo.fareharbor.engineering"
+    "d.delivery.consentmanager.net",
+    "cdn.consentmanager.net",
+    "www.googletagmanager.com"
    ],
    "scripts": [
-    "https://www.skerriesmills.ie/wp-content/themes/skerries-mills/assets/dist/main.3ebd13ef3450a0c598de.js?ver=7.1.3",
-    "https://fareharbor.com/embeds/api/v1/?autolightframe=yes",
-    "https://www.skerriesmills.ie/wp-content/plugins/complianz-gdpr-premium/cookiebanner/js/complianz.min.js?ver=1775758336",
-    "https://www.googletagmanager.com/gtm.js?id=GTM-5579WLK2",
-    "https://fareharbor.com/embeds/api/integration-kit-with-ssr/v1/?autolightframe=yes",
-    "https://www.skerriesmills.ie/cdn-cgi/challenge-platform/scripts/jsd/main.js",
-    "https://www.skerriesmills.ie/cdn-cgi/challenge-platform/h/g/scripts/jsd/4df4a60fa397/main.js?",
-    "https://www.googletagmanager.com/gtag/js?id=G-K1BCT8CCR0&cx=c&gtm=4e6ac1",
-    "https://fareharbor.com/static/dist/honeycomb-sdk-bundle.js",
-    "https://dipr2nuwo661l.cloudfront.net/static/cache/js/output.82ab8e14a2dd.js",
-    "https://dipr2nuwo661l.cloudfront.net/static/cache/js/output.7ce5787ffff1.js",
-    "https://fareharbor.com/static/jstranslation/en-us/djangojs.js",
-    "https://dipr2nuwo661l.cloudfront.net/static/cache/js/output.ae77d090f5d1.js",
-    "https://www.googletagmanager.com/gtag/js?id=G-6WXE90X597",
-    "https://dipr2nuwo661l.cloudfront.net/static/cache/js/chunk.84257.8b5654262e31b26a8417.js"
+    "https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/ipRedirectBanner.min.js?1790924665",
+    "https://cdn.continental.com/typo3temp/assets/compressed/merged-8a0b59743963622696a31503e3432610-1f0298fdc3dda502b926070ceac147df.js?1790924741",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?&cdid=f893648c4ce4&h=https%3A%2F%2Fwww.continental.com%2Fen%2Fgeneral%2Fcontact-us%2F&&l=en&ls=EN_EN&lp=EN_EN&o=1791567385864",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?__cmpcc=1&id=42619&o=1791567386&h=https%3A%2F%2Fwww.continental.com%2Fen%2Fgeneral%2Fcontact-us%2F&&l=en&odw=0&dlt=1&l=en&lp=EN_EN",
+    "https://cdn.consentmanager.net/delivery/js/cmp_final.min.js?t=2026-10-9",
+    "https://cdn.consentmanager.net/delivery/customdata/bV8xLndfNDI2MTkucl9ST1cubF9lbi5kXzM2ODA0LnhfMTU2LnYucC50XzM2ODA0Lnh0Xzg5.js",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-WN9297K"
    ],
    "firstPartyApi": [
     {
-     "method": "POST",
-     "host": "www.skerriesmills.ie",
-     "path": "/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.6305993991125491:1791965732:lSjblcijOZMuqAsLAjhEo4V1cPFgcIov3WJtUBjeWMU/{hash}",
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json",
      "query": [],
      "status": 200,
-     "contentType": "text/plain",
-     "example": "https://www.skerriesmills.ie/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.6305993991125491:1791965732:lSjblcijOZMuqAsLAjhEo4V1cPFgcIov3WJtUBjeWMU/a4a564ca5e70b35f"
+     "contentType": "application/json",
+     "example": "https://www.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/Hyphenopoly/ExcludedWords.json"
     },
     {
      "method": "GET",
-     "host": "www.skerriesmills.ie",
-     "path": "/wp-json/complianz/v1/banner",
+     "host": "www.continental.com",
+     "path": "/en/general/contact-us/api-dc/",
      "query": [
-      "lang",
-      "locale",
-      "token"
+      "cHash",
+      "tx_condownloadcenter_api[action]",
+      "tx_condownloadcenter_api[controller]"
      ],
      "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/general/contact-us/api-dc/"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en/general/contact-us/ipredirectbanner/",
+     "query": [],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/general/contact-us/ipredirectbanner/"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 783,
+   "mainEmptyAtLoad": false
+  },
+  "/en/general/legal-notice/": {
+   "url": "https://www.continental.com/en/general/legal-notice/",
+   "status": 200,
+   "host": "www.continental.com",
+   "title": "Legal Notice - Continental AG",
+   "forms": [
+    {
+     "name": "tx-solr-search-form-pi-results-header",
+     "action": "https://www.continental.com/en/general/search/",
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:tx_solr[q]"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": true,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [
+     "de-DE",
+     "en",
+     "x-default"
+    ],
+    "switcher": [
+     "https://www.continental.com/en-us/",
+     "https://www.continental.com/de/meta/rechtliche-hinweise/",
+     "https://webcast.continental.com/hv/2021/en/",
+     "https://www.continental.com/de/meta/rechtliche-hinweise/",
+     "https://www.continental.com/de/meta/rechtliche-hinweise/"
+    ]
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "push"
+    ],
+    "utag_data": [
+     "cmpGDPR",
+     "cmpCCPA",
+     "cmpRegulation",
+     "cmpConsentString",
+     "cmpCurrentStatus",
+     "cmpLastStatus",
+     "cmpLastTCFStatus",
+     "cmpLoadingStatus",
+     "cmpDisplayStatus",
+     "cmpVendorsConsent",
+     "cmpCustomVendorsConsent",
+     "cmpGoogleVendorsConsent",
+     "cmpPurposesConsent",
+     "cmpCustomPurposeConsent",
+     "cmpConsentVendors",
+     "cmpConsentPurposes",
+     "cmpLIVendors",
+     "cmpLIPurposes",
+     "cmpIABUSP",
+     "cmpDesignId",
+     "consentExists",
+     "userChoiceExists",
+     "userChoiceType",
+     "userChoiceStatus",
+     "pauseChoice",
+     "pauseChoiceUntil",
+     "cmpUserCountry",
+     "cmpUserRegion",
+     "gtm.uniqueEventId"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 3,
+   "inlineFetch": false,
+   "mainText": 3409,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.continental.com": 4,
+    "cdn.continental.com": 12,
+    "d.delivery.consentmanager.net": 3,
+    "cdn.consentmanager.net": 5,
+    "www.googletagmanager.com": 1
+   },
+   "thirdPartyHosts": [
+    "d.delivery.consentmanager.net",
+    "cdn.consentmanager.net",
+    "www.googletagmanager.com"
+   ],
+   "scripts": [
+    "https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/ipRedirectBanner.min.js?1790924665",
+    "https://cdn.continental.com/typo3temp/assets/compressed/merged-8a0b59743963622696a31503e3432610-1f0298fdc3dda502b926070ceac147df.js?1790924741",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?&cdid=f893648c4ce4&h=https%3A%2F%2Fwww.continental.com%2Fen%2Fgeneral%2Flegal-notice%2F&&l=en&ls=EN_EN&lp=EN_EN&o=1791567397478",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?__cmpcc=1&__cmpfcc=1&id=42619&o=1791567397&h=https%3A%2F%2Fwww.continental.com%2Fen%2Fgeneral%2Flegal-notice%2F&&l=en&odw=0&dlt=1&l=en&lp=EN_EN",
+    "https://cdn.consentmanager.net/delivery/js/cmp_final.min.js?t=2026-10-9",
+    "https://cdn.consentmanager.net/delivery/customdata/bV8xLndfNDI2MTkucl9ST1cubF9lbi5kXzM2ODA0LnhfMTU2LnYucC50XzM2ODA0Lnh0Xzg5.js",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-WN9297K"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json",
+     "query": [],
+     "status": 200,
      "contentType": "application/json",
-     "example": "https://www.skerriesmills.ie/wp-json/complianz/v1/banner"
+     "example": "https://www.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/Hyphenopoly/ExcludedWords.json"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en/general/legal-notice/api-dc/",
+     "query": [
+      "cHash",
+      "tx_condownloadcenter_api[action]",
+      "tx_condownloadcenter_api[controller]"
+     ],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/general/legal-notice/api-dc/"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en/general/legal-notice/ipredirectbanner/",
+     "query": [],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/general/legal-notice/ipredirectbanner/"
     }
    ],
-   "thirdPartyXhr": [
-    "POST o10963.ingest.sentry.io/api/5933789/envelope/",
-    "GET fareharbor.com/api/v1/persistence/17ecbe99-cff8-43ae-8a57-d64c2dd10d17/",
-    "POST www.google-analytics.com/g/collect",
-    "POST otel-hfo.fareharbor.engineering/v1/traces"
-   ],
-   "postBodies": [
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 3409,
+   "mainEmptyAtLoad": false
+  },
+  "/de/presse/pressemitteilungen/": {
+   "url": "https://www.continental.com/de/presse/pressemitteilungen/",
+   "status": 200,
+   "host": "www.continental.com",
+   "title": "Pressemitteilungen | Continental - Continental AG",
+   "forms": [
     {
-     "url": "https://www.skerriesmills.ie/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.6305993991125491:1791965732:lSjblcijOZMuqAsLAjhEo4V1cPFgcIov3WJtUBjeWMU/a4a564ca5e70b35f",
-     "body": "FtgjTW975mQE5i7PDvUGJNiDqbqKey5bXh8ojsYVrj1zik3CGjuYvSkMY67CRZt7m9wZD44vfyq--NwpDqekqgKZffGVG0uHyd7ldel7J51UXjaTlMLfMK4eAoE9zaCBDj$I-Un8SGnUfBUXynMG$6tv21wCgQeSz-geQ0zA-fzq07lJS-GGcKEV7lheSIckn$gnXjh7zHzagot8eelBNyKWSExWS2z1MfQvIjnX45V9E2VPvTiureXXYgn6w2jHjbLb8hKckzKk69S1zzQBINivhwWBQw59Ra8H27ycrzehS4EuQbFTRBJh85sywaTPynIg7-Fo86E3kmsMXxBZ$d-DUlCkLOq68r7K2W22LUkE8lAWl-UIFBCHLIpdhUGQUi$7qGbToAiFZu1n"
+     "name": "tx-solr-search-form-pi-results-header",
+     "action": "https://www.continental.com/de/meta/suche/",
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:tx_solr[q]"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
     },
     {
-     "url": "https://o10963.ingest.sentry.io/api/5933789/envelope/?sentry_key=3c9ece80fbdf4edfaf944d2be20b4532&sentry_version=7",
-     "body": "{\"sent_at\":\"2026-10-14T09:00:27.317Z\",\"sdk\":{\"name\":\"sentry.javascript.browser\",\"version\":\"6.11.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"a1be898c9a8340aba21e8fabbacd4aa6\",\"init\":true,\"started\":\"2026-10-14T09:00:27.316Z\",\"timestamp\":\"2026-10-14T09:00:27.316Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"deploy-2026-10-14-08-08-89c0b107-py3\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (X11; Linux x8"
+     "name": "tx-solr-search-form-pi-results",
+     "action": "https://www.continental.com/de/presse/pressemitteilungen/",
+     "method": "get",
+     "role": "",
+     "inChrome": false,
+     "fields": 1,
+     "signature": [
+      "text:tx_solr[q]"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
     },
     {
-     "url": "https://o10963.ingest.sentry.io/api/5933789/envelope/?sentry_key=3c9ece80fbdf4edfaf944d2be20b4532&sentry_version=7",
-     "body": "{\"sent_at\":\"2026-10-14T09:00:27.688Z\",\"sdk\":{\"name\":\"sentry.javascript.browser\",\"version\":\"6.11.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"a1be898c9a8340aba21e8fabbacd4aa6\",\"init\":false,\"started\":\"2026-10-14T09:00:27.316Z\",\"timestamp\":\"2026-10-14T09:00:27.687Z\",\"status\":\"exited\",\"errors\":0,\"attrs\":{\"release\":\"deploy-2026-10-14-08-08-89c0b107-py3\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (X11; Lin"
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 6,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][2][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][3][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][4][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]",
+      "tx_condownloadcenter_api[transport][files][2]",
+      "tx_condownloadcenter_api[transport][files][3]",
+      "tx_condownloadcenter_api[transport][files][4]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
     },
     {
-     "url": "https://o10963.ingest.sentry.io/api/5933789/envelope/?sentry_key=3c9ece80fbdf4edfaf944d2be20b4532&sentry_version=7",
-     "body": "{\"sent_at\":\"2026-10-14T09:00:27.688Z\",\"sdk\":{\"name\":\"sentry.javascript.browser\",\"version\":\"6.11.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"ef6fdeb7bde84af091da1d7dc6998154\",\"init\":true,\"started\":\"2026-10-14T09:00:27.687Z\",\"timestamp\":\"2026-10-14T09:00:27.687Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"deploy-2026-10-14-08-08-89c0b107-py3\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (X11; Linux x8"
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 4,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][2][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]",
+      "tx_condownloadcenter_api[transport][files][2]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
     },
     {
-     "url": "https://o10963.ingest.sentry.io/api/5933789/envelope/?sentry_key=3c9ece80fbdf4edfaf944d2be20b4532&sentry_version=7",
-     "body": "{\"sent_at\":\"2026-10-14T09:00:27.690Z\",\"sdk\":{\"name\":\"sentry.javascript.browser\",\"version\":\"6.11.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"ef6fdeb7bde84af091da1d7dc6998154\",\"init\":false,\"started\":\"2026-10-14T09:00:27.687Z\",\"timestamp\":\"2026-10-14T09:00:27.689Z\",\"status\":\"exited\",\"errors\":0,\"attrs\":{\"release\":\"deploy-2026-10-14-08-08-89c0b107-py3\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (X11; Lin"
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 8,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][2][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][3][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][4][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][5][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][6][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]",
+      "tx_condownloadcenter_api[transport][files][2]",
+      "tx_condownloadcenter_api[transport][files][3]",
+      "tx_condownloadcenter_api[transport][files][4]",
+      "tx_condownloadcenter_api[transport][files][5]",
+      "tx_condownloadcenter_api[transport][files][6]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
     },
     {
-     "url": "https://o10963.ingest.sentry.io/api/5933789/envelope/?sentry_key=3c9ece80fbdf4edfaf944d2be20b4532&sentry_version=7",
-     "body": "{\"sent_at\":\"2026-10-14T09:00:27.690Z\",\"sdk\":{\"name\":\"sentry.javascript.browser\",\"version\":\"6.11.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"ed3862c764e441c9a8c68c59deb118dc\",\"init\":true,\"started\":\"2026-10-14T09:00:27.689Z\",\"timestamp\":\"2026-10-14T09:00:27.689Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"deploy-2026-10-14-08-08-89c0b107-py3\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (X11; Linux x8"
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 5,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][2][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][3][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]",
+      "tx_condownloadcenter_api[transport][files][2]",
+      "tx_condownloadcenter_api[transport][files][3]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
     },
     {
-     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-K1BCT8CCR0&gtm=45je6ac1v9183627307za20ozb9183619704zd9183619704xf1&_p=1791968426728&gcs=G101&gcd=13p3t3p3p5l1&npa=1&dma_cps=-&dma=0&gdid=dYWVlZG&ec",
-     "body": ""
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 5,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][2][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][3][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]",
+      "tx_condownloadcenter_api[transport][files][2]",
+      "tx_condownloadcenter_api[transport][files][3]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
     },
     {
-     "url": "https://otel-hfo.fareharbor.engineering/v1/traces",
-     "body": "{\"resourceSpans\":[{\"resource\":{\"attributes\":[{\"key\":\"service.name\",\"value\":{\"stringValue\":\"fhcom-production-frontend\"}},{\"key\":\"browser.platform\",\"value\":{\"stringValue\":\"Linux\"}},{\"key\":\"browser.brands\",\"value\":{\"arrayValue\":{\"values\":[{\"stringValue\":\"Not:A-Brand 8\"},{\"stringValue\":\"Chromium 156\"},{\"stringValue\":\"HeadlessChrome 156\"}]}}},{\"key\":\"browser.mobile\",\"value\":{\"boolValue\":false}},{\"key\":"
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 5,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][2][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][3][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]",
+      "tx_condownloadcenter_api[transport][files][2]",
+      "tx_condownloadcenter_api[transport][files][3]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
     },
     {
-     "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-K1BCT8CCR0&gtm=45je6ac1v9183627307za20gzb9183619704zd9183619704xf1&_p=1791968426728&gcs=G100&gcd=13q3u3q3q5l1&npa=1&dma_cps=-&dma=0&gdid=dYWVlZG&ec",
-     "body": ""
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 6,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][2][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][3][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][4][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]",
+      "tx_condownloadcenter_api[transport][files][2]",
+      "tx_condownloadcenter_api[transport][files][3]",
+      "tx_condownloadcenter_api[transport][files][4]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    },
+    {
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 5,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][2][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][3][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]",
+      "tx_condownloadcenter_api[transport][files][2]",
+      "tx_condownloadcenter_api[transport][files][3]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    },
+    {
+     "name": "",
+     "action": null,
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 7,
+     "signature": [
+      "checkbox:",
+      "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][1][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][2][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][3][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][4][active]",
+      "checkbox:tx_condownloadcenter_api[transport][files][5][active]"
+     ],
+     "hidden": [
+      "tx_condownloadcenter_api[transport][files][0]",
+      "tx_condownloadcenter_api[transport][files][1]",
+      "tx_condownloadcenter_api[transport][files][2]",
+      "tx_condownloadcenter_api[transport][files][3]",
+      "tx_condownloadcenter_api[transport][files][4]",
+      "tx_condownloadcenter_api[transport][files][5]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
     }
    ],
-   "textAtLoad": 6691,
+   "controlGroups": [
+    {
+     "container": "div.o-container",
+     "controls": 4,
+     "names": [
+      "published",
+      "published",
+      "published",
+      "published"
+     ],
+     "submit": null
+    },
+    {
+     "container": "input.dateselector",
+     "controls": 2,
+     "names": [],
+     "submit": null
+    }
+   ],
+   "triggers": [
+    {
+     "text": "Nach Datum sortieren (absteigend)",
+     "href": null,
+     "marker": "aria-haspopup",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": {
+      "role": "button",
+      "heading": "",
+      "textLen": 33,
+      "hasForm": false,
+      "hasIframe": false,
+      "hasVideo": false
+     }
+    }
+   ],
+   "dialogs": [
+    {
+     "role": "h4",
+     "heading": "",
+     "textLen": 20,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "",
+     "textLen": 19,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "20260929-pr-continental-porsche-oe_de.docx",
+     "textLen": 224,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "20260929-pr-continental-porsche-oe_de.docx",
+     "textLen": 57,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "span",
+     "heading": "",
+     "textLen": 42,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "span",
+     "heading": "",
+     "textLen": 14,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "20260929-pr-continental-porsche-oe_de.pdf",
+     "textLen": 55,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "span",
+     "heading": "",
+     "textLen": 41,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "span",
+     "heading": "",
+     "textLen": 13,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "div",
+     "heading": "sportcontact_7.jpg",
+     "textLen": 32,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "span",
+     "heading": "",
+     "textLen": 18,
+     "hasForm": true,
+     "hasIframe": false,
+     "hasVideo": false
+    },
+    {
+     "role": "span",
+     "heading": "",
+     "textLen": 13,
+     "hasForm": false,
+     "hasIframe": false,
+     "hasVideo": false
+    }
+   ],
+   "dialogCount": 162,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": true,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "de",
+    "hreflang": [
+     "cs-CZ",
+     "de-DE",
+     "en",
+     "en-US",
+     "es-MX",
+     "fr-FR",
+     "hu-HU",
+     "ja-JP",
+     "ko-KR",
+     "zh-CN",
+     "x-default"
+    ],
+    "switcher": [
+     "https://www.continental.com/en-us/press/press-releases/",
+     "https://www.continental.com/en/press/press-releases/",
+     "https://webcast.continental.com/hv/2021/de/",
+     "https://www.continental.com/en/press/press-releases/"
+    ]
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "push"
+    ],
+    "utag_data": [
+     "cmpGDPR",
+     "cmpCCPA",
+     "cmpRegulation",
+     "cmpConsentString",
+     "cmpCurrentStatus",
+     "cmpLastStatus",
+     "cmpLastTCFStatus",
+     "cmpLoadingStatus",
+     "cmpDisplayStatus",
+     "cmpVendorsConsent",
+     "cmpCustomVendorsConsent",
+     "cmpGoogleVendorsConsent",
+     "cmpPurposesConsent",
+     "cmpCustomPurposeConsent",
+     "cmpConsentVendors",
+     "cmpConsentPurposes",
+     "cmpLIVendors",
+     "cmpLIPurposes",
+     "cmpIABUSP",
+     "cmpDesignId",
+     "consentExists",
+     "userChoiceExists",
+     "userChoiceType",
+     "userChoiceStatus",
+     "pauseChoice",
+     "pauseChoiceUntil",
+     "cmpUserCountry",
+     "cmpUserRegion",
+     "gtm.uniqueEventId"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [
+    {
+     "cls": "c-search__facet-tab",
+     "attrs": [
+      "data-url=/de/presse/pressemitteilungen/?tx_solr%5Bfilter%5D%5B0%5D=pr"
+     ],
+     "text": "Pressemitteilungen (1136)"
+    }
+   ],
+   "listingCandidates": [
+    {
+     "cls": "dropdown-menu c-search__sort-dropdown",
+     "cards": 3,
+     "sameSite": 3,
+     "hasDate": false
+    },
+    {
+     "cls": "div",
+     "cards": 9,
+     "sameSite": 9,
+     "hasDate": true
+    }
+   ],
+   "inlineScripts": 3,
+   "inlineFetch": false,
+   "mainText": 3555,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.continental.com": 4,
+    "cdn.continental.com": 20,
+    "d.delivery.consentmanager.net": 3,
+    "cdn.consentmanager.net": 5,
+    "www.googletagmanager.com": 1
+   },
+   "thirdPartyHosts": [
+    "d.delivery.consentmanager.net",
+    "cdn.consentmanager.net",
+    "www.googletagmanager.com"
+   ],
+   "scripts": [
+    "https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/ipRedirectBanner.min.js?1790924665",
+    "https://cdn.continental.com/typo3temp/assets/compressed/merged-8a0b59743963622696a31503e3432610-1f0298fdc3dda502b926070ceac147df.js?1790924741",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?&cdid=f893648c4ce4&h=https%3A%2F%2Fwww.continental.com%2Fde%2Fpresse%2Fpressemitteilungen%2F&&l=en&ls=EN_EN&lp=DE_DE&o=1791567409416",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?__cmpcc=1&id=42619&o=1791567409&h=https%3A%2F%2Fwww.continental.com%2Fde%2Fpresse%2Fpressemitteilungen%2F&&l=en&odw=0&dlt=1&l=en&lp=DE_DE",
+    "https://cdn.consentmanager.net/delivery/js/cmp_final.min.js?t=2026-10-9",
+    "https://cdn.consentmanager.net/delivery/customdata/bV8xLndfNDI2MTkucl9ST1cubF9lbi5kXzM2ODA0LnhfMTU2LnYucC50XzM2ODA0Lnh0Xzg5.js",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-WN9297K"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/Hyphenopoly/ExcludedWords.json"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/de/presse/pressemitteilungen/ipredirectbanner/",
+     "query": [],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/de/presse/pressemitteilungen/ipredirectbanner/"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/de/presse/pressemitteilungen/api-dc/",
+     "query": [
+      "cHash",
+      "tx_condownloadcenter_api[action]",
+      "tx_condownloadcenter_api[controller]"
+     ],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/de/presse/pressemitteilungen/api-dc/"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 3555,
+   "mainEmptyAtLoad": false
+  },
+  "/en/stories/": {
+   "url": "https://www.continental.com/en/stories/",
+   "status": 200,
+   "host": "www.continental.com",
+   "title": "Stories - Continental AG",
+   "forms": [
+    {
+     "name": "tx-solr-search-form-pi-results-header",
+     "action": "https://www.continental.com/en/general/search/",
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:tx_solr[q]"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [
+    {
+     "text": "",
+     "href": "https://www.continental.com/en/stories/when-mobility-changes/",
+     "marker": "c-cs-stage__overlay",
+     "inChrome": false,
+     "titleOnTrigger": null,
+     "target": null
+    }
+   ],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [
+    {
+     "cls": "c-cs-stage__image u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload",
+      "data-ll-status"
+     ]
+    },
+    {
+     "cls": "c-cs-article-cluster__single-image c-image__embed-item",
+     "attrs": [
+      "data-article-cluster-focus-image",
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    },
+    {
+     "cls": "c-image__embed-item u-cs-image",
+     "attrs": [
+      "data-src",
+      "data-lazyload"
+     ]
+    }
+   ],
+   "auth": [],
+   "commerce": {
+    "cart": true,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [
+     "de-DE",
+     "en",
+     "x-default"
+    ],
+    "switcher": [
+     "https://www.continental.com/en-us/",
+     "https://www.continental.com/de/stories/",
+     "https://webcast.continental.com/hv/2021/en/",
+     "https://www.continental.com/de/stories/"
+    ]
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "push"
+    ],
+    "utag_data": [
+     "cmpGDPR",
+     "cmpCCPA",
+     "cmpRegulation",
+     "cmpConsentString",
+     "cmpCurrentStatus",
+     "cmpLastStatus",
+     "cmpLastTCFStatus",
+     "cmpLoadingStatus",
+     "cmpDisplayStatus",
+     "cmpVendorsConsent",
+     "cmpCustomVendorsConsent",
+     "cmpGoogleVendorsConsent",
+     "cmpPurposesConsent",
+     "cmpCustomPurposeConsent",
+     "cmpConsentVendors",
+     "cmpConsentPurposes",
+     "cmpLIVendors",
+     "cmpLIPurposes",
+     "cmpIABUSP",
+     "cmpDesignId",
+     "consentExists",
+     "userChoiceExists",
+     "userChoiceType",
+     "userChoiceStatus",
+     "pauseChoice",
+     "pauseChoiceUntil",
+     "cmpUserCountry",
+     "cmpUserRegion"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "row mt-4",
+     "cards": 5,
+     "sameSite": 3,
+     "hasDate": true
+    }
+   ],
+   "inlineScripts": 3,
+   "inlineFetch": false,
+   "mainText": 5844,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.continental.com": 4,
+    "cdn.continental.com": 33,
+    "d.delivery.consentmanager.net": 3,
+    "cdn.consentmanager.net": 5,
+    "www.googletagmanager.com": 1
+   },
+   "thirdPartyHosts": [
+    "d.delivery.consentmanager.net",
+    "cdn.consentmanager.net",
+    "www.googletagmanager.com"
+   ],
+   "scripts": [
+    "https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/ipRedirectBanner.min.js?1790924665",
+    "https://cdn.continental.com/typo3temp/assets/compressed/merged-aa98f81651212520a54ca46f22a35c7f-7f8b1bcd2ef4ba3c49a9aab401cfe512.js?1790925099",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?&cdid=f893648c4ce4&h=https%3A%2F%2Fwww.continental.com%2Fen%2Fstories%2F&&l=en&ls=EN_EN&lp=EN_EN&o=1791567421714",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?__cmpcc=1&id=42619&o=1791567422&h=https%3A%2F%2Fwww.continental.com%2Fen%2Fstories%2F&&l=en&odw=0&dlt=1&l=en&lp=EN_EN",
+    "https://cdn.consentmanager.net/delivery/js/cmp_final.min.js?t=2026-10-9",
+    "https://cdn.consentmanager.net/delivery/customdata/bV8xLndfNDI2MTkucl9ST1cubF9lbi5kXzM2ODA0LnhfMTU2LnYucC50XzM2ODA0Lnh0Xzg5.js",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-WN9297K"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/Hyphenopoly/ExcludedWords.json"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en/stories/api-dc/",
+     "query": [
+      "cHash",
+      "tx_condownloadcenter_api[action]",
+      "tx_condownloadcenter_api[controller]"
+     ],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/stories/api-dc/"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en/stories/ipredirectbanner/",
+     "query": [],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/stories/ipredirectbanner/"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 5844,
+   "mainEmptyAtLoad": false
+  },
+  "/en/country-selector/": {
+   "url": "https://www.continental.com/en/country-selector/",
+   "status": 200,
+   "host": "www.continental.com",
+   "title": "Country Selector - Continental AG",
+   "forms": [
+    {
+     "name": "tx-solr-search-form-pi-results-header",
+     "action": "https://www.continental.com/en/general/search/",
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:tx_solr[q]"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": true,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [],
+    "switcher": [
+     "https://www.continental.com/en-us/",
+     "https://www.continental.com/de/",
+     "https://webcast.continental.com/hv/2021/en/",
+     "https://www.continental.com/de/",
+     "https://www.continental.com/de/"
+    ]
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "push"
+    ],
+    "utag_data": [
+     "cmpGDPR",
+     "cmpCCPA",
+     "cmpRegulation",
+     "cmpConsentString",
+     "cmpCurrentStatus",
+     "cmpLastStatus",
+     "cmpLastTCFStatus",
+     "cmpLoadingStatus",
+     "cmpDisplayStatus",
+     "cmpVendorsConsent",
+     "cmpCustomVendorsConsent",
+     "cmpGoogleVendorsConsent",
+     "cmpPurposesConsent",
+     "cmpCustomPurposeConsent",
+     "cmpConsentVendors",
+     "cmpConsentPurposes",
+     "cmpLIVendors",
+     "cmpLIPurposes",
+     "cmpIABUSP",
+     "cmpDesignId",
+     "consentExists",
+     "userChoiceExists",
+     "userChoiceType",
+     "userChoiceStatus",
+     "pauseChoice",
+     "pauseChoiceUntil",
+     "cmpUserCountry",
+     "cmpUserRegion"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [
+    {
+     "cls": "c-country-selector__list mb-6",
+     "cards": 6,
+     "sameSite": 6,
+     "hasDate": false
+    }
+   ],
+   "inlineScripts": 3,
+   "inlineFetch": false,
+   "mainText": 278,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.continental.com": 4,
+    "cdn.continental.com": 12,
+    "d.delivery.consentmanager.net": 3,
+    "cdn.consentmanager.net": 5,
+    "www.googletagmanager.com": 1
+   },
+   "thirdPartyHosts": [
+    "d.delivery.consentmanager.net",
+    "cdn.consentmanager.net",
+    "www.googletagmanager.com"
+   ],
+   "scripts": [
+    "https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/ipRedirectBanner.min.js?1790924666",
+    "https://cdn.continental.com/typo3temp/assets/compressed/merged-c7263f98e6e15cc3faa4a978666b9c60-0b99e57ed84d5e36ca788519233ef538.js?1790924734",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?&cdid=f893648c4ce4&h=https%3A%2F%2Fwww.continental.com%2Fen%2Fcountry-selector%2F&&l=en&ls=EN_EN&lp=EN_EN&o=1791567433342",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?__cmpcc=1&id=42619&o=1791567433&h=https%3A%2F%2Fwww.continental.com%2Fen%2Fcountry-selector%2F&&l=en&odw=0&dlt=1&l=en&lp=EN_EN",
+    "https://cdn.consentmanager.net/delivery/js/cmp_final.min.js?t=2026-10-9",
+    "https://cdn.consentmanager.net/delivery/customdata/bV8xLndfNDI2MTkucl9ST1cubF9lbi5kXzM2ODA0LnhfMTU2LnYucC50XzM2ODA0Lnh0Xzg5.js",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-WN9297K"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/Hyphenopoly/ExcludedWords.json"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en/country-selector/api-dc/",
+     "query": [
+      "cHash",
+      "tx_condownloadcenter_api[action]",
+      "tx_condownloadcenter_api[controller]"
+     ],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/country-selector/api-dc/"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en/country-selector/ipredirectbanner/",
+     "query": [],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/country-selector/ipredirectbanner/"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 278,
+   "mainEmptyAtLoad": false
+  },
+  "/en/general/sustainability-contact-form/": {
+   "url": "https://www.continental.com/en/general/sustainability-contact-form/",
+   "status": 200,
+   "host": "www.continental.com",
+   "title": "Sustainability Contact Form - Continental AG - Continental AG",
+   "forms": [
+    {
+     "name": "tx-solr-search-form-pi-results-header",
+     "action": "https://www.continental.com/en/general/search/",
+     "method": "get",
+     "role": "",
+     "inChrome": true,
+     "fields": 1,
+     "signature": [
+      "text:tx_solr[q]"
+     ],
+     "hidden": [],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    },
+    {
+     "name": "iNTERNATIONALEN-Contact-Sustainability-92718",
+     "action": "https://www.continental.com/en/general/sustainability-contact-form/?tx_form_formframework%5Baction%5D=perform&tx_form_formframework%5Bcontroller%5D=FormFrontend&cHash=4dde6077590c49f9466bd0a31888b0cb#iNTERNATIONALEN-Contact-Sustainability-92718",
+     "method": "post",
+     "role": "",
+     "inChrome": false,
+     "fields": 8,
+     "signature": [
+      "textarea:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][textarea-1]",
+      "text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][text-3]",
+      "text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][text-2]",
+      "text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][text-1]",
+      "text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][u52Vs6ypxMo]",
+      "text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][text-5]",
+      "text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][text-8]",
+      "checkbox:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][linkedcheckbox-1]"
+     ],
+     "hidden": [
+      "tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][__state]",
+      "tx_form_formframework[__trustedProperties]",
+      "tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][linkedcheckbox-1]",
+      "tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][hidden-1]"
+     ],
+     "tokens": [],
+     "search": false,
+     "inlineHandler": false
+    }
+   ],
+   "controlGroups": [],
+   "triggers": [],
+   "dialogs": [],
+   "dialogCount": 0,
+   "media": [
+    {
+     "tag": "iframe",
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "account": null,
+     "player": null,
+     "videoId": null,
+     "inDialog": false
+    }
+   ],
+   "iframes": [
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": null,
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    },
+    {
+     "src": "https://cdn.consentmanager.net/delivery/crossdomain.html",
+     "title": "Intentionally hidden, please ignore",
+     "w": 0,
+     "h": 0
+    }
+   ],
+   "mounts": [],
+   "auth": [],
+   "commerce": {
+    "cart": true,
+    "prices": 0
+   },
+   "locale": {
+    "lang": "en",
+    "hreflang": [
+     "de-DE",
+     "en",
+     "x-default"
+    ],
+    "switcher": [
+     "https://www.continental.com/en-us/",
+     "https://www.continental.com/de/meta/kontakt-nachhaltigkeit/",
+     "https://webcast.continental.com/hv/2021/en/",
+     "https://www.continental.com/de/meta/kontakt-nachhaltigkeit/",
+     "https://www.continental.com/en-us/general/data-protection/"
+    ]
+   },
+   "cms": {
+    "dataLayer": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "push"
+    ],
+    "utag_data": [
+     "cmpGDPR",
+     "cmpCCPA",
+     "cmpRegulation",
+     "cmpConsentString",
+     "cmpCurrentStatus",
+     "cmpLastStatus",
+     "cmpLastTCFStatus",
+     "cmpLoadingStatus",
+     "cmpDisplayStatus",
+     "cmpVendorsConsent",
+     "cmpCustomVendorsConsent",
+     "cmpGoogleVendorsConsent",
+     "cmpPurposesConsent",
+     "cmpCustomPurposeConsent",
+     "cmpConsentVendors",
+     "cmpConsentPurposes",
+     "cmpLIVendors",
+     "cmpLIPurposes",
+     "cmpIABUSP",
+     "cmpDesignId",
+     "consentExists",
+     "userChoiceExists",
+     "userChoiceType",
+     "userChoiceStatus",
+     "pauseChoice",
+     "pauseChoiceUntil",
+     "cmpUserCountry",
+     "cmpUserRegion",
+     "gtm.uniqueEventId"
+    ]
+   },
+   "framework": null,
+   "globals": [
+    "google_tag_manager",
+    "gtag"
+   ],
+   "clientRendered": [],
+   "listingCandidates": [],
+   "inlineScripts": 3,
+   "inlineFetch": false,
+   "mainText": 380,
+   "domAddedAfterLoad": 0,
+   "hosts": {
+    "www.continental.com": 4,
+    "cdn.continental.com": 10,
+    "d.delivery.consentmanager.net": 3,
+    "cdn.consentmanager.net": 5,
+    "www.googletagmanager.com": 1
+   },
+   "thirdPartyHosts": [
+    "d.delivery.consentmanager.net",
+    "cdn.consentmanager.net",
+    "www.googletagmanager.com"
+   ],
+   "scripts": [
+    "https://cdn.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/ipRedirectBanner.min.js?1790924666",
+    "https://cdn.continental.com/typo3temp/assets/compressed/merged-c7263f98e6e15cc3faa4a978666b9c60-0b99e57ed84d5e36ca788519233ef538.js?1790924734",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?&cdid=f893648c4ce4&h=https%3A%2F%2Fwww.continental.com%2Fen%2Fgeneral%2Fsustainability-contact-form%2F&&l=en&ls=EN_EN&lp=EN_EN&o=1791567444827",
+    "https://d.delivery.consentmanager.net/delivery/cmp.php?__cmpcc=1&id=42619&o=1791567445&h=https%3A%2F%2Fwww.continental.com%2Fen%2Fgeneral%2Fsustainability-contact-form%2F&&l=en&odw=0&dlt=1&l=en&lp=EN_",
+    "https://cdn.consentmanager.net/delivery/js/cmp_final.min.js?t=2026-10-9",
+    "https://cdn.consentmanager.net/delivery/customdata/bV8xLndfNDI2MTkucl9ST1cubF9lbi5kXzM2ODA0LnhfMTU2LnYucC50XzM2ODA0Lnh0Xzg5.js",
+    "https://www.googletagmanager.com/gtm.js?id=GTM-WN9297K"
+   ],
+   "firstPartyApi": [
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json",
+     "query": [],
+     "status": 200,
+     "contentType": "application/json",
+     "example": "https://www.continental.com/_assets/1ea205344a72e174bb6103d4cfe6e63c/JavaScript/Hyphenopoly/ExcludedWords.json"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en/general/sustainability-contact-form/api-dc/",
+     "query": [
+      "cHash",
+      "tx_condownloadcenter_api[action]",
+      "tx_condownloadcenter_api[controller]"
+     ],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/general/sustainability-contact-form/api-dc/"
+    },
+    {
+     "method": "GET",
+     "host": "www.continental.com",
+     "path": "/en/general/sustainability-contact-form/ipredirectbanner/",
+     "query": [],
+     "status": 200,
+     "contentType": "text/html",
+     "example": "https://www.continental.com/en/general/sustainability-contact-form/ipredirectbanner/"
+    }
+   ],
+   "thirdPartyXhr": [],
+   "postBodies": [],
+   "textAtLoad": 380,
    "mainEmptyAtLoad": false
   }
  },
  "findings": [
-  {
-   "id": "a-unknown-third-party-host-fareharbor-com",
-   "class": "A",
-   "feature": "unknown third-party host fareharbor.com",
-   "hint": "inspect",
-   "evidence": [
-    "fareharbor.com"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "a-unknown-third-party-host-otel-hfo-fareharbor-engineering",
-   "class": "A",
-   "feature": "unknown third-party host otel-hfo.fareharbor.engineering",
-   "hint": "inspect",
-   "evidence": [
-    "otel-hfo.fareharbor.engineering"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "a-first-party-api-get-wp-json-complianz-v1-banner",
-   "class": "A",
-   "feature": "first-party API GET /wp-json/complianz/v1/banner",
-   "api": {
-    "method": "GET",
-    "path": "/wp-json/complianz/v1/banner"
-   },
-   "hint": "api",
-   "evidence": [
-    "GET /wp-json/complianz/v1/banner?lang,locale,token → 200"
-   ],
-   "pages": [
-    "/"
-   ],
-   "reach": {
-    "pages": 1,
-    "of": 1
-   }
-  },
   {
    "id": "a-cms-app-settings-object-datalayer",
    "class": "A",
@@ -357,148 +3788,916 @@
    "hint": "settings",
    "evidence": [],
    "pages": [
-    "/"
+    "/en/",
+    "/en-pt/",
+    "/en/investors/",
+    "/en/career/working-at-continental/",
+    "/en/general/contact-us/",
+    "/en/general/legal-notice/",
+    "/de/presse/pressemitteilungen/",
+    "/en/stories/",
+    "/en/country-selector/",
+    "/en/general/sustainability-contact-form/"
    ]
   },
   {
-   "id": "cr-client-rendered-slot-mx-auto-flex-flex-col-reverse",
-   "class": "CR",
-   "feature": "client-rendered slot mx-auto flex flex-col-reverse",
-   "hint": "client-rendered",
+   "id": "a-cms-app-settings-object-utag-data",
+   "class": "A",
+   "feature": "CMS / app settings object utag_data",
+   "hint": "settings",
    "evidence": [
-    "Visit Skerries Mills Comprising of three national monuments "
+    "cmpConsentString",
+    "cmpVendorsConsent",
+    "cmpCustomVendorsConsent",
+    "cmpGoogleVendorsConsent",
+    "cmpPurposesConsent",
+    "cmpCustomPurposeConsent",
+    "cmpConsentVendors",
+    "cmpConsentPurposes"
    ],
    "pages": [
-    "/"
+    "/en/",
+    "/en-pt/",
+    "/en/investors/",
+    "/en/career/working-at-continental/",
+    "/en/general/contact-us/",
+    "/en/general/legal-notice/",
+    "/de/presse/pressemitteilungen/",
+    "/en/stories/",
+    "/en/country-selector/",
+    "/en/general/sustainability-contact-form/"
    ]
   },
   {
-   "id": "cr-client-rendered-slot-attraction-carousel-relative-pb-32",
-   "class": "CR",
-   "feature": "client-rendered slot attraction-carousel relative pb-32",
-   "hint": "client-rendered",
-   "evidence": [
-    "The Attractions Museum Commencing our guided tour, learn abo"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "cr-client-rendered-slot-flex-flex-col-items-stretch",
-   "class": "CR",
-   "feature": "client-rendered slot flex flex-col items-stretch",
-   "hint": "client-rendered",
-   "evidence": [
-    "Museum Commencing our guided tour, learn about life at the M",
-    "Art At The Mill As a social enterprise, we are proud to show",
-    "The Watermill Cafe While freshly baked fare is at the heart ",
-    "The Craft Shop Our local Crafter Project showcases a series ",
-    "Our Tour A visit to Skerries Mills Begin by introducing your"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "cr-client-rendered-slot-flex-flex-col-space-y-4",
-   "class": "CR",
-   "feature": "client-rendered slot flex flex-col space-y-4",
-   "hint": "client-rendered",
-   "evidence": [
-    "History of the mills Windmills in Western Europe date from t"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "cr-client-rendered-slot-testimonials-bg-brand-blue-js-show-o",
-   "class": "CR",
-   "feature": "client-rendered slot testimonials bg-brand-blue js-show-on-scroll",
-   "hint": "client-rendered",
-   "evidence": [
-    "What Our Visitors Say “Incredible experience!!! Worth the tr"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "cr-client-rendered-slot-py-16-pt-8-js-show-on-scroll",
-   "class": "CR",
-   "feature": "client-rendered slot py-16 pt-8 js-show-on-scroll",
-   "hint": "client-rendered",
-   "evidence": [
-    "Tickets Adult Ticket €12 Book Now Student €11 Book Now Senio"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "cr-client-rendered-slot-flex-flex-col-js-show-on-scroll-img",
-   "class": "CR",
-   "feature": "client-rendered slot flex flex-col js-show-on-scroll-img",
-   "hint": "client-rendered",
-   "evidence": [
-    "Adult Ticket €12 Book Now",
-    "Senior Citizen €11 Book Now"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "l-listing-candidate-flex-flex-col-6-cards",
-   "class": "L",
-   "feature": "listing candidate flex flex-col (6 cards)",
-   "hint": "listings",
-   "evidence": [],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "l-listing-candidate-mob-sub-6-cards",
-   "class": "L",
-   "feature": "listing candidate mob-sub (6 cards)",
-   "hint": "listings",
-   "evidence": [],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "l-listing-candidate-swiper-wrapper-6-cards",
-   "class": "L",
-   "feature": "listing candidate swiper-wrapper (6 cards)",
-   "hint": "listings",
-   "evidence": [],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "l-listing-candidate-grid-grd-cols-1-3-cards",
-   "class": "L",
-   "feature": "listing candidate grid grd-cols-1 (3 cards)",
-   "hint": "listings",
-   "evidence": [],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "t-unknown-third-party-host-fh-kit-com",
-   "class": "T",
-   "feature": "unknown third-party host fh-kit.com",
+   "id": "a-unknown-third-party-host-charts3-equitystory-com",
+   "class": "A",
+   "feature": "unknown third-party host charts3.equitystory.com",
    "hint": "inspect",
    "evidence": [
-    "fh-kit.com"
+    "charts3.equitystory.com"
    ],
    "pages": [
-    "/"
+    "/en/",
+    "/en/investors/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-api-admiralcloud-com",
+   "class": "A",
+   "feature": "unknown third-party host api.admiralcloud.com",
+   "hint": "inspect",
+   "evidence": [
+    "api.admiralcloud.com"
+   ],
+   "pages": [
+    "/en/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-analytics-admiralcloud-com",
+   "class": "A",
+   "feature": "unknown third-party host analytics.admiralcloud.com",
+   "hint": "inspect",
+   "evidence": [
+    "analytics.admiralcloud.com"
+   ],
+   "pages": [
+    "/en/"
+   ]
+  },
+  {
+   "id": "a-unknown-third-party-host-mediafra-217-admiralcloud-com",
+   "class": "A",
+   "feature": "unknown third-party host mediafra-217.admiralcloud.com",
+   "hint": "inspect",
+   "evidence": [
+    "mediafra-217.admiralcloud.com"
+   ],
+   "pages": [
+    "/en/"
+   ]
+  },
+  {
+   "id": "a-first-party-api-get-en-api-dc",
+   "class": "A",
+   "feature": "first-party API GET /en/api-dc/",
+   "api": {
+    "method": "GET",
+    "path": "/en/api-dc/"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /en/api-dc/?cHash,tx_condownloadcenter_api[action],tx_condownloadcenter_api[controller] → 200"
+   ],
+   "pages": [
+    "/en/"
+   ],
+   "reach": {
+    "pages": 2,
+    "of": 99
+   }
+  },
+  {
+   "id": "a-first-party-api-get-en-investors-api-dc",
+   "class": "A",
+   "feature": "first-party API GET /en/investors/api-dc/",
+   "api": {
+    "method": "GET",
+    "path": "/en/investors/api-dc/"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /en/investors/api-dc/?cHash,tx_condownloadcenter_api[action],tx_condownloadcenter_api[controller] → 200"
+   ],
+   "pages": [
+    "/en/investors/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 99
+   }
+  },
+  {
+   "id": "a-first-party-api-get-en-career-working-at-continental-api-d",
+   "class": "A",
+   "feature": "first-party API GET /en/career/working-at-continental/api-dc/",
+   "api": {
+    "method": "GET",
+    "path": "/en/career/working-at-continental/api-dc/"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /en/career/working-at-continental/api-dc/?cHash,tx_condownloadcenter_api[action],tx_condownloadcenter_api[controller] → 200"
+   ],
+   "pages": [
+    "/en/career/working-at-continental/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 99
+   }
+  },
+  {
+   "id": "a-first-party-api-get-en-general-contact-us-api-dc",
+   "class": "A",
+   "feature": "first-party API GET /en/general/contact-us/api-dc/",
+   "api": {
+    "method": "GET",
+    "path": "/en/general/contact-us/api-dc/"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /en/general/contact-us/api-dc/?cHash,tx_condownloadcenter_api[action],tx_condownloadcenter_api[controller] → 200"
+   ],
+   "pages": [
+    "/en/general/contact-us/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 99
+   }
+  },
+  {
+   "id": "a-first-party-api-get-en-general-legal-notice-api-dc",
+   "class": "A",
+   "feature": "first-party API GET /en/general/legal-notice/api-dc/",
+   "api": {
+    "method": "GET",
+    "path": "/en/general/legal-notice/api-dc/"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /en/general/legal-notice/api-dc/?cHash,tx_condownloadcenter_api[action],tx_condownloadcenter_api[controller] → 200"
+   ],
+   "pages": [
+    "/en/general/legal-notice/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 99
+   }
+  },
+  {
+   "id": "a-first-party-api-get-de-presse-pressemitteilungen-api-dc",
+   "class": "A",
+   "feature": "first-party API GET /de/presse/pressemitteilungen/api-dc/",
+   "api": {
+    "method": "GET",
+    "path": "/de/presse/pressemitteilungen/api-dc/"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /de/presse/pressemitteilungen/api-dc/?cHash,tx_condownloadcenter_api[action],tx_condownloadcenter_api[controller] → 200"
+   ],
+   "pages": [
+    "/de/presse/pressemitteilungen/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 99
+   }
+  },
+  {
+   "id": "a-first-party-api-get-en-stories-api-dc",
+   "class": "A",
+   "feature": "first-party API GET /en/stories/api-dc/",
+   "api": {
+    "method": "GET",
+    "path": "/en/stories/api-dc/"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /en/stories/api-dc/?cHash,tx_condownloadcenter_api[action],tx_condownloadcenter_api[controller] → 200"
+   ],
+   "pages": [
+    "/en/stories/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 99
+   }
+  },
+  {
+   "id": "a-first-party-api-get-en-country-selector-api-dc",
+   "class": "A",
+   "feature": "first-party API GET /en/country-selector/api-dc/",
+   "api": {
+    "method": "GET",
+    "path": "/en/country-selector/api-dc/"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /en/country-selector/api-dc/?cHash,tx_condownloadcenter_api[action],tx_condownloadcenter_api[controller] → 200"
+   ],
+   "pages": [
+    "/en/country-selector/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 99
+   }
+  },
+  {
+   "id": "a-first-party-api-get-en-general-sustainability-contact-form",
+   "class": "A",
+   "feature": "first-party API GET /en/general/sustainability-contact-form/api-dc/",
+   "api": {
+    "method": "GET",
+    "path": "/en/general/sustainability-contact-form/api-dc/"
+   },
+   "hint": "api",
+   "evidence": [
+    "GET /en/general/sustainability-contact-form/api-dc/?cHash,tx_condownloadcenter_api[action],tx_condownloadcenter_api[controller] → 200"
+   ],
+   "pages": [
+    "/en/general/sustainability-contact-form/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 99
+   }
+  },
+  {
+   "id": "cr-client-rendered-slot-video-js-vjs-default-skin-vjs-paused",
+   "class": "CR",
+   "feature": "client-rendered slot video-js vjs-default-skin vjs-paused",
+   "hint": "client-rendered",
+   "evidence": [
+    "Play VideoPlayMuteLoaded: 0%Progress: 0%Current Time 0:00/Du"
+   ],
+   "pages": [
+    "/en/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-control-bar",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-control-bar",
+   "hint": "client-rendered",
+   "evidence": [
+    "PlayMuteLoaded: 0%Progress: 0%Current Time 0:00/Duration Tim"
+   ],
+   "pages": [
+    "/en/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-progress-control-vjs-control",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-progress-control vjs-control",
+   "hint": "client-rendered",
+   "evidence": [
+    "Loaded: 0%Progress: 0%"
+   ],
+   "pages": [
+    "/en/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-progress-holder-vjs-slider-vjs-s",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-progress-holder vjs-slider vjs-slider-horizontal",
+   "hint": "client-rendered",
+   "evidence": [
+    "Loaded: 0%Progress: 0%"
+   ],
+   "pages": [
+    "/en/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-error-display-vjs-modal-dialog-v",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-error-display vjs-modal-dialog vjs-hidden",
+   "hint": "client-rendered",
+   "evidence": [
+    "This is a modal window."
+   ],
+   "pages": [
+    "/en/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-caption-settings-vjs-modal-overl",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-caption-settings vjs-modal-overlay vjs-hidden",
+   "hint": "client-rendered",
+   "evidence": [
+    "Foreground --- White Black Red Green Blue Yellow Magenta Cya"
+   ],
+   "pages": [
+    "/en/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-tracksettings",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-tracksettings",
+   "hint": "client-rendered",
+   "evidence": [
+    "Foreground --- White Black Red Green Blue Yellow Magenta Cya"
+   ],
+   "pages": [
+    "/en/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-tracksettings-colors",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-tracksettings-colors",
+   "hint": "client-rendered",
+   "evidence": [
+    "Foreground --- White Black Red Green Blue Yellow Magenta Cya"
+   ],
+   "pages": [
+    "/en/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-fg-color-vjs-tracksetting",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-fg-color vjs-tracksetting",
+   "hint": "client-rendered",
+   "evidence": [
+    "Foreground --- White Black Red Green Blue Yellow Magenta Cya"
+   ],
+   "pages": [
+    "/en/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-text-opacity-vjs-opacity",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-text-opacity vjs-opacity",
+   "hint": "client-rendered",
+   "evidence": [
+    "--- Opaque Semi-Opaque"
+   ],
+   "pages": [
+    "/en/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-bg-color-vjs-tracksetting",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-bg-color vjs-tracksetting",
+   "hint": "client-rendered",
+   "evidence": [
+    "Background --- White Black Red Green Blue Yellow Magenta Cya"
+   ],
+   "pages": [
+    "/en/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-vjs-bg-opacity-vjs-opacity",
+   "class": "CR",
+   "feature": "client-rendered slot vjs-bg-opacity vjs-opacity",
+   "hint": "client-rendered",
+   "evidence": [
+    "--- Opaque Semi-Transparent Transparent"
+   ],
+   "pages": [
+    "/en/"
+   ]
+  },
+  {
+   "id": "cr-client-rendered-slot-c-search-facet-tab",
+   "class": "CR",
+   "feature": "client-rendered slot c-search__facet-tab",
+   "hint": "client-rendered",
+   "evidence": [
+    "data-url=/de/presse/pressemitteilungen/?tx_solr%5Bfilter%5D%5B0%5D=pr"
+   ],
+   "pages": [
+    "/de/presse/pressemitteilungen/"
+   ]
+  },
+  {
+   "id": "d-first-party-data-file-get-assets-hash-javascript-hyphenopo",
+   "class": "D",
+   "feature": "first-party data file GET /_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json",
+   "api": {
+    "method": "GET",
+    "path": "/_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json"
+   },
+   "hint": "data",
+   "evidence": [
+    "GET /_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json → 200"
+   ],
+   "pages": [
+    "/en/",
+    "/en-pt/",
+    "/en/investors/",
+    "/en/career/working-at-continental/",
+    "/en/general/contact-us/",
+    "/en/general/legal-notice/",
+    "/de/presse/pressemitteilungen/",
+    "/en/stories/",
+    "/en/country-selector/",
+    "/en/general/sustainability-contact-form/"
+   ],
+   "reach": {
+    "pages": 99,
+    "of": 99
+   }
+  },
+  {
+   "id": "f-form-tx-solr-search-form-pi-results-header-origin-en-gener",
+   "class": "F",
+   "feature": "form \"tx-solr-search-form-pi-results-header\" → origin /en/general/search/ (1 fields)",
+   "signature": [
+    "text:tx_solr[q]"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "text:tx_solr[q]"
+   ],
+   "pages": [
+    "/en/",
+    "/en/investors/",
+    "/en/career/working-at-continental/",
+    "/en/general/contact-us/",
+    "/en/general/legal-notice/",
+    "/en/stories/",
+    "/en/country-selector/",
+    "/en/general/sustainability-contact-form/"
+   ]
+  },
+  {
+   "id": "f-form-checkbox-checkbox-tx-condownloadcenter-api-transport-",
+   "class": "F",
+   "feature": "form \"checkbox:+checkbox:tx_condownloadcenter_api[transport][files][0][active]\" → no action (JS-wired) (3 fields)",
+   "signature": [
+    "checkbox:",
+    "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][1][active]"
+   ],
+   "hint": "client-compute?",
+   "evidence": [
+    "checkbox:,checkbox:tx_condownloadcenter_api[transport][files][0][active],checkbox:tx_condownloadcenter_api[transport][files][1][active]",
+    "tx_condownloadcenter_api[transport][files][0],tx_condownloadcenter_api[transport][files][1]"
+   ],
+   "pages": [
+    "/en-pt/"
+   ]
+  },
+  {
+   "id": "f-form-portugalen-contactonepager-174664-origin-en-pt-7-fiel",
+   "class": "F",
+   "feature": "form \"portugalEN-ContactOnePager-174664\" → origin /en-pt/ (7 fields)",
+   "signature": [
+    "text:tx_form_formframework[portugalEN-ContactOnePager-174664][text-3]",
+    "text:tx_form_formframework[portugalEN-ContactOnePager-174664][text-2]",
+    "text:tx_form_formframework[portugalEN-ContactOnePager-174664][text-1]",
+    "text:tx_form_formframework[portugalEN-ContactOnePager-174664][hEyM9aU8r2n4sj5gBSNIJcz]",
+    "text:tx_form_formframework[portugalEN-ContactOnePager-174664][text-4]",
+    "textarea:tx_form_formframework[portugalEN-ContactOnePager-174664][textarea-1]",
+    "checkbox:tx_form_formframework[portugalEN-ContactOnePager-174664][linkedcheckbox-1]"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "text:tx_form_formframework[portugalEN-ContactOnePager-174664][text-3],text:tx_form_formframework[portugalEN-ContactOnePager-174664][text-2],text:tx_form_formframework[portugalEN-ContactOnePager-174664][text-1],text:tx_form_formframework[portugalEN-ContactOnePager-174664][hEyM9aU8r2n4sj5gBSNIJcz],text:tx_form_formframework[portugalEN-ContactOnePager-174664][text-4],textarea:tx_form_formframework[portugalEN-ContactOnePager-174664][textarea-1],checkbox:tx_form_formframework[portugalEN-ContactOnePager-174664][linkedcheckbox-1]",
+    "tx_form_formframework[portugalEN-ContactOnePager-174664][__state],tx_form_formframework[__trustedProperties],tx_form_formframework[portugalEN-ContactOnePager-174664][linkedcheckbox-1],tx_form_formframework[portugalEN-ContactOnePager-174664][hidden-1]"
+   ],
+   "pages": [
+    "/en-pt/"
+   ]
+  },
+  {
+   "id": "f-form-tx-solr-search-form-pi-results-header-origin-de-meta-",
+   "class": "F",
+   "feature": "form \"tx-solr-search-form-pi-results-header\" → origin /de/meta/suche/ (1 fields)",
+   "signature": [
+    "text:tx_solr[q]"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "text:tx_solr[q]"
+   ],
+   "pages": [
+    "/de/presse/pressemitteilungen/"
+   ]
+  },
+  {
+   "id": "f-form-tx-solr-search-form-pi-results-origin-de-presse-press",
+   "class": "F",
+   "feature": "form \"tx-solr-search-form-pi-results\" → origin /de/presse/pressemitteilungen/ (1 fields)",
+   "signature": [
+    "text:tx_solr[q]"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "text:tx_solr[q]"
+   ],
+   "pages": [
+    "/de/presse/pressemitteilungen/"
+   ]
+  },
+  {
+   "id": "f-form-checkbox-checkbox-tx-condownloadcenter-api-transport-",
+   "class": "F",
+   "feature": "form \"checkbox:+checkbox:tx_condownloadcenter_api[transport][files][0][active]\" → no action (JS-wired) (6 fields)",
+   "signature": [
+    "checkbox:",
+    "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][1][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][2][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][3][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][4][active]"
+   ],
+   "hint": "client-compute?",
+   "evidence": [
+    "checkbox:,checkbox:tx_condownloadcenter_api[transport][files][0][active],checkbox:tx_condownloadcenter_api[transport][files][1][active],checkbox:tx_condownloadcenter_api[transport][files][2][active],checkbox:tx_condownloadcenter_api[transport][files][3][active],checkbox:tx_condownloadcenter_api[transport][files][4][active]",
+    "tx_condownloadcenter_api[transport][files][0],tx_condownloadcenter_api[transport][files][1],tx_condownloadcenter_api[transport][files][2],tx_condownloadcenter_api[transport][files][3],tx_condownloadcenter_api[transport][files][4]"
+   ],
+   "pages": [
+    "/de/presse/pressemitteilungen/"
+   ]
+  },
+  {
+   "id": "f-form-checkbox-checkbox-tx-condownloadcenter-api-transport-",
+   "class": "F",
+   "feature": "form \"checkbox:+checkbox:tx_condownloadcenter_api[transport][files][0][active]\" → no action (JS-wired) (4 fields)",
+   "signature": [
+    "checkbox:",
+    "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][1][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][2][active]"
+   ],
+   "hint": "client-compute?",
+   "evidence": [
+    "checkbox:,checkbox:tx_condownloadcenter_api[transport][files][0][active],checkbox:tx_condownloadcenter_api[transport][files][1][active],checkbox:tx_condownloadcenter_api[transport][files][2][active]",
+    "tx_condownloadcenter_api[transport][files][0],tx_condownloadcenter_api[transport][files][1],tx_condownloadcenter_api[transport][files][2]"
+   ],
+   "pages": [
+    "/de/presse/pressemitteilungen/"
+   ]
+  },
+  {
+   "id": "f-form-checkbox-checkbox-tx-condownloadcenter-api-transport-",
+   "class": "F",
+   "feature": "form \"checkbox:+checkbox:tx_condownloadcenter_api[transport][files][0][active]\" → no action (JS-wired) (8 fields)",
+   "signature": [
+    "checkbox:",
+    "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][1][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][2][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][3][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][4][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][5][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][6][active]"
+   ],
+   "hint": "client-compute?",
+   "evidence": [
+    "checkbox:,checkbox:tx_condownloadcenter_api[transport][files][0][active],checkbox:tx_condownloadcenter_api[transport][files][1][active],checkbox:tx_condownloadcenter_api[transport][files][2][active],checkbox:tx_condownloadcenter_api[transport][files][3][active],checkbox:tx_condownloadcenter_api[transport][files][4][active],checkbox:tx_condownloadcenter_api[transport][files][5][active],checkbox:tx_condownloadcenter_api[transport][files][6][active]",
+    "tx_condownloadcenter_api[transport][files][0],tx_condownloadcenter_api[transport][files][1],tx_condownloadcenter_api[transport][files][2],tx_condownloadcenter_api[transport][files][3],tx_condownloadcenter_api[transport][files][4],tx_condownloadcenter_api[transport][files][5],tx_condownloadcenter_api[transport][files][6]"
+   ],
+   "pages": [
+    "/de/presse/pressemitteilungen/"
+   ]
+  },
+  {
+   "id": "f-form-checkbox-checkbox-tx-condownloadcenter-api-transport-",
+   "class": "F",
+   "feature": "form \"checkbox:+checkbox:tx_condownloadcenter_api[transport][files][0][active]\" → no action (JS-wired) (5 fields)",
+   "signature": [
+    "checkbox:",
+    "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][1][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][2][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][3][active]"
+   ],
+   "hint": "client-compute?",
+   "evidence": [
+    "checkbox:,checkbox:tx_condownloadcenter_api[transport][files][0][active],checkbox:tx_condownloadcenter_api[transport][files][1][active],checkbox:tx_condownloadcenter_api[transport][files][2][active],checkbox:tx_condownloadcenter_api[transport][files][3][active]",
+    "tx_condownloadcenter_api[transport][files][0],tx_condownloadcenter_api[transport][files][1],tx_condownloadcenter_api[transport][files][2],tx_condownloadcenter_api[transport][files][3]"
+   ],
+   "pages": [
+    "/de/presse/pressemitteilungen/"
+   ]
+  },
+  {
+   "id": "f-form-checkbox-checkbox-tx-condownloadcenter-api-transport-",
+   "class": "F",
+   "feature": "form \"checkbox:+checkbox:tx_condownloadcenter_api[transport][files][0][active]\" → no action (JS-wired) (7 fields)",
+   "signature": [
+    "checkbox:",
+    "checkbox:tx_condownloadcenter_api[transport][files][0][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][1][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][2][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][3][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][4][active]",
+    "checkbox:tx_condownloadcenter_api[transport][files][5][active]"
+   ],
+   "hint": "client-compute?",
+   "evidence": [
+    "checkbox:,checkbox:tx_condownloadcenter_api[transport][files][0][active],checkbox:tx_condownloadcenter_api[transport][files][1][active],checkbox:tx_condownloadcenter_api[transport][files][2][active],checkbox:tx_condownloadcenter_api[transport][files][3][active],checkbox:tx_condownloadcenter_api[transport][files][4][active],checkbox:tx_condownloadcenter_api[transport][files][5][active]",
+    "tx_condownloadcenter_api[transport][files][0],tx_condownloadcenter_api[transport][files][1],tx_condownloadcenter_api[transport][files][2],tx_condownloadcenter_api[transport][files][3],tx_condownloadcenter_api[transport][files][4],tx_condownloadcenter_api[transport][files][5]"
+   ],
+   "pages": [
+    "/de/presse/pressemitteilungen/"
+   ]
+  },
+  {
+   "id": "f-form-less-control-group-in-div-o-container-4-controls",
+   "class": "F",
+   "feature": "form-less control group in div.o-container (4 controls)",
+   "hint": "client-compute?",
+   "evidence": [
+    "published,published,published,published"
+   ],
+   "pages": [
+    "/de/presse/pressemitteilungen/"
+   ]
+  },
+  {
+   "id": "f-form-less-control-group-in-input-dateselector-2-controls",
+   "class": "F",
+   "feature": "form-less control group in input.dateselector (2 controls)",
+   "hint": "client-compute?",
+   "evidence": [],
+   "pages": [
+    "/de/presse/pressemitteilungen/"
+   ]
+  },
+  {
+   "id": "f-form-internationalen-contact-sustainability-92718-origin-e",
+   "class": "F",
+   "feature": "form \"iNTERNATIONALEN-Contact-Sustainability-92718\" → origin /en/general/sustainability-contact-form/ (8 fields)",
+   "signature": [
+    "textarea:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][textarea-1]",
+    "text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][text-3]",
+    "text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][text-2]",
+    "text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][text-1]",
+    "text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][u52Vs6ypxMo]",
+    "text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][text-5]",
+    "text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][text-8]",
+    "checkbox:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][linkedcheckbox-1]"
+   ],
+   "hint": "forms",
+   "evidence": [
+    "textarea:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][textarea-1],text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][text-3],text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][text-2],text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][text-1],text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][u52Vs6ypxMo],text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][text-5],text:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][text-8],checkbox:tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][linkedcheckbox-1]",
+    "tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][__state],tx_form_formframework[__trustedProperties],tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][linkedcheckbox-1],tx_form_formframework[iNTERNATIONALEN-Contact-Sustainability-92718][hidden-1]"
+   ],
+   "pages": [
+    "/en/general/sustainability-contact-form/"
+   ]
+  },
+  {
+   "id": "i18n-locale-variants-de-de-en-x-default",
+   "class": "I18N",
+   "feature": "locale variants de-DE,en,x-default",
+   "hint": "locale",
+   "evidence": [
+    "https://www.continental.com/en-us/",
+    "https://www.continental.com/de/",
+    "https://webcast.continental.com/hv/2021/en/",
+    "https://www.continental.com/de/investoren/",
+    "https://www.continental.com/de/karriere/arbeiten-bei-continental/",
+    "https://www.continental.com/de/meta/ihr-kontakt-zu-uns/",
+    "https://www.continental.com/de/meta/rechtliche-hinweise/",
+    "https://www.continental.com/de/stories/",
+    "https://www.continental.com/de/meta/kontakt-nachhaltigkeit/"
+   ],
+   "pages": [
+    "/en/",
+    "/en/investors/",
+    "/en/career/working-at-continental/",
+    "/en/general/contact-us/",
+    "/en/general/legal-notice/",
+    "/en/stories/",
+    "/en/general/sustainability-contact-form/"
+   ]
+  },
+  {
+   "id": "i18n-locale-variants-en-us-pt-pt-pt-pt-pt-pt",
+   "class": "I18N",
+   "feature": "locale variants en-us,pt-pt,pt-pt,pt,pt",
+   "hint": "locale",
+   "evidence": [
+    "https://www.continental.com/en-us/",
+    "https://www.continental.com/pt-pt/"
+   ],
+   "pages": [
+    "/en-pt/"
+   ]
+  },
+  {
+   "id": "i18n-locale-variants-cs-cz-de-de-en-en-us-es-mx-fr-fr-hu-hu-",
+   "class": "I18N",
+   "feature": "locale variants cs-CZ,de-DE,en,en-US,es-MX,fr-FR,hu-HU,ja-JP,ko-KR,zh-CN,x-default",
+   "hint": "locale",
+   "evidence": [
+    "https://www.continental.com/en-us/press/press-releases/",
+    "https://www.continental.com/en/press/press-releases/",
+    "https://webcast.continental.com/hv/2021/de/"
+   ],
+   "pages": [
+    "/de/presse/pressemitteilungen/"
+   ]
+  },
+  {
+   "id": "i18n-locale-variants-en-us-de-hv-de-de",
+   "class": "I18N",
+   "feature": "locale variants en-us,de,hv,de,de",
+   "hint": "locale",
+   "evidence": [
+    "https://www.continental.com/en-us/",
+    "https://www.continental.com/de/",
+    "https://webcast.continental.com/hv/2021/en/"
+   ],
+   "pages": [
+    "/en/country-selector/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-c-heroteaser-fixed-slides-3-cards",
+   "class": "L",
+   "feature": "listing candidate c-heroteaser-fixed__slides (3 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/en/investors/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-o-tabs-content-4-cards",
+   "class": "L",
+   "feature": "listing candidate o-tabs__content (4 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/en/investors/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-row-3-cards",
+   "class": "L",
+   "feature": "listing candidate row (3 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/en/investors/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-div-9-cards",
+   "class": "L",
+   "feature": "listing candidate div (9 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/de/presse/pressemitteilungen/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-row-mt-4-5-cards",
+   "class": "L",
+   "feature": "listing candidate row mt-4 (5 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/en/stories/"
+   ]
+  },
+  {
+   "id": "l-listing-candidate-c-country-selector-list-mb-6-6-cards",
+   "class": "L",
+   "feature": "listing candidate c-country-selector__list mb-6 (6 cards)",
+   "hint": "listings",
+   "evidence": [],
+   "pages": [
+    "/en/country-selector/"
+   ]
+  },
+  {
+   "id": "m-modal-trigger-data-lightbox-target-outside-dom-at-capture",
+   "class": "M",
+   "feature": "modal trigger data-lightbox → target outside DOM at capture",
+   "hint": "modal",
+   "evidence": [
+    "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/location_20profiles/template_location_profiles__one-pager/one-pager/portugal1.jpg",
+    "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/location_20profiles/template_location_profiles__one-pager/one-pager/portugal2.jpg",
+    "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/location_20profiles/template_location_profiles__one-pager/one-pager/portugal3.jpg",
+    "https://cdn.continental.com/fileadmin/__imported/sites/corporate/_international/english/location_20profiles/template_location_profiles__one-pager/one-pager/portugal4.jpg"
+   ],
+   "pages": [
+    "/en-pt/"
+   ],
+   "reach": {
+    "pages": 83,
+    "of": 99
+   }
+  },
+  {
+   "id": "m-modal-trigger-aria-haspopup-button-content",
+   "class": "M",
+   "feature": "modal trigger aria-haspopup → button:content",
+   "hint": "modal",
+   "evidence": [
+    "Nach Datum sortieren (absteigend)"
+   ],
+   "pages": [
+    "/de/presse/pressemitteilungen/"
+   ],
+   "reach": {
+    "pages": 1,
+    "of": 99
+   }
+  },
+  {
+   "id": "m-modal-trigger-c-cs-stage-overlay-target-outside-dom-at-cap",
+   "class": "M",
+   "feature": "modal trigger c-cs-stage__overlay → target outside DOM at capture",
+   "hint": "modal",
+   "evidence": [
+    "https://www.continental.com/en/stories/when-mobility-changes/"
+   ],
+   "pages": [
+    "/en/stories/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-d-delivery-consentmanager-net",
+   "class": "T",
+   "feature": "unknown third-party host d.delivery.consentmanager.net",
+   "hint": "inspect",
+   "evidence": [
+    "d.delivery.consentmanager.net"
+   ],
+   "pages": [
+    "/en/",
+    "/en-pt/",
+    "/en/investors/",
+    "/en/career/working-at-continental/",
+    "/en/general/contact-us/",
+    "/en/general/legal-notice/",
+    "/de/presse/pressemitteilungen/",
+    "/en/stories/",
+    "/en/country-selector/",
+    "/en/general/sustainability-contact-form/"
+   ]
+  },
+  {
+   "id": "t-unknown-third-party-host-cdn-consentmanager-net",
+   "class": "T",
+   "feature": "unknown third-party host cdn.consentmanager.net",
+   "hint": "inspect",
+   "evidence": [
+    "cdn.consentmanager.net"
+   ],
+   "pages": [
+    "/en/",
+    "/en-pt/",
+    "/en/investors/",
+    "/en/career/working-at-continental/",
+    "/en/general/contact-us/",
+    "/en/general/legal-notice/",
+    "/de/presse/pressemitteilungen/",
+    "/en/stories/",
+    "/en/country-selector/",
+    "/en/general/sustainability-contact-form/"
    ]
   },
   {
@@ -511,57 +4710,70 @@
     "www.googletagmanager.com"
    ],
    "pages": [
-    "/"
+    "/en/",
+    "/en-pt/",
+    "/en/investors/",
+    "/en/career/working-at-continental/",
+    "/en/general/contact-us/",
+    "/en/general/legal-notice/",
+    "/de/presse/pressemitteilungen/",
+    "/en/stories/",
+    "/en/country-selector/",
+    "/en/general/sustainability-contact-form/"
    ]
   },
   {
-   "id": "t-unknown-third-party-host-dipr2nuwo661l-cloudfront-net",
+   "id": "t-third-party-mount-div-data-src-tag-manager-injected-widget",
    "class": "T",
-   "feature": "unknown third-party host dipr2nuwo661l.cloudfront.net",
-   "hint": "inspect",
-   "evidence": [
-    "dipr2nuwo661l.cloudfront.net"
-   ],
-   "pages": [
-    "/"
-   ]
-  },
-  {
-   "id": "t-rum-error-monitoring",
-   "class": "T",
-   "feature": "RUM: error monitoring",
-   "role": "RUM: error monitoring",
+   "feature": "third-party mount <div data-src> (tag-manager-injected widget)",
    "hint": "tags",
    "evidence": [
-    "o10963.ingest.sentry.io"
+    "data-src data-lazyload data-ll-status",
+    "data-src data-lazyload"
    ],
    "pages": [
-    "/"
+    "/en/",
+    "/en-pt/",
+    "/en/investors/",
+    "/en/career/working-at-continental/",
+    "/en/general/contact-us/",
+    "/en/stories/"
    ]
   },
   {
-   "id": "t-unknown-third-party-host-marketing-fareharbor-com",
+   "id": "t-unknown-third-party-host-player-admiralcloud-com",
    "class": "T",
-   "feature": "unknown third-party host marketing.fareharbor.com",
+   "feature": "unknown third-party host player.admiralcloud.com",
    "hint": "inspect",
    "evidence": [
-    "marketing.fareharbor.com"
+    "player.admiralcloud.com"
    ],
    "pages": [
-    "/"
+    "/en/"
    ]
   },
   {
-   "id": "t-analytics-google-analytics-ads",
+   "id": "t-unknown-third-party-host-images-admiralcloud-com",
    "class": "T",
-   "feature": "analytics: Google Analytics / Ads",
-   "role": "analytics: Google Analytics / Ads",
-   "hint": "tags",
+   "feature": "unknown third-party host images.admiralcloud.com",
+   "hint": "inspect",
    "evidence": [
-    "www.google-analytics.com"
+    "images.admiralcloud.com"
    ],
    "pages": [
-    "/"
+    "/en/"
+   ]
+  },
+  {
+   "id": "t-third-party-mount-div-data-article-cluster-focus-image-tag",
+   "class": "T",
+   "feature": "third-party mount <div data-article-cluster-focus-image> (tag-manager-injected widget)",
+   "hint": "tags",
+   "evidence": [
+    "data-article-cluster-focus-image data-src data-lazyload"
+   ],
+   "pages": [
+    "/en/stories/"
    ]
   },
   {
@@ -570,27 +4782,297 @@
    "feature": "iframe without src (runtime-injected embed)",
    "hint": "embed-runtime",
    "evidence": [
-    "1×1"
+    "Intentionally hidden, please ignore"
    ],
    "pages": [
-    "/"
+    "/en/",
+    "/en-pt/",
+    "/en/investors/",
+    "/en/career/working-at-continental/",
+    "/en/general/contact-us/",
+    "/en/general/legal-notice/",
+    "/de/presse/pressemitteilungen/",
+    "/en/stories/",
+    "/en/country-selector/",
+    "/en/general/sustainability-contact-form/"
+   ]
+  },
+  {
+   "id": "x-commerce-signals-cart-true-prices-0",
+   "class": "X",
+   "feature": "commerce signals (cart: true, prices: 0)",
+   "hint": "decided-out",
+   "evidence": [],
+   "pages": [
+    "/en/",
+    "/en/career/working-at-continental/",
+    "/en/general/contact-us/",
+    "/en/general/legal-notice/",
+    "/de/presse/pressemitteilungen/",
+    "/en/stories/",
+    "/en/country-selector/",
+    "/en/general/sustainability-contact-form/"
+   ]
+  },
+  {
+   "id": "x-sign-in-account-links",
+   "class": "X",
+   "feature": "sign-in / account links",
+   "hint": "decided-out",
+   "evidence": [
+    "https://www.continental.com/en/investors/services/registering-for-continental-ir-press-releases/"
+   ],
+   "pages": [
+    "/en/investors/"
+   ]
+  },
+  {
+   "id": "x-commerce-signals-cart-true-prices-5",
+   "class": "X",
+   "feature": "commerce signals (cart: true, prices: 5)",
+   "hint": "decided-out",
+   "evidence": [],
+   "pages": [
+    "/en/investors/"
    ]
   }
  ],
  "reach": {
-  "pagesWithEvidence": 1,
-  "of": 1,
+  "pagesWithEvidence": 99,
+  "of": 99,
   "endpoints": {
-   "POST www.skerriesmills.ie/cdn-cgi/challenge-platform/h/g/jsd/oneshot/4df4a60fa397/0.6305993991125491:1791965732:lSjblcijOZMuqAsLAjhEo4V1cPFgcIov3WJtUBjeWMU/{hash}": 1,
-   "POST o10963.ingest.sentry.io/api/{n}/envelope/": 1,
-   "POST www.google-analytics.com/g/collect": 1,
-   "GET fareharbor.com/api/v1/persistence/{uuid}/": 1,
-   "GET www.skerriesmills.ie/wp-json/complianz/v1/banner": 1,
-   "POST www.skerriesmills.ie/wp-json/complianz/v1/track": 1,
-   "POST otel-hfo.fareharbor.engineering/v1/traces": 1
+   "GET www.continental.com/_assets/{hash}/JavaScript/Hyphenopoly/ExcludedWords.json": 99,
+   "GET www.continental.com/cs-cz/ipredirectbanner/": 1,
+   "GET www.continental.com/cs-cz/api-dc/": 1,
+   "GET api.flockler.app/v2/{hash}/posts": 4,
+   "GET stats-api.flockler.app/v1/stats/{hash}": 4,
+   "GET www.continental.com/de/country-selector/ipredirectbanner/": 1,
+   "GET www.continental.com/de/country-selector/api-dc/": 1,
+   "GET www.continental.com/de/impressum/ipredirectbanner/": 1,
+   "GET www.continental.com/de/impressum/api-dc/": 1,
+   "GET www.continental.com/de/investoren/aktie/api-dc/": 1,
+   "GET www.continental.com/de/investoren/aktie/ipredirectbanner/": 1,
+   "POST charts3.equitystory.com/teaser-t1/continental-ag-v31/German/": 3,
+   "GET charts3.equitystory.com/tpl-t1/continental-ag-v31/German/": 3,
+   "GET www.continental.com/de/investoren/berichte-praesentationen/api-dc/": 1,
+   "GET www.continental.com/de/investoren/berichte-praesentationen/ipredirectbanner/": 1,
+   "GET www.continental.com/de/investoren/fremdkapital-rating/api-dc/": 1,
+   "GET www.continental.com/de/investoren/fremdkapital-rating/ipredirectbanner/": 1,
+   "GET www.continental.com/de/investoren/ir-kontakt/ipredirectbanner/": 1,
+   "GET www.continental.com/de/investoren/ir-kontakt/api-dc/": 1,
+   "GET www.continental.com/de/investoren/meldungen/api-dc/": 1,
+   "GET www.continental.com/de/investoren/meldungen/ipredirectbanner/": 1,
+   "GET www.continental.com/de/investoren/praesentationen/ipredirectbanner/": 1,
+   "GET www.continental.com/de/investoren/praesentationen/api-dc/": 1,
+   "GET www.continental.com/de/investoren/service/api-dc/": 1,
+   "GET www.continental.com/de/investoren/service/ipredirectbanner/": 1,
+   "GET www.continental.com/de/investoren/ueber-uns/api-dc/": 1,
+   "GET www.continental.com/de/investoren/ueber-uns/ipredirectbanner/": 1,
+   "GET www.continental.com/de/investoren/veranstaltungen/ipredirectbanner/": 1,
+   "GET www.continental.com/de/investoren/veranstaltungen/api-dc/": 1,
+   "GET www.continental.com/de/investoren/vitesco-technologies-spin-off/api-dc/": 1,
+   "GET www.continental.com/de/investoren/vitesco-technologies-spin-off/ipredirectbanner/": 1,
+   "GET www.continental.com/de/investoren/api-dc/": 1,
+   "GET www.continental.com/de/investoren/ipredirectbanner/": 1,
+   "GET www.continental.com/de/karriere/arbeiten-bei-continental/api-dc/": 1,
+   "GET www.continental.com/de/karriere/arbeiten-bei-continental/ipredirectbanner/": 1,
+   "GET www.continental.com/de/karriere/bewerbungsprozess/api-dc/": 1,
+   "GET www.continental.com/de/karriere/bewerbungsprozess/ipredirectbanner/": 1,
+   "GET api.admiralcloud.com/v5/deliverEmbed/{uuid}": 9,
+   "GET api.admiralcloud.com/v5/deliverEmbed/{uuid}/subtitle/{n}": 6,
+   "GET api.admiralcloud.com/v5/deliverEmbed/{uuid}/hlsManifest": 9,
+   "GET api.admiralcloud.com/v5/deliverEmbed/{uuid}/hls/{n}": 9,
+   "POST analytics.admiralcloud.com/v4/player/requestTrackId": 9,
+   "GET mediafra-217.admiralcloud.com/customer_217/{uuid}/files/480_index00000.ts": 2,
+   "POST analytics.admiralcloud.com/v4/player/trackEvent": 9,
+   "GET mediafra-217.admiralcloud.com/customer_217/{uuid}/files/1080_index00000.ts": 1,
+   "GET mediafra-217.admiralcloud.com/customer_217/{uuid}/files/480_index00001.ts": 2,
+   "GET mediafra-217.admiralcloud.com/customer_217/{uuid}/files/1080_index00001.ts": 1,
+   "GET www.continental.com/de/karriere/ihr-karrierelevel/api-dc/": 1,
+   "GET www.continental.com/de/karriere/ihr-karrierelevel/ipredirectbanner/": 1,
+   "GET www.continental.com/de/karriere/kontakt-faqs/api-dc/": 1,
+   "GET www.continental.com/de/karriere/kontakt-faqs/ipredirectbanner/": 1,
+   "GET www.continental.com/de/karriere/unsere-jobvielfalt/api-dc/": 1,
+   "GET www.continental.com/de/karriere/unsere-jobvielfalt/ipredirectbanner/": 1,
+   "GET www.continental.com/de/karriere/veranstaltungen/api-dc/": 1,
+   "GET www.continental.com/de/karriere/veranstaltungen/ipredirectbanner/": 1,
+   "GET www.continental.com/de/karriere/woran-wir-arbeiten/api-dc/": 1,
+   "GET www.continental.com/de/karriere/woran-wir-arbeiten/ipredirectbanner/": 1,
+   "GET www.continental.com/_assets/{hash}/search-widget/assets/icons/i-search.svg": 3,
+   "GET www.continental.com/_assets/{hash}/search-widget/assets/icons/i-close.svg": 3,
+   "GET www.continental.com/_assets/{hash}/search-widget/assets/icons/i-marker.svg": 3,
+   "GET www.continental.com/_assets/{hash}/search-widget/assets/icons/i-chevron-right.svg": 3,
+   "GET www.continental.com/_assets/{hash}/search-widget/assets/icons/i-location.svg": 3,
+   "GET www.continental.com/_assets/{hash}/search-widget/assets/icons/i-distance.svg": 3,
+   "GET www.continental.com/_assets/{hash}/search-widget/assets/icons/i-world.svg": 3,
+   "GET www.continental.com/_assets/{hash}/search-widget/assets/icons/i-spinner.svg": 3,
+   "GET www.continental.com/de/karriere/api-dc/": 1,
+   "GET www.continental.com/de/karriere/ipredirectbanner/": 1,
+   "GET www.continental.com/de/meta/cookie-richtlinie/api-dc/": 1,
+   "GET www.continental.com/de/meta/cookie-richtlinie/ipredirectbanner/": 1,
+   "GET www.continental.com/de/meta/datenschutz/api-dc/": 1,
+   "GET www.continental.com/de/meta/datenschutz/ipredirectbanner/": 1,
+   "GET www.continental.com/de/meta/ihr-kontakt-zu-uns/api-dc/": 1,
+   "GET www.continental.com/de/meta/ihr-kontakt-zu-uns/ipredirectbanner/": 1,
+   "GET www.continental.com/de/meta/kontakt-lieferanten/ipredirectbanner/": 1,
+   "GET www.continental.com/de/meta/kontakt-lieferanten/api-dc/": 1,
+   "GET www.continental.com/de/meta/kontakt-nachhaltigkeit/api-dc/": 1,
+   "GET www.continental.com/de/meta/kontakt-nachhaltigkeit/ipredirectbanner/": 1,
+   "GET www.continental.com/de/meta/produkte/ipredirectbanner/": 1,
+   "GET www.continental.com/de/meta/produkte/api-dc/": 1,
+   "GET www.continental.com/de/meta/rechtliche-hinweise/api-dc/": 1,
+   "GET www.continental.com/de/meta/rechtliche-hinweise/ipredirectbanner/": 1,
+   "GET www.continental.com/de/nachhaltigkeit/berichterstattung-und-downloads/ipredirectbanner/": 1,
+   "GET www.continental.com/de/nachhaltigkeit/berichterstattung-und-downloads/api-dc/": 1,
+   "GET www.continental.com/de/nachhaltigkeit/api-dc/": 1,
+   "GET www.continental.com/de/nachhaltigkeit/ipredirectbanner/": 1,
+   "GET www.continental.com/de/presse/mediathek/ipredirectbanner/": 1,
+   "GET www.continental.com/de/presse/mediathek/api-dc/": 1,
+   "GET mediafra-217.admiralcloud.com/customer_217/{uuid}/files/720_index00000.ts": 2,
+   "GET mediafra-217.admiralcloud.com/customer_217/{uuid}/files/720_index00001.ts": 2,
+   "GET www.continental.com/de/presse/messen-events/api-dc/": 1,
+   "GET www.continental.com/de/presse/messen-events/ipredirectbanner/": 1,
+   "GET www.continental.com/de/presse/pressemitteilungen/ipredirectbanner/": 1,
+   "GET www.continental.com/de/presse/pressemitteilungen/api-dc/": 1,
+   "GET www.continental.com/de/presse/presskontakte/api-dc/": 1,
+   "GET www.continental.com/de/presse/presskontakte/ipredirectbanner/": 1,
+   "GET www.continental.com/de/presse/studien-publikationen/api-dc/": 1,
+   "GET www.continental.com/de/presse/studien-publikationen/ipredirectbanner/": 1,
+   "GET www.continental.com/de/presse/api-dc/": 1,
+   "GET www.continental.com/de/presse/ipredirectbanner/": 1,
+   "GET www.continental.com/de/produkte-und-innovationen/contitech/api-dc/": 1,
+   "GET www.continental.com/de/produkte-und-innovationen/contitech/ipredirectbanner/": 1,
+   "GET www.continental.com/de/produkte-und-innovationen/api-dc/": 2,
+   "GET www.continental.com/de/produkte-und-innovationen/ipredirectbanner/": 2,
+   "GET www.continental.com/de/produkte-und-innovationen/reifen/api-dc/": 1,
+   "GET www.continental.com/de/produkte-und-innovationen/reifen/ipredirectbanner/": 1,
+   "GET www.continental.com/de/stories/ipredirectbanner/": 1,
+   "GET www.continental.com/de/stories/api-dc/": 1,
+   "GET www.continental.com/de/unternehmen/corporate-governance/api-dc/": 1,
+   "GET www.continental.com/de/unternehmen/corporate-governance/ipredirectbanner/": 1,
+   "GET www.continental.com/de/unternehmen/geschichte/api-dc/": 1,
+   "GET www.continental.com/de/unternehmen/geschichte/ipredirectbanner/": 1,
+   "GET www.continental.com/de/unternehmen/lieferanten/api-dc/": 1,
+   "GET www.continental.com/de/unternehmen/lieferanten/ipredirectbanner/": 1,
+   "GET www.continental.com/de/unternehmen/marke-continental/api-dc/": 1,
+   "GET www.continental.com/de/unternehmen/marke-continental/ipredirectbanner/": 1,
+   "GET www.continental.com/de/unternehmen/technische-compliance/ipredirectbanner/": 1,
+   "GET www.continental.com/de/unternehmen/technische-compliance/api-dc/": 1,
+   "GET www.continental.com/de/unternehmen/api-dc/": 1,
+   "GET www.continental.com/de/unternehmen/ipredirectbanner/": 1,
+   "GET mediafra-217.admiralcloud.com/customer_217/{uuid}/files/240_index00000.ts": 6,
+   "GET mediafra-217.admiralcloud.com/customer_217/{uuid}/files/240_index00001.ts": 6,
+   "GET www.continental.com/de/ipredirectbanner/": 1,
+   "GET www.continental.com/de/api-dc/": 1,
+   "GET www.continental.com/en/career/application-process/ipredirectbanner/": 1,
+   "GET www.continental.com/en/career/application-process/api-dc/": 1,
+   "GET mediafra-217.admiralcloud.com/customer_217/{uuid}/files/360_index00000.ts": 1,
+   "GET mediafra-217.admiralcloud.com/customer_217/{uuid}/files/360_index00001.ts": 1,
+   "GET www.continental.com/en/career/contact-faqs/ipredirectbanner/": 1,
+   "GET www.continental.com/en/career/contact-faqs/api-dc/": 1,
+   "GET www.continental.com/en/career/our-range-of-jobs/api-dc/": 1,
+   "GET www.continental.com/en/career/our-range-of-jobs/ipredirectbanner/": 1,
+   "GET www.continental.com/en/career/what-we-are-working-on/api-dc/": 1,
+   "GET www.continental.com/en/career/what-we-are-working-on/ipredirectbanner/": 1,
+   "GET www.continental.com/en/career/working-at-continental/api-dc/": 1,
+   "GET www.continental.com/en/career/working-at-continental/ipredirectbanner/": 1,
+   "GET www.continental.com/en/career/your-career-level/api-dc/": 1,
+   "GET www.continental.com/en/career/your-career-level/ipredirectbanner/": 1,
+   "GET www.continental.com/en/career/api-dc/": 1,
+   "GET www.continental.com/en/career/ipredirectbanner/": 1,
+   "GET www.continental.com/en/company/continental-brand/api-dc/": 1,
+   "GET www.continental.com/en/company/continental-brand/ipredirectbanner/": 1,
+   "GET www.continental.com/en/company/corporate-governance/api-dc/": 1,
+   "GET www.continental.com/en/company/corporate-governance/ipredirectbanner/": 1,
+   "GET www.continental.com/en/company/history/api-dc/": 1,
+   "GET www.continental.com/en/company/history/ipredirectbanner/": 1,
+   "GET www.continental.com/en/company/strategy-of-the-continental-group/api-dc/": 1,
+   "GET www.continental.com/en/company/strategy-of-the-continental-group/ipredirectbanner/": 1,
+   "GET www.continental.com/en/company/structure-of-the-continental-group/ipredirectbanner/": 1,
+   "GET www.continental.com/en/company/structure-of-the-continental-group/api-dc/": 1,
+   "GET www.continental.com/en/company/suppliers/api-dc/": 1,
+   "GET www.continental.com/en/company/suppliers/ipredirectbanner/": 1,
+   "GET www.continental.com/en/company/technical-compliance/api-dc/": 1,
+   "GET www.continental.com/en/company/technical-compliance/ipredirectbanner/": 1,
+   "GET www.continental.com/en/company/api-dc/": 1,
+   "GET www.continental.com/en/company/ipredirectbanner/": 1,
+   "GET www.continental.com/en/country-selector/ipredirectbanner/": 1,
+   "GET www.continental.com/en/country-selector/api-dc/": 1,
+   "GET www.continental.com/en/general/contact-form-data-protection/api-dc/": 1,
+   "GET www.continental.com/en/general/contact-form-data-protection/ipredirectbanner/": 1,
+   "GET publiclink.caralegal.de/api/validate": 1,
+   "GET www.continental.com/en/general/contact-suppliers/ipredirectbanner/": 1,
+   "GET www.continental.com/en/general/contact-suppliers/api-dc/": 1,
+   "GET www.continental.com/en/general/contact-us/ipredirectbanner/": 1,
+   "GET www.continental.com/en/general/contact-us/api-dc/": 1,
+   "GET www.continental.com/en/general/cookie-policy/api-dc/": 1,
+   "GET www.continental.com/en/general/cookie-policy/ipredirectbanner/": 1,
+   "GET www.continental.com/en/general/data-protection/api-dc/": 1,
+   "GET www.continental.com/en/general/data-protection/ipredirectbanner/": 1,
+   "GET www.continental.com/en/general/legal-notice/ipredirectbanner/": 1,
+   "GET www.continental.com/en/general/legal-notice/api-dc/": 1,
+   "GET www.continental.com/en/general/products/ipredirectbanner/": 1,
+   "GET www.continental.com/en/general/products/api-dc/": 1,
+   "GET www.continental.com/en/general/site-notice/api-dc/": 1,
+   "GET www.continental.com/en/general/site-notice/ipredirectbanner/": 1,
+   "GET www.continental.com/en/general/sustainability-contact-form/api-dc/": 1,
+   "GET www.continental.com/en/general/sustainability-contact-form/ipredirectbanner/": 1,
+   "GET www.continental.com/en/investors/about-us/api-dc/": 1,
+   "GET www.continental.com/en/investors/about-us/ipredirectbanner/": 1,
+   "GET www.continental.com/en/investors/debt-and-rating/api-dc/": 1,
+   "GET www.continental.com/en/investors/debt-and-rating/ipredirectbanner/": 1,
+   "GET www.continental.com/en/investors/events/api-dc/": 1,
+   "GET www.continental.com/en/investors/events/ipredirectbanner/": 1,
+   "GET www.continental.com/en/investors/ir-contact/api-dc/": 1,
+   "GET www.continental.com/en/investors/ir-contact/ipredirectbanner/": 1,
+   "GET www.continental.com/en/investors/ir-news/api-dc/": 1,
+   "GET www.continental.com/en/investors/ir-news/ipredirectbanner/": 1,
+   "GET www.continental.com/en/investors/presentations/api-dc/": 1,
+   "GET www.continental.com/en/investors/presentations/ipredirectbanner/": 1,
+   "GET www.continental.com/en/investors/reports-presentations/api-dc/": 1,
+   "GET www.continental.com/en/investors/reports-presentations/ipredirectbanner/": 1,
+   "GET www.continental.com/en/investors/services/ipredirectbanner/": 1,
+   "GET www.continental.com/en/investors/services/api-dc/": 1,
+   "GET www.continental.com/en/investors/shares/ipredirectbanner/": 1,
+   "GET www.continental.com/en/investors/shares/api-dc/": 1,
+   "POST charts3.equitystory.com/teaser-t1/continental-ag-v31/English/": 4,
+   "GET charts3.equitystory.com/tpl-t1/continental-ag-v31/English/": 4,
+   "GET www.continental.com/en/investors/vitesco-technologies-spin-off/api-dc/": 1,
+   "GET www.continental.com/en/investors/vitesco-technologies-spin-off/ipredirectbanner/": 1,
+   "GET www.continental.com/en/investors/api-dc/": 1,
+   "GET www.continental.com/en/investors/ipredirectbanner/": 1,
+   "GET www.continental.com/en/press/ipredirectbanner/": 1,
+   "GET www.continental.com/en/press/api-dc/": 1,
+   "GET www.continental.com/en/products-and-innovation/ipredirectbanner/": 1,
+   "GET www.continental.com/en/products-and-innovation/api-dc/": 1,
+   "GET www.continental.com/en-pt/ipredirectbanner/": 1,
+   "GET www.continental.com/en/stories/api-dc/": 1,
+   "GET www.continental.com/en/stories/ipredirectbanner/": 1,
+   "GET www.continental.com/en/sustainability/ipredirectbanner/": 1,
+   "GET www.continental.com/en/sustainability/api-dc/": 1,
+   "GET www.continental.com/en-us/career/api-dc/": 1,
+   "GET www.continental.com/en-us/career/ipredirectbanner/": 1,
+   "GET www.continental.com/en-us/general/data-protection/api-dc/": 1,
+   "GET www.continental.com/en-us/general/data-protection/ipredirectbanner/": 1,
+   "GET www.continental.com/en/api-dc/": 2,
+   "GET www.continental.com/en/ipredirectbanner/": 2,
+   "GET www.continental.com/es-mx/carrera/ipredirectbanner/": 1,
+   "GET www.continental.com/es-mx/carrera/api-dc/": 1,
+   "GET www.continental.com/fr-fr/carriere/api-dc/": 1,
+   "GET www.continental.com/fr-fr/carriere/ipredirectbanner/": 1,
+   "GET www.continental.com/pt-pt/ipredirectbanner/": 1,
+   "GET www.continental.com/ro-ro/cariera/api-dc/": 1,
+   "GET www.continental.com/ro-ro/cariera/ipredirectbanner/": 1,
+   "GET www.continental.com/sk-sk/ipredirectbanner/": 1
   },
-  "searchFormPages": 0,
-  "formPages": 0,
-  "triggerPages": {}
+  "searchFormPages": 48,
+  "formPages": 52,
+  "triggerPages": {
+   "flockler-popup-trigger": 7,
+   "data-popup-restore-target": 9,
+   "data-lightbox": 83,
+   "vjs-menu-button-popup": 20,
+   "aria-haspopup": 1
+  }
  }
 }

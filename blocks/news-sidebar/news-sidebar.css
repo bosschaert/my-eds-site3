@@ -1,0 +1,57 @@
+/* news-sidebar — source c-news-sidebar result list (teaser cards via the teaser block, bold
+   <time> date, centred c-button--internal "show all"). Values from en-investors.css / canon. */
+.news-sidebar .news-sidebar-results { margin-top: 40px; }
+
+/* source result columns are d-flex: cards stretch to the row height (links bottom-aligned) */
+.news-sidebar .teaser.news .teaser-item { align-items: stretch; }
+
+.news-sidebar .news-sidebar-more p { margin: 0; }
+
+.news-sidebar .teaser.news .teaser-text { letter-spacing: 0; }
+.news-sidebar .teaser.news .teaser-text p { margin: 0 0 6px; }
+
+.news-sidebar .teaser.news .teaser-text strong {
+  display: inline-block;
+  padding-right: 4px;
+  font-weight: 700;
+  transition: all 150ms ease-in-out;
+}
+
+.news-sidebar .news-sidebar-more { text-align: center; }
+
+
+/* nested (cluster-hub news-sidebar-nested.mjs): a standalone news list in a container column
+   (de-karriere / en-career People Blog) — measured at 1440: cards inset 16 px (387 px wide),
+   list 99 px below the intro (results margin included), next content element 127 px lower */
+.news-sidebar.nested {
+  margin-top: 99px;
+  margin-bottom: 127px;
+  padding: 0 16px;
+}
+
+/* show-more (cluster-hub news-sidebar-showmore.mjs): the Solr "load more" control under the
+   list — separator line (1px #cdcdcd) with the orange half-tab and "+" (site.css
+   .c-search__show-more*: 17em x 2em clip, tab 4.75em x 2.375em, radius 76px 76px 0 0).
+   Decoration only — paging is not live (dynamic-features row 2 interim). These top-level lists
+   sit 24 px under their header (source c-search__results mt-3; measured +16 px at 1440 / 360
+   with the tab-panel 40 px). */
+.news-sidebar.show-more .news-sidebar-results {
+  position: relative;
+  margin-top: 24px;
+  border-bottom: 1px solid var(--c-gray-mid);
+}
+
+.news-sidebar.show-more .news-sidebar-results::after {
+  content: "+";
+  display: block;
+  box-sizing: border-box;
+  width: 4.75em;
+  height: 2em;
+  margin: 0 auto;
+  padding-top: .55em;
+  border-radius: 76px 76px 0 0;
+  background-color: orange;
+  color: #000;
+  line-height: 1;
+  text-align: center;
+}

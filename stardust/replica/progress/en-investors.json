@@ -1,0 +1,30 @@
+{
+  "pageType": "hub",
+  "slug": "en-investors",
+  "live": "https://www.continental.com/en/investors/",
+  "prototype": "stardust/prototypes/en-investors-proposed.html",
+  "files": ["stardust/prototypes/en-investors-proposed.html", "stardust/prototypes/en-investors.css", "stardust/prototypes/en-investors.js"],
+  "build": "stardust/.work/en-investors (chrome from stardust/.work/en/en.tpl.html; <main> re-authored from stardust/current/pages/en-investors.html)",
+  "regime": "prototype",
+  "iterations": { "1440": 2, "360": 3 },
+  "gates": {
+    "1440": { "pixel": 0.21, "dh": 0, "structuralRed": 0, "visualFlags": "none", "clipped": 0, "overflow": 0, "chromeParity": "quiet", "units": "n/a (none declared)", "verdict": "PASS", "evidence": "stardust/replica/gates/en-investors-1440/*-confirm.*" },
+    "360": { "pixel": 1.31, "dh": 0, "structuralRed": 0, "visualFlags": "none", "clipped": 0, "overflow": 0, "chromeParity": "quiet", "units": "n/a (none declared)", "verdict": "PASS", "evidence": "stardust/replica/gates/en-investors-360/*-confirm.*" }
+  },
+  "capProbe": "PASS at 2560 — 0 of 9 rows failed (stardust/replica/gates/en-investors-2560/cap-iter.json)",
+  "residuals": [
+    { "id": "en-investors-counter-midstate", "breakpoint": "both", "cause": "animation-timing", "detail": "content-diff 🟡 MISSING/EXTRA pairs on the key-figure numbers (live 2.1/284/6.4… vs build 1.7/232/5.2…): both sides run the same count-up (canon.js data-count-to) and are sampled mid-animation; final values identical to the captured data-count-to.", "justified": true }
+  ],
+  "motion": {
+    "observed": ["sticky header morph", "off-canvas mobile menu", "lazy images", "key-figure count-up", "scroll-to-top", "teaser hover"],
+    "implemented": ["canon.js chrome + count-up + lazy images", "en-investors.js module behaviour"],
+    "dead": [],
+    "compare": "motion-compare: 17 parity, 0 missing, 0 extra, 0 advisory (5 dead or unobserved on live)",
+    "evidence": ["stardust/replica/motion/en-investors.json", "stardust/replica/motion/en-investors-build.json"],
+    "postMotionPixel": { "1440": 0.21, "360": 1.31 }
+  },
+  "captureState": [
+    { "element": "key-figure counters", "state": "count-up from 0 on enter (data-count-to)", "restoreAtDelivery": "same count-up in the block JS" }
+  ],
+  "passed": true
+}

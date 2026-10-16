@@ -1,0 +1,387 @@
+/* search — source c-search (site.css .c-search*, .c-pagination*, .c-tag) */
+.search {
+  box-sizing: border-box;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.search .search-form { margin-bottom: 48px; }
+.search .search-form-content { position: relative; }
+
+.search .search-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 1.9429rem;
+  padding: 0 1.3714rem;
+  border: none;
+  border-radius: 1.9429rem;
+  background: var(--c-gray-light);
+  color: var(--c-slate);
+  font: inherit;
+}
+
+.search .search-submit {
+  position: absolute;
+  right: .2857rem;
+  top: .1714rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0;
+  border: none;
+  border-radius: 1.6rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+@media (width >= 1279px) {
+  .search .search-input {
+    height: 2.7429rem;
+    border-radius: 2.7429rem;
+  }
+
+  .search .search-submit {
+    right: .2857rem;
+    top: .2286rem;
+    width: 2.2857rem;
+    height: 2.2857rem;
+    border-radius: 2.2857rem;
+  }
+}
+
+.search .search-tabs {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--c-orange);
+}
+
+.search .search-tab {
+  position: relative;
+  padding: .9143rem 0;
+  font-weight: 600;
+}
+
+.search .search-tab.is-label { font-weight: 100; }
+.search .search-tab.has-hover { cursor: pointer; }
+
+.search .search-tab.is-active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: .4571rem;
+  background: var(--c-orange);
+}
+
+@media (width >= 1023px) {
+  .search .search-tabs { flex-direction: row; }
+  .search .search-tab { padding: 1.3714rem .6857rem; }
+}
+
+.search .search-options {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.3714rem 6px;
+}
+
+.search .search-option {
+  position: relative;
+  margin: 0 24px 12px 0;
+  padding-left: 1.6rem;
+}
+
+.search .search-option::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .1rem;
+  width: 1rem;
+  height: 1rem;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.search .search-option.is-checked::before {
+  border: 4px solid var(--c-orange);
+}
+
+.search .search-tag {
+  display: inline-flex;
+  align-items: center;
+  margin: 12px .9143rem .9143rem 0;
+  padding: .3429rem 1.3714rem;
+  border-radius: 1.3714rem;
+  background: var(--c-orange);
+  font-weight: 600;
+}
+
+.search .search-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.search .search-count {
+  font-size: 1.1429rem;
+  font-weight: 600;
+}
+
+.search .search-sort {
+  display: flex;
+  align-items: flex-start;
+  font-weight: 600;
+}
+
+.search .search-results { margin-top: 18px; }
+
+.search .search-result {
+  display: flex;
+  padding: .9375em 0;
+  border-top: 1px solid var(--c-gray-light);
+}
+
+.search .search-result-image {
+  display: none;
+  flex: 0 0 auto;
+  padding-right: 24px;
+}
+
+.search .search-result-image img {
+  display: block;
+  max-width: 272px;
+  max-height: 153px;
+}
+
+@media (width >= 1023px) {
+  .search .search-result-image { display: block; }
+}
+
+.search .search-result-teaser {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.search .search-result-type {
+  color: var(--c-orange);
+  font-weight: 600;
+}
+
+.search .search-result-date {
+  margin-left: 1.2571rem;
+  color: var(--c-gray);
+  font-weight: 600;
+}
+
+.search .search-result-teaser .search-result-title {
+  margin: 0 0 16px; /* source h3 margin-bottom */
+  font-size: 1.1429rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.search .search-result-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.search .search-result-content { font-size: .85em; }
+.search .search-result-content p { margin: 0; }
+.search .search-result-download { display: flex; }
+.search .search-result-download-count { margin: 5px 0 0 10px; }
+
+.search .search-pagination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.search .search-pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.search .search-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7143rem;
+  height: 1.7143rem;
+  margin: 0 .3429rem;
+  border-radius: 50%;
+  background: var(--c-gray-light);
+}
+
+.search .search-page.is-active { background: var(--c-orange); }
+
+.search .search-page a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (width >= 767px) {
+  .search .search-page { margin: 0 .4571rem; }
+}
+
+/* facets row (source .c-search__facet-tab-container in a .row.mt-3) */
+.search .search-facets {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.search .search-facet {
+  position: relative;
+  display: inline-block;
+  margin-right: 3px;
+  padding: 15px 15px 10px;
+  background-color: #f0f0f0;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.search .search-facet:hover { color: #e38702; }
+.search .search-facet.is-active { color: orange; }
+
+.search .search-facet.is-active::after {
+  content: "";
+  position: absolute;
+  bottom: -.8em;
+  left: calc(50% - .8em);
+  width: 0;
+  height: 0;
+  border-top: .8em solid #f0f0f0;
+  border-right: .8em solid rgb(0 0 0 / 0%);
+  border-left: .8em solid rgb(0 0 0 / 0%);
+}
+
+.search .search-facet.is-filler {
+  flex-grow: 1;
+  margin-right: 0;
+  cursor: default;
+}
+
+.search .search-facet-count {
+  padding-left: 3px;
+  color: #969696;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* variant events (career events filter form): source u-bg-lightgrey pt-4 pb-3 container box,
+   white search input, c-form__radio inline-style options, c-tag (gray, white close disc) */
+.search.events .search-filter-box {
+  padding: 36px 16px 24px;
+  background: #f0f0f0;
+}
+
+.search.events .search-form { margin-bottom: .5rem; }
+
+.search.events .search-input {
+  background: #fff;
+  color: #6b6b6b;
+}
+
+.search.events .search-options { padding: 1.3714rem 0 0; }
+
+.search.events .search-option {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.6rem;
+  margin: 0 1.8286rem 12px 0;
+  padding-left: 2.2857rem;
+}
+
+.search.events .search-option::before {
+  top: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 2px solid orange;
+  background: #fff;
+}
+
+.search.events .search-option.is-checked::before {
+  border: 2px solid orange;
+  background: orange;
+}
+
+.search.events .search-option.is-checked::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.search.events .search-tag {
+  position: relative;
+  min-height: 2rem;
+  margin: .5rem .9143rem .9143rem 0;
+  padding: 0 2.2857rem 0 1.0286rem;
+  background: #6b6b6b;
+  color: #fff;
+  font-size: .8571rem;
+}
+
+.search.events .search-tag::after {
+  content: "\00D7";
+  position: absolute;
+  right: 6px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+/* source .c-search__form below 767: 15px padding on the full grid width (row -16px) — not the
+   events form (c-search__form p-0) */
+@media (width < 767px) {
+  .search:not(.events) .search-form {
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 15px;
+  }
+}
+
+/* a search-only block (mediathek): the source keeps its empty filter row (mt 24px) */
+.search .search-form:only-child { margin-bottom: calc(48px + 24px); }
+
+/* events: the filter box sits in the band's content row under the header row (header margin
+   1.8286rem + header row margin 2.7429rem) */
+main .section > .default-content-wrapper:has(> :is(h1, h2, h3):last-child)
+  + .search-wrapper:has(> .search.events) {
+  margin-top: calc(1.8286rem + 2.7429rem);
+}
+
+/* source pagination below 767: numbered items are d-none d-sm-flex (prev / next only) — one row */
+@media (width < 767px) {
+  .search .search-page:not(.is-active) { display: none; }
+}
+
+/* nested (cluster-hub search-nested.mjs): the search box inside the hub intro column (source
+   .o-container.tx_solr in a .col: field inset 32 px, 48 px above, c-search box 72 px taller) */
+.search.nested {
+  margin-top: 48px;
+  padding: 0 32px;
+}
+
+.search.nested .search-form { margin-bottom: 72px; }

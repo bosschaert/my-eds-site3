@@ -1,0 +1,98 @@
+/* en-stories — stories archetype (c-cs-stage + c-cs-article-cluster).
+   Values lifted from the stories template's own merged stylesheet
+   (cdn.continental.com/typo3temp/assets/compressed/merged-969e161c….css), source order kept.
+   Imports canon.css unchanged; utilities below are canon-request candidates (see canon-requests.md). */
+
+/* ---- Grid/utilities used by this template but absent from canon (Bootstrap-derived, site breakpoints) ---- */
+.m-0 { margin: 0 !important; }
+.my-0 { margin-top: 0 !important; }
+.my-0:not([class*="mb-"]) { margin-bottom: 0 !important; } /* live: .mb-0,.my-0 precede .mb-3 in source order, so mb-3 wins */
+.my-5 { margin-top: 48px !important; margin-bottom: 48px !important; }
+.my-8 { margin-top: 88px !important; margin-bottom: 88px !important; }
+.py-0 { padding-top: 0 !important; padding-bottom: 0 !important; }
+.text-right { text-align: right !important; }
+.text-center { text-align: center !important; }
+@media (min-width: 1023px) {
+  .col-md-6 { flex: 0 0 50%; max-width: 50%; }
+  .mt-md-8, .my-md-8 { margin-top: 88px !important; }
+  .mb-md-8, .my-md-8 { margin-bottom: 88px !important; }
+  .p-md-3 { padding: 24px !important; }
+  .pt-md-4, .py-md-4 { padding-top: 36px !important; }
+  .pb-md-4, .py-md-4 { padding-bottom: 36px !important; }
+  .pl-md-7 { padding-left: 76px !important; }
+  .text-md-left { text-align: left !important; }
+}
+@media (min-width: 1279px) {
+  .col-lg-4 { flex: 0 0 33.33333333%; max-width: 33.33333333%; }
+  .col-lg-8 { flex: 0 0 66.66666667%; max-width: 66.66666667%; }
+}
+
+/* ---- Stories type scale (u-cs-text) ---- */
+.u-cs-text--h1 { font-size: 34px; line-height: 1.1; }
+.u-cs-text--h1 strong { font-weight: 600; }
+@media (min-width: 1023px) { .u-cs-text--h1 { font-size: 56px; } }
+.u-cs-text--h2 { font-size: 26px; line-height: 1.1; font-weight: 600; }
+.u-cs-text--h2 strong { font-weight: 600; }
+@media (min-width: 1023px) { .u-cs-text--h2 { font-size: 40px; } }
+.u-cs-text--h3 { font-size: 20px; line-height: 1.1; font-weight: 600; }
+@media (min-width: 1023px) { .u-cs-text--h3 { font-size: 30px; } }
+.u-cs-text--subtitle { font-size: 20px; line-height: 1.1; }
+@media (min-width: 1023px) { .u-cs-text--subtitle { font-size: 24px; } }
+.u-cs-text--copy { font-size: 21px; line-height: 1.4; }
+@media (min-width: 1023px) { .u-cs-text--copy { font-size: 24px; } }
+.u-cs-text--paragraph { font-size: 17px; line-height: 1.4; }
+@media (min-width: 1023px) { .u-cs-text--paragraph { font-size: 20px; } }
+@media (min-width: 1023px) { .u-cs-text--text-length { max-width: 50ch; } }
+.u-cs-text--balance { text-wrap: balance; }
+.u-cs-text--light { font-weight: 300; }
+.u-cs-text--normal { font-weight: 400; }
+.u-cs-text--bold { font-weight: 600; }
+.u-cs-image { max-width: 100%; object-fit: cover; }
+
+/* ---- Stage (latest article) ---- */
+.c-cs-stage { --popup-width: 420px; overflow: hidden; }
+@media (min-width: 1023px) { .c-cs-stage.has-dark-overlay { --overlay-bg: #000; --overlay-text: #fff; } }
+@media (min-width: 1023px) {
+  .c-cs-stage__title-box { color: var(--overlay-text); position: absolute; left: 0; width: 50%; top: 50%; z-index: 15; pointer-events: none; transform: translateY(-50%); }
+}
+@media (min-width: 1279px) { .c-cs-stage__title-box { transform: translateY(-20px); } }
+.c-cs-stage__label { margin-top: 30px; }
+@media (min-width: 1023px) { .c-cs-stage__label { margin-top: 0; } }
+.c-cs-stage__title { font-size: 34px; line-height: 1.1; }
+@media (min-width: 1023px) { .c-cs-stage__title { font-size: 56px; } }
+.c-cs-stage__overlay { position: absolute; z-index: 5; inset: 0; background: var(--overlay-bg); opacity: .3; }
+.c-cs-stage__popup {
+  display: flex; flex-direction: column; justify-content: center; background: #fff;
+  transition: all 500ms cubic-bezier(0.5, 0, 0, 0.5); transform-origin: center;
+}
+@media (min-width: 1023px) {
+  .c-cs-stage__popup { position: absolute; inset: 0; left: auto; right: calc(var(--popup-width) * -1); width: var(--popup-width); z-index: 10; }
+}
+.c-cs-stage:focus-within .c-cs-stage__popup, .c-cs-stage:hover .c-cs-stage__popup { right: 0; }
+.c-cs-stage__text { max-height: 10lh; position: relative; overflow: hidden; }
+@media (min-width: 1023px) { .c-cs-stage__text { font-size: 18px; } }
+@media (min-width: 1279px) { .c-cs-stage__text { font-size: 24px; } }
+.c-cs-stage__image { aspect-ratio: 3/4; width: 100%; transition: all 250ms cubic-bezier(0.1, 0.41, 0.65, 0.89); transform-origin: center; }
+@media (min-width: 1023px) { .c-cs-stage__image { aspect-ratio: 15/7; } }
+.c-cs-stage__picture { overflow: hidden; }
+
+/* ---- Article cluster (story cards) ---- */
+@media (min-width: 1023px) { .c-cs-article-cluster__sticky { position: sticky; top: 25%; } }
+.c-cs-article-cluster__teaser { display: block; color: #000; }
+.c-cs-article-cluster__teaser .u-cs-image { transition: all 500ms cubic-bezier(0.1, 0.41, 0.65, 0.89); transform-origin: center; }
+.c-cs-article-cluster__teaser:hover { color: #000; }
+.c-cs-article-cluster__teaser:hover .u-cs-image { transform: scale(1.05); }
+.c-cs-article-cluster__teaser:hover .c-button { background: #6b6b6b; color: #fff; }
+.c-cs-article-cluster__teaser:hover .c-teaser__link { text-decoration: underline; }
+.c-cs-article-cluster__picture { overflow: hidden; margin-bottom: 20px; }
+.c-cs-article-cluster__link { margin-top: 20px; }
+.c-cs-article-cluster__teaser-title { margin-bottom: 20px; }
+.c-cs-article-cluster__image.has-fixed-height { width: 100%; }
+@media (min-width: 1279px) { .c-cs-article-cluster__image.has-fixed-height { height: 450px; } }
+@media (min-width: 1680px) { .c-cs-article-cluster__image.has-fixed-height { height: 532px; } }
+.c-cs-article-cluster__single-image { transition: all 500ms cubic-bezier(0.1, 0.41, 0.65, 0.89); transform-origin: center; }
+.c-cs-article-cluster__single-image.has-focus { transform: scale(1.05); }
+
+/* ---- constories load-more: disabled (fetch in flight) state ---- */
+.c-button[disabled] { opacity: .4; background: #6b6b6b; color: #fff; animation: pulse 2s infinite; }
+@keyframes pulse { 0% { opacity: .7; } 50% { opacity: .3; } 100% { opacity: .7; } }

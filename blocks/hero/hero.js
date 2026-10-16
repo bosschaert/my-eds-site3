@@ -1,69 +1,102 @@
 /**
- * hero — full-bleed photo hero with the copy pinned bottom-left over a scrim
- * (prototype section.sm-hero; schema stardust/eds-schema/index.json section 0:
- * heading, body, cta, 1 image).
+ * hero — full-bleed 70vh background video under a #009bd9 multiply overlay, with a white
+ * call-out card (headline + one pill CTA). Replica of balbriggan.ie `.hero`.
  *
- * Decode tier: template-slotted. Authored (any row/cell shape, DA-flattened ok):
- *   <img> (hero photo) · <h1> · lede <p> · CTA <p><strong><a></a></strong></p>
- * Every authored node is MOVED into the template slots (EW1/EW3).
+ * Schema: stardust/eds-schema/index.json → sections[0] (heading, cta).
+ * Decode tier: template-slotted (fixed composition; authored nodes are MOVED into slots).
+ *
+ * Authoring (any row/cell shape — decoded by query, never by row index):
+ *   - <h1> headline (the page's single h1)
+ *   - <p><strong><a href>Learn More</a></strong></p> — CTA (buttonized by decorateButtons)
+ *   - <p><a href="https://…/video.mp4">…</a></p> — background video source on an external
+ *     host or the code origin (never content.da.live: anonymous visitors get 401). Authored
+ *     as DEFAULT CONTENT in the hero's section, before the block (David's Model D1: no embed
+ *     URLs inside a block); the block reabsorbs it (the paragraph moves into the <video> as
+ *     its fallback content) and removes the emptied wrapper. A link inside the block is still
+ *     accepted (defensive fallback).
+ *
+ * @ew-exempt <p> video source link — text-as-metadata, consumed as the <video> source
  */
 
-const HEADING = 'h1, h2, h3, h4, h5, h6';
+const VIDEO_RE = /\.(mp4|webm|m3u8)(\?|#|$)/i;
 
-// Flat list of the authored elements across every cell. A <p> that only wraps a
-// picture yields the picture (the empty paragraph is discarded with the rows).
-// HARNESS-ONLY fallback (EW5): a text-only cell is wrapped by MOVING its text nodes.
-function collectNodes(root) {
-  const out = [];
-  root.querySelectorAll(':scope > div > div').forEach((cell) => {
-    const kids = [...cell.children];
-    if (!kids.length && cell.textContent.trim()) {
-      const p = document.createElement('p');
-      p.append(...cell.childNodes);
-      out.push(p);
-      return;
-    }
-    kids.forEach((el) => {
-      const media = el.querySelector('picture, img');
-      if (el.tagName === 'P' && media && !el.textContent.trim()) {
-        out.push(media.closest('picture') || media);
-      } else if (el.tagName === 'P' && media) {
-        [...el.childNodes].forEach((n) => {
-          if (n.nodeType === 1) out.push(n);
-          else if (n.textContent.trim()) {
-            const p = document.createElement('p');
-            p.append(n);
-            out.push(p);
-          }
-        });
-      } else out.push(el);
-    });
-  });
-  return out;
-}
-
-function slot(className, ...nodes) {
+function wrapNode(node, className) {
   const w = document.createElement('div');
   w.className = className;
-  w.append(...nodes);
+  w.append(node);
   return w;
 }
 
+function el(tag, className) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  return node;
+}
+
+/**
+ * Background video: autoplay muted loop playsinline (source behaviour, dynamic-features row 8).
+ * @param {string} src video URL
+ * @returns {HTMLVideoElement}
+ */
+function buildVideo(src, fallback) {
+  const video = el('video', 'hero-video');
+  video.muted = true;
+  video.defaultMuted = true;
+  video.autoplay = true;
+  video.loop = true;
+  video.playsInline = true;
+  ['autoplay', 'muted', 'loop', 'playsinline'].forEach((attr) => video.setAttribute(attr, ''));
+  const source = document.createElement('source');
+  source.src = src;
+  source.type = 'video/mp4';
+  video.append(source);
+  // the authored link paragraph becomes the video's fallback content (moved, never copied)
+  if (fallback) video.append(fallback);
+  return video;
+}
+
+/**
+ * The video link authored as default content before the block (section head, reabsorbed).
+ * @param {Element} block
+ * @returns {{ link: Element, wrapper: Element } | null}
+ */
+function findSectionVideo(block) {
+  const prev = block.parentElement && block.parentElement.previousElementSibling;
+  if (!prev || !prev.classList.contains('default-content-wrapper')) return null;
+  const link = [...prev.querySelectorAll('a[href]')]
+    .find((a) => VIDEO_RE.test(a.getAttribute('href')));
+  return link ? { link, wrapper: prev } : null;
+}
+
 export default function decorate(block) {
-  const nodes = collectNodes(block);
-  const isMedia = (n) => n.matches('picture, img');
-  const media = nodes.find(isMedia);
-  const heading = nodes.find((n) => n.matches(HEADING));
-  const ctas = nodes.filter((n) => !isMedia(n) && n !== heading && n.querySelector('a'));
-  const rest = nodes.filter((n) => n !== media && n !== heading && !ctas.includes(n));
+  const heading = block.querySelector('h1, h2, h3');
+  const links = [...block.querySelectorAll('a[href]')];
+  const sectionVideo = findSectionVideo(block);
+  const videoLink = sectionVideo
+    ? sectionVideo.link
+    : links.find((a) => VIDEO_RE.test(a.getAttribute('href')));
+  const ctas = links.filter((a) => a !== videoLink && !(heading && heading.contains(a)));
 
-  const mediaSlot = slot('hero-media');
-  if (media) mediaSlot.append(media);
+  const card = el('div', 'hero-card');
+  if (heading) card.append(wrapNode(heading, 'hero-title'));
+  if (ctas.length) {
+    const actions = el('div', 'hero-actions');
+    ctas.forEach((a) => actions.append(a.closest('p') || a));
+    card.append(actions);
+  }
 
-  const copy = slot('hero-copy');
-  if (heading) copy.append(slot('hero-heading', heading));
-  if (rest.length) copy.append(slot('hero-text', ...rest));
-  if (ctas.length) copy.append(slot('hero-actions', ...ctas));
+  const media = el('div', 'hero-media');
+  let video;
+  if (videoLink) {
+    video = buildVideo(videoLink.href, videoLink.closest('p') || videoLink);
+    media.append(video);
+  }
 
-  block.replaceChildren(mediaSlot, copy, slot('hero-scrim'));
+  block.replaceChildren(card, media, el('div', 'hero-overlay'));
+  if (sectionVideo && !sectionVideo.wrapper.children.length) sectionVideo.wrapper.remove();
+
+  if (video) {
+    const playing = video.play();
+    if (playing && playing.catch) playing.catch(() => {});
+  }
 }

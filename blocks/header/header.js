@@ -1,122 +1,119 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
-/*
- * Header — template-slotted chrome (replica of the live skerriesmills.ie header).
- *
- * /nav document contract (one section per slot, in this order):
- *   1. brand   — two paragraphs, each a link to "/" holding an icon:
- *                :skerries-logo: (desktop, centred) and :skerries-mob-logo: (mobile)
- *   2. left    — <ul> of the left-hand desktop links (nested <ul> = hover dropdown)
- *   3. right   — <ul> of the right-hand desktop links; the LAST item renders as the green CTA
- *   4. tools   — one paragraph with the mobile "Book Now" link
- *   5. mobile  — <ul> of the mobile menu (nested <ul> = expandable sub-list)
- * Authored nodes are MOVED into the template (EW1), never rebuilt from text.
- */
+// the source navbar expands at bootstrap's xl step
+const isDesktop = window.matchMedia('(min-width: 1200px)');
+const SCROLL_COMPACT = 100;
+const COLLAPSE_MS = 350;
 
-const ICON_SIZES = {
-  'skerries-logo': [146, 146, 'Skerries Mills'],
-  'skerries-mob-logo': [1024, 507, 'Skerries Mills Logo'],
-};
-
-/** Unwraps the pipeline's <li><p><a> shape (#98) so every item is <li><a>[<ul>]. */
-function normalizeList(list) {
-  if (!list) return;
-  list.querySelectorAll('li > p').forEach((p) => p.replaceWith(...p.childNodes));
-}
-
-function chevron(src) {
-  const img = document.createElement('img');
-  img.src = `${window.hlx.codeBasePath}/icons/${src}.svg`;
-  img.alt = '';
-  img.width = 24;
-  img.height = 24;
-  return img;
-}
-
-function sizeLogo(p) {
-  const img = p?.querySelector('img[data-icon-name]');
-  if (!img) return;
-  const [w, h, alt] = ICON_SIZES[img.dataset.iconName] || [];
-  if (w) {
-    img.width = w;
-    img.height = h;
-    img.alt = alt;
-  }
-  img.loading = 'eager';
-}
-
-function el(tag, className, ...children) {
+const el = (tag, className, attrs = {}) => {
   const node = document.createElement(tag);
   if (className) node.className = className;
-  node.append(...children.filter(Boolean));
+  Object.entries(attrs).forEach(([k, v]) => node.setAttribute(k, v));
   return node;
+};
+
+/**
+ * Moves the authored child nodes of an element into a visually hidden span (keeps the
+ * accessible name, shows a decorative glyph instead).
+ * @param {Element} a the authored link
+ */
+function hideLabel(a) {
+  const label = el('span', 'sr-only');
+  label.append(...a.childNodes);
+  a.append(label);
 }
 
-function buildDesktopNav(section, side) {
-  const nav = el('nav', `sm-nav sm-nav-${side}`);
-  nav.setAttribute('aria-label', side === 'left' ? 'Primary' : 'Secondary');
-  const list = section?.querySelector('ul');
-  if (!list) return nav;
-  normalizeList(list);
-  [...list.children].forEach((li) => {
-    const trigger = li.querySelector(':scope > a');
-    if (trigger && li.querySelector(':scope > ul')) trigger.append(chevron('chevron-down'));
+/**
+ * Unwraps pipeline-added paragraphs/emphasis around a list item's link (#98).
+ * @param {Element} li list item
+ */
+function unwrapLink(li) {
+  const wrap = li.querySelector(':scope > p, :scope > strong, :scope > em');
+  const a = wrap && wrap.querySelector('a');
+  if (a && wrap.textContent.trim() === a.textContent.trim()) wrap.replaceWith(a);
+}
+
+const SOCIAL = ['facebook', 'twitter', 'linkedin', 'instagram'];
+
+/**
+ * Decorates an authored social link list: glyph span + hidden label.
+ * @param {Element} ul authored list
+ */
+function decorateSocial(ul) {
+  ul.className = 'social';
+  ul.querySelectorAll(':scope > li').forEach((li) => {
+    unwrapLink(li);
+    const a = li.querySelector('a');
+    if (!a) return;
+    const network = SOCIAL.find((n) => a.href.includes(n)) || '';
+    a.removeAttribute('title');
+    hideLabel(a);
+    a.prepend(el('span', `social-icon ${network}`, { 'aria-hidden': 'true' }));
   });
-  nav.append(list);
-  return nav;
 }
 
-function buildMobileMenu(section) {
-  const menu = el('div', 'sm-mobmenu');
-  menu.id = 'menu';
-  const list = section?.querySelector('ul');
-  if (!list) return menu;
-  normalizeList(list);
-  [...list.children].forEach((li) => {
-    if (!li.querySelector(':scope > ul')) return;
-    const toggle = el('button', 'toggle-child', chevron('chevron-down-white'));
-    toggle.type = 'button';
-    toggle.setAttribute('aria-expanded', 'false');
-    // live: the chevron swaps down/up with the sub-list state
-    const flip = () => {
-      const open = li.classList.toggle('show-children');
-      toggle.setAttribute('aria-expanded', String(open));
-      toggle.replaceChildren(chevron(open ? 'chevron-up-white' : 'chevron-down-white'));
-    };
-    toggle.addEventListener('click', flip);
-    // live: the parent link first opens its sub-list; once open, it navigates
-    li.querySelector(':scope > a')?.addEventListener('click', (e) => {
-      if (li.classList.contains('show-children')) return;
-      e.preventDefault();
-      flip();
+/**
+ * Animates the drawer like bootstrap's collapse (height, 350ms ease).
+ * @param {Element} root header root
+ * @param {Element} panel the collapsible panel
+ * @param {boolean} open target state
+ */
+function animateDrawer(root, panel, open) {
+  const p = panel;
+  const run = String(Number(p.dataset.run || 0) + 1);
+  p.dataset.run = run;
+  const done = () => {
+    if (p.dataset.run !== run) return; // a newer toggle owns the panel
+    p.classList.remove('is-collapsing');
+    p.style.height = '';
+    if (!open) root.classList.remove('is-open');
+  };
+  if (open) root.classList.add('is-open');
+  const full = `${p.scrollHeight}px`;
+  p.style.height = open ? '0px' : full;
+  p.classList.add('is-collapsing');
+  p.getBoundingClientRect();
+  p.style.height = open ? full : '0px';
+  p.addEventListener('transitionend', done, { once: true });
+  setTimeout(done, COLLAPSE_MS + 100);
+}
+
+/**
+ * Builds the main nav: nested lists become click dropdowns, the emphasised link the CTA pill.
+ * @param {Element} ul authored list
+ */
+function decorateMainNav(ul) {
+  ul.className = 'nav-list nav-list-main';
+  ul.querySelectorAll(':scope > li').forEach((li) => {
+    const sub = li.querySelector(':scope > ul');
+    if (!sub) {
+      const cta = li.querySelector(':scope > strong, :scope > p > strong, a.button');
+      if (cta) li.classList.add('nav-cta');
+      unwrapLink(li);
+      const a = li.querySelector('a');
+      if (a) {
+        a.className = '';
+        a.removeAttribute('title');
+      }
+      return;
+    }
+    li.classList.add('has-sub');
+    sub.className = 'subnav';
+    sub.querySelectorAll(':scope > li').forEach(unwrapLink);
+    const trigger = el('a', 'subnav-toggle', {
+      href: '#', role: 'button', 'aria-haspopup': 'true', 'aria-expanded': 'false',
     });
-    li.append(toggle);
+    // move the authored label nodes (inside a <p> on delivery, bare text in the harness)
+    [...li.childNodes].filter((n) => n !== sub).forEach((n) => {
+      if (n.nodeName === 'P') {
+        trigger.append(...n.childNodes);
+        n.remove();
+      } else if (n.nodeType === Node.TEXT_NODE && !n.textContent.trim()) n.remove();
+      else trigger.append(n);
+    });
+    li.prepend(trigger);
   });
-  menu.append(list);
-  return menu;
-}
-
-function buildBurger(menu) {
-  const button = el('button', 'sm-burger', el('span'), el('span'), el('span'));
-  button.type = 'button';
-  button.id = 'menu-btn';
-  button.setAttribute('aria-controls', 'menu');
-  button.setAttribute('aria-expanded', 'false');
-  button.addEventListener('click', () => {
-    const open = button.classList.toggle('open');
-    menu.classList.toggle('flex', open);
-    button.setAttribute('aria-expanded', String(open));
-  });
-  return el('div', 'sm-burger-wrap', button);
-}
-
-/** live behaviour: the header gains .scrolling once scrollY reaches its own height */
-function watchScroll(bar) {
-  const threshold = bar.offsetHeight;
-  const update = () => bar.classList.toggle('scrolling', window.scrollY >= threshold);
-  window.addEventListener('scroll', update, { passive: true });
-  update();
 }
 
 /**
@@ -128,31 +125,112 @@ export default async function decorate(block) {
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   const fragment = await loadFragment(navPath);
   if (!fragment) return;
+  const sections = [...fragment.querySelectorAll(':scope > .section')];
+  const [brandSection, topSection, mainSection] = sections;
 
-  const sections = [...fragment.querySelectorAll(':scope > .section')]
-    .filter((s) => !s.querySelector('.metadata'));
-  const [brand, left, right, tools, mobile] = sections;
+  const root = el('div', 'site-header');
+  const main = document.querySelector('main');
+  if (main && !main.id) main.id = 'content';
+  const skip = el('a', 'skip-link', { href: '#content' });
+  skip.textContent = 'Skip to content';
 
-  const brandParas = brand ? [...brand.querySelectorAll('p')] : [];
-  brandParas.forEach(sizeLogo);
-  const logo = el('div', 'sm-logo', brandParas[0]);
-  const mobLogo = el('div', 'sm-moblogo', brandParas[1]);
+  const bar = el('nav', 'site-header-bar', { 'aria-label': 'Site' });
+  const brand = brandSection && brandSection.querySelector('a');
+  if (brand) {
+    brand.className = 'site-header-brand';
+    brand.removeAttribute('title');
+    hideLabel(brand);
+    brand.prepend(el('img', 'site-header-logo', {
+      src: `${window.hlx.codeBasePath}/blocks/header/balbriggan-logo.svg`,
+      alt: '',
+      width: '283',
+      height: '96',
+    }));
+    bar.append(brand);
+  }
 
-  const bookBtn = el('div', 'sm-bookbtn', tools?.querySelector('p'));
-  const menu = buildMobileMenu(mobile);
+  const navs = el('div', 'site-header-navs');
+  const top = el('div', 'site-header-top');
+  if (topSection) {
+    const [links, social] = topSection.querySelectorAll('ul');
+    if (links) {
+      links.className = 'nav-list nav-list-top';
+      links.querySelectorAll(':scope > li').forEach(unwrapLink);
+      top.append(links);
+    }
+    if (social) {
+      decorateSocial(social);
+      top.append(social);
+    }
+  }
 
-  const bar = el(
-    'div',
-    'sm-header-bar',
-    buildDesktopNav(left, 'left'),
-    logo,
-    mobLogo,
-    buildDesktopNav(right, 'right'),
-    bookBtn,
-    buildBurger(menu),
-  );
-  const header = el('div', 'sm-header', bar);
+  const primary = el('div', 'site-header-primary');
+  const toggle = el('button', 'site-header-toggle', {
+    type: 'button', 'aria-label': 'Toggle navigation', 'aria-expanded': 'false',
+  });
+  toggle.append(el('span'));
+  const panel = el('div', 'site-header-main');
+  const mainList = mainSection && mainSection.querySelector('ul');
+  if (mainList) {
+    decorateMainNav(mainList);
+    panel.append(mainList);
+  }
+  primary.append(toggle, panel);
+  navs.append(top, primary);
+  bar.append(navs);
+  root.append(skip, bar);
 
-  block.replaceChildren(header, menu);
-  watchScroll(header);
+  // sticky header compacts after 100px of scroll
+  const onScroll = () => root.classList.toggle('is-scrolled', window.scrollY > SCROLL_COMPACT);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // mobile drawer
+  toggle.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') !== 'true';
+    toggle.setAttribute('aria-expanded', String(open));
+    animateDrawer(root, panel, open);
+  });
+
+  // dropdowns: click / Enter toggles, Escape and a click outside close
+  const closeAll = (except) => {
+    root.querySelectorAll('.has-sub.is-open').forEach((li) => {
+      if (li === except) return;
+      li.classList.remove('is-open');
+      li.querySelector('.subnav-toggle').setAttribute('aria-expanded', 'false');
+    });
+  };
+  root.querySelectorAll('.subnav-toggle').forEach((trigger) => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const li = trigger.parentElement;
+      const open = !li.classList.contains('is-open');
+      closeAll(li);
+      li.classList.toggle('is-open', open);
+      trigger.setAttribute('aria-expanded', String(open));
+    });
+  });
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.site-header .has-sub')) closeAll();
+  });
+  root.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    const openLi = root.querySelector('.has-sub.is-open');
+    if (openLi) {
+      closeAll();
+      openLi.querySelector('.subnav-toggle').focus();
+    } else if (!isDesktop.matches && root.classList.contains('is-open')) {
+      toggle.setAttribute('aria-expanded', 'false');
+      animateDrawer(root, panel, false);
+      toggle.focus();
+    }
+  });
+  isDesktop.addEventListener('change', () => {
+    closeAll();
+    root.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  });
+
+  block.textContent = '';
+  block.append(root);
 }

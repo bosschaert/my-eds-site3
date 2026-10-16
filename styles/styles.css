@@ -10,130 +10,126 @@
  * governing permissions and limitations under the License.
  */
 
-/* stylelint-disable no-descending-specificity -- canon source order is kept verbatim */
-
 /*
- * Skerries Mills — shared canon (replica of www.skerriesmills.ie).
- * Values lifted verbatim from stardust/prototypes/css/canon.css (gated prototype).
- * proxima-nova is the owner's Adobe Fonts kit pbd5qiw — loaded by styles/fonts.css
- * (never rehosted, never in head.html). Libre Baskerville (OFL) is self-hosted in /fonts.
+ * balbriggan.ie replica foundation — values lifted verbatim from the gated prototype's shared
+ * layer (stardust/prototypes/canon.css).
+ * R-01: Gotham is licensed and never rehosted — the brand names stay FIRST in every stack; the
+ * self-hosted Montserrat "Gotham * Sub" faces (styles/fonts.css) render meanwhile.
  */
 
 :root {
-  /* brand colours */
-  --sm-cream: #fff8eb;
-  --sm-blue: #415b6a;
-  --sm-blue-dark: #273b46;
-  --sm-green: #397a5c;
-  --sm-maroon: #6f3739;
-  --sm-red: #762728;
-  --sm-testim: #537486;
-  --sm-pearl: #e5e1c8;
-  --sm-stone: #292524;
-  --sm-white: #fff;
-  --background-color: #fff; /* boilerplate compat (stock cards/hero demo blocks) */
+  /* colors */
+  --blue: #2494d2;
+  --hero-blue: #009bd9;
+  --yellow: #f5ee2f;
+  --yellow-alt: #f9ec31;
+  --rule-yellow: #ff0;
+  --text: #3c3c3b;
+  --heading: #3c3c3c;
+  --light-gray: #f0f0f0;
+  --footer-gray: #444;
+  --link-hover: #2600e6;
 
-  /* fonts: brand face first, metric-matched local fallback second */
-  --sm-serif: 'Libre Baskerville', libre-baskerville-fallback, serif;
-  --sm-sans: proxima-nova, proxima-nova-fallback, sans-serif;
-  --body-font-family: var(--sm-serif);
-  --heading-font-family: var(--sm-serif);
+  /* fonts (R-01: Gotham first, the Sub face second, a metric-matched local fallback third) */
+  --ff-light: 'Gotham-Light', 'Gotham Light Sub', gotham-light-fallback, sans-serif;
+  --ff-medium: 'GothamMedium', 'Gotham Medium Sub', gotham-medium-fallback, sans-serif;
+  --ff-bold: 'GothamBold', 'Gotham Bold Sub', gotham-bold-fallback, sans-serif;
 
-  /* motion */
-  --sm-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  /* layout */
+  --container: 1140px;
+  --container-gutter: 15px;
 
-  /* container model (live .container / prototype .sm-wrap): 100% below 640px,
-     then 640 / 768 / 1024 / 1280 / 1536. Blocks constrain their inner content
-     with max-width: var(--sm-wrap); margin-inline: auto. */
-  --sm-wrap: 100%;
+  /* boilerplate aliases still read by not-yet-converted blocks */
+  --background-color: #fff;
+  --light-color: var(--light-gray);
+  --text-color: var(--text);
+  --link-color: var(--blue);
+  --body-font-family: var(--ff-light);
+  --heading-font-family: var(--ff-bold);
+  --body-font-size-s: 1rem;
+  --body-font-size-xs: .875rem;
+  --heading-font-size-s: 1.25rem;
 
-  /* overlay chrome: the fixed header floats over the hero, so nothing is reserved
-     (the host is out of flow; its height is its content's) */
-  --nav-height: auto;
+  /* chrome reservation: the source header is 98px tall at rest >= 1200px, 90px below */
+  --nav-height: 98px;
 }
 
-@media (width >= 640px) {
-  :root { --sm-wrap: 640px; }
+@media (width <= 1199px) {
+  :root {
+    --nav-height: 90px;
+  }
 }
 
-@media (width >= 768px) {
-  :root { --sm-wrap: 768px; }
-}
-
-@media (width >= 1024px) {
-  :root { --sm-wrap: 1024px; }
-}
-
-@media (width >= 1280px) {
-  :root { --sm-wrap: 1280px; }
-}
-
-@media (width >= 1536px) {
-  :root { --sm-wrap: 1536px; }
-}
-
-/* metric-matched fallbacks (computed from the brand woff2 against Liberation Sans/Serif,
-   the Arial/Times metric clones) — available at first paint, before fonts.css lands */
+/* metric-matched local fallbacks for the Sub faces (first paint, before fonts.css lands) */
 @font-face {
-  font-family: proxima-nova-fallback;
+  font-family: gotham-light-fallback;
   src: local('Arial');
-  size-adjust: 98.12%;
-  ascent-override: 109.97%;
-  descent-override: 33.12%;
+  size-adjust: 109.41%;
+  ascent-override: 66.69%;
+  descent-override: 18.28%;
+  line-gap-override: 6.4%;
+}
+
+@font-face {
+  font-family: gotham-medium-fallback;
+  src: local('Arial');
+  size-adjust: 111.11%;
+  ascent-override: 71.97%;
+  descent-override: 17.99%;
   line-gap-override: 0%;
 }
 
 @font-face {
-  font-family: libre-baskerville-fallback;
-  src: local('Times New Roman');
-  size-adjust: 127.33%;
-  ascent-override: 76.18%;
-  descent-override: 21.2%;
+  font-family: gotham-bold-fallback;
+  src: local('Arial Bold'), local('Arial-BoldMT');
+  size-adjust: 109.02%;
+  ascent-override: 73.38%;
+  descent-override: 18.35%;
   line-gap-override: 0%;
 }
 
-/* reset (prototype canon — tailwind preflight subset) */
 *,
-::before,
-::after {
+*::before,
+*::after {
   box-sizing: border-box;
-  border: 0 solid #e5e7eb;
 }
 
 html {
-  font-family: var(--sm-serif);
-  line-height: 1.5;
   text-size-adjust: 100%;
-  tab-size: 4;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizelegibility;
 }
 
 body {
   display: none;
+  position: relative;
   margin: 0;
-  line-height: inherit;
-  background-color: var(--sm-cream);
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizelegibility;
+  background: #fff;
+  color: var(--text);
+  font-family: var(--ff-light);
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
 }
 
 body.appear {
   display: block;
 }
 
-/* chrome reservation (boilerplate structural layer; overlay chrome reserves nothing) */
+/* chrome reservation (#81): reserve the header's rest height until the block has loaded */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
   height: var(--nav-height);
+  background-color: var(--blue);
 }
 
-/* overlay chrome host (#108): fixed over the hero, out of flow — nothing to shift */
-body > header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 50;
+header:has(> .header[data-block-status="loaded"]) {
+  height: auto;
+  background-color: transparent;
+}
+
+footer {
+  background-color: var(--footer-gray);
 }
 
 header .header,
@@ -149,40 +145,25 @@ footer .footer[data-block-status="loaded"] {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-ul,
-ol,
-figure,
-dl,
-pre {
-  margin: 0;
+h4 {
+  margin: 0 0 .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h2 {
+  color: var(--heading);
+  font-family: var(--ff-bold);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 1rem;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-}
-
-img,
-svg {
-  display: block;
-  vertical-align: middle;
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-a:any-link {
-  color: inherit;
-  overflow-wrap: break-word;
+  margin: 0 0 1rem;
 }
 
 input,
@@ -192,323 +173,199 @@ button {
   font: inherit;
 }
 
-button {
-  color: inherit;
-  background: transparent;
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* canon keeps images inline (vertical-align: middle); EDS needs height: auto (#36) */
+img {
+  max-width: 100%;
+  height: auto;
+  border-style: none;
+  vertical-align: middle;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
   padding: 0;
-  cursor: pointer;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
 
-li {
-  font-family: var(--sm-sans);
+/* short pages: main fills the first viewport so the footer never floats mid-screen */
+main {
+  min-height: calc(100vh - var(--nav-height));
 }
 
-/* type ramp */
-h1 {
-  margin-bottom: 1rem;
-  font-family: var(--sm-serif);
-  font-size: 3.75rem;
-  line-height: 1;
-  font-weight: 400;
-}
-
-h2 {
-  color: var(--sm-blue-dark);
-  margin-bottom: 1rem;
-  font-family: var(--sm-serif);
-  font-size: 1.5rem;
-  font-weight: 300;
-  line-height: 2rem;
-}
-
-h3 {
-  margin-bottom: 1rem;
-  font-family: var(--sm-serif);
-  font-size: 1.5rem;
-  font-weight: 300;
-  line-height: 2rem;
-}
-
-h4 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 2rem;
-}
-
-p {
-  margin-bottom: 1rem;
-  font-family: var(--sm-sans);
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-p a {
-  text-decoration-line: underline;
-}
-
-@media (width >= 1024px) {
-  h2 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-}
-
-pre {
-  padding: 16px;
-  overflow-x: auto;
-  white-space: pre;
-}
-
-/* icons (boilerplate) */
-.icon {
-  display: inline-block;
-  height: 24px;
-  width: 24px;
-}
-
-.icon img {
-  height: 100%;
-  width: 100%;
-}
-
-/* sections: blocks paint their own full-bleed bands and constrain their inner
-   content to var(--sm-wrap); default content sits in the container. */
+/* sections: the source's bootstrap container (1140 / 960 / 720 / 540 / fluid, 15px gutters) */
 main > .section {
   margin: 0;
 }
 
 main > .section > div {
-  margin: 0;
-  padding: 0;
-}
-
-main > .section > .default-content-wrapper {
-  max-width: var(--sm-wrap);
+  width: 100%;
+  max-width: var(--container);
   margin: 0 auto;
+  padding: 0 var(--container-gutter);
 }
 
 main .section:empty {
   display: none;
 }
 
-/* shared container (live .container / prototype .sm-wrap) */
-.sm-wrap {
-  width: 100%;
-  max-width: var(--sm-wrap);
-  margin-left: auto;
-  margin-right: auto;
+@media (width <= 1199px) {
+  main > .section > div {
+    max-width: 960px;
+  }
 }
 
-/* rich text (live .the-content) — shared by split / card bodies */
-.sm-rich {
-  font-family: var(--sm-sans);
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  color: var(--sm-blue);
+@media (width <= 991px) {
+  main > .section > div {
+    max-width: 720px;
+  }
 }
 
-.sm-rich p {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+@media (width <= 767px) {
+  main > .section > div {
+    max-width: 540px;
+  }
 }
 
-/* buttons (live .btn / .btn.brand-maroon): strong-link = primary (green),
-   em-link = secondary (maroon), strong+em = accent (green, same as primary) */
+@media (width <= 575px) {
+  main > .section > div {
+    max-width: none;
+  }
+}
+
+/* section heading with the 10% yellow rule */
+.heading-rule {
+  text-align: center;
+}
+
+.heading-rule::after {
+  content: " ";
+  display: block;
+  width: 10%;
+  margin: .5em auto 1.5em;
+  border-top: 5px solid var(--rule-yellow);
+}
+
+/* buttons: the source's single pill (.btn-secondary), applied to every authored CTA */
 p.button-wrapper {
-  margin: 0;
+  margin: 0 0 1rem;
 }
 
 a.button:any-link,
 button.button {
   display: inline-block;
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0.75rem;
-  border-radius: 0.25rem;
-  background-color: var(--sm-green);
-  color: var(--sm-white);
-  text-align: center;
-  text-decoration: none;
-  font-family: var(--sm-sans);
+  padding: .15rem 2rem;
+  border: 2px solid var(--yellow);
+  border-radius: 2rem;
+  background-color: var(--yellow);
+  color: var(--blue);
+  font-family: var(--ff-medium);
   font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
   cursor: pointer;
-  transition: all 0.15s var(--sm-ease);
+  transition: all 300ms;
 }
 
 a.button:hover,
-a.button:focus-visible,
-button.button:hover,
-button.button:focus-visible {
-  background-color: var(--sm-maroon);
+button.button:hover {
+  border-color: #545b62;
+  background-color: var(--blue);
+  color: #fff;
+  text-decoration: none;
 }
 
-a.button.secondary,
-button.button.secondary {
-  background-color: var(--sm-maroon);
+/* social icon list (header + footer): Font Awesome 4 glyph outlines as SVG, 20px em box */
+.social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-a.button.secondary:hover,
-a.button.secondary:focus-visible,
-button.button.secondary:hover,
-button.button.secondary:focus-visible {
-  background-color: var(--sm-green);
+/* source: inline-block items + a 0.245em word space — spaced explicitly, font-independent */
+.social li {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 30px;
 }
 
-a.button[aria-disabled="true"],
-button.button:disabled {
-  cursor: not-allowed;
-  pointer-events: none;
+.social a {
+  color: #fff;
 }
 
-@media (width >= 768px) {
-  a.button:any-link,
-  button.button {
-    width: auto;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-}
-
-/* text links with the maroon chevron (live .btn-link / .btn-txt) */
-.sm-more {
+.social .social-icon {
   display: inline-block;
-  position: relative;
-  width: auto;
-  padding: 0.5rem 2.25rem 0.5rem 0;
-  border-radius: 0.375rem;
-  color: var(--sm-maroon);
-  font-family: var(--sm-sans);
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  cursor: pointer;
+  width: calc(1024em / 1792);
+  height: 1em;
+  font-size: 20px;
+  vertical-align: calc(-256em / 1792);
+  background: no-repeat 0 0 / 100% 100%;
 }
 
-.sm-more::after,
-.sm-txtlink::after {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: url('/icons/arrow-more.svg') 50% / 10px 15px no-repeat;
-  filter: brightness(0) saturate(100%) invert(21%) sepia(20%) saturate(1721%) hue-rotate(309deg)
-    brightness(96%) contrast(82%);
-  transition: all 0.15s var(--sm-ease);
+.social .social-icon.facebook {
+  background-image: url('icons/facebook.svg');
 }
 
-.sm-more::after {
-  top: 50%;
-  right: 0.5rem;
-  transform: translateY(-50%);
+.social .social-icon.twitter {
+  width: calc(1664em / 1792);
+  background-image: url('icons/twitter.svg');
 }
 
-.sm-txtlink {
-  display: inline-block;
-  position: relative;
-  width: 8rem;
-  padding-right: 1.5rem;
-  color: var(--sm-maroon);
-  font-family: var(--sm-sans);
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  text-decoration-line: underline;
-  text-underline-offset: 8px;
+.social .social-icon.linkedin {
+  width: calc(1536em / 1792);
+  background-image: url('icons/linkedin.svg');
 }
 
-.sm-txtlink::after {
-  top: 6px;
-  right: 0;
+.social .social-icon.instagram {
+  width: calc(1536em / 1792);
+  background-image: url('icons/instagram.svg');
 }
 
-.sm-card-link:hover .sm-more,
-.sm-card-link:hover .sm-txtlink {
-  color: var(--sm-green);
-  filter: brightness(0) saturate(100%) invert(41%) sepia(12%) saturate(1767%) hue-rotate(100deg)
-    brightness(93%) contrast(78%);
-}
-
-.sm-card-link:hover .sm-more::after,
-.sm-card-link:hover .sm-txtlink::after {
-  right: -0.25rem;
-}
-
-/* icon hover (live .ficon:hover) */
-.sm-icon {
-  transition: all 0.15s var(--sm-ease);
-}
-
-.sm-icon:hover {
-  filter: brightness(0) saturate(100%) invert(95%) sepia(3%) saturate(1433%) hue-rotate(11deg)
-    brightness(96%) contrast(90%);
-}
-
-/* scroll reveal (live .js-show-on-scroll / .js-show-on-scroll-img). Blocks add the
-   js-show-on-scroll[-img] class; scripts.js adds opacity-0 and toggles the animation
-   class from an IntersectionObserver, so without JS nothing is ever hidden. */
-@keyframes fade-in {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes fade-in-y {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.js-show-on-scroll.opacity-0,
-.js-show-on-scroll-img.opacity-0 {
-  opacity: 0;
-}
-
-.animate-fade-in {
-  animation: 0.5s ease-in forwards fade-in;
-}
-
-.animate-fade-in-y {
-  animation: 0.5s ease-in forwards fade-in-y;
+/* Experience Workspace: card-as-link inner anchor reads like the card text (EW6) */
+a .prosemirror-editor a:any-link {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Experience Workspace edit mode: repaint CTAs from their authored marks (EW3) */
 .prosemirror-editor p > :is(strong, em) > a:any-link,
 .prosemirror-editor p > a:any-link:has(> :is(strong, em):only-child) {
   display: inline-block;
-  padding: 0.75rem 2.5rem;
-  border-radius: 0.25rem;
-  color: var(--sm-white);
+  padding: .15rem 2rem;
+  border: 2px solid var(--yellow);
+  border-radius: 2rem;
+  background-color: var(--yellow);
+  color: var(--blue);
+  font-family: var(--ff-medium);
+  font-weight: 700;
+  text-transform: uppercase;
   text-decoration: none;
-  font-family: var(--sm-sans);
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 500;
 }
 
 .prosemirror-editor p > a:any-link > :is(strong, em) {
   font-weight: inherit;
   font-style: inherit;
-}
-
-.prosemirror-editor p > strong > a:any-link,
-.prosemirror-editor p > a:any-link:has(> strong:only-child) {
-  background-color: var(--sm-green);
-}
-
-.prosemirror-editor p > em > a:any-link,
-.prosemirror-editor p > a:any-link:has(> em:only-child) {
-  background-color: var(--sm-maroon);
-}
-
-/* card-as-link inner anchor while editing (EW6) */
-a .prosemirror-editor a:any-link {
-  color: inherit;
-  text-decoration: none;
 }

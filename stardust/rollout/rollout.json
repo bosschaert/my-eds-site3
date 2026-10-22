@@ -1,24 +1,24 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-10-09T19:44:25.789Z",
+    "writtenAt": "2026-10-14T09:31:28.617Z",
     "stardustVersion": "0.0.0"
   },
   "target": "aem-eds",
   "site": {
-    "sourceUrl": "https://www.continental.com/",
+    "sourceUrl": "https://www.skerriesmills.ie/",
     "da": {
       "org": "aemcoder",
-      "site": "d9ddbc54",
+      "site": "1370701b",
       "ref": "main"
     },
-    "liveHost": "main--d9ddbc54--aemcoder.aem.live"
+    "liveHost": "main--1370701b--aemcoder.aem.live"
   },
   "lastRun": {
-    "at": "2026-10-10T13:00:36.598Z",
+    "at": "2026-10-14T10:53:17.539Z",
     "pages": {
-      "total": 101,
-      "verified": 101,
+      "total": 1,
+      "verified": 1,
       "deployed": 0,
       "pending": 0,
       "contentPending": 0,
@@ -26,8 +26,8 @@
       "failed": 0
     },
     "blocks": {
-      "total": 15,
-      "converted": 15,
+      "total": 7,
+      "converted": 7,
       "pending": 0
     },
     "verifyFailures": 0

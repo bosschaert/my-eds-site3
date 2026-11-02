@@ -1,9 +1,9 @@
-# Dynamic features plan — continental.com
+<!-- stardust provenance: skill=stardust:replica · phase=preserve-direction · 2026-10-29 -->
+# Dynamic features plan — home page
 
-| phase | deliverable | rows | authoring contract | verification |
-|---|---|---|---|---|
-| D1 static-first | every page renders complete without network features; snapshots authored as content | 2, 3, 12, 14, 17 | sections authored in DA; interim notices in block JS | gate rows (pixel/content) |
-| D2 client behaviour | lightbox, language menu, sliders/tabs/accordions, stage overlay, download-cart UI | 3, 4, 5, 7, 8 | block JS, no external data | motion-observe parity per archetype |
-| D3 embeds | AdmiralCloud player, EquityStory widgets, job widgets, caralegal iframe | 9, 10, 11, 13 | embed block keyed by live-DOM ids | dynamics-check presence |
-| D4 index | `helix-query.yaml` + header search results over the migrated corpus; hreflang metadata | 1, 6 | query index config in code branch | search-query parity (count + titles over migrated corpus) |
-| owner | backends, allowlists, martech, live listings | 2, 3, 9–12, 14, 15 | decision batch in dynamic-features.md | — |
+1. **interactive (self)** — hero carousel + header menus: implemented in the prototype after the static gate (motion observed, never inferred), then in the EDS header/hero blocks.
+2. **listings (self)** — product carousels as authored rows (document-first).
+3. **forms (interim)** — footer newsletter UI, submission shows "no backend connected" (D4).
+4. **search / commerce (interim)** — link-out to the store (D1, D2).
+5. **tags (off)** — D5; nothing loads on the new host until the owner decides.
+Verification: published origin at 1440 and 360 during rollout; parity rows in stardust/dynamics/parity.json.

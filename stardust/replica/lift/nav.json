@@ -1,0 +1,670 @@
+[
+ {
+  "label": "Drinkware",
+  "tag": "button",
+  "aria": "Shop Bottles & Drinkware",
+  "panelAria": "Drinkware",
+  "close": "Close menu",
+  "back": {
+   "text": "Back",
+   "aria": "Back to main menu"
+  },
+  "heading": "Drinkware",
+  "shopAll": {
+   "label": "Shop Bottles & Drinkware",
+   "href": "https://www.hydroflask.com/shop/bottles-drinkware",
+   "aria": "Shop Bottles & Drinkware"
+  },
+  "featured": {
+   "heading": "Featured",
+   "items": [
+    {
+     "label": "Shop Bottles & Drinkware",
+     "href": "https://www.hydroflask.com/shop/bottles-drinkware",
+     "aria": "Shop Bottles & Drinkware",
+     "all": true
+    },
+    {
+     "label": "Micro Hydro Straw Bottles",
+     "flag": "NEW",
+     "href": "https://www.hydroflask.com/shop/micro-hydro-straw-bottle",
+     "aria": "New Micro Hydro Straw Bottles",
+     "all": false
+    },
+    {
+     "label": "New Arrivals",
+     "href": "https://www.hydroflask.com/shop/new-arrivals",
+     "aria": "Shop Drinkware New Arrivals",
+     "all": false
+    },
+    {
+     "label": "Limited Edition",
+     "href": "https://www.hydroflask.com/shop/limited-edition",
+     "aria": "Shop Drinkware Limited Edition",
+     "all": false
+    },
+    {
+     "label": "Bestsellers",
+     "href": "https://www.hydroflask.com/shop/bestsellers",
+     "aria": "Shop Drinkware Bestsellers",
+     "all": false
+    },
+    {
+     "label": "Trending",
+     "href": "https://www.hydroflask.com/shop/trending-now",
+     "aria": "Shop Trending Drinkware",
+     "all": false
+    },
+    {
+     "label": "Sale",
+     "href": "https://www.hydroflask.com/shop/sale",
+     "aria": "Shop Drinkware Sale",
+     "all": false
+    }
+   ]
+  },
+  "columns": [
+   {
+    "trigger": {
+     "text": "SHOP BY CATEGORY",
+     "aria": "SHOP BY CATEGORY in Drinkware"
+    },
+    "heading": "SHOP BY CATEGORY",
+    "links": [
+     {
+      "label": "Bottles",
+      "href": "https://www.hydroflask.com/shop/bottles",
+      "aria": "Shop Bottles Category"
+     },
+     {
+      "label": "Kids Drinkware",
+      "href": "https://www.hydroflask.com/shop/collections/kids-collection",
+      "aria": "Shop Kids Drinkware Category"
+     },
+     {
+      "label": "Micro Hydro",
+      "href": "https://www.hydroflask.com/shop/mini-water-bottles",
+      "aria": "Shop Micro Hydro Category"
+     },
+     {
+      "label": "Cups & Tumblers",
+      "href": "https://www.hydroflask.com/shop/bottles-drinkware/cups-tumblers",
+      "aria": "Shop Cups and Tumblers Category"
+     },
+     {
+      "label": "Coffee & Tea",
+      "href": "https://www.hydroflask.com/shop/bottles-drinkware/coffee-tea",
+      "aria": "Shop Coffee and Tea Category"
+     },
+     {
+      "label": "Lightweight",
+      "href": "https://www.hydroflask.com/shop/lightweight-water-bottles",
+      "aria": "Shop Lightweight Category"
+     },
+     {
+      "label": "Beer, Wine & Spirits",
+      "href": "https://www.hydroflask.com/shop/bottles-drinkware/beer-wine-spirits",
+      "aria": "Shop Beer Wine and Spirits Category"
+     },
+     {
+      "label": "Drinkware Accessories",
+      "href": "https://www.hydroflask.com/shop/accessories",
+      "aria": "Shop Drinkware Accessories"
+     }
+    ]
+   },
+   {
+    "trigger": {
+     "text": "POPULAR SIZES",
+     "aria": "POPULAR SIZES in Drinkware"
+    },
+    "heading": "POPULAR SIZES",
+    "links": [
+     {
+      "label": "32 oz",
+      "href": "https://www.hydroflask.com/shop/shop-by-size/32-oz",
+      "aria": "Shop 32 ounce Popular Sizes"
+     },
+     {
+      "label": "24 oz",
+      "href": "https://www.hydroflask.com/shop/shop-by-size/24-oz",
+      "aria": "Shop 24 ounce Popular Sizes"
+     },
+     {
+      "label": "40 oz",
+      "href": "https://www.hydroflask.com/shop/shop-by-size/40-oz",
+      "aria": "Shop 40 ounce Popular Sizes"
+     },
+     {
+      "label": "20 oz",
+      "href": "https://www.hydroflask.com/shop/shop-by-size/20-oz",
+      "aria": "Shop 20 oz Popular Sizes"
+     },
+     {
+      "label": "200ml / 6.7 oz",
+      "href": "https://www.hydroflask.com/micro-hydro",
+      "aria": "Shop 6.7 ounce Popular Size"
+     },
+     {
+      "label": "300ml / 10 oz",
+      "href": "https://www.hydroflask.com/micro-hydro-300-ml",
+      "aria": "Shop 10 ounce Popular Size"
+     },
+     {
+      "label": "400ml / 13.5 oz",
+      "href": "https://www.hydroflask.com/micro-hydro-400-ml",
+      "aria": "Shop 13.5 ounce Popular Size"
+     }
+    ]
+   },
+   {
+    "trigger": {
+     "text": "SHOP BY COLOR",
+     "aria": "SHOP BY COLOR in Drinkware"
+    },
+    "heading": "SHOP BY COLOR",
+    "links": [
+     {
+      "label": "Purple",
+      "href": "https://www.hydroflask.com/shop/colors/purple",
+      "aria": "Shop Purple Colored Drinkware"
+     },
+     {
+      "label": "Red",
+      "href": "https://www.hydroflask.com/shop/colors/red",
+      "aria": "Shop Red Colored Drinkware"
+     },
+     {
+      "label": "Pink",
+      "href": "https://www.hydroflask.com/shop/colors/pink",
+      "aria": "Shop Pink Colored Drinkware"
+     },
+     {
+      "label": "Green",
+      "href": "https://www.hydroflask.com/shop/colors/green",
+      "aria": "Shop Green Colored Drinkware"
+     },
+     {
+      "label": "Blue",
+      "href": "https://www.hydroflask.com/shop/colors/blue",
+      "aria": "Shop Blue Colored Drinkware"
+     },
+     {
+      "label": "Black",
+      "href": "https://www.hydroflask.com/shop/colors/black",
+      "aria": "Shop Black Colored Drinkware"
+     },
+     {
+      "label": "White",
+      "href": "https://www.hydroflask.com/shop/colors/white",
+      "aria": "Shop White Colored Drinkware"
+     },
+     {
+      "label": "Gray",
+      "href": "https://www.hydroflask.com/shop/colors/gray",
+      "aria": "Shop Gray Colored Drinkware"
+     },
+     {
+      "label": "Neutral",
+      "href": "https://www.hydroflask.com/shop/colors/neutrals",
+      "aria": "Shop Neutral Colored Drinkware"
+     }
+    ]
+   }
+  ],
+  "ad": {
+   "html": "c-mega-panel__ads",
+   "imgs": [
+    {
+     "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+     "alt": "Women sitting in a car smiling holding a Burgundy Standard Mouth Hydro Flask"
+    }
+   ],
+   "links": [
+    {
+     "href": "/find-your-hydroflask",
+     "aria": "Find your bottle - take the quiz",
+     "text": "Find your bottle The ideal sip awaits. Take The Quiz"
+    }
+   ],
+   "text": "Find your bottle The ideal sip awaits. Take The Quiz .c-mega-paid-ad { position: relative; width: 100%; max-width: 290px; aspect-ratio: 290 / 320; overflow: hidden; background-color: #000; color: #fff; } .c-mega-paid-ad__link, .c-mega-paid-ad__picture, .c-mega-paid-ad__image { display: block; width: 100%; height: 100%; } .c-mega-paid-ad__link { position: relative; color: inherit; text-decoration: none; } .c-mega-paid-ad__picture { position: absolute; inset: 0; z-index: 0; } .c-mega-paid-ad__image { object-fit: cover; object-position: center; transition: transform 200ms ease; } .c-mega-paid-ad__link::before { content: \"\"; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.73) 100%); pointer-events: none; } .c-mega-paid-ad__content { position: absolute; right: 23px; bottom: 17px; left: 23px; z-index: 2; display: flex; flex-direction: column; align-items: flex-start; word-break: break-word; } .c-mega-paid-ad__title, .c-mega-paid-ad__description, .c-mega-paid-ad__cta { margin: 0; color: inherit; } .c-mega-paid-ad__title { font-size: 16px; font-weight: 700; line-height: 1.3; } .c-mega-paid-ad__description { margin-top: 4px; font-size: 14px; font-weight: 400; line-height: 1.15; } .c-mega-paid-ad__cta { margin-top: 6px; font-size: 13px; font-weight: 700; line-height: 1.3; letter-spacing: 0.26px; text-transform: uppercase; text-decoration: underline; text-underline-position: from-font; } .c-mega-paid-ad__link:hover .c-mega-paid-ad__image, .c-mega-paid-ad__link:focus-visible .c-mega-paid-ad__image { transform: scale(1.02); } .c-mega-paid-ad__link:focus-visible { outline: 2px solid currentColor; outline-offset: -4px; } @media (min-width: 1024px) { .c-mega-paid-ad { max-width: 100%; aspect-ratio: 320 / 263; } .c-mega-paid-ad__content { right: 21px; bottom: 11px; left: 20px; } .c-mega-paid-ad__title { font-size: 18px; } .c-mega-paid-ad__description { margin-top: 8px; font-size: 16px; line-height: 1.25; } .c-mega-paid-ad__cta { margin-top: 10px; font-size: 14px; letter-spacing: 0.28px; } }"
+  }
+ },
+ {
+  "label": "Collections",
+  "tag": "button",
+  "aria": "Collections",
+  "panelAria": "Collections",
+  "close": "Close menu",
+  "back": {
+   "text": "Back",
+   "aria": "Back to main menu"
+  },
+  "heading": "Collections",
+  "featured": {
+   "heading": "Featured",
+   "items": [
+    {
+     "label": "Kids",
+     "href": "https://www.hydroflask.com/shop/collections/kids-collection",
+     "aria": "Shop Kids Collection",
+     "all": false
+    },
+    {
+     "label": "Halloween",
+     "href": "https://www.hydroflask.com/shop/collections/halloween-shop",
+     "aria": "Shop Halloween Collection",
+     "all": false
+    },
+    {
+     "label": "Tailgating",
+     "href": "https://www.hydroflask.com/shop/collections/tailgating",
+     "aria": "Shop Tailgating Collection",
+     "all": false
+    },
+    {
+     "label": "Back to School",
+     "href": "https://www.hydroflask.com/back-to-school",
+     "aria": "Shop Back to School",
+     "all": false
+    },
+    {
+     "label": "Sports & Fitness",
+     "href": "https://www.hydroflask.com/shop/collections/fitness-collection",
+     "aria": "Shop Workout Collection",
+     "all": false
+    },
+    {
+     "label": "Travel",
+     "href": "https://www.hydroflask.com/shop/collections/travel-guide",
+     "aria": "Shop Travel Collection",
+     "all": false
+    },
+    {
+     "label": "Bundles",
+     "href": "https://www.hydroflask.com/shop/bundles",
+     "aria": "Shop Bundles",
+     "all": false
+    }
+   ]
+  },
+  "columns": [
+   {
+    "trigger": {
+     "text": "SHOP BY COLLECTIONS",
+     "aria": "SHOP BY COLLECTIONS in Collections"
+    },
+    "heading": "SHOP BY COLLECTIONS",
+    "links": [
+     {
+      "label": "Gigi Perez Collection",
+      "flag": "NEW",
+      "href": "https://www.hydroflask.com/gigi-perez-bottles",
+      "aria": "Shop Gigi Perez Bottles"
+     },
+     {
+      "label": "Micro Hydro Straw Bottles",
+      "href": "https://www.hydroflask.com/shop/micro-hydro-straw-bottle",
+      "aria": "Shop Micro Hydro Straw Bottles"
+     },
+     {
+      "label": "Carryout\u2122 Coolers",
+      "href": "https://www.hydroflask.com/shop/coolers/carryout-collection",
+      "aria": "Shop Carryout Cooler Collection"
+     },
+     {
+      "label": "Lightweight Bottles",
+      "href": "https://www.hydroflask.com/shop/lightweight-water-bottles",
+      "aria": "Shop Lightweight Bottles"
+     },
+     {
+      "label": "Woodland Camo",
+      "href": "https://www.hydroflask.com/shop/colors/camo",
+      "aria": "Shop Woodland Camo Collection"
+     },
+     {
+      "label": "Role Model Collection",
+      "href": "https://www.hydroflask.com/rolemodel-bottles",
+      "aria": "Shop Role Model Collection"
+     },
+     {
+      "label": "Sekou Collection",
+      "href": "https://www.hydroflask.com/sekou-bottles",
+      "aria": "Shop Sekou Collection"
+     },
+     {
+      "label": "Music Studio Collection",
+      "href": "https://www.hydroflask.com/universal-music-group",
+      "aria": "Shop Music Studio Collection"
+     }
+    ]
+   },
+   {
+    "trigger": {
+     "text": "LIMITED EDITIONS",
+     "aria": "LIMITED EDITIONS in Collections"
+    },
+    "heading": "LIMITED EDITIONS",
+    "links": [
+     {
+      "label": "Midnight Glimmer",
+      "flag": "NEW",
+      "href": "https://www.hydroflask.com/shop/collections/midnight-glimmer-water-bottles",
+      "aria": "Shop Midnight Glimmer Limited Edition"
+     },
+     {
+      "label": "Quest",
+      "href": "https://www.hydroflask.com/shop/collections/quest",
+      "aria": "Shop Lightweight Quest Limited Edition"
+     },
+     {
+      "label": "Daydream",
+      "href": "https://www.hydroflask.com/shop/collections/daydream",
+      "aria": "Shop Daydream Limited Edition"
+     },
+     {
+      "label": "Game On",
+      "href": "https://www.hydroflask.com/game-on-32-oz-wide-mouth-bottle",
+      "aria": "Shop Game On Limited Edition"
+     },
+     {
+      "label": "Glitch",
+      "href": "https://www.hydroflask.com/shop/collections/glitch",
+      "aria": "Shop Glitch Limited Edition"
+     },
+     {
+      "label": "Arc",
+      "href": "https://www.hydroflask.com/shop/collections/arc-water-bottles",
+      "aria": "Shop Arc Limited Edition"
+     },
+     {
+      "label": "World of Eric Carle\u2122",
+      "href": "https://www.hydroflask.com/shop/collections/eric-carle-water-bottles",
+      "aria": "Shop World of Eric Carle\u2122 Limited Edition"
+     }
+    ]
+   }
+  ],
+  "ad": {
+   "html": "c-mega-panel__ads",
+   "imgs": [
+    {
+     "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+     "alt": "Two children writing their names on the bottom name tag of their Hydro Flask Kids Bottle"
+    }
+   ],
+   "links": [
+    {
+     "href": "/shop/collections/kids-collection",
+     "aria": "Shop the Kids Collection",
+     "text": "Kids Collection For all of your back to school needs. Shop Kids"
+    }
+   ],
+   "text": "Kids Collection For all of your back to school needs. Shop Kids .c-mega-paid-ad { position: relative; width: 100%; max-width: 290px; aspect-ratio: 290 / 320; overflow: hidden; background-color: #000; color: #fff; } .c-mega-paid-ad__link, .c-mega-paid-ad__picture, .c-mega-paid-ad__image { display: block; width: 100%; height: 100%; } .c-mega-paid-ad__link { position: relative; color: inherit; text-decoration: none; } .c-mega-paid-ad__picture { position: absolute; inset: 0; z-index: 0; } .c-mega-paid-ad__image { object-fit: cover; object-position: center; transition: transform 200ms ease; } .c-mega-paid-ad__link::before { content: \"\"; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.73) 100%); pointer-events: none; } .c-mega-paid-ad__content { position: absolute; right: 23px; bottom: 17px; left: 23px; z-index: 2; display: flex; flex-direction: column; align-items: flex-start; word-break: break-word; } .c-mega-paid-ad__title, .c-mega-paid-ad__description, .c-mega-paid-ad__cta { margin: 0; color: inherit; } .c-mega-paid-ad__title { font-size: 16px; font-weight: 700; line-height: 1.3; } .c-mega-paid-ad__description { margin-top: 4px; font-size: 14px; font-weight: 400; line-height: 1.15; } .c-mega-paid-ad__cta { margin-top: 6px; font-size: 13px; font-weight: 700; line-height: 1.3; letter-spacing: 0.26px; text-transform: uppercase; text-decoration: underline; text-underline-position: from-font; } .c-mega-paid-ad__link:hover .c-mega-paid-ad__image, .c-mega-paid-ad__link:focus-visible .c-mega-paid-ad__image { transform: scale(1.02); } .c-mega-paid-ad__link:focus-visible { outline: 2px solid currentColor; outline-offset: -4px; } @media (min-width: 1024px) { .c-mega-paid-ad { max-width: 100%; aspect-ratio: 320 / 263; } .c-mega-paid-ad__content { right: 21px; bottom: 11px; left: 20px; } .c-mega-paid-ad__title { font-size: 18px; } .c-mega-paid-ad__description { margin-top: 8px; font-size: 16px; line-height: 1.25; } .c-mega-paid-ad__cta { margin-top: 10px; font-size: 14px; letter-spacing: 0.28px; } }"
+  }
+ },
+ {
+  "label": "Coolers & Lunch",
+  "tag": "button",
+  "aria": "Coolers & Lunch",
+  "panelAria": "Coolers & Lunch",
+  "close": "Close menu",
+  "back": {
+   "text": "Back",
+   "aria": "Back to main menu"
+  },
+  "heading": "Coolers & Lunch",
+  "shopAll": {
+   "label": "Shop All Coolers & Lunch",
+   "href": "https://www.hydroflask.com/shop/coolers",
+   "aria": "Shop All Coolers & Lunch"
+  },
+  "featured": {
+   "heading": "Featured",
+   "items": [
+    {
+     "label": "Shop All Coolers & Lunch",
+     "href": "https://www.hydroflask.com/shop/coolers",
+     "aria": "Shop All Coolers & Lunch",
+     "all": true
+    },
+    {
+     "label": "Food Containers",
+     "href": "https://www.hydroflask.com/shop/kitchenware/food-jars",
+     "aria": "Shop Food Containers",
+     "all": false
+    },
+    {
+     "label": "Carryout\u2122 Collection",
+     "href": "https://www.hydroflask.com/shop/coolers/carryout-collection",
+     "aria": "Shop Carryout Cooler Collection",
+     "all": false
+    }
+   ]
+  },
+  "columns": [
+   {
+    "trigger": {
+     "text": "SHOP BY CATEGORY",
+     "aria": "SHOP BY CATEGORY in Coolers & Lunch"
+    },
+    "heading": "SHOP BY CATEGORY",
+    "links": [
+     {
+      "label": "Soft Coolers",
+      "href": "https://www.hydroflask.com/shop/coolers/soft-coolers",
+      "aria": "Shop Soft Coolers Category"
+     },
+     {
+      "label": "Insulated Totes",
+      "href": "https://www.hydroflask.com/shop/coolers/insulated-totes",
+      "aria": "Shop Insulated Totes Category"
+     },
+     {
+      "label": "Lunch Boxes",
+      "href": "https://www.hydroflask.com/shop/coolers/lunch-boxes",
+      "aria": "Shop Lunch Box Category"
+     },
+     {
+      "label": "Bags & Packs",
+      "href": "https://www.hydroflask.com/shop/coolers/bags-packs",
+      "aria": "Shop Bags and Packs Category"
+     },
+     {
+      "label": "Cooler Accessories",
+      "href": "https://www.hydroflask.com/shop/coolers/cooler-accessories",
+      "aria": "Shop Coolers and Lunch Accessories"
+     }
+    ]
+   },
+   {
+    "trigger": {
+     "text": "KITCHEN & DINING",
+     "aria": "KITCHEN & DINING in Coolers & Lunch"
+    },
+    "heading": "KITCHEN & DINING",
+    "links": [
+     {
+      "label": "Shop All Kitchen & Dining",
+      "href": "https://www.hydroflask.com/shop/kitchenware",
+      "aria": "Shop All Kitchen & Dining"
+     },
+     {
+      "label": "Outdoor Kitchen",
+      "href": "https://www.hydroflask.com/shop/kitchenware/outdoor-kitchen",
+      "aria": "Shop all Outdoor Kitchen"
+     },
+     {
+      "label": "Outdoor Dining",
+      "href": "https://www.hydroflask.com/shop/kitchenware/outdoor-dining",
+      "aria": "Shop Outdoor Dining"
+     },
+     {
+      "label": "Food Containers",
+      "href": "https://www.hydroflask.com/shop/kitchenware/food-jars",
+      "aria": "Shop all Food Containers"
+     },
+     {
+      "label": "Coffee & Tea",
+      "href": "https://www.hydroflask.com/shop/bottles-drinkware/coffee-tea",
+      "aria": "Shop Coffee & Tea"
+     }
+    ]
+   }
+  ],
+  "ad": {
+   "html": "c-mega-panel__ads",
+   "imgs": [
+    {
+     "src": "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=",
+     "alt": "Woman walking down the sidewalk carrying a Hydro Flask Carryout Tote"
+    }
+   ],
+   "links": [
+    {
+     "href": "/find-your-cooler",
+     "aria": "Find your cooler - take the quiz",
+     "text": "Find your cooler Find the perfect cooler for you. Take The Quiz"
+    }
+   ],
+   "text": "Find your cooler Find the perfect cooler for you. Take The Quiz .c-mega-paid-ad { position: relative; width: 100%; max-width: 290px; aspect-ratio: 290 / 320; overflow: hidden; background-color: #000; color: #fff; } .c-mega-paid-ad__link, .c-mega-paid-ad__picture, .c-mega-paid-ad__image { display: block; width: 100%; height: 100%; } .c-mega-paid-ad__link { position: relative; color: inherit; text-decoration: none; } .c-mega-paid-ad__picture { position: absolute; inset: 0; z-index: 0; } .c-mega-paid-ad__image { object-fit: cover; object-position: center; transition: transform 200ms ease; } .c-mega-paid-ad__link::before { content: \"\"; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.73) 100%); pointer-events: none; } .c-mega-paid-ad__content { position: absolute; right: 23px; bottom: 17px; left: 23px; z-index: 2; display: flex; flex-direction: column; align-items: flex-start; word-break: break-word; } .c-mega-paid-ad__title, .c-mega-paid-ad__description, .c-mega-paid-ad__cta { margin: 0; color: inherit; } .c-mega-paid-ad__title { font-size: 16px; font-weight: 700; line-height: 1.3; } .c-mega-paid-ad__description { margin-top: 4px; font-size: 14px; font-weight: 400; line-height: 1.15; } .c-mega-paid-ad__cta { margin-top: 6px; font-size: 13px; font-weight: 700; line-height: 1.3; letter-spacing: 0.26px; text-transform: uppercase; text-decoration: underline; text-underline-position: from-font; } .c-mega-paid-ad__link:hover .c-mega-paid-ad__image, .c-mega-paid-ad__link:focus-visible .c-mega-paid-ad__image { transform: scale(1.02); } .c-mega-paid-ad__link:focus-visible { outline: 2px solid currentColor; outline-offset: -4px; } @media (min-width: 1024px) { .c-mega-paid-ad { max-width: 100%; aspect-ratio: 320 / 263; } .c-mega-paid-ad__content { right: 21px; bottom: 11px; left: 20px; } .c-mega-paid-ad__title { font-size: 18px; } .c-mega-paid-ad__description { margin-top: 8px; font-size: 16px; line-height: 1.25; } .c-mega-paid-ad__cta { margin-top: 10px; font-size: 14px; letter-spacing: 0.28px; } }"
+  }
+ },
+ {
+  "label": "Customize",
+  "tag": "button",
+  "aria": "Customize",
+  "panelAria": "Customize",
+  "close": "Close menu",
+  "back": {
+   "text": "Back",
+   "aria": "Back to main menu"
+  },
+  "heading": "Customize",
+  "columns": []
+ },
+ {
+  "label": "Hydro Finder",
+  "tag": "a",
+  "href": "https://www.hydroflask.com/find-your-hydroflask",
+  "aria": "Find the perfect Hydro Flask for you"
+ },
+ {
+  "label": "Explore",
+  "tag": "button",
+  "aria": "Explore",
+  "panelAria": "Explore",
+  "close": "Close menu",
+  "back": {
+   "text": "Back",
+   "aria": "Back to main menu"
+  },
+  "heading": "Explore",
+  "featured": {
+   "heading": "Featured",
+   "items": [
+    {
+     "label": "Trade In Your Bottle",
+     "href": "https://www.hydroflask.com/trade-in",
+     "aria": "Learn More about Bottle Trade in program",
+     "all": false
+    },
+    {
+     "label": "Refer a Friend",
+     "href": "https://www.hydroflask.com/refer",
+     "aria": "Refer a Friend and earn points",
+     "all": false
+    },
+    {
+     "label": "U.S. Snowboard Team",
+     "href": "https://www.hydroflask.com/hydroflask-us-snowboard-team",
+     "aria": "Learn More about US Snowboard Team Collaboration",
+     "all": false
+    },
+    {
+     "label": "Pro Deal",
+     "href": "https://www.hydroflask.com/prodeal/application/index/",
+     "aria": "Learn More about Hydro Flask Pro Deal",
+     "all": false
+    },
+    {
+     "sr": "(opens in a new tab)",
+     "label": "FAQ",
+     "href": "https://faq.hydroflask.com/",
+     "aria": "Frequently Asked Questions",
+     "target": "_blank",
+     "all": false
+    }
+   ]
+  },
+  "columns": [
+   {
+    "trigger": {
+     "text": "ABOUT HYDRO FLASK",
+     "aria": "ABOUT HYDRO FLASK in Explore"
+    },
+    "heading": "ABOUT HYDRO FLASK",
+    "links": [
+     {
+      "label": "Our Story",
+      "href": "https://www.hydroflask.com/our-story",
+      "aria": "Learn more about our story"
+     },
+     {
+      "sr": "(opens in a new tab)",
+      "label": "Careers",
+      "href": "https://careers.helenoftroy.com/",
+      "aria": "Learn more about working for Hydro Flask",
+      "target": "_blank"
+     },
+     {
+      "label": "Warranty",
+      "href": "https://www.hydroflask.com/international-warranty-selector",
+      "aria": "Hydro Flask Warranty"
+     }
+    ]
+   },
+   {
+    "trigger": {
+     "text": "BLOG",
+     "aria": "All blog articles in Explore"
+    },
+    "heading": "BLOG",
+    "headingHref": "https://www.hydroflask.com/blog",
+    "headingAria": "All blog articles",
+    "links": [
+     {
+      "label": "All blog articles",
+      "href": "https://www.hydroflask.com/blog",
+      "aria": "All blog articles"
+     },
+     {
+      "label": "Tips & Tricks",
+      "href": "https://www.hydroflask.com/blog/category/tips-and-tricks",
+      "aria": "Blog articles on tips and tricks"
+     },
+     {
+      "label": "Recipes",
+      "href": "https://www.hydroflask.com/blog/category/recipes",
+      "aria": "Blog articles on recipes"
+     },
+     {
+      "label": "People & Partners",
+      "href": "https://www.hydroflask.com/blog/category/ambassadors",
+      "aria": "Blog articles with people and partners"
+     },
+     {
+      "label": "Clean & Care",
+      "href": "https://www.hydroflask.com/blog/category/clean-care",
+      "aria": "Blog articles for cleaning and product care"
+     },
+     {
+      "label": "Product Recommendations",
+      "href": "https://www.hydroflask.com/blog/category/product-recommendations",
+      "aria": "Blog articles for product recommendations"
+     }
+    ]
+   }
+  ]
+ }
+]

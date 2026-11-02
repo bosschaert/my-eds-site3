@@ -1,0 +1,470 @@
+{
+ "tool": "chrome-compare",
+ "at": "2026-10-29T22:41:30.680Z",
+ "source": "https://www.hydroflask.com/",
+ "build": "https://main--53deb2f5--aemcoder.aem.live/",
+ "profile": "replica",
+ "bar": 0.02,
+ "widths": [
+  390,
+  1440
+ ],
+ "counts": {
+  "error": 26,
+  "warn": 26,
+  "decided": 0
+ },
+ "findings": [
+  {
+   "key": "link-missing@390 link",
+   "width": 390,
+   "path": "link",
+   "id": "link-missing",
+   "severity": "warn",
+   "detail": "top-level link / not in the build header"
+  },
+  {
+   "key": "motion@390 Open Search [click]",
+   "width": 390,
+   "path": "Open Search",
+   "action": "click",
+   "id": "motion",
+   "severity": "warn",
+   "detail": "the source animates spin; the build does not"
+  },
+  {
+   "key": "budget-truncated@390 (source)",
+   "width": 390,
+   "path": "(source)",
+   "id": "budget-truncated",
+   "severity": "warn",
+   "detail": "the source record stopped at depth 1 at Open Search: raise --max-states/--max-depth for full coverage"
+  },
+  {
+   "key": "budget-truncated@390 (build)",
+   "width": 390,
+   "path": "(build)",
+   "id": "budget-truncated",
+   "severity": "warn",
+   "detail": "the build record stopped at depth 2 at Open menu > Drinkware"
+  },
+  {
+   "key": "link-missing@1440 link",
+   "width": 1440,
+   "path": "link",
+   "id": "link-missing",
+   "severity": "warn",
+   "detail": "top-level link / not in the build header"
+  },
+  {
+   "key": "state-missing@1440 Rewards [hover]",
+   "width": 1440,
+   "path": "Rewards",
+   "action": "hover",
+   "id": "state-missing",
+   "severity": "error",
+   "detail": "opens on hover on the source (1 links); the build control is a plain link to /house-of-hydro-rewards"
+  },
+  {
+   "key": "state-missing@1440 USA | EN [hover]",
+   "width": 1440,
+   "path": "USA | EN",
+   "action": "hover",
+   "id": "state-missing",
+   "severity": "error",
+   "detail": "opens on hover on the source (0 links); nothing opens on the build"
+  },
+  {
+   "key": "motion@1440 USA | EN [click]",
+   "width": 1440,
+   "path": "USA | EN",
+   "action": "click",
+   "id": "motion",
+   "severity": "warn",
+   "detail": "the source animates spin; the build does not"
+  },
+  {
+   "key": "motion@1440 USA | EN [click]",
+   "width": 1440,
+   "path": "USA | EN",
+   "action": "click",
+   "id": "motion",
+   "severity": "warn",
+   "detail": "the source animates transform; the build does not"
+  },
+  {
+   "key": "state-missing@1440 USA | EN > Close [hover]",
+   "width": 1440,
+   "path": "USA | EN > Close",
+   "action": "hover",
+   "id": "state-missing",
+   "severity": "error",
+   "detail": "opens on hover on the source (0 links); nothing opens on the build"
+  },
+  {
+   "key": "control-missing@1440 USA | EN > Get 15% Off",
+   "width": 1440,
+   "path": "USA | EN > Get 15% Off",
+   "id": "control-missing",
+   "severity": "error",
+   "detail": "the source menu control opens on key; the build has no control named \"Get 15% Off\""
+  },
+  {
+   "key": "state-extra@1440 Drinkware [hover]",
+   "width": 1440,
+   "path": "Drinkware",
+   "action": "hover",
+   "id": "state-extra",
+   "severity": "warn",
+   "detail": "opens on hover on the build only"
+  },
+  {
+   "key": "state-extra@1440 Drinkware [click]",
+   "width": 1440,
+   "path": "Drinkware",
+   "action": "click",
+   "id": "state-extra",
+   "severity": "warn",
+   "detail": "opens on click on the build only"
+  },
+  {
+   "key": "state-extra@1440 Drinkware [key]",
+   "width": 1440,
+   "path": "Drinkware",
+   "action": "key",
+   "id": "state-extra",
+   "severity": "warn",
+   "detail": "opens on key on the build only"
+  },
+  {
+   "key": "state-extra@1440 Collections [hover]",
+   "width": 1440,
+   "path": "Collections",
+   "action": "hover",
+   "id": "state-extra",
+   "severity": "warn",
+   "detail": "opens on hover on the build only"
+  },
+  {
+   "key": "state-extra@1440 Collections [click]",
+   "width": 1440,
+   "path": "Collections",
+   "action": "click",
+   "id": "state-extra",
+   "severity": "warn",
+   "detail": "opens on click on the build only"
+  },
+  {
+   "key": "state-extra@1440 Collections [key]",
+   "width": 1440,
+   "path": "Collections",
+   "action": "key",
+   "id": "state-extra",
+   "severity": "warn",
+   "detail": "opens on key on the build only"
+  },
+  {
+   "key": "state-extra@1440 Coolers & Lunch [hover]",
+   "width": 1440,
+   "path": "Coolers & Lunch",
+   "action": "hover",
+   "id": "state-extra",
+   "severity": "warn",
+   "detail": "opens on hover on the build only"
+  },
+  {
+   "key": "motion@1440 Coolers & Lunch [click]",
+   "width": 1440,
+   "path": "Coolers & Lunch",
+   "action": "click",
+   "id": "motion",
+   "severity": "warn",
+   "detail": "the build animates opacity; the source does not"
+  },
+  {
+   "key": "state-extra@1440 Coolers & Lunch [key]",
+   "width": 1440,
+   "path": "Coolers & Lunch",
+   "action": "key",
+   "id": "state-extra",
+   "severity": "warn",
+   "detail": "opens on key on the build only"
+  },
+  {
+   "key": "control-missing@1440 Coolers & Lunch > Hydro Finder",
+   "width": 1440,
+   "path": "Coolers & Lunch > Hydro Finder",
+   "id": "control-missing",
+   "severity": "error",
+   "detail": "the source menu control opens on click; the build has no control named \"Hydro Finder\""
+  },
+  {
+   "key": "state-extra@1440 Customize [hover]",
+   "width": 1440,
+   "path": "Customize",
+   "action": "hover",
+   "id": "state-extra",
+   "severity": "warn",
+   "detail": "opens on hover on the build only"
+  },
+  {
+   "key": "state-extra@1440 Customize [click]",
+   "width": 1440,
+   "path": "Customize",
+   "action": "click",
+   "id": "state-extra",
+   "severity": "warn",
+   "detail": "opens on click on the build only"
+  },
+  {
+   "key": "state-extra@1440 Customize [key]",
+   "width": 1440,
+   "path": "Customize",
+   "action": "key",
+   "id": "state-extra",
+   "severity": "warn",
+   "detail": "opens on key on the build only"
+  },
+  {
+   "key": "motion@1440 Explore [hover]",
+   "width": 1440,
+   "path": "Explore",
+   "action": "hover",
+   "id": "motion",
+   "severity": "warn",
+   "detail": "the source animates klaviyo-slideinup; the build does not"
+  },
+  {
+   "key": "state-extra@1440 Explore [click]",
+   "width": 1440,
+   "path": "Explore",
+   "action": "click",
+   "id": "state-extra",
+   "severity": "warn",
+   "detail": "opens on click on the build only"
+  },
+  {
+   "key": "state-extra@1440 Explore [key]",
+   "width": 1440,
+   "path": "Explore",
+   "action": "key",
+   "id": "state-extra",
+   "severity": "warn",
+   "detail": "opens on key on the build only"
+  },
+  {
+   "key": "close-path@1440 Explore",
+   "width": 1440,
+   "path": "Explore",
+   "id": "close-path",
+   "severity": "error",
+   "detail": "Escape closes it on the source, not on the build"
+  },
+  {
+   "key": "close-path@1440 Explore",
+   "width": 1440,
+   "path": "Explore",
+   "id": "close-path",
+   "severity": "error",
+   "detail": "moving the pointer away closes it on the source, not on the build"
+  },
+  {
+   "key": "control-missing@1440 Explore > Hydro Finder",
+   "width": 1440,
+   "path": "Explore > Hydro Finder",
+   "id": "control-missing",
+   "severity": "error",
+   "detail": "the source menu control opens on click; the build has no control named \"Hydro Finder\""
+  },
+  {
+   "key": "motion@1440 Open Search [click]",
+   "width": 1440,
+   "path": "Open Search",
+   "action": "click",
+   "id": "motion",
+   "severity": "warn",
+   "detail": "the source animates opacity; the build does not"
+  },
+  {
+   "key": "motion@1440 Open Search [click]",
+   "width": 1440,
+   "path": "Open Search",
+   "action": "click",
+   "id": "motion",
+   "severity": "warn",
+   "detail": "the source animates spin; the build does not"
+  },
+  {
+   "key": "control-missing@1440 Open Search > menu",
+   "width": 1440,
+   "path": "Open Search > menu",
+   "id": "control-missing",
+   "severity": "error",
+   "detail": "the source menu control opens on hover; the build has no control named \"\""
+  },
+  {
+   "key": "state-missing@1440 Open Search > Search [hover]",
+   "width": 1440,
+   "path": "Open Search > Search",
+   "action": "hover",
+   "id": "state-missing",
+   "severity": "error",
+   "detail": "opens on hover on the source (0 links); nothing opens on the build"
+  },
+  {
+   "key": "control-missing@1440 Open Search > Hydro Finder",
+   "width": 1440,
+   "path": "Open Search > Hydro Finder",
+   "id": "control-missing",
+   "severity": "error",
+   "detail": "the source menu control opens on click; the build has no control named \"Hydro Finder\""
+  },
+  {
+   "key": "close-path@1440 My account",
+   "width": 1440,
+   "path": "My account",
+   "id": "close-path",
+   "severity": "error",
+   "detail": "Escape closes it on the source, not on the build"
+  },
+  {
+   "key": "keyboard@1440 My account",
+   "width": 1440,
+   "path": "My account",
+   "id": "keyboard",
+   "severity": "error",
+   "detail": "Escape returns focus to the trigger on the source, not on the build"
+  },
+  {
+   "key": "state-missing@1440 My minicart, cart is empty > Close minicart [hover]",
+   "width": 1440,
+   "path": "My minicart, cart is empty > Close minicart",
+   "action": "hover",
+   "id": "state-missing",
+   "severity": "error",
+   "detail": "opens on hover on the source (1 links); nothing opens on the build"
+  },
+  {
+   "key": "state-missing@1440 My minicart, cart is empty > Close minicart [click]",
+   "width": 1440,
+   "path": "My minicart, cart is empty > Close minicart",
+   "action": "click",
+   "id": "state-missing",
+   "severity": "error",
+   "detail": "opens on click on the source (0 links); nothing opens on the build"
+  },
+  {
+   "key": "control-missing@1440 My minicart, cart is empty > Close minicart",
+   "width": 1440,
+   "path": "My minicart, cart is empty > Close minicart",
+   "id": "control-missing",
+   "severity": "error",
+   "detail": "the source cart control opens on hover; the build has no control named \"Close minicart\" or of family cart"
+  },
+  {
+   "key": "control-missing@1440 My minicart, cart is empty > Free Shipping Goal Tooltip",
+   "width": 1440,
+   "path": "My minicart, cart is empty > Free Shipping Goal Tooltip",
+   "id": "control-missing",
+   "severity": "error",
+   "detail": "the source menu control opens on click; the build has no control named \"Free Shipping Goal Tooltip\""
+  },
+  {
+   "key": "budget-truncated@1440 (source)",
+   "width": 1440,
+   "path": "(source)",
+   "id": "budget-truncated",
+   "severity": "warn",
+   "detail": "the source record stopped at depth 2 at USA | EN > Close: raise --max-states/--max-depth for full coverage"
+  },
+  {
+   "key": "budget-truncated@1440 (build)",
+   "width": 1440,
+   "path": "(build)",
+   "id": "budget-truncated",
+   "severity": "warn",
+   "detail": "the build record stopped at depth 2 at Drinkware > Find your bottle The ideal sip awaits. Take The Quiz"
+  },
+  {
+   "key": "panel-visual@390 Open Search [click]",
+   "width": 390,
+   "path": "Open Search",
+   "action": "click",
+   "id": "panel-visual",
+   "severity": "error",
+   "detail": "the build state has no crop"
+  },
+  {
+   "key": "panel-visual@390 My account [click]",
+   "width": 390,
+   "path": "My account",
+   "action": "click",
+   "id": "panel-visual",
+   "severity": "error",
+   "detail": "the build state has no crop"
+  },
+  {
+   "key": "panel-visual@390 Open menu [click]",
+   "width": 390,
+   "path": "Open menu",
+   "action": "click",
+   "id": "panel-visual",
+   "severity": "error",
+   "detail": "the build state has no crop"
+  },
+  {
+   "key": "panel-visual@1440 USA | EN [click]",
+   "width": 1440,
+   "path": "USA | EN",
+   "action": "click",
+   "id": "panel-visual",
+   "severity": "error",
+   "detail": "open-state crop differs by 40.2% (bar 2%; source 1079×823, build 744×900; texture 49% thick)"
+  },
+  {
+   "key": "panel-visual@1440 Coolers & Lunch [click]",
+   "width": 1440,
+   "path": "Coolers & Lunch",
+   "action": "click",
+   "id": "panel-visual",
+   "severity": "error",
+   "detail": "open-state crop differs by 86.5% (bar 2%; source 1440×445, build 1425×328; texture 98% thick)"
+  },
+  {
+   "key": "panel-visual@1440 Explore [hover]",
+   "width": 1440,
+   "path": "Explore",
+   "action": "hover",
+   "id": "panel-visual",
+   "severity": "error",
+   "detail": "open-state crop differs by 86.6% (bar 2%; source 1425×445, build 1425×325; texture 99% thick)"
+  },
+  {
+   "key": "panel-visual@1440 Open Search [click]",
+   "width": 1440,
+   "path": "Open Search",
+   "action": "click",
+   "id": "panel-visual",
+   "severity": "error",
+   "detail": "open-state crop differs by 44.0% (bar 2%; source 1329×564, build 1425×634; texture 94% thick)"
+  },
+  {
+   "key": "panel-visual@1440 My account [click]",
+   "width": 1440,
+   "path": "My account",
+   "action": "click",
+   "id": "panel-visual",
+   "severity": "error",
+   "detail": "open-state crop differs by 51.9% (bar 2%; source 264×224, build 244×183; texture 89% thick)"
+  },
+  {
+   "key": "panel-visual@1440 My minicart, cart is empty [click]",
+   "width": 1440,
+   "path": "My minicart, cart is empty",
+   "action": "click",
+   "id": "panel-visual",
+   "severity": "error",
+   "detail": "open-state crop differs by 89.4% (bar 2%; source 1425×900, build 701×900; texture 99% thick)"
+  }
+ ]
+}

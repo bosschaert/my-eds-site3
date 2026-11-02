@@ -1,0 +1,223 @@
+docH=6078 scrollW=1425
+1425x93 | header.hf-header | sticky | bgc=rgb(255, 255, 255)
+27 | 63 | 204x48 | img | src=http://localhost:8791/current/assets/media/logo.svg | alt="Hydroflask store logo" | 300x71
+6 | 966 | 64x20 | a | "Rewards" | 15px/22.5px 400 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/house-of-hydro-rewards
+6 | 1054 | 83x20 | a | "Contact Us" | 15px/22.5px 400 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/contact-us
+6 | 1162 | 75x20 | a | "Gift Cards" | 15px/22.5px 400 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/gift-card
+4 | 1263 | 24x24 | span.hf-locale__flag | bg=url("http://localhost:8791/current/assets/media/countryIcons-sprite-b.png")
+4 | 1297 | 66x24 | span | "USA | EN" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+50 | 399 | 96x24 | button.hf-nav__link | "Drinkware" | 16px/24px 500 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+50 | 515 | 106x24 | button.hf-nav__link | "Collections" | 16px/24px 500 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+50 | 641 | 143x24 | button.hf-nav__link | "Coolers & Lunch" | 16px/24px 500 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+50 | 804 | 99x24 | button.hf-nav__link | "Customize" | 16px/24px 500 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+50 | 922 | 102x24 | a.hf-nav__link | "Hydro Finder" | 16px/24px 500 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/find-your-hydroflask
+50 | 1044 | 74x24 | button.hf-nav__link | "Explore" | 16px/24px 500 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+47 | 1337 | 1x1 | span.sr-only | absolute | "My minicart, cart is empty" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+48 | 1341 | 21x24 | span.hf-header__cart-count | "0" | 16px/24px 500 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+93 | -1425 | 1425x50 | div.hf-promo__slide | bgc=rgb(60, 60, 60) | pad=13px 20px
+107 | -960 | 311x21 | span | "Just Dropped: Gigi Perez x Hydro Flask." | 16px/24px 400 "HydroFlask Sans" | rgb(255, 255, 255) | ta=center | pad=0px 5px 0px 0px
+107 | -649 | 184x21 | span | "Shop Exclusive Designs" | 16px/24px 400 "HydroFlask Sans" | rgb(255, 255, 255) | ta=center
+93 | 1425x50 | div.hf-promo__slide | bgc=rgb(0, 0, 0) | pad=13px 20px
+107 | 557 | 233x21 | span | "Free shipping on orders $49+" | 16px/24px 400 "HydroFlask Sans" | rgb(255, 255, 255) | ta=center | pad=0px 5px 0px 0px
+107 | 789 | 79x21 | span | "Shop Now" | 16px/24px 400 "HydroFlask Sans" | rgb(255, 255, 255) | ta=center
+93 | 1425 | 1425x50 | div.hf-promo__slide | bgc=rgb(46, 52, 66) | pad=13px 20px
+107 | 1818 | 452x21 | span | "LIMITED EDITION: Seasonal sips inspired by the night sky." | 16px/24px 400 "HydroFlask Sans" | rgb(255, 255, 255) | ta=center | pad=0px 5px 0px 0px
+107 | 2270 | 188x21 | span | "Shop Midnight Glimmer" | 16px/24px 400 "HydroFlask Sans" | rgb(255, 255, 255) | ta=center
+679 | 1361 | 44x44 | button.hf-banner__pause | bgc=rgba(0, 0, 0, 0.7) | bd=2px solid rgb(255, 255, 255) | rad=4px | pad=8px 12px
+690 | 1375 | 16x21 | span.pause-icon | "⏸" | 16px/24px 400 "HydroFlask Sans" | rgb(255, 255, 255) | ta=center
+143 | 1425x600 | section.hf-carle | relative | bgc=rgb(165, 204, 211)
+143 | 1440x600 | img | src=http://localhost:8791/current/assets/media/hohfus-5586-featured-desktop-2x.jpg | alt="Boy and a girl sitting with cardboard cut outs of Eric Carle™ Bears with Kids Hydro Flask bottles and tumblers." | fit=cover | 2880x1200
+329 | 1010 | 408x142 | span.hf-carle__title | "World of Eric Carle" | 71px/71px 700 "HydroFlask Sans" | rgb(89, 57, 20) | ls=0.1px
+413 | 1360 | 22x38 | span.hf-carle__tm | absolute | "™" | 38px/38px 700 "HydroFlask Sans" | rgb(89, 57, 20) | ls=0.1px
+471 | 1010 | 408x41 | span.hf-carle__subtitle | "x Hydro Flask" | 41px/41px 700 "HydroFlask Sans" | rgb(89, 57, 20) | ls=0.1px
+534 | 1010 | 368x62 | p.hf-carle__text | "Brown Bear and friends, now on your favorite Hydro Flasks." | 22px/30.8px 400 "HydroFlask Sans" | rgb(89, 57, 20)
+612 | 1010 | 173x50 | a.hf-carle__cta | "Shop Eric Carle™" | 16px/29px 700 "HydroFlask Sans" | rgb(89, 57, 20) | ls=0.1px | bd=3px solid rgb(89, 57, 20) | rad=12px | href=/shop/collections/eric-carle-water-bottles
+742 | -1 | 1x1 | span.sr-only.hf-banner__announce | absolute | "Showing slide 1 of 2" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0)
+759 | 684 | 24x24 | button.hf-banner__dot | bgc=rgb(0, 0, 0) | bd=2px solid rgb(0, 0, 0) | rad=50%
+759 | 718 | 24x24 | button.hf-banner__dot | bgc=rgb(255, 255, 255) | bd=2px solid rgb(0, 0, 0) | rad=50%
+799 | 1425x814 | section.hf-tiles | bgc=rgb(255, 255, 255)
+811 | 675 | 340x394 | a.hf-tiles__tile | relative | bgc=rgb(255, 255, 255) | href=/shop/collections/tailgating
+811 | 675 | 340x400 | img | src=http://localhost:8791/current/assets/media/hohfus-5461-tile-1-desktop.jpg | alt="Hydro Flask Carryout Cooler and Travel Tumbler" | fit=cover | 680x800
+1155 | 799 | 93x50 | div.hf-tiles__title | "Tailgating" | 18px/28px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ls=0.1px | ta=center | pad=8px 0px
+811 | 1017 | 340x394 | a.hf-tiles__tile | relative | bgc=rgb(255, 255, 255) | href=/shop/bottles-drinkware/coffee-tea
+811 | 1017 | 340x400 | img | src=http://localhost:8791/current/assets/media/hohfus-5461-tile-2-desktop.jpg | alt="Hydro Flask Coffee Flip Sip, Mug and Cup products" | fit=cover | 680x800
+1155 | 1131 | 113x50 | div.hf-tiles__title | "Coffee & Tea" | 18px/28px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ls=0.1px | ta=center | pad=8px 0px
+1207 | 675 | 340x394 | a.hf-tiles__tile | relative | bgc=rgb(255, 255, 255) | href=/shop/collections/halloween-shop
+1207 | 675 | 340x400 | img | src=http://localhost:8791/current/assets/media/hohfus-5461-tile-3-desktop.jpg | alt="Hydro Flask 32 oz Bottle, Travel Bottle and Micro Hydro" | fit=cover | 680x800
+1551 | 769 | 152x50 | div.hf-tiles__title | "Halloween Spirit" | 18px/28px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ls=0.1px | ta=center | pad=8px 0px
+1207 | 1017 | 340x394 | a.hf-tiles__tile | relative | bgc=rgb(255, 255, 255) | href=/shop/bottles?visual-filter=Bestsellers
+1207 | 1017 | 340x400 | img | src=http://localhost:8791/current/assets/media/hohfus-5461-tile-4-desktop.jpg | alt="Hydro Flask 24 oz Bottle, Micro Hydro and Lightweight Chug Cap" | fit=cover | 680x800
+1551 | 1097 | 180x50 | div.hf-tiles__title | "Everyday Hydration" | 18px/28px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ls=0.1px | ta=center | pad=8px 0px
+811 | 70 | 568x782 | div.hf-tiles__hero | bgc=rgb(255, 255, 255)
+811 | 70 | 568x710 | a.hf-tiles__hero-image | relative | bgc=rgb(0, 0, 0) | href=/shop/new-arrivals
+811 | 70 | 568x710 | img | src=http://localhost:8791/current/assets/media/hohfus-5461-hero-desktop.jpg | alt="Friends gathered outside a coffee shop with Hydro Flask bottles and totes" | fit=cover | 1138x1420
+1537 | 70 | 320x20 | p.hf-tiles__tagline | "Kickoff cooler weather with Hydro Flask." | 16px/20px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ls=0.1px
+1537 | 428 | 210x56 | a.hf-tiles__cta | "Shop New" | 16px/28px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ls=0.1px | bgc=rgb(255, 255, 255) | bd=4px solid rgb(0, 0, 0) | rad=14px | pad=10px 18px | href=/shop/new-arrivals
+1695 | 63 | 1300x420 | div.hf-gigi__container | relative | bgc=rgb(0, 0, 0)
+1695 | 63 | 1300x420 | img.hf-gigi__bg | absolute | src=http://localhost:8791/current/assets/media/hohfus-5640-banner-desktop-2x.jpg | alt="Artist Gigi Perez holding her custom Hydro Flask bottle in a music studio" | fit=cover | 2600x840
+1773 | 141 | 235x35 | p.hf-gigi__eyebrow | "Hydro Flask x" | 35px/35px 700 "HydroFlask Sans" | rgb(255, 255, 255) | ls=0.1px
+1825 | 134 | 534x110 | img | src=http://localhost:8791/current/assets/media/hohfus-5640-signature-desktop-2x.png | alt="Gigi Perez" | 1102x226
+1934 | 133 | 1x1 | h2.sr-only | absolute | "Gigi Perez" | 16px/24px 700 "HydroFlask Sans" | rgb(0, 0, 0)
+1936 | 139 | 253x54 | p.hf-gigi__text | "Featuring custom doodles hand drawn by Gigi." | 18px/27px 400 "HydroFlask Sans" | rgb(255, 255, 255) | ls=0.1px
+1998 | 139 | 156x49 | a.hf-gigi__cta | "Shop Now" | 18px/27.9px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ls=0.1px | bgc=rgb(255, 255, 255) | bd=4px solid rgb(255, 255, 255) | rad=12px | pad=10px | href=/gigi-perez-bottles
+2163 | 1425x670 | section.hf-products | bgc=rgb(241, 241, 241) | pad=50px 0px 104px
+2213 | 87 | 346x38 | h2.hf-products__title | "Lightweight Collection" | 30px/37.5px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ls=0.12px
+2277 | 87 | 180x48 | a.hf-products__cta | bd=3px solid rgb(0, 0, 0) | rad=12px | href=/shop/lightweight-water-bottles
+2280 | 107 | 140x42 | span | "Shop Lightweight" | 16px/42px 700 "HydroFlask Sans" | rgb(0, 0, 0)
+2317 | 75 | 304x304 | img | src=http://localhost:8791/current/assets/media/hohfus-5435-slider-4-5.png | alt="12 oz Lightweight Mug" | fit=contain | 600x600
+2637 | 75 | 304x20 | a.hf-products__name | "12 oz Lightweight Mug" | 16px/20px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center | href=https://www.hydroflask.com/12-oz-lightweight-mug
+2656 | 205 | 1x1 | span.sr-only | absolute | "Final" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2658 | 200 | 53x21 | span.price | "$34.95" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2317 | 395 | 304x304 | img | src=http://localhost:8791/current/assets/media/hohfus-5435-slider-4-4.png | alt="16 oz Lightweight Flip Sip Travel Mug" | fit=contain | 600x600
+2637 | 395 | 304x20 | a.hf-products__name | "16 oz Lightweight Flip Sip Travel Mug" | 16px/20px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center | href=https://www.hydroflask.com/16-oz-lightweight-flip-sip-travel-mug
+2656 | 527 | 1x1 | span.sr-only | absolute | "Final" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2658 | 522 | 50x21 | span.price | "$37.95" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2317 | 715 | 304x304 | img | src=http://localhost:8791/current/assets/media/5210-3_1.png | alt="12 oz Lightweight Mug - Cypress Green" | fit=contain | 600x600
+2637 | 715 | 304x40 | a.hf-products__name | "12 oz Lightweight Mug - Cypress Green" | 16px/20px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center | href=https://www.hydroflask.com/12-oz-lightweight-mug?color=Cypress+Green
+2676 | 845 | 1x1 | span.sr-only | absolute | "Final" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2678 | 840 | 53x21 | span.price | "$34.95" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2317 | 1035 | 304x304 | img | src=http://localhost:8791/current/assets/media/5210-4_1.png | alt="24 oz Lightweight Flex Straw Bottle" | fit=contain | 600x600
+2637 | 1035 | 304x20 | a.hf-products__name | "24 oz Lightweight Flex Straw Bottle" | 16px/20px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center | href=https://www.hydroflask.com/24-oz-lightweight-flex-straw-bottle
+2656 | 1165 | 1x1 | span.sr-only | absolute | "Final" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2658 | 1160 | 53x21 | span.price | "$44.95" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2317 | 1355 | 304x304 | img | src=http://localhost:8791/current/assets/media/5210-5_1.png | alt="32 oz Lightweight Chug Cap Bottle - Atlas" | fit=contain | 600x600
+2637 | 1355 | 304x40 | a.hf-products__name | "32 oz Lightweight Chug Cap Bottle - Atlas" | 16px/20px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center | href=https://www.hydroflask.com/32-oz-lightweight-chug-cap-bottle?color=Atlas
+2676 | 1485 | 1x1 | span.sr-only | absolute | "Final" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2678 | 1480 | 53x21 | span.price | "$49.95" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2317 | 1675 | 304x304 | img | src=http://localhost:8791/current/assets/media/5210-6.png | alt="16 oz Lightweight Chug Cap Bottle" | fit=contain | 600x600
+2637 | 1675 | 304x20 | a.hf-products__name | "16 oz Lightweight Chug Cap Bottle" | 16px/20px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center | href=https://www.hydroflask.com/16-oz-lightweight-chug-cap-bottle
+2656 | 1807 | 1x1 | span.sr-only | absolute | "Final" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2658 | 1802 | 50x21 | span.price | "$37.95" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2317 | 1995 | 304x304 | img | src=../current/assets/media/5210-7-new.png | alt="32 oz Lightweight Flex Straw Bottle" | fit=contain
+2637 | 1995 | 304x20 | a.hf-products__name | "32 oz Lightweight Flex Straw Bottle" | 16px/20px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center | href=https://www.hydroflask.com/32-oz-lightweight-flex-straw-cap-bottle
+2656 | 2125 | 1x1 | span.sr-only | absolute | "Final" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2658 | 2120 | 53x21 | span.price | "$49.95" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2317 | 2315 | 304x304 | img | src=../current/assets/media/5210-8.png | alt="40 oz Lightweight Flex Cap Bottle" | fit=contain
+2637 | 2315 | 304x20 | a.hf-products__name | "40 oz Lightweight Flex Cap Bottle" | 16px/20px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center | href=https://www.hydroflask.com/40-oz-lightweight-flex-cap-bottle
+2656 | 2445 | 1x1 | span.sr-only | absolute | "Final" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2658 | 2440 | 52x21 | span.price | "$54.95" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2725 | 81 | 158x4 | button.hf-products__bar.is-current | bgc=rgb(0, 0, 0)
+2726 | 159 | 1x1 | span.sr-only | absolute | "Go to slide 1" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2725 | 239 | 158x4 | button.hf-products__bar.is-current | bgc=rgb(0, 0, 0)
+2726 | 317 | 1x1 | span.sr-only | absolute | "Go to slide 2" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2725 | 397 | 158x4 | button.hf-products__bar.is-current | bgc=rgb(0, 0, 0)
+2726 | 475 | 1x1 | span.sr-only | absolute | "Go to slide 3" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2725 | 555 | 158x4 | button.hf-products__bar.is-current | bgc=rgb(0, 0, 0)
+2726 | 633 | 1x1 | span.sr-only | absolute | "Go to slide 4" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2725 | 713 | 158x4 | button.hf-products__bar | bgc=rgb(132, 132, 132)
+2726 | 791 | 1x1 | span.sr-only | absolute | "Go to slide 5" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2725 | 871 | 158x4 | button.hf-products__bar | bgc=rgb(132, 132, 132)
+2726 | 949 | 1x1 | span.sr-only | absolute | "Go to slide 6" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2725 | 1029 | 158x4 | button.hf-products__bar | bgc=rgb(132, 132, 132)
+2726 | 1107 | 1x1 | span.sr-only | absolute | "Go to slide 7" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2725 | 1187 | 158x4 | button.hf-products__bar | bgc=rgb(132, 132, 132)
+2726 | 1265 | 1x1 | span.sr-only | absolute | "Go to slide 8" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+2915 | 70 | 643x420 | div.hf-sundae__image-block | relative | bgc=rgb(0, 0, 0)
+3066 | 300 | 183x29 | span.hf-sundae__sup | "Limited Edition" | 22px/33px 700 "HydroFlask Sans" | rgb(223, 222, 220) | ls=0.1px | uppercase | ta=center
+3097 | 244 | 295x90 | h2.hf-sundae__heading | "Sundae School x Hydro Flask" | 36px/45px 700 "HydroFlask Sans" | rgb(223, 222, 220) | ta=center
+2915 | 70 | 643x420 | img.hf-sundae__bg | absolute | src=http://localhost:8791/current/assets/media/hohfus-5287-background-desktop-2x.jpg | alt="Sundae School Limited Edition Bottle design" | fit=cover | 1300x840
+2915 | 713 | 643x420 | div.hf-sundae__text-block | relative | bgc=rgb(215, 215, 211)
+3066 | 887 | 293x83 | p.hf-sundae__desc | "An iconic Sundae School fleece transformed into an iconic Hydro Flask bottle." | 22px/27.5px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ls=0.1px | ta=center
+3160 | 933 | 202x54 | a.hf-sundae__cta | "Shop Sundae School" | 16px/54px 700 "HydroFlask Sans" | rgb(255, 255, 255) | ta=center | bgc=rgb(0, 0, 0) | rad=12px | pad=0px 10px | href=/sundae-school-24-oz-bottle
+2855 | 550 | 325x585 | img | src=http://localhost:8791/current/assets/media/hohfus-5287-product-desktop-2x.png | fit=cover | 686x1170
+3431 | 1425x650 | section.hf-products.hf-products--lunch | bgc=rgb(240, 236, 230) | pad=50px 0px 104px
+3466 | 87 | 217x38 | h2.hf-products__title | "Level up lunch" | 30px/37.5px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ls=0.12px
+3530 | 87 | 190x50 | a.hf-products__cta | bd=4px solid rgb(0, 0, 0) | rad=12px | href=/shop/coolers/lunch-boxes
+3534 | 130 | 104x42 | span | "Shop Lunch" | 18px/42px 700 "HydroFlask Sans" | rgb(0, 0, 0)
+3585 | 81 | 304x304 | img | src=http://localhost:8791/current/assets/media/hohfus-5435-slider-8-6.png | alt="Carryout™ Lunch Bag" | fit=contain | 600x600
+3905 | 81 | 304x20 | a.hf-products__name | "Carryout™ Lunch Bag" | 16px/20px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center | href=https://www.hydroflask.com/carryout-lunch-bag
+3924 | 205 | 1x1 | span.sr-only | absolute | "Final" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+3926 | 206 | 53x21 | span.price | "$49.95" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+3585 | 401 | 304x304 | img | src=http://localhost:8791/current/assets/media/hohfus-5003-slide-2-clam.png | alt="Carryout™ Lunch Box" | fit=contain | 600x600
+3905 | 401 | 304x20 | a.hf-products__name | "Carryout™ Lunch Box" | 16px/20px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center | href=https://www.hydroflask.com/carryout-lunch-box
+3924 | 525 | 1x1 | span.sr-only | absolute | "Final" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+3926 | 526 | 53x21 | span.price | "$39.95" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+3585 | 721 | 304x304 | img | src=http://localhost:8791/current/assets/media/hohfus-5435-slider-8-5.png | alt="Carryout™ Lunch Tote" | fit=contain | 600x600
+3905 | 721 | 304x20 | a.hf-products__name | "Carryout™ Lunch Tote" | 16px/20px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center | href=https://www.hydroflask.com/carryout-lunch-tote
+3924 | 845 | 1x1 | span.sr-only | absolute | "Final" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+3926 | 846 | 53x21 | span.price | "$49.95" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+3585 | 1041 | 304x304 | img | src=http://localhost:8791/current/assets/media/hohfus-5435-slider-8-7.png | alt="Carryout™ Lunch Rolltop" | fit=contain | 600x600
+3905 | 1041 | 304x20 | a.hf-products__name | "Carryout™ Lunch Rolltop" | 16px/20px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center | href=https://www.hydroflask.com/carryout-lunch-rolltop
+3924 | 1165 | 1x1 | span.sr-only | absolute | "Final" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+3926 | 1166 | 53x21 | span.price | "$39.95" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+3973 | 81 | 316x4 | button.hf-products__bar.is-current | bgc=rgb(0, 0, 0)
+3974 | 238 | 1x1 | span.sr-only | absolute | "Go to slide 1" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+3973 | 397 | 316x4 | button.hf-products__bar.is-current | bgc=rgb(0, 0, 0)
+3974 | 554 | 1x1 | span.sr-only | absolute | "Go to slide 2" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+3973 | 713 | 316x4 | button.hf-products__bar | bgc=rgb(132, 132, 132)
+3974 | 870 | 1x1 | span.sr-only | absolute | "Go to slide 3" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+3973 | 1029 | 316x4 | button.hf-products__bar | bgc=rgb(132, 132, 132)
+3974 | 1186 | 1x1 | span.sr-only | absolute | "Go to slide 4" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+4137 | 61 | 1304x44 | h3.hf-trending__title | "Trending Now" | 38px/43.966px 700 "HydroFlask Sans" | rgb(0, 0, 0)
+4221 | 61 | 383x59 | a.hf-trending__link | relative | "Bottles & Drinkware" | 30px/59px 700 "HydroFlask Sans" | rgb(0, 0, 0) | pad=0px 30px 0px 0px | href=/shop/bottles-drinkware
+4221 | 521 | 383x59 | a.hf-trending__link | relative | "New Colors" | 30px/59px 700 "HydroFlask Sans" | rgb(0, 0, 0) | pad=0px 30px 0px 0px | href=/shop/new-arrivals
+4221 | 981 | 383x59 | a.hf-trending__link | relative | "Bundles" | 30px/59px 700 "HydroFlask Sans" | rgb(0, 0, 0) | pad=0px 30px 0px 0px | href=/shop/bundles
+4316 | 61 | 383x59 | a.hf-trending__link | relative | "Coolers & Totes" | 30px/59px 700 "HydroFlask Sans" | rgb(0, 0, 0) | pad=0px 30px 0px 0px | href=/shop/coolers
+4316 | 521 | 383x59 | a.hf-trending__link | relative | "Micro Hydro" | 30px/59px 700 "HydroFlask Sans" | rgb(0, 0, 0) | pad=0px 30px 0px 0px | href=/shop/mini-water-bottles
+4316 | 981 | 383x59 | a.hf-trending__link | relative | "Lightweight" | 30px/59px 700 "HydroFlask Sans" | rgb(0, 0, 0) | pad=0px 30px 0px 0px | href=/shop/lightweight-water-bottles
+4447 | 713 | 663x439 | img | absolute | src=http://localhost:8791/current/assets/media/hohfus-4745-beach-desktop-2x.jpg | alt="hydro flask insulated cooler backpack and water bottle on beach with people in background" | fit=cover | 1326x878
+4551 | 1167 | 159x148 | img | src=http://localhost:8791/current/assets/media/hohfus-4745-pwwp-logo.png | 319x296
+4447 | 50 | 663x439 | div.hf-advocacy__content | bgc=rgb(204, 214, 203) | pad=84px 0px 0px 159px
+4531 | 209 | 411x68 | h3.hf-advocacy__heading | "Our commitment to responsible advocacy." | 27px/33.75px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ls=0.1472px
+4602 | 209 | 411x118 | p.hf-advocacy__text | "Hydro Flask is proud to support Ocean Conservancy® as the official hydration partner and Platinum Champion of its Protec" | 19.63px/29.445px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ls=0.1472px
+4748 | 209 | 250x56 | a.hf-advocacy__cta | "Learn More" | 16px/28px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ls=0.12px | ta=center | bgc=rgb(255, 255, 255) | rad=12px | href=/brand-values
+4958 | 1425x1120 | footer#page-footer.hf-footer | bgc=rgb(241, 241, 241)
+4958 | 713x1120 | img | src=http://localhost:8791/current/assets/media/4575-footer-featured-image-desktop.jpg | fit=cover | 1440x2040
+4998 | 323 | 356x98 | img.hf-footer__logo | absolute | src=http://localhost:8791/current/assets/media/4383-logo-c-u.png | alt="HydroFlask logo" | fit=cover | 356x98
+5116 | 445 | 234x60 | a.hf-footer__shop | absolute | "Shop Now" | 18px/28px 700 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center | bgc=rgb(255, 255, 255) | bd=4px solid rgb(255, 255, 255) | rad=14px | pad=12px 0px | href=/shop/new-arrivals?visual-filter=Best+Sellers
+5014 | 823 | 260x56 | h2.hf-footer__title | "Support" | 18px/28px 700 "HydroFlask Sans" | rgb(0, 0, 0) | pad=12px 0px 16px
+5073 | 823 | 260x20 | a | "Contact Us" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/contact-us/
+5107 | 823 | 260x20 | a | "Find a Store" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/storelocator/
+5141 | 823 | 260x20 | a | "FAQs" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://faq.hydroflask.com/
+5175 | 823 | 260x20 | a | "Warranty" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://faq.hydroflask.com/faq-s-product-warranty-ryhfN7dNo
+5209 | 823 | 260x20 | a | "Shipping & Returns" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://faq.hydroflask.com/faqs-shipping-handling-SJhv655Np
+5243 | 823 | 260x20 | a | "Track Your Order" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/track/order/status/
+5277 | 823 | 260x20 | a | "Gift Cards" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/gift-card/
+5311 | 823 | 260x20 | a | "Gift Cards Terms and Conditions" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/gift-card-terms-and-conditions/
+5345 | 823 | 260x20 | a | "Store Credit Terms and Conditions" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/store-credit-terms-and-conditions/
+5014 | 1103 | 260x56 | h2.hf-footer__title | "Company" | 18px/28px 700 "HydroFlask Sans" | rgb(0, 0, 0) | pad=12px 0px 16px
+5073 | 1103 | 260x20 | a | "Our Story" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/our-story/
+5107 | 1103 | 260x20 | a | "Brand Values" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/brand-values/
+5141 | 1103 | 260x20 | a | "Careers" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://careers.helenoftroy.com/
+5140 | 1156 | 1x1 | span.sr-only | absolute | "(Opens in a new window)" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0)
+5175 | 1103 | 260x20 | a | "Intentional Design" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/bluesign/
+5405 | 823 | 260x56 | h2.hf-footer__title | "Account" | 18px/28px 700 "HydroFlask Sans" | rgb(0, 0, 0) | pad=12px 0px 16px
+5464 | 823 | 260x20 | a | "Account" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/customer/account/
+5498 | 823 | 260x20 | a | "Refer A Friend" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/refer/
+5532 | 823 | 260x20 | a | "Loyalty Rewards" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/house-of-hydro-rewards/
+5566 | 823 | 260x20 | a | "Loyalty Terms & Conditions" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/house-of-hydro-rewards-terms-and-conditions/
+5600 | 823 | 260x20 | a | "Trade-In Program" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/trade-in/
+5405 | 1103 | 260x56 | h2.hf-footer__title | "Resources" | 18px/28px 700 "HydroFlask Sans" | rgb(0, 0, 0) | pad=12px 0px 16px
+5464 | 1103 | 260x20 | a | "Group Customization" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/corporate-purchasing/
+5498 | 1103 | 260x20 | a | "Dealer Central" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://faq.hydroflask.com/dealer-central-SJHWE7dEj
+5532 | 1103 | 260x20 | a | "Pro Deal" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.hydroflask.com/prodeal/application/index/
+5566 | 1103 | 260x20 | a | "Product Donation Inquiry" | 14px/20px 300 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.cybergrants.com/pls/cybergrants/quiz.display_question?x_gm_id=7616&x_quiz_id=10334&x_order_by=1
+5663 | 823 | 240x56 | h2.hf-footer__title.hf-footer__touch-title | "Stay in touch!" | 18px/28px 700 "HydroFlask Sans" | rgb(0, 0, 0) | pad=12px 0px 16px
+5719 | 823 | 240x40 | p.hf-footer__touch-text | "Be the first to know about new products, special offers, & more." | 14px/20px 400 "HydroFlask Sans" | rgb(0, 0, 0)
+5795 | 827 | 24x24 | img | src=http://localhost:8791/current/assets/media/instagram.svg | alt="instagram" | 32x32
+5806 | 838 | 1x1 | span.sr-only | absolute | "(Opens in a new window)" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0)
+5795 | 871 | 24x24 | img | src=http://localhost:8791/current/assets/media/tiktok3.svg | alt="tiktok" | 32x32
+5806 | 882 | 1x1 | span.sr-only | absolute | "(Opens in a new window)" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0)
+5795 | 915 | 24x24 | img | src=http://localhost:8791/current/assets/media/facebook.svg | alt="facebook" | 32x32
+5806 | 926 | 1x1 | span.sr-only | absolute | "(Opens in a new window)" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0)
+5795 | 959 | 24x24 | img | src=http://localhost:8791/current/assets/media/youtube.svg | alt="youtube" | 32x32
+5806 | 970 | 1x1 | span.sr-only | absolute | "(Opens in a new window)" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0)
+5795 | 1003 | 24x24 | img | src=http://localhost:8791/current/assets/media/pinterest.svg | alt="pinterest" | 32x32
+5806 | 1014 | 1x1 | span.sr-only | absolute | "(Opens in a new window)" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0)
+5663 | 1063 | 300x27 | label | "Email address" | 16px/21px 700 "HydroFlask Sans" | rgb(0, 0, 0) | pad=0px 0px 6px
+5690 | 1063 | 223x54 | input#hf-newsletter-email | bgc=rgb(241, 241, 241) | bd=1px solid rgb(148, 149, 150) | rad=14px | pad=0px 0px 0px 16px
+5690 | 1286 | 77x54 | button | "Submit" | 16px/16px 400 Poppins | rgb(255, 255, 255) | ta=center | bgc=rgb(0, 0, 0) | rad=14px | pad=0px 10px
+5752 | 1063 | 300x120 | span.hf-footer__consent | "By entering my email above, I consent to receiving marketing and other promotional emails and consent to the . I may opt" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0)
+5825 | 1093 | 107x21 | a | "Privacy Policy" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 116, 162) | underline | href=/privacy
+5912 | 823 | 250x20 | p.hf-footer__legal.hf-footer__copy | "© Hydro Flask. &" | 14px/20px 400 "HydroFlask Sans" | rgb(0, 0, 0)
+5913 | 838 | 34x18 | span | "2026" | 14px/20px 400 "HydroFlask Sans" | rgb(0, 0, 0)
+5913 | 964 | 42x18 | a | "Terms" | 14px/20px 400 "HydroFlask Sans" | rgb(0, 0, 0) | href=/terms/
+5913 | 1022 | 50x18 | a | "Privacy" | 14px/20px 400 "HydroFlask Sans" | rgb(0, 0, 0) | href=/privacy/
+5872 | 1299 | 64x24 | img | src=http://localhost:8791/current/assets/media/accessibility_icon.svg | alt="Essential Accessibility assistive technology app for people with physical disabilities" | 300x113
+5895 | 1298 | 1x1 | span.sr-only | absolute | "(Opens in a new window)" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0)
+5908 | 1263 | 24x24 | span.hf-locale__flag | bg=url("http://localhost:8791/current/assets/media/countryIcons-sprite-b.png")
+5908 | 1297 | 66x24 | span | "USA | EN" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 0, 0) | ta=center
+5955 | 823 | 540x20 | a.hf-footer__legal.hf-footer__trafficking | "Anti-human Trafficking and Modern Slavery Statement | Helen of Troy" | 14px/20px 400 "HydroFlask Sans" | rgb(0, 0, 0) | href=https://www.helenoftroy.com/anti-human-trafficking-and-modern-slavery-statement/
+5954 | 1300 | 1x1 | span.sr-only | absolute | "(Opens in a new window)" | 14px/20px 400 "HydroFlask Sans" | rgb(0, 0, 0)
+6020 | 823 | 355x21 | a.hf-footer__dns | "Do Not Sell or Share My Personal Information" | 16px/24px 400 "HydroFlask Sans" | rgb(0, 116, 162) | underline | href=https://www.hydroflask.com/privacy/
+6022 | 1178 | 133x18 | a.hf-footer__legal | "Cookie Preferences" | 14px/20px 400 "HydroFlask Sans" | rgb(0, 0, 0) | href=#cookie-preferences

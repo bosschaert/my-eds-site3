@@ -1,21 +1,35 @@
-# Rollout report — www.continental.com → main--d9ddbc54--aemcoder (2026-10-10)
+# Rollout report — https://www.hydroflask.com/ → aem-eds (2026-10-29)
 
-Flow: replica (same design). Publish decision: publish (aem.live).
+```
+rollout — www.hydroflask.com → aem-eds
+==================================================
+Pages       1 total · 1 verified · 0 deployed · 0 pending · 0 content-pending · 0 stale
+Templates   1 (landing 1/1)
+Blocks      7 total · 7 converted · 0 pending   (+ header, footer foundation)
+Quality     health 100/100 · open P1 0 / P2 0 / P3 0
+Pixel table prototypes 1/1 PASS · deployed 1/1 PASS (pixel-only 1/1) — gates/{prototypes,all}-1440/summary.md
+            published origin: 1440 0.39% Δh 0 · 360 1.89% Δh 0 · clip 0 · content missing 0
+To deliver  none (scope: home page only)
+Content     0 pages awaiting content track
+```
 
-| | |
-|---|---|
-| **Pages** | 101 verified live = 99 in-scope source pages (site plan, 100 selected; `/index` ≡ `/`) + 2 dynamics-built search endpoints (`/en/general/search`, `/de/meta/suche`, noindex) |
-| **Templates** | 5 replica templates — home (3), hub (18), content (65), legal (11), stories (2) — plus search-results (2) |
-| **Blocks** | 15 distinct module blocks in the plan, 15 delivered; 36 block folders in `blocks/` |
-| **Fidelity** | published-origin gate, both widths: 99/99 pass (78 raw, 21 with documented symmetric-evidence overrides) — `stardust/rollout/gate-merged.json` |
-| **Quality** | optimize health 100, open P1 0; 125 findings mirror the source (informational); 7 residual P2/P3 accepted with evidence |
-| **Links** | 0 broken internal links; 607 out-of-scope menu/footer targets point at www.continental.com (`e2-repointed-targets.txt`) |
-| **Site** | sitemap served 99; redirects sheet 98 rows live; `/` 200; 20 chrome docs noindex |
-| **Dynamics** | `stardust/dynamics/parity.json`: 25 checks, 22 pass |
+Live: https://main--53deb2f5--aemcoder.aem.live/ (preview https://main--53deb2f5--aemcoder.aem.page/). Published: `/` (index), `/nav`, `/footer` (noindex). Redirects: none needed (root delivered as the index document).
 
-## To deliver / owner decisions
-- AdmiralCloud video embeds answer 403 for the aem.live host — the vendor allowlist needs the new host (video falls back to its poster until then).
-- hreflang `<link>` alternates are not emitted (source has them) — to add in `head`/`scripts` when the locale set is final.
-- Download cart: the header cart is inert; per-file download links work. A zip endpoint is the owner's call.
-- Site search covers the 99 migrated pages only (source search also returns pages outside this scope).
-- Pages outside the 100-page plan stay on www.continental.com; menus and footers link there.
+## Dynamic parity (stardust/qa/dynamics-report.md — 9/9 checks PASS on aem.live)
+
+| feature | class | status | owner decision | check |
+|---|---|---|---|---|
+| hero carousel (auto-rotate, pause, dots) | M/V | done | — | dom-count ×2, rotation advances unpoked (E) |
+| product carousels (2) | L | done, snapshot 2026-10-29 | D3 product data refresh | dom-count ×2 |
+| header mega-menu, account, store switcher, cart | M | done | — | dom-count, click-dialog (Escape closes) |
+| newsletter form | F | interim — refuses empty, states no data sent | D4 newsletter endpoint | dom-count |
+| third-party tags + consent manager | T | scaffolded off | D5 tags/consent on the new host | consent-gate (0 requests to 11 hosts), no-page-errors |
+| header search | S | interim — hands off to the store's search | D2 search backend | — |
+| account / cart | X | interim — links to the existing store | D1 commerce/auth | — |
+| locale variants | I18N | interim — hreflang to source locales | D6 locale trees | — |
+
+## Residuals and owner items
+- Header parity residuals (C-deliver): search typeahead (D1), Hydro Finder (third-party Crobox, D5), measurement artefacts on rotating/Klaviyo areas.
+- HydroFlask Sans is self-hosted from the source capture — licence to confirm by the owner.
+- Store switcher target www.hydroflask.com.hk fails TLS at the source (certificate expired).
+- Out-of-scope internal links (≈110 store paths) point to the current store by design (E2 decision in `stardust/direction.md`).

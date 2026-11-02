@@ -1,0 +1,34 @@
+{
+ "accepted": [
+  {
+   "kind": "MISSING ARIA-LABEL",
+   "text": "hidden-control-element",
+   "reason": "runtime-injected third-party honeypot input (not in the server-rendered page; present only on some live loads) \u2014 tag-owned, owner decision D5"
+  },
+  {
+   "kind": "MISSING ICON",
+   "text": "data:image/gif",
+   "reason": "capture state: the source's lazy-load 1x1 placeholder for an image hidden at this width (hero product picture); the build carries the real rendition"
+  },
+  {
+   "kind": "EXTRA ICON",
+   "text": "countryIcons-sprite-b.png",
+   "reason": "store-switcher flag inside the utility bar the header hides below 1024px (0x0 box); the source x-cloaks it \u2014 same element, same sprite"
+  },
+  {
+   "kind": "MISSING ARIA-LABEL",
+   "text": "- opens",
+   "reason": "the ' - opens in a new tab' suffix is appended at runtime by the UserWay accessibility tag on some loads (not in the server-rendered page); the build keeps the authored label \u2014 tag-owned, D5"
+  },
+  {
+   "kind": "EXTRA ARIA-LABEL",
+   "text": "Frequently Asked Questions",
+   "reason": "authored label without the UserWay runtime suffix (see the 'opens in a new tab' entry)"
+  },
+  {
+   "kind": "EXTRA ARIA-LABEL",
+   "text": "Learn more about working for Hydro Flask",
+   "reason": "authored label without the UserWay runtime suffix (see the 'opens in a new tab' entry)"
+  }
+ ]
+}

@@ -1,0 +1,209 @@
+/* product-carousel — ported from the prototype .hf-products section CSS */
+.product-carousel {
+  background: #f1f1f1;
+  padding: 40px 0 64px;
+  overflow: hidden;
+}
+
+.product-carousel.lunch {
+  background: #f0ece6;
+}
+
+.product-carousel .products-inner {
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+}
+
+.product-carousel .products-header {
+  position: relative;
+  max-width: 255px;
+  padding: 0 7px;
+}
+
+.product-carousel .products-title :is(h1, h2, h3) {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.12px;
+  font-weight: 700;
+}
+
+.product-carousel .products-cta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 48px;
+  margin-top: 16px;
+  border: 3px solid #000;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+/* below 768 the source shows the arrows beside the heading (positioned against the inner box) */
+.product-carousel .products-track-wrap {
+  padding: 0 10px;
+  position: static;
+  display: flow-root;
+}
+
+.product-carousel .products-arrows {
+  display: flex;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  z-index: 10;
+  gap: 56px;
+}
+
+.product-carousel .products-arrow {
+  display: block;
+  width: 32px;
+  height: 32px;
+  color: #000;
+}
+
+.product-carousel .products-arrow:disabled {
+  color: #b7b7b7;
+  pointer-events: none;
+}
+
+.product-carousel .products-arrow svg {
+  width: 32px;
+  height: 32px;
+}
+
+.product-carousel .products-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  margin: -6px;
+  padding: 24px 6px 6px;
+}
+
+.product-carousel .products-track::-webkit-scrollbar {
+  display: none;
+}
+
+.product-carousel .product-item {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+  scroll-snap-align: start;
+}
+
+.product-carousel .product-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.product-carousel .product-meta {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.product-carousel .product-name a {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.product-carousel .product-price {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.product-carousel .products-bars {
+  display: flex;
+  margin-top: 24.5px;
+  padding: 0 8px;
+}
+
+.product-carousel .products-bar {
+  flex: 1 1 0;
+  height: 4px;
+  background: #848484;
+}
+
+.product-carousel .products-bar.is-current {
+  background: #000;
+}
+
+@media (width >= 768px) {
+  .product-carousel {
+    padding: 50px 0 104px;
+  }
+
+  .product-carousel .products-track-wrap {
+    position: relative;
+  }
+
+  .product-carousel .products-arrows {
+    top: -6px;
+    right: 8px;
+  }
+
+  .product-carousel .products-inner {
+    max-width: 1300px;
+    padding: 0;
+  }
+
+  .product-carousel .products-header {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    max-width: 408px;
+    padding: 0 24px;
+  }
+
+  .product-carousel.lunch .products-title :is(h1, h2, h3) {
+    margin-top: -15px;
+  }
+
+  .product-carousel .products-title :is(h1, h2, h3) {
+    font-size: 30px;
+    line-height: 37.5px;
+  }
+
+  .product-carousel .products-cta a {
+    margin-top: 26px;
+  }
+
+  .product-carousel .products-track {
+    padding-top: 110px;
+  }
+
+  .product-carousel .product-item {
+    flex-basis: 25%;
+  }
+
+  .product-carousel .product-meta {
+    margin-top: 16px;
+  }
+
+  .product-carousel .products-bars {
+    margin-top: 24px;
+  }
+}
+
+.product-carousel.lunch .products-cta a {
+  width: 190px;
+  height: 50px;
+  border-width: 4px;
+  font-size: 18px;
+}
+
+.product-carousel .products-cta a:hover,
+.product-carousel .products-cta a:focus {
+  background: #000;
+  color: #fff;
+}

@@ -4,10 +4,13 @@
     "ignoreFiles": [],
     "ignoreValues": [
       {
-        "rule": "overused-font",
-        "value": "arial",
-        "createdAt": "2026-10-09T21:24:07.176Z",
-        "reason": "replica migration: video-player stage reproduces the source site's embedded player chrome (video.js default Arial stack); design changes are out of scope without an inconsistency-register entry"
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/css/index.css"
+        ],
+        "createdAt": "2026-10-29T20:13:29.740Z",
+        "reason": "agent: false positive — rotated 2-side border is the Trending Now chevron arrow, lifted verbatim from the source site's .category-bars .bar-link:hover::after rule (same-design replica)"
       }
     ]
   }

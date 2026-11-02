@@ -1,0 +1,186 @@
+/* advocacy — ported from the prototype .hf-advocacy section CSS */
+.advocacy {
+  width: calc(100% - 40px);
+  overflow: hidden;
+  margin: 0 20px 56px;
+}
+
+.advocacy .advocacy-container {
+  position: relative;
+  width: 100%;
+}
+
+.advocacy .img-desktop {
+  display: none;
+}
+
+.advocacy .advocacy-image {
+  position: relative;
+  width: 100%;
+  height: 345px;
+  overflow: hidden;
+}
+
+.advocacy .advocacy-photo img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.advocacy .advocacy-content {
+  background-color: #ccd6cb;
+  height: 424px;
+  padding: 26px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.advocacy .advocacy-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccd6cb;
+}
+
+.advocacy .advocacy-logo img {
+  width: 124px;
+  height: auto;
+}
+
+.advocacy .advocacy-heading {
+  font-size: 22px;
+  line-height: 1.25;
+  letter-spacing: 0.12px;
+  text-align: center;
+  max-width: 294px;
+  padding: 15px 0;
+}
+
+.advocacy .advocacy-heading :is(h2, h3, h4) {
+  font: inherit;
+  font-weight: 700;
+}
+
+.advocacy .advocacy-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.12px;
+  text-align: center;
+  max-width: 294px;
+}
+
+.advocacy .advocacy-cta p {
+  display: flex;
+}
+
+.advocacy .advocacy-cta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 228px;
+  height: 47px;
+  min-height: 47px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.12px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.advocacy .advocacy-cta a:hover,
+.advocacy .advocacy-cta a:focus {
+  background-color: #000;
+  color: #fff;
+}
+
+@media (width >= 768px) {
+  .advocacy {
+    max-width: 1326px;
+  }
+
+  .advocacy .img-desktop {
+    display: block;
+  }
+
+  .advocacy .img-mobile {
+    display: none;
+  }
+
+  .advocacy .advocacy-container {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 439px;
+  }
+
+  .advocacy .advocacy-content {
+    width: 663px;
+    height: 439px;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 84px 0 0 clamp(0.5rem, -11.6204rem + 25.2508vw, 9.9375rem);
+  }
+
+  .advocacy .advocacy-heading {
+    font-size: 27px;
+    letter-spacing: 0.1472px;
+    text-align: left;
+    max-width: 411px;
+    padding: 0;
+  }
+
+  .advocacy .advocacy-text {
+    font-size: 19.63px;
+    letter-spacing: 0.1472px;
+    text-align: left;
+    max-width: 411px;
+  }
+
+  .advocacy .advocacy-cta a {
+    width: 250px;
+    height: 56px;
+    margin-top: 24px;
+  }
+
+  .advocacy .advocacy-image {
+    width: 663px;
+    height: 439px;
+  }
+
+  .advocacy .advocacy-logo {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 104px;
+    width: 159px;
+    z-index: 2;
+    background: none;
+  }
+
+  .advocacy .advocacy-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (width >= 1024px) {
+  .advocacy {
+    margin-bottom: 72px;
+  }
+}
+
+@media (width >= 1367px) {
+  .advocacy {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

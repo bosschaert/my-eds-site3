@@ -1,0 +1,198 @@
+/* category-tiles — ported from the prototype .hf-tiles section CSS */
+.category-tiles {
+  background: #fff;
+  width: 100%;
+}
+
+.category-tiles .tiles-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 1313px;
+  margin: 34px auto;
+  padding: 12px;
+}
+
+.category-tiles .tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  order: 1;
+}
+
+.category-tiles .tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background: #fff;
+  position: relative;
+}
+
+.category-tiles .img-desktop {
+  display: none;
+}
+
+.category-tiles .tile-image {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.category-tiles .tile-image > div,
+.category-tiles .tile-image picture {
+  height: 100%;
+}
+
+.category-tiles .tile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.category-tiles .tile-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.category-tiles .feature {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #fff;
+  order: 2;
+}
+
+.category-tiles .feature-image {
+  background: #000;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+.category-tiles .feature-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: left center;
+}
+
+.category-tiles .feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.category-tiles .feature-tagline p {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  margin: 0;
+}
+
+.category-tiles .feature-cta p {
+  display: flex;
+}
+
+.category-tiles .feature-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 4px solid #000;
+  border-radius: 14px;
+  padding: 14px 72px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
+  min-width: 224px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-tiles .feature-cta a:hover,
+.category-tiles .feature-cta a:focus,
+.category-tiles .feature-image:hover ~ .feature-content .feature-cta a {
+  background: #000;
+  color: #fff;
+}
+
+@media (width >= 768px) {
+  .category-tiles .img-desktop {
+    display: block;
+  }
+
+  .category-tiles .img-mobile {
+    display: none;
+  }
+
+  .category-tiles .tiles-container {
+    gap: 37px;
+    align-items: flex-start;
+  }
+
+  .category-tiles .tile {
+    gap: 4px;
+  }
+
+  .category-tiles .tile-title {
+    font-size: 18px;
+    line-height: 28px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .category-tiles .tile-image img {
+    object-position: 0 -11px;
+  }
+
+  .category-tiles .feature {
+    order: 1;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .category-tiles .feature-image img {
+    height: 710px;
+  }
+
+  .category-tiles .feature-content {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .category-tiles .feature-cta a {
+    padding: 10px 18px;
+    min-width: 210px;
+  }
+}
+
+@media (width >= 1024px) {
+  .category-tiles .tiles-container {
+    flex-direction: row-reverse;
+  }
+
+  .category-tiles .tiles-grid {
+    grid-template-columns: repeat(2, 340px);
+  }
+
+  .category-tiles .feature {
+    max-width: 568px;
+  }
+}
+
+.category-tiles .tile:hover .tile-title,
+.category-tiles .tile:focus .tile-title {
+  text-decoration: underline;
+}

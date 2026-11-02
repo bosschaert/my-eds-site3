@@ -1,1313 +1,725 @@
 {
   "slug": "index",
-  "type": "home",
-  "renderBranch": "A'",
-  "template": "en",
+  "type": "landing",
+  "renderBranch": "A",
+  "template": null,
   "modules": [
-    "fact-box",
-    "hero-stage-slider",
-    "section-background",
-    "teaser",
-    "text-media",
-    "video-player"
+    "hero-carousel",
+    "category-tiles",
+    "artist-promo",
+    "product-carousel",
+    "split-promo",
+    "trending-links",
+    "advocacy"
   ],
+  "widgets": [],
   "slotsFilled": [
-    "c-heroteaser-fixed",
-    "o-container",
-    "o-container",
-    "o-container",
-    "o-container",
-    "o-container"
+    "hf-banner",
+    "hf-tiles",
+    "hf-gigi",
+    "hf-products",
+    "hf-sundae",
+    "hf-products",
+    "hf-trending",
+    "hf-advocacy"
   ],
   "canonShas": {
-    "header": "5e36dbd0f54c",
-    "footer": "534354ee8291",
-    "css": "42118a42770d"
+    "header": "99febefee7e0",
+    "footer": "22472385c9a9",
+    "css": "16216bcffbc4"
   },
   "deviations": [],
   "migrationDecisions": [],
   "metadata": {
-    "title": "Home | Continental - Continental AG",
-    "description": "Our Goal: Healthy Mobility - clean, safe and connected. Our heart beats for this. Learn more about it on our homepage.",
-    "canonical": null,
+    "title": "Hydro Flask: Sustainable &amp; Refillable Water Bottles | Hydro Flask",
+    "description": "Hydro Flask creates insulated, stainless steel water bottles to keep you hydrated on any adventure. Let's go!",
+    "canonical": "https://main--53deb2f5--aemcoder.aem.page/",
     "lang": "en"
   },
   "jsonLd": {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Home | Continental - Continental AG",
-    "description": "Our Goal: Healthy Mobility - clean, safe and connected. Our heart beats for this. Learn more about it on our homepage.",
-    "url": "https://www.continental.com/"
+    "name": "Hydro Flask: Sustainable &amp; Refillable Water Bottles | Hydro Flask",
+    "description": "Hydro Flask creates insulated, stainless steel water bottles to keep you hydrated on any adventure. Let's go!",
+    "url": "https://main--53deb2f5--aemcoder.aem.page/"
   },
-  "migratedAt": "2026-10-09T21:46:43Z",
-  "designMdSha": "5463063b6a90",
-  "designJsonSha": "51f8a079b59e",
-  "sourceCurrentSha": "4f591413383d",
-  "sourceProposedSha": "34b2d84dabb9",
-  "fidelityTier": "sibling",
-  "archetypeSource": "en",
-  "archetypeSha": "9ddfeb055c87",
+  "migratedAt": "2026-10-29T20:14:19Z",
+  "designMdSha": "2aa701974343",
+  "designJsonSha": "0ad9f779843e",
+  "sourceCurrentSha": "38ab802c8ee3",
+  "sourceProposedSha": "289bed5cb41a",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
   "variants": [],
-  "gatesPassed": [
-    "variance-probe",
-    "content-count",
-    "content-fidelity"
-  ],
-  "gateEvidence": {
-    "variance-probe": "stardust/migrate/variance/home.json (sibling-variance 1440 vs en; only de button width 191→223 = German label length, no template delta, variants[] empty)",
-    "content-count": "stardust/.work/home-render/count.log (headings/body/ctas/images + ref strings, capture main vs migrated main, 0 drops)",
-    "content-fidelity": "gate-all content 0 missing/hidden @1440; @360 MISSING 1 = hero slide-1 CTA (in content, hidden by autoplay slide state; gates/all-360/overrides.json index)"
-  },
+  "gatesPassed": [],
+  "gateEvidence": {},
   "contentDeviations": [],
-  "assetsBundled": 1,
+  "assetsBundled": 69,
   "missingAssets": [],
   "brokenInternalLinks": [
     {
-      "href": "/en/press/press-contacts/",
+      "href": "https://www.hydroflask.com/house-of-hydro-rewards",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/press-releases/",
+      "href": "https://www.hydroflask.com/contact-us",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/press-releases/corporate-topics/",
+      "href": "https://www.hydroflask.com/gift-card",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/press-releases/products-technologies/",
+      "href": "https://www.hydroflask.com/shop/bottles-drinkware",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/press-releases/vehicle-types/",
+      "href": "https://www.hydroflask.com/shop/bottles-drinkware",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/press-releases/press-tires/",
+      "href": "https://www.hydroflask.com/shop/micro-hydro-straw-bottle",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/fairs-events/",
+      "href": "https://www.hydroflask.com/shop/new-arrivals",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/fairs-events/quarterly-publications/",
+      "href": "https://www.hydroflask.com/shop/limited-edition",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/fairs-events/fairs/",
+      "href": "https://www.hydroflask.com/shop/bestsellers",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/fairs-events/events/",
+      "href": "https://www.hydroflask.com/shop/trending-now",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/media-library/",
+      "href": "https://www.hydroflask.com/shop/sale",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/media-library/pictures/",
+      "href": "https://www.hydroflask.com/shop/bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/media-library/videos/",
+      "href": "https://www.hydroflask.com/shop/collections/kids-collection",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/media-library/press-footage/",
+      "href": "https://www.hydroflask.com/shop/mini-water-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/",
+      "href": "https://www.hydroflask.com/shop/bottles-drinkware/cups-tumblers",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/figures-data-facts/",
+      "href": "https://www.hydroflask.com/shop/bottles-drinkware/coffee-tea",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/",
+      "href": "https://www.hydroflask.com/shop/lightweight-water-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/other-publications/",
+      "href": "https://www.hydroflask.com/shop/bottles-drinkware/beer-wine-spirits",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/working-at-continental/corporate-culture-values/",
+      "href": "https://www.hydroflask.com/shop/accessories",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/working-at-continental/your-development/",
+      "href": "https://www.hydroflask.com/shop/shop-by-size/32-oz",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/working-at-continental/benefits/",
+      "href": "https://www.hydroflask.com/shop/shop-by-size/24-oz",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/working-at-continental/people-blog/",
+      "href": "https://www.hydroflask.com/shop/shop-by-size/40-oz",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/what-we-are-working-on/material-development/",
+      "href": "https://www.hydroflask.com/shop/shop-by-size/20-oz",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/what-we-are-working-on/industrial-solutions/",
+      "href": "https://www.hydroflask.com/micro-hydro",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/what-we-are-working-on/range-of-tires/",
+      "href": "https://www.hydroflask.com/micro-hydro-300-ml",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/what-we-are-working-on/smart-tires/",
+      "href": "https://www.hydroflask.com/micro-hydro-400-ml",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/our-range-of-jobs/software-engineering-and-system-engineering/",
+      "href": "https://www.hydroflask.com/shop/colors/purple",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/our-range-of-jobs/operating/",
+      "href": "https://www.hydroflask.com/shop/colors/red",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/our-range-of-jobs/quality/",
+      "href": "https://www.hydroflask.com/shop/colors/pink",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/our-range-of-jobs/it/",
+      "href": "https://www.hydroflask.com/shop/colors/green",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/our-range-of-jobs/sales/",
+      "href": "https://www.hydroflask.com/shop/colors/blue",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/experienced-professionals/",
+      "href": "https://www.hydroflask.com/shop/colors/black",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/",
+      "href": "https://www.hydroflask.com/shop/colors/white",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/ir-news/ad-hoc-news/",
+      "href": "https://www.hydroflask.com/shop/colors/gray",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/ir-news/ir-press-releases/",
+      "href": "https://www.hydroflask.com/shop/colors/neutrals",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/ir-news/managers-transactions/",
+      "href": "/find-your-hydroflask",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/ir-news/voting-rights/",
+      "href": "https://www.hydroflask.com/shop/collections/kids-collection",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/capital-market-update/",
+      "href": "https://www.hydroflask.com/shop/collections/halloween-shop",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/results/",
+      "href": "https://www.hydroflask.com/shop/collections/tailgating",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/annual-shareholders-meeting/",
+      "href": "https://www.hydroflask.com/back-to-school",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/spin-off-automotive/",
+      "href": "https://www.hydroflask.com/shop/collections/fitness-collection",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/capital-market-day-2025/",
+      "href": "https://www.hydroflask.com/shop/collections/travel-guide",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/capital-market-day-2023/",
+      "href": "https://www.hydroflask.com/shop/bundles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/capital-market-days-2020/",
+      "href": "https://www.hydroflask.com/gigi-perez-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/continental-on-the-move/details/",
+      "href": "https://www.hydroflask.com/shop/micro-hydro-straw-bottle",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/financial-calendar/",
+      "href": "https://www.hydroflask.com/shop/coolers/carryout-collection",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/reports-presentations/financial-reports/",
+      "href": "https://www.hydroflask.com/shop/lightweight-water-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/reports-presentations/fact-book/",
+      "href": "https://www.hydroflask.com/shop/colors/camo",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/reports-presentations/financial-key-figures/",
+      "href": "https://www.hydroflask.com/rolemodel-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/why-invest-in-continental/",
+      "href": "https://www.hydroflask.com/sekou-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/sustainability-at-continental/",
+      "href": "https://www.hydroflask.com/universal-music-group",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/share-price-chart/",
+      "href": "https://www.hydroflask.com/shop/collections/midnight-glimmer-water-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/dividend/",
+      "href": "https://www.hydroflask.com/shop/collections/quest",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/shareholder-structure/",
+      "href": "https://www.hydroflask.com/shop/collections/daydream",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/share-data/",
+      "href": "https://www.hydroflask.com/game-on-32-oz-wide-mouth-bottle",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/consensus-q2-2026/",
+      "href": "https://www.hydroflask.com/shop/collections/glitch",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/analyst-recommendations-q2-2026/",
+      "href": "https://www.hydroflask.com/shop/collections/arc-water-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/debt-and-rating/rating-financing-strategy/",
+      "href": "https://www.hydroflask.com/shop/collections/eric-carle-water-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/debt-and-rating/debt-issuance-programme/",
+      "href": "/shop/collections/kids-collection",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/temp-home/debt-and-rating/bonds/",
+      "href": "https://www.hydroflask.com/shop/coolers",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/products-and-innovation/products/",
+      "href": "https://www.hydroflask.com/shop/coolers",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/products-and-innovation/products/tires/",
+      "href": "https://www.hydroflask.com/shop/kitchenware/food-jars",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/products-and-innovation/products/contitech/",
+      "href": "https://www.hydroflask.com/shop/coolers/carryout-collection",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/vision-mission/",
+      "href": "https://www.hydroflask.com/shop/coolers/soft-coolers",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/executive-board/",
+      "href": "https://www.hydroflask.com/shop/coolers/insulated-totes",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/supervisory-board-1/",
+      "href": "https://www.hydroflask.com/shop/coolers/lunch-boxes",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/principles-and-declarations/",
+      "href": "https://www.hydroflask.com/shop/coolers/bags-packs",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/articles-of-incorporation/",
+      "href": "https://www.hydroflask.com/shop/coolers/cooler-accessories",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/integrity-hotline/",
+      "href": "https://www.hydroflask.com/shop/kitchenware",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/general-information/",
+      "href": "https://www.hydroflask.com/shop/kitchenware/outdoor-kitchen",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/",
+      "href": "https://www.hydroflask.com/shop/kitchenware/outdoor-dining",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/sustainability-purchasing/",
+      "href": "https://www.hydroflask.com/shop/kitchenware/food-jars",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/technical-compliance/technical-compliance-for-business-partners/",
+      "href": "https://www.hydroflask.com/shop/bottles-drinkware/coffee-tea",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/history/milestones/",
+      "href": "/find-your-cooler",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/history/company-flashbacks/",
+      "href": "/engraving",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/press-releases/",
+      "href": "/shop/customize",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/fairs-events/",
+      "href": "/corporate-purchasing",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/media-library/",
+      "href": "https://www.hydroflask.com/find-your-hydroflask",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/",
+      "href": "https://www.hydroflask.com/trade-in",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/press-releases/",
+      "href": "https://www.hydroflask.com/refer",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/press-releases/corporate-topics/",
+      "href": "https://www.hydroflask.com/hydroflask-us-snowboard-team",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/press-releases/products-technologies/",
+      "href": "https://www.hydroflask.com/prodeal/application/index/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/press-releases/vehicle-types/",
+      "href": "https://www.hydroflask.com/our-story",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/press-releases/press-tires/",
+      "href": "https://www.hydroflask.com/international-warranty-selector",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/fairs-events/",
+      "href": "https://www.hydroflask.com/blog",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/fairs-events/quarterly-publications/",
+      "href": "https://www.hydroflask.com/blog",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/fairs-events/fairs/",
+      "href": "https://www.hydroflask.com/blog/category/tips-and-tricks",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/fairs-events/events/",
+      "href": "https://www.hydroflask.com/blog/category/recipes",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/media-library/",
+      "href": "https://www.hydroflask.com/blog/category/ambassadors",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/media-library/pictures/",
+      "href": "https://www.hydroflask.com/blog/category/clean-care",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/media-library/videos/",
+      "href": "https://www.hydroflask.com/blog/category/product-recommendations",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/media-library/press-footage/",
+      "href": "https://www.hydroflask.com/customer/account/index/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/",
+      "href": "https://www.hydroflask.com/customer/account/create/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/figures-data-facts/",
+      "href": "https://www.hydroflask.com/track/order/status/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/",
+      "href": "https://www.hydroflask.com/customer/account/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/other-publications/",
+      "href": "https://www.hydroflask.com/house-of-hydro-rewards/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/",
+      "href": "https://www.hydroflask.com/wishlist/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobility-study-2015/",
+      "href": "https://www.hydroflask.com/sales/order/history/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobility-study-2016/",
+      "href": "https://www.hydroflask.com/customer/account/logout/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobility-study-2018/",
+      "href": "https://www.hydroflask.com/gigi-perez-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobilitystudy2020-from-driver-to-passenger/",
+      "href": "https://www.hydroflask.com/shop/new-arrivals?visual-filter=Best+Sellers",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobility-study-2018/",
+      "href": "https://www.hydroflask.com/shop/collections/midnight-glimmer-water-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobility-study-2018/the-2018-mobility-study/",
+      "href": "/shop/collections/eric-carle-water-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobility-study-2018/press-pictures-and-charts/",
+      "href": "/water-bottle-gift-ideas",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobility-study-2018/press-contacts/",
+      "href": "/shop/collections/tailgating",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobilitystudy2020-from-driver-to-passenger/",
+      "href": "/shop/bottles-drinkware/coffee-tea",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobilitystudy2020-from-driver-to-passenger/expectations-for-the-existing-technology/",
+      "href": "/shop/collections/halloween-shop",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobilitystudy2020-from-driver-to-passenger/benefits-of-autonomous-driving/",
+      "href": "/shop/bottles?visual-filter=Bestsellers",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobilitystudy2020-from-driver-to-passenger/assistance-systems/",
+      "href": "/shop/new-arrivals",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobilitystudy2020-from-driver-to-passenger/data-sharing/",
+      "href": "/shop/new-arrivals",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/other-publications/",
+      "href": "/gigi-perez-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/other-publications/20260202-continental-informs/",
+      "href": "/shop/lightweight-water-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/other-publications/20220926-continental-informs/",
+      "href": "https://www.hydroflask.com/12-oz-lightweight-mug",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/working-at-continental/corporate-culture-values/",
+      "href": "https://www.hydroflask.com/12-oz-lightweight-mug",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/working-at-continental/your-development/",
+      "href": "https://www.hydroflask.com/16-oz-lightweight-flip-sip-travel-mug",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/working-at-continental/benefits/",
+      "href": "https://www.hydroflask.com/16-oz-lightweight-flip-sip-travel-mug",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/working-at-continental/people-blog/",
+      "href": "https://www.hydroflask.com/12-oz-lightweight-mug?color=Cypress+Green",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/working-at-continental/corporate-culture-values/",
+      "href": "https://www.hydroflask.com/12-oz-lightweight-mug?color=Cypress+Green",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/working-at-continental/corporate-culture-values/diversity/",
+      "href": "https://www.hydroflask.com/24-oz-lightweight-flex-straw-bottle",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/working-at-continental/benefits/",
+      "href": "https://www.hydroflask.com/24-oz-lightweight-flex-straw-bottle",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/working-at-continental/benefits/mobile-working/",
+      "href": "https://www.hydroflask.com/32-oz-lightweight-chug-cap-bottle?color=Atlas",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/working-at-continental/benefits/sabbatical/",
+      "href": "https://www.hydroflask.com/32-oz-lightweight-chug-cap-bottle?color=Atlas",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/what-we-are-working-on/material-development/",
+      "href": "https://www.hydroflask.com/16-oz-lightweight-chug-cap-bottle",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/what-we-are-working-on/industrial-solutions/",
+      "href": "https://www.hydroflask.com/16-oz-lightweight-chug-cap-bottle",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/what-we-are-working-on/range-of-tires/",
+      "href": "https://www.hydroflask.com/32-oz-lightweight-flex-straw-cap-bottle",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/what-we-are-working-on/smart-tires/",
+      "href": "https://www.hydroflask.com/32-oz-lightweight-flex-straw-cap-bottle",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/our-range-of-jobs/software-engineering-and-system-engineering/",
+      "href": "https://www.hydroflask.com/40-oz-lightweight-flex-cap-bottle",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/our-range-of-jobs/operating/",
+      "href": "https://www.hydroflask.com/40-oz-lightweight-flex-cap-bottle",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/our-range-of-jobs/quality/",
+      "href": "/sundae-school-24-oz-bottle",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/our-range-of-jobs/it/",
+      "href": "/shop/coolers/lunch-boxes",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/our-range-of-jobs/sales/",
+      "href": "https://www.hydroflask.com/carryout-lunch-bag",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/experienced-professionals/",
+      "href": "https://www.hydroflask.com/carryout-lunch-bag",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/",
+      "href": "https://www.hydroflask.com/carryout-lunch-box",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/",
+      "href": "https://www.hydroflask.com/carryout-lunch-box",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/direct-entry/",
+      "href": "https://www.hydroflask.com/carryout-lunch-tote",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/students-at-continental/",
+      "href": "https://www.hydroflask.com/carryout-lunch-tote",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/",
+      "href": "https://www.hydroflask.com/carryout-lunch-rolltop",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/students-at-continental/",
+      "href": "https://www.hydroflask.com/carryout-lunch-rolltop",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/ready-for-continental-program/",
+      "href": "/shop/bottles-drinkware",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/continental-makers-garage/",
+      "href": "/shop/new-arrivals",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/",
+      "href": "/shop/bundles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/marketing-and-sales-graduate-program/",
+      "href": "/shop/coolers",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/explore-tires-manufacturing-it-graduate-program/",
+      "href": "/shop/mini-water-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/explore-tire-manufacturing-controlling-graduate-program/",
+      "href": "/shop/lightweight-water-bottles",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/explore-tire-manufacturing-engineering-graduate-program/",
+      "href": "/brand-values",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/explore-tires-graduate-programs/",
+      "href": "/shop/new-arrivals?visual-filter=Best+Sellers",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/explore-tire-quality-management-graduate-program/",
+      "href": "https://www.hydroflask.com/contact-us/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/explore-tire-supply-chain-management-graduate-program/",
+      "href": "https://www.hydroflask.com/storelocator/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/ir-news/ad-hoc-news/",
+      "href": "https://www.hydroflask.com/track/order/status/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/ir-news/ir-press-releases/",
+      "href": "https://www.hydroflask.com/gift-card/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/ir-news/managers-transactions/",
+      "href": "https://www.hydroflask.com/gift-card-terms-and-conditions/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/ir-news/voting-rights/",
+      "href": "https://www.hydroflask.com/store-credit-terms-and-conditions/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/ir-news/managers-transactions/",
+      "href": "https://www.hydroflask.com/our-story/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/plugins/rss-list/detail/",
+      "href": "https://www.hydroflask.com/brand-values/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/ir-news/voting-rights/",
+      "href": "https://www.hydroflask.com/bluesign/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/ir-news/voting-rights/detail/",
+      "href": "https://www.hydroflask.com/customer/account/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/capital-market-update/",
+      "href": "https://www.hydroflask.com/refer/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/results/",
+      "href": "https://www.hydroflask.com/house-of-hydro-rewards/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/annual-shareholders-meeting/",
+      "href": "https://www.hydroflask.com/house-of-hydro-rewards-terms-and-conditions/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/spin-off-automotive/",
+      "href": "https://www.hydroflask.com/trade-in/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/capital-market-day-2025/",
+      "href": "https://www.hydroflask.com/corporate-purchasing/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/capital-market-day-2023/",
+      "href": "https://www.hydroflask.com/prodeal/application/index/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/capital-market-days-2020/",
+      "href": "/privacy",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/continental-on-the-move/details/",
+      "href": "/terms/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/financial-calendar/",
+      "href": "/privacy/",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/events/results/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-q2-2026/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-q1-2026/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-fy-2025/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-9m-2025/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-h1-2025/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-q1-2025/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/preliminary-results-fy-2024/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-9m-2024/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-h1-2024/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-q1-2024/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/preliminary-full-year-results-2023/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/9m-2023-results/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-h1-2023/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-q1-2023/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/preliminary-full-year-results-2022/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/9m-2022-results/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2026/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2025/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2024/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2023/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2022/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2021/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2020/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2026/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2026/schedule-annual-shareholders-meeting/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2025/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2025/schedule-annual-shareholders-meeting/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2024/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2024/schedule-annual-shareholders-meeting/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2023/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2023/exercise-voting-rights/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2023/questions-video-statements-and-objections/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2023/schedule-annual-shareholders-meeting/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2021/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2020/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2020/questions-and-answers-related-to-the-postponement-of-the-annual-shareholders-meeting-to-july-14-2020/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2020/exercise-voting-rights/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2020/questions-and-objections/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/spin-off-automotive/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/spin-off-automotive/first-glance-automotive-1/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/spin-off-automotive/deep-dive-business-area-architecture-and-network-solutions/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/spin-off-automotive/spin-off-automotive/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/capital-market-days/nikolai-setzer/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/cmd-2020-expert-session-automotive-technologies/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/autonomous-mobility-and-safety/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/vehicle-networking-and-information/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/expert-session-contitech/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/expert-session-tires/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/expert-session-sustainability/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/press-conference/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/press-conference/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/press-conference/executive-board-presentations-on-december-16/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/reports-presentations/financial-reports/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/reports-presentations/fact-book/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/reports-presentations/financial-key-figures/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/why-invest-in-continental/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/sustainability-at-continental/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/share-price-chart/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/dividend/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/shareholder-structure/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/share-data/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/consensus-q2-2026/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/analyst-recommendations-q2-2026/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/debt-and-rating/rating-financing-strategy/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/debt-and-rating/debt-issuance-programme/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/temp-home/debt-and-rating/bonds/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/debt-and-rating/rating-financing-strategy/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/debt-and-rating/financing-strategy-and-maturity-profile/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/debt-and-rating/continentals-credit-rating/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/debt-and-rating/maturity-of-bonds/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/temp-home/debt-and-rating/bonds/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/debt-and-rating/bonds-performance/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/debt-and-rating/2026-bond-coupon-2500-percent/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/temp-home/debt-and-rating/bonds/wkn-a35138-isin-xs2672452237/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/temp-home/debt-and-rating/bonds/wkn-a30vq4-isin-xs2558972415/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/temp-home/debt-and-rating/bonds/wkn-a351pu-isin-xs2630117328/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/temp-home/debt-and-rating/bonds/wkn-a4dfm0-isin-xs3075393499/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/temp-home/debt-and-rating/bonds/wkn-a4dfw3-isin-xs3173656243/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/temp-home/debt-and-rating/bonds/wkn-isin-xs2910509566/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/temp-home/debt-and-rating/bonds/wkn-a5gs05-isin-xs3478305777/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/products-and-innovation/products/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/products-and-innovation/products/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/products-and-innovation/products/tires/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/products-and-innovation/products/contitech/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/products-and-innovation/products/tires/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/products-and-innovation/products/tires/conti-urban/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/products-and-innovation/products/tires/conti-ecoplus-ht3/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/products-and-innovation/products/tires/conti-efficientpro-gen-3/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/vision-mission/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/executive-board/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/supervisory-board-1/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/principles-and-declarations/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/articles-of-incorporation/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/integrity-hotline/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/executive-board/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/executive-board/ulrike-hintze/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/executive-board/roland-welzbacher/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/executive-board/christian-koetz/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/executive-board/philip-nelles/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/principles-and-declarations/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/principles-and-declarations/declarations-of-continental-ag-pursuant-to-section-161-of-the-german-stock-corporation-act-aktg-of-previous-years/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/principles-and-declarations/corporate-governance-principles/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/general-information/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/sustainability-purchasing/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/general-information/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/general-information/general-terms-and-conditions-of-purchase/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/general-information/business-partner-code-of-conduct/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "https://www.continental.com/en/company/technical-compliance/technical-compliance-for-business-partners/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/general-information/reach-legislation/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/psuite/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/general-information/ergonomics-requirements/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/general-information/ergonomics-requirements/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/general-information/ergonomics-requirements/types-of-workplace-to-be-linked/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/general-information/ergonomics-requirements/requirements-to-work-organization/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/general-information/ergonomics-requirements/requirements-to-environmental-conditions/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/general-information/ergonomics-requirements/requirements-to-work-organization-1/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/electronic-submission-of-supplier-invoices/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/for-suppliers/contact-form-raw-material-purchasing-team-19050-1/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/non-production-material-purchasing/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/production-material-tires/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/production-material-contitech/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/non-production-material-purchasing/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/non-production-material-purchasing/contact-form-non-production-material-team/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/sustainability-purchasing/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/sustainability-purchasing/supplier-inquiries/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/sustainability-purchasing/responsible-value-chain/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "https://www.continental.com/en/sustainability/framework/responsible-value-chain/respecting-human-rights/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/technical-compliance/technical-compliance-for-business-partners/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/history/milestones/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/history/company-flashbacks/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/press-releases/results-first-half-2026/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/press-releases/continental-ct-2026/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/contitech/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/figures-data-facts/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/share-price-chart/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/media-library/the-continental-tires-garage/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/sustainability/reporting-and-downloads/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/press-releases/results-first-half-2026/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/general/rss/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/press-contacts/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/contact-faqs/contact/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/integrity-hotline/",
+      "href": "https://www.hydroflask.com/privacy/",
       "reason": "not-in-inventory"
     }
   ],

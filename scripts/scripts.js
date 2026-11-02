@@ -142,43 +142,6 @@ function decorateButtons(main) {
   });
 }
 
-const GROUNDS = ['is-yellow', 'is-lightgray', 'is-gray', 'is-pastel-yellow', 'is-pastel-red',
-  'is-pastel-blue', 'is-pastel-green', 'full-bleed'];
-
-/**
- * Marks sections without a background style as `is-white` (o-container.is-white rhythm:
- * adjacent white sections collapse their top padding).
- * @param {Element} main The container element
- */
-function decorateSectionGrounds(main) {
-  main.querySelectorAll(':scope > .section').forEach((section) => {
-    if (!GROUNDS.some((c) => section.classList.contains(c))) section.classList.add('is-white');
-  });
-}
-
-const FILE_META = /^(.*\S)(\s+-\s+)([a-z0-9]{2,5}\s+\(\d[\d.,]*\s?[kmg]?b\))\s*$/i;
-
-/**
- * Inline file links (source a.c-link--download): the authored text ends in " - pdf (263KB)";
- * the trailing meta is wrapped for the uppercase style. Running text only (default content,
- * accordion and media-columns cells); buttons and teaser links keep their own decoration.
- * @param {Element} main The container element
- */
-function decorateDownloadLinks(main) {
-  main.querySelectorAll(':is(.default-content-wrapper, .accordion, .media-columns) a[href]')
-    .forEach((a) => {
-      if (a.classList.contains('button') || a.children.length) return;
-      const m = a.textContent.match(FILE_META);
-      if (!m) return;
-      const meta = document.createElement('span');
-      meta.className = 'text-uppercase';
-      const [, label, dash, info] = m;
-      meta.textContent = info;
-      a.replaceChildren(`${label}${dash}`, meta);
-      a.classList.add('c-link-download');
-    });
-}
-
 /**
  * Decorates the main element.
  * @param {Element} main The main element
@@ -188,10 +151,8 @@ export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
-  decorateSectionGrounds(main);
   decorateBlocks(main);
   decorateButtons(main);
-  decorateDownloadLinks(main);
 }
 
 /**
@@ -199,8 +160,7 @@ export function decorateMain(main) {
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
-  const locale = window.location.pathname.split('/').filter(Boolean)[0] || '';
-  document.documentElement.lang = /^[a-z]{2}(-[a-z]{2})?$/.test(locale) ? locale.slice(0, 2) : 'en';
+  document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
   if (main) {
@@ -234,10 +194,6 @@ async function loadLazy(doc) {
   if (hash && element) element.scrollIntoView();
 
   loadFooter(doc.querySelector('body > footer'));
-
-  if (main.querySelector('a[data-lightbox], a.lightbox')) {
-    import('./lightbox.js').then(({ bindLightboxes }) => bindLightboxes(main));
-  }
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();

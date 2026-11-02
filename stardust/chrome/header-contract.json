@@ -1,0 +1,2654 @@
+{
+  "tool": "chrome-explore",
+  "url": "https://www.hydroflask.com/",
+  "at": "2026-10-29T20:56:27.662Z",
+  "shots": "stardust/.work/chrome/header-contract-1440",
+  "widths": {
+    "390": {
+      "root": "#html-body>div:nth-of-type(11)>header",
+      "controls": [
+        {
+          "name": "",
+          "key": "",
+          "role": "link",
+          "kind": "link",
+          "sel": "#header>div:nth-of-type(1)>a",
+          "href": "https://www.hydroflask.com/",
+          "expanded": null,
+          "rect": [
+            10,
+            9,
+            125,
+            42
+          ],
+          "actions": {}
+        },
+        {
+          "name": "Open Search",
+          "key": "open search",
+          "role": "toggle",
+          "kind": "search",
+          "sel": "#menu-search-icon",
+          "expanded": "false",
+          "rect": [
+            167,
+            18,
+            24,
+            24
+          ],
+          "actions": {
+            "click": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [
+                  {
+                    "text": "flask",
+                    "href": "https://www.hydroflask.com/catalogsearch/result/?q=flask"
+                  },
+                  {
+                    "text": "Pink",
+                    "href": "https://www.hydroflask.com/catalogsearch/result/?q=Pink"
+                  },
+                  {
+                    "text": "Kids",
+                    "href": "https://www.hydroflask.com/catalogsearch/result/?q=Kids"
+                  },
+                  {
+                    "text": "kids hydroflask",
+                    "href": "https://www.hydroflask.com/catalogsearch/result/?q=kids%20hydroflask"
+                  },
+                  {
+                    "text": "32 oz",
+                    "href": "https://www.hydroflask.com/catalogsearch/result/?q=32%20oz"
+                  },
+                  {
+                    "text": "Shop Now Micro Hydro Family",
+                    "href": "https://www.hydroflask.com/shop/mini-water-bottles"
+                  },
+                  {
+                    "text": "Micro Hydro Family",
+                    "href": "https://www.hydroflask.com/shop/mini-water-bottles"
+                  },
+                  {
+                    "text": "Shop Micro Hydro",
+                    "href": "https://www.hydroflask.com/shop/mini-water-bottles"
+                  },
+                  {
+                    "text": "Shop Hydro Flask bottles, coolers and accessories perfect for gifting.",
+                    "href": "https://www.hydroflask.com/water-bottle-gift-ideas"
+                  },
+                  {
+                    "text": "Holiday Gift Guide",
+                    "href": "https://www.hydroflask.com/water-bottle-gift-ideas"
+                  },
+                  {
+                    "text": "Shop Holiday Gifts",
+                    "href": "https://www.hydroflask.com/water-bottle-gift-ideas"
+                  },
+                  {
+                    "text": "",
+                    "href": "https://www.hydroflask.com/blog/clean-care/how-to-clean-your-flip-sip-cap"
+                  },
+                  {
+                    "text": "How to Clean Your Flip Sip Cap",
+                    "href": "https://www.hydroflask.com/blog/clean-care/how-to-clean-your-flip-sip-cap"
+                  },
+                  {
+                    "text": "",
+                    "href": "https://www.hydroflask.com/blog/tips-and-tricks/12-ways-to-use-your-micro-hydros"
+                  },
+                  {
+                    "text": "12 Ways To Use Your Micro Hydros",
+                    "href": "https://www.hydroflask.com/blog/tips-and-tricks/12-ways-to-use-your-micro-hydros"
+                  },
+                  {
+                    "text": "",
+                    "href": "https://www.hydroflask.com/blog/product-releases/hydro-flask-redesigns-soft-cooler-collection-for-everyday-travel-sports-and-outdoor-use"
+                  },
+                  {
+                    "text": "Hydro Flask Redesigns Soft Cooler Collection for Everyday Travel, Sports and Outdoor Use",
+                    "href": "https://www.hydroflask.com/blog/product-releases/hydro-flask-redesigns-soft-cooler-collection-for-everyday-travel-sports-and-outdoor-use"
+                  }
+                ],
+                "headings": [],
+                "images": 5,
+                "inputs": [
+                  "search"
+                ],
+                "buttons": [
+                  "Search",
+                  "Hydro Finder"
+                ],
+                "options": 0,
+                "rect": [
+                  20,
+                  95,
+                  370,
+                  749
+                ]
+              },
+              "expanded": "true",
+              "focus": "panel",
+              "scrollLock": true,
+              "motion": [
+                {
+                  "kind": "animation",
+                  "prop": "spin",
+                  "ms": 1000,
+                  "delay": 0,
+                  "easing": "linear",
+                  "target": "div.inline-block"
+                },
+                {
+                  "kind": "animation",
+                  "prop": "animateMegamenuOverlay",
+                  "ms": 200,
+                  "delay": 0,
+                  "easing": "linear",
+                  "target": "div.c-header__search-content"
+                },
+                {
+                  "kind": "animation",
+                  "prop": "spin",
+                  "ms": 1000,
+                  "delay": 0,
+                  "easing": "linear",
+                  "target": "svg.animate-spin"
+                }
+              ],
+              "shot": "390-001-Open-Search-click.png"
+            },
+            "key": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [],
+                "headings": [],
+                "images": 0,
+                "inputs": [
+                  "search"
+                ],
+                "buttons": [
+                  "Search",
+                  "Hydro Finder"
+                ],
+                "options": 0,
+                "rect": [
+                  20,
+                  95,
+                  355,
+                  313
+                ]
+              },
+              "expanded": "true",
+              "focus": "panel",
+              "scrollLock": true,
+              "motion": [
+                {
+                  "kind": "animation",
+                  "prop": "animateMegamenuOverlay",
+                  "ms": 200,
+                  "delay": 0,
+                  "easing": "linear",
+                  "target": "div.c-header__search-content"
+                },
+                {
+                  "kind": "animation",
+                  "prop": "spin",
+                  "ms": 1000,
+                  "delay": 0,
+                  "easing": "linear",
+                  "target": "div.inline-block"
+                },
+                {
+                  "kind": "animation",
+                  "prop": "spin",
+                  "ms": 1000,
+                  "delay": 0,
+                  "easing": "linear",
+                  "target": "svg.animate-spin"
+                }
+              ],
+              "shot": "390-002-Open-Search-key.png",
+              "tabReachesPanel": true
+            }
+          },
+          "close": {
+            "escape": false,
+            "focusReturn": false,
+            "outside": false,
+            "toggle": false
+          }
+        },
+        {
+          "name": "My account",
+          "key": "my account",
+          "role": "toggle",
+          "kind": "account",
+          "sel": "#customer-menu",
+          "expanded": "false",
+          "rect": [
+            204,
+            8,
+            44,
+            44
+          ],
+          "actions": {
+            "click": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [
+                  {
+                    "text": "Sign In",
+                    "href": "https://www.hydroflask.com/customer/account/index/"
+                  },
+                  {
+                    "text": "Create an Account",
+                    "href": "https://www.hydroflask.com/customer/account/create/"
+                  },
+                  {
+                    "text": "Track My Order",
+                    "href": "https://www.hydroflask.com/track/order/status/"
+                  }
+                ],
+                "headings": [],
+                "images": 0,
+                "inputs": [],
+                "buttons": [
+                  "Hydro Finder"
+                ],
+                "options": 0,
+                "rect": [
+                  113,
+                  84,
+                  262,
+                  323
+                ]
+              },
+              "expanded": "true",
+              "focus": "panel",
+              "scrollLock": false,
+              "motion": [
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 200,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0, 0, 0.2, 1)",
+                  "target": "nav.c-mega-header__account-panel"
+                }
+              ],
+              "shot": "390-003-My-account-click.png"
+            },
+            "key": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [
+                  {
+                    "text": "Sign In",
+                    "href": "https://www.hydroflask.com/customer/account/index/"
+                  },
+                  {
+                    "text": "Create an Account",
+                    "href": "https://www.hydroflask.com/customer/account/create/"
+                  },
+                  {
+                    "text": "Track My Order",
+                    "href": "https://www.hydroflask.com/track/order/status/"
+                  }
+                ],
+                "headings": [],
+                "images": 0,
+                "inputs": [],
+                "buttons": [
+                  "Hydro Finder",
+                  "Close teaser"
+                ],
+                "options": 0,
+                "rect": [
+                  113,
+                  84,
+                  277,
+                  509
+                ]
+              },
+              "expanded": "true",
+              "focus": "panel",
+              "scrollLock": false,
+              "motion": [
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 200,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0, 0, 0.2, 1)",
+                  "target": "nav.c-mega-header__account-panel"
+                }
+              ],
+              "shot": "390-004-My-account-key.png",
+              "tabReachesPanel": true
+            }
+          },
+          "close": {
+            "escape": false,
+            "focusReturn": false,
+            "outside": false,
+            "toggle": false
+          }
+        },
+        {
+          "name": "My minicart, cart is empty",
+          "key": "my minicart cart is empty",
+          "role": "toggle",
+          "kind": "cart",
+          "sel": "#menu-cart-icon",
+          "expanded": "false",
+          "rect": [
+            261,
+            18,
+            47,
+            24
+          ],
+          "actions": {
+            "click": {
+              "opened": false,
+              "navigates": "https://www.hydroflask.com/checkout/cart/index/"
+            },
+            "key": {
+              "opened": false,
+              "navigates": "https://www.hydroflask.com/checkout/cart/index/"
+            }
+          }
+        },
+        {
+          "name": "Open menu",
+          "key": "open menu",
+          "role": "toggle",
+          "kind": "drawer",
+          "sel": "#megamenu-hamburger",
+          "expanded": "false",
+          "rect": [
+            321,
+            8,
+            44,
+            44
+          ],
+          "actions": {
+            "click": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [
+                  {
+                    "text": "Hydro Finder",
+                    "href": "https://www.hydroflask.com/find-your-hydroflask"
+                  },
+                  {
+                    "text": "Rewards",
+                    "href": "https://www.hydroflask.com/house-of-hydro-rewards"
+                  },
+                  {
+                    "text": "Contact Us",
+                    "href": "https://www.hydroflask.com/contact-us"
+                  },
+                  {
+                    "text": "Gift Cards",
+                    "href": "https://www.hydroflask.com/gift-card"
+                  }
+                ],
+                "headings": [],
+                "images": 0,
+                "inputs": [],
+                "buttons": [
+                  "Close menu",
+                  "Drinkware",
+                  "Collections",
+                  "Coolers & Lunch",
+                  "Customize",
+                  "Explore",
+                  "USA | EN",
+                  "Hydro Finder",
+                  "Get 15% Off",
+                  "Close teaser"
+                ],
+                "options": 0,
+                "rect": [
+                  36,
+                  12,
+                  354,
+                  581
+                ]
+              },
+              "expanded": "true",
+              "focus": "panel",
+              "scrollLock": true,
+              "motion": [
+                {
+                  "kind": "transition",
+                  "prop": "transform",
+                  "ms": 300,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "nav.c-mega-header__nav"
+                },
+                {
+                  "kind": "transition",
+                  "prop": "visibility",
+                  "ms": 300,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "nav.c-mega-header__nav"
+                },
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 200,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0, 0, 0.2, 1)",
+                  "target": "div.c-mega-header__backdrop"
+                }
+              ],
+              "shot": "390-005-Open-menu-click.png"
+            },
+            "key": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [
+                  {
+                    "text": "Hydro Finder",
+                    "href": "https://www.hydroflask.com/find-your-hydroflask"
+                  },
+                  {
+                    "text": "Rewards",
+                    "href": "https://www.hydroflask.com/house-of-hydro-rewards"
+                  },
+                  {
+                    "text": "Contact Us",
+                    "href": "https://www.hydroflask.com/contact-us"
+                  },
+                  {
+                    "text": "Gift Cards",
+                    "href": "https://www.hydroflask.com/gift-card"
+                  }
+                ],
+                "headings": [],
+                "images": 0,
+                "inputs": [],
+                "buttons": [
+                  "Close menu",
+                  "Drinkware",
+                  "Collections",
+                  "Coolers & Lunch",
+                  "Customize",
+                  "Explore",
+                  "USA | EN",
+                  "Hydro Finder"
+                ],
+                "options": 0,
+                "rect": [
+                  36,
+                  12,
+                  339,
+                  571
+                ]
+              },
+              "expanded": "true",
+              "focus": "panel",
+              "scrollLock": true,
+              "motion": [
+                {
+                  "kind": "transition",
+                  "prop": "transform",
+                  "ms": 300,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "nav.c-mega-header__nav"
+                },
+                {
+                  "kind": "transition",
+                  "prop": "visibility",
+                  "ms": 300,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "nav.c-mega-header__nav"
+                },
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 200,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0, 0, 0.2, 1)",
+                  "target": "div.c-mega-header__backdrop"
+                }
+              ],
+              "shot": "390-006-Open-menu-key.png",
+              "tabReachesPanel": true
+            }
+          },
+          "close": {
+            "escape": false,
+            "focusReturn": false,
+            "outside": null,
+            "toggle": false
+          }
+        }
+      ],
+      "scroll": [
+        {
+          "at": "top",
+          "y": 0,
+          "top": 0,
+          "height": 61,
+          "position": "sticky",
+          "inView": true
+        },
+        {
+          "at": "down",
+          "y": 1000,
+          "top": 0,
+          "height": 61,
+          "position": "sticky",
+          "inView": true
+        },
+        {
+          "at": "up",
+          "y": 700,
+          "top": 0,
+          "height": 61,
+          "position": "sticky",
+          "inView": true
+        },
+        {
+          "at": "back",
+          "y": 0,
+          "top": 0,
+          "height": 61,
+          "position": "sticky",
+          "inView": true
+        }
+      ],
+      "states": 6,
+      "truncated": "depth 1 at Open Search",
+      "loads": 19
+    },
+    "1440": {
+      "root": "#html-body>div:nth-of-type(11)>header",
+      "controls": [
+        {
+          "name": "",
+          "key": "",
+          "role": "link",
+          "kind": "link",
+          "sel": "#header>div:nth-of-type(1)>a",
+          "href": "https://www.hydroflask.com/",
+          "expanded": null,
+          "rect": [
+            63,
+            18,
+            204,
+            57
+          ],
+          "actions": {}
+        },
+        {
+          "name": "Rewards",
+          "key": "rewards",
+          "role": "link",
+          "kind": "link",
+          "sel": "#megamenu-utility-bar>nav>ul>li:nth-of-type(1)>a",
+          "href": "https://www.hydroflask.com/house-of-hydro-rewards",
+          "expanded": null,
+          "rect": [
+            970,
+            5,
+            64,
+            23
+          ],
+          "actions": {
+            "hover": {
+              "opened": true,
+              "hidden": 1,
+              "panel": {
+                "links": [
+                  {
+                    "text": "Shop Now",
+                    "href": "https://www.hydroflask.com/shop/new-arrivals?visual-filter=Best+Sellers"
+                  }
+                ],
+                "headings": [],
+                "images": 0,
+                "inputs": [],
+                "buttons": [],
+                "options": 0,
+                "rect": [
+                  0,
+                  93,
+                  1425,
+                  50
+                ]
+              },
+              "expanded": null,
+              "focus": "body",
+              "scrollLock": false,
+              "motion": [
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 500,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "div.m-promo-banner"
+                }
+              ],
+              "shot": "1440-001-Rewards-hover.png"
+            }
+          },
+          "close": {
+            "escape": true,
+            "focusReturn": false,
+            "outside": true,
+            "leave": true
+          },
+          "children": [
+            {
+              "name": "Hydro Finder",
+              "key": "hydro finder",
+              "role": "toggle",
+              "kind": "menu",
+              "sel": "#html-body>div:nth-of-type(6)>div",
+              "expanded": null,
+              "rect": [
+                1385,
+                200,
+                40,
+                140
+              ],
+              "actions": {
+                "hover": null,
+                "click": null,
+                "key": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "Contact Us",
+          "key": "contact us",
+          "role": "link",
+          "kind": "link",
+          "sel": "#megamenu-utility-bar>nav>ul>li:nth-of-type(2)>a",
+          "href": "https://www.hydroflask.com/contact-us",
+          "expanded": null,
+          "rect": [
+            1058,
+            5,
+            83,
+            23
+          ],
+          "actions": {}
+        },
+        {
+          "name": "Gift Cards",
+          "key": "gift cards",
+          "role": "link",
+          "kind": "link",
+          "sel": "#megamenu-utility-bar>nav>ul>li:nth-of-type(3)>a",
+          "href": "https://www.hydroflask.com/gift-card",
+          "expanded": null,
+          "rect": [
+            1167,
+            5,
+            75,
+            23
+          ],
+          "actions": {}
+        },
+        {
+          "name": "USA | EN",
+          "key": "usa en",
+          "role": "toggle",
+          "kind": "locale",
+          "sel": "#megamenu-utility-bar>div>button",
+          "expanded": null,
+          "rect": [
+            1267,
+            4,
+            96,
+            24
+          ],
+          "actions": {
+            "hover": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [],
+                "headings": [],
+                "images": 0,
+                "inputs": [],
+                "buttons": [
+                  "Get 15% Off",
+                  "Close teaser"
+                ],
+                "options": 0,
+                "rect": [
+                  0,
+                  455,
+                  1440,
+                  445
+                ]
+              },
+              "expanded": null,
+              "focus": "body",
+              "scrollLock": false,
+              "motion": [
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 150,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "button.flex"
+                }
+              ],
+              "shot": "1440-002-USA-EN-hover.png"
+            },
+            "click": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [
+                  {
+                    "text": "United States English ($)",
+                    "href": "https://www.hydroflask.com/"
+                  },
+                  {
+                    "text": "Uruguay Spanish (UYU)",
+                    "href": "https://hydroflask.uy/"
+                  },
+                  {
+                    "text": "Australia English (AUD)",
+                    "href": "https://hydroflask.com.au/"
+                  },
+                  {
+                    "text": "Hong Kong SAR China English (HKD)",
+                    "href": "https://www.hydroflask.com.hk/"
+                  },
+                  {
+                    "text": "日本 Japanese (JPY)",
+                    "href": "https://www.hydroflask.co.jp/"
+                  },
+                  {
+                    "text": "Malaysia English (MYR)",
+                    "href": "https://www.hydroflask.my/"
+                  },
+                  {
+                    "text": "New Zealand English (NZD)",
+                    "href": "https://www.hydroflask.co.nz/"
+                  },
+                  {
+                    "text": "Philippines English (PHP)",
+                    "href": "https://www.hydroflask.ph/"
+                  },
+                  {
+                    "text": "Singapore English (SGD)",
+                    "href": "https://www.hydroflask.sg/"
+                  },
+                  {
+                    "text": "대한민국 Korean (KRW)",
+                    "href": "https://www.hydro-flask.co.kr/"
+                  },
+                  {
+                    "text": "France French (€)",
+                    "href": "https://www.hydroflask.com/fr"
+                  },
+                  {
+                    "text": "Deutschland German (€)",
+                    "href": "https://www.hydroflask.com/de"
+                  },
+                  {
+                    "text": "United Kingdom English (£)",
+                    "href": "https://www.hydroflask.com/gb"
+                  },
+                  {
+                    "text": "España Spanish (€)",
+                    "href": "https://www.hydroflask.com/es"
+                  },
+                  {
+                    "text": "Europe English (€)",
+                    "href": "https://www.hydroflask.com/eu/"
+                  }
+                ],
+                "headings": [
+                  "Choose Your Location"
+                ],
+                "images": 0,
+                "inputs": [],
+                "buttons": [
+                  "Close",
+                  "Hydro Finder",
+                  "Close teaser"
+                ],
+                "options": 0,
+                "rect": [
+                  361,
+                  36,
+                  1080,
+                  823
+                ]
+              },
+              "expanded": "true",
+              "focus": "panel",
+              "scrollLock": true,
+              "motion": [
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 150,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "button.flex"
+                },
+                {
+                  "kind": "animation",
+                  "prop": "spin",
+                  "ms": 1000,
+                  "delay": 0,
+                  "easing": "linear",
+                  "target": "svg.animate-spin"
+                },
+                {
+                  "kind": "transition",
+                  "prop": "transform",
+                  "ms": 300,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "div.modal-container"
+                },
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 300,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0, 0, 0.2, 1)",
+                  "target": "div.modal-overlay"
+                }
+              ],
+              "shot": "1440-003-USA-EN-click.png"
+            },
+            "key": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [
+                  {
+                    "text": "United States English ($)",
+                    "href": "https://www.hydroflask.com/"
+                  },
+                  {
+                    "text": "Uruguay Spanish (UYU)",
+                    "href": "https://hydroflask.uy/"
+                  },
+                  {
+                    "text": "Australia English (AUD)",
+                    "href": "https://hydroflask.com.au/"
+                  },
+                  {
+                    "text": "Hong Kong SAR China English (HKD)",
+                    "href": "https://www.hydroflask.com.hk/"
+                  },
+                  {
+                    "text": "日本 Japanese (JPY)",
+                    "href": "https://www.hydroflask.co.jp/"
+                  },
+                  {
+                    "text": "Malaysia English (MYR)",
+                    "href": "https://www.hydroflask.my/"
+                  },
+                  {
+                    "text": "New Zealand English (NZD)",
+                    "href": "https://www.hydroflask.co.nz/"
+                  },
+                  {
+                    "text": "Philippines English (PHP)",
+                    "href": "https://www.hydroflask.ph/"
+                  },
+                  {
+                    "text": "Singapore English (SGD)",
+                    "href": "https://www.hydroflask.sg/"
+                  },
+                  {
+                    "text": "대한민국 Korean (KRW)",
+                    "href": "https://www.hydro-flask.co.kr/"
+                  },
+                  {
+                    "text": "France French (€)",
+                    "href": "https://www.hydroflask.com/fr"
+                  },
+                  {
+                    "text": "Deutschland German (€)",
+                    "href": "https://www.hydroflask.com/de"
+                  },
+                  {
+                    "text": "United Kingdom English (£)",
+                    "href": "https://www.hydroflask.com/gb"
+                  },
+                  {
+                    "text": "España Spanish (€)",
+                    "href": "https://www.hydroflask.com/es"
+                  },
+                  {
+                    "text": "Europe English (€)",
+                    "href": "https://www.hydroflask.com/eu/"
+                  }
+                ],
+                "headings": [
+                  "Choose Your Location"
+                ],
+                "images": 0,
+                "inputs": [],
+                "buttons": [
+                  "Close",
+                  "Hydro Finder",
+                  "Get 15% Off",
+                  "Close teaser"
+                ],
+                "options": 0,
+                "rect": [
+                  361,
+                  36,
+                  1080,
+                  823
+                ]
+              },
+              "expanded": "true",
+              "focus": "panel",
+              "scrollLock": true,
+              "motion": [
+                {
+                  "kind": "animation",
+                  "prop": "spin",
+                  "ms": 1000,
+                  "delay": 0,
+                  "easing": "linear",
+                  "target": "svg.animate-spin"
+                },
+                {
+                  "kind": "transition",
+                  "prop": "transform",
+                  "ms": 300,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "div.modal-container"
+                },
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 300,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0, 0, 0.2, 1)",
+                  "target": "div.modal-overlay"
+                }
+              ],
+              "shot": "1440-004-USA-EN-key.png",
+              "tabReachesPanel": true
+            }
+          },
+          "close": {
+            "escape": false,
+            "focusReturn": false,
+            "outside": null,
+            "toggle": false
+          },
+          "children": [
+            {
+              "name": "Close",
+              "key": "close",
+              "role": "toggle",
+              "kind": "menu",
+              "sel": "#html-body>div:nth-of-type(4)>div:nth-of-type(9)>div>div>div>header>button",
+              "expanded": null,
+              "rect": [
+                993,
+                36,
+                112,
+                76
+              ],
+              "actions": {
+                "hover": {
+                  "opened": true,
+                  "hidden": 0,
+                  "panel": {
+                    "links": [],
+                    "headings": [],
+                    "images": 0,
+                    "inputs": [],
+                    "buttons": [
+                      "Get 15% Off",
+                      "Close teaser"
+                    ],
+                    "options": 0,
+                    "rect": [
+                      1409,
+                      455,
+                      31,
+                      166
+                    ]
+                  },
+                  "expanded": null,
+                  "focus": "elsewhere",
+                  "scrollLock": true,
+                  "motion": [],
+                  "shot": "1440-005-Close-hover.png"
+                },
+                "click": {
+                  "opened": false,
+                  "hides": 17
+                },
+                "key": {
+                  "opened": false,
+                  "hides": 17
+                }
+              },
+              "close": {
+                "escape": false,
+                "focusReturn": false,
+                "outside": false,
+                "leave": false
+              }
+            },
+            {
+              "name": "Get 15% Off",
+              "key": "get 15 off",
+              "role": "toggle",
+              "kind": "menu",
+              "sel": "#html-body>div:nth-of-type(8)>div:nth-of-type(1)>div>span",
+              "expanded": null,
+              "rect": [
+                1425,
+                455,
+                50,
+                150
+              ],
+              "actions": {
+                "hover": null,
+                "click": null,
+                "key": {
+                  "opened": true,
+                  "hidden": 2,
+                  "panel": {
+                    "links": [
+                      {
+                        "text": "Terms",
+                        "href": "https://www.hydroflask.com/terms"
+                      },
+                      {
+                        "text": "Privacy",
+                        "href": "https://www.hydroflask.com/privacy"
+                      }
+                    ],
+                    "headings": [
+                      "15% off your first order",
+                      "What are you shopping for?"
+                    ],
+                    "images": 0,
+                    "inputs": [
+                      "email"
+                    ],
+                    "buttons": [
+                      "Close dialog",
+                      "Continue for 15% Off"
+                    ],
+                    "options": 0,
+                    "rect": [
+                      388,
+                      205,
+                      650,
+                      490
+                    ]
+                  },
+                  "expanded": null,
+                  "focus": "panel",
+                  "scrollLock": true,
+                  "motion": [
+                    {
+                      "kind": "animation",
+                      "prop": "klaviyo-slideinup",
+                      "ms": 400,
+                      "delay": 0,
+                      "easing": "linear",
+                      "target": "div.needsclick"
+                    },
+                    {
+                      "kind": "animation",
+                      "prop": "klaviyo-fadein",
+                      "ms": 350,
+                      "delay": 250,
+                      "easing": "linear",
+                      "target": "div.needsclick"
+                    },
+                    {
+                      "kind": "animation",
+                      "prop": "klaviyo-fadeinup",
+                      "ms": 350,
+                      "delay": 250,
+                      "easing": "linear",
+                      "target": "div.needsclick"
+                    }
+                  ],
+                  "shot": "1440-006-Get-15-Off-key.png",
+                  "tabReachesPanel": true
+                }
+              },
+              "close": {
+                "escape": false,
+                "focusReturn": false,
+                "outside": false
+              }
+            },
+            {
+              "name": "Close teaser",
+              "key": "close teaser",
+              "role": "toggle",
+              "kind": "menu",
+              "sel": "#html-body>div:nth-of-type(8)>div:nth-of-type(1)>div>button",
+              "expanded": null,
+              "rect": [
+                1409,
+                601,
+                20,
+                20
+              ],
+              "actions": {
+                "hover": null,
+                "click": null,
+                "key": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "Drinkware",
+          "key": "drinkware",
+          "role": "toggle",
+          "kind": "menu",
+          "sel": "#megamenu-mobile-drawer>ul>li:nth-of-type(1)>button",
+          "expanded": "false",
+          "rect": [
+            388,
+            50,
+            96,
+            24
+          ],
+          "actions": {
+            "hover": null,
+            "click": null,
+            "key": null
+          }
+        },
+        {
+          "name": "Collections",
+          "key": "collections",
+          "role": "toggle",
+          "kind": "menu",
+          "sel": "#megamenu-mobile-drawer>ul>li:nth-of-type(2)>button",
+          "expanded": "false",
+          "rect": [
+            504,
+            50,
+            106,
+            24
+          ],
+          "actions": {
+            "hover": null,
+            "click": null,
+            "key": null
+          }
+        },
+        {
+          "name": "Coolers & Lunch",
+          "key": "coolers lunch",
+          "role": "toggle",
+          "kind": "menu",
+          "sel": "#megamenu-mobile-drawer>ul>li:nth-of-type(3)>button",
+          "expanded": "false",
+          "rect": [
+            630,
+            50,
+            143,
+            24
+          ],
+          "actions": {
+            "hover": null,
+            "click": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [],
+                "headings": [],
+                "images": 0,
+                "inputs": [],
+                "buttons": [
+                  "Get 15% Off",
+                  "Close teaser"
+                ],
+                "options": 0,
+                "rect": [
+                  0,
+                  455,
+                  1440,
+                  445
+                ]
+              },
+              "expanded": "true",
+              "focus": "trigger",
+              "scrollLock": false,
+              "motion": [],
+              "shot": "1440-007-Coolers-Lunch-click.png"
+            },
+            "key": null
+          },
+          "close": {
+            "escape": false,
+            "focusReturn": false,
+            "outside": false,
+            "toggle": false
+          },
+          "children": [
+            {
+              "name": "Hydro Finder",
+              "key": "hydro finder",
+              "role": "toggle",
+              "kind": "menu",
+              "sel": "#html-body>div:nth-of-type(6)>div",
+              "expanded": null,
+              "rect": [
+                1385,
+                200,
+                40,
+                140
+              ],
+              "actions": {
+                "hover": {
+                  "opened": true,
+                  "hidden": 0,
+                  "panel": {
+                    "links": [],
+                    "headings": [],
+                    "images": 0,
+                    "inputs": [],
+                    "buttons": [
+                      "Get 15% Off",
+                      "Close teaser"
+                    ],
+                    "options": 0,
+                    "rect": [
+                      0,
+                      455,
+                      1433,
+                      445
+                    ]
+                  },
+                  "expanded": null,
+                  "focus": "elsewhere",
+                  "scrollLock": false,
+                  "motion": [
+                    {
+                      "kind": "transition",
+                      "prop": "transform",
+                      "ms": 200,
+                      "delay": 0,
+                      "easing": "ease",
+                      "target": "img.c-mega-paid-ad__image"
+                    }
+                  ],
+                  "shot": "1440-008-Hydro-Finder-hover.png"
+                },
+                "click": {
+                  "opened": true,
+                  "hidden": 0,
+                  "panel": {
+                    "links": [],
+                    "headings": [],
+                    "images": 0,
+                    "inputs": [],
+                    "buttons": [
+                      "Get 15% Off",
+                      "Close teaser"
+                    ],
+                    "options": 0,
+                    "rect": [
+                      0,
+                      455,
+                      1440,
+                      445
+                    ]
+                  },
+                  "expanded": null,
+                  "focus": "elsewhere",
+                  "scrollLock": false,
+                  "motion": [],
+                  "shot": "1440-009-Hydro-Finder-click.png"
+                },
+                "key": {
+                  "opened": true,
+                  "hidden": 0,
+                  "panel": {
+                    "links": [],
+                    "headings": [],
+                    "images": 0,
+                    "inputs": [],
+                    "buttons": [
+                      "Get 15% Off",
+                      "Close teaser"
+                    ],
+                    "options": 0,
+                    "rect": [
+                      0,
+                      455,
+                      1431,
+                      445
+                    ]
+                  },
+                  "expanded": null,
+                  "focus": "elsewhere",
+                  "scrollLock": true,
+                  "motion": [
+                    {
+                      "kind": "transition",
+                      "prop": "opacity",
+                      "ms": 200,
+                      "delay": 0,
+                      "easing": "ease-in-out",
+                      "target": "div.crbx-pf-backdrop"
+                    },
+                    {
+                      "kind": "transition",
+                      "prop": "right",
+                      "ms": 400,
+                      "delay": 0,
+                      "easing": "ease-in-out",
+                      "target": "div.crbx-pf"
+                    }
+                  ],
+                  "shot": "1440-010-Hydro-Finder-key.png",
+                  "tabReachesPanel": false
+                }
+              },
+              "returns": true
+            }
+          ]
+        },
+        {
+          "name": "Customize",
+          "key": "customize",
+          "role": "toggle",
+          "kind": "menu",
+          "sel": "#megamenu-mobile-drawer>ul>li:nth-of-type(4)>button",
+          "expanded": "false",
+          "rect": [
+            793,
+            50,
+            99,
+            24
+          ],
+          "actions": {
+            "hover": null,
+            "click": null,
+            "key": null
+          }
+        },
+        {
+          "name": "Hydro Finder",
+          "key": "hydro finder",
+          "role": "link",
+          "kind": "link",
+          "sel": "#megamenu-mobile-drawer>ul>li:nth-of-type(5)>a",
+          "href": "https://www.hydroflask.com/find-your-hydroflask",
+          "expanded": null,
+          "rect": [
+            911,
+            50,
+            102,
+            24
+          ],
+          "actions": {}
+        },
+        {
+          "name": "Explore",
+          "key": "explore",
+          "role": "toggle",
+          "kind": "menu",
+          "sel": "#megamenu-mobile-drawer>ul>li:nth-of-type(6)>button",
+          "expanded": "false",
+          "rect": [
+            1033,
+            50,
+            74,
+            24
+          ],
+          "actions": {
+            "hover": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [],
+                "headings": [],
+                "images": 0,
+                "inputs": [],
+                "buttons": [
+                  "Get 15% Off",
+                  "Close teaser"
+                ],
+                "options": 0,
+                "rect": [
+                  0,
+                  455,
+                  1425,
+                  445
+                ]
+              },
+              "expanded": "false",
+              "focus": "body",
+              "scrollLock": false,
+              "motion": [
+                {
+                  "kind": "animation",
+                  "prop": "klaviyo-slideinup",
+                  "ms": 400,
+                  "delay": 2000,
+                  "easing": "linear",
+                  "target": "div.needsclick"
+                }
+              ],
+              "shot": "1440-011-Explore-hover.png"
+            },
+            "click": null,
+            "key": null
+          },
+          "close": {
+            "escape": true,
+            "focusReturn": false,
+            "outside": true,
+            "leave": true
+          },
+          "children": [
+            {
+              "name": "Hydro Finder",
+              "key": "hydro finder",
+              "role": "toggle",
+              "kind": "menu",
+              "sel": "#html-body>div:nth-of-type(6)>div",
+              "expanded": null,
+              "rect": [
+                1385,
+                200,
+                40,
+                140
+              ],
+              "actions": {
+                "hover": null,
+                "click": {
+                  "opened": true,
+                  "hidden": 0,
+                  "panel": {
+                    "links": [],
+                    "headings": [],
+                    "images": 0,
+                    "inputs": [],
+                    "buttons": [
+                      "Close teaser"
+                    ],
+                    "options": 0,
+                    "rect": [
+                      0,
+                      455,
+                      1440,
+                      445
+                    ]
+                  },
+                  "expanded": null,
+                  "focus": "elsewhere",
+                  "scrollLock": true,
+                  "motion": [
+                    {
+                      "kind": "transition",
+                      "prop": "right",
+                      "ms": 400,
+                      "delay": 0,
+                      "easing": "ease-in-out",
+                      "target": "div.crbx-pf"
+                    },
+                    {
+                      "kind": "transition",
+                      "prop": "opacity",
+                      "ms": 200,
+                      "delay": 0,
+                      "easing": "ease-in-out",
+                      "target": "div.crbx-pf-backdrop"
+                    }
+                  ],
+                  "shot": "1440-012-Hydro-Finder-click.png"
+                },
+                "key": null
+              },
+              "close": {
+                "escape": false,
+                "focusReturn": false,
+                "outside": true,
+                "toggle": true
+              }
+            }
+          ]
+        },
+        {
+          "name": "Open Search",
+          "key": "open search",
+          "role": "toggle",
+          "kind": "search",
+          "sel": "#menu-search-icon",
+          "expanded": "false",
+          "rect": [
+            1221,
+            48,
+            24,
+            24
+          ],
+          "actions": {
+            "hover": null,
+            "click": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [
+                  {
+                    "text": "flask",
+                    "href": "https://www.hydroflask.com/catalogsearch/result/?q=flask"
+                  },
+                  {
+                    "text": "Pink",
+                    "href": "https://www.hydroflask.com/catalogsearch/result/?q=Pink"
+                  },
+                  {
+                    "text": "Kids",
+                    "href": "https://www.hydroflask.com/catalogsearch/result/?q=Kids"
+                  },
+                  {
+                    "text": "kids hydroflask",
+                    "href": "https://www.hydroflask.com/catalogsearch/result/?q=kids%20hydroflask"
+                  },
+                  {
+                    "text": "32 oz",
+                    "href": "https://www.hydroflask.com/catalogsearch/result/?q=32%20oz"
+                  },
+                  {
+                    "text": "Shop Now Micro Hydro Family",
+                    "href": "https://www.hydroflask.com/shop/mini-water-bottles"
+                  },
+                  {
+                    "text": "Micro Hydro Family",
+                    "href": "https://www.hydroflask.com/shop/mini-water-bottles"
+                  },
+                  {
+                    "text": "Shop Micro Hydro",
+                    "href": "https://www.hydroflask.com/shop/mini-water-bottles"
+                  },
+                  {
+                    "text": "Shop Hydro Flask bottles, coolers and accessories perfect for gifting.",
+                    "href": "https://www.hydroflask.com/water-bottle-gift-ideas"
+                  },
+                  {
+                    "text": "Holiday Gift Guide",
+                    "href": "https://www.hydroflask.com/water-bottle-gift-ideas"
+                  },
+                  {
+                    "text": "Shop Holiday Gifts",
+                    "href": "https://www.hydroflask.com/water-bottle-gift-ideas"
+                  },
+                  {
+                    "text": "Shop Now Soft Coolers Collection",
+                    "href": "https://www.hydroflask.com/shop/collections/carryout-collection"
+                  },
+                  {
+                    "text": "Soft Coolers Collection",
+                    "href": "https://www.hydroflask.com/shop/collections/carryout-collection"
+                  },
+                  {
+                    "text": "Shop Carryout™ Coolers",
+                    "href": "https://www.hydroflask.com/shop/collections/carryout-collection"
+                  },
+                  {
+                    "text": "",
+                    "href": "https://www.hydroflask.com/blog/clean-care/how-to-clean-your-flip-sip-cap"
+                  },
+                  {
+                    "text": "How to Clean Your Flip Sip Cap",
+                    "href": "https://www.hydroflask.com/blog/clean-care/how-to-clean-your-flip-sip-cap"
+                  },
+                  {
+                    "text": "",
+                    "href": "https://www.hydroflask.com/blog/tips-and-tricks/12-ways-to-use-your-micro-hydros"
+                  },
+                  {
+                    "text": "12 Ways To Use Your Micro Hydros",
+                    "href": "https://www.hydroflask.com/blog/tips-and-tricks/12-ways-to-use-your-micro-hydros"
+                  },
+                  {
+                    "text": "",
+                    "href": "https://www.hydroflask.com/blog/product-releases/hydro-flask-redesigns-soft-cooler-collection-for-everyday-travel-sports-and-outdoor-use"
+                  },
+                  {
+                    "text": "Hydro Flask Redesigns Soft Cooler Collection for Everyday Travel, Sports and Outdoor Use",
+                    "href": "https://www.hydroflask.com/blog/product-releases/hydro-flask-redesigns-soft-cooler-collection-for-everyday-travel-sports-and-outdoor-use"
+                  }
+                ],
+                "headings": [],
+                "images": 6,
+                "inputs": [
+                  "search"
+                ],
+                "buttons": [
+                  "Search",
+                  "Hydro Finder"
+                ],
+                "options": 0,
+                "rect": [
+                  96,
+                  132,
+                  1329,
+                  564
+                ]
+              },
+              "expanded": "true",
+              "focus": "panel",
+              "scrollLock": true,
+              "motion": [
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 150,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "button.c-mega-header__search-btn"
+                },
+                {
+                  "kind": "animation",
+                  "prop": "animateMegamenuOverlay",
+                  "ms": 200,
+                  "delay": 0,
+                  "easing": "linear",
+                  "target": "div.c-header__search-content"
+                },
+                {
+                  "kind": "animation",
+                  "prop": "spin",
+                  "ms": 1000,
+                  "delay": 0,
+                  "easing": "linear",
+                  "target": "div.inline-block"
+                },
+                {
+                  "kind": "animation",
+                  "prop": "spin",
+                  "ms": 1000,
+                  "delay": 0,
+                  "easing": "linear",
+                  "target": "svg.animate-spin"
+                }
+              ],
+              "shot": "1440-013-Open-Search-click.png"
+            },
+            "key": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [],
+                "headings": [],
+                "images": 0,
+                "inputs": [
+                  "search"
+                ],
+                "buttons": [
+                  "Search",
+                  "Hydro Finder"
+                ],
+                "options": 0,
+                "rect": [
+                  96,
+                  132,
+                  1329,
+                  208
+                ]
+              },
+              "expanded": "true",
+              "focus": "panel",
+              "scrollLock": true,
+              "motion": [
+                {
+                  "kind": "animation",
+                  "prop": "spin",
+                  "ms": 1000,
+                  "delay": 0,
+                  "easing": "linear",
+                  "target": "svg.animate-spin"
+                },
+                {
+                  "kind": "animation",
+                  "prop": "animateMegamenuOverlay",
+                  "ms": 200,
+                  "delay": 0,
+                  "easing": "linear",
+                  "target": "div.c-header__search-content"
+                },
+                {
+                  "kind": "animation",
+                  "prop": "spin",
+                  "ms": 1000,
+                  "delay": 0,
+                  "easing": "linear",
+                  "target": "div.inline-block"
+                }
+              ],
+              "shot": "1440-014-Open-Search-key.png",
+              "tabReachesPanel": true
+            }
+          },
+          "close": {
+            "escape": false,
+            "focusReturn": false,
+            "outside": null,
+            "toggle": false
+          },
+          "children": [
+            {
+              "name": "I am searching for...",
+              "key": "i am searching for",
+              "role": "input",
+              "kind": "search",
+              "sel": "#autocomplete-0-input",
+              "expanded": null,
+              "rect": [
+                96,
+                132,
+                1233,
+                71
+              ],
+              "actions": {},
+              "search": {
+                "probe": "rewards",
+                "typeahead": {
+                  "links": 6,
+                  "options": 0
+                },
+                "submit": "https://www.hydroflask.com/catalogsearch/result/?q={q}"
+              }
+            },
+            {
+              "name": "",
+              "key": "",
+              "role": "toggle",
+              "kind": "menu",
+              "sel": "#autocomplete-0-label",
+              "expanded": null,
+              "rect": [
+                1297,
+                151,
+                24,
+                27
+              ],
+              "actions": {
+                "hover": {
+                  "opened": true,
+                  "hidden": 0,
+                  "panel": {
+                    "links": [
+                      {
+                        "text": "rewards",
+                        "href": "https://www.hydroflask.com/catalogsearch/result/?q=rewards"
+                      },
+                      {
+                        "text": "flask",
+                        "href": "https://www.hydroflask.com/catalogsearch/result/?q=flask"
+                      },
+                      {
+                        "text": "Pink",
+                        "href": "https://www.hydroflask.com/catalogsearch/result/?q=Pink"
+                      },
+                      {
+                        "text": "Kids",
+                        "href": "https://www.hydroflask.com/catalogsearch/result/?q=Kids"
+                      },
+                      {
+                        "text": "kids hydroflask",
+                        "href": "https://www.hydroflask.com/catalogsearch/result/?q=kids%20hydroflask"
+                      },
+                      {
+                        "text": "32 oz",
+                        "href": "https://www.hydroflask.com/catalogsearch/result/?q=32%20oz"
+                      },
+                      {
+                        "text": "Shop Now Micro Hydro Family",
+                        "href": "https://www.hydroflask.com/shop/mini-water-bottles"
+                      },
+                      {
+                        "text": "Micro Hydro Family",
+                        "href": "https://www.hydroflask.com/shop/mini-water-bottles"
+                      },
+                      {
+                        "text": "Shop Micro Hydro",
+                        "href": "https://www.hydroflask.com/shop/mini-water-bottles"
+                      },
+                      {
+                        "text": "Shop Hydro Flask bottles, coolers and accessories perfect for gifting.",
+                        "href": "https://www.hydroflask.com/water-bottle-gift-ideas"
+                      },
+                      {
+                        "text": "Holiday Gift Guide",
+                        "href": "https://www.hydroflask.com/water-bottle-gift-ideas"
+                      },
+                      {
+                        "text": "Shop Holiday Gifts",
+                        "href": "https://www.hydroflask.com/water-bottle-gift-ideas"
+                      },
+                      {
+                        "text": "Shop Now Soft Coolers Collection",
+                        "href": "https://www.hydroflask.com/shop/collections/carryout-collection"
+                      },
+                      {
+                        "text": "Soft Coolers Collection",
+                        "href": "https://www.hydroflask.com/shop/collections/carryout-collection"
+                      },
+                      {
+                        "text": "Shop Carryout™ Coolers",
+                        "href": "https://www.hydroflask.com/shop/collections/carryout-collection"
+                      },
+                      {
+                        "text": "",
+                        "href": "https://www.hydroflask.com/blog/clean-care/how-to-clean-your-flip-sip-cap"
+                      },
+                      {
+                        "text": "How to Clean Your Flip Sip Cap",
+                        "href": "https://www.hydroflask.com/blog/clean-care/how-to-clean-your-flip-sip-cap"
+                      },
+                      {
+                        "text": "",
+                        "href": "https://www.hydroflask.com/blog/tips-and-tricks/12-ways-to-use-your-micro-hydros"
+                      },
+                      {
+                        "text": "12 Ways To Use Your Micro Hydros",
+                        "href": "https://www.hydroflask.com/blog/tips-and-tricks/12-ways-to-use-your-micro-hydros"
+                      },
+                      {
+                        "text": "",
+                        "href": "https://www.hydroflask.com/blog/product-releases/hydro-flask-redesigns-soft-cooler-collection-for-everyday-travel-sports-and-outdoor-use"
+                      },
+                      {
+                        "text": "Hydro Flask Redesigns Soft Cooler Collection for Everyday Travel, Sports and Outdoor Use",
+                        "href": "https://www.hydroflask.com/blog/product-releases/hydro-flask-redesigns-soft-cooler-collection-for-everyday-travel-sports-and-outdoor-use"
+                      }
+                    ],
+                    "headings": [],
+                    "images": 6,
+                    "inputs": [],
+                    "buttons": [
+                      "Remove from recent searches",
+                      "Search for query",
+                      "Get 15% Off",
+                      "Close teaser"
+                    ],
+                    "options": 0,
+                    "rect": [
+                      96,
+                      276,
+                      1344,
+                      420
+                    ]
+                  },
+                  "expanded": null,
+                  "focus": "elsewhere",
+                  "scrollLock": true,
+                  "motion": [
+                    {
+                      "kind": "transition",
+                      "prop": "opacity",
+                      "ms": 150,
+                      "delay": 0,
+                      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                      "target": "button.c-mega-header__search-btn"
+                    }
+                  ],
+                  "shot": "1440-015-toggle-hover.png"
+                },
+                "click": {
+                  "opened": false,
+                  "navigates": "https://www.hydroflask.com/catalogsearch/result/?q="
+                },
+                "key": null
+              },
+              "close": {
+                "escape": false,
+                "focusReturn": false,
+                "outside": null,
+                "leave": false
+              }
+            },
+            {
+              "name": "Search",
+              "key": "search",
+              "role": "toggle",
+              "kind": "search",
+              "sel": "#autocomplete-0-label>button",
+              "expanded": null,
+              "rect": [
+                1297,
+                151,
+                24,
+                24
+              ],
+              "actions": {
+                "hover": {
+                  "opened": true,
+                  "hidden": 0,
+                  "panel": {
+                    "links": [],
+                    "headings": [],
+                    "images": 0,
+                    "inputs": [],
+                    "buttons": [
+                      "Hydro Finder",
+                      "Get 15% Off",
+                      "Close teaser"
+                    ],
+                    "options": 0,
+                    "rect": [
+                      1385,
+                      200,
+                      55,
+                      421
+                    ]
+                  },
+                  "expanded": null,
+                  "focus": "elsewhere",
+                  "scrollLock": true,
+                  "motion": [
+                    {
+                      "kind": "transition",
+                      "prop": "opacity",
+                      "ms": 150,
+                      "delay": 0,
+                      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                      "target": "button.c-mega-header__search-btn"
+                    }
+                  ],
+                  "shot": "1440-016-Search-hover.png"
+                },
+                "click": {
+                  "opened": false,
+                  "navigates": "https://www.hydroflask.com/catalogsearch/result/?q="
+                },
+                "key": {
+                  "opened": false,
+                  "navigates": "https://www.hydroflask.com/catalogsearch/result/?q="
+                }
+              },
+              "close": {
+                "escape": false,
+                "focusReturn": false,
+                "outside": null,
+                "leave": false
+              }
+            },
+            {
+              "name": "Hydro Finder",
+              "key": "hydro finder",
+              "role": "toggle",
+              "kind": "menu",
+              "sel": "#html-body>div:nth-of-type(6)>div",
+              "expanded": null,
+              "rect": [
+                1385,
+                200,
+                40,
+                140
+              ],
+              "actions": {
+                "hover": null,
+                "click": {
+                  "opened": true,
+                  "hidden": 0,
+                  "panel": {
+                    "links": [],
+                    "headings": [],
+                    "images": 0,
+                    "inputs": [
+                      "search"
+                    ],
+                    "buttons": [
+                      "Search",
+                      "Get 15% Off",
+                      "Close teaser"
+                    ],
+                    "options": 0,
+                    "rect": [
+                      96,
+                      132,
+                      1344,
+                      489
+                    ]
+                  },
+                  "expanded": null,
+                  "focus": "body",
+                  "scrollLock": true,
+                  "motion": [
+                    {
+                      "kind": "transition",
+                      "prop": "opacity",
+                      "ms": 150,
+                      "delay": 0,
+                      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                      "target": "button.c-mega-header__search-btn"
+                    }
+                  ],
+                  "shot": "1440-017-Hydro-Finder-click.png"
+                },
+                "key": null
+              },
+              "close": {
+                "escape": false,
+                "focusReturn": false,
+                "outside": null,
+                "toggle": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "My account",
+          "key": "my account",
+          "role": "toggle",
+          "kind": "account",
+          "sel": "#customer-menu",
+          "expanded": "false",
+          "rect": [
+            1258,
+            38,
+            44,
+            44
+          ],
+          "actions": {
+            "hover": null,
+            "click": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [
+                  {
+                    "text": "Sign In",
+                    "href": "https://www.hydroflask.com/customer/account/index/"
+                  },
+                  {
+                    "text": "Create an Account",
+                    "href": "https://www.hydroflask.com/customer/account/create/"
+                  },
+                  {
+                    "text": "Track My Order",
+                    "href": "https://www.hydroflask.com/track/order/status/"
+                  }
+                ],
+                "headings": [],
+                "images": 0,
+                "inputs": [],
+                "buttons": [
+                  "Hydro Finder"
+                ],
+                "options": 0,
+                "rect": [
+                  1161,
+                  116,
+                  264,
+                  224
+                ]
+              },
+              "expanded": "true",
+              "focus": "panel",
+              "scrollLock": false,
+              "motion": [
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 150,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "button.c-mega-header__account-btn"
+                },
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 200,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0, 0, 0.2, 1)",
+                  "target": "nav.c-mega-header__account-panel"
+                }
+              ],
+              "shot": "1440-018-My-account-click.png"
+            },
+            "key": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [
+                  {
+                    "text": "Sign In",
+                    "href": "https://www.hydroflask.com/customer/account/index/"
+                  },
+                  {
+                    "text": "Create an Account",
+                    "href": "https://www.hydroflask.com/customer/account/create/"
+                  },
+                  {
+                    "text": "Track My Order",
+                    "href": "https://www.hydroflask.com/track/order/status/"
+                  }
+                ],
+                "headings": [],
+                "images": 0,
+                "inputs": [],
+                "buttons": [
+                  "Hydro Finder",
+                  "Close teaser"
+                ],
+                "options": 0,
+                "rect": [
+                  1161,
+                  116,
+                  279,
+                  505
+                ]
+              },
+              "expanded": "true",
+              "focus": "panel",
+              "scrollLock": false,
+              "motion": [
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 200,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0, 0, 0.2, 1)",
+                  "target": "nav.c-mega-header__account-panel"
+                }
+              ],
+              "shot": "1440-019-My-account-key.png",
+              "tabReachesPanel": true
+            }
+          },
+          "close": {
+            "escape": true,
+            "focusReturn": true,
+            "outside": true,
+            "toggle": true
+          },
+          "children": [
+            {
+              "name": "Hydro Finder",
+              "key": "hydro finder",
+              "role": "toggle",
+              "kind": "menu",
+              "sel": "#html-body>div:nth-of-type(6)>div",
+              "expanded": null,
+              "rect": [
+                1385,
+                200,
+                40,
+                140
+              ],
+              "actions": {
+                "hover": null,
+                "click": {
+                  "opened": false,
+                  "hides": 3
+                },
+                "key": null
+              }
+            }
+          ]
+        },
+        {
+          "name": "My minicart, cart is empty",
+          "key": "my minicart cart is empty",
+          "role": "toggle",
+          "kind": "cart",
+          "sel": "#menu-cart-icon",
+          "expanded": "false",
+          "rect": [
+            1315,
+            48,
+            47,
+            24
+          ],
+          "actions": {
+            "hover": null,
+            "click": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [],
+                "headings": [
+                  "Your Cart ( 0 )"
+                ],
+                "images": 0,
+                "inputs": [],
+                "buttons": [
+                  "Close minicart",
+                  "Close minicart",
+                  "Free Shipping Goal Tooltip",
+                  "Hydro Finder"
+                ],
+                "options": 0,
+                "rect": [
+                  0,
+                  0,
+                  1425,
+                  900
+                ]
+              },
+              "expanded": "true",
+              "focus": "panel",
+              "scrollLock": false,
+              "motion": [
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 150,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "button.c-mega-header__cart-btn"
+                },
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 300,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "div.backdrop"
+                },
+                {
+                  "kind": "transition",
+                  "prop": "transform",
+                  "ms": 300,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "div.cart-drawer"
+                }
+              ],
+              "shot": "1440-020-My-minicart-cart-is-empty-click.png"
+            },
+            "key": {
+              "opened": true,
+              "hidden": 0,
+              "panel": {
+                "links": [],
+                "headings": [
+                  "Your Cart ( 0 )"
+                ],
+                "images": 0,
+                "inputs": [],
+                "buttons": [
+                  "Close minicart",
+                  "Close minicart",
+                  "Free Shipping Goal Tooltip",
+                  "Hydro Finder"
+                ],
+                "options": 0,
+                "rect": [
+                  0,
+                  0,
+                  1425,
+                  900
+                ]
+              },
+              "expanded": "true",
+              "focus": "panel",
+              "scrollLock": false,
+              "motion": [
+                {
+                  "kind": "transition",
+                  "prop": "opacity",
+                  "ms": 300,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "div.backdrop"
+                },
+                {
+                  "kind": "transition",
+                  "prop": "transform",
+                  "ms": 300,
+                  "delay": 0,
+                  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                  "target": "div.cart-drawer"
+                }
+              ],
+              "shot": "1440-021-My-minicart-cart-is-empty-key.png",
+              "tabReachesPanel": true
+            }
+          },
+          "close": {
+            "escape": false,
+            "focusReturn": false,
+            "outside": null,
+            "toggle": false
+          },
+          "children": [
+            {
+              "name": "Close minicart",
+              "key": "close minicart",
+              "role": "toggle",
+              "kind": "menu",
+              "sel": "#cart-drawer>div>div:nth-of-type(1)",
+              "expanded": null,
+              "rect": [
+                0,
+                0,
+                1425,
+                900
+              ],
+              "actions": {
+                "hover": {
+                  "opened": true,
+                  "hidden": 1,
+                  "panel": {
+                    "links": [
+                      {
+                        "text": "Shop Now",
+                        "href": "https://www.hydroflask.com/shop/new-arrivals?visual-filter=Best+Sellers"
+                      }
+                    ],
+                    "headings": [],
+                    "images": 0,
+                    "inputs": [],
+                    "buttons": [
+                      "Get 15% Off",
+                      "Close teaser"
+                    ],
+                    "options": 0,
+                    "rect": [
+                      789,
+                      107,
+                      651,
+                      514
+                    ]
+                  },
+                  "expanded": null,
+                  "focus": "elsewhere",
+                  "scrollLock": false,
+                  "motion": [],
+                  "shot": "1440-022-Close-minicart-hover.png"
+                },
+                "click": {
+                  "opened": true,
+                  "hidden": 4,
+                  "panel": {
+                    "links": [],
+                    "headings": [],
+                    "images": 0,
+                    "inputs": [],
+                    "buttons": [
+                      "Get 15% Off",
+                      "Close teaser"
+                    ],
+                    "options": 0,
+                    "rect": [
+                      0,
+                      455,
+                      1440,
+                      445
+                    ]
+                  },
+                  "expanded": null,
+                  "focus": "body",
+                  "scrollLock": false,
+                  "motion": [
+                    {
+                      "kind": "transition",
+                      "prop": "opacity",
+                      "ms": 300,
+                      "delay": 0,
+                      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                      "target": "div.backdrop"
+                    },
+                    {
+                      "kind": "transition",
+                      "prop": "transform",
+                      "ms": 300,
+                      "delay": 0,
+                      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+                      "target": "div.cart-drawer"
+                    }
+                  ],
+                  "shot": "1440-023-Close-minicart-click.png"
+                },
+                "key": null
+              },
+              "close": {
+                "escape": false,
+                "focusReturn": false,
+                "outside": false,
+                "toggle": false
+              }
+            },
+            {
+              "name": "Close minicart",
+              "key": "close minicart",
+              "role": "toggle",
+              "kind": "cart",
+              "sel": "#cart-drawer-close-button",
+              "expanded": null,
+              "rect": [
+                1367,
+                0,
+                58,
+                51
+              ],
+              "actions": {
+                "hover": {
+                  "opened": true,
+                  "hidden": 0,
+                  "panel": {
+                    "links": [],
+                    "headings": [],
+                    "images": 0,
+                    "inputs": [],
+                    "buttons": [
+                      "Close teaser"
+                    ],
+                    "options": 0,
+                    "rect": [
+                      0,
+                      455,
+                      1440,
+                      445
+                    ]
+                  },
+                  "expanded": null,
+                  "focus": "trigger",
+                  "scrollLock": false,
+                  "motion": [
+                    {
+                      "kind": "transition",
+                      "prop": "background-color",
+                      "ms": 100,
+                      "delay": 0,
+                      "easing": "cubic-bezier(0.4, 0, 1, 1)",
+                      "target": "button.btn"
+                    },
+                    {
+                      "kind": "transition",
+                      "prop": "box-shadow",
+                      "ms": 100,
+                      "delay": 0,
+                      "easing": "cubic-bezier(0.4, 0, 1, 1)",
+                      "target": "button.btn"
+                    }
+                  ],
+                  "shot": "1440-024-Close-minicart-hover.png"
+                },
+                "click": {
+                  "opened": false,
+                  "hides": 4
+                },
+                "key": {
+                  "opened": false,
+                  "hides": 4
+                }
+              },
+              "close": {
+                "escape": false,
+                "focusReturn": false,
+                "outside": null,
+                "leave": false
+              }
+            },
+            {
+              "name": "Free Shipping Goal Tooltip",
+              "key": "free shipping goal tooltip",
+              "role": "toggle",
+              "kind": "menu",
+              "sel": "#cart-drawer>div>div:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(5)>section>div:nth-of-type(2)>div>button",
+              "expanded": null,
+              "rect": [
+                1127,
+                138,
+                24,
+                25
+              ],
+              "actions": {
+                "hover": {
+                  "opened": true,
+                  "hidden": 0,
+                  "panel": {
+                    "links": [],
+                    "headings": [],
+                    "images": 0,
+                    "inputs": [],
+                    "buttons": [
+                      "Get 15% Off",
+                      "Close teaser"
+                    ],
+                    "options": 0,
+                    "rect": [
+                      0,
+                      455,
+                      1440,
+                      445
+                    ]
+                  },
+                  "expanded": null,
+                  "focus": "elsewhere",
+                  "scrollLock": false,
+                  "motion": [
+                    {
+                      "kind": "transition",
+                      "prop": "opacity",
+                      "ms": 200,
+                      "delay": 0,
+                      "easing": "cubic-bezier(0, 0, 0.2, 1)",
+                      "target": "div.relative"
+                    }
+                  ],
+                  "shot": "1440-025-Free-Shipping-Goal-Tooltip-hover.png"
+                },
+                "click": {
+                  "opened": true,
+                  "hidden": 0,
+                  "panel": {
+                    "links": [],
+                    "headings": [],
+                    "images": 0,
+                    "inputs": [],
+                    "buttons": [
+                      "Close teaser"
+                    ],
+                    "options": 0,
+                    "rect": [
+                      0,
+                      455,
+                      1440,
+                      445
+                    ]
+                  },
+                  "expanded": null,
+                  "focus": "trigger",
+                  "scrollLock": false,
+                  "motion": [
+                    {
+                      "kind": "transition",
+                      "prop": "opacity",
+                      "ms": 200,
+                      "delay": 0,
+                      "easing": "cubic-bezier(0, 0, 0.2, 1)",
+                      "target": "div.relative"
+                    }
+                  ],
+                  "shot": "1440-026-Free-Shipping-Goal-Tooltip-click.png"
+                },
+                "key": null
+              },
+              "close": {
+                "escape": false,
+                "focusReturn": false,
+                "outside": null,
+                "toggle": false
+              }
+            }
+          ]
+        }
+      ],
+      "scroll": [
+        {
+          "at": "top",
+          "y": 0,
+          "top": 0,
+          "height": 93,
+          "position": "sticky",
+          "inView": true
+        },
+        {
+          "at": "down",
+          "y": 1000,
+          "top": 0,
+          "height": 93,
+          "position": "sticky",
+          "inView": true
+        },
+        {
+          "at": "up",
+          "y": 700,
+          "top": 0,
+          "height": 93,
+          "position": "sticky",
+          "inView": true
+        },
+        {
+          "at": "back",
+          "y": 0,
+          "top": 0,
+          "height": 93,
+          "position": "sticky",
+          "inView": true
+        }
+      ],
+      "states": 26,
+      "truncated": "depth 2 at USA | EN > Close",
+      "loads": 123
+    }
+  },
+  "probe": "rewards",
+  "note": "merged from per-width runs (1440 max-states 30 depth 2; 390 max-states 12 depth 1 — wider budgets time out on the source host)",
+  "shotsByWidth": {
+    "390": "stardust/.work/chrome/header-contract-390",
+    "1440": "stardust/.work/chrome/header-contract-1440"
+  }
+}

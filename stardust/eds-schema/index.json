@@ -1,0 +1,599 @@
+{
+ "source": "http://localhost:8791/prototypes/index-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hf-carle",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "World of Eric Carle"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "™"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "x Hydro Flask"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Brown Bear and friends, now on your favorite Hydro Flasks."
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Shop Eric Carle™",
+     "href": "/shop/collections/eric-carle-water-bottles"
+    }
+   ],
+   "imgCount": 2,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "hf-gift",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Gift & Gather"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Hosting essentials that last all season."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Shop the Gift Guide",
+     "href": "/water-bottle-gift-ideas"
+    }
+   ],
+   "imgCount": 2,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "hf-tiles",
+   "items": [
+    {
+     "role": "cta",
+     "order": 0,
+     "text": "Tailgating",
+     "href": "/shop/collections/tailgating"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Coffee & Tea",
+     "href": "/shop/bottles-drinkware/coffee-tea"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Halloween Spirit",
+     "href": "/shop/collections/halloween-shop"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Everyday Hydration",
+     "href": "/shop/bottles?visual-filter=Bestsellers"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Kickoff cooler weather with Hydro Flask."
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Shop New",
+     "href": "/shop/new-arrivals"
+    }
+   ],
+   "imgCount": 5,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "A.hf-tiles__tile",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 2,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "hf-gigi",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Hydro Flask x"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Gigi Perez"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Featuring custom doodles hand drawn by Gigi."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Shop Now",
+     "href": "/gigi-perez-bottles"
+    }
+   ],
+   "imgCount": 2,
+   "editableTexts": 3,
+   "repeats": []
+  },
+  {
+   "section": "hf-products",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Lightweight Collection"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Shop Lightweight",
+     "href": "/shop/lightweight-water-bottles"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "12 oz Lightweight Mug",
+     "href": "https://www.hydroflask.com/12-oz-lightweight-mug"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Final"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "$34.95"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "16 oz Lightweight Flip Sip Travel Mug",
+     "href": "https://www.hydroflask.com/16-oz-lightweight-flip-sip-travel-mug"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Final"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "$37.95"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "12 oz Lightweight Mug - Cypress Green",
+     "href": "https://www.hydroflask.com/12-oz-lightweight-mug?color=Cypress+Green"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "Final"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "$34.95"
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "24 oz Lightweight Flex Straw Bottle",
+     "href": "https://www.hydroflask.com/24-oz-lightweight-flex-straw-bottle"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Final"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "$44.95"
+    },
+    {
+     "role": "cta",
+     "order": 14,
+     "text": "32 oz Lightweight Chug Cap Bottle - Atlas",
+     "href": "https://www.hydroflask.com/32-oz-lightweight-chug-cap-bottle?color=Atlas"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "Final"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "$49.95"
+    },
+    {
+     "role": "cta",
+     "order": 17,
+     "text": "16 oz Lightweight Chug Cap Bottle",
+     "href": "https://www.hydroflask.com/16-oz-lightweight-chug-cap-bottle"
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "Final"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "$37.95"
+    },
+    {
+     "role": "cta",
+     "order": 20,
+     "text": "32 oz Lightweight Flex Straw Bottle",
+     "href": "https://www.hydroflask.com/32-oz-lightweight-flex-straw-cap-bottle"
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "Final"
+    },
+    {
+     "role": "body",
+     "order": 22,
+     "text": "$49.95"
+    },
+    {
+     "role": "cta",
+     "order": 23,
+     "text": "40 oz Lightweight Flex Cap Bottle",
+     "href": "https://www.hydroflask.com/40-oz-lightweight-flex-cap-bottle"
+    },
+    {
+     "role": "body",
+     "order": 24,
+     "text": "Final"
+    },
+    {
+     "role": "body",
+     "order": 25,
+     "text": "$54.95"
+    },
+    {
+     "role": "body",
+     "order": 26,
+     "text": "Go to slide 1"
+    },
+    {
+     "role": "body",
+     "order": 27,
+     "text": "Go to slide 2"
+    },
+    {
+     "role": "body",
+     "order": 28,
+     "text": "Go to slide 3"
+    },
+    {
+     "role": "body",
+     "order": 29,
+     "text": "Go to slide 4"
+    },
+    {
+     "role": "body",
+     "order": 30,
+     "text": "Go to slide 5"
+    },
+    {
+     "role": "body",
+     "order": 31,
+     "text": "Go to slide 6"
+    },
+    {
+     "role": "body",
+     "order": 32,
+     "text": "Go to slide 7"
+    },
+    {
+     "role": "body",
+     "order": 33,
+     "text": "Go to slide 8"
+    }
+   ],
+   "imgCount": 8,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "DIV.hf-products__item",
+     "count": 8,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 1,
+      "textRuns": 3
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "BUTTON.hf-products__bar",
+     "count": 8,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "hf-sundae",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Limited Edition"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Sundae School x Hydro Flask"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "An iconic Sundae School fleece transformed into an iconic Hydro Flask bottle."
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Shop Sundae School",
+     "href": "/sundae-school-24-oz-bottle"
+    }
+   ],
+   "imgCount": 2,
+   "editableTexts": 2,
+   "repeats": []
+  },
+  {
+   "section": "hf-products",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Level up lunch"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Shop Lunch",
+     "href": "/shop/coolers/lunch-boxes"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Carryout™ Lunch Bag",
+     "href": "https://www.hydroflask.com/carryout-lunch-bag"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Final"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "$49.95"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Carryout™ Lunch Box",
+     "href": "https://www.hydroflask.com/carryout-lunch-box"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Final"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "$39.95"
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "Carryout™ Lunch Tote",
+     "href": "https://www.hydroflask.com/carryout-lunch-tote"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "Final"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "$49.95"
+    },
+    {
+     "role": "cta",
+     "order": 11,
+     "text": "Carryout™ Lunch Rolltop",
+     "href": "https://www.hydroflask.com/carryout-lunch-rolltop"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Final"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "$39.95"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "Go to slide 1"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "Go to slide 2"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "Go to slide 3"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "Go to slide 4"
+    }
+   ],
+   "imgCount": 4,
+   "editableTexts": 1,
+   "repeats": [
+    {
+     "unitSelector": "DIV.hf-products__item",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 1,
+      "textRuns": 3
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "BUTTON.hf-products__bar",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "hf-trending",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Trending Now"
+    },
+    {
+     "role": "cta",
+     "order": 1,
+     "text": "Bottles & Drinkware",
+     "href": "/shop/bottles-drinkware"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "New Colors",
+     "href": "/shop/new-arrivals"
+    },
+    {
+     "role": "cta",
+     "order": 3,
+     "text": "Bundles",
+     "href": "/shop/bundles"
+    },
+    {
+     "role": "cta",
+     "order": 4,
+     "text": "Coolers & Totes",
+     "href": "/shop/coolers"
+    },
+    {
+     "role": "cta",
+     "order": 5,
+     "text": "Micro Hydro",
+     "href": "/shop/mini-water-bottles"
+    },
+    {
+     "role": "cta",
+     "order": 6,
+     "text": "Lightweight",
+     "href": "/shop/lightweight-water-bottles"
+    }
+   ],
+   "imgCount": 0,
+   "editableTexts": 2,
+   "repeats": [
+    {
+     "unitSelector": "LI.hf-trending__item",
+     "count": 6,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "hf-advocacy",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Our commitment to responsible advocacy."
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Hydro Flask is proud to support Ocean Conservancy® as the official hydration partner and Platinum Champion of its Protect Where We Play℠ initiative."
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Learn More",
+     "href": "/brand-values"
+    }
+   ],
+   "imgCount": 3,
+   "editableTexts": 2,
+   "repeats": []
+  }
+ ]
+}

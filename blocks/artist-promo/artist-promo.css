@@ -1,0 +1,168 @@
+/* artist-promo — ported from the prototype .hf-gigi section CSS */
+.artist-promo {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.artist-promo .promo-container {
+  position: relative;
+  margin: 12px auto;
+  max-width: 1300px;
+  min-height: 603px;
+  background: #000;
+}
+
+.artist-promo .img-desktop {
+  display: none;
+}
+
+.artist-promo .promo-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.artist-promo .promo-bg > div,
+.artist-promo .promo-bg picture {
+  height: 100%;
+}
+
+.artist-promo .promo-bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artist-promo .promo-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 31px 24px 0 35px;
+  max-width: 390px;
+}
+
+.artist-promo .promo-eyebrow {
+  margin: 0 0 14px 2px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.1px;
+}
+
+.artist-promo .promo-signature {
+  margin: 0 0 7px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.artist-promo .promo-signature img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+}
+
+/* the signature artwork shows the name; the heading stays for assistive tech */
+.artist-promo .promo-heading {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border-width: 0;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.artist-promo .promo-text {
+  margin: 0 0 14px 2px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.35;
+  letter-spacing: 0.1px;
+  max-width: 243px;
+}
+
+.artist-promo .promo-cta p {
+  display: flex;
+}
+
+.artist-promo .promo-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 122px;
+  height: 39px;
+  padding: 10px;
+  background-color: #fff;
+  border: 4px solid #fff;
+  border-radius: 12px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.75;
+  letter-spacing: 0.1px;
+}
+
+.artist-promo .promo-cta a:hover,
+.artist-promo .promo-cta a:active {
+  background-color: #989898;
+  border-color: #989898;
+}
+
+@media (width >= 768px) {
+  .artist-promo .img-desktop {
+    display: block;
+  }
+
+  .artist-promo .img-mobile {
+    display: none;
+  }
+
+  .artist-promo .promo-container {
+    min-height: 420px;
+    height: 420px;
+    margin: 48px auto;
+  }
+
+  .artist-promo .promo-content {
+    padding: 78px 40px 0 76px;
+    max-width: 650px;
+  }
+
+  .artist-promo .promo-eyebrow {
+    margin: 0 0 17px 2px;
+    font-size: 35px;
+  }
+
+  .artist-promo .promo-signature {
+    margin: 0 0 1px -5px;
+    max-width: 551px;
+  }
+
+  .artist-promo .promo-signature img {
+    max-width: 551px;
+  }
+
+  .artist-promo .promo-text {
+    margin: 0 0 8px;
+    line-height: 1.5;
+    max-width: 253px;
+  }
+
+  .artist-promo .promo-cta a {
+    width: 156px;
+    height: 49px;
+    font-size: 18px;
+    line-height: 1.55;
+  }
+}

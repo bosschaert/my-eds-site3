@@ -1,0 +1,463 @@
+/* hero-carousel — ported from the prototype .hf-banner / .hf-carle / .hf-gift section CSS */
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  margin-bottom: 56px;
+}
+
+.hero-carousel .hero-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.hero-carousel .hero-pause {
+  background-color: rgb(0 0 0 / 70%);
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.hero-carousel .hero-pause .play-icon {
+  display: none;
+}
+
+.hero-carousel.is-paused .pause-icon {
+  display: none;
+}
+
+.hero-carousel.is-paused .play-icon {
+  display: inline;
+}
+
+.hero-carousel .hero-slides {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-carousel .hero-slide {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  content-visibility: hidden;
+}
+
+.hero-carousel .hero-slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  content-visibility: visible;
+}
+
+.hero-carousel .hero-dots {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.hero-carousel .hero-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #000;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+}
+
+.hero-carousel .hero-dot[aria-current='true'] {
+  background: #000;
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+/* image sets: one rendition per breakpoint (wide >= 1561, desktop 768-1560, mobile < 768) */
+.hero-carousel .img-wide,
+.hero-carousel .img-desktop {
+  display: none;
+}
+
+.hero-carousel .slide-main-image picture,
+.hero-carousel .slide-second-image picture {
+  height: 100%;
+}
+
+.hero-carousel .slide-main-image p,
+.hero-carousel .slide-second-image p {
+  margin: 0;
+}
+
+/* ---------- feature slide (World of Eric Carle) ---------- */
+.hero-carousel .hero-slide-feature .slide-stage {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  background-color: #a5ccd3;
+  overflow: hidden;
+  margin: 0;
+}
+
+.hero-carousel .hero-slide-feature .slide-main-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 390px;
+  height: 428px;
+  overflow: hidden;
+  z-index: 0;
+  mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+}
+
+.hero-carousel .hero-slide-feature .slide-second-image {
+  position: absolute;
+  top: 428px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 390px;
+  height: 222px;
+  overflow: hidden;
+  z-index: 0;
+  mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+}
+
+.hero-carousel .hero-slide-feature .slide-main-image > div,
+.hero-carousel .hero-slide-feature .slide-second-image > div {
+  height: 100%;
+}
+
+.hero-carousel .hero-slide-feature .slide-main-image img,
+.hero-carousel .hero-slide-feature .slide-second-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-carousel .hero-slide-feature .slide-content {
+  position: absolute;
+  top: 216px;
+  left: calc(((100% - 390px) / 2) + 44px);
+  width: 271px;
+  z-index: 1;
+}
+
+.hero-carousel .hero-slide-feature .slide-headline {
+  color: #593914;
+  letter-spacing: 0.1px;
+  position: relative;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.hero-carousel .hero-slide-feature .slide-headline :is(h1, h2, h3) {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  position: relative;
+}
+
+.hero-carousel .hero-slide-feature .slide-headline em {
+  display: block;
+  font-style: normal;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: -4px;
+}
+
+.hero-carousel .hero-slide-feature .slide-headline .tm {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  position: absolute;
+}
+
+.hero-carousel .hero-slide-feature .slide-text p {
+  margin: 14px 0 0;
+  color: #593914;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.hero-carousel .hero-slide-feature .slide-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  width: 173px;
+  height: 50px;
+  border: 3px solid #593914;
+  border-radius: 12px;
+  color: #593914;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ---------- holiday slide (Gift & Gather) ---------- */
+.hero-carousel .hero-slide-holiday {
+  background-color: #613239;
+  margin: 0;
+  overflow: hidden;
+}
+
+.hero-carousel .hero-slide-holiday .slide-stage {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  min-height: 650px;
+  max-height: 650px;
+}
+
+.hero-carousel .hero-slide-holiday .slide-stage::after {
+  content: '';
+  position: absolute;
+  left: 269px;
+  top: 22px;
+  width: 96px;
+  height: 221px;
+  background: url('stars-mobile.png') no-repeat 0 0 / contain;
+}
+
+.hero-carousel .hero-slide-holiday .slide-main-image {
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero-carousel .hero-slide-holiday .slide-main-image img {
+  width: 100%;
+  height: 349px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.hero-carousel .hero-slide-holiday .slide-content {
+  position: absolute;
+  top: 42px;
+  left: 40px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-carousel .hero-slide-holiday .slide-headline :is(h1, h2, h3) {
+  font-size: 56px;
+  line-height: 1.02;
+  color: #fdf6e4;
+  margin: 0 0 8px;
+}
+
+.hero-carousel .hero-slide-holiday .slide-text p {
+  font-size: 20px;
+  line-height: 1.15;
+  color: #fdf6e4;
+  margin: 0 0 18px;
+}
+
+.hero-carousel .hero-slide-holiday .slide-cta p {
+  display: flex;
+}
+
+.hero-carousel .hero-slide-holiday .slide-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background-color: #fdf6e4;
+  color: #613239;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  min-width: 229px;
+  height: 50px;
+  transition: all 0.3s ease;
+}
+
+@media (width >= 768px) {
+  .hero-carousel .hero-slides {
+    height: 600px;
+  }
+
+  .hero-carousel .img-mobile {
+    display: none;
+  }
+
+  .hero-carousel .img-desktop {
+    display: block;
+  }
+
+  .hero-carousel .slide-second-image .img-wide {
+    display: block;
+  }
+
+  .hero-carousel .hero-slide-holiday .slide-stage {
+    min-height: 600px;
+    max-height: 600px;
+  }
+
+  .hero-carousel .hero-slide-holiday .slide-stage::after {
+    left: 72px;
+    top: 69px;
+    width: 431px;
+    height: 401px;
+    background-image: url('stars.png');
+  }
+
+  .hero-carousel .hero-slide-holiday .slide-main-image {
+    right: clamp(-29.125rem, 78.716vw - 66.909rem, 0rem);
+    width: auto;
+  }
+
+  .hero-carousel .hero-slide-holiday .slide-main-image img {
+    height: 600px;
+    object-position: clamp(-19.75rem, 53.378vw - 45.372rem, 0rem);
+  }
+
+  .hero-carousel .hero-slide-holiday .slide-content {
+    left: clamp(1.25rem, 21.875vw - 9.25rem, 8.25rem);
+    top: 155px;
+  }
+
+  .hero-carousel .hero-slide-holiday .slide-headline :is(h1, h2, h3) {
+    font-size: 80px;
+    line-height: 1;
+    margin: 0 0 10px;
+  }
+
+  .hero-carousel .hero-slide-holiday .slide-text p {
+    font-size: 26px;
+    margin: 0 0 14px;
+  }
+
+  /* feature slide, 768-1560 (the >= 1561 block below overrides) */
+  .hero-carousel .hero-slide-feature .slide-stage {
+    height: 600px;
+  }
+
+  .hero-carousel .hero-slide-feature .slide-main-image {
+    left: clamp(-23.125rem, -51.2263rem + 58.5443vw, 0rem);
+    transform: none;
+    width: 1440px;
+    height: 600px;
+    mask-image: none;
+  }
+
+  .hero-carousel .hero-slide-feature .slide-second-image {
+    display: none;
+  }
+
+  .hero-carousel .hero-slide-feature .slide-content {
+    top: 186px;
+    left: clamp(23.4375rem, -24.7903rem + 100.4747vw, 63.125rem);
+    width: 408px;
+  }
+
+  .hero-carousel .hero-slide-feature .slide-headline {
+    font-size: 71px;
+  }
+
+  .hero-carousel .hero-slide-feature .slide-headline .tm {
+    font-size: 38px;
+    top: 84px;
+    left: 350px;
+  }
+
+  .hero-carousel .hero-slide-feature .slide-headline em {
+    font-size: 41px;
+    margin-top: 0;
+  }
+
+  .hero-carousel .hero-slide-feature .slide-text p {
+    margin-top: 22px;
+    width: 368px;
+    font-size: 22px;
+  }
+
+  .hero-carousel .hero-slide-feature .slide-cta a {
+    margin-top: 16px;
+  }
+}
+
+@media (width >= 1561px) {
+  .hero-carousel .img-desktop {
+    display: none;
+  }
+
+  .hero-carousel .img-wide {
+    display: block;
+  }
+
+  .hero-carousel .hero-slide-holiday .slide-main-image {
+    right: 0;
+    height: 600px;
+  }
+
+  .hero-carousel .hero-slide-holiday .slide-stage::after {
+    left: clamp(4.5rem, 23.955vw - 18.872rem, 9.875rem);
+  }
+
+  .hero-carousel .hero-slide-holiday .slide-content {
+    left: clamp(3.75rem, 47.039vw - 42.143rem, 12.688rem);
+  }
+
+  .hero-carousel .hero-slide-feature .slide-main-image {
+    top: 0;
+    left: clamp(-22.4375rem, -139.5778rem + 120.0669vw, 0rem);
+    width: 1591px;
+  }
+
+  .hero-carousel .hero-slide-feature .slide-second-image {
+    display: block;
+    top: 0;
+    left: auto;
+    right: 0;
+    transform: none;
+    width: 722px;
+    height: 600px;
+    mask-image: none;
+  }
+
+  .hero-carousel .hero-slide-feature .slide-content {
+    top: 128px;
+    left: clamp(42.875rem, -74.2653rem + 120.0669vw, 65.3125rem);
+  }
+
+  .hero-carousel .hero-slide-feature .slide-text p {
+    margin-top: 25px;
+  }
+}
+
+.hero-carousel .hero-slide-feature .slide-cta a:hover,
+.hero-carousel .hero-slide-feature .slide-cta a:focus {
+  background-color: #593914;
+  color: #fff;
+}
+
+.hero-carousel .hero-slide-holiday .slide-cta a:hover,
+.hero-carousel .hero-slide-holiday .slide-cta a:focus {
+  background-color: #000;
+  color: #fdf6e4;
+}

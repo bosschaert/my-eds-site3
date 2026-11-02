@@ -1,50 +1,37 @@
-# EDS conversion log — continental.com
+# EDS conversion log — hydroflask.com
 
-## Publish decision (2026-10-09)
+- Publish decision (2026-10-29, hands-off, set by the run): publish — every delivered page, the redirects sheet and the chrome documents (nav, footer) go live on the aem.live origin.
+- Foundation (C0, 2026-10-29): chrome = authored DA docs `/nav` + `/footer` (default content, sections; `Robots | noindex` metadata), decoded by `blocks/header` + `blocks/footer` — decode tier: template-slotted (prototype chrome DOM rebuilt as wrappers, authored nodes MOVED into slots; classes renamed BEM→kebab-case, CSS ported from canon.css).
+- Nav doc contract: promo `<p>`s → brand linked `<img>` → utility `<ul>` + locale `<p>` → L1 `<ul>` (plain-text items match the mega section whose `<h2>` has the same text) → account `<p>`s (**bold** = primary) → one section per mega panel (`<h2>`, shop-all `<p>`, `<h3>`+`<ul>` groups: first = Featured, rest = columns, then tiles: desktop img, mobile img, `<strong>` title, text, cta link = tile href). Footer doc: feature (desktop img, mobile img, logo img, Shop link) → `<h2>`+`<ul>` columns → Stay in touch (title, text, social `<ul>` with link text as accessible name, form label `<p>`, consent `<p>`) → bottom (copyright, a11y link, locale, trafficking, privacy).
+- Behaviour: promo = 3-slide fade glider, server-active slide 2, starts on first mousemove/touchend, 5 s interval (captureState restoreAtDelivery). Desktop mega menus open on HOVER (click also opens; 150 ms close delay, item spans the row = contiguous hover surface), Escape/focus-out close; mobile = drawer + slide-in panel + L2 accordions; search + account panels toggle. Newsletter form is block UI with no backend (prototype D4). Search posts to https://www.hydroflask.com/catalogsearch/result/.
+- Fonts: HydroFlask Sans 400/400i/500/700(+800→Bold) self-hosted in `fonts/` (proprietary — LICENSING ALERT, see fonts/LICENSING.md + styles.css banner); metric fallback `hydro-flask-sans-fallback` (Arial, canon size-adjust per weight) in styles.css; roboto boilerplate faces removed. `--nav-height` reserves bar+promo: 135px (<768) / 111px (768–1023) / 143px (≥1024), measured equal to the prototype.
+- Link policy: `/` (logo) root-relative; every other www.hydroflask.com link (incl. prototype root-relative ones such as /find-your-hydroflask, /privacy, /terms/) authored ABSOLUTE to https://www.hydroflask.com/…; off-site links unchanged. Prototype aria-labels on links carried as link `title` where they differed from the text; `target=_blank` + "(opens in a new tab)" sr-only hints dropped (DA has no target); the hidden signed-in account list was not authored (never shown, no auth).
+- Icons (UI glyphs, social, accessibility badge, flag sprite) live in `icons/`; editorial images (logo, mega tiles desktop+mobile, footer feature desktop+mobile, footer logo) uploaded to DA media/chrome. `.eslintignore` gains `stardust/` (pipeline tooling + prototypes, not runtime; hlxignored). Favicon = brand favicon.png (head.html link), boilerplate favicon.ico removed.
+- Local chrome check vs prototype (aem up proxying the previewed docs, 404 page): header+promo 0.00% at 1440/1280/1024/768/360; footer 0.00–0.20% (1440 3.2% = whole-footer 0.05px sub-pixel offset from the prototype's fractional y, identical rects); open mega panels/drawer/L2/search/account ≤ 0.05% outside page-content background.
+- Archetype index (C-ARCHETYPE, 2026-10-29): DA doc `/index` (site root `/`), 7 blocks, one section each, + page metadata (title, captured description). Decode tiers: hero-carousel, artist-promo, split-promo, advocacy = template-slotted (prototype DOM rebuilt as empty wrappers, authored nodes MOVED by role); category-tiles, product-carousel, trending-links = reconstructive (rows classified by content: feature row = the row with a plain paragraph; head row = the row without an image).
+- Content model: `hero-carousel` merges the prototype's .hf-carle + .hf-gift (slides of ONE source carousel) — one row per slide, cells `variant | main image set | secondary image set | text`, `@variants feature | holiday`; image sets are authored widest-first (wide >= 1561, desktop 768-1560, mobile) and shown per breakpoint by CSS (no <source> rebuild). Other blocks author desktop <img> then mobile <img>. `product-carousel` head row = `h2 | CTA` (2 cells, D3-aligned), variant `lunch`; price paragraphs "Final $x" keep "Final " as an sr-only span (splitText, text unchanged). `trending-links` stays a block (D1 🟡 justified: bespoke chevron/underline grid, the heading + list share one layout container).
+- Deviations: the Carle headline is the page's single `<h1>` (source/prototype have no h1; delivery-lint P0 + #57 lead-slide rule) — same look, content-presence aligns headings by text. Link aria-labels authored as link `title` and applied as aria-label by the block when they differ from the text. Gift-slide stars = decorative CSS backgrounds (`blocks/hero-carousel/stars*.png`). Section aria-labels on the prototype `<section>`s not carried (no authored text for them, #100). Product carousel: arrows page the track, bars mark products fully in view (js/index.js had no shelf behaviour; the prototype's static bar state was the capture's).
+- Media: 41 editorial images uploaded to DA `media/index/` (ledger stardust/.work/archetype-index/media-ledger.json).
+- Local structural QA: block-roundtrip --ew all 7 blocks 0 🔴 (EW 53/55 editable, 2 exempt variant words; harness styles = styles.css + fonts.css with embedded faces, else the role-upgrade look check reads a system font). qa-gate: header/footer h=0 (chrome docs not served by the harness) and the per-unit count rows are index-shifted (schema has 9 prototype sections, carle+gift merged into one block) — block-roundtrip carries the unit counts (8 + 4 products, 6 links, 4 tiles).
+- Archetype index delivered (2026-10-29): `/index` live (preview + live, `/` 200). .plain.html: 1 h1, 0 about:error, 41 img (38 with alt; 3 decorative alt="" authored as in the prototype). Published-origin gate (gate-all, preview origin): 1440 pixel 0.39% Δh 0 clip 0 content MISSING 1 (override) | 360 pixel 1.89% Δh 0 clip 0 content 0 → PASS. gate.sh pub3: 1440 0.49% / 360 2.26%, overflow ok, #maincontent content-diff 0 🔴 (chrome-root 🔴 filed as one foundation request). crop-compare header/footer: 1440 0.03%/0.07%, 360 0.11%/1.78%.
+- Gate sidecars in gates/all-<w>/: masks.json = the prototype gate's autoplay band (same reason); presence.json marks `#banner-carousel=.hero-carousel` session-variable; overrides.json (index) = hero autoplay PHASE at 1440 — the content probe sees slide 2 on the served page and slide 1 on the origin; rotation probes (stardust/.work/archetype-index/probe/rot*.mjs) show identical timing on both sides (start on first mousemove, 6.5 s, slide = elapsed mod 13 s), no pointer = no rotation. Both slides' headings/CTAs exist on both sides.
+- Fix rounds (2): (1) product-carousel keeps the source's hidden compact indicator controls (content-diff MISSING ICON ×4); (2) hero dots moved outside the clipped slide track (the prototype clipped them; live shows them under the banner — gate HIDDEN BUTTON), product arrows shown below 768px beside the heading as on the live site (prototype hid them; gate MISSING BUTTON).
 
-Decision: **publish**. Every delivered page, the redirects sheet and the chrome documents (nav, footer and their locale variants) go live on the aem.live origin (deploy-batch.mjs without --no-publish, or POST https://admin.hlx.page/live/…). Decided by the run brief; not re-asked.
-
-## C0 foundation (2026-10-09)
-
-- Chrome decode tier: **template-slotted** (header, footer, social band). Authored nav/footer nodes are
-  moved into the canon chrome template; the off-canvas tree and the dropdown title (when no alt h3) are
-  presentational clones (EW4, stripInstrumentation). Exempt (`@ew-exempt`): search placeholder /
-  aria-labels read from authored link text.
-- EW7 deviation recorded by chrome-parity: live `<button>` nav triggers / language button are `<a role=button>`
-  (no `<button>` may host authored text); footer column labels / copyright are `<p>` (live `<div>`).
-- Chrome documents: 10 locale pairs (/en, /de, /cs-cz, /sk-sk, /pt-pt, /en-pt, /es-mx, /fr-fr, /ro-ro,
-  /en-us) generated verbatim from each locale's capture (stardust/.work/foundation/gen-chrome.cjs), Robots noindex.
-- Shell: /en/general/legal-notice as default content only (legal archetype unit replaces it).
-- Lint: clean (eslint airbnb-base, stylelint standard; per-file `no-descending-specificity` disable keeps the
-  source cascade order); `lint:breakpoints` wired (no target set in DESIGN.json → skipped).
-
-## C-archetype legal — en-general-legal-notice (2026-10-09)
-
-- Blocks: `hero-teaser` (variant small) — template-slotted (art-directed renditions moved into
-  range slots); `text-media` — template-slotted (header / gallery / richtext slots). Encoder core
-  `stardust/rollout/encoders/encode.mjs` + modules hero-teaser, text-media; notes in
-  `stardust/rollout/encoders/legal.md`.
-- Text-only c-media CEs are authored as default content (David's model; foundation default-content
-  rhythm equals o-page__ce stacking). The legal archetype therefore has 1 block (hero-teaser);
-  text-media is exercised by image CEs on sibling templates (render-harness --ew: 7/7 editable).
-- davids-model-lint 🟡 D1 on hero-teaser (3 image-only rows): justified — art-directed renditions
-  (1920×327 / tablet / 800×454) differ in aspect ratio, one image cannot reproduce the hero height.
-- qa-gate cap row (DESIGN.json containerMaxWidth 1920 vs content cap 1460 at 2560) fails on the
-  default-content wrapper the foundation owns; prototype carries the same 1460 cap — not a block defect.
-
-## C-archetype home — en (2026-10-09)
-
-- Blocks: NEW `video-player` (template-slotted: poster / play / caption / text-column slots; D3
-  AdmiralCloud embed on click, poster fallback when the vendor refuses the host), NEW
-  `section-background` (template-slotted: o-container__bg-image layer). Shared, additive only:
-  text-media variant `header-row`; teaser `wide-narrow.with-embed` 512px frame; fact-box guarded
-  equalise re-run (boxes with foot text). Encoder modules + notes: stardust/rollout/encoders/home.md.
-- Section schema: stardust/eds-schema/en.json from an annotated copy (one data-section per block,
-  stardust/.work/archetype-home/annotate.cjs). qa-gate PASS 39/0/0; block-roundtrip --ew
-  video-player 4/4 editable, section-background 0/0. Whole page: pre-existing EW findings in the
-  shared hero-stage-slider (7 dead: textLine moves childNodes) and fact-box (6 dead), teaser
-  URL-display embed link (by design), text-media role swap on the light h1 — not touched (shared).
-- davids-model-lint 🟡 D1 section-background (image-only layer, decorative), D1 text-media eyebrow
-  header (bespoke c-media__meta styling), D3 teaser with-embed (embed row is one cell by design).
-- Published gate: 1440 2.42 % Δh 2 PASS; 360 16.09 % Δh 0 → override (headed-both 4.08 % Δh 2;
-  hero autoplay tick). Crop 1440 header 1.27 % / footer 0.92 %.
+## C-FINAL foundation fix: header/footer chrome (2026-10-29)
+- Requests applied once (stardust/rollout/foundation-requests.md): chrome content-diff 🔴 + header behaviour parity.
+- Mega promo tiles: authored as ONE `<p><a title><strong>title</strong> text <em>cta</em></a></p>` per tile (was 3 paragraphs) so the tile link reads as one CTA like the source; EW6 unwrap unchanged.
+- "(opens in a new tab|window)" hints authored verbatim in the link text; header/footer JS split the trailing hint into an `.sr-only` span (text node split, not rebuilt) and open the link in a new tab.
+- Mega L2 toggles carry the source's aria-label (`<TITLE> in <Panel>`) and a hidden presentational copy of the column title (the source's trigger label, eyebrow role); nav/back/L2/search glyphs are inline svg like the source.
+- Account panel: the source's signed-in links authored as a `<ul>` (rendered hidden, shown by a store session only); Escape (focus back to the trigger) + click-outside close; opacity motion.
+- Search panel: the source's empty-state content (Popular Searches / Trending Now / Latest Stories, fetched by the source from /algolia_emptystate/ajax/content/) authored in the nav doc section that links into /catalogsearch/; images rehosted to DA media/chrome/search-*. Typeahead stays the source store's (owner decision D1): no suggestion results are faked; the form still links out.
+- Store switcher: `button.locale-toggle[aria-label="Store switcher"]` (flag sprite renamed to the source's countryIcons-sprite-b.png) opens a left panel authored in the utility section (`<h3>Choose Your Location</h3>` + region `<p>` + `<ul>`); the footer switcher opens the same panel.
+- Minicart: the empty-cart drawer authored as a heading section without links (`Your Cart ( 0 )` + captured texts); no commerce backend (cart is always empty).
+- Mobile drawer: utility links + switcher move into the drawer below the main nav (< 1024px), slide-in transform 300ms + backdrop, body scroll lock, focus moves to its close button.
+- Footer: social/a11y icon files renamed to the source names (tiktok3.svg, accessibility_icon.svg); the source's second (narrow-layout) social icon row is kept as a hidden presentational copy (EW4, instrumentation stripped).
+- Not done (documented): the Crobox "Hydro Finder" product-finder drawer seen inside mega panels is a third-party page widget (not header chrome); the source "Rewards hover" panel and "Explore" leave/close facts are promo-glider / Klaviyo-teaser artefacts of the source capture.
+- Measured after deploy: chrome-compare (replica) 33 🔴 → 26 🔴 (remaining: 10 panel-visual open-state crops; Klaviyo-teaser / Crobox "Hydro Finder" / promo-glider artefacts of the source capture; typeahead D1; close-path flakes from the rotating promo strip). gate.sh pub3: 1440 0.49% Δh 0, 360 2.26% Δh 0; chrome content-diff 🔴 header 52 → 1 (duplicate-title pairing: "SHOP BY CATEGORY" titles two panels), footer 10 → 0; crop-compare header/footer 1440 0.03%/0.07%, 360 0.11%/1.78%.
+- Below 1024px the mega L2 row shows the trigger's title copy and the authored column heading is not displayed (as on the source); the heading stays editable at desktop widths.
+- D-site (2026-10-29): served sitemap 1 = assembled 1 (`/`); robots.txt served; `/` 200 on aem.page and aem.live; /nav + /footer live with `robots: noindex`. Redirects: the source root serves a page (200, no Location), delivered as the root `index` document, so no `/` row; no other source path changes → redirects sheet carries no rows, nothing to publish (`stardust/redirects.tsv` records the decision).
+- Header parity after rollout (2026-10-29): re-compared on the live host (aem.live), 26 🔴 undecided. Fixed this pass: desktop mega panels now content-sized and centred as on the source (all 5 panels match the source x/width per column, featured block, promo image and tiles). Remaining, for the site owner (`stardust/chrome/header-decisions.json`, entries need owner `by`/`at`):
+  - owner decisions: Hydro Finder ×3 (third-party Crobox, D5); search typeahead + search hover menu ×3 (D2); minicart contents/free-shipping tooltip/close ×4 (D1); "Get 15% Off" (Klaviyo, D4/D5); Rewards hover tooltip, USA | EN hover ×2.
+  - measurement: 9 panel-visual crops — the source contract was recorded under the source's cookie-consent overlay (it intercepts the pointer; source crops show the page body or a mid-animation strip); chrome-explore has no consent dismissal. Account/Explore Escape and close-path: verified working on the build by direct probe (Escape closes, focus returns), explorer artefacts.

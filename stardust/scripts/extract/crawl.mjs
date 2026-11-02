@@ -63,7 +63,7 @@
  *     --url <url>             required; the entry page — its origin scopes discovery
  *     --pages a,b,c           crawl exactly these paths/URLs (resolved against --url; the entry
  *                             is added) instead of discovering via sitemap / same-origin nav links
- *     --max <n>               discovery cap (default 25; listed --pages are never dropped)
+ *     --max <n>               discovery cap (default 25; 0 = no cap; listed --pages are never dropped)
  *     --out <dir>             output root (default stardust/current)
  *     --wait fast|medium|slow settle after load: 1200 / 2500 / 5000 ms (default medium)
  *     --no-consent-dismiss    do not auto-dismiss consent overlays before capture
@@ -102,7 +102,7 @@ import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import { existsSync, readFileSync, realpathSync } from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 // Compare by real path: a symlinked checkout or temp dir must not turn the CLI into a silent no-op — and
 // a test that imports the pure helpers below (captureGaps, localeRootPath) must not start a crawl.
@@ -129,6 +129,9 @@ const WAIT_MS = { fast: 1200, medium: 2500, slow: 5000 };
 // conditions than capture. Viewport here also saves a per-page CDP round-trip.
 const CRAWL_CONTEXT = { reducedMotion: 'reduce', viewport: { width: 1440, height: 900 } };
 
+/** The discovery cap from --max: 0 means no cap (--all, --prep), a missing or bad value the default 25. Pure. */
+export const maxPages = (v) => (String(v).trim() === '0' ? Infinity : Math.max(1, Math.floor(+v) || 25));
+
 function parseArgs(argv) {
   const a = { out: 'stardust/current', max: 25, wait: 'medium', consent: true, concurrency: 4, dynamics: false };
   for (let i = 2; i < argv.length; i += 1) {
@@ -136,7 +139,7 @@ function parseArgs(argv) {
     if (k === '--url') a.url = argv[(i += 1)];
     else if (k === '--pages') a.pages = argv[(i += 1)].split(',').map((s) => s.trim()).filter(Boolean);
     else if (k === '--out') a.out = argv[(i += 1)];
-    else if (k === '--max') a.max = Math.max(1, +argv[(i += 1)] || 25);
+    else if (k === '--max') a.max = maxPages(argv[(i += 1)]);
     else if (k === '--wait') a.wait = argv[(i += 1)];
     else if (k === '--no-consent-dismiss') a.consent = false;
     else if (k === '--concurrency') a.concurrency = Math.max(1, +argv[(i += 1)] || 4);
@@ -386,25 +389,34 @@ async function discover(args, page) {
   return withEntry(links);
 }
 
+// The shared consent pass (diff/scripts/live-session.mjs acceptConsent — the vendor list every
+// gate instrument uses) runs first when live-session.mjs is beside this script (plugin tree,
+// project copy or a flat copy); the passes below stay the fallback when it is absent or misses.
+let sharedConsent;
+async function sharedAcceptConsent() {
+  if (sharedConsent === undefined) {
+    const here = path.dirname(SELF);
+    const found = ['../../diff/scripts/live-session.mjs', '../diff/live-session.mjs', './live-session.mjs']
+      .map((p) => path.resolve(here, p)).find((p) => existsSync(p));
+    sharedConsent = found ? (await import(pathToFileURL(found).href).catch(() => ({}))).acceptConsent || null : null;
+  }
+  return sharedConsent;
+}
+
 async function dismissConsent(page) {
+  const accept = await sharedAcceptConsent();
+  const shared = accept && await accept(page).catch(() => null);
+  if (shared) console.error(`[crawl] consent dismissed via ${shared}`);
   const sels = ['#onetrust-accept-btn-handler', '.truste-button2', '[aria-label*="Accept" i]',
     'button[id*="accept" i]', 'button[class*="accept" i]'];
-  let matched = false;
-  // consentmanager.net (continental.com run): the CMP renders late inside an open shadow root
-  // (#cmpwrapper) — wait for it, then reject (no consent = the state a first visit renders).
-  const cmp = await page.waitForFunction(() => document.querySelector('#cmpwrapper')?.shadowRoot?.querySelector('.cmpboxbtnno'),
-    null, { timeout: 8000 }).catch(() => null);
-  if (cmp) {
-    await page.evaluate(() => document.querySelector('#cmpwrapper').shadowRoot.querySelector('.cmpboxbtnno').click()).catch(() => {});
-    matched = true; await page.waitForTimeout(500);
-  }
-  for (const s of sels) {
+  let matched = Boolean(shared);
+  for (const s of matched ? [] : sels) {
     const el = await page.$(s);
     if (el) { await el.click().catch(() => {}); matched = true; await page.waitForTimeout(300); break; }
   }
   // Usercentrics renders inside shadow DOM (#usercentrics-root) — regular
   // selectors can't reach it (tools-retailer e2e finding).
-  const ucMatched = await page.evaluate(() => {
+  const ucMatched = !matched && await page.evaluate(() => {
     const root = document.querySelector('#usercentrics-root')?.shadowRoot;
     if (root) {
       const btn = root.querySelector('[data-testid="uc-deny-all-button"], [data-testid="uc-accept-all-button"]');
@@ -449,7 +461,7 @@ async function dismissConsent(page) {
   await page.waitForTimeout(300);
   // assert: prune any consent container still present (don't leave it for capture).
   await page.evaluate(() => {
-    document.querySelectorAll('#cmpwrapper, #onetrust-banner-sdk, #truste-consent-track, #usercentrics-root, [class*="cookie" i][class*="banner" i], [id*="consent" i]')
+    document.querySelectorAll('#onetrust-banner-sdk, #truste-consent-track, #usercentrics-root, [class*="cookie" i][class*="banner" i], [id*="consent" i]')
       .forEach((n) => n.remove());
   });
 }
@@ -877,10 +889,10 @@ async function capturePage(context, url, slug, args) {
   await page.waitForTimeout(WAIT_MS[args.wait] || WAIT_MS.medium);
   // 4-step scroll to trigger lazy content
   for (let y = 0; y <= 1; y += 0.34) {
-    await page.evaluate((f) => window.scrollTo(0, document.body.scrollHeight * f), y);
+    await page.evaluate((f) => window.scroll(0, document.body.scrollHeight * f), y);
     await page.waitForTimeout(400);
   }
-  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.evaluate(() => window.scroll(0, 0));
   // settle after return-to-top: entry animations (hero reveals) must reach
   // their final state before the visibility filter reads computed opacity, or
   // the animated h1 is silently dropped. reducedMotion emulation neutralizes

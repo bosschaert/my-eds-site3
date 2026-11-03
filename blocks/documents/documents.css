@@ -1,0 +1,56 @@
+/* documents: auto-width columns, centred; even columns put the title under the cover */
+.documents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -15px;
+
+  /* source: the title sits in a flow-root row whose 1rem bottom margin follows the rule's 1.5em */
+  padding-top: 1rem;
+}
+
+.documents .documents-item {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+.documents .documents-inner {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 0;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.documents .documents-item-even .documents-inner {
+  flex-direction: column-reverse;
+}
+
+.documents .documents-inner h4 {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.documents .documents-inner h4 a {
+  color: #000;
+}
+
+.documents .documents-inner h4 a:hover {
+  color: var(--c-blue);
+  text-decoration: none;
+}
+
+.documents .documents-inner figure {
+  margin: 0 0 1rem;
+}
+
+.documents .documents-inner picture {
+  display: block;
+}
+
+.documents .documents-inner img {
+  display: block;
+}

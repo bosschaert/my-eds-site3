@@ -225,8 +225,8 @@ function measureInPage({ selectors, props, allMatches, cap, textMax }) {
 async function settle(page) {
   await page.evaluate(async () => {
     const h = document.documentElement.scrollHeight;
-    for (let y = 0; y < h; y += 700) { window.scrollTo(0, y); await new Promise((r) => { setTimeout(r, 80); }); }
-    window.scrollTo(0, 0);
+    for (let y = 0; y < h; y += 700) { window.scroll(0, y); await new Promise((r) => { setTimeout(r, 80); }); }
+    window.scroll(0, 0);
     await new Promise((r) => { setTimeout(r, 400); });
   });
   await page.waitForTimeout(300);

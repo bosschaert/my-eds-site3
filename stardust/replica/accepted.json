@@ -1,0 +1,8 @@
+{
+  "accepted": [
+    { "probe": "chrome-parity", "kind": "REGION BOX", "root": "footer", "reason": "live <footer>#colophon is an empty 0px element under div#wrapper-footer-full; the visible footer is compared as region footer-full=#wrapper-footer-full" },
+    { "probe": "chrome-parity", "kind": "EXTRA", "root": "footer", "text": "Privacy", "reason": "live <footer>#colophon is empty; Privacy lives in div#wrapper-footer-full, compared as region footer-full" },
+    { "probe": "chrome-parity", "kind": "ICONS", "root": "footer", "reason": "live <footer>#colophon is empty; the FCC logo lives in div#wrapper-footer-full, compared as region footer-full" },
+    { "probe": "chrome-parity", "kind": "PAIR", "root": "header", "text": "Skip to content", "reason": "visually-hidden skip link; both off-canvas until focused (live parks it at x=viewport, build at -1)" }
+  ]
+}

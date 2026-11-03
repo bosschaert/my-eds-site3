@@ -1,0 +1,249 @@
+measure: https://balbriggan.ie/ @360: horizontal overflow +10px (scrollWidth 370 > viewport 360)
+measure  https://balbriggan.ie/
+  widths 1440, 360 · 40 selector(s) · 24 props · first match
+
+@ 1440px
+  root  scrollWidth  1440  viewport 1440  scrollHeight   4719
+  #wrapper-navbar
+       x     0  y      0  w  1440  h    98  vis  "Skip to content News Downloads Newslett…"
+      display: block; position: sticky; boxSizing: border-box; width: 1440px; height: 98px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .navbar
+       x     0  y      0  w  1440  h    98  vis  "News Downloads Newsletters Fingal Count…"
+      display: flex; position: relative; boxSizing: border-box; width: 1440px; height: 98px; maxWidth: none; margin: 0px; padding: 8px 16px; gap: normal; backgroundColor: rgb(36, 148, 210); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .navbar-brand img
+       x    31  y     13  w   176  h    72  vis  ""  img 300×101 …/balbriggan-logo.svg
+      display: inline; position: static; boxSizing: border-box; width: 176px; height: 72px; maxWidth: 100%; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: Gotham-Light, sans-serif; fontSize: 20px; fontWeight: 400; lineHeight: 30px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  #top-menu .nav-link [1 of 5]
+       x   817  y     13  w    49  h    34  vis  "News"
+      display: block; position: static; boxSizing: border-box; width: 48.5781px; height: 34px; maxWidth: none; margin: 0px; padding: 8px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: GothamMedium; fontSize: 12px; fontWeight: 400; lineHeight: 18px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  #main-menu .nav-link [1 of 6]
+       x   451  y     51  w   148  h    34  vis  "PLANS & PROJECTS"
+      display: block; position: static; boxSizing: border-box; width: 147.984px; height: 34px; maxWidth: none; margin: 0px; padding: 8px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(245, 238, 47); fontFamily: Gotham-Light, sans-serif; fontSize: 12px; fontWeight: 400; lineHeight: 18px; letterSpacing: normal; textTransform: uppercase; textAlign: left; borderRadius: 0px; border: 0px none rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  .btn-nav .nav-link
+       x  1278  y     55  w   129  h    27  vis  "GET INVOLVED"
+      display: block; position: static; boxSizing: border-box; width: 129.234px; height: 26.7812px; maxWidth: none; margin: 0px; padding: 2.4px 16px; gap: normal; backgroundColor: rgb(245, 238, 47); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: GothamMedium; fontSize: 12px; fontWeight: 400; lineHeight: 18px; letterSpacing: normal; textTransform: uppercase; textAlign: left; borderRadius: 32px; border: 2px solid rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  .list-social a [1 of 8]
+       x  1279  y     18  w    11  h    19  vis  ""
+      display: inline; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: Gotham-Light, sans-serif; fontSize: 20px; fontWeight: 400; lineHeight: 30px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .section-hero
+       x     0  y     98  w  1440  h   630  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+      display: flex; position: relative; boxSizing: border-box; width: 1440px; height: 630px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .herotransform
+       x   424  y    285  w   592  h   257  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+      display: flex; position: static; boxSizing: border-box; width: 592px; height: 256.969px; maxWidth: 592px; margin: 0px; padding: 48px; gap: normal; backgroundColor: rgb(255, 255, 255); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .herotransform h2
+       x   472  y    333  w   496  h   128  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+      display: block; position: static; boxSizing: border-box; width: 496px; height: 128.188px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 60); fontFamily: "Gotham Bold", Helvetica, Arial, Lucida, sans-serif; fontSize: 28px; fontWeight: 700; lineHeight: 33.6px; letterSpacing: 1px; textTransform: uppercase; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 60); boxShadow: none; opacity: 1; objectFit: fill
+  .herotransform .btn
+       x   630  y    461  w   180  h    33  vis  "LEARN MORE"
+      display: block; position: static; boxSizing: border-box; width: 180px; height: 32.7812px; maxWidth: none; margin: 0px; padding: 2.4px 32px; gap: normal; backgroundColor: rgb(245, 238, 47); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: GothamMedium; fontSize: 16px; fontWeight: 700; lineHeight: 24px; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 32px; border: 2px solid rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  .section-intro [1 of 4]
+       x    15  y    728  w  1410  h   439  vis  "OUR BALBRIGGAN Balbriggan is set to be …"
+      display: block; position: static; boxSizing: border-box; width: 1410px; height: 439.391px; maxWidth: none; margin: 0px; padding: 64px 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .section-intro h2 [1 of 4]
+       x   316  y    792  w   808  h    59  vis  "OUR BALBRIGGAN"
+      display: block; position: static; boxSizing: border-box; width: 807.594px; height: 59.3906px; maxWidth: none; margin: 0px 0px 8px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 60); fontFamily: GothamBold; fontSize: 32px; fontWeight: 500; lineHeight: 38.4px; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 60); boxShadow: none; opacity: 1; objectFit: fill
+  .section-intro p [1 of 2]
+       x   316  y    899  w   808  h    72  vis  "Balbriggan is set to be transformed; it…"
+      display: block; position: static; boxSizing: border-box; width: 807.594px; height: 72px; maxWidth: none; margin: 0px 0px 16px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .section-whatsnew
+       x     0  y   1167  w  1440  h   626  vis  "WHAT'S NEW Previous €15 million Harbour…"
+      display: block; position: static; boxSizing: border-box; width: 1440px; height: 626.172px; maxWidth: none; margin: 0px; padding: 64px 0px; gap: normal; backgroundColor: rgb(240, 240, 240); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .section-whatsnew h2
+       x    15  y   1231  w  1410  h    59  vis  "WHAT'S NEW"
+      display: block; position: static; boxSizing: border-box; width: 1410px; height: 59.3906px; maxWidth: none; margin: 0px 0px 8px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 60); fontFamily: GothamBold; fontSize: 32px; fontWeight: 500; lineHeight: 38.4px; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 60); boxShadow: none; opacity: 1; objectFit: fill
+  .news-card [1 of 11]
+       x  -975  y   1339  w   350  h   288  vis  "€15 million Harbour Square will be ‘hea…"
+      display: inline-block; position: static; boxSizing: border-box; width: 350px; height: 288px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgb(36, 148, 210); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 24px; border: 0px none rgb(36, 148, 210); boxShadow: none; opacity: 1; objectFit: fill
+  .news-img img [1 of 11]
+       x  -975  y   1339  w   350  h   144  vis  ""  img 1439×960 …/SON7436-0002-1536x1025.jpg
+      display: block; position: static; boxSizing: border-box; width: 350px; height: 144px; maxWidth: 100%; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(36, 148, 210); boxShadow: none; opacity: 1; objectFit: cover
+  .news-title [1 of 11]
+       x  -975  y   1483  w   350  h   144  vis  "€15 million Harbour Square will be ‘hea…"
+      display: flex; position: static; boxSizing: border-box; width: 350px; height: 144px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: GothamMedium; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .slick-dots
+       x   165  y   1634  w  1110  h    26  vis  "1 2 3 4"
+      display: block; position: absolute; boxSizing: border-box; width: 1110px; height: 26px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .section-whatsnew .btn
+       x   652  y   1697  w   137  h    33  vis  "SEE ALL"
+      display: table; position: static; boxSizing: border-box; width: 136.906px; height: 32.7812px; maxWidth: none; margin: 32px 486.547px 0px; padding: 2.4px 32px; gap: normal; backgroundColor: rgb(245, 238, 47); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: GothamMedium; fontSize: 16px; fontWeight: 700; lineHeight: 24px; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 32px; border: 2px solid rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  .section-exploregrid
+       x     0  y   1794  w  1440  h   687  vis  "EXPLORE WHAT WE DO TOWN TRANSFORMATION …"
+      display: block; position: static; boxSizing: border-box; width: 1440px; height: 687.391px; maxWidth: none; margin: 0px; padding: 64px 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .grid
+       x   165  y   1965  w  1110  h   452  vis  "TOWN TRANSFORMATION EDUCATION, SKILLS &…"
+      display: grid; position: static; boxSizing: border-box; width: 1110px; height: 452px; maxWidth: none; margin: 0px; padding: 0px; gap: 20px; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .grid-item-1
+       x   165  y   1965  w   545  h   452  vis  "TOWN TRANSFORMATION"
+      display: block; position: relative; boxSizing: border-box; width: 545px; height: 452px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .grid-item-2
+       x   730  y   1965  w   263  h   216  vis  "EDUCATION, SKILLS & TRAINING"
+      display: block; position: relative; boxSizing: border-box; width: 262.5px; height: 216px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .grid-item-5
+       x  1013  y   2201  w   263  h   216  vis  "SUSTAINABILITY, CLIMATE ACTION AND BIOD…"
+      display: block; position: relative; boxSizing: border-box; width: 262.5px; height: 216px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .grid-item-content p [1 of 5]
+       x   274  y   2179  w   327  h    24  vis  "TOWN TRANSFORMATION"
+      display: block; position: static; boxSizing: border-box; width: 326.625px; height: 24px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: GothamMedium; fontSize: 24px; fontWeight: 400; lineHeight: normal; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .section-map
+       x     0  y   2481  w  1440  h  1060  vis  "SS PETER &PAUL’S CHURCH HARRY REYNOLDSP…"
+      display: block; position: static; boxSizing: border-box; width: 1440px; height: 1059.66px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .map-wrap
+       x     0  y   2481  w  1440  h  1060  vis  "SS PETER &PAUL’S CHURCH HARRY REYNOLDSP…"
+      display: block; position: static; boxSizing: border-box; width: 1440px; height: 1059.66px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .document-downloads
+       x     0  y   3541  w  1440  h   687  vis  "DOCUMENTS FOR DOWNLOAD Ár dTuras Our Jo…"
+      display: block; position: static; boxSizing: border-box; width: 1440px; height: 687.203px; maxWidth: none; margin: 0px; padding: 64px 0px; gap: normal; backgroundColor: rgb(240, 240, 240); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .doc-container h4 [1 of 4]
+       x   250  y   3744  w   212  h    23  vis  "Ár dTuras"
+      display: block; position: static; boxSizing: border-box; width: 212px; height: 23.0312px; maxWidth: none; margin: 0px 0px 16px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 19.2px; fontWeight: 700; lineHeight: 23.04px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .document-cover [1 of 4]
+       x   250  y   3783  w   212  h   300  vis  ""  img 212×300 …/Ar_dTuras-cover-212x300.jpg
+      display: inline; position: static; boxSizing: border-box; width: 212px; height: 300px; maxWidth: 100%; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(36, 148, 210); boxShadow: none; opacity: 1; objectFit: fill
+  .section-newsletter
+       x     0  y   4228  w  1440  h   360  vis  "NEWSLETTER To hear all the latest on th…"
+      display: block; position: static; boxSizing: border-box; width: 1440px; height: 359.688px; maxWidth: none; margin: 0px; padding: 48px 0px 32px; gap: normal; backgroundColor: rgb(36, 148, 210); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .section-newsletter h2
+       x   355  y   4276  w   730  h    38  vis  "NEWSLETTER"
+      display: block; position: static; boxSizing: border-box; width: 730px; height: 38.3906px; maxWidth: none; margin: 0px 0px 8px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: GothamBold; fontSize: 32px; fontWeight: 500; lineHeight: 38.4px; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .section-newsletter p [1 of 2]
+       x   355  y   4322  w   730  h    24  vis  "To hear all the latest on the Balbrigga…"
+      display: block; position: static; boxSizing: border-box; width: 730px; height: 24px; maxWidth: none; margin: 0px 0px 16px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  #gform_1 input[type=text] [1 of 2]
+       x   260  y   4386  w   290  h    38  vis  ""
+      display: inline-block; position: static; boxSizing: border-box; width: 290.344px; height: 38px; maxWidth: none; margin: 0px; padding: 5px 4px; gap: normal; backgroundColor: rgb(255, 255, 255); backgroundImage: none; color: rgb(0, 0, 0); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: start; borderRadius: 0px; border: 2px inset rgb(118, 118, 118); boxShadow: none; opacity: 1; objectFit: fill
+  #gform_submit_button_1
+       x   639  y   4502  w   146  h    44  vis  ""
+      display: inline-block; position: static; boxSizing: border-box; width: 146.234px; height: 44px; maxWidth: none; margin: 0px 16px 0px 0px; padding: 8px 24px; gap: normal; backgroundColor: rgb(245, 238, 47); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 700; lineHeight: 24px; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 4px; border: 2px solid rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-footer-full
+       x     0  y   4588  w  1440  h   130  vis  "Privacy"
+      display: block; position: static; boxSizing: border-box; width: 1440px; height: 130.375px; maxWidth: none; margin: 0px; padding: 30px 0px; gap: normal; backgroundColor: rgb(68, 68, 68); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-footer-full img
+       x   165  y   4618  w   192  h    70  vis  ""  img 300×110 …/fcc-logo.svg
+      display: inline; position: static; boxSizing: border-box; width: 192px; height: 70.375px; maxWidth: 100%; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(36, 148, 210); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-footer
+       x     0  y   4718  w  1440  h     1  vis  ""
+      display: block; position: static; boxSizing: border-box; width: 1440px; height: 1px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgb(68, 68, 68); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+
+@ 360px
+  root  scrollWidth   370  viewport 360  scrollHeight   5410  ◄◄ OVERFLOW +10px
+  #wrapper-navbar
+       x     0  y      0  w   360  h    90  vis  "Skip to content"
+      display: block; position: sticky; boxSizing: border-box; width: 360px; height: 90px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .navbar
+       x     0  y      0  w   360  h    90  vis  ""
+      display: flex; position: relative; boxSizing: border-box; width: 360px; height: 90px; maxWidth: none; margin: 0px; padding: 8px 16px; gap: normal; backgroundColor: rgb(36, 148, 210); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .navbar-brand img
+       x    16  y     21  w   142  h    48  vis  ""  img 300×101 …/balbriggan-logo.svg
+      display: inline; position: static; boxSizing: border-box; width: 142.172px; height: 48px; maxWidth: 100%; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: Gotham-Light, sans-serif; fontSize: 20px; fontWeight: 400; lineHeight: 30px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  #top-menu .nav-link [1 of 5]
+       x     0  y      0  w     0  h     0  hid  "News"
+      display: block; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 8px 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: GothamMedium; fontSize: 14.4px; fontWeight: 400; lineHeight: 21.6px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  #main-menu .nav-link [1 of 6]
+       x     0  y      0  w     0  h     0  hid  "Plans & Projects"
+      display: block; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 8px 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(245, 238, 47); fontFamily: Gotham-Light, sans-serif; fontSize: 14.4px; fontWeight: 400; lineHeight: 21.6px; letterSpacing: normal; textTransform: uppercase; textAlign: left; borderRadius: 0px; border: 0px none rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  .btn-nav .nav-link
+       x     0  y      0  w     0  h     0  hid  "Get Involved"
+      display: block; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 2.4px 16px; gap: normal; backgroundColor: rgb(245, 238, 47); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: GothamMedium; fontSize: 14.4px; fontWeight: 400; lineHeight: 21.6px; letterSpacing: normal; textTransform: uppercase; textAlign: left; borderRadius: 32px; border: 2px solid rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  .list-social a [1 of 8]
+       x   214  y     13  w    11  h    19  vis  ""
+      display: inline; position: static; boxSizing: border-box; width: auto; height: auto; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: Gotham-Light, sans-serif; fontSize: 20px; fontWeight: 400; lineHeight: 30px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .section-hero
+       x     0  y     90  w   360  h   630  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+      display: flex; position: relative; boxSizing: border-box; width: 360px; height: 630px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .herotransform
+       x     9  y    243  w   342  h   324  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+      display: flex; position: static; boxSizing: border-box; width: 341.906px; height: 324.156px; maxWidth: 592px; margin: 32px; padding: 48px 32px; gap: normal; backgroundColor: rgb(255, 255, 255); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .herotransform h2
+       x    41  y    291  w   278  h   195  vis  "TRANSFORMATION OF QUAY STREET AND HARBO…"
+      display: block; position: static; boxSizing: border-box; width: 277.906px; height: 195.375px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 60); fontFamily: "Gotham Bold", Helvetica, Arial, Lucida, sans-serif; fontSize: 28px; fontWeight: 700; lineHeight: 33.6px; letterSpacing: 1px; textTransform: uppercase; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 60); boxShadow: none; opacity: 1; objectFit: fill
+  .herotransform .btn
+       x    90  y    486  w   180  h    33  vis  "LEARN MORE"
+      display: block; position: static; boxSizing: border-box; width: 180px; height: 32.7812px; maxWidth: none; margin: 0px; padding: 2.4px 32px; gap: normal; backgroundColor: rgb(245, 238, 47); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: GothamMedium; fontSize: 16px; fontWeight: 700; lineHeight: 24px; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 32px; border: 2px solid rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  .section-intro [1 of 4]
+       x    15  y    720  w   330  h   695  vis  "OUR BALBRIGGAN Balbriggan is set to be …"
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 695.391px; maxWidth: none; margin: 0px; padding: 64px 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .section-intro h2 [1 of 4]
+       x    15  y    816  w   330  h    59  vis  "OUR BALBRIGGAN"
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 59.3906px; maxWidth: none; margin: 0px 0px 8px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 60); fontFamily: GothamBold; fontSize: 32px; fontWeight: 500; lineHeight: 38.4px; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 60); boxShadow: none; opacity: 1; objectFit: fill
+  .section-intro p [1 of 2]
+       x    15  y    923  w   330  h   168  vis  "Balbriggan is set to be transformed; it…"
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 168px; maxWidth: none; margin: 0px 0px 16px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .section-whatsnew
+       x     0  y   1415  w   360  h   698  vis  "WHAT'S NEW Previous €15 million Harbour…"
+      display: block; position: static; boxSizing: border-box; width: 360px; height: 698.172px; maxWidth: none; margin: 0px; padding: 64px 0px; gap: normal; backgroundColor: rgb(240, 240, 240); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .section-whatsnew h2
+       x    15  y   1479  w   330  h    59  vis  "WHAT'S NEW"
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 59.3906px; maxWidth: none; margin: 0px 0px 8px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 60); fontFamily: GothamBold; fontSize: 32px; fontWeight: 500; lineHeight: 38.4px; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 60); boxShadow: none; opacity: 1; objectFit: fill
+  .news-card [1 of 11]
+       x  -345  y   1587  w    90  h   312  vis  "€15 million Harbour Square will be ‘hea…"
+      display: inline-block; position: static; boxSizing: border-box; width: 90px; height: 312px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgb(36, 148, 210); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 24px; border: 0px none rgb(36, 148, 210); boxShadow: none; opacity: 1; objectFit: fill
+  .news-img img [1 of 11]
+       x  -345  y   1587  w    90  h   144  vis  ""  img 359×240 …/SON7436-0002-1536x1025.jpg
+      display: block; position: static; boxSizing: border-box; width: 90px; height: 144px; maxWidth: 100%; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(36, 148, 210); boxShadow: none; opacity: 1; objectFit: cover
+  .news-title [1 of 11]
+       x  -345  y   1731  w    90  h   168  vis  "€15 million Harbour Square will be ‘hea…"
+      display: flex; position: static; boxSizing: border-box; width: 90px; height: 168px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: GothamMedium; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .slick-dots
+       x    15  y   1954  w   330  h    26  vis  "1 2 3 4"
+      display: block; position: absolute; boxSizing: border-box; width: 330px; height: 26px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .section-whatsnew .btn
+       x   112  y   2017  w   137  h    33  vis  "SEE ALL"
+      display: table; position: static; boxSizing: border-box; width: 136.906px; height: 32.7812px; maxWidth: none; margin: 32px 96.5469px 0px; padding: 2.4px 32px; gap: normal; backgroundColor: rgb(245, 238, 47); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: GothamMedium; fontSize: 16px; fontWeight: 700; lineHeight: 24px; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 32px; border: 2px solid rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  .section-exploregrid
+       x     0  y   2114  w   360  h   402  vis  "EXPLORE WHAT WE DO TOWN TRANSFORMATION …"
+      display: block; position: static; boxSizing: border-box; width: 360px; height: 401.781px; maxWidth: none; margin: 0px; padding: 64px 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .grid
+       x    15  y   2323  w   330  h   128  vis  "TOWN TRANSFORMATION EDUCATION, SKILLS &…"
+      display: grid; position: static; boxSizing: border-box; width: 330px; height: 128px; maxWidth: none; margin: 0px; padding: 0px; gap: 20px; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .grid-item-1
+       x    15  y   2323  w   155  h   128  vis  "TOWN TRANSFORMATION"
+      display: block; position: relative; boxSizing: border-box; width: 155px; height: 128px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .grid-item-2
+       x   190  y   2323  w    68  h    54  vis  "EDUCATION, SKILLS & TRAINING"
+      display: block; position: relative; boxSizing: border-box; width: 67.5px; height: 54px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .grid-item-5
+       x   278  y   2397  w    68  h    54  vis  "SUSTAINABILITY, CLIMATE ACTION AND BIOD…"
+      display: block; position: relative; boxSizing: border-box; width: 67.5px; height: 54px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .grid-item-content p [1 of 5]
+       x   -27  y   2363  w   240  h    48  vis  "TOWN TRANSFORMATION"
+      display: block; position: static; boxSizing: border-box; width: 239.578px; height: 48px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: GothamMedium; fontSize: 24px; fontWeight: 400; lineHeight: normal; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .section-map
+       x     0  y   2515  w   360  h   265  vis  "SS PETER &PAUL’S CHURCH HARRY REYNOLDSP…"
+      display: block; position: static; boxSizing: border-box; width: 360px; height: 264.906px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .map-wrap
+       x     0  y   2515  w   360  h   265  vis  "SS PETER &PAUL’S CHURCH HARRY REYNOLDSP…"
+      display: block; position: static; boxSizing: border-box; width: 360px; height: 264.906px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .document-downloads
+       x     0  y   2780  w   360  h  1839  vis  "DOCUMENTS FOR DOWNLOAD Ár dTuras Our Jo…"
+      display: block; position: static; boxSizing: border-box; width: 360px; height: 1838.69px; maxWidth: none; margin: 0px; padding: 64px 0px; gap: normal; backgroundColor: rgb(240, 240, 240); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .doc-container h4 [1 of 4]
+       x    74  y   3022  w   212  h    23  vis  "Ár dTuras"
+      display: block; position: static; boxSizing: border-box; width: 212px; height: 23.0312px; maxWidth: none; margin: 0px 0px 16px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 19.2px; fontWeight: 700; lineHeight: 23.04px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  .document-cover [1 of 4]
+       x    74  y   3061  w   212  h   300  vis  ""  img 212×300 …/Ar_dTuras-cover-212x300.jpg
+      display: inline; position: static; boxSizing: border-box; width: 212px; height: 300px; maxWidth: 100%; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(36, 148, 210); boxShadow: none; opacity: 1; objectFit: fill
+  .section-newsletter
+       x     0  y   4619  w   360  h   589  vis  "NEWSLETTER To hear all the latest on th…"
+      display: block; position: static; boxSizing: border-box; width: 360px; height: 589.391px; maxWidth: none; margin: 0px; padding: 48px 0px 32px; gap: normal; backgroundColor: rgb(36, 148, 210); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .section-newsletter h2
+       x    15  y   4667  w   330  h    38  vis  "NEWSLETTER"
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 38.3906px; maxWidth: none; margin: 0px 0px 8px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: GothamBold; fontSize: 32px; fontWeight: 500; lineHeight: 38.4px; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  .section-newsletter p [1 of 2]
+       x    15  y   4713  w   330  h    72  vis  "To hear all the latest on the Balbrigga…"
+      display: block; position: static; boxSizing: border-box; width: 330px; height: 72px; maxWidth: none; margin: 0px 0px 16px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(255, 255, 255); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: center; borderRadius: 0px; border: 0px none rgb(255, 255, 255); boxShadow: none; opacity: 1; objectFit: fill
+  #gform_1 input[type=text] [1 of 2]
+       x    15  y   4817  w   330  h    46  vis  ""
+      display: inline-block; position: static; boxSizing: border-box; width: 330px; height: 46px; maxWidth: none; margin: 0px; padding: 5px 4px; gap: normal; backgroundColor: rgb(255, 255, 255); backgroundImage: none; color: rgb(0, 0, 0); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 32px; letterSpacing: normal; textTransform: none; textAlign: start; borderRadius: 0px; border: 2px inset rgb(118, 118, 118); boxShadow: none; opacity: 1; objectFit: fill
+  #gform_submit_button_1
+       x    15  y   5098  w   330  h    52  vis  ""
+      display: inline-block; position: static; boxSizing: border-box; width: 330px; height: 52px; maxWidth: none; margin: 0px 0px 16px; padding: 8px 24px; gap: normal; backgroundColor: rgb(245, 238, 47); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 700; lineHeight: 32px; letterSpacing: normal; textTransform: uppercase; textAlign: center; borderRadius: 4px; border: 2px solid rgb(245, 238, 47); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-footer-full
+       x     0  y   5208  w   360  h   200  vis  "Privacy"
+      display: block; position: static; boxSizing: border-box; width: 360px; height: 200.375px; maxWidth: none; margin: 0px; padding: 30px 0px; gap: normal; backgroundColor: rgb(68, 68, 68); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-footer-full img
+       x    15  y   5238  w   192  h    70  vis  ""  img 300×110 …/fcc-logo.svg
+      display: inline; position: static; boxSizing: border-box; width: 192px; height: 70.375px; maxWidth: 100%; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgba(0, 0, 0, 0); backgroundImage: none; color: rgb(36, 148, 210); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(36, 148, 210); boxShadow: none; opacity: 1; objectFit: fill
+  #wrapper-footer
+       x     0  y   5409  w   360  h     1  vis  ""
+      display: block; position: static; boxSizing: border-box; width: 360px; height: 1px; maxWidth: none; margin: 0px; padding: 0px; gap: normal; backgroundColor: rgb(68, 68, 68); backgroundImage: none; color: rgb(60, 60, 59); fontFamily: Gotham-Light, sans-serif; fontSize: 16px; fontWeight: 400; lineHeight: 24px; letterSpacing: normal; textTransform: none; textAlign: left; borderRadius: 0px; border: 0px none rgb(60, 60, 59); boxShadow: none; opacity: 1; objectFit: fill

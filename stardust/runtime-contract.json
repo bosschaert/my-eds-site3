@@ -1,80 +1,67 @@
 {
-  "unit": "C0-foundation",
-  "frozen": ["styles/", "fonts/", "head.html", "scripts/", "blocks/header/", "blocks/footer/"],
-  "requests": "stardust/rollout/foundation-requests.md (one line per needed foundation change; ship a scoped override in your block CSS meanwhile)",
-  "remBase": "17.5px (html, body font-size) — every canon rem value is relative to it",
+  "runtime": "vanilla-eds",
+  "writtenBy": "replica C0 foundation",
+  "blockWrapperClass": "block",
+  "buttonClasses": "a.button (+ .primary / .secondary / .accent) inside p.button-wrapper; all styled as the yellow pill (source .btn.btn-secondary): display table, margin 2rem auto 0",
+  "buttonization": "formatted-only (authored <strong>/<em> around a lone link in a <p>)",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "boxSizing": "border-box everywhere (Bootstrap 4 reboot)",
+  "fonts": {
+    "files": ["/fonts/sora-latin.woff2", "/fonts/sora-latin-ext.woff2", "/fonts/fontawesome-webfont.woff2", "/fonts/slick.woff"],
+    "loadedBy": "styles/fonts.css (scripts.js loadFonts: eager on >=900px after the first section, lazy otherwise)",
+    "stacks": {
+      "--f-light": "\"Gotham-Light\", \"Sora Light\", sans-serif (body)",
+      "--f-book": "\"GothamBook\", \"Sora Book\", sans-serif",
+      "--f-medium": "\"GothamMedium\", \"Sora Medium\", sans-serif",
+      "--f-bold": "\"GothamBold\", \"Sora Bold\", sans-serif (h2)"
+    },
+    "iconFonts": "FontAwesome (social glyphs: .fa .fa-facebook|twitter|linkedin|instagram), slick (carousel arrows/dots)"
+  },
+  "tokens": {
+    "--c-blue": "#2494d2",
+    "--c-hero-blue": "#009bd9",
+    "--c-yellow": "#f5ee2f",
+    "--c-underline": "#ff0",
+    "--c-text": "#3c3c3b",
+    "--c-heading": "#3c3c3c",
+    "--c-lightgray": "#f0f0f0",
+    "--c-footer": "#444"
+  },
+  "body": "font var(--f-light) 16px/1.5, color #3c3c3b; h1-h6 margin 0 0 .5rem weight 500 lh 1.2; h2 2rem var(--f-bold) uppercase #3c3c3c; p margin 0 0 1rem; ul unstyled",
+  "sections": {
+    "band": "main > .section { margin: 0; padding: 4rem 0 }",
+    "container": "main > .section > div (default-content-wrapper / <block>-wrapper): width 100%, padding 0 15px, margin 0 auto, max-width 540 (>=576) / 720 (>=768) / 960 (>=992) / 1140 = var(--container) (>=1200)",
+    "sectionMetadataStyles": {
+      "light": "background #f0f0f0 (source .bg-lightgray)",
+      "fluid": "wrappers max-width none (source .section-fluid: full width, 15px gutters)",
+      "flush": "band padding 0 (full-bleed blocks, e.g. the hero)"
+    },
+    "sectionTitle": "every default-content h2 (main .default-content-wrapper > h2) and any .section-title: centered, ::after yellow 5px rule 10% wide, margin .5em auto 1.5em",
+    "empty": "main .section:empty { display: none }"
+  },
+  "header": {
+    "host": "body > header: position sticky, top 0, z-index 1020; height var(--nav-height) until the block loads, then auto",
+    "heights": { "unscrolled": { "1440": 98, "360": 90 }, "scrolled": { "1440": 75, "360": 77 } },
+    "navHeightVar": "--nav-height: 90px (<576), 98px (>=576)",
+    "scrollState": ".header.scrolled toggled when window.scrollY > 100, at every width",
+    "classes": "header .header > a.skip-link + nav.navbar > .navbar-inner > a.navbar-brand + .navs > (.topnav > .topnav-collapse > ul.topnav-menu, ul.list-social) + (.primarynav > button.navbar-toggler, ul.main-menu#main-menu > li.nav-item[.has-dropdown|.nav-item-cta])",
+    "dropdowns": "click to open (li.is-open), close on outside click / Escape; absolute under the trigger at >=1200, static in the mobile menu",
+    "skipLinkTarget": "main gets id=\"main\" from the header block (skip link href #main)",
+    "authoredDocument": "/nav: section 1 = skip link + brand logo link; section 2 = top links list + social list (:icon: spans); section 3 = primary menu list (text item + nested list = dropdown; <strong> link = CTA pill); metadata Robots noindex"
+  },
+  "footer": {
+    "heights": { "1440": 131, "360": 201 },
+    "classes": "footer .footer > .site-footer > .site-footer-full (padding 30px 0) > .container > .site-footer-row > .site-footer-col.site-footer-logo + .site-footer-col.site-footer-links; .site-footer-colophon (1px)",
+    "authoredDocument": "/footer: section 1 = FCC logo link; section 2 = social list (:icon: spans) + Privacy link; metadata Robots noindex"
+  },
   "breakpoints": {
-    "values": [767, 1023, 1279, 1680],
-    "note": "min-width queries as in the source (site.css); max-side uses (width < N). sm=767, md=1023, lg=1279, xl=1680"
+    "576": "container 540; brand logo height 3rem below (<=575)",
+    "768": "container 720; footer columns 50/50",
+    "992": "container 960",
+    "1200": "container 1140; desktop header (top links visible, toggler hidden, inline primary menu)",
+    "1200-1469": "primary/top nav items font-size .75rem, margin 0 .1rem (0.9rem / 0 .4rem otherwise)"
   },
-  "cssCustomProperties": {
-    "--c-orange": "#ffa500 (brand / buttons / logo plate)",
-    "--c-orange-hover": "#e38702 (link hover, active nav)",
-    "--c-slate": "#6b6b6b (chrome text, button hover bg)",
-    "--c-gray": "#969696",
-    "--c-gray-mid": "#cdcdcd",
-    "--c-gray-light": "#f0f0f0 (footer / lightgray band)",
-    "--c-pastel-yellow": "#f4cf9b",
-    "--c-pastel-red": "#ffe0e1",
-    "--c-pastel-blue": "#e5edf7",
-    "--c-pastel-green": "#daebe6",
-    "--c-black": "#000",
-    "--c-white": "#fff",
-    "--font-sans": "ContinentalStagSansW (owner CDN, weights 300/400/700 + italics) → Arial fallback",
-    "--ease": "all 150ms ease-in-out",
-    "--content-max": "83.4286rem = 1460px content cap",
-    "--shell-max": "109.7143rem = 1920px shell cap (body max-width)",
-    "--gutter": "16px",
-    "--section-pad-x": "4.3429rem = 76px section side padding at >=767"
-  },
-  "globalClasses": {
-    "typography": "h1–h4 ramp (500 weight; h3 300) + .u-text-h1..h4, .u-text-light",
-    "richText": ".s-richtext (also applied implicitly to main .default-content-wrapper): p/ul margins 1.83rem, underlined links, >=1023 font-size 1.1429rem",
-    "grid": ".container (16px padding, margin .4571/2.2857/5.9429rem per bp), .row (flex, -16px), .col, .col-12, .col-sm-4/6/12, .col-md-3/4/6/8/9, .col-lg-3/4/8, .col-xl-auto, .order-lg-2",
-    "utilities": ".d-none/.d-block/.d-flex/.d-inline-block (+ -sm-/-md- variants), .mt-/.mb-/.mr-/.ml- 0..6 (6/12/24/36/48/64px), .pt-3, .pb-0, .px-2, .pr-4, .w-100, .position-relative, .align-items-center/end, .font-weight-bold, .visually-hidden, .c-list-clean",
-    "icons": ".u-icon (1.6rem box, currentColor) + .is-xs/.is-sm/.has-bg/.is-link + brand colours .is-facebook/.is-linkedin/.is-youtube/.is-instagram/.is-tiktok/.is-glassdoor/.is-rss/.is-xing/.is-kununu/.is-x; .icon (100% box for svg/img); .u-icon-plus-minus (+ .is-active)",
-    "buttons": "EDS button links a.button (p.button-wrapper) and .c-button look like the source c-button: orange pill, slate on hover, ::before arrow icon; a.button[href^=http] → external icon, [href$=.pdf]/[download] → download icon, [href^=mailto:] → mail icon; template classes .c-button.is-internal/.is-external/.is-download/.is-mail",
-    "links": ".c-link, .c-link-internal (arrow ::before, underline)",
-    "sections": "main > .section = o-container band (padding 2.7429rem 0 3.6571rem; >=767 side padding --section-pad-x); default content capped at --content-max. Section-metadata Style values: is-yellow, is-lightgray, is-pastel-yellow/red/blue/green, full-bleed (padding 0), has-image. Sections without a ground get .is-white (adjacent white sections collapse padding-top; first white section padding-top 0; last white section padding-bottom 0)."
-  },
-  "helperModules": {
-    "scripts/utils.js": {
-      "throttle(fn, ms)": "lodash-style leading+trailing throttle (source scroll handlers)",
-      "loadSvg(name)": "Promise<SVGElement|null> — inline SVG from /icons/<name>.svg (cached)",
-      "createIcon(name, {img, tag, className})": "<span class=\"icon icon-<name>\"> filled with inline SVG (currentColor) or <img> when img:true (multi-colour flags)",
-      "uIcon(name, classes, tag='i')": "source .u-icon box around createIcon",
-      "stripInstrumentation(el)": "EW4 — strip data-aue-*/data-richtext-* from presentational clones",
-      "onStickyChange(cb) / setSticky(on)": "sticky-header state (scrollY > header bar height, throttled 300ms); body gets .header-is-sticky and body > header gets .is-sticky",
-      "equalizeHeights(elements)": "[data-equalize-height] behaviour: min-height = tallest member, re-run on resize (300ms debounce)",
-      "countUp(el, {to, decimals, locale, separator})": "fact-box count-up 0→to over 2000ms once fully in view",
-      "getLocale()": "first path segment when it is a locale (en, de, cs-cz…), else 'en'",
-      "getCart() / toggleCartItem({href,title}, add?)": "client-only download cart (localStorage 'download-cart'); fires document 'download-cart-change'; header folder button shows the count and fires 'download-cart-open' on click (no cart panel shipped yet — a block may listen)",
-      "loadChromeFragment(name, metaPath, loadFragment)": "metadata path → /<locale>/<name> → /en/<name>",
-      "fragmentSections(fragment)": "content sections of a decorated fragment (default-content wrappers, metadata/empty dropped)",
-      "itemLink(li)": "li > a or the pipeline's li > p > a"
-    },
-    "scripts/lightbox.js": {
-      "openLightbox(nodeOr{src,type}, {className})": "full-viewport modal (GLightbox look: overlay .92 black, 500ms fade/zoom); a DOM node is moved in and restored on close; images/video/iframe from a src",
-      "closeLightbox()": "closes the open lightbox",
-      "bindLightboxes(root)": "wires a[data-lightbox] / a.lightbox under root; scripts.js auto-binds main when such links exist after sections load"
-    },
-    "styles/lazy-styles.css": "lightbox styles (.lightbox, .lightbox-overlay, .lightbox-slide, .lightbox-close)"
-  },
-  "icons": {
-    "path": "/icons/<name>.svg (single-colour icons use fill=currentColor)",
-    "names": ["calendar", "chevron-down", "chevron-right", "close", "download-single", "email", "facebook", "folder", "function", "glassdoor", "globe", "instagram", "kununu", "link-external", "linkedin", "logo", "marker", "menu", "print", "reddit", "rss", "search", "share", "slogan", "spinner", "tiktok", "tumblr", "x", "xing", "youtube", "zoom"],
-    "flags": ["flag-1x1-<cc>", "flag-4x3-<cc>"],
-    "flagCountries": ["cz", "sk", "pt", "mx", "fr", "ro", "us"],
-    "note": "icon names drop the source's icon-con- prefix; chevron-down rotated for up/left/right as in the source"
-  },
-  "chrome": {
-    "header": "blocks/header — reads /<locale>/nav (or the `nav` metadata row), falls back to /en/nav. Root / uses /en/nav. body > header box = the source header.o-header box (margin-top = source spacer, fixed meta bar above); mega dropdown, off-canvas menu and overlay are fixed children.",
-    "footer": "blocks/footer — reads /<locale>/footer (or `footer` metadata), falls back to /en/footer. Inserts section.social-band before <footer> (source c-socialmedia-list) and a fixed .scroll-to-top button.",
-    "navDocument": "sections: 1 brand (p>a logo link) | 2 tools (optional global link p>a, country-selector p>a[title=hidden label], language ul (current li without link), p>a[href=#download-cart], search p>a[href=search action][title=aria] text=placeholder, p>strong frequent header + ul, p suggestion labels) | 3 menu labels (p Back, p Select Language, ul offcanvas languages) | one section per main-nav item: h2>a, optional h3>a (dropdown title when it differs), p description/links, nested ul tree (level 1 = dropdown columns, level 2 = column links, deeper = off-canvas only). Items with a ul open the mega dropdown; items without navigate.",
-    "footerDocument": "sections: 1 social (p>strong label + ul of links; icon from link text/host) | one per column (p label + ul) | last: p copyright. 4 columns → the 4th is the wide inline column at 767–1022.",
-    "documents": ["/en/nav", "/en/footer", "/de/nav", "/de/footer", "/cs-cz/nav", "/cs-cz/footer", "/sk-sk/nav", "/sk-sk/footer", "/pt-pt/nav", "/pt-pt/footer", "/en-pt/nav", "/en-pt/footer", "/es-mx/nav", "/es-mx/footer", "/fr-fr/nav", "/fr-fr/footer", "/ro-ro/nav", "/ro-ro/footer", "/en-us/nav", "/en-us/footer"],
-    "zIndex": "header bar 500, scroll-to-top 450, dropdown/off-canvas 401, overlay 400 — blocks stay below 400 unless modal (lightbox 999)"
-  },
-  "decorateMain": "scripts.js: decorateIcons → buildAutoBlocks (fragments, widgets) → decorateSections → section grounds (.is-white) → decorateBlocks → decorateButtons (strong/em-wrapped links → a.button primary/secondary/accent). html[lang] = locale's language (en, de, cs, sk, pt, es, fr, ro).",
-  "csp": "head.html enforces require-trusted-types-for 'script': build DOM with createElement/append; never assign HTML strings."
+  "zIndex": { "header": 1020, "dropdown": 1000 },
+  "media": "chrome logos are SVG in DA /media/chrome/ (content.da.live); header/footer blocks drop the webp <source>s so the vector renders"
 }

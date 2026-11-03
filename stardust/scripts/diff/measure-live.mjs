@@ -47,7 +47,7 @@ export async function settle(page, { passes = 4, step = 400, dwell = 250, emptyS
   for (; i < passes; i += 1) {
     await page.evaluate(async ({ s, d }) => {
       const max = () => Math.max(document.documentElement.scrollHeight, document.body ? document.body.scrollHeight : 0);
-      for (let y = 0; y <= max(); y += s) { window.scrollTo(0, y); await new Promise((r) => { setTimeout(r, d); }); }
+      for (let y = 0; y <= max(); y += s) { window.scroll(0, y); await new Promise((r) => { setTimeout(r, d); }); }
     }, { s: step, d: dwell });
     await page.waitForTimeout(quietMs);
     const st = await page.evaluate((sel) => ({
@@ -59,7 +59,7 @@ export async function settle(page, { passes = 4, step = 400, dwell = 250, emptyS
     if (st.h === prevH && st.empty === 0) break;
     prevH = st.h;
   }
-  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.evaluate(() => window.scroll(0, 0));
   await page.waitForTimeout(600);
   return { docH, passes: Math.min(i + 1, passes), pendingImgs };
 }

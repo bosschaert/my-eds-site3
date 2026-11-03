@@ -124,11 +124,8 @@ export function alignUnit(o, e, tol = 4) {
   const relaxed = { link: ['button', 'text'], button: ['link', 'text'], heading: ['text'], text: ['heading', 'link', 'button'] };
   const find = (oe) => {
     let idx = E.findIndex((ee, i) => !usedE.has(i) && ee.key === oe.key);
-    // exact text (same role, then relaxed role) before the 10-char prefix match: a card CTA whose text is a
-    // prefix of the card title ("Results Q2 2026" vs "Results Q2 2026 (August 4, 2026)") must not steal the title
-    if (idx < 0 && oe.text) idx = E.findIndex((ee, i) => !usedE.has(i) && ee.text && ee.role === oe.role && norm(ee.text) === norm(oe.text));
+    if (idx < 0 && oe.text) idx = E.findIndex((ee, i) => !usedE.has(i) && ee.text && ee.role === oe.role && (norm(ee.text) === norm(oe.text) || (norm(oe.text).length >= 10 && (norm(ee.text).startsWith(norm(oe.text).slice(0, 10)) || norm(oe.text).startsWith(norm(ee.text).slice(0, 10))))));
     if (idx < 0 && oe.text) idx = E.findIndex((ee, i) => !usedE.has(i) && ee.text && (relaxed[oe.role] || []).includes(ee.role) && norm(ee.text) === norm(oe.text));
-    if (idx < 0 && oe.text && norm(oe.text).length >= 10) idx = E.findIndex((ee, i) => !usedE.has(i) && ee.text && ee.role === oe.role && (norm(ee.text).startsWith(norm(oe.text).slice(0, 10)) || norm(oe.text).startsWith(norm(ee.text).slice(0, 10))));
     if (idx < 0 && !oe.text) idx = E.findIndex((ee, i) => !usedE.has(i) && !ee.text && ee.role === oe.role && (ee.tag === oe.tag || oe.role === 'image'));
     // images pair by role + order whatever their alt text says (an origin <img> without alt vs a served one with)
     if (idx < 0 && oe.role === 'image') idx = E.findIndex((ee, i) => !usedE.has(i) && ee.role === 'image');

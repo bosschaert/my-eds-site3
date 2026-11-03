@@ -1,157 +1,77 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
-import {
-  createIcon,
-  uIcon,
-  throttle,
-  loadChromeFragment,
-  fragmentSections,
-  itemLink,
-} from '../../scripts/utils.js';
 
-/**
- * Footer chrome (source: c-socialmedia-list band + o-footer + scroll-to-top).
- * Content: /<locale>/footer — section 1 = social band (label + link list), then one
- * section per link column (label paragraph + list), last section = copyright line.
- * The social band is placed before <footer> (the source's footer element holds only
- * the link columns); authored nodes are moved, never copied.
- */
-
-const el = (tag, className, ...children) => {
+function el(tag, className) {
   const node = document.createElement(tag);
   if (className) node.className = className;
-  children.filter(Boolean).forEach((c) => node.append(c));
   return node;
-};
-
-const SOCIAL = ['facebook', 'tiktok', 'youtube', 'instagram', 'linkedin', 'glassdoor',
-  'xing', 'kununu', 'rss', 'x', 'reddit', 'tumblr'];
-
-function socialName(a) {
-  const label = a.textContent.trim().toLowerCase();
-  if (SOCIAL.includes(label)) return label;
-  const host = new URL(a.href, window.location).hostname;
-  return SOCIAL.find((s) => host.includes(`${s}.`)) || (/rss/.test(a.href) ? 'rss' : null);
 }
 
-function isExternal(a) {
-  const url = new URL(a.href, window.location);
-  return url.origin !== window.location.origin && !/(^|\.)continental\.com$/.test(url.hostname);
-}
-
-function buildSocial(section) {
-  const label = section.querySelector(':scope > p');
-  const list = section.querySelector(':scope > ul');
-  const band = el('section', 'social-band');
-  const container = el('div', 'social-band-container container');
-  const row = el('div', 'row');
-  const labelCol = el('div', 'social-band-label-col');
-  if (label) {
-    label.className = 'social-band-label';
-    labelCol.append(label);
-  }
-  const content = el('div', 'social-band-content');
-  if (list) {
-    list.className = 'social-band-list';
-    [...list.children].forEach((li) => {
-      li.className = 'social-band-item';
-      const a = itemLink(li);
-      if (!a) return;
-      if (a.parentElement !== li) a.parentElement.replaceWith(a);
-      a.className = 'social-band-link';
-      if (!a.title) a.title = a.textContent.trim();
-      if (isExternal(a)) {
-        a.target = '_blank';
-        a.rel = 'noopener noreferrer';
-      }
-      const name = socialName(a);
-      const text = el('span', 'social-band-text');
-      while (a.firstChild) text.append(a.firstChild);
-      a.append(uIcon(name || 'link-external', `mr-1 is-${name || 'link'}`), text);
-    });
-    content.append(list);
-  }
-  row.append(labelCol, content);
-  container.append(row);
-  band.append(container);
-  return band;
-}
-
-function buildColumn(section, index, total) {
-  const header = section.querySelector(':scope > p');
-  const list = section.querySelector(':scope > ul');
-  const wide = total === 4 && index === 3;
-  const col = el('div', `footer-col${wide ? ' is-wide' : ''}`);
-  const sec = el('div', `footer-nav-section${index === total - 1 ? ' is-last' : ''}`);
-  const content = el('div', 'footer-nav-content');
-  if (header) {
-    header.className = 'footer-nav-header';
-    const pm = el('span', 'u-icon-plus-minus');
-    const icon = el('i', 'footer-nav-icon u-icon has-bg', pm);
-    header.append(icon);
-    header.addEventListener('click', () => {
-      if (window.innerWidth >= 767) return;
-      content.classList.toggle('is-visible');
-      pm.classList.toggle('is-active');
-    });
-    sec.append(header);
-  }
-  if (list) {
-    list.className = 'c-list-clean';
-    [...list.children].forEach((li) => {
-      const a = itemLink(li);
-      if (a && a.parentElement !== li) a.parentElement.replaceWith(a);
-      if (a && !a.title) a.title = a.textContent.trim();
-      if (a && isExternal(a)) {
-        a.target = '_blank';
-        a.rel = 'noopener noreferrer';
-        a.append(' ', uIcon('link-external', 'is-xs ml-1'));
-      }
-    });
-    content.append(list);
-  }
-  sec.append(content);
-  col.append(sec);
-  return col;
-}
-
-function buildScrollTop() {
-  const button = el(
-    'button',
-    'scroll-to-top',
-    el('span', 'scroll-to-top-icon', createIcon('chevron-down')),
-  );
-  button.type = 'button';
-  button.setAttribute('aria-label', 'Scroll to top');
-  button.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+/**
+ * The SVG logo is delivered in a <picture> whose first sources are raster webp renditions;
+ * drop those so the browser keeps the vector, as on the source.
+ * @param {Element} scope container holding the picture
+ */
+function keepVector(scope) {
+  scope.querySelectorAll('picture').forEach((picture) => {
+    const img = picture.querySelector('img');
+    if (!img || !/\.svg(\?|$)/.test(img.getAttribute('src') || '')) return;
+    picture.querySelectorAll('source[type="image/webp"]').forEach((source) => source.remove());
   });
-  const check = () => button.classList.toggle('is-visible', window.innerHeight < window.scrollY);
-  window.addEventListener('scroll', throttle(check, 300));
-  check();
-  return button;
 }
 
+/**
+ * loads and decorates the footer: band 1 = logo link, band 2 = social list + legal links
+ * @param {Element} block The footer block element
+ */
 export default async function decorate(block) {
-  const fragment = await loadChromeFragment('footer', getMetadata('footer'), loadFragment);
+  if (block.querySelector(':scope > .site-footer')) return;
+
+  const footerMeta = getMetadata('footer');
+  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
+  const fragment = await loadFragment(footerPath);
   if (!fragment) return;
-  const sections = fragmentSections(fragment);
-  const social = sections.find((s) => s.querySelector(':scope > p > strong'));
-  const rest = sections.filter((s) => s !== social);
-  const columns = rest.filter((s) => s.querySelector(':scope > ul'));
-  const copyright = rest.filter((s) => !s.querySelector(':scope > ul')).pop();
+  keepVector(fragment);
 
-  const nav = el('div', 'row footer-nav');
-  columns.forEach((s, i) => nav.append(buildColumn(s, i, columns.length)));
-  const content = el('div', 'footer-content container', nav);
-  if (copyright) {
-    const p = copyright.querySelector('p') || copyright;
-    p.className = 'footer-copyright';
-    content.append(p);
+  const bands = [...fragment.querySelectorAll(':scope > .section')]
+    .map((section) => section.querySelector('.default-content-wrapper'))
+    .filter((wrapper) => wrapper && wrapper.children.length);
+  const logoBand = bands.find((band) => band.querySelector('img'));
+  const linkBands = bands.filter((band) => band !== logoBand);
+
+  const footer = el('div', 'site-footer');
+  const full = el('div', 'site-footer-full');
+  const container = el('div', 'container');
+  const row = el('div', 'site-footer-row');
+
+  if (logoBand) {
+    const logo = el('div', 'site-footer-col site-footer-logo');
+    logo.append(...logoBand.children);
+    row.append(logo);
   }
-  block.replaceChildren(content, buildScrollTop());
 
-  const host = block.closest('footer');
-  if (social && host) host.before(buildSocial(social));
+  const links = el('div', 'site-footer-col site-footer-links');
+  linkBands.forEach((band) => {
+    band.querySelectorAll('ul').forEach((ul) => {
+      if (!ul.querySelector('.icon')) return;
+      ul.classList.add('list-social');
+      ul.querySelectorAll('a').forEach((a) => {
+        a.target = '_blank';
+        a.rel = 'noopener';
+      });
+      ul.querySelectorAll('span.icon').forEach((span) => {
+        const name = [...span.classList].find((c) => c.startsWith('icon-')).substring(5);
+        span.replaceWith(el('i', `fa fa-${name}`));
+      });
+    });
+    links.append(...band.children);
+  });
+  row.append(links);
+
+  container.append(row);
+  full.append(container);
+  footer.append(full, el('div', 'site-footer-colophon'));
+
+  block.textContent = '';
+  block.append(footer);
 }

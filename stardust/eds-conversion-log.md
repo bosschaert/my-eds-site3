@@ -1,50 +1,38 @@
-# EDS conversion log — continental.com
+# EDS conversion log — niravmanubhai.com replica (single page)
 
-## Publish decision (2026-10-09)
+## Target
+- DA org `of1-labs`, repo `stardust-replica-38f927f4`, branch `main`; preview `https://main--stardust-replica-38f927f4--of1-labs.aem.page/`, live `…aem.live`.
+- Runtime contract: `stardust/runtime-contract.json` (vanilla EDS, formatted-only buttonization, `p.button-wrapper` / `a.button`).
 
-Decision: **publish**. Every delivered page, the redirects sheet and the chrome documents (nav, footer and their locale variants) go live on the aem.live origin (deploy-batch.mjs without --no-publish, or POST https://admin.hlx.page/live/…). Decided by the run brief; not re-asked.
+## Publish decision (recorded once)
+Preview AND live (`deploy-batch.mjs` without `--no-publish`): rollout D-site verifies the served sitemap on the live origin and the root must answer there; the site is a single page and its owner sees the preview link. The visual gate is judged on the preview origin (`aem.page`).
 
-## C0 foundation (2026-10-09)
+## Decode tiers per section (index / home)
+| section | block | tier |
+|---|---|---|
+| courtyard hero (h1 sr-only + desktop/mobile art-directed image) | `hero` | template-slotted |
+| host (h2, intro, three paragraphs, portrait) | `host` | template-slotted |
+| story nursery (eyebrow, h2, image, copy, text CTA) | `story-nursery` | template-slotted |
+| rooms (head, 8 door cards as links, closing line) | `rooms` | reconstructive (repeat group) |
+| conversation (image · eyebrow, h2, 4 ledes, 6 CTAs) | `conversation` | template-slotted |
+| departure (sr-only h2, eyebrow, blessings, now-link · portrait, thanks) | `departure` | template-slotted |
+| header (Home link, title, hamburger drawer with 13 links) + scroll chrome | `header` (foundation) | template-slotted |
+| footer (6 links) | `footer` (foundation) | template-slotted |
 
-- Chrome decode tier: **template-slotted** (header, footer, social band). Authored nav/footer nodes are
-  moved into the canon chrome template; the off-canvas tree and the dropdown title (when no alt h3) are
-  presentational clones (EW4, stripInstrumentation). Exempt (`@ew-exempt`): search placeholder /
-  aria-labels read from authored link text.
-- EW7 deviation recorded by chrome-parity: live `<button>` nav triggers / language button are `<a role=button>`
-  (no `<button>` may host authored text); footer column labels / copyright are `<p>` (live `<div>`).
-- Chrome documents: 10 locale pairs (/en, /de, /cs-cz, /sk-sk, /pt-pt, /en-pt, /es-mx, /fr-fr, /ro-ro,
-  /en-us) generated verbatim from each locale's capture (stardust/.work/foundation/gen-chrome.cjs), Robots noindex.
-- Shell: /en/general/legal-notice as default content only (legal archetype unit replaces it).
-- Lint: clean (eslint airbnb-base, stylelint standard; per-file `no-descending-specificity` disable keeps the
-  source cascade order); `lint:breakpoints` wired (no target set in DESIGN.json → skipped).
+## Links
+27 internal hrefs target sibling pages outside the single-page scope → authored as absolute `https://www.niravmanubhai.com/<path>` (scope extension → repoint). `/` stays root-relative.
 
-## C-archetype legal — en-general-legal-notice (2026-10-09)
+## Fonts
+Self-hosted Google faces exactly as the gated prototype declares them (`stardust/prototypes/fonts.css` = Google's css2 response for the site's request, per-weight single-value faces; 19 files + Rasa Gujarati) → `styles/fonts.css` + `fonts/gf/`. Never the crawl's `fonts/*.woff2` (range-declared faces changed glyph advances 1–5%).
 
-- Blocks: `hero-teaser` (variant small) — template-slotted (art-directed renditions moved into
-  range slots); `text-media` — template-slotted (header / gallery / richtext slots). Encoder core
-  `stardust/rollout/encoders/encode.mjs` + modules hero-teaser, text-media; notes in
-  `stardust/rollout/encoders/legal.md`.
-- Text-only c-media CEs are authored as default content (David's model; foundation default-content
-  rhythm equals o-page__ce stacking). The legal archetype therefore has 1 block (hero-teaser);
-  text-media is exercised by image CEs on sibling templates (render-harness --ew: 7/7 editable).
-- davids-model-lint 🟡 D1 on hero-teaser (3 image-only rows): justified — art-directed renditions
-  (1920×327 / tablet / 800×454) differ in aspect ratio, one image cannot reproduce the hero height.
-- qa-gate cap row (DESIGN.json containerMaxWidth 1920 vs content cap 1460 at 2560) fails on the
-  default-content wrapper the foundation owns; prototype carries the same 1460 cap — not a block defect.
+## Lint
+Boilerplate ESLint airbnb-base + Stylelint standard; `stardust/` tooling copies are excluded in `.eslintignore` (not runtime files).
 
-## C-archetype home — en (2026-10-09)
-
-- Blocks: NEW `video-player` (template-slotted: poster / play / caption / text-column slots; D3
-  AdmiralCloud embed on click, poster fallback when the vendor refuses the host), NEW
-  `section-background` (template-slotted: o-container__bg-image layer). Shared, additive only:
-  text-media variant `header-row`; teaser `wide-narrow.with-embed` 512px frame; fact-box guarded
-  equalise re-run (boxes with foot text). Encoder modules + notes: stardust/rollout/encoders/home.md.
-- Section schema: stardust/eds-schema/en.json from an annotated copy (one data-section per block,
-  stardust/.work/archetype-home/annotate.cjs). qa-gate PASS 39/0/0; block-roundtrip --ew
-  video-player 4/4 editable, section-background 0/0. Whole page: pre-existing EW findings in the
-  shared hero-stage-slider (7 dead: textLine moves childNodes) and fact-box (6 dead), teaser
-  URL-display embed link (by design), text-media role swap on the light h1 — not touched (shared).
-- davids-model-lint 🟡 D1 section-background (image-only layer, decorative), D1 text-media eyebrow
-  header (bespoke c-media__meta styling), D3 teaser with-embed (embed row is one cell by design).
-- Published gate: 1440 2.42 % Δh 2 PASS; 360 16.09 % Δh 0 → override (headed-both 4.08 % Δh 2;
-  hero autoplay tick). Crop 1440 header 1.27 % / footer 0.92 %.
+## C1 home cluster — decode notes
+- Tiers as tabled above: `hero`, `host`, `story-nursery`, `conversation`, `departure` template-slotted (empty wrappers with the prototype's class names; authored nodes MOVED by role — heading / link-free pre-heading `<p>` = eyebrow / whole-link `<p>` = CTA / media); `rooms` reconstructive (rows classified by content: picture row = door card, `<h2>` row = head, trailing picture-less row = closing line; card CTA `<p>` gives the card `<a>` its href and the inner anchor is unwrapped, EW6).
+- Alt-anchored variant: the live `.poster-insert` on the 4th door is `.rooms .courtyard-door-media:has(img[alt="Come, Sit – Just Ask"]) img { object-fit: contain; background: #efe4cf }` — anchored to the authored alt, not to card position.
+- Authoring shape deviation (departure): the portrait is authored `<p><img></p><p>Thank you for visiting.</p>` (DA's own image shape) instead of a bare `<img>` beside the `<p>` — the runtime's `wrapTextNodes` folds a picture-led mixed cell into one `<p>`, which the workspace stamps as the editable and the decode would have to discard (block-roundtrip: DEAD TEXT). Same rendered DOM.
+- Hero renders 2 `<img>` (desktop + art-directed mobile slot toggled at 640px) vs the prototype's one `<picture>` with a `<source media>` — block-roundtrip 🟡 IMG COUNT is the intended slot difference.
+- Conversation CTAs: `target="_blank" rel="noopener noreferrer"` set by decorate() on `http(s)` anchors (attribute, not text); the mailto stays same-tab.
+- davids-model-lint 🟡 D1/D3 on hero, host, story-nursery, rooms: bespoke layouts (sr-only h1 + art-directed pair; head row + note|portrait row; head + figure + copy; head row + 8 image|text card rows + closing row) — kept as blocks.
+- Published-origin gates (preview origin, pub2 final, --full): 1440 → 0.02 % pixel, height Δ 0, overflow 0, content 0 🔴; 360 → 1.02 %, Δ 0, overflow 0, 0 🔴. Header/footer crop-compare: 0.00 % / 0.00 % @1440, 0.00 % / 1.09 % @360. Residual: chrome-parity 2 deltas at both widths (header title tag <span>→<p>; footer region background on the inner .nmh-footer, not the root) — both in the frozen foundation, filed in stardust/rollout/foundation-requests.md; iteration stopped after pub2 since a pub3 cannot change frozen files. ai-readability code score 100.

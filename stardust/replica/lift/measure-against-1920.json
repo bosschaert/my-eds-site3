@@ -1,0 +1,1292 @@
+{
+  "_provenance": {
+    "writtenBy": "skills/replica/scripts/measure.mjs",
+    "writtenAt": "2026-09-23T19:05:14.022Z",
+    "urls": [
+      "https://www.niravmanubhai.com/",
+      "http://localhost:8791/index-proposed.html"
+    ],
+    "widths": [
+      1920
+    ],
+    "selectors": [
+      "header.nmh-header",
+      ".hero",
+      "#host .wrap",
+      ".host-img",
+      ".story-nursery-home-image",
+      ".reading-door-rail",
+      ".reading-door",
+      "#conversation .wrap",
+      ".conversation-room-media",
+      ".departure .wrap",
+      "footer.nmh-footer",
+      "html"
+    ],
+    "props": [
+      "display",
+      "position",
+      "boxSizing",
+      "width",
+      "height",
+      "maxWidth",
+      "margin",
+      "padding",
+      "gap",
+      "backgroundColor",
+      "backgroundImage",
+      "color",
+      "fontFamily",
+      "fontSize",
+      "fontWeight",
+      "lineHeight",
+      "letterSpacing",
+      "textTransform",
+      "textAlign",
+      "borderRadius",
+      "border",
+      "boxShadow",
+      "opacity",
+      "objectFit"
+    ],
+    "allMatches": false,
+    "failed": [],
+    "warnings": []
+  },
+  "widths": [
+    1920
+  ],
+  "selectors": [
+    "header.nmh-header",
+    ".hero",
+    "#host .wrap",
+    ".host-img",
+    ".story-nursery-home-image",
+    ".reading-door-rail",
+    ".reading-door",
+    "#conversation .wrap",
+    ".conversation-room-media",
+    ".departure .wrap",
+    "footer.nmh-footer",
+    "html"
+  ],
+  "root": {
+    "https://www.niravmanubhai.com/": {
+      "1920": {
+        "viewport": 1920,
+        "clientWidth": 1920,
+        "scrollWidth": 1905,
+        "scrollHeight": 6261,
+        "overflowX": 0
+      }
+    },
+    "http://localhost:8791/index-proposed.html": {
+      "1920": {
+        "viewport": 1920,
+        "clientWidth": 1920,
+        "scrollWidth": 1905,
+        "scrollHeight": 6261,
+        "overflowX": 0
+      }
+    }
+  },
+  "pages": {
+    "https://www.niravmanubhai.com/": {
+      "1920": {
+        "header.nmh-header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1905,
+              "h": 81
+            },
+            "visible": true,
+            "text": "Home Nirav Manubhai ☰",
+            "props": {
+              "display": "grid",
+              "position": "sticky",
+              "boxSizing": "border-box",
+              "width": "1905px",
+              "height": "81px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "18px 28px",
+              "gap": "normal",
+              "backgroundColor": "rgb(244, 239, 227)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "rgba(40, 50, 34, 0.25) 0px 1px 8px 0px",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".hero": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 81,
+              "w": 1905,
+              "h": 900
+            },
+            "visible": true,
+            "text": "Nirav Manubhai — a home on the web",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "1905px",
+              "height": "900px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "0px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#host .wrap": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 361,
+              "y": 1058,
+              "w": 1184,
+              "h": 875
+            },
+            "visible": true,
+            "text": "Welcome to my home. Rooms for stories, …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1184px",
+              "height": "875.469px",
+              "maxWidth": "1184px",
+              "margin": "0px 360.5px",
+              "padding": "0px 134.4px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".host-img": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 495,
+              "y": 1509,
+              "w": 340,
+              "h": 424
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "340px",
+              "height": "424.344px",
+              "maxWidth": "100%",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgba(44, 37, 25, 0.25)",
+              "boxShadow": "rgba(44, 37, 25, 0.12) 0px 2px 14px 0px",
+              "opacity": "1",
+              "objectFit": "fill"
+            },
+            "img": {
+              "naturalWidth": 1200,
+              "naturalHeight": 1499,
+              "currentSrc": "https://www.niravmanubhai.com/assets/host-mirror.jpg"
+            }
+          }
+        ],
+        ".story-nursery-home-image": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 493,
+              "y": 2149,
+              "w": 920,
+              "h": 460
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "920px",
+              "height": "460px",
+              "maxWidth": "none",
+              "margin": "0px 90px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "0px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".reading-door-rail": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 495,
+              "y": 3129,
+              "w": 915,
+              "h": 1215
+            },
+            "visible": true,
+            "text": "01 STILLS Moments noticed, preserved an…",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "915.219px",
+              "height": "1215.02px",
+              "maxWidth": "none",
+              "margin": "28.8px 0px 0px",
+              "padding": "0px",
+              "gap": "20px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".reading-door": [
+          {
+            "index": 0,
+            "of": 8,
+            "rect": {
+              "x": 495,
+              "y": 3129,
+              "w": 292,
+              "h": 392
+            },
+            "visible": true,
+            "text": "01 STILLS Moments noticed, preserved an…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "291.734px",
+              "height": "391.672px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "16px",
+              "gap": "normal",
+              "backgroundColor": "rgba(255, 255, 255, 0.22)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgb(202, 191, 163)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#conversation .wrap": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 361,
+              "y": 4542,
+              "w": 1184,
+              "h": 1147
+            },
+            "visible": true,
+            "text": "CONVERSATION If something sparked a tho…",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1184px",
+              "height": "1147.41px",
+              "maxWidth": "1184px",
+              "margin": "0px 360.5px",
+              "padding": "0px 134.4px",
+              "gap": "64px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".conversation-room-media": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 495,
+              "y": 4542,
+              "w": 404,
+              "h": 270
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "404.328px",
+              "height": "269.547px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "14px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "rgba(44, 37, 25, 0.12) 0px 3px 16px 0px",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".departure .wrap": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 361,
+              "y": 5825,
+              "w": 1184,
+              "h": 289
+            },
+            "visible": true,
+            "text": "BEFORE YOU GO I hope something here sta…",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1184px",
+              "height": "288.844px",
+              "maxWidth": "1184px",
+              "margin": "0px 360.5px",
+              "padding": "0px 134.4px",
+              "gap": "48px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer.nmh-footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 6178,
+              "w": 1905,
+              "h": 83
+            },
+            "visible": true,
+            "text": "RETURN HOME CONTACT THE STORY BOUQUET P…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1905px",
+              "height": "83.0938px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "30px 20px",
+              "gap": "22px",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "23.8px",
+              "letterSpacing": "2.24px",
+              "textTransform": "uppercase",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "html": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1905,
+              "h": 6261
+            },
+            "visible": true,
+            "text": "Home Nirav Manubhai ☰ × Home The Story …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1905px",
+              "height": "6260.89px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      }
+    },
+    "http://localhost:8791/index-proposed.html": {
+      "1920": {
+        "header.nmh-header": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1905,
+              "h": 81
+            },
+            "visible": true,
+            "text": "Home Nirav Manubhai ☰",
+            "props": {
+              "display": "grid",
+              "position": "sticky",
+              "boxSizing": "border-box",
+              "width": "1905px",
+              "height": "81px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "18px 28px",
+              "gap": "normal",
+              "backgroundColor": "rgb(244, 239, 227)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "rgba(40, 50, 34, 0.25) 0px 1px 8px 0px",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".hero": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 81,
+              "w": 1905,
+              "h": 900
+            },
+            "visible": true,
+            "text": "Nirav Manubhai — a home on the web",
+            "props": {
+              "display": "block",
+              "position": "relative",
+              "boxSizing": "border-box",
+              "width": "1905px",
+              "height": "900px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "0px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#host .wrap": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 361,
+              "y": 1058,
+              "w": 1184,
+              "h": 875
+            },
+            "visible": true,
+            "text": "Welcome to my home. Rooms for stories, …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1184px",
+              "height": "875.469px",
+              "maxWidth": "1184px",
+              "margin": "0px 360.5px",
+              "padding": "0px 134.4px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".host-img": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 495,
+              "y": 1509,
+              "w": 340,
+              "h": 424
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "340px",
+              "height": "424.344px",
+              "maxWidth": "100%",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgba(44, 37, 25, 0.25)",
+              "boxShadow": "rgba(44, 37, 25, 0.12) 0px 2px 14px 0px",
+              "opacity": "1",
+              "objectFit": "fill"
+            },
+            "img": {
+              "naturalWidth": 1200,
+              "naturalHeight": 1499,
+              "currentSrc": "http://localhost:8791/assets/media/host-mirror.jpg"
+            }
+          }
+        ],
+        ".story-nursery-home-image": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 493,
+              "y": 2149,
+              "w": 920,
+              "h": 460
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "920px",
+              "height": "460px",
+              "maxWidth": "none",
+              "margin": "0px 90px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "0px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".reading-door-rail": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 495,
+              "y": 3129,
+              "w": 915,
+              "h": 1215
+            },
+            "visible": true,
+            "text": "01 STILLS Moments noticed, preserved an…",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "915.219px",
+              "height": "1215.02px",
+              "maxWidth": "none",
+              "margin": "28.8px 0px 0px",
+              "padding": "0px",
+              "gap": "20px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".reading-door": [
+          {
+            "index": 0,
+            "of": 8,
+            "rect": {
+              "x": 495,
+              "y": 3129,
+              "w": 292,
+              "h": 392
+            },
+            "visible": true,
+            "text": "01 STILLS Moments noticed, preserved an…",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "291.734px",
+              "height": "391.672px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "16px",
+              "gap": "normal",
+              "backgroundColor": "rgba(255, 255, 255, 0.22)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "1px solid rgb(202, 191, 163)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "#conversation .wrap": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 361,
+              "y": 4542,
+              "w": 1184,
+              "h": 1147
+            },
+            "visible": true,
+            "text": "CONVERSATION If something sparked a tho…",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1184px",
+              "height": "1147.41px",
+              "maxWidth": "1184px",
+              "margin": "0px 360.5px",
+              "padding": "0px 134.4px",
+              "gap": "64px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".conversation-room-media": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 495,
+              "y": 4542,
+              "w": 404,
+              "h": 270
+            },
+            "visible": true,
+            "text": "",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "404.328px",
+              "height": "269.719px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "14px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "rgba(44, 37, 25, 0.12) 0px 3px 16px 0px",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        ".departure .wrap": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 361,
+              "y": 5825,
+              "w": 1184,
+              "h": 289
+            },
+            "visible": true,
+            "text": "BEFORE YOU GO I hope something here sta…",
+            "props": {
+              "display": "grid",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1184px",
+              "height": "288.844px",
+              "maxWidth": "1184px",
+              "margin": "0px 360.5px",
+              "padding": "0px 134.4px",
+              "gap": "48px",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, system-ui, sans-serif",
+              "fontSize": "17px",
+              "fontWeight": "400",
+              "lineHeight": "28.9px",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(44, 37, 25)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "footer.nmh-footer": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 6178,
+              "w": 1905,
+              "h": 83
+            },
+            "visible": true,
+            "text": "RETURN HOME CONTACT THE STORY BOUQUET P…",
+            "props": {
+              "display": "flex",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1905px",
+              "height": "83.0938px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "30px 20px",
+              "gap": "22px",
+              "backgroundColor": "rgb(236, 227, 209)",
+              "backgroundImage": "none",
+              "color": "rgb(44, 37, 25)",
+              "fontFamily": "Inter, Arial, sans-serif",
+              "fontSize": "14px",
+              "fontWeight": "400",
+              "lineHeight": "23.8px",
+              "letterSpacing": "2.24px",
+              "textTransform": "uppercase",
+              "textAlign": "center",
+              "borderRadius": "0px",
+              "border": "",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ],
+        "html": [
+          {
+            "index": 0,
+            "of": 1,
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1905,
+              "h": 6261
+            },
+            "visible": true,
+            "text": "Home Nirav Manubhai ☰ × Home The Story …",
+            "props": {
+              "display": "block",
+              "position": "static",
+              "boxSizing": "border-box",
+              "width": "1905px",
+              "height": "6260.89px",
+              "maxWidth": "none",
+              "margin": "0px",
+              "padding": "0px",
+              "gap": "normal",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "backgroundImage": "none",
+              "color": "rgb(0, 0, 0)",
+              "fontFamily": "\"Times New Roman\"",
+              "fontSize": "16px",
+              "fontWeight": "400",
+              "lineHeight": "normal",
+              "letterSpacing": "normal",
+              "textTransform": "none",
+              "textAlign": "start",
+              "borderRadius": "0px",
+              "border": "0px none rgb(0, 0, 0)",
+              "boxShadow": "none",
+              "opacity": "1",
+              "objectFit": "fill"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "deltas": {
+    "1920": {
+      "header.nmh-header": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".hero": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#host .wrap": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".host-img": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".story-nursery-home-image": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".reading-door-rail": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".reading-door": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "#conversation .wrap": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      ".conversation-room-media": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {
+              "height": [
+                "269.547px",
+                "269.719px"
+              ]
+            }
+          }
+        ]
+      },
+      ".departure .wrap": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "footer.nmh-footer": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      },
+      "html": {
+        "status": "ok",
+        "countA": 1,
+        "countB": 1,
+        "pairs": [
+          {
+            "index": 0,
+            "rect": {
+              "dx": 0,
+              "dy": 0,
+              "dw": 0,
+              "dh": 0
+            },
+            "props": {}
+          }
+        ]
+      }
+    }
+  },
+  "rootDeltas": {
+    "1920": {
+      "scrollWidth": 0,
+      "scrollHeight": 0
+    }
+  }
+}

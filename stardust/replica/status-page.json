@@ -1,0 +1,25 @@
+{
+  "step": 5,
+  "templateFraction": 1,
+  "fidelityFraction": 1,
+  "templates": [
+    {
+      "name": "Home page",
+      "pages": 1,
+      "desktop": "Yes",
+      "mobile": "Yes",
+      "status": "Done"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://main--stardust-replica-38f927f4--of1-labs.aem.page/",
+      "title": "Home",
+      "ready": false
+    }
+  ],
+  "now": "The site shell is now live on the new platform: the header with its menu drawer, the footer, the fonts and the site icon all match the original. The home page itself is being assembled there next, section by section, with its images moved to the new hosting.",
+  "next": "We'll publish the home page and compare it against the original at its new address.",
+  "attention": false,
+  "ready": false
+}

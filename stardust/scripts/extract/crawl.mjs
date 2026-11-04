@@ -390,14 +390,6 @@ async function dismissConsent(page) {
   const sels = ['#onetrust-accept-btn-handler', '.truste-button2', '[aria-label*="Accept" i]',
     'button[id*="accept" i]', 'button[class*="accept" i]'];
   let matched = false;
-  // consentmanager.net (continental.com run): the CMP renders late inside an open shadow root
-  // (#cmpwrapper) — wait for it, then reject (no consent = the state a first visit renders).
-  const cmp = await page.waitForFunction(() => document.querySelector('#cmpwrapper')?.shadowRoot?.querySelector('.cmpboxbtnno'),
-    null, { timeout: 8000 }).catch(() => null);
-  if (cmp) {
-    await page.evaluate(() => document.querySelector('#cmpwrapper').shadowRoot.querySelector('.cmpboxbtnno').click()).catch(() => {});
-    matched = true; await page.waitForTimeout(500);
-  }
   for (const s of sels) {
     const el = await page.$(s);
     if (el) { await el.click().catch(() => {}); matched = true; await page.waitForTimeout(300); break; }
@@ -449,7 +441,7 @@ async function dismissConsent(page) {
   await page.waitForTimeout(300);
   // assert: prune any consent container still present (don't leave it for capture).
   await page.evaluate(() => {
-    document.querySelectorAll('#cmpwrapper, #onetrust-banner-sdk, #truste-consent-track, #usercentrics-root, [class*="cookie" i][class*="banner" i], [id*="consent" i]')
+    document.querySelectorAll('#onetrust-banner-sdk, #truste-consent-track, #usercentrics-root, [class*="cookie" i][class*="banner" i], [id*="consent" i]')
       .forEach((n) => n.remove());
   });
 }

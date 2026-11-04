@@ -1,47 +1,61 @@
 ---
 _provenance:
   writtenBy: stardust:replica
-  writtenAt: 2026-10-09T17:35:18Z
-  againstInput: https://www.continental.com/
+  writtenAt: 2026-09-23T18:47:00Z
+  againstInput: https://www.niravmanubhai.com/
   readArtifacts:
-    - stardust/current/PRODUCT.md
-    - stardust/current/DESIGN.md
-    - stardust/current/DESIGN.json
+    - stardust/current/pages/index.json
+    - stardust/current/pages/index.html
+    - stardust/current/assets/css/ (10 linked stylesheets + inline-styles.css + google-fonts.css)
+    - stardust/replica/lift/live-measure.json
+    - stardust/replica/lift/tokens.json
 ---
 
 # Direction — preserve mode (same-design migration)
 
-Mode: PRESERVE. The target spec is the captured current state of https://www.continental.com/,
-promoted verbatim (no direct invocation, no creative decisions).
+Mode: PRESERVE. The target spec is the captured current state of
+https://www.niravmanubhai.com/, promoted mechanically (no direct invocation,
+no creative decisions).
 
-Promoted: current/PRODUCT.md → PRODUCT.md · current/DESIGN.md → DESIGN.md ·
-current/DESIGN.json → DESIGN.json (at 2026-10-09T17:35:18Z).
+Synthesized (bounded-single): current/pages/index.json + Phase-3 CSS lift
+→ PRODUCT.md · DESIGN.md · DESIGN.json (at 2026-09-23T18:47:00Z).
+`stardust/current/PRODUCT.md` / `DESIGN.md` / `DESIGN.json` do not exist on this
+run (bounded `extract --single`), so there was nothing to promote verbatim;
+every value in the synthesized spec traces to the captured JSON or a lifted
+CSS/measured value. When this pilot grows to site scope, a `--prep` extract
+REPLACES the synthesized spec with the verbatim promotion.
 
 Permitted deltas: ONLY the entries of stardust/replica/inconsistency-register.md
-(empty — pure replica; measured divergences kept verbatim are listed there for the record).
+(empty — pure replica).
 
 Fidelity: ia verbatim · design verbatim · content verbatim.
 
-## Hands-off activation (2026-10-09T17:35:18Z)
+Flow: replica (flowSource: user-phrase — the run invoked `replica` directly).
+Gate breakpoints: 1440 and 360 (run.json `desktop,mobile`).
 
-Run hands-off (`--hands-off`): every interactive gate auto-resolves; every quality gate runs at
-full strength. Named assumptions:
+## Hands-off activation
 
-- **Scope** — fixed by `stardust/.labs/site-plan.json` (100 selected pages; 99 exist on the
-  source, `/en/investors/api-events/` answers 404). No volume cap beyond the plan.
-- **Gate breakpoints** — run.json `breakpoints: "desktop,mobile"` → the replica defaults 1440 and 360.
-- **Consent state** — captured and gated in the "Reject all" state of the consentmanager.net CMP
-  (the first-visit page a visitor sees once the banner is answered); the banner itself is
-  platform chrome delivered by the CMP script, not recreated.
-- **Brand font** — ContinentalStagSansW is a licensed corporate face. It is NOT rehosted on the
-  new origin: the delivered @font-face references the owner's existing font files on
-  cdn.continental.com (served with `Access-Control-Allow-Origin: *`), the brand family name
-  first in the stack and a metric-matched system fallback after it.
-- **Publish decision** — publish (recorded in stardust/eds-conversion-log.md).
-- **Page types** — nine, inferred from URL + component composition (see journal, Extract).
+Hands-off mode activated 2026-09-23T18:27Z by `--hands-off` on the replica
+invocation. `state.json.handsOff: true`. Interactive gates auto-resolve per
+the master skill § Hands-off mode; quality gates run unchanged.
 
-## E2 link audit — named decision: out-of-scope targets repointed to the source site (2026-10-10)
-- The page scope is fixed at the 100 selected pages of the site plan (99 delivered + the 2 dynamics-built search endpoints). Every internal target outside it is SCOPE EXTENSION, not a capture gap, and is repointed to https://www.continental.com regardless of count.
-- Chrome: 607 distinct root-relative targets in the nav/footer documents (20 docs, 622 hrefs) answered 404 on the new origin; all repointed to the source site (spot check 10/10 → 200 on the source). List: `stardust/rollout/e2-repointed-targets.txt`.
-- Page bodies: `localize-links.mjs --check` passes (0 localizable); the absolute source-host links that remain (~420 targets: PDFs under /fileadmin, press releases, IR sub-pages …) are the honest scope boundary, kept absolute.
-- Other-locale roots: the 10 captured locale roots are delivered; locale subtrees beyond them are listed in `stardust/state.json` `site.captureGaps` and stay on the source site.
+Named assumptions (hands-off):
+- Scope is exactly one page (`/`), per `stardust/.labs/site-plan.json`; links
+  to room pages keep their source paths and are not migrated.
+- Third-party tags (GA4 `G-00QDEH6N5W`, Cloudflare Web Analytics) are not
+  loaded on the preview host — an owner decision recorded in
+  `stardust/dynamic-features.md` § Decision batch.
+- `hreflang` alternates are decided out (single page, single language).
+- Fonts: Google Fonts under the OFL, self-hosted from the intercepted files —
+  no substitution needed.
+
+## Dynamic surface
+
+`stardust/dynamic-features.md` — 7 rows, every row has a disposition
+(2 rebuild-native chrome interactions ship with the archetype; 3 tags
+embed-passthrough interim; 1 static-snapshot; 1 decided-out).
+Plan: `stardust/dynamic-features-plan.md`.
+
+## Link scope decision (E2-link-audit, 2026-09-23)
+
+Scope is one page (`/`). Every internal target the home page, `/nav` and `/footer` link to is a SCOPE EXTENSION (outside the declared one-page scope) and is repointed absolute to the source site rather than delivered: `/axiom-stories`, `/come-sit-just-ask`, `/contact.html`, `/house-specials`, `/house-specials.html`, `/kabir-vaidya`, `/kabir-vaidya.html`, `/license.html`, `/my-books.html`, `/my-study`, `/now`, `/patrons`, `/privacy.html`, `/quiet-signal`, `/quiet-signal.html`, `/sitemap`, `/stills`, `/stills.html`, `/story-bouquet`, `/story-nursery`. No capture gap: none of these was ever selected in `stardust/.labs/site-plan.json`. External targets are kept as authored.

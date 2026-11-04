@@ -1,21 +1,21 @@
 {
   "_provenance": {
-    "writtenBy": "stardust:rollout/findings",
-    "writtenAt": "2026-10-10T12:58:58.814Z",
+    "writtenBy": "stardust:rollout/optimize",
+    "writtenAt": "2026-09-23T20:22:30.855Z",
     "stardustVersion": "0.0.0"
   },
   "current": {
     "runId": "run-2",
-    "at": "2026-10-10T12:58:58.814Z",
+    "at": "2026-09-23T20:22:30.855Z",
     "overall": 100,
     "dimensions": {
       "brand-tensions": null,
       "design-ux": null,
       "accessibility": null,
-      "seo": 100,
+      "seo": null,
       "content-conversion": null,
       "ai-search": 100,
-      "cross-page": 100
+      "cross-page": null
     },
     "severity": {
       "P1": 0,
@@ -24,28 +24,52 @@
     },
     "fixed": {
       "P1": 0,
-      "P2": 0,
+      "P2": 1,
       "P3": 0
     }
   },
   "history": [
     {
       "runId": "run-1",
-      "at": "2026-10-10T12:58:07.992Z",
-      "overall": 51,
+      "at": "2026-09-23T20:19:25.666Z",
+      "overall": 90,
       "dimensions": {
         "brand-tensions": null,
         "design-ux": null,
         "accessibility": null,
-        "seo": 0,
+        "seo": null,
         "content-conversion": null,
-        "ai-search": 70,
-        "cross-page": 82
+        "ai-search": 90,
+        "cross-page": null
       },
       "severity": {
-        "P1": 16,
-        "P2": 6,
-        "P3": 2
+        "P1": 0,
+        "P2": 1,
+        "P3": 0
+      },
+      "fixed": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 0
+      }
+    },
+    {
+      "runId": "autofix-2026-09-23T20:22:30.747Z",
+      "at": "2026-09-23T20:22:30.747Z",
+      "overall": 90,
+      "dimensions": {
+        "brand-tensions": null,
+        "design-ux": null,
+        "accessibility": null,
+        "seo": null,
+        "content-conversion": null,
+        "ai-search": 90,
+        "cross-page": null
+      },
+      "severity": {
+        "P1": 0,
+        "P2": 1,
+        "P3": 0
       },
       "fixed": {
         "P1": 0,
@@ -55,25 +79,25 @@
     },
     {
       "runId": "run-2",
-      "at": "2026-10-10T12:58:25.691Z",
-      "overall": 81,
+      "at": "2026-09-23T20:22:30.855Z",
+      "overall": 100,
       "dimensions": {
         "brand-tensions": null,
         "design-ux": null,
         "accessibility": null,
-        "seo": 80,
+        "seo": null,
         "content-conversion": null,
-        "ai-search": 70,
-        "cross-page": 92
+        "ai-search": 100,
+        "cross-page": null
       },
       "severity": {
         "P1": 0,
-        "P2": 5,
-        "P3": 2
+        "P2": 0,
+        "P3": 0
       },
       "fixed": {
         "P1": 0,
-        "P2": 0,
+        "P2": 1,
         "P3": 0
       }
     }

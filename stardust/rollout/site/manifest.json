@@ -1,26 +1,23 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/assemble",
-    "writtenAt": "2026-10-10T12:48:14.430Z",
+    "writtenAt": "2026-09-23T20:12:12.794Z",
     "stardustVersion": "0.0.0"
   },
-  "generatedAt": "2026-10-10T12:48:14.430Z",
-  "host": "https://main--d9ddbc54--aemcoder.aem.live",
+  "generatedAt": "2026-09-23T20:12:12.794Z",
+  "host": "https://main--stardust-replica-38f927f4--of1-labs.aem.live",
   "sitemap": "stardust/rollout/site/sitemap.xml",
   "robots": "stardust/rollout/site/robots.txt",
   "fragments": [],
   "servedSitemap": {
-    "origin": "https://main--d9ddbc54--aemcoder.aem.live",
-    "url": "https://main--d9ddbc54--aemcoder.aem.live/sitemap.xml",
-    "checkedAt": "2026-10-10T12:48:14.429Z",
-    "match": false,
+    "origin": "https://main--stardust-replica-38f927f4--of1-labs.aem.page",
+    "url": "https://main--stardust-replica-38f927f4--of1-labs.aem.page/sitemap.xml",
+    "checkedAt": "2026-09-23T20:12:12.793Z",
+    "match": true,
     "error": null,
-    "count": 99,
-    "assembled": 101,
+    "count": 1,
+    "assembled": 1,
     "extra": [],
-    "missing": [
-      "/de/meta/suche",
-      "/en/general/search"
-    ]
+    "missing": []
   }
 }

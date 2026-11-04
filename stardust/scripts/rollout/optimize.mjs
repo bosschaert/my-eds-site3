@@ -117,10 +117,7 @@ function detectSite(loaded) {
 // --- Source parity (the capture, when present) ---------------------------------
 // The capture is extract's `pages/<slug>.json` (document.title, meta description) plus the
 // rendered-DOM sidecar it names in `renderedHtml` (default `pages/<slug>.html`) for JSON-LD.
-const decodeEntities = (s) => s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&nbsp;/g, ' ')
-  .replace(/&#x([0-9a-f]+);/gi, (m, h) => String.fromCodePoint(parseInt(h, 16)))
-  .replace(/&#(\d+);/g, (m, d) => String.fromCodePoint(Number(d)));
-const h1Count = (html) => (html.match(/<h1[\s>]/gi) || []).length;
+const decodeEntities = (s) => s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&nbsp;/g, ' ');
 const norm = (s) => decodeEntities(String(s ?? '')).replace(/\s+/g, ' ').trim();
 
 function loadCapture(slug) {
@@ -128,11 +125,8 @@ function loadCapture(slug) {
   if (!rec) return null;
   const sidecar = rec.renderedHtml ? join(CURRENT, rec.renderedHtml) : join(CURRENT, 'pages', `${slug}.html`);
   let jsonld = null; // null = unknown (no rendered sidecar)
-  let h1 = null; // replica: heading structure is kept verbatim (upstream candidate)
-  if (existsSync(sidecar)) {
-    try { const html = readFileSync(sidecar, 'utf8'); jsonld = hasJsonLd(html); h1 = h1Count(html); } catch { jsonld = null; }
-  }
-  return { title: norm(rec.title || (rec.og && rec.og.title) || ''), description: norm(rec.description || ''), jsonld, h1 };
+  if (existsSync(sidecar)) { try { jsonld = hasJsonLd(readFileSync(sidecar, 'utf8')); } catch { jsonld = null; } }
+  return { title: norm(rec.title || (rec.og && rec.og.title) || ''), description: norm(rec.description || ''), jsonld };
 }
 
 /** The shared condition when `f` mirrors the source, else null. */
@@ -144,7 +138,6 @@ function parityReason(f, captures, deliveredBySlug) {
     if (f.check === 'title-missing') return !cap.title ? 'the source page has no <title> either' : null;
     if (f.check === 'title-length') return cap.title && norm(got.title) === cap.title ? 'the source page carries the same <title>' : null;
     if (f.check === 'meta-description') return !cap.description ? 'the source page has no meta description either' : null;
-    if (f.check === 'single-h1') return cap.h1 !== null && cap.h1 === got.h1 ? `the source page renders the same ${cap.h1} <h1>` : null;
     if (f.check === 'jsonld') return cap.jsonld === false ? 'the source page has no JSON-LD either' : null;
     return null;
   }
@@ -174,7 +167,7 @@ for (const p of target) {
   const r = await loadPageHTML(p, { root: ROOT, base: BASE });
   if (!r.ok) continue; // unreachable pages are verify.mjs's concern, not optimize's
   inspectedSlugs.add(p.slug);
-  loaded.push({ slug: p.slug, title: titleOf(r.body), desc: descOf(r.body), h1: h1Count(r.body) });
+  loaded.push({ slug: p.slug, title: titleOf(r.body), desc: descOf(r.body) });
   const cap = loadCapture(p.slug);
   if (cap) captures.set(p.slug, cap);
   rawDetected.push(...detectPage(r.body, p.slug));

@@ -1,59 +1,50 @@
-# Unit C0 — foundation (author AND deploy)
+# C0 — Foundation brief (niravmanubhai.com replica → AEM Edge Delivery)
 
-Read stardust/rollout/briefs/common.md first; it binds you. You are the ONLY agent running.
+You are the foundation subagent of a same-design (pixel-replica) migration. Project root: /workspace/stardust-replica-38f927f4 (an adobe/aem-boilerplate clone; read AGENTS.md). ONE page is migrated: https://www.niravmanubhai.com/ . The gated prototype (0.02 % / 0.05 % pixel diff vs live at 1440 / 360) is the spec:
+- stardust/prototypes/index-proposed.html — semantic HTML (header, drawer, footer, chrome, 6 sections)
+- stardust/prototypes/replica-canon.css — tokens, base reset, chrome (header, drawer, overlay, legacy bar, footer, reading-progress, back-to-top)
+- stardust/prototypes/index-proposed.css — section layer (NOT yours; the cluster subagent ports it into blocks)
+- stardust/prototypes/fonts.css — Google css2 response verbatim, URLs → assets/fonts/gf/*.woff2 (assets → ../current/assets)
+Every value in those files was lifted from the source site. Copy values verbatim; make NO design decisions; do not "improve" anything.
 
-## Goal
-Author and deploy the site foundation so every later unit only adds blocks + content:
-1. `styles/styles.css` (+ `styles/lazy-styles.css`, `styles/fonts.css`): the canon layer of
-   stardust/prototypes/canon.css that is NOT a module — tokens/custom properties, @font-face (owner
-   CDN URLs, exact weights as canon.css), base typography (h1–h6, p, lists, links), buttons
-   (`.c-button` look applied to EDS button links `a.button` / `.button-container`), container widths
-   and page gutters (DESIGN.json extensions.breakpoints — the 1460 content cap), section spacing for
-   `main > .section`, helper/utility classes the archetypes use. Remove boilerplate defaults that
-   conflict (Roboto fonts, colors) — the delete of fonts/roboto-*.woff2 is fine. Keep the boilerplate
-   `scripts/scripts.js` flow; add only what is needed (e.g. icon decoration, a shared lazy/
-   count-up helper module under scripts/ if several blocks need it — later units cannot add to
-   scripts/ after freeze, so put shared runtime helpers there now: icons from
-   stardust/prototypes/assets/icons → /icons/*.svg, lightbox/modal helper for `data-lightbox`, the
-   sticky-header morph, scroll-to-top).
-2. `blocks/header/` + `blocks/footer/`: recreate the canon chrome exactly (sticky header with its
-   scroll morph, mega dropdown, search trigger, language switch, mobile off-canvas menu; footer
-   columns, social list, legal row) from stardust/prototypes/canon.css + canon.js + the chrome markup
-   in stardust/prototypes/en-proposed.html. Header/footer read their content from fragment
-   documents (`/fragment` loader, EW rules: move authored nodes, never textContent-copy).
-3. Chrome documents in DA, one pair per locale root present in stardust/state.json:
-   en, de, and every country root (cs-cz, sk-sk, pt-pt, en-pt, es-mx, fr-fr, ro-ro, en-us — check
-   each page's captured header/footer in stardust/current/pages/<slug>.html: country sites may carry
-   different nav entries / footers; author each locale's chrome verbatim from its own capture).
-   Paths: /<locale>/nav and /<locale>/footer (root `/` page uses the en chrome unless its capture
-   says otherwise); the header/footer blocks resolve `/<first path segment>/nav` with the en
-   fallback, or honour a `nav`/`footer` metadata row. Every chrome document carries a metadata
-   block row `Robots | noindex`. Author them as DA HTML under `content/<locale>/nav.html` etc.
-4. Deploy: lint (`npm run lint`), commit, `git push` (code), wait for code sync with a bounded
-   curl poll (≤ 5 s apart, ≤ 5 min) on https://main--d9ddbc54--aemcoder.aem.page/blocks/header/header.js;
-   then the chrome documents through `node stardust/scripts/deploy/deploy-batch.mjs --org aemcoder
-   --repo d9ddbc54 --branch main --content content --paths stardust/rollout/units/foundation.paths
-   --ledger stardust/deploy/ledger-foundation.json --log stardust/.work/rollout/foundation/deploy.log
-   --concurrency 2 --token-file "$ADOBE_IMS_TOKEN_FILE"` via run-bg (PUT → preview → live).
-5. Shell page for the foundation gate: deploy the legal archetype's content as DEFAULT CONTENT ONLY
-   (no new blocks; h1 + its text, verbatim from stardust/current/pages/en-general-legal-notice.html,
-   with a metadata block: Title, Description from the capture) at `content/en/general/legal-notice.html`
-   → path /en/general/legal-notice (the legal archetype unit later replaces it with its blocks).
-   Run the per-page chain on it (delivery-lint, localize-links over content/ then --check,
-   davids-model-lint, sanitise.js, deploy-batch). Verify `.plain.html` 200, one h1, 0 about:error.
-6. Self-check before returning (the coordinator runs the real gate): on the preview URL of the shell
-   page at 1440 and 360, run
-   `stardust/scripts/replica/gate.sh en-general-legal-notice "https://www.continental.com/en/general/legal-notice/" "https://main--d9ddbc54--aemcoder.aem.page/en/general/legal-notice" <w> pub1 --full --main main --marker Continental`
-   via run-bg (both widths queued, then wait), and
-   `node stardust/scripts/replica/chrome-parity.mjs <live> <preview> --width <w>`.
-   Header and footer must reach chrome parity; iterate on header/footer/styles (cap 3 rounds) on
-   the published origin (edit → lint → commit → push → poll → re-gate). Body pixel of the shell is
-   NOT your bar (its blocks come later) — header/footer bands are (crop-compare ≤ 2 %:
-   `node stardust/scripts/replica/crop-compare.mjs --help` for flags).
-7. Write stardust/runtime-contract.json (what the foundation provides to blocks: CSS custom
-   properties, helper modules under scripts/, icon names, chrome document paths) — later units read
-   it instead of the code.
+## Your deliverables (the foundation set — nothing else)
+1. `styles/styles.css` — rebrand the boilerplate's DEMO layer, KEEP its STRUCTURAL layer (read the current file first):
+   - keep: `body { display:none }` / `body.appear { display:block }` gate; `header { height: var(--nav-height) }` + `header .header { visibility:hidden }` → `[data-block-status="loaded"]` reservation; `main .section` scaffold + `main .section:empty { display:none }` hiding (do NOT add display:none for `main > div`); the `.button` system hooks.
+   - `:root` = the prototype's `:root` tokens verbatim (--paper … --font-gujarati) PLUS `--nav-height: 81px` (measured header box at 1440 incl. 1px border) and `@media (width <= 720px) { :root { --nav-height: 77px } }` (16px padding variant).
+   - base reset verbatim from replica-canon.css: `*, *::before, *::after { box-sizing: border-box }`, margin/padding reset, html (scroll-behavior, scroll-padding-top, text-size-adjust, scrollbar-color, scrollbar-gutter), webkit scrollbar rules, ::selection, body (bg, color, font 17px/1.7 Inter, overflow-x hidden, antialiasing), h1–h3 (Playfair 400 / 1.16), h2 clamp size + margin, `a { color: inherit; text-decoration: none }`, tap-highlight, focus-visible rules, `img { display:block; max-width:100%; height:auto }`, `main p { widows:3; orphans:3 }`, `a[target="_blank"]:not(.button)::after { content:" ↗" … }` (prototype uses :not(.btn) — buttons here are `.button`), `@media (max-width:720px) { body { line-height:1.68 } }`, the reduced-motion block.
+   - entrance fade: `@keyframes nm-page-in` + `body.appear { animation: nm-page-in .42s ease both }` (prototype: body.nm-ready), disabled under prefers-reduced-motion.
+   - default column = the prototype's `.wrap`: `main .section > div { max-width: 74rem; margin: 0 auto; padding: 0 7vw }`; `main .section { margin: 0; padding: 0 }` (each block owns its own vertical padding and background; full-bleed blocks override the column in their own CSS).
+   - button system = the prototype's `.btn` paint on `main a.button` (all variants — primary, secondary, accent — identical: the site has ONE outline style): inline-flex, min-height 44px, padding .72rem 1rem, 1px solid var(--leaf), radius var(--nm-radius), transparent bg, color var(--leaf), .74rem/1.2 600 uppercase .07em, transitions; hover bg rgba(78,93,68,.08) + translateY(-1px); active translateY(0); `@media (hover:none),(pointer:coarse) { min-height:48px }`; `@media (max-width:430px) { width:100% }`. `main p.button-wrapper { margin: 0 }`. Add the Experience-Workspace edit-mode repaint snippets scoped on `.prosemirror-editor` (deploy SKILL § 3 Foundation, bullet "Experience Workspace edit-mode foundation" — read it with section.mjs, see Reading below).
+   - header host: `header { position: sticky; top: 0; z-index: 20; height: var(--nav-height); background: var(--paper) }` (the prototype header is sticky, in flow). Footer host: none needed beyond what the block sets.
+   - `.sr-only` utility verbatim (blocks use it for the visually-hidden h1/h2).
+   - Stylelint standard applies (lowercase, short hex where possible — keep values EXACT, modern color notation `rgb(78 93 68 / 8%)` is fine, media range notation as stylelint autofixes; run `npm run lint:fix` then `npm run lint`).
+2. `styles/fonts.css` + `fonts/gf/` — copy stardust/prototypes/fonts.css verbatim with url() rewritten to `../fonts/gf/<file>`; copy the referenced woff2 files from stardust/current/assets/fonts/gf/ (19 + rasa-gujarati-variable.woff2 — copy whatever fonts.css references, check every url resolves). Replace the boilerplate's roboto faces entirely; leave `fonts/*.woff2` roboto files untouched (harmless). The runtime loads fonts.css via `loadFonts()` — never add a font link to head.html.
+3. Favicon: copy stardust/current/assets/favicon.png → ./favicon.png; add exactly ONE line to head.html: `<link rel="icon" href="/favicon.png">`. No other head.html edit.
+4. `blocks/header/header.js` + `header.css` — template-slotted rebuild of the prototype chrome. `decorate(block)`: `loadFragment(navPath)` as the stock block does (keep getMetadata('nav') override, default `/nav`), then build the prototype DOM with the prototype's class names so replica-canon.css chrome rules apply unchanged, scoped under `header`:
+   - `<div class="nmh-header">` (grid 1fr auto 1fr, padding 18px 28px, bg paper, border-bottom, box-shadow — verbatim) containing: slot `div.nmh-home` ← MOVE the authored "Home" link paragraph from nav section 1 (EW1: append the `<p>`/`<a>` node itself, never rebuild from textContent; style via `header .nmh-home a` / `header .nmh-home p`), slot `div.nmh-title` ← MOVE the authored title paragraph ("Nirav Manubhai"; style `header .nmh-title p` as `.nmh-title-property`: Playfair 14px nowrap ellipsis), and a JS-created `<button class="nmh-menu-btn" type="button" aria-label="Open menu" aria-controls="nmh-drawer" aria-expanded="false">☰</button>` (presentational, no authored text).
+   - `<div class="nmh-overlay" aria-hidden="true">` and `<nav class="nmh-menu" id="nmh-drawer" aria-label="Site navigation">` with a JS-created close button `<button class="nmh-menu-close" type="button" aria-label="Close menu">×</button>` and the authored `<ul>` from nav section 2 MOVED in (EW1). The pipeline may wrap each `<li>`'s link in a `<p>` on live (`<li><p><a>`): handle both shapes in CSS (`header .nmh-menu li a { display:block; margin:0 0 18px; font: Playfair 19px; color: var(--ink) }`, `header .nmh-menu li { list-style:none }`, `header .nmh-menu ul, header .nmh-menu p { margin:0; padding:0 }`), never a positional pseudo-class.
+   - Body-level chrome created by JS (no authored text): `<div class="nm-reading-progress" aria-hidden="true"><span></span></div>` prepended to body (fixed 2px gold bar, width = scroll progress); `<div class="nm-legacy-bar" aria-hidden="true">` (fixed top bar: bg #4e5d44, border-bottom 1px #3c4934, shadow — the source's empty legacy header; it is a `<div>`, NEVER a `<header>` element — the boilerplate's `header {height}` rule would clamp it); `<button class="nm-top" type="button" aria-label="Back to top">` with the inline SVG chevron (appended to body; `.show` past 500px scroll). Put their CSS in header.css (scoped by their own class names, they live outside `header`).
+   - Behaviour verbatim from the prototype's inline script (bottom of index-proposed.html): rAF-throttled scroll handler (progress width, `.nm-top.show` when scrollY > 500), back-to-top smooth scroll honoring prefers-reduced-motion, drawer toggle (`open` class on `.nmh-menu` + `.nmh-overlay`, `aria-expanded`), overlay click / close button / Escape close. Drop the stock block's `nav-brand/nav-sections/nav-tools` DOM and its desktop dropdown logic — this site has only the drawer at every width. Keep `decorate()` re-entrant (EW9): clear `block` before rendering; don't create the body chrome twice.
+   - Keep `header .header` → `[data-block-status="loaded"]` visibility contract working (the block renders inside `header .header`).
+5. `blocks/footer/footer.js` + `footer.css` — `loadFragment('/footer')` (getMetadata('footer') override), emit `<div class="nmh-footer">` and MOVE the authored `<ul>` into it; CSS verbatim from `.nmh-footer` (flex, gap 22px, center, padding 30px 20px, Inter 14px, .16em uppercase, bg parch, border-top 1px line; links: ink-soft 13px .065em uppercase, hover ink; `@media (max-width:720px) { flex-wrap: wrap }`). Make the `<ul>` the flex container (`header`-style li/p normalisation as above) so the six links lay out exactly like the prototype's six anchors — at 360 the prototype footer is 170px tall (wrapped), at 1440 83px.
+6. `content/nav.html`, `content/footer.html` — DA body fragments (deploy SKILL § 9: start at `<body>`, no doctype/html/head): `<body><header></header><main>…sections as top-level <div>s…</main><footer></footer></body>`.
+   - nav.html: section 1 = `<p><a href="/">Home</a></p><p>Nirav Manubhai</p>`; section 2 = `<ul>` of the 13 drawer links in the prototype's order and labels (Home → `/`; every other target is a page OUTSIDE this migration's scope, so author it ABSOLUTE on the source site: `https://www.niravmanubhai.com/story-nursery`, `https://www.niravmanubhai.com/stills.html`, … exactly the prototype's paths appended to the source origin); section 3 = a `metadata` block with the row `Robots | noindex` (chrome documents are never indexed).
+   - footer.html: section 1 = `<ul>` of the 6 footer links (Return Home → `/`; the other five absolute on `https://www.niravmanubhai.com` with the prototype's paths); section 2 = the `Robots | noindex` metadata block.
+   - Labels verbatim (including "Come, Sit — Just Ask", "Privacy / License"). Run `node stardust/scripts/deploy/sanitise.js content/nav.html` and `… content/footer.html` (ONE file per call) before any PUT.
+7. `stardust/rollout/foundation-notes.md` — 15–25 lines for the cluster subagent: the token names, the section/column scaffold rule, the button classes, `--nav-height`, header/footer DOM class names, the fonts declaration model, anything a block author must know.
 
-## Return
-Verdict line: `foundation: chrome docs n/n live, shell live, gate 1440 x% / 360 y%, header/footer
-crop a%/b%, chrome-parity <quiet|n deltas>` + the list of foundation files + any residual.
+## Rules (each is a recorded failure)
+- Never edit scripts/aem.js, scripts/scripts.js, stardust/prototypes/**, stardust/current/**, .env. Never `npm install` anything (deps are installed). Never install browsers. Never read, print or copy the contents of the token file — pass its PATH via `--token-file "$ADOBE_IMS_TOKEN_FILE"` only. Never write a credential into any file.
+- Block DOM: never emit a `<header>` element inside a block; never `innerHTML = authored text`, never `textContent` copies of authored nodes (EW1–EW10: MOVE authored `p/ul/a` nodes with append(); style through descendant selectors on wrapper classes; no `>`/`:first-child`/`:nth-child` on the path to an authored element). Read the contract: `node stardust/scripts/replica/section.mjs /home/node/adobe-skills/plugins/stardust/skills/deploy/SKILL.md "Experience Workspace editability contract"` (one call) and `… "6. Chrome"` (one call). Read § "3. Foundation" the same way. Never read SKILL.md whole.
+- CSS: scope block rules under `header …` / `footer …` / the chrome class; kebab-case class names; one declaration per line where stylelint wants it; lines ≤ 100 chars in JS; `npm run lint:fix` then `npm run lint` must exit 0 (fix by targeted edits). Token-completeness: every `var(--x)` used in blocks/**/*.css must be defined in styles/styles.css `:root`.
+- Reading discipline: read the prototype files once each; read tool output through `tail`/`grep`; never cat large logs. Keep every command under 4 minutes; long steps (deploy-batch) go through `node stardust/scripts/replica/run-bg.mjs start --name <n> -- <cmd…>` then `node stardust/scripts/replica/run-bg.mjs wait` as the NEXT command (never `sleep` first).
+
+## Deploy the two chrome documents (after lint passes and the code is pushed)
+1. `git add styles fonts favicon.png head.html blocks/header blocks/footer content stardust/rollout/foundation-notes.md .eslintignore && git commit -q -m "replica phase 5 C0: foundation (tokens, fonts, header drawer + scroll chrome, footer, nav/footer docs)" && git push origin main` (push is required: AEM Code Sync builds the branch from GitHub).
+2. `node stardust/scripts/deploy/localize-links.mjs --source-host www.niravmanubhai.com --content content` then `--check` (exit 0 expected: the absolute links have no local target, they are kept on purpose). `node stardust/scripts/deploy/davids-model-lint.mjs content/ --source-host www.niravmanubhai.com` exit 0.
+3. Write `stardust/rollout/units/foundation.paths` with two lines: `/nav` and `/footer`. Then through run-bg: `node stardust/scripts/deploy/deploy-batch.mjs --org of1-labs --repo stardust-replica-38f927f4 --branch main --content content --paths stardust/rollout/units/foundation.paths --ledger stardust/deploy/ledger-foundation.json --log stardust/.work/rollout/foundation/deploy.log --concurrency 1 --token-file "$ADOBE_IMS_TOKEN_FILE"` (publish preview AND live — the decision is recorded in stardust/eds-conversion-log.md). Exit 3 = token halt: report it verbatim as your verdict and stop; do not retry more than once.
+4. Verify (curl, ≤ 5 s apart, at most 3 minutes per check): `https://main--stardust-replica-38f927f4--of1-labs.aem.page/nav.plain.html` and `/footer.plain.html` → 200, contain the `<ul>` with 13 / 6 links and 0 `about:error`; `https://main--stardust-replica-38f927f4--of1-labs.aem.page/styles/styles.css` contains `--paper` (code sync landed) and `/blocks/header/header.js` 200; `/favicon.png` 200; `/fonts/gf/<one file>` 200. Code Sync can take a few minutes after the push — poll, never assume.
+5. Nothing pixel-shaped: no screenshots, no pixel diffs (the main agent gates the published page later).
+
+## Report (your final message — keep it under 40 lines)
+ONE verdict line first: `foundation: nav+footer live <yes/no>, code synced <yes/no>, lint 0, files <n>`; then the list of files you created/changed; then any deviation from this brief with its reason (e.g. a value you could not lift); then anything the cluster subagent must know that is not in foundation-notes.md. No token values, no log dumps.

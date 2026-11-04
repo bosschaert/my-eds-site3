@@ -65,7 +65,7 @@ main .rooms-container {
   width: 100%;
   aspect-ratio: var(--frame-room-card-ratio);
   border: 1px solid var(--line);
-  background: #e9e2d4;
+  background: #e2d6f1;
 }
 
 .rooms .courtyard-door-media picture {
@@ -87,7 +87,7 @@ main .rooms-container {
 /* live `.poster-insert` on the 4th door — anchored to the authored alt, not to position */
 .rooms .courtyard-door-media:has(img[alt="Come, Sit – Just Ask"]) img {
   object-fit: contain;
-  background: #efe4cf;
+  background: #e6dbf3;
 }
 
 /* prototype <small> */

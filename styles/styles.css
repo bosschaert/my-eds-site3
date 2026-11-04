@@ -19,9 +19,9 @@
 
 /* ---- tokens (prototype :root verbatim + --nav-height) ---- */
 :root {
-  --paper: #f4efe3;
-  --parch: #ece3d1;
-  --line: #cabfa3;
+  --paper: #e9def5;
+  --parch: #ddd0ee;
+  --line: #c4b3dc;
   --ink: #2c2519;
   --ink-soft: #6b5f47;
   --taupe: #8a7f66;
@@ -67,7 +67,7 @@ html {
   /* stylelint-disable-next-line property-no-vendor-prefix */
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  scrollbar-color: #b9ab8e var(--parch);
+  scrollbar-color: #b39fd1 var(--parch);
   scrollbar-gutter: stable;
 }
 
@@ -80,7 +80,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #b9ab8e;
+  background: #b39fd1;
   border-radius: 4px;
 }
 

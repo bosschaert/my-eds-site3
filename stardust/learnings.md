@@ -1,7 +1,10 @@
-# Learnings — continental.com replica run
+# Learnings
 
-- **Gate ingest is last-writer-wins per page.** `update-coverage.mjs --gate` keeps one `delivery.gate` per page, so re-ingesting an older `all-<w>/summary.json` after `--only` runs silently reverts fixed pages, and replaying runs/ blindly is worse. Merge first: latest row per slug per width by `_provenance.writtenAt`, then pass = both widths (`stardust/.work/rollout/probes/merge-gate-tables.mjs`). Upstream candidate: a `--gate` mode that takes several tables and merges.
-- **Replica vs the single-h1 rule.** verify.mjs (render check) and optimize.mjs (P1) both demand exactly one `<h1>`; a replica keeps the source's heading structure (16 pages had 0, 2, 3 or 4 h1s on the source). Both project copies now accept source parity from the capture sidecar — upstream candidate.
-- **Numeric entities break optimize's parity.** `&#x26;` in a `<title>` was not decoded, so a shared title the source also shares read as a design-pass finding.
-- **Chrome documents are where the 404s live.** Page bodies passed `localize-links --check`, but nav/footer docs authored root-relative to the whole source site carried 607 dead targets; the E2 GET sweep has to include the chrome documents, not only pages.
-- **Block coverage rows for page-specific modules** (cs-stage, cs-article-cluster) stayed `pending` after their pages went live; record `--block <id> --status deployed` when the cluster ships.
+- 2026-10-28 · rollout E · A source page with no `<h1>` fails `verify.mjs` ("exactly one <h1>") after every pixel gate
+  has passed. Replica answer: a register entry for a visually-hidden h1 carrying the captured `<title>` verbatim —
+  zero pixel delta (re-gated 2.48% / 6.74%, unchanged). Decide it at Phase 2 next time, not at verify.
+- 2026-10-28 · rollout G · optimize's jsonld detector reads the raw served HTML, so a JS-injected JSON-LD would not
+  count; the site-wide nodes of the source's Yoast graph (WebSite + Organization) belong in `head.html`.
+- 2026-10-28 · rollout D2 · Never replay `form-flow` against a production subscription endpoint (the WordPress
+  newsletter form): record presence plus the owner decision instead.
+- 2026-10-28 · curl of aem.live code assets needs `--compressed`; a bare `grep` over the gzip body silently misses.

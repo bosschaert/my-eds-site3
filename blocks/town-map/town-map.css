@@ -1,0 +1,88 @@
+/* town-map: full-bleed illustrated SVG; pin labels slide in on hover (the source map rules, scoped) */
+main > .section.town-map-container > .town-map-wrapper {
+  max-width: none;
+  padding: 0;
+}
+
+.town-map {
+  position: relative;
+}
+
+.town-map .town-map-art {
+  aspect-ratio: 1142.36 / 840.64;
+}
+
+.town-map svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.town-map .town-map-labels {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.town-map .map-pin {
+  cursor: pointer;
+  transition: all 0.5s;
+  animation: town-map-pin-scale 0.75s;
+}
+
+.town-map .map-pin:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+@keyframes town-map-pin-scale {
+  from { transform: scale(0.5); }
+  to { transform: scale(1); }
+}
+
+.town-map .map-pin g {
+  transition: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.town-map .map-pin g text {
+  fill: #009bd5;
+  font-family: var(--f-bold);
+  font-size: 10.5561px;
+  letter-spacing: -0.009em;
+}
+
+.town-map .pin-1 { transform-origin: 71% 35%; }
+.town-map .pin-2 { transform-origin: 41% 44%; }
+.town-map .pin-3 { transform-origin: 78% 43%; }
+.town-map .pin-4 { transform-origin: 47% 40%; }
+.town-map .pin-5 { transform-origin: 70% 50%; }
+.town-map .pin-6 { transform-origin: 76% 62%; }
+.town-map .pin-7 { transform-origin: 28% 17%; }
+.town-map .pin-8 { transform-origin: 66% 21%; }
+.town-map .pin-9 { transform-origin: 55% 16%; }
+.town-map .pin-10 { transform-origin: 37% 28%; }
+.town-map .pin-11 { transform-origin: 63% 10%; }
+.town-map .pin-12 { transform-origin: 44% 70%; }
+.town-map #label-1 { transform: translate(-13rem, 0); }
+.town-map #label-2 { transform: translate(14rem, 0); }
+.town-map #label-3 { transform: translate(-9rem, 0); }
+.town-map #label-4 { transform: translate(16rem, 0); }
+.town-map #label-5 { transform: translate(-10rem, 0); }
+.town-map #label-6 { transform: translate(-10rem, 0); }
+.town-map #label-7 { transform: translate(10rem, 0); }
+.town-map #label-8 { transform: translate(-13rem, 0); }
+.town-map #label-9 { transform: translate(10rem, 0); }
+.town-map #label-10 { transform: translate(8rem, 0); }
+.town-map #label-11 { transform: translate(-9rem, 0); }
+.town-map #label-12 { transform: translate(15rem, 0); }
+
+.town-map .map-pin:hover g[id^="label-"] {
+  transform: translate(0, 0);
+}

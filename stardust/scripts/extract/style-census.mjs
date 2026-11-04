@@ -437,8 +437,8 @@ async function measure(contexts, url, width, o, session) {
     const consent = await page.evaluate(dismissConsentInPage).catch(() => null) || (overlays && overlays.consent) || null;
     if (consent) await sleep(400);
     // a quick scroll pass so lazily revealed sections reach their final styles before the census
-    for (const f of [0.25, 0.5, 0.75, 1]) { await page.evaluate((y) => window.scrollTo(0, document.documentElement.scrollHeight * y), f); await sleep(120); }
-    await page.evaluate(() => window.scrollTo(0, 0));
+    for (const f of [0.25, 0.5, 0.75, 1]) { await page.evaluate((y) => window.scroll(0, document.documentElement.scrollHeight * y), f); await sleep(120); }
+    await page.evaluate(() => window.scroll(0, 0));
     await sleep(200);
     const rec = await page.evaluate(census, { coverage: OCCLUDER_COVERAGE });
     await hoverPass(page, rec);

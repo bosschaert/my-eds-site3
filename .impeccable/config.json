@@ -4,10 +4,22 @@
     "ignoreFiles": [],
     "ignoreValues": [
       {
-        "rule": "overused-font",
-        "value": "arial",
-        "createdAt": "2026-10-09T21:24:07.176Z",
-        "reason": "replica migration: video-player stage reproduces the source site's embedded player chrome (video.js default Arial stack); design changes are out of scope without an inconsistency-register entry"
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "stardust/.work/index-src.html"
+        ],
+        "createdAt": "2026-10-28T14:21:09.026Z",
+        "reason": "replica fidelity: type sizes lifted verbatim from balbriggan.ie CSS (h2 32px, body 16px); inconsistency register is empty so no design change is permitted"
+      },
+      {
+        "rule": "skipped-heading",
+        "value": "*",
+        "files": [
+          "stardust/.work/index-src.html"
+        ],
+        "createdAt": "2026-10-28T14:21:09.035Z",
+        "reason": "replica fidelity: source page uses h2 section titles then h4 document titles (captured page JSON); replica keeps the source heading outline verbatim"
       }
     ]
   }

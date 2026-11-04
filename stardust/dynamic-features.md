@@ -1,53 +1,36 @@
-# Dynamic features — continental.com
+<!-- stardust provenance: skill=stardust:dynamics (via stardust:replica Phase 2) · curated 2026-10-28 · from stardust/dynamics/dynamic-features.generated-plan.md -->
+# Dynamic features — balbriggan.ie home page (curated)
 
-Source: `stardust/current/_dynamics.json` (10 archetype probes + reach from 99 crawled pages),
-draft `stardust/dynamics/dynamic-features.generated-plan.json` (66 raw rows, curated here: video-js
-slots merged into the player row, solr forms merged into search, the "cart" commerce signal is the
-download cart, listing candidates that are sliders/tabs merged into the client-only row).
-Hands-off: every non-`self` row ships its interim tier; each owner decision is a named assumption.
+Scope: one page (`/`). Source: `stardust/current/_dynamics.json` (9 findings). Hands-off run: owner decisions ship the
+interim tier and are named in the decision batch; nothing is `decided-out`.
 
 ## Listings contract
 
-- `press-releases` (de-presse-pressemitteilungen, de-presse-mediathek, de-karriere-veranstaltungen,
-  hub "latest news" rails): source is a Solr-driven results list over a corpus that is NOT in this
-  run's scope. Interim: the captured first results page ships as authored teaser cards
-  (static-snapshot); pages emit `<meta name="template">`, `title`, `description`, `image` and
-  `publication-date` (when captured) so an index-backed listing can replace it later.
-- Stories (`en-stories`, `de-stories`): the article cluster is captured content — authored cards.
+None. The "What's New" carousel shows four news cards rendered server-side by WordPress at capture time; on the new
+site they are authored rows (document-first) — no index feed in this one-page scope.
 
 ## Features
-| # | id | feature | class | reach | disposition | reproducibility | status | pattern | decision / owner | evidence |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | header-search | header quick search (Solr, `tx-solr-search-form-pi-results-header`) + suggest box | S | 99/99 | index-backed | self | pending | search-index-backed over the migrated corpus (`/query-index.json`) | corpus smaller than source = parity note | f-form-tx-solr-search-form-pi-results-header* |
-| 2 | solr-listings | Solr results lists with facet tabs / date filter (press releases, media library, career events) | L / CR | 3/99 | static-snapshot | needs-business-decision | interim | captured first page as authored cards; facets static | owner: keep a live news feed? (assumed: snapshot until the press corpus migrates) | f-form-tx-solr-search-form-pi-results, cr-…c-search-facet-tab, f-…datesel |
-| 3 | download-cart | download cart (checkbox `tx_condownload`, header folder button, zip export) | F (client) | 9/99 | client-only | needs-backend | interim | per-file download links kept; cart UI rebuilt client-side, zip export links to files | owner: server-side zip endpoint (assumed: per-file links) | f-form-checkbox-…tx_condownload* |
-| 4 | lightbox | image/video lightbox (`data-lightbox`) | M | 83/99 | rebuild-native | self | pending | modal-loader in block JS | — | m-modal-trigger-data-lightbox |
-| 5 | language-menu | language menu dropdown + country-selector button | M / I18N | 99/99 | rebuild-native | self | pending | header chrome JS | — | m-modal-trigger-aria-haspopup |
-| 6 | locale-variants | hreflang alternates (de/en/x-default + country sites) | I18N | 99/99 | rebuild-native | self | pending | metadata `hreflang` per captured pair | out-of-scope twins keep source URLs | i18n-locale-variants-* |
-| 7 | stage-overlay | stories stage overlay (`c-cs-stage__overlay`) | M | 2/99 | rebuild-native | self | pending | block JS | — | m-modal-trigger-c-cs-stage-overlay |
-| 8 | client-widgets | hero slider, tabs, accordions, content slider, fact-box counters | L (false) / client | 70+/99 | client-only | self | pending | block JS, no network | — | l-listing-candidate-* (sliders/tabs) |
-| 9 | video-player | AdmiralCloud player (`player.admiralcloud.com/acplayer.js`, video-js UI) | V / T | ~20/99 | embed-passthrough | needs-business-decision | interim | poster + play opens the AdmiralCloud player iframe by media id | owner: allow the player on the new host (assumed yes, CSP is EDS-side) | t-…player-admiralcloud, cr-…vjs-*, a-…admiralcloud |
-| 10 | share-widget | share-price / IR charts (`charts3.equitystory.com` loader) | T | investors pages | embed-passthrough | needs-business-decision | interim | widget loader embed by container id | owner: EquityStory domain allowlist for the new host | a-unknown-third-party-host-charts3-equitystory |
-| 11 | job-widget | job search/list widgets (SmartRecruiters / Altru) | T | career pages | embed-passthrough | needs-business-decision | interim | embed kept by widget config | owner: widget allowlist | c-job-widget-* (DOM), CSP hosts |
-| 12 | contact-forms | contact forms (Portugal one-pager, sustainability `c-webforms`) | F | 3/99 | rebuild-native | needs-backend | interim | form UI rebuilt, submit shows "no backend connected" notice | owner: form handler endpoint (assumed: none yet) | f-form-portugalen-contactonepager, f-form-internationalen-contact-sustainab… |
-| 13 | caralegal-form | data-protection request form (caralegal iframe) | F / V | 1/99 | embed-passthrough | self | pending | iframe embed (webform.caralegal.de) | — | c-caralegal (DOM) |
-| 14 | ip-banner | IP-redirect banner data (`GET /<path>/api-dc/`) | A | 99/99 | data-fed | needs-business-decision | interim | banner not rendered (host-bound on the target) | owner: geo-redirect service for the new host | a-first-party-api-get-*-api-dc (host-bound 10/10) |
-| 15 | consent-tags | consentmanager.net CMP + Google Tag Manager + analytics hosts | T | 99/99 | embed-passthrough | needs-business-decision | scaffolded-awaiting-owner | martech off by default (not requested) | owner: tags + CMP on the new host | t-…consentmanager, t-tag-manager-google-tag-manager, a-cms-app-settings-object-* |
-| 16 | site-assets | first-party data files under `/_assets/{hash}/` (icon sprites, JS data) | D | 99/99 | data-fed | self | pending | icons self-hosted in code bus | — | d-first-party-data-file-get-assets |
-| 17 | external-links | sign-in / portal links | X | few | static-snapshot | self | done | links migrate as links (no account features on this site) | — | x-sign-in-account-links |
-| 18 | social-wall | Flockler social wall embed (`plugins.flockler.com`) on career hubs | E / T | 5/99 | embed-passthrough | needs-business-decision | interim | embed block loads the same Flockler script after consent (found at B2 re-verify) | owner: keep the Flockler feed on the new host | t-unknown-third-party-host-plugins-flockler-com |
 
-## Decision batch
+| # | id | class | feature | disposition | target | reproducibility | status | notes |
+|---|---|---|---|---|---|---|---|---|
+| 1 | t-beacon-mpc-a-run-app | T | POST `mpc-prod-…a.run.app/events` (tracking beacon fired by the tag stack) | embed-passthrough | embed | needs-business-decision | pending | merged into the tag decision (row 6); not reproduced by the page itself |
+| 2 | a-cms-app-settings-object-wp | A | WordPress `wp` settings object (i18n/a11y bootstrapping) | static-snapshot | content | self | done | no visible effect; nothing to carry — the page's content is captured verbatim |
+| 3 | a-cms-app-settings-object-datalayer | A | `dataLayer` (GTM) | static-snapshot | content | self | done | belongs to the tag stack (row 6) |
+| 4 | f-form-gform-1 | F | Newsletter form (Gravity Forms `gform_1`: first name, last name, email, GDPR consent; posts to the WordPress origin) | rebuild-native | block | needs-backend | interim | UI rebuilt verbatim; submission target named in the decision batch (D1). Personal data (name + email) → no silent capture on the new host |
+| 5 | m-chrome-dropdowns | M | Header dropdown menus (4 `aria-haspopup` toggles) + mobile toggler | rebuild-native | runtime | self | in-progress | implemented in the header (click to open, same as Bootstrap); header contract is the spec |
+| 6 | t-tags | T | Google Tag Manager + Google Analytics + Meta pixel (`connect.facebook.net`, `www.facebook.com`) | embed-passthrough | embed | needs-business-decision | interim | scaffolded off on the new host until the owner names which tags and property ids run there (D2) |
+| 7 | v-hero-video | V | Hero background video (Vimeo progressive MP4, `autoplay muted loop playsinline`, blue multiply overlay) | rebuild-native | block | self | in-progress | delivered as the same external MP4 source; capture freezes it (captureState) |
+| 8 | s-news-carousel | M | "What's New" slick carousel (3 per view, arrows, dots, infinite) | rebuild-native | block | self | in-progress | block JS, no clones |
+| 9 | s-map-hover | M | Town map pins: labels slide in on hover, pins scale in on load | rebuild-native | block | self | in-progress | CSS only |
 
-One message to the owner (hands-off: recorded, interim tiers ship):
-- **Backends:** form handler for contact forms (#12); server-side zip for the download cart (#3);
-  geo-redirect data for the IP banner (#14).
-- **Third-party allowlists on the new host:** AdmiralCloud player (#9), EquityStory IR widgets (#10),
-  job widgets (#11), consentmanager + GTM (#15).
-- **Business:** keep live Solr-backed news/media listings or snapshot until the press corpus is
-  migrated (#2).
+## Decision batch (owner)
 
-## Register (decided-out)
-| feature | reason | production statement |
-|---|---|---|
-| — | none (no owner statement; hands-off never decides out) | — |
+- **D1 — newsletter submissions.** Where should sign-ups go on the new site (the current WordPress Gravity Forms
+  endpoint, a mailing-list provider, or an AEM form sheet)? Interim: the form posts to the existing endpoint on
+  balbriggan.ie exactly as today.
+- **D2 — tags.** Which of Google Tag Manager / Google Analytics / Meta pixel should run on the new host, with which ids?
+  Interim: none load on the new host.
+
+## Register
+
+No inconsistency-register entry is needed for any row above (no design delta).

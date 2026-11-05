@@ -1,18 +1,11 @@
-# Inconsistency register — continental.com
+# Inconsistency register — page1
 
-The ONLY permitted design deltas of this replica. **Empty — pure replica.**
+One entry. Everything else is a pure replica.
 
-| id | evidence | minimal change | status |
-|---|---|---|---|
-| — | — | — | — |
+## R-01 — Team tab bar widens the whole page on phones
 
-## Measured divergences kept verbatim (not deltas)
-
-- **Content cap per template** (cap-probe, 2026-10-09, probe 2560): the page shell caps at
-  1920 px on every archetype; a 1460 px content container (`.o-container__content.container`)
-  caps the whole content root on legal, listing and country-selector pages, while home,
-  locale-home, hub, content, form and stories pages cap per module. Each template keeps its own
-  measured model — no unification.
-- **Audit tensions** in `stardust/current/brand-review.html` (unused Bootstrap `--primary`,
-  empty alt text on 80 % of images, generic "Find out more" labels) are improvement candidates,
-  not register entries: no audit was requested, so none ships.
+- **Evidence:** `measure.mjs` on the live page @360: `horizontal overflow +41px (scrollWidth 401 > viewport 360)`; `.tab-buttons button:last-child` x 266 w 135 (right edge 401). The build reproduced it exactly and `gate.sh` failed the hard overflow assert (`stardust/replica/gates/page1-360/overflow-iter1.txt`).
+- **Finding:** defect — three fixed-padding tab buttons (padding 1em 2em, 1.1em bold) are 401px wide in total, so below ~410px the document scrolls sideways.
+- **Minimal change:** `.tab-buttons { overflow-x: auto; }` — the overflow scrolls inside the tab bar instead of the document; sizes, colours, spacing and the wide-screen look are unchanged.
+- **Status:** applied
+- **Where:** page1 (landing) — tabs section, widths below ~410px.

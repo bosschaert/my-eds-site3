@@ -1,61 +1,107 @@
-/* tabs — source o-tabs (en-investors IR news). Values from en-investors.css / site.css. */
-main .section > .default-content-wrapper + .tabs-wrapper { margin-top: 2.7429rem; }
-
 .tabs {
-  max-width: var(--content-max);
-  margin: 0 auto;
-  padding: 0 16px;
+  margin: 2em 0;
+  padding: 1em;
+  border-radius: 12px;
+  background: #f8f8f8;
 }
 
-.tabs.header-gap { padding-top: 1.8286rem; }
+.tabs .tab-buttons {
+  display: flex;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 1em;
+  overflow-x: auto; /* register R-01: contain the source's 401px tab bar at phone widths */
+}
 
-.tabs .tabs-header {
+/* the source tab buttons render in the UA button font (Arial, line-height normal, centred) */
+.tabs [role="tab"] {
+  background: none;
+  border: none;
+  padding: 1em 2em;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: normal;
+  text-align: center;
+  color: var(--color-muted);
+  transition: color 0.2s;
+  outline: none;
+}
+
+/* authored label paragraph (wrapped by the block loader) takes the tab look */
+.tabs [role="tab"] p {
+  display: contents;
+  font: inherit;
+  color: inherit;
+}
+
+.tabs [role="tab"].active {
+  color: var(--color-accent);
+  border-bottom: 3px solid var(--color-accent);
+  background: #fff;
+}
+
+.tabs .tab-content {
+  display: none;
+  animation: fade-in 0.4s;
+}
+
+.tabs .tab-content.active {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.tabs .team-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 7%);
+  width: 48%;
+  padding: 1em;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid var(--c-orange);
+  align-items: center;
+  transition: box-shadow 0.2s;
 }
 
-.tabs .tabs-header-item {
-  position: relative;
-  padding: .9143rem 0;
-  font-weight: 600;
+/* the portrait is the flex item, as on the source */
+.tabs .team-card p:has(> picture) {
+  display: contents;
+  font-size: inherit; /* the portrait's 1em margin follows the card, not the bio size */
 }
 
-.tabs .tabs-header-item::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background: var(--c-orange);
-  transition: all 150ms ease-in-out;
+.tabs .team-card picture {
+  display: contents;
 }
 
-.tabs .tabs-header-item.has-hover { cursor: pointer; }
-.tabs .tabs-header-item.has-hover:hover::before { height: .1143rem; }
-.tabs .tabs-header-item.is-active::before { height: .4571rem; }
-.tabs.dark-line .tabs-header { border-bottom-color: #000; }
-.tabs.dark-line .tabs-header-item::before { background: #000; }
-
-@media (width >= 1023px) {
-  .tabs .tabs-header { flex-direction: row; }
-  .tabs .tabs-header-item { padding: 1.3714rem .6857rem; }
+.tabs .team-card picture > source {
+  display: none;
 }
 
-.tabs .tabs-content { padding-top: 1.8286rem; }
-.tabs .tabs-content-item { display: none; }
-.tabs .tabs-content-item.is-visible { display: block; }
-
-/* panels / grid variants (tabs-grid.mjs): a teaser grid moved into a panel sits on the page grid (the source nests an
-   o-container whose row cancels the tab padding) — cluster-content */
-.tabs:is(.panels, .grid) .tabs-content-item > .teaser-wrapper {
-  margin-left: -16px;
-  margin-right: -16px;
+.tabs .team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1em;
 }
 
-/* …and keeps the section header-row gap under the panel heading (the section-level
-   `.section > .default-content-wrapper + .teaser-wrapper` rhythm does not reach into a panel) */
-.tabs:is(.panels, .grid) .tabs-content-item > .default-content-wrapper + .teaser-wrapper {
-  margin-top: 2.7429rem;
+.tabs .team-card h4 {
+  margin: 0.2em 0;
+}
+
+@media (width <= 900px) {
+  .tabs .tab-content.active {
+    flex-direction: column;
+    gap: 1.2em;
+  }
+
+  .tabs .team-card {
+    width: 100%;
+  }
 }

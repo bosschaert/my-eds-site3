@@ -26,7 +26,7 @@
  */
 import { readFileSync, existsSync, statSync } from 'node:fs';
 import { join } from 'node:path';
-import { readJSON, writeJSON, rollupTemplates, rollupConfig } from './lib.mjs';
+import { readJSON, writeJSON, rollupTemplates, rollupConfig, publicUrl } from './lib.mjs';
 
 // --help prints this file's usage header, so an agent never reads the source to learn the flags.
 if (process.argv.includes('--help') || process.argv.includes('-h')) {
@@ -70,7 +70,7 @@ async function fetchPage(p) {
     return { ok: true, body: readFileSync(f, 'utf8') };
   }
   try {
-    const res = await fetch(`${BASE}${p.path}`);
+    const res = await fetch(`${BASE}${publicUrl(p)}`);
     const body = await res.text();
     if (!res.ok) return { ok: false, reason: `HTTP ${res.status}` };
     return { ok: true, body };
@@ -104,16 +104,7 @@ function artifactType(p) {
 // Typed render-truth: returns a failure reason or null. Pages must render one
 // <h1> and carry no about:error; fragments skip the <h1> rule; indexes must be
 // valid JSON with rows. Link integrity applies to pages and fragments.
-// Replica source parity: a page whose source capture renders the same number of
-// <h1> (stardust/current/pages/<slug>.html) keeps it — changing heading levels
-// without an inconsistency-register entry is a fidelity defect. Upstream candidate.
-function sourceH1(slug) {
-  const f = join('stardust', 'current', 'pages', `${slug}.html`);
-  if (!slug || !existsSync(f)) return null;
-  return (readFileSync(f, 'utf8').match(/<h1[\s>]/gi) || []).length;
-}
-
-function renderCheck(type, body, slug) {
+function renderCheck(type, body) {
   if (type === 'index') {
     // a valid index with zero rows is a legitimate state (nothing published yet),
     // not a failure — only malformed JSON or a missing data[] array fails.
@@ -124,7 +115,7 @@ function renderCheck(type, body, slug) {
   if (/about:error/.test(body)) return 'about:error in body (#75 broken image)';
   if (type === 'page') {
     const h1 = (body.match(/<h1[\s>]/gi) || []).length;
-    if (h1 !== 1 && h1 !== sourceH1(slug)) return `page should render exactly one <h1>, found ${h1}`;
+    if (h1 !== 1) return `page should render exactly one <h1>, found ${h1}`;
   }
   const broken = checkLinks(body);
   if (broken.length) return `broken internal links: ${broken.slice(0, 5).join(', ')}`;
@@ -144,7 +135,7 @@ for (const p of target) {
   const type = artifactType(p);
   let status = 'verified'; let reason = null;
   if (!r.ok) { status = 'failed'; reason = r.reason; }
-  else { reason = renderCheck(type, r.body, p.slug); if (reason) status = 'failed'; }
+  else { reason = renderCheck(type, r.body); if (reason) status = 'failed'; }
   // #125: a page the pixel table failed is not verified (update-coverage.mjs --gate wrote delivery.gate)
   if (status === 'verified' && p.delivery && p.delivery.gate && p.delivery.gate.pass === false) { status = 'failed'; reason = `gate: ${(p.delivery.gate.reasons || []).join('; ') || 'FAIL'}`; }
   p.delivery = p.delivery || {};

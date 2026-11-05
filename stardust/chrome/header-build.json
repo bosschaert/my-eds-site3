@@ -1,0 +1,130 @@
+{
+ "tool": "chrome-explore",
+ "url": "https://main--1588603b--aemcoder.aem.live/page1",
+ "at": "2026-11-05T12:13:44.327Z",
+ "shots": "stardust/.work/chrome/header-build",
+ "widths": {
+  "360": {
+   "root": "body>header",
+   "controls": [
+    {
+     "name": "Home",
+     "key": "home",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>nav>a:nth-of-type(1)",
+     "href": "https://main--1588603b--aemcoder.aem.live/",
+     "expanded": null,
+     "rect": [
+      40,
+      32,
+      75,
+      40
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Page 1",
+     "key": "page 1",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>nav>a:nth-of-type(2)",
+     "href": "https://main--1588603b--aemcoder.aem.live/page1",
+     "expanded": null,
+     "rect": [
+      139,
+      32,
+      83,
+      40
+     ],
+     "actions": {}
+    }
+   ],
+   "scroll": [
+    {
+     "at": "top",
+     "y": 0,
+     "top": 16,
+     "height": 72,
+     "position": "static",
+     "inView": true
+    },
+    {
+     "at": "down",
+     "y": 1000,
+     "top": -984,
+     "height": 72,
+     "position": "static",
+     "inView": false
+    },
+    {
+     "at": "up",
+     "y": 700,
+     "top": -684,
+     "height": 72,
+     "position": "static",
+     "inView": false
+    },
+    {
+     "at": "back",
+     "y": 0,
+     "top": 16,
+     "height": 72,
+     "position": "static",
+     "inView": true
+    }
+   ],
+   "states": 0,
+   "truncated": null,
+   "loads": 1,
+   "requests": 26,
+   "maxRequests": 600,
+   "inputsSkipped": 0
+  },
+  "1440": {
+   "root": "body>header",
+   "controls": [
+    {
+     "name": "Home",
+     "key": "home",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>nav>a:nth-of-type(1)",
+     "href": "https://main--1588603b--aemcoder.aem.live/",
+     "expanded": null,
+     "rect": [
+      144,
+      48,
+      75,
+      40
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Page 1",
+     "key": "page 1",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>nav>a:nth-of-type(2)",
+     "href": "https://main--1588603b--aemcoder.aem.live/page1",
+     "expanded": null,
+     "rect": [
+      243,
+      48,
+      83,
+      40
+     ],
+     "actions": {}
+    }
+   ],
+   "scroll": [],
+   "states": 0,
+   "truncated": null,
+   "loads": 1,
+   "requests": 26,
+   "maxRequests": 600,
+   "inputsSkipped": 0
+  }
+ },
+ "probe": null
+}

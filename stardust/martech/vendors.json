@@ -1,0 +1,23 @@
+{
+ "pages": 2,
+ "vendors": [
+  {
+   "host": "static-website.david-bosschaert.workers.dev",
+   "pages": 2,
+   "firstParty": true,
+   "role": null,
+   "class": null,
+   "inCsp": false
+  },
+  {
+   "host": "www.youtube.com",
+   "pages": 1,
+   "firstParty": false,
+   "role": "video: YouTube",
+   "class": "V",
+   "inCsp": false
+  }
+ ],
+ "inline": {},
+ "cspHosts": []
+}

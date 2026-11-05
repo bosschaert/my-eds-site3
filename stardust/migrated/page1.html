@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- stardust:migrate
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-11-05T11:48:24Z
+  page:             Good Morning!
+  slug:             page1
+  pagePath:         migrated/page1/index.html
+  renderBranch:     A
+  sourceProposed:   stardust/prototypes/page1-proposed.html
+  sourceCurrent:    stardust/current/pages/page1.json
+  againstDirection: stardust/direction.md (Active)
+  designMd:         DESIGN.md (sha: dc34c52e6dbd)
+  designJson:       DESIGN.json (sha: 7e838e8136f3)
+  canonShas:        header:7fa6093bd963 footer:f890038f95b0 css:989cef210da9
+  decisionTrace:    _meta.json
+  brokenInternalLinks: 3
+  stardustVersion:  local
+-->
+<style>
+:root {
+  --font-body: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --color-text: #333;
+  --color-primary: #6a1b9a;
+  --color-primary-hover: #4a148c;
+  --color-primary-tint: #f3e5f5;
+  --color-lede: #5e35b1;
+  --color-accent: #2196f3;
+  --color-muted: #666;
+  --color-footer: #777;
+  --shadow-header: 0 4px 20px rgba(106, 27, 154, 0.12);
+  --container: 1200px;
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Good Morning!","url":"https://static-website.david-bosschaert.workers.dev/page1"}</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Morning!</title>
+  <link rel="stylesheet" href="../assets/page1.css">
+</head>
+<body>
+  <header>
+    <nav class="site-header" aria-label="Main">
+      <a href="../index.html" data-broken-link="true">Home</a>
+      <a href="../page1/index.html">Page 1</a>
+    </nav>
+  </header>
+
+  <main data-template="page1">
+    <h1 id="heading" class="page-title" data-section="1">Super page</h1>
+    <p class="lede" data-section="2">Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida</p>
+
+    <figure class="fields-gallery" data-section="3">
+      <img src="../assets/media/fields_a.jpg" alt="Fields, first view" width="4000" height="2250">
+      <img src="../assets/media/fields-b.jpg" alt="Fields, second view" width="4000" height="2250">
+    </figure>
+
+    <figure class="video-gallery" data-section="4">
+      <video controls playsinline preload="metadata" width="362" height="308" aria-label="Recording 1">
+        <source src="../assets/media/rec_1.mp4" type="video/mp4">
+        Your browser does not support embedded video. <a href="../media/rec_1.mp4" data-broken-link="true">Download recording 1</a>.
+      </video>
+      <video controls playsinline preload="metadata" width="362" height="308" aria-label="Recording 2">
+        <source src="../assets/media/rec-2.mp4" type="video/mp4">
+        Your browser does not support embedded video. <a href="../media/rec-2.mp4" data-broken-link="true">Download recording 2</a>.
+      </video>
+    </figure>
+
+    <section class="tabs-section" aria-label="Teams" data-section="5">
+      <div class="tab-buttons" role="tablist">
+        <button class="active" role="tab" aria-selected="true" aria-controls="team-alpha">Team Alpha</button>
+        <button role="tab" aria-selected="false" aria-controls="team-beta">Team Beta</button>
+        <button role="tab" aria-selected="false" aria-controls="team-gamma">Team Gamma</button>
+      </div>
+      <div class="tab-content active" role="tabpanel" id="team-alpha">
+        <div class="team-card">
+          <img src="../assets/media/rnd-men-45.jpg" alt="Team member 1">
+          <h4>Alex Johnson</h4>
+          <p>Project Lead with a knack for creative solutions and a love of adventure sports.</p>
+        </div>
+        <div class="team-card">
+          <img src="../assets/media/rnd-women-57.jpg" alt="Team member 2">
+          <h4>Maria Lopez</h4>
+          <p>UI Designer who brings vibrant energy and stunning visuals to every project.</p>
+        </div>
+      </div>
+      <div class="tab-content" role="tabpanel" id="team-beta">
+        <div class="team-card">
+          <img src="../assets/media/rnd-men-37.jpg" alt="Team member 3">
+          <h4>Brian Kim</h4>
+          <p>Backend engineer, automation enthusiast, and gourmet coffee taster.</p>
+        </div>
+        <div class="team-card">
+          <img src="../assets/media/rnd-women-43.jpg" alt="Team member 4">
+          <h4>Sophia Patel</h4>
+          <p>QA Analyst who catches every bug and knits amazing scarves in her free time.</p>
+        </div>
+      </div>
+      <div class="tab-content" role="tabpanel" id="team-gamma">
+        <div class="team-card">
+          <img src="../assets/media/rnd-men-59.jpg" alt="Team member 5">
+          <h4>Elijah Brown</h4>
+          <p>DevOps wizard, mountain hiker, and avid reader of mystery novels.</p>
+        </div>
+        <div class="team-card">
+          <img src="../assets/media/rnd-women-25.jpg" alt="Team member 6">
+          <h4>Linda Zhang</h4>
+          <p>Frontend guru who mixes pixel perfection with playful animations and memes.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2026 Super Page. All rights reserved.
+  </footer>
+
+  <script>
+    // Tab switcher — same behaviour as the source showTabSection(idx).
+    const tabButtons = document.querySelectorAll('.tab-buttons button');
+    const tabPanels = document.querySelectorAll('.tab-content');
+    tabButtons.forEach((button, idx) => {
+      button.addEventListener('click', () => {
+        tabButtons.forEach((b, i) => {
+          b.classList.toggle('active', i === idx);
+          b.setAttribute('aria-selected', String(i === idx));
+        });
+        tabPanels.forEach((panel, i) => panel.classList.toggle('active', i === idx));
+      });
+    });
+  </script>
+</body>
+</html>

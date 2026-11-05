@@ -1,24 +1,30 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-10-09T19:44:25.789Z",
+    "writtenAt": "2026-11-05T12:13:07.367Z",
     "stardustVersion": "0.0.0"
   },
   "target": "aem-eds",
   "site": {
-    "sourceUrl": "https://www.continental.com/",
+    "sourceUrl": "https://static-website.david-bosschaert.workers.dev",
     "da": {
       "org": "aemcoder",
-      "site": "d9ddbc54",
+      "site": "1588603b",
       "ref": "main"
     },
-    "liveHost": "main--d9ddbc54--aemcoder.aem.live"
+    "liveHost": "main--1588603b--aemcoder.aem.live"
+  },
+  "scope": {
+    "pages": 1,
+    "discovered": 1,
+    "capped": false,
+    "pageCap": 1
   },
   "lastRun": {
-    "at": "2026-10-10T13:00:36.598Z",
+    "at": "2026-11-05T12:13:07.367Z",
     "pages": {
-      "total": 101,
-      "verified": 101,
+      "total": 1,
+      "verified": 1,
       "deployed": 0,
       "pending": 0,
       "contentPending": 0,
@@ -26,8 +32,8 @@
       "failed": 0
     },
     "blocks": {
-      "total": 15,
-      "converted": 15,
+      "total": 0,
+      "converted": 0,
       "pending": 0
     },
     "verifyFailures": 0

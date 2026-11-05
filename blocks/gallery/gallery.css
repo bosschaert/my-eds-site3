@@ -1,0 +1,29 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 1.5rem;
+  max-width: var(--container);
+  margin: 0 auto 2rem;
+}
+
+/* each img is the grid item */
+.gallery picture {
+  display: contents;
+}
+
+.gallery picture > source {
+  display: none;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (width <= 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

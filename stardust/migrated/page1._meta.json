@@ -1,0 +1,70 @@
+{
+  "slug": "page1",
+  "type": "landing",
+  "renderBranch": "A",
+  "template": null,
+  "modules": [
+    "gallery",
+    "video-gallery",
+    "tabs"
+  ],
+  "widgets": [],
+  "slotsFilled": [
+    "page-title",
+    "lede",
+    "fields-gallery",
+    "video-gallery",
+    "tabs-section"
+  ],
+  "canonShas": {
+    "header": "7fa6093bd963",
+    "footer": "f890038f95b0",
+    "css": "989cef210da9"
+  },
+  "deviations": [],
+  "migrationDecisions": [],
+  "metadata": {
+    "title": "Good Morning!",
+    "description": null,
+    "canonical": null,
+    "lang": "en"
+  },
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Good Morning!",
+    "url": "https://static-website.david-bosschaert.workers.dev/page1"
+  },
+  "migratedAt": "2026-11-05T11:48:24Z",
+  "designMdSha": "dc34c52e6dbd",
+  "designJsonSha": "7e838e8136f3",
+  "sourceCurrentSha": "164986360872",
+  "sourceProposedSha": "26d2666008d5",
+  "fidelityTier": "archetype",
+  "archetypeSource": null,
+  "archetypeSha": null,
+  "variants": [],
+  "gatesPassed": [],
+  "gateEvidence": {},
+  "contentDeviations": [],
+  "assetsBundled": 11,
+  "missingAssets": [],
+  "brokenInternalLinks": [
+    {
+      "href": "/",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "media/rec_1.mp4",
+      "reason": "not-in-inventory"
+    },
+    {
+      "href": "media/rec-2.mp4",
+      "reason": "not-in-inventory"
+    }
+  ],
+  "outputPath": "page1/index.html",
+  "outputPathDefault": "trailing-slash",
+  "sidecar": "page1/_meta.json",
+  "driverVersion": "1"
+}

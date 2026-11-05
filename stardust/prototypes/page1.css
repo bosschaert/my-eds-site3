@@ -1,0 +1,208 @@
+/* page1 archetype — values lifted verbatim from the source styles.css
+   (stardust/replica/lifted-tokens.md). Same-design replica: no new values. */
+:root {
+  --font-body: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --color-text: #333;
+  --color-primary: #6a1b9a;
+  --color-primary-hover: #4a148c;
+  --color-primary-tint: #f3e5f5;
+  --color-lede: #5e35b1;
+  --color-accent: #2196f3;
+  --color-muted: #666;
+  --color-footer: #777;
+  --shadow-header: 0 4px 20px rgba(106, 27, 154, 0.12);
+  --container: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 50%, #fff8e1 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  gap: 1.5rem;
+  max-width: var(--container);
+  margin: 0 auto 2rem;
+  padding: 1rem 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow-header);
+}
+
+.site-header a {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.site-header a:hover {
+  background: var(--color-primary-tint);
+  color: var(--color-primary-hover);
+}
+
+/* Footer */
+.site-footer {
+  max-width: var(--container);
+  margin: 2rem auto 0;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--color-footer);
+  border-top: 2px solid #e0e0e0;
+}
+
+/* Title + lede */
+.page-title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+  margin: 0.67em 0 0.5rem;
+  letter-spacing: -0.5px;
+  text-shadow: 2px 2px 4px rgba(106, 27, 154, 0.15);
+}
+
+.lede,
+.team-card p {
+  font-size: 1.15rem;
+  color: var(--color-lede);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-weight: 500;
+}
+
+/* Galleries */
+.fields-gallery,
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 1.5rem;
+  max-width: var(--container);
+  margin: 0 auto 2rem;
+}
+
+.fields-gallery img,
+.video-gallery video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Tabs */
+.tabs-section {
+  margin: 2em 0;
+  padding: 1em;
+  border-radius: 12px;
+  background: #f8f8f8;
+}
+
+.tab-buttons {
+  display: flex;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 1em;
+  overflow-x: auto; /* register R-01: contain the source's 401px tab bar at phone widths */
+}
+
+.tab-buttons button {
+  background: none;
+  border: none;
+  padding: 1em 2em;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--color-muted);
+  transition: color 0.2s;
+  outline: none;
+}
+
+.tab-buttons button.active {
+  color: var(--color-accent);
+  border-bottom: 3px solid var(--color-accent);
+  background: #fff;
+}
+
+.tab-content {
+  display: none;
+  animation: fade-in 0.4s;
+}
+
+.tab-content.active {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  width: 48%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+.team-card h4 {
+  margin: 0.2em 0;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .fields-gallery,
+  .video-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .tab-content.active {
+    flex-direction: column;
+    gap: 1.2em;
+  }
+
+  .team-card {
+    width: 100%;
+  }
+}

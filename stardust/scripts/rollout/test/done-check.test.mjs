@@ -3,7 +3,8 @@
 // on its own condition and only then (unfinished rows, failed rows and failed gate rows, delivered rows the
 // live host does not serve, open P1 findings the optimize gate would count, a rollout whose last I-dashboard
 // line is not an `end`); a clean run is complete; the live probe keeps input order and treats non-200 and
-// network errors as not live; the CLI exits 0 / 1 / 2 and --offline says the probe was skipped. Offline: the
+// network errors as not live; a migration project's header must be proven (header_parity: contract, comparison,
+// profile by flow, widths, live host, undecided errors); the CLI exits 0 / 1 / 2 and --offline says the probe was skipped. Offline: the
 // probe runs against a stub fetch. --help writes nothing.
 // Run: node plugins/stardust/skills/rollout/scripts/test/done-check.test.mjs
 import assert from 'node:assert/strict';
@@ -12,8 +13,8 @@ import { mkdirSync, mkdtempSync, readdirSync, rmSync, writeFileSync } from 'node
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { doneGaps, deliveredPaths, openP1, probeLive, rolloutEnded } from '../done-check.mjs';
-import { SOURCE_PARITY_PREFIX } from '../lib.mjs';
+import { doneGaps, deliveredPaths, headerGap, openP1, probeLive, rolloutEnded } from '../done-check.mjs';
+import { SOURCE_PARITY_PREFIX, publicUrl } from '../lib.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const SCRIPT = join(HERE, '..', 'done-check.mjs');
@@ -31,6 +32,18 @@ const ENDED = [
 const finding = (severity, status, evidence = 'x') => ({ id: `${severity}-${status}-${evidence}`, severity, status, fixability: evidence.startsWith(SOURCE_PARITY_PREFIX) ? 'out-of-scope' : 'platform-migration', evidence });
 
 // --- pure verdict ---------------------------------------------------------------------------------
+check('publicUrl: a folder index is served at /a/ (its migrated file is …/index.html); leaves, the root and --new rows keep their path', () => {
+  assert.equal(publicUrl({ path: '/en/news', source: { migratedHtml: 'stardust/migrated/en/news/index.html' } }), '/en/news/');
+  assert.equal(publicUrl({ path: '/en/news/story', source: { migratedHtml: 'stardust/migrated/en/news/story.html' } }), '/en/news/story');
+  assert.equal(publicUrl({ path: '/', source: { migratedHtml: 'stardust/migrated/index.html' } }), '/');
+  assert.equal(publicUrl({ path: '/search', source: { migratedHtml: 'https://example.com:search' } }), '/search');
+});
+check('deliveredPaths probes a folder index at /a/, which a 200-only HEAD accepts (/a 404s)', async () => {
+  const pages = [{ path: '/en/news', source: { migratedHtml: 'm/en/news/index.html' }, delivery: { status: 'verified' } }];
+  assert.deepEqual(deliveredPaths(pages), ['/en/news/']);
+  const served = { '/en/news/': 200, '/en/news': 404 };
+  assert.deepEqual(await probeLive('https://example.com', deliveredPaths(pages), { fetchImpl: async (u) => ({ status: served[new URL(u).pathname] }) }), []);
+});
 check('a clean run is complete, with the live probe recorded as run', () => {
   const v = doneGaps({ pages: CLEAN_PAGES, findings: [], ledgerLines: ENDED, notLive: [] });
   assert.deepEqual(v, { complete: true, gaps: [], liveChecked: true });
@@ -132,6 +145,30 @@ check('CLI: gaps exit 1, one line each, then the summary line', () => {
   const r = run(proj, ['--offline']);
   assert.equal(r.status, 1);
   assert.deepEqual(r.stdout.trim().split('\n'), ['pages_unfinished:1', 'rollout_incomplete', '✗ 2 gap(s) (live probe skipped: --offline)']);
+  rmSync(proj, { recursive: true, force: true });
+});
+
+check('headerGap: none without a flow; otherwise the contract, a fresh comparison of the right profile at every width on the live host, no undecided error', () => {
+  const contract = { url: 'https://example.com/', at: '2026-10-09T10:00:00Z', widths: { 1440: {}, 390: {} } };
+  const parity = { source: 'https://example.com/', build: 'https://main--site--org.aem.live/', at: '2026-10-09T12:00:00Z', profile: 'replica', widths: [1440, 390], findings: [] };
+  const live = 'main--site--org.aem.live';
+  assert.equal(headerGap({ flow: null, contract: null }), null);
+  assert.match(headerGap({ flow: 'replica' }), /^header_parity:no contract/);
+  assert.match(headerGap({ flow: 'replica', contract }), /^header_parity:unchecked: .*--profile replica/);
+  assert.equal(headerGap({ flow: 'replica', contract, parity, liveHost: live }), null);
+  assert.match(headerGap({ flow: 'reskin', contract, parity, liveHost: live }), /profile replica; the reskin flow needs functional/);
+  assert.match(headerGap({ flow: 'replica', contract, parity: { ...parity, at: '2026-10-08T00:00:00Z' } }), /stale/);
+  assert.match(headerGap({ flow: 'replica', contract, parity: { ...parity, widths: [1440] } }), /not compared at 390/);
+  assert.match(headerGap({ flow: 'replica', contract, parity: { ...parity, build: 'https://main--site--org.aem.page/' }, liveHost: live }), /not the live host/);
+  const findings = [{ key: 'state-missing@1440 Shop [hover]', severity: 'error' }, { key: 'motion@390 Open menu [click]', severity: 'error', decided: { by: 'Site owner' } }, { key: 'link-href@1440 Shop', severity: 'warn' }];
+  assert.equal(headerGap({ flow: 'replica', contract, parity: { ...parity, findings }, liveHost: live }), 'header_parity:1: state-missing@1440 Shop [hover]');
+});
+
+check('CLI: a replica project without a header contract is not complete', () => {
+  const proj = project();
+  writeFileSync(join(proj, 'stardust', 'state.json'), JSON.stringify({ flow: 'replica' }));
+  const r = run(proj, ['--offline']);
+  assert.equal(r.status, 1); assert.match(r.stdout, /^header_parity:no contract/m);
   rmSync(proj, { recursive: true, force: true });
 });
 

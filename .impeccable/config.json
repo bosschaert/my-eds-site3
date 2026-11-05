@@ -4,10 +4,22 @@
     "ignoreFiles": [],
     "ignoreValues": [
       {
-        "rule": "overused-font",
-        "value": "arial",
-        "createdAt": "2026-10-09T21:24:07.176Z",
-        "reason": "replica migration: video-player stage reproduces the source site's embedded player chrome (video.js default Arial stack); design changes are out of scope without an inconsistency-register entry"
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/page1-proposed.html"
+        ],
+        "createdAt": "2026-11-05T11:41:46.354Z",
+        "reason": "replica run: colours lifted verbatim from source styles.css (#777 footer, #666 tabs); inconsistency register is empty, so no design change is permitted"
+      },
+      {
+        "rule": "skipped-heading",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/page1-proposed.html"
+        ],
+        "createdAt": "2026-11-05T12:14:49.880Z",
+        "reason": "replica run: source page uses h1 then h4 team names; headings are preserved verbatim (content-preservation, no retagging); register holds no heading change"
       }
     ]
   }

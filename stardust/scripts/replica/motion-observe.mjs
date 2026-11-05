@@ -276,14 +276,14 @@ async function main() {
     // full-header restore threshold is often exactly y=0).
     const docH = await page.evaluate(() => document.documentElement.scrollHeight);
     for (let y = 0; y < docH - VH; y += 400) {
-      await page.evaluate((yy) => window.scrollTo(0, yy), y);
+      await page.evaluate((yy) => window.scroll(0, yy), y);
       await page.waitForTimeout(180);
       if (y % 1200 === 0) headerTimeline.push(await headerState());
     }
     await page.waitForTimeout(400);
     for (const y of [docH - 2000, docH - 3500, 2400, 1200, 800, 500, 300, 200, 150, 120, 90, 60, 30, 0]) {
       if (y < 0) continue;
-      await page.evaluate((yy) => window.scrollTo(0, yy), Math.max(0, y));
+      await page.evaluate((yy) => window.scroll(0, yy), Math.max(0, y));
       await page.waitForTimeout(180);
       headerTimeline.push(await headerState());
     }

@@ -1,50 +1,59 @@
-# EDS conversion log — continental.com
+# EDS conversion log — balbriggan.ie
 
-## Publish decision (2026-10-09)
+- **Publish decision (2026-10-28): publish.** Decided for this run up front: every delivered page, the redirects
+  sheet and the chrome documents (nav, footer) go live on the aem.live origin (deploy-batch without `--no-publish`,
+  or `POST https://admin.hlx.page/live/…`).
+- Target: org `aemcoder`, repo `755b9b33`, branch `main` → https://main--755b9b33--aemcoder.aem.page/ ; content via
+  DA (admin.da.live), token from the job's IMS token file (`--token-file`), never written to the repo.
+- Scope: one page — https://balbriggan.ie/ → DA `/index` (site root).
 
-Decision: **publish**. Every delivered page, the redirects sheet and the chrome documents (nav, footer and their locale variants) go live on the aem.live origin (deploy-batch.mjs without --no-publish, or POST https://admin.hlx.page/live/…). Decided by the run brief; not re-asked.
+## archetype-home — /index (template "home") — C-ARCHETYPE
 
-## C0 foundation (2026-10-09)
-
-- Chrome decode tier: **template-slotted** (header, footer, social band). Authored nav/footer nodes are
-  moved into the canon chrome template; the off-canvas tree and the dropdown title (when no alt h3) are
-  presentational clones (EW4, stripInstrumentation). Exempt (`@ew-exempt`): search placeholder /
-  aria-labels read from authored link text.
-- EW7 deviation recorded by chrome-parity: live `<button>` nav triggers / language button are `<a role=button>`
-  (no `<button>` may host authored text); footer column labels / copyright are `<p>` (live `<div>`).
-- Chrome documents: 10 locale pairs (/en, /de, /cs-cz, /sk-sk, /pt-pt, /en-pt, /es-mx, /fr-fr, /ro-ro,
-  /en-us) generated verbatim from each locale's capture (stardust/.work/foundation/gen-chrome.cjs), Robots noindex.
-- Shell: /en/general/legal-notice as default content only (legal archetype unit replaces it).
-- Lint: clean (eslint airbnb-base, stylelint standard; per-file `no-descending-specificity` disable keeps the
-  source cascade order); `lint:breakpoints` wired (no target set in DESIGN.json → skipped).
-
-## C-archetype legal — en-general-legal-notice (2026-10-09)
-
-- Blocks: `hero-teaser` (variant small) — template-slotted (art-directed renditions moved into
-  range slots); `text-media` — template-slotted (header / gallery / richtext slots). Encoder core
-  `stardust/rollout/encoders/encode.mjs` + modules hero-teaser, text-media; notes in
-  `stardust/rollout/encoders/legal.md`.
-- Text-only c-media CEs are authored as default content (David's model; foundation default-content
-  rhythm equals o-page__ce stacking). The legal archetype therefore has 1 block (hero-teaser);
-  text-media is exercised by image CEs on sibling templates (render-harness --ew: 7/7 editable).
-- davids-model-lint 🟡 D1 on hero-teaser (3 image-only rows): justified — art-directed renditions
-  (1920×327 / tablet / 800×454) differ in aspect ratio, one image cannot reproduce the hero height.
-- qa-gate cap row (DESIGN.json containerMaxWidth 1920 vs content cap 1460 at 2560) fails on the
-  default-content wrapper the foundation owns; prototype carries the same 1460 cap — not a block defect.
-
-## C-archetype home — en (2026-10-09)
-
-- Blocks: NEW `video-player` (template-slotted: poster / play / caption / text-column slots; D3
-  AdmiralCloud embed on click, poster fallback when the vendor refuses the host), NEW
-  `section-background` (template-slotted: o-container__bg-image layer). Shared, additive only:
-  text-media variant `header-row`; teaser `wide-narrow.with-embed` 512px frame; fact-box guarded
-  equalise re-run (boxes with foot text). Encoder modules + notes: stardust/rollout/encoders/home.md.
-- Section schema: stardust/eds-schema/en.json from an annotated copy (one data-section per block,
-  stardust/.work/archetype-home/annotate.cjs). qa-gate PASS 39/0/0; block-roundtrip --ew
-  video-player 4/4 editable, section-background 0/0. Whole page: pre-existing EW findings in the
-  shared hero-stage-slider (7 dead: textLine moves childNodes) and fact-box (6 dead), teaser
-  URL-display embed link (by design), text-media role swap on the light h1 — not touched (shared).
-- davids-model-lint 🟡 D1 section-background (image-only layer, decorative), D1 text-media eyebrow
-  header (bespoke c-media__meta styling), D3 teaser with-embed (embed row is one cell by design).
-- Published gate: 1440 2.42 % Δh 2 PASS; 360 16.09 % Δh 0 → override (headed-both 4.08 % Δh 2;
-  hero autoplay tick). Crop 1440 header 1.27 % / footer 0.92 %.
+- Schema: `stardust/eds-schema/index.json` (section-schema.mjs over the gated prototype, 7 sections).
+- Blocks + decode tier:
+  - `hero` — template-slotted (one cell: h2 + CTA link + "Background video" link paragraph; the video
+    link is consumed as the `<video autoplay muted loop playsinline>` source, `@ew-exempt config`).
+    Section style `flush`; wrapper made full-bleed in hero.css. davids-model 🟡 "single-column prose
+    block" justified: bespoke video band + overlay + card, not default content. The video link lives in
+    the card cell (not its own cell) so D1 (embed URL alone in a block cell) does not apply — it is a
+    direct mp4, not an embed player.
+  - `news-carousel` — reconstructive (one row per card: image | title link). Card-as-link: href/title
+    read off the authored anchor, anchor unwrapped, its <p> + picture moved. slick parity: 3 per view,
+    infinite loop with aria-hidden instrumentation-stripped clones (last 3 before, all 4 after), dot
+    labels "1 of 2".."4 of 2" verbatim, no auto-advance (prototype parity).
+  - `explore-grid` — template-slotted (one row per tile: image | label link; overlay = card-as-link;
+    hover colour #2600e6 + blue overlay + yellow border).
+  - `town-map` — template-slotted. Decision: the prototype carries 12 pin links whose names exist
+    (drawn as SVG <text> in the artwork), so it is a BLOCK whose 12 rows carry the pin name + link;
+    the SVG (blocks/town-map/town-map.svg + pins/*.jpg) is presentational code artwork — decorate()
+    inlines it and sets each pin's href from its row, and the authored <p>s are moved into a
+    visually-hidden list (pin names for assistive tech). Drawn labels cannot be node-slotted into
+    SVG text without value-slotting, so they stay artwork. Not a widget.
+  - `documents` — reconstructive (one row per document: cover image | h4 title link; cover link
+    built from the title href; even columns column-reverse via a generated class).
+  - `newsletter` — template-slotted (row: h2 + intro p). The form is integration code (dynamic-features
+    D1 interim): posts to https://balbriggan.ie/#gf_1 with input_1/2/3/4.1 + honeypot, as the source.
+    davids-model 🟡 "single-column prose block" justified: the block owns the form + blue band.
+  - Intro = default content, section style `fluid, intro` (CSS shipped scoped in hero.css; foundation
+    request logged).
+- Media: 13 editorial images on DA `media/home/` (da-media-upload); hero video keeps the source
+  Vimeo mp4 URL (as the prototype); PDFs stay on https://balbriggan.ie/wp-content/… (not migrated).
+- Links: every page other than the home page is out of scope, so links stay absolute to
+  https://balbriggan.ie/… (localize-links --check PASS, 0 localizable).
+- Headings: the source/prototype has no <h1> (hero title is h2); kept as the prototype —
+  delivery-lint P0 `h1` (0 found) is a recorded source-parity exception.
+- Heading/text encoding: "Céard eile atá ag tarlú?" uses combining accents (NFD) as the source.
+- Delivered (commit 0aaa6e8 code+content; deploy-batch PUT→preview→publish /index live).
+  Gate root: `--main ":not(:not(#homepage-wrapper):not(main))"` — the live #homepage-wrapper is a div
+  with a nested intro-only <main>, the build root is <main>; this comma-free selector resolves the
+  content root on both sides (a plain `#homepage-wrapper` fell back to <main> on both = intro only).
+  pub2 --full: 1440 2.48% Δh1 / 360 6.74% Δh1, content-diff 0🔴 / 0 nothing-lost🟡 (75 advisory:
+  sr-only pin-link EXTRA, foundation-set link titles, Gotham→Sora face), clip 0 / 2 (allow 2),
+  overflow ok; gate-all rows 1440 PASS / 360 PASS (state.json page → deployed for gate-all).
+  Crop: header 2.68% @1440 (frozen-foundation nav glyph substitution, accepted PAIR residual) / 0.77%
+  @360; footer 0.26% / 0.69%.
+- Residuals: hero Vimeo mp4 answers 403 / ERR_BLOCKED_BY_ORB upstream — identical on the live site
+  (same URL), so the band renders as the blue overlay on both; ai-readability code 92% (main servedGap
+  0 with allowlist stardust/.work/rollout/archetype-home/ai-allow.json for code-generated form labels,
+  carousel controls, SVG artwork text; the remaining 38 words are header/footer chrome from the
+  foundation nav/footer documents); delivery-lint P0 h1 kept (source parity).

@@ -1,0 +1,66 @@
+/* index (landing) — media tables + callout; values lifted from source /styles.css */
+.media-table {
+  display: table;
+  width: 100%;
+  max-width: var(--container);
+  margin: 1.5rem auto;
+  border-collapse: separate;
+  border-spacing: 1.5rem;
+}
+
+.media-table > div { display: table-row; }
+
+.media-table > div > div {
+  display: table-cell;
+  background: #fff;
+  border-radius: var(--radius-card);
+  padding: 1rem;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  vertical-align: top;
+  border: 2px solid transparent;
+}
+
+.media-table > div > div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgb(0 150 136 / 20%);
+  border-color: var(--color-accent);
+}
+
+.media-table img,
+.media-table iframe {
+  display: block;
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.callout {
+  background: linear-gradient(135deg, #fff 0%, #fce4ec 100%);
+  padding: 2rem;
+  border-radius: var(--radius-card);
+  box-shadow: 0 4px 20px rgb(233 30 99 / 10%);
+  max-width: var(--container);
+  margin: 2rem auto;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.8;
+  border-left: 4px solid #ec407a;
+}
+
+@media (max-width: 768px) {
+  .media-table { border-spacing: 0; }
+
+  .media-table > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .media-table > div > div {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}

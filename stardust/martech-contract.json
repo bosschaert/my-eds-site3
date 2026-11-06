@@ -1,0 +1,34 @@
+{
+ "_provenance": {
+  "writtenBy": "stardust:dynamics plan",
+  "writtenAt": "2026-11-05T17:15:21.368Z",
+  "input": "stardust/current/_dynamics.json",
+  "martech": "stardust/martech"
+ },
+ "productionHosts": [
+  "static-website.david-bosschaert.workers.dev"
+ ],
+ "consent": {
+  "cmp": null,
+  "model": "owner-decision",
+  "categories": [],
+  "ruleSets": 0,
+  "consentMode": null
+ },
+ "routes": [],
+ "otherTags": [
+  "marketing: ad / retargeting pixel"
+ ],
+ "tagManagers": [],
+ "dataLayers": [],
+ "tagNotes": {},
+ "rewrite": {
+  "library": null,
+  "rules": [],
+  "dataElements": [],
+  "dataLayer": [],
+  "dataLayerPaths": []
+ },
+ "aemMartech": null,
+ "target": null
+}

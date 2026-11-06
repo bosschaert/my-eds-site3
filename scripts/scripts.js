@@ -73,6 +73,34 @@ function buildWidgetAutoBlocks(main) {
   });
 }
 
+const EMBED_LINK = /^https?:\/\/(www\.)?(youtube\.com\/(embed\/|watch\?)|youtu\.be\/)/;
+
+/**
+ * D1 auto-block: a YouTube link alone in its paragraph becomes a media-table cell. Directly
+ * before a media-table it becomes that table's leading cell (the source's media row);
+ * elsewhere it becomes a one-cell media-table. media-table turns the link into the iframe.
+ * @param {Element} main The container element
+ */
+function buildEmbedAutoBlocks(main) {
+  main.querySelectorAll('p > a[href]').forEach((link) => {
+    const p = link.parentElement;
+    if (!EMBED_LINK.test(link.href) || p.closest('.media-table')) return;
+    if (p.querySelectorAll('a').length !== 1 || p.textContent.trim() !== link.textContent.trim()) {
+      return;
+    }
+    const next = p.nextElementSibling;
+    const row = next && next.classList.contains('media-table') ? next.firstElementChild : null;
+    if (row) {
+      const cell = document.createElement('div');
+      row.prepend(cell);
+      cell.append(p);
+    } else {
+      const block = buildBlock('media-table', [[p.cloneNode(true)]]);
+      p.replaceWith(block);
+    }
+  });
+}
+
 /**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
@@ -96,6 +124,7 @@ function buildAutoBlocks(main) {
         });
       });
     }
+    buildEmbedAutoBlocks(main);
     buildWidgetAutoBlocks(main);
   } catch (error) {
     // eslint-disable-next-line no-console
@@ -142,43 +171,6 @@ function decorateButtons(main) {
   });
 }
 
-const GROUNDS = ['is-yellow', 'is-lightgray', 'is-gray', 'is-pastel-yellow', 'is-pastel-red',
-  'is-pastel-blue', 'is-pastel-green', 'full-bleed'];
-
-/**
- * Marks sections without a background style as `is-white` (o-container.is-white rhythm:
- * adjacent white sections collapse their top padding).
- * @param {Element} main The container element
- */
-function decorateSectionGrounds(main) {
-  main.querySelectorAll(':scope > .section').forEach((section) => {
-    if (!GROUNDS.some((c) => section.classList.contains(c))) section.classList.add('is-white');
-  });
-}
-
-const FILE_META = /^(.*\S)(\s+-\s+)([a-z0-9]{2,5}\s+\(\d[\d.,]*\s?[kmg]?b\))\s*$/i;
-
-/**
- * Inline file links (source a.c-link--download): the authored text ends in " - pdf (263KB)";
- * the trailing meta is wrapped for the uppercase style. Running text only (default content,
- * accordion and media-columns cells); buttons and teaser links keep their own decoration.
- * @param {Element} main The container element
- */
-function decorateDownloadLinks(main) {
-  main.querySelectorAll(':is(.default-content-wrapper, .accordion, .media-columns) a[href]')
-    .forEach((a) => {
-      if (a.classList.contains('button') || a.children.length) return;
-      const m = a.textContent.match(FILE_META);
-      if (!m) return;
-      const meta = document.createElement('span');
-      meta.className = 'text-uppercase';
-      const [, label, dash, info] = m;
-      meta.textContent = info;
-      a.replaceChildren(`${label}${dash}`, meta);
-      a.classList.add('c-link-download');
-    });
-}
-
 /**
  * Decorates the main element.
  * @param {Element} main The main element
@@ -188,10 +180,8 @@ export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
-  decorateSectionGrounds(main);
   decorateBlocks(main);
   decorateButtons(main);
-  decorateDownloadLinks(main);
 }
 
 /**
@@ -199,8 +189,8 @@ export function decorateMain(main) {
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
-  const locale = window.location.pathname.split('/').filter(Boolean)[0] || '';
-  document.documentElement.lang = /^[a-z]{2}(-[a-z]{2})?$/.test(locale) ? locale.slice(0, 2) : 'en';
+  import('./martech.js').then((m) => m.loadConsent());
+  document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
   if (main) {
@@ -235,10 +225,6 @@ async function loadLazy(doc) {
 
   loadFooter(doc.querySelector('body > footer'));
 
-  if (main.querySelector('a[data-lightbox], a.lightbox')) {
-    import('./lightbox.js').then(({ bindLightboxes }) => bindLightboxes(main));
-  }
-
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
 }
@@ -248,6 +234,7 @@ async function loadLazy(doc) {
  * without impacting the user experience.
  */
 function loadDelayed() {
+  import('./martech.js').then((m) => m.loadTags());
   import('./consent-check.js');
   // load anything that can be postponed to the latest here
 }

@@ -1,50 +1,38 @@
-# EDS conversion log — continental.com
+# EDS conversion log — static-website.david-bosschaert.workers.dev
 
-## Publish decision (2026-10-09)
+## Publish decision
+Decided by the run brief (owner): **publish**. Every delivered page, the redirects sheet and the chrome documents (nav, footer) go live on the aem.live origin (`deploy-batch.mjs` without `--no-publish`, or `POST https://admin.hlx.page/live/…`).
 
-Decision: **publish**. Every delivered page, the redirects sheet and the chrome documents (nav, footer and their locale variants) go live on the aem.live origin (deploy-batch.mjs without --no-publish, or POST https://admin.hlx.page/live/…). Decided by the run brief; not re-asked.
+## Decode tiers
+(per block, appended during C-deliver)
 
-## C0 foundation (2026-10-09)
+## Foundation (C0)
+- Files: styles/styles.css, styles/fonts.css (no @font-face; source loads no web fonts), blocks/header/header.{js,css}, blocks/footer/footer.{js,css}, scripts/martech.js (scaffold, everything off) + scripts/scripts.js (scaffold hooks: loadConsent in loadEager, loadTags in loadDelayed), content/nav.html, content/footer.html (both `Robots | noindex`, published live), .hlxignore (+content/), stardust/runtime-contract.json, stardust/deploy/ledger-foundation.json.
+- Global: canon.css body/h1/h2/p rules verbatim; boilerplate section/wrapper padding, margins, max-width, nav-height and link/button/heading defaults removed; EDS wrappers layout-neutral (nav margin-bottom collapses with h1 top margin as in the prototype).
+- Decode tier: header — template-slotted (authored `<a>` nodes from /nav moved into `nav.site-header[aria-label=Main]`); footer — template-slotted (`<footer>` itself becomes `.site-footer`, authored paragraph moved in, `p` lede rules neutralised inside it).
+- Sanity probe (not a gate): nav and footer boxes on aem.page match the source to 0.1px at 1440 and 360.
+- Lint: `npm run lint` clean (0 errors; 1 pre-existing no-console warning in stardust/scripts/deploy/sanitise.js).
 
-- Chrome decode tier: **template-slotted** (header, footer, social band). Authored nav/footer nodes are
-  moved into the canon chrome template; the off-canvas tree and the dropdown title (when no alt h3) are
-  presentational clones (EW4, stripInstrumentation). Exempt (`@ew-exempt`): search placeholder /
-  aria-labels read from authored link text.
-- EW7 deviation recorded by chrome-parity: live `<button>` nav triggers / language button are `<a role=button>`
-  (no `<button>` may host authored text); footer column labels / copyright are `<p>` (live `<div>`).
-- Chrome documents: 10 locale pairs (/en, /de, /cs-cz, /sk-sk, /pt-pt, /en-pt, /es-mx, /fr-fr, /ro-ro,
-  /en-us) generated verbatim from each locale's capture (stardust/.work/foundation/gen-chrome.cjs), Robots noindex.
-- Shell: /en/general/legal-notice as default content only (legal archetype unit replaces it).
-- Lint: clean (eslint airbnb-base, stylelint standard; per-file `no-descending-specificity` disable keeps the
-  source cascade order); `lint:breakpoints` wired (no target set in DESIGN.json → skipped).
+## Archetypes
+Units archetype-landing (`/` ← content/index.html) and archetype-static (`/page1` ← content/page1.html); both published (preview + live), Title metadata "Good Morning!".
 
-## C-archetype legal — en-general-legal-notice (2026-10-09)
+### Blocks and decode tiers
+- `media-table` (index ×2) — blocks/media-table/{media-table.js,media-table.css}. **Template-slotted**: the authored row/cell grid IS the prototype's `div` table (`display: table/table-row/table-cell`), pictures stay where authored; a cell whose lone link points at YouTube becomes the `<iframe>` (560×315, title from the link text, allow list, allowfullscreen, frameborder 0; `@ew-exempt` declared). Delivered images carry 800×600 attributes — decorate resets them to the source's 560×315 so table auto-layout matches (cells 324/804 px at 1440, measured equal to the source), `picture { display: contents }` keeps the img the cell's only box.
+- `callout` (index) — blocks/callout/{callout.js,callout.css}. **Template-slotted** (block element = panel, no DOM change); `.callout p` resets the global lede rule (source text is a bare text node). davids-model 🟡 D1 (single prose cell): kept as a block because the panel is a bespoke component on the source.
+- `gallery` (page1 ×2, variants `images`, `videos`) — blocks/gallery/{gallery.js,gallery.css}. **Reconstructive** (repeat group: every cell is a grid item, rows `display: contents`); `videos`: the cell's authored paragraph (fallback text + download link to /vids/*.mp4) is MOVED into a generated `<video controls playsinline preload=metadata width=362 height=308 aria-label="Recording n">` + `<source type=video/mp4>`; videos served root-relative from the code origin.
+- `tabs` (both) — blocks/tabs/{tabs.js,tabs.css}. **Reconstructive**: one row per tab (label cell + one cell per team card); the label paragraph/text is MOVED into the generated `<button role=tab>` (EW7 exception), card cells become `.team-card` inside `.tabs-panel` (first `active`); click switches `aria-selected` + `active`, `fadeIn` 0.4s. R-01 applied (`overflow-x: auto; scrollbar-width: none`). Override in block CSS (not foundation): button `line-height: normal` because styles.css `button { font: inherit }` would otherwise give the tab buttons the body's 1.6 line-height. units.json `build` selector `.tabs-panel.active .team-card` unchanged (matches).
+- h1, lede paragraph, h2 — default content.
 
-- Blocks: `hero-teaser` (variant small) — template-slotted (art-directed renditions moved into
-  range slots); `text-media` — template-slotted (header / gallery / richtext slots). Encoder core
-  `stardust/rollout/encoders/encode.mjs` + modules hero-teaser, text-media; notes in
-  `stardust/rollout/encoders/legal.md`.
-- Text-only c-media CEs are authored as default content (David's model; foundation default-content
-  rhythm equals o-page__ce stacking). The legal archetype therefore has 1 block (hero-teaser);
-  text-media is exercised by image CEs on sibling templates (render-harness --ew: 7/7 editable).
-- davids-model-lint 🟡 D1 on hero-teaser (3 image-only rows): justified — art-directed renditions
-  (1920×327 / tablet / 800×454) differ in aspect ratio, one image cannot reproduce the hero height.
-- qa-gate cap row (DESIGN.json containerMaxWidth 1920 vs content cap 1460 at 2560) fails on the
-  default-content wrapper the foundation owns; prototype carries the same 1460 cap — not a block defect.
+### Checks
+- `npm run lint` clean (0 errors; the pre-existing sanitise.js no-console warning). foundation-freeze check: unchanged.
+- localize-links --check PASS; delivery-lint 0/0/0 both pages; media-reconcile 9 / 8 hosted; sanitise no-op.
+- davids-model-lint: page1 PASS; index 🔴 D1 "embed/video URL authored inside a block" (media-table row 1 cell 1). Not fixable inside the frozen foundation: the model's remedy is a buildAutoBlocks() rule in scripts/scripts.js (frozen), and the embed must sit in a table cell beside an image; the media-table decode performs the same link→iframe conversion. Deployed with this 🔴 recorded; foundation request filed.
+- block-roundtrip --ew (local, no dev server needed): index 0 🔴, editable 10/11 + 1 exempt (embed link); page1 0 🔴, editable 11/11. No `aem up` harness/qa-gate run: block-roundtrip covers the structural asserts and the published-origin gates were run directly.
+- Delivered .plain.html: `/` 200, 1 h1, 0 about:error, 9 img with alt; `/page1` 200, 1 h1, 0 about:error, 8 img with alt.
 
-## C-archetype home — en (2026-10-09)
-
-- Blocks: NEW `video-player` (template-slotted: poster / play / caption / text-column slots; D3
-  AdmiralCloud embed on click, poster fallback when the vendor refuses the host), NEW
-  `section-background` (template-slotted: o-container__bg-image layer). Shared, additive only:
-  text-media variant `header-row`; teaser `wide-narrow.with-embed` 512px frame; fact-box guarded
-  equalise re-run (boxes with foot text). Encoder modules + notes: stardust/rollout/encoders/home.md.
-- Section schema: stardust/eds-schema/en.json from an annotated copy (one data-section per block,
-  stardust/.work/archetype-home/annotate.cjs). qa-gate PASS 39/0/0; block-roundtrip --ew
-  video-player 4/4 editable, section-background 0/0. Whole page: pre-existing EW findings in the
-  shared hero-stage-slider (7 dead: textLine moves childNodes) and fact-box (6 dead), teaser
-  URL-display embed link (by design), text-media role swap on the light h1 — not touched (shared).
-- davids-model-lint 🟡 D1 section-background (image-only layer, decorative), D1 text-media eyebrow
-  header (bespoke c-media__meta styling), D3 teaser with-embed (embed row is one cell by design).
-- Published gate: 1440 2.42 % Δh 2 PASS; 360 16.09 % Δh 0 → override (headed-both 4.08 % Δh 2;
-  hero autoplay tick). Crop 1440 header 1.27 % / footer 0.92 %.
+### Published-origin gate (pub2, aem.page)
+- index: 1440 0.00 % Δh 0 · 360 0.09 % Δh 0; content-diff 0 🔴 / 0 nothing-lost 🟡; clip 0; overflow ok; unit-geometry PASS (6/6 within 0 px).
+- page1: 1440 0.00 % Δh 0 · 360 0.12 % Δh 0; content-diff 0 🔴 / 0 🟡; clip 0; overflow ok; unit-geometry PASS.
+- pub1 rounds were invalid captures: the CDN served a cached 404 for /blocks/tabs/tabs.css for ~5 min after Code Sync (fixed by a forced code sync, no code change).
+- Instrument notes: (1) unit-geometry caches the origin inventory per slug, not per width — the gate.sh 360 run compared against the 1440 inventory (false FAIL); re-run with --force at each width PASS. (2) chrome-parity: source has no `<header>`; with `--region header=nav.site-header|nav.site-header` header ✓ parity at 1440/360; footer reports EXTRA because the source footer text is a bare text node (box and pixels match). (3) content-presence excludes the EDS header chrome while the source nav is plain body content → 2 false MISSING LINKs; gates/all-<w>/presence.json marks `nav.site-header` variable with that reason.
+- gate-all (--only index,page1, presence allowance for chrome nav): 1440 **2 PASS / 0 FAIL / 0 error** (0 % / 0 %, Δh 0); 360 **2 PASS / 0 FAIL / 0 error** (index 0.09 %, page1 0.12 %, Δh 0); clip 0, content MISSING 0, units off 0.

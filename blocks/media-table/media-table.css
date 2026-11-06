@@ -1,0 +1,62 @@
+/* media-table — values lifted from the source /styles.css (table, td, img, iframe) */
+.media-table {
+  display: table;
+  width: 100%;
+  max-width: var(--container);
+  margin: 1.5rem auto;
+  border-collapse: separate;
+  border-spacing: 1.5rem;
+}
+
+.media-table > div {
+  display: table-row;
+}
+
+.media-table > div > div {
+  display: table-cell;
+  background: #fff;
+  border-radius: var(--radius-card);
+  padding: 1rem;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  vertical-align: top;
+  border: 2px solid transparent;
+}
+
+.media-table > div > div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgb(0 150 136 / 20%);
+  border-color: var(--color-accent);
+}
+
+/* the delivery pipeline wraps images in <picture>: keep the img the cell's only box */
+.media-table picture {
+  display: contents;
+}
+
+.media-table img,
+.media-table iframe {
+  display: block;
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+@media (width <= 768px) {
+  .media-table {
+    border-spacing: 0;
+  }
+
+  .media-table > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .media-table > div > div {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}

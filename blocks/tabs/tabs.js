@@ -1,95 +1,81 @@
 /**
- * tabs — the source o-tabs (header items with an orange active bar, one visible panel).
- *
- * Content: one row per tab.
- *   [label]          → the panel is the NEXT block after the tabs block in the same section
- *                      (panels in tab order; e.g. news-sidebar, teaser) — its wrapper is moved in.
- *   [label, content] → the panel is the second cell's content.
- *   [label, n]       → variant `panels`: the panel is the NEXT n wrappers (default-content runs
- *                      and blocks) after the tabs block — panels mixing text and blocks.
- *                      @ew-exempt the count cell is layout configuration, not displayed text.
- * Variants: header-gap (section header ends with an empty media row: +1.8286rem above),
- *   dark-line (black header line / bar, source o-container is-gray | is-pastel-yellow).
- * Behaviour (live): click / Enter on a header item → it gets .is-active, its panel .is-visible;
- * the first tab is open initially. Reconstructive decode: labels / panel nodes are MOVED (EW1);
- * re-entrant (EW9).
+ * tabs — team tabs (source: .tabs-section with showTabSection(idx)).
+ * Authored model: one row per tab; the first cell is the tab label, every further cell is
+ * one team card (image, h4 name, paragraph description).
+ * The label's authored paragraph (or bare text) is MOVED into the generated <button>
+ * (EW7 exception: the source tab control is a button, so the label has to live in one).
+ * @param {Element} block The block element
  */
-function el(tag, className, ...kids) {
-  const node = document.createElement(tag);
-  if (className) node.className = className;
-  node.append(...kids);
-  return node;
+function selectTab(buttons, panels, idx) {
+  buttons.forEach((b, i) => {
+    b.setAttribute('aria-selected', String(i === idx));
+  });
+  panels.forEach((p, i) => {
+    p.classList.toggle('active', i === idx);
+    p.hidden = i !== idx;
+  });
 }
 
-function isPanelWrapper(node) {
-  return node && node.tagName === 'DIV' && /-wrapper$/.test(node.className.split(' ')[0] || '')
-    && !node.classList.contains('default-content-wrapper');
+function moveLabel(cell, button) {
+  // MOVE the authored label: the paragraph itself when there is one (keeps it editable)
+  const lone = cell.children.length === 1 && cell.firstElementChild.matches('p')
+    ? cell.firstElementChild : null;
+  if (lone) {
+    button.append(lone);
+    return;
+  }
+  [...cell.childNodes].forEach((n) => {
+    if (n.nodeType === Node.TEXT_NODE && !n.textContent.trim()) n.remove();
+  });
+  button.append(...cell.childNodes);
+}
+
+function decorateCard(cell) {
+  cell.classList.add('team-card');
+  cell.querySelectorAll('p > picture').forEach((picture) => {
+    const p = picture.parentElement;
+    if (p.children.length === 1 && !p.textContent.trim()) p.replaceWith(picture);
+  });
+  return cell;
 }
 
 export default function decorate(block) {
-  if (block.querySelector('.tabs-header')) return;
-  const wrapper = block.closest('.tabs-wrapper') || block;
-  let next = wrapper.nextElementSibling;
-  const header = el('div', 'tabs-header');
-  header.setAttribute('role', 'tablist');
-  const content = el('div', 'tabs-content');
-  const triggers = [];
-  const panels = [];
+  if (block.querySelector(':scope > .tabs-list')) return;
   const uid = `tabs-${Math.random().toString(36).slice(2, 8)}`;
+  const list = document.createElement('div');
+  list.className = 'tabs-list';
+  list.setAttribute('role', 'tablist');
+  const buttons = [];
+  const panels = [];
 
-  [...block.children].forEach((row, i) => {
-    const [labelCell, panelCell] = row.children;
-    const label = (labelCell || row).textContent.trim();
-    if (!label) {
+  [...block.children].forEach((row, idx) => {
+    const [labelCell, ...cardCells] = [...row.children];
+    if (!labelCell) {
       row.remove();
       return;
     }
-    const trigger = el('div', 'tabs-header-item has-hover', label);
-    trigger.setAttribute('role', 'tab');
-    trigger.tabIndex = 0;
-    trigger.id = `${uid}-tab-${i}`;
-    const panel = el('div', 'tabs-content-item');
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.id = `${uid}-tab-${idx}`;
+    button.setAttribute('role', 'tab');
+    button.setAttribute('aria-controls', `${uid}-panel-${idx}`);
+    moveLabel(labelCell, button);
+    list.append(button);
+    buttons.push(button);
+
+    const panel = document.createElement('div');
+    panel.className = 'tabs-panel';
+    panel.id = `${uid}-panel-${idx}`;
     panel.setAttribute('role', 'tabpanel');
-    panel.setAttribute('aria-labelledby', trigger.id);
-    const count = block.classList.contains('panels') && panelCell
-      ? parseInt(panelCell.textContent.trim(), 10) : NaN;
-    if (count > 0) {
-      // panels variant (cluster-content tabs-panels.mjs): the next `count` wrappers
-      for (let k = 0; k < count && next; k += 1) {
-        const after = next.nextElementSibling;
-        panel.append(next);
-        next = after;
-      }
-    } else if (panelCell && (panelCell.textContent.trim() || panelCell.querySelector('img, picture'))) {
-      panel.append(...panelCell.childNodes);
-    } else if (isPanelWrapper(next)) {
-      const after = next.nextElementSibling;
-      panel.append(next);
-      next = after;
-    }
-    triggers.push(trigger);
+    panel.setAttribute('aria-labelledby', button.id);
+    cardCells.forEach((cell) => panel.append(decorateCard(cell)));
     panels.push(panel);
-    header.append(trigger);
-    content.append(panel);
     row.remove();
   });
 
-  const show = (idx) => {
-    triggers.forEach((t, i) => {
-      t.classList.toggle('is-active', i === idx);
-      t.setAttribute('aria-selected', i === idx ? 'true' : 'false');
-    });
-    panels.forEach((p, i) => p.classList.toggle('is-visible', i === idx));
-  };
-  triggers.forEach((t, i) => {
-    t.addEventListener('click', () => show(i));
-    t.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        show(i);
-      }
-    });
+  block.append(list, ...panels);
+  buttons.forEach((button, idx) => {
+    button.addEventListener('click', () => selectTab(buttons, panels, idx));
   });
-  block.append(header, content);
-  show(0);
+  selectTab(buttons, panels, 0);
 }

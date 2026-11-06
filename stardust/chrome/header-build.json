@@ -1,0 +1,97 @@
+{
+ "tool": "chrome-explore",
+ "url": "https://main--52c25a12--aemcoder.aem.live/nav",
+ "at": "2026-11-05T17:19:57.409Z",
+ "shots": "stardust/.work/chrome/header-build",
+ "widths": {
+  "390": {
+   "root": "body>header",
+   "controls": [
+    {
+     "name": "Home",
+     "key": "home",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>a:nth-of-type(1)",
+     "href": "https://main--52c25a12--aemcoder.aem.live/",
+     "expanded": null,
+     "rect": [
+      40,
+      32,
+      75,
+      40
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Page 1",
+     "key": "page 1",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>a:nth-of-type(2)",
+     "href": "https://main--52c25a12--aemcoder.aem.live/page1",
+     "expanded": null,
+     "rect": [
+      139,
+      32,
+      83,
+      40
+     ],
+     "actions": {}
+    }
+   ],
+   "scroll": [],
+   "states": 0,
+   "truncated": null,
+   "loads": 1,
+   "requests": 15,
+   "maxRequests": 0,
+   "inputsSkipped": 0
+  },
+  "1440": {
+   "root": "body>header",
+   "controls": [
+    {
+     "name": "Home",
+     "key": "home",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>a:nth-of-type(1)",
+     "href": "https://main--52c25a12--aemcoder.aem.live/",
+     "expanded": null,
+     "rect": [
+      144,
+      48,
+      75,
+      40
+     ],
+     "actions": {}
+    },
+    {
+     "name": "Page 1",
+     "key": "page 1",
+     "role": "link",
+     "kind": "link",
+     "sel": "body>header>div>div>nav>a:nth-of-type(2)",
+     "href": "https://main--52c25a12--aemcoder.aem.live/page1",
+     "expanded": null,
+     "rect": [
+      243,
+      48,
+      83,
+      40
+     ],
+     "actions": {}
+    }
+   ],
+   "scroll": [],
+   "states": 0,
+   "truncated": null,
+   "loads": 1,
+   "requests": 15,
+   "maxRequests": 0,
+   "inputsSkipped": 0
+  }
+ },
+ "probe": null
+}

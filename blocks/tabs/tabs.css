@@ -1,61 +1,105 @@
-/* tabs — source o-tabs (en-investors IR news). Values from en-investors.css / site.css. */
-main .section > .default-content-wrapper + .tabs-wrapper { margin-top: 2.7429rem; }
-
+/* tabs — values lifted from the source /styles.css (.tabs-section, .tab-buttons, .tab-content) */
 .tabs {
-  max-width: var(--content-max);
-  margin: 0 auto;
-  padding: 0 16px;
+  margin: 2em 0;
+  padding: 1em;
+  border-radius: var(--radius-card);
+  background: #f8f8f8;
 }
 
-.tabs.header-gap { padding-top: 1.8286rem; }
+.tabs .tabs-list {
+  display: flex;
+  overflow-x: auto; /* register R-01: the source tab row overflows the viewport at 360 */
+  scrollbar-width: none;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 1em;
+}
 
-.tabs .tabs-header {
+.tabs .tabs-list button {
+  font-family: Arial, sans-serif;
+  background: none;
+  border: none;
+  padding: 1em 2em;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: normal;
+  color: #666;
+  transition: color 0.2s;
+  outline: none;
+}
+
+.tabs .tabs-list button p {
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  max-width: none;
+  margin: 0;
+}
+
+.tabs .tabs-list button[aria-selected='true'] {
+  color: #2196f3;
+  border-bottom: 3px solid #2196f3;
+  background: #fff;
+}
+
+.tabs .tabs-panel {
+  display: none;
+  animation: fadeIn 0.4s;
+}
+
+.tabs .tabs-panel.active {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+/* name kept from the source stylesheet */
+/* stylelint-disable-next-line keyframes-name-pattern */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.tabs .team-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 7%);
+  width: 48%;
+  padding: 1em;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid var(--c-orange);
+  align-items: center;
+  transition: box-shadow 0.2s;
 }
 
-.tabs .tabs-header-item {
-  position: relative;
-  padding: .9143rem 0;
-  font-weight: 600;
+.tabs .team-card picture {
+  display: contents;
 }
 
-.tabs .tabs-header-item::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background: var(--c-orange);
-  transition: all 150ms ease-in-out;
+.tabs .team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1em;
 }
 
-.tabs .tabs-header-item.has-hover { cursor: pointer; }
-.tabs .tabs-header-item.has-hover:hover::before { height: .1143rem; }
-.tabs .tabs-header-item.is-active::before { height: .4571rem; }
-.tabs.dark-line .tabs-header { border-bottom-color: #000; }
-.tabs.dark-line .tabs-header-item::before { background: #000; }
-
-@media (width >= 1023px) {
-  .tabs .tabs-header { flex-direction: row; }
-  .tabs .tabs-header-item { padding: 1.3714rem .6857rem; }
+.tabs .team-card h4 {
+  margin: 0.2em 0;
 }
 
-.tabs .tabs-content { padding-top: 1.8286rem; }
-.tabs .tabs-content-item { display: none; }
-.tabs .tabs-content-item.is-visible { display: block; }
+@media (width <= 900px) {
+  .tabs .tabs-panel.active {
+    flex-direction: column;
+    gap: 1.2em;
+  }
 
-/* panels / grid variants (tabs-grid.mjs): a teaser grid moved into a panel sits on the page grid (the source nests an
-   o-container whose row cancels the tab padding) — cluster-content */
-.tabs:is(.panels, .grid) .tabs-content-item > .teaser-wrapper {
-  margin-left: -16px;
-  margin-right: -16px;
-}
-
-/* …and keeps the section header-row gap under the panel heading (the section-level
-   `.section > .default-content-wrapper + .teaser-wrapper` rhythm does not reach into a panel) */
-.tabs:is(.panels, .grid) .tabs-content-item > .default-content-wrapper + .teaser-wrapper {
-  margin-top: 2.7429rem;
+  .tabs .team-card {
+    width: 100%;
+  }
 }

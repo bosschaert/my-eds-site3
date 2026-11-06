@@ -1,21 +1,13 @@
-# Rollout report — www.continental.com → main--d9ddbc54--aemcoder (2026-10-10)
-
-Flow: replica (same design). Publish decision: publish (aem.live).
+# Rollout report — static-website.david-bosschaert.workers.dev → main--52c25a12--aemcoder.aem.live (2026-11-05)
 
 | | |
 |---|---|
-| **Pages** | 101 verified live = 99 in-scope source pages (site plan, 100 selected; `/index` ≡ `/`) + 2 dynamics-built search endpoints (`/en/general/search`, `/de/meta/suche`, noindex) |
-| **Templates** | 5 replica templates — home (3), hub (18), content (65), legal (11), stories (2) — plus search-results (2) |
-| **Blocks** | 15 distinct module blocks in the plan, 15 delivered; 36 block folders in `blocks/` |
-| **Fidelity** | published-origin gate, both widths: 99/99 pass (78 raw, 21 with documented symmetric-evidence overrides) — `stardust/rollout/gate-merged.json` |
-| **Quality** | optimize health 100, open P1 0; 125 findings mirror the source (informational); 7 residual P2/P3 accepted with evidence |
-| **Links** | 0 broken internal links; 607 out-of-scope menu/footer targets point at www.continental.com (`e2-repointed-targets.txt`) |
-| **Site** | sitemap served 99; redirects sheet 98 rows live; `/` 200; 20 chrome docs noindex |
-| **Dynamics** | `stardust/dynamics/parity.json`: 25 checks, 22 pass |
-
-## To deliver / owner decisions
-- AdmiralCloud video embeds answer 403 for the aem.live host — the vendor allowlist needs the new host (video falls back to its poster until then).
-- hreflang `<link>` alternates are not emitted (source has them) — to add in `head`/`scripts` when the locale set is final.
-- Download cart: the header cart is inert; per-file download links work. A zip endpoint is the owner's call.
-- Site search covers the 99 migrated pages only (source search also returns pages outside this scope).
-- Pages outside the 100-page plan stay on www.continental.com; menus and footers link there.
+| Pages | 2 / 2 verified live (`/`, `/page1`); 0 deployed-only, 0 pending, 0 failed |
+| Templates | 2 (index → landing, page1 → static), each its own archetype, both gated |
+| Blocks | 6 distinct, 6 verified: header, footer, tabs (team-tabs), media-table, callout, gallery |
+| Published-origin gate | gate-all PASS at 1440 and 360 on both pages |
+| Quality | optimize health 98/100; open P1 0 · P2 0 · P3 1 (shared auto-derived meta description — the source has none); 3 source-parity informational |
+| Dynamic | 4 features + martech in parity.json; dynamics-check 10/10 PASS on aem.live; martech carried over with every contract part disabled |
+| Links | 9 distinct hrefs, all 200; 0 repoints |
+| Redirects | `/index.html → /`, `/page1/ → /page1` (both mirror source redirects), published |
+| To deliver | nothing in scope; owner decisions: enable martech contract parts (stardust/martech-handoff.md), optionally author meta descriptions |

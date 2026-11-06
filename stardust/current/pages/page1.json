@@ -1,0 +1,198 @@
+{
+  "_provenance": {
+    "renderedBy": "playwright",
+    "fetchedAt": "2026-11-05T16:53:14.686Z",
+    "waitMode": "medium",
+    "waitMs": 2500,
+    "httpStatus": 200
+  },
+  "slug": "page1",
+  "url": "https://static-website.david-bosschaert.workers.dev/page1",
+  "renderedBy": "playwright",
+  "fetchedAt": "2026-11-05T16:53:14.686Z",
+  "finalUrl": "https://static-website.david-bosschaert.workers.dev/page1",
+  "title": "Good Morning!",
+  "description": null,
+  "og": {
+    "title": null,
+    "description": null,
+    "image": null,
+    "type": null
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Super page"
+    },
+    {
+      "tag": "h4",
+      "text": "Alex Johnson"
+    },
+    {
+      "tag": "h4",
+      "text": "Maria Lopez"
+    }
+  ],
+  "body": [
+    "Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida",
+    "Project Lead with a knack for creative solutions and a love of adventure sports.",
+    "UI Designer who brings vibrant energy and stunning visuals to every project."
+  ],
+  "codeBlocks": [],
+  "ctas": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Page 1",
+      "href": "/page1"
+    },
+    {
+      "label": "Team Alpha",
+      "href": null
+    },
+    {
+      "label": "Team Beta",
+      "href": null
+    },
+    {
+      "label": "Team Gamma",
+      "href": null
+    }
+  ],
+  "links": [
+    "https://static-website.david-bosschaert.workers.dev/",
+    "https://static-website.david-bosschaert.workers.dev/page1",
+    "https://static-website.david-bosschaert.workers.dev/vids/rec_1.mp4",
+    "https://static-website.david-bosschaert.workers.dev/vids/rec-2.mp4"
+  ],
+  "media": {
+    "imgs": [
+      {
+        "src": "https://static-website.david-bosschaert.workers.dev/images/fields_a.jpg",
+        "alt": "Fields, first view",
+        "w": 4000,
+        "h": 2250
+      },
+      {
+        "src": "https://static-website.david-bosschaert.workers.dev/images/fields-b.jpg",
+        "alt": "Fields, second view",
+        "w": 4000,
+        "h": 2250
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/men/45.jpg",
+        "alt": "Team member 1",
+        "w": 128,
+        "h": 128
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/women/57.jpg",
+        "alt": "Team member 2",
+        "w": 128,
+        "h": 128
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/men/37.jpg",
+        "alt": "Team member 3",
+        "w": 128,
+        "h": 128
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/women/43.jpg",
+        "alt": "Team member 4",
+        "w": 128,
+        "h": 128
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/men/59.jpg",
+        "alt": "Team member 5",
+        "w": 128,
+        "h": 128
+      },
+      {
+        "src": "https://randomuser.me/api/portraits/women/25.jpg",
+        "alt": "Team member 6",
+        "w": 128,
+        "h": 128
+      }
+    ],
+    "allImgCount": 8,
+    "cssBackgrounds": [],
+    "modals": [],
+    "videos": [
+      {
+        "src": "https://static-website.david-bosschaert.workers.dev/vids/rec_1.mp4",
+        "poster": null,
+        "autoplay": false,
+        "loop": false,
+        "muted": false
+      },
+      {
+        "src": "https://static-website.david-bosschaert.workers.dev/vids/rec-2.mp4",
+        "poster": null,
+        "autoplay": false,
+        "loop": false,
+        "muted": false
+      }
+    ],
+    "iframes": []
+  },
+  "customProps": {},
+  "_signals": {
+    "filteredInterstitials": 0,
+    "distinctHeadings": 3,
+    "mainTextLen": 821,
+    "realImageCount": 8,
+    "trackingOnlyMedia": false,
+    "spaShellSuspect": false,
+    "screenshotMode": "fullPage"
+  },
+  "dynamic": {
+    "endpoints": [],
+    "thirdPartyScriptHosts": [],
+    "truncated": false,
+    "inlineData": [],
+    "globalState": [],
+    "frameworkHints": [],
+    "forms": [],
+    "ariaLiveRegions": 0,
+    "triggers": [],
+    "mediaIds": [],
+    "summary": {
+      "sameSiteEndpoints": 0,
+      "thirdPartyEndpoints": 0,
+      "thirdPartyScriptHosts": 0,
+      "inlineDataBlobs": 0,
+      "forms": 0,
+      "searchForms": 0,
+      "hydrated": false
+    }
+  },
+  "screenshot": "assets/screenshots/page1.png",
+  "renderedHtml": "pages/page1.html",
+  "pageType": "static",
+  "slots": {
+    "site-header": [
+      "Home",
+      "Page 1"
+    ],
+    "headline": "Super page",
+    "lede": "Tralalala ladida lalala ladida lalala ladida lalala ladida lalala ladida",
+    "image-gallery": [
+      "/images/fields_a.jpg",
+      "/images/fields-b.jpg"
+    ],
+    "video-gallery": [
+      "/vids/rec_1.mp4",
+      "/vids/rec-2.mp4"
+    ],
+    "team-tabs": [
+      "Team Alpha",
+      "Team Beta",
+      "Team Gamma"
+    ],
+    "site-footer": "© 2026 Super Page. All rights reserved."
+  }
+}

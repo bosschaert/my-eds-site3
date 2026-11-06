@@ -1,9 +1,8 @@
-# Dynamic features plan — continental.com
+# Dynamic features — plan
 
-| phase | deliverable | rows | authoring contract | verification |
-|---|---|---|---|---|
-| D1 static-first | every page renders complete without network features; snapshots authored as content | 2, 3, 12, 14, 17 | sections authored in DA; interim notices in block JS | gate rows (pixel/content) |
-| D2 client behaviour | lightbox, language menu, sliders/tabs/accordions, stage overlay, download-cart UI | 3, 4, 5, 7, 8 | block JS, no external data | motion-observe parity per archetype |
-| D3 embeds | AdmiralCloud player, EquityStory widgets, job widgets, caralegal iframe | 9, 10, 11, 13 | embed block keyed by live-DOM ids | dynamics-check presence |
-| D4 index | `helix-query.yaml` + header search results over the migrated corpus; hreflang metadata | 1, 6 | query index config in code branch | search-query parity (count + titles over migrated corpus) |
-| owner | backends, allowlists, martech, live listings | 2, 3, 9–12, 14, 15 | decision batch in dynamic-features.md | — |
+| phase | deliverable | authoring contract | verification | owner decision | effort |
+|---|---|---|---|---|---|
+| tabs | `tabs` block reproducing the source tab switcher (first panel active, click switches active button + panel, fadeIn 0.4s) | one row per tab: label cell + cards (image, h4 name, description) | motion-observe source vs build (click each tab), published origin at 1440 + 360 | none | S |
+| media | YouTube embed as an authored link the media-table block turns into the iframe; native videos as authored links to the mp4 files the video-gallery block turns into `<video controls playsinline preload=metadata>` | link per cell | content-diff + pixel gate; dynamics-check video presence | none | S |
+| images | remote images ingested as DA media | image per cell, alt verbatim | content-presence | none | S |
+| martech | `scripts/martech.js` scaffold, all parts disabled | `stardust/martech-contract.json` | dynamics-check `martech` feature: `/` requests no tag host | turn parts on (owner) | XS |

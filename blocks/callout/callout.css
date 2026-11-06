@@ -1,0 +1,23 @@
+/* callout — values lifted from the source /styles.css (body > div) */
+.callout {
+  background: linear-gradient(135deg, #fff 0%, #fce4ec 100%);
+  padding: 2rem;
+  border-radius: var(--radius-card);
+  box-shadow: 0 4px 20px rgb(233 30 99 / 10%);
+  max-width: var(--container);
+  margin: 2rem auto;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.8;
+  border-left: 4px solid #ec407a;
+}
+
+/* the source text is a bare text node: the global lede paragraph rule must not reach it */
+.callout p {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-align: inherit;
+  max-width: none;
+  margin: 0;
+}

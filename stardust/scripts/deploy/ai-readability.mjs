@@ -18,6 +18,8 @@
  *   node skills/deploy/scripts/ai-readability.mjs --origin https://main--site--org.aem.live \
  *        [--paths file | /path …] [--min 98] [--token-env SITE_TOKEN | --auth-header "token …"] \
  *        [--exclude-blocks client-app,widget,form] [--allowlist file.json] [--json out.json] [--verbose]
+ *   --exclude-blocks default client-app,widget: an EDS widget (data-block-name="widget") fetches its
+ *   words from code by design; they leave the code score and stay in strict.
  *
  * Exit 1 when any page's code score is below --min; 2 on infrastructure failure.
  * Writes: nothing unless --json <file> is given (the per-page results as JSON); the report is stdout.
@@ -123,6 +125,41 @@ async function loadPlaywright() {
   throw new Error('playwright not found: install it in the project (npm i -D playwright)');
 }
 
+// The site secret rides a route filter on the one origin (exact origin match, as in qa, dynamics and
+// live-session), never extraHTTPHeaders (that sends it to every third party the page loads).
+const sameOrigin = (url, origin) => { try { return origin !== 'null' && new URL(url).origin === origin; } catch { return false; } };
+export async function attachOriginAuth(context, origin, value) {
+  if (!value) return;
+  const o = new URL(origin).origin;
+  await context.route('**/*', (route) => {
+    const req = route.request();
+    if (sameOrigin(req.url(), o)) route.continue({ headers: { ...req.headers(), authorization: value } });
+    else route.continue();
+  });
+}
+
+// raw page and fragment requests follow redirects hop by hop: the secret rides only while the chain stays on
+// the origin and is dropped for good once it leaves (some Playwright versions forward it across origins)
+async function getWithScopedAuth(request, origin, url, { headers, timeout }) {
+  const siteOrigin = new URL(origin).origin;
+  const uncredentialed = Object.fromEntries(Object.entries(headers).filter(([name]) => name.toLowerCase() !== 'authorization'));
+  const deadline = performance.now() + timeout;
+  let current = url; let sendAuth = true;
+  for (let redirects = 0; redirects <= 20; redirects += 1) {
+    if (!sameOrigin(current, siteOrigin)) sendAuth = false;
+    const remaining = Math.ceil(deadline - performance.now());
+    if (remaining <= 0) throw new Error('Request timed out');
+    const response = await request.get(current, { headers: sendAuth ? headers : uncredentialed, timeout: remaining, maxRedirects: 0 });
+    const location = response.headers().location;
+    if (![301, 302, 303, 307, 308].includes(response.status()) || !location) return response;
+    if (redirects === 20) { await response.dispose(); throw new Error('Too many redirects'); }
+    const next = new URL(location, current).href;
+    await response.dispose();
+    current = next;
+  }
+  throw new Error('Too many redirects');
+}
+
 async function settle(page) {
   await page.waitForFunction(() => {
     const s = [...document.querySelectorAll('[data-section-status]')];
@@ -138,7 +175,7 @@ async function fetchFragments(request, origin, served, headers) {
   const ok = []; const html = [];
   for (const p of paths) {
     try {
-      const r = await request.get(`${origin}${p}.plain.html`, { headers, timeout: 15000 });
+      const r = await getWithScopedAuth(request, origin, `${origin}${p}.plain.html`, { headers, timeout: 15000 });
       if (r.ok()) { ok.push(p); html.push(await r.text()); }
     } catch { /* uncredited */ }
   }
@@ -147,9 +184,10 @@ async function fetchFragments(request, origin, served, headers) {
 
 export async function scorePage(context, origin, path, { excludeBlocks = [], allow = [], headers = {} } = {}) {
   const url = `${origin}${path}`;
+  if (!sameOrigin(url, new URL(origin).origin)) return { path, error: 'path leaves the origin' };
   const page = await context.newPage();
   try {
-    const servedRes = await context.request.get(url, { headers: { ...headers, 'user-agent': CHATGPT_UA, accept: 'text/html' }, timeout: 20000 });
+    const servedRes = await getWithScopedAuth(context.request, origin, url, { headers: { ...headers, 'user-agent': CHATGPT_UA, accept: 'text/html' }, timeout: 20000 });
     if (!servedRes.ok()) return { path, error: `served fetch HTTP ${servedRes.status()}` };
     const served = await servedRes.text();
     const frags = await fetchFragments(context.request, origin, served, headers);
@@ -203,7 +241,8 @@ if (isMain) {
   const { chromium } = await loadPlaywright();
   const browser = await chromium.launch();
   const headers = authHeader ? { authorization: authHeader } : {};
-  const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, extraHTTPHeaders: headers });
+  const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+  await attachOriginAuth(context, origin, authHeader);
   const results = [];
   let fail = false;
   for (const p of paths) {

@@ -1,7 +1,4 @@
-# Learnings — continental.com replica run
 
-- **Gate ingest is last-writer-wins per page.** `update-coverage.mjs --gate` keeps one `delivery.gate` per page, so re-ingesting an older `all-<w>/summary.json` after `--only` runs silently reverts fixed pages, and replaying runs/ blindly is worse. Merge first: latest row per slug per width by `_provenance.writtenAt`, then pass = both widths (`stardust/.work/rollout/probes/merge-gate-tables.mjs`). Upstream candidate: a `--gate` mode that takes several tables and merges.
-- **Replica vs the single-h1 rule.** verify.mjs (render check) and optimize.mjs (P1) both demand exactly one `<h1>`; a replica keeps the source's heading structure (16 pages had 0, 2, 3 or 4 h1s on the source). Both project copies now accept source parity from the capture sidecar — upstream candidate.
-- **Numeric entities break optimize's parity.** `&#x26;` in a `<title>` was not decoded, so a shared title the source also shares read as a design-pass finding.
-- **Chrome documents are where the 404s live.** Page bodies passed `localize-links --check`, but nav/footer docs authored root-relative to the whole source site carried 607 dead targets; the E2 GET sweep has to include the chrome documents, not only pages.
-- **Block coverage rows for page-specific modules** (cs-stage, cs-article-cluster) stayed `pending` after their pages went live; record `--block <id> --status deployed` when the cluster ships.
+## 2026-11-05 — rollout E/H (static-website.david-bosschaert.workers.dev)
+- verify.mjs fetches `<path>/` for pages migrated as `x/index.html`; when the delivered doc is a leaf (`/page1`) the check 404s. The source itself redirected `/page1/ → /page1`, so carrying that redirect into the sheet fixed both the visitor path and the check — compare the source's trailing-slash behaviour before calling a verify 404 a delivery defect.
+- coverage/blocks.json rows stayed `pending` through C-deliver (cluster units recorded pages, not blocks); record `--block <id> --status verified --eds-name <name>` at unit end so lastRun.blocks is honest before H-report.

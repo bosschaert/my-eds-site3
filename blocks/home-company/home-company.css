@@ -1,0 +1,299 @@
+/* home-company — home company panel (source main.css L199–L229) */
+.home-company {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-company .bg {
+  position: absolute;
+  inset: 0;
+}
+
+.home-company .bg p {
+  width: 100%;
+  height: 100%;
+}
+
+.home-company .bg picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.home-company .bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-company .inner {
+  position: relative;
+  width: 94%;
+  max-width: 150rem;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.home-company .company-wrap {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+/* section title (main.css L4–L10, row_2) */
+.home-company .main-title-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.home-company .main-title :is(h1, h2, h3) {
+  flex-shrink: 0;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.home-company .main-title-desc {
+  margin-top: 2rem;
+}
+
+.home-company .main-title-desc p {
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1.555;
+}
+
+.home-company .btn-wrap {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+.home-company .list {
+  display: flex;
+  margin-top: 12rem;
+}
+
+.home-company .list li {
+  width: 25%;
+  text-align: center;
+}
+
+.home-company .list .ico {
+  display: inline-block;
+  width: 12rem;
+  height: 12rem;
+}
+
+.home-company .list .ico p,
+.home-company .list .ico picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.home-company .list .ico img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+.home-company .list .text {
+  margin-top: 2.5rem;
+}
+
+.home-company .list .text p {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.home-company .line-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-company .line-wrap .line {
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: rgb(255 255 255 / 20%);
+}
+
+.home-company .line-wrap .line:nth-child(1) {
+  left: 0;
+}
+
+.home-company .line-wrap .line:nth-child(2) {
+  left: 25%;
+}
+
+.home-company .line-wrap .line:nth-child(3) {
+  left: 50%;
+}
+
+.home-company .line-wrap .line:nth-child(4) {
+  right: 25%;
+}
+
+.home-company .line-wrap .line:nth-child(5) {
+  right: 0;
+}
+
+.home-company .line-wrap .line:nth-child(odd) {
+  top: 0;
+}
+
+.home-company .line-wrap .line:nth-child(even) {
+  bottom: 0;
+}
+
+/* entrances: html.fp-native (home scroller) + section.active replay them on every visit */
+.fp-native .home-company .list .ico {
+  opacity: 0;
+  transform: translateY(-2rem);
+}
+
+.fp-native .home-company .list .text {
+  opacity: 0;
+}
+
+.fp-native .home-company .line-wrap .line {
+  height: 0;
+}
+
+.fp-native .section.active .home-company .list .ico {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s ease 1.1s;
+}
+
+.fp-native .section.active .home-company .list .text {
+  opacity: 1;
+  transition: 1s ease 1.1s;
+}
+
+.fp-native .section.active .home-company .list li:nth-child(2) .ico,
+.fp-native .section.active .home-company .list li:nth-child(2) .text {
+  transition-delay: 1.5s;
+}
+
+.fp-native .section.active .home-company .list li:nth-child(3) .ico,
+.fp-native .section.active .home-company .list li:nth-child(3) .text {
+  transition-delay: 2s;
+}
+
+.fp-native .section.active .home-company .list li:nth-child(4) .ico,
+.fp-native .section.active .home-company .list li:nth-child(4) .text {
+  transition-delay: 2.4s;
+}
+
+.fp-native .section.active .home-company .line-wrap .line {
+  height: 100%;
+  transition: height 0.6s 0.6s;
+}
+
+.fp-native .section.active .home-company .line-wrap .line:nth-child(odd) {
+  transition-delay: 1s;
+}
+
+@media (width <= 1240px) {
+  .home-company .main-title :is(h1, h2, h3) {
+    font-size: 4.2rem;
+  }
+
+  .home-company .list li {
+    padding: 2%;
+  }
+
+  .home-company .list .text p {
+    font-size: 1.8rem;
+    word-break: keep-all;
+  }
+
+  .home-company .list .text br {
+    display: none;
+  }
+
+  .home-company .line-wrap {
+    display: none;
+  }
+
+  .fp-native .section.active .home-company .list .ico,
+  .fp-native .section.active .home-company .list .text {
+    transition-delay: 0.6s;
+  }
+
+  .fp-native .section.active .home-company .list li:nth-child(2) .ico,
+  .fp-native .section.active .home-company .list li:nth-child(2) .text {
+    transition-delay: 1s;
+  }
+
+  .fp-native .section.active .home-company .list li:nth-child(3) .ico,
+  .fp-native .section.active .home-company .list li:nth-child(3) .text {
+    transition-delay: 1.4s;
+  }
+
+  .fp-native .section.active .home-company .list li:nth-child(4) .ico,
+  .fp-native .section.active .home-company .list li:nth-child(4) .text {
+    transition-delay: 1.8s;
+  }
+}
+
+@media (width <= 767px) {
+  .home-company .main-title :is(h1, h2, h3) {
+    font-size: 3rem;
+  }
+
+  .home-company .main-title-desc p {
+    font-size: 1.6rem;
+  }
+
+  .home-company .main-title-desc br {
+    display: none;
+  }
+
+  .home-company .list {
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+
+  .home-company .list li {
+    width: 50%;
+  }
+
+  .home-company .list .ico {
+    flex-shrink: 0;
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .home-company .list .text {
+    margin-top: 1rem;
+  }
+
+  .home-company .list .text p {
+    font-size: 1.5rem;
+  }
+}

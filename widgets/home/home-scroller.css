@@ -1,0 +1,101 @@
+/* home-scroller — the home page's fullPage.js replacement (source main.css L15–L35, jquery.fullpage.css) */
+/* stylelint-disable no-descending-specificity -- source cascade order is load-bearing (port) */
+html.fp-native {
+  scroll-behavior: auto;
+  scrollbar-width: none;
+}
+
+html.fp-native::-webkit-scrollbar,
+html.fp-native body::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.home-scroller .fp-nav {
+  position: fixed;
+  top: 50%;
+  left: 5rem;
+  z-index: 8;
+  margin-top: 2rem;
+  transform: translateY(-50%);
+}
+
+.home-scroller .fp-nav li {
+  display: flex;
+  align-items: center;
+  margin: 3.5rem 0;
+}
+
+.home-scroller .fp-nav li:last-child {
+  display: none;
+}
+
+.home-scroller .fp-nav .fp-tooltip {
+  display: none;
+  padding: 0 1rem;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.home-scroller .fp-nav a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.home-scroller .fp-nav a.active + .fp-tooltip {
+  display: block;
+}
+
+.home-scroller .fp-nav a span {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  margin: 0;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.5;
+}
+
+.home-scroller .fp-nav a.active span {
+  opacity: 1;
+}
+
+.fp-viewing-2:not(.type-white) .home-scroller .fp-nav a span,
+.fp-viewing-4 .home-scroller .fp-nav a span {
+  background-color: #aaa;
+}
+
+.fp-viewing-2:not(.type-white) .home-scroller .fp-nav a.active span,
+.fp-viewing-4 .home-scroller .fp-nav a.active span {
+  background-color: #005eb8;
+}
+
+.fp-viewing-2:not(.type-white) .home-scroller .fp-nav .fp-tooltip,
+.fp-viewing-4 .home-scroller .fp-nav .fp-tooltip {
+  color: #666;
+}
+
+.fp-viewing-5 .home-scroller .fp-nav {
+  display: none;
+}
+
+@media (width <= 1600px) {
+  .home-scroller .fp-nav {
+    left: 2rem;
+  }
+
+  .home-scroller .fp-nav li {
+    flex-direction: column;
+  }
+
+  .home-scroller .fp-nav .fp-tooltip {
+    padding: 1rem 0 0;
+  }
+}
+
+@media (width <= 1440px) {
+  .home-scroller .fp-nav {
+    display: none;
+  }
+}

@@ -1,24 +1,32 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-10-09T19:44:25.789Z",
+    "writtenAt": "2026-11-02T22:34:52.120Z",
     "stardustVersion": "0.0.0"
   },
   "target": "aem-eds",
   "site": {
-    "sourceUrl": "https://www.continental.com/",
+    "sourceUrl": "https://www.doosanbobcat.com/en",
     "da": {
       "org": "aemcoder",
-      "site": "d9ddbc54",
+      "site": "f1157cd0",
       "ref": "main"
     },
-    "liveHost": "main--d9ddbc54--aemcoder.aem.live"
+    "liveHost": "main--f1157cd0--aemcoder.aem.live",
+    "site": "f1157cd0",
+    "previewHost": "main--f1157cd0--aemcoder.aem.page"
+  },
+  "scope": {
+    "pages": 2,
+    "discovered": 2,
+    "capped": false,
+    "pageCap": null
   },
   "lastRun": {
-    "at": "2026-10-10T13:00:36.598Z",
+    "at": "2026-11-02T23:32:00.786Z",
     "pages": {
-      "total": 101,
-      "verified": 101,
+      "total": 2,
+      "verified": 2,
       "deployed": 0,
       "pending": 0,
       "contentPending": 0,
@@ -26,8 +34,8 @@
       "failed": 0
     },
     "blocks": {
-      "total": 15,
-      "converted": 15,
+      "total": 7,
+      "converted": 7,
       "pending": 0
     },
     "verifyFailures": 0

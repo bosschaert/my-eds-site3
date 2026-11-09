@@ -1,7 +1,7 @@
-# Learnings — continental.com replica run
+# Learnings
 
-- **Gate ingest is last-writer-wins per page.** `update-coverage.mjs --gate` keeps one `delivery.gate` per page, so re-ingesting an older `all-<w>/summary.json` after `--only` runs silently reverts fixed pages, and replaying runs/ blindly is worse. Merge first: latest row per slug per width by `_provenance.writtenAt`, then pass = both widths (`stardust/.work/rollout/probes/merge-gate-tables.mjs`). Upstream candidate: a `--gate` mode that takes several tables and merges.
-- **Replica vs the single-h1 rule.** verify.mjs (render check) and optimize.mjs (P1) both demand exactly one `<h1>`; a replica keeps the source's heading structure (16 pages had 0, 2, 3 or 4 h1s on the source). Both project copies now accept source parity from the capture sidecar — upstream candidate.
-- **Numeric entities break optimize's parity.** `&#x26;` in a `<title>` was not decoded, so a shared title the source also shares read as a design-pass finding.
-- **Chrome documents are where the 404s live.** Page bodies passed `localize-links --check`, but nav/footer docs authored root-relative to the whole source site carried 607 dead targets; the E2 GET sweep has to include the chrome documents, not only pages.
-- **Block coverage rows for page-specific modules** (cs-stage, cs-article-cluster) stayed `pending` after their pages went live; record `--block <id> --status deployed` when the cluster ships.
+- 2026-11-02 · EDS sanitises `_` in path segments (`esg_result` → `esg-result`); rollout `inventory.mjs` kept the source path in coverage, so `done-check`/`verify` probed a 404. Set the coverage `path` to `eds-path.deliveredUrl()` and wire the source path into the redirects sheet at D-site.
+- 2026-11-02 · `publicUrl()` adds a trailing slash when `migratedHtml` ends in `index.html`, but leaf pages are served without one; a trailing-slash redirect row keeps verify and visitors on 200.
+- 2026-11-02 · DA normalises `<a><strong>` into `<strong><a>`; chrome CSS written against `a strong` misses — style `li strong` too (footer link weight/colour delta in chrome-parity).
+- 2026-11-02 · In a fixed-scope run, nav/footer carry many root-relative links to pages outside the plan; repoint them to the source origin at E2 (scope extension), or verify reports them broken.
+- 2026-11-02 · verify.mjs flags widget references (`/widgets/<path>/<name>.html`) as broken internal links though they serve 200.

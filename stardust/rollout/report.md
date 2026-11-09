@@ -1,21 +1,10 @@
-# Rollout report — www.continental.com → main--d9ddbc54--aemcoder (2026-10-10)
-
-Flow: replica (same design). Publish decision: publish (aem.live).
+# Rollout report — doosanbobcat.com (2 pages, replica)
 
 | | |
 |---|---|
-| **Pages** | 101 verified live = 99 in-scope source pages (site plan, 100 selected; `/index` ≡ `/`) + 2 dynamics-built search endpoints (`/en/general/search`, `/de/meta/suche`, noindex) |
-| **Templates** | 5 replica templates — home (3), hub (18), content (65), legal (11), stories (2) — plus search-results (2) |
-| **Blocks** | 15 distinct module blocks in the plan, 15 delivered; 36 block folders in `blocks/` |
-| **Fidelity** | published-origin gate, both widths: 99/99 pass (78 raw, 21 with documented symmetric-evidence overrides) — `stardust/rollout/gate-merged.json` |
-| **Quality** | optimize health 100, open P1 0; 125 findings mirror the source (informational); 7 residual P2/P3 accepted with evidence |
-| **Links** | 0 broken internal links; 607 out-of-scope menu/footer targets point at www.continental.com (`e2-repointed-targets.txt`) |
-| **Site** | sitemap served 99; redirects sheet 98 rows live; `/` 200; 20 chrome docs noindex |
-| **Dynamics** | `stardust/dynamics/parity.json`: 25 checks, 22 pass |
-
-## To deliver / owner decisions
-- AdmiralCloud video embeds answer 403 for the aem.live host — the vendor allowlist needs the new host (video falls back to its poster until then).
-- hreflang `<link>` alternates are not emitted (source has them) — to add in `head`/`scripts` when the locale set is final.
-- Download cart: the header cart is inert; per-file download links work. A zip endpoint is the owner's call.
-- Site search covers the 99 migrated pages only (source search also returns pages outside this scope).
-- Pages outside the 100-page plan stay on www.continental.com; menus and footers link there.
+| Pages | 2/2 verified, live on main--f1157cd0--aemcoder.aem.live (`/en`, `/en/management/esg-result`) |
+| Templates | 2 (landing: home; static: ESG results) — archetype-only roster, no siblings |
+| Blocks | 7 converted (home-visual, home-company, home-products, home-esg, home-news, sub-top, esg-result) + header, footer, widget home-scroller |
+| Quality | published-origin gate PASS 2/2 at 1440 (0.51% / 2.09%) and 360 (1.72% / 5.87%), 0 clipped, 0 missing; dynamic parity 8/8; optimize health 100, 0 open findings |
+| To deliver | nothing in scope. Owner decisions on interim rows: search backend, locale-tree scope, which tags run on the new host. Links to the ~90 out-of-scope pages point to www.doosanbobcat.com |
+| Redirects | `/redirects.json` live: `/`, `/index.html`, `/en/` → `/en`; `/en/management/esg_result(.html)`, `/en/management/esg-result/` → `/en/management/esg-result` |

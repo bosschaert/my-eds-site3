@@ -1,0 +1,297 @@
+{
+  "live": "stardust/replica/motion/en.json",
+  "build": "stardust/replica/motion/en-build.json",
+  "toleranceMs": 150,
+  "tolerancePx": 8,
+  "advisory": true,
+  "findings": 6,
+  "counts": {
+    "behaviors": 38,
+    "parity": 18,
+    "missing": 2,
+    "extra": 0,
+    "tolerance": 4,
+    "dead": 4,
+    "advisory": 10
+  },
+  "verdicts": [
+    {
+      "cls": "header",
+      "name": "scroll-morph",
+      "state": "dead",
+      "note": "header static across the scroll traversal on both sides",
+      "line": "motion header scroll-morph: dead on live — not required (header static across the scroll traversal on both sides)"
+    },
+    {
+      "cls": "widget",
+      "name": ".mvisual_pagination .swiper-pagination-bullet:nth-child(2) → .mvisual_pagination li:nth-child(2) .pg_btn",
+      "state": "dead",
+      "note": "no sampled change across the frames (track/scroll/box/indicator)",
+      "line": "motion widget .mvisual_pagination .swiper-pagination-bullet:nth-child(2) → .mvisual_pagination li:nth-child(2) .pg_btn: dead on live — not required (no sampled change across the frames (track/scroll/box/indicator))"
+    },
+    {
+      "cls": "hover",
+      "name": ".product_card_swiper .swiper-slide",
+      "state": "parity",
+      "note": "a.background, a.color, h3.color, img.color; n/a",
+      "line": "motion hover .product_card_swiper .swiper-slide: parity (a.background, a.color, h3.color, img.color; n/a)"
+    },
+    {
+      "cls": "hover",
+      "name": ".news_section .news_list .item",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .news_section .news_list .item: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "hover",
+      "name": ".news_section .youtube .link_list .item",
+      "state": "parity",
+      "note": "self.color; n/a",
+      "line": "motion hover .news_section .youtube .link_list .item: parity (self.color; n/a)"
+    },
+    {
+      "cls": "hover",
+      "name": ".company_section .btn_more_type01",
+      "state": "dead",
+      "note": "no measured hover diff",
+      "line": "motion hover .company_section .btn_more_type01: dead on live — not required (no measured hover diff)"
+    },
+    {
+      "cls": "hover",
+      "name": ".news_title .view_all_btn",
+      "state": "parity",
+      "note": "self.color; 300ms",
+      "line": "motion hover .news_title .view_all_btn: parity (self.color; 300ms)"
+    },
+    {
+      "cls": "entrance",
+      "name": "buttonUnderline",
+      "state": "parity",
+      "note": "fired on 1 element(s)",
+      "line": "motion entrance buttonUnderline: parity (fired on 1 element(s))"
+    },
+    {
+      "cls": "transition",
+      "name": "background-color",
+      "state": "tolerance",
+      "deltas": [
+        "timing delta 400ms > 150ms [longest duration: live 100ms, build 500ms]"
+      ],
+      "note": "2 event(s) on live, 38 on build",
+      "line": "motion transition background-color: timing delta 400ms > 150ms [longest duration: live 100ms, build 500ms] (2 event(s) on live, 38 on build)"
+    },
+    {
+      "cls": "transition",
+      "name": "background-image",
+      "state": "parity",
+      "note": "4 event(s) on live, 28 on build, 300ms",
+      "line": "motion transition background-image: parity (4 event(s) on live, 28 on build, 300ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "border-bottom-color",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 100ms",
+      "line": "motion transition border-bottom-color: parity (2 event(s) on live, 2 on build, 100ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "border-left-color",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 100ms",
+      "line": "motion transition border-left-color: parity (2 event(s) on live, 2 on build, 100ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "border-right-color",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 100ms",
+      "line": "motion transition border-right-color: parity (2 event(s) on live, 2 on build, 100ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "border-top-color",
+      "state": "parity",
+      "note": "2 event(s) on live, 2 on build, 100ms",
+      "line": "motion transition border-top-color: parity (2 event(s) on live, 2 on build, 100ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "color",
+      "state": "parity",
+      "note": "15 event(s) on live, 15 on build, 500ms",
+      "line": "motion transition color: parity (15 event(s) on live, 15 on build, 500ms)"
+    },
+    {
+      "cls": "transition",
+      "name": "opacity",
+      "state": "tolerance",
+      "deltas": [
+        "timing delta 300ms > 150ms [longest duration: live 700ms, build 1000ms]"
+      ],
+      "note": "11 event(s) on live, 25 on build",
+      "line": "motion transition opacity: timing delta 300ms > 150ms [longest duration: live 700ms, build 1000ms] (11 event(s) on live, 25 on build)"
+    },
+    {
+      "cls": "transition",
+      "name": "transform",
+      "state": "tolerance",
+      "deltas": [
+        "timing delta 500ms > 150ms [longest duration: live 500ms, build 1000ms]"
+      ],
+      "note": "3 event(s) on live, 5 on build",
+      "line": "motion transition transform: timing delta 500ms > 150ms [longest duration: live 500ms, build 1000ms] (3 event(s) on live, 5 on build)"
+    },
+    {
+      "cls": "transition",
+      "name": "width",
+      "state": "tolerance",
+      "deltas": [
+        "timing delta 2400ms > 150ms [longest duration: live 4900ms, build 7300ms]"
+      ],
+      "note": "5 event(s) on live, 15 on build",
+      "line": "motion transition width: timing delta 2400ms > 150ms [longest duration: live 4900ms, build 7300ms] (5 event(s) on live, 15 on build)"
+    },
+    {
+      "cls": "transition",
+      "name": "height",
+      "state": "advisory",
+      "note": "9 event(s) on build, none on live — a build-only transitioned property; incidental unless a live line names the motion",
+      "line": "motion transition height: extra on build — advisory (9 event(s) on build, none on live — a build-only transitioned property; incidental unless a live line names the motion)"
+    },
+    {
+      "cls": "class",
+      "name": "active",
+      "state": "parity",
+      "note": "added 1× on live, 32× on build",
+      "line": "motion class active: parity (added 1× on live, 32× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "card_hover",
+      "state": "parity",
+      "note": "added 3× on live, 3× on build",
+      "line": "motion class card_hover: parity (added 3× on live, 3× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "on",
+      "state": "parity",
+      "note": "added 3× on live, 10× on build",
+      "line": "motion class on: parity (added 3× on live, 10× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "swiper-pagination-bullet-active",
+      "state": "parity",
+      "note": "added 21× on live, 5× on build",
+      "line": "motion class swiper-pagination-bullet-active: parity (added 21× on live, 5× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "swiper-slide-active",
+      "state": "parity",
+      "note": "added 24× on live, 5× on build",
+      "line": "motion class swiper-slide-active: parity (added 24× on live, 5× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "swiper-slide-next",
+      "state": "missing",
+      "note": "trigger class added 8× on live, never on build",
+      "line": "motion class swiper-slide-next: MISSING on build (trigger class added 8× on live, never on build)"
+    },
+    {
+      "cls": "class",
+      "name": "swiper-slide-prev",
+      "state": "missing",
+      "note": "trigger class added 24× on live, never on build",
+      "line": "motion class swiper-slide-prev: MISSING on build (trigger class added 24× on live, never on build)"
+    },
+    {
+      "cls": "class",
+      "name": "type_white",
+      "state": "parity",
+      "note": "added 1× on live, 6× on build",
+      "line": "motion class type_white: parity (added 1× on live, 6× on build)"
+    },
+    {
+      "cls": "class",
+      "name": "fadeout",
+      "state": "advisory",
+      "note": "added 1× on build, never on live — check it drives no invented behavior",
+      "line": "motion class fadeout: extra on build — advisory (added 1× on build, never on live — check it drives no invented behavior)"
+    },
+    {
+      "cls": "class",
+      "name": "fp-viewing-0",
+      "state": "advisory",
+      "note": "added 2× on build, never on live — check it drives no invented behavior",
+      "line": "motion class fp-viewing-0: extra on build — advisory (added 2× on build, never on live — check it drives no invented behavior)"
+    },
+    {
+      "cls": "class",
+      "name": "fp-viewing-1",
+      "state": "advisory",
+      "note": "added 6× on build, never on live — check it drives no invented behavior",
+      "line": "motion class fp-viewing-1: extra on build — advisory (added 6× on build, never on live — check it drives no invented behavior)"
+    },
+    {
+      "cls": "class",
+      "name": "fp-viewing-2",
+      "state": "advisory",
+      "note": "added 6× on build, never on live — check it drives no invented behavior",
+      "line": "motion class fp-viewing-2: extra on build — advisory (added 6× on build, never on live — check it drives no invented behavior)"
+    },
+    {
+      "cls": "class",
+      "name": "fp-viewing-3",
+      "state": "advisory",
+      "note": "added 6× on build, never on live — check it drives no invented behavior",
+      "line": "motion class fp-viewing-3: extra on build — advisory (added 6× on build, never on live — check it drives no invented behavior)"
+    },
+    {
+      "cls": "class",
+      "name": "fp-viewing-4",
+      "state": "advisory",
+      "note": "added 6× on build, never on live — check it drives no invented behavior",
+      "line": "motion class fp-viewing-4: extra on build — advisory (added 6× on build, never on live — check it drives no invented behavior)"
+    },
+    {
+      "cls": "class",
+      "name": "posi_fixed",
+      "state": "advisory",
+      "note": "added 1× on build, never on live — check it drives no invented behavior",
+      "line": "motion class posi_fixed: extra on build — advisory (added 1× on build, never on live — check it drives no invented behavior)"
+    },
+    {
+      "cls": "media",
+      "name": "video#1 mvisual_video01.mp4",
+      "state": "advisory",
+      "note": "live paused, build autoplays",
+      "line": "motion media video#1 mvisual_video01.mp4: extra on build — advisory (live paused, build autoplays)"
+    },
+    {
+      "cls": "media",
+      "name": "video#2 mvisual_video03.mp4",
+      "state": "advisory",
+      "note": "live paused, build autoplays",
+      "line": "motion media video#2 mvisual_video03.mp4: extra on build — advisory (live paused, build autoplays)"
+    },
+    {
+      "cls": "media",
+      "name": "video#3 mvisual_video04.mp4",
+      "state": "parity",
+      "note": "paused on both",
+      "line": "motion media video#3 mvisual_video04.mp4: parity (paused on both)"
+    },
+    {
+      "cls": "media",
+      "name": "auto-advance",
+      "state": "parity",
+      "note": "24 class mutation(s) fired unpoked on live, 4 on build",
+      "line": "motion media auto-advance: parity (24 class mutation(s) fired unpoked on live, 4 on build)"
+    }
+  ]
+}

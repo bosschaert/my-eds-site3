@@ -4,10 +4,22 @@
     "ignoreFiles": [],
     "ignoreValues": [
       {
-        "rule": "overused-font",
-        "value": "arial",
-        "createdAt": "2026-10-09T21:24:07.176Z",
-        "reason": "replica migration: video-player stage reproduces the source site's embedded player chrome (video.js default Arial stack); design changes are out of scope without an inconsistency-register entry"
+        "rule": "gray-on-color",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/en-management-esg-result-proposed.html"
+        ],
+        "createdAt": "2026-11-02T21:35:51.535Z",
+        "reason": "replica same-design migration brief: colours lifted verbatim from live source CSS; design changes are forbidden outside the inconsistency register"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "stardust/prototypes/en-management-esg-result-proposed.html"
+        ],
+        "createdAt": "2026-11-02T21:35:51.546Z",
+        "reason": "replica same-design migration brief: colours lifted verbatim from live source CSS; design changes are forbidden outside the inconsistency register"
       }
     ]
   }

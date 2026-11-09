@@ -1,0 +1,198 @@
+/* sub-top — source sub.css .sub_top (title, local nav, breadcrumb, visual).
+   Overlay chrome: the header is fixed, so this first section offsets itself. */
+.sub-top {
+  margin-top: 11.5rem;
+  margin-bottom: 6rem;
+  padding-top: 10rem;
+}
+
+.sub-top .inner {
+  margin: 0 auto;
+  max-width: var(--container);
+  width: var(--container-w);
+}
+
+.sub-top .sub-page-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+}
+
+.sub-top .left-area :is(h1, h2) {
+  font-size: 5rem;
+  font-weight: 600;
+  color: var(--c-ink);
+  line-height: 5rem;
+}
+
+.sub-top .sub-nav {
+  flex-shrink: 0;
+  margin-top: 4rem;
+}
+
+.sub-top .sub-nav ul {
+  display: flex;
+  font-size: 0;
+}
+
+.sub-top .sub-nav li {
+  display: inline-flex;
+  align-items: center;
+}
+
+.sub-top .sub-nav li + li::before {
+  display: inline-block;
+  content: '';
+  width: 1px;
+  height: 1.4rem;
+  background-color: var(--c-line);
+  margin: 0 2rem;
+}
+
+.sub-top .sub-nav a:any-link {
+  display: inline-flex;
+  font-size: 1.8rem;
+  color: var(--c-body);
+  transition: 0.3s ease;
+}
+
+.sub-top .sub-nav strong {
+  font-weight: 500;
+}
+
+.sub-top .sub-nav a:hover,
+.sub-top .sub-nav strong a:any-link {
+  color: var(--c-brand);
+}
+
+.sub-top .breadcrumb {
+  font-size: 0;
+  line-height: 5rem;
+}
+
+.sub-top .breadcrumb :is(h2, h3) {
+  position: absolute;
+  left: -9999%;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.sub-top .breadcrumb li {
+  display: inline-block;
+  font-size: 1.638rem;
+  color: var(--c-body);
+}
+
+.sub-top .breadcrumb li + li::before {
+  display: inline-block;
+  content: '';
+  margin: 0 2rem;
+  width: 0.8rem;
+  height: 1.4rem;
+  background: url('media/ico_breadcrumb_arrow.png') no-repeat center / contain;
+}
+
+.sub-top .breadcrumb li:last-child {
+  color: var(--c-ink);
+}
+
+.sub-top .breadcrumb img {
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+
+.sub-top .sub-visual {
+  position: relative;
+  overflow: hidden;
+  height: 50rem;
+}
+
+.sub-top .sub-visual p,
+.sub-top .sub-visual picture {
+  display: block;
+  height: 100%;
+}
+
+.sub-top .sub-visual img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (width <= 1240px) {
+  .sub-top .left-area :is(h1, h2) {
+    font-size: 4.2rem;
+    line-height: 1.4;
+  }
+
+  .sub-top .sub-page-info {
+    flex-direction: column;
+  }
+
+  .sub-top .sub-nav {
+    margin-top: 2rem;
+  }
+
+  .sub-top .sub-nav li + li::before {
+    margin: 0 1.5rem;
+  }
+
+  .sub-top .breadcrumb {
+    line-height: 1.4;
+    margin-top: 4rem;
+  }
+}
+
+@media (width <= 767px) {
+  .sub-top {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    padding-top: 8rem;
+  }
+
+  .sub-top .left-area :is(h1, h2) {
+    font-size: 3rem;
+  }
+
+  .sub-top .sub-page-info {
+    margin-bottom: 2rem;
+  }
+
+  .sub-top .sub-nav ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .sub-top .sub-nav li {
+    margin: 0.5rem 0;
+  }
+
+  .sub-top .sub-nav a:any-link {
+    font-size: 1.6rem;
+  }
+
+  .sub-top .sub-nav li + li::before {
+    margin: 0 1.2rem;
+  }
+
+  .sub-top .breadcrumb img {
+    width: 1.5rem;
+  }
+
+  .sub-top .breadcrumb li + li::before {
+    margin: 0 1.2rem;
+    width: 0.6rem;
+  }
+
+  .sub-top .sub-visual {
+    height: 24rem;
+  }
+}

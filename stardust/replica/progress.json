@@ -1,432 +1,265 @@
 {
-  "_note": "per page type; detail in progress/<slug>.json",
   "types": {
-    "content": {
-      "archetype": "en-career-working-at-continental",
-      "file": "stardust/replica/progress/en-career-working-at-continental.json",
+    "static": {
+      "archetype": "en-management-esg-result",
+      "prototype": "stardust/prototypes/en-management-esg-result-proposed.html",
+      "liveUrl": "https://www.doosanbobcat.com/en/management/esg_result",
+      "files": [
+        "stardust/prototypes/en-management-esg-result-proposed.html",
+        "stardust/prototypes/canon.css",
+        "stardust/prototypes/canon.js",
+        "stardust/prototypes/esg-result.css",
+        "stardust/prototypes/assets/fonts/",
+        "stardust/prototypes/assets/media/"
+      ],
       "iterations": {
         "360": 3,
         "1440": 3
       },
       "gates": {
         "360": {
-          "pixel": 2.41,
-          "dh": 0,
-          "structuralRed": 0,
-          "visualFlags": "none",
+          "pixelPct": 0.46,
+          "heightDelta": 0,
+          "structural": 0,
+          "nothingLost": 0,
           "clipped": 0,
-          "overflow": 0,
-          "chromeParity": "quiet",
-          "units": "PASS, 29 elements within 4px",
+          "chromeParity": "quiet (header 15/15, footer 11/11)",
+          "overflow": "ok",
           "verdict": "PASS",
-          "evidence": "stardust/replica/gates/en-career-working-at-continental-360/*-iter3.*"
+          "rounds": "iter1 10.74%/Δ+154 → iter2 0.69%/Δ0 → iter3 0.46%/Δ0; final2 --full 0.46% (post-motion)"
         },
         "1440": {
-          "pixel": 0.04,
-          "dh": 0,
-          "structuralRed": 0,
-          "visualFlags": "none",
+          "pixelPct": 0,
+          "heightDelta": 0,
+          "structural": 0,
+          "nothingLost": 0,
           "clipped": 0,
-          "clipAdvisory": "horizontal 4 (content slider off-screen slides, live identical)",
-          "overflow": 0,
-          "chromeParity": "quiet",
-          "units": "PASS 7 units, 45 elements within 4px (fresh-origin run units-recheck.json; gate.sh confirm-round units FAIL was the width-agnostic origin cache holding the 360 inventory)",
+          "chromeParity": "quiet (header 15/15, footer 54/54)",
+          "overflow": "ok",
           "verdict": "PASS",
-          "evidence": "stardust/replica/gates/en-career-working-at-continental-1440/*-confirm.*"
+          "rounds": "iter1 6.90%/Δ-115 → iter2 1.72%/Δ-57 → iter3 0.01%/Δ0; final2 --full 0.11% (pre reveal fix); final4 post-motion 0.00%"
         }
       },
-      "capProbe": "PASS at 2560 — 0 of 8 rows failed (stardust/replica/gates/en-career-working-at-continental-2560/cap-iter.json)",
+      "capProbe": "PASS at 2560 — content cap live 1500px = build 1500px, 2/2 modules",
       "residuals": [
         {
-          "id": "content-icon-moved",
-          "breakpoint": "both",
-          "cause": "granularity",
-          "detail": "content-diff 3× 🟡 ICON MOVED: breadcrumb/share icons, context key differs only by whitespace joining ('careersworking' vs 'careers working'); same position on both sides.",
-          "justified": true
+          "width": 360,
+          "band": "5500–6000",
+          "pct": 1.6,
+          "cause": "Do-the-right-thing list items (.list-wrap li strong/span) wrap differently and icons sit a few px off at 360 — iteration cap reached",
+          "class": "open, cosmetic"
         },
         {
-          "id": "content-360-band-2500",
-          "breakpoint": 360,
-          "cause": "slider",
-          "detail": "band 2500–3000 at 2.7 %: content slider image sub-pixel rendering; under bar, iteration cap reached.",
-          "justified": true
+          "width": 360,
+          "band": "3500–4000",
+          "pct": 1.3,
+          "cause": "Responsible Growth esg-eval title/list text sub-pixel offsets at 360",
+          "class": "open, cosmetic"
+        },
+        {
+          "width": 360,
+          "band": "1500–2000 / 7500–8221",
+          "pct": 0.9,
+          "cause": "thin text antialias + TOP progress-ring arc value at capture moment",
+          "class": "permanent-ish (scroll-position dependent ring)"
+        },
+        {
+          "width": 1440,
+          "band": "all",
+          "pct": 0,
+          "cause": "none above noise",
+          "class": "n/a"
         }
       ],
       "motion": {
+        "observedFile": "stardust/replica/motion/en-management-esg-result.json",
+        "buildFile": "stardust/replica/motion/en-management-esg-result-build.json",
+        "compare": "13 parity, 0 missing, 0 extra",
         "observed": [
-          "sticky header morph",
-          "lazy images",
-          "content slider (is-active)",
-          "glightbox video/content lightbox open (gzoomIn/gfadeIn)",
-          "scroll-to-top"
+          "scroll reveal .con_ani.fade_up → .on (17 elements, opacity+transform 1.2s)",
+          "top_btn posi_fixed/fadeout toggles + scroll-progress ring",
+          "header .menu_open via hamburger (<1470)",
+          "hd_language .on dropdown",
+          "search_wrap .on/.active + slideDown",
+          "ft_site .open related-sites dropdown",
+          "auto-scroll to sub_visual bottom 1.4s after load (headerTimeline starts at y=813)",
+          "hamburger burger→X transitions (top/right/width/transform 0.2s)"
         ],
         "implemented": [
-          "canon.js chrome + lazy images",
-          "en-career-working-at-continental.js slider + lightbox"
-        ],
-        "dead": [],
-        "compare": "motion-compare: 31 parity, 0 missing, 0 extra, 0 advisory (8 dead or unobserved on live)",
-        "evidence": [
-          "stardust/replica/motion/en-career-working-at-continental.json",
-          "stardust/replica/motion/en-career-working-at-continental-build.json"
-        ],
-        "postMotionPixel": {
-          "360": 2.41,
-          "1440": 0.04
-        }
-      },
-      "passed": true
-    },
-    "legal": {
-      "archetype": "en-general-legal-notice",
-      "file": "stardust/replica/progress/en-general-legal-notice.json",
-      "iterations": {
-        "360": 1,
-        "1440": 1
-      },
-      "gates": {
-        "360": {
-          "pixel": 0.09,
-          "dh": 0,
-          "structuralRed": 0,
-          "visualFlags": "none",
-          "clipped": 0,
-          "overflow": 0,
-          "chromeCrop": {
-            "header": 0,
-            "footer": 0.11
-          },
-          "units": "n/a (no repeated units)",
-          "verdict": "PASS",
-          "evidence": "stardust/replica/gates/en-general-legal-notice-360/*-iter1.*, *-confirm.*"
-        },
-        "1440": {
-          "pixel": 0.08,
-          "dh": 0,
-          "structuralRed": 0,
-          "visualFlags": "none",
-          "clipped": 0,
-          "overflow": 0,
-          "chromeCrop": {
-            "header": 0.01,
-            "footer": 0.02
-          },
-          "units": "n/a (no repeated units)",
-          "verdict": "PASS",
-          "evidence": "stardust/replica/gates/en-general-legal-notice-1440/*-iter1.*, *-confirm.*"
-        }
-      },
-      "capProbe": "PASS at 2560 — 0 of 4 rows failed (stardust/replica/gates/en-general-legal-notice-2560/cap-iter.json)",
-      "residuals": [],
-      "motion": {
-        "observed": [
-          "sticky header morph (is-sticky)",
-          "language menu toggle",
-          "main-nav mega dropdown + overlay",
-          "hover colour: country selector button, download-cart toggle"
-        ],
-        "implemented": [
-          "all via canon.js/canon.css unchanged — no page-specific behaviour on this archetype"
+          "canon.js: header hover mega-menu (>=1470, from source menuFunc), mobile drawer + accordion, depth3 toggles, dim close",
+          "canon.js: language dropdown + hov_on, search open/close, ft_site dropdown, outside-click close",
+          "canon.js: con_ani reveal (triggered on layout top so no block is captured mid-transition; gated by html.js so content is visible without JS)",
+          "canon.js: TOP button classes + canvas progress ring",
+          "canon.js: sub_visual auto-scroll (re-checks scrollY before firing)"
         ],
         "dead": [
-          "hover: .s-richtext a, hero picture, social links, footer nav links (no measured diff on live)"
-        ],
-        "compare": "motion-compare: 25 parity, 0 missing, 0 extra, 1 advisory (z-index transition on overlay, same as home)",
-        "evidence": [
-          "stardust/replica/motion/en-general-legal-notice.json",
-          "stardust/replica/motion/en-general-legal-notice-build.json"
-        ],
-        "postMotionPixel": {
-          "360": 0.09,
-          "1440": 0.08
-        }
+          "header scroll-morph (static on live)",
+          "hover diffs on .conts li, .sub_nav a, footer sitemap links (CSS hover kept as lifted)",
+          "desktop is_hover not exercised at gate widths (implemented from source, <1470 at 1440)"
+        ]
       },
-      "passed": true
-    },
-    "hub": {
-      "archetype": "en-investors",
-      "file": "stardust/replica/progress/en-investors.json",
-      "iterations": {
-        "360": 3,
-        "1440": 2
-      },
-      "gates": {
-        "360": {
-          "pixel": 1.31,
-          "dh": 0,
-          "structuralRed": 0,
-          "visualFlags": "none",
-          "clipped": 0,
-          "overflow": 0,
-          "chromeParity": "quiet",
-          "units": "n/a (none declared)",
-          "verdict": "PASS",
-          "evidence": "stardust/replica/gates/en-investors-360/*-confirm.*"
-        },
-        "1440": {
-          "pixel": 0.21,
-          "dh": 0,
-          "structuralRed": 0,
-          "visualFlags": "none",
-          "clipped": 0,
-          "overflow": 0,
-          "chromeParity": "quiet",
-          "units": "n/a (none declared)",
-          "verdict": "PASS",
-          "evidence": "stardust/replica/gates/en-investors-1440/*-confirm.*"
-        }
-      },
-      "capProbe": "PASS at 2560 — 0 of 9 rows failed (stardust/replica/gates/en-investors-2560/cap-iter.json)",
-      "residuals": [
-        {
-          "id": "en-investors-counter-midstate",
-          "breakpoint": "both",
-          "cause": "animation-timing",
-          "detail": "content-diff 🟡 MISSING/EXTRA pairs on the key-figure numbers (live 2.1/284/6.4… vs build 1.7/232/5.2…): both sides run the same count-up (canon.js data-count-to) and are sampled mid-animation; final values identical to the captured data-count-to.",
-          "justified": true
-        }
+      "captureState": [
+        "Extract screenshot shows the Whistle Blowing block (.esg_result_0302) unrevealed/blank; the gate live capture shows it revealed — prototype follows the gate capture (revealed).",
+        "sub_visual white wipe (.animate) rendered in its end state (class applied statically).",
+        "Footer copyright year frozen at 2026 (live writes it via script).",
+        "TOP button ring value depends on scroll position at capture time."
       ],
-      "motion": {
-        "observed": [
-          "sticky header morph",
-          "off-canvas mobile menu",
-          "lazy images",
-          "key-figure count-up",
-          "scroll-to-top",
-          "teaser hover"
-        ],
-        "implemented": [
-          "canon.js chrome + count-up + lazy images",
-          "en-investors.js module behaviour"
-        ],
-        "dead": [],
-        "compare": "motion-compare: 17 parity, 0 missing, 0 extra, 0 advisory (5 dead or unobserved on live)",
-        "evidence": [
-          "stardust/replica/motion/en-investors.json",
-          "stardust/replica/motion/en-investors-build.json"
-        ],
-        "postMotionPixel": {
-          "360": 1.31,
-          "1440": 0.21
-        }
-      },
-      "passed": true
-    },
-    "stories": {
-      "archetype": "en-stories",
-      "file": "stardust/replica/progress/en-stories.json",
-      "iterations": {
-        "360": 3,
-        "1440": 2
-      },
-      "gates": {
-        "360": {
-          "pixel": 0.08,
-          "dh": 0,
-          "structuralRed": 0,
-          "visualFlags": "none",
-          "clipped": 0,
-          "overflow": 0,
-          "chromeCrop": {
-            "header": 0,
-            "footer": 0.1
-          },
-          "chromeParity": "quiet",
-          "units": "PASS 6/6, 44 elements within 4px",
-          "verdict": "PASS",
-          "evidence": "stardust/replica/gates/en-stories-360/*-confirm.*"
-        },
-        "1440": {
-          "pixel": 0.04,
-          "dh": 0,
-          "structuralRed": 0,
-          "visualFlags": "justified — 20× STRETCHED IMAGE (object-fit:cover fixed-height cards/stage, identical on live); 1× SURFACE/GROUND MISMATCH (duplicate heading text 'What Drives People…' stage h3 white + card h3 black — per-heading metrics identical on both sides, matcher artefact)",
-          "clipped": 0,
-          "clipAdvisory": "1 TEXT X-HIDDEN: stage popup parked off-canvas right until hover (live identical)",
-          "overflow": 0,
-          "chromeCrop": {
-            "header": 0.01,
-            "footer": 0.02
-          },
-          "chromeParity": "quiet",
-          "units": "PASS 6/6, 44 elements within 4px (fresh-origin run units-confirm-fresh.txt; gate.sh units row FAIL was the width-agnostic origin cache holding the 360 inventory)",
-          "verdict": "PASS",
-          "evidence": "stardust/replica/gates/en-stories-1440/*-confirm.*"
-        }
-      },
-      "capProbe": "PASS at 2560 — 0 of 6 rows failed (stardust/replica/gates/en-stories-2560/cap-iter.json)",
-      "residuals": [
-        {
-          "id": "en-stories-cd-yellow-none",
-          "breakpoint": "both",
-          "cause": "n/a",
-          "detail": "content-diff 0 findings after removing a build-only aria-label on the stage overlay link (live overlay <a> is empty and unlabeled — mirrored; an a11y improvement would be a register entry).",
-          "justified": true
-        },
-        {
-          "id": "en-stories-loadmore-latency",
-          "breakpoint": 1440,
-          "cause": "network",
-          "detail": "motion-compare: load-more settle 620ms live vs 205ms build — live fetches the TYPO3 constories API, prototype fetches a local snapshot; mechanism identical (disable+pulse → fetch → remove buttonwrapper → append).",
-          "justified": true
-        },
-        {
-          "id": "en-stories-spin-name",
-          "breakpoint": "both",
-          "cause": "canon-keyframe-name",
-          "detail": "motion-compare spin MISSING / c-spin EXTRA: canon names the spinner keyframes c-spin; canon request filed.",
-          "justified": true
-        }
+      "notes": [
+        "Fonts: Pretendard (OFL) + Noto Sans KR self-hosted from captured files; weight 800 is synthesized from Bold on both sides.",
+        "Live DOM nesting: esg_result_sec02 and esg_result_sec03 are direct children of .esg_result_cont (they receive the 4% padding-top) — the html-slice view suggested otherwise.",
+        "Impeccable contrast findings on the prototype suppressed (file-scoped): colours are source-verbatim per the same-design brief."
       ],
-      "motion": {
-        "observed": [
-          "sticky header morph (is-sticky ×6 elements)",
-          "ip-redirect banner .is-hidden",
-          "scroll-to-top .is-visible",
-          "lazy images entered/is-lazy-loading/is-lazy-loaded + placeholder fade",
-          "featured single image .has-focus via IntersectionObserver rootMargin -50% 0% -50% 0% (transform scale 1.05, 500ms)",
-          "stage hover/focus-within: popup right -420px → 0 (500ms cubic-bezier(.5,0,0,.5)); overlay link colour; popup button bg",
-          "story card hover: image scale(1.05) 500ms cubic-bezier(.1,.41,.65,.89)",
-          "featured teaser hover: .c-button bg #6b6b6b / #fff (150ms)",
-          "load-more click: button disabled + pulse 2s → fetch data-constories-xhr → buttonwrapper removed, 1 card appended"
-        ],
-        "implemented": [
-          "header/banner/scroll-to-top/lazy images (canon.js, unchanged)",
-          "has-focus IntersectionObserver (en-stories.js)",
-          "stage popup hover/focus-within (CSS)",
-          "card image scale + featured button hover (CSS)",
-          "load-more state machine (en-stories.js; local snapshot endpoint)",
-          ".c-button[disabled] pulse (CSS)"
-        ],
-        "dead": [
-          "hover .c-cs-stage__popup .c-button (no measured diff beyond stage hover)",
-          "hover featured teaser self (no measured diff on the anchor itself)"
-        ],
-        "compare": "motion-compare: 22 parity, 1 missing (spin, canon keyframe name), 1 extra (c-spin), 0 advisory; out-of-tolerance: load-more latency (network), stage hover sub-element sampled differently (live transitions log shows the same overlay colour 150ms transition)",
-        "evidence": [
-          "stardust/replica/motion/en-stories.json",
-          "stardust/replica/motion/en-stories-build.json"
-        ],
-        "postMotionPixel": {
-          "360": 0.08,
-          "1440": 0.04
-        }
-      },
-      "passed": true
+      "recordedAt": "2026-11-02T21:58:25.212Z",
+      "gateAllPrototypeRows": {
+        "360": "0.46% Δh 0 PASS (gates/prototypes-360)",
+        "1440": "0% Δh 0 PASS (gates/prototypes-1440)",
+        "note": "state.json has no prototypePath for this slug; rows run with --state stardust/.work/esg/state-proto.json (copy + prototypePath). Coordinator should add prototypePath to state.json."
+      }
     },
-    "home": {
+    "landing": {
       "archetype": "en",
-      "file": "stardust/replica/progress/en.json",
+      "prototype": "stardust/prototypes/en-proposed.html",
+      "liveUrl": "https://www.doosanbobcat.com/en",
+      "files": [
+        "stardust/prototypes/en-proposed.html",
+        "stardust/prototypes/home.css",
+        "stardust/prototypes/home.js",
+        "stardust/prototypes/assets/media/main-*.{mp4,png,svg}",
+        "stardust/prototypes/assets/media/top_btn.png"
+      ],
+      "canonChange": null,
       "iterations": {
-        "360": 3,
+        "360": 2,
         "1440": 3
       },
       "gates": {
         "360": {
-          "pixel": 2.82,
-          "pixelMaskedHero": 0.25,
-          "dh": 0,
-          "structuralRed": 0,
-          "visualFlags": "none",
+          "pixelPct": 0.11,
+          "heightDelta": 0,
+          "structural": 0,
+          "nothingLost": 0,
           "clipped": 0,
-          "overflow": 0,
-          "chromeCrop": {
-            "header": 0,
-            "footer": 0.11
-          },
-          "units": "PASS 9/9 fresh-origin run (units-confirm-fresh.txt); gate.sh units row FAIL is a cache artefact (origin cache stardust/current/measure/en-units.json is width-agnostic and held the 1440 inventory)",
+          "chromeParity": "quiet",
           "verdict": "PASS",
-          "evidence": "stardust/replica/gates/en-360/*-confirm.*"
+          "pixelPctVsCorrectedLive": 0.11,
+          "crop": {
+            "header": "100% vs corrected live",
+            "footer": "100%"
+          },
+          "round": "confirm (after fp-stitch t=0 fix)"
         },
         "1440": {
-          "pixel": 0.23,
-          "dh": 0,
-          "structuralRed": 0,
-          "visualFlags": "none",
+          "pixelPct": 0.09,
+          "heightDelta": 0,
+          "structural": 0,
+          "nothingLost": 0,
           "clipped": 0,
-          "overflow": 0,
-          "chromeCrop": {
-            "header": 0,
-            "footer": 0.02
-          },
-          "units": "PASS 11/11 (59 elements within 4px)",
+          "chromeParity": "quiet",
           "verdict": "PASS",
-          "evidence": "stardust/replica/gates/en-1440/*-confirm.*"
+          "pixelPctVsCorrectedLive": 0.09,
+          "crop": {
+            "header": "100% vs corrected live (video-contaminated vs live.png)",
+            "footer": "100%"
+          },
+          "round": "confirm (after fp-stitch t=0 fix)"
         }
       },
-      "capProbe": "PASS at 2560 — 0 of 7 rows failed (stardust/replica/gates/en-2560/cap-iter.json)",
+      "capProbe": "PASS (0 of 7 rows failed; evidence stardust/replica/gates/en-2560/cap-iter.json)",
       "residuals": [
         {
-          "id": "en-360-hero-autoplay",
-          "breakpoint": 360,
-          "band": "y 0–500 (44.6%)",
-          "cause": "carousel-state",
-          "detail": "Live Glide hero autoplays every 8000ms; the 360 live capture's settle pass outlasts 8s so live froze on slide 2 (ContiTech) while the prototype captures its initial slide 1. Not a geometry fault: with rows 56–592 masked the page diffs 0.25%; the 1440 live capture froze on slide 1 and the hero matches there.",
-          "justified": true
+          "width": 1440,
+          "band": "0–1000 (hero)",
+          "pct": 10.04,
+          "cause": "live.png hero shows mvisual_video01 at ~1.3 s, not t=0: fp-stitch.mjs calls swiper.slideTo(0,0) AFTER its video freeze, so when the live carousel is not on slide 1 Swiper's slideChangeTransitionStart replays video01 (currentTime=0; play()) and it runs ~1.3 s until the chunk-1 screenshot. Frame-matched: live hero best matches video01 t≈1.3 s (score 12.9 vs 38.5 at t=0). Build is frozen at slide 1, t=0 per policy. Evidence: scratch corrected capture stardust/.work/en/live-t0-1440.png (slideTo before the freeze; tool stardust/.work/en/tools/fp-stitch-t0.mjs, never fed to gate.sh) → build 0.09%.",
+          "class": "instrument (live reference capture-state); fix = reorder slideTo before the video freeze in fp-stitch.mjs and regenerate live.png — needs owner approval (brief forbids editing scripts/ and deleting live.png)",
+          "inherits": "user"
         },
         {
-          "id": "en-content-diff-yellow",
-          "breakpoint": "both",
-          "cause": "vendor-widget-internals",
-          "detail": "🟡 MISSING BODY ×~75: AdmiralCloud/video.js caption-settings menu strings (Foreground, White, 50%…) injected by the vendor player; prototype carries the pre-play surface (poster, big play button, hidden control bar with the vendor aria-labels). 🟡 EXTRA: fact-box count-up values mid-animation at probe time (both sides animate 0 → data-count-to over 2s). 🟡 MISSING ICON U+F1EB (vendor BandwidthInfo font glyph).",
-          "justified": true
+          "width": 360,
+          "band": "0–1000 (hero)",
+          "pct": 11.6,
+          "cause": "same live.png hero video-frame artefact as 1440; vs corrected stardust/.work/en/live-t0-360.png → 0.11%",
+          "class": "instrument (live reference capture-state)",
+          "inherits": "user"
         },
         {
-          "id": "en-font-fork-player",
-          "breakpoint": "both",
-          "cause": "vendor-ui-face",
-          "detail": "🟠 vendor player time labels render Arial on live; prototype player uses Arial too after iter3 (hidden pre-play).",
-          "justified": true
+          "width": 1440,
+          "band": "1000–1500",
+          "pct": 0.5,
+          "cause": "company line_wrap lines: live keyframe companyBgLine is paused before its delay in the capture (short segments); build uses a height transition that the freeze snaps to 100% (full 1 px lines). Plus sub-pixel SVG raster offsets (<object> on live vs <img> in build, identical boxes per measure.mjs)",
+          "class": "capture-state / cosmetic",
+          "inherits": "delivery"
         },
         {
-          "id": "en-unobserved-mobile-offcanvas",
-          "breakpoint": 360,
-          "cause": "not-observed",
-          "detail": "c-offcanvas mobile navigation (burger) and download-cart lightbox / country selector page were not poked by motion-observe (1440 run); markup for the burger toggle is in canon, the offcanvas panel itself is not implemented. Observe at 360 before the content/hub archetypes rely on it."
+          "width": 360,
+          "band": "2000–2500",
+          "pct": 0.8,
+          "cause": "Drag hint scrollright keyframe paused at an arbitrary phase on each side; product image sub-pixel width (Swiper integer slide width 338 vs CSS round(down))",
+          "class": "capture-state",
+          "inherits": "delivery"
         }
       ],
       "motion": {
-        "observed": [
-          "sticky header morph (.is-sticky on spacer/meta/logo/slogan/meta-items/burger when floor(scrollY) > header.offsetHeight, lodash.throttle 300ms)",
-          "scroll-to-top .is-visible when innerHeight < scrollY (throttle 300ms)",
-          "ip-redirect banner .is-hidden while sticky",
-          "hero Glide slider: arrows/dots, 1000ms track transform, title/description/links re-enter 300ms via .is-active; autoplay 8000ms hoverpause",
-          "language menu dropdown toggle",
-          "main-nav mega dropdown + overlay (.is-visible)",
-          "lazy teaser images entered/is-lazy-loading/is-lazy-loaded + spinner fade",
-          "hover: teaser link colour, download-cart icon colour, country selector (a:hover #e38702)",
-          "fact-box count-up 0→data-count-to 2000ms on viewport entry (throttle 250ms; values observed mid-count in live probes)",
-          "equalize-height min-heights on fact-box head/foot groups"
-        ],
+        "observed": "stardust/replica/motion/en.json — hero Swiper fade autoplay (slide-active cycling unpoked, ~3 s delay = Swiper default; per-bullet progress bar width transitions 7300/2200/4900 ms; videos restart+play on slide change), product card hover (card_hover on all slides, bg_wrap .bg.active, body.type_white), youtube link hover colour + ::after wipe, view_all_btn hover colour (300 ms), btn_more_type01 buttonUnderline hover animation. Live scroll traversal impossible (fullpage scroll-jack; headerTimeline static) — section stepping, fp-nav, type_white on sections 3/5/6, fp-viewing-n and section .active entrances implemented from source main.js/main.css per the brief's decision.",
         "implemented": [
-          "sticky header morph",
-          "scroll-to-top",
-          "ip-redirect banner hide",
-          "hero slider (Glide mechanics, startAt 0, autoplay 8000 hoverpause)",
-          "hero arrows arrows--md/lg by innerWidth",
-          "language menu",
-          "main-nav mega dropdown + overlay + close",
-          "lazy images",
-          "a:hover + teaser/download-cart hovers",
-          "fact-box count-up",
-          "equalize heights",
-          "footer accordion <767 (live CSS state machine)"
+          "fullPage replacement on native scroll: wheel/keyboard/touch step one section, 1000 ms eased scroll, 600 ms scroll delay",
+          "#fp-nav dots + tooltips (hidden <=1440 per source CSS)",
+          "#header.type_white for destination index 3,5,6 (onLeave)",
+          "body fp-viewing-<0-based> classes",
+          "section .active while in view → transition entrances (company icons/text stagger, company lines, ESG circles + axis line, news panel wipe)",
+          "footer .fullpg_top_btn shown on fp-viewing-5, click → section 1",
+          "hero fade carousel: autoplay 3000 ms + 300 ms fade, loop to slide 1, pagination 01/02/03 with bar fill restart, video restart+play on activation, muted playsinline",
+          "product drag carousel (pointer drag, snap grid = Swiper snapGrid, 1200 ms) + hover state (body.type_white, card_hover, background swap) >=1240",
+          "news item / youtube link / view-all hover rules from source CSS"
         ],
         "dead": [
-          "hover: hero CTA, .pt-3 button, main-nav link, social links, footer links, rich-text links (no measured diff on live)",
-          "header element scroll-morph (o-header itself static; morph is on meta/spacer)"
+          "news_list .item hover: no measured diff on live (only descendants change; rules kept from source CSS)",
+          "company btn_more_type01: computed diff none (pseudo-element animation buttonUnderline fired — parity)",
+          "swiper-slide-prev/next classes: not mirrored (unstyled state classes)",
+          "pagination click widget: no sampled track change on live (fade carousel has no track motion)"
         ],
-        "compare": "motion-compare: 30 parity, 0 missing, 0 extra, 1 advisory (z-index transition on overlay)",
-        "evidence": [
-          "stardust/replica/motion/en.json",
-          "stardust/replica/motion/en-build.json"
-        ],
-        "postMotionPixel": {
-          "360": 2.82,
-          "1440": 0.22
-        }
+        "compare": "stardust/replica/motion/en-compare.json — 18 parity, 2 missing (swiper-slide-prev/next class names only), 4 timing advisories from build-only section traversal"
       },
-      "passed": true
+      "captureState": [
+        {
+          "what": "hero video autoplay (muted, restart+play per slide)",
+          "freeze": "stitch-shot pauses every video at t=0",
+          "restoreAtDelivery": "autoplay muted; each slide's video restarts at 0 and plays when the slide activates; slides advance every 3 s (Swiper autoplay default) with 300 ms fade, looping"
+        },
+        {
+          "what": "hero carousel slide index",
+          "freeze": "stitch-shot's slick-convention reset clicks .slick-dots li:first-child button (pagination carries mvisual_pagination + slick-dots) → slide 1, synchronous class/bar state, video play deferred one tick so the timer clear keeps t=0",
+          "restoreAtDelivery": "autoplay cycling 01→02→03→01; bullet progress bar fills over 7.3/2.2/4.9 s"
+        },
+        {
+          "what": "section entrance transitions",
+          "freeze": "transition:none snaps .active sections to their revealed end state",
+          "restoreAtDelivery": "entrances replay each time a section enters view (company 1.1–2.4 s stagger, ESG 2.2–3 s, news panel 0.6 s)"
+        },
+        {
+          "what": "decorative loops (scrolldown bob, Drag hint sway, ESG dot twinkle)",
+          "freeze": "animation-play-state paused",
+          "restoreAtDelivery": "infinite keyframe loops as source CSS"
+        },
+        {
+          "what": "footer copyright year",
+          "freeze": "static 2026",
+          "restoreAtDelivery": "current year (live writes #copyYear by script)"
+        }
+      ],
+      "liveCapture": "fp-stitch adaptation",
+      "gateAllPrototypeRows": {
+        "360": "11.7% Δh 0 FAIL (pixel) — stardust/replica/gates/prototypes-360/runs/",
+        "1440": "10.13% Δh 0 FAIL (pixel) — stardust/replica/gates/prototypes-1440/runs/",
+        "state": "temp copy stardust/.work/en/state-proto.json (prototypePath for en); origin.png = copy of the gate's fp-stitch live.png, reused via --skip-existing"
+      },
+      "notes": [
+        "Footer lives inside <main> in the last (auto-height) section, as on live, so #main content-diff covers it.",
+        "No canon change: canon.js generic .top_btn handling is neutralised for the home .fullpg_top_btn by home.css overrides + a capture-phase click handler in home.js.",
+        "Home footer differs from ESG canon footer: no 'Human Rights Management' in the Sustainability column; Related Sites doosan.com/kr and doosan-iv.com/en; TOP is an image button (top_btn.png)."
+      ],
+      "recordedAt": "2026-11-02T22:30:00Z",
+      "visualDiffAdvisory": "SURFACE/GROUND flags come from the live fullPage screenshot of a scroll-jacked page (sections below the hero render blank there) — justified, not a build defect"
     }
   }
 }

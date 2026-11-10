@@ -1,49 +1,44 @@
 {
   "slug": "en",
-  "type": "home",
+  "type": "landing",
   "renderBranch": "A",
   "template": null,
   "modules": [
-    "fact-box",
-    "hero-stage-slider",
-    "image",
-    "teaser",
-    "text-media",
-    "video-player"
+    "home-visual",
+    "home-company",
+    "home-products",
+    "home-esg",
+    "home-news"
   ],
+  "widgets": [],
   "slotsFilled": [
-    "c-heroteaser-fixed",
-    "o-container",
-    "o-container",
-    "o-container",
-    "o-container",
-    "o-container"
+    "fullpage"
   ],
   "canonShas": {
-    "header": "5e36dbd0f54c",
-    "footer": "534354ee8291",
-    "css": "42118a42770d"
+    "header": "2dc31ef185fd",
+    "footer": "0d268ce63dc6",
+    "css": "3211e30e98c2"
   },
   "deviations": [],
   "migrationDecisions": [],
   "metadata": {
-    "title": "Home | Continental - Continental AG",
-    "description": "Our Goal: Healthy Mobility - clean, safe and connected. Our heart beats for this. Learn more about it on our homepage.",
+    "title": "Doosan Bobcat",
+    "description": "Inventing the world's first skid-steer loader, Doosan Bobcat is the global leader in the business of compact equipment, expanding our business portfolio into grounds maintenance equipment and Material Handling.",
     "canonical": null,
     "lang": "en"
   },
   "jsonLd": {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Home | Continental - Continental AG",
-    "description": "Our Goal: Healthy Mobility - clean, safe and connected. Our heart beats for this. Learn more about it on our homepage.",
-    "url": "https://www.continental.com/en/"
+    "name": "Doosan Bobcat",
+    "description": "Inventing the world's first skid-steer loader, Doosan Bobcat is the global leader in the business of compact equipment, expanding our business portfolio into grounds maintenance equipment and Material Handling.",
+    "url": "https://www.doosanbobcat.com/en"
   },
-  "migratedAt": "2026-10-09T18:41:50Z",
-  "designMdSha": "5463063b6a90",
-  "designJsonSha": "51f8a079b59e",
-  "sourceCurrentSha": "0d48922f02e6",
-  "sourceProposedSha": "9ddfeb055c87",
+  "migratedAt": "2026-11-02T22:34:43Z",
+  "designMdSha": "9d8e62b28c2e",
+  "designJsonSha": "269e727120ff",
+  "sourceCurrentSha": "ae11f4ca8223",
+  "sourceProposedSha": "d8aebb1d3f40",
   "fidelityTier": "archetype",
   "archetypeSource": null,
   "archetypeSha": null,
@@ -51,1588 +46,380 @@
   "gatesPassed": [],
   "gateEvidence": {},
   "contentDeviations": [],
-  "assetsBundled": 4,
+  "assetsBundled": 75,
   "missingAssets": [],
   "brokenInternalLinks": [
     {
-      "href": "/en/country-selector/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "https://www.continental.com/de/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/reports-presentations/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/sustainability/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/press/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/press/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/press/press-contacts/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/press-releases/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/press-releases/corporate-topics/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/press-releases/products-technologies/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/press-releases/vehicle-types/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/press-releases/press-tires/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/fairs-events/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/fairs-events/quarterly-publications/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/fairs-events/fairs/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/fairs-events/events/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/media-library/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/media-library/pictures/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/media-library/videos/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/media-library/press-footage/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/figures-data-facts/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/other-publications/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/career/application-process/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/career/contact-faqs/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/career/working-at-continental/corporate-culture-values/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/working-at-continental/your-development/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/working-at-continental/benefits/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/working-at-continental/people-blog/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/what-we-are-working-on/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/career/what-we-are-working-on/material-development/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/what-we-are-working-on/industrial-solutions/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/what-we-are-working-on/range-of-tires/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/what-we-are-working-on/smart-tires/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/our-range-of-jobs/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/career/our-range-of-jobs/software-engineering-and-system-engineering/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/our-range-of-jobs/operating/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/our-range-of-jobs/quality/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/our-range-of-jobs/it/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/our-range-of-jobs/sales/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/career/your-career-level/experienced-professionals/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/ir-contact/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/about-us/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/services/#c84253",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/ir-news/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/ir-news/ad-hoc-news/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/ir-news/ir-press-releases/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/ir-news/managers-transactions/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/ir-news/voting-rights/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/events/capital-market-update/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/spin-off-automotive/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-day-2025/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-day-2023/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/continental-on-the-move/details/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/financial-calendar/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/reports-presentations/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/reports-presentations/financial-reports/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/reports-presentations/fact-book/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/reports-presentations/financial-key-figures/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/presentations/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/shares/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/shares/why-invest-in-continental/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/sustainability-at-continental/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/share-price-chart/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/dividend/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/shareholder-structure/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/share-data/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/consensus-q2-2026/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/shares/analyst-recommendations-q2-2026/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/debt-and-rating/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/debt-and-rating/rating-financing-strategy/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/debt-and-rating/debt-issuance-programme/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/temp-home/debt-and-rating/bonds/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/vitesco-technologies-spin-off/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/sustainability/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/general/sustainability-contact-form/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/products-and-innovation/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/products-and-innovation/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/general/products/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/products-and-innovation/products/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/products-and-innovation/products/tires/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/products-and-innovation/products/contitech/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/company/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/general/contact-us/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/company/corporate-governance/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/company/corporate-governance/vision-mission/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/executive-board/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/supervisory-board-1/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/principles-and-declarations/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/articles-of-incorporation/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/corporate-governance/integrity-hotline/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/company/suppliers/general-information/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/sustainability-purchasing/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/technical-compliance/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/company/technical-compliance/technical-compliance-for-business-partners/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/history/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/company/history/milestones/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/history/company-flashbacks/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/continental-brand/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/press/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/career/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/sustainability/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/products-and-innovation/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/company/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/press/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/press/press-releases/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/fairs-events/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/media-library/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/press-releases/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/press-releases/corporate-topics/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/press-releases/products-technologies/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/press-releases/vehicle-types/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/press-releases/press-tires/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/fairs-events/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/fairs-events/quarterly-publications/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/fairs-events/fairs/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/fairs-events/events/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/media-library/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/media-library/pictures/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/media-library/videos/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/media-library/press-footage/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/figures-data-facts/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/other-publications/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobility-study-2015/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobility-study-2016/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobility-study-2018/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobilitystudy2020-from-driver-to-passenger/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobility-study-2018/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobility-study-2018/the-2018-mobility-study/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobility-study-2018/press-pictures-and-charts/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobility-study-2018/press-contacts/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobilitystudy2020-from-driver-to-passenger/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobilitystudy2020-from-driver-to-passenger/expectations-for-the-existing-technology/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobilitystudy2020-from-driver-to-passenger/benefits-of-autonomous-driving/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobilitystudy2020-from-driver-to-passenger/assistance-systems/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/continental-mobility-studies/mobilitystudy2020-from-driver-to-passenger/data-sharing/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/other-publications/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/other-publications/20260202-continental-informs/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/press/studies-publications/other-publications/20220926-continental-informs/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/career/what-we-are-working-on/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/career/our-range-of-jobs/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/career/your-career-level/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/career/working-at-continental/corporate-culture-values/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/working-at-continental/your-development/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/working-at-continental/benefits/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/working-at-continental/people-blog/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/working-at-continental/corporate-culture-values/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/working-at-continental/corporate-culture-values/diversity/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/working-at-continental/benefits/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/working-at-continental/benefits/mobile-working/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/working-at-continental/benefits/sabbatical/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/what-we-are-working-on/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/career/what-we-are-working-on/material-development/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/what-we-are-working-on/industrial-solutions/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/what-we-are-working-on/range-of-tires/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/what-we-are-working-on/smart-tires/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/our-range-of-jobs/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/career/our-range-of-jobs/software-engineering-and-system-engineering/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/our-range-of-jobs/operating/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/our-range-of-jobs/quality/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/our-range-of-jobs/it/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/our-range-of-jobs/sales/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/career/your-career-level/experienced-professionals/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/direct-entry/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/students-at-continental/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/students-at-continental/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/ready-for-continental-program/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/continental-makers-garage/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/marketing-and-sales-graduate-program/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/explore-tires-manufacturing-it-graduate-program/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/explore-tire-manufacturing-controlling-graduate-program/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/explore-tire-manufacturing-engineering-graduate-program/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/explore-tires-graduate-programs/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/explore-tire-quality-management-graduate-program/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/your-career-level/students-and-graduates/global-trainee-programs/explore-tire-supply-chain-management-graduate-program/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/ir-news/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/events/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/reports-presentations/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/shares/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/debt-and-rating/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/vitesco-technologies-spin-off/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/ir-news/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/ir-news/ad-hoc-news/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/ir-news/ir-press-releases/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/ir-news/managers-transactions/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/ir-news/voting-rights/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/ir-news/managers-transactions/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/plugins/rss-list/detail/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/ir-news/voting-rights/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/ir-news/voting-rights/detail/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/events/capital-market-update/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/spin-off-automotive/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-day-2025/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-day-2023/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/continental-on-the-move/details/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/financial-calendar/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-q2-2026/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-q1-2026/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-fy-2025/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-9m-2025/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-h1-2025/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-q1-2025/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/preliminary-results-fy-2024/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-9m-2024/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-h1-2024/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-q1-2024/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/preliminary-full-year-results-2023/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/9m-2023-results/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-h1-2023/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/results-q1-2023/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/preliminary-full-year-results-2022/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/results/9m-2022-results/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2026/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2025/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2024/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2023/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2022/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2021/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2020/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2026/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2026/schedule-annual-shareholders-meeting/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2025/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2025/schedule-annual-shareholders-meeting/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2024/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2024/schedule-annual-shareholders-meeting/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2023/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2023/exercise-voting-rights/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2023/questions-video-statements-and-objections/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2023/schedule-annual-shareholders-meeting/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2021/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2020/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2020/questions-and-answers-related-to-the-postponement-of-the-annual-shareholders-meeting-to-july-14-2020/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2020/exercise-voting-rights/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/annual-shareholders-meeting/annual-shareholders-meeting-2020/questions-and-objections/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/spin-off-automotive/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/spin-off-automotive/first-glance-automotive-1/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/spin-off-automotive/deep-dive-business-area-architecture-and-network-solutions/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/spin-off-automotive/spin-off-automotive/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/capital-market-days/nikolai-setzer/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/cmd-2020-expert-session-automotive-technologies/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/autonomous-mobility-and-safety/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/vehicle-networking-and-information/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/expert-session-contitech/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/expert-session-tires/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/expert-session-sustainability/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/press-conference/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/press-conference/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/events/capital-market-days-2020/press-conference/executive-board-presentations-on-december-16/",
-      "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/reports-presentations/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/reports-presentations/financial-reports/",
+      "href": "/en/products/compact/list",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/reports-presentations/fact-book/",
+      "href": "/en/products/compact/list",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/reports-presentations/financial-key-figures/",
+      "href": "/en/products/compact/item_01",
       "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/presentations/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/investors/shares/",
-      "reason": "in-inventory-not-migrated"
     },
     {
-      "href": "/en/investors/shares/why-invest-in-continental/",
+      "href": "/en/products/compact/item_02",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/sustainability-at-continental/",
+      "href": "/en/products/compact/item_03",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/share-price-chart/",
+      "href": "/en/products/compact/item_04",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/dividend/",
+      "href": "/en/products/compact/item_05",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/shareholder-structure/",
+      "href": "/en/products/compact/item_06",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/share-data/",
+      "href": "/en/products/compact/item_09",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/consensus-q2-2026/",
+      "href": "/en/products/compact/item_10",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/analyst-recommendations-q2-2026/",
+      "href": "/en/products/compact/item_07",
       "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/debt-and-rating/",
-      "reason": "in-inventory-not-migrated"
     },
     {
-      "href": "/en/investors/debt-and-rating/rating-financing-strategy/",
+      "href": "/en/products/compact/item_08",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/debt-and-rating/debt-issuance-programme/",
+      "href": "/en/products/industrial/list",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/temp-home/debt-and-rating/bonds/",
+      "href": "/en/products/industrial/item_01",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/debt-and-rating/rating-financing-strategy/",
+      "href": "/en/products/industrial/item_02",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/debt-and-rating/financing-strategy-and-maturity-profile/",
+      "href": "/en/products/industrial/item_09",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/debt-and-rating/continentals-credit-rating/",
+      "href": "/en/products/industrial/item_03",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/debt-and-rating/maturity-of-bonds/",
+      "href": "/en/products/industrial/item_05",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/temp-home/debt-and-rating/bonds/",
+      "href": "/en/products/portable/list",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/debt-and-rating/bonds-performance/",
+      "href": "/en/products/portable/item_01",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/debt-and-rating/2026-bond-coupon-2500-percent/",
+      "href": "/en/products/portable/item_02",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/temp-home/debt-and-rating/bonds/wkn-a35138-isin-xs2672452237/",
+      "href": "/en/products/portable/item_03",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/temp-home/debt-and-rating/bonds/wkn-a30vq4-isin-xs2558972415/",
+      "href": "/en/products/portable/item_05",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/temp-home/debt-and-rating/bonds/wkn-a351pu-isin-xs2630117328/",
+      "href": "/en/about/member",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/temp-home/debt-and-rating/bonds/wkn-a4dfm0-isin-xs3075393499/",
+      "href": "/en/about/member",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/temp-home/debt-and-rating/bonds/wkn-a4dfw3-isin-xs3173656243/",
+      "href": "/en/about/vision",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/temp-home/debt-and-rating/bonds/wkn-isin-xs2910509566/",
+      "href": "/en/about/history",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/temp-home/debt-and-rating/bonds/wkn-a5gs05-isin-xs3478305777/",
+      "href": "/en/about/brand",
       "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/products-and-innovation/",
-      "reason": "in-inventory-not-migrated"
     },
     {
-      "href": "/en/products-and-innovation/products/",
+      "href": "/en/about/global",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/products-and-innovation/products/",
+      "href": "/en/about/ci",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/products-and-innovation/products/tires/",
+      "href": "/en/contactus",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/products-and-innovation/products/contitech/",
+      "href": "/en/investment/irData",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/products-and-innovation/products/tires/",
+      "href": "/en/investment/irData",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/products-and-innovation/products/tires/conti-urban/",
+      "href": "/en/investment/governance01",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/products-and-innovation/products/tires/conti-ecoplus-ht3/",
+      "href": "/en/investment/finance/01",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/products-and-innovation/products/tires/conti-efficientpro-gen-3/",
+      "href": "/en/management/esg_strategy",
       "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/company/corporate-governance/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/company/suppliers/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/company/technical-compliance/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/company/history/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/company/continental-brand/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/company/corporate-governance/",
-      "reason": "in-inventory-not-migrated"
     },
     {
-      "href": "/en/company/corporate-governance/vision-mission/",
+      "href": "/en/management/esg_strategy",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/executive-board/",
+      "href": "/en/management/human-rights",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/supervisory-board-1/",
+      "href": "/en/management/ethics_canon",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/principles-and-declarations/",
+      "href": "/en/management/society",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/articles-of-incorporation/",
+      "href": "/en/mediacenter/news",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/integrity-hotline/",
+      "href": "/en/mediacenter/news",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/executive-board/",
+      "href": "/en/mediacenter/prvideo",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/executive-board/ulrike-hintze/",
+      "href": "/kr",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/executive-board/roland-welzbacher/",
+      "href": "/en/about/history",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/executive-board/christian-koetz/",
+      "href": "/en/products/compact/list",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/executive-board/philip-nelles/",
+      "href": "/en/products/industrial/list",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/principles-and-declarations/",
+      "href": "/en/products/portable/list",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/principles-and-declarations/declarations-of-continental-ag-pursuant-to-section-161-of-the-german-stock-corporation-act-aktg-of-previous-years/",
+      "href": "/en/mediacenter/news",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/corporate-governance/principles-and-declarations/corporate-governance-principles/",
+      "href": "/en/mediacenter/prvideo",
       "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/suppliers/",
-      "reason": "in-inventory-not-migrated"
     },
     {
-      "href": "/en/company/suppliers/general-information/",
+      "href": "/en/mediacenter/news/detail?id=333",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/",
+      "href": "/en/mediacenter/news/detail?id=331",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/sustainability-purchasing/",
+      "href": "/en/products/compact/list",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/general-information/",
+      "href": "/en/products/compact/item_01",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/general-information/general-terms-and-conditions-of-purchase/",
+      "href": "/en/products/compact/item_02",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/general-information/business-partner-code-of-conduct/",
+      "href": "/en/products/compact/item_03",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://www.continental.com/en/company/technical-compliance/technical-compliance-for-business-partners/",
+      "href": "/en/products/compact/item_04",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/general-information/reach-legislation/",
+      "href": "/en/products/compact/item_05",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/psuite/",
+      "href": "/en/products/compact/item_06",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/general-information/ergonomics-requirements/",
+      "href": "/en/products/compact/item_09",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/general-information/ergonomics-requirements/",
+      "href": "/en/products/compact/item_10",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/general-information/ergonomics-requirements/types-of-workplace-to-be-linked/",
+      "href": "/en/products/compact/item_07",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/general-information/ergonomics-requirements/requirements-to-work-organization/",
+      "href": "/en/products/compact/item_08",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/general-information/ergonomics-requirements/requirements-to-environmental-conditions/",
+      "href": "/en/products/industrial/list",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/general-information/ergonomics-requirements/requirements-to-work-organization-1/",
+      "href": "/en/products/industrial/item_01",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/",
+      "href": "/en/products/industrial/item_02",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/electronic-submission-of-supplier-invoices/",
+      "href": "/en/products/industrial/item_09",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/for-suppliers/contact-form-raw-material-purchasing-team-19050-1/",
+      "href": "/en/products/industrial/item_03",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/non-production-material-purchasing/",
+      "href": "/en/products/industrial/item_05",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/production-material-tires/",
+      "href": "/en/products/portable/list.html",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/production-material-contitech/",
+      "href": "/en/products/portable/item_01",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/non-production-material-purchasing/",
+      "href": "/en/products/portable/item_02",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/purchasing-by-group-sector/non-production-material-purchasing/contact-form-non-production-material-team/",
+      "href": "/en/products/portable/item_03",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/sustainability-purchasing/",
+      "href": "/en/products/portable/item_05",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/sustainability-purchasing/supplier-inquiries/",
+      "href": "/en/about/member",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/suppliers/sustainability-purchasing/responsible-value-chain/",
+      "href": "/en/about/vision",
       "reason": "not-in-inventory"
     },
     {
-      "href": "https://www.continental.com/en/sustainability/framework/responsible-value-chain/respecting-human-rights/",
+      "href": "/en/about/history",
       "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/technical-compliance/",
-      "reason": "in-inventory-not-migrated"
     },
     {
-      "href": "/en/company/technical-compliance/technical-compliance-for-business-partners/",
+      "href": "/en/about/brand",
       "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/company/history/",
-      "reason": "in-inventory-not-migrated"
     },
     {
-      "href": "/en/company/history/milestones/",
+      "href": "/en/about/global",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/company/history/company-flashbacks/",
+      "href": "/en/about/ci",
       "reason": "not-in-inventory"
-    },
-    {
-      "href": "https://www.continental.com/de/",
-      "reason": "in-inventory-not-migrated"
     },
     {
-      "href": "/en/press/press-releases/results-first-half-2026/",
+      "href": "/en/contactus",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/press-releases/continental-ct-2026/",
+      "href": "/en/investment/irData",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/contitech/",
+      "href": "/en/investment/governance01",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/studies-publications/figures-data-facts/",
+      "href": "/en/investment/finance/01",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/investors/shares/share-price-chart/",
+      "href": "/en/management/esg_strategy",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/media-library/the-continental-tires-garage/",
+      "href": "/en/management/ethics_canon",
       "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/career/what-we-are-working-on/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/career/our-range-of-jobs/",
-      "reason": "in-inventory-not-migrated"
     },
     {
-      "href": "/en/sustainability/reporting-and-downloads/",
+      "href": "/en/management/society",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/press-releases/results-first-half-2026/",
+      "href": "/en/mediacenter/news",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/general/rss/",
+      "href": "/en/mediacenter/prvideo",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/press/press-contacts/",
+      "href": "/en/contact/legal",
       "reason": "not-in-inventory"
     },
     {
-      "href": "/en/career/contact-faqs/contact/",
+      "href": "/en/contact/terms",
       "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/ir-contact/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/general/sustainability-contact-form/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/general/products/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/general/contact-suppliers/",
-      "reason": "in-inventory-not-migrated"
     },
     {
-      "href": "/en/company/corporate-governance/integrity-hotline/",
+      "href": "/en/contact/privacy",
       "reason": "not-in-inventory"
-    },
-    {
-      "href": "/en/investors/reports-presentations/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/general/site-notice/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/general/data-protection/",
-      "reason": "in-inventory-not-migrated"
-    },
-    {
-      "href": "/en/general/cookie-policy/",
-      "reason": "in-inventory-not-migrated"
     }
   ],
   "outputPath": "en/index.html",
-  "outputPathDefault": null,
+  "outputPathDefault": "trailing-slash",
   "sidecar": "en/_meta.json",
   "driverVersion": "1"
 }

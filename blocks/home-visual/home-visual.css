@@ -1,0 +1,260 @@
+/* home-visual — home hero video carousel (source main.css L170–L194, swiper fade) */
+.home-visual {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-visual .mvisual-swiper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.home-visual .swiper-wrapper {
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+
+.home-visual .swiper-slide {
+  position: relative;
+  grid-area: 1 / 1;
+  height: 100%;
+  min-height: 100vh;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.home-visual .swiper-slide.slide-active {
+  z-index: 1;
+  opacity: 1;
+}
+
+.home-visual .bg {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.home-visual .bg video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.home-visual .swiper-slide:not(.slide-active) video {
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.home-visual .video-src {
+  display: none;
+}
+
+/* textbox */
+.home-visual .textbox {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 94%;
+  max-width: 150rem;
+  height: 100%;
+  margin: 0 auto;
+  transform: translateX(-50%);
+}
+
+.home-visual .visual-tit {
+  width: 100%;
+  margin-top: 4.5rem;
+}
+
+.home-visual .visual-tit :is(h1, h2, h3) {
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.1666;
+}
+
+.home-visual .visual-text {
+  width: 100%;
+  margin-top: 3.5rem;
+}
+
+.home-visual .visual-text p {
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 1.5833;
+}
+
+/* pagination 01 / 02 / 03 with progress bar */
+.home-visual .control > * {
+  display: inline-block;
+}
+
+.home-visual .mvisual-pagination li {
+  display: inline-block;
+  position: relative;
+  margin-right: calc(1rem + 0.25em);
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  vertical-align: baseline;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.home-visual .mvisual-pagination li.bullet-active {
+  opacity: 1;
+}
+
+.home-visual .pg-label,
+.home-visual .pg-label p {
+  display: inline;
+}
+
+.home-visual .pg-btn {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.home-visual .control .bar {
+  display: none;
+  position: relative;
+  width: 10rem;
+  height: 2px;
+  margin-left: 1rem;
+  overflow: hidden;
+  background: rgb(255 255 255 / 30%);
+  vertical-align: middle;
+}
+
+.home-visual .mvisual-pagination li.bullet-active .bar {
+  display: inline-block;
+}
+
+.home-visual .control .bar .active-bar {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #fff;
+}
+
+.home-visual .control .bar .active-bar.on {
+  width: 100%;
+}
+
+.home-visual .mvisual-pagination li:nth-child(1) .active-bar.on {
+  transition: all 7300ms;
+}
+
+.home-visual .mvisual-pagination li:nth-child(2) .active-bar.on {
+  transition: all 2200ms;
+}
+
+.home-visual .mvisual-pagination li:nth-child(3) .active-bar.on {
+  transition: all 4900ms;
+}
+
+/* title / lead entrance (.swiper-active after decoration) */
+.home-visual .show-ani {
+  transition: 1.1s;
+}
+
+.home-visual .show-ani.ani-delay {
+  transition-delay: 0.5s;
+}
+
+.home-visual:not(.swiper-active) .show-ani {
+  opacity: 0;
+  transform: translateY(5rem);
+}
+
+/* scroll-down cue */
+.home-visual .scrolldown {
+  position: absolute;
+  right: 5rem;
+  bottom: 5rem;
+  z-index: 2;
+  animation: home-visual-scrolldown 1.5s forwards infinite;
+}
+
+.home-visual .scrolldown img {
+  width: auto;
+  max-width: 100%;
+}
+
+@keyframes home-visual-scrolldown {
+  0% {
+    opacity: 0.2;
+    transform: translateY(0);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(3rem);
+  }
+}
+
+@media (width <= 1700px) {
+  .home-visual .textbox {
+    padding: 0 5rem;
+  }
+}
+
+@media (width <= 1240px) {
+  .home-visual .scrolldown {
+    right: 3%;
+    width: 2rem;
+  }
+
+  .home-visual .textbox {
+    padding: 0;
+  }
+
+  .home-visual .visual-tit :is(h1, h2, h3) {
+    font-size: 5rem;
+  }
+
+  .home-visual .visual-text p {
+    font-size: 2rem;
+  }
+}
+
+@media (width <= 767px) {
+  .home-visual .visual-tit :is(h1, h2, h3) {
+    font-size: 3.2rem;
+  }
+
+  .home-visual .visual-text {
+    margin-top: 3rem;
+  }
+
+  .home-visual .visual-text p {
+    font-size: 1.7rem;
+  }
+}

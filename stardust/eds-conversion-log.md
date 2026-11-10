@@ -1,50 +1,52 @@
-# EDS conversion log — continental.com
+# EDS conversion log
 
-## Publish decision (2026-10-09)
+## Publish decision (2026-11-02)
+Publish: decided by the run owner. Every delivered page, the redirects sheet and the chrome documents (nav, footer and locale variants) go live on the aem.live origin (deploy-batch.mjs without --no-publish / admin.hlx.page live).
 
-Decision: **publish**. Every delivered page, the redirects sheet and the chrome documents (nav, footer and their locale variants) go live on the aem.live origin (deploy-batch.mjs without --no-publish, or POST https://admin.hlx.page/live/…). Decided by the run brief; not re-asked.
+## C0 foundation (2026-11-02)
+- Runtime contract: `stardust/runtime-contract.json` (vanilla boilerplate: formatted-only buttonization in `p a[href]`, `.block` wrapper, fragments decorated with `decorateMain`).
+- Styles: `styles/styles.css` = canon tokens + base.css reset + root font-size model (62.5% / 58% <=1470 / 55% <=1240 / 53% <=767); structural layer kept (body gate, chrome reservation, section scaffold). `--nav-height: 0px` — overlay chrome (#108): the header is `position: fixed` on every page; pages offset their own first section (esg `.sub_top` margin/padding). Section scaffold uncapped: every block is full-bleed and caps its own `.inner` (`--container` 150rem, `--container-w` 94%).
+- Global CTA paint: `a.button` = source `.btn_more_type01` (white underline + arrow, `styles/media/main-button_more_arrow.png`); blocks override where the source differs.
+- Fonts: Pretendard 400/500/600/700 (woff2) + Noto Sans KR 300/400/500/700 (woff), both SIL OFL 1.1 — no licensing alert. `@font-face` in `styles/fonts.css`; `pretendard-fallback` (Arial; size-adjust 101.34%, ascent 93.95%, descent 23.8%, computed latin-weighted from Pretendard-Regular) in styles.css. Roboto removed.
+- Favicon: `favicon.ico` = `stardust/current/assets/favicon.ico`.
+- Header (`blocks/header`, decode tier: template-slotted): canon chrome DOM, kebab-case classes; authored `/nav` nodes MOVED by role (brand h2+link, menu h2 + nested list, external-link paragraphs, language list, h1 logo). States on the block root: `type-white`, `is-hover` (>=1470 hover mega menu), `menu-open` (<=1470 drawer); `body.index` (Template: index) = transparent header with white logos, every other page = white header. Active item derived from the URL (longest-prefix match on depth-2 links). Language links rewritten to the current page (metadata `source-path` wins — EDS folds `_` to `-` in paths). Search layer posts `headerKeyword` to https://www.doosanbobcat.com/en/search/result (interim, dynamic-features row 2). Chrome-only deviation from EW2: classes are added to the moved nav/footer nodes (fragments are edited as their own documents, never inline in the page).
+- Footer (`blocks/footer`, template-slotted): sitemap columns (heading + list pairs; nested list = Products groups), bottom row (h2 logo, copyright, hidden "Footer" heading + links with external-link icons, Related Sites dropdown), TOP button (scroll-progress ring; on `body.index` the image variant `.fullpg-top-btn`, shown by the home scroller via `body.fp-viewing-5`).
+- Footer variance on the source: the home page footer lacks "Human Rights Management" and links Doosan Corporate → /kr, Material Handling → /en/. Authored as a second chrome document `/footer-home` (home page metadata `Footer | /footer-home`); `/footer` carries the sub-page version.
+- Lint: `.eslintignore` gains `stardust/` (tooling, not runtime); `no-descending-specificity` disabled in the ported chrome CSS (canon cascade order is load-bearing). `lint:breakpoints` wired (DESIGN.json has no `breakpoints.target` → skipped).
+- Chrome document fixes for delivery-lint P1s: the Bobcat logo text is a plain `<p>` in `/nav` (a fragment carries no `<h1>`); the header block renders it as the chrome `h1.logo-bobcat` like the source. Footer "Portable Power" href `/en/products/portable/list.html` → `/en/products/portable/list` (EDS serves extensionless; same target as the nav's link).
 
-## C0 foundation (2026-10-09)
+## C-deliver archetype-landing — /en (2026-11-02)
+- Blocks (all decode tier template-slotted; repeat groups reconstructive): `home-visual` (hero video fade carousel, slides = label + code-origin video link `/media/home/*.mp4`, @ew-exempt video links), `home-company`, `home-products` (cards = product/hover/background images + text; card-as-link EW6, hover CTA is an EW4 clone), `home-esg`, `home-news` (news rows: category | date + linked title; YouTube row: heading/text | image | channel list).
+- Widget `widgets/home/home-scroller` (mounted in the NEWS section): fullPage replacement on native scroll, fp-nav from section `Tooltip` metadata, body `fp-viewing-<n>`, header `type-white` (panels 3/5/6), section `.active` entrances, `.fullpg-top-btn` → panel 1, copyright current year. Page metadata: `Template: index`, `Footer: /footer-home`.
+- Editorial images on DA `media/home/` (20; ledger `stardust/deploy/media-ledger-archetype-landing.json`); decorative icons in block `media/`.
+- Gate (preview origin, origin = fp-stitch live.png t=0 of the archetype round): 1440 0.53% Δh 0, 360 1.76% Δh 0, clipped 0, missing 0 (`presence.json` en: `main body=body` — source footer sits inside `<main>`, EDS footer is chrome).
 
-- Chrome decode tier: **template-slotted** (header, footer, social band). Authored nav/footer nodes are
-  moved into the canon chrome template; the off-canvas tree and the dropdown title (when no alt h3) are
-  presentational clones (EW4, stripInstrumentation). Exempt (`@ew-exempt`): search placeholder /
-  aria-labels read from authored link text.
-- EW7 deviation recorded by chrome-parity: live `<button>` nav triggers / language button are `<a role=button>`
-  (no `<button>` may host authored text); footer column labels / copyright are `<p>` (live `<div>`).
-- Chrome documents: 10 locale pairs (/en, /de, /cs-cz, /sk-sk, /pt-pt, /en-pt, /es-mx, /fr-fr, /ro-ro,
-  /en-us) generated verbatim from each locale's capture (stardust/.work/foundation/gen-chrome.cjs), Robots noindex.
-- Shell: /en/general/legal-notice as default content only (legal archetype unit replaces it).
-- Lint: clean (eslint airbnb-base, stylelint standard; per-file `no-descending-specificity` disable keeps the
-  source cascade order); `lint:breakpoints` wired (no target set in DESIGN.json → skipped).
+## C-deliver archetype-static — en-management-esg-result (2026-11-02)
+- Page: DA `/en/management/esg-result` (source `/en/management/esg_result`; EDS folds `_` to `-`,
+  metadata `source-path` keeps the language links on the source path). Live + preview.
+- `sub-top` (template-slotted): title h1 + local nav list (strong = active), breadcrumb (hidden
+  "Page Location" h2 + list), visual as an authored picture (object-fit cover, wipe in end state).
+  Offsets the overlay header itself (11.5rem margin + 10rem padding). Bespoke component: D1
+  advisory (prose-only rows) accepted — the composition is fixed and reused by every sub page.
+  Page h1 = "ESG" (source h2; delivery-lint needs exactly one h1 in content).
+- `esg-result` (template-slotted, 14 fixed-order panel rows; repeat lists reconstructive inside
+  their row): wrappers carry the source layout classes (kebab-case), authored nodes moved; inline
+  spans/`.wrap` added around moved nodes only. Scroll reveal `.con-ani` via IntersectionObserver
+  (rootMargin +100px = source layout-top trigger). EW2 deviation: the EHS diagram orders its
+  authored `li` with `:nth-child` (source composition). `no-descending-specificity` disabled
+  in block CSS (source cascade order, as in the chrome CSS).
+- Media: 22 editorial images on DA `media/esg-result/` (ledger
+  `stardust/deploy/media-ledger-archetype-static.json`); decorative backgrounds/icons as block CSS.
+- Not-yet-migrated targets stay absolute to www.doosanbobcat.com (esg_strategy, esg_report,
+  human-rights, ethics_canon, society).
+- Gate (preview origin): 1440 2.1% Δh -4, 360 5.88% Δh -23, clipped 0, missing 0; header crop
+  100%/100%, footer 99.76%/98.57%.
 
-## C-archetype legal — en-general-legal-notice (2026-10-09)
+## D-site (2026-11-02)
+- Redirects sheet `/redirects.json` (from `stardust/redirects.tsv`, 5 rows): source root `/` 302s to `/en` on the source, so `/` and `/index.html` → `/en`; `/en/` → `/en`; `/en/management/esg_result(.html)` → `/en/management/esg-result` (EDS sanitises `_` to `-`). PUT, previewed, published live.
+- Coverage row for ESG now carries the delivered path `/en/management/esg-result` (`sourcePath` keeps the source one).
+- Sitemap served 2 = assembled 2; chrome documents /nav, /footer, /footer-home noindex; `/` 200 on page and live.
 
-- Blocks: `hero-teaser` (variant small) — template-slotted (art-directed renditions moved into
-  range slots); `text-media` — template-slotted (header / gallery / richtext slots). Encoder core
-  `stardust/rollout/encoders/encode.mjs` + modules hero-teaser, text-media; notes in
-  `stardust/rollout/encoders/legal.md`.
-- Text-only c-media CEs are authored as default content (David's model; foundation default-content
-  rhythm equals o-page__ce stacking). The legal archetype therefore has 1 block (hero-teaser);
-  text-media is exercised by image CEs on sibling templates (render-harness --ew: 7/7 editable).
-- davids-model-lint 🟡 D1 on hero-teaser (3 image-only rows): justified — art-directed renditions
-  (1920×327 / tablet / 800×454) differ in aspect ratio, one image cannot reproduce the hero height.
-- qa-gate cap row (DESIGN.json containerMaxWidth 1920 vs content cap 1460 at 2560) fails on the
-  default-content wrapper the foundation owns; prototype carries the same 1460 cap — not a block defect.
-
-## C-archetype home — en (2026-10-09)
-
-- Blocks: NEW `video-player` (template-slotted: poster / play / caption / text-column slots; D3
-  AdmiralCloud embed on click, poster fallback when the vendor refuses the host), NEW
-  `section-background` (template-slotted: o-container__bg-image layer). Shared, additive only:
-  text-media variant `header-row`; teaser `wide-narrow.with-embed` 512px frame; fact-box guarded
-  equalise re-run (boxes with foot text). Encoder modules + notes: stardust/rollout/encoders/home.md.
-- Section schema: stardust/eds-schema/en.json from an annotated copy (one data-section per block,
-  stardust/.work/archetype-home/annotate.cjs). qa-gate PASS 39/0/0; block-roundtrip --ew
-  video-player 4/4 editable, section-background 0/0. Whole page: pre-existing EW findings in the
-  shared hero-stage-slider (7 dead: textLine moves childNodes) and fact-box (6 dead), teaser
-  URL-display embed link (by design), text-media role swap on the light h1 — not touched (shared).
-- davids-model-lint 🟡 D1 section-background (image-only layer, decorative), D1 text-media eyebrow
-  header (bespoke c-media__meta styling), D3 teaser with-embed (embed row is one cell by design).
-- Published gate: 1440 2.42 % Δh 2 PASS; 360 16.09 % Δh 0 → override (headed-both 4.08 % Δh 2;
-  hero autoplay tick). Crop 1440 header 1.27 % / footer 0.92 %.
+## E-full-site / E2 links (2026-11-02)
+- Out-of-scope internal targets (pages not in the 2-page plan) repointed to the source origin `https://www.doosanbobcat.com/…` in /en (8), /nav (44), /footer (41), /footer-home (40); `/en/management/esg_result` → `/en/management/esg-result`. Republished. Redirect `/en/management/esg-result/` → leaf added.
+- verify.mjs: esg-result verified; /en flagged only `/widgets/home/home-scroller.html` (the home-scroller widget reference, served 200 on aem.live — verify's asset filter does not know widget `.html` refs). /en recorded verified via update-coverage with this evidence; gate row PASS at 1440/360.
